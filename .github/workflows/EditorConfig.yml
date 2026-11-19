@@ -266,3 +266,9 @@ jobs:
         shell: pwsh
         run: |
           & ./.github/scripts/Check-EditorConfig.ps1 -Group parser-config -VerboseChecker
+
+      - name: Check C# source files
+        if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group csharp-sources -VerboseChecker

@@ -5,6 +5,7 @@ param(
 		'runtime-lua', 'lua-tests', 'lua-locales', 'xml', 'documentation',
 		'root-metadata', 'root-policy', 'root-scripts', 'editor-and-hooks',
 		'github-yaml', 'github-python', 'powershell', 'parser-test-sources',
+		'csharp-sources',
 		'db-sync', 'contributor-tools',
 		'harvesters', 'dotnet-projects', 'database-scripts', 'codegraph',
 		'standard-addon', 'raw-itemdb', 'forever-database', 'sod-database',
@@ -76,18 +77,34 @@ $groups = @{
 			'.contrib/.tools/GameObjectCache-to-ObjectDB.ps1',
 			'.contrib/src/Parser/tests/CostMerge.Tests.ps1',
 			'.contrib/src/Parser/tests/LocalizationFallback.Tests.ps1',
-			'.github/scripts/Check-EditorConfig.ps1'
+			'.github/scripts/Check-EditorConfig.ps1',
+			'.github/scripts/Check-CSharpFormatting.ps1'
 		)
 		Required = @(
 			'.contrib/.tools/GameObjectCache-to-ObjectDB.ps1',
 			'.contrib/src/Parser/tests/CostMerge.Tests.ps1',
 			'.contrib/src/Parser/tests/LocalizationFallback.Tests.ps1',
-			'.github/scripts/Check-EditorConfig.ps1'
+			'.github/scripts/Check-EditorConfig.ps1',
+			'.github/scripts/Check-CSharpFormatting.ps1'
 		)
 	}
 	'parser-test-sources' = @{
 		Pathspecs = @(':(glob).contrib/src/Parser/tests/*.cs')
 		Required = @('.contrib/src/Parser/tests/LocalizationFallback.Tests.cs')
+	}
+	'csharp-sources' = @{
+		Pathspecs = @(
+			':(glob)**/*.cs',
+			':(exclude,glob).contrib/src/Parser/tests/*.cs',
+			':(exclude,glob)**/bin/**/*.cs',
+			':(exclude,glob)**/obj/**/*.cs'
+		)
+		Required = @(
+			'.contrib/src/Parser/Program.cs',
+			'.contrib/src/Parser/MiniJSON.cs',
+			'.contrib/.source/ATT Sync Tool/MainForm.Designer.cs'
+		)
+		Minimum = 3
 	}
 	'db-sync' = @{
 		Pathspecs = @(
@@ -355,6 +372,33 @@ function Assert-SharedGroupCoverage {
 	Write-Host "Shared Lua group coverage: $($seen.Count) tracked files, exact-once."
 }
 
+function Assert-CSharpGroupCoverage {
+	$allCSharpPaths = @(Get-TrackedPaths -Pathspecs @(':(glob)**/*.cs'))
+	$expected = @($allCSharpPaths | Where-Object { $_ -cnotmatch '(^|/)(bin|obj)/' })
+	$seen = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::Ordinal)
+	foreach ($csharpGroup in @('csharp-sources', 'parser-test-sources')) {
+		$groupPaths = @(Get-TrackedPaths -Pathspecs $groups[$csharpGroup].Pathspecs)
+		foreach ($path in $groupPaths) {
+			if (-not $seen.Add($path)) {
+				throw "C# source path is selected more than once: '$path'"
+			}
+		}
+	}
+	$missing = @($expected | Where-Object { -not $seen.Contains($_) })
+	$extra = @($seen | Where-Object { $expected -cnotcontains $_ })
+	if ($missing.Count -gt 0 -or $extra.Count -gt 0) {
+		throw "C# source group coverage mismatch: $($missing.Count) missing, $($extra.Count) extra."
+	}
+	Write-Host "C# source group coverage: $($seen.Count) tracked files, exact-once."
+}
+
+function Remove-CheckerConfigFile {
+	param([string]$Path)
+	if (-not [string]::IsNullOrEmpty($Path) -and (Test-Path -LiteralPath $Path)) {
+		Remove-Item -LiteralPath $Path -Force -ErrorAction SilentlyContinue
+	}
+}
+
 function Write-GroupSummary {
 	param(
 		[string]$Name,
@@ -373,6 +417,7 @@ function Write-GroupSummary {
 
 $fileCount = 0
 $batchCount = 0
+$checkerConfigPath = $null
 try {
 	$definition = $groups[$Group]
 	if ($null -eq $definition) {
@@ -398,9 +443,23 @@ try {
 	if ($Group.StartsWith('shared-', [System.StringComparison]::OrdinalIgnoreCase)) {
 		Assert-SharedGroupCoverage
 	}
+	if ($Group -in @('csharp-sources', 'parser-test-sources')) {
+		Assert-CSharpGroupCoverage
+	}
 	$checkerCommand = Get-Command 'editorconfig-checker' -CommandType Application -ErrorAction Stop |
 		Select-Object -First 1
 	$checkerPath = $checkerCommand.Source
+	if ($Group -in @('csharp-sources', 'parser-test-sources')) {
+		$checkerConfigPath = [System.IO.Path]::Combine(
+			[System.IO.Path]::GetTempPath(),
+			'editorconfig-checker-csharp-' + [Guid]::NewGuid().ToString('N') + '.json'
+		)
+		[System.IO.File]::WriteAllText(
+			$checkerConfigPath,
+			'{"SpacesAfterTabs":true}' + [Environment]::NewLine,
+			[System.Text.UTF8Encoding]::new($false)
+		)
+	}
 	$maxArgumentChars = 7000
 	$batches = [System.Collections.Generic.List[object]]::new()
 	$currentBatch = [System.Collections.Generic.List[string]]::new()
@@ -428,6 +487,9 @@ try {
 	for ($index = 0; $index -lt $batches.Count; $index++) {
 		$arguments = @('-ignore-defaults', '-no-color')
 		if ($VerboseChecker) { $arguments += '-verbose' }
+		if (-not [string]::IsNullOrEmpty($checkerConfigPath)) {
+			$arguments += @('-config', $checkerConfigPath)
+		}
 		$arguments += [string[]]$batches[$index]
 		$result = Invoke-NativeProcess -FileName $checkerPath -Arguments $arguments
 		if (-not [string]::IsNullOrEmpty($result.Stdout)) { [Console]::Out.Write($result.Stdout) }
@@ -439,10 +501,15 @@ try {
 	}
 
 	Write-GroupSummary -Name $Group -FileCount $allPaths.Count -BatchCount $batches.Count -Passed (-not $failed)
-	if ($failed) { exit 1 }
+	if ($failed) {
+		Remove-CheckerConfigFile -Path $checkerConfigPath
+		exit 1
+	}
+	Remove-CheckerConfigFile -Path $checkerConfigPath
 	exit 0
 }
 catch {
+	Remove-CheckerConfigFile -Path $checkerConfigPath
 	Write-Host "::error::$($_.Exception.Message)"
 	Write-GroupSummary -Name $Group -FileCount $fileCount -BatchCount $batchCount -Passed $false
 	exit 1

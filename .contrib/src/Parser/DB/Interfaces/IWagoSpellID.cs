@@ -1,7 +1,7 @@
-﻿namespace ATT.DB
+namespace ATT.DB
 {
-    public interface IWagoSpellID
-    {
-        long SpellID { get; }
-    }
+	public interface IWagoSpellID
+	{
+		long SpellID { get; }
+	}
 }

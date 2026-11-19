@@ -1,4 +1,4 @@
-﻿using ATT.DB;
+using ATT.DB;
 using ATT.DB.Types;
 using NLua;
 using System;
@@ -9,869 +9,869 @@ using System.Linq;
 
 namespace ATT
 {
-    // ATT framework extension for data merge operations
-    partial class Framework
-    {
-        /// <summary>
-        /// Merge the contents of the lua table into the database.
-        /// If the keys are whitelisted, then the data will be added.
-        /// </summary>
-        /// <param name="lua">The lua context.</param>
-        /// <param name="table">The raw lua table.</param>
-        public static void Merge(LuaTable table)
-        {
-            // Parse the contents of the table into a generic object.
-            var dict = ParseAsStringDictionary(table);
-            if (dict == null) return;
+	// ATT framework extension for data merge operations
+	partial class Framework
+	{
+		/// <summary>
+		/// Merge the contents of the lua table into the database.
+		/// If the keys are whitelisted, then the data will be added.
+		/// </summary>
+		/// <param name="lua">The lua context.</param>
+		/// <param name="table">The raw lua table.</param>
+		public static void Merge(LuaTable table)
+		{
+			// Parse the contents of the table into a generic object.
+			var dict = ParseAsStringDictionary(table);
+			if (dict == null) return;
 
-            // Iterate through the pairs and determine what goes where.
-            foreach (var pair in dict)
-            {
-                switch (pair.Key)
-                {
-                    case "Exports":
-                        {
-                            if (pair.Value is IDictionary<string, object> exportDB)
-                            {
-                                foreach (var kvp in exportDB)
-                                {
-                                    Exports[kvp.Key] = kvp.Value;
-                                }
-                            }
-                            else
-                            {
-                                ThrowBadFormatDB(pair.Key);
-                            }
-                            break;
-                        }
-                    case "ItemDB":
-                        {
-                            // The format of the Item DB is a dictionary of item ID -> Values.
-                            // This is slightly more annoying to parse, but it works okay.
-                            if (pair.Value is Dictionary<long, object> itemDB)
-                            {
-                                foreach (var itemValuePair in itemDB)
-                                {
-                                    MergeKvpToConditionalData(itemValuePair);
-                                }
-                            }
-                            else if (pair.Value is Dictionary<decimal, object> modItemDB)
-                            {
-                                foreach (var itemValuePair in modItemDB)
-                                {
-                                    MergeKvpToConditionalData(itemValuePair);
-                                }
-                            }
-                            else if (pair.Value is List<object> items)
-                            {
-                                foreach (var o in items)
-                                {
-                                    if (o is IDictionary<string, object> item)
-                                    {
-                                        Objects.MergeFromDB("itemID", item);
-                                    }
-                                    else
-                                    {
-                                        ThrowBadFormatDB("ItemDB", o);
-                                    }
-                                }
-                            }
-                        }
-                        break;
-                    case "ItemDBConditional":
-                        {
-                            // The format of the Item DB is a dictionary of item ID -> Values.
-                            // This is slightly more annoying to parse, but it works okay.
-                            if (pair.Value is Dictionary<long, object> itemDB)
-                            {
-                                foreach (var itemValuePair in itemDB)
-                                {
-                                    MergeKvpToConditionalData(itemValuePair);
-                                }
-                            }
-                            else if (pair.Value is Dictionary<decimal, object> modItemDB)
-                            {
-                                foreach (var itemValuePair in modItemDB)
-                                {
-                                    MergeKvpToConditionalData(itemValuePair);
-                                }
-                            }
-                            else if (pair.Value is List<object> items)
-                            {
-                                foreach (var o in items)
-                                {
-                                    if (o is IDictionary<string, object> item)
-                                    {
-                                        Objects.MergeFromDB("itemID", item);
-                                    }
-                                    else
-                                    {
-                                        ThrowBadFormatDB("ItemDBConditional", o);
-                                    }
-                                }
-                            }
-                        }
-                        break;
-                    case "RecipeDB":
-                        MergeRecipeDB(pair.Value);
-                        break;
-                    case "SpellDB":
-                        MergeSpellDB(pair.Value);
-                        break;
-                    case "QuestDB":
-                        DBMerge(pair.Value, "questID");
-                        break;
-                    case "ItemSpeciesDB":
-                        {
-                            // The format of the Item Species DB is a dictionary of item ID -> Values.
-                            // This is slightly more annoying to parse, but it works okay.
-                            if (pair.Value is Dictionary<long, object> itemDB)
-                            {
-                                foreach (var itemValuePair in itemDB)
-                                {
-                                    if (itemValuePair.Value is IDictionary<string, object> item)
-                                    {
-                                        item["itemID"] = itemValuePair.Key;
-                                        Objects.MergeFromDB("itemID", item);
-                                    }
-                                    else
-                                    {
-                                        ThrowBadFormatDB("ItemSpeciesDB", itemValuePair);
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "AchievementData":
-                        {
-                            // The format of the Achievement Data DB is a dictionary of Achievement Data ID <-> Achievement pairs.
-                            if (pair.Value is Dictionary<long, object> db)
-                            {
-                                foreach (var keyValuePair in db)
-                                {
-                                    if (keyValuePair.Value is Dictionary<string, object> data)
-                                    {
-                                        if (!AchievementData.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
-                                        {
-                                            AchievementData[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
-                                        }
+			// Iterate through the pairs and determine what goes where.
+			foreach (var pair in dict)
+			{
+				switch (pair.Key)
+				{
+					case "Exports":
+						{
+							if (pair.Value is IDictionary<string, object> exportDB)
+							{
+								foreach (var kvp in exportDB)
+								{
+									Exports[kvp.Key] = kvp.Value;
+								}
+							}
+							else
+							{
+								ThrowBadFormatDB(pair.Key);
+							}
+							break;
+						}
+					case "ItemDB":
+						{
+							// The format of the Item DB is a dictionary of item ID -> Values.
+							// This is slightly more annoying to parse, but it works okay.
+							if (pair.Value is Dictionary<long, object> itemDB)
+							{
+								foreach (var itemValuePair in itemDB)
+								{
+									MergeKvpToConditionalData(itemValuePair);
+								}
+							}
+							else if (pair.Value is Dictionary<decimal, object> modItemDB)
+							{
+								foreach (var itemValuePair in modItemDB)
+								{
+									MergeKvpToConditionalData(itemValuePair);
+								}
+							}
+							else if (pair.Value is List<object> items)
+							{
+								foreach (var o in items)
+								{
+									if (o is IDictionary<string, object> item)
+									{
+										Objects.MergeFromDB("itemID", item);
+									}
+									else
+									{
+										ThrowBadFormatDB("ItemDB", o);
+									}
+								}
+							}
+						}
+						break;
+					case "ItemDBConditional":
+						{
+							// The format of the Item DB is a dictionary of item ID -> Values.
+							// This is slightly more annoying to parse, but it works okay.
+							if (pair.Value is Dictionary<long, object> itemDB)
+							{
+								foreach (var itemValuePair in itemDB)
+								{
+									MergeKvpToConditionalData(itemValuePair);
+								}
+							}
+							else if (pair.Value is Dictionary<decimal, object> modItemDB)
+							{
+								foreach (var itemValuePair in modItemDB)
+								{
+									MergeKvpToConditionalData(itemValuePair);
+								}
+							}
+							else if (pair.Value is List<object> items)
+							{
+								foreach (var o in items)
+								{
+									if (o is IDictionary<string, object> item)
+									{
+										Objects.MergeFromDB("itemID", item);
+									}
+									else
+									{
+										ThrowBadFormatDB("ItemDBConditional", o);
+									}
+								}
+							}
+						}
+						break;
+					case "RecipeDB":
+						MergeRecipeDB(pair.Value);
+						break;
+					case "SpellDB":
+						MergeSpellDB(pair.Value);
+						break;
+					case "QuestDB":
+						DBMerge(pair.Value, "questID");
+						break;
+					case "ItemSpeciesDB":
+						{
+							// The format of the Item Species DB is a dictionary of item ID -> Values.
+							// This is slightly more annoying to parse, but it works okay.
+							if (pair.Value is Dictionary<long, object> itemDB)
+							{
+								foreach (var itemValuePair in itemDB)
+								{
+									if (itemValuePair.Value is IDictionary<string, object> item)
+									{
+										item["itemID"] = itemValuePair.Key;
+										Objects.MergeFromDB("itemID", item);
+									}
+									else
+									{
+										ThrowBadFormatDB("ItemSpeciesDB", itemValuePair);
+									}
+								}
+							}
+							break;
+						}
+					case "AchievementData":
+						{
+							// The format of the Achievement Data DB is a dictionary of Achievement Data ID <-> Achievement pairs.
+							if (pair.Value is Dictionary<long, object> db)
+							{
+								foreach (var keyValuePair in db)
+								{
+									if (keyValuePair.Value is Dictionary<string, object> data)
+									{
+										if (!AchievementData.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
+										{
+											AchievementData[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
+										}
 
-                                        // Merge over the complex text data.
-                                        if (data.TryGetValue("text", out object textObject))
-                                        {
-                                            data.Remove("text");
-                                            if (textObject is Dictionary<string, object> textLocales)
-                                            {
-                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
-                                                {
-                                                    foreach (var textObjectPair in textLocales)
-                                                    {
-                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
-                                                    }
-                                                }
-                                                else dataEntry["text"] = textLocales;
-                                            }
-                                            else
-                                            {
-                                                dataEntry["text"] = new Dictionary<string, object>
-                                                {
-                                                    { "en", textObject }
-                                                };
-                                            }
-                                        }
+										// Merge over the complex text data.
+										if (data.TryGetValue("text", out object textObject))
+										{
+											data.Remove("text");
+											if (textObject is Dictionary<string, object> textLocales)
+											{
+												if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+												{
+													foreach (var textObjectPair in textLocales)
+													{
+														currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+													}
+												}
+												else dataEntry["text"] = textLocales;
+											}
+											else
+											{
+												dataEntry["text"] = new Dictionary<string, object>
+												{
+													{ "en", textObject }
+												};
+											}
+										}
 
-                                        // Merge over the complex text data.
-                                        if (data.TryGetValue("description", out textObject))
-                                        {
-                                            data.Remove("description");
-                                            if (textObject is Dictionary<string, object> textLocales)
-                                            {
-                                                if (dataEntry.TryGetValue("description", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
-                                                {
-                                                    foreach (var textObjectPair in textLocales)
-                                                    {
-                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
-                                                    }
-                                                }
-                                                else dataEntry["description"] = textLocales;
-                                            }
-                                            else
-                                            {
-                                                dataEntry["description"] = new Dictionary<string, object>
-                                                {
-                                                    { "en", textObject }
-                                                };
-                                            }
-                                        }
+										// Merge over the complex text data.
+										if (data.TryGetValue("description", out textObject))
+										{
+											data.Remove("description");
+											if (textObject is Dictionary<string, object> textLocales)
+											{
+												if (dataEntry.TryGetValue("description", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+												{
+													foreach (var textObjectPair in textLocales)
+													{
+														currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+													}
+												}
+												else dataEntry["description"] = textLocales;
+											}
+											else
+											{
+												dataEntry["description"] = new Dictionary<string, object>
+												{
+													{ "en", textObject }
+												};
+											}
+										}
 
-                                        // Merge over simple data. (a simple replace is fine)
-                                        foreach (var dataPair in data)
-                                        {
-                                            dataEntry[dataPair.Key] = dataPair.Value;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        ThrowBadFormatDB("AchievementData", keyValuePair);
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "AchievementCategoryData":
-                        {
-                            // The format of the Achievement Category Data DB is a dictionary of Achievement Category Data ID <-> Achievement Category pairs.
-                            if (pair.Value is Dictionary<long, object> db)
-                            {
-                                foreach (var keyValuePair in db)
-                                {
-                                    if (keyValuePair.Value is Dictionary<string, object> data)
-                                    {
-                                        if (!AchievementCategoryData.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
-                                        {
-                                            AchievementCategoryData[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
-                                        }
+										// Merge over simple data. (a simple replace is fine)
+										foreach (var dataPair in data)
+										{
+											dataEntry[dataPair.Key] = dataPair.Value;
+										}
+									}
+									else
+									{
+										ThrowBadFormatDB("AchievementData", keyValuePair);
+									}
+								}
+							}
+							break;
+						}
+					case "AchievementCategoryData":
+						{
+							// The format of the Achievement Category Data DB is a dictionary of Achievement Category Data ID <-> Achievement Category pairs.
+							if (pair.Value is Dictionary<long, object> db)
+							{
+								foreach (var keyValuePair in db)
+								{
+									if (keyValuePair.Value is Dictionary<string, object> data)
+									{
+										if (!AchievementCategoryData.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
+										{
+											AchievementCategoryData[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
+										}
 
-                                        // Merge over the complex text data.
-                                        if (data.TryGetValue("text", out object textObject))
-                                        {
-                                            data.Remove("text");
-                                            if (textObject is Dictionary<string, object> textLocales)
-                                            {
-                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
-                                                {
-                                                    foreach (var textObjectPair in textLocales)
-                                                    {
-                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
-                                                    }
-                                                }
-                                                else dataEntry["text"] = textLocales;
-                                            }
-                                            else
-                                            {
-                                                dataEntry["text"] = new Dictionary<string, object>
-                                                {
-                                                    { "en", textObject }
-                                                };
-                                            }
-                                        }
+										// Merge over the complex text data.
+										if (data.TryGetValue("text", out object textObject))
+										{
+											data.Remove("text");
+											if (textObject is Dictionary<string, object> textLocales)
+											{
+												if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+												{
+													foreach (var textObjectPair in textLocales)
+													{
+														currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+													}
+												}
+												else dataEntry["text"] = textLocales;
+											}
+											else
+											{
+												dataEntry["text"] = new Dictionary<string, object>
+												{
+													{ "en", textObject }
+												};
+											}
+										}
 
-                                        // Merge over simple data. (a simple replace is fine)
-                                        foreach (var dataPair in data)
-                                        {
-                                            dataEntry[dataPair.Key] = dataPair.Value;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        ThrowBadFormatDB("AchievementCategoryData", keyValuePair);
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "AssetDB":
-                        {
-                            // The format of the Asset DB is a dictionary of Asset ID <-> Valid pairs.
-                            if (pair.Value is Dictionary<long, object> db)
-                            {
-                                foreach (var keyValuePair in db)
-                                {
-                                    AssetDB[keyValuePair.Key] = Convert.ToBoolean(keyValuePair.Value);
-                                }
-                            }
-                            break;
-                        }
-                    case "CategoryDB":
-                        {
-                            // The format of the Category DB is a dictionary of Category ID <-> Category pairs.
-                            if (pair.Value is Dictionary<long, object> db)
-                            {
-                                foreach (var keyValuePair in db)
-                                {
-                                    if (keyValuePair.Value is Dictionary<string, object> data)
-                                    {
-                                        if (!CategoryDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
-                                        {
-                                            CategoryDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
-                                        }
+										// Merge over simple data. (a simple replace is fine)
+										foreach (var dataPair in data)
+										{
+											dataEntry[dataPair.Key] = dataPair.Value;
+										}
+									}
+									else
+									{
+										ThrowBadFormatDB("AchievementCategoryData", keyValuePair);
+									}
+								}
+							}
+							break;
+						}
+					case "AssetDB":
+						{
+							// The format of the Asset DB is a dictionary of Asset ID <-> Valid pairs.
+							if (pair.Value is Dictionary<long, object> db)
+							{
+								foreach (var keyValuePair in db)
+								{
+									AssetDB[keyValuePair.Key] = Convert.ToBoolean(keyValuePair.Value);
+								}
+							}
+							break;
+						}
+					case "CategoryDB":
+						{
+							// The format of the Category DB is a dictionary of Category ID <-> Category pairs.
+							if (pair.Value is Dictionary<long, object> db)
+							{
+								foreach (var keyValuePair in db)
+								{
+									if (keyValuePair.Value is Dictionary<string, object> data)
+									{
+										if (!CategoryDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
+										{
+											CategoryDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
+										}
 
-                                        // Merge over the complex text data.
-                                        if (data.TryGetValue("text", out object textObject))
-                                        {
-                                            data.Remove("text");
-                                            if (textObject is Dictionary<string, object> textLocales)
-                                            {
-                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
-                                                {
-                                                    foreach (var textObjectPair in textLocales)
-                                                    {
-                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
-                                                    }
-                                                }
-                                                else dataEntry["text"] = textLocales;
-                                            }
-                                            else
-                                            {
-                                                dataEntry["text"] = new Dictionary<string, object>
-                                                {
-                                                    { "en", textObject }
-                                                };
-                                            }
-                                        }
+										// Merge over the complex text data.
+										if (data.TryGetValue("text", out object textObject))
+										{
+											data.Remove("text");
+											if (textObject is Dictionary<string, object> textLocales)
+											{
+												if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+												{
+													foreach (var textObjectPair in textLocales)
+													{
+														currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+													}
+												}
+												else dataEntry["text"] = textLocales;
+											}
+											else
+											{
+												dataEntry["text"] = new Dictionary<string, object>
+												{
+													{ "en", textObject }
+												};
+											}
+										}
 
-                                        // Merge over simple data. (a simple replace is fine)
-                                        foreach (var dataPair in data)
-                                        {
-                                            dataEntry[dataPair.Key] = dataPair.Value;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        ThrowBadFormatDB("CategoryDB", keyValuePair);
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "FilterDB":
-                        {
-                            // The format of the Filter DB is a dictionary of Filter ID <-> Filter pairs.
-                            if (pair.Value is Dictionary<long, object> db)
-                            {
-                                foreach (var keyValuePair in db)
-                                {
-                                    if (keyValuePair.Value is Dictionary<string, object> data)
-                                    {
-                                        if (!FilterDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
-                                        {
-                                            FilterDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
-                                        }
+										// Merge over simple data. (a simple replace is fine)
+										foreach (var dataPair in data)
+										{
+											dataEntry[dataPair.Key] = dataPair.Value;
+										}
+									}
+									else
+									{
+										ThrowBadFormatDB("CategoryDB", keyValuePair);
+									}
+								}
+							}
+							break;
+						}
+					case "FilterDB":
+						{
+							// The format of the Filter DB is a dictionary of Filter ID <-> Filter pairs.
+							if (pair.Value is Dictionary<long, object> db)
+							{
+								foreach (var keyValuePair in db)
+								{
+									if (keyValuePair.Value is Dictionary<string, object> data)
+									{
+										if (!FilterDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
+										{
+											FilterDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
+										}
 
-                                        // Merge over the complex text data.
-                                        if (data.TryGetValue("text", out object textObject))
-                                        {
-                                            data.Remove("text");
-                                            if (textObject is Dictionary<string, object> textLocales)
-                                            {
-                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
-                                                {
-                                                    foreach (var textObjectPair in textLocales)
-                                                    {
-                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
-                                                    }
-                                                }
-                                                else dataEntry["text"] = textLocales;
-                                            }
-                                            else
-                                            {
-                                                dataEntry["text"] = textLocales = new Dictionary<string, object>
-                                                {
-                                                    { "en", textObject }
-                                                };
-                                            }
-                                        }
+										// Merge over the complex text data.
+										if (data.TryGetValue("text", out object textObject))
+										{
+											data.Remove("text");
+											if (textObject is Dictionary<string, object> textLocales)
+											{
+												if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+												{
+													foreach (var textObjectPair in textLocales)
+													{
+														currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+													}
+												}
+												else dataEntry["text"] = textLocales;
+											}
+											else
+											{
+												dataEntry["text"] = textLocales = new Dictionary<string, object>
+												{
+													{ "en", textObject }
+												};
+											}
+										}
 
-                                        // Explicitly mark a thing as an export
-                                        if (data.TryGetValue("export", out object value) && (bool)value)
-                                        {
-                                            FILTERS_WITH_REFERENCES[keyValuePair.Key] = true;
-                                        }
+										// Explicitly mark a thing as an export
+										if (data.TryGetValue("export", out object value) && (bool)value)
+										{
+											FILTERS_WITH_REFERENCES[keyValuePair.Key] = true;
+										}
 
-                                        // Merge over simple data. (a simple replace is fine)
-                                        foreach (var dataPair in data)
-                                        {
-                                            dataEntry[dataPair.Key] = dataPair.Value;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        ThrowBadFormatDB("FilterDB", keyValuePair);
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "FlightPathDB":
-                        {
-                            // The format of the Object DB is a dictionary of Flight Path ID <-> Flight Path pairs.
-                            if (pair.Value is Dictionary<long, object> db)
-                            {
-                                foreach (var keyValuePair in db)
-                                {
-                                    if (keyValuePair.Value is Dictionary<string, object> data)
-                                    {
-                                        if (!FlightPathDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
-                                        {
-                                            FlightPathDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
-                                        }
+										// Merge over simple data. (a simple replace is fine)
+										foreach (var dataPair in data)
+										{
+											dataEntry[dataPair.Key] = dataPair.Value;
+										}
+									}
+									else
+									{
+										ThrowBadFormatDB("FilterDB", keyValuePair);
+									}
+								}
+							}
+							break;
+						}
+					case "FlightPathDB":
+						{
+							// The format of the Object DB is a dictionary of Flight Path ID <-> Flight Path pairs.
+							if (pair.Value is Dictionary<long, object> db)
+							{
+								foreach (var keyValuePair in db)
+								{
+									if (keyValuePair.Value is Dictionary<string, object> data)
+									{
+										if (!FlightPathDB.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
+										{
+											FlightPathDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
+										}
 
-                                        // Merge over the complex text data.
-                                        if (data.TryGetValue("text", out object textObject))
-                                        {
-                                            data.Remove("text");
-                                            if (textObject is Dictionary<string, object> textLocales)
-                                            {
-                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
-                                                {
-                                                    foreach (var textObjectPair in textLocales)
-                                                    {
-                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
-                                                    }
-                                                }
-                                                else dataEntry["text"] = textLocales;
-                                            }
-                                            else
-                                            {
-                                                dataEntry["text"] = new Dictionary<string, object>
-                                                {
-                                                    { "en", textObject }
-                                                };
-                                            }
-                                        }
+										// Merge over the complex text data.
+										if (data.TryGetValue("text", out object textObject))
+										{
+											data.Remove("text");
+											if (textObject is Dictionary<string, object> textLocales)
+											{
+												if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+												{
+													foreach (var textObjectPair in textLocales)
+													{
+														currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+													}
+												}
+												else dataEntry["text"] = textLocales;
+											}
+											else
+											{
+												dataEntry["text"] = new Dictionary<string, object>
+												{
+													{ "en", textObject }
+												};
+											}
+										}
 
-                                        // Merge over simple data. (a simple replace is fine)
-                                        foreach (var dataPair in data)
-                                        {
-                                            dataEntry[dataPair.Key] = dataPair.Value;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        ThrowBadFormatDB("FlightPathDB", keyValuePair);
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "GlyphDB":
-                        {
-                            // The format of the Glyph DB is a dictionary of Glyph ID <-> Spell ID pairs.
-                            if (pair.Value is Dictionary<long, object> db)
-                            {
-                                foreach (var keyValuePair in db)
-                                {
-                                    GlyphDB[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
-                                }
-                            }
-                            break;
-                        }
-                    case "ItemAppearanceModifierIDs_BonusID":
-                        {
-                            // The format of the ItemAppearanceModifierIDs table is a dictionary of Bonus ID <-> ItemAppearanceModifierID pairs.
-                            if (pair.Value is Dictionary<long, object> db)
-                            {
-                                foreach (var keyValuePair in db)
-                                {
-                                    ItemAppearanceModifierIDs_BonusID[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
-                                }
-                            }
-                            break;
-                        }
-                    case "ItemAppearanceModifierIDs_ModID":
-                        {
-                            // The format of the ItemAppearanceModifierIDs table is a dictionary of Mod ID <-> ItemAppearanceModifierID pairs.
-                            if (pair.Value is Dictionary<long, object> db)
-                            {
-                                foreach (var keyValuePair in db)
-                                {
-                                    ItemAppearanceModifierIDs_ModID[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
-                                }
-                            }
-                            break;
-                        }
-                    case "ObjectDB":
-                        {
-                            // The format of the Object DB is a dictionary of Object ID <-> Object pairs.
-                            if (pair.Value is Dictionary<long, object> db)
-                            {
-                                foreach (var keyValuePair in db)
-                                {
-                                    if (keyValuePair.Value is Dictionary<string, object> data)
-                                    {
-                                        if (!ObjectDB.TryGetValue(keyValuePair.Key, out IDictionary<string, object> dataEntry))
-                                        {
-                                            ObjectDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
-                                        }
+										// Merge over simple data. (a simple replace is fine)
+										foreach (var dataPair in data)
+										{
+											dataEntry[dataPair.Key] = dataPair.Value;
+										}
+									}
+									else
+									{
+										ThrowBadFormatDB("FlightPathDB", keyValuePair);
+									}
+								}
+							}
+							break;
+						}
+					case "GlyphDB":
+						{
+							// The format of the Glyph DB is a dictionary of Glyph ID <-> Spell ID pairs.
+							if (pair.Value is Dictionary<long, object> db)
+							{
+								foreach (var keyValuePair in db)
+								{
+									GlyphDB[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
+								}
+							}
+							break;
+						}
+					case "ItemAppearanceModifierIDs_BonusID":
+						{
+							// The format of the ItemAppearanceModifierIDs table is a dictionary of Bonus ID <-> ItemAppearanceModifierID pairs.
+							if (pair.Value is Dictionary<long, object> db)
+							{
+								foreach (var keyValuePair in db)
+								{
+									ItemAppearanceModifierIDs_BonusID[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
+								}
+							}
+							break;
+						}
+					case "ItemAppearanceModifierIDs_ModID":
+						{
+							// The format of the ItemAppearanceModifierIDs table is a dictionary of Mod ID <-> ItemAppearanceModifierID pairs.
+							if (pair.Value is Dictionary<long, object> db)
+							{
+								foreach (var keyValuePair in db)
+								{
+									ItemAppearanceModifierIDs_ModID[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
+								}
+							}
+							break;
+						}
+					case "ObjectDB":
+						{
+							// The format of the Object DB is a dictionary of Object ID <-> Object pairs.
+							if (pair.Value is Dictionary<long, object> db)
+							{
+								foreach (var keyValuePair in db)
+								{
+									if (keyValuePair.Value is Dictionary<string, object> data)
+									{
+										if (!ObjectDB.TryGetValue(keyValuePair.Key, out IDictionary<string, object> dataEntry))
+										{
+											ObjectDB[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
+										}
 
-                                        // Merge over the complex text data.
-                                        if (data.TryGetValue("text", out object textObject))
-                                        {
-                                            data.Remove("text");
-                                            if (textObject is Dictionary<string, object> textLocales)
-                                            {
-                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
-                                                {
-                                                    foreach (var textObjectPair in textLocales)
-                                                    {
-                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
-                                                    }
-                                                }
-                                                else dataEntry["text"] = textLocales;
-                                            }
-                                            else
-                                            {
-                                                dataEntry["text"] = new Dictionary<string, object>
-                                                {
-                                                    { "en", textObject }
-                                                };
-                                            }
-                                        }
+										// Merge over the complex text data.
+										if (data.TryGetValue("text", out object textObject))
+										{
+											data.Remove("text");
+											if (textObject is Dictionary<string, object> textLocales)
+											{
+												if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+												{
+													foreach (var textObjectPair in textLocales)
+													{
+														currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+													}
+												}
+												else dataEntry["text"] = textLocales;
+											}
+											else
+											{
+												dataEntry["text"] = new Dictionary<string, object>
+												{
+													{ "en", textObject }
+												};
+											}
+										}
 
-                                        // Merge over simple data. (a simple replace is fine)
-                                        foreach (var dataPair in data)
-                                        {
-                                            dataEntry[dataPair.Key] = dataPair.Value;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        ThrowBadFormatDB("ObjectDB", keyValuePair);
-                                    }
-                                }
-                            }
-                            break;
-                        }
-                    case "AchievementDB":
-                        MergeAchievementDB(pair.Value);
-                        break;
-                    case "MountDB":
-                        DBMerge(pair.Value, "mountID");
-                        break;
-                    case "SpeciesDB":
-                        DBMerge(pair.Value, "speciesID");
-                        break;
-                    default:
-                        {
-                            // Get the object container for this section.
-                            List<object> list = null;
-                            if (pair.Value is List<object> list2)
-                            {
-                                list = list2;
-                            }
-                            else if (pair.Value is IDictionary<string, object> data)
-                            {
-                                list = data.Values.ToList();
-                            }
-                            else if (pair.Value is Dictionary<long, object> ignoredKeys)
-                            {
-                                list = ignoredKeys.Values.ToList();
-                            }
-                            if (list != null)
-                            {
-                                if (list.Any()) Objects.Merge(Objects.Get(ATT.Export.ToString(pair.Key)), list);
-                            }
-                            else
-                            {
-                                throw new Exception($"Invalid Container format: {pair.Key}:{ToJSON(pair.Value)}");
-                            }
-                            break;
-                        }
-                }
-            }
-        }
+										// Merge over simple data. (a simple replace is fine)
+										foreach (var dataPair in data)
+										{
+											dataEntry[dataPair.Key] = dataPair.Value;
+										}
+									}
+									else
+									{
+										ThrowBadFormatDB("ObjectDB", keyValuePair);
+									}
+								}
+							}
+							break;
+						}
+					case "AchievementDB":
+						MergeAchievementDB(pair.Value);
+						break;
+					case "MountDB":
+						DBMerge(pair.Value, "mountID");
+						break;
+					case "SpeciesDB":
+						DBMerge(pair.Value, "speciesID");
+						break;
+					default:
+						{
+							// Get the object container for this section.
+							List<object> list = null;
+							if (pair.Value is List<object> list2)
+							{
+								list = list2;
+							}
+							else if (pair.Value is IDictionary<string, object> data)
+							{
+								list = data.Values.ToList();
+							}
+							else if (pair.Value is Dictionary<long, object> ignoredKeys)
+							{
+								list = ignoredKeys.Values.ToList();
+							}
+							if (list != null)
+							{
+								if (list.Any()) Objects.Merge(Objects.Get(ATT.Export.ToString(pair.Key)), list);
+							}
+							else
+							{
+								throw new Exception($"Invalid Container format: {pair.Key}:{ToJSON(pair.Value)}");
+							}
+							break;
+						}
+				}
+			}
+		}
 
-        private static void ThrowBadFormatDB(string name, object obj = null)
-        {
-            throw new InvalidDataException($"{CurrentFileName}{Environment.NewLine}{name} not in the correct format! ==> {ToJSON(obj)}");
-        }
+		private static void ThrowBadFormatDB(string name, object obj = null)
+		{
+			throw new InvalidDataException($"{CurrentFileName}{Environment.NewLine}{name} not in the correct format! ==> {ToJSON(obj)}");
+		}
 
-        private static void MergeKvpToConditionalData<TKey>(KeyValuePair<TKey, object> itemValuePair)
-        {
-            if (itemValuePair.Value is IDictionary<string, object> item)
-            {
-                item["itemID"] = itemValuePair.Key;
-                Objects.MergeFromDB("itemID", item);
-            }
-            else
-            {
-                ThrowBadFormatDB("ItemConditionalDB", itemValuePair);
-            }
-        }
+		private static void MergeKvpToConditionalData<TKey>(KeyValuePair<TKey, object> itemValuePair)
+		{
+			if (itemValuePair.Value is IDictionary<string, object> item)
+			{
+				item["itemID"] = itemValuePair.Key;
+				Objects.MergeFromDB("itemID", item);
+			}
+			else
+			{
+				ThrowBadFormatDB("ItemConditionalDB", itemValuePair);
+			}
+		}
 
-        public static object ParseAsObject(LuaTable table)
-        {
-            if (table.Keys.Count > 0)
-            {
-                // Determine most-necessary key type
-                bool useDecimal = false, useLong = false;
-                var keyList = new List<object>();
-                foreach (var key in table.Keys)
-                {
-                    var keyType = key.GetType();
-                    if (keyType == typeof(string))
-                    {
-                        if (table[key].GetType() == typeof(LuaFunction)) continue;
-                        return ParseAsStringDictionary(table);
-                    }
-                    else if (!useDecimal && keyType.IsDecimal())
-                    {
-                        useDecimal = true;
-                    }
-                    else if (!useDecimal && !useLong && keyType.IsNumeric())
-                    {
-                        useLong = true;
-                    }
-                    keyList.Add(key);
-                }
-                //keyList.Sort();
+		public static object ParseAsObject(LuaTable table)
+		{
+			if (table.Keys.Count > 0)
+			{
+				// Determine most-necessary key type
+				bool useDecimal = false, useLong = false;
+				var keyList = new List<object>();
+				foreach (var key in table.Keys)
+				{
+					var keyType = key.GetType();
+					if (keyType == typeof(string))
+					{
+						if (table[key].GetType() == typeof(LuaFunction)) continue;
+						return ParseAsStringDictionary(table);
+					}
+					else if (!useDecimal && keyType.IsDecimal())
+					{
+						useDecimal = true;
+					}
+					else if (!useDecimal && !useLong && keyType.IsNumeric())
+					{
+						useLong = true;
+					}
+					keyList.Add(key);
+				}
+				//keyList.Sort();
 
-                // Determine if we're dealing with a <long,object> dictionary.
-                for (int i = 1; i <= keyList.Count; ++i)
-                {
-                    var key = keyList[i - 1];
-                    if (key.TryConvert(out int index) && (index != i || index > keyList.Count))
-                    {
-                        if (useDecimal)
-                        {
-                            return ParseAsDictionary<decimal>(table);
-                        }
-                        else
-                        {
-                            return ParseAsDictionary<long>(table);
-                        }
-                    }
-                }
+				// Determine if we're dealing with a <long,object> dictionary.
+				for (int i = 1; i <= keyList.Count; ++i)
+				{
+					var key = keyList[i - 1];
+					if (key.TryConvert(out int index) && (index != i || index > keyList.Count))
+					{
+						if (useDecimal)
+						{
+							return ParseAsDictionary<decimal>(table);
+						}
+						else
+						{
+							return ParseAsDictionary<long>(table);
+						}
+					}
+				}
 
-                // Create an ordered list from the table.
-                var list = new List<object>();
-                foreach (var key in keyList)
-                {
-                    list.Add(ParseObject(table[key], key));
-                }
-                return list;
-            }
+				// Create an ordered list from the table.
+				var list = new List<object>();
+				foreach (var key in keyList)
+				{
+					list.Add(ParseObject(table[key], key));
+				}
+				return list;
+			}
 
-            return new List<object>();
-        }
+			return new List<object>();
+		}
 
-        public static Dictionary<TKey, object> ParseAsDictionary<TKey>(LuaTable table)
-        {
-            var dict = new Dictionary<TKey, object>();
-            foreach (var key in table.Keys)
-            {
-                if (key.TryConvert(out TKey tKey))
-                {
-                    dict[tKey] = ParseObject(table[key], key);
-                }
-                else
-                {
-                    LogError($"Failed to convert {key} to type {typeof(TKey).GetType().Name}");
-                }
-            }
-            return dict;
-        }
+		public static Dictionary<TKey, object> ParseAsDictionary<TKey>(LuaTable table)
+		{
+			var dict = new Dictionary<TKey, object>();
+			foreach (var key in table.Keys)
+			{
+				if (key.TryConvert(out TKey tKey))
+				{
+					dict[tKey] = ParseObject(table[key], key);
+				}
+				else
+				{
+					LogError($"Failed to convert {key} to type {typeof(TKey).GetType().Name}");
+				}
+			}
+			return dict;
+		}
 
-        public static IDictionary<string, object> ParseAsStringDictionary(LuaTable table)
-        {
-            var dict = new Dictionary<string, object>();
-            foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key], key);
-            return dict;
-        }
+		public static IDictionary<string, object> ParseAsStringDictionary(LuaTable table)
+		{
+			var dict = new Dictionary<string, object>();
+			foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key], key);
+			return dict;
+		}
 
-        public static object[] ParseAsArray(LuaTable table)
-        {
-            var arr = new object[table.Keys.Count];
-            int i = 0;
-            foreach (var key in table.Keys) arr[i++] = ParseObject(table[key], key);
-            return arr;
-        }
+		public static object[] ParseAsArray(LuaTable table)
+		{
+			var arr = new object[table.Keys.Count];
+			int i = 0;
+			foreach (var key in table.Keys) arr[i++] = ParseObject(table[key], key);
+			return arr;
+		}
 
-        static object ParseObject(object data, object key)
-        {
-            switch (data.GetType().ToString())
-            {
-                case "NLua.LuaTable":
-                    {
-                        return ParseAsObject(data as LuaTable);
-                    }
-                case "System.Boolean":
-                case "System.Double":
-                case "System.Int32":
-                case "System.Int64":
-                case "System.String":
-                    {
-                        return data;
-                    }
-                case "NLua.LuaFunction":
-                    {
-                        Log($" {key} ({data.GetType()}): {data.GetType().FullName}");
-                        LogWarn("Functions are not directly supported at this time. Please use a [[ ]] surrounded string.");
-                        break;
-                    }
-                default:
-                    {
-                        Log($" ({data.GetType()}): ");
-                        LogWarn(data.GetType().FullName, data);
-                        break;
-                    }
-            }
-            return null;
-        }
+		static object ParseObject(object data, object key)
+		{
+			switch (data.GetType().ToString())
+			{
+				case "NLua.LuaTable":
+					{
+						return ParseAsObject(data as LuaTable);
+					}
+				case "System.Boolean":
+				case "System.Double":
+				case "System.Int32":
+				case "System.Int64":
+				case "System.String":
+					{
+						return data;
+					}
+				case "NLua.LuaFunction":
+					{
+						Log($" {key} ({data.GetType()}): {data.GetType().FullName}");
+						LogWarn("Functions are not directly supported at this time. Please use a [[ ]] surrounded string.");
+						break;
+					}
+				default:
+					{
+						Log($" ({data.GetType()}): ");
+						LogWarn(data.GetType().FullName, data);
+						break;
+					}
+			}
+			return null;
+		}
 
-        /// <summary>
-        /// Merge the data into the database.
-        /// </summary>
-        /// <param name="data">The data.</param>
-        public static void Merge(IDictionary<string, object> data)
-        {
-            // Make use of this data and attempt to load it into the database.
-            // First check to see if the JSON data is a container for a specific type of object.
+		/// <summary>
+		/// Merge the data into the database.
+		/// </summary>
+		/// <param name="data">The data.</param>
+		public static void Merge(IDictionary<string, object> data)
+		{
+			// Make use of this data and attempt to load it into the database.
+			// First check to see if the JSON data is a container for a specific type of object.
 
-            // Are we dealing with an Items Database section?
-            if (data.TryGetValue("items", out List<object> listing))
-            {
-                DBMerge(listing, "itemID");
-            }
+			// Are we dealing with an Items Database section?
+			if (data.TryGetValue("items", out List<object> listing))
+			{
+				DBMerge(listing, "itemID");
+			}
 
-            // Are we dealing with a Mounts Database section?
-            if (data.TryGetValue("mounts", out listing))
-            {
-                DBMerge(listing, "itemID");
-            }
+			// Are we dealing with a Mounts Database section?
+			if (data.TryGetValue("mounts", out listing))
+			{
+				DBMerge(listing, "itemID");
+			}
 
-            // Are we dealing with a Quests Database section?
-            if (data.TryGetValue("questDB", out IDictionary<string, object> questDB))
-            {
-                foreach (var pair in questDB)
-                {
-                    if (pair.Value is IDictionary<string, object> dict)
-                    {
-                        // Convert the 'text' field to '_text'
-                        if (dict.TryGetValue("text", out object text))
-                        {
-                            dict["_text"] = text;
-                        }
-                    }
-                }
+			// Are we dealing with a Quests Database section?
+			if (data.TryGetValue("questDB", out IDictionary<string, object> questDB))
+			{
+				foreach (var pair in questDB)
+				{
+					if (pair.Value is IDictionary<string, object> dict)
+					{
+						// Convert the 'text' field to '_text'
+						if (dict.TryGetValue("text", out object text))
+						{
+							dict["_text"] = text;
+						}
+					}
+				}
 
-                DBMerge(questDB.Values, "questID");
-            }
+				DBMerge(questDB.Values, "questID");
+			}
 
-            // Are we dealing with an API Quests Database section?
-            if (data.TryGetValue("quests", out List<object> quests))
-            {
-                DBMerge(quests, "questID");
-            }
-        }
+			// Are we dealing with an API Quests Database section?
+			if (data.TryGetValue("quests", out List<object> quests))
+			{
+				DBMerge(quests, "questID");
+			}
+		}
 
-        /// <summary>
-        /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing an 'achID'[long] key value
-        /// </summary>
-        public static void MergeAchievementDB(object data, bool onlyNew = false)
-        {
-            // The format of the Achievement DB is a dictionary of Achievement ID <-> Name pairs.
-            var dataList = Objects.CompressToList<object>(data);
-            if (dataList == null)
-            {
-                ThrowBadFormatDB("AchievementDB");
-                return;
-            }
+		/// <summary>
+		/// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing an 'achID'[long] key value
+		/// </summary>
+		public static void MergeAchievementDB(object data, bool onlyNew = false)
+		{
+			// The format of the Achievement DB is a dictionary of Achievement ID <-> Name pairs.
+			var dataList = Objects.CompressToList<object>(data);
+			if (dataList == null)
+			{
+				ThrowBadFormatDB("AchievementDB");
+				return;
+			}
 
-            foreach (var achieveInfo in dataList)
-            {
-                // KEY: Achievement ID, VALUE: Dictionary
-                if (achieveInfo is IDictionary<string, object> info && (info.TryGetValue("achID", out long achID) || info.TryGetValue("achievementID", out achID)))
-                {
-                    if (ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> existingData))
-                    {
-                        if (onlyNew)
-                        {
-                            foreach (var pair2 in info) if (!existingData.ContainsKey(pair2.Key)) Objects.Merge(existingData, pair2.Key, pair2.Value);
-                        }
-                        else
-                        {
-                            foreach (var pair2 in info) Objects.Merge(existingData, pair2.Key, pair2.Value);
-                        }
-                    }
-                    else ACHIEVEMENTS[achID] = info;
-                }
-            }
-        }
+			foreach (var achieveInfo in dataList)
+			{
+				// KEY: Achievement ID, VALUE: Dictionary
+				if (achieveInfo is IDictionary<string, object> info && (info.TryGetValue("achID", out long achID) || info.TryGetValue("achievementID", out achID)))
+				{
+					if (ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> existingData))
+					{
+						if (onlyNew)
+						{
+							foreach (var pair2 in info) if (!existingData.ContainsKey(pair2.Key)) Objects.Merge(existingData, pair2.Key, pair2.Value);
+						}
+						else
+						{
+							foreach (var pair2 in info) Objects.Merge(existingData, pair2.Key, pair2.Value);
+						}
+					}
+					else ACHIEVEMENTS[achID] = info;
+				}
+			}
+		}
 
-        /// <summary>
-        /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing a 'spellID'/'recipeID'[long] key value
-        /// </summary>
-        public static void MergeRecipeDB(object rawDb)
-        {
-            DBMerge(rawDb, "recipeID");
-        }
+		/// <summary>
+		/// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing a 'spellID'/'recipeID'[long] key value
+		/// </summary>
+		public static void MergeRecipeDB(object rawDb)
+		{
+			DBMerge(rawDb, "recipeID");
+		}
 
-        /// <summary>
-        /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing a 'spellID'[long] key value
-        /// </summary>
-        public static void MergeSpellDB(object rawDb)
-        {
-            DBMerge(rawDb, "spellID");
-        }
+		/// <summary>
+		/// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing a 'spellID'[long] key value
+		/// </summary>
+		public static void MergeSpellDB(object rawDb)
+		{
+			DBMerge(rawDb, "spellID");
+		}
 
-        /// <summary>
-        /// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing an 'itemID'[long] key value
-        /// </summary>
-        public static void MergeItemDB(object rawDb)
-        {
-            DBMerge(rawDb, "itemID");
-        }
+		/// <summary>
+		/// Merges some enumerable set of data, where each piece is an <see cref="IDictionary"/> containing an 'itemID'[long] key value
+		/// </summary>
+		public static void MergeItemDB(object rawDb)
+		{
+			DBMerge(rawDb, "itemID");
+		}
 
-        private static void DBMerge(object rawDb, string keyID)
-        {
-            // The format of a typical DB is a dictionary of ID -> Values.
-            if (rawDb is Dictionary<long, object> db)
-            {
-                DBMerge(db, keyID);
-            }
-            // We also support a raw set of objects which are Dictionaries.
-            else if (rawDb is IEnumerable<object> dbList)
-            {
-                DBMerge(dbList, keyID);
-            }
-            else
-            {
-                ThrowBadFormatDB(keyID + "DB", rawDb);
-            }
-        }
+		private static void DBMerge(object rawDb, string keyID)
+		{
+			// The format of a typical DB is a dictionary of ID -> Values.
+			if (rawDb is Dictionary<long, object> db)
+			{
+				DBMerge(db, keyID);
+			}
+			// We also support a raw set of objects which are Dictionaries.
+			else if (rawDb is IEnumerable<object> dbList)
+			{
+				DBMerge(dbList, keyID);
+			}
+			else
+			{
+				ThrowBadFormatDB(keyID + "DB", rawDb);
+			}
+		}
 
-        private static void DBMerge(Dictionary<long, object> db, string keyID)
-        {
-            foreach (var dbEntry in db)
-            {
-                if (dbEntry.Value is IDictionary<string, object> data)
-                {
-                    data[keyID] = dbEntry.Key;
-                    DBMerge(data, keyID);
-                }
-                else
-                {
-                    ThrowBadFormatDB(keyID + "DB", dbEntry);
-                }
-            }
-        }
+		private static void DBMerge(Dictionary<long, object> db, string keyID)
+		{
+			foreach (var dbEntry in db)
+			{
+				if (dbEntry.Value is IDictionary<string, object> data)
+				{
+					data[keyID] = dbEntry.Key;
+					DBMerge(data, keyID);
+				}
+				else
+				{
+					ThrowBadFormatDB(keyID + "DB", dbEntry);
+				}
+			}
+		}
 
-        public static void DBMerge(IEnumerable<object> dbList, string keyID, bool relaxed = false)
-        {
-            foreach (var o in dbList)
-            {
-                if (o is IDictionary<string, object> data)
-                {
-                    DBMerge(data, keyID, relaxed);
-                }
-                else
-                {
-                    ThrowBadFormatDB(keyID + "DB", o);
-                }
-            }
-        }
+		public static void DBMerge(IEnumerable<object> dbList, string keyID, bool relaxed = false)
+		{
+			foreach (var o in dbList)
+			{
+				if (o is IDictionary<string, object> data)
+				{
+					DBMerge(data, keyID, relaxed);
+				}
+				else
+				{
+					ThrowBadFormatDB(keyID + "DB", o);
+				}
+			}
+		}
 
-        public static void DBMerge(IDictionary<string, object> data, string keyID, bool relaxed = false)
-        {
-            if (data.ContainsKey(keyID))
-            {
-                Objects.MergeFromDB(keyID, data);
-            }
-            else if (!relaxed)
-            {
-                LogError($"Trying to merge DB data which doesn't have the expected Merge Key! {keyID}", data);
-            }
-        }
-    }
+		public static void DBMerge(IDictionary<string, object> data, string keyID, bool relaxed = false)
+		{
+			if (data.ContainsKey(keyID))
+			{
+				Objects.MergeFromDB(keyID, data);
+			}
+			else if (!relaxed)
+			{
+				LogError($"Trying to merge DB data which doesn't have the expected Merge Key! {keyID}", data);
+			}
+		}
+	}
 }

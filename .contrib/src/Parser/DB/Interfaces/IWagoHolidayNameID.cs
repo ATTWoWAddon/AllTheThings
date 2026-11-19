@@ -1,7 +1,7 @@
-﻿namespace ATT.DB
+namespace ATT.DB
 {
-    public interface IWagoHolidayNameID
-    {
-        long HolidayNameID { get; }
-    }
+	public interface IWagoHolidayNameID
+	{
+		long HolidayNameID { get; }
+	}
 }

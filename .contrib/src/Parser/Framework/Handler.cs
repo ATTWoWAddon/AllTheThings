@@ -1,4 +1,4 @@
-﻿using System.Collections.Concurrent;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using DataCondition = System.Func<System.Collections.Generic.IDictionary<string, object>, bool>;
 using DataAction = System.Action<System.Collections.Generic.IDictionary<string, object>>;
@@ -8,122 +8,122 @@ using System.Linq;
 
 namespace ATT
 {
-    public class Handler
-    {
-        /// <summary>
-        /// A static method which always returns true, useful for conditions which should always handle the data
-        /// </summary>
-        /// <returns>true</returns>
-        public static bool AlwaysHandle(Data _) => true;
+	public class Handler
+	{
+		/// <summary>
+		/// A static method which always returns true, useful for conditions which should always handle the data
+		/// </summary>
+		/// <returns>true</returns>
+		public static bool AlwaysHandle(Data _) => true;
 
-        public ParseStage Stage { get; set; }
+		public ParseStage Stage { get; set; }
 
-        public ConcurrentDictionary<DataCondition, ConcurrentQueue<DataAction>> ConditionActions { get; set; }
-            = new ConcurrentDictionary<DataCondition, ConcurrentQueue<DataAction>>();
+		public ConcurrentDictionary<DataCondition, ConcurrentQueue<DataAction>> ConditionActions { get; set; }
+			= new ConcurrentDictionary<DataCondition, ConcurrentQueue<DataAction>>();
 
-        public ConcurrentDictionary<DataAction, ConcurrentQueue<Data>> ActionDatas { get; set; }
-            = new ConcurrentDictionary<DataAction, ConcurrentQueue<Data>>();
+		public ConcurrentDictionary<DataAction, ConcurrentQueue<Data>> ActionDatas { get; set; }
+			= new ConcurrentDictionary<DataAction, ConcurrentQueue<Data>>();
 
-        public ConcurrentQueue<DataAction> ActionSequence { get; set; }
-            = new ConcurrentQueue<DataAction>();
+		public ConcurrentQueue<DataAction> ActionSequence { get; set; }
+			= new ConcurrentQueue<DataAction>();
 
-        public Handler(ParseStage stage)
-        {
-            Stage = stage;
-        }
+		public Handler(ParseStage stage)
+		{
+			Stage = stage;
+		}
 
-        public void AddConditionAction(DataCondition condition, DataAction action)
-        {
-            var actions = ConditionActions.GetOrAdd(condition, _ => new ConcurrentQueue<DataAction>());
+		public void AddConditionAction(DataCondition condition, DataAction action)
+		{
+			var actions = ConditionActions.GetOrAdd(condition, _ => new ConcurrentQueue<DataAction>());
 
-            actions.Enqueue(action);
+			actions.Enqueue(action);
 
-            if (!ActionDatas.ContainsKey(action) && ActionDatas.TryAdd(action, new ConcurrentQueue<Data>()))
-            {
-                ActionSequence.Enqueue(action);
-            }
-        }
+			if (!ActionDatas.ContainsKey(action) && ActionDatas.TryAdd(action, new ConcurrentQueue<Data>()))
+			{
+				ActionSequence.Enqueue(action);
+			}
+		}
 
-        internal void AddData(Data data)
-        {
-            foreach (KeyValuePair<DataCondition, ConcurrentQueue<DataAction>> conditionActions in ConditionActions)
-            {
-                if (conditionActions.Key(data))
-                {
-                    foreach (var action in conditionActions.Value)
-                    {
-                        ActionDatas[action].Enqueue(data);
-                    }
-                }
-            }
-        }
+		internal void AddData(Data data)
+		{
+			foreach (KeyValuePair<DataCondition, ConcurrentQueue<DataAction>> conditionActions in ConditionActions)
+			{
+				if (conditionActions.Key(data))
+				{
+					foreach (var action in conditionActions.Value)
+					{
+						ActionDatas[action].Enqueue(data);
+					}
+				}
+			}
+		}
 
-        public void RunActions()
-        {
-            long configTrackItemID = (long)Framework.Config["TRACK_itemID"];
-            DataAction action = null;
-            foreach (var act in ActionSequence)
-            {
-                Framework.Log($".. Running '{act.Method.Name}' on {ActionDatas[act].Count} groups");
-                // use a custom action if we want to track item changes
-                if (Debugger.IsAttached || configTrackItemID > 0)
-                {
-                    action = data =>
-                    {
-                        bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == configTrackItemID;
-                        if (track)
-                            Framework.Log($"Tracking Item: {tempItemID} change during {act.Method.Name} handler", data);
-                        act(data);
-                        if (track)
-                            Framework.Log($"Resulting Item: {tempItemID} after {act.Method.Name} handler", data);
-                    };
-                }
+		public void RunActions()
+		{
+			long configTrackItemID = (long)Framework.Config["TRACK_itemID"];
+			DataAction action = null;
+			foreach (var act in ActionSequence)
+			{
+				Framework.Log($".. Running '{act.Method.Name}' on {ActionDatas[act].Count} groups");
+				// use a custom action if we want to track item changes
+				if (Debugger.IsAttached || configTrackItemID > 0)
+				{
+					action = data =>
+					{
+						bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == configTrackItemID;
+						if (track)
+							Framework.Log($"Tracking Item: {tempItemID} change during {act.Method.Name} handler", data);
+						act(data);
+						if (track)
+							Framework.Log($"Resulting Item: {tempItemID} after {act.Method.Name} handler", data);
+					};
+				}
 
-                if (Debugger.IsAttached)
-                {
-                    foreach (var data in ActionDatas[act])
-                    {
-                        (action ?? act)(data);
-                    }
-                }
-                else
-                {
-                    // copy the set of concurrent actions into a new container for the parallel access to be allowed
-                    var actionDatas = ActionDatas[act].ToArray();
-                    actionDatas.AsParallel().ForAll(action ?? act);
-                }
-            }
-        }
+				if (Debugger.IsAttached)
+				{
+					foreach (var data in ActionDatas[act])
+					{
+						(action ?? act)(data);
+					}
+				}
+				else
+				{
+					// copy the set of concurrent actions into a new container for the parallel access to be allowed
+					var actionDatas = ActionDatas[act].ToArray();
+					actionDatas.AsParallel().ForAll(action ?? act);
+				}
+			}
+		}
 
-        public void RunActions(Data singleData)
-        {
-            long configTrackItemID = (long)Framework.Config["TRACK_itemID"];
-            DataAction action = null;
+		public void RunActions(Data singleData)
+		{
+			long configTrackItemID = (long)Framework.Config["TRACK_itemID"];
+			DataAction action = null;
 
-            foreach (KeyValuePair<DataCondition, ConcurrentQueue<DataAction>> conditionActions in ConditionActions)
-            {
-                if (conditionActions.Key(singleData))
-                {
-                    foreach (var act in conditionActions.Value)
-                    {
-                        // use a custom action if we want to track item changes
-                        if (Debugger.IsAttached || configTrackItemID > 0)
-                        {
-                            action = data =>
-                            {
-                                bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == configTrackItemID;
-                                if (track)
-                                    Framework.Log($"Tracking Item: {tempItemID} change during {act.Method.Name} handler", data);
-                                act(data);
-                                if (track)
-                                    Framework.Log($"Resulting Item: {tempItemID} after {act.Method.Name} handler", data);
-                            };
-                        }
+			foreach (KeyValuePair<DataCondition, ConcurrentQueue<DataAction>> conditionActions in ConditionActions)
+			{
+				if (conditionActions.Key(singleData))
+				{
+					foreach (var act in conditionActions.Value)
+					{
+						// use a custom action if we want to track item changes
+						if (Debugger.IsAttached || configTrackItemID > 0)
+						{
+							action = data =>
+							{
+								bool track = data.TryGetValue("itemID", out long tempItemID) && tempItemID == configTrackItemID;
+								if (track)
+									Framework.Log($"Tracking Item: {tempItemID} change during {act.Method.Name} handler", data);
+								act(data);
+								if (track)
+									Framework.Log($"Resulting Item: {tempItemID} after {act.Method.Name} handler", data);
+							};
+						}
 
-                        (action ?? act)(singleData);
-                    }
-                }
-            }
-        }
-    }
+						(action ?? act)(singleData);
+					}
+				}
+			}
+		}
+	}
 }

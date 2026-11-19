@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace ATT.DB
 {
-    public interface IDBType
-    {
-        long ID { get; }
-    }
+	public interface IDBType
+	{
+		long ID { get; }
+	}
 }

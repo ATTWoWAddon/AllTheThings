@@ -1,7 +1,7 @@
-﻿namespace ATT.DB
+namespace ATT.DB
 {
-    public interface IWagoTransmogSetID
-    {
-        long TransmogSetID { get; }
-    }
+	public interface IWagoTransmogSetID
+	{
+		long TransmogSetID { get; }
+	}
 }

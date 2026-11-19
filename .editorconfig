@@ -214,7 +214,7 @@ insert_final_newline = true
 
 # Windows PowerShell 5.1 uses the UTF-8 BOM to recognize non-ASCII text.
 # Keep this encoding consistent even when these scripts are ASCII-only.
-[/{.contrib/.tools/GameObjectCache-to-ObjectDB.ps1,.contrib/src/Parser/tests/CostMerge.Tests.ps1,.contrib/src/Parser/tests/LocalizationFallback.Tests.ps1}]
+[/{.contrib/.tools/GameObjectCache-to-ObjectDB.ps1,.contrib/src/Parser/tests/CostMerge.Tests.ps1,.contrib/src/Parser/tests/LocalizationFallback.Tests.ps1,.github/scripts/Check-CSharpFormatting.ps1}]
 charset = utf-8-bom
 end_of_line = lf
 indent_style = tab
@@ -223,15 +223,25 @@ tab_width = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-# Parser test sources
-[/.contrib/src/Parser/tests/*.cs]
+# Project-maintained C# sources
+[*.cs]
 charset = utf-8
 end_of_line = lf
-indent_style = space
+indent_style = tab
 indent_size = 4
 tab_width = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+# Preserve native third-party and generated C# sources
+[**/{MiniJSON.cs,*.Designer.cs}]
+charset = utf-8-bom
+end_of_line = crlf
+indent_style = space
+indent_size = unset
+tab_width = unset
+trim_trailing_whitespace = unset
+insert_final_newline = unset
 
 [/.contrib/db-sync/sync-db.cmd]
 charset = utf-8

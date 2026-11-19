@@ -1,7 +1,7 @@
-﻿namespace ATT.DB
+namespace ATT.DB
 {
-    public interface IWagoChild
-    {
-        long Parent { get; }
-    }
+	public interface IWagoChild
+	{
+		long Parent { get; }
+	}
 }

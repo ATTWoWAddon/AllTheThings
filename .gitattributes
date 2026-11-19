@@ -22,7 +22,7 @@
 # C# project file
 *.csproj    text eol=lf
 # C# source code
-*.cs        text eol=crlf
+*.cs        text eol=lf
 # text file
 *.text      text eol=crlf
 # xml file
@@ -156,6 +156,7 @@ docs export-ignore
 # GitHub Actions workflows
 /.github/workflows/*.yml text eol=lf
 /.github/scripts/Check-EditorConfig.ps1 text eol=lf
+/.github/scripts/Check-CSharpFormatting.ps1 text eol=lf
 
 # Windows PowerShell 5.1 scripts
 /.contrib/.tools/GameObjectCache-to-ObjectDB.ps1 text eol=lf
@@ -163,6 +164,9 @@ docs export-ignore
 /.contrib/src/Parser/tests/LocalizationFallback.Tests.ps1 text eol=lf
 # Parser test sources
 /.contrib/src/Parser/tests/*.cs text eol=lf
+# Preserve native third-party and generated C# line endings
+MiniJSON.cs text eol=crlf
+*.Designer.cs text eol=crlf
 # Windows harvester batch scripts
 /.contrib/Harvesters/*.bat text eol=crlf
 /.contrib/Harvesters/DBs/*.bat text eol=crlf

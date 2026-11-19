@@ -10,12 +10,20 @@ on:
       - '.contrib/src/Parser/**'
       - '**/*.cs'
       - '**/*.csproj'
+      - '.editorconfig'
+      - '.gitattributes'
+      - '.github/scripts/Check-EditorConfig.ps1'
+      - '.github/scripts/Check-CSharpFormatting.ps1'
       - '.github/workflows/BuildTools.yml'
   pull_request:
     paths:
       - '.contrib/src/Parser/**'
       - '**/*.cs'
       - '**/*.csproj'
+      - '.editorconfig'
+      - '.gitattributes'
+      - '.github/scripts/Check-EditorConfig.ps1'
+      - '.github/scripts/Check-CSharpFormatting.ps1'
       - '.github/workflows/BuildTools.yml'
   workflow_dispatch:
 
@@ -117,6 +125,70 @@ jobs:
           if ($failures.Count -gt 0) {
             throw "$($failures.Count) of $($tests.Count) Parser test suites failed."
           }
+
+  csharp-format:
+    name: C# formatting on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest]
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      GIT_CONFIG_COUNT: 2
+      GIT_CONFIG_KEY_0: core.autocrlf
+      GIT_CONFIG_VALUE_0: 'false'
+      GIT_CONFIG_KEY_1: core.longpaths
+      GIT_CONFIG_VALUE_1: 'true'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up stable .NET 10 SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.x'
+          dotnet-quality: 'ga'
+
+      - name: Install editorconfig-checker 4.0.2
+        uses: editorconfig-checker/action-editorconfig-checker@51f63319f592f97930c73d9c46184d20bd206393
+        with:
+          version: v4.0.2
+
+      - name: Verify formatting tool versions
+        id: tools
+        run: |
+          $installedSdks = (& dotnet --list-sdks 2>&1 | Out-String)
+          if ($LASTEXITCODE -ne 0 -or $installedSdks -notmatch '(?m)^10\.\d+\.\d+ \[') {
+            throw 'Expected a stable .NET 10 SDK to be installed.'
+          }
+          $checker = Get-Command 'editorconfig-checker' -CommandType Application -ErrorAction Stop |
+            Select-Object -First 1
+          $checkerVersion = (& $checker.Source --version 2>&1 | Out-String).Trim()
+          if ($LASTEXITCODE -ne 0 -or $checkerVersion -notmatch '(^|\s)v?4\.0\.2($|\s)') {
+            throw "Expected editorconfig-checker 4.0.2; got '$checkerVersion'."
+          }
+          Write-Host "Found a stable .NET 10 SDK and editorconfig-checker $checkerVersion"
+
+      - name: Check C# EditorConfig groups
+        if: ${{ !cancelled() && steps.tools.outcome == 'success' }}
+        run: |
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group csharp-sources -VerboseChecker
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & ./.github/scripts/Check-EditorConfig.ps1 -Group parser-test-sources -VerboseChecker
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Verify C# formatting and file bytes
+        if: ${{ !cancelled() && steps.tools.outcome == 'success' }}
+        run: |
+          & ./.github/scripts/Check-CSharpFormatting.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
   build-csharp-tools:
     name: Build remaining C# tools

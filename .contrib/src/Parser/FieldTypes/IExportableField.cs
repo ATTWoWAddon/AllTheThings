@@ -1,9 +1,9 @@
-﻿namespace ATT.FieldTypes
+namespace ATT.FieldTypes
 {
-    public interface IExportableField
-    {
-        object AsExportType();
+	public interface IExportableField
+	{
+		object AsExportType();
 
-        bool HasData { get; }
-    }
+		bool HasData { get; }
+	}
 }

@@ -1,7 +1,7 @@
-﻿namespace ATT.DB
+namespace ATT.DB
 {
-    public interface IWagoQuestID
-    {
-        long QuestID { get; }
-    }
+	public interface IWagoQuestID
+	{
+		long QuestID { get; }
+	}
 }

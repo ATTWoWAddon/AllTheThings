@@ -1,7 +1,7 @@
-﻿namespace ATT.DB
+namespace ATT.DB
 {
-    public interface IWagoItemModifiedAppearanceID
-    {
-        long ItemModifiedAppearanceID { get; }
-    }
+	public interface IWagoItemModifiedAppearanceID
+	{
+		long ItemModifiedAppearanceID { get; }
+	}
 }
