@@ -261,6 +261,7 @@ root(ROOTS.Character, {
 			lvl = 60,
 			sym = {{"select","itemID",
 				13334,	-- Green Skeletal Warhorse (MOUNT!)
+				274799,	-- Ochre Skeletal Warhorse (MOUNT!)
 			}},
 			groups = {
 				objective(1, {	-- 0/1 Ochre Skeletal Warhorse
@@ -275,7 +276,6 @@ root(ROOTS.Character, {
 					provider = { "n", 276796 },	-- Green Skeletal Warhorse
 					coord = { 59.8, 52.6, MAP.TIRISFAL_GLADES },
 				}),
-				i(274799),	-- Ochre Skeletal Warhorse (MOUNT!)
 				i(265840),	-- Purple Skeletal Horse (MOUNT!)
 			},
 		}),

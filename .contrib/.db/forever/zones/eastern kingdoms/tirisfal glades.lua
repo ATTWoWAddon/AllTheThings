@@ -2297,6 +2297,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(13334),	-- Green Skeletal Warhorse (MOUNT!)
+					i(274799, {	-- Ochre Skeletal Warhorse (MOUNT!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(18791),	-- Purple Skeletal Warhorse (MOUNT!)
 					i(13331),	-- Red Skeletal Horse (MOUNT!)
 				},

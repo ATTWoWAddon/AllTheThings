@@ -20747,6 +20747,7 @@ mnt(17463,{itemID=13332,lvl=40,requireSkill=554}),
 mnt(17464,{itemID=13333,lvl=40,requireSkill=554}),
 i(276063,{awp=16001,f=100,lvl=40,requireSkill=554,spellID=1298496}),
 mnt(17465,{itemID=13334,lvl=60,requireSkill=554}),
+i(274799,{awp=16001,f=100,lvl=60,requireSkill=554,spellID=1295387}),
 mnt(23246,{itemID=18791,lvl=60,requireSkill=554}),
 mnt(17462,{itemID=13331,lvl=40,requireSkill=554})}}))}),
 h(-63,{
