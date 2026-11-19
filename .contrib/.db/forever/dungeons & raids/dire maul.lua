@@ -1127,6 +1127,7 @@ instanceroot(230, {	-- Dire Maul
 						i(18353),	-- Stoneflower Staff
 						i(18390),	-- Tanglemoss Leggings
 						i(18393),	-- Warpwood Binding
+						i(273120),	-- Blueprint: Seed Hybridizer (RECIPE!)
 					},
 				}),
 				e(409, {	-- Immol'thar
@@ -1141,6 +1142,7 @@ instanceroot(230, {	-- Dire Maul
 						i(18377),	-- Quickdraw Gloves
 						i(18385),	-- Robe of Everlasting Night
 						i(18370),	-- Vigilance Charm
+						i(285949),	-- Blood of Immol'thar
 					},
 				}),
 				n(14506, {	-- Lord Hel'nurath

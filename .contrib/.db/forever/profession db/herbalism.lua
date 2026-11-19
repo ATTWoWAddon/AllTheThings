@@ -11,10 +11,9 @@ i(0, 3570);			-- Herbalism (Expert)
 i(0, 11993);		-- Herbalism (Artisan)
 --- ITEM ---
 i(273106, 1262980);	-- Greenhouse
+i(273120, 1263070);	-- Seed Hybridizer
 --- UNKNOWN ---
 --[[
 r(1278062),	-- Gardening
 r(1235236),	-- Herb Gathering
-r(1263070),	-- Seed Hybridizer
-i(273120),	-- Blueprint: Seed Hybridizer
 --]]

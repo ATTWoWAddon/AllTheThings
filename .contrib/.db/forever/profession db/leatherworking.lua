@@ -371,6 +371,7 @@ i(252896, 1255011);	-- Stalker's Mail Boots
 i(252865, 1255042);	-- Tooled Leather Boots
 i(252845, 1255062);	-- Warden's Leather Shoes
 i(252879, 1255028);	-- Wicked Leather Boots
+i(273121, 1263079);	-- Sewing Machine
 --- UNKNOWN ---
 --[[
 r(1254968),	-- Black Dragonscale Helm
@@ -501,8 +502,6 @@ i(279304),	-- Pattern: Eternity Pauldrons
 i(279306),	-- Pattern: Mourning Handguards
 i(279305),	-- Pattern: Tranquil Wristguards
 r(1306530),	-- Tranquil Wristguards
-r(1263079),	-- Sewing Machine
-i(273121),	-- Blueprint: Sewing Machine
 --- UNRELEASED CONTENT ---
 -- Dire Maul
 i(0, 22815);		-- Gordok Ogre Suit

@@ -687,6 +687,8 @@ instanceroot(246, {	-- Scholomance
 		n(10432, {	-- Vectus
 			i(18691),	-- Dark Advisor's Pendant
 			i(14577),	-- Skullsmoke Pants
+			i(273121),	-- Blueprint: Sewing Machine (RECIPE!)
+			i(273130),	-- Undeath Engine
 		}),
 		n(10508, {	-- Ras Frostwhisper
 			i(13626, {	-- Human Head of Ras Frostwhisper
@@ -707,6 +709,9 @@ instanceroot(246, {	-- Scholomance
 			i(14502),	-- Frostbite Girdle
 			i(14522),	-- Maelstrom Leggings
 			i(18694),	-- Shadowy Mail Greaves
+			i(273112),	-- Blueprint: Alchemy Laboratory (RECIPE!)
+			i(273125),	-- Lich's Index Finger
+			i(285960),	-- Everfrost Sample
 		}),
 		n(16118, {	-- Kormok
 			description = "This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",
@@ -767,6 +772,7 @@ instanceroot(246, {	-- Scholomance
 			i(13523),	-- Blood of Innocents
 			i(16684),	-- Magister's Gloves
 			i(14617),	-- Sawbones Shirt
+			i(273118),	-- Blueprint: Plague Doctor's Laboratory (RECIPE!)
 		}),
 		n(10901, {	-- Lorekeeper Polkelt
 			i(16705),	-- Dreadmist Wraps
@@ -801,6 +807,7 @@ instanceroot(246, {	-- Scholomance
 				i(13398),	-- Boots of the Shrieker
 				i(22433),	-- Don Mauricio's Band of Domination
 				i(19276),	-- Ace of Portals
+				i(285962),	-- Gandling's Signet Ring
 			},
 		}),
 	},

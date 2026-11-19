@@ -437,6 +437,8 @@ instanceroot(236, {	-- Stratholme
 					description = "In order to summon this boss, one of your party members must be on the quest.",
 					groups = {
 						i(13172),	-- Siabi's Premium Tobacco / Grimm's Premium Tobacco
+						i(273117),	-- Blueprint: Anarchist's Workbench (RECIPE!)
+						i(273129),	-- Essence of Anarchy
 					},
 				}),
 				n(11082, {	-- Stratholme Courier
@@ -677,6 +679,8 @@ instanceroot(236, {	-- Stratholme
 						i(13514, {	-- Wail of the Banshee
 							description = "This can be used on raid bosses and in PVP... Probably not a bad idea to keep on you.",
 						}),
+						i(273124),	-- Blueprint: Loom (RECIPE!)
+						i(273131),	-- Bottled Screams
 					},
 				}),
 				e(453, {	-- Maleki the Pallid
@@ -748,6 +752,7 @@ instanceroot(236, {	-- Stratholme
 						i(13344),	-- Dracorian Gauntlets
 						i(22410),	-- Gauntlets of Deftness
 						i(13345),	-- Seal of Rivendare
+						i(285873),	-- Shattered Pauldron of Rivendare
 					},
 				}),
 			},

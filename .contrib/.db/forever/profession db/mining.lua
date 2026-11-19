@@ -26,10 +26,9 @@ i(0, 1306126);		-- Smelt Heavy Thorium
 i(0, 14891);		-- Smelt Dark Iron
 --- ITEM ---
 i(273097, 1262975);	-- Rock Garden
+i(273122, 1263071);	-- Molten Foundry
 --- UNKNOWN ---
 --[[
 r(1235230),	-- Mining
-r(1263071),	-- Molten Foundry
-i(273122),	-- Blueprint: Molten Foundry
 r(22967),	-- Smelt Elementium
 --]]

@@ -190,6 +190,7 @@ i(249487, 1248461);	-- Twisted Nether Wand
 i(249511, 1248510);	-- Enchant 2H Weapon - Lesser Agility
 i(249513, 1248511);	-- Enchant 2H Weapon - Lesser Strength
 i(274424, 1294054);	-- Enchant Gloves - Lotus Claw
+i(273116, 1263082);	-- Arcane Forge
 --- UNKNOWN ---
 --[[
 r(1217189),	-- Enchant Bracer - Spell Power
@@ -232,8 +233,6 @@ r(1249112),	-- Molten Heart of the Mountain
 r(1249114),	-- Dormant Heart of the Mountain
 r(1248668),	-- Enchant 2H Weapon - Strength
 i(249523),	-- Formula: Enchant 2H Weapon - Strength
-r(1263082),	-- Arcane Forge
-i(273116),	-- Blueprint: Arcane Forge
 r(1248599),	-- Enchant Bracer - Superior Agility
 i(249524),	-- Formula: Enchant Bracer - Superior Agility
 -- new raid?

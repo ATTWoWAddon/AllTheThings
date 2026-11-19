@@ -337,6 +337,7 @@ instanceroot(2994, {	-- Alcaz Prison
 				i(276732),	-- Alcaz Willcrusher
 				i(276733),	-- Grips of Control
 				i(276734),	-- Wrex's Pinky Ring
+				i(263992),	-- Overseer's Keyring
 			},
 		}),
 		e(3410, {	-- Tidemistress Ca'zass

@@ -331,6 +331,7 @@ i(251441, 1252338);	-- Imperial Plate Gauntlets
 i(285289, 1317962);	-- Cracked Blacksmith Hammer
 i(285290, 1317963);	-- Mithril Blacksmith Hammer
 i(285291, 1317964);	-- Arcanite Blacksmith Hammer
+i(273113, 1263073);	-- Master Forge
 --- UNKNOWN ---
 --[[
 r(1224636),	-- Scarlet Soldier's Grips
@@ -403,8 +404,6 @@ r(1252350),	-- Breastplate of Salvation
 i(251453),	-- Plans: Breastplate of Salvation
 r(1252349),	-- Martyr's Legplates
 i(251452),	-- Plans: Martyr's Legplates
-r(1263073),	-- Master Forge
-i(273113),	-- Blueprint: Master Forge
 -- new raid?
 r(1306535),	-- Greenhammer
 i(279310),	-- Plans: Greenhammer

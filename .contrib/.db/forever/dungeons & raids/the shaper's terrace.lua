@@ -133,6 +133,9 @@ instanceroot(3001, {	-- The Shaper's Terrace
 		}),
 		e(3507, {	-- Direhorn Matriarch
 			creatureID = 262127,	-- Direhorn Matriarch
+			groups = {
+				i(285951),	-- Direhorn Matriarch's Heart
+			},
 		}),
 		e(3503, {	-- Cinder
 			creatureID = 261974,	-- Cinder
@@ -150,6 +153,11 @@ instanceroot(3001, {	-- The Shaper's Terrace
 		}),
 		e(3502, {	-- Nanaya
 			creatureID = 261809,	-- Nanaya
+			groups = {
+				i(273116),	-- Blueprint: Arcane Forge (RECIPE!)
+				i(273128),	-- Maker's Spark
+				i(285952),	-- Stone Heart of the Watcher
+			},
 		}),
 	},
 });

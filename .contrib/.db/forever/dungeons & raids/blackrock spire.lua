@@ -1117,6 +1117,7 @@ instanceroot(229, {	-- Blackrock Spire
 					i(13247, {	-- Quartermaster Zigris' Footlocker
 						description = "Contains a random green item.",
 					}),
+					i(273115),	-- Blueprint: Baker's Oven (RECIPE!)
 				},
 			}),
 			e(394, {	-- Halycon
@@ -1262,6 +1263,7 @@ instanceroot(229, {	-- Blackrock Spire
 					i(18102),	-- Dragonrider Boots
 					i(22247),	-- Faith Healer's Boots
 					i(18103),	-- Band of Rumination
+					i(285808),	-- Eye of Blackhand
 				}),
 				n(10430, {	-- The Beast
 					i(12731, {	-- Pristine Hide of the Beast
@@ -1327,6 +1329,7 @@ instanceroot(229, {	-- Blackrock Spire
 					i(13142),	-- Brigam Girdle
 					i(13098),	-- Painweaver Band
 					i(22268),	-- Draconic Infused Emblem
+					i(285868),	-- Eye of Drakkisath
 				}),
 			},
 		}),

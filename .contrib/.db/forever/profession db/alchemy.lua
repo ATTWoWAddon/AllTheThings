@@ -164,6 +164,7 @@ i(250368, 1250781);	-- Cleric's Elixir
 i(250999, 1251753);	-- Potion of Beast Culling
 i(250998, 1251752);	-- Potion of Elemental Siphoning
 --[[
+i(273112, 1263078);	-- Alchemy Laboratory
 --- UNKNOWN ---
 r(2365),	-- Draught of Tongues
 i(2556),	-- TODO: Item name not known yet.
@@ -186,8 +187,6 @@ r(1251739),	-- Superior Frenzy Potion
 i(250986),	-- Recipe: Superior Frenzy Potion
 r(1244421),	-- Distilled Firewater
 i(236754),	-- Recipe: Distilled Firewater
-r(1263078),	-- Alchemy Laboratory
-i(273112),	-- Blueprint: Alchemy Laboratory
 r(1317279),	-- Transmute: Legionite
 i(284871),	-- Recipe: Transmute Legionite
 -- New Raid??

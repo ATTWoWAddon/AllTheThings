@@ -112,6 +112,7 @@ i(249882, 1249960);	-- Triage Tea
 i(286153, 1319313);	-- Plated Armorfish
 i(250184, 1250153);	-- Raptor Rouladen
 i(250173, 1250142);	-- Savory Stag Sliders
+i(273115, 1263067);	-- Iron Oven
 --- UNKNOWN ---
 --[[
 r(1255241),	-- Cleansing Stew
@@ -167,7 +168,5 @@ i(238649),	-- Recipe: Specklefin Feast
 i(250398),	-- TODO: Item name not known yet.
 r(25659),	-- Dirge's Kickin' Chimaerok Chops
 i(21025),	-- Recipe: Dirge's Kickin' Chimaerok Chops
-r(1263067),	-- Iron Oven
-i(273115),	-- Blueprint: Baker's Oven
 r(24801),	-- Smoked Desert Dumplings
 --]]

@@ -209,6 +209,7 @@ i(0, 12758, nil, GOBLIN_ENGINEERING);	-- Goblin Rocket Helmet
 i(0, 12760, nil, GOBLIN_ENGINEERING);	-- Goblin Sapper Charge
 i(11828, 15628, nil, GOBLIN_ENGINEERING);	-- Pet Bombling
 i(0, 12754, nil, GOBLIN_ENGINEERING);	-- The Big One
+i(273117, 1263083);	-- Anarchist's Workbench
 --- UNSURE ---
 i(22729, 28327);	-- Steam Tonk Controller
 --- UNKNOWN ---
@@ -277,8 +278,6 @@ i(274389),	-- Schematic: Swiftfeather Arrow
 i(274390),	-- Schematic: Swiftstrike Shot
 i(279321),	-- Schematic: SAF-T Ultra Precision Scope
 r(1306546),	-- SAF-T Ultra Precision Scope
-r(1263083),	-- Anarchist's Workbench
-i(273117),	-- Blueprint: Anarchist's Workbench
 r(1266934),	-- EZ and SAF Field Transporter: Mt. Hyjal
 i(264231),	-- Schematic: EZ and SAF Field Transporter: Mt. Hyjal
 r(1266930),	-- EZ-Thro Dark Bomb

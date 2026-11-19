@@ -495,6 +495,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 			i(10806),	-- Vestments of the Atal'ai Prophet
 			i(10808),	-- Gloves of the Atal'ai Prophet
 			i(10807),	-- Kilt of the Atal'ai Prophet
+			i(273119),	-- Blueprint: Fishing Hut (RECIPE!)
 		}),
 		e(459, {	-- Wardens of the Dream
 			description = "These four dragons come in pairs. You can tank them away from each other if you pull the one that's behind the other one and get really lucky.",

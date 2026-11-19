@@ -356,12 +356,12 @@ i(275582, 1297122);	-- Venomspew Footpads
 i(275583, 1297123);	-- Swarmtender's Gloves
 i(275584, 1297124);	-- Swarmtender's Cord
 i(275585, 1297125);	-- Swarmtender's Footpads
+i(273124, 1263080);	-- Loom
 --- UNSURE ---
 i(0, 26086);		-- Felcloth Bag
 --[[
 -- unknown
 r(1257476),	-- Black Gloves
-i(273124),	-- Blueprint: Loom
 r(1257495),	-- Bottomless Reagent Bag
 r(1257432),	-- Earthen Silk Slippers
 r(1257472),	-- Earthenweave Boots
@@ -379,7 +379,6 @@ r(1257493),	-- Ghostweave Hood
 r(1257489),	-- Ghostweave Mantle
 r(1257473),	-- Gilded Gloves
 r(1257477),	-- Golden Gloves
-r(1263080),	-- Loom
 i(254102),	-- Pattern: Black Gloves
 i(254140),	-- Pattern: Bottomless Reagent Bag
 i(254014),	-- Pattern: Earthen Silk Slippers
