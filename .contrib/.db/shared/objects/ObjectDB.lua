@@ -308981,6 +308981,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Schriftrollen",
 			fr = "Parchemins",
 			ru = "Свитки",
+			cn = "卷轴",
 		},
 	},
 	[409501] = {
@@ -309036,6 +309037,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Parchemins",
 			ru = "Свитки",
 			ko = "두루마리",
+			cn = "卷轴",
 		},
 	},
 	[409717] = {
@@ -309046,6 +309048,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			es = "Pergaminos",
 			de = "Schriftrollen",
 			fr = "Parchemins",
+			cn = "卷轴",
 		},
 	},
 	[409731] = {
@@ -309057,6 +309060,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Parchemins",
 			ru = "Свитки",
 			ko = "두루마리",
+			cn = "卷轴",
 		},
 	},
 	[409735] = {
@@ -312001,6 +312005,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Pergaminhos",
 			ru = "Свитки",
 			ko = "두루마리",
+			cn = "卷轴",
 		},
 	},
 	[423898] = {
@@ -312030,6 +312035,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			it = "Scrolls",
 			ru = "Свитки",
 			ko = "두루마리",
+			cn = "卷轴",
 		},
 	},
 	[423900] = {
