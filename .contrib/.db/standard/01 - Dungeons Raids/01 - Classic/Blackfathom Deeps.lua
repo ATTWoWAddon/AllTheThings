@@ -195,7 +195,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					lvl = 20,
 					groups = {
 						objective(1, {	-- 0/1 Ghamoo-Ra slain
-							provider = { "n", 4887 },	-- Ghamoo-Ra
+							provider = { "n", 4887 },	-- Ghamoo-ra
 						}),
 						objective(2, {	-- 0/1 Lady Sarevess slain
 							provider = { "n", 4831 },	-- Lady Sarevess

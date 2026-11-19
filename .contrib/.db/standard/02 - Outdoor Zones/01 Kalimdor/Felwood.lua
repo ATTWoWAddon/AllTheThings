@@ -2538,7 +2538,7 @@ maproot(KALIMDOR, FELWOOD, {
 				crs = {
 					7118,	-- Jaedendar Darkweaver
 					7114,	-- Jaedendar Enforcer
-					9862,	-- Jaedendar Legionnaire
+					9862,	-- Jaedenar Legionnaire
 					7120,	-- Jaedendar Warlock
 				},
 			}),

@@ -136,7 +136,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				lvl = 55,
 			}),
 			q(27471, {	-- Blackrock Anomaly
-				qg = 9562,	-- Hellendis Riverhorn
+				qg = 9562,	-- Helendis Riverhorn
 				coord = { 73.4, 66.2, BURNING_STEPPES },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,

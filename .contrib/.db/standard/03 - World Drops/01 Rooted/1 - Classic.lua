@@ -4027,7 +4027,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				5857,	-- Searing Lava Spider
 				-- #endif
 				4412,	-- Darkfang Creeper
-				4414,	-- Darkfang Venomspider
+				4414,	-- Darkfang Venomspitter
 				4378,	-- Darkmist Recluse
 				4379,	-- Darkmist Silkspinner
 				4376,	-- Darkmist Spider
@@ -5133,7 +5133,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #if AFTER 4.0.3
 				43704,	-- Dire Wolf
 				-- #else
-				565,	-- Rapid Dire Wolf
+				565,	-- Rabid Dire Wolf
 				213,	-- Starving Dire Wolf
 				-- #endif
 			},

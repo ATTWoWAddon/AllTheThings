@@ -146,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								7337,	-- Death's Head Necromancer
 								7334,	-- Withered Battle Boar
 								7329,	-- Withered Quilguard
-								7328,	-- Wiethered Reaver
+								7328,	-- Withered Reaver
 								7332,	-- Withered Spearhide
 								7327,	-- Withered Warrior
 							},
