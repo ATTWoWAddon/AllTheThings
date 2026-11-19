@@ -513,7 +513,8 @@ i(18851,{b=1,c={5},f=53,spellID=23276}),
 i(18849,{b=1,c={4},f=53,spellID=23273}),
 i(18845,{b=1,c={7},f=53,spellID=5579}),
 i(18852,{b=1,c={9},f=53,spellID=23273}),
-i(18834,{b=1,c={1},f=53,spellID=5579})}}),
+i(18834,{b=1,c={1},f=53,spellID=5579}),
+s(162120,15197,{b=1,f=9})}}),
 h(-45,{
 q(785,{description="A Classic beta quest that is still in the client's quest data but has no quest giver in WoW Forever."})})}
 end)

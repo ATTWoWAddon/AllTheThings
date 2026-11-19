@@ -1152,9 +1152,6 @@ n(3334,{coords={
 [1454]={{44,58.4}}},r=1}),
 n(3319,{coords={
 [1454]={{55.6,73.6},{55.8,73}}},r=1,sym={{"select","symselector",28,29,33},{"pop"},{"select","itemID",17187,2445,17188,17185,1202,2376}}}),
-n(12799,{coords={
-[1454]={{41.6,68.6}}},r=1,g={
-s(162120,15197,{b=1,f=9})}}),
 n(14581,{description="Found within the Hall of Legends.",r=1,sym={{"select","symselector",6},{"find","headerID",-101},{"pop"}}}),
 n(3333,{coords={
 [1454]={{66.6,41.6}}},r=1,g={

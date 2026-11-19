@@ -1425,13 +1425,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					},
 				},
 			}),
-			n(12799, {	-- Sergeant Ba'sha <Accessories Quartermaster>
-				coord = { 41.6, 68.6, MAP.ORGRIMMAR },
-				races = HORDE_ONLY,
-				groups = {
-					i(15197),	-- Scout's Tabard
-				},
-			}),
 			n(14581, {	-- Sergeant Thunderhorn <Weapons Quartermaster>
 				description = "Found within the Hall of Legends.",
 				sym = {

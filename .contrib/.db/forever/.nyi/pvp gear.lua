@@ -574,6 +574,9 @@ root(ROOTS.NeverImplemented, {
 			i(18845, { classes = { SHAMAN }	}),	-- Insignia of the Horde
 			i(18852, { classes = { WARLOCK }	}),	-- Insignia of the Horde
 			i(18834, { classes = { WARRIOR }	}),	-- Insignia of the Horde
+
+			-- Tabard (Sergeant Ba'sha is no longer a vendor)
+			i(15197),	-- Scout's Tabard
 		},
 	}),
 });
