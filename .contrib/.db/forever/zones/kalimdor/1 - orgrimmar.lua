@@ -1094,7 +1094,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(272449, {	-- Scout's Tabard
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
-					i(15199),	-- Stone Guard's Herald
 					i(18839),	-- Combat Healing Potion
 					i(18841),	-- Combat Mana Potion
 					i(272450, {	-- Stone Guard's Herald
