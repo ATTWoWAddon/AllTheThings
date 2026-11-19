@@ -542,6 +542,9 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 	},
 });
 root(ROOTS.HiddenQuestTriggers, {
+	q(93653, {	-- TODO: unknown trigger; completed at 47.3, 67.4 in Shen'dralas (Contributor Report)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 	q(93656, {	-- Completed together with Powering the Pylons (96018)
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
