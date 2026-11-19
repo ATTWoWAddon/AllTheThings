@@ -191,6 +191,14 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 55,
 			}),
+			q(84212, {	-- Bookin' it Back
+				sourceQuest = 84211,	-- Poacher's Den
+				qg = 228216,	-- Nami
+				qi = 227285,	-- Fantastic Inventions (PQI!)
+				coord = { 61.2, 37.0, MAP.WINTERSPRING },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 58,
+			}),
 			q(4496, {	-- Bungle in the Jungle
 				sourceQuests = {
 					4494,	-- March of the Silithid [Horde]
@@ -662,6 +670,47 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					}),
 				},
 			}),
+			q(84211, {	-- Poacher's Den
+				sourceQuest = 84146,	-- Red Bag Blues
+				qg = 218236,	-- Red Bag
+				coord = { 53.0, 24.8, MAP.BURNING_STEPPES },
+				maps = { MAP.WINTERSPRING },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 58,
+				groups = {
+					objective(1, {	-- 0/5 Vertically Composited Patch Hampler
+						providers = {
+							{ "i", 226698 },	-- Vertically Composited Patch Hampler
+							{ "o", 456814 },	-- Vertically Composited Patch Hampler
+						},
+						crs = {
+							228610,	-- Blackrock Bootlegger
+							228609,	-- Sulfuron Smuggler
+						},
+					}),
+					objective(2, {	-- 0/5 Brass-fitted Flam-Tamp Flange
+						providers = {
+							{ "i", 226699 },	-- Brass-fitted Flam-Tamp Flange
+							{ "o", 456815 },	-- Brass-fitted Flam-Tamp Flange
+						},
+						crs = {
+							228610,	-- Blackrock Bootlegger
+							228609,	-- Sulfuron Smuggler
+						},
+					}),
+				},
+			}),
+			q(84146, {	-- Red Bag Blues
+				sourceQuest = 84138,	-- Frosty Favors
+				qg = 228216,	-- Nami
+				coord = { 61.2, 37.0, MAP.WINTERSPRING },
+				maps = { MAP.BURNING_STEPPES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
+				groups = {
+					i(226697),	-- Red Bag
+				},
+			}),
 			q(648, {	-- Rescue OOX-17/TN!
 				sourceQuest = 351,	-- Find OOX-17/TN!
 				qg = 7784,	-- Homing Robot OOX-17/TN
@@ -690,6 +739,22 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					i(11502),	-- Loreskin Shoulders
 					i(9635),	-- Master Apothecary Cape
 					i(9634),	-- Skilled Handling Gloves
+				},
+			}),
+			q(84213, {	-- Rift Away
+				sourceQuest = 84212,	-- Bookin' it Back
+				qg = 228956,	-- Sebastian Jurgens
+				qi = 276782,	-- Distant Communication Device (PQI!)
+				coord = { 59.2, 99.6, MAP.KALIMDOR },
+				maps = { MAP.TIRISFAL_GLADES, MAP.WESTFALL },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 58,
+				groups = {
+					objective(1, {	-- 0/1 Demo the technology
+						provider = { "n", 212252 },	-- Harvest Golem V000-A
+					}),
+					i(243177),	-- Ingenious Toy
+					i(208424),	-- Sun Shades
 				},
 			}),
 			q(3520, {	-- Screecher Spirits
