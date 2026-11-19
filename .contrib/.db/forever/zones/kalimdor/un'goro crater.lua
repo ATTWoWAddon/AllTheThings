@@ -804,6 +804,27 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			}),
 		}),
 		n(VENDORS, {
+			n(3000, {	-- Gibbert <Weapon Merchant>
+				coord = { 44.0, 7.2, MAP.UNGORO_CRATER },
+				sym = {{ "select", "itemID",
+					2527,	-- Battle Staff
+					2520,	-- Broadsword
+					2523,	-- Bullova
+					2522,	-- Crescent Axe
+					2528,	-- Falchion
+					2521,	-- Flamberge
+					2530,	-- Francisca
+					2531,	-- Great Axe
+					2526,	-- Main Gauche
+					2532,	-- Morning Star
+					2534,	-- Rondel
+					2524,	-- Truncheon
+					2525,	-- War Hammer
+					2533,	-- War Maul
+					2535,	-- War Staff
+					2529,	-- Zweihander
+				}},
+			}),
 			n(12959, {	-- Nergal <General Goods Vendor>
 				coord = { 43.2, 7.8, MAP.UNGORO_CRATER },
 				groups = {

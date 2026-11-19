@@ -1444,6 +1444,28 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 				},
 			}),
+			n(11137, {	-- Xai'ander <Weaponsmith>
+				coord = { 35.8, 52.0, MAP.ASHENVALE },
+				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					926,	-- Battle Axe
+					2527,	-- Battle Staff
+					2520,	-- Broadsword
+					2523,	-- Bullova
+					2522,	-- Crescent Axe
+					922,	-- Dacian Falx
+					927,	-- Double Axe
+					925,	-- Flail
+					2521,	-- Flamberge
+					2209,	-- Kris
+					928,	-- Long Staff
+					923,	-- Longsword
+					2526,	-- Main Gauche
+					924,	-- Maul
+					2524,	-- Truncheon
+					2525,	-- War Hammer
+				}},
+			}),
 		}),
 		n(ZONE_DROPS, {
 			i(1351, {	-- Fingerbone Bracers

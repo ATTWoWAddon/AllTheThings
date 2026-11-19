@@ -1159,6 +1159,16 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			n(4888, {	-- Marie Holdston <Weaponsmith> / <Blacksmithing Trainer> [CATA+]
 				coord = { 64.6, 50.0, MAP.DUSTWALLOW_MARSH, },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2527,	-- Battle Staff
+					2520,	-- Broadsword
+					2523,	-- Bullova
+					2522,	-- Crescent Axe
+					2521,	-- Flamberge
+					2526,	-- Main Gauche
+					2524,	-- Truncheon
+					2525,	-- War Hammer
+				}},
 				groups = {
 					i(12248, {	-- Daring Dirk
 						isLimited = true,
@@ -1234,6 +1244,16 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			n(4884, {	-- Zulrg <Weaponsmith>
 				coord = { 36.2, 31.6, MAP.DUSTWALLOW_MARSH, },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2527,	-- Battle Staff
+					2520,	-- Broadsword
+					2523,	-- Bullova
+					2522,	-- Crescent Axe
+					2521,	-- Flamberge
+					2526,	-- Main Gauche
+					2524,	-- Truncheon
+					2525,	-- War Hammer
+				}},
 				groups = {
 					i(12251, {	-- Big Stick
 						isLimited = true,

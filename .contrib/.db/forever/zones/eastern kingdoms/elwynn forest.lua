@@ -1915,6 +1915,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					2504,	-- Worn Shortbow
 				}},
 			}),
+			n(1645, {	-- Quartermaster Hicks <Master Weaponsmith>
+				coord = { 25.2, 73.8, MAP.ELWYNN_FOREST },
+				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2527,	-- Battle Staff
+					2520,	-- Broadsword
+					2523,	-- Bullova
+					2522,	-- Crescent Axe
+					2521,	-- Flamberge
+					2526,	-- Main Gauche
+					2524,	-- Truncheon
+					2525,	-- War Hammer
+				}},
+			}),
 			n(1198, {	-- Rallic Finn <Bowyer>
 				coord = { 83.2, 66.0, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,

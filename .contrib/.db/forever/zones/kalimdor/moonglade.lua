@@ -743,6 +743,22 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 					}),
 				},
 			}),
+			n(12024, {	-- Meliri <Weaponsmith>
+				coords = {
+					{ 51.2, 42.2, MAP.MOONGLADE },
+					{ 51.2, 42.6, MAP.MOONGLADE },
+				},
+				sym = {{ "select", "itemID",
+					2528,	-- Falchion
+					2530,	-- Francisca
+					2531,	-- Great Axe
+					2532,	-- Morning Star
+					2534,	-- Rondel
+					2533,	-- War Maul
+					2535,	-- War Staff
+					2529,	-- Zweihander
+				}},
+			}),
 			n(12029, {	-- Narianna <Bowyer>
 				coord = { 53.2, 42.6, MAP.MOONGLADE },
 				groups = {

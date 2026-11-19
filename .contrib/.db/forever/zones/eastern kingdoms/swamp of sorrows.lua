@@ -758,6 +758,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					},
 				},
 			}),
+			n(981, {	-- Hartash <Weapon Merchant>
+				coords = {
+					{ 45.4, 51.2, MAP.SWAMP_OF_SORROWS },
+					{ 45.8, 51.0, MAP.SWAMP_OF_SORROWS },
+				},
+				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2528,	-- Falchion
+					2530,	-- Francisca
+					2531,	-- Great Axe
+					2532,	-- Morning Star
+					2534,	-- Rondel
+					2533,	-- War Maul
+					2535,	-- War Staff
+					2529,	-- Zweihander
+				}},
+			}),
 			n(11874, {	-- Masat T'andr <Superior Leatherworker>
 				coord = { 26.5, 31.4, MAP.SWAMP_OF_SORROWS },
 				races = ALLIANCE_ONLY,

@@ -1348,6 +1348,20 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					i(11305),	-- Dense Shortbow
 				},
 			}),
+			n(10361, {	-- Gruul Darkblade <Weaponsmith>
+				coord = { 22.2, 51.2, MAP.AZSHARA },
+				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2528,	-- Falchion
+					2530,	-- Francisca
+					2531,	-- Great Axe
+					2532,	-- Morning Star
+					2534,	-- Rondel
+					2533,	-- War Maul
+					2535,	-- War Staff
+					2529,	-- Zweihander
+				}},
+			}),
 			n(8678, {	-- Jubie Gadgetspring <Engineering Supplier>
 				coord = { 45.2, 90.8, MAP.AZSHARA },
 				groups = {

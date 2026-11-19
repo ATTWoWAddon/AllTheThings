@@ -1290,6 +1290,22 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 				},
 			}),
+			n(15315, {	-- Mylini Frostmoon <Weapon Merchant>
+				coord = { 62.4, 25.8, MAP.FELWOOD },
+				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2520,	-- Broadsword
+					2523,	-- Bullova
+					2522,	-- Crescent Axe
+					2528,	-- Falchion
+					2521,	-- Flamberge
+					2530,	-- Francisca
+					2531,	-- Great Axe
+					2526,	-- Main Gauche
+					2534,	-- Rondel
+					2529,	-- Zweihander
+				}},
+			}),
 			n(14522, {	-- Ur'dan
 				sourceQuest = 7625,	-- Xorothian Stardust
 				coord = { 36.2, 44.6, MAP.FELWOOD },

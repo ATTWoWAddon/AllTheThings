@@ -2623,6 +2623,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			n(1146, {	-- Vharr <Superior Weaponsmith>
 				coord = { 32.2, 28.0, MAP.STRANGLETHORN_VALE },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2527,	-- Battle Staff
+					2520,	-- Broadsword
+					2523,	-- Bullova
+					2522,	-- Crescent Axe
+					2521,	-- Flamberge
+					2526,	-- Main Gauche
+					2524,	-- Truncheon
+					2525,	-- War Hammer
+				}},
 				groups = {
 					i(12250, {	-- Midnight Axe
 						isLimited = true,
@@ -2648,6 +2658,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			n(2482, {	-- Zarena Cromwind <Superior Weaponsmith>
 				coord = { 28.3, 75.5, MAP.STRANGLETHORN_VALE },
+				sym = {{ "select", "itemID",
+					2527,	-- Battle Staff
+					2520,	-- Broadsword
+					2523,	-- Bullova
+					2522,	-- Crescent Axe
+					2521,	-- Flamberge
+					2526,	-- Main Gauche
+					2524,	-- Truncheon
+					2525,	-- War Hammer
+				}},
 				groups = {
 					i(12251, {	-- Big Stick
 						isLimited = true,
