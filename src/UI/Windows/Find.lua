@@ -1,7 +1,8 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
-if app.IsRetail then return; end
+-- Forever counts as retail (app.IsRetail), but its ItemDB export is still built with this tool.
+if app.IsRetail and not app.IsForever then return; end
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
