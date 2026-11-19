@@ -567,6 +567,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					i(19295, {	-- Darkmoon Flower
 						cost = { { "c", 515, 5 } },	-- 5x Darkmoon Prize Ticket
+						collectible = false,	-- Its appearance can't be learned in Forever
 					}),
 					i(19291, {	-- Darkmoon Storage Box
 						cost = { { "c", 515, 50 } },	-- 50x Darkmoon Prize Ticket
