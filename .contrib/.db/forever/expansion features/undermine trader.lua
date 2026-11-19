@@ -95,6 +95,14 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 				},
 			}),
 		}),
+		n(QUESTS, {
+			q(83934, {	-- Show Me the Money!
+				description = "Only a Tarnished Undermine Real looted while you have this quest counts; Reals you already own do not.",
+				qg = 227853,	-- Pix Xizzix <Undermine Trader>
+				coord = { 28.5, 75.8, MAP.STRANGLETHORN_VALE },
+				lvl = 55,
+			}),
+		}),
 		n(VENDORS, {
 			n(227853, { -- Pix Xizzix <Undermine Trader>
 				coord = { 28.5, 75.8, MAP.STRANGLETHORN_VALE },
