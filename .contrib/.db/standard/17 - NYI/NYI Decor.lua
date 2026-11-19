@@ -864,7 +864,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			rawdecor(21875),	-- [DNT] [AUTOGEN] 8HU_KULTIRAS_HONEYPOT01.m2
 			rawdecor(21876),	-- [DNT] [AUTOGEN] 8HU_KULTIRAS_HONEYPOT02.m2
 			rawdecor(21877),	-- [DNT] [AUTOGEN] 9MW_IronMaiden_Torch01.m2
-			rawdecor(21878),	-- [DNT] [AUTOGEN] 9MW_IronMaiden_Torch02.m2
 			rawdecor(21879),	-- [DNT] [AUTOGEN] 10MP_MolePeople_Storage_Pottery01.m2
 			rawdecor(21880),	-- [DNT] [AUTOGEN] 10MP_MolePeople_Storage_Pottery_Desaturated02.m2
 			rawdecor(21881),	-- [DNT] [AUTOGEN] 10MP_MolePeople_Storage_Pottery_Desaturated03.m2

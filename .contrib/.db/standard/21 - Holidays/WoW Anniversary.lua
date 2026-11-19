@@ -4190,7 +4190,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		}, {	-- One-Time Content
 			ach(63714),	-- WoW's 22nd Anniversary
 		}), {	-- Recurring Content
-			-- TBD
+			-- NONE! Thanks, Blizzard!
 		}),
 	}),
 })));

@@ -118758,7 +118758,7 @@ r(322591,{learnedAt=100,requireSkill=164,skillID=2751}),
 r(322588,{learnedAt=65,requireSkill=164,skillID=2751}),
 r(322594,{learnedAt=70,requireSkill=164,skillID=2751})}),
 h(-679,{awp=110207,g={
-r(1315292,{awp=120105,learnedAt=85,requireSkill=164,skillID=2751}),
+r(1315292,{awp=120105,learnedAt=95,requireSkill=164,skillID=2751}),
 r(1261982,{learnedAt=85,requireSkill=164,skillID=2751}),
 r(1261980,{learnedAt=85,requireSkill=164,skillID=2751})}}),
 flt(50,{
@@ -119877,7 +119877,7 @@ i(182168,{b=1,cost={{"c",1813,1500}},customCollect={"SL_COV_NFA"},lvl=50,minRepu
 s(113564,181309,{cost={{"c",1813,3500}},customCollect={"SL_COV_NFA"},f=3,lvl=50,minReputation={2465,21000}})}),
 r(309644,{b=1,itemID=183096,minReputation={2465,9000},requireSkill=333,skillID=2753}),
 s(115839,184754,{b=1,f=3,lvl=60,minReputation={2465,9000}}),
-i(217588,{awp=100206,b=1,c={2},f=111,lvl=50,minReputation={2465,9000},spellID=440338}),
+i(217588,{awp=100206,b=1,c={2},lvl=50,minReputation={2465,9000},spellID=440338}),
 i(217585,{awp=100206,b=1,c={11},f=111,lvl=50,minReputation={2465,9000},spellID=440335}),
 i(217494,{awp=100206,b=1,c={10},f=111,lvl=50,minReputation={2465,9000},spellID=440196}),
 i(217583,{awp=100206,b=1,c={4},f=111,lvl=50,minReputation={2465,9000},spellID=440332}),

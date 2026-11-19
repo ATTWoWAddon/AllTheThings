@@ -121,65 +121,49 @@ root(ROOTS.WorldEvents, {
 				ach(63760),	-- The Fairy Queen
 				ach(63761),	-- Veteran: The Fairy Queen
 				ach(63762),	-- Heroic: The Fairy Queen
-				ach(63763),	-- Mythic: The Fairy Queen
 				ach(63776, {	-- The Final Confrontation
 					spell(1327486),	-- The Fate of Quillgrave (CAMPSITE!)
 				}),
 				ach(63777),	-- Veteran: The Final Confrontation
 				ach(63778),	-- Heroic: The Final Confrontation
-				ach(63779),	-- Mythic: The Final Confrontation
-				ach(63729),	-- The Giant of Greenthistle Wood
+				ach(63729),	-- The Giant of Greenthistle Wood	-- Exo Note: This one got removed along with Mythic achievements in build 70986. Keeping it here because it should not have been removed. TODO: Remove note when fixed.
 				ach(63734),	-- Veteran: The Giant of Greenthistle Wood
 				ach(63735),	-- Heroic: The Giant of Greenthistle Wood
-				ach(63736),	-- Mythic: The Giant of Greenthistle Wood
 				ach(63768),	-- The Hadal Tyrant
 				ach(63769),	-- Veteran: The Hadal Tyrant
 				ach(63770),	-- Heroic: The Hadal Tyrant
-				ach(63771),	-- Mythic: The Hadal Tyrant
 				ach(63772),	-- The Herald from Beyond
 				ach(63773),	-- Veteran: The Herald from Beyond
 				ach(63774),	-- Heroic: The Herald from Beyond
-				ach(63775),	-- Mythic: The Herald from Beyond
 				ach(63810),	-- The Inquisitor's Final Confrontation
 				ach(63811),	-- Veteran: The Inquisitor's Final Confrontation
-				ach(63812),	-- Heroic: The Inquisitor's Final Confrontation
-				ach(63813, {	-- Mythic: The Inquisitor's Final Confrontation
+				ach(63812, {	-- Heroic: The Inquisitor's Final Confrontation
 					title(814),	-- <Name> of the Sacred Flame
 				}),
 				ach(63748),	-- The Lord Marshal
 				ach(63749),	-- Veteran: The Lord Marshal
 				ach(63780),	-- Heroic: The Lord Marshal
-				ach(63750),	-- Mythic: The Lord Marshal
 				ach(63764),	-- The Nightmare King
 				ach(63765),	-- Veteran: The Nightmare King
 				ach(63766),	-- Heroic: The Nightmare King
-				ach(63767),	-- Mythic: The Nightmare King
 				ach(63802),	-- The Slayer's Final Confrontation
 				ach(63803),	-- Veteran: The Slayer's Final Confrontation
-				ach(63804),	-- Heroic: The Slayer's Final Confrontation
-				ach(63805, {	-- Mythic: The Slayer's Final Confrontation
+				ach(63804, {	-- Heroic: The Slayer's Final Confrontation
 					title(812),	-- Monster Hunter <Name>
 				}),
 				ach(63754),	-- The Vampire Bishop
 				ach(63755),	-- Veteran: The Vampire Bishop
 				ach(63758),	-- Heroic: The Vampire Bishop
-				ach(63759),	-- Mythic: The Vampire Bishop
 				ach(63743),	-- The Witch of the Wilds
 				ach(63744),	-- Veteran: The Witch of the Wilds
 				ach(63745),	-- Heroic: The Witch of the Wilds
-				ach(63746),	-- Mythic: The Witch of the Wilds
 				ach(63737),	-- The Witch of the Woods
 				ach(63738),	-- Veteran: The Witch of the Woods
 				ach(63741),	-- Heroic: The Witch of the Woods
-				ach(63742),	-- Mythic: The Witch of the Woods
 				ach(63806),	-- The Witch's Final Confrontation
 				ach(63807),	-- Veteran: The Witch's Final Confrontation
-				ach(63808),	-- Heroic: The Witch's Final Confrontation
-				ach(63809, {	-- Mythic: The Witch's Final Confrontation
+				ach(63808, {	-- Heroic: The Witch's Final Confrontation
 					title(811),	-- <Name> of the Crooked Path
-				}),
-				ach(64426, {	-- Confronting a Mythic Tale
-					i(288983),	-- Cache of Mythic Treasures
 				}),
 				ach(64427, {	-- The Final Confrontation's Conclusion
 					i(288965),	-- Venomstone Cache
@@ -190,9 +174,6 @@ root(ROOTS.WorldEvents, {
 				ach(64429, {	-- Heroic: The Final Confrontation's Conclusion
 					i(288965),	-- Venomstone Cache
 				}),
-				ach(64430, {	-- Mythic: The Final Confrontation's Conclusion
-					i(288965),	-- Venomstone Cache
-				}),
 				ach(64431, {	-- The Comprehensive Final Confrontation
 					i(288987),	-- Cache of Heroic Treasures
 				}),
@@ -201,9 +182,6 @@ root(ROOTS.WorldEvents, {
 				}),
 				ach(64433, {	-- Heroic: The Comprehensive Final Confrontation
 					i(288987),	-- Cache of Heroic Treasures
-				}),
-				ach(64434, {	-- Mythic: The Comprehensive Final Confrontation
-					i(288983),	-- Cache of Mythic Treasures
 				}),
 
 				-- Levels
@@ -219,29 +197,54 @@ root(ROOTS.WorldEvents, {
 				}),
 				ach(63799),	-- Veteran: The Complete Tale
 				ach(63800),	-- Heroic: The Complete Tale
-				ach(63801),	-- Mythic: The Complete Tale
 				ach(63786),	-- The Tale of Darkhaven
 				ach(63787),	-- Veteran: The Tale of Darkhaven
 				ach(63788),	-- Heroic: The Tale of Darkhaven
-				ach(63789),	-- Mythic: The Tale of Darkhaven
 				ach(63782),	-- The Tale of Greenthistle Wood
 				ach(63783),	-- Veteran: The Tale of Greenthistle Wood
 				ach(63784),	-- Heroic: The Tale of Greenthistle Wood
-				ach(63785),	-- Mythic: The Tale of Greenthistle Wood
 				ach(63794),	-- The Tale of Greywake's Expedition
 				ach(63795),	-- Veteran: The Tale of Greywake's Expedition
 				ach(63796),	-- Heroic: The Tale of Greywake's Expedition
-				ach(63797),	-- Mythic: The Tale of Greywake's Expedition
 				ach(63790),	-- The Tale of the Court of Night
 				ach(63791),	-- Veteran: The Tale of the Court of Night
 				ach(63792),	-- Heroic: The Tale of the Court of Night
-				ach(63793),	-- Mythic: The Tale of the Court of Night
 				ach(64423, {	-- It's Just a Normal Tale
 					i(288984),	-- Cache of Champion Treasures
 				}),
 				n(REWARDS, {
 					currency(BOUND_SILVER),
 				}),
+
+				--[[ Following achievements got removed at PTR Build 12.1.7.70986 along with the entirety of the Mythic difficulty of the Talebound Stories
+				ach(63801),	-- Mythic: The Complete Tale
+				ach(63763),	-- Mythic: The Fairy Queen
+				ach(63779),	-- Mythic: The Final Confrontation
+				ach(63736),	-- Mythic: The Giant of Greenthistle Wood
+				ach(63771),	-- Mythic: The Hadal Tyrant
+				ach(63775),	-- Mythic: The Herald from Beyond
+				ach(63813),	-- Mythic: The Inquisitor's Final Confrontation
+				ach(63750),	-- Mythic: The Lord Marshal
+				ach(63767),	-- Mythic: The Nightmare King
+				ach(63805),	-- Mythic: The Slayer's Final Confrontation
+				ach(63789),	-- Mythic: The Tale of Darkhaven
+				ach(63785),	-- Mythic: The Tale of Greenthistle Wood
+				ach(63797),	-- Mythic: The Tale of Greywake's Expedition
+				ach(63793),	-- Mythic: The Tale of the Court of Night
+				ach(63759),	-- Mythic: The Vampire Bishop
+				ach(63746),	-- Mythic: The Witch of the Wilds
+				ach(63742),	-- Mythic: The Witch of the Woods
+				ach(63809),	-- Mythic: The Witch's Final Confrontation
+				ach(64426, {	-- Confronting a Mythic Tale
+					i(288983),	-- Cache of Mythic Treasures
+				}),
+				ach(64430, {	-- Mythic: The Final Confrontation's Conclusion
+					i(288965),	-- Venomstone Cache
+				}),
+				ach(64434, {	-- Mythic: The Comprehensive Final Confrontation
+					i(288983),	-- Cache of Mythic Treasures
+				}),
+				]]--
 			}),
 			n(REWARDS, {
 				currency(DUCATS),
