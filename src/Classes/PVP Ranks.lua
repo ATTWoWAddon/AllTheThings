@@ -15,6 +15,8 @@ local function GetHighestRank()
 			rank = renownLevel;
 		end
 	end
+	-- Unranked characters report 0 here (or -4 from the lifetime stats); rank 1 is the first real rank.
+	if rank < 0 then rank = 0; end
 	return rank;
 end
 local IsAlliance = app.FactionID == Enum.FlightPathFaction.Alliance;
@@ -114,7 +116,9 @@ app.AddEventHandler("OnRefreshCollections", function()
 		PerCharacter.HighestLifetimeRank = HighestLifetimeRank;
 	elseif PerCharacter.HighestLifetimeRank ~= HighestLifetimeRank then
 		PerCharacter.HighestLifetimeRank = HighestLifetimeRank;
-		app.SetThingCollected(KEY, HighestLifetimeRank, true, true);
+		if HighestLifetimeRank > 0 then
+			app.SetThingCollected(KEY, HighestLifetimeRank, true, true);
+		end
 	end
 
 	local saved, none = {}, {}
