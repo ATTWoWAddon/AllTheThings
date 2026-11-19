@@ -1056,7 +1056,8 @@ r(12075,{isLimited=1,itemID=10314,learnedAt=190,requireSkill=197,skillID=2948}),
 r(12080,{isLimited=1,itemID=10317,learnedAt=195,requireSkill=197,skillID=2948}),
 r(6688,{isLimited=1,itemID=5772,learnedAt=90,requireSkill=197,skillID=2948})}}),
 n(12793,{coords={
-[1454]={{40.6,69.5}}},description="Found within the Hall of Legends.",r=1,g={
+[1454]={{40.6,69.5}}},description="Found within the Hall of Legends.",r=1,sym={{"select","itemID",272589,272578,274968}},g={
+i(274444,{awp=16001,b=1,f=53,spellID=438273}),
 i(18607,{b=1,f=55,spellID=23035}),
 s(307958,272449,{awp=16001,b=1,f=9}),
 s(162122,15199,{b=1,f=9}),
@@ -1118,7 +1119,7 @@ r(17554,{isLimited=1,itemID=13478,learnedAt=265,requireSkill=171,skillID=2937}),
 r(6624,{isLimited=1,itemID=5642,learnedAt=150,requireSkill=171,skillID=2937})}}),
 n(3360,{coords={
 [1454]={{76.2,37.6}}},r=1,sym={{"select","itemID",925,1197,2030,2028,928,852,924,854,2026}}}),
-n(12792,{description="Found within the Hall of Legends.",r=1,g={
+n(12792,{description="Found within the Hall of Legends.",r=1,sym={{"select","symselector",6},{"pop"},{"exclude","headerID",-101},{"exclude","itemID",272589,272578,274968},{"select","itemID",275244,275238,275243,275239,275241,275242,275229,275240}},g={
 s(165111,22860,{b=1,c={8},f=4,loc=47,lvl=60}),
 s(165109,22858,{b=1,c={1},f=7,loc=47,lvl=60}),
 s(165108,22857,{b=1,c={7},f=6,loc=47,lvl=60,spellID=22801}),
@@ -1323,7 +1324,7 @@ s(163530,18430,{b=1,c={1,2},f=7,loc=43,lvl=45}),
 s(163531,18432,{b=1,c={3,7},f=6,loc=43,lvl=45}),
 s(163534,18436,{b=1,c={11},f=5,loc=43,lvl=45}),
 s(163533,18435,{b=1,c={4},f=5,loc=43,lvl=45})}}),
-n(14581,{description="Found within the Hall of Legends.",r=1,g={
+n(14581,{description="Found within the Hall of Legends.",r=1,sym={{"select","symselector",6},{"find","headerID",-101},{"pop"}},g={
 s(163709,18831,{b=1,f=22,lvl=60}),
 s(165286,23464,{b=1,f=23,lvl=60}),
 s(162782,16345,{b=1,f=25,lvl=60}),

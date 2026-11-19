@@ -1084,8 +1084,12 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(12793, {	-- Brave Stonehide <Officer Accessories Quartermaster>
 				description = "Found within the Hall of Legends.",
 				coord = { 40.6, 69.5, MAP.ORGRIMMAR },
+				sym = {{ "select", "itemID", 272589, 272578, 274968 }},	-- Premier Sergeant's Cape/Cloak, Premier Senior Sergeant's Insignia
 				races = HORDE_ONLY,
 				groups = {
+					i(274444, {	-- Greater Insignia of the Horde
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(18607),	-- Horde Battle Standard
 					i(272449, {	-- Scout's Tabard
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1288,6 +1292,22 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			n(12792, {	-- Lady Palanseer <Armor Quartermaster>
 				description = "Found within the Hall of Legends.",
+				sym = {	-- Premier Armor
+					SymSelector.select("PREMIER_PVP_HORDE"),
+					{ "pop" },
+					{ "exclude", "headerID", WEAPONS },
+					{ "exclude", "itemID", 272589, 272578, 274968 },	-- Premier Sergeant's Cape/Cloak, Premier Senior Sergeant's Insignia (Brave Stonehide)
+					{ "select", "itemID",
+						275244,	-- Premier Emboldened Belt Seal
+						275238,	-- Premier Emboldened Chest Seal
+						275243,	-- Premier Emboldened Feet Seal
+						275239,	-- Premier Emboldened Hands Seal
+						275241,	-- Premier Emboldened Head Seal
+						275242,	-- Premier Emboldened Legs Seal
+						275229,	-- Premier Emboldened Shoulder Seal
+						275240,	-- Premier Emboldened Wrist Seal
+					},
+				},
 				races = HORDE_ONLY,
 				groups = {
 					i(22860, {	-- Blood Guard's Silk Walkers (60)
@@ -1909,6 +1929,11 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			}),
 			n(14581, {	-- Sergeant Thunderhorn <Weapons Quartermaster>
 				description = "Found within the Hall of Legends.",
+				sym = {
+					SymSelector.select("PREMIER_PVP_HORDE"),
+					{ "find", "headerID", WEAPONS },	-- Premier High Warlord Weapons
+					{ "pop" },
+				},
 				races = HORDE_ONLY,
 				groups = {
 					i(18831),	-- High Warlord's Battle Axe
