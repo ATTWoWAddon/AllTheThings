@@ -1127,7 +1127,9 @@ instanceroot(230, {	-- Dire Maul
 						i(18353),	-- Stoneflower Staff
 						i(18390),	-- Tanglemoss Leggings
 						i(18393),	-- Warpwood Binding
-						i(273120),	-- Blueprint: Seed Hybridizer (RECIPE!)
+						i(273120, {	-- Blueprint: Seed Hybridizer (RECIPE!)
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				e(409, {	-- Immol'thar
@@ -1142,7 +1144,9 @@ instanceroot(230, {	-- Dire Maul
 						i(18377),	-- Quickdraw Gloves
 						i(18385),	-- Robe of Everlasting Night
 						i(18370),	-- Vigilance Charm
-						i(285949),	-- Blood of Immol'thar
+						i(285949, {	-- Blood of Immol'thar
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 					},
 				}),
 				n(14506, {	-- Lord Hel'nurath

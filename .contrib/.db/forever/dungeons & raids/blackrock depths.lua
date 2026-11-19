@@ -1123,8 +1123,12 @@ instanceroot(228, {	-- Blackrock Depths
 					i(11669),	-- Naglering
 					i(11822),	-- Omnicast Boots
 					i(11819),	-- Second Wind
-					i(273113),	-- Blueprint: Master Forge (RECIPE!)
-					i(273127),	-- Golem Heart
+					i(273113, {	-- Blueprint: Master Forge (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(273127, {	-- Golem Heart
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			e(380, {	-- Hurley Blackbreath
@@ -1178,7 +1182,9 @@ instanceroot(228, {	-- Blackrock Depths
 					i(11808),	-- Circle of Flame
 					i(11809),	-- Flame Wrath
 					i(11814),	-- Molten Fists
-					i(273122),	-- Blueprint: Molten Foundry (RECIPE!)
+					i(273122, {	-- Blueprint: Molten Foundry (RECIPE!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(8923, {	-- Panzor the Invincible
