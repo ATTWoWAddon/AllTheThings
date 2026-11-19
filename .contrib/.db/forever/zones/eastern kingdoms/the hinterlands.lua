@@ -294,6 +294,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 						coord = { 84.6, 41.2, MAP.THE_HINTERLANDS },
 						cr = 14748,	-- Vilebranch Kidnapper
 					}),
+					i(287074, {	-- Lard's Lunch Slicer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(19035, {	-- Lard's Special Picnic Basket
 						description = "Contains a random world drop and some consumables.",
 					}),
