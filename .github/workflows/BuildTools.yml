@@ -1,0 +1,253 @@
+name: BuildTools
+
+on:
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - '**'
+    paths:
+      - '.contrib/src/Parser/**'
+      - '**/*.cs'
+      - '**/*.csproj'
+      - '.github/workflows/BuildTools.yml'
+  pull_request:
+    paths:
+      - '.contrib/src/Parser/**'
+      - '**/*.cs'
+      - '**/*.csproj'
+      - '.github/workflows/BuildTools.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up stable .NET 10 SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.x'
+          dotnet-quality: 'ga'
+
+      - name: Build Parser
+        run: |
+          $repoRoot = (Get-Location).Path
+          $globalJsonPath = Join-Path $repoRoot 'global.json'
+          $originalGlobalJsonExisted = Test-Path -LiteralPath $globalJsonPath -PathType Leaf
+          $originalGlobalJsonBytes = $null
+          if ($originalGlobalJsonExisted) {
+            $originalGlobalJsonBytes = [System.IO.File]::ReadAllBytes($globalJsonPath)
+          }
+          $buildExitCode = $null
+          $repoLocationPushed = $false
+          try {
+            Push-Location -LiteralPath $repoRoot
+            $repoLocationPushed = $true
+            # .NET SDK 10.0.100 is the minimum; latestMinor selects the highest stable .NET 10 SDK.
+            $globalJson = '{"sdk":{"version":"10.0.100","rollForward":"latestMinor","allowPrerelease":false}}'
+            [System.IO.File]::WriteAllText(
+              $globalJsonPath,
+              $globalJson + [Environment]::NewLine,
+              [System.Text.UTF8Encoding]::new($false)
+            )
+            $dotnetVersion = (& dotnet --version 2>&1 | Out-String).Trim()
+            if ($LASTEXITCODE -ne 0 -or $dotnetVersion -notmatch '^10\.\d+\.\d+$') {
+              throw "Expected a stable .NET SDK 10.x; got '$dotnetVersion'."
+            }
+            Write-Host "Using .NET SDK $dotnetVersion"
+            dotnet build .contrib/src/Parser/Parser.csproj --configuration Release -p:Platform=x64 --output (Join-Path $env:RUNNER_TEMP 'parser') --nologo
+            $buildExitCode = $LASTEXITCODE
+          }
+          finally {
+            try {
+              if ($repoLocationPushed) {
+                Pop-Location
+              }
+            }
+            finally {
+              if ($originalGlobalJsonExisted) {
+                [System.IO.File]::WriteAllBytes($globalJsonPath, $originalGlobalJsonBytes)
+              }
+              elseif (Test-Path -LiteralPath $globalJsonPath) {
+                Remove-Item -LiteralPath $globalJsonPath -Force
+              }
+            }
+          }
+          if ($buildExitCode -ne 0) { exit $buildExitCode }
+
+      - name: Run Parser tests
+        run: |
+          $PSNativeCommandUseErrorActionPreference = $false
+          $parserPath = Join-Path $env:RUNNER_TEMP 'parser/Parser.exe'
+          if (-not (Test-Path -LiteralPath $parserPath -PathType Leaf)) {
+            throw "The newly built Parser was not found: $parserPath"
+          }
+
+          $tests = @(Get-ChildItem -LiteralPath '.contrib/src/Parser/tests' -Filter '*.Tests.ps1' -File | Sort-Object Name)
+          if ($tests.Count -eq 0) {
+            throw 'No Parser test suites were found.'
+          }
+
+          $results = [ordered]@{}
+          foreach ($test in $tests) {
+            Write-Host "::group::$($test.Name)"
+            & powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -File $test.FullName -ParserPath $parserPath
+            $results[$test.Name] = $LASTEXITCODE
+            Write-Host '::endgroup::'
+          }
+
+          Write-Host 'Parser test results:'
+          foreach ($result in $results.GetEnumerator()) {
+            Write-Host "$($result.Key): exit $($result.Value)"
+          }
+
+          $failures = @($results.Values | Where-Object { $_ -ne 0 })
+          if ($failures.Count -gt 0) {
+            throw "$($failures.Count) of $($tests.Count) Parser test suites failed."
+          }
+
+  build-csharp-tools:
+    name: Build remaining C# tools
+    runs-on: windows-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: pwsh
+    env:
+      GIT_CONFIG_COUNT: 2
+      GIT_CONFIG_KEY_0: core.autocrlf
+      GIT_CONFIG_VALUE_0: 'false'
+      GIT_CONFIG_KEY_1: core.longpaths
+      GIT_CONFIG_VALUE_1: 'true'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up stable .NET 10 SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.x'
+          dotnet-quality: 'ga'
+
+      - name: Set up Visual Studio MSBuild
+        uses: microsoft/setup-msbuild@30375c66a4eea26614e0d39710365f22f8b0af57
+        with:
+          msbuild-architecture: x64
+
+      - name: Build remaining C# projects
+        run: |
+          $PSNativeCommandUseErrorActionPreference = $false
+          $projects = @(
+            '.contrib/.source/ATT Sync Tool/ATT Sync Tool.csproj',
+            '.contrib/.source/AssetDB Builder/AssetDB Builder.csproj',
+            '.contrib/.source/Database/Database.csproj',
+            '.contrib/.source/IconID Converter/IconID Converter.csproj',
+            '.contrib/.source/Item Database Consolidator/Item Database Consolidator.csproj',
+            '.contrib/src/Blizzard API Harvester/Blizzard API Harvester.csproj',
+            '.contrib/src/CSVCleaner/CSVCleaner.csproj',
+            '.contrib/src/Classic Item Detector/Classic Item Detector.csproj',
+            '.contrib/src/Item DB Compare Tool/Item DB Compare Tool.csproj'
+          )
+          $workspaceRoot = (Get-Location).Path
+          $globalJsonPath = Join-Path $workspaceRoot 'global.json'
+          $originalGlobalJsonExisted = Test-Path -LiteralPath $globalJsonPath -PathType Leaf
+          $originalGlobalJsonBytes = $null
+          if ($originalGlobalJsonExisted) {
+            $originalGlobalJsonBytes = [System.IO.File]::ReadAllBytes($globalJsonPath)
+          }
+          # .NET SDK 10.0.100 is the minimum; latestMinor selects the highest stable .NET 10 SDK.
+          $globalJson = '{"sdk":{"version":"10.0.100","rollForward":"latestMinor","allowPrerelease":false}}'
+          $results = [ordered]@{}
+          $repoLocationPushed = $false
+          try {
+            Push-Location -LiteralPath $workspaceRoot
+            $repoLocationPushed = $true
+            [System.IO.File]::WriteAllText(
+              $globalJsonPath,
+              $globalJson + [Environment]::NewLine,
+              [System.Text.UTF8Encoding]::new($false)
+            )
+            $dotnetVersion = (& dotnet --version 2>&1 | Out-String).Trim()
+            if ($LASTEXITCODE -ne 0 -or $dotnetVersion -notmatch '^10\.\d+\.\d+$') {
+              throw "Expected a stable .NET SDK 10.x; got '$dotnetVersion'."
+            }
+            $msbuild = Get-Command 'msbuild' -CommandType Application -ErrorAction Stop |
+              Select-Object -First 1
+            $msbuildVersion = (& $msbuild.Source -version -nologo 2>&1 | Out-String).Trim()
+            if ($LASTEXITCODE -ne 0) {
+              throw "Could not read the Visual Studio MSBuild version: '$msbuildVersion'."
+            }
+            Write-Host "Using Visual Studio MSBuild $msbuildVersion and .NET SDK $dotnetVersion"
+            $legacyResourceProject = '.contrib/.source/ATT Sync Tool/ATT Sync Tool.csproj'
+            foreach ($project in $projects) {
+              $name = [System.IO.Path]::GetFileNameWithoutExtension($project)
+              $safeName = [regex]::Replace($name, '[^A-Za-z0-9_-]', '_')
+              $outputPath = Join-Path $env:RUNNER_TEMP (Join-Path 'csharp-projects' $safeName)
+              [void](New-Item -ItemType Directory -Path $outputPath -Force)
+              $projectPath = Join-Path $workspaceRoot $project
+              Write-Host "Building $project"
+              if ($project -ceq $legacyResourceProject) {
+                $sdkResolutionOutput = (& $msbuild.Source $projectPath -getProperty:NETCoreSdkVersion /nologo 2>&1 | Out-String)
+                $sdkResolutionExitCode = $LASTEXITCODE
+                if ($sdkResolutionExitCode -ne 0) {
+                  throw "MSBuild could not report the ATT Sync Tool SDK: $($sdkResolutionOutput.Trim())"
+                }
+                $resolvedSdkVersion = $null
+                foreach ($line in ($sdkResolutionOutput -split '\r?\n')) {
+                  $candidateVersion = $line.Trim().Trim('"').Trim(',')
+                  if ($candidateVersion -match '^10\.\d+\.\d+$') {
+                    $resolvedSdkVersion = $Matches[0]
+                  }
+                }
+                if ($resolvedSdkVersion -notmatch '^10\.\d+\.\d+$') {
+                  throw "MSBuild resolved ATT Sync Tool SDK '$resolvedSdkVersion'; expected a stable .NET 10 SDK. Output: $($sdkResolutionOutput.Trim())"
+                }
+                Write-Host "ATT Sync Tool uses Visual Studio MSBuild $msbuildVersion and .NET SDK $resolvedSdkVersion"
+                $msbuildOutputPath = $outputPath.Replace('\', '/') + '/'
+                & $msbuild.Source $projectPath /restore /t:Build /p:Configuration=Release /p:Platform=x64 "/p:OutputPath=$msbuildOutputPath" /nologo /verbosity:minimal
+                $results[$project] = $LASTEXITCODE
+              }
+              else {
+                & dotnet build $projectPath --configuration Release -p:Platform=x64 --output $outputPath --nologo
+                $results[$project] = $LASTEXITCODE
+              }
+            }
+          }
+          finally {
+            try {
+              if ($repoLocationPushed) {
+                Pop-Location
+              }
+            }
+            finally {
+              if ($originalGlobalJsonExisted) {
+                [System.IO.File]::WriteAllBytes($globalJsonPath, $originalGlobalJsonBytes)
+              }
+              elseif (Test-Path -LiteralPath $globalJsonPath) {
+                Remove-Item -LiteralPath $globalJsonPath -Force
+              }
+            }
+          }
+          Write-Host 'C# project build results:'
+          foreach ($result in $results.GetEnumerator()) {
+            Write-Host "$($result.Key): exit $($result.Value)"
+          }
+          $failures = @($results.Values | Where-Object { $_ -ne 0 })
+          if ($failures.Count -gt 0) {
+            throw "$($failures.Count) of $($projects.Count) C# project builds failed."
+          }
