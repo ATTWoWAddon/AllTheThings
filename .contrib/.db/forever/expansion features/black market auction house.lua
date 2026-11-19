@@ -45,6 +45,7 @@ root(ROOTS.ExpansionFeatures, {
 				i(16701),	-- Dreadmist Mantle
 			}),
 			filter(BATTLE_PETS, {
+				i(11903),	-- Cat Carrier (Corrupted Kitten) (PET!)
 				i(249897),	-- Flowery Lashling Bud
 				i(249895),	-- Frosty Lashling Bud (PET!)
 				i(23713),	-- Hippogryph Hatchling

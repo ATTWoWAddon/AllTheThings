@@ -6051,6 +6051,7 @@ n(255151,{coords={
 s(309068,274025,{b=1,f=9,minReputation={2765,42000}}),
 i(274379,{b=1,lvl=60,minReputation={2765,21000},questID=96411,spellID=1293805})}})}),
 h(-63,{
+p(5006,{crs={260422},itemID=11903,npcID=9936,spellID=15648}),
 s(308616,273828,{crs={264570,275174},f=28}),
 s(308619,273832,{crs={249551,275173},f=20})})}}),
 m(1412,{icon=236809,lore="A land of windswept mesas and grassy plains, Mulgore is the tauren's ancestral homeland. Centaur often send raiding parties into Mulgore, and the tauren, now with the help of their Horde allies, beat them back. Tauren are naturally a nomadic people, and their tent cities are scattered across the landscape and change with the seasons and the weather.\n\nNow that they are members of the Horde, the tauren have constructed several permanent settlements, including fortified Dalsh-Beran and their capital of Thunder Bluff.",g={
@@ -7795,6 +7796,10 @@ i(9539)}}),
 q(841,{coords={
 [1446]={{52.4,28.4}}},cost={{"i",8483,10}},lvl=38,qgs={7407},r=1,repeatable=1,g={
 i(8524,{b=1,lvl=38})}}),
+q(84135,{awp=16001,coords={
+[1446]={{59.2,91.5}}},lvl=55,providers={{"o",456682}}}),
+q(84212,{awp=16001,coords={
+[1452]={{61.2,37}}},lvl=58,qgs={228216},qis={227285},sourceQuests={84211}}),
 q(4496,{coords={
 [1446]={{50.8,27}}},lvl=50,maps={1449},qgs={5594},sourceQuests={4493,4494},g={
 qo(1,{crs={6551,6552,6553,6554,6555},providers={{"i",11837}}}),
@@ -7828,6 +7833,8 @@ q(96912,{awp=16001,coords={
 [1446]={{51.8,27}}},lvl=60,qgs={267525},g={
 qo(1)}}),
 q(351,{description="The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",lvl=43,qis={8623}}),
+q(84138,{awp=16001,coords={
+[1414]={{59.2,99.6}}},lvl=55,maps={1452},qgs={228956},sourceQuests={84137}}),
 q(992,{coords={
 [1446]={{50.2,27.5}}},lvl=38,qgs={7724},g={
 qo(1,{coords={
@@ -7875,6 +7882,8 @@ q(113,{coords={
 [1446]={{50.9,27}}},lvl=39,qgs={5594},qis={8594},sourceQuests={110}}),
 q(3914,{coords={
 [1446]={{53.9,29}}},lvl=47,maps={1449},providers={{"o",148504}},qis={11162},sourceQuests={3913}}),
+q(84137,{awp=16001,coords={
+[1446]={{59.2,91.5}}},lvl=55,providers={{"o",456682}},qis={226856},sourceQuests={84135}}),
 q(3644,{coords={
 [1446]={{54.4,27.2}}},cost=20000,learnedAt=200,lvl=30,qgs={8126},repeatable=1,requireSkill=202,sourceQuests={3639},g={
 i(10791,{b=1,requireSkill=202})}}),
@@ -7898,6 +7907,13 @@ qo(1,{coords={
 q(8365,{coords={
 [1446]={{66.6,22.3}}},lvl=40,qgs={15165},g={
 qo(1,{crs={7855,7856,7857,7858,7883,8203,15685},providers={{"i",20519}}})}}),
+q(84211,{awp=16001,coords={
+[1428]={{53,24.8}}},lvl=58,maps={1452},qgs={218236},sourceQuests={84146},g={
+qo(1,{crs={228609,228610},providers={{"i",226698},{"o",456814}}}),
+qo(2,{crs={228609,228610},providers={{"i",226699},{"o",456815}}})}}),
+q(84146,{awp=16001,coords={
+[1452]={{61.2,37}}},lvl=55,maps={1428},qgs={228216},sourceQuests={84138},g={
+i(226697,{f=113,spellID=460228})}}),
 q(648,{coords={
 [1446]={{60.2,64.6}}},lvl=43,qgs={7784},sourceQuests={351},g={
 s(159448,9643,{b=1,f=8}),
@@ -7909,6 +7925,11 @@ q(864,{coords={
 s(160269,11502,{b=1,f=5,loc=41}),
 s(159442,9635,{b=1,f=3}),
 s(159441,9634,{b=1,f=4,loc=44})}}),
+q(84213,{awp=16001,coords={
+[1414]={{59.2,99.6}}},lvl=58,maps={1420,1436},qgs={228956},qis={276782},sourceQuests={84212},g={
+qo(1,{providers={{"n",212252}}}),
+i(243177,{b=1}),
+s(189735,208424,{b=1,f=4,loc=40,spellID=463001})}}),
 q(3520,{coords={
 [1446]={{67,22.4}}},lvl=40,maps={1444},qgs={8579},g={
 qo(1,{crs={5307,5308},providers={{"i",10699},{"n",8612}}})}}),
@@ -12826,7 +12847,8 @@ n(14221,{coords={
 [1416]={{60,44.6}}},g={
 s(314724,283255,{awp=16001,f=25})}}),
 n(14281,{coords={
-[1416]={{48.6,82.8},{58.6,70.2}}}}),
+[1416]={{48.6,82.8},{58.6,70.2}}},g={
+s(313522,282713,{awp=16001,f=5,loc=46})}}),
 n(2453,{coords={
 [1416]={{48,34.2},{52.6,46.2}}},g={
 s(158418,6327,{f=24}),

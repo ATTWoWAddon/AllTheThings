@@ -1147,7 +1147,9 @@ i(11027, 64);		-- Wood Frog
 i(12264, 89);		-- Worg Pup
 i(13582, 94);		-- Zergling
 --- NYI ---
+-- #if NOT FOREVER
 i(11903, 0);		-- Cat Carrier (Corrupted Kitten)
+-- #endif
 i(18964, 0);		-- Loggerhead Snapjaw / Turtle Egg (Loggerhead)
 -- #if NOT FOREVER
 i(13342, 0);		-- Pet Fish
@@ -1185,6 +1187,7 @@ i(249895, 0);	-- Frosty Lashling Bud [TODO: Find the speciesID]
 i(249896, 0);	-- Viridian Lashling Bud [TODO: Find the speciesID]
 i(249898, 0);	-- Wilted Lashling Bud [TODO: Find the speciesID]
 -- #if FOREVER
+i(11903, 5006);		-- Corrupted Kitten
 i(13342, 0);		-- Pet Fish [TODO: Find the speciesID]
 i(11110, 5004);		-- Prairie Chicken
 -- #endif

@@ -1957,6 +1957,9 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 			}),
 		}),
 		n(ZONE_DROPS, {
+			i(11903, {	-- Cat Carrier (Corrupted Kitten) (PET!)
+				cr = 260422,	-- Ashen Acolyte
+			}),
 			i(273828, {	-- Recoiling Gnarlybark Staff
 				crs = {
 					264570,	-- Blackthorne Adept
