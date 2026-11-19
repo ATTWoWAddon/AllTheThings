@@ -205,7 +205,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				e(544, {	-- Ambassador Hellmaw
 					creatureID = 18731,
 					groups = {
-						i(27885),	-- Soul-Ward of the Aldor
+						i(27885),	-- Soul-Wand of the Aldor
 						i(27887),	-- Platinum Shield of the Valorous
 						i(27888),	-- Dream-Wing Helm
 						i(27889),	-- Jaedenfire Gloves of Annihilation
@@ -307,7 +307,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					e(544, {	-- Ambassador Hellmaw
 						creatureID = 18731,
 						groups = {
-							i(27885),	-- Soul-Ward of the Aldor
+							i(27885),	-- Soul-Wand of the Aldor
 							i(27887),	-- Platinum Shield of the Valorous
 							i(27888),	-- Dream-Wing Helm
 							i(27889),	-- Jaedenfire Gloves of Annihilation

@@ -670,7 +670,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 								coord = { 38.6, 33.0, 1644 },	-- Ember Court
 								cost = { { "i", 185684, 1 } },	-- 1x Lord Garridan's Egg
 							})),
-							applyevent(EVENTS.NOBLEGARDEN, q(63720, {	-- Prince Renethal's Egg
+							applyevent(EVENTS.NOBLEGARDEN, q(63720, {	-- Prince Renathal's Egg
 								qg = 164965,	-- Prince Renathal
 								cost = { { "i", 185683, 1 } },	-- 1x Prince Renethal's Egg
 							})),
@@ -851,7 +851,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 									crs = { 171836 },	-- Hunt-Captain Korayn <The Wild Hunt>
 									coord = { 47.5, 41.2, 1644 },	-- Ember Court
 									groups = appendGroups(KORAYN_GROUP, {
-										i(181618),	-- Gorm Quishe Platter
+										i(181618),	-- Gorm Quiche Platter
 										i(181620),	-- Hard Boiled Gorm Egg
 										i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 										i(183846),	-- Orders to Gormsmith Cavina
@@ -1178,7 +1178,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 								}),
 								q(61401, {	-- Ember Court: Venthyr Volunteers
 									description = "Available after purchasing Building: Guardhouse.",
-									provider = { "n", 172614 },	-- Nadija the Mistblade
+									provider = { "n", 172614 },	-- Nadjia the Mistblade
 									coord = { 60.9, 39.5, REVENDRETH },
 									groups = {
 										i(176138),	-- Contract: Venthyr Volunteers (EC!)
@@ -1927,7 +1927,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 								}),
 								q(61255, {	-- RSVP: Alexandros Mograine
 									sourceQuests = { 61943 },	-- Court Influencer
-									provider = { "n", 171933 },	-- Alexandros Morgraine
+									provider = { "n", 171933 },	-- Alexandros Mograine
 									coord = { 50.3, 67.4, MALDRAXXUS },
 									groups = {
 										i(181160),	-- Ossein Battleaxe (QI!)

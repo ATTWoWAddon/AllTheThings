@@ -87,7 +87,7 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 			})),
 		}),
 		n(QUESTS, {
-			applyclassicphase(SOD_PHASE_TWO, q(79008, {	-- ... and that note you found (A)
+			applyclassicphase(SOD_PHASE_TWO, q(79008, {	-- ...and that note you found (A)
 				providers = {
 					{ "o", 415107 },	-- Burned-Out Remains
 					{ "o", 417072 },	-- Nailed Plank
@@ -111,12 +111,12 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				races = { HUMAN },
 				lvl = 10,
 			}),
-			q(136, {	-- Captain Sanders' Hidden Treasure (1/4)
+			q(136, {	-- Captain Sander's Hidden Treasure (1/4)
 				provider = { "i", 1357 },	-- Captain Sanders' Treasure Map (QS!)
 				lvl = 10,
 			}),
-			q(138, {	-- Captain Sanders' Hidden Treasure (2/4)
-				sourceQuest = 136,	-- Captain Sanders' Hidden Treasure (1/4)
+			q(138, {	-- Captain Sander's Hidden Treasure (2/4)
+				sourceQuest = 136,	-- Captain Sander's Hidden Treasure (1/4)
 				providers = {
 					{ "o",   35 },	-- Captain's Footlocker
 					{ "i", 1358 },	-- A Clue to Sander's Treasure (PQI!)
@@ -124,8 +124,8 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				coord = { 25.9, 47.77, WESTFALL },
 				lvl = 10,
 			}),
-			q(139, {	-- Captain Sanders' Hidden Treasure (3/4)
-				sourceQuest = 138,	-- Captain Sanders' Hidden Treasure (2/4)
+			q(139, {	-- Captain Sander's Hidden Treasure (3/4)
+				sourceQuest = 138,	-- Captain Sander's Hidden Treasure (2/4)
 				providers = {
 					{ "o",   36 },	-- Broken Barrel
 					{ "i", 1361 },	-- Another Clue to Sander's Treasure (PQI!)
@@ -133,8 +133,8 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				coord = { 40.50, 47.82, WESTFALL },
 				lvl = 10,
 			}),
-			q(140, {	-- Captain Sanders' Hidden Treasure (4/4)
-				sourceQuest = 139,	-- Captain Sanders' Hidden Treasure (3/4)
+			q(140, {	-- Captain Sander's Hidden Treasure (4/4)
+				sourceQuest = 139,	-- Captain Sander's Hidden Treasure (3/4)
 				providers = {
 					{ "o",   34 },	-- Old Jug
 					{ "i", 1362 },	-- Final Clue to Sanders' Treasure (PQI!)

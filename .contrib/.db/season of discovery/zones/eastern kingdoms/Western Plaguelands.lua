@@ -331,7 +331,7 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 				},
 			},
 			applyclassicphase(SOD_PHASE_FOUR, q(83935, {	-- Clearing the Path
-				sourceQuest = 83808,	-- In A Bind
+				sourceQuest = 83808,	-- In a Bind
 				qg = 227672,	-- Squire Cuthbert
 				coord = { 47.8, 50.4, WESTERN_PLAGUELANDS },
 				timeline = { ADDED_1_15_3 },
@@ -525,7 +525,7 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
-			applyclassicphase(SOD_PHASE_FOUR, q(83808, {	-- In A Bind
+			applyclassicphase(SOD_PHASE_FOUR, q(83808, {	-- In a Bind
 				sourceQuest = 83756,	-- Bless the Fallen HQT
 				qg = 227672,	-- Squire Cuthbert
 				coord = { 47.8, 50.4, WESTERN_PLAGUELANDS },

@@ -282,7 +282,7 @@ root(ROOTS.Character, n(createHeader({
 		ach(4912),	-- Guild Level 25 [A]
 		ach(5492),	-- Guild Level 25 [H]
 		-- #endif
-		ach(6681, {	-- Guild Pandaren Dungeon Hero
+		ach(6681, {	-- Guild Pandaria Dungeon Hero
 			timeline = { ADDED_5_0_4 },
 		}),
 		ach(5035),	-- Master Crafter

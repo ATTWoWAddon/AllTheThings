@@ -215,7 +215,7 @@ maproot(KALIMDOR, AZSHARA, {
 				groups = { i(49705)	},	-- Armed Azsharite Core (QI!)
 			}),
 			q(5536, {	-- A Land Filled with Hatred
-				qg = 11548,	-- Loth'atu
+				qg = 11548,	-- Loh'atu
 				coord = { 11.4, 78.2, AZSHARA },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 45,
@@ -1653,7 +1653,7 @@ maproot(KALIMDOR, AZSHARA, {
 				},
 			}),
 			q(5535, {	-- Spiritual Unrest
-				qg = 11548,	-- Loth'atu
+				qg = 11548,	-- Loh'atu
 				coord = { 11.4, 78.2, AZSHARA },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 45,
@@ -2055,7 +2055,7 @@ maproot(KALIMDOR, AZSHARA, {
 			}),
 			q(14226, {	-- Trouble Under Foot
 				sourceQuests = {
-					14250,	-- Renewable Rersource
+					14250,	-- Renewable Resource
 					14249,	-- Shear Will
 					14263,	-- Waste of Thyme
 				},
@@ -2078,7 +2078,7 @@ maproot(KALIMDOR, AZSHARA, {
 			}),
 			q(28849, {	-- Twilight Skies (1/2)
 				sourceQuests = {
-					26337,	-- Beating the Marker
+					26337,	-- Beating the Market
 					26372,	-- Pre-Flight Checklist
 					26374,	-- Ready the Ground Troops
 				},

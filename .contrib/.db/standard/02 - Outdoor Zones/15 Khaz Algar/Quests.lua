@@ -256,17 +256,17 @@ maproot(KHAZ_ALGAR, {
 				}),
 				q(79147, {	-- Flight Training 101
 					sourceQuests = { 79477 },	-- Strays
-					provider = { "n", 215211 },	-- Kurdan Wildhammer
+					provider = { "n", 215211 },	-- Kurdran Wildhammer
 					coord = { 29.0, 61.5, ISLE_OF_DORN },
 				}),
 				q(81912, {	-- Flight Training 102
 					sourceQuests = { 79147 },	-- Flight Training 101
-					provider = { "n", 215211 },	-- Kurdan Wildhammer
+					provider = { "n", 215211 },	-- Kurdran Wildhammer
 					coord = { 35.0, 72.2, ISLE_OF_DORN },
 				}),
 				q(81913, {	-- Flight Training 103
 					sourceQuests = { 81912 },	-- Flight Training 102
-					provider = { "n", 215211 },	-- Kurdan Wildhammer
+					provider = { "n", 215211 },	-- Kurdran Wildhammer
 					coord = { 61.7, 65.5, ISLE_OF_DORN },
 					groups = {
 						i(224161),	-- Stormrider Flight Badge

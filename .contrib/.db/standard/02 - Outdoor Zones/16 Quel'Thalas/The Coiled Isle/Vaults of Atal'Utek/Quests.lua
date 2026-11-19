@@ -49,7 +49,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, MAP.MIDNIGHT.VAUL
 				qg = 262880,	-- Er'inye
 				coord = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },
 			}),
-			q(96643, {	-- From When it Came
+			q(96643, {	-- From Whence it Came
 				sourceQuest = 98388,	-- Into the Vaults of Atal'Utek
 				qg = 262880,	-- Er'inye
 				coord = { 51.2, 62.8, MAP.MIDNIGHT.VAULTS_OF_ATALUTEK },

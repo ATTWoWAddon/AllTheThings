@@ -1992,7 +1992,7 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 				races = HORDE_ONLY,
 				sym = {{ "sub", "common_recipes_vendor", 50482 }},	-- Marith Lazuria <Jewelcrafting Supplies>
 			}),
-			n(4599, {	-- Sarah Killan <Mining Supplies>
+			n(4599, {	-- Sarah Killian <Mining Supplies>
 				coord = { 56.6, 37.3, UNDERCITY },
 				races = HORDE_ONLY,
 				groups = {
@@ -2006,7 +2006,7 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 							{ "n", 3002 },	-- Kurm Stonehoof <Mining Supplies>
 							{ "n", 16751 },	-- Merran <Mining Supplies>
 							{ "n", 52643 },	-- Rissa Halding <Mining Supplies>
-							{ "n", 4599 },	-- Sarah Killan <Mining Supplies>
+							{ "n", 4599 },	-- Sarah Killian <Mining Supplies>
 							{ "n", 16664 },	-- Zelan <Mining Supplies>
 						},
 						timeline = { ADDED_2_0_1 },

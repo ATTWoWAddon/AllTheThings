@@ -263,7 +263,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					}),
 					i(21315, {	-- Smokywood Satchel
 						i(21314),	-- Metzen's Letters and Notes
-						i(21211),	-- Pouch of Raindeer Dust
+						i(21211),	-- Pouch of Reindeer Dust
 					}),
 					i(21213),	-- Preserved Holly
 				},
@@ -288,7 +288,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(createHeader({
 					}),
 					i(21315, {	-- Smokywood Satchel
 						i(21314),	-- Metzen's Letters and Notes
-						i(21211),	-- Pouch of Raindeer Dust
+						i(21211),	-- Pouch of Reindeer Dust
 					}),
 					i(21213),	-- Preserved Holly
 				},

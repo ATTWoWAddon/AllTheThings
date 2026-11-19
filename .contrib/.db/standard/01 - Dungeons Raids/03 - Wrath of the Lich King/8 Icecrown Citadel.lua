@@ -983,14 +983,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						emof(60, i(50989)),	-- Lich Killer's Lanyard
 						emof(60, i(50979)),	-- Logsplitters
 						emof(95, i(50970)),	-- Longstrider's Vest
-						emof(60, i(50357)),	-- Maghia's Misguised Quill
+						emof(60, i(50357)),	-- Maghia's Misguided Quill
 						emof(95, i(50971)),	-- Mail of the Geyser
 						emof(60, i(50987)),	-- Malevolent Girdle
 						emof(95, i(50974)),	-- Meteor Chaser's Raiment
 						emof(50, i(50467)),	-- Might of the Ocean Serpent
 						emof(23, i(PRIMORDIAL_SARONITE)),
 						emof(60, i(50358)),	-- Purified Lunar Dust
-						emof(50, i(50470)),	-- Recovered Scarlet Onsalught Cape
+						emof(50, i(50470)),	-- Recovered Scarlet Onslaught Cape
 						emof(50, i(50466)),	-- Sentinel's Winter Cloak
 						emof(95, i(50972)),	-- Shadow Seeker's Tunic
 						emof(30, i(50462, {	-- Sigil of the Bone Gryphon
@@ -2269,7 +2269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50702),	-- Lingering Illness
 							i(50688),	-- Nerub'ar Stalker's Cord
 							i(50697),	-- Gangrenous Leggings
-							i(50696),	-- Leather of Stitched Scourge Pants
+							i(50696),	-- Leather of Stitched Scourge Parts
 							i(50694),	-- Plaguebringer's Stained Pants
 							i(50699),	-- Plague Scientist's Boots
 							i(50693),	-- Might of Blight

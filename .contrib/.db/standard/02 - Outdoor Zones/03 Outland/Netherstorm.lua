@@ -1494,7 +1494,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(10266, {	-- Request for Assistance
 					sourceQuest = 10205,	-- Warp-Raider Nesaad
-					qg = 19880,	-- Nether-Stalker Khay-ji
+					qg = 19880,	-- Nether-Stalker Khay'ji
 					coord = { 32.4, 64.2, NETHERSTORM },
 				}),
 				q(10435, {	-- Retrieving the Goods
@@ -1715,7 +1715,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					groups = {
 						i(30519),	-- Boots of the Nexus Warden
 						i(30352),	-- Demolisher's Bracers
-						i(30341),	-- Flash Handler's Gauntlets
+						i(30341),	-- Flesh Handler's Gauntlets
 						i(30342),	-- Protectorate Waistband
 					},
 				}),

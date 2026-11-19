@@ -621,7 +621,7 @@ maproot(BROKEN_ISLES, {
 			}),
 			ach(11653),	-- Paragon of the Broken Isles
 			ach(11652),	-- The Reputable
-			ach(14729, {	-- To All The Squirrels I Love Despite Their Scars
+			ach(14729, {	-- To All the Squirrels I Love Despite Their Scars
 				crit(50222, {	-- Felspider
 					crs = { 113345 },	-- Felspider
 					coord = { 39.0, 47.6, AZSUNA },

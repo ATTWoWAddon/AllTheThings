@@ -538,8 +538,8 @@ instanceroot(239, {	-- Uldaman
 			creatureID = 4854,
 			groups = {
 				i(7670),	-- Shattered Necklace Sapphire
-				applyclassicphase(SOD_PHASE_TWO, i(223536)),	-- Grimlock's Charge
-				applyclassicphase(SOD_PHASE_TWO, i(223535)),	-- Grimlock's Tribal Vestments
+				applyclassicphase(SOD_PHASE_TWO, i(223536)),	-- Grimlok's Charge
+				applyclassicphase(SOD_PHASE_TWO, i(223535)),	-- Grimlok's Tribal Vestments
 				i(9416, {	-- Grimlok's Charge
 					timeline = { REMOVED_1_15_1 },
 				}),

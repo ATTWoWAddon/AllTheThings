@@ -24,7 +24,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		}),
 		q(51533, {	-- The Glaive of Vol'jin
 			sourceQuest = 51513,	-- Zalazane Returns
-			provider = { "n", 120173 },	-- Zen'tarba
+			provider = { "n", 120173 },	-- Zen'tabra
 			coord = { 59.2, 52.0, ECHO_ISLES },
 			groups = {
 				i(160323),	-- The Glaive of Vol'jin (QI!)
@@ -51,9 +51,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			provider = { "n", 139928 },	-- Master Gadrin
 			coord = { 45.5, 35.8, ZULDAZAR },
 		}),
-		q(51516, {	-- Atal'Dazr: Ashes of a Warchief
-			sourceQuest = 52113,	-- Vole'jin, Son of Sen'jin
-			provider = { "n", 138138 },	-- Princess Telanji
+		q(51516, {	-- Atal'Dazar: Ashes of a Warchief
+			sourceQuest = 52113,	-- Vol'jin, Son of Sen'jin
+			provider = { "n", 138138 },	-- Princess Talanji
 			coord = { 43.7, 39.5, ZULDAZAR },
 			groups = {
 				i(160479),	-- Urn of Vol'jin (QI!)
@@ -78,7 +78,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		}),
 		q(51519, {	-- Spirit Call
 			sourceQuest = 51518,	-- The Lost Spirit
-			provider = { "n", 140724 },	-- Princess Telanji
+			provider = { "n", 140724 },	-- Princess Talanji
 			coord = { 57.6, 62.6, ZULDAZAR },
 		}),
 		q(51520, {	-- Justice for the Fallen

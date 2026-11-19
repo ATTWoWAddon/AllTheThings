@@ -978,7 +978,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 					i(210193),	-- Experimental Dreamcatcher
 				},
 			}),
-			o(392581, {	-- Haphazardly Discarded Bomb
+			o(392581, {	-- Haphazardly Discarded Bombs
 				coord = { 48.2, 27.9, ZARALEK_CAVERN },
 				questID = 75183,
 				timeline = { ADDED_10_1_0 },

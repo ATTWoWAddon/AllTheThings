@@ -120,7 +120,7 @@ maproot(BROKEN_ISLES, ARGUS, KROKUUN, {
 			},
 		}),
 		q(48440, {	-- Into the Night
-			sourceQuests = { 47224 },	-- The Vidicaar
+			sourceQuests = { 47224 },	-- The Vindicaar
 			provider = { "n", 120977 },	-- Prophet Velen
 			coord = { 39.1, 78.2, 893 },	-- The Vindicaar (introductory scenario)
 			maps = {

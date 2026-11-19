@@ -37,8 +37,8 @@ root(ROOTS.ExpansionFeatures,
 						ach(9134),	-- On a Few Missions
 						ach(9138),	-- On a Lot of Missions
 						ach(9139),	-- On a Massive Number of Missions
-						ach(9140),	-- On A Metric Ton of Missions
-						ach(9146),	-- Patrolling Mission Specialist
+						ach(9140),	-- On a Metric Ton of Missions
+						ach(9146),	-- Patrol Mission Specialist
 						ach(9523, {	-- Patrolling Draenor
 							description = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							groups = {

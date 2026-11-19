@@ -828,7 +828,7 @@ i(163735);	-- Foul Belly
 i(161342);	-- Gem of Acquiescence
 i(164310);	-- Glorious Pennant
 i(163201);	-- Gnoll Targeting Barrel
-i(162973);	-- Greatfather Winter's Heartstone
+i(162973);	-- Greatfather Winter's Hearthstone
 i(159749);	-- Haw'li's Hot & Spicy Chili
 i(163045);	-- Headless Horseman's Hearthstone
 i(163742);	-- Heartsbane Grimoire
@@ -1213,7 +1213,7 @@ i(200628);	-- Somewhat-Stabilized Arcana
 i(198537);	-- Taivan's Trumpet
 i(200857);	-- Talisman of Sargha
 i(200999);	-- The Super Shellkhan Gang
-i(193478);	-- Tuskarr Bean Bag
+i(193478);	-- Tuskarr Beanbag
 i(198428);	-- Tuskarr Dinghy
 i(199830);	-- Tuskarr Training Dummy
 i(199892);	-- Tuskarr Traveling Soup Pot
@@ -1303,7 +1303,7 @@ i(209052);	-- Brew Barrel
 i(208433);	-- Bronze Racer's Pennant
 i(210042);	-- Chilling Celebration Banner
 i(208421);	-- Compendium of the New Moon
-i(208704);	-- Deepdwellers Earthen Hearthstone
+i(208704);	-- Deepdweller's Earthen Hearthstone
 i(209858);	-- Dreamsurge Remnant
 i(209944);	-- Friendsurge Defenders
 i(208658);	-- Mirror of Humility

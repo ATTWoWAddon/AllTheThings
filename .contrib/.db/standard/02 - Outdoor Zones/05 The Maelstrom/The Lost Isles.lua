@@ -578,7 +578,7 @@ maproot(THE_MAELSTROM, THE_LOST_ISLES, {
 			}),
 			q(24958, {	-- Volcanoth!
 				sourceQuest = 24954,	-- Children of a Turtle God
-				qg = 38120,	-- Hobart  Grapplehammer
+				qg = 38120,	-- Hobart Grapplehammer
 				coord = { 68.9, 46.4, THE_LOST_ISLES },
 				groups = {
 					i(52914),	-- Rescue Ladder Cord

@@ -3085,7 +3085,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				classes = { DEMONHUNTER },
 			}),
 			q(392, {	-- The Curious Visitor
-				sourceQuest = 391,	-- The Stockage Riots
+				sourceQuest = 391,	-- The Stockade Riots
 				qg = 1719,	-- Warden Thelwater
 				qi = 8687,	-- Sealed Description of Thredd's Visitor
 				coords = {
@@ -3359,7 +3359,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			}),
 			q(46728, {	-- The Nation of Kul Tiras
 				sourceQuest = 46727,	-- Battle for Azeroth: Tides of War (BfA version)
-				qg = 120756,	-- Anduin Wyrnn
+				qg = 120756,	-- Anduin Wrynn
 				coords = {
 					{ 80.4, 33.4, STORMWIND_CITY },
 					{ 85.0, 32.4, STORMWIND_CITY },

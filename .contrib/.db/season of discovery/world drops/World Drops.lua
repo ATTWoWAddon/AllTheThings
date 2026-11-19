@@ -3733,7 +3733,7 @@ root(ROOTS.WorldDrops, {
 				5858,	-- Greater Lava Spider
 				5857,	-- Searing Lava Spider
 				4412,	-- Darkfang Creeper
-				4414,	-- Darkfang Venomspider
+				4414,	-- Darkfang Venomspitter
 				4378,	-- Darkmist Recluse
 				4379,	-- Darkmist Silkspinner
 				4376,	-- Darkmist Spider
@@ -3918,7 +3918,7 @@ root(ROOTS.WorldDrops, {
 				SEARING_GORGE,
 			},
 		}),
-		i(7077, {	-- Hearth of Fire
+		i(7077, {	-- Heart of Fire
 			coords = {
 				{ 42.0, 40.0, FELWOOD },	-- Shatter Scar Vale
 				{ 51.7, 50.7, UNGORO_CRATER },	-- Fire Plum Ridge
@@ -3976,7 +3976,7 @@ root(ROOTS.WorldDrops, {
 				1813,	-- Decaying Horror
 				7138,	-- Irontree Wanderer
 				7101,	-- Warpwood Shredder
-				1812,	-- Rottin Behemoth
+				1812,	-- Rotting Behemoth
 			},
 			maps = {
 				DIRE_MAUL,
@@ -4001,7 +4001,7 @@ root(ROOTS.WorldDrops, {
 				1813,	-- Decaying Horror
 				7138,	-- Irontree Wanderer
 				7101,	-- Warpwood Shredder
-				1812,	-- Rottin Behemoth
+				1812,	-- Rotting Behemoth
 			},
 			maps = {
 				DIRE_MAUL,
@@ -4016,7 +4016,7 @@ root(ROOTS.WorldDrops, {
 				{ 53.0, 42.0, WINTERSPRING },	-- Lake Kel'Theril
 			},
 			crs = {
-				7524,	-- Anghuished Highborne
+				7524,	-- Anguished Highborne
 				12378,	-- Damned Soul
 				6116,	-- Highborne Apparition
 				6117,	-- Highborne Lichling
@@ -4413,7 +4413,7 @@ root(ROOTS.WorldDrops, {
 				{ 64.0, 20.1, DUSKWOOD },	-- The Darkened Bank, east.
 			},
 			crs = {
-				565,	-- Rapid Dire Wolf
+				565,	-- Rabid Dire Wolf
 				213,	-- Starving Dire Wolf
 			},
 			description =
@@ -4936,7 +4936,7 @@ root(ROOTS.WorldDrops, {
 			},
 			crs = {
 				7857,	-- Southsea Dock Worker
-				7856,	-- Southsea Frebooter
+				7856,	-- Southsea Freebooter
 				15685,	-- Southsea Kidnapper
 				7902,	-- Treasure Hunting Buccaneer
 				7899,	-- Treasure Hunting Pirate

@@ -331,7 +331,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 								69131,	-- Frost King Malakk
 								69132,	-- High Priestess Mar'li
 								69134,	-- Kazra'jin
-								69078,	-- Sul the Sandrawler
+								69078,	-- Sul the Sandcrawler
 							},
 						}),
 					}),
@@ -545,7 +545,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
-							69078,	-- Sul the Sandrawler
+							69078,	-- Sul the Sandcrawler
 						},
 					}),
 					e(825, {	-- Tortos
@@ -753,7 +753,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
-							69078,	-- Sul the Sandrawler
+							69078,	-- Sul the Sandcrawler
 						},
 					}),
 					e(825, {	-- Tortos

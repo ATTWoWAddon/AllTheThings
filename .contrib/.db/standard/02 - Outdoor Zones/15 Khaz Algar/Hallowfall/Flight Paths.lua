@@ -30,7 +30,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 		}),
 		fp(2942, {	-- Priory of the Sacred Flame, Hallowfall
 			coord = { 41.1, 33.7, HALLOWFALL },
-			cr = 218323,	-- Tristan Lyre
+			cr = 218323,	-- Tristan Lyte
 		}),
 		fp(2950, {	-- The Aegis Wall, Hallowfall
 			coord = { 71.4, 56.5, HALLOWFALL },

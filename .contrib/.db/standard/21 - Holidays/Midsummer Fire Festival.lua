@@ -3583,7 +3583,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					timeline = { ADDED_5_0_4 },
 				}),
 				honortheflame(44575, {	-- Honor the Flame — Val'sharah
-					qg = 114493,	-- Val'sharah Flame Guardian
+					qg = 114493,	-- Val'Sharah Flame Guardian
 					coord = { 44.8, 58.0, VALSHARAH },
 					timeline = { ADDED_7_0_3 },
 				}),

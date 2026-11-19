@@ -1297,7 +1297,7 @@ maproot(KALIMDOR, DARNASSUS, {
 					}),
 				},
 			}),
-			n(52637, {	-- Hugo Letner <Engineering Supplies>
+			n(52637, {	-- Hugo Lentner <Engineering Supplies>
 				coord = { 50.0, 32.8, DARNASSUS },
 				races = ALLIANCE_ONLY,
 				timeline = { ADDED_4_0_3 },

@@ -942,7 +942,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(37232, {	-- Soulcarver Voss
 							sourceQuest = 37156,	-- The Soulcutter
-							qg = 87996,	-- Lillian Voss
+							qg = 87996,	-- Lilian Voss
 							maps = { 593 },	-- Auchindoun
 							repeatable = true,
 							groups = {
@@ -1032,7 +1032,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37156, {	-- The Soulcutter
-							qg = 87996,	-- Lillian Voss
+							qg = 87996,	-- Lilian Voss
 							maps = { 593 },	-- Auchindoun
 							groups = {
 								i(119039),	-- Lilian's Warning Sign (TOY!)

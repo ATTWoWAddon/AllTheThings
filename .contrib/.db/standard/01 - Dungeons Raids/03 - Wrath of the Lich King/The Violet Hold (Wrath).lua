@@ -155,7 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(35646),	-- Lava Burn Gloves
 					i(37872),	-- Lavanthor's Talisman
 					i(157572, { timeline = { ADDED_7_3_5 } }),	-- Pauldrons of the Great Tide
-					i(35645),	-- Poison Warden's Shotgun
+					i(35645),	-- Prison Warden's Shotgun
 					i(37871),	-- The Key
 					i(37870),	-- Twin-Headed Boots
 				}),
@@ -232,7 +232,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				BossOnly(LEVANTHOR, {
 					i(35646),	-- Lava Burn Gloves
-					i(35645),	-- Poison Warden's Shotgun
+					i(35645),	-- Prison Warden's Shotgun
 				}),
 				BossOnly(ZURAMAT, {
 					i(43358),	-- Pendant of Shadow Beams
@@ -356,7 +356,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							29316,	-- Moragg
 							29313,	-- Ichoron
 							29266,	-- Xevozz
-							29312,	-- Levanthor
+							29312,	-- Lavanthor
 							29314,	-- Zuramat the Obliterator
 						},
 						groups = {

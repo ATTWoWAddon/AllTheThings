@@ -39,13 +39,13 @@ root(ROOTS.Character, n(HERITAGE, {
 				provider = { "n", 145005 },	-- Lor'themar Theron
 				coord = { 12.7, 56.9, GHOSTLANDS },	-- Pickup Quest
 			}),
-			q(53738, {	-- Defense of Qual'Danas
+			q(53738, {	-- Defense of Quel'Danas
 				sourceQuest = 53737,	-- The Day Hope Died
 				provider = { "n", 145005 },	-- Lor'themar Theron
 				coord = { 51.1, 68.8, EVERSONG_WOODS },
 			}),
 			q(53725, {	-- A People Shattered
-				sourceQuest = 53738,	-- Defense of Qual'Danas
+				sourceQuest = 53738,	-- Defense of Quel'Danas
 				provider = { "n", 145793 },	-- Lady Liadrin
 				coord = { 48.3, 36.0, ISLE_OF_QUELDANAS },
 			}),
@@ -209,7 +209,7 @@ root(ROOTS.Character, n(HERITAGE, {
 			}),
 			q(78081, {	-- Pain Recedes
 				sourceQuests = { 78080 },	-- At the Source
-				provider = { "n", 210605 },	-- Proper Velen
+				provider = { "n", 210605 },	-- Prophet Velen
 				coord = { 41.5, 33.0, BLOODMYST_ISLE },
 				groups = {
 					i(210454),	-- Spare Hologem (QI!)
@@ -217,7 +217,7 @@ root(ROOTS.Character, n(HERITAGE, {
 			}),
 			q(78082, {	-- A Burden Shared
 				sourceQuests = { 78081 },	-- Pain Recedes
-				provider = { "n", 214021 },	-- Proper Velen
+				provider = { "n", 214021 },	-- Prophet Velen
 				coord = { 54.7, 80.7, THE_EXODAR },
 				groups = {
 					i(210586),	-- Akama's Memory Stone (QI!)
@@ -714,7 +714,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				provider = { "n", 198883 },	-- Vanessa VanCleef
 				coord = { 18.3, 55.0, DUSKWOOD },
 			}),
-			q(72431, {	-- A Hungary Heritage
+			q(72431, {	-- A Hungry Heritage
 				sourceQuests = { 72430 },	-- Misdeeds in Moonbrook
 				provider = { "n", 198923 },	-- Vanessa VanCleef
 				coord = { 46.7, 67.0, WESTFALL },
@@ -968,7 +968,7 @@ root(ROOTS.Character, n(HERITAGE, {
 			}),
 			q(76212, {	-- A Mark For A Protector
 				sourceQuests = { 76207 },	-- Wardens' Wrath
-				provider = { "n", 208151 },	-- Maiev Stormsong
+				provider = { "n", 208151 },	-- Maiev Shadowsong
 				coord = { 35.9, 58.8, FELWOOD },
 			}),
 			q(76213, {	-- Honor of the Goddess
@@ -1518,7 +1518,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				coord = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
 				qi = 210593,	-- Lukou's Altar Centerpiece (QI!)
 			}),
-			q(77894, {	-- Heart of Lokou
+			q(77894, {	-- Heart of Lukou
 				sourceQuests = {
 					77882,	-- Stolen But Not Forgotten
 					78875,	-- The Unkillable
@@ -1527,7 +1527,7 @@ root(ROOTS.Character, n(HERITAGE, {
 				coord = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
 			}),
 			q(77898, {	-- Honor and Tribute
-				sourceQuests = { 77894 },	-- Heart of Lokou
+				sourceQuests = { 77894 },	-- Heart of Lukou
 				provider = { "n", 210091 },	-- Rokhan
 				coord = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
 			}),

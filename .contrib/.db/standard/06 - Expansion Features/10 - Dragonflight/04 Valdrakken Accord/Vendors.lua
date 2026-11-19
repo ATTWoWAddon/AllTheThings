@@ -119,7 +119,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					198389,	-- Weighted Potion Cylinder
 				}},
 			}),
-			n(189197, {	-- Groundkeeper Kama
+			n(189197, {	-- Groundskeeper Kama
 				coord = { 74.5, 63.1, VALDRAKKEN },
 				sym = {{"select","itemID",
 					------ RENOWN 18 ------

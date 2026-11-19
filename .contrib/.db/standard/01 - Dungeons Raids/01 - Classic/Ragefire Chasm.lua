@@ -259,7 +259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(26858, {	-- Taragaman the Hungerer
 					sourceQuests = {
-						28003,	-- Adventurer's Wanted: Ragefire Chasm
+						28003,	-- Adventurers Wanted: Ragefire Chasm
 						26865,	-- Enemies Below [Orgrimmar]
 						26866,	-- Enemies Below [Thunder Bluff]
 						26867,	-- Enemies Below [Undercity]

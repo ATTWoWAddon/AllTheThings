@@ -642,7 +642,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					q(45347, {	-- Crafting a Cure
 						sourceQuests = {
 							45344,	-- Sampling the Source
-							45345,	-- Mischievous Spirites
+							45345,	-- Mischievous Sprites
 							45346,	-- Shambling Specimens
 						},
 						provider = { "n", 118528 },	-- Aelthalyste
@@ -869,7 +869,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						coord = { 75.5, 40.6, NETHERLIGHT_TEMPLE },
 						groups = {
 							i(139459),	-- Blessing of the Light
-							i(139452),	-- Essence of the Ligh
+							i(139452),	-- Essence of the Light
 							i(139449),	-- Essence of the Naaru
 							i(139447),	-- Vial of Pure Light
 						},

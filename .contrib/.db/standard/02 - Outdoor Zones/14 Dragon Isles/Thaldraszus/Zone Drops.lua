@@ -69,7 +69,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 			}),
 			i(197708, {	-- Unstable Matrix Core
 				crs = {
-					198385,	-- Fragmeneted Energy
+					198385,	-- Fragmented Energy
 					193244,	-- Titan Defense Matrix
 				},
 			}),

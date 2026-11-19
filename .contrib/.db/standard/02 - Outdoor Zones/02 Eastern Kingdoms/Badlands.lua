@@ -1185,7 +1185,7 @@ maproot(EASTERN_KINGDOMS, BADLANDS, {
 			}),
 			{
 				allianceQuestData = q(27825, {	-- Survival of the Fattest [A]
-					qg = 46930,	-- Victoria Delen
+					qg = 46930,	-- Victoria Dolen
 					coord = { 20.9, 55.7, BADLANDS },
 				}),
 				hordeQuestData = q(27879, {	-- Survival of the Fattest [H]

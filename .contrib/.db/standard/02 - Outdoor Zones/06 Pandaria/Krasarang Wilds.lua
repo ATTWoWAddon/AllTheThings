@@ -235,7 +235,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 			}),
 			q(30124, {	-- Blind Them! (H)
 				sourceQuests = { 30179 },	-- Poisoned!
-				qg = 58114,	-- Kor Bloodtust
+				qg = 58114,	-- Kor Bloodtusk
 				coord = { 62.6, 20.1, KRASARANG_WILDS },
 				races = HORDE_ONLY,
 			}),
@@ -253,7 +253,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 				},
 			}),
 			q(30668, {	-- Build Your Own Raft
-				sourceQuests = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
+				sourceQuests = { 30666 },	-- Sudden, Unexpected Crocolisk Aggression
 				qg = 60173,	-- Jay Cloudfall
 				coord = { 51.6, 76.8, KRASARANG_WILDS },
 				groups = {
@@ -388,7 +388,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 			}),
 			q(30130, {	-- Herbal Remedies
 				sourceQuests = {
-					30123,	-- Skitterer Skew
+					30123,	-- Skitterer Stew
 					30124,	-- Blind Them!
 				},
 				qg = 58113,	-- Sunwalker Dezco
@@ -513,7 +513,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 					30079,	-- What's Eating Zhu's Watch?
 					30082,	-- Cheer Up, Yi-Mo
 				},
-				qg = 56115,	-- Ken-ken
+				qg = 56115,	-- Ken-Ken
 				coord = { 80.2, 1.00, KRASARANG_WILDS },
 				groups = {
 					o_repeated({
@@ -565,7 +565,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 				sourceQuests = {
 					30121,	-- Search Party
 				},
-				qg = 58160,	-- Chizen Dawnchaser
+				qg = 58160,	-- Chezin Dawnchaser
 				coord = { 60.4, 25.4, KRASARANG_WILDS },
 				races = HORDE_ONLY,
 				groups = {
@@ -809,7 +809,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 			}),
 			q(30129, {	-- The Mogu Agenda
 				sourceQuests = {
-					30123,	-- Skitterer Skew
+					30123,	-- Skitterer Stew
 					30124,	-- Blind Them!
 				},
 				qg = 56112,	-- Kang Bramblestaff
@@ -937,7 +937,7 @@ maproot(PANDARIA, KRASARANG_WILDS, {
 			}),
 			q(30127, {	-- Threat from Dojan (H)
 				sourceQuests = {
-					30123,	-- Skitterer Skew
+					30123,	-- Skitterer Stew
 					30124,	-- Blind Them!
 				},
 				qg = 58114,	-- Kor Bloodtusk

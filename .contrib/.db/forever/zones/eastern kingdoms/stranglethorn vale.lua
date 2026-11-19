@@ -2414,7 +2414,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						i(274747),	-- Soggy Boots
 					}, {	-- Honored
 						i(274748),	-- Booty Bay Bruiser's Buckshot
-						i(274749),	-- Souvenier Sea Shell
+						i(274749),	-- Souvenir Sea Shell
 					}, {	-- Revered
 						i(274022),	-- Tough Guy's Eyepatch
 					}, {	-- Exalted

@@ -1663,7 +1663,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 		}),
 		Month(OCTOBER, { "added 11.2.0.63305", "removed 11.2.5.64154" }, {
 			n(FILLED_TRAVELERS_LOG, {
-				i(246921),	-- Legion Forged Elekk (MOUNT!)
+				i(246921),	-- Legion-Forged Elekk (MOUNT!)
 			}),
 			filter(MOUNTS, {
 				traderstender(750, i(226506)),	-- Hand of Reshkigaal (MOUNT!)

@@ -2582,7 +2582,7 @@ maproot(EASTERN_KINGDOMS, DUN_MOROGH, {
 				},
 			}),
 			q(25979, {	-- Dealing with the Surge
-				qg = 41804,	-- Khurgon Singefeather
+				qg = 41804,	-- Khurgorn Singefeather
 				coord = { 82.6, 48.3, DUN_MOROGH },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -2826,7 +2826,7 @@ maproot(EASTERN_KINGDOMS, DUN_MOROGH, {
 					314,	-- Protecting the Herd
 					25905,	-- Rams on the Lam
 				},
-				qg = 41578,	-- Sergeant Flinterhammer
+				qg = 41578,	-- Sergeant Flinthammer
 				coord = { 70.4, 48.9, DUN_MOROGH },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -2985,7 +2985,7 @@ maproot(EASTERN_KINGDOMS, DUN_MOROGH, {
 			}),
 			q(2239, {	-- Onin's Report
 				sourceQuest = 2238,	-- Simple Subterfugin'
-				qg = 6886,	-- Onin MacHammer
+				qg = 6886,	-- Onin MacHammar
 				qi = 7715,	-- Onin's Report (PQI!)
 				coord = { 25.2, 44.4, DUN_MOROGH },
 				timeline = { REMOVED_4_0_3 },

@@ -1189,7 +1189,7 @@ instanceroot(228, {	-- Blackrock Depths
 					}),
 					i(11626),	-- Blackveil Cape
 					i(11624),	-- Kentic Amice
-					applyclassicphase(PHASE_FIVE, i(22240)),	-- Greaves of Withering Despaire
+					applyclassicphase(PHASE_FIVE, i(22240)),	-- Greaves of Withering Despair
 				},
 			}),
 			e(370, {	-- Lord Roccor
@@ -1708,7 +1708,7 @@ instanceroot(228, {	-- Blackrock Depths
 				creatureID = 9019,
 				groups = {
 					ach(642),	-- Blackrock Depths
-					applyclassicphase(SOD_PHASE_FOUR, i(227981, {	-- Dreadforge Retaliatior
+					applyclassicphase(SOD_PHASE_FOUR, i(227981, {	-- Dreadforge Retaliator
 						timeline = { ADDED_1_15_3 },
 					})),
 					i(11931, {	-- Dreadforge Retaliator

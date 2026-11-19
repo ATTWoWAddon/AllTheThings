@@ -35,7 +35,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				hqt_bonusRenown_weekly(84076, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Enduring Gutterface
 			},
 		}),
-		n(216050, {	-- Harverster Qixt
+		n(216050, {	-- Harvester Qixt
 			description = "Patrols in the area.",
 			questID = 82036,
 			coords = {
@@ -98,7 +98,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				hqt_bonusRenown_weekly(84074, FACTION_THE_SEVERED_THREADS),	-- Bonus Rep: Monstrous Lasharoth
 			},
 		}),
-		n(216052, {	-- Skrimisher Sa'zryk
+		n(216052, {	-- Skirmisher Sa'zryk
 			description = "Patrolling the path from the base to the top.",
 			coords = {
 					{ 61.3, 7.6, AZJ_KAHET },

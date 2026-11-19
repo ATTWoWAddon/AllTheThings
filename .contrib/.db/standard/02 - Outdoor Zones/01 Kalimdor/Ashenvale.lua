@@ -1182,7 +1182,7 @@ maproot(KALIMDOR, ASHENVALE, {
 				},
 			}),
 			q(13982, {	-- In a Bind
-				sourceQuest = 13976,	-- Three Fiends of the Forest
+				sourceQuest = 13976,	-- Three Friends of the Forest
 				qg = 3698,	-- Bolyun
 				coord = { 18.0, 60.0, ASHENVALE },
 				timeline = { ADDED_4_0_3 },
@@ -1340,7 +1340,7 @@ maproot(KALIMDOR, ASHENVALE, {
 			q(6621, {	-- King of the Foulweald
 				sourceQuests = {
 					-- #if AFTER CATA
-					13967,	-- Thinning the... Heard?
+					13967,	-- Thinning the... Herd?
 					-- #else
 					216,	-- Between a Rock and a Thistlefur
 					-- #endif
@@ -2015,7 +2015,7 @@ maproot(KALIMDOR, ASHENVALE, {
 				races = ALLIANCE_ONLY,
 				lvl = 21,
 			}),
-			q(9428, {	-- Report to Spintertree Post
+			q(9428, {	-- Report to Splintertree Post
 				qg = 17098,	-- Ambassador Dawnsinger
 				coord = { 71.0, 68.0, ORGRIMMAR },
 				timeline = { ADDED_2_0_1, REMOVED_4_0_3 },
@@ -2385,7 +2385,7 @@ maproot(KALIMDOR, ASHENVALE, {
 			}),
 			q(13751, {	-- Tell No One!
 				sourceQuest = 13730,	-- Playing With Felfire
-				qg = 33726,	-- Sprintertree Demolisher
+				qg = 33726,	-- Splintertree Demolisher
 				coord = { 73.3, 62.1, ASHENVALE },
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,

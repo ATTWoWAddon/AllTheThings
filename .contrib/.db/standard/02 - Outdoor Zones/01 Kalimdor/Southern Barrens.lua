@@ -53,7 +53,7 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 					24517,	-- Put the Fear in Them
 					24514,	-- Raptor Scraps
 					24519,	-- Stalling the Survey
-					24512,	-- Warrior's Redemption
+					24512,	-- Warriors' Redemption
 					24542,	-- A Curious Bloom
 					24525,	-- Keeping the Dogs at Bay
 					24534,	-- Speaking Their Language

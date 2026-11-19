@@ -297,7 +297,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					coord = { 24.8,60.3, THE_WAKING_SHORES },
 					isDaily = true,
 				}),
-				q(72447, {	-- Greatest of Threads
+				q(72447, {	-- Greatest of Threats
 					sourceQuest = 66419,	-- Allegiance To One
 					provider = { "n", 191193 },	-- Exadria
 					coord = { 27.6, 56.3, THE_WAKING_SHORES },

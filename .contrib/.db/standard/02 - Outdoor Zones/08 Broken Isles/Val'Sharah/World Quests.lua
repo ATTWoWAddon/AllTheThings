@@ -153,7 +153,7 @@ maproot(BROKEN_ISLES, VALSHARAH, {
 			q(41600, {	-- Lively Mossgill Perch
 				requireSkill = FISHING,
 			}),
-			q(41269, {	-- Lively Mosgill Perch
+			q(41269, {	-- Lively Mossgill Perch
 				requireSkill = FISHING,
 			}),
 			q(44011),	-- Lost Wisp
@@ -219,7 +219,7 @@ maproot(BROKEN_ISLES, VALSHARAH, {
 			q(41293),	-- Supplies Needed: Dreamleaf
 			q(41316),	-- Supplies Needed: Leystone
 			q(41339),	-- Supplies Needed: Stonehide Leather
-			q(41996),	-- Tangeld Nightmare
+			q(41996),	-- Tangled Nightmare
 			q(41980),	-- Temple Defense
 			q(45921),	-- Thal'xur (Invasion wq)
 			q(46265),	-- The Fel and the Fawns (Invasion wq)

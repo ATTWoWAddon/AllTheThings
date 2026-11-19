@@ -551,7 +551,7 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					isBreadcrumb = true,
 					lvl = lvlsquish(13, 13, 1),
 				}),
-				q(10067, {	-- Fouled Water Spiritsm
+				q(10067, {	-- Fouled Water Spirits
 					-- #if AFTER WRATH
 					qgs = {
 						17986,	-- Vindicator Corin

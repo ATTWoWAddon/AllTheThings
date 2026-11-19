@@ -700,7 +700,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 					provider = { "n", 192830 },	-- Steria Duskgrove
 					coord = { 65.7, 30.8, THE_AZURE_SPAN },
 					groups = {
-						i(200526),	-- Steria's Charm of Invisiblity
+						i(200526),	-- Steria's Charm of Invisibility
 					},
 				}),
 			}),
@@ -1116,7 +1116,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16428.11, {	-- Rustpine Den
-				q(66557, {	-- Academic Aquaintances
+				q(66557, {	-- Academic Acquaintances
 					sourceQuests = { 66556 },	-- Ice Cave Ya Got There
 					provider = { "n", 189401 },	-- Sonova Snowden
 					coord = { 65.4, 15.9, THE_AZURE_SPAN },
@@ -1131,7 +1131,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 				q(66141, {	-- Broken Traditions, Broken Bodies
 					sourceQuests = {
 						66671,	-- Path to Nowhere
-						66557,	-- Academic Aquaintances
+						66557,	-- Academic Acquaintances
 					},
 					provider = { "n", 187301 },	-- Garz
 					coord = { 63.2, 58.6, THE_AZURE_SPAN },
@@ -1317,7 +1317,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 			header(HEADERS.AchCriteria, 16580.10, {	-- Toejam the Terrible
 				q(66558, {	-- Rowie
 					sourceQuests = { 65849 },	-- To Iskaara
-					provider = { "n", 189533 },	-- Anutie Kaunnie
+					provider = { "n", 189533 },	-- Auntie Kaunnie
 					coord = { 13.8, 47.6, THE_AZURE_SPAN },
 				}),
 				q(70129, {	-- Toejam the Terrible
@@ -1476,7 +1476,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 						provider = { "n", 190000 },	-- Kalecgos
 						coord = { 39.5, 63.1, THE_AZURE_SPAN },
 					}),
-					q(72937, {	-- Unusual Desruptions
+					q(72937, {	-- Unusual Disruptions
 						sourceQuests = { 72936 },	-- Azuregos's Support
 						provider = { "n", 199976 },	-- Azuregos
 						coord = { 22.5, 23.8, BOREAN_TUNDRA },
@@ -1497,7 +1497,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 						},
 					}),
 					q(72938, {	-- Archival Arrival
-						sourceQuests = { 72937 },	-- Unusual Desruptions
+						sourceQuests = { 72937 },	-- Unusual Disruptions
 						provider = { "n", 199976 },	-- Azuregos
 						coord = { 22.5, 23.8, BOREAN_TUNDRA },
 					}),
@@ -1515,7 +1515,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 							74335,	-- A Moment of Reflection [Theramore]
 							74356,	-- Back with the Blues [Winterspring]
 							74291,	-- Blue is My Favorite Color [The Jade Forest]
-							74783,	-- The Sounds of Silence [Crystalsong Forest]
+							74783,	-- The Sound of Silence [Crystalsong Forest]
 							73181,	-- Zeroing Debt [Booty Bay]
 						},
 						sourceQuestNumRequired = 1,
@@ -1528,7 +1528,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 							74335,	-- A Moment of Reflection [Theramore]
 							74356,	-- Back with the Blues [Winterspring]
 							74291,	-- Blue is My Favorite Color [The Jade Forest]
-							74783,	-- The Sounds of Silence [Crystalsong Forest]
+							74783,	-- The Sound of Silence [Crystalsong Forest]
 							73181,	-- Zeroing Debt [Booty Bay]
 						},
 						sourceQuestNumRequired = 2,
@@ -1541,7 +1541,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 							74335,	-- A Moment of Reflection [Theramore]
 							74356,	-- Back with the Blues [Winterspring]
 							74291,	-- Blue is My Favorite Color [The Jade Forest]
-							74783,	-- The Sounds of Silence [Crystalsong Forest]
+							74783,	-- The Sound of Silence [Crystalsong Forest]
 							73181,	-- Zeroing Debt [Booty Bay]
 						},
 						sourceQuestNumRequired = 3,
@@ -1554,7 +1554,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 							74335,	-- A Moment of Reflection [Theramore]
 							74356,	-- Back with the Blues [Winterspring]
 							74291,	-- Blue is My Favorite Color [The Jade Forest]
-							74783,	-- The Sounds of Silence [Crystalsong Forest]
+							74783,	-- The Sound of Silence [Crystalsong Forest]
 							73181,	-- Zeroing Debt [Booty Bay]
 						},
 						sourceQuestNumRequired = 4,
@@ -1705,7 +1705,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 								}),
 							},
 						}),
-						q(74783, {	-- The Sounds of Silence
+						q(74783, {	-- The Sound of Silence
 							sourceQuests = { 72679 },	-- An Arcane Requiem
 							provider = { "n", 199184 },	-- Lanigosa
 							coord = { 91.3, 57.2, CRYSTALSONG_FOREST },
@@ -1943,7 +1943,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 								74335,	-- A Moment of Reflection [Theramore]
 								74356,	-- Back with the Blues [Winterspring]
 								74291,	-- Blue is My Favorite Color [The Jade Forest]
-								74783,	-- The Sounds of Silence [Crystalsong Forest]
+								74783,	-- The Sound of Silence [Crystalsong Forest]
 								73181,	-- Zeroing Debt [Booty Bay]
 							},
 							provider = { "n", 190000 },	-- Kalecgos

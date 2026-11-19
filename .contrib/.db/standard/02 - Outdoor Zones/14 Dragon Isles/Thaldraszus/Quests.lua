@@ -142,7 +142,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 				}),
 				q(70136, {	-- Haven't Got Time For the Pain
 					sourceQuests = { 66080 },	-- Temporal Difficulties
-					provider = { "n", 187098 },	-- Slaszerathel
+					provider = { "n", 187098 },	-- Siaszerathel
 					coord = { 55.0, 75.6, THALDRASZUS },
 					groups = {
 						i(198408),	-- Timewalker Notes (QI!)
@@ -151,12 +151,12 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 				}),
 				q(66082, {	-- Time in a Bottle
 					sourceQuests = { 70136 },	-- Haven't Got Time For the Pain
-					provider = { "n", 187098 },	-- Slaszerathel
+					provider = { "n", 187098 },	-- Siaszerathel
 					coord = { 55.0, 75.6, THALDRASZUS },
 				}),
 				q(66081, {	-- Time is Running Out
 					sourceQuests = { 70136 },	-- Haven't Got Time For the Pain
-					provider = { "n", 187098 },	-- Slaszerathel
+					provider = { "n", 187098 },	-- Siaszerathel
 					coord = { 55.0, 75.6, THALDRASZUS },
 					groups = {
 						i(195207),	-- Junior Timewarder Breeches
@@ -185,7 +185,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 				}),
 				q(66085, {	-- If We Could Turn Back Time
 					sourceQuests = { 66083 },	-- Feels Like the First Time
-					provider = { "n", 187098 },	-- Slaszerathel
+					provider = { "n", 187098 },	-- Siaszerathel
 					coord = { 57.4, 78.9, THALDRASZUS },
 				}),
 				q(66087, {	-- Closing Time
@@ -445,7 +445,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 				------ Epilogue ------
 				q(72380, {	-- Together We Are Unstoppable
 					sourceQuests = { 66847 },	-- Vault of the Incarnates: Fury of the Storm-Eater
-					provider = { "n", 193460 },	-- Kalegos
+					provider = { "n", 193460 },	-- Kalecgos
 					maps = { 2119, 2120, 2121, 2122, 2123, 2124, 2125, 2126, 2135, },	-- Vault of the Incarnates
 				}),
 				------ The End ------
@@ -556,7 +556,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					provider = { "n", 187289 },	-- Waywatcher Alvi
 					coord = { 57.0, 67.7, THALDRASZUS },
 				}),
-				q(66467, {	-- Art Inmitates Life
+				q(66467, {	-- Art Imitates Life
 					sourceQuests = {
 						66456,	-- A Poisonous Palette
 						66457,	-- Ending the Blue Period
@@ -644,7 +644,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 						i(191176),	-- Feather-Plucker 3300 Gears (QI!)
 					},
 				}),
-				q(65475, {	-- Rollling in the Screech
+				q(65475, {	-- Rolling in the Screech
 					sourceQuests = {
 						66071,	-- Flying Rocs
 						65267,	-- Smash'Em to Feathereens
@@ -657,7 +657,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 						65313,	-- A Roc-ing Appetite
 						65490,	-- Explosive Excrement
 						65373,	-- Plucking Parts
-						65475,	-- Rollling in the Screech
+						65475,	-- Rolling in the Screech
 					},
 					provider = { "n", 183912 },	-- Harleen Chirpsnide
 					coord = { 50.0, 69.8, THALDRASZUS },
@@ -672,7 +672,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 						65313,	-- A Roc-ing Appetite
 						65490,	-- Explosive Excrement
 						65373,	-- Plucking Parts
-						65475,	-- Rollling in the Screech
+						65475,	-- Rolling in the Screech
 					},
 					provider = { "n", 184591 },	-- Segallia
 					coord = { 50.0, 69.8, THALDRASZUS },
@@ -686,7 +686,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 						65313,	-- A Roc-ing Appetite
 						65490,	-- Explosive Excrement
 						65373,	-- Plucking Parts
-						65475,	-- Rollling in the Screech
+						65475,	-- Rolling in the Screech
 					},
 					provider = { "n", 183912 },	-- Harleen Chirpsnide
 					coord = { 50.0, 69.8, THALDRASZUS },
@@ -1064,7 +1064,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					}),
 					q(72419, {	-- Cleaning up the Cliffraff
 						sourceQuests = { 72418 },	-- Solicited Opinions
-						provider = { "n", 200788 },	-- Captain Drime
+						provider = { "n", 200788 },	-- Captain Drine
 						coord = { 38.8, 52.6, THALDRASZUS },
 					}),
 					q(72422, {	-- Stop the Presses
@@ -1208,7 +1208,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 			------ Miscellaneous ------
 			q(67093, {	-- An Anomalous Shrine
 				sourceQuests = { 65962 },	-- The Never-Final Countdown
-				provider = { "n", 192543 },	-- Archivist Arenial
+				provider = { "n", 192543 },	-- Archivist Areniel
 				coord = { 60.3, 81.9, THALDRASZUS },
 				groups = {
 					i(194687),	-- Echo of Duty (QI!)
@@ -1220,7 +1220,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 			}),
 			q(67154, {	-- Entropic Remnants
 				sourceQuests = { 65962 },	-- The Never-Final Countdown
-				provider = { "n", 192543 },	-- Archivist Arenial
+				provider = { "n", 192543 },	-- Archivist Areniel
 				coord = { 60.3, 81.9, THALDRASZUS },
 				groups = {
 					i(199064),	-- Vitrified Sand (QI!)

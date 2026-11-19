@@ -541,7 +541,7 @@ maproot(KALIMDOR, DESOLACE, {
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),
-			applyclassicphase(SOD_PHASE_TWO, q(79235, {	-- On The Lam
+			applyclassicphase(SOD_PHASE_TWO, q(79235, {	-- On the Lam
 				sourceQuest = 79229,	-- Highway Robbery
 				qg = 11438,	-- Bibbly F'utzbuckle
 				coord = { 62.2, 38.8, DESOLACE },

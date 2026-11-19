@@ -139,7 +139,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 					}),
 				},
 			}),
-			n(200564, {	-- Storykeeper Askhekh
+			n(200564, {	-- Storykeeper Ashekh
 				coord = { 34.1, 60.0, THE_FORBIDDEN_REACH },
 				groups = {
 					i(204559, {	-- Essence of Divination

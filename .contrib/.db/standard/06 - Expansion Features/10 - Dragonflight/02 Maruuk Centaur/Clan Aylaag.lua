@@ -117,7 +117,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					},
 				}),
 				------ Aylaag Outpost ------
-				q(66711, {	-- Delicay in the Dark
+				q(66711, {	-- Delicacy in the Dark
 					provider = { "n", 185853 },	-- Hadari Khan
 					coord = { 71.4, 31.0, OHNAHRAN_PLAINS },
 					groups = {

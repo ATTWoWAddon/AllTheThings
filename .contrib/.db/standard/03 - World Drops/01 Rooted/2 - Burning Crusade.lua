@@ -1332,7 +1332,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					17407,	-- Felmist (Gas cloud)
 					16974,	-- Rogue Voidwalker
 					16975,	-- Uncontrolled Voidwalker
-					18869,	-- Unstable Voidwrath
+					18869,	-- Unstable Voidwraith
 					19527,	-- Vacilliating Voidwalker
 					17981,	-- Voidspawn
 					18870,	-- Voidshrieker
@@ -1361,7 +1361,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 					20290,	-- Lagoon Eel
 					17153,	-- Lake Spirit
 					17155,	-- Lake Surger
-					17154,	-- Muck spawn
+					17154,	-- Muck Spawn
 					18750,	-- Shimmerscale Eel
 					21728,	-- Skettis Surger
 					-- #if AFTER 2.3.0

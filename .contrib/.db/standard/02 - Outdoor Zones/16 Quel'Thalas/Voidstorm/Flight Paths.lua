@@ -6,7 +6,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.VOIDSTORM, {
 	n(FLIGHT_PATHS, {
 		fp(3121, {	-- Howling Ridge, Voidstorm
 			coord = { 51.1, 69.3, MAP.MIDNIGHT.VOIDSTORM },
-			cr = 235703,	-- Riftwalker Mallroil
+			cr = 235703,	-- Riftwalker Malloril
 		}),
 		fp(3120, {	-- Locus Point, Voidstorm
 			coord = { 42.3, 73.7, MAP.MIDNIGHT.VOIDSTORM },

@@ -57,7 +57,7 @@ maproot(KUL_TIRAS, DRUSTVAR, {
 					141642,	-- Hexthralled Halberdier
 					133889,	-- Hexthralled Halberdier
 					131519,	-- Hexthralled Falconer
-					133736,	-- Hexthralled Falconeer
+					133736,	-- Hexthralled Falconer
 					137134,	-- Hexthralled Soldier
 				},
 			}),

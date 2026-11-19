@@ -1239,7 +1239,7 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 			}),
 			q(26058, {	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
 				sourceQuest = 26048,	-- Spare Parts Up in Here!
-				qg = 40902,	-- Chief Blastgineer Bombguts
+				qg = 40902,	-- Chief Blastgineer Bombgutz
 				coord = { 66.2, 62.9, STONETALON_MOUNTAINS },
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
@@ -2257,7 +2257,7 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 				-- #if BEFORE 9.0.1
 				description = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
 				-- #endif
-				sourceQuest = 25652,	-- Commandeer That Ballon!
+				sourceQuest = 25652,	-- Commandeer That Balloon!
 				qg = 40896,	-- Lord Fallowmere
 				coord = { 59.6, 56.9, STONETALON_MOUNTAINS },
 				timeline = { ADDED_4_0_3 },
@@ -2355,7 +2355,7 @@ maproot(KALIMDOR, STONETALON_MOUNTAINS, {
 			}),
 			q(25646, {	-- Windshear Mine Cleanup
 				sourceQuest = 25640,	-- Bombs Away: Windshear Mine
-				qg = 40973,	-- Sentinal Heliana
+				qg = 40973,	-- Sentinel Heliana
 				coord = { 72.5, 61.5, STONETALON_MOUNTAINS },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,

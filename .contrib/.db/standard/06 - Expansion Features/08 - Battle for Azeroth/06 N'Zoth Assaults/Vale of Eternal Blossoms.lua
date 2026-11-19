@@ -606,7 +606,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						q(57171, {	-- Goldbough Guardian
 							coord = { 20.4, 12.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						}),
-						q(58334, {	-- Misfall in Flames
+						q(58334, {	-- Mistfall In Flames
 							coord = { 33.5, 71.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 						q(57299, {	-- Mysterious Sarcophagus
@@ -769,7 +769,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 								160810,	-- Harbinger Il'koxik
 								160868,	-- Harrier Nir'verash
 								160826,	-- Hive-Guard Naz'ruzek
-								160930,	-- Infused-Amber Ooze
+								160930,	-- Infused Amber Ooze
 								160920,	-- Kal'tik the Blight
 								160867,	-- Kzit'kovok
 								160922,	-- Needler Zhesalla
@@ -821,7 +821,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							questID = 58301,
 							coord = { 21.1, 62.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						}),
-						n(160930, {	-- Infused-Amber Ooze
+						n(160930, {	-- Infused Amber Ooze
 							questID = 58312,
 							coord = { 18.5, 66.5, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						}),
@@ -860,7 +860,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						q(57521, {	-- Empowered War Wagon
 							coord = { 09.0, 27.0, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						}),
-						q(57540, {	-- Kuchong Incubator
+						q(57540, {	-- Kunchong Incubator
 							coord = { 18.58, 65.75, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						}),
 						q(57089, {	-- Mantid Hatchery

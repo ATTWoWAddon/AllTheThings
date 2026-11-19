@@ -136,7 +136,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, {
 				-- unsorted due to ptr things, sourceQuest is speculated
 				q(90701, {	-- Cowardly Cheery Bombs
 					sourceQuests = { 86503 },	-- Who are the Dastardly Duos?
-					provider = { "n", 234297 },	-- Wodin the Troll Servant
+					provider = { "n", 234297 },	-- Wodin the Troll-Servant
 					coords = {
 						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
 						-- { x, y, ORGRIMMAR },	-- Orgrimmar

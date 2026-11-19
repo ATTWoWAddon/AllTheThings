@@ -16,7 +16,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		coord = { 54.18, 83.25, BLACKROCK_MOUNTAIN },
 		sharedLockout = 1,
 		isRaid = true,
-		cr = 14387,	-- Lothos Riftwalker
+		cr = 14387,	-- Lothos Riftwaker
 		lvl = lvlsquish(50, 50, 25),
 		timeline = { EXPANSION_DEFAULT_TIMELINES[EXPANSION.CLASSIC] },
 		groups = {

@@ -64,7 +64,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 			}),
 			q(65665, {	-- Embodiment
 				sourceQuests = {
-					65663,	-- Feed th Eater
+					65663,	-- Feed the Eater
 					65664,	-- Essence of Plague
 				},
 				provider = { "n", 185825 },	-- Plague Deviser Marileth

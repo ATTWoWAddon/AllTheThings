@@ -184,7 +184,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					-- Weapons
 					i(78482, {	-- Kiril, Fury of Beasts
 						maps = { 283, 284 },	-- Blackrock Caverns
-						crs = { 39705 },	-- Ascendent Lord Obsidius
+						crs = { 39705 },	-- Ascendant Lord Obsidius
 					}),
 					i(78487, {	-- Gurthalak, Voice of the Deeps
 						maps = { 324 },	-- The Stonecore
@@ -267,7 +267,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					}),
 					i(77975, {	-- Will of Unbinding
 						maps = { 283, 284 },	-- Blackrock Caverns
-						crs = { 39705 },	-- Ascendent Lord Obsidius
+						crs = { 39705 },	-- Ascendant Lord Obsidius
 					}),
 					i(77974, {	-- Wrath of Unchaining
 						maps = { 325 },	-- The Vortex Pinnacle

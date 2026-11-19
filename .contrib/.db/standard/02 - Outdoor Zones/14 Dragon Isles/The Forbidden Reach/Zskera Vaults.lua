@@ -130,7 +130,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 				}),
 				q(74442, {	-- One Dragon's Junk
 					sourceQuests = { 74381 },	-- Hidden Legacies
-					provider = { "n", 201517 },	-- Voxarian
+					provider = { "n", 201517 },	-- Voraxian
 					coord = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 					groups = {
 						i(203656),	-- Odd Device
@@ -138,12 +138,12 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 				}),
 				q(74443, {	-- Is Another Dragon's Treasure?
 					sourceQuests = { 74442 },	-- One Dragon's Junk
-					provider = { "n", 201517 },	-- Voxarian
+					provider = { "n", 201517 },	-- Voraxian
 					coord = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 				}),
 				q(74447, {	-- Verbal Archaeology
 					sourceQuests = { 74443 },	-- Is Another Dragon's Treasure?
-					provider = { "n", 201517 },	-- Voxarian
+					provider = { "n", 201517 },	-- Voraxian
 					coord = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 				}),
 				q(74282, {	-- Authentic Authorization
@@ -1203,7 +1203,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 						}),
 					},
 				})),
-				o(389471, {	-- Grand Obsidian Cache
+				o(389471, {	-- Obsidian Grand Cache
 					description = "Can be accessed through the Broken Waygate repaired with an Obsidian Toolkit.",
 					questID = 75047,
 					sourceQuest = 74978,	-- Broken Waygate (repaired)

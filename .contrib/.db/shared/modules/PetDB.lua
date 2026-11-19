@@ -1618,7 +1618,7 @@ n(61438, 430);		-- Gold Beetle
 n(63841, 749);		-- Golden Civet
 n(63842, 750);		-- Golden Civet Kitten
 n(61704, 443);		-- Grasslands Cottontail
-n(63549, 733);		-- Grasslands Hopper
+n(63549, 733);		-- Grassland Hopper
 n(62050, 464);		-- Grey Moth
 n(62818, 647);		-- Grizzly Squirrel
 n(62884, 539);		-- Grotto Vole
@@ -1659,8 +1659,8 @@ n(63095, 709);		-- Malayan Quillrat Pup
 n(63096, 710);		-- Marsh Fiddler
 n(63003, 570);		-- Masked Tanuki
 n(63716, 703);		-- Masked Tanuki Pup
-n(65185, 722);		-- Mei-Li Sparkler
-n(62317, 500);		-- Minifernal
+n(65185, 722);		-- Mei Li Sparkler
+n(62317, 500);		-- Minfernal
 n(62998, 566);		-- Mirror Strider
 n(61372, 422);		-- Moccasin
 n(61425, 428);		-- Molten Hatchling
@@ -1715,7 +1715,7 @@ n(62523, 511);		-- Sidewinder
 n(63057, 711);		-- Sifang Otter
 n(63358, 712);		-- Sifang Otter Pup
 n(64804, 741);		-- Silent Hedgehog
-n(62258, 494);		-- Silithis Hatchling
+n(62258, 494);		-- Silithid Hatchling
 n(63001, 568);		-- Silkbead Snail
 n(62373, 503);		-- Silky Moth
 n(62638, 637);		-- Skittering Cavern Crawler
@@ -2556,7 +2556,7 @@ n(99528, 1810);		-- Thornclaw Broodling
 n(97952, 1750);		-- Tiny Apparition
 n(97547, 1737);		-- Vale Flitter
 n(99513, 1807);		-- Vicious Broodling
-n(110666, 1912);	-- Young Mutant Wartutle
+n(110666, 1912);	-- Young Mutant Warturtle
 --- TRAINER ---
 i(0, 1893);			-- Allured Tadpole
 i(0, 1860);			-- Ancient Catacomb Spider
@@ -2859,7 +2859,7 @@ i(163515, 2429);	-- Azeriti
 i(162578, 2352);	-- Baa'l
 i(163859, 2477);	-- Baby Crawg
 i(163799, 2456);	-- Barnaby
-i(163511, 2425);	-- Barnacled Hemit Crab
+i(163511, 2425);	-- Barnacled Hermit Crab
 i(163494, 2408);	-- Bilefang Skitterer
 i(163861, 2476);	-- Bloated Bloodfeaster
 i(163500, 2414);	-- Bloodfeaster Larva

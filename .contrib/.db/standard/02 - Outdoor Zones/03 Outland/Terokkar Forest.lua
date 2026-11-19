@@ -582,7 +582,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							provider = { "n", 21661 },	-- Cabal Skirmisher
 						}),
 						objective(2, {	-- 0/4 Cabal Spell-weaver slain
-							provider = { "n", 21902 },	-- Cabal Spell-weaver
+							provider = { "n", 21902 },	-- Cabal Spell-Weaver
 						}),
 						objective(3, {	-- 0/2 Cabal Initiate slain
 							provider = { "n", 21907 },	-- Cabal Initiate
@@ -601,7 +601,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					provider = { "i", 31707 },	-- Cabal Orders
 					crs = {
 						21661,	-- Cabal Skirmisher
-						21902,	-- Cabal Spell-weaver
+						21902,	-- Cabal Spell-Weaver
 						21907,	-- Cabal Initiate
 					},
 				}),
@@ -1728,11 +1728,11 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						n(23163, {	-- Gezzarak the Huntress
 							i(32531),	-- Gezzarak's Fang
-							i(32716),	-- Gazzarak's Claws
+							i(32716),	-- Gezzarak's Claws
 						}),
 						n(23165, {	-- Karrog
 							i(32533),	-- Karrog's Shard
-							i(32717),	-- Karro's Spine
+							i(32717),	-- Karrog's Spine
 						}),
 						n(23162, {	-- Vakkiz the Windrager
 							i(32532),	-- Windrager's Coils

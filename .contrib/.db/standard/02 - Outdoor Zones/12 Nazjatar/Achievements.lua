@@ -225,7 +225,7 @@ maproot(NAZJATAR, {
 				crit(45601),	-- Bloodseeker
 			})),
 			ach(13690),	-- Nazjatarget Eliminated
-			ach(13713),	-- Nothing to Scry About
+			ach(13713),	-- Nothing To Scry About
 			ach(13699, {	-- Periodic Destruction
 				coord = { 60.7, 32.1, NAZJATAR },
 				description = "You must combine lesser and greater crystals in different combinations before activating the Elemental Essence Amalgamator to summon a specific mob. Look at the minilist section dedicated to The Laboratory of Mardivas for more information!",

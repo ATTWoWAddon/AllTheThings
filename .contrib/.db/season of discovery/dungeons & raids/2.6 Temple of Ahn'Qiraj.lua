@@ -1299,7 +1299,7 @@ instanceroot(744, applyclassicphase(PHASE_FIVE, {	-- Temple of Ahn'Qiraj
 				i(21699),	-- Barrage Shoulders
 				i(21701),	-- Cloak of Concentrated Hatred
 				i(21814),	-- Breastplate of Annihilation
-				i(21708),	-- Beetle Scaled Waistguards
+				i(21708),	-- Beetle Scaled Wristguards
 				i(21698),	-- Leggings of Immersion
 				i(21705),	-- Boots of the Fallen Prophet
 				i(21704),	-- Boots of the Redeemed Prophecy
@@ -1825,14 +1825,14 @@ instanceroot(744, applyclassicphase(PHASE_FIVE, {	-- Temple of Ahn'Qiraj
 						}),
 						cl(PALADIN, {
 							-- DPS
-							i(233398),	-- Avengers Crown
-							i(233401),	-- Avengers Pauldrons
+							i(233398),	-- Avenger's Crown
+							i(233401),	-- Avenger's Pauldrons
 							-- Healer
-							i(233684),	-- Avengers Mantle
-							i(233687),	-- Avengers Helm
+							i(233684),	-- Avenger's Mantle
+							i(233687),	-- Avenger's Helm
 							-- Tank
-							i(233689),	-- Avengers Spaulders
-							i(233692),	-- Avengers Great Helm
+							i(233689),	-- Avenger's Spaulders
+							i(233692),	-- Avenger's Great Helm
 						}),
 						cl(PRIEST, {
 							-- DPS
@@ -1914,14 +1914,14 @@ instanceroot(744, applyclassicphase(PHASE_FIVE, {	-- Temple of Ahn'Qiraj
 						}),
 						cl(PALADIN, {
 							-- DPS
-							i(233399),	-- Avengers' Greaves
-							i(233400),	-- Avengers' Legguards
+							i(233399),	-- Avenger's Greaves
+							i(233400),	-- Avenger's Legguards
 							-- Healer
-							i(233685),	-- Avengers' Plate Pants
-							i(233686),	-- Avengers' Treads
+							i(233685),	-- Avenger's Plate Pants
+							i(233686),	-- Avenger's Treads
 							-- Tank
-							i(233690),	-- Avengers' Tassets
-							i(233691),	-- Avengers' Sabatons
+							i(233690),	-- Avenger's Tassets
+							i(233691),	-- Avenger's Sabatons
 						}),
 						cl(PRIEST, {
 							-- DPS
@@ -1996,11 +1996,11 @@ instanceroot(744, applyclassicphase(PHASE_FIVE, {	-- Temple of Ahn'Qiraj
 						}),
 						cl(PALADIN, {
 							-- DPS
-							i(233397),	-- Avengers Breastplate
+							i(233397),	-- Avenger's Breastplate
 							-- Healer
-							i(233688),	-- Avengers Cuirass
+							i(233688),	-- Avenger's Cuirass
 							-- Tank
-							i(233693),	-- Avengers Chestguard
+							i(233693),	-- Avenger's Chestguard
 						}),
 						cl(PRIEST, {
 							-- DPS
@@ -2054,7 +2054,7 @@ instanceroot(744, applyclassicphase(PHASE_FIVE, {	-- Temple of Ahn'Qiraj
 						i(233507),	-- Ring of Swarming Thought
 						i(233509),	-- Staff of the Qiraji Prophets
 						i(233514),	-- Boots of the Unwavering Will
-						i(233515),	-- Hammer of Jizhi
+						i(233515),	-- Hammer of Ji'zhi
 						i(233516),	-- Breastplate of Annihilation
 						i(233517),	-- Boots of the Redeemed Prophecy
 						i(233518),	-- Boots of the Fallen Prophet
@@ -2193,9 +2193,9 @@ instanceroot(744, applyclassicphase(PHASE_FIVE, {	-- Temple of Ahn'Qiraj
 					i(233368),	-- Intact Entrails
 					i(233611),	-- Boots of Epiphany
 					i(233612),	-- Qiraji Execution Bracers
-					i(233613),	-- Veklor's Gloves of Devastation
+					i(233613),	-- Vek'lor's Gloves of Devastation
 					i(233614),	-- Royal Qiraji Belt
-					i(233615),	-- Ring of Emperor Veklor
+					i(233615),	-- Ring of Emperor Vek'lor
 					i(233616),	-- Royal Scepter of Vek'lor
 					i(235045),	-- Imperial Qiraji Regalia
 					i(235046),	-- Imperial Qiraji Armaments
@@ -2272,7 +2272,7 @@ instanceroot(744, applyclassicphase(PHASE_FIVE, {	-- Temple of Ahn'Qiraj
 						i(234614, {	-- Void-Touched Emblem
 							i(234650),	-- Ancient Qiraji Ripper
 							i(234974),	-- Staff of the Qiraji Prophets
-							i(234975),	-- Hammer of Jizhi
+							i(234975),	-- Hammer of Ji'zhi
 							i(234976),	-- Wand of Qiraji Nobility
 							i(234977),	-- Silithid Claw
 							i(234978),	-- Jaw of the Sand Reaver

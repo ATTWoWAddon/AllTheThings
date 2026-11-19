@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					crs = {
 						24850,	-- Kalecgos
 						24892,	-- Sathrovarr the Corruptor
-						24882,	-- Brutalus
+						24882,	-- Brutallus
 						25038,	-- Felmyst
 						25165,	-- Sacrolash
 						25166,	-- Alythess

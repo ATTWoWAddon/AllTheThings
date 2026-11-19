@@ -1058,7 +1058,7 @@ maproot(ZANDALAR, VOLDUN, {
 			}),
 			q(47638, {	-- Powerful Spirits
 				sourceQuests = {
-					47503,	-- Gozda'kun the Slayer
+					47503,	-- Gozda'kun the Slaver
 					47502,	-- The Great Cranium Caper
 					50328,	-- Unconventional Aromatics
 				},
@@ -1615,7 +1615,7 @@ maproot(ZANDALAR, VOLDUN, {
 				},
 			}),
 			q(49662, {	-- The Missing Key
-				sourceQuests = { 49340 },	-- The Keepers' Key
+				sourceQuests = { 49340 },	-- The Keepers' Keys
 				provider = { "n", 128694 },	-- Vorrik
 				coord = { 27.1, 52.5, VOLDUN },	-- Sanctuary of the Devoted
 				races = HORDE_ONLY,
@@ -1808,7 +1808,7 @@ maproot(ZANDALAR, VOLDUN, {
 			q(49003, {	-- Vengeance From Above
 				sourceQuests = {
 					49141,	-- Diplomacy and Dominance
-					50748,	-- Don't Drop It... Yes
+					50748,	-- Don't Drop It... Yet
 				},
 				provider = { "n", 135110 },	-- Vorrik
 				coord = { 47.1, 39.1, VOLDUN },	-- Rakjan's Peak

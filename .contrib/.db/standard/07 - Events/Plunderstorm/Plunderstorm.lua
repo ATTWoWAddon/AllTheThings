@@ -73,7 +73,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, {
 		timeline = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END },
 		groups = {
 			n(ACHIEVEMENTS, {
-				ach(20509),	-- Plunderking
+				ach(20509),	-- Plunderkind
 				ach(20508),	-- Plunder Wonder
 			}),
 			n(QUESTS, sharedData({

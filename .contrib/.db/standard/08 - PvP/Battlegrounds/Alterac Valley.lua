@@ -1091,7 +1091,7 @@ battleground(ALTERAC_VALLEY, {
 					moh(3, i(19321)),	-- The Immovable Object
 					moh(3, i(19324)),	-- The Lobotomizer
 					moh(3, i(19323)),	-- The Unstoppable Force
-					moh(2, i(19315)),	-- Therazane's Torch
+					moh(2, i(19315)),	-- Therazane's Touch
 					moh(2, i(19308)),	-- Tome of Arcane Domination
 					moh(2, i(19311)),	-- Tome of Fiery Arcana
 					moh(2, i(19309)),	-- Tome of Shadow Force
@@ -1102,7 +1102,7 @@ battleground(ALTERAC_VALLEY, {
 					moh(1, i(19084)),	-- Stormpike Soldier's Cloak
 					moh(1, i(19094)),	-- Stormpike Cloth Girdle
 					moh(1, i(19093)),	-- Stormpike Leather Girdle
-					moh(1, i(19092)),	-- Stormpike Mail Girgle
+					moh(1, i(19092)),	-- Stormpike Mail Girdle
 					moh(1, i(19091)),	-- Stormpike Plate Girdle
 					moh(1, i(19325)),	-- Don Julio's Band
 					moh(1, i(246424, { timeline = { ADDED_11_2_7 } })),	-- Square Stormpike Table (DECOR!)
@@ -1141,7 +1141,7 @@ battleground(ALTERAC_VALLEY, {
 					moh(3, i(19321)),	-- The Immovable Object
 					moh(3, i(19324)),	-- The Lobotomizer
 					moh(3, i(19323)),	-- The Unstoppable Force
-					moh(2, i(19315)),	-- Therazane's Torch
+					moh(2, i(19315)),	-- Therazane's Touch
 					moh(2, i(19308)),	-- Tome of Arcane Domination
 					moh(2, i(19311)),	-- Tome of Fiery Arcana
 					moh(2, i(19309)),	-- Tome of Shadow Force

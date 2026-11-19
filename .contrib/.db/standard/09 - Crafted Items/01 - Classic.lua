@@ -422,7 +422,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					i(64350, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Insect in Amber
 					i(64468, {cost={{"c",ARCH_CURRENCY_FOSSIL,45}}}),	-- Proto-Drake Skeleton
 					i(69821, {cost={{"c",ARCH_CURRENCY_FOSSIL,120}},timeline = {ADDED_4_1_0}}),	-- Pterrordax Hatchling (PET!)
-					i(66056, {cost={{"c",ARCH_CURRENCY_FOSSIL,30}}}),	-- Shared of Petrified Wood
+					i(66056, {cost={{"c",ARCH_CURRENCY_FOSSIL,30}}}),	-- Shard of Petrified Wood
 					i(66057, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Strange Velvet Worm
 					i(63527, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Twisted Ammonite Shell
 					i(64387, {cost={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Vicious Ancient Fish
@@ -2202,7 +2202,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},]]
 				}),
 				i(6307),	-- Message in a Bottle
-				i(21228, {	-- Mitril Bound Trunk
+				i(21228, {	-- Mithril Bound Trunk
 					maps_disp = {
 						BLASTED_LANDS,
 						EASTERN_PLAGUELANDS,

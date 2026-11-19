@@ -99,7 +99,7 @@ local NAXX_10MAN_METADATA_AND_ACHIEVEMENTS = d(DIFFICULTY.LEGACY_RAID.PLAYER10_N
 		-- #endif
 		n(NAXX_ARACHNID_QUARTER, {
 			e(1601, {	-- Anub'Rehkan
-				creatureID = 15956,	-- Anub'Rehkan
+				creatureID = 15956,	-- Anub'Rekhan
 				lore = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
 				groups = {
 					ach(562, {	-- The Arachnid Quarter (10 player)

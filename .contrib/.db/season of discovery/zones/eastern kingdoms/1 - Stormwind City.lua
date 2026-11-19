@@ -1520,7 +1520,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				},
 			}),
 			q(392, {	-- The Curious Visitor
-				sourceQuest = 391,	-- The Stockage Riots
+				sourceQuest = 391,	-- The Stockade Riots
 				qg = 1719,	-- Warden Thelwater
 				qi = 8687,	-- Sealed Description of Thredd's Visitor
 				coords = {

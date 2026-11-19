@@ -12,7 +12,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						coord = { 13.1, 49.3, THE_AZURE_SPAN },
 					}),
 				}, {	-- RENOWN 2 --
-					q(70936, {	-- Stolen Tuskaar Totems
+					q(70936, {	-- Stolen Tuskarr Totems
 						provider = { "n", 186448 },	-- Elder Poa
 						coord = { 12.4, 49.3, THE_AZURE_SPAN },
 					}),
@@ -26,7 +26,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 					------ BoP Sacred Tuskarr Totem ------
 					q(70926, {	-- Stolen Totems
-						sourceQuests = { 70936 },	-- Stolen Tuskaar Totems
+						sourceQuests = { 70936 },	-- Stolen Tuskarr Totems
 						provider = { "n", 186448 },	-- Elder Poa
 						coord = { 12.4, 49.3, THE_AZURE_SPAN },
 						maxReputation = { FACTION_ISKAARA_TUSKARR, 30 },
@@ -34,7 +34,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						repeatable = true,
 					}),
 					q(70927, {	-- More Stolen Totems
-						sourceQuests = { 70936 },	-- Stolen Tuskaar Totems
+						sourceQuests = { 70936 },	-- Stolen Tuskarr Totems
 						provider = { "n", 186448 },	-- Elder Poa
 						coord = { 12.4, 49.3, THE_AZURE_SPAN },
 						maxReputation = { FACTION_ISKAARA_TUSKARR, 30 },
@@ -43,7 +43,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 					------ BoA Sacred Tuskarr Totem ------
 					q(71040, {	-- Stolen Totems
-						sourceQuests = { 70936 },	-- Stolen Tuskaar Totems
+						sourceQuests = { 70936 },	-- Stolen Tuskarr Totems
 						provider = { "n", 186448 },	-- Elder Poa
 						coord = { 12.4, 49.3, THE_AZURE_SPAN },
 						maxReputation = { FACTION_ISKAARA_TUSKARR, 30 },
@@ -51,7 +51,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						repeatable = true,
 					}),
 					q(71041, {	-- More Stolen Totems
-						sourceQuests = { 70936 },	-- Stolen Tuskaar Totems
+						sourceQuests = { 70936 },	-- Stolen Tuskarr Totems
 						provider = { "n", 186448 },	-- Elder Poa
 						coord = { 12.4, 49.3, THE_AZURE_SPAN },
 						maxReputation = { FACTION_ISKAARA_TUSKARR, 30 },
@@ -245,7 +245,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							i(191859),	-- Half-Boiled Fish (QI!)
 						},
 					}),
-					q(66418, {	-- Testing the Tuskaprsenal
+					q(66418, {	-- Testing the Tuskarrsenal
 						sourceQuests = { 66417 },	-- Salvaging Supplies
 						provider = { "n", 188285 },	-- Crafter Kuliqa
 						coord = { 54.3, 38.7, THE_WAKING_SHORES },
@@ -255,7 +255,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 					q(66414, {	-- All But One
 						sourceQuests = {
-							66418,	-- Testing the Tuskaprsenal
+							66418,	-- Testing the Tuskarrsenal
 							66411,	-- Troubled Waters
 						},
 						provider = { "n", 187323 },	-- Tutaqan
@@ -688,7 +688,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							title(476),	-- <Name> of Iskaara
 						},
 					}),
-					q(72328, {	-- Out Ferocious, Armored Steeds
+					q(72328, {	-- Our Ferocious, Armored Steeds
 						provider = { "n", 186462 },	-- Tatto
 						coord = { 13.8, 49.7, THE_AZURE_SPAN },
 						lockCriteria = {2,

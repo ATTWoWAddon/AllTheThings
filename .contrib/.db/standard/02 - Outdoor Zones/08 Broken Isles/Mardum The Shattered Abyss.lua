@@ -40,7 +40,7 @@ maproot(BROKEN_ISLES, 672, {	-- Mardum, the Shattered Abyss
 					i(133317, { races = HORDE_ONLY }),	-- Treads of Illidari Supremacy
 				},
 			}),
-			q(40378, {	-- Enter the Illidar: Ashtongue
+			q(40378, {	-- Enter the Illidari: Ashtongue
 				sourceQuests = { 40077 },	-- The Invasion Begins
 				qg = 98229,	-- Kayn Sunfury
 				coord = { 28.6, 63.1, 672 },
@@ -51,7 +51,7 @@ maproot(BROKEN_ISLES, 672, {	-- Mardum, the Shattered Abyss
 				},
 			}),
 			q(38759, {	-- Set Them Free
-				sourceQuests = { 40378 },	-- Enter the Illidar: Ashtongue
+				sourceQuests = { 40378 },	-- Enter the Illidari: Ashtongue
 				qg = 94410,	-- Allari the Souleater
 				coord = { 33.9, 70.0, 672 },
 				groups = {
@@ -61,12 +61,12 @@ maproot(BROKEN_ISLES, 672, {	-- Mardum, the Shattered Abyss
 				},
 			}),
 			q(39049, {	-- Eye On the Prize
-				sourceQuests = { 40378 },	-- Enter the Illidar: Ashtongue
+				sourceQuests = { 40378 },	-- Enter the Illidari: Ashtongue
 				qg = 94410,	-- Allari the Souleater
 				coord = { 33.9, 70.0, 672 },
 			}),
 			q(40379, {	-- Enter the Illidari: Coilskar
-				sourceQuests = { 40378 },	-- Enter the Illidar: Ashtongue
+				sourceQuests = { 40378 },	-- Enter the Illidari: Ashtongue
 				qg = 100982,	-- Sevis Brightflame
 				coord = { 33.9, 69.9, 672 },
 			}),

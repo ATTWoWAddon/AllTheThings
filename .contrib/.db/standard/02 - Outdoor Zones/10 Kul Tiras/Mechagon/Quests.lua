@@ -533,7 +533,7 @@ maproot(KUL_TIRAS, MECHAGON, {
 							}),
 						},
 					}),
-					i(168266, {	-- Strange Recycling Requisiton
+					i(168266, {	-- Strange Recycling Requisition
 						questID = 56079,
 						isDaily = true,
 						groups = {

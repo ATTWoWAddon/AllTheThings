@@ -229,7 +229,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 					minReputation = { FACTION_LOAMM_NIFFEN, 9 },
 				}, {
 					-- Sniffen Sage --
-					q(75772, {	-- Flask Manage
+					q(75772, {	-- Flask Manager
 						provider = { "i", 205912 },	-- Leather-Wrapped Flask
 						coord = { 58.5, 56.4, ZARALEK_CAVERN },
 					}),

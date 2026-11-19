@@ -207,7 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					groups = {
 						ach(5065),	-- Heroic: Halls of Origination
 						ach(5139),	-- Heroic: Halls of Origination Guild Run
-						ach(5295),	-- Sun of a...
+						ach(5295),	-- Sun of a....
 						i(56432),	-- Band of Rays
 						i(56433),	-- Blade of the Burning Sun
 						i(56428),	-- Fingers of Light
@@ -331,7 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					groups = {
 						ach(5065),	-- Heroic: Halls of Origination
 						ach(5139),	-- Heroic: Halls of Origination Guild Run
-						ach(5295),	-- Sun of a...
+						ach(5295),	-- Sun of a....
 					},
 				}),
 			}),

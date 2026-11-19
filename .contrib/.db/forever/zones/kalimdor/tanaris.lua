@@ -453,7 +453,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				learnedAt = 265,
 				lvl = 50,
 				groups = {
-					i(12690),	-- Plans: Imperial Plate Bracer (RECIPE!)
+					i(12690),	-- Plans: Imperial Plate Bracers (RECIPE!)
 				},
 			}),
 			q(7656, {	-- Imperial Plate Chest

@@ -100,13 +100,13 @@ maproot(DRAGON_ISLES, {
 				coord = { 55.9, 12.6, DUROTAR },
 				races = HORDE_ONLY,
 			}),
-			q(72481, {	-- The Waking Shore Tour
+			q(72481, {	-- The Waking Shores Tour
 				sourceQuests = { 68798 },	-- Dragon Glyphs and You
 				provider = { "n", 193411 },	-- Celormu
 				coord = { 73.3, 52.1, THE_WAKING_SHORES },
 			}),
 			q(72483, {	-- The Ohn'ahran Plains Tour
-				sourceQuests = { 72481 },	-- The Waking Shore Tour
+				sourceQuests = { 72481 },	-- The Waking Shores Tour
 				provider = { "n", 193411 },	-- Celormu
 				coord = { 73.3, 52.1, THE_WAKING_SHORES },
 			}),

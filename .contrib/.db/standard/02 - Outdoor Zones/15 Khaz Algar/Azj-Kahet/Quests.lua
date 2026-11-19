@@ -287,7 +287,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				},
 			}),
 			--
-			q(78244, {	-- Kahet Hospitality
+			q(78244, {	-- Kaheti Hospitality
 				sourceQuests = {
 					78231,	-- Like a Spider on the Wall
 					78232,	-- Rewriting the Rewritten
@@ -302,7 +302,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				},
 			}),
 			q(78248, {	-- What We Still Have
-				sourceQuests = { 78244 },	-- Kahet Hospitality
+				sourceQuests = { 78244 },	-- Kaheti Hospitality
 				provider = { "n", 217385 },	-- Alleria Windrunner
 				coord = { 60.6, 68.8, AZJ_KAHET },
 				groups = {
@@ -527,13 +527,13 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				provider = { "n", 220603 },	-- Orweyna
 				coord = { 59.9, 63.8, AZJ_KAHET },
 			}),
-			q(80566, {	-- Enemies Around
+			q(80566, {	-- Enemies Abound
 				sourceQuests = { 80565 },	-- Resounding Repercussions
 				provider = { "n", 220608 },	-- Hannan
 				coord = { 61.9, 62.6, AZJ_KAHET },
 			}),
 			q(80567, {	-- Song of Restoring
-				sourceQuests = { 80566 },	-- Enemies Around
+				sourceQuests = { 80566 },	-- Enemies Abound
 				provider = { "n", 223285 },	-- Orweyna
 				coord = { 59.8, 63.9, AZJ_KAHET },
 			}),
@@ -887,7 +887,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				provider = { "n", 221948 },	-- Sum'latha
 				coord = { 51.4, 63.9, AZJ_KAHET },
 			}),
-			q(81959, {	-- Collecting a Concotion
+			q(81959, {	-- Collecting a Concoction
 				sourceQuests = { 81928 },	-- A Cure for All Problems
 				provider = { "n", 221842 },	-- Alchemist Talbax
 				coord = { 59.9, 54.2, AZJ_KAHET },
@@ -908,7 +908,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				},
 			}),
 			q(81962, {	-- A Nudge in the Right Direction
-				sourceQuests = { 81959 },	-- Collecting a Concotion
+				sourceQuests = { 81959 },	-- Collecting a Concoction
 				provider = { "n", 221842 },	-- Alchemist Talbax
 				coord = { 59.9, 54.1, AZJ_KAHET },
 			}),
@@ -933,7 +933,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				provider = { "n", 217355 },	-- Klaskin
 				coord = { 47.9, 13.2, NERUBAR },
 			}),
-			q(80502, {	-- Don't Cry for Me, Azi-Kahet
+			q(80502, {	-- Don't Cry for Me, Azj-Kahet
 				sourceQuests = { 79631 },	-- Klaskin's Great Escape
 				provider = { "n", 220690 },	-- Klaskin
 				coord = { 63.9, 16.2, NERUBAR },
@@ -1148,12 +1148,12 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 		}),
 		q(82126, {	-- Defense of the People
 			sourceQuests = { 82125 },	-- A Spy Like Us
-			provider = { "n", 222790  },	-- Gut'usu
+			provider = { "n", 222790  },	-- Gut'usul
 			coord = { 57.2, 41.0, NERUBAR_LOWER },
 		}),
 		q(82127, {	-- Make Them Prey
 			sourceQuests = { 82125 },	-- A Spy Like Us
-			provider = { "n", 222790  },	-- Gut'usu
+			provider = { "n", 222790  },	-- Gut'usul
 			coord = { 57.2, 41.0, NERUBAR_LOWER },
 		}),
 		q(82130, {	-- A Shot at the Top
@@ -1161,7 +1161,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				82126,	-- Defense of the People
 				82127,	-- Make Them Prey
 			},
-			provider = { "n", 222790  },	-- Gut'usu
+			provider = { "n", 222790  },	-- Gut'usul
 			coord = { 57.2, 41.0, NERUBAR_LOWER },
 		}),
 		q(82141, {	-- To Kill a Queen

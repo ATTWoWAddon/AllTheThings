@@ -2374,7 +2374,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(31157),	-- Drakehide Tunic
 					},
 				}),
-				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23281, {	-- Insidio
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23281, {	-- Insidion
 					coord = { 62.7, 7.3, BLADES_EDGE_MOUNTAINS },
 					cost = { { "i", 32569, 35 } },	-- Apexis Shard
 					timeline = { ADDED_2_1_0 },
@@ -2479,7 +2479,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				})),
 			}),
 			n(VENDORS, {
-				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23245, {	-- Aether-tech Master
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23245, {	-- Aether-Tech Master
 					description = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
 					coord = { 54.4, 10.8, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },

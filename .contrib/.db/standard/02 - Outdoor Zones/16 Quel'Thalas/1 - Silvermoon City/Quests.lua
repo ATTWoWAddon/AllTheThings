@@ -123,7 +123,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 		}),
 		-- Hunt for Xal'atath
 		q(98172, {	-- Trailing Xal'atath
-			provider = { "n", 270645 },	-- Vareesa Windrunner
+			provider = { "n", 270645 },	-- Vereesa Windrunner
 			coord = { 49.1, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 			isWeekly = true,
 			timeline = { ADDED_12_1_0 },
@@ -187,7 +187,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 	}),
 	-- PVP 4 Part Quest
 	n(QUESTS, sharedData({
-		provider = { "n", 256212 },	-- Archmage Aethas Sunreave
+		provider = { "n", 256212 },	-- Archmage Aethas Sunreaver
 		coord = { 48.9, 64.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 	}, {
 		-- Season 1
@@ -235,7 +235,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 		isWeekly = true,
 	}, {
 		q(93755),	-- Den of Nalorakk
-		q(93753),	-- Magister's Terrace
+		q(93753),	-- Magisters' Terrace
 		q(93754),	-- Maisara Caverns
 		q(93752),	-- Murder Row
 		q(93758),	-- Nexus-Point Xenas

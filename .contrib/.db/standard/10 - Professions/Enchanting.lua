@@ -715,7 +715,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 			o(380589, {	-- Faintly Enchanted Remains
 				questID = 70290,
 				coord = { 45.1, 61.2, THE_AZURE_SPAN },
-				crs = { 194882 },	-- Enchanted Crystaline Construct
+				crs = { 194882 },	-- Enchanted Crystalline Construct
 				groups = {
 					i(201013),	-- Faintly Enchanted Remains
 				},

@@ -598,7 +598,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 						i(256882),	-- A Tattered Ball
 					},
 				}),
-				n(254030, {	-- Child-like Spirit
+				n(254030, {	-- Child-Like Spirit
 					coord = { 51.4, 47.5, MAP.MIDNIGHT.HARANDAR },
 					cost = { { "i", 256882, 1 } },	-- A Tattered Ball
 					questID = 93130,

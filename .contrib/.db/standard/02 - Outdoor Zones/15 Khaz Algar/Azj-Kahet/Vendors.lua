@@ -209,7 +209,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				}),
 			},
 		}),
-		n(218172, {	-- Phylieus <Fish & Fishing Supplies>
+		n(218172, {	-- Phylleus <Fish & Fishing Supplies>
 			coord = { 51.8, 24.6, NERUBAR },
 			groups = {
 				i(223979, {	-- Whispering Squirmworm
@@ -335,7 +335,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 		}),
 		n(218209, {	-- Tyro Uwe <Custom Twitchery Goods>
 			coord = { 45.0, 16.7, NERUBAR },
-			sourceQuests = { 78256 },	-- The General Consensus
+			sourceQuests = { 78256 },	-- The General's Consensus
 			sym = {{"select","itemID",
 				221850,	-- Freshly Webbed Kebab (PET!)
 				222973,	-- Fringe (PET!)

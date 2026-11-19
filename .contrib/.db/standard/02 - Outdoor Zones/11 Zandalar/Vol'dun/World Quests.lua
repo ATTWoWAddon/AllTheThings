@@ -42,7 +42,7 @@ maproot(ZANDALAR, VOLDUN, {
 			q(54644),	-- Azerite Transport (Faction Assault WQ)
 			q(51428),	-- Azerite Wounds
 			q(51096),	-- Azer'tor
-			q(51117),	-- Bajiani the Stick
+			q(51117),	-- Bajiani the Slick
 			q(54272, {	-- Battle Bots (Faction Assault WQ)
 				races = ALLIANCE_ONLY,
 				sym = {{"select","objectID",
@@ -342,7 +342,7 @@ maproot(ZANDALAR, VOLDUN, {
 				provider = { "n", 141945 },	-- Sizzik
 			})),
 			q(51106),	-- Songstress Nahjeen
-			q(51836, {	-- Sourching Resources
+			q(51836, {	-- Sourcing Resources
 				groups = {
 					i(160755),	-- Azerite Sack (QI!)
 				},
@@ -486,7 +486,7 @@ maproot(ZANDALAR, VOLDUN, {
 					i(162260),	-- Recipe: Potion of Concealment [Rank 3] (RECIPE!)
 				},
 			}),
-			q(52412, {	-- Work Order: Rubelite
+			q(52412, {	-- Work Order: Rubellite
 				requireSkill = JEWELCRAFTING,
 				races = HORDE_ONLY,
 			}),

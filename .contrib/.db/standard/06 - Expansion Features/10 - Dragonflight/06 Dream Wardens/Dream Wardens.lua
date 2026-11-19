@@ -391,7 +391,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			})),
 		}),
 		n(VENDORS, {
-			n(208156, {	-- Moon Priestress Lasara <Renown Quatermaster>
+			n(208156, {	-- Moon Priestess Lasara <Renown Quatermaster>
 				coord = { 50.3, 61.6, EMERALD_DREAM },
 				groups = bubbleDownRep(FACTION_DREAM_WARDENS, {
 					{		-- RENOWN 1 --

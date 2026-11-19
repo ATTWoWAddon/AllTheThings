@@ -135,7 +135,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					29316,	-- Moragg
 					29313,	-- Ichoron
 					29266,	-- Xevozz
-					29312,	-- Levanthor
+					29312,	-- Lavanthor
 					29314,	-- Zuramat the Obliterator
 					31134,	-- Cyanigosa
 					-- Trial of the Champion

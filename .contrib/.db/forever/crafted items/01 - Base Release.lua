@@ -959,7 +959,7 @@ root(ROOTS.Craftables, {
 				},]]
 			}),
 			i(6307),	-- Message in a Bottle
-			i(21228, {	-- Mitril Bound Trunk
+			i(21228, {	-- Mithril Bound Trunk
 				maps_disp = {
 					MAP.BLASTED_LANDS,
 					MAP.EASTERN_PLAGUELANDS,
@@ -2271,7 +2271,7 @@ root(ROOTS.Craftables, {
 				i(15045),	-- Green Dragonscale Breastplate
 				i(20296),	-- Green Dragonscale Gauntlets
 				i(15046),	-- Green Dragonscale Leggings
-				i(15047),	-- Red Dragonscale Breastplate'
+				i(15047),	-- Red Dragonscale Breastplate
 				--[[BRD
 				i(15050),	-- Black Dragonscale Breastplate
 				i(16984),	-- Black Dragonscale Boots

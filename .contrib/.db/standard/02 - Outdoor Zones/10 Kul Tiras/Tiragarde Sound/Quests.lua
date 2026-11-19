@@ -233,13 +233,13 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 			}),
 			q(48004, {	-- Beginner Equitation
 				sourceQuests = { 48005 },	-- Be Our Guest
-				provider = { "n", 124802 },	-- Lord Aldruis Norwington
+				provider = { "n", 124802 },	-- Lord Aldrius Norwington
 				coord = { 51.6, 27.3, TIRAGARDE_SOUND },
 				races = ALLIANCE_ONLY,
 			}),
 			q(48005, {	-- Be Our Guest
 				sourceQuests = { 48003 },	-- The Lord's Behest
-				provider = { "n", 124802 },	-- Lord Aldruis Norwington
+				provider = { "n", 124802 },	-- Lord Aldrius Norwington
 				coord = { 51.6, 27.3, TIRAGARDE_SOUND },
 				races = ALLIANCE_ONLY,
 			}),
@@ -456,7 +456,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 			}),
 			q(48087, {	-- Equine Retrieval
 				sourceQuests = { 48004 },	-- Beginner Equitation
-				provider = { "n", 124802 },	-- Lord Aldruis Norwington
+				provider = { "n", 124802 },	-- Lord Aldrius Norwington
 				coord = { 51.6, 27.3, TIRAGARDE_SOUND },
 				races = ALLIANCE_ONLY,
 			}),
@@ -987,7 +987,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 				coord = { 39.5, 26.6, TIRAGARDE_SOUND },
 				races = ALLIANCE_ONLY,
 			}),
-			q(49735, {	-- Protect the Nest
+			q(49735, {	-- Protect the Nests
 				sourceQuests = { 49394 },	-- Hold Still
 				provider = { "n", 129170 },	-- Rulf
 				coord = { 42.4, 22.6, TIRAGARDE_SOUND },
@@ -1094,7 +1094,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 			q(49417, {	-- Roughneck Riders
 				sourceQuests = {
 					49710,	-- An Offering of Eggs
-					49735,	-- Protect the Nest
+					49735,	-- Protect the Nests
 				},
 				provider = { "n", 129578 },	-- Shawn McClinter
 				coord = { 47.8, 16.4, TIRAGARDE_SOUND },
@@ -1189,7 +1189,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 			}),
 			q(48939, {	-- Show Me What You've Got
 				sourceQuests = { 48004 },	-- Beginner Equitation
-				provider = { "n", 124802 },	-- Lord Aldruis Norwington
+				provider = { "n", 124802 },	-- Lord Aldrius Norwington
 				coord = { 51.6, 27.3, TIRAGARDE_SOUND },
 				races = ALLIANCE_ONLY,
 			}),
@@ -1310,7 +1310,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 			}),
 			q(49531, {	-- The Beauty of Marketing
 				sourceQuests = { 50542 },	-- An Explosive Opportunity
-				provider = { "n", 129858 },	-- Wulfred Fizzbracket
+				provider = { "n", 129858 },	-- Wulferd Fizzbracket
 				coord = { 67.5, 55.7, TIRAGARDE_SOUND },
 				races = ALLIANCE_ONLY,
 				groups = {

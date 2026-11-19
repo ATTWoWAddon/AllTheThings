@@ -83,7 +83,7 @@ maproot(ARCANTINA, {
 					i(253544),	-- Weathered History of the Warchiefs (DECOR!)
 				},
 			}),
-			q(95780, {	-- Hope for the Orhpans
+			q(95780, {	-- Hope for the Orphans
 				qg = 259335,	-- Vanessa VanCleef
 				coord = { 60.2, 50.1, ARCANTINA },
 				timeline = { ADDED_12_1_0 },
@@ -230,7 +230,7 @@ maproot(ARCANTINA, {
 			}),
 			o(655007, {	-- Wooden Toy Sword
 				coord = { 74.2, 53.0, SHATTRATH_CITY },
-				sourceQuest = 95780,	-- Hope for the Orhpans
+				sourceQuest = 95780,	-- Hope for the Orphans
 				timeline = { ADDED_12_1_0 },
 				groups = { i(275054) },	-- Wooden Toy Sword
 			}),

@@ -12,7 +12,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 			}),
 			fp(2797, {	-- Emberwatch, Ohn'ahran Plains
 				coord = { 66.8, 25.2, OHNAHRAN_PLAINS },
-				cr = 190049,	-- Volebei
+				cr = 190049,	-- Volebel
 			}),
 			fp(2793, {	-- Forkriver Crossing, Ohn'ahran Plains
 				coord = { 71.7, 79.1, OHNAHRAN_PLAINS },

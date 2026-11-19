@@ -77,7 +77,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 			}),
 			ach(7321),	-- Spreading the Warmth
 			ach(7314),	-- Test Drive
-			ach(6545),	-- The Klaxxi
+			ach(6545),	-- Klaxxi
 			ach(7313, {	-- Stay Klaxxi
 				crit(20951, {	-- Angel of Death
 					provider = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
@@ -112,7 +112,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 					provider = { "n", 63072 },	-- Rik'kal the Dissector
 				}),
 				crit(20960, {	-- Battle Hymn
-					provider = { "n", 63071 },	-- Skeer The Bloodseeker
+					provider = { "n", 63071 },	-- Skeer the Bloodseeker
 				}),
 			}),
 			ach(8023, {		-- Wakener
@@ -517,7 +517,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 				qg = 62774,	-- Malik the Unscathed
 				coord = { 55.0, 35.4, DREAD_WASTES },
 				groups = {
-					o(214170, {	-- Vorthik Egg
+					o(214170, {	-- Vor'thik Egg
 						i(86598),	-- Vor'thik Eggs (QI!)
 					}),
 				},
@@ -1423,7 +1423,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 				groups = {
 					i(84055),	-- Gurthan Locket
 					i(84056),	-- Council Choker
-					i(84057),	-- Swormborn Necklace
+					i(84057),	-- Swarmborn Necklace
 					i(84058),	-- Kil'ruk's Pendant
 					i(84059),	-- Sacred Stone Amulet
 				},

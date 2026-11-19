@@ -436,7 +436,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 			},
 		}),
 		q(38966, {	-- Secret Silkweaving Methods
-			sourceQuests = { 38965 },	-- Assault on Violet Hod: Into the Hold
+			sourceQuests = { 38965 },	-- Assault on Violet Hold: Into the Hold
 			provider = { "n", 93542 },	-- Tanithria
 			coord = { 35.2, 34.2, LEGION_DALARAN },
 			groups = {

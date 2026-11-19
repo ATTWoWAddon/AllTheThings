@@ -174,7 +174,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				sourceQuestNumRequired = 1,
 				qg = 114562,	-- Khadgar's Upgraded Servant
 				groups = {
-					i(140192),	-- Dalaran Heartstone (TOY!)
+					i(140192),	-- Dalaran Hearthstone (TOY!)
 					i(143780),	-- Tome of the Tranquil Mind
 				},
 			}),

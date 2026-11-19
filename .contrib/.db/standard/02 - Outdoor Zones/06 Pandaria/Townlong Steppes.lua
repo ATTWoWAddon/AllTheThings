@@ -427,7 +427,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 			}),
 			q(30785, {	-- Gao-Ran Battlefront
 				sourceQuests = { 30784 },	-- The Point of No Return
-				qg = 61261,	-- Ban Beartheart
+				qg = 61261,	-- Ban Bearheart
 				coord = { 82.6, 73.0, TOWNLONG_STEPPES },
 				isBreadcrumb = true,	-- Hidden once completed Quests at Gao-Ran Battlefront
 			}),
@@ -854,9 +854,9 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 				coord = { 67.3, 80.6, TOWNLONG_STEPPES },
 				groups = {
 					o_repeated({
-						i(83024),	-- Shadow-Pan Fire Arrows (QI!)
-						o(212135),	-- Shadow-Pan Fire Arrows
-						o(212136),	-- Shadow-Pan Fire Arrows
+						i(83024),	-- Shado-Pan Fire Arrows (QI!)
+						o(212135),	-- Shado-Pan Fire Arrows
+						o(212136),	-- Shado-Pan Fire Arrows
 					}),
 				},
 			}),
@@ -1147,7 +1147,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 			}),
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32681, {	-- The Storm Gathers (A)
 				sourceQuest = 32679,	-- Thunder Calls (A)
-				qg = 70360,	-- Vareesa Windrunner
+				qg = 70360,	-- Vereesa Windrunner
 				coord = { 49.8, 69.0, TOWNLONG_STEPPES },
 				timeline = { ADDED_5_2_0 },
 				races = ALLIANCE_ONLY,

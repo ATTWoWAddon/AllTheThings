@@ -157,7 +157,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 		}),
 	})),
 	n(RARES, {
-		n(220274, {	-- Aquelion
+		n(220274, {	-- Aquellion
 			coord = { 49.5, 66.2, THE_RINGING_DEEPS },	-- old coord: 55.0, 70.5?
 			questID = 80557,
 			groups = {

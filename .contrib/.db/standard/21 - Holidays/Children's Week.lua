@@ -421,12 +421,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 						{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
 					},
 					crs = {
-						29478,	-- Jeppetto Joybuzz
-						96483,	-- Jeppetto Joybuzz
+						29478,	-- Jepetto Joybuzz
+						96483,	-- Jepetto Joybuzz
 					},
 					-- #else
 					coord = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
-					cr = 29478,	-- Jeppetto Joybuzz
+					cr = 29478,	-- Jepetto Joybuzz
 					-- #endif
 				}),
 			},
@@ -459,12 +459,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 						{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
 					},
 					crs = {
-						29478,	-- Jeppetto Joybuzz
-						96483,	-- Jeppetto Joybuzz
+						29478,	-- Jepetto Joybuzz
+						96483,	-- Jepetto Joybuzz
 					},
 					-- #else
 					coord = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
-					cr = 29478,	-- Jeppetto Joybuzz
+					cr = 29478,	-- Jepetto Joybuzz
 					-- #endif
 				}),
 			},
@@ -771,7 +771,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				-- #if AFTER CATA
 				{ "n", 51989 },	-- Orphan Matron Battlewall
 				-- #else
-				{ "n", 14451 },	-- Orphan Matron Battlewall
+				{ "n", 14451 },	-- Orphan Matron Battlewail
 				-- #endif
 			},
 			coords = {

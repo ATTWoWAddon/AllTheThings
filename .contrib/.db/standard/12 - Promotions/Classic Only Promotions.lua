@@ -37,7 +37,7 @@ root(ROOTS.Promotions, bubbleDown({ u = REAL_MONEY }, {
 					16618,	-- Innkeeper Velandra <Innkeeper>
 					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
 					17630,	-- Inkeeper Jovia
-					6735,	-- Inkeeper Saelienne
+					6735,	-- Innkeeper Saelienne
 					19046,	-- Minalei (ALDOR)
 				},
 				u = REMOVED_FROM_GAME,

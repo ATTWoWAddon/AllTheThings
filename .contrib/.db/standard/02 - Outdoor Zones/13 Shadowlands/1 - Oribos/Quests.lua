@@ -295,7 +295,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 				isBreadcrumb = true,
 			}),
 			q(62000, {	-- Choosing Your Purpose
-				sourceQuests = { 62716 },	-- Re-Introductionse
+				sourceQuests = { 62716 },	-- Re-Introductions
 				altQuests = { 57878 },	-- Choosing Your Purpose
 				provider = { "n", 159478 },	-- Tal-Inara
 				coord = { 38.8, 70.0, ORIBOS },
@@ -491,7 +491,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 				coord = { 49.2, 52.2, ARDENWEALD },
 				groups = {
 					i(179562),	-- Duskwarder Branch
-					i(179517),	-- Duskwarder Censor
+					i(179517),	-- Duskwarder Censer
 					i(181433),	-- Duskwarder Gavel
 					i(179500),	-- Duskwarder Knife
 					i(179537),	-- Duskwarder Maul

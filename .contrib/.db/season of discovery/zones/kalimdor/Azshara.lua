@@ -71,7 +71,7 @@ maproot(KALIMDOR, AZSHARA, {
 				lvl = 48,
 			}),
 			q(5536, {	-- A Land Filled with Hatred
-				qg = 11548,	-- Loth'atu
+				qg = 11548,	-- Loh'atu
 				coord = { 11.4, 78.2, AZSHARA },
 				lvl = 45,
 				groups = {
@@ -428,7 +428,7 @@ maproot(KALIMDOR, AZSHARA, {
 				lvl = 45,
 			}),
 			q(5535, {	-- Spiritual Unrest
-				qg = 11548,	-- Loth'atu
+				qg = 11548,	-- Loh'atu
 				coord = { 11.4, 78.2, AZSHARA },
 				lvl = 45,
 				groups = {

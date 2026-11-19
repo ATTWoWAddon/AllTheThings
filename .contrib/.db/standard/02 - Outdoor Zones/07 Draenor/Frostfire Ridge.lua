@@ -149,7 +149,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 				races = HORDE_ONLY,
 			}),
 			fp(1389, {	-- Bloodmaul Slag Mines, Frostfire Ridge
-				cr = 76787,	-- Brenna Skymoon
+				cr = 76787,	-- Brenna Skymoor
 				coord = { 51.4, 21.4, FROSTFIRE_RIDGE },
 			}),
 			fp(1396, {	-- Darkspear's Edge, Frostfire Ridge
@@ -163,7 +163,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 				races = ALLIANCE_ONLY,
 			}),
 			fp(1390, {	-- Stonefang Outpost, Frostfire Ridge
-				cr = 76879,	-- Skyhunter Donomor'gan
+				cr = 76879,	-- Skyhunter Donmor'gan
 				coord = { 40.1, 51.8, FROSTFIRE_RIDGE },
 				races = HORDE_ONLY,
 			}),
@@ -238,7 +238,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 				races = HORDE_ONLY,
 			}),
 			q(33125, {	-- A Proper Parting
-				qg = 72976,	-- Outrider Urakag
+				qg = 72976,	-- Outrider Urukag
 				coord = { 66.0, 49.0, FROSTFIRE_RIDGE },
 				races = HORDE_ONLY,
 			}),
@@ -489,7 +489,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 			}),
 			q(33784, {	-- Gormaul Tower
 				sourceQuest = 34380,	-- Rally the Frostwolves
-				qg = 76557,	-- Durotar
+				qg = 76557,	-- Durotan
 				coord = { 20.9, 57.9, FROSTFIRE_RIDGE },
 				races = HORDE_ONLY,
 				groups = {
@@ -545,7 +545,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 					33344,	-- Armed and Dangerous
 					33622,	-- To the Slaughter
 				},
-				qg = 75177,	-- Durotar
+				qg = 75177,	-- Durotan
 				coord = { 50.4, 32.6, 527 },
 				races = HORDE_ONLY,
 				groups = {
@@ -945,8 +945,8 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 				description = "You can only pick one of the three available followers. The other two can be purchased from Nalya Battlehorn in the Level 3 Garrison.",
 				sourceQuest = 34124,	-- The Battle of Thunder Pass
 				qgs = {
-					76730,	-- Makara Stonebinder
-					88147,	-- Makara Stonebinder
+					76730,	-- Makar Stonebinder
+					88147,	-- Makar Stonebinder
 				},
 				races = HORDE_ONLY,
 				groups = {
@@ -965,7 +965,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 			}),
 			q(33010, {	-- The Iron Wolf
 				sourceQuest = 37291,	-- Thunderlord Invasion
-				qg = 74163,	-- Durotar
+				qg = 74163,	-- Durotan
 				coord = { 50.1, 37.9, FROSTWALL },
 				races = HORDE_ONLY,
 				groups = {
@@ -1207,7 +1207,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 			}),
 			q(34227, {	-- What Must Be Done
 				sourceQuest = 34216,	-- Safe Passage
-				qg = 72837,	-- Fareseer Urquan
+				qg = 72837,	-- Farseer Urquan
 				coord = { 31.7, 11.7, FROSTFIRE_RIDGE },
 				races = HORDE_ONLY,
 			}),
@@ -1523,7 +1523,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 				questID = 37387,
 				isDaily = true,
 				coord = { 42.4, 21.7, FROSTFIRE_RIDGE },
-				groups = { i(119356) },	-- Moltnoma's Magma Mantle
+				groups = { i(119356) },	-- Moltonoma's Magma Mantle
 			}),
 			n(87351, {	-- Mother of Goren
 				questID = 37381,

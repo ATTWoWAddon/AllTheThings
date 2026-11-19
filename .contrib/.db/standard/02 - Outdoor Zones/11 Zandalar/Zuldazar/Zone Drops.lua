@@ -13,7 +13,7 @@ maproot(ZANDALAR, ZULDAZAR, {
 			groups = {
 				i(157782, {	-- Pterrordax Egg
 					crs = {
-						126618,	-- Bloodrage Pterrordax
+						126618,	-- Bloodraged Pterrordax
 						125207,	-- Peering Shrieker
 						126702,	-- Primal Skyterror
 						122113,	-- Pterrordax Skyrender

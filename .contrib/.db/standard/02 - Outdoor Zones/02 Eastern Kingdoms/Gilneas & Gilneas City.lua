@@ -50,7 +50,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 						races = { WORGEN },
 					}),
 					q(14218, {	-- By Blood and Ash
-						sourceQuest = 14212,	-- Sacrifies
+						sourceQuest = 14212,	-- Sacrifices
 						qg = 35618,	-- Tobias Mistmantle
 						coord = { 40.46, 39.37, GILNEAS_CITY },
 						races = { WORGEN },
@@ -151,7 +151,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 					}),
 					q(14281, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Worgen)
 						sourceQuest = 14277,	-- Arcane Inquiries
-						qg = 35872,	-- Myriam Spellwalker
+						qg = 35872,	-- Myriam Spellwaker
 						coord = { 68.01, 64.68, GILNEAS_CITY },
 						timeline = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 						races = { WORGEN },
@@ -236,7 +236,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 							75189,	-- Safety in Numbers [Monk]
 							-- #endif
 						},
-						qg = 35112,	-- King Geen Greymane
+						qg = 35112,	-- King Genn Greymane
 						coord = { 65.83, 77.84, GILNEAS_CITY },
 						races = { WORGEN },
 					}),
@@ -258,7 +258,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 						coord = { 59.81, 22.17, GILNEAS_CITY },
 						races = { WORGEN },
 					}),
-					q(14212, {	-- Sacrifies
+					q(14212, {	-- Sacrifices
 						sourceQuest = 14294,	-- Time to Regroup
 						qg = 35552,	-- Lord Darius Crowley
 						coord = { 31.05, 72.33, GILNEAS_CITY },
@@ -389,7 +389,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 							}),
 						},
 					}),
-					q(14278, {	-- Seek the Siter
+					q(14278, {	-- Seek the Sister
 						sourceQuest = 14099,	-- Royal Orders
 						qg = 35840,	-- Gwen Armstead
 						coord = { 70.79, 55.05, GILNEAS_CITY },
@@ -470,7 +470,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 							26129,	-- Brothers in Arms
 							24930,	-- While You're At It
 						},
-						qg = 35112,	-- King Geen Greymane
+						qg = 35112,	-- King Genn Greymane
 						coord = { 65.83, 77.84, GILNEAS_CITY },
 						races = { WORGEN },
 					}),

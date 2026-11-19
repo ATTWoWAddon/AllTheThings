@@ -305,7 +305,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 					}),
 					q(26193, {	-- Defending the Rift (A)
 						sourceQuests = {
-							26181,	-- Back to Darkbreak Cave (breadcrumb)
+							26181,	-- Back to Darkbreak Cove (breadcrumb)
 							-- 26143,	-- All That Rises (26193 appears on world map without completing this quest)
 						},
 						qg = 41600,	-- Erunak Stonespeaker
@@ -689,7 +689,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 						coord = { 54.4, 72.9, VASHJIR_ABYSSAL_DEPTHS },
 						races = ALLIANCE_ONLY,
 					}),
-					q(26021, {	-- The Brothers Digsong 2: Ell-Egg-Trick Boogaloo
+					q(26021, {	-- The Brothers Digsong 2: Eel-Egg-Trick Boogaloo
 						sourceQuest = 26019,	-- Enormous Eel Egg
 						qg = 41910,	-- Humphrey Digsong
 						coord = { 47.3, 49.7, VASHJIR_ABYSSAL_DEPTHS },
@@ -1329,7 +1329,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 									{ "i", 62228 },	-- Barrel of Gunpowder (QI!)
 									{ "o", 203139 },	-- Pilfered Cannonballs
 								},
-								crs = 41016,	-- Gilblin Horder
+								crs = 41016,	-- Gilblin Hoarder
 							}),
 						},
 					}),
@@ -1817,7 +1817,7 @@ maproot(EASTERN_KINGDOMS, VASHJIR, {
 					}),
 					q(25581, {	-- An Occupation of Time (A)
 						sourceQuest = 25540,	-- Bellies Await
-						qg = 40644,	-- Levia Dreamwalker
+						qg = 40644,	-- Levia Dreamwaker
 						coord = { 49.6, 57.1, VASHJIR_SHIMMERING_EXPANSE },
 						races = ALLIANCE_ONLY,
 						groups = {

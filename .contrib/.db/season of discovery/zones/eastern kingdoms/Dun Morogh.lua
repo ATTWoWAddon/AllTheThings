@@ -842,7 +842,7 @@ maproot(EASTERN_KINGDOMS, DUN_MOROGH, {
 			}),
 			q(2239, {	-- Onin's Report
 				sourceQuest = 2238,	-- Simple Subterfugin'
-				qg = 6886,	-- Onin MacHammer
+				qg = 6886,	-- Onin MacHammar
 				qi = 7715,	-- Onin's Report (PQI!)
 				coord = { 25.2, 44.4, DUN_MOROGH },
 				races = ALLIANCE_ONLY,

@@ -1629,7 +1629,7 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #endif
 				q(9691, {	-- Return to Silvermoon
 					sourceQuest = 9686,	-- The Second Trial (2/2)
-					qg = 17807,	-- Master Kelrun Bloodmourn
+					qg = 17807,	-- Master Kelerun Bloodmourn
 					coord = { 42.0, 28.0, EVERSONG_WOODS },
 					timeline = { REMOVED_4_0_3 },
 					classes = { PALADIN },
@@ -1941,7 +1941,7 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9686, {	-- The Second Trial (2/2)
 					sourceQuest = 9690,	-- The Second Trial (1/2)
-					qg = 17807,	-- Master Kelrun Bloodmourn
+					qg = 17807,	-- Master Kelerun Bloodmourn
 					coord = { 42.0, 28.0, EVERSONG_WOODS },
 					timeline = { REMOVED_4_0_3 },
 					classes = { PALADIN },

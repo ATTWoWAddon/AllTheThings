@@ -1683,7 +1683,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				i(39968),	-- Timeless Dark Jade
 				i(39982),	-- Turbid Dark Jade
 				i(39957),	-- Veiled Huge Citrine
-				i(39975),	-- Vivd Dark Jade
+				i(39975),	-- Vivid Dark Jade
 				i(39960, {timeline = {REMOVED_4_0_3}}),	-- Wicked Huge Citrine
 			}),
 			n(QUALITY_RARE, {

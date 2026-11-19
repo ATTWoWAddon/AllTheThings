@@ -550,7 +550,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 						crs = { 193855 },	-- Elusive Vorquin
 					}),
 					crit(61438, {	-- Elusive Proto Dragon
-						crs = { 193857 },	-- Elusive Proto Dragon
+						crs = { 193857 },	-- Elusive Proto-Dragon
 					}),
 					crit(61439, {	-- Elusive Thunder Lizard
 						crs = { 193859 },	-- Elusive Thunder Lizard
@@ -598,7 +598,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 						crs = { 194062 },	-- Elusive Prime Salamanther
 					}),
 					crit(61455, {	-- Elusive Prime Proto Dragon
-						crs = { 194063 },	-- Elusive Prime Proto Dragon
+						crs = { 194063 },	-- Elusive Prime Proto-Dragon
 					}),
 					crit(61456, {	-- Elusive Storm Lizard
 						crs = { 194082 },	-- Elusive Storm Lizard
@@ -728,7 +728,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 				coord = { 76.7, 34.8, THE_WAKING_SHORES },
 				lockCriteria = { 1, "spellID", 366263},	-- Dragon Isles Skinning
 			}),
-			q(70034, {	-- Artisan's Supply: Salamanther Scale
+			q(70034, {	-- Artisan's Supply: Salamanther Scales
 				provider = { "n", 192558 },	-- Toninaar
 				coord = { 76.6, 34.8, THE_WAKING_SHORES },
 				cost = { { "i", 193252, 3 }, },	-- 3x Salamanther Scales

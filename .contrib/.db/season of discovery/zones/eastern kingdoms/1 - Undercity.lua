@@ -185,7 +185,7 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 			}),
 			q(1507, {	-- Devourer of Souls [Orgrimmar]
 				altQuests = { 1472 },	-- Devourer of Souls [Undercity]
-				qg = 5875,	-- Dan'rul Bloodeye
+				qg = 5875,	-- Gan'rul Bloodeye
 				races = { ORC, UNDEAD },
 				classes = { WARLOCK },
 				isBreadcrumb = true,
@@ -394,7 +394,7 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 					objective(2, {	-- 0/1 Comar's Heart
 						provider = { "i", 6313 },	-- Comar's Heart
 						coord = { 50.6, 12.6, WETLANDS },
-						cr = 5683,	-- Comar Villard
+						cr = 5683,	-- Corma Villard
 					}),
 				},
 			}),
@@ -1371,7 +1371,7 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 				coord = { 61.4, 30.1, UNDERCITY },
 				races = HORDE_ONLY,
 			}),
-			n(4599, {	-- Sarah Killan <Mining Supplies>
+			n(4599, {	-- Sarah Killian <Mining Supplies>
 				coord = { 56.6, 37.3, UNDERCITY },
 				races = HORDE_ONLY,
 				groups = {

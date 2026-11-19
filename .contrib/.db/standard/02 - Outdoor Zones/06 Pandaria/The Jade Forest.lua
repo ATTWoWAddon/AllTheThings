@@ -512,7 +512,7 @@ maproot(PANDARIA, {
 				}),
 				q(30011, {	-- A New Vision
 					sourceQuest = 29997,	-- The Scryer's Dilemma
-					qg = 56787,	-- Wise mari
+					qg = 56787,	-- Wise Mari
 					coord = { 57.5, 56.0, THE_JADE_FOREST },
 				}),
 				q(29903, {	-- A Perfect Match
@@ -2138,7 +2138,7 @@ maproot(PANDARIA, {
 					races = HORDE_ONLY,
 				}),
 				q(30002, {	-- Pages of History
-					sourceQuest = 29998,	-- The Librarian's Quandry
+					sourceQuest = 29998,	-- The Librarian's Quandary
 					qg = 56786,	-- Lorewalker Stonestep
 					coord = { 56.2, 60.4, THE_JADE_FOREST },
 					groups = {

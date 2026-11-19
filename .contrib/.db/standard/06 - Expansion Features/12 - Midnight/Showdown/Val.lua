@@ -235,14 +235,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							isWeekly = true,
 							groups = { i(275691) },	-- Riftstalker's Overflowing Cache
 						}),
-						q(97080, {	-- More Disruption: Val
+						q(97080, {	-- More Disruptions: Val
 							sourceQuest = 96713,	-- Showdown on Val
 							qg = 263482,	-- Riftblade Maella
 							coord = { 59.5, 22.0, VAL },
 							isWeekly = true,
 							groups = { i(276387) },	-- Riftstalker's Favor
 						}),
-						q(97081, {	-- More Disruption: Val  (Heroic)
+						q(97081, {	-- More Disruptions: Val (Heroic)
 							sourceQuest = 96714,	-- Showdown on Val (Heroic)
 							qg = 263482,	-- Riftblade Maella
 							coord = { 59.5, 22.0, VAL },
@@ -423,7 +423,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						q(95394, {	-- Aberration Liberation
 							coord = { 38.5, 39.2, VAL },
 						}),
-						q(95393, {	-- Caver Saviour
+						q(95393, {	-- Caver Savior
 							coord = { 61.6, 78.8, VAL },
 						}),
 						q(95397, {	-- Cold Reception

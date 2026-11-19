@@ -131,7 +131,7 @@ maproot(KALIMDOR, THE_BARRENS, {
 			})),
 		}),
 		n(QUESTS, {
-			applyclassicphase(SOD_PHASE_TWO, q(79007, {	-- ... and that note you found (H)
+			applyclassicphase(SOD_PHASE_TWO, q(79007, {	-- ...and that note you found (H)
 				providers = {
 					{ "o", 415106 },	-- Burned-Out Remains
 					{ "o", 424010 },	-- Nailed Plank
@@ -2241,8 +2241,8 @@ maproot(KALIMDOR, THE_BARRENS, {
 			}),
 			applyclassicphase(SOD_PHASE_TWO, q(79192, {	-- Stepping Stones
 				sourceQuests = {
-					79008,	-- ... and that note you found (A)
-					79007,	-- ... and that note you found (H)
+					79008,	-- ...and that note you found (A)
+					79007,	-- ...and that note you found (H)
 				},
 				providers = {
 					{ "o", 417072 },	-- Nailed Plank
@@ -3399,8 +3399,8 @@ maproot(KALIMDOR, THE_BARRENS, {
 		n(TREASURES, {
 			o(3642, {	-- Kolkars' Booty
 				providers = {
-					{ "o", 152618 },	-- Kolkars' Booty
-					{ "o", 152608 },	-- Kolkars' Booty
+					{ "o", 152618 },	-- Kolkar's Booty
+					{ "o", 152608 },	-- Kolkar's Booty
 				},
 				description = "Contains random low level greens.",
 				coords = {

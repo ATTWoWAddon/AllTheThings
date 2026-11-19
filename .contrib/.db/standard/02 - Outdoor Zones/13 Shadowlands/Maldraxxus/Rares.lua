@@ -120,7 +120,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 					i(184182),	-- Strengthened Abomination Hook
 				},
 			}),
-			n(157058, {	-- Corspecutter Moroc
+			n(157058, {	-- Corpsecutter Moroc
 				coord = { 26.6, 27.2, MALDRAXXUS },
 				questID = 58335,
 				groups = {

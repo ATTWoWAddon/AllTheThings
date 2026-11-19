@@ -216,7 +216,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 				i(79896, {cost={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pandaren Tea Set
 				i(79904, {cost={{"c",ARCH_CURRENCY_PANDAREN,60}}}),	-- Pearl of Yu'lon
 				i(89183, {cost={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Apothecary Tins
-				i(89181, {cost={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Carved Brone Mirror
+				i(89181, {cost={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Carved Bronze Mirror
 				i(89180, {cost={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Empty Keg
 				i(85558, {cost={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Game Board
 				i(89182, {cost={{"c",ARCH_CURRENCY_PANDAREN,50}}}),	-- Pristine Gold-Inlaid Figurine

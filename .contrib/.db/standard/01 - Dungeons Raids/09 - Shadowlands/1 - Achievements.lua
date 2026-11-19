@@ -13,7 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				15681,	-- Fate of the Sepulcher
 			}},
 			groups = {
-				i(190170),	-- Jigglesworth Sr. (MOUNT!)
+				i(190170),	-- Jigglesworth, Sr. (MOUNT!)
 			},
 		}),
 		ach(15685, {	-- Heroic: Fates of the Shadowlands Raids

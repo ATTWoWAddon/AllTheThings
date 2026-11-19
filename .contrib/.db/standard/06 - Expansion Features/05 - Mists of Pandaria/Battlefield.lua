@@ -350,7 +350,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 					description = "Rebellion Quartermaster during Barrens Battlefield.",
 					groups = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
-						i(97919),	-- Whole-Body Shinka' (TOY!)
+						i(97919),	-- Whole-Body Shrinka' (TOY!)
 						i(97942),	-- Sen'jin Spirit Drum (TOY!)
 						i(98552),	-- Xan'tish's Flute (TOY!)
 						i(97921),	-- Bom'bay's Color-Seein' Sauce (TOY!)

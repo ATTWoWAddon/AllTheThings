@@ -741,7 +741,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
-							69078,	-- Sul the Sandrawler
+							69078,	-- Sul the Sandcrawler
 						},
 					}),
 					e(825, {	-- Tortos
@@ -874,7 +874,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
-							69078,	-- Sul the Sandrawler
+							69078,	-- Sul the Sandcrawler
 							67977,	-- Tortos
 							70212,	-- Flaming Head
 							70247,	-- Venomous Head
@@ -974,7 +974,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								69131,	-- Frost King Malakk
 								69132,	-- High Priestess Mar'li
 								69134,	-- Kazra'jin
-								69078,	-- Sul the Sandrawler
+								69078,	-- Sul the Sandcrawler
 							},
 							groups = {
 								i(95856),	-- Gauntlets of the Crackling Conqueror
@@ -1338,7 +1338,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						69131,	-- Frost King Malakk
 						69132,	-- High Priestess Mar'li
 						69134,	-- Kazra'jin
-						69078,	-- Sul the Sandrawler
+						69078,	-- Sul the Sandcrawler
 					},
 					groups = {
 						ach(8073),	-- Cage Match
@@ -1534,7 +1534,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
-							69078,	-- Sul the Sandrawler
+							69078,	-- Sul the Sandcrawler
 							67977,	-- Tortos
 							70248,	-- Arcane Head
 							70212,	-- Flaming Head
@@ -1703,7 +1703,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
-							69078,	-- Sul the Sandrawler
+							69078,	-- Sul the Sandcrawler
 						},
 						groups = {
 							i(95575),	-- Gauntlets of the Crackling Conqueror
@@ -2132,7 +2132,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
-							69078,	-- Sul the Sandrawler
+							69078,	-- Sul the Sandcrawler
 							67977,	-- Tortos
 							70248,	-- Arcane Head
 							70212,	-- Flaming Head
@@ -2303,7 +2303,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							69131,	-- Frost King Malakk
 							69132,	-- High Priestess Mar'li
 							69134,	-- Kazra'jin
-							69078,	-- Sul the Sandrawler
+							69078,	-- Sul the Sandcrawler
 						},
 						groups = {
 							ach(8058),	-- Heroic: Council of Elders

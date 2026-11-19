@@ -786,7 +786,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						sourceQuests = {
 							42738,	-- Rune Ruination: Runelord Ragnar
 							42739,	-- Rune Ruination: Runesage Floki
-							42737,	-- Rune Ruination: Runeskelt Rollo
+							42737,	-- Rune Ruination: Runeskeld Rollo
 						},
 						qg = 108576,	-- Malace Shade
 						coord = { 64.9, 58.9, STORMHEIM },
@@ -863,7 +863,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					}),
 					q(46334, {	-- To Fel and Back
 						sourceQuest = 46333,	-- Livin' on the Ledge
-						qg = 108784,	-- Maton Mother Malevolence
+						qg = 108784,	-- Matron Mother Malevolence
 						coord = { 60.1, 50.8, MARDUM_THE_SHATTERED_ABYSS_UPPER_COMMAND_CENTER },
 						maps = { 861 },	-- Mardum, the Shattered Abyss (scenario)
 						lvl = 110,

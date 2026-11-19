@@ -13,7 +13,7 @@ maproot(BROKEN_ISLES, AZSUNA, {
 				}),
 			},
 		}),
-		n(107139, {	-- Enchantress Ilyana
+		n(107139, {	-- Enchantress Ilanya
 			coord = { 46.8, 40.8, AZSUNA },
 			groups = {
 				i(144317),	-- Formula: Enchant Neck - Mark of the Deadly [Rank 1] (RECIPE!)

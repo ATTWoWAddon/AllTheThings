@@ -460,7 +460,7 @@ instanceroot(2856, applyclassicphase(SOD_PHASE_EIGHT, {	-- Scarlet Enclave
 					crs = {
 						240811,	-- Balnazzar
 						240812,	-- High Commander Beatrix
-						238954,	-- Solidstraza
+						238954,	-- Solistrasza
 						240794,	-- Alexei the Beastlord
 						241021,	-- Mason the Echo <Grand Admiral>
 						240810,	-- Doan
@@ -491,7 +491,7 @@ instanceroot(2856, applyclassicphase(SOD_PHASE_EIGHT, {	-- Scarlet Enclave
 						i(241184),	-- Savior's Sandals
 						i(241157),	-- Scarlet Chestplate
 						i(241178),	-- Stalwart Pain Plate
-						i(240839),	-- Thalkituun, the Unseen Guest
+						i(240839),	-- Thal'kituun, the Unseen Guest
 						i(242365),	-- Wing of Balnazzar (QUEST!)
 					},
 				}),
@@ -582,7 +582,7 @@ instanceroot(2856, applyclassicphase(SOD_PHASE_EIGHT, {	-- Scarlet Enclave
 						i(241187),	-- Crimson Wartreads
 						i(241181),	-- Dawnworn Chain Leggings
 						i(241023),	-- Drape of the Dastardly
-						i(240925),	-- Experiment 800M
+						i(240925),	-- Experiment-800M
 						i(241025),	-- Flag of the Broken Admiral
 						i(241011),	-- Greatstaff of Fealty
 						i(239216),	-- Lightforged Iron
@@ -613,7 +613,7 @@ instanceroot(2856, applyclassicphase(SOD_PHASE_EIGHT, {	-- Scarlet Enclave
 						i(241070),	-- Hope of Herod
 						i(239216),	-- Lightforged Iron
 						i(240854),	-- Mercy
-						i(241003),	-- Mirage Rod of Illusion
+						i(241003),	-- Mirage, Rod of Illusion
 						i(240853),	-- Queensfall
 						i(241075),	-- Raging Destroyer's Helm
 						i(240919),	-- Ravagane

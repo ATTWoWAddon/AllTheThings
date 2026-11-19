@@ -301,7 +301,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 				}),
 			},
 		}),
-		o(446476, {	-- Web-wrapped Axe
+		o(446476, {	-- Web-Wrapped Axe
 			coord = { 59.1, 23.5, ISLE_OF_DORN },
 			questID = 82715,
 			groups = {

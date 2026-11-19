@@ -270,10 +270,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				isRepeatable = true,
 			}, {
 				q(72785),	-- Contribute Supplies: Draconium Nugget
-				q(72786),	-- Contribue Supplies: Strong Seavine
+				q(72786),	-- Contribute Supplies: Strong Seavine
 				q(72787),	-- Contribute Supplies: Battered Imbu-made Net
-				q(72788),	-- Contribue Supplies: Irontree Branch
-				q(72789),	-- Contribue Supplies: Salinated Serevite
+				q(72788),	-- Contribute Supplies: Irontree Branch
+				q(72789),	-- Contribute Supplies: Salinated Serevite
 				q(72790),	-- Contribute Supplies: Khaz'gorite-infused Resin
 				q(72791),	-- Contribute Supplies: Khaz'gorite Wire
 			})),
@@ -479,7 +479,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						providers = {
 							{ "n", 193706 },	-- Snufflegust
 							{ "n", 197411 },	-- Astray Splasher
-							{ "n", 193634 },	-- Swog'Ranka
+							{ "n", 193634 },	-- Swog'ranka
 							{ "n", 193708 },	-- Skald the Impaler
 							{ "n", 193710 },	-- Seereel, the Spring
 							{ "n", 193735 },	-- Moth'go Deeploom

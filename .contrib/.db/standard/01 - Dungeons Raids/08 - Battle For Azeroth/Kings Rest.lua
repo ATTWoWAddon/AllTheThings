@@ -20,15 +20,15 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 		lvl = 120,
 		groups = {
 			n(WORLD_QUESTS, {
-				q(51502, {	-- King's Rest: Kingsguard
+				q(51502, {	-- Kings' Rest: Kingsguard
 					isWorldQuest = true,
 					lvl = 120,
 				}),
-				q(51501, {	-- King's Rest: Malfunction Junction
+				q(51501, {	-- Kings' Rest: Malfunction Junction
 					isWorldQuest = true,
 					lvl = 120,
 				}),
-				q(51500, {	-- King's Rest: The Weaponmaster Walks Again
+				q(51500, {	-- Kings' Rest: The Weaponmaster Walks Again
 					isWorldQuest = true,
 					lvl = 120,
 				}),
@@ -64,7 +64,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				}),
 				e(2170, {	-- The Council of Tribes
 					crs = {
-						135470,	-- Aka'ali  the Conqueror
+						135470,	-- Aka'ali the Conqueror
 						135475,	-- Kula the Butcher
 						135472,	-- Zanazal the Wise
 					},

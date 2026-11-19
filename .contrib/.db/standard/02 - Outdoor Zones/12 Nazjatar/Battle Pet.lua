@@ -62,11 +62,11 @@ maproot(NAZJATAR, {
 				}),
 				i(169626, {	-- Molted Spineshell (QS!)
 					coord = { 42.2, 14.0, NAZJATAR },
-					crs = { 154913 },	-- Shadowspine Lurker
+					crs = { 154913 },	-- Shadowspike Lurker
 				}),
 				i(169643, {	-- Molted Spineshell (QS!)
 					coord = { 42.2, 14.0, NAZJATAR },
-					crs = { 154913 },	-- Shadowspine Lurker
+					crs = { 154913 },	-- Shadowspike Lurker
 				}),
 				i(169629, {	-- Mottled Hydra Scale (QS!)
 					coord = { 29.6, 49.7, NAZJATAR },

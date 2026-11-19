@@ -1832,7 +1832,7 @@ maproot(KALIMDOR, DUROTAR, {
 				},
 			}),
 			q(31813, {	-- Dagra the Fierce
-				sourceQuest = 31812,	-- Zunta, The Pet Tramer
+				sourceQuest = 31812,	-- Zunta, The Pet Tamer
 				qg = 66126,	-- Zunta
 				coord = { 43.9, 28.9, DUROTAR },
 				timeline = { ADDED_5_0_4 },
@@ -2372,7 +2372,7 @@ maproot(KALIMDOR, DUROTAR, {
 			}),
 			q(29690, {	-- Into the Mists
 				sourceQuest = 31853,	-- All Aboard!
-				qg = 55054,	-- General Nazrim
+				qg = 55054,	-- General Nazgrim
 				coord = { 61.2, 44.6, DUROTAR },
 				timeline = { ADDED_5_0_4 },
 				races = HORDE_ONLY,
@@ -3511,7 +3511,7 @@ maproot(KALIMDOR, DUROTAR, {
 					i(97901, {	-- Griftah's Authentic Troll Shoes
 						timeline = { ADDED_5_3_0, REMOVED_5_4_0, ADDED_7_0_3 },
 					}),
-					i(97919, {	-- Whole-Body Shinka' (TOY!)
+					i(97919, {	-- Whole-Body Shrinka' (TOY!)
 						timeline = { ADDED_5_3_0, REMOVED_5_4_0, ADDED_7_0_3 },
 					}),
 					i(97942, {	-- Sen'jin Spirit Drum (TOY!)

@@ -225,7 +225,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 							_encounter = { ARGUS, DIFFICULTY.RAID.MULTI.ALL },
 						}),
 					}),
-					ach(60875),	-- Antorus the Burning Throne (automated)
+					ach(60875),	-- Antorus, the Burning Throne (automated)
 					ach(60871, {	-- Light's Breach
 						crit(107182, {	-- Garothi Worldbreaker
 							_encounter = { WORLDBREAKER, DIFFICULTY.RAID.MULTI.ALL },

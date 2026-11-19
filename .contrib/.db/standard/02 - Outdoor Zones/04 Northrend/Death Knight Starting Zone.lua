@@ -40,8 +40,8 @@ maproot(NORTHREND, 1602, {	-- Icecrown (DK starting zone)
 		q(58989, {	-- Runeforging 101
 			description = "Use your Death Gate after finishing previous quest, Darion will be in Acherus.",
 			qgs = {
-				29246,	-- Highlord Darion Morgraine
-				93437,	-- Highlord Darion Morgraine
+				29246,	-- Highlord Darion Mograine
+				93437,	-- Highlord Darion Mograine
 			},
 			coords = {
 				{ 82.0, 46.3, EASTERN_PLAGUELANDS },

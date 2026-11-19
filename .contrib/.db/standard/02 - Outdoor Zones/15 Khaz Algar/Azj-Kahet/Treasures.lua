@@ -33,7 +33,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				i(225544),	-- Mind Slurp (PET!)
 			},
 		}),
-		o(446140, {	-- Missing Scouts Pack
+		o(446140, {	-- Missing Scout's Pack
 			coord = { 38.8, 37.2, AZJ_KAHET },
 			questID = 82722,
 		}),

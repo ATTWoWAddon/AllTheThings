@@ -61,14 +61,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						coord = { 65.2, 56.1, AZJ_KAHET },
 						repeatable = true,
 						groups = {
-							n(222670),	-- Azerite Manifistation
+							n(222670),	-- Azerite Manifestation
 							n(222658, {	-- Dregblood and Soulboil (Dregbile)
 								crs = { 224282 },	-- Soulboil
 							}),
 							n(222667),	-- Heartsear
 							n(222660),	-- Shard of Gorribal
 							n(224282),	-- Soulboil
-							n(222671),	-- Windowcore
+							n(222671),	-- Widowcore
 							i(225237),	-- Echoing Fragment: Azj-Kahet (CI!)
 						},
 					}),
@@ -78,23 +78,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						groups = {
 							n(222654),	-- Spiz'na the Traitor
 							n(222616),	-- The Rebellious Queen
-							n(222626),	-- Vil'vim The Mindtwister
-							n(222630),	-- Vin'ris The Corruptor
-							n(222628),	-- Yoh'nath The Ender
+							n(222626),	-- Vil'vim the Mindtwister
+							n(222630),	-- Vin'ris the Corruptor
+							n(222628),	-- Yoh'nath the Ender
 							i(225237),	-- Echoing Fragment: Azj-Kahet (CI!)
 						},
 					}),
 				}),
 				header(HEADERS.Map, HALLOWFALL, {
-					q(82207, {	-- Worldsoul Memory: Descendants of Distant Waters
+					q(82207, {	-- Worldsoul Memory: Descendant of Distant Waters
 						coord = { 46.8, 23.4, HALLOWFALL },
 						repeatable = true,
 						groups = {
 							n(222637),	-- Ankoan Champion Utaari
-							n(222655),	-- Gurl The Feaster
+							n(222655),	-- Gurl the Feaster
 							n(222621),	-- Hand of Azshara
 							n(222627),	-- Utmoth the Tidetwister
-							n(222639),	-- Zaniga The Tracker
+							n(222639),	-- Zaniga the Tracker
 							i(225218),	-- Echoing Fragment: Hallowfall (CI!)
 						},
 					}),
@@ -121,7 +121,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							n(222723),	-- Conqueror Or'sosh
 							n(222659),	-- Toaka the Explorer
 							n(223896),	-- Warmonger Ogli
-							n(222728),	-- Wavecrusher Jurvak
+							n(222728),	-- Wavecrasher Jurvak
 							i(225236),	-- Echoing Fragment: Isle of Dorn (CI!)
 						},
 					}),
@@ -187,7 +187,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							n(235113),	-- Deep-King Grobrosh
 							n(235116),	-- Geomancer Keeri
 							n(235115),	-- Massive Kaja'mental
-							n(235112),	-- Roxarix the CaveBorer
+							n(235112),	-- Roxarix the Caveborer
 							n(235117),	-- Taskmaster Zendu
 						},
 					}),

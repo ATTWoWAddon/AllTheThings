@@ -44,7 +44,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ZULAMAN, {
 				}),
 				q(86711, {	-- Amani Clarion Call
 					sourceQuests = { 90749 },	-- Our Mutual Enemy
-					provider = { "n", 236468 },	-- Zul'Jarra
+					provider = { "n", 236468 },	-- Zul'jarra
 					coord = { 5.7, 47.8, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 					groups = { i(264334) },	-- Amani War Drum (DECOR!)
 				}),
@@ -53,7 +53,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ZULAMAN, {
 						86711,	-- Amani Clarion Call
 						86868,	-- Goodwill Tour
 					},
-					provider = { "n", 236559 },	-- Zul'Jarra
+					provider = { "n", 236559 },	-- Zul'jarra
 					coord = { 46.3, 48.8, MAP.MIDNIGHT.ATAL_AMAN_OUTDOOR },
 				}),
 				q(86719, {	-- Important Amani
@@ -1633,7 +1633,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ZULAMAN, {
 						name = "Stay awhile and listen: Zul'jara",
 						description = "Dialogue becomes available after completing 'Dead End' (93012).",
 						sourceQuest = 93012,	-- Dead End
-						qg = 253848,	-- Zul'jara
+						qg = 253848,	-- Zul'jarra
 						coord = { 43.8, 68.4, MAP.MIDNIGHT.ZULAMAN },
 					}),
 					--

@@ -267,7 +267,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						i(253032),	-- Felscorned Reins of the Netherlord's Dreadsteed (MOUNT!)
 					}),
 					clWithoutLock(WARRIOR, {
-						i(253033),	-- Iron Reins of the Felscorned War Wrym (MOUNT!)
+						i(253033),	-- Iron Reins of the Felscorned War Wyrm (MOUNT!)
 					}),
 				}),
 			}),
@@ -416,7 +416,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 					i(143764, {	-- Leywoven Flying Carpet (MOUNT!)
 						cost = { { "c", BRONZE, 20000 } },
 					}),
-					i(147805, {	-- Valajar Stormwing (MOUNT!)
+					i(147805, {	-- Valarjar Stormwing (MOUNT!)
 						cost = { { "c", BRONZE, 20000 } },
 					}),
 					i(147804, {	-- Wild Dreamrunner (MOUNT!)

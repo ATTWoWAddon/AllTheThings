@@ -1691,7 +1691,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 			})),
 		}),
 		n(VENDORS, {
-			n(12384, {	-- Agustus the Touched
+			n(12384, {	-- Augustus the Touched
 				description = "Vendor will not sell anything until you complete his quest.",
 				sourceQuests = {
 					6164,	-- Augustus' Receipt Book

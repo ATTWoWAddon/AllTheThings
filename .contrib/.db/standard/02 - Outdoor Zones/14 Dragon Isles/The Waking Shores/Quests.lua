@@ -76,7 +76,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				}),
 				q(65453, {	-- Primal Pests [H]
 					sourceQuests = { 65444 },	-- To the Dragon Isles! [H]
-					provider = { "n", 184859 },	-- Scalecommander Cindretresh
+					provider = { "n", 184859 },	-- Scalecommander Cindrethresh
 					coord = { 80.7, 27.6, THE_WAKING_SHORES },
 					races = HORDE_ONLY,
 				}),
@@ -549,7 +549,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 						i(194399),	-- Lifegift Ruby
 					},
 				}),
-				q(65794, {	-- A Change of Care
+				q(65794, {	-- A Charge of Care
 					sourceQuests = { 65791 },	-- Life-Binder on Duty
 					provider = { "n", 185905 },	-- Alexstrasza the Life-Binder
 					coord = { 62.3, 73.0, THE_WAKING_SHORES },
@@ -616,7 +616,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 						66435,	-- Site Salvage
 						66436,	-- Unearthed Troublemakers
 					},
-					provider = { "n", 188503 },	-- Examiner Tae'Shara Bloodwatcher
+					provider = { "n", 188503 },	-- Examiner Tae'shara Bloodwatcher
 					coord = { 66.6, 56.1, THE_WAKING_SHORES },
 					groups = {
 						i(192524),	-- Orb of Primal Gales (QI!)
@@ -722,7 +722,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 						i(192465),	-- Wulferd's Award-Winning Camera
 					},
 				}),
-				q(66526, {	-- Preserving the Wild
+				q(66526, {	-- Preserving the Wilds
 					sourceQuests = { 66524 },	-- Amateur Protography
 					provider = { "n", 193954 },	-- Dervishian
 					coord = { 39.1, 83.3, THE_WAKING_SHORES },
@@ -730,7 +730,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				q(66527, {	-- Professional Protography
 					sourceQuests = {
 						66525,	-- Competitive Protography
-						66526,	-- Preserving the Wild
+						66526,	-- Preserving the Wilds
 					},
 					provider = { "n", 193740 },	-- Cataloger Wulferd
 					coord = { 39.0, 83.2, THE_WAKING_SHORES },
@@ -1200,7 +1200,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 			}),
 			q(70058, {	-- Friend on the Mend
 				sourceQuests = { 66114 },	-- For the Benefit of the Queen
-				provider = { "n", 193955 },	-- Lillistazsa
+				provider = { "n", 193955 },	-- Lillistrasza
 				coord = { 59.9, 70.4, THE_WAKING_SHORES },
 				qis = {
 					198345,	-- Glass Bead (QI!)
@@ -1231,7 +1231,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					65439,	-- To the Dragon Isles! (H)
 					67700,	-- To the Dragon Isles! (A)
 				},
-				provider = { "n", 193304 },	-- Ru'Kroszk
+				provider = { "n", 193304 },	-- Ru'kroszk
 				coord = { 59.7, 51.2, THE_WAKING_SHORES },
 			}),
 			q(66368, {	-- Island In A Storm
@@ -1307,7 +1307,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				},
 			}),
 			q(70164, {	-- A Tinker's Chance
-				provider = { "n", 194136 },	-- Eralshek
+				provider = { "n", 194136 },	-- Eraleshk
 				coord = { 65.4, 58.5, THE_WAKING_SHORES },
 				classes = { EVOKER },
 				races = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
@@ -1357,7 +1357,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				lockCriteria = { 1, "questID", 65686 },	-- To the Azure Span
 				isBreadcrumb = true,
 			}),
-			q(72269, {	-- Thaldraszsus
+			q(72269, {	-- Thaldraszus
 				sourceQuests = { 72293 },	-- Adventuring in the Dragon Isles
 				provider = { "n", 198386 },	-- Scouting Map
 				coord = { 76.5, 34.2, THE_WAKING_SHORES },

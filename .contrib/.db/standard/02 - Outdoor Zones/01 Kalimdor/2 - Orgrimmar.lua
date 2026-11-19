@@ -2158,7 +2158,7 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				sourceQuest = 26311,	-- Unfamiliar Waters
 				qgs = {
 					-- #IF AFTER BFA
-					3144,	-- Etrigg
+					3144,	-- Eitrigg
 					-- #ELSE
 					14720,	-- High Overlord Saurfang
 					-- #ENDIF

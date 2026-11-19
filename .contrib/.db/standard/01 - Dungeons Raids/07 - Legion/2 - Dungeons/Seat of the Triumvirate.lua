@@ -250,7 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(151293),	-- Orb of the Abandoned Magi
 					})),
 					cr(122316, e(1980, {	-- Saprish
-						ach(12005, {	-- Let It All Out
+						ach(12005, {	-- Let it All Out
 							crs = { 126312 },	-- Sealed Void Cache
 							timeline = { REMOVED_12_0_1_LAUNCH },
 						}),

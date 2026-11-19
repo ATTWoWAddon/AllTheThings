@@ -157,7 +157,7 @@ maproot(PANDARIA, {
 				n(69925, {	-- Zandalari Dinomancer
 					i(95422),	-- Zandalari Anklerender (PET!)
 					i(95424),	-- Zandalari Toenibbler (PET!)
-					i(95423),	-- Zandalari Footlsasher (PET!)
+					i(95423),	-- Zandalari Footslasher (PET!)
 					i(94126),	-- Zandalari Kneebiter (PET!)
 					i(94232),	-- Ancient Tome of Dinomancy (CI!)
 				}),

@@ -16,7 +16,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				},
 			}),
 			i(191127, {	-- Medallion of a Fallen Friend
-				cr = 186678,	-- Chief Grrlgilmesh
+				cr = 186678,	-- Chief Grrlgllmesh
 				coord = { 82.0, 31.4, OHNAHRAN_PLAINS },
 			}),
 			i(200196),	-- Nokhud Battle Barding

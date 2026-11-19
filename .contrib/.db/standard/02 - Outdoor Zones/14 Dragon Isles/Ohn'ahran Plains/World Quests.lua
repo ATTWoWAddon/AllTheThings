@@ -11,7 +11,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
 			groups = sharedData({ isWorldQuest = true, }, {
-				q(70067, {	-- A Massage to the Nokhud
+				q(70067, {	-- A Message to the Nokhud
 					coord = { 35.7, 39.2, OHNAHRAN_PLAINS },
 				}),
 				q(70623, {	-- Clearing the Skies

@@ -371,7 +371,7 @@ maproot(NAZJATAR, {
 				},
 				isDaily = true,
 			}),
-			q(55822, {	-- Bounty: A Few Makura
+			q(55822, {	-- Bounty: A Few Makrura
 				allianceQuestData = {
 					sourceQuest = 56156,	-- A Tempered Blade (A)
 					qg = 155941,	-- Tamer Orami (A)
@@ -589,13 +589,13 @@ maproot(NAZJATAR, {
 			}),
 			q(55937, {	-- Clearing Out the Cache (A)
 				sourceQuest = 55861,	-- Let the Residue Lead You
-				provider = { "o", 326588 },	-- Azerite Weapons Cache`
+				provider = { "o", 326588 },	-- Azerite Weapons Cache
 				coord = { 46.0, 51.9, NAZJATAR },
 				races = ALLIANCE_ONLY,
 			}),
 			q(55869, {	-- Clearing Out the Cache (H)
 				sourceQuest = 55868,	-- Let the Residue Lead You
-				provider = { "o", 326588 },	-- Azerite Weapons Cache`
+				provider = { "o", 326588 },	-- Azerite Weapons Cache
 				coord = { 46.0, 51.9, NAZJATAR },
 				races = HORDE_ONLY,
 			}),
@@ -1080,7 +1080,7 @@ maproot(NAZJATAR, {
 			}),
 			q(54015, {	-- In Deep
 				sourceQuests = {
-					55092,	-- Distruption of Power
+					55092,	-- Disruption of Power
 					54012,	-- Fortunate Souls
 					56063,	-- Dark Tides
 				},
@@ -2212,7 +2212,7 @@ maproot(NAZJATAR, {
 			}),
 			q(54021, {	-- The First Arcanist
 				sourceQuest = 54018,	-- Descent
-				provider = { "n", 150207 },	-- Lor'thermar Theron
+				provider = { "n", 150207 },	-- Lor'themar Theron
 				coord = { 36.3, 82.1, NAZJATAR },
 				races = HORDE_ONLY,
 			}),

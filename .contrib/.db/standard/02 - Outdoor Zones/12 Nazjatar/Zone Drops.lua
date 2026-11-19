@@ -115,7 +115,7 @@ maproot(NAZJATAR, {
 					152362,	-- Snapdragon Ravager
 					154753,	-- Snapdragon Stalker
 					152358,	-- Snapdragon Terrormaw
-					154752,	-- Snapdragon Vicemaw
+					154752,	-- Snapdragon Vicejaw
 					152356,	-- Venomous Snapdragon
 					154755,	-- Venomspine Snapdragon
 					153313,	-- Vyz'olgo the Mind-Taker
@@ -221,7 +221,7 @@ maproot(NAZJATAR, {
 					152558,	-- Barnacled Reefwalker
 					150568,	-- Deep Reefwalker
 					153025,	-- Emorneth
-					152564,	-- Gloomchawm Reefwalker
+					152564,	-- Gloomchasm Reefwalker
 					152559,	-- Murkbloom Reefwalker
 					152565,	-- Seashelf Reefwalker
 					152563,	-- Staghorn Reefwalker

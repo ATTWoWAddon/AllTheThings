@@ -255,13 +255,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					coord = { 84.2, 54.4, VALDRAKKEN },
 				}),
 				------ Chapter 2 ------
-				q(70845, {	-- In Tyr's Footsteeps
+				q(70845, {	-- In Tyr's Footsteps
 					sourceQuests = { 70180 },	-- Jump-Start? Jump-Starting!
 					provider = { "n", 196475 },	-- Maiden of Inspiration
 					coord = { 84.3, 53.5, VALDRAKKEN },
 				}),
 				q(70181, {	-- First Challenge of Tyr: Finesse
-					sourceQuests = { 70845 },	-- In Tyr's Footsteeps
+					sourceQuests = { 70845 },	-- In Tyr's Footsteps
 					provider = { "o", 379290 },	-- Ornamented Statue
 					coord = { 67.2, 30.8, THE_AZURE_SPAN },
 					groups = {
@@ -292,7 +292,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						i(199197),	-- Bottled Essence
 					},
 				}),
-				q(70341, {	-- Well Earned Vicotry
+				q(70341, {	-- Well-Earned Victory
 					sourceQuests = { 70376 },	-- Second Challenge of Tyr: Might
 					provider = { "n", 195924 },	-- Maiden of Inspiration
 					coord = { 66.3, 55.3, VALDRAKKEN },

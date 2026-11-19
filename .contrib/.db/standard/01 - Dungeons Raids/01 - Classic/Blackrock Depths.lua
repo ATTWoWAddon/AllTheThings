@@ -2068,7 +2068,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					races = ALLIANCE_ONLY,
 				}),
 				q(27579, {	-- Into the Prison [Horde]
-					qg = 45821,	-- Tha'trak Proudtusk
+					qg = 45821,	-- Thal'trak Proudtusk
 					timeline = { ADDED_4_0_3 },
 					races = HORDE_ONLY,
 				}),
@@ -2286,7 +2286,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11625),	-- Enthralled Sphere
 						i(11626),	-- Blackveil Cape
 						i(11624),	-- Kentic Amice
-						applyclassicphase(PHASE_FIVE, i(22240)),	-- Greaves of Withering Despaire
+						applyclassicphase(PHASE_FIVE, i(22240)),	-- Greaves of Withering Despair
 					},
 				}),
 				e(370, {	-- Lord Roccor

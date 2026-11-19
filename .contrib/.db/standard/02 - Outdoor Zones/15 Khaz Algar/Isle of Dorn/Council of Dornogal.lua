@@ -45,7 +45,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 				}, {	-- RENOWN 6 --
 					q(96122, {timeline = { ADDED_12_0_1_LAUNCH }}),	-- A Small Bundle of Goods
 					q(82349, {timeline = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- Carved Crests
-					q(82333, {timeline = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- Weathered Quests
+					q(82333, {timeline = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- Weathered Crests
 				}, {	-- RENOWN 7 --
 					q(82346, {timeline = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH }}),	-- A Small Bundle of Valorstones
 				}, {	-- RENOWN 8 --

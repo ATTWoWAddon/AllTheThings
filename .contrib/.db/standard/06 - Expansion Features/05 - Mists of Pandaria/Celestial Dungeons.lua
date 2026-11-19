@@ -552,19 +552,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						}),
 
 						-- Tokens
-						tokencost(CELESTIAL_TOKENS.SEASON3.CONQUEROR.ESSENCE, i(99672)),	-- Helm of the Cursed Conquerer
+						tokencost(CELESTIAL_TOKENS.SEASON3.CONQUEROR.ESSENCE, i(99672)),	-- Helm of the Cursed Conqueror
 						tokencost(CELESTIAL_TOKENS.SEASON3.PROTECTOR.ESSENCE, i(99673)),	-- Helm of the Cursed Protector
 						tokencost(CELESTIAL_TOKENS.SEASON3.VANQUISHER.ESSENCE, i(99671)),	-- Helm of the Cursed Vanquisher
-						tokencost(CELESTIAL_TOKENS.SEASON3.CONQUEROR.ESSENCE, i(99669)),	-- Shoulders of the Cursed Conquerer
+						tokencost(CELESTIAL_TOKENS.SEASON3.CONQUEROR.ESSENCE, i(99669)),	-- Shoulders of the Cursed Conqueror
 						tokencost(CELESTIAL_TOKENS.SEASON3.PROTECTOR.ESSENCE, i(99670)),	-- Shoulders of the Cursed Protector
 						tokencost(CELESTIAL_TOKENS.SEASON3.VANQUISHER.ESSENCE, i(99668)),	-- Shoulders of the Cursed Vanquisher
-						tokencost(CELESTIAL_TOKENS.SEASON3.CONQUEROR.ESSENCE, i(99678)),	-- Chest of the Cursed Conquerer
+						tokencost(CELESTIAL_TOKENS.SEASON3.CONQUEROR.ESSENCE, i(99678)),	-- Chest of the Cursed Conqueror
 						tokencost(CELESTIAL_TOKENS.SEASON3.PROTECTOR.ESSENCE, i(99679)),	-- Chest of the Cursed Protector
 						tokencost(CELESTIAL_TOKENS.SEASON3.VANQUISHER.ESSENCE, i(99677)),	-- Chest of the Cursed Vanquisher
-						tokencost(CELESTIAL_TOKENS.SEASON3.CONQUEROR.ESSENCE, i(99681)),	-- Gauntlets of the Cursed Conquerer
+						tokencost(CELESTIAL_TOKENS.SEASON3.CONQUEROR.ESSENCE, i(99681)),	-- Gauntlets of the Cursed Conqueror
 						tokencost(CELESTIAL_TOKENS.SEASON3.PROTECTOR.ESSENCE, i(99667)),	-- Gauntlets of the Cursed Protector
 						tokencost(CELESTIAL_TOKENS.SEASON3.VANQUISHER.ESSENCE, i(99680)),	-- Gauntlets of the Cursed Vanquisher
-						tokencost(CELESTIAL_TOKENS.SEASON3.CONQUEROR.ESSENCE, i(99675)),	-- Leggings of the Cursed Conquerer
+						tokencost(CELESTIAL_TOKENS.SEASON3.CONQUEROR.ESSENCE, i(99675)),	-- Leggings of the Cursed Conqueror
 						tokencost(CELESTIAL_TOKENS.SEASON3.PROTECTOR.ESSENCE, i(99676)),	-- Leggings of the Cursed Protector
 						tokencost(CELESTIAL_TOKENS.SEASON3.VANQUISHER.ESSENCE, i(99674)),	-- Leggings of the Cursed Vanquisher
 					},

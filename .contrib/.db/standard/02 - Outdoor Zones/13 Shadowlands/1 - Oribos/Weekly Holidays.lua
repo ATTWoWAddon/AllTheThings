@@ -209,7 +209,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 				q(62634),					-- A Shattered Path Through Time
 				q(62635),					-- A Shrouded Path Through Time
 				q(62638),					-- Emissary of War
-				q(64970, {					-- Timeworn Keystone: The Broken Isle
+				q(64970, {					-- Timeworn Keystone: The Broken Isles
 					provider = { "n", 178804 },	-- Ta'hsup
 					coord = { 65.2, 35.1, ORIBOS },
 					timeline = { ADDED_9_1_5, REMOVED_10_0_2_LAUNCH },

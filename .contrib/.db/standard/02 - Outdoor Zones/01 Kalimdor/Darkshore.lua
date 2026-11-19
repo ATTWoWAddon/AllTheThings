@@ -36,7 +36,7 @@ maproot(KALIMDOR, DARKSHORE, {
 				timeline = { ADDED_8_1_0 },
 				races = ALLIANCE_ONLY,
 			}),
-			ach(5453, {	-- Ghost in the Dark
+			ach(5453, {	-- Ghosts in the Dark
 				sourceQuest = 28529,	-- Writings of the Void
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -1940,7 +1940,7 @@ maproot(KALIMDOR, DARKSHORE, {
 			}),
 			q(13529, {	-- The Corruption's Source
 				sourceQuest = 13528,	-- Buzzbox 723
-				qg = 32978,	-- Tharnarium Treetender
+				qg = 32978,	-- Tharnariun Treetender
 				coord = { 56.8, 30.1, DARKSHORE },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,

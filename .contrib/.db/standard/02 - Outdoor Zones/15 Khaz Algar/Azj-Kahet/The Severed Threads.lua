@@ -126,7 +126,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 					}, {
 						title(573),	-- Anub'<Name>
 					})),
-					ach(40876, sharedDataSelf({	-- Vox Arachnid
+					ach(40876, sharedDataSelf({	-- Vox Arachni
 						minReputation = { FACTION_THE_VIZIER, 9 },
 					}, {
 						title(574),	-- <Name>, Hand of the Vizier
@@ -356,7 +356,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 						coord = { 15.6, 45.7, NERUBAR },
 						crs = { 221202 },	-- Zorikal the Patron
 					}),
-					q(81475, {	-- Breaking the Phalanx: Royal Appointments
+					q(81475, {	-- Breaking the Phalanx: Royal Appointees
 						provider = { "n", 224161 },	-- Eirzay
 						coord = { 43.0, 47.1, NERUBAR },
 						crs = { 220916 },	-- Royal Appointee
@@ -383,7 +383,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 							}),
 						},
 					}),
-					q(81478, {	-- Relics of War: The Ruptired Lake
+					q(81478, {	-- Relics of War: The Ruptured Lake
 						provider = { "n", 224173 },	-- Eirzay
 						coord = { 36.4, 49.2, AZJ_KAHET },
 						groups = {
@@ -1082,7 +1082,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 			n(VENDORS, {
 				n(224729, {	-- Anub'okki <Disciple of Anub'azal>
 					coord = { 55.9, 42.1, AZJ_KAHET },
-					sourceQuests = { 78256 },	-- The General Consensus
+					sourceQuests = { 78256 },	-- The General's Consensus
 					sym = {{"select","itemID",
 						226519,	-- General's Expertise (TOY!)
 						228949,	-- Rumor Map

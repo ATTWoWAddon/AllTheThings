@@ -252,7 +252,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.EVERSONG_WOODS, {
 			q(92002, {	-- Dangerous Showpieces
 				qi = 249528,	-- Twilight Weaponry (QI!)
 			}),
-			q(90576),	-- Fortify the Runestone: Shades of the Row
+			q(90576),	-- Fortify the Runestones: Shades of the Row
 			q(92001, {	-- One Smuggler to Another
 				o(568506, {	-- Smuggled Goods
 					coords = {

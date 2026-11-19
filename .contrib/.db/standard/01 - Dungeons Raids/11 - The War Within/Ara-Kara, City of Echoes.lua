@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 		},
 		groups = {
 			n(QUESTS, {
-				q(83166, {	-- Ara-Kara, the City of Echoes: Harverst's End
+				q(83166, {	-- Ara-Kara, the City of Echoes: Harvest's End
 					provider = { "n", 224733 },	-- Tulumun
 					coord = { 56.2, 42.3, AZJ_KAHET },
 				}),

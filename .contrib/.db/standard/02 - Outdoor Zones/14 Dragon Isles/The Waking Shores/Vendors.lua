@@ -9,7 +9,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 			n(193915, {	-- Emilia Bellocq
 				coord = { 75.4, 34.0, THE_WAKING_SHORES },
 				groups = {
-					i(199900),	-- Secondhand Survery Tools
+					i(199900),	-- Secondhand Survey Tools
 					i(198646, {	-- Ornate Dragon Statue (TOY!)
 						sourceQuests = {
 							70236,	-- Dislodged Dragoneye

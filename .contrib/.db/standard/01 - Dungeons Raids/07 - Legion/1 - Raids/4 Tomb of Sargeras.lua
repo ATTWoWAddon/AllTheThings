@@ -461,7 +461,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(GOROTH, {
-					ach(11724),	-- Fel Turkey
+					ach(11724),	-- Fel Turkey!
 				}),
 				BossOnly(INQUISITION, {
 					ach(11696),	-- Grin and Bear It

@@ -22,7 +22,7 @@ maproot(KALIMDOR, DESOLACE, {
 					14309,	-- Calming the Kodo
 					14327,	-- My Word is My Bond (verify if this chain is part of this criteria or Uniting The Tribes)
 					14307,	-- Stubborn Winds
-					14381,	-- Cleaning Our Crevasse
+					14381,	-- Cleansing Our Crevasse
 					14346,	-- Cleansing Our Crevasse
 					14394,	-- Death to Agogridon
 					1456,	-- The Karnitol Shipwreck (3/4)
@@ -383,8 +383,8 @@ maproot(KALIMDOR, DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/10 Blood-Filled Leech
 						providers = {
-							{ "n", 35412 },	-- Rejuvenated Thunder Lizzard
-							{ "n", 36059 },	-- Blood-filled Leech
+							{ "n", 35412 },	-- Rejuvenated Thunder Lizard
+							{ "n", 36059 },	-- Blood-Filled Leech
 						},
 					}),
 				},
@@ -2064,7 +2064,7 @@ maproot(KALIMDOR, DESOLACE, {
 				sourceQuests = {
 					1453,	-- Reclaimers' Business in Desolace
 					-- #if AFTER CATA
-					14354,	-- Elune's Gift
+					14354,	-- Elune's Gifts
 					-- #endif
 				},
 				qg = 5638,	-- Kreldig Ungor

@@ -705,7 +705,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					}),
 					q(46720, {	-- Frozen Memories
 						sourceQuest = 46719,	-- Amal'thazad's Message
-						provider = { "n", 93555 },	-- Amal'thazadd
+						provider = { "n", 93555 },	-- Amal'thazad
 						coord = { 58.1, 31.1, ACHERUS_THE_EBON_HOLD_HALL_OF_COMMAND },
 					}),
 					q(46812, {	-- Draconic Secrets
@@ -752,7 +752,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					gt(433, {	-- Brothers in Arms
 						q(44231, {	-- Champion Armaments
 							sourceQuest = 43268,	-- Tech It Up A Notch
-							provider = { "n", 110410 },	-- Dread Collector Bane
+							provider = { "n", 110410 },	-- Dead Collector Bane
 							coord = { 51.7, 32.4, ACHERUS_THE_EBON_HOLD_THE_HEART_OF_ACHERUS },
 						}),
 					}),

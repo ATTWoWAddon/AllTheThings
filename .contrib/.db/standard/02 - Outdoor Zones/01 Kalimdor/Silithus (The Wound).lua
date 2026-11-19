@@ -759,7 +759,7 @@ maproot(KALIMDOR, {
 							},
 						}),
 						q(55400, {	-- Take My Hand
-							sourceQuest = 55374,	-- A Disurbance Beneath the Earth
+							sourceQuest = 55374,	-- A Disturbance Beneath the Earth
 							qg = 151641,	-- Spiritwalker Ebonhorn
 							coord = { 49.4, 68.3, HIGHMOUNTAIN },
 							timeline = { ADDED_8_2_0 },

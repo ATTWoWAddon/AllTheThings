@@ -13,12 +13,12 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 					209913,	-- Fruitface
 					209936,	-- Greedy Gessie
 					210075,	-- Henri Snufftail
-					210046,	-- Keen-eyed Cian
+					210046,	-- Keen-Eyed Cian
 					210051,	-- Matriarch Keevah
 					208658,	-- Moltenbinder's Disciple
 					210045,	-- Moragh the Slothful
-					209113,	-- Nouberon
-					210161,	-- Ristar, the Rabid
+					209113,	-- Nuoberon
+					210161,	-- Ristar the Rabid
 					209358,	-- Splinterlimb
 					210111,	-- Surging Lasher
 					209902,	-- Talthonei Ashwhisper
@@ -148,7 +148,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 					i(208385),	-- Flame Endowed Blade
 				},
 			}),
-			n(210046, {	-- Keen-eyed Cian
+			n(210046, {	-- Keen-Eyed Cian
 				questID = 78211,
 				coord = { 40.5, 49.6, EMERALD_DREAM },
 				groups = {
@@ -207,7 +207,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 					i(209958),	-- Rune of the Umbramane (TODO: unless it is really zone drop)
 				},
 			}),
-			n(209113, {	-- Nouberon
+			n(209113, {	-- Nuoberon
 				providers = {
 					{ "n", 209264 },	-- Nuo Bunny (vignette)
 				},
@@ -247,7 +247,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 					bo(77867, true),	-- Reefbreaker Moruud bonus objective
 				},
 			}),
-			n(210161, {	-- Ristar, the Rabid
+			n(210161, {	-- Ristar the Rabid
 				questID = 77890,
 				coord = { 44.5, 39.3, EMERALD_DREAM },
 				groups = {

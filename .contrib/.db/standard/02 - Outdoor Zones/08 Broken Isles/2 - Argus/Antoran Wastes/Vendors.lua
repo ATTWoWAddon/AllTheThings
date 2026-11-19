@@ -13,7 +13,7 @@ maproot(BROKEN_ISLES, ARGUS, ANTORAN_WASTES, {
 				{ 64.41, 21.03, ANTORAN_WASTES },	-- Defiled Path
 				{ 58.01, 66.96, ANTORAN_WASTES },	-- Felfire Armory
 			},
-			crs = { 128151 },	-- All-Seer Focus
+			crs = { 128151 },	-- All-Seer's Focus
 		}),
 		n(128134, {	-- Orix the All-Seer
 			coord = { 59.5, 44.9, ANTORAN_WASTES },

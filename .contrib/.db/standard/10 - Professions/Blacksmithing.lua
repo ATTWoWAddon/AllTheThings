@@ -328,7 +328,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 			isBreadcrumb = true,
 		}),
 		q(38564, {	-- A Sweet Bargain
-			sourceQuest = 39729,	-- The Knowledge of Black Rock
+			sourceQuest = 39729,	-- The Knowledge of Black Rook
 			provider = { "n", 92183 },	-- Alard Schmied
 			coord = { 44.6, 28.6, LEGION_DALARAN },
 		}),
@@ -1209,7 +1209,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				coord = { 59.2, 55.2, DORNOGAL },
 				isWeekly = true,
 				groups = {
-					i(228774),	-- Algari Blacksmiths's Journal
+					i(228774),	-- Algari Blacksmith's Journal
 				},
 			}),
 		}),

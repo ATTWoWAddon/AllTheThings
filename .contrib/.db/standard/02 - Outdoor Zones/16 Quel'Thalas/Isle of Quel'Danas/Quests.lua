@@ -39,12 +39,12 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ISLE_OF_QUELDANAS, {
 			}),
 			q(89271, {	-- My Son
 				sourceQuests = { 86769 },	-- Last Bastion of the Light
-				provider = { "n", 236906 },	-- High-Exarch Turalyon
+				provider = { "n", 236906 },	-- High Exarch Turalyon
 				coord = { 46.0, 44.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
 			}),
 			q(86780, {	-- Where Heroes Hold
 				sourceQuests = { 86769 },	-- Last Bastion of the Light
-				provider = { "n", 236906 },	-- High-Exarch Turalyon
+				provider = { "n", 236906 },	-- High Exarch Turalyon
 				coord = { 46.0, 44.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
 				groups = {
 					i(251116),	-- Clasp of the Voidslayer
@@ -143,7 +143,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ISLE_OF_QUELDANAS, {
 					91274,	-- Severing the Void
 					86834,	-- Voidborn Banishing
 				},
-				provider = { "n", 236978 },	-- High-Exarch Turalyon
+				provider = { "n", 236978 },	-- High Exarch Turalyon
 				coord = { 45.4, 27.0, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
 			}),
 			q(86849, {	-- Wrath Unleashed
@@ -151,7 +151,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ISLE_OF_QUELDANAS, {
 					86811,	-- Ethereal Eradication
 					86848,	-- Light's Arsenal
 				},
-				provider = { "n", 236978 },	-- High-Exarch Turalyon
+				provider = { "n", 236978 },	-- High Exarch Turalyon
 				coord = { 45.4, 27.0, MAP.MIDNIGHT.ISLE_OF_QUELDANAS_SCENARIO },
 			}),
 			q(86850, {	-- Broken Sun

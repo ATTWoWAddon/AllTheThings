@@ -777,7 +777,7 @@ maproot(BROKEN_ISLES, AZSUNA, {
 			},
 		}),
 		q(37566, {	-- The Prince is Going Down
-			sourceQuests = { 37565 },	-- The Right Weapons for the Job
+			sourceQuests = { 37565 },	-- The Right Weapon for the Job
 			provider = { "n", 89051 },	-- Okuna Longtusk
 			coord = { 53.4, 63.0, AZSUNA },
 			groups = {

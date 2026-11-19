@@ -1070,7 +1070,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 				coord = { 67.7, 67.6, REVENDRETH },
 				groups = {
 					i(173945),	-- Join the Prince! (QI!)
-					i(177665),	-- Spectral Hankerchief
+					i(177665),	-- Spectral Handkerchief
 				},
 			}),
 			q(60277, {	-- WANTED: Aggregate of Doom

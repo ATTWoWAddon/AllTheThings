@@ -414,7 +414,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 				ach(41525),	-- Can You Please Spell "Gobanna?"
 				ach(41289),	-- Liberation of Undermine Guild Run
-				ach(41290),	-- Heroic: Liberation of Undermine Guild Run
+				ach(41290),	-- Heroic Liberation of Undermine Guild Run
 			}),
 			header(HEADERS.Faction, FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
 				n(ACHIEVEMENTS, {

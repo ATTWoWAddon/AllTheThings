@@ -1724,7 +1724,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							}),
 							i(29179),	-- Xi'ri's Gift
 						}, {	-- Exalted
-							i(29177),	-- Adal's Command
+							i(29177),	-- A'dal's Command
 							i(29176),	-- Crest of the Sha'tar
 							i(33153, {timeline={ADDED_2_2_0}}),	-- Formula: Enchant Gloves - Threat (RECIPE!)
 							i(29175),	-- Gavel of Pure Light

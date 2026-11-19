@@ -321,7 +321,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						}),
 						q(57592, {	-- Executor of N'Zoth
 						}),
-						q(58276, {	-- Marat In Flames
+						q(58276, {	-- Mar'at In Flames
 							coord = { 49.4, 39.3, NZOTH_ASSAULT_ULDUM },
 						}),
 						q(58275, {	-- Monstrous Summoning
@@ -699,7 +699,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						q(55360, {	-- The Unsealed Tomb
 							coord = { 69.9, 59.9, NZOTH_ASSAULT_ULDUM },
 						}),
-						q(55354, {	-- The Vir'naal Front
+						q(55354, {	-- The Vir'nall Front
 							coord = { 61.4, 47.2, NZOTH_ASSAULT_ULDUM },
 						}),
 						q(57223, {	-- Unearthed Keeper

@@ -874,7 +874,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 				q(51889, {	-- The Wrath of Grapes [A]
 					description = "Requires 150 Kul'Tiran Mining.",
 					sourceQuests = { 51380 },	-- Back to Franklin
-					provider = { "n", 139375 },	-- Franklin the Drunk
+					provider = { "n", 139375 },	-- Franklin The Drunk
 					coords = {
 						{ 75.6, 23.5, BORALUS },	-- Franklin the Drunk
 						{ 69.3, 13.0, BORALUS },	-- Hilock of Eggs

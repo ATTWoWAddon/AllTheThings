@@ -26,7 +26,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 		}),
 		fp(3029, {	-- Tazavesh, K'aresh
 			coord = { 34.7, 10.1, KARESH_TAZAVESH },
-			cr = 234692,	-- Om'Thenal
+			cr = 234692,	-- Om'thenai
 		}),
 		fp(3031, {	-- The Oasis, K'aresh
 			coord = { 76.7, 34.9, KARESH },

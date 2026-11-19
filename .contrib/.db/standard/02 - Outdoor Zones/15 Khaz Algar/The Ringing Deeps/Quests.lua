@@ -11,7 +11,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 				provider = { "n", 217887 },	-- Moira Thaurissan
 				coord = { 32.0, 59.8, DORNOGAL },
 			}),
-			q(78555, {	-- Underground and Overhelmed
+			q(78555, {	-- Underground and Overwhelmed
 				sourceQuests = { 80434 },	-- Into the Deeps
 				provider = { "n", 212592 },	-- Speaker Brinthe
 				coord = { 42.1, 28.3, THE_RINGING_DEEPS },
@@ -29,7 +29,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 			q(78837, {	-- Pomp and Dire Circumstance
 				sourceQuests = {
 					78557,	-- Getting Off Track
-					78555,	-- Underground and Overhelmed
+					78555,	-- Underground and Overwhelmed
 				},
 				provider = { "n", 212592 },	-- Speaker Brinthe
 				coord = { 42.1, 28.3, THE_RINGING_DEEPS },
@@ -129,7 +129,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 						i(217015),	-- Unstable Cinderbrew Barrel (QI!)
 					}),
 					o_repeated({
-						i(212177),	-- Useful Looking Scrap (QI!)
+						i(212177),	-- Useful-Looking Scrap (QI!)
 						o(417136),	-- Intriguing Scrap
 						o(417137),	-- Intriguing Scrap
 						o(417138),	-- Intriguing Scrap
@@ -292,14 +292,14 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 					i(219372),	-- Earthen Traveler's Helm
 				},
 			}),
-			q(78741, {	-- Sympathetic Speaker
+			q(78741, {	-- Sympathetic Speakers
 				sourceQuests = { 78738 },	-- Absent Speaker
 				provider = { "n", 213569 },	-- Speaker Brinthe
 				coord = { 47.1, 20.7, THE_RINGING_DEEPS },
 			}),
 			q(81798, {	-- Return to Moira
 				sourceQuests = {
-					78741,	-- Sympathetic Speaker
+					78741,	-- Sympathetic Speakers
 					78742,	-- Battle of the Earthenworks
 				},
 				provider = { "n", 213672 },	-- Foreman Uzjax
@@ -308,7 +308,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 			}),
 			q(78760, {	-- Dark Iron from Above
 				sourceQuests = {
-					78741,	-- Sympathetic Speaker
+					78741,	-- Sympathetic Speakers
 					78742,	-- Battle of the Earthenworks
 					81798,	-- Return to Moira
 				},
@@ -362,7 +362,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 					i(218131),	-- Perfect Lashroom Cap (QI!)
 				},
 			}),
-			q(80402, {	-- Buckets and Bloom
+			q(80402, {	-- Buckets and Blooms
 				sourceQuests = { 80408 },	-- Shimmermist Falls
 				provider = { "n", 219899 },	-- Batzvara
 				coord = { 46.3, 36.8, THE_RINGING_DEEPS },
@@ -374,7 +374,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 			q(80404, {	-- Mossy Earthen
 				sourceQuests = {
 					80401,	-- A Perfect Sponge
-					80402,	-- Buckets and Bloom
+					80402,	-- Buckets and Blooms
 				},
 				provider = { "n", 219899 },	-- Batzvara
 				coord = { 46.3, 36.8, THE_RINGING_DEEPS },
@@ -633,7 +633,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 					i(217159),	-- Nebb's Improved Poultice (QI!)
 				},
 			}),
-			q(79372, {	-- A Cluth of Hope
+			q(79372, {	-- A Clutch of Hope
 				sourceQuests = { 79371 },	-- A Royal Cure
 				provider = { "o", 423581 },	-- Broodmother's Egg
 				coord = { 68.1, 39.0, THE_RINGING_DEEPS },
@@ -763,7 +763,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 					}),
 				},
 			}),
-			q(83152, {	-- Magmamagement
+			q(83152, {	-- Magmanagement
 				sourceQuests = {
 					80434,	-- Into the Deeps,
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
@@ -864,7 +864,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 			}),
 			q(80000, {	-- Beebiter
 				sourceQuests = {
-					79552,	-- How Wax
+					79552,	-- Hot Wax
 					79998,	-- Mite Not Right
 				},
 				provider = { "n", 219674 },	-- Janky
@@ -872,7 +872,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 			}),
 			q(80202, {	-- Hot Pollenate-o
 				sourceQuests = {
-					79552,	-- How Wax
+					79552,	-- Hot Wax
 					79998,	-- Mite Not Right
 				},
 				provider = { "n", 219674 },	-- Janky
@@ -1069,12 +1069,12 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				sourceQuestNumRequired = 1,
-				provider = { "n", 225608 },	-- Prospera Cogwall
+				provider = { "n", 225608 },	-- Prospera Cogwail
 				coord = { 63.7, 79.2, THE_RINGING_DEEPS },
 			}),
 			q(83159, {	-- A Little Off the Top
 				sourceQuests = { 83155 },	-- Tired of Tripping
-				provider = { "n", 225608 },	-- Prospera Cogwall
+				provider = { "n", 225608 },	-- Prospera Cogwail
 				coord = { 63.7, 79.2, THE_RINGING_DEEPS },
 				groups = {
 					i(224779),	-- Alhainr's Skull (QI!)
@@ -1082,7 +1082,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 			}),
 			q(83162, {	-- Put it Back, Put it Back!
 				sourceQuests = { 83159 },	-- A Little Off the Top
-				provider = { "n", 226336 },	-- Prospera Cogwall
+				provider = { "n", 226336 },	-- Prospera Cogwail
 				coord = { 63.7, 79.2, THE_RINGING_DEEPS },
 			}),
 		}),
@@ -1357,7 +1357,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
 			sourceQuestNumRequired = 1,
-			provider = { "n", 213840 },	-- Inkeeper Brax
+			provider = { "n", 213840 },	-- Innkeeper Brax
 			coord = { 48.0, 32.2, THE_RINGING_DEEPS },
 			groups = {
 				i(211493),	-- Brax's Brass Knuckles (QI!)

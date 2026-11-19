@@ -6,13 +6,13 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 	groups = {
 		q(50239, {	-- A Choice of Allies (A)
 			qgs = {
-				126301,	-- Anduin Wyrnn
+				126301,	-- Anduin Wrynn
 				126332,	-- Aysa Cloudsinger <Master of Tushui>
 			},
 			coord = { 52.2, 13.6, STORMWIND_CITY },
 			races = ALLIANCE_ONLY,
 		}),
-		q(50242, {	-- A Choice for Allies (H)
+		q(50242, {	-- A Choice of Allies (H)
 			qgs = {
 				126065,	-- Lady Sylvanas Windrunner
 				133523,	-- Ji Firepaw
@@ -22,7 +22,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		}),
 		q(49929, {	-- The Call for Allies (A)
 			qgs = {
-				126301,	-- Anduin Wyrnn
+				126301,	-- Anduin Wrynn
 				126332,	-- Aysa Cloudsinger <Master of Tushui>
 			},
 			coord = { 52.2, 13.6, STORMWIND_CITY },
@@ -38,7 +38,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		}),
 		q(50248, {	-- A Second Ally for the Cause (A)
 			qgs = {
-				126301,	-- Anduin Wyrnn
+				126301,	-- Anduin Wrynn
 				126332,	-- Aysa Cloudsinger <Master of Tushui>
 			},
 			coord = { 52.2, 13.6, STORMWIND_CITY },
@@ -629,7 +629,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			races = HORDE_ONLY,
 			groups = {
 				q(48066, {	-- A Feast for Our Kin
-					sourceQuests = { 50242 },	-- A Choice for Allies (H)
+					sourceQuests = { 50242 },	-- A Choice of Allies (H)
 					qgs = {
 						125285,	-- Baine Bloodhoof <High Chieftain>
 						133523,	-- Ji Firepaw
@@ -709,7 +709,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					coord = { 56.4, 89.2, HIGHMOUNTAIN },
 					races = HORDE_ONLY,
 				}),
-				q(41882, {	-- Whispers of the Darnkess
+				q(41882, {	-- Whispers of the Darkness
 					sourceQuests = { 41815 },	-- Curse of the Necrodark
 					provider = { "n", 97662 },	-- Jale Rivermane
 					coord = { 56.4, 89.2, HIGHMOUNTAIN },
@@ -953,7 +953,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 						i(157022),	-- Letter from King Anduin Wrynn (QI!)
 					},
 				}),
-				q(55146, {	-- Stranger in a Strange Lane
+				q(55146, {	-- Stranger in a Strange Land
 					sourceQuests = { 55142 },	-- For the Alliance
 					provider = { "n", 133362 },	-- Ambassador Moorgard
 					coord = { 53.2, 15.4, STORMWIND_CITY },
@@ -1029,7 +1029,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			races = HORDE_ONLY,
 			groups = {
 				q(53466, {	-- Vision of Time
-					sourceQuests = { 50242 },	-- A Choice for Allies (H)
+					sourceQuests = { 50242 },	-- A Choice of Allies (H)
 					qgs = {
 						126066,	-- Eitrigg
 						133523,	-- Ji Firepaw
@@ -1259,7 +1259,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			races = HORDE_ONLY,
 			groups = {
 				q(49973, {	-- Thalyssra's Estate
-					sourceQuests = { 50242 },	-- A Choice for Allies (H)
+					sourceQuests = { 50242 },	-- A Choice of Allies (H)
 					provider = { "n", 133523 },	-- Ji Firepaw
 					coord = { 37.8, 81.1, ORGRIMMAR },
 					races = HORDE_ONLY,
@@ -1372,7 +1372,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					-- #if BEFORE 10.1.5
 					description = "Must be exalted with |cFFFFD700Voldunai|r and complete the |cFFFFD700Secrets in the Sands|r achievement.",
 					-- #endif
-					sourceQuests = { 50242 },	-- A Choice for Allies (H)
+					sourceQuests = { 50242 },	-- A Choice of Allies (H)
 					provider = { "n", 133523 },	-- Ji Firepaw
 					coord = { 37.7, 81.1, ORGRIMMAR },
 				}),
@@ -1586,7 +1586,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			races = HORDE_ONLY,
 			groups = {
 				q(53831, {	-- A Royal Occasion
-					sourceQuests = { 50242 },	-- A Choice for Allies (H)
+					sourceQuests = { 50242 },	-- A Choice of Allies (H)
 					qgs = {
 						133519,	-- Rokhan
 						133523,	-- Ji Firepaw (not sure when they changed npc?)

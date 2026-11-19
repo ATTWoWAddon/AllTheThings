@@ -57,7 +57,7 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, {
 				}),
 			},
 		}),
-		ach(10993, {	-- Third Time's The Charam [3]
+		ach(10993, {	-- Third Time's The Charm [3]
 			i(134026),	-- Honorable Pennant (TOY!)
 		}),
 		ach(10995, {	-- For Prestige [4]

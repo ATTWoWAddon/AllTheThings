@@ -272,7 +272,7 @@ root(ROOTS.ExpansionFeatures,
 							142433,	-- Fozruk
 							142662,	-- Geomancer Flintdagger
 							142725,	-- Horrific Apparition
-							142739,	-- Knight-Captaian Aldrin
+							142739,	-- Knight-Captain Aldrin
 							142112,	-- Kor'gresh Coldrage
 							142684,	-- Kovork
 							142716,	-- Man-Hunter Rog
@@ -281,7 +281,7 @@ root(ROOTS.ExpansionFeatures,
 							142423,	-- Overseer Krix
 							142435,	-- Plaguefeather
 							142436,	-- Ragebeak
-							141620,	-- Rumbling Goliatah
+							141620,	-- Rumbling Goliath
 							142683,	-- Ruul Onestone
 							142690,	-- Singer
 							142437,	-- Skullripper
@@ -423,7 +423,7 @@ root(ROOTS.ExpansionFeatures,
 								i(163736),	-- Spectral Visage (TOY!)
 							},
 						}),
-						n(142739, {	-- Knight-Captaian Aldrin
+						n(142739, {	-- Knight-Captain Aldrin
 							questID = 53088,	-- Knight-Captaian Aldrin
 							isWeekly = true,
 							coord = { 49.0, 40.0, ARATHI_HIGHLANDS },
@@ -457,7 +457,7 @@ root(ROOTS.ExpansionFeatures,
 							allianceQuestID = 53090,	-- Man-Hunter Rog [Alliance]
 							hordeQuestID = 53515,	-- Man-Hunter Rog [Horde]
 							isWeekly = true,
-							crs = { 142717 },	-- SQUAAWK!
+							crs = { 142717 },	-- SQUAAAWK!
 							coord = { 51.8, 75.1, ARATHI_HIGHLANDS },
 							groups = {
 								i(163712),	-- Squawkling (PET!)

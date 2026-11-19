@@ -749,7 +749,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 				{ 40.4, 77.8, STORMWIND_CITY },
 			},
 			groups = {
-				i(140192),	-- Dalaran Heartstone (TOY!)
+				i(140192),	-- Dalaran Hearthstone (TOY!)
 				i(143785),	-- Tome of the Tranquil Mind
 			},
 		}),
@@ -975,7 +975,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 		}),
 		q(45412, {	-- Protection: Aid of the Illidari (Warrior)	-- this is still obtainable, confirmed in 8.3
 			sourceQuests = {
-				47030,	-- Legion Threat: Dalaran Inflitration
+				47030,	-- Legion Threat: Dalaran Infiltration
 				44821,	-- In Dire Need
 			},
 			qgs = {
@@ -1059,47 +1059,47 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			isBreadcrumb = true,
 		}),
 		q(47864, {	-- Sealing Fate: Additional Marks of Honor
-			provider = { "n", 111243 },	-- Archmage Lan'Dalock
+			provider = { "n", 111243 },	-- Archmage Lan'dalock
 			coord = { 57.2, 67.5, LEGION_DALARAN },
 			isWeekly = true,
 		}),
 		q(43894, {	-- Sealing Fate: Extraneous Order Resources
-			provider = { "n", 111243 },	-- Archmage Lan'Dalock
+			provider = { "n", 111243 },	-- Archmage Lan'dalock
 			coord = { 57.2, 67.5, LEGION_DALARAN },
 			isWeekly = true,
 		}),
 		q(43895, {	-- Sealing Fate: Gold
-			provider = { "n", 111243 },	-- Archmage Lan'Dalock
+			provider = { "n", 111243 },	-- Archmage Lan'dalock
 			coord = { 57.2, 67.5, LEGION_DALARAN },
 			isWeekly = true,
 		}),
 		q(43897, {	-- Sealing Fate: Immense Fortune of Gold
-			provider = { "n", 111243 },	-- Archmage Lan'Dalock
+			provider = { "n", 111243 },	-- Archmage Lan'dalock
 			coord = { 57.2, 67.5, LEGION_DALARAN },
 			isWeekly = true,
 		}),
 		q(47851, {	-- Sealing Fate: Marks of Honor
-			provider = { "n", 111243 },	-- Archmage Lan'Dalock
+			provider = { "n", 111243 },	-- Archmage Lan'dalock
 			coord = { 57.2, 67.5, LEGION_DALARAN },
 			isWeekly = true,
 		}),
 		q(43892, {	-- Sealing Fate: Order Resources
-			provider = { "n", 111243 },	-- Archmage Lan'Dalock
+			provider = { "n", 111243 },	-- Archmage Lan'dalock
 			coord = { 57.2, 67.5, LEGION_DALARAN },
 			isWeekly = true,
 		}),
 		q(43896, {	-- Sealing Fate: Piles of Gold
-			provider = { "n", 111243 },	-- Archmage Lan'Dalock
+			provider = { "n", 111243 },	-- Archmage Lan'dalock
 			coord = { 57.2, 67.5, LEGION_DALARAN },
 			isWeekly = true,
 		}),
 		q(47865, {	-- Sealing Fate: Piles of Marks of Honor
-			provider = { "n", 111243 },	-- Archmage Lan'Dalock
+			provider = { "n", 111243 },	-- Archmage Lan'dalock
 			coord = { 57.2, 67.5, LEGION_DALARAN },
 			isWeekly = true,
 		}),
 		q(43893, {	-- Sealing Fate: Stashed Order Resources
-			provider = { "n", 111243 },	-- Archmage Lan'Dalock
+			provider = { "n", 111243 },	-- Archmage Lan'dalock
 			coord = { 57.2, 67.5, LEGION_DALARAN },
 			isWeekly = true,
 		}),

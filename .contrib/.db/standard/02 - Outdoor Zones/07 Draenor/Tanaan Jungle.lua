@@ -956,7 +956,7 @@ maproot(DRAENOR, TANAAN_JUNGLE, {
 				isDaily = true,
 				coord = { 22.8, 40.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 				groups = {
-					i(128315),	-- Medallion of thee Legion
+					i(128315),	-- Medallion of the Legion
 					i(128025, {	-- Rattling Iron Cage
 						i(116669),	-- Armored Razorback (MOUNT!)
 						i(116658),	-- Tundra Icehoof (MOUNT!)
@@ -969,7 +969,7 @@ maproot(DRAENOR, TANAAN_JUNGLE, {
 				isDaily = true,
 				coord = { 47.0, 52.6, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 				groups = {
-					i(128315),	-- Medallion of thee Legion
+					i(128315),	-- Medallion of the Legion
 					i(128025, {	-- Rattling Iron Cage
 						i(116669),	-- Armored Razorback (MOUNT!)
 						i(116658),	-- Tundra Icehoof (MOUNT!)
@@ -1300,7 +1300,7 @@ maproot(DRAENOR, TANAAN_JUNGLE, {
 					{ 15.6, 63.4, TANAAN_JUNGLE },
 				},
 				groups = {
-					i(128315),	-- Medallion of thee Legion
+					i(128315),	-- Medallion of the Legion
 					i(128025, {	-- Rattling Iron Cage
 						i(116669),	-- Armored Razorback (MOUNT!)
 						i(116658),	-- Tundra Icehoof (MOUNT!)
@@ -1369,7 +1369,7 @@ maproot(DRAENOR, TANAAN_JUNGLE, {
 				isDaily = true,
 				coord = { 32.6, 74.0, TANAAN_JUNGLE },	-- **Coords unconfirmed, relied on wowhead**
 				groups = {
-					i(128315),	-- Medallion of thee Legion
+					i(128315),	-- Medallion of the Legion
 					i(128025, {	-- Rattling Iron Cage
 						i(116669),	-- Armored Razorback (MOUNT!)
 						i(116658),	-- Tundra Icehoof (MOUNT!)
@@ -1516,7 +1516,7 @@ maproot(DRAENOR, TANAAN_JUNGLE, {
 			o(241692, {	-- Axe of the Weeping Wolf
 				questID = 38754,
 				coord = { 14.9, 54.4, TANAAN_JUNGLE },
-				groups = { i(127325) },	-- Axe of the Weepiong Wolf
+				groups = { i(127325) },	-- Axe of the Weeping Wolf
 			}),
 			o(243690, {	-- Bejeweled Egg
 				questID = 39469,

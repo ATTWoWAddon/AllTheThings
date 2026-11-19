@@ -954,7 +954,7 @@ local SCHOLOMANCE_LEGACY_DATA = {
 			11261,	-- Doctor Theolen Krastinov <The Butcher>
 			10901,	-- Lorekeeper Polkelt
 			10502,	-- Lady Illucia Barov
-			10504,	-- Lord Alexi Barov
+			10504,	-- Lord Alexei Barov
 			10507,	-- The Ravenian
 		},
 		timeline = { ADDED_1_3_0 },

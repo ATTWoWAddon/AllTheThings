@@ -1466,7 +1466,7 @@ maproot(EASTERN_KINGDOMS, TIRISFAL_GLADES, {
 				cr = 1548,	-- Cursed Darkhound
 			}),
 			q(24974, {	-- Ever So Lonely
-				qg = 38925,	-- Sidrick Calston
+				qg = 38925,	-- Sedrick Calston
 				coord = { 44.7, 53.6, TIRISFAL_GLADES },
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,

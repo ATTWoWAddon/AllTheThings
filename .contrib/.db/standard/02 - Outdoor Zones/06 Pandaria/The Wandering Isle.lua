@@ -266,7 +266,7 @@ maproot(PANDARIA, THE_WANDERING_ISLE_STARTING_ZONE, {	-- The Wandering Isle Star
 				},
 			}),
 			q(29424, {	-- Items of Utmost Importance
-				sourceQuest = 29410,	-- Aysa of the Ushui
+				sourceQuest = 29410,	-- Aysa of the Tushui
 				qg = 54943,	-- Merchant Lorvo
 				coord = { 55.1, 32.8, THE_WANDERING_ISLE_STARTING_ZONE },
 				groups = {
@@ -1100,7 +1100,7 @@ maproot(PANDARIA, THE_WANDERING_ISLE_STARTING_ZONE, {	-- The Wandering Isle Star
 				},
 			}),
 			q(29419, {	-- The Missing Driver
-				sourceQuest = 29410,	-- Aysa of the Ushui
+				sourceQuest = 29410,	-- Aysa of the Tushui
 				qg = 54943,	-- Merchant Lorvo
 				coord = { 55.1, 32.8, THE_WANDERING_ISLE_STARTING_ZONE },
 				groups = {

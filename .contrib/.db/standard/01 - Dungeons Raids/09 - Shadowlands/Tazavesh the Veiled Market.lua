@@ -130,7 +130,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(187552),	-- Perfectly-Forged Credentials
 					},
 				}),
-				q(64571, {	-- Tazavesh: Seek and Do Not Destroyer
+				q(64571, {	-- Tazavesh: Seek and Do Not Destroy
 					timeline = {
 						CREATED_9_1_0,
 					},
@@ -277,7 +277,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						},
 					}),
 					e(2436, {	-- Mailroom Mayhem
-						crs = { 175646 },	-- P.O.S.T Master
+						crs = { 175646 },	-- P.O.S.T. Master
 						groups = {
 							i(186534),	-- Gizmo (PET!)
 							-- Conduits
@@ -449,7 +449,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 				}),
 				e(2436, {	-- Mailroom Mayhem
-					crs = { 175646 },	-- P.O.S.T Master
+					crs = { 175646 },	-- P.O.S.T. Master
 					groups = {
 						ach(15106),	-- Quality Control
 						i(185844, {	-- Ticking Sack of Terror
@@ -545,7 +545,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 				}),
 				e(2436, {	-- Mailroom Mayhem
-					crs = { 175646 },	-- P.O.S.T Master
+					crs = { 175646 },	-- P.O.S.T. Master
 					groups = {
 						ach(15106),	-- Quality Control
 						i(186534),	-- Gizmo (PET!)

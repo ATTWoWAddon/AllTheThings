@@ -133,7 +133,7 @@ maproot(ZANDALAR, VOLDUN, {
 						sourceQuest = 50561,	-- Sulthis' Stone
 					}),
 					crit(40022, {	-- The Three Keepers
-						sourceQuest = 49340,	-- The Keeper's Keys
+						sourceQuest = 49340,	-- The Keepers' Keys
 					}),
 					crit(40023, {	-- Storming the Spire
 						sourceQuest = 50550,	-- The Fall of Emperor Korthek

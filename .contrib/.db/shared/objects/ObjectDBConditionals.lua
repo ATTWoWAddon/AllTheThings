@@ -78,6 +78,14 @@ OverrideObject(190484, {
 -- #endif
 
 -- #if BEFORE CATA
+OverrideObject(57, {
+	readable = "Moon Over the Vale",
+	text = { en = "Moon Over the Vale" },
+});
+OverrideObject(181916, {
+	readable = "Tainted Wood",
+	text = { en = "Tainted Wood" },
+});
 OverrideObject(256, {
 	readable = "WANTED",
 	icon = 134939,

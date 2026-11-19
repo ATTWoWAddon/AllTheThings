@@ -298,7 +298,7 @@ maproot(KUL_TIRAS, MECHAGON, {
 				questID = 55856,
 				isDaily = true,
 				groups = {
-					i(170273),	-- Oxidizied Refuse Remover
+					i(170273),	-- Oxidized Refuse Remover
 					i(167794),	-- Paint Vial: Lemonade Steel
 				},
 			}),
@@ -310,7 +310,7 @@ maproot(KUL_TIRAS, MECHAGON, {
 					i(170468),	-- Supervolt Zapper
 				},
 			}),
-			n(150448, {	-- Reclamaton Rig
+			n(150448, {	-- Reclamation Rig
 				-- TODO: figure out questIDs for:
 				-- 	hardmode rig (irradiated box of assorted parts)
 				-- 	irradiated undercoat usage (may not have associated quest and may just be based on the shirt's timer)

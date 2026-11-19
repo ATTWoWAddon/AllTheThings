@@ -690,7 +690,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					hqt(91064, {	-- Stay awhile and listen: Alleria Windrunnner
 						name = "Stay awhile and listen: Alleria Windrunnner",
 						description = "Dialogue becomes available after defeating Dimensius.",
-						qg = 242456,	-- Alleria Windrunnner
+						qg = 242456,	-- Alleria Windrunner
 					}),
 				}),
 				BossOnly(PLEXUS),

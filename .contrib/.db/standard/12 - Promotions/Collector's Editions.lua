@@ -1216,7 +1216,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 			timeline = { ADDED_10_1_7, REMOVED_11_2_0 },
 			groups = {
 				ach(19030),	-- Squally
-				i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
+				i(208704),	-- Deepdweller's Earthen Hearthstone (TOY!)
 				i(208883),	-- Sandbox Storm Gryphon (TOY!)
 				i(208751),	-- Squally (PET!)
 				q(82809, {	-- Gryphons of a Feather

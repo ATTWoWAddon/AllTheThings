@@ -39,7 +39,7 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 				races = ALLIANCE_ONLY,
 				lvl = 110,
 			}),
-			q(50858, {	-- Sky Queeen [Alliance]
+			q(50858, {	-- Sky Queen [Alliance]
 				races = ALLIANCE_ONLY,
 				lvl = 120,
 			}),
@@ -150,7 +150,7 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 				races = HORDE_ONLY,
 				lvl = 120,
 			}),
-			q(51050, {	-- Supplies Needed: Tidespray Line
+			q(51050, {	-- Supplies Needed: Tidespray Linen
 				provider = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 				coord = { 44.01, 32.21, THE_GREAT_SEAL },
 				races = HORDE_ONLY,

@@ -114,7 +114,7 @@ maproot(ZANDALAR, NAZMIR, {
 					48825,	-- Power Denied
 					48823,	-- Projection Destruction
 				},
-				provider = { "n", 127212 },	-- Ka'dran
+				provider = { "n", 127212 },	-- Kal'dran
 				coord = { 30.9, 52.0, NAZMIR },
 				races = HORDE_ONLY,
 			}),
@@ -209,7 +209,7 @@ maproot(ZANDALAR, NAZMIR, {
 					48468,	-- Bwonsamdi's Deliverance
 					48473,	-- Respecting the Rites
 				},
-				provider = { "n", 126079 },	-- Koj'jun Deathwalker
+				provider = { "n", 126079 },	-- Kol'jun Deathwalker
 				coord = { 38.9, 59.9, NAZMIR },
 				groups = {
 					i(153346),	-- Cursed Bone (QI!)
@@ -651,7 +651,7 @@ maproot(ZANDALAR, NAZMIR, {
 					}),
 					o(278337, {	-- Repaired Phylactery
 						coord = { 40.9, 52.0, NAZMIR },
-						groups = { i(152468) },	-- epaired Phylactery (QI!)
+						groups = { i(152468) },	-- Repaired Phylactery (QI!)
 					}),
 					i(154130),	-- Spirit Powder (QI!)
 				},
@@ -1620,7 +1620,7 @@ maproot(ZANDALAR, NAZMIR, {
 							i(157029),	-- Bag of Zandalari Supplies (QI!)
 						},
 					}),
-					q(48852, {	-- Stopping Zardax
+					q(48852, {	-- Stopping Zardrax
 						sourceQuests = { 48854 },	-- Offer of Power
 					}),
 					q(47756, {	-- The Libation's Liberation

@@ -54,7 +54,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 						i(188955),	-- Primordial Core (QI!)
 					},
 				}),
-				q(64949, {	-- For Research Purpose
+				q(64949, {	-- For Research Purposes
 					sourceQuests = { 64947 },	-- Give Me a Hand
 					provider = { "n", 184062 },	-- Firim
 					coord = { 31.2, 51.3, ZERETH_MORTIS },
@@ -65,7 +65,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				q(64951, {	-- The Road to Haven
 					sourceQuests = {
 						64950,	-- A Mutual Exchange
-						64949,	-- For Research Purpose
+						64949,	-- For Research Purposes
 					},
 					provider = { "n", 184062 },	-- Firim
 					coord = { 31.2, 51.3, ZERETH_MORTIS },
@@ -618,7 +618,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				}),
 				q(64878, {	-- What A Long Strange Trip
 					sourceQuests = { 64876 },	-- Music of the Spheres
-					provider = { "n", 181706 },	-- Popopoc
+					provider = { "n", 181706 },	-- Pocopoc
 					coord = { 34.1, 47.3, ZERETH_MORTIS },
 					sym = {{"select","itemID",
 						190985,	-- Crystallic Cryptic Mask
@@ -638,12 +638,12 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				}),
 				q(65245, {	-- Pop Goes the Devourer!
 					sourceQuests = { 64878 },	-- What A Long Strange Trip
-					provider = { "n", 181706 },	-- Popopoc
+					provider = { "n", 181706 },	-- Pocopoc
 					coord = { 47.2, 29.4, ZERETH_MORTIS },
 				}),
 				q(64888, {	-- Borrowed Power
 					sourceQuests = { 64878 },	-- What A Long Strange Trip
-					provider = { "n", 181706 },	-- Popopoc
+					provider = { "n", 181706 },	-- Pocopoc
 					coord = { 47.2, 29.4, ZERETH_MORTIS },
 				}),
 				q(64889, {	-- Match Made in Zereth Mortis
@@ -652,7 +652,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 						65245,	-- Pop Goes the Devourer!
 						64888,	-- Borrowed Power
 					},
-					provider = { "n", 181706 },	-- Popopoc
+					provider = { "n", 181706 },	-- Pocopoc
 					coord = { 47.2, 29.4, ZERETH_MORTIS },
 				}),
 				q(64935, {	-- Between A Rock & A Rock
@@ -668,12 +668,12 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 						64889,	-- Match Made in Zereth Mortis
 						64935,	-- Between A Rock & A Rock
 					},
-					provider = { "n", 183701 },	-- Popopoc
+					provider = { "n", 183701 },	-- Pocopoc
 					coord = { 48.8, 31.6, ZERETH_MORTIS },
 				}),
-				q(64937, {	-- You Light Up My Left
+				q(64937, {	-- You Light Up My Life
 					sourceQuests = { 64936 },	-- Searching High and Low
-					provider = { "n", 184949 },	-- Popopoc
+					provider = { "n", 184949 },	-- Pocopoc
 					coord = { 48.0, 34.0, ZERETH_MORTIS },
 					groups = bubbleDown({b=1},{	-- Quest reward versions are BoP
 						i(188022),	-- Anthemic Coif
@@ -683,8 +683,8 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					}),
 				}),
 				q(65237, {	-- Oracle, Heal Thyself
-					sourceQuests = { 64937 },	-- You Light Up My Left
-					provider = { "n", 181706 },	-- Popopoc
+					sourceQuests = { 64937 },	-- You Light Up My Life
+					provider = { "n", 181706 },	-- Pocopoc
 					coord = { 38.1, 48.1, ZERETH_MORTIS },
 				}),
 				q(65328, {	-- Arbiter in the Making
@@ -901,13 +901,13 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					provider = { "n", 182346 },	-- Tamra
 					coord = { 49.2, 71.8, ZERETH_MORTIS },
 				}),
-				q(65069, {	-- Culling the Maelstorm
+				q(65069, {	-- Culling the Maelstrom
 					sourceQuests = { 65068 },	-- Cascades of Magnitude
 					provider = { "n", 182346 },	-- Tamra
 					coord = { 49.2, 71.8, ZERETH_MORTIS },
 				}),
 				q(65070, {	-- Can I Keep Him?
-					sourceQuests = { 65069 },	-- Culling the Maelstorm
+					sourceQuests = { 65069 },	-- Culling the Maelstrom
 					provider = { "n", 182346 },	-- Tamra
 					coord = { 49.2, 71.8, ZERETH_MORTIS },
 					groups = {
@@ -1191,7 +1191,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					i(188230),	-- Catamelon Seed (QI!)
 				},
 			}),
-			q(64579, {	-- Hallow Efforts
+			q(64579, {	-- Hollow Efforts
 				description = "Has Forge-tap for the achievement",
 				sourceQuests = { 64230 },	-- Cyphers of the First Ones
 				provider = { "n", 177958 },	-- Firim

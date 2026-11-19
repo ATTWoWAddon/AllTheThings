@@ -92,7 +92,7 @@ root(ROOTS.ExpansionFeatures,
 							{ "pop" },							-- pop the Item container
 						},
 					}),
-					n(91012, {	-- Lady Fleshear
+					n(91012, {	-- Lady Fleshsear
 						description = "Legion Beacon summons this boss. It has a chance to be obtained during a Shadow Council Invasion.",
 						cost = { { "i", 122473, 1 } },	-- 1x Legion Beacon
 						sym = {

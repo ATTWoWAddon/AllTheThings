@@ -45,7 +45,7 @@ maproot(PANDARIA, {
 							crit(23720, { provider = { "i", 102147 } }),	-- Yu'la, Broodling of Yu'lon
 							crit(23721, { provider = { "i", 102146 } }),	-- Zao, Calfling of Niuzao
 						}),
-						petbattle(ach(8518)),	-- Master of the Master
+						petbattle(ach(8518)),	-- Master of the Masters
 						ach(8410),	-- The Celestial Tournament
 					}),
 					petbattles({
@@ -120,7 +120,7 @@ maproot(PANDARIA, {
 				ach(8715),	-- Emperor Shaohao
 				ach(8726),	-- Extreme Treasure Hunter (automated)
 				ach(8725),	-- Eyes On The Ground (automated)
-				ach(8728),	-- Going to Need a Bigger Bag (automated)
+				ach(8728),	-- Going To Need A Bigger Bag (automated)
 				ach(8712),	-- Killing Time (automated)
 				ach(8724, {	-- Pilgrimage
 					provider = { "o", 222776 },	-- Time-Lost Shrine
@@ -1146,7 +1146,7 @@ maproot(PANDARIA, {
 						{ 56.6, 35.9, TIMELESS_ISLE },
 						{ 48.4, 33.3, TIMELESS_ISLE },
 					},
-					groups = { i(86574, { timeline = { REMOVED_7_0_3 } }) },	-- Elxir of Ancient Knowledge
+					groups = { i(86574, { timeline = { REMOVED_7_0_3 } }) },	-- Elixir of Ancient Knowledge
 				}),
 				n(73666, {	-- Archiereus of Flame
 					description = "This is the summonable version of this rare. It drops more things.",
@@ -1354,7 +1354,7 @@ maproot(PANDARIA, {
 				n(72193, {	-- Karkanos
 					questID = 33292,
 					isDaily = true,
-					provider = { "n", 72151 },	-- Lin Longpaw
+					provider = { "n", 72151 },	-- Fin Longpaw
 					coord = { 33.8, 85.8, TIMELESS_ISLE },
 					groups = { i(104035) },	-- Giant Purse of Timeless Coins
 				}),
@@ -1983,7 +1983,7 @@ maproot(PANDARIA, {
 							i(103678, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Time-Lost Artifact
 						}, {	-- Revered
 							i(103685, { cost = { { "c", TIMELESS_COIN, 1000 } } }),	-- Celestial Defender's Medallion (TOY!)
-							i(104295, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Harmonious Purcupette (PET!)
+							i(104295, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Harmonious Porcupette (PET!)
 						}, {	-- Exalted
 							i(87774, { cost = { { "c", TIMELESS_COIN, 100000 } } }),	-- Heavenly Golden Cloud Serpent (MOUNT!)
 						},

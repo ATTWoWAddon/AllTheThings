@@ -135,7 +135,7 @@ maproot(SHADOWLANDS, ARDENWEALD, {
 			}),
 			ach(14791, {	-- Toss a Seed to Your Hunter...
 				description = "The Faintly Glowing Seeds can be found scattered around the zone, but the closest ones to the encounter are up the hill in Heartwood Grove. Look around the bases of trees for sparkling bluish-purple plants.",
-				crs = { 171690 },	-- Gwyncierw
+				crs = { 171690 },	-- Gwynceirw
 				coord = { 65.6, 24.6, ARDENWEALD },
 				provider = { "i", 183902 },	-- 1x A Faintly Glowing Seed
 			}),

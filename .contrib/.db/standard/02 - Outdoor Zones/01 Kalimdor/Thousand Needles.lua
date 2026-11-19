@@ -1327,7 +1327,7 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 				},
 			}),
 			q(1190, {	-- Keeping Pace
-				sourceQuest = 1137,	-- News for Frizzle
+				sourceQuest = 1137,	-- News for Fizzle
 				qg = 4630,	-- Pozzik
 				coord = { 80.2, 75.9, THOUSAND_NEEDLES },
 				timeline = { REMOVED_4_0_3 },

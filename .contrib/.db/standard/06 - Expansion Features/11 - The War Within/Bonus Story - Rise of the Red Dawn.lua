@@ -79,19 +79,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						84643,	-- Curfew Kerfuffle
 						84645,	-- Deputy Delivery
 					},
-					provider = { "n", 229940 },	-- Colonel Veronice Nials
+					provider = { "n", 229940 },	-- Colonel Veronica Nials
 					coord = { 17.5, 59.5, 2372 },
 				}),
 				hqt(91524, {	-- Stay awhile and listen: Captaion Roderick Brewston
 					name = "Stay awhile and listen: Captaion Roderick Brewston",
 					sourceQuests = { 84649 },	-- Marran Trollbane
-					provider = { "n", 229951 },	-- Captaion Roderick Brewston
+					provider = { "n", 229951 },	-- Captain Roderick Brewston
 					coord = { 17.4, 59.5, 2372 },
 					lockCriteria = { 1, "questID", 84650 },	-- Finding Refuge at Refuge Pointe
 				}),
 				q(84650, {	-- Finding Refuge at Refuge Pointe
 					sourceQuests = { 84649 },	-- Marran Trollbane
-					provider = { "n", 229940 },	-- Colonel Veronice Nials
+					provider = { "n", 229940 },	-- Colonel Veronica Nials
 					coord = { 17.5, 59.5, 2372 },
 					groups = {
 						i(235345),	-- Familiar Emblem (QI!)
@@ -99,12 +99,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				}),
 				q(84651, {	-- A Familiar Face
 					sourceQuests = { 84650 },	-- Finding Refuge at Refuge Pointe
-					provider = { "n", 236815 },	-- Karge Bloodfury
+					provider = { "n", 236815 },	-- Karga Bloodfury
 					coord = { 40.9, 53.5, 2372 },
 				}),
 				q(84652, {	-- Supply Run
 					sourceQuests = { 84650 },	-- Finding Refuge at Refuge Pointe
-					provider = { "n", 236815 },	-- Karge Bloodfury
+					provider = { "n", 236815 },	-- Karga Bloodfury
 					coord = { 40.9, 53.5, 2372 },
 				}),
 				hqt(91532, {	-- Stay awhile and listen: Faerin Lothar
@@ -199,7 +199,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				}),
 				q(84657, {	-- Return to Stromgarde // ALLIANCE_ONLY
 					sourceQuests = { 84712 },	-- False Flag
-					provider = { "n", 231828 },	-- Faering Lothar
+					provider = { "n", 231828 },	-- Faerin Lothar
 					coord = { 41.5, 61.4, 2372 },
 					races = ALLIANCE_ONLY,
 				}),
@@ -297,7 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 						84659,	-- The Search for Faerin
 					},
 					sourceQuestNumRequired = 1,	-- TODO: for horde it is 1 quest (84716) but for alliance it is up after 2 (84659 & 87299)
-					provider = { "n", 231837 },	-- Faering Lothar
+					provider = { "n", 231837 },	-- Faerin Lothar
 					coord = { 19.4, 59.1, 2372 },
 					groups = {
 						h(i(239135)),	-- Hammerfall Tabard (COSMETIC!)

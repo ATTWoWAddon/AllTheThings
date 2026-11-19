@@ -543,7 +543,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 				q(78436, {	-- Dragonrider Racing - Viridescent Venture
 					coord = { 35.2, 55.2, EMERALD_DREAM },
 				}),
-				q(78434, {	-- Dragonrider Racing - Ysera Invitationa
+				q(78434, {	-- Dragonrider Racing - Ysera Invitational
 					coord = { 59.1, 29.1, EMERALD_DREAM },
 				}),
 			})),

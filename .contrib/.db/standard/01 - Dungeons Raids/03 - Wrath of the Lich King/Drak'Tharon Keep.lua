@@ -230,7 +230,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(37723),	-- Incisor Fragment
 					i(37726),	-- King Dred's Helm
 					i(37725),	-- Savage Wound Wrap
-					i(35634),	-- Scabarous-Hide Helm
+					i(35634),	-- Scabrous-Hide Helm
 					i(35635),	-- Stable Master's Breeches
 					i(35633),	-- Staff of the Great Reptile
 				}),
@@ -301,7 +301,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					i(35630),	-- Summoner's Stone Gavel
 				}),
 				BossOnly(KING_DRED, {
-					i(35634),	-- Scabarous-Hide Helm
+					i(35634),	-- Scabrous-Hide Helm
 					i(35635),	-- Stable Master's Breeches
 					i(35633),	-- Staff of the Great Reptile
 				}),

@@ -428,7 +428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					ach(13730),	-- Mythic: Orgozoa
 				}),
 				Boss(COURT, {
-					ach(13731),	-- Mythic:The Queen's Court
+					ach(13731),	-- Mythic: The Queen's Court
 				}),
 				Boss(ZAQUL, {
 					ach(13732),	-- Mythic: Za'qul

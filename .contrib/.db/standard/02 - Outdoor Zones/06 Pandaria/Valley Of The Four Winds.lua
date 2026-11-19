@@ -569,7 +569,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 			}),
 			q(29919, {	-- Great Minds Drink Alike
 				sourceQuest = 29918,	-- A Lesson in Bravery
-				qg = 56133,	-- Chen Stormsout
+				qg = 56133,	-- Chen Stormstout
 				coord = { 75.3, 35.5, VALLEY_OF_THE_FOUR_WINDS },
 			}),
 			q(29758, {	-- Guess Whose Back

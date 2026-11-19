@@ -75,7 +75,7 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 			questID = 40084,
 			coord = { 36.6, 16.6, HIGHMOUNTAIN },
 			groups = {
-				i(131799),	-- Zugdug's Piece of Paradis
+				i(131799),	-- Zugdug's Piece of Paradise
 			},
 		}),
 		n(97449, {	-- Bristlemaul
@@ -181,7 +181,7 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 				{ 45.4, 30.4, HIGHMOUNTAIN },
 			},
 			groups = {
-				i(131900),	-- Magestic Elderhorn Hoof (TOY!)
+				i(131900),	-- Majestic Elderhorn Hoof (TOY!)
 			},
 		}),
 		n(96621, {	-- Mellok, Son of Torok

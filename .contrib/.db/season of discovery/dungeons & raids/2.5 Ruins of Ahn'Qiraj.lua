@@ -739,7 +739,7 @@ instanceroot(743, applyclassicphase(PHASE_FIVE, {	-- Ruins of Ahn'Qiraj
 						15389,	-- Captain Drenn
 						15392,	-- Captain Tuubid
 						15386,	-- Major Yeggeth
-						15385,	-- Colonel Zarran
+						15385,	-- Colonel Zerran
 					},
 					groups = {
 						i(21806),	-- Gavel of Qiraji Authority
@@ -1338,7 +1338,7 @@ instanceroot(743, applyclassicphase(PHASE_FIVE, {	-- Ruins of Ahn'Qiraj
 								15389,	-- Captain Drenn
 								15392,	-- Captain Tuubid
 								15386,	-- Major Yeggeth
-								15385,	-- Colonel Zarran
+								15385,	-- Colonel Zerran
 							},
 							groups = {
 								i(234116),	-- Fury of the Forgotten Swarm

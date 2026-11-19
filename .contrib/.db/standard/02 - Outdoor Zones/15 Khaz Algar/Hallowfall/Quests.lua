@@ -298,7 +298,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 				provider = { "n", 225188 },	-- General Steelstrike
 				coord = { 33.6, 54.6, HALLOWFALL },
 			}),
-			q(78629, {	-- Running on Reservers
+			q(78629, {	-- Running on Reserves
 				sourceQuests = { 78627 },	-- The Final Front
 				provider = { "n", 213107 },	-- Faerin Lothar
 				coord = { 39.0, 71.6, HALLOWFALL },
@@ -310,7 +310,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 			}),
 			q(78630, {	-- The Rise of the Reckoning
 				sourceQuests = {
-					78629,	-- Running on Reservers
+					78629,	-- Running on Reserves
 					78628,	-- Trapdoor Sprung
 				},
 				provider = { "n", 213107 },	-- Faerin Lothar
@@ -866,7 +866,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 			}),
 		}),
 		header(HEADERS.AchCriteria, 40844.11, {	-- An Orphan's Dilemma
-			q(79151, {	-- An Orphan Request
+			q(79151, {	-- An Orphan's Request
 				sourceQuests = { 78658 },	-- The Hallowed Path
 				provider = { "n", 215237 },	-- Alyza Bowblaze
 				coord = { 41.8, 55.6, HALLOWFALL },
@@ -877,7 +877,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 				},
 			}),
 			q(83182, {	-- A Bloody Inheritance
-				sourceQuests = { 79151 },	-- An Orphan Request
+				sourceQuests = { 79151 },	-- An Orphan's Request
 				provider = { "n", 218062 },	-- Alyza Bowblaze
 				coord = { 52.4, 50.2, HALLOWFALL },
 				groups = {
@@ -896,7 +896,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 				},
 			}),
 			q(79152, {	-- Gutting the Pool
-				sourceQuests = { 79151 },	-- An Orphan Request
+				sourceQuests = { 79151 },	-- An Orphan's Request
 				provider = { "n", 218062 },	-- Alyza Bowblaze
 				coord = { 52.4, 50.2, HALLOWFALL },
 			}),
@@ -1002,7 +1002,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 		header(HEADERS.AchCriteria, 40844.14, {	-- Suspicious Minds
 			q(83283, {	-- For Morale
 				sourceQuests = { 78658 },	-- The Hallowed Path
-				provider = { "n", 225857 },	-- Lerrenal Fayn
+				provider = { "n", 225857 },	-- Lerrenai Fayn
 				coord = { 68.0, 44.2, HALLOWFALL },
 				groups = {
 					i(225340),	-- Imperial Brut (QI!)

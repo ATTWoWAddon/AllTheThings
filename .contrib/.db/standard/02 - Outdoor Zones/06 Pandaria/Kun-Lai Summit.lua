@@ -1236,7 +1236,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 				qg = 59597,	-- Smokey Sootassle
 				coord = { 64.8, 60.4, KUN_LAI_SUMMIT },
 				groups = {
-					i(88381),	-- Silversage Incence (TOY!)
+					i(88381),	-- Silversage Incense (TOY!)
 				},
 			}),
 			q(30575, {	-- Round 'Em Up (A)
@@ -1450,7 +1450,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 			}),
 			q(30612, {	-- The Leader Hozen
 				sourceQuests = {
-					30610,	-- Grummel! Grummle! Grummle!
+					30610,	-- Grummle! Grummle! Grummle!
 					30611,	-- Unleash The Yeti!
 				},
 				qg = 59452,	-- Brother Rabbitsfoot
@@ -1676,7 +1676,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 						i(82393),	-- Shen Dynasty Rubbbing (QI!)
 					}),
 					o(211794, {	-- Qiang Dynasty Tablet
-						i(82394),	-- Qiang Dynasty Rubbbing (QI!)
+						i(82394),	-- Qiang Dynasty Rubbing (QI!)
 					}),
 					o(211793, {	-- Wai Dynasty Tablet
 						i(82393),	-- Wai Dynasty Rubbbing (QI!)

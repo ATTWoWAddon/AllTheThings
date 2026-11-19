@@ -1262,7 +1262,7 @@ maproot(KALIMDOR, FELWOOD, {
 				timeline = { ADDED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/1 Arch Druid Navarax slain
-						provider = { "n", 47842 },	-- Arch Druid Navarax
+						provider = { "n", 47842 },	-- Archdruid Navarax
 					}),
 					i(65285),	-- Selura's Cloak
 					i(65305),	-- Demon Heart Pendant
@@ -2536,10 +2536,10 @@ maproot(KALIMDOR, FELWOOD, {
 			i(13140, {	-- Blood Red Key
 				timeline = { REMOVED_4_0_3 },
 				crs = {
-					7118,	-- Jaedendar Darkweaver
-					7114,	-- Jaedendar Enforcer
-					9862,	-- Jaedendar Legionnaire
-					7120,	-- Jaedendar Warlock
+					7118,	-- Jaedenar Darkweaver
+					7114,	-- Jaedenar Enforcer
+					9862,	-- Jaedenar Legionnaire
+					7120,	-- Jaedenar Warlock
 				},
 			}),
 			-- #if BEFORE 4.0.3

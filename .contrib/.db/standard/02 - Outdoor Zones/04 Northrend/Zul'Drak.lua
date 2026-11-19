@@ -878,7 +878,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					coord = { 48.4, 56.3, ZULDRAK },
 				}),
 				q(12565, {	-- The Blessing of Zim'Abwa	-- aa
-					qg = 28062,	-- Hexer Ubungo
+					qg = 28062,	-- Hexxer Ubungo
 					coord = { 40.5, 65.6, ZULDRAK },
 				}),
 				q(12655, {	-- The Blessing of Zim'Rhuk
@@ -1129,7 +1129,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				q(12506, {	-- Trouble at the Altar of Sseratus
 					sourceQuest = 12740,	-- Parachutes for the Argent Crusade
-					qg = 28062,	-- Hexer Ubungo
+					qg = 28062,	-- Hexxer Ubungo
 					coord = { 40.5, 65.6, ZULDRAK },
 				}),
 				q(13097, {	-- Unfinished Business
@@ -1248,7 +1248,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						i(44685),	-- Calcified Web Spaulders
 					},
 				}),
-				n(32447, {	-- Zul'drak Sentinel
+				n(32447, {	-- Zul'Drak Sentinel
 					coords = {
 						{ 51.2, 84.4, ZULDRAK },
 						{ 48.0, 79.6, ZULDRAK },

@@ -394,7 +394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						header(HEADERS.Achievement, 62606, {	-- The Sunstrider Omnium
 							timeline = { ADDED_12_0_7 },
 							groups = {
-								q(96223, {	-- The Magister's Call
+								q(96223, {	-- The Magisters' Call
 									qg = 265903,	-- Magister's Missive
 									coords = {
 										{ 38.6, 59.6, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -405,13 +405,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									},
 								}),
 								q(96224, {	-- The Magisters' Conundrum
-									sourceQuest = 96223,	-- The Magister's Call
+									sourceQuest = 96223,	-- The Magisters' Call
 									qg = 264063,	-- Magister Umbric
 									races = ALLIANCE_ONLY,
 									coord = { 38.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
 								}),
 								q(96225, {	-- The Magisters' Conundrum
-									sourceQuest = 96223,	-- The Magister's Call
+									sourceQuest = 96223,	-- The Magisters' Call
 									qg = 264064,	-- Grand Magister Rommath
 									races = HORDE_ONLY,
 									coord = { 38.9, 48.6, MAP.MIDNIGHT.SILVERMOON_CITY },
@@ -534,7 +534,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace
 								}),
 								--
-								q(96442, {	-- Seeking Knowledge Week 3 of 5: Leyline Assaults
+								q(96442, {	-- Seeking Knowledge Week 3 of 5: Ley Line Assaults
 									sourceQuests = {
 										96831,	-- Magister's Summons
 										96441,	-- Seeking Knowledge Week 2 of 5: Ritualized Arcana
@@ -546,7 +546,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 								q(96443, {	-- Seeking Knowledge Week 4 of 5: Magical Primessence
 									sourceQuests = {
 										96831,	-- Magister's Summons
-										96442,	-- Seeking Knowledge Week 3 of 5: Leyline Assaults
+										96442,	-- Seeking Knowledge Week 3 of 5: Ley Line Assaults
 									},
 									qg = 264070,	-- Grand Magister Rommath
 									coord = { 59.7, 10.9, 2649 },	-- The Lycaneum, Magister's Terrace

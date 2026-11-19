@@ -679,7 +679,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 			}),
 		})),
 		n(TREASURES, sharedData({ isWeekly = true }, {
-			o(373568, {	-- Provis Cache
+			o(373568, {	-- Locked Provis Cache
 				description = "Use Firim's Spare Forge-tap to gain 15xEphemera Strands(187728) to get Ephemera Orb(187787), not guaranteed.",
 				coord = { 42.0, 51.9, ZERETH_MORTIS },
 				questID = 65183,

@@ -1064,7 +1064,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 		i(44308),	-- Signet of Edward the Odd
 		i(36429),	-- Spur Ring
 		i(36426),	-- Stirrup Ring
-		i(37751),	-- Tooga's Lost Toennail
+		i(37751),	-- Tooga's Lost Toenail
 		i(37822),	-- Twisted Puzzle-Ring
 		i(37820),	-- Worgen's Ring of Revitalization
 	}),
@@ -1273,7 +1273,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					},
 					crs = {
 						15975,	-- Carrion Spinner
-						29412,	-- Crystalweb Splitter
+						29412,	-- Crystalweb Spitter
 						29411,	-- Crystalweb Weaver
 						15974,	-- Dread Creeper
 						29461,	-- Icetip Crawler
@@ -1376,7 +1376,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					34300,	-- Mature Lasher
 					28323,	-- Mossy Rampager
 					29036,	-- Servant of Freya
-					23874,	-- Thornwine Creeper
+					23874,	-- Thornvine Creeper
 				},
 				description = "Most of the given maps, coordinates and sources applies for how to obtain this element's crystallised form.",
 				providers = {
@@ -1427,14 +1427,14 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					{ 61.3, 23.0, HOWLING_FJORD },	-- The Frozen Glade
 				},
 				crs = {
-					28862,	-- Aquerous Spirit
+					28862,	-- Aqueous Spirit
 					24879,	-- Arctic Cloud (Gas cloud)
 					25419,	-- Boiling Spirit
 					21223,	-- Corrupted Rager
 					16570,	-- Crazed Water Spirit
 					26316,	-- Crystalline Ice Elemental
 					28411,	-- Frozen Earth
-					25715,	-- Frozen Element
+					25715,	-- Frozen Elemental
 					30846,	-- Glacial Spirit
 					23919,	-- Ice Elemental
 					26283,	-- Ice Revenant
@@ -1593,11 +1593,11 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 					crs = {
 						30445,	-- Ice Steppe Bull
 						29469,	-- Ice Steppe Rhino
-						30447,	-- Rhomping Rhino
+						30447,	-- Romping Rhino
 						28009,	-- Shardhorn Rhino
-						25489,	-- Whooly Rhino Bull
-						25488,	-- Whooly Rhino Calf
-						25487,	-- Whooly Rhino Matriarch
+						25489,	-- Wooly Rhino Bull
+						25488,	-- Wooly Rhino Calf
+						25487,	-- Wooly Rhino Matriarch
 					},
 				}),
 				i(43009, {	-- Shoveltusk Flank

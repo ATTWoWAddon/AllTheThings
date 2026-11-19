@@ -1629,7 +1629,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(115825)),	-- Primal Gladiator's Felweave Cord
 					un(REMOVED_FROM_GAME, i(115957)),	-- Primal Gladiator's Felweave Cowl
 					un(REMOVED_FROM_GAME, i(115956)),	-- Primal Gladiator's Felweave Handguards
-					un(REMOVED_FROM_GAME, i(115959)),	-- Primal Gladiator's Felweave Rainment
+					un(REMOVED_FROM_GAME, i(115959)),	-- Primal Gladiator's Felweave Raiment
 					un(REMOVED_FROM_GAME, i(115828)),	-- Primal Gladiator's Felweave Treads
 					un(REMOVED_FROM_GAME, i(115958)),	-- Primal Gladiator's Felweave Trousers
 				}),
@@ -2816,7 +2816,7 @@ root(ROOTS.PVP, {
 									moh(3, i(124761)),	-- Wild Gladiator's Helm (leather) (A)
 									moh(3, i(124814)),	-- Wild Gladiator's Plate Helmet (A)
 									moh(3, i(124707)),	-- Wild Gladiator's Hood of Crruelty (A)
-									moh(3, i(124766)),	-- Wild Gladiator's Headdcover (A)
+									moh(3, i(124766)),	-- Wild Gladiator's Headcover (A)
 									moh(3, i(124819)),	-- Wild Gladiator's Plate Visor (A)
 									moh(3, i(124790)),	-- Wild Gladiator's Coif (A)
 								}),
@@ -3117,7 +3117,7 @@ root(ROOTS.PVP, {
 									moh(3, i(125264)),	-- Wild Gladiator's Helm (H)
 									moh(3, i(125293)),	-- Wild Gladiator's Plate Helmet (H)
 									moh(3, i(125186)),	-- Wild Gladiator's Hood of Crruelty (H)
-									moh(3, i(125245)),	-- Wild Gladiator's Headdcover (H)
+									moh(3, i(125245)),	-- Wild Gladiator's Headcover (H)
 									moh(3, i(125298)),	-- Wild Gladiator's Plate Visor (H)
 									moh(3, i(125269)),	-- Wild Gladiator's Coif (H)
 								}),
@@ -3434,7 +3434,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(125639)),	-- Wild Gladiator's Felweave Cord
 					un(REMOVED_FROM_GAME, i(125771)),	-- Wild Gladiator's Felweave Cowl
 					un(REMOVED_FROM_GAME, i(125770)),	-- Wild Gladiator's Felweave Handguards
-					un(REMOVED_FROM_GAME, i(125773)),	-- Wild Gladiator's Felweave Rainment
+					un(REMOVED_FROM_GAME, i(125773)),	-- Wild Gladiator's Felweave Raiment
 					un(REMOVED_FROM_GAME, i(125642)),	-- Wild Gladiator's Felweave Treads
 					un(REMOVED_FROM_GAME, i(125772)),	-- Wild Gladiator's Felweave Trousers
 				}),
@@ -5270,7 +5270,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(126753)),	-- Warmongering Gladiator's Felweave Cord
 					un(REMOVED_FROM_GAME, i(126885)),	-- Warmongering Gladiator's Felweave Cowl
 					un(REMOVED_FROM_GAME, i(126884)),	-- Warmongering Gladiator's Felweave Handguards
-					un(REMOVED_FROM_GAME, i(126887)),	-- Warmongering Gladiator's Felweave Rainment
+					un(REMOVED_FROM_GAME, i(126887)),	-- Warmongering Gladiator's Felweave Raiment
 					un(REMOVED_FROM_GAME, i(126756)),	-- Warmongering Gladiator's Felweave Treads
 					un(REMOVED_FROM_GAME, i(126886)),	-- Warmongering Gladiator's Felweave Trousers
 				}),

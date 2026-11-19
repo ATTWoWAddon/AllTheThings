@@ -60,7 +60,7 @@ root(ROOTS.Craftables, {
 			i(8949),	-- Elixir of Agility
 			applyclassicphase(SOD_PHASE_SIX, i(233977, {timeline = { ADDED_1_15_5 }})),	-- Elixir of Alacrity
 			i(13453),	-- Elixir of Brute Force
-			applyclassicphase(SOD_PHASE_ONE, i(210708, {timeline = { ADDED_1_15_0 }})),	-- Elixir of Coelesced Regret
+			applyclassicphase(SOD_PHASE_ONE, i(210708, {timeline = { ADDED_1_15_0 }})),	-- Elixir of Coalesced Regret
 			i(3389),	-- Elixir of Defense
 			i(9224),	-- Elixir of Demonslaying
 			i(9233),	-- Elixir of Detect Demon
@@ -1362,7 +1362,7 @@ root(ROOTS.Craftables, {
 					},]]
 				}),
 				i(6307),	-- Message in a Bottle
-				i(21228, {	-- Mitril Bound Trunk
+				i(21228, {	-- Mithril Bound Trunk
 					maps_disp = {
 						BLASTED_LANDS,
 						EASTERN_PLAGUELANDS,

@@ -468,7 +468,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				q(12607, {	-- A Mammoth Undertaking
 					sourceQuests = {
 						12605,	-- Securing the Bait
-						12603,	-- Sharpening Your Talens
+						12603,	-- Sharpening Your Talons
 					},
 					qg = 28374,	-- Zootfizzle
 					coord = { 42.1, 28.8, SHOLAZAR_BASIN },
@@ -677,7 +677,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						12576,	-- Forced Hand
 						12575,	-- The Lost Mistwhisper Treasure
 					},
-					qg = 28114,	-- Mistcaller Soon-gan
+					qg = 28114,	-- Mistcaller Soo-gan
 					coord = { 42.1, 38.6, SHOLAZAR_BASIN },
 				}),
 				q(12539, {	-- Hoofing It
@@ -871,7 +871,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					coord = { 27.0, 58.6, SHOLAZAR_BASIN },
 				}),
 				q(12556, {	-- Rhino Mastery: The Kill
-					sourceQuest = 12544,	-- The Bones of Nozroon
+					sourceQuest = 12544,	-- The Bones of Nozronn
 					qg = 27986,	-- Hemet Nesingwary
 					coord = { 27.0, 58.6, SHOLAZAR_BASIN },
 					groups = {
@@ -917,7 +917,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				q(12634, {	-- Some Make Lemonade, Some Make Liquor
 					sourceQuests = {
-						12549,	-- Dreadsaber Matery: Becoming a Predator
+						12549,	-- Dreadsaber Mastery: Becoming a Predator
 						12520,	-- Rhino Mastery: The Test
 					},
 					qg = 29157,	-- Grimbooze Thunderbrew
@@ -1044,7 +1044,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				q(12645, {	-- The Taste Test
 					sourceQuest = 12644,	-- Still At It
-					qg = 29157,	-- Crimbooze Thunderbrew
+					qg = 29157,	-- Grimbooze Thunderbrew
 					coord = { 26.7, 60.0, SHOLAZAR_BASIN },
 					groups = {
 						i(38697),	-- Jungle Punch Sample (QI!)
@@ -1100,7 +1100,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						49535,	-- Warchief's Command: Sholazar Basin!
 					},
 					-- #endif
-					qg = 28160,	-- Achmage Pentarus
+					qg = 28160,	-- Archmage Pentarus
 					coord = { 68.5, 42.0, NORTHREND_DALARAN },
 				}),
 				q(12525, {	-- Wipe That Grin Off His Face

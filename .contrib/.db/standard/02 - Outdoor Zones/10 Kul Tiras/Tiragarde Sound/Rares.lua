@@ -133,7 +133,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 				questID = 51321,
 				coord = { 64.2, 19.2, TIRAGARDE_SOUND },
 				crs = {
-					137181,	-- Mead-Craving Cranee
+					137181,	-- Mead-Craving Crane
 					137182,	-- Honey-Crazed Gull
 					137176,	-- Walter Ferrell
 					137175,	-- Bradford Crusco

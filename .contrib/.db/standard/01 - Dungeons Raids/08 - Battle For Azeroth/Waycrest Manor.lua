@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					isWorldQuest = true,
 					lvl = 120,
 				}),
-				q(51212, {	-- Waycrest Manor: Witchy Kithcen
+				q(51212, {	-- Waycrest Manor: Witchy Kitchen
 					isWorldQuest = true,
 					lvl = 120,
 				}),
@@ -88,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					crs = {
 						131863,	-- Raal the Gluttonous
 						133361,	-- Wasting Servant
-						136541,	-- Bile Oozing
+						136541,	-- Bile Oozeling
 					},
 					groups = {
 						i(163833),	-- Recipe: Heartsbane Hexwurst (RECIPE!)
@@ -172,7 +172,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						crs = {
 							131863,	-- Raal the Gluttonous
 							133361,	-- Wasting Servant
-							136541,	-- Bile Oozing
+							136541,	-- Bile Oozeling
 						},
 						groups = {
 							i(163833),	-- Recipe: Heartsbane Hexwurst (RECIPE!)
@@ -257,7 +257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						crs = {
 							131863,	-- Raal the Gluttonous
 							133361,	-- Wasting Servant
-							136541,	-- Bile Oozing
+							136541,	-- Bile Oozeling
 						},
 						groups = {
 							i(163833),	-- Recipe: Heartsbane Hexwurst (RECIPE!)

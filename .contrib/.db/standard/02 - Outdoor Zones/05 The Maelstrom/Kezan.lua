@@ -44,7 +44,7 @@ maproot(THE_MAELSTROM, KEZAN, {
 			}),
 			q(14120, {	-- A Bazillion Macaroons?!
 				sourceQuest = 14116,	-- The Uninvited Guest
-				qg = 35222,	-- Trady Prince Gallywix
+				qg = 35222,	-- Trade Prince Gallywix
 				coord = { 56.7, 76.9, KEZAN },
 			}),
 			q(14008, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Goblin)
@@ -129,7 +129,7 @@ maproot(THE_MAELSTROM, KEZAN, {
 			q(25473, {	-- Kaja'Cola
 				sourceQuests = {
 					14069,	-- Good Help is Hard to Find
-					14075,	-- Troublee in the Mines
+					14075,	-- Trouble in the Mines
 				},
 				qg = 34872,	-- Foreman Dampwick
 				coord = { 60.2, 74.5, KEZAN },

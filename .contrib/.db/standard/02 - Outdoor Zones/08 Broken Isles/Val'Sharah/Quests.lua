@@ -171,7 +171,7 @@ maproot(BROKEN_ISLES, VALSHARAH, {
 				}),
 				q(38225, {	-- Death to the Witchmother
 					sourceQuests = {
-						38381,	-- Archdruid of Lord (Non-Druid)
+						38381,	-- Archdruid of Lore (Non-Druid)
 						44106,	-- Archdruid of Lore (Druid)
 					},
 					provider = { "n", 91066 },	-- Elothir
@@ -183,7 +183,7 @@ maproot(BROKEN_ISLES, VALSHARAH, {
 				}),
 				q(38235, {	-- Solid as a Rock
 					sourceQuests = {
-						38381,	-- Archdruid of Lord (Non-Druid)
+						38381,	-- Archdruid of Lore (Non-Druid)
 						44106,	-- Archdruid of Lore (Druid)
 					},
 					provider = { "n", 91066 },	-- Elothir

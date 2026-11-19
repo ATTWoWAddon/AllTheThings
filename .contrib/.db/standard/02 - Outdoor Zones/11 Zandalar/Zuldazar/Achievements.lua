@@ -14,7 +14,7 @@ maproot(ZANDALAR, ZULDAZAR, {
 				sym = {{ "achievement_criteria" }},
 			}),
 			ach(12559),	-- Explore Zuldazar
-			ach(13542, {	-- How to Train your Direhorn
+			ach(13542, {	-- How to Train Your Direhorn
 				races = HORDE_ONLY,
 				groups = {
 					crit(45147, {	-- Naptime

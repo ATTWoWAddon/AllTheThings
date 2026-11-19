@@ -654,7 +654,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								46025,	-- Investigate the Broken Shore
 								-- #ENDIF
 							},
-							provider = { "n", 116929 },	-- Brewmaster Blancee
+							provider = { "n", 116929 },	-- Brewmaster Blanche
 							coord = { 51.4, 48.6, THE_WANDERING_ISLE },
 							timeline = { ADDED_7_2_0 },
 						}),
@@ -681,7 +681,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						}),
 						q(45574, {	-- Fel Ingredients
 							sourceQuests = { 45459 },	-- Storming the Legion
-							provider = { "n", 117305 },	-- Brewmaster Almai
+							provider = { "n", 117305 },	-- Brewer Almai
 							coord = { 53.6, 53.3, BROKEN_SHORE },
 							timeline = { ADDED_7_2_0 },
 							groups = {
@@ -715,7 +715,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							timeline = { ADDED_7_2_0 },
 							groups = { i(146308) },	-- Barrel of Storm Brew (QI!)
 						}),
-						q(45449, {	-- Alchemist Koryla
+						q(45449, {	-- Alchemist Korlya
 							sourceQuests = { 45459 },	-- Storming the Legion
 							provider = { "n", 117305 },	-- Brewer Almai
 							coord = { 53.6, 53.3, BROKEN_SHORE },
@@ -724,7 +724,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						q(46320, {	-- Hope For a Cure
 							sourceQuests = {
 								45574,	-- Fel Ingredients
-								45449,	-- Alchemist Koryla
+								45449,	-- Alchemist Korlya
 								45545,	-- Barrel Toss
 							},
 							provider = { "n", 117305 },	-- Brewer Almai

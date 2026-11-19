@@ -53,7 +53,7 @@ root(ROOTS.Housing, {
 				sourceQuests = { 94210 },	-- Feathering the Nest
 				qgs = {
 					233063,	-- Lyssabel Dawnpetal
-					233708,	-- Tocho Couldhide
+					233708,	-- Tocho Cloudhide
 				},
 				coords = {
 					{ 53.1, 40.1, FOUNDERS_POINT },	-- Lyssabel Dawnpetal
@@ -90,7 +90,7 @@ root(ROOTS.Housing, {
 			q(89450, {	-- Create a Neighborhood
 				qgs = {
 					233063,	-- Lyssabel Dawnpetal
-					233708,	-- Tocho Couldhide
+					233708,	-- Tocho Cloudhide
 				},
 				coords = {
 					{ 53.1, 40.1, FOUNDERS_POINT },	-- Lyssabel Dawnpetal

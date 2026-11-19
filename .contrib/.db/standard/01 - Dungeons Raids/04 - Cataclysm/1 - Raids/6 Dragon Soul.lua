@@ -247,7 +247,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				cr(55294, e(331, {	-- Ultraxion
 					-- Placeholder for criteria
 				})),
-				cr(56427, e(332, {	-- Warmaster Blackthorn
+				cr(56427, e(332, {	-- Warmaster Blackhorn
 					-- Placeholder for criteria
 				})),
 				cr(53879, e(318, {	-- Spine of Deathwing
@@ -388,7 +388,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(77972),	-- Creche of the Final Dragon
 							i(78440),	-- Curled Twilight Claw
 						})),
-						cr(56427, e(332, {	-- Warmaster Blackthorn
+						cr(56427, e(332, {	-- Warmaster Blackhorn
 							i(78453),	-- Ataraxis, Cudgel of the Warmaster
 							i(78459),	-- Visage of the Destroyer
 							i(78456),	-- Blackhorn's Mighty Bulwark
@@ -452,7 +452,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							55312,	-- Yor'sahj the Unsleeping
 							55689,	-- Hagara the Stormbinder
 							55294,	-- Ultraxion
-							56427,	-- Warmaster Blackthorn
+							56427,	-- Warmaster Blackhorn
 						},
 						groups = {
 							i(71998, {	-- Essence of Destruction
@@ -542,7 +542,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						ach(6084),	-- Minutes to Midnight
 						i(78919),	-- Experiment 12-B (MOUNT!)
 					})),
-					cr(56427, e(332, {	-- Warmaster Blackthorn
+					cr(56427, e(332, {	-- Warmaster Blackhorn
 						ach(6105, {	-- Deck Defender
 						-- #if AFTER 6.0.3
 						description = "Kill the Twilight Assault Drakes fast and soak any Twilight Barrage.\nUse a macro like:\n/tar Twilight Assault Drake\n/cast (whatever instant ranged ability you have)",
@@ -605,7 +605,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							55312,	-- Yor'sahj the Unsleeping
 							55689,	-- Hagara the Stormbinder
 							55294,	-- Ultraxion
-							56427,	-- Warmaster Blackthorn
+							56427,	-- Warmaster Blackhorn
 						},
 						groups = {
 							i(77230),	-- Breathstealer Band
@@ -709,7 +709,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78013),	-- Curled Twilight Claw
 						i(77205),	-- Creche of the Final Dragon
 					})),
-					cr(56427, e(332, {	-- Warmaster Blackthorn
+					cr(56427, e(332, {	-- Warmaster Blackhorn
 						i(78182),	-- Crown of the Corrupted Conqueror
 						i(78177),	-- Crown of the Corrupted Protector
 						i(78172),	-- Crown of the Corrupted Vanquisher
@@ -758,7 +758,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							55312,	-- Yor'sahj the Unsleeping
 							55689,	-- Hagara the Stormbinder
 							55294,	-- Ultraxion
-							56427,	-- Warmaster Blackthorn
+							56427,	-- Warmaster Blackhorn
 						},
 						groups = {
 							i(78492),	-- Breathstealer Band
@@ -865,7 +865,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78432),	-- Curled Twilight Claw
 						i(77992),	-- Creche of the Final Dragon
 					})),
-					cr(56427, e(332, {	-- Warmaster Blackthorn
+					cr(56427, e(332, {	-- Warmaster Blackhorn
 						ach(6114),	-- Heroic: Warmaster Blackhorn
 						i(78850),	-- Crown of the Corrupted Conqueror
 						i(78851),	-- Crown of the Corrupted Protector

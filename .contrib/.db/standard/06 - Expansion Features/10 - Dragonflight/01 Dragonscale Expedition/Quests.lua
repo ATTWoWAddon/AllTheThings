@@ -57,7 +57,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							i(200143),	-- Fenistrasza's Skull (QI!)
 						},
 					}),
-					q(70992, {	-- Wanted: Lost Tuskaar Kite
+					q(70992, {	-- Wanted: Lost Tuskarr Kite
 						provider = { "o", 381650 },	-- Archivists' Request
 						coord = { 48.0, 82.2, THE_WAKING_SHORES },
 						maxReputation = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
@@ -112,7 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						},
 					}),
 					q(70997, {	-- Wanted: Ruby Lifeband
-						provider = { "o", 381662 },	-- Archivist's Request
+						provider = { "o", 381662 },	-- Archivists' Request
 						coord = { 47.9, 82.5, THE_WAKING_SHORES },
 						maxReputation = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						isWeekly = true,
@@ -205,7 +205,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				}, {	-- RENOWN 4 --
 					q(70812, {	-- Expedition Cloaks
 						description = "Buying the Renowned cloaks will remove this quest from being available!",
-						provider = { "n", 187700 },	-- Pathfinder Jab
+						provider = { "n", 187700 },	-- Pathfinder Jeb
 						coord = { 47.3, 83.4, THE_WAKING_SHORES },
 						lockCriteria = { 4,	-- locked once all four cloak appearances are learned (bought from the vendor)
 							"sourceID", 182306,	-- Renowned Expeditioner's Cape
@@ -230,7 +230,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}, {	-- RENOWN 5 --
 					q(70813, {	-- Digging Up Treasure
-						provider = { "n", 187700 },	-- Pathfinder Jab
+						provider = { "n", 187700 },	-- Pathfinder Jeb
 						coord = { 47.3, 83.4, THE_WAKING_SHORES },
 						groups = {
 							i(191294),	-- Small Expedition Shovel
@@ -380,7 +380,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							i(197958),	-- Watcher Log (QI!)
 						},
 					}),
-					q(66094, {	-- The Ruins of Szat Skeleth
+					q(66094, {	-- The Ruins of Szar Skeleth
 						sourceQuests = { 66673 },	-- Speak to Koranos
 						provider = { "n", 186870 },	-- Naleidea Rivergleam
 						coord = { 54.5, 55.7, THALDRASZUS },
@@ -396,7 +396,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						coord = { 54.5, 55.7, THALDRASZUS },
 					}),
 					q(70507, {	-- The Insight of Tyr
-						sourceQuests = { 66094 },	-- The Ruins of Szat Skeleth
+						sourceQuests = { 66094 },	-- The Ruins of Szar Skeleth
 						provider = { "n", 191159 },	-- Toddy Whiskers
 						coord = { 40.0, 67.5, OHNAHRAN_PLAINS },
 						groups = {

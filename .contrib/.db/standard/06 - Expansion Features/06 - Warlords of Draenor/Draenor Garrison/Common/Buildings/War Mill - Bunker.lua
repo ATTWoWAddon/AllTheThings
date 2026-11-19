@@ -18,7 +18,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(38188, {	-- Scrap Meltdown
-							qg = 79815,	-- Gun'lek
+							qg = 79815,	-- Grun'lek
 							races = HORDE_ONLY,
 							isDaily = true,
 							groups = {
@@ -32,7 +32,7 @@ root(ROOTS.ExpansionFeatures,
 							groups = { i(118365) },	-- Stormwind Tabard
 						}),
 						q(37043, {	-- Scraps of Iron
-							qg = 79815,	-- Gun'lek
+							qg = 79815,	-- Grun'lek
 							races = HORDE_ONLY,
 							groups = { i(118372) },	-- Orgrimmar Tabard
 						}),

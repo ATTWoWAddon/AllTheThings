@@ -521,7 +521,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 			}),
 		}),
 		n(ZONE_DROPS, {
-			i(246589, {	-- Half-Disgested Journal
+			i(246589, {	-- Half-Digested Journal
 				coord = { 56.8, 24.1, KARESH },
 				cr = 246608,	-- Phase-Lost Creeper
 			}),

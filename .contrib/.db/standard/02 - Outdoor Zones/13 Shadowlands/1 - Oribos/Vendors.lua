@@ -15,7 +15,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 			n(169524, {	-- Acquirer Ta'gosh <Curiosity Vendor>
 				coord = { 61.7, 72.3, ORIBOS },
 				groups = {
-					i(186684, {	-- Memories of Brigther Times
+					i(186684, {	-- Memories of Brighter Times
 						collectible = false,
 						timeline = { ADDED_9_1_0 },
 					}),
@@ -309,7 +309,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
 						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					}),
-					i(187707, {	-- Progentior Essentia
+					i(187707, {	-- Progenitor Essentia
 						cost = { { "i", ATTENDANTS_TOKEN_OF_MERIT, 3 } },
 						timeline = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH },
 					}),
@@ -407,7 +407,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 							i(186017),	-- Korthite Crystal
 						},
 					}),
-					i(187707, {	-- Progentior Essentia
+					i(187707, {	-- Progenitor Essentia
 						cost = { { "c", ANIMA, 25000 } },
 						timeline = { ADDED_9_2_0 },
 					}),
