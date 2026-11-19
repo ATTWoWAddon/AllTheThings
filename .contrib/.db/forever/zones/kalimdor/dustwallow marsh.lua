@@ -567,6 +567,12 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 						coord = { 36.6, 69.4, MAP.DUSTWALLOW_MARSH },
 					}),
 					i(10702),	-- Enormous Ogre Boots
+					i(270086, {	-- Oversized Ogre's Mittens
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270087, {	-- Thick Ogre's Belt
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1273, {	-- Questioning Reethe
@@ -796,6 +802,9 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					}),
 					i(10700),	-- Encarmine Boots
 					i(10701),	-- Boots of Zua'tec
+					i(270094, {	-- Black Whelp Boots
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(1286, {	-- The Deserters (1/2)

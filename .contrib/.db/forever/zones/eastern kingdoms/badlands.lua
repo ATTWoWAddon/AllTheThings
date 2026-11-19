@@ -116,6 +116,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 						qg = 2745,	-- Ambassador Infernus
 					}),
 					i(4987),	-- Dwarf Captain's Sword
+					i(270089, {	-- Ironforge Agent's Gloves
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270088, {	-- Thane's Hammer
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(2258, {	-- Badlands Reagent Run

@@ -968,6 +968,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						cr = 1559,	-- King Mukla
 					}),
 					i(4118),	-- Poobah's Nose Ring
+					i(270226, {	-- Golden Banana
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(570, {	-- Mok'thardin's Enchantment (1/4)

@@ -159,6 +159,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 						coord = { 65.2, 71.9, MAP.THE_HINTERLANDS },
 					}),
 					i(19118),	-- Nature's Breath
+					i(270108, {	-- Bloodied Longmace
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270107, {	-- Bloodstained Longbow
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270106, {	-- Vicious Throwing Stars
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(485, {	-- Find OOX-09/HL!
@@ -263,6 +272,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 						provider = { "n", 2647 },	-- Vilebranch Soul Eater
 					}),
 					i(19120),	-- Rune of the Guard Captain
+					i(270225, {	-- Jewel of the Guard Captain
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(7845, {	-- Kidnapped Elder Torntusk!

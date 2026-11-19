@@ -310,6 +310,12 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					}),
 					i(9665),	-- Wingcrest Gloves
 					i(9666),	-- Stronghorn Girdle
+					i(270105, {	-- Protector's Armguards
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270104, {	-- Stonewalker's Slippers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(2871, {	-- Delivering the Relic
