@@ -806,6 +806,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					{ 48.6, 82.8, MAP.ALTERAC_MOUNTAINS },
 					{ 58.6, 70.2, MAP.ALTERAC_MOUNTAINS },
 				},
+				groups = {
+					i(282713, {	-- Bloodstained Pants
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(2453, {	-- Lo'Grosh
 				coords = {
