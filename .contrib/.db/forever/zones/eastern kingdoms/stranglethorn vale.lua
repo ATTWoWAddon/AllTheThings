@@ -2782,6 +2782,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 				description = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 			}),
+			i(264210, {	-- Schematic: Shafety Sheep (RECIPE!)
+				cr = 1094,	-- Venture Co. Miner
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(1624, {	-- Skullsplitter Helm
 				crs = {
 					783,	-- Skullsplitter Berserker

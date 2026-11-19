@@ -332,6 +332,18 @@ i(285289, 1317962);	-- Cracked Blacksmith Hammer
 i(285290, 1317963);	-- Mithril Blacksmith Hammer
 i(285291, 1317964);	-- Arcanite Blacksmith Hammer
 i(273113, 1263073);	-- Master Forge
+i(251393, 1252290);	-- Shining Mithril Pauldrons
+i(251396, 1252293);	-- Shining Mithril Pants
+i(251438, 1252335);	-- Blessed Plate Pauldrons
+i(251439, 1252336);	-- Blessed Plate Boots
+i(251440, 1252337);	-- Blessed Plate Gauntlet
+i(251443, 1252340);	-- Blessed Plate Leggings
+i(251444, 1252341);	-- Blessed Plate Belt
+i(251451, 1252348);	-- Stalwart Helm
+i(251452, 1252349);	-- Martyr's Legplates
+i(251453, 1252350);	-- Breastplate of Salvation
+i(251462, 1252359);	-- Mithril Claymore
+i(251467, 1252364);	-- Thorium Poleaxe
 --- UNKNOWN ---
 --[[
 r(1224636),	-- Scarlet Soldier's Grips
@@ -346,12 +358,6 @@ i(250392),	-- TODO: Item name not known yet.
 r(1224639),	-- Scarlet Soldier's Stompers
 i(238329),	-- Plans: Scarlet Soldier's Stompers
 i(250393),	-- TODO: Item name not known yet.
-r(1252359),	-- Mithril Claymore
-i(251462),	-- Plans: Mithril Claymore
-r(1252364),	-- Thorium Poleaxe
-i(251467),	-- Plans: Thorium Poleaxe
-r(1252290),	-- Shining Mithril Pauldrons
-i(251393),	-- Plans: Shining Mithril Pauldrons
 r(1252305),	-- Officer's Belt
 r(1252306),	-- Sentinel's Belt
 r(1252307),	-- Warder's Belt
@@ -362,8 +368,6 @@ i(251409),	-- Plans: Sentinel's Belt
 i(251410),	-- Plans: Warder's Belt
 i(251411),	-- Plans: Prefect's Belt
 i(251412),	-- Plans: Justicar's Belt
-r(1252293),	-- Shining Mithril Pants
-i(251396),	-- Plans: Shining Mithril Pants
 r(251418, 1252315),	-- Officer's Gauntlet
 r(251419, 1252316),	-- Sentinel's Gauntlet
 r(251420, 1252317),	-- Warder's Gauntlet
@@ -378,12 +382,8 @@ r(1252347),	-- Champion's Legplates
 i(251450),	-- Plans: Champion's Legplates
 r(1252342),	-- Blessed Plate Helm
 i(251445),	-- Plans: Blessed Plate Helm
-r(1252335),	-- Blessed Plate Pauldrons
-i(251438),	-- Plans: Blessed Plate Pauldrons
 r(1252343),	-- Blessed Plate Chest
 i(251446),	-- Plans: Blessed Plate Chest
-r(1252337),	-- Blessed Plate Gauntlet
-i(251440),	-- Plans: Blessed Plate Gauntlet
 r(1252300),	-- Officer's Gloves
 r(1252301),	-- Sentinel's Gloves
 r(1252302),	-- Warder's Gloves
@@ -394,16 +394,6 @@ i(251404),	-- Plans: Sentinel's Gloves
 i(251405),	-- Plans: Warder's Gloves
 i(251406),	-- Plans: Prefect's Gloves
 i(251407),	-- Plans: Justicar's Gloves
-r(1252341),	-- Blessed Plate Belt
-i(251444),	-- Plans: Blessed Plate Belt
-r(1252340),	-- Blessed Plate Leggings
-i(251443),	-- Plans: Blessed Plate Leggings
-r(1252336),	-- Blessed Plate Boots
-i(251439),	-- Plans: Blessed Plate Boots
-r(1252350),	-- Breastplate of Salvation
-i(251453),	-- Plans: Breastplate of Salvation
-r(1252349),	-- Martyr's Legplates
-i(251452),	-- Plans: Martyr's Legplates
 -- new raid?
 r(1306535),	-- Greenhammer
 i(279310),	-- Plans: Greenhammer
@@ -413,8 +403,6 @@ r(1306534),	-- Forest Defender's Axe
 i(279309),	-- Plans: Forest Defender's Axe
 r(1306536),	-- Evergreen Shield
 i(279311),	-- Plans: Evergreen Shield
-r(1252348),	-- Stalwart Helm
-i(251451),	-- Plans: Stalwart Helm
 r(1306538),	-- Heavy Thorium Gauntlets
 i(279313),	-- Plans: Heavy Thorium Gauntlets
 r(1306539),	-- Azerothium Legplates

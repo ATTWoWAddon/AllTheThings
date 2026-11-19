@@ -29,6 +29,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DEADWIND_PASS, {
 			i(16246, {	-- Formula: Enchant Bracer - Superior Strength (RECIPE!)
 				cr = 7372,	-- Deadwind Warlock
 			}),
+			i(252936, {	-- Pattern: Charged Scorpid Boots (RECIPE!)
+				cr = 7379,	-- Deadwind Ogre Mage
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252889, {	-- Pattern: Tooled Leather Pants (RECIPE!)
+				cr = 7376,	-- Sky Shadow
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(249884, {	-- Recipe: Sage's Tea (RECIPE!)
+				cr = 7379,	-- Deadwind Ogre Mage
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(264225, {	-- Schematic: EZ-Thro Shell (RECIPE!)
+				cr = 7372,	-- Deadwind Warlock
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 	},
 });

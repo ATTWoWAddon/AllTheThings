@@ -1479,12 +1479,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					2570,	-- Boulderfist Shaman
 				},
 			}),
+			i(254014, {	-- Pattern: Earthen Silk Slippers (RECIPE!)
+				cr = 2552,	-- Witherbark Troll
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(251386, {	-- Plans: Hard Gold Boots (RECIPE!)
 				cr = 2586,	-- Syndicate Highwayman
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(251393, {	-- Plans: Shining Mithril Pauldrons (RECIPE!)
+				cr = 2596,	-- Daggerspine Sorceress
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(1297, {	-- Robes of the Shadowcaster
 				cr = 2577,	-- Dark Iron Shadowcaster
+			}),
+			i(264212, {	-- Schematic: EZ-Thro Bronze Mortar (RECIPE!)
+				cr = 2570,	-- Boulderfist Shaman
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(5040, {	-- Shadow Hunter Knife
 				cr = 2557,	-- Witherbark Shadow Hunter

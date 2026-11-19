@@ -700,6 +700,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				cr = 5846,	-- Dark Iron Taskmaster
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(252915, {	-- Pattern: Charged Scorpid Helm (RECIPE!)
+				cr = 9318,	-- Incendosaur
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(14476, {	-- Pattern: Cindercloth Gloves (RECIPE!)
 				coords = {
 					{ 19.4, 36.6, MAP.SEARING_GORGE },
@@ -713,6 +717,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					{ 25.4, 25.4, MAP.SEARING_GORGE },
 				},
 				cr = 5861,	-- Twilight Fire Guard
+			}),
+			i(254076, {	-- Pattern: Earthenweave Gloves (RECIPE!)
+				cr = 5852,	-- Inferno Elemental
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(254685, {	-- Pattern: Stormcloth Shoulders (RECIPE!)
+				cr = 5856,	-- Glassweb Spider
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251439, {	-- Plans: Blessed Plate Boots (RECIPE!)
+				cr = 8566,	-- Dark Iron Lookout
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(21547, {	-- Recipe: Elixir of Holy Power (RECIPE!)
 				coords = {
@@ -728,6 +744,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 					5846,	-- Dark Iron Taskmaster
 					8637,	-- Dark Iron Watchman
 				},
+			}),
+			i(264214, {	-- Schematic: SAF-T Casing (RECIPE!)
+				cr = 5839,	-- Dark Iron Geologist
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},

@@ -2180,6 +2180,10 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					11882,	-- Twilight Stonecaller <Twilight's Hammer>
 				},
 			}),
+			i(254132, {	-- Pattern: Earthenweave Cuffs (RECIPE!)
+				cr = 12178,	-- Tortured Druid
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(20424, {	-- Sandworm Meat
 				crs = {
 					11740,	-- Dredge Striker

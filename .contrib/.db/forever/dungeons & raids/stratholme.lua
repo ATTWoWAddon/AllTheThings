@@ -313,11 +313,23 @@ instanceroot(236, {	-- Stratholme
 			i(12843, {	-- Corruptor's Scourgestone
 				description = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 			}),
+			i(249524, {	-- Formula: Enchant Bracer - Superior Agility (RECIPE!)
+				cr = 10399,	-- Thuzadin Acolyte
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(12841, {	-- Invader's Scourgestone
 				description = "Can drop from any Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 			}),
 			i(12840, {	-- Minion's Scourgestone
 				description = "Can drop from weak Undead creature in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+			}),
+			i(254140, {	-- Pattern: Bottomless Reagent Bag (RECIPE!)
+				cr = 10417,	-- Venom Belcher
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252937, {	-- Pattern: Red Dragonscale Leggings (RECIPE!)
+				cr = 10425,	-- Crimson Battle Mage
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(13174),	-- Plagued Flesh Sample
 			i(12735, {	-- Frayed Abomination Stitching
@@ -334,6 +346,10 @@ instanceroot(236, {	-- Stratholme
 			i(18744),	-- Plaguebat Fur Gloves
 			i(18736),	-- Plaguehound Leggings
 			i(18745),	-- Sacred Cloth Leggings
+			i(264230, {	-- Schematic: SAF-T Emergency Ripper: Everlook (RECIPE!)
+				cr = 10426,	-- Crimson Inquisitor
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(18742),	-- Stratholme Militia Shoulderguard
 			i(16681, {	-- Beaststalker's Bindings
 				crs = {

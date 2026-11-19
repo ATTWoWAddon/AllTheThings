@@ -1201,6 +1201,22 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				description = "These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory.",
 				cost = { { "i", 13370, 1 } },	-- Vitreous Focuser
 			}),
+			i(252881, {	-- Pattern: Blue Suede Shoulders (RECIPE!)
+				cr = 1831,	-- Scarlet Hunter
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252930, {	-- Pattern: Charged Scorpid Gauntlets (RECIPE!)
+				cr = 1784,	-- Skeletal Sorcerer
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(254138, {	-- Pattern: Earthenweave Crown (RECIPE!)
+				cr = 1795,	-- Searing Ghoul
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(254120, {	-- Pattern: Earthenweave Mantle (RECIPE!)
+				cr = 1785,	-- Skeletal Terror
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(15771, {	-- Pattern: Living Breastplate (RECIPE!)
 				coords = {
 					{ 64.6, 36.0, MAP.WESTERN_PLAGUELANDS },
@@ -1209,6 +1225,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				crs = {
 					1813,	-- Decaying Horror
 				},
+			}),
+			i(252880, {	-- Pattern: Tooled Leather Gauntlets (RECIPE!)
+				cr = 1809,	-- Carrion Vulture
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12707, {	-- Plans: Runic Plate Boots (RECIPE!)
 				cr = 1836,	-- Scarlet Cavalier

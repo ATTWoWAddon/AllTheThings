@@ -1349,6 +1349,10 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				races = ALLIANCE_ONLY,
 				cr = 10648,	-- Xavaric
 			}),
+			i(249514, {	-- Formula: Enchant Bracer - Greater Agility (RECIPE!)
+				cr = 7154,	-- Deadwood Gardener
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(20768, {	-- Oozing Bag
 				crs = {
 					7092,	-- Tainted Ooze
@@ -1361,6 +1365,10 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				cr = 7153,	-- Deadwood Warrior
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(254126, {	-- Pattern: Earthenweave Leggings (RECIPE!)
+				cr = 7139,	-- Irontree Stomper
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(15752, {	-- Pattern: Living Leggings (RECIPE!)
 				coords = {
 					{ 62.6, 12.6, MAP.FELWOOD },
@@ -1370,6 +1378,10 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 			i(15739, {	-- Pattern: Runic Leather Bracers
 				cr = 7112,	-- Jaedenar Cultist
+			}),
+			i(252926, {	-- Pattern: Supple Scorpid Shoulders (RECIPE!)
+				cr = 7115,	-- Jaedenar Adept
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252865, {	-- Pattern: Tooled Leather Boots (RECIPE!)
 				cr = 7158,	-- Deadwood Shaman
@@ -1386,12 +1398,20 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				cr = 7108,	-- Jadefire Betrayer
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(251440, {	-- Plans: Blessed Plate Gauntlet (RECIPE!)
+				cr = 7155,	-- Deadwood Pathfinder
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
 				coords = {
 					{ 38.6, 69.6, MAP.FELWOOD },
 					{ 33.8, 66.6, MAP.FELWOOD },
 				},
 				cr = 7106,	-- Jadefire Rogue
+			}),
+			i(264228, {	-- Schematic: EZ-Thro Mana Bomb (RECIPE!)
+				cr = 9862,	-- Jaedenar Legionnaire
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},

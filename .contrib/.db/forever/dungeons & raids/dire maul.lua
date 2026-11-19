@@ -668,6 +668,10 @@ instanceroot(230, {	-- Dire Maul
 						11448,	-- Gordok Warlock
 					},
 				}),
+				i(251452, {	-- Plans: Martyr's Legplates (RECIPE!)
+					cr = 11441,	-- Gordok Brute
+					timeline = { TIMELINE.ADDED_1_60_1 },
+				}),
 			},
 		}),
 		n(COMMON_BOSS_DROPS, {
@@ -719,6 +723,10 @@ instanceroot(230, {	-- Dire Maul
 							11451,	-- Wildspawn Satyr
 							11456,	-- Wildspawn Shadowstalker
 						},
+					}),
+					i(252891, {	-- Pattern: Living Crown (RECIPE!)
+						cr = 11462,	-- Warpwood Treant
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(18295, {	-- Phasing Boots
 						cr = 13196,	-- Phase Lasher
@@ -1066,6 +1074,10 @@ instanceroot(230, {	-- Dire Maul
 							11483,	-- Mana Remnant
 							11484,	-- Residual Monstrosity
 						},
+					}),
+					i(252894, {	-- Pattern: Warbear Helm (RECIPE!)
+						cr = 11469,	-- Eldreth Seether
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(18343, {	-- Petrified Band
 						crs = {

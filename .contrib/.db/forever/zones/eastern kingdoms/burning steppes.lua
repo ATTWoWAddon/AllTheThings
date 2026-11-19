@@ -507,6 +507,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 			}),
 		}),
 		n(ZONE_DROPS, {
+			i(252888, {	-- Pattern: Blue Suede Bracers (RECIPE!)
+				cr = 7025,	-- Blackrock Soldier
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(14482, {	-- Pattern: Cindercloth Cloak (RECIPE!)
 				coords = {
 					{43.8, 39.4, MAP.BURNING_STEPPES},
@@ -558,6 +562,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BURNING_STEPPES, {
 			}),
 			i(13476, {	-- Recipe: Mighty Rage Potion (RECIPE!)
 				cr = 7027,	-- Blackrock Slayer
+			}),
+			i(264224, {	-- Schematic: SAF-T Clever Dynamite (RECIPE!)
+				cr = 7033,	-- Firegut Ogre
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(264223, {	-- Schematic: SAF-T Tube (RECIPE!)
+				cr = 7037,	-- Thaurissan Firewalker
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},

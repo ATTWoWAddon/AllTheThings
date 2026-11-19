@@ -372,97 +372,68 @@ i(252865, 1255042);	-- Tooled Leather Boots
 i(252845, 1255062);	-- Warden's Leather Shoes
 i(252879, 1255028);	-- Wicked Leather Boots
 i(273121, 1263079);	-- Sewing Machine
+i(252858, 1255049);	-- Tooled Leather Belt
+i(252878, 1255029);	-- Blue Suede Pants
+i(252880, 1255027);	-- Tooled Leather Gauntlets
+i(252881, 1255026);	-- Blue Suede Shoulder
+i(252885, 1255022);	-- Tooled Leather Bracers
+i(252886, 1255021);	-- Blue Suede Belt
+i(252888, 1255019);	-- Blue Suede Bracers
+i(252889, 1255018);	-- Tooled Leather Pants
+i(252890, 1255017);	-- Blue Suede Hat
+i(252891, 1255016);	-- Living Crown
+i(252893, 1255014);	-- Timbermaw Tunic
+i(252894, 1255013);	-- Warbear Helm
+i(252895, 1255012);	-- Ironfeather Leggings
+i(252908, 1254999);	-- Supple Scorpid Boots
+i(252909, 1254998);	-- Charged Scorpid Belt
+i(252914, 1254993);	-- Supple Scorpid Leggings
+i(252915, 1254992);	-- Charged Scorpid Helm
+i(252916, 1254991);	-- Supple Scorpid Bracers
+i(252926, 1254981);	-- Supple Scorpid Shoulder
+i(252927, 1254980);	-- Charged Scorpid Bracers
+i(252930, 1254977);	-- Charged Scorpid Gauntlets
+i(252931, 1254976);	-- Supple Scorpid Helm
+i(252932, 1254975);	-- Charged Scorpid Vest
+i(252934, 1254973);	-- Charged Scorpid Leggings
+i(252935, 1254972);	-- Supple Scorpid Sabatons
+i(252936, 1254971);	-- Charged Scorpid Boots
+i(252937, 1254970);	-- Red Dragonscale Leggings
+i(252939, 1254968);	-- Black Dragonscale Helm
+i(252940, 1254967);	-- Pristine Scorpid Leggings
 --- UNKNOWN ---
 --[[
-r(1254968),	-- Black Dragonscale Helm
 r(1254969),	-- Blue Dragonscale Helm
-r(1255021),	-- Blue Suede Belt
-r(1255019),	-- Blue Suede Bracers
-r(1255017),	-- Blue Suede Hat
-r(1255029),	-- Blue Suede Pants
-r(1255026),	-- Blue Suede Shoulder
-r(1254998),	-- Charged Scorpid Belt
-r(1254971),	-- Charged Scorpid Boots
-r(1254980),	-- Charged Scorpid Bracers
-r(1254977),	-- Charged Scorpid Gauntlets
-r(1254992),	-- Charged Scorpid Helm
-r(1254973),	-- Charged Scorpid Leggings
 r(1254990),	-- Charged Scorpid Shoulder
-r(1254975),	-- Charged Scorpid Vest
 r(1255015),	-- Dawn Armor
-r(1255012),	-- Ironfeather Leggings
-r(1255016),	-- Living Crown
 r(1254986),	-- Mender's Mail Gauntlets
 r(1306527),	-- Outlaw's Collar
-i(252939),	-- Pattern: Black Dragonscale Helm
 i(252938),	-- Pattern: Blue Dragonscale Helm
-i(252886),	-- Pattern: Blue Suede Belt
-i(252888),	-- Pattern: Blue Suede Bracers
-i(252890),	-- Pattern: Blue Suede Hat
-i(252878),	-- Pattern: Blue Suede Pants
-i(252881),	-- Pattern: Blue Suede Shoulder
-i(252909),	-- Pattern: Charged Scorpid Belt
-i(252936),	-- Pattern: Charged Scorpid Boots
-i(252927),	-- Pattern: Charged Scorpid Bracers
-i(252930),	-- Pattern: Charged Scorpid Gauntlets
-i(252915),	-- Pattern: Charged Scorpid Helm
-i(252934),	-- Pattern: Charged Scorpid Leggings
 i(252917),	-- Pattern: Charged Scorpid Shoulder
-i(252932),	-- Pattern: Charged Scorpid Vest
 i(252892),	-- Pattern: Dawn Armor
-i(252895),	-- Pattern: Ironfeather Leggings
-i(252891),	-- Pattern: Living Crown
 i(252921),	-- Pattern: Mender's Mail Gauntlets
 i(279302),	-- Pattern: Outlaw's Collar
-i(252940),	-- Pattern: Pristine Scorpid Leggings
 i(252867),	-- Pattern: Prowler's Leather Gauntlets
-i(252937),	-- Pattern: Red Dragonscale Leggings
 i(252920),	-- Pattern: Skirmisher's Mail Gauntlets
 i(252868),	-- Pattern: Skulker's Leather Gauntlets
 i(252870),	-- Pattern: Skycaller's Leather Gauntlets
 i(252919),	-- Pattern: Skycaller's Mail Gauntlets
 i(252918),	-- Pattern: Stalker's Mail Gauntlets
 i(252929),	-- Pattern: Supple Scorpid Belt
-i(252908),	-- Pattern: Supple Scorpid Boots
-i(252916),	-- Pattern: Supple Scorpid Bracers
-i(252931),	-- Pattern: Supple Scorpid Helm
-i(252914),	-- Pattern: Supple Scorpid Leggings
-i(252935),	-- Pattern: Supple Scorpid Sabatons
-i(252926),	-- Pattern: Supple Scorpid Shoulder
-i(252893),	-- Pattern: Timbermaw Tunic
-i(252858),	-- Pattern: Tooled Leather Belt
-i(252885),	-- Pattern: Tooled Leather Bracers
 i(252882),	-- Pattern: Tooled Leather Crown
 i(252887),	-- Pattern: Tooled Leather Epaulets
-i(252880),	-- Pattern: Tooled Leather Gauntlets
-i(252889),	-- Pattern: Tooled Leather Pants
-i(252894),	-- Pattern: Warbear Helm
 i(252869),	-- Pattern: Warden's Leather Gauntlets
 i(252884),	-- Pattern: Wicked Leather Shoulder
 i(279307),	-- Pattern: Wild Leather Armor Kit
-r(1254967),	-- Pristine Scorpid Leggings
 r(1255040),	-- Prowler's Leather Gauntlets
-r(1254970),	-- Red Dragonscale Leggings
 r(1254987),	-- Skirmisher's Mail Gauntlets
 r(1255039),	-- Skulker's Leather Gauntlets
 r(1255037),	-- Skycaller's Leather Gauntlets
 r(1254988),	-- Skycaller's Mail Gauntlets
 r(1254989),	-- Stalker's Mail Gauntlets
 r(1254978),	-- Supple Scorpid Belt
-r(1254999),	-- Supple Scorpid Boots
-r(1254991),	-- Supple Scorpid Bracers
-r(1254976),	-- Supple Scorpid Helm
-r(1254993),	-- Supple Scorpid Leggings
-r(1254972),	-- Supple Scorpid Sabatons
-r(1254981),	-- Supple Scorpid Shoulder
-r(1255014),	-- Timbermaw Tunic
-r(1255049),	-- Tooled Leather Belt
-r(1255022),	-- Tooled Leather Bracers
 r(1255025),	-- Tooled Leather Crown
 r(1255020),	-- Tooled Leather Epaulets
-r(1255027),	-- Tooled Leather Gauntlets
-r(1255018),	-- Tooled Leather Pants
-r(1255013),	-- Warbear Helm
 r(1255038),	-- Warden's Leather Gauntlets
 r(1255023),	-- Wicked Leather Shoulder
 r(1306532),	-- Wild Leather Armor Kit

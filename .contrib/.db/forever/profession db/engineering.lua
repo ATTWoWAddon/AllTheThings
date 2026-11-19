@@ -210,6 +210,21 @@ i(0, 12760, nil, GOBLIN_ENGINEERING);	-- Goblin Sapper Charge
 i(11828, 15628, nil, GOBLIN_ENGINEERING);	-- Pet Bombling
 i(0, 12754, nil, GOBLIN_ENGINEERING);	-- The Big One
 i(273117, 1263083);	-- Anarchist's Workbench
+i(264210, 1266913);	-- Shafety Sheep
+i(264212, 1266915);	-- EZ-Thro Bronze Mortar
+i(264213, 1266916);	-- EZ-Thro Grenade
+i(264214, 1266917);	-- SAF-T Casing
+i(264218, 1266921);	-- EZ-Thro Tru-Trigger
+i(264219, 1266922);	-- Tru-Trigger Frag Bomb
+i(264223, 1266926);	-- SAF-T Tube
+i(264224, 1266927);	-- SAF-T Clever Dynamite
+i(264225, 1266928);	-- EZ-Thro Shell
+i(264226, 1266929);	-- EZ-Thro Thorium Grenade
+i(264228, 1266931);	-- EZ-Thro Mana Bomb
+i(264229, 1266932);	-- EZ-Thro Field Transporter: Gadgetzan
+i(264230, 1266933);	-- SAF-T Emergency Ripper: Everlook
+i(264231, 1266934);	-- EZ and SAF Field Transporter: Mt. Hyjal
+i(284870, 1317270);	-- Unsanctified Grenade
 --- UNSURE ---
 i(22729, 28327);	-- Steam Tonk Controller
 --- UNKNOWN ---
@@ -238,58 +253,28 @@ r(1319159),	-- Large Yellow Rocket
 i(286079),	-- Schematic: Large Purple Rocket
 i(286080),	-- Schematic: Large White Rocket
 i(286081),	-- Schematic: Large Yellow Rocket
-r(1266913),	-- Shafety Sheep
-i(264210),	-- Schematic: Shafety Sheep
-r(1266915),	-- EZ-Thro Bronze Mortar
-i(264212),	-- Schematic: EZ-Thro Bronze Mortar
-r(1266916),	-- EZ-Thro Grenade
-i(264213),	-- Schematic: EZ-Thro Grenade
-r(1266917),	-- SAF-T Casing
-i(264214),	-- Schematic: SAF-T Casing
 i(286082),	-- Schematic: Purple Rocket Cluster
 i(286083),	-- Schematic: White Rocket Cluster
 i(286084),	-- Schematic: Yellow Rocket Cluster
 r(1319160),	-- Purple Rocket Cluster
 r(1319161),	-- White Rocket Cluster
 r(1319162),	-- Yellow Rocket Cluster
-r(1266921),	-- EZ-Thro Tru-Trigger
-i(264218),	-- Schematic: EZ-Thro Tru-Trigger
-r(1266922),	-- Tru-Trigger Frag Bomb
-i(264219),	-- Schematic: Tru-Trigger Frag Bomb
-r(1317270),	-- Unsanctified Grenade
-i(284870),	-- Schematic: Unsanctified Grenade
-r(1266926),	-- SAF-T Tube
-i(264223),	-- Schematic: SAF-T Tube
 i(286085),	-- Schematic: Large Purple Rocket Cluster
 i(286086),	-- Schematic: Large White Rocket Cluster
 i(286087),	-- Schematic: Large Yellow Rocket Cluster
 r(1319163),	-- Large Purple Rocket Cluster
 r(1319164),	-- Large White Rocket Cluster
 r(1319165),	-- Large Yellow Rocket Cluster
-r(1266927),	-- SAF-T Clever Dynamite
-i(264224),	-- Schematic: SAF-T Clever Dynamite
-r(1266928),	-- EZ-Thro Shell
-i(264225),	-- Schematic: EZ-Thro Shell
-r(1266929),	-- EZ-Thro Thorium Grenade
-i(264226),	-- Schematic: EZ-Thro Thorium Grenade
 r(1293849),	-- Swiftfeather Arrow
 r(1293850),	-- Swiftstrike Shot
 i(274389),	-- Schematic: Swiftfeather Arrow
 i(274390),	-- Schematic: Swiftstrike Shot
 i(279321),	-- Schematic: SAF-T Ultra Precision Scope
 r(1306546),	-- SAF-T Ultra Precision Scope
-r(1266934),	-- EZ and SAF Field Transporter: Mt. Hyjal
-i(264231),	-- Schematic: EZ and SAF Field Transporter: Mt. Hyjal
 r(1266930),	-- EZ-Thro Dark Bomb
 i(264227),	-- Schematic: EZ-Thro Dark Bomb
-r(1266932),	-- EZ-Thro Field Transporter: Gadgetzan
-i(264229),	-- Schematic: EZ-Thro Field Transporter: Gadgetzan
 r(1266942),	-- EZ-Thro Magnetic Displacer
 i(264239),	-- Schematic: EZ-Thro Magnetic Displacer
-r(1266931),	-- EZ-Thro Mana Bomb
-i(264228),	-- Schematic: EZ-Thro Mana Bomb
-r(1266933),	-- SAF-T Emergency Ripper: Everlook
-i(264230),	-- Schematic: SAF-T Emergency Ripper: Everlook
 r(1266941),	-- SAF-T Nitro Boosts
 i(264238),	-- Schematic: SAF-T Nitro Boosts
 r(1266943),	-- SAF-T Teleport

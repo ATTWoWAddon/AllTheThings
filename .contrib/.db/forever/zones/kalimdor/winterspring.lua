@@ -1123,6 +1123,10 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					10664,	-- Scryer
 				},
 			}),
+			i(252890, {	-- Pattern: Blue Suede Hat (RECIPE!)
+				cr = 7440,	-- Winterfall Den Watcher
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(254122, {	-- Pattern: Earthenweave Vest (RECIPE!)
 				cr = 7523,	-- Suffering Highborne
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1155,6 +1159,14 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			i(14468, {	-- Pattern: Runecloth Bag (RECIPE!)
 				cr = 7458,	-- Ice Thistle Yeti
 			}),
+			i(251443, {	-- Plans: Blessed Plate Leggings (RECIPE!)
+				cr = 7451,	-- Raging Owlbeast
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(250178, {	-- Recipe: Bear Bruscitti (RECIPE!)
+				cr = 7446,	-- Rabid Shardtooth
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(13497, {	-- Recipe: Greater Arcane Protection Potion (RECIPE!)
 				cr = 7437,	-- Cobalt Mageweaver
 			}),
@@ -1166,6 +1178,10 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				crs = {
 					7428,	-- Frostmaul Giant
 				},
+			}),
+			i(250180, {	-- Recipe: Swiftstrike Steak (RECIPE!)
+				cr = 7434,	-- Frostsaber Pride Watcher
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(16054, {	-- Schematic: Arcanite Dragonling (RECIPE!)
 				coord = { 59.6, 49.0, MAP.WINTERSPRING },

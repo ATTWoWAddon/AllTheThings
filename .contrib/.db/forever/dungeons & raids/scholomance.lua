@@ -544,8 +544,16 @@ instanceroot(246, {	-- Scholomance
 			i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit (RECIPE!)
 				cr = 10469,	-- Scholomance Adept
 			}),
+			i(249523, {	-- Formula: Enchant 2H Weapon - Strength (RECIPE!)
+				cr = 10498,	-- Spectral Tutor
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(16254, {	-- Formula: Enchant Weapon - Lifestealing (RECIPE!)
 				cr = 10499,	-- Spectral Researcher
+			}),
+			i(252940, {	-- Pattern: Pristine Scorpid Leggings (RECIPE!)
+				cr = 10499,	-- Spectral Researcher
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(15776, {	-- Pattern: Runic Leather Armor (RECIPE!)
 				cr = 11582,	-- Scholomance Dark Summoner
@@ -566,6 +574,10 @@ instanceroot(246, {	-- Scholomance
 			i(13920, {	-- Healthy Dragon Scale
 				description = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
 				cr = 10678,	-- Plagued Hatchling
+			}),
+			i(264229, {	-- Schematic: EZ-Thro Field Transporter: Gadgetzan (RECIPE!)
+				cr = 10498,	-- Spectral Tutor
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12753),	-- Skin of Shadow
 			i(18702),	-- Belt of the Ordained

@@ -1056,6 +1056,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			i(10822, {	-- Dark Whelpling (PET!)
 				cr = 2725,	-- Scalding Whelp
 			}),
+			i(249512, {	-- Formula: Dreambough Wand (RECIPE!)
+				cr = 2720,	-- Dustbelcher Ogre Mage
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(1521, {	-- Lumbering Ogre Axe
 				coords = {
 					{ 10.0, 92.6, MAP.BADLANDS },

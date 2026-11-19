@@ -113,6 +113,16 @@ i(286153, 1319313);	-- Plated Armorfish
 i(250184, 1250153);	-- Raptor Rouladen
 i(250173, 1250142);	-- Savory Stag Sliders
 i(273115, 1263067);	-- Iron Oven
+i(249883, 1249961);	-- Sunny Tea
+i(249884, 1249962);	-- Sage's Tea
+i(250175, 1250144);	-- Bat Hachee
+i(250176, 1250145);	-- Savory Turtle Stew
+i(250177, 1250146);	-- Flank au Poivre
+i(250178, 1250147);	-- Bear Bruscitti
+i(250180, 1250149);	-- Swiftstrike Steak
+i(250181, 1250150);	-- Raging Raptor Ribs
+i(250186, 1250155);	-- Giant Scrambled Eggs
+i(250189, 1250158);	-- Clam Linguine
 --- UNKNOWN ---
 --[[
 r(1255241),	-- Cleansing Stew
@@ -123,12 +133,6 @@ r(2538),	-- Charred Wolf Meat
 r(2540),	-- Roasted Boar Meat
 r(1270632),	-- Critter Cookie
 i(263505),	-- TODO: Item name not known yet.
-r(1250155),	-- Giant Scrambled Eggs
-i(250186),	-- Recipe: Giant Scrambled Eggs
-r(1250150),	-- Raging Raptor Ribs
-i(250181),	-- Recipe: Raging Raptor Ribs
-r(1249961),	-- Sunny Tea
-i(249883),	-- Recipe: Sunny Tea
 r(1247741),	-- Spinefin Halibut
 r(13028),	-- Goldthorn Tea
 r(1225759),	-- Filet o' Flank
@@ -137,29 +141,15 @@ i(250395),	-- TODO: Item name not known yet.
 r(1225758),	-- Prowler Steak
 i(238645),	-- Recipe: Prowler Steak
 i(250394),	-- TODO: Item name not known yet.
-r(1249962),	-- Sage's Tea
-i(249884),	-- Recipe: Sage's Tea
 r(1225760),	-- Sunrise Omelette
 i(238647),	-- Recipe: Sunrise Omelette
 i(250396),	-- TODO: Item name not known yet.
-r(1250144),	-- Bat Hachee
-i(250175),	-- Recipe: Bat Hachee
-r(1250147),	-- Bear Bruscitti
-i(250178),	-- Recipe: Bear Bruscitti
-r(1250158),	-- Clam Linguine
-i(250189),	-- Recipe: Clam Linguine
-r(1250146),	-- Flank au Poivre
-i(250177),	-- Recipe: Flank au Poivre
 r(1250152),	-- Prehistoric Pulled Raptor
 i(250183),	-- Recipe: Prehistoric Pulled Raptor
-r(1250145),	-- Savory Turtle Stew
-i(250176),	-- Recipe: Savory Turtle Stew
 r(1250143),	-- Soaring Pamplona
 i(250174),	-- Recipe: Soaring Pamplona
 r(1250148),	-- Steaming Stag Steak
 i(250179),	-- Recipe: Steaming Stag Steak
-r(1250149),	-- Swiftstrike Steak
-i(250180),	-- Recipe: Swiftstrike Steak
 r(1225763),	-- Grand Lobster Banquet
 i(238650),	-- Recipe: Grand Lobster Banquet
 i(250399),	-- TODO: Item name not known yet.

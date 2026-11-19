@@ -940,8 +940,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					{ 61.2, 68.4, MAP.THE_HINTERLANDS },
 				},
 			}),
+			i(251396, {	-- Plans: Shining Mithril Pants (RECIPE!)
+				cr = 2653,	-- Witherbark Sadist
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(250992, {	-- Recipe: Superior Mender's Potion (RECIPE!)
+				cr = 2640,	-- Vilebranch Witch Doctor
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 				description = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+			}),
+			i(264218, {	-- Schematic: EZ-Thro Tru-Trigger (RECIPE!)
+				cr = 2656,	-- Jade Ooze
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(9259, {	-- Troll Tribal Necklace
 				description = "Can drop from any troll in The Hinterlands.",

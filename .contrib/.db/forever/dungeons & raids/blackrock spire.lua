@@ -900,6 +900,14 @@ instanceroot(229, {	-- Blackrock Spire
 				cr = 9239,	-- Smolderthorn Mystic
 			}),
 			i(16683),	-- Magister's Bindings
+			i(252895, {	-- Pattern: Ironfeather Leggings (RECIPE!)
+				cr = 9262,	-- Firebrand Invoker <Firebrand Legion>
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251451, {	-- Plans: Stalwart Helm (RECIPE!)
+				cr = 9583,	-- Bloodaxe Veteran <Bloodaxe Legion>
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(16713),	-- Shadowcraft Belt
 			i(16716, {	-- Wildheart Belt
 				crs = {
@@ -1184,6 +1192,10 @@ instanceroot(229, {	-- Blackrock Spire
 						classes = { ROGUE },
 						rank = 9,
 						cr = 10318,	-- Blackhand Assassin <Blackhand Legion>
+					}),
+					i(252939, {	-- Pattern: Black Dragonscale Helm (RECIPE!)
+						cr = 10318,	-- Blackhand Assassin <Blackhand Legion>
+						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 					i(13260),	-- Wind Dancer Boots
 				}),

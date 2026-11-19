@@ -139,6 +139,14 @@ instanceroot(2974, {	-- Blackmaw Hold
 				},
 			}),
 		}),
+		n(ZONE_DROPS, {
+			i(252893, {	-- Pattern: Timbermaw Tunic (RECIPE!)
+				cr = 258516,	-- Blackmaw Druid
+			}),
+			i(251453, {	-- Plans: Breastplate of Salvation (RECIPE!)
+				cr = 247248,	-- Legashi Summoner
+			}),
+		}),
 		e(3315, {	-- Withermaw
 			creatureID = 247195,	-- Withermaw
 		}),

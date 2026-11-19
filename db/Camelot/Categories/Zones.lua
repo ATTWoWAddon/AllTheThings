@@ -2068,6 +2068,7 @@ r(1252352,{awp=16001,b=1,crs={3727},itemID=251455,learnedAt=95,requireSkill=164,
 r(1252353,{awp=16001,b=1,crs={3771},itemID=251456,learnedAt=130,requireSkill=164,skillID=2938}),
 r(1250151,{awp=16001,b=1,crs={3809},itemID=250182,learnedAt=175,requireSkill=185,skillID=2939}),
 r(1250781,{awp=16001,crs={3757},itemID=250368,learnedAt=145,requireSkill=171,skillID=2937}),
+r(1250798,{awp=16001,crs={3931},itemID=250385,requireSkill=171}),
 i(16645,{spellID=20529}),
 i(16646,{spellID=20529}),
 i(16647,{spellID=20529}),
@@ -2509,17 +2510,26 @@ n(8678,{coords={
 [1447]={{45.2,90.8}}},g={
 r(12617,{b=1,itemID=10607,learnedAt=230,requireSkill=202,skillID=2941})}})}),
 h(-63,{
+r(1248528,{awp=16001,b=1,crs={6196},itemID=249516,learnedAt=250,requireSkill=333,skillID=2940}),
 r(20012,{crs={6201},itemID=16219,learnedAt=270,requireSkill=333,skillID=2940}),
 r(19089,{coords={
 [1447]={{50.4,80.2},{64.6,87.2},{70.4,17.6},{80.6,18.6}}},crs={6146},itemID=15763,learnedAt=270,requireSkill=10656,skillID=2945}),
+r(1255021,{awp=16001,crs={7885},itemID=252886,learnedAt=270,requireSkill=165,skillID=2945}),
+r(1254975,{awp=16001,crs={6195},itemID=252932,learnedAt=260,requireSkill=165,skillID=2945}),
 r(18410,{crs={7864},itemID=14473,learnedAt=220,requireSkill=197,skillID=2948}),
+r(1257462,{awp=16001,crs={6126},itemID=254074,learnedAt=215,requireSkill=197,skillID=2948}),
 r(18413,{crs={7864},itemID=14477,learnedAt=225,requireSkill=197,skillID=2948}),
 r(19079,{crs={6138},itemID=15753,learnedAt=260,requireSkill=10658,skillID=2945}),
 r(19090,{crs={6144},itemID=15764,learnedAt=270,requireSkill=10658,skillID=2945}),
+r(1255049,{awp=16001,crs={6116},itemID=252858,learnedAt=235,requireSkill=165,skillID=2945}),
 r(19052,{crs={6201},itemID=15728,learnedAt=240,requireSkill=165,skillID=2945}),
+r(1252335,{awp=16001,b=1,crs={6117},itemID=251438,learnedAt=240,requireSkill=164,skillID=2938}),
 r(1252338,{awp=16001,b=1,crs={6199},itemID=251441,learnedAt=255,requireSkill=164,skillID=2938}),
+r(1250158,{awp=16001,b=1,crs={7886},itemID=250189,learnedAt=275,requireSkill=185,skillID=2939}),
 r(17571,{coords={
 [1447]={{53.6,23.8},{56.6,23.6}}},crs={6201},itemID=13491,learnedAt=280,requireSkill=171,skillID=2937}),
+r(1251733,{awp=16001,crs={6193},itemID=250980,requireSkill=171}),
+r(1266934,{awp=16001,crs={250027},itemID=264231,learnedAt=300,requireSkill=202,skillID=2941}),
 r(19794,{crs={6195},itemID=16045,learnedAt=270,requireSkill=202,skillID=2941}),
 i(10450,{crs={6375,6377,6378,6379,6380,6648}})})}}),
 m(1439,{icon=236739,lore="This rocky area stretches along Kalimdor's north coast. Rains, winds and rocky beaches make the place inhospitable. Old night elf ruins stand crumbling on the cliffs, and murlocs and naga lurk within. The night elf village of Auberdine serves as a friendly trading post.",g={
@@ -3406,9 +3416,13 @@ r(25704,{itemID=21099,learnedAt=80,requireSkill=185,skillID=2939})}})}),
 h(-63,{
 s(156925,2620,{coords={
 [1443]={{48.2,75.8},{52.2,83.6},{53.2,71}}},crs={4684},f=4,loc=40}),
+r(1248497,{awp=16001,b=1,crs={4681},itemID=249488,learnedAt=190,requireSkill=333,skillID=2940}),
 r(1257433,{awp=16001,crs={4719},itemID=254016,learnedAt=150,requireSkill=197,skillID=2948}),
+r(12062,{awp=16001,crs={4658},itemID=254681,learnedAt=200,requireSkill=197,skillID=2948}),
 r(1252284,{awp=16001,b=1,crs={4711},itemID=251387,learnedAt=160,requireSkill=164,skillID=2938}),
 r(1252289,{awp=16001,b=1,crs={11559,253272},itemID=251392,learnedAt=195,requireSkill=164,skillID=2938}),
+r(1250783,{awp=16001,crs={4632},itemID=250370,requireSkill=171}),
+r(1250776,{awp=16001,crs={4684},itemID=250363,requireSkill=171}),
 i(6074,{crs={4654,4655,4656,4657,4658,4659,6069,6070},f=55,spellID=7285})})}}),
 m(1411,{icon=236756,lore="Once the home of the savage quilboar, the Horde arrived on Kalimdor's shore and, in the aftermath of the Third War, drove the quilboar from the land and established this region as its own. Warchief Thrall named the new nation after his father, Durotan, and rules ably. Horde settlements are scattered throughout the rocky land, which is only marginally more fertile than the Barrens.\n\nThe Horde's greatest city is Orgrimmar, a warrior city that symbolizes the greatness of the orcs and their allies. Much of Durotar remains wild, and the orcs continually fend off centaur and quilboar as they attempt to tame the land.",g={
 m(461,{icon=236452,lore="The Valley of Trials in southern Durotar is where all young orc adventurers begin their journey. Within the valley, they are safe from external threats while taking on challenges that enable them to get used to their new status as recruits of the Horde.",zoneTextAreaIDs={363,364,365},g={
@@ -4279,6 +4293,7 @@ i(4639,{crs={4363},spellID=4945}),
 r(1248510,{awp=16001,b=1,crs={4329},itemID=249511,learnedAt=210,requireSkill=333,skillID=2940}),
 r(6695,{crs={4834},itemID=5775,learnedAt=150,requireSkill=197,skillID=2948}),
 r(1257435,{awp=16001,crs={4359},itemID=254020,learnedAt=165,requireSkill=197,skillID=2948}),
+r(12083,{awp=16001,crs={4334},itemID=254684,learnedAt=215,requireSkill=197,skillID=2948}),
 r(1252356,{awp=16001,b=1,crs={4362},itemID=251459,learnedAt=180,requireSkill=164,skillID=2938}),
 r(16731,{b=1,crs={4368,16072},itemID=12718,learnedAt=300,requireSkill=164,skillID=2938}),
 r(16726,{b=1,crs={4364},itemID=12714,learnedAt=300,requireSkill=164,skillID=2938}),
@@ -4678,17 +4693,22 @@ i(11515,{b=1,description="In order for this to drop by killing mobs, you must ha
 i(21377,{b=1,crs={7153,7154,7155,7156,7157,7158,9462,9464,14342},description="Drops commonly from all Deadwood furbolgs, and can be turned in to the NPCs named Grazle and Nafien for Timbermaw Hold reputation. Each turn in requires 5 Deadwood Headdress Feathers. Grazle can be found in the southmost part of the zone, in the Emerald Sanctuary. Nafien can be found in the northernmost part of the zone, by the entrance to Timbermaw Hold."}),
 i(11668,{b=1,coords={
 [1448]={{39.6,22.2}}},crs={10648},lvl=49,r=2}),
+r(1248500,{awp=16001,b=1,crs={7154},itemID=249514,learnedAt=240,requireSkill=333,skillID=2940}),
 i(20768,{crs={7092,7093,14345},sym={{"select","itemID",20769}}}),
 r(1255041,{awp=16001,crs={7153},itemID=252866,learnedAt=240,requireSkill=165,skillID=2945}),
+r(1257488,{awp=16001,crs={7139},itemID=254126,learnedAt=245,requireSkill=197,skillID=2948}),
 r(19078,{coords={
 [1448]={{61.6,7.4},{62.6,12.6}}},crs={7158},itemID=15752,learnedAt=260,requireSkill=10658,skillID=2945}),
 r(19065,{crs={7112},itemID=15739,learnedAt=250,requireSkill=165,skillID=2945}),
+r(1254981,{awp=16001,crs={7115},itemID=252926,learnedAt=255,requireSkill=165,skillID=2945}),
 r(1255042,{awp=16001,crs={7158},itemID=252865,learnedAt=240,requireSkill=165,skillID=2945}),
 r(1255028,{awp=16001,crs={9878},itemID=252879,learnedAt=260,requireSkill=165,skillID=2945}),
 r(19071,{crs={7107},itemID=15744,learnedAt=255,requireSkill=165,skillID=2945}),
 r(1252339,{awp=16001,b=1,crs={7108},itemID=251442,learnedAt=255,requireSkill=164,skillID=2938}),
+r(1252337,{awp=16001,b=1,crs={7155},itemID=251440,learnedAt=245,requireSkill=164,skillID=2938}),
 r(17571,{coords={
-[1448]={{33.8,66.6},{38.6,69.6}}},crs={7106},itemID=13491,learnedAt=280,requireSkill=171,skillID=2937})})}}),
+[1448]={{33.8,66.6},{38.6,69.6}}},crs={7106},itemID=13491,learnedAt=280,requireSkill=171,skillID=2937}),
+r(1266931,{awp=16001,crs={9862},itemID=264228,learnedAt=300,requireSkill=202,skillID=2941})})}}),
 m(1444,{icon=236764,lore="Feralas is a rainforest surrounded by arid zones in southern Kalimdor. It is known for the mystery surrounding Dire Maul--a former city of the Highborne that remained hermetic and drew upon demonic energy to stay immortal. There is a strong Night Elf presence--both in Feathermoon Stronghold, the base of operations for the Sentinels, and in the numerous ruins scattered around the zones.",g={
 h(-12,{
 ach(849,{
@@ -5177,8 +5197,13 @@ i(21024,{crs={12800,12801,12802,12803}}),
 r(1248511,{awp=16001,b=1,crs={5336},itemID=249513,learnedAt=220,requireSkill=333,skillID=2940}),
 r(1244435,{awp=16001,crs={5236},itemID=255725,learnedAt=230,requireSkill=129,skillID=2942}),
 i(8705,{b=1,description="This item has a chance to drop from any creature in Feralas.",lvl=40}),
+r(1254998,{awp=16001,crs={5296},itemID=252909,learnedAt=230,requireSkill=165,skillID=2945}),
+r(1257472,{awp=16001,crs={5297},itemID=254094,learnedAt=225,requireSkill=197,skillID=2948}),
 r(12090,{awp=16001,crs={5333},itemID=254686,learnedAt=220,requireSkill=197,skillID=2948}),
+r(1254991,{awp=16001,crs={5262},itemID=252916,learnedAt=250,requireSkill=165,skillID=2945}),
 r(1252361,{awp=16001,b=1,crs={5232},itemID=251464,learnedAt=215,requireSkill=164,skillID=2938}),
+r(1252359,{awp=16001,b=1,crs={5249},itemID=251462,learnedAt=195,requireSkill=164,skillID=2938}),
+r(1251739,{awp=16001,crs={5363},itemID=250986,requireSkill=171}),
 r(1249960,{awp=16001,b=1,crs={5254},itemID=249882,learnedAt=180,requireSkill=185,skillID=2939})})}}),
 m(1450,{icon=135758,lore="Moonglade is both home of the Cenarion Circle and a haven for all druids. It is an uncorrupted neutral zone, protected by mountains and shrouded in green light, without any hostile mobs or gathering resources. The main village of Nighthaven is maintained by the Cenarion Circle and features druid trainers and a rare robe vendor, Geenia Sunshadow, who sells items like Formal Dangui.",g={
 h(-12,{
@@ -6084,6 +6109,8 @@ s(309068,274025,{b=1,f=9,minReputation={2765,42000}}),
 i(274379,{b=1,lvl=60,minReputation={2765,21000},questID=96411,spellID=1293805})}})}),
 h(-63,{
 p(5006,{crs={260422},itemID=11903,npcID=9936,spellID=15648}),
+r(1250146,{b=1,crs={249225},itemID=250177,learnedAt=275,requireSkill=185,skillID=2939}),
+r(1250145,{b=1,crs={249224},itemID=250176,learnedAt=275,requireSkill=185,skillID=2939}),
 s(308616,273828,{crs={264570,275174},f=28}),
 s(308619,273832,{crs={249551,275173},f=20})})}}),
 m(1412,{icon=236809,lore="A land of windswept mesas and grassy plains, Mulgore is the tauren's ancestral homeland. Centaur often send raiding parties into Mulgore, and the tauren, now with the help of their Horde allies, beat them back. Tauren are naturally a nomadic people, and their tent cities are scattered across the landscape and change with the seasons and the weather.\n\nNow that they are members of the Horde, the tauren have constructed several permanent settlements, including fortified Dalsh-Beran and their capital of Thunder Bluff.",g={
@@ -7352,6 +7379,7 @@ r(19048,{b=1,isLimited=1,itemID=15724,learnedAt=255,requireSkill=165,skillID=294
 r(19088,{b=1,isLimited=1,itemID=15762,learnedAt=270,requireSkill=165,skillID=2945})}})}),
 h(-63,{
 i(20404,{crs={11804,11880,11881,11882,11883,14479,15201,15213,15308,15541,15542}}),
+r(1257491,{awp=16001,crs={12178},itemID=254132,learnedAt=255,requireSkill=197,skillID=2948}),
 i(20424,{crs={11740,11741}}),
 i(20384,{crs={11698,11721,11722,11723,11724,11725,11726,11727,11728,11729,11730,11731,11732,11733,11734,13136,13301,15759},providers={{"i",20402}}}),
 s(164284,20408,{crs={11880,11881,11882,11883,14479,15201,15213,15541,15542},f=4,loc=40,lvl=60}),
@@ -8170,6 +8198,7 @@ n(8129,{coords={
 h(-63,{
 r(13882,{crs={5623,7805},itemID=11206,learnedAt=225,requireSkill=333,skillID=2940}),
 i(8623,{b=1,description="This item has a chance to drop from any creature in Tanaris and Zul'Farrak.",lvl=43}),
+r(1254999,{awp=16001,crs={5471},itemID=252908,learnedAt=230,requireSkill=165,skillID=2945}),
 r(10554,{crs={5615},itemID=8399,learnedAt=210,requireSkill=165,skillID=2945}),
 r(10533,{crs={5617},itemID=8397,learnedAt=195,requireSkill=165,skillID=2945}),
 r(10525,{crs={5618},itemID=8395,learnedAt=195,requireSkill=165,skillID=2945}),
@@ -8186,6 +8215,7 @@ i(9249,{description="Unlocks the Captain's Chest located in one of the ships har
 s(159303,9359,{description="This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",f=23,lvl=40})}}),
 r(1252294,{awp=16001,b=1,crs={7855},itemID=251397,learnedAt=220,requireSkill=164,skillID=2938}),
 r(1266918,{awp=16001,crs={5616},itemID=264215,learnedAt=215,requireSkill=202,skillID=2941}),
+r(1266922,{awp=16001,crs={5474},itemID=264219,learnedAt=240,requireSkill=202,skillID=2941}),
 i(8483,{crs={5615,5616,5617,5618,5623,7805}})})}}),
 m(1438,{icon=236740,lore="In the past few years, the night elves have moved their capital to an island off northwest Kalimdor. Here, the Circle of the Ancients and the wise druids pooled their power to create a great tree akin to the World Tree, but on a smaller scale.\n\nThey called this tree Teldrassil, meaning “Crown of the Earth,” and built their city of Darnassus atop it. The island takes the name of the tree as well, and a twilite forest now covers it.",g={
 m(460,{icon=236449,lore="Shadowglen is the starting area for night elves in the northeast part of Teldrassil, just north of Starbreeze Village. A small twilight field, bathed in a quiet dusk, the area is dominated by the great tree Aldrassil, which lies at the clearing's center. It has class trainers for all night elf classes. Another notable location is Shadowthread Cave, which lies in the region's extreme northwest. The area is ringed by mountains; the only gap is to the south, where the path headed to Dolanaar parts the mountain range.",zoneTextAreaIDs={188,256,257},g={
@@ -10308,9 +10338,14 @@ r(19084,{isLimited=1,itemID=15758,learnedAt=265,requireSkill=10660,skillID=2945}
 h(-63,{
 i(11116,{b=1,lvl=48}),
 i(280459,{awp=16001,b=1,crs={6505,6506,6507,6508,9162,9163,9164,9165,9166,9167,279811}}),
+r(1248505,{awp=16001,b=1,crs={6556},itemID=249515,learnedAt=245,requireSkill=333,skillID=2940}),
 i(12809,{crs={6560}}),
 i(20768,{crs={6557,6559,9477},sym={{"select","itemID",20769}}}),
-r(19097,{crs={6556,6557,6559,9477},itemID=15772,learnedAt=290,requireSkill=10660,skillID=2945})})}}),
+r(1255029,{awp=16001,crs={6557},itemID=252878,learnedAt=255,requireSkill=165,skillID=2945}),
+r(1254980,{awp=16001,crs={6527},itemID=252927,learnedAt=255,requireSkill=165,skillID=2945}),
+r(19097,{crs={6556,6557,6559,9477},itemID=15772,learnedAt=290,requireSkill=10660,skillID=2945}),
+r(1254993,{awp=16001,crs={6505},itemID=252914,learnedAt=240,requireSkill=165,skillID=2945}),
+r(1250150,{awp=16001,b=1,crs={6508},itemID=250181,learnedAt=180,requireSkill=185,skillID=2939})})}}),
 m(1452,{icon=236854,lore="Winterspring is a frosty valley in northern Kalimdor. This frigid zone is littered with night elven ruins, and serves as the primary home of the Blue Dragonflight in Kalimdor. The only settlement in Winterspring is Everlook, a Steamwheedle Cartel town that is neutral to both Horde and Alliance.",g={
 h(-12,{
 ach(857,{
@@ -10626,6 +10661,7 @@ i(12436,{crs={7428,7429},providers={{"i",12384}}}),
 i(12430,{crs={7430,7431,7432,7433,7434},providers={{"i",12384}}}),
 i(12435,{crs={7457,7458,7459,7460},providers={{"i",12384}}}),
 i(18704,{crs={7435,7436,7437,10196,10663,10664},lvl=60}),
+r(1255017,{awp=16001,crs={7440},itemID=252890,learnedAt=280,requireSkill=165,skillID=2945}),
 r(1257486,{awp=16001,crs={7523},itemID=254122,learnedAt=250,requireSkill=197,skillID=2948}),
 r(19087,{coords={
 [1452]={{33,36.8},{41.6,42.8}}},crs={7441},itemID=15761,learnedAt=270,requireSkill=10660,skillID=2945}),
@@ -10635,9 +10671,12 @@ r(19104,{coords={
 [1452]={{65.6,37.6},{69.6,38.2}}},crs={7438},itemID=15779,learnedAt=290,requireSkill=10660,skillID=2945}),
 r(18436,{b=1,crs={7437},itemID=14493,learnedAt=245,requireSkill=197,skillID=2948}),
 r(18405,{crs={7458},itemID=14468,learnedAt=215,requireSkill=197,skillID=2948}),
+r(1252340,{awp=16001,b=1,crs={7451},itemID=251443,learnedAt=270,requireSkill=164,skillID=2938}),
+r(1250147,{awp=16001,b=1,crs={7446},itemID=250178,learnedAt=275,requireSkill=185,skillID=2939}),
 r(17577,{crs={7437},itemID=13497,learnedAt=290,requireSkill=171,skillID=2937}),
 r(17575,{coords={
 [1452]={{61.8,68.6},{64.2,69}}},crs={7428},itemID=13495,learnedAt=290,requireSkill=171,skillID=2937}),
+r(1250149,{awp=16001,b=1,crs={7434},itemID=250180,learnedAt=275,requireSkill=185,skillID=2939}),
 r(19830,{coords={
 [1452]={{59.6,49}}},crs={7437},itemID=16054,learnedAt=300,requireSkill=202,skillID=2941}),
 i(12432,{crs={7443,7444,7445,7446},providers={{"i",12384}}}),
@@ -12978,6 +13017,7 @@ i(1993,{crs={2255},f=52,lvl=31}),
 r(6695,{crs={2434},itemID=5775,learnedAt=150,requireSkill=197,skillID=2948}),
 r(1252288,{awp=16001,b=1,crs={2252},itemID=251391,learnedAt=175,requireSkill=164,skillID=2938}),
 i(3745,{crs={2358},spellID=3407}),
+r(1317270,{awp=16001,crs={2287},itemID=284870,learnedAt=260,requireSkill=202,skillID=2941}),
 s(156367,1602,{coords={
 [1416]={{42.2,28.8},{42.8,31},{44.2,33.8},{44.4,30.4}}},crs={2287},f=21}),
 i(213421,{awp=16001,b=1,crs={2318,2319}}),
@@ -13432,8 +13472,11 @@ i(213422,{awp=16001,crs={2562,2564,2566,2567,2569,2570,2571}}),
 r(1244434,{awp=16001,coords={
 [1417]={{32.4,30.8}}},crs={2589},itemID=255723,learnedAt=175,requireSkill=129,skillID=2942}),
 i(1993,{crs={2567,2570},f=52,lvl=31}),
+r(1257432,{awp=16001,crs={2552},itemID=254014,learnedAt=145,requireSkill=197,skillID=2948}),
 r(1252283,{awp=16001,b=1,crs={2586},itemID=251386,learnedAt=150,requireSkill=164,skillID=2938}),
+r(1252290,{awp=16001,b=1,crs={2596},itemID=251393,learnedAt=195,requireSkill=164,skillID=2938}),
 s(156253,1297,{crs={2577},f=4,loc=42,lvl=26}),
+r(1266915,{awp=16001,crs={2570},itemID=264212,learnedAt=190,requireSkill=202,skillID=2941}),
 s(158028,5040,{collectible=false,coords={
 [1417]={{63.6,84.2}}},crs={2557},f=20,lvl=27}),
 s(157260,3345,{coords={
@@ -13759,6 +13802,7 @@ h(-63,{
 s(156926,2621,{coords={
 [1418]={{52.4,33.6},{53.6,31.8}}},crs={2740},f=4,loc=40}),
 p(56,{crs={2725},itemID=10822,npcID=7543,spellID=10695}),
+r(1248509,{awp=16001,b=1,crs={2720},itemID=249512,learnedAt=215,requireSkill=333,skillID=2940}),
 s(156358,1521,{coords={
 [1418]={{7.6,89.4},{10,92.6}}},crs={2719},f=22}),
 r(1259348,{awp=16001,crs={2739},itemID=255726,learnedAt=220,requireSkill=129,skillID=2942}),
@@ -13954,6 +13998,7 @@ r(18540,{b=1,c={9},crs={8716,12396},itemID=4213,lvl=60}),
 i(10593,{description="A rare zone drop from any creature in the zone."}),
 r(1254979,{awp=16001,crs={6004},itemID=252928,learnedAt=255,requireSkill=165,skillID=2945}),
 r(19051,{crs={5981},itemID=15727,learnedAt=240,requireSkill=165,skillID=2945}),
+r(1254976,{awp=16001,crs={6006},itemID=252931,learnedAt=260,requireSkill=165,skillID=2945}),
 i(8393,{crs={5988,8301}}),
 i(8391,{crs={5984,5985,8300}}),
 i(18665,{c={5},crs={8716,8717,8718,12396,12397},f=53,lvl=60}),
@@ -14103,6 +14148,7 @@ n(9544,{coords={
 [1428]={{66,22}}},g={
 r(12597,{b=1,isLimited=1,itemID=10602,learnedAt=210,requireSkill=202,skillID=2941})}})}),
 h(-63,{
+r(1255019,{awp=16001,crs={7025},itemID=252888,learnedAt=275,requireSkill=165,skillID=2945}),
 r(18418,{coords={
 [1428]={{43.8,39.4},{58.8,37.2}}},crs={7037},itemID=14482,learnedAt=230,requireSkill=197,skillID=2948}),
 r(18434,{coords={
@@ -14115,7 +14161,9 @@ r(19100,{coords={
 [1428]={{34.8,36.3},{36,36.6}}},crs={7029},itemID=15774,learnedAt=280,requireSkill=165,skillID=2945}),
 r(19059,{coords={
 [1428]={{80.4,45.8},{83.6,40}}},crs={7035},description="Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",itemID=15732,learnedAt=245,requireSkill=10658,skillID=2945}),
-r(17552,{crs={7027},itemID=13476,learnedAt=255,requireSkill=171,skillID=2937})})}}),
+r(17552,{crs={7027},itemID=13476,learnedAt=255,requireSkill=171,skillID=2937}),
+r(1266927,{awp=16001,crs={7033},itemID=264224,learnedAt=275,requireSkill=202,skillID=2941}),
+r(1266926,{awp=16001,crs={7037},itemID=264223,learnedAt=275,requireSkill=202,skillID=2941})})}}),
 m(1430,{icon=236741,lore="Deadwind Pass is a haunted forest and canyon on the edges of the Kingdom of Stormwind in the southern Eastern Kingdoms. Serving as borders between Duskwood and Swamp of Sorrows, evil magic can be felt all through the zone, the trees are all but dead, and very few wildlife and ogres can be found in the zone. Travelers are advised to go through the pass fast, as they might fall to the zone's foreboding magic.\n\nTrivia:\nMedivh, the last Guardian, made Deadwind Pass his final place. The tower of Karazhan to the south served as his bastion until his final days.\n\nThe Karazhan Crypts can be explored by players who kill themselves and traverse the gates as a ghost. The crypt is filled to the brim with disturbing content, the most disturbing being a pool filled with human bodies hanged upside down and roped to chains. This area became known to players as the Upside-Down Sinners.",g={
 h(-12,{
 ach(777,{
@@ -14134,7 +14182,11 @@ o(694054,{awp=16001,coords={
 [1430]={{52.4,34.4}}},g={
 r(1319313,{b=1,itemID=286153,learnedAt=225,requireSkill=185,skillID=2939})}})}),
 h(-63,{
-r(20010,{crs={7372},itemID=16246,learnedAt=295,requireSkill=333,skillID=2940})})}}),
+r(20010,{crs={7372},itemID=16246,learnedAt=295,requireSkill=333,skillID=2940}),
+r(1254971,{awp=16001,crs={7379},itemID=252936,learnedAt=280,requireSkill=165,skillID=2945}),
+r(1255018,{awp=16001,crs={7376},itemID=252889,learnedAt=280,requireSkill=165,skillID=2945}),
+r(1249962,{awp=16001,b=1,crs={7379},itemID=249884,learnedAt=250,requireSkill=185,skillID=2939}),
+r(1266928,{awp=16001,crs={7372},itemID=264225,learnedAt=285,requireSkill=202,skillID=2941})})}}),
 m(499,{icon=133861,lore="The Deeprun Tram is a long, fully enclosed, underground (and partially underwater) set of double tracks upon which rolls two sets of three wagons, all credited to the gnomes' technical engineering. The service is fast and smooth, and is provided free of charge to travelers between the Alliance-aligned cities of Ironforge and Stormwind City.",zoneTextAreaID=2257,g={
 h(-58,{
 n(13018,{r=2,g={
@@ -15674,15 +15726,21 @@ r(20016,{crs={9447},itemID=16222,learnedAt=280,requireSkill=333,skillID=2940}),
 i(18512,{crs={8603,8605}}),
 i(20768,{crs={8603,8605},g={
 p(114,{itemID=20769,npcID=15429,spellID=25162})}}),
+r(1254973,{awp=16001,crs={11291},itemID=252934,learnedAt=270,requireSkill=165,skillID=2945}),
 r(18413,{crs={8538},itemID=14477,learnedAt=225,requireSkill=197,skillID=2948}),
 r(18416,{crs={8538},itemID=14480,learnedAt=225,requireSkill=197,skillID=2948}),
+r(1254972,{awp=16001,crs={8597},itemID=252935,learnedAt=280,requireSkill=165,skillID=2945}),
+r(1255022,{awp=16001,crs={8534},itemID=252885,learnedAt=270,requireSkill=165,skillID=2945}),
 r(18421,{crs={8551},itemID=14485,learnedAt=230,requireSkill=197,skillID=2948}),
 r(18446,{crs={8526},itemID=14500,learnedAt=255,requireSkill=197,skillID=2948}),
 r(18450,{crs={8526},itemID=14505,learnedAt=260,requireSkill=197,skillID=2948}),
+r(1252341,{awp=16001,b=1,crs={8600},itemID=251444,learnedAt=270,requireSkill=164,skillID=2938}),
+r(1250144,{awp=16001,b=1,crs={8602},itemID=250175,learnedAt=275,requireSkill=185,skillID=2939}),
 r(17555,{crs={9449,9450,9451,9452},itemID=13479,learnedAt=270,requireSkill=171,skillID=2937}),
 r(17578,{coords={
 [1423]={{41,50.2},{67.8,39.8},{83.6,44}}},crs={8546,8550},itemID=13499,learnedAt=290,requireSkill=171,skillID=2937}),
 i(12811,{crs={12339},description="Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands."}),
+r(1266929,{awp=16001,crs={8527},itemID=264226,learnedAt=285,requireSkill=202,skillID=2941}),
 r(19833,{coords={
 [1423]={{65.4,22.6},{68.8,20.6},{72.8,15.2}}},crs={8561},description="Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",itemID=16056,learnedAt=300,requireSkill=202,skillID=2941})})}}),
 m(1429,{icon=236761,lore="Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",g={
@@ -18334,12 +18392,17 @@ h(-63,{
 i(18944,{crs={9318}}),
 i(11818,{crs={5840,5844,5846,8504,8566,15692},lvl=43}),
 r(1255048,{awp=16001,crs={5846},itemID=252859,learnedAt=235,requireSkill=165,skillID=2945}),
+r(1254992,{awp=16001,crs={9318},itemID=252915,learnedAt=240,requireSkill=165,skillID=2945}),
 r(18412,{coords={
 [1427]={{19.4,36.6},{25.4,25.4}}},crs={5861},itemID=14476,learnedAt=225,requireSkill=197,skillID=2948}),
 r(18408,{coords={
 [1427]={{19.4,36.6},{25.4,25.4}}},crs={5861},itemID=14471,learnedAt=215,requireSkill=197,skillID=2948}),
+r(1257463,{awp=16001,crs={5852},itemID=254076,learnedAt=215,requireSkill=197,skillID=2948}),
+r(12087,{awp=16001,crs={5856},itemID=254685,learnedAt=215,requireSkill=197,skillID=2948}),
+r(1252336,{awp=16001,b=1,crs={8566},itemID=251439,learnedAt=240,requireSkill=164,skillID=2938}),
 r(26277,{coords={
-[1427]={{37,42.8},{39,50.8},{41.6,42.2},{43.6,27.6},{63.6,59},{65.4,65.6}}},crs={5844,5846,8637},itemID=21547,learnedAt=250,requireSkill=171,skillID=2937})})}}),
+[1427]={{37,42.8},{39,50.8},{41.6,42.2},{43.6,27.6},{63.6,59},{65.4,65.6}}},crs={5844,5846,8637},itemID=21547,learnedAt=250,requireSkill=171,skillID=2937}),
+r(1266917,{awp=16001,crs={5839},itemID=264214,learnedAt=215,requireSkill=202,skillID=2941})})}}),
 m(1421,{icon=236830,lore="Silverpine Forest is a vast ancient wood that runs along Lordaeron's rugged western coast. The land ranges from fairly flat to hilly, and is nestled among even taller mountains. The forest is eerily silent save for the occasional unnatural howling echoing among the trees. Mossy overhangs shiver in the cold breeze, and the trees are all sickly or dying. Dilapidated farmsteads and abandoned mines dot the land, home now to the darker denizens of the woods.\n\nThis woodland is haunted and wild, characterized by its tall, silver-barked pines towering over grassy knolls. The Alliance once protected Silverpine Forest when it was verdant and lively. Now the place is shrouded in ghostly mists. Forsaken control the northern forest. What remains of the human population retains control of the southern forest, but they are desperate and their forces thinly stretched. Dalaran sends frequent expeditions into Silverpine to defend these people and study the undead plague and worgen curse — a mysterious affliction that causes its victims to transform into bloodthirsty, lycanthropic worgen when the moon rises.",g={
 h(-12,{
 ach(769,{
@@ -19555,6 +19618,7 @@ r(1252285,{awp=16001,b=1,crs={937},itemID=251388,learnedAt=165,requireSkill=164,
 i(251395,{awp=16001,crs={1907},f=200}),
 s(156556,1997,{crs={701},f=4,loc=42}),
 r(11458,{description="Can drop from any troll in The Hinterlands or Stranglethorn Vale.",itemID=9294,learnedAt=225,requireSkill=171,skillID=2937}),
+r(1266913,{awp=16001,crs={1094},itemID=264210,learnedAt=175,requireSkill=202,skillID=2941}),
 s(156372,1624,{crs={781,783},f=6,loc=40}),
 s(156377,1664,{crs={676},f=28}),
 i(1652,{crs={675,14492},f=113}),
@@ -19819,7 +19883,9 @@ r(1259341,{awp=16001,coords={
 [1435]={{64.2,20.6}}},crs={760},itemID=255728,learnedAt=230,requireSkill=129,skillID=2942}),
 s(158359,6196,{b=1,crs={5477},f=23,lvl=29}),
 p(59,{crs={741},itemID=8498,npcID=7545,spellID=10698}),
-r(1252360,{awp=16001,b=1,crs={759},itemID=251463,learnedAt=210,requireSkill=164,skillID=2938})})}}),
+r(1252360,{awp=16001,b=1,crs={759},itemID=251463,learnedAt=210,requireSkill=164,skillID=2938}),
+r(1250155,{awp=16001,b=1,crs={1106},itemID=250186,learnedAt=175,requireSkill=185,skillID=2939}),
+r(1249961,{awp=16001,b=1,crs={752},itemID=249883,learnedAt=200,requireSkill=185,skillID=2939})})}}),
 m(1425,{icon=236780,lore="The Hinterlands, located in the Northern part of the Eastern Kingdoms, are probably most notable for the Wildhammer dwarves who make their residence at Aerie Peak in the west. The Wildhammers have always been staunch allies of the Alliance. It is from the Hinterlands that these dwarves find and tame their world-renowned gryphons. The Razorbeak gryphons roam wild in this region.\n\nAlso in the Hinterlands is one of the last remaining settlements of the high elves in Lordaeron at the Quel'Danil Lodge.\n\nThe Hinterlands are also home to a large population of forest trolls, which are divided into three separate tribes. The Revantusk tribe is the only one of the three that has declared sides in the Horde/Alliance conflict and support the warchief Thrall of the Horde. The Vilebranch tribe holds residence in the massive troll city of Jintha'Alor as well as the Altar of Zul while the Witherbark tribe holds the smallest influence, hailing from the temples of Shadra'Alor.",g={
 h(-12,{
 ach(773,{
@@ -20120,7 +20186,10 @@ i(8704,{b=1,description="This item can drop off of any hostile creature in the z
 r(1257464,{awp=16001,crs={4467},itemID=254078,learnedAt=215,requireSkill=197,skillID=2948}),
 r(19086,{coords={
 [1425]={{61.2,68.4},{63.8,73.6},{68.2,75}}},crs={2644},itemID=15760,learnedAt=265,requireSkill=10660,skillID=2945}),
+r(1252293,{awp=16001,b=1,crs={2653},itemID=251396,learnedAt=220,requireSkill=164,skillID=2938}),
+r(1251745,{awp=16001,crs={2640},itemID=250992,requireSkill=171}),
 r(11458,{description="Can drop from any troll in The Hinterlands or Stranglethorn Vale.",itemID=9294,learnedAt=225,requireSkill=171,skillID=2937}),
+r(1266921,{awp=16001,crs={2656},itemID=264218,learnedAt=240,requireSkill=202,skillID=2941}),
 i(9259,{description="Can drop from any troll in The Hinterlands."}),
 i(8153,{description="Can drop from any troll in The Hinterlands or Stranglethorn Vale."})})}}),
 m(1420,{icon=236849,lore="On the northern coast of Lordaeron lies the eerie Tirisfal Glades. The unofficial kingdom to the Forsaken, servants of the Banshee Queen Sylvanas Windrunner, the wooded hills are seeped through with the curse of the Lich King's plague. The sky over Tirisfal is eternally gloomy and tinted a blighted green, and the trees and other flora desperately cling to their last shreds of life.\n\nAlthough tainted and melancholy, Tirisfal still very much has its own unique, haunting beauty, particularly in such areas as the stony North Coast, the village of Brill, and the deep atmosphere of the ruined Agamand Mills.\n\nTirisfal Glades is home not only to the Forsaken, but to their enemies as well. The Scarlet Crusade has several outposts here, including the seat of their religious faith, the Scarlet Monastery. The minions of the Scourge are also ever present, tainting the derelict farmsteads and dilapidated mills with their foul presence.",g={
@@ -21152,8 +21221,13 @@ i(12841,{b=1,description="Can drop from any Undead mobs in the Plaguelands and a
 i(12840,{b=1,description="Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets."}),
 i(20768,{crs={1806,1808,12387},sym={{"select","itemID",20769}}}),
 i(13357,{b=1,cost={{"i",13370,1}},description="These only drop from skeletal mobs in Western Plaguelands while you have Vitreous Focuser in your inventory."}),
+r(1255026,{awp=16001,crs={1831},itemID=252881,learnedAt=260,requireSkill=165,skillID=2945}),
+r(1254977,{awp=16001,crs={1784},itemID=252930,learnedAt=255,requireSkill=165,skillID=2945}),
+r(1257494,{awp=16001,crs={1795},itemID=254138,learnedAt=260,requireSkill=197,skillID=2948}),
+r(1257485,{awp=16001,crs={1785},itemID=254120,learnedAt=240,requireSkill=197,skillID=2948}),
 r(19095,{coords={
 [1422]={{62.4,36.2},{64.6,36}}},crs={1813},itemID=15771,learnedAt=290,requireSkill=10658,skillID=2945}),
+r(1255027,{awp=16001,crs={1809},itemID=252880,learnedAt=260,requireSkill=165,skillID=2945}),
 r(16665,{b=1,crs={1836},itemID=12707,learnedAt=300,requireSkill=164,skillID=2938}),
 r(11466,{crs={1783,1791},itemID=9296,learnedAt=240,requireSkill=171,skillID=2937}),
 r(17576,{crs={1812,1813},itemID=13496,learnedAt=290,requireSkill=171,skillID=2937}),

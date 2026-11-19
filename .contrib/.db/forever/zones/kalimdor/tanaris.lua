@@ -1514,6 +1514,10 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			i(8623, {	-- OOX-17/TN Distress Beacon
 				description = "This item has a chance to drop from any creature in Tanaris and Zul'Farrak.",
 			}),
+			i(252908, {	-- Pattern: Supple Scorpid Boots (RECIPE!)
+				cr = 5471,	-- Dunemaul Ogre
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(8399, {	-- Pattern: Tough Scorpid Boots (RECIPE!)
 				cr = 5615,	-- Wastewander Rogue
 			}),
@@ -1570,6 +1574,10 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			i(264215, {	-- Schematic: SAF-T Bomb (RECIPE!)
 				cr = 5616,	-- Wastewander Thief
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(264219, {	-- Schematic: Tru-Trigger Frag Bomb (RECIPE!)
+				cr = 5474,	-- Dunemaul Brute
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(8483, {	-- Wastewander Water Pouch

@@ -851,6 +851,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				cr = 759,	-- Lost One Hunter
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(250186, {	-- Recipe: Giant Scrambled Eggs (RECIPE!)
+				cr = 1106,	-- Lost One Cook
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(249883, {	-- Recipe: Sunny Tea (RECIPE!)
+				cr = 752,	-- Marsh Oracle
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 	},
 });

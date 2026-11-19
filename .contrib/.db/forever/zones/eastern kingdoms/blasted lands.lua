@@ -554,6 +554,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 			i(15727, {	-- Pattern: Heavy Scorpid Vest (RECIPE!)
 				cr = 5981,	-- Portal Seeker
 			}),
+			i(252931, {	-- Pattern: Supple Scorpid Helm (RECIPE!)
+				cr = 6006,	-- Shadowsworn Adept
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(8393, {	-- Scorpok Pincer
 				crs = {
 					8301,	-- Clack the Reaver

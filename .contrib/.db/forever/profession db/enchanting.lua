@@ -191,6 +191,13 @@ i(249511, 1248510);	-- Enchant 2H Weapon - Lesser Agility
 i(249513, 1248511);	-- Enchant 2H Weapon - Lesser Strength
 i(274424, 1294054);	-- Enchant Gloves - Lotus Claw
 i(273116, 1263082);	-- Arcane Forge
+i(249488, 1248497);	-- Enchant Bracer - Agility
+i(249512, 1248509);	-- Dreambough Wand
+i(249514, 1248500);	-- Enchant Bracer - Greater Agility
+i(249515, 1248505);	-- Lesser Eternal Wand
+i(249516, 1248528);	-- Enchant Gloves - Advanced Skinning
+i(249523, 1248668);	-- Enchant 2H Weapon - Strength
+i(249524, 1248599);	-- Enchant Bracer - Superior Agility
 --- UNKNOWN ---
 --[[
 r(1217189),	-- Enchant Bracer - Spell Power
@@ -215,26 +222,12 @@ i(274400),	-- Formula: Enchant Shield - Critical Strike
 r(1231164),	-- Enchant Weapon - Grand Sorcerer
 i(241201),	-- Formula: Enchant Weapon - Grand Sorcerer
 i(273609),	-- Enchant Weapon - Grand Sorcerer
-r(1248497),	-- Enchant Bracer - Agility
-i(249488),	-- Formula: Enchant Bracer - Agility
 i(273614),	-- Enchant Bracer - Agility
-r(1248509),	-- Dreambough Wand
-i(249512),	-- Formula: Dreambough Wand
-r(1248500),	-- Enchant Bracer - Greater Agility
-i(249514),	-- Formula: Enchant Bracer - Greater Agility
-r(1248505),	-- Lesser Eternal Wand
-i(249515),	-- Formula: Lesser Eternal Wand
-r(1248528),	-- Enchant Gloves - Advanced Skinning
-i(249516),	-- Formula: Enchant Gloves - Advanced Skinning
 r(1248515),	-- Greater Eternal Wand
 i(249522),	-- Formula: Greater Eternal Wand
 r(1249107),	-- Frozen Heart of the Mountain
 r(1249112),	-- Molten Heart of the Mountain
 r(1249114),	-- Dormant Heart of the Mountain
-r(1248668),	-- Enchant 2H Weapon - Strength
-i(249523),	-- Formula: Enchant 2H Weapon - Strength
-r(1248599),	-- Enchant Bracer - Superior Agility
-i(249524),	-- Formula: Enchant Bracer - Superior Agility
 -- new raid?
 r(1306520),	-- Torch of Light
 r(1306521),	-- Steadfast Libram

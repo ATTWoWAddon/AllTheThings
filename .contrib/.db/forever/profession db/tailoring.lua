@@ -350,6 +350,9 @@ i(254134, 1257492);	-- Mooncloth Reagent Bag
 i(254048, 1257449);	-- Radiant Cord
 i(254686, 12090);	-- Stormcloth Boots
 i(254682, 12063);	-- Stormcloth Gloves
+i(254685, 12087);	-- Stormcloth Shoulders
+i(254681, 12062);	-- Stormcloth Pants
+i(254684, 12083);	-- Stormcloth Headband
 i(275580, 1297120);	-- Venomspew Gloves
 i(275581, 1297121);	-- Venomspew Cord
 i(275582, 1297122);	-- Venomspew Footpads
@@ -357,50 +360,38 @@ i(275583, 1297123);	-- Swarmtender's Gloves
 i(275584, 1297124);	-- Swarmtender's Cord
 i(275585, 1297125);	-- Swarmtender's Footpads
 i(273124, 1263080);	-- Loom
+i(254014, 1257432);	-- Earthen Silk Slippers
+i(254074, 1257462);	-- Ghostweave Cord
+i(254076, 1257463);	-- Earthenweave Gloves
+i(254094, 1257472);	-- Earthenweave Boots
+i(254120, 1257485);	-- Earthenweave Mantle
+i(254126, 1257488);	-- Earthenweave Leggings
+i(254132, 1257491);	-- Earthenweave Cuffs
+i(254138, 1257494);	-- Earthenweave Crown
+i(254140, 1257495);	-- Bottomless Reagent Bag
 --- UNSURE ---
 i(0, 26086);		-- Felcloth Bag
 --[[
 -- unknown
 r(1257476),	-- Black Gloves
-r(1257495),	-- Bottomless Reagent Bag
-r(1257432),	-- Earthen Silk Slippers
-r(1257472),	-- Earthenweave Boots
-r(1257494),	-- Earthenweave Crown
-r(1257491),	-- Earthenweave Cuffs
-r(1257463),	-- Earthenweave Gloves
-r(1257488),	-- Earthenweave Leggings
-r(1257485),	-- Earthenweave Mantle
 r(1306545),	-- Felblood Soul Bag
 r(1257475),	-- Fiery Gloves
 r(1257474),	-- Frothing Gloves
 r(1257490),	-- Ghostweave Boots
-r(1257462),	-- Ghostweave Cord
 r(1257493),	-- Ghostweave Hood
 r(1257489),	-- Ghostweave Mantle
 r(1257473),	-- Gilded Gloves
 r(1257477),	-- Golden Gloves
 i(254102),	-- Pattern: Black Gloves
-i(254140),	-- Pattern: Bottomless Reagent Bag
-i(254014),	-- Pattern: Earthen Silk Slippers
-i(254094),	-- Pattern: Earthenweave Boots
-i(254138),	-- Pattern: Earthenweave Crown
-i(254132),	-- Pattern: Earthenweave Cuffs
-i(254076),	-- Pattern: Earthenweave Gloves
-i(254126),	-- Pattern: Earthenweave Leggings
-i(254120),	-- Pattern: Earthenweave Mantle
 i(279320),	-- Pattern: Felblood Soul Bag
 i(254100),	-- Pattern: Fiery Gloves
 i(254098),	-- Pattern: Frothing Gloves
 i(254130),	-- Pattern: Ghostweave Boots
-i(254074),	-- Pattern: Ghostweave Cord
 i(254136),	-- Pattern: Ghostweave Hood
 i(254128),	-- Pattern: Ghostweave Mantle
 i(254096),	-- Pattern: Gilded Gloves
 i(254104),	-- Pattern: Golden Gloves
 i(254106),	-- Pattern: Radiant Gloves
-i(254684),	-- Pattern: Stormcloth Headband
-i(254681),	-- Pattern: Stormcloth Pants
-i(254685),	-- Pattern: Stormcloth Shoulders
 i(254683),	-- Pattern: Stormcloth Vest
 r(1257478),	-- Radiant Gloves
 i(10324, 12090);	-- Stormcloth Boots

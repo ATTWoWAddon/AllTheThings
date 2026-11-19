@@ -1685,12 +1685,32 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 			i(8705, {	-- OOX-22/FE Distress Beacon
 				description = "This item has a chance to drop from any creature in Feralas.",
 			}),
+			i(252909, {	-- Pattern: Charged Scorpid Belt (RECIPE!)
+				cr = 5296,	-- Rage Scar Yeti
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(254094, {	-- Pattern: Earthenweave Boots (RECIPE!)
+				cr = 5297,	-- Elder Rage Scar
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(254686, {	-- Pattern: Stormcloth Boots (RECIPE!)
 				cr = 5333,	-- Hatecrest Serpent Guard
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(252916, {	-- Pattern: Supple Scorpid Bracers (RECIPE!)
+				cr = 5262,	-- Groddoc Thunderer
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(251464, {	-- Plans: Charged Mithril Battleaxe (RECIPE!)
 				cr = 5232,	-- Gordunni Brute
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251462, {	-- Plans: Mithril Claymore (RECIPE!)
+				cr = 5249,	-- Woodpaw Mongrel
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(250986, {	-- Recipe: Superior Frenzy Potion (RECIPE!)
+				cr = 5363,	-- Northspring Roguefeather
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(249882, {	-- Recipe: Triage Tea (RECIPE!)

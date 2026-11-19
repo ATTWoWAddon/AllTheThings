@@ -165,6 +165,12 @@ i(250999, 1251753);	-- Potion of Beast Culling
 i(250998, 1251752);	-- Potion of Elemental Siphoning
 --[[
 i(273112, 1263078);	-- Alchemy Laboratory
+i(250363, 1250776);	-- Draught of Predatory Senses
+i(250370, 1250783);	-- Elixir of Fortitude
+i(250385, 1250798);	-- Elixir of Strength
+i(250980, 1251733);	-- Superior Spellblasting Potion
+i(250986, 1251739);	-- Superior Frenzy Potion
+i(250992, 1251745);	-- Superior Mender's Potion
 --- UNKNOWN ---
 r(2365),	-- Draught of Tongues
 i(2556),	-- TODO: Item name not known yet.
@@ -173,18 +179,6 @@ i(13517),	-- Recipe: Alchemists' Stone
 r(24266),	-- Gurubashi Mojo Madness
 r(1250775),	-- Revealing Draught
 i(250362),	-- TODO: Item name not known yet.
-r(1250783),	-- Elixir of Fortitude
-i(250370),	-- Recipe: Elixir of Fortitude
-r(1250798),	-- Elixir of Strength
-i(250385),	-- Recipe: Elixir of Strength
-r(1250776),	-- Draught of Predatory Senses
-i(250363),	-- Recipe: Draught of Predatory Senses
-r(1251745),	-- Superior Mender's Potion
-i(250992),	-- Recipe: Superior Mender's Potion
-r(1251733),	-- Superior Spellblasting Potion
-i(250980),	-- Recipe: Superior Spellblasting Potion
-r(1251739),	-- Superior Frenzy Potion
-i(250986),	-- Recipe: Superior Frenzy Potion
 r(1244421),	-- Distilled Firewater
 i(236754),	-- Recipe: Distilled Firewater
 r(1317279),	-- Transmute: Legionite

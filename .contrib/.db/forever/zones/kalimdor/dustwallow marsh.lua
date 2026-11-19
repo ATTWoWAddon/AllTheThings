@@ -1297,6 +1297,10 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				cr = 4359,	-- Mirefin Murloc
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(254684, {	-- Pattern: Stormcloth Headband (RECIPE!)
+				cr = 4334,	-- Firemane Flamecaller
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(251459, {	-- Plans: Mithril Shortsword (RECIPE!)
 				cr = 4362,	-- Mirefin Coastrunner
 				timeline = { TIMELINE.ADDED_1_60_1 },

@@ -868,6 +868,10 @@ instanceroot(228, {	-- Blackrock Depths
 					10043,	-- Ribbly's Crony
 				},
 			}),
+			i(251467, {	-- Plans: Thorium Poleaxe (RECIPE!)
+				cr = 8893,	-- Anvilrage Soldier
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(16049, {	-- Schematic: Dark Iron Bomb (RECIPE!)
 				cr = 8920,	-- Weapon Technician
 			}),

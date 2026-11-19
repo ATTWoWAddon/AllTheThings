@@ -1099,6 +1099,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			i(3745, {	-- Rune of Opening
 				cr = 2358,	-- Dalaran Summoner
 			}),
+			i(284870, {	-- Schematic: Unsanctified Grenade (RECIPE!)
+				cr = 2287,	-- Crushridge Warmonger
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(1602, {	-- Sickle Axe
 				cr = 2287,	-- Crushridge Warmonger
 				coords = {

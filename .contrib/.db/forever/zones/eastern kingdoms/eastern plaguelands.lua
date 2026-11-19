@@ -1533,11 +1533,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					i(20769),	-- Disgusting Oozeling (PET!)
 				},
 			}),
+			i(252934, {	-- Pattern: Charged Scorpid Leggings (RECIPE!)
+				cr = 11291,	-- Unliving Mossflayer
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(14477, {	-- Pattern: Ghostweave Gloves (RECIPE!)
 				cr = 8538,	-- Unseen Servant
 			}),
 			i(14480, {	-- Pattern: Ghostweave Vest (RECIPE!)
 				cr = 8538,	-- Unseen Servant
+			}),
+			i(252935, {	-- Pattern: Supple Scorpid Sabatons (RECIPE!)
+				cr = 8597,	-- Plaguehound
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252885, {	-- Pattern: Tooled Leather Bracers (RECIPE!)
+				cr = 8534,	-- Putrid Gargoyle
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(14485, {	-- Pattern: Wizardweave Leggings (RECIPE!)
 				cr = 8551,	-- Dark Summoner
@@ -1547,6 +1559,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			}),
 			i(14505, {	-- Pattern: Wizardweave Turban (RECIPE!)
 				cr = 8526,	-- Dark Caster
+			}),
+			i(251444, {	-- Plans: Blessed Plate Belt (RECIPE!)
+				cr = 8600,	-- Plaguebat
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(250175, {	-- Recipe: Bat Hachee (RECIPE!)
+				cr = 8602,	-- Monstrous Plaguebat
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(13479, {	-- Recipe: Elixir of the Sages (RECIPE!)
 				crs = {
@@ -1570,6 +1590,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 			i(12811, {	-- Righteous Orb
 				description = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
 				cr = 12339,	-- Demetria <The Scarlet Oracle>
+			}),
+			i(264226, {	-- Schematic: EZ-Thro Thorium Grenade (RECIPE!)
+				cr = 8527,	-- Scourge Guard
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(16056, {	-- Schematic: Flawless Arcanite Rifle (RECIPE!)
 				description = "Can kill Mossflayer Scout and Mossflayer Cannibal to get Shadowhunters.",

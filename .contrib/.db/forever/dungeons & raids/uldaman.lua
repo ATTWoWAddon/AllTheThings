@@ -356,6 +356,10 @@ instanceroot(239, {	-- Uldaman
 			}),
 		}),
 		n(ZONE_DROPS, {
+			i(264213, {	-- Schematic: EZ-Thro Grenade (RECIPE!)
+				cr = 7030,	-- Shadowforge Geologist
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(7666),	-- Shattered Necklace
 			i(9420),	-- Adventurer's Pith Helmet
 			i(9392),	-- Annealed Blade

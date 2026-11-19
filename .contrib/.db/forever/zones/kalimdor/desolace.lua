@@ -1661,8 +1661,16 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					4684,	-- Nether Sorceress
 				},
 			}),
+			i(249488, {	-- Formula: Enchant Bracer - Agility (RECIPE!)
+				cr = 4681,	-- Mage Hunter
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(254016, {	-- Pattern: Earthen Silk Hood (RECIPE!)
 				cr = 4719,	-- Slitherblade Sea Witch
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(254681, {	-- Pattern: Stormcloth Pants (RECIPE!)
+				cr = 4658,	-- Maraudine Stormer
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251387, {	-- Plans: Hard Gold Bracers (RECIPE!)
@@ -1674,6 +1682,14 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					11559,	-- Outcast Necromancer
 					253272,	-- Magram Necromancer
 				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(250370, {	-- Recipe: Elixir of Fortitude (RECIPE!)
+				cr = 4632,	-- Kolkar Centaur
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(250363, {	-- Recipe: Potion of Predatory Senses (RECIPE!)
+				cr = 4684,	-- Nether Sorceress
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(6074, {	-- War Horn Mouthpiece

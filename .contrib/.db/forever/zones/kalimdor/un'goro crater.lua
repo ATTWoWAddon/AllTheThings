@@ -852,6 +852,10 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					279811,	-- Young Diemetradon
 				},
 			}),
+			i(249515, {	-- Formula: Lesser Eternal Wand (RECIPE!)
+				cr = 6556,	-- Muculent Ooze
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(12809, {	-- Guardian Stone
 				cr = 6560,	-- Stone Guardian
 			}),
@@ -863,6 +867,14 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				},
 				sym = {{"select","itemID", 20769}},	-- Disgusting Oozeling (PET!)
 			}),
+			i(252878, {	-- Pattern: Blue Suede Pants (RECIPE!)
+				cr = 6557,	-- Primal Ooze
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252927, {	-- Pattern: Charged Scorpid Bracers (RECIPE!)
+				cr = 6527,	-- Tar Creeper
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(15772, {	-- Pattern: Devilsaur Leggings (RECIPE!)
 				crs = {
 					9477,	-- Cloned Ooze
@@ -870,6 +882,14 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 					6556,	-- Muculent Ooze
 					6557,	-- Primal Ooze
 				},
+			}),
+			i(252914, {	-- Pattern: Supple Scorpid Leggings (RECIPE!)
+				cr = 6505,	-- Ravasaur
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(250181, {	-- Recipe: Raging Raptor Ribs (RECIPE!)
+				cr = 6508,	-- Venomhide Ravasaur
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
 	},

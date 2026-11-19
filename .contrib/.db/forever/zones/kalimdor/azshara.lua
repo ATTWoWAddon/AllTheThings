@@ -1384,6 +1384,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			}),
 		}),
 		n(ZONE_DROPS, {
+			i(249516, {	-- Formula: Enchant Gloves - Advanced Skinning (RECIPE!)
+				cr = 6196,	-- Spitelash Myrmidon
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(16219, {	-- Formula: Enchant Gloves - Greater Agility
 				cr = 6201,	-- Legashi Rogue
 			}),
@@ -1396,8 +1400,20 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					{ 70.4, 17.6, MAP.AZSHARA },
 				},
 			}),
+			i(252886, {	-- Pattern: Blue Suede Belt (RECIPE!)
+				cr = 7885,	-- Spitelash Battlemaster
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252932, {	-- Pattern: Charged Scorpid Vest (RECIPE!)
+				cr = 6195,	-- Spitelash Siren
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(14473, {	-- Pattern: Ghostweave Belt (RECIPE!)
 				cr = 7864,	-- Lingering Highborne
+			}),
+			i(254074, {	-- Pattern: Ghostweave Cord (RECIPE!)
+				cr = 6126,	-- Haldarr Trickster
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(14477, {	-- Pattern: Ghostweave Gloves (RECIPE!)
 				cr = 7864,	-- Lingering Highborne
@@ -1408,11 +1424,23 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			i(15764, {	-- Pattern: Stormshroud Shoulders (RECIPE!)
 				cr = 6144,	-- Son of Arkkoroc
 			}),
+			i(252858, {	-- Pattern: Tooled Leather Belt (RECIPE!)
+				cr = 6116,	-- Highborne Apparition
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(15728, {	-- Pattern: Wicked Leather Bracers (RECIPE!)
 				cr = 6201,	-- Legashi Rogue
 			}),
+			i(251438, {	-- Plans: Blessed Plate Pauldrons (RECIPE!)
+				cr = 6117,	-- Highborne Lichling
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(251441, {	-- Plans: Imperial Plate Gauntlets (RECIPE!)
 				cr = 6199,	-- Blood Elf Reclaimer
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(250189, {	-- Recipe: Clam Linguine (RECIPE!)
+				cr = 7886,	-- Spitelash Enchantress
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(13491, {	-- Recipe: Elixir of the Mongoose (RECIPE!)
@@ -1421,6 +1449,14 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					{ 53.6, 23.8, MAP.AZSHARA },
 				},
 				cr = 6201,	-- Legashi Rogue
+			}),
+			i(250980, {	-- Recipe: Superior Spellblasting Potion (RECIPE!)
+				cr = 6193,	-- Spitelash Screamer
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(264231, {	-- Schematic: EZ and SAF Field Transporter: Mt. Hyjal (RECIPE!)
+				cr = 250027,	-- Blackmaw Headhunter
+				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(16045, {	-- Schematic: Spellpower Goggles Xtreme Plus (RECIPE!)
 				cr = 6195,	-- Spitelash Siren

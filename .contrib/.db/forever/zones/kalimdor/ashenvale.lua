@@ -1508,6 +1508,10 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				cr = 3757,	-- Xavian Hellcaller
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(250385, {	-- Recipe: Elixir of Strength (RECIPE!)
+				cr = 3931,	-- Shadethicket Oracle
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(16645),	-- Shredder Operating Manual - Page 1
 			i(16646),	-- Shredder Operating Manual - Page 2
 			i(16647),	-- Shredder Operating Manual - Page 3

@@ -1966,6 +1966,12 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 			i(11903, {	-- Cat Carrier (Corrupted Kitten) (PET!)
 				cr = 260422,	-- Ashen Acolyte
 			}),
+			i(250177, {	-- Recipe: Flank au Poivre (RECIPE!)
+				cr = 249225,	-- Ghostfang Alpha
+			}),
+			i(250176, {	-- Recipe: Savory Turtle Stew (RECIPE!)
+				cr = 249224,	-- Child of Tortolla
+			}),
 			i(273828, {	-- Recoiling Gnarlybark Staff
 				crs = {
 					264570,	-- Blackthorne Adept
