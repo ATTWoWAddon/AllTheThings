@@ -2478,6 +2478,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			n(2843, {	-- Jutak <Blade Trader>
 				coord = { 27.5, 77.5, MAP.STRANGLETHORN_VALE },
+				sym = {{ "select", "itemID",
+					2520,	-- Broadsword
+					2521,	-- Flamberge
+					2526,	-- Main Gauche
+					2529,	-- Zweihander
+				}},
 				groups = {
 					i(12248, {	-- Daring Dirk
 						isLimited = true,
