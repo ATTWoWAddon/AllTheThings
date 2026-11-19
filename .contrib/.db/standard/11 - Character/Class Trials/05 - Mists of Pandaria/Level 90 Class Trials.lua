@@ -95,9 +95,9 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 						i(101047),	-- Springrain Britches
 						i(101044),	-- Springrain Boots
 						i(101039),	-- Springrain Band of Wisdom
-						i(101040),	-- Springrain Ring of Wisom
+						i(101040),	-- Springrain Ring of Wisdom
 						i(101038),	-- Springrain Idol of Wisdom
-						i(101041),	-- Springrain Stone of Wisom
+						i(101041),	-- Springrain Stone of Wisdom
 					}),
 				}),
 				cl(HUNTER, {

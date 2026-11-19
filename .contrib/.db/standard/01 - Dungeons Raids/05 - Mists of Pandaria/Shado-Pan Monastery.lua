@@ -220,7 +220,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(80916, {	-- Shadowspine Shoulderguards
 							timeline = { REMOVED_7_1_5 },
 						}),
-						i(80918, {	-- Mindbender Plate Gloves
+						i(80918, {	-- Mindbinder Plate Gloves
 							timeline = { REMOVED_7_1_5 },
 						}),
 						i(80919, {	-- Darkbinder Leggings

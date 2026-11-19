@@ -1340,7 +1340,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							i(93329),	-- Bambrick's Striking Strap
 							i(93271),	-- Beach-Born Sandals
 							i(93327),	-- Bloodbinder Links
-							i(93266),	-- Boots of the Healing Steam
+							i(93266),	-- Boots of the Healing Stream
 							i(93330),	-- Chang's Changing Cord
 							i(93264),	-- Cragchewer Sollerets
 							i(93255),	-- Cutstitcher Medallion
@@ -1352,7 +1352,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							i(93263),	-- Groundbreaker Sabatons
 							i(93324),	-- Immovable Waistplate
 							i(93323),	-- Kwon's Crushing Girdle
-							i(93257),	-- Medallion of Mystefying Vapors
+							i(93257),	-- Medallion of Mystifying Vapors
 							i(93328),	-- Prevenge's Dagger-Carrier
 							i(93331),	-- Sash of Surehandedness
 							i(93265),	-- Scar Swallower Greatboots

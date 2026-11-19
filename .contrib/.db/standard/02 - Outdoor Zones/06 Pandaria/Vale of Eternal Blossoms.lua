@@ -464,11 +464,11 @@ maproot(PANDARIA, VALE_OF_ETERNAL_BLOSSOMS, {
 				},
 			})),
 			{
-				aqd = q(32016, {	-- Elder Charm of Good Fortune (A)
+				aqd = q(32016, {	-- Elder Charms of Good Fortune (A)
 					qg = 64029,	-- Elder Lin
 					coord = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
-				hqd = q(32017, {	-- Elder Charm of Good Fortune (H)
+				hqd = q(32017, {	-- Elder Charms of Good Fortune (H)
 					qg = 63996,	-- Elder Liao
 					coord = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 				}),

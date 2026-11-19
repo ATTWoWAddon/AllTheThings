@@ -517,7 +517,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 				qg = 62774,	-- Malik the Unscathed
 				coord = { 55.0, 35.4, DREAD_WASTES },
 				groups = {
-					o(214170, {	-- Vorthik Egg
+					o(214170, {	-- Vor'thik Egg
 						i(86598),	-- Vor'thik Eggs (QI!)
 					}),
 				},
@@ -1423,7 +1423,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 				groups = {
 					i(84055),	-- Gurthan Locket
 					i(84056),	-- Council Choker
-					i(84057),	-- Swormborn Necklace
+					i(84057),	-- Swarmborn Necklace
 					i(84058),	-- Kil'ruk's Pendant
 					i(84059),	-- Sacred Stone Amulet
 				},

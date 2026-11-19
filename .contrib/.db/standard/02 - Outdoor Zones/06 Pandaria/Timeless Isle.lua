@@ -1146,7 +1146,7 @@ maproot(PANDARIA, {
 						{ 56.6, 35.9, TIMELESS_ISLE },
 						{ 48.4, 33.3, TIMELESS_ISLE },
 					},
-					groups = { i(86574, { timeline = { REMOVED_7_0_3 } }) },	-- Elxir of Ancient Knowledge
+					groups = { i(86574, { timeline = { REMOVED_7_0_3 } }) },	-- Elixir of Ancient Knowledge
 				}),
 				n(73666, {	-- Archiereus of Flame
 					description = "This is the summonable version of this rare. It drops more things.",
@@ -1983,7 +1983,7 @@ maproot(PANDARIA, {
 							i(103678, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Time-Lost Artifact
 						}, {	-- Revered
 							i(103685, { cost = { { "c", TIMELESS_COIN, 1000 } } }),	-- Celestial Defender's Medallion (TOY!)
-							i(104295, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Harmonious Purcupette (PET!)
+							i(104295, { cost = { { "c", TIMELESS_COIN, 7500 } } }),	-- Harmonious Porcupette (PET!)
 						}, {	-- Exalted
 							i(87774, { cost = { { "c", TIMELESS_COIN, 100000 } } }),	-- Heavenly Golden Cloud Serpent (MOUNT!)
 						},

@@ -3511,7 +3511,7 @@ maproot(KALIMDOR, DUROTAR, {
 					i(97901, {	-- Griftah's Authentic Troll Shoes
 						timeline = { ADDED_5_3_0, REMOVED_5_4_0, ADDED_7_0_3 },
 					}),
-					i(97919, {	-- Whole-Body Shinka' (TOY!)
+					i(97919, {	-- Whole-Body Shrinka' (TOY!)
 						timeline = { ADDED_5_3_0, REMOVED_5_4_0, ADDED_7_0_3 },
 					}),
 					i(97942, {	-- Sen'jin Spirit Drum (TOY!)

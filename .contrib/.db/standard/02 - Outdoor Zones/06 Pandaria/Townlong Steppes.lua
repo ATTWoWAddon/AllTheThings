@@ -854,9 +854,9 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 				coord = { 67.3, 80.6, TOWNLONG_STEPPES },
 				groups = {
 					o_repeated({
-						i(83024),	-- Shadow-Pan Fire Arrows (QI!)
-						o(212135),	-- Shadow-Pan Fire Arrows
-						o(212136),	-- Shadow-Pan Fire Arrows
+						i(83024),	-- Shado-Pan Fire Arrows (QI!)
+						o(212135),	-- Shado-Pan Fire Arrows
+						o(212136),	-- Shado-Pan Fire Arrows
 					}),
 				},
 			}),
