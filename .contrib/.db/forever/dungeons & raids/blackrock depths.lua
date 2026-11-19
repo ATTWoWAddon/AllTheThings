@@ -1163,6 +1163,9 @@ instanceroot(228, {	-- Blackrock Depths
 				groups = {
 					i(18653),	-- Schematic: Goblin Jumper Cables XL (RECIPE!)
 					i(12791),	-- Barman Shanker
+					i(276877, {	-- Brewmancer Nightcap
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(12793),	-- Mixologist's Tunic
 				},
 			}),
