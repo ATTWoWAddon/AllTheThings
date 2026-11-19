@@ -4331,7 +4331,7 @@ root(ROOTS.WorldDrops, {
 				MAP.SEARING_GORGE,
 			},
 		}),
-		i(7077, {	-- Hearth of Fire
+		i(7077, {	-- Heart of Fire
 			coords = {
 				{ 42.0, 40.0, MAP.FELWOOD },	-- Shatter Scar Vale
 				{ 51.7, 50.7, MAP.UNGORO_CRATER },	-- Fire Plum Ridge

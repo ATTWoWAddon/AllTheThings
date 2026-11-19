@@ -423,7 +423,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					i(2057, {	-- Pitted Defias Shortsword
 						cr = 38,	-- Defias Thug
 					}),
-					i(247834, {	-- Nibbled on Book
+					i(247834, {	-- Nibbled-On Book
 						coord = { 48.9, 36.3, MAP.ELWYNN_FOREST },
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						cr = 6,	-- Kobold Vermin

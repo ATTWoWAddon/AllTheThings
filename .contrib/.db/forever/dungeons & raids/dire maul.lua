@@ -1120,7 +1120,7 @@ instanceroot(230, {	-- Dire Maul
 						i(18352),	-- Petrified Bark Shield
 						i(18353),	-- Stoneflower Staff
 						i(18390),	-- Tanglemoss Leggings
-						i(18393),	-- Warpwood Bindings
+						i(18393),	-- Warpwood Binding
 					},
 				}),
 				e(409, {	-- Immol'thar

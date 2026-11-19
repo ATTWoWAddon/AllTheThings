@@ -968,7 +968,7 @@ instanceroot(229, {	-- Blackrock Spire
 			n(9218, {	-- Spirestone Battle Lord (Rare)
 				description = "This is a Rare Creature and, as such, is not always present.",
 				groups = {
-					i(13285),	-- The Blackrock Slicers
+					i(13285),	-- The Blackrock Slicer
 					i(13284),	-- Swiftdart Battleboots
 				},
 			}),
@@ -1114,7 +1114,7 @@ instanceroot(229, {	-- Blackrock Spire
 			e(394, {	-- Halycon
 				creatureID = 10220,	-- Halycon
 				groups = {
-					i(13212),	-- Halcyon's Spiked Collar
+					i(13212),	-- Halycon's Spiked Collar
 					i(22313),	-- Ironweave Bracers
 					i(13211),	-- Slashclaw Bracers
 					i(13210),	-- Pads of the Dread Wolf

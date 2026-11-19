@@ -695,7 +695,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						cr = 254588,	-- Windsong Crawler
 						coord = { 64.1, 61.5, MAP.ZEPHRAS_ISLE },
 					}),
-					i(263513),	-- Recipe Pincer Bites
+					i(263513),	-- Recipe: Pincer Bites
 					i(263512),	-- Pincer Bites
 				},
 			}),
@@ -940,7 +940,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				groups = {
 					i(263424),	-- Wolfhide Belt
 					i(263425),	-- Elegant Cuffs
-					i(263426),	-- Ex Commander's Gauntlets
+					i(263426),	-- Ex-Commander's Gauntlets
 				},
 			}),
 			q(92516, {	-- Hippogryph Harassment
@@ -1067,8 +1067,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						coord = { 53.3, 72.2, MAP.ZEPHRAS_ISLE },
 					}),
 					i(257340),	-- Farmer's Field Boots
-					i(257331),	-- Brass Banded Bracers
-					i(257334),	-- Well Worn Pants
+					i(257331),	-- Brass-Banded Bracers
+					i(257334),	-- Well-Worn Pants
 					i(252032),	-- Red Delicious Stormapple
 				},
 			}),
@@ -1089,7 +1089,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
 				lvl = 7,
 			}),
-			q(92597, {	-- Reading the Ley Lines
+			q(92597, {	-- Reading the Leylines
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251371,	-- Falorne Fallwind <High Order>
 				coord = { 43.3, 24.9, MAP.ZEPHRAS_ISLE },
@@ -1106,7 +1106,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 43.8, 43.8, MAP.ZEPHRAS_ISLE },
 				lvl = 4,
 				groups = {
-					i(263511),	-- Recipe Skywall Souffle
+					i(263511),	-- Recipe: Skywall Souffle
 					i(263509),	-- Skywall Souffle
 				},
 			}),
@@ -1297,7 +1297,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					}),
 					i(263408),	-- Exterminator's Vest
 					i(263409),	-- Gardening Pants
-					i(263410),	-- Watchers Mail Chest
+					i(263410),	-- Watcher's Mail Chest
 				},
 			}),
 			q(92517, {	-- The Criminal Element
