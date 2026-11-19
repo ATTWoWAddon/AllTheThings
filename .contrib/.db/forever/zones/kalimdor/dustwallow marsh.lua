@@ -706,7 +706,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
-			q(1251, {	-- The Black Shield (1/5) [H]
+			q(1251, {	-- The Black Shield (1/4) [H]
 				providers = {
 					{ "o", 20992 },	-- Black Shield
 					{ "i", 5919 },	-- Blackened Iron Shield (QI!) not prov
@@ -723,8 +723,8 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
-			q(1321, {	-- The Black Shield (2/5) [H]
-				sourceQuest = 1251,	-- The Black Shield (1/5) [H]
+			q(1321, {	-- The Black Shield (2/4) [H]
+				sourceQuest = 1251,	-- The Black Shield (1/4) [H]
 				qg = 4926,	-- Krog
 				qi = 5919,	-- Blackened Iron Shield (QI!) not prov
 				coord = { 36.4, 31.8, MAP.DUSTWALLOW_MARSH },
@@ -738,8 +738,8 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				races = ALLIANCE_ONLY,
 				lvl = 30,
 			}),
-			q(1322, {	-- The Black Shield (3/5) [H]
-				sourceQuest = 1321,	-- The Black Shield (2/5) [H]
+			q(1322, {	-- The Black Shield (3/4) [H]
+				sourceQuest = 1321,	-- The Black Shield (2/4) [H]
 				qg = 5087,	-- Do'gol
 				coord = { 36.4, 30.8, MAP.DUSTWALLOW_MARSH },
 				races = HORDE_ONLY,
@@ -761,18 +761,22 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					}),
 				},
 			}),
-			q(1323, {	-- The Black Shield (4/5) [H]
-				sourceQuest = 1322,	-- The Black Shield (3/5) [H]
+			q(1323, {	-- The Black Shield (4/4) [H]
+				sourceQuest = 1322,	-- The Black Shield (3/4) [H]
 				qg = 5087,	-- Do'gol
 				coord = { 36.4, 30.8, MAP.DUSTWALLOW_MARSH },
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),
-			q(1276, {	-- The Black Shield (5/5) [H]
-				sourceQuest = 1323,	-- The Black Shield (4/5) [H]
+			q(1276, {	-- The Black Shield [H]
+				sourceQuests = {
+					1273,	-- Questioning Reethe
+					1323,	-- The Black Shield (4/4) [H]
+				},
 				qg = 4926,	-- Krog
-				qi = 5919,	-- Blackened Iron Shield (QI!) not prov
+				qi = 5919,	-- Blackened Iron Shield (PQI!)
 				coord = { 36.4, 31.8, MAP.DUSTWALLOW_MARSH },
+				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 30,
 			}),
