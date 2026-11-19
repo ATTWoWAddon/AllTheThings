@@ -225,6 +225,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				},
 			}),
 			q(95753, {	-- Challenge of the Desert Wolf
+				sourceQuest = 95751,	-- Odd Totems
 				qg = 222856,	-- Odd Totem
 				coord = { 43.0, 41.2, MAP.TANARIS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -346,6 +347,26 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 60,
 				groups = {
 					objective(1),	-- 0/1 Win 10 duels
+				},
+			}),
+			q(96913, {	-- Field of Honor: Week 2
+				qg = 267525,	-- Wizzik Dustfizz
+				coord = { 51.8, 27.2, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.WARSONG_GULCH },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Complete 3 Warsong Gulch Battlegrounds
+				},
+			}),
+			q(96914, {	-- Field of Honor: Week 3
+				qg = 267525,	-- Wizzik Dustfizz
+				coord = { 51.8, 27.2, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.WARSONG_GULCH },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Kill 25 players in Warsong Gulch
 				},
 			}),
 			q(351, {	-- Find OOX-17/TN!
@@ -632,6 +653,12 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				lvl = 40,
 				lockCriteria = { 1, "questID", 1560 },	-- Tooga's Quest
 				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(95751, {	-- Odd Totems
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { SHAMAN },
+				lvl = 45,
 			}),
 			q(4507, {	-- Pawn Captures Queen
 				sourceQuest = 4496,	-- Bungle in the Jungle

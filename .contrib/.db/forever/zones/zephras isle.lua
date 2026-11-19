@@ -1194,6 +1194,16 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					}),
 				},
 			}),
+			q(99203, {	-- Swift as the Wind
+				qg = 265756,	-- Genn Fairweather
+				coord = { 53.8, 81.2, MAP.ZEPHRAS_ISLE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { SKYBORNE_HORDE },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Learn: Journeyman Riding
+				},
+			}),
 			q(94007, {	-- Taming the Beast
 				qg = 254084,	-- Elayaa Easewind
 				coord = { 45.2, 44.2, MAP.ZEPHRAS_ISLE },

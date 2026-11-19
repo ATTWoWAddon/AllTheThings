@@ -671,6 +671,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				races = HORDE_ONLY,
 				lvl = 13,
 			}),
+			q(97180, {	-- Ott's Finest Work
+				sourceQuest = 97179,	-- Collection of Goods
+				qg = 3539,	-- Ott <Weaponsmith>
+				qi = 18753,	-- Arcanite Barding (PQI!)
+				coord = { 60.4, 26.0, MAP.HILLSBRAD_FOOTHILLS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				lvl = 60,
+			}),
 			q(95125, {	-- Ott's Masterwork
 				sourceQuest = 95111,	-- An Underrated Talent
 				qg = 3539,	-- Ott <Weaponsmith>

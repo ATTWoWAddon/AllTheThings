@@ -203,7 +203,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					i(12051),	-- Brazen Gauntlets
 				},
 			}),
-			q(95818, {	-- A Quick Craft
+			q(95818, {	-- A Quick Craft [A]
 				sourceQuest = 95817,	-- Rotgath Stonebeard
 				qg = 10276,	-- Rotgath Stonebeard <Expert Blacksmith>
 				coord = { 51.2, 42.4, MAP.IRONFORGE },
@@ -715,6 +715,24 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 						},
 						coord = { 77.9, 62.2, MAP.DUN_MOROGH },
 					}),
+				},
+			}),
+			q(97448, {	-- Just Compensation [A]
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Deliana.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.BLACKROCK_SPIRE },
+				races = ALLIANCE_ONLY,
+				lvl = 58,
+				groups = {
+					objective(1, {	-- 0/1 Cord of Elements
+						provider = { "i", 16673 },	-- Cord of Elements
+					}),
+					objective(2, {	-- 0/1 Gauntlets of Elements
+						provider = { "i", 16672 },	-- Gauntlets of Elements
+					}),
+					i(227350),	-- Relief's Gloves and Belt Set
+					i(227351),	-- Eruption's Gloves and Belt Set
+					i(227352),	-- Impact's Gloves and Belt Set
 				},
 			}),
 			q(2298, {	-- Kingly Shakedown

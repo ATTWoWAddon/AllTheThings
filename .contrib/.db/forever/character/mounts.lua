@@ -51,6 +51,234 @@ root(ROOTS.Character, {
 				}),
 			},
 		}),
+		q(99210, {	-- An Epic Ride (Dwarf)
+			-- TODO: Wowhead doesn't list the quest giver yet.
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = { DWARF },
+			lvl = 60,
+			sym = {{"select","itemID",
+				18785,	-- Swift White Ram (MOUNT!)
+				18786,	-- Swift Brown Ram (MOUNT!)
+				18787,	-- Swift Gray Ram (MOUNT!)
+			}},
+			groups = {
+				objective(1, {	-- 0/1 Swift Gray Ram
+					provider = { "n", 276737 },	-- Swift Gray Ram
+					coord = { 64.2, 50.4, MAP.DUN_MOROGH },
+				}),
+				objective(2, {	-- 0/1 Swift Brown Ram
+					provider = { "n", 276779 },	-- Swift Brown Ram
+					coord = { 64.4, 50.2, MAP.DUN_MOROGH },
+				}),
+				objective(3, {	-- 0/1 Swift White Ram
+					provider = { "n", 276783 },	-- Swift White Ram
+					coord = { 63.4, 50.6, MAP.DUN_MOROGH },
+				}),
+			},
+		}),
+		q(99212, {	-- An Epic Ride (Gnome)
+			-- TODO: Wowhead doesn't list the quest giver yet.
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = { GNOME },
+			lvl = 60,
+			sym = {{"select","itemID",
+				18772,	-- Swift Green Mechanostrider (MOUNT!)
+				18773,	-- Swift White Mechanostrider (MOUNT!)
+				18774,	-- Swift Yellow Mechanostrider (MOUNT!)
+			}},
+			groups = {
+				objective(1, {	-- 0/1 Swift White Mechanostrider
+					provider = { "n", 276734 },	-- Swift White Mechanostrider
+					coord = { 49.0, 48.0, MAP.DUN_MOROGH },
+				}),
+				objective(2, {	-- 0/1 Swift Yellow Mechanostrider
+					provider = { "n", 276735 },	-- Swift Yellow Mechanostrider
+					coord = { 49.0, 47.8, MAP.DUN_MOROGH },
+				}),
+				objective(3, {	-- 0/1 Swift Green Mechanostrider
+					provider = { "n", 276736 },	-- Swift Green Mechanostrider
+					coord = { 49.0, 47.8, MAP.DUN_MOROGH },
+				}),
+			},
+		}),
+		q(99213, {	-- An Epic Ride (Human)
+			-- TODO: Wowhead doesn't list the quest giver yet.
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = { HUMAN },
+			lvl = 60,
+			sym = {{"select","itemID",
+				18776,	-- Swift Palomino (MOUNT!)
+				18777,	-- Swift Brown Steed (MOUNT!)
+				18778,	-- Swift White Steed (MOUNT!)
+			}},
+			groups = {
+				objective(1, {	-- 0/1 Swift Brown Steed
+					provider = { "n", 276785 },	-- Swift Brown Steed
+					coord = { 84.8, 65.0, MAP.ELWYNN_FOREST },
+				}),
+				objective(2, {	-- 0/1 Swift Palomino
+					provider = { "n", 276786 },	-- Swift Palomino
+					coord = { 84.0, 65.4, MAP.ELWYNN_FOREST },
+				}),
+				objective(3, {	-- 0/1 Swift White Steed
+					provider = { "n", 276787 },	-- Swift White Steed
+					coord = { 84.8, 64.8, MAP.ELWYNN_FOREST },
+				}),
+			},
+		}),
+		q(99214, {	-- An Epic Ride (Night Elf)
+			qg = 4730,	-- Lelanai <Saber Handler>
+			coord = { 38.2, 15.4, MAP.DARNASSUS },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = { NIGHTELF },
+			lvl = 60,
+			sym = {{"select","itemID",
+				18766,	-- Reins of the Swift Frostsaber (MOUNT!)
+				18767,	-- Reins of the Swift Mistsaber (MOUNT!)
+				18902,	-- Reins of the Swift Stormsaber (MOUNT!)
+			}},
+			groups = {
+				objective(1, {	-- 0/1 Swift Stormsaber
+					provider = { "n", 276730 },	-- Swift Stormsaber
+					coord = { 37.4, 15.4, MAP.DARNASSUS },
+				}),
+				objective(2, {	-- 0/1 Swift Mistsaber
+					provider = { "n", 276731 },	-- Swift Mistsaber
+					coord = { 38.2, 15.4, MAP.DARNASSUS },
+				}),
+				objective(3, {	-- 0/1 Swift Frostsaber
+					provider = { "n", 276732 },	-- Swift Frostsaber
+					coord = { 37.2, 15.6, MAP.DARNASSUS },
+				}),
+			},
+		}),
+		q(99215, {	-- An Epic Ride (Orc)
+			qg = 3362,	-- Ogunaro Wolfrunner <Kennel Master>
+			coord = { 69.2, 12.6, MAP.ORGRIMMAR },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = { ORC },
+			lvl = 60,
+			sym = {{"select","itemID",
+				18796,	-- Horn of the Swift Brown Wolf (MOUNT!)
+				18798,	-- Horn of the Swift Gray Wolf (MOUNT!)
+				18797,	-- Horn of the Swift Timber Wolf (MOUNT!)
+			}},
+			groups = {
+				objective(1, {	-- 0/1 Swift Brown Wolf
+					provider = { "n", 276833 },	-- Swift Brown Wolf
+					coord = { 69.2, 12.0, MAP.ORGRIMMAR },
+				}),
+				objective(2, {	-- 0/1 Swift Gray Wolf
+					provider = { "n", 276805 },	-- Swift Gray Wolf
+					coord = { 69.2, 12.4, MAP.ORGRIMMAR },
+				}),
+				objective(3, {	-- 0/1 Swift Timber Wolf
+					provider = { "n", 276832 },	-- Swift Timber Wolf
+					coord = { 69.2, 12.0, MAP.ORGRIMMAR },
+				}),
+			},
+		}),
+		q(99216, {	-- An Epic Ride (Skyborne)
+			-- TODO: Wowhead doesn't list the quest giver yet.
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
+			lvl = 60,
+			sym = {{"select","itemID",
+				269671,	-- Swift Empyrean Galestrider (MOUNT!)
+				269678,	-- Swift Stormy Galestrider (MOUNT!)
+				274933,	-- Swift Umber Galestrider (MOUNT!)
+			}},
+			groups = {
+				objective(1, {	-- 0/1 Swift Empyrean Galestrider
+					provider = { "n", 265762 },	-- Swift Empyrean Galestrider
+					coord = { 54.0, 80.4, MAP.ZEPHRAS_ISLE },
+				}),
+				objective(2, {	-- 0/1 Swift Stormy Galestrider
+					provider = { "n", 265761 },	-- Swift Stormy Galestrider
+					coord = { 54.0, 80.4, MAP.ZEPHRAS_ISLE },
+				}),
+				objective(3, {	-- 0/1 Swift Umber Galestrider
+					provider = { "n", 265760 },	-- Swift Umber Galestrider
+					coord = { 54.0, 80.4, MAP.ZEPHRAS_ISLE },
+				}),
+			},
+		}),
+		q(99217, {	-- An Epic Ride (Tauren)
+			qg = 3685,	-- Harb Clawhoof <Kodo Mounts>
+			coord = { 46.6, 62.0, MAP.MULGORE },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = { TAUREN },
+			lvl = 60,
+			sym = {{"select","itemID",
+				18794,	-- Great Brown Kodo (MOUNT!)
+				18795,	-- Great Gray Kodo (MOUNT!)
+				18793,	-- Great White Kodo (MOUNT!)
+			}},
+			groups = {
+				objective(1, {	-- 0/1 Great Gray Kodo
+					provider = { "n", 276877 },	-- Great Gray Kodo
+					coord = { 46.6, 62.0, MAP.MULGORE },
+				}),
+				objective(2, {	-- 0/1 Great Brown Kodo
+					provider = { "n", 276876 },	-- Great Brown Kodo
+					coord = { 46.6, 62.0, MAP.MULGORE },
+				}),
+				objective(3, {	-- 0/1 Great White Kodo
+					provider = { "n", 276879 },	-- Great White Kodo
+					coord = { 46.4, 62.2, MAP.MULGORE },
+				}),
+			},
+		}),
+		q(99218, {	-- An Epic Ride (Troll)
+			-- TODO: Wowhead doesn't list the quest giver yet.
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = { TROLL },
+			lvl = 60,
+			sym = {{"select","itemID",
+				18788,	-- Swift Blue Raptor (MOUNT!)
+				18789,	-- Swift Olive Raptor (MOUNT!)
+				18790,	-- Swift Orange Raptor (MOUNT!)
+			}},
+			groups = {
+				objective(1, {	-- 0/1 Swift Blue Raptor
+					provider = { "n", 276803 },	-- Swift Blue Raptor
+					coord = { 55.2, 75.4, MAP.DUROTAR },
+				}),
+				objective(2, {	-- 0/1 Swift Olive Raptor
+					provider = { "n", 276800 },	-- Swift Olive Raptor
+					coord = { 55.2, 75.4, MAP.DUROTAR },
+				}),
+				objective(3, {	-- 0/1 Swift Orange Raptor
+					provider = { "n", 276801 },	-- Swift Orange Raptor
+					coord = { 55.2, 75.4, MAP.DUROTAR },
+				}),
+			},
+		}),
+		q(99211, {	-- An Epic Ride (Undead)
+			-- TODO: Wowhead doesn't list the quest giver yet.
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = { UNDEAD },
+			lvl = 60,
+			sym = {{"select","itemID",
+				13334,	-- Green Skeletal Warhorse (MOUNT!)
+			}},
+			groups = {
+				objective(1, {	-- 0/1 Ochre Skeletal Warhorse
+					provider = { "n", 276793 },	-- Ochre Skeletal Warhorse
+					coord = { 59.8, 52.4, MAP.TIRISFAL_GLADES },
+				}),
+				objective(2, {	-- 0/1 Purple Skeletal Warhorse
+					provider = { "n", 276797 },	-- Purple Skeletal Warhorse
+					coord = { 59.8, 52.4, MAP.TIRISFAL_GLADES },
+				}),
+				objective(3, {	-- 0/1 Green Skeletal Warhorse
+					provider = { "n", 276796 },	-- Green Skeletal Warhorse
+					coord = { 59.8, 52.6, MAP.TIRISFAL_GLADES },
+				}),
+				i(274799),	-- Ochre Skeletal Warhorse (MOUNT!)
+				i(265840),	-- Purple Skeletal Horse (MOUNT!)
+			},
+		}),
 		q(95511, {	-- Your First Feline Friend
 			qg = 4730,	-- Lelanai <Saber Handler>
 			coord = { 38.4, 15.6, MAP.DARNASSUS },

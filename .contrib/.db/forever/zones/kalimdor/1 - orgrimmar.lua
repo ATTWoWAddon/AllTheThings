@@ -241,6 +241,26 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(18042),	-- Thorium Headed Arrow
 				},
 			}),
+			q(95821, {	-- A Quick Craft [H]
+				sourceQuest = 95820,	-- Karolek
+				qg = 3365,	-- Karolek <Expert Leatherworker>
+				coord = { 62.8, 44.6, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {
+					{ "i", 4234, 30 },	-- Heavy Leather
+					{ "i", 3860, 12 },	-- Mithril Bar
+					{ "i", 3821, 5 },	-- Goldthorn
+				},
+				groups = {
+					i(270877),	-- Alchemy Sign
+					i(270878),	-- Blacksmithing Sign
+					i(270880),	-- Enchanting Sign
+					i(270881),	-- Engineering Sign
+					i(270882),	-- Leatherworking Sign
+					i(270883),	-- Tailoring Sign
+					i(270870),	-- Orcish Tradeskill Signpost
+				},
+			}),
 			q(7832, {	-- Additional Runecloth [Darkspear Trolls]
 				sourceQuest = 7824,	-- A Donation of Runecloth
 				qg = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
@@ -525,6 +545,30 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					}),
 				},
 			}),
+			q(97412, {	-- Just Compensation [H]
+				qg = 230317,	-- Mokvar
+				coord = { 35.0, 38.0, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.STRATHOLME },
+				races = HORDE_ONLY,
+				lvl = 58,
+				groups = {
+					objective(1, {	-- 0/1 Lightforge Belt
+						provider = { "i", 16723 },	-- Lightforge Belt
+					}),
+					objective(2, {	-- 0/1 Lightforge Gauntlets
+						provider = { "i", 16724 },	-- Lightforge Gauntlets
+					}),
+					i(227343),	-- Merciful Gloves and Belt Set
+					i(227344),	-- Radiant Gloves and Belt Set
+					i(227345),	-- Divine Will Gloves and Belt Set
+				},
+			}),
+			q(95820, {	-- Karolek
+				sourceQuest = 95819,	-- Sign Me Up!
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Karolek (3365) in the Kodohide Leatherworkers shop.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			q(1945, {	-- Laughing Sisters
 				sourceQuest = 1944,	-- Waters of Xavian
 				qg = 5885,	-- Deino <Mage Trainer>
@@ -658,7 +702,17 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				isBreadcrumb = true,
 				lvl = 26,
 			}),
-			q(99201, {	-- Swift as the Wind
+			q(99204, {	-- Swift as the Wind (Orc)
+				qg = 4752,	-- Kildar <Wolf Riding Instructor>
+				coord = { 69.0, 13.8, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = { ORC },
+				lvl = 60,
+				groups = {
+					objective(1),	-- 0/1 Learn: Journeyman Riding
+				},
+			}),
+			q(99201, {	-- Swift as the Wind (Troll)
 				-- TODO: Wowhead doesn't list the quest giver yet.
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { TROLL },

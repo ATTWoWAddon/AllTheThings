@@ -114,13 +114,22 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 				races = HORDE_ONLY,
 				lvl = 38,
 			}),
-			q(94969, {	-- Krol'dok No More!
+			q(94969, {	-- Krol'dok No More! [A]
 				-- TODO: Wowhead doesn't list the quest giver yet. It's an escort of Marcus Tilwell out of Krol'dok Stronghold; his NPC ID isn't known yet.
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 				groups = {
 					i(279851),	-- TODO: Item name not known yet.
 					i(279929),	-- TODO: Item name not known yet.
+				},
+			}),
+			q(95056, {	-- Krol'dok No More! [H]
+				-- TODO: Wowhead doesn't list the quest giver yet. Horde version of the escort out of Krol'dok Stronghold.
+				races = HORDE_ONLY,
+				lvl = 40,
+				groups = {
+					i(279861),	-- TODO: Item name not known yet.
+					i(279862),	-- TODO: Item name not known yet.
 				},
 			}),
 			q(94997, {	-- Lingering Essence

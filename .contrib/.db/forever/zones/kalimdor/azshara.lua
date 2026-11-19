@@ -207,6 +207,20 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 					i(11120),	-- Belgrom's Hammer
 				},
 			}),
+			q(91569, {	-- Blue Gold
+				qg = 247473,	-- Izvi Gildfizz
+				coord = { 22.4, 51.8, MAP.AZSHARA },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/1 Mana-Siphoning Wand
+						provider = { "i", 246680 },	-- Mana-Siphoning Wand
+						cr = 246920,	-- Blood Elf Arcanist
+						coord = { 66.2, 28.0, MAP.AZSHARA },
+					}),
+				},
+			}),
 			q(3508, {	-- Breaking the Ward
 				sourceQuest = 3141,	-- Loramus
 				qg = 7783,	-- Loramus Thalipedes

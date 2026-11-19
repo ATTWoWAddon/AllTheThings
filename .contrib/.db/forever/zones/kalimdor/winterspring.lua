@@ -457,6 +457,12 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					i(15863),	-- Grave Scepter
 				},
 			}),
+			q(96265, {	-- Secret of the Barrow Deeps
+				qs = 277154,	-- Corrupted Gemstone (QS!)
+				-- TODO: Wowhead doesn't say where the Corrupted Gemstone comes from yet. Turned in to Thera Duskwhisper.
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 60,
+			}),
 			q(4803, {	-- Shardtooth E'ko
 				sourceQuest = 975,	-- Cache of Mau'ari
 				qg = 10307,	-- Witch Doctor Mau'ari

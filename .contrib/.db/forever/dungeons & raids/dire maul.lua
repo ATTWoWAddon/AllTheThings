@@ -511,6 +511,12 @@ instanceroot(230, {	-- Dire Maul
 					i(18468),	-- Royal Seal of Eldre'Thalas
 				},
 			}),
+			q(98830, {	-- The Broken Glaive
+				-- TODO: Wowhead doesn't list the quest starter yet. Its text says it begins at Prince Tortheldrin's corpse; turned in to the Shen'dralar Ancient.
+				qi = 284660,	-- TODO: Item name not known yet. (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 52,
+			}),
 			q(7506, {	-- The Emerald Dream...
 				qg = 14381,	-- Lorekeeper Javon
 				qs = 18364,	-- The Emerald Dream (QS!)

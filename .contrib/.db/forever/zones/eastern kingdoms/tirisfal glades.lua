@@ -712,6 +712,32 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 					}),
 				},
 			}),
+			q(97182, {	-- An Offering of Vengeance
+				sourceQuest = 97176,	-- Exorcising Terrordale
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				qi = 18753,	-- Arcanite Barding (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.DIRE_MAUL, MAP.EASTERN_PLAGUELANDS },
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				lvl = 60,
+				groups = {
+					objective(1, {	-- 0/1 Manna-Enriched Horse Feed
+						provider = { "i", 18775 },	-- Manna-Enriched Horse Feed
+					}),
+					q(97186, {	-- Manna-Enriched Horse Feed
+						-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nathanos Blightcaller.
+						coord = { 26.4, 74.8, MAP.EASTERN_PLAGUELANDS },
+						cost = {
+							{ "i", 13724, 20 },	-- Enriched Manna Biscuit
+							{ "g", 500000 },	-- 50g
+						},
+						groups = {
+							i(18775),	-- Manna-Enriched Horse Feed
+						},
+					}),
+				},
+			}),
 			q(99152, {	-- As Above, So Below
 				sourceQuest = 96896,	-- A Righteous Cause
 				qg = 246389,	-- Hilda the Breaker <Paladin Trainer>
@@ -800,6 +826,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				races = { ORC, UNDEAD },
 				lvl = 10,
 				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			q(97183, {	-- Blessed Arcanite Barding
+				-- TODO: Wowhead doesn't list the quest giver yet.
+				qi = 18792,	-- Blessed Arcanite Barding (PQI!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.DIRE_MAUL },
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				lvl = 60,
 			}),
 			q(97951, {	-- Camping 101: Alchemy [Tirisfal Glades]
 				sourceQuest = 96607,	-- The Great Outdoors [Tirisfal Glades]
@@ -1157,6 +1192,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				races = HORDE_PALADINS,
 				cost = { { "g", 1500000 } },	-- 150g
 				lvl = 60,
+			}),
+			q(97176, {	-- Exorcising Terrordale
+				sourceQuest = 97177,	-- Acts of Mercy
+				qg = 246378,	-- Danitha Morr
+				qi = 18752,	-- Exorcism Censer (PQI!)
+				coord = { 22.0, 44.6, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				maps = { MAP.EASTERN_PLAGUELANDS },
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				lvl = 60,
+				groups = {
+					objective(1, {	-- 0/25 Terrordale Spirit slain
+						provider = { "n", 14564 },	-- Terrordale Spirit
+						coord = { 13.8, 32.2, MAP.EASTERN_PLAGUELANDS },
+					}),
+				},
 			}),
 			q(365, {	-- Fields of Grief (1/2)
 				qg = 1519,	-- Deathguard Simmer
@@ -1658,6 +1710,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						coord = { 68.0, 64.6, MAP.TIRISFAL_GLADES },
 					}),
 				},
+			}),
+			q(97184, {	-- The Divination Scryer
+				sourceQuest = 97183,	-- Blessed Arcanite Barding
+				qg = 246378,	-- Danitha Morr
+				coord = { 22.0, 44.6, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cost = {
+					{ "i", 12800, 1 },	-- Azerothian Diamond
+					{ "i", 18335, 1 },	-- Pristine Black Diamond
+				},
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				lvl = 60,
 			}),
 			q(408, {	-- The Family Crypt
 				sourceQuest = 355,	-- Speak with Sevren

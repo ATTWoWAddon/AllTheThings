@@ -329,6 +329,14 @@ instanceroot(229, {	-- Blackrock Spire
 					i(12529),	-- Smolderweb Hatchling (PET!)
 				},
 			}),
+			q(97883, {	-- End of the Dark Horde
+				qg = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				qi = 278836,	-- Head of Rend Blackhand (PQI!)
+				coord = { 78.4, 70.6, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
+			}),
 			q(5124, {	-- Fiery Plate Gauntlets
 				sourceQuest = 5103,	-- Hot Fiery Death
 				qg = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>

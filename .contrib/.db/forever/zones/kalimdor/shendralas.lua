@@ -347,6 +347,15 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 					}),
 				},
 			}),
+			q(93451, {	-- Phantasmal Problems
+				-- TODO: Wowhead doesn't list the quest giver yet. Wowhead's series lists it as an alternative to the other Phantasmal Problems (93450).
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Phantasmal Blade
+						provider = { "i", 258735 },	-- Phantasmal Blade
+					}),
+				},
+			}),
 			q(96018, {	-- Powering the Pylons
 				qg = 253471,	-- Mordent Evenshade
 				qi = 271882,	-- Pile of Pylon Parts (PQI!)
@@ -420,7 +429,11 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 				},
 			}),
 			q(93546, {	-- Spectral Iron Ore
-				sourceQuest = 93450,	-- Phantasmal Problems
+				sourceQuests = {
+					93450,	-- Phantasmal Problems
+					93451,	-- Phantasmal Problems
+				},
+				sourceQuestNumRequired = 1,
 				qg = 254717,	-- Vindael
 				coord = { 42.0, 78.8, MAP.SHENDRALAS },
 				qi = 259229,	-- Vindael's Spectral Pickaxe (PQI!)

@@ -217,6 +217,32 @@ instanceroot(246, {	-- Scholomance
 					}),
 				},
 			}),
+			q(97185, {	-- Justice and Retribution
+				sourceQuest = 97184,	-- The Divination Scryer
+				qg = 246378,	-- Danitha Morr
+				qi = 276785,	-- Danitha's Satchel (PQI!)
+				coord = { 22.0, 44.6, MAP.TIRISFAL_GLADES },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = HORDE_PALADINS,
+				lvl = 60,
+				groups = {
+					-- TODO: Wowhead doesn't list the charger mount reward yet.
+					objective(1, {	-- 0/1 Spirit of Retribution
+						provider = { "i", 276783 },	-- Spirit of Retribution
+					}),
+					objective(2, {	-- 0/1 Blessed Arcanite Barding
+						provider = { "i", 18792 },	-- Blessed Arcanite Barding
+					}),
+					objective(3, {	-- 0/1 Charger's Lost Soul
+						provider = { "i", 276784 },	-- Charger's Lost Soul
+						cr = 14516,	-- Death Knight Darkreaver
+					}),
+					objective(4, {	-- 0/1 Divination Scryer
+						provider = { "i", 18746 },	-- Divination Scryer
+					}),
+				},
+			}),
 			q(5384, {	-- Kirtonos the Herald
 				qg = 11216,	-- Eva Sarkhoff
 				sourceQuest = 5515,	-- Krastinov's Bag of Horrors
@@ -375,7 +401,24 @@ instanceroot(246, {	-- Scholomance
 					i(18807),	-- Helm of Latent Power
 				},
 			}),
-			q(8258, {	-- The Darkreaver Menace (Post 1.7, Phase 4)
+			q(97169, {	-- The Darkreaver Menace [A]
+				sourceQuest = 97168,	-- Material Assistance
+				qg = 258098,	-- Eldrun Stormbreaker <Shaman Trainer>
+				coord = { 47.4, 13.4, MAP.IRONFORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { SHAMAN },
+				races = ALLIANCE_SHAMANS,
+				lvl = 58,
+				groups = {
+					objective(1, {	-- 0/1 Darkreaver's Head
+						provider = { "i", 18880 },	-- Darkreaver's Head
+						cr = 14516,	-- Death Knight Darkreaver
+					}),
+					i(20133),	-- Skyfury Gauntlets
+					i(20134),	-- Skyfury Helm
+				},
+			}),
+			q(8258, {	-- The Darkreaver Menace [H] (Post 1.7, Phase 4)
 				sourceQuest = 7667,	-- Material Assistance
 				altQuests = {
 					7668,	-- The Darkreaver Menace (Original)

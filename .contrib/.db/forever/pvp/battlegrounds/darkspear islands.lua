@@ -60,6 +60,13 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 				races = HORDE_ONLY,
 				lvl = { 60, 69 },
 			}),
+			q(98919, {	-- Conquering the Island
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nizook Boof at The Merchant Coast.
+				lvl = 50,
+				groups = {
+					objective(1),	-- 0/1 Win Darkspear Islands while controlling at least three bases
+				},
+			}),
 			q(98895, {	-- Darkspear Islands Clash [Level 30]
 				qg = 15351,	-- Alliance Brigadier General
 				coords = ALLIANCE_BRIGADIER_COORDS,

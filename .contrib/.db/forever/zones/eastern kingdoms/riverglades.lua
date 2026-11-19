@@ -1210,6 +1210,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				races = ALLIANCE_ONLY,
 				lvl = 36,
 			}),
+			q(96028, {	-- Magic Over Might
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Bal'mog in Bolder'ok.
+				races = HORDE_ONLY,
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/10 Plains Prowler slain
+						provider = { "n", 268831 },	-- Plains Prowler
+						coord = { 68.1, 37.2, MAP.RIVERGLADES },
+					}),
+				},
+			}),
 			q(95424, {	-- Might Makes Right
 				qg = 255829,	-- Clugfist
 				coord = { 64.5, 14.8, MAP.RIVERGLADES },
@@ -1221,6 +1232,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					}),
 					objective(2, {	-- 0/7 Twilight Firecaller slain
 						provider = { "n", 261497 },	-- Twilight Firecaller
+					}),
+				},
+			}),
+			q(96027, {	-- Might Over Magic
+				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Bal'mog in Bolder'ok.
+				races = HORDE_ONLY,
+				lvl = 38,
+				groups = {
+					objective(1, {	-- 0/10 Good Rock
+						provider = { "i", 271892 },	-- Good Rock
 					}),
 				},
 			}),
@@ -1635,7 +1656,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				},
 			}),
 			q(96026, {	-- Step Two: More Rock
-				sourceQuest = 95183,	-- Step One: Rock
+				sourceQuests = {
+					95183,	-- Step One: Rock
+					96027,	-- Might Over Magic
+					96028,	-- Magic Over Might
+				},
+				sourceQuestNumRequired = 1,
 				qg = 263440,	-- Hamur
 				coord = { 67.2, 21.6, MAP.RIVERGLADES },
 				cost = { { "i", 3241, 10 } },	-- Heavy Weightstone
