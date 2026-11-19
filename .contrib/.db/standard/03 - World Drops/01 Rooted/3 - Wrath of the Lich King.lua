@@ -1064,7 +1064,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 		i(44308),	-- Signet of Edward the Odd
 		i(36429),	-- Spur Ring
 		i(36426),	-- Stirrup Ring
-		i(37751),	-- Tooga's Lost Toennail
+		i(37751),	-- Tooga's Lost Toenail
 		i(37822),	-- Twisted Puzzle-Ring
 		i(37820),	-- Worgen's Ring of Revitalization
 	}),

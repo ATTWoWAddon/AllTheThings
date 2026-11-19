@@ -852,7 +852,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						i(38030),	-- Chestpiece of the Forgotten Captain
 						i(38036),	-- Circlet of the Forgotten Mercenary
 						i(37986),	-- Hood of the Forgotten Rifleman
-						i(38071),	-- Valonforth's Rememberance
+						i(38071),	-- Valonforth's Remembrance
 						i(38181),	-- Warblade of the Forgotten Footman
 					},
 				}),
@@ -1436,7 +1436,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						i(38030),	-- Chestpiece of the Forgotten Captain
 						i(38036),	-- Circlet of the Forgotten Mercenary
 						i(37986),	-- Hood of the Forgotten Rifleman
-						i(38071),	-- Valonforth's Rememberance
+						i(38071),	-- Valonforth's Remembrance
 						i(38181),	-- Warblade of the Forgotten Footman
 					},
 				}),

@@ -305,7 +305,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					groups = {
 						i(38748),	-- Seal of the Slumbering Wolf
 						i(38744),	-- Solstice Signet
-						i(38752),	-- Tatiana's Pendant
+						i(38752),	-- Tatjana's Pendant
 					},
 				}),
 				q(12413, {	-- Attack on Silverbrook
