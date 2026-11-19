@@ -3276,6 +3276,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sym = {
 					SymSelector.select("VENDOR_SCALEMAIL"),	-- Scalemail
 					{ "pop" },
+					{ "select", "itemID",
+						2445,	-- Large Metal Shield
+						17188,	-- Ringed Buckler
+					},
 				},
 				groups = {
 					i(4799, {	-- Antiquated Cloak

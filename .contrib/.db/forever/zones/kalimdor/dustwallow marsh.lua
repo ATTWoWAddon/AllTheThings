@@ -1117,6 +1117,10 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				sym = {
 					SymSelector.select("VENDOR_POLISHED_SCALE"),	-- Polished Scale
 					{ "pop" },
+					{ "select", "itemID",
+						2446,	-- Kite Shield
+						17192,	-- Reinforced Targe
+					},
 				},
 				groups = {
 					i(12248, {	-- Daring Dirk

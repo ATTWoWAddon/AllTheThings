@@ -2176,6 +2176,47 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 				},
 			}),
+			n(270570, {	-- Justine Kai <Quartermaster>
+				coord = { 64.0, 80.6, MAP.RIVERGLADES },
+				sym = {{ "select", "itemID",
+					926,	-- Battle Axe
+					2025,	-- Bearded Axe
+					1198,	-- Claymore
+					2029,	-- Cleaver
+					2451,	-- Crested Heater Shield
+					851,	-- Cutlass
+					922,	-- Dacian Falx
+					927,	-- Double Axe
+					2024,	-- Espadon
+					925,	-- Flail
+					1197,	-- Giant Mace
+					2030,	-- Gnarled Staff
+					2028,	-- Hammer
+					853,	-- Hatchet
+					2448,	-- Heavy Pavise
+					2207,	-- Jambiya
+					2446,	-- Kite Shield
+					2209,	-- Kris
+					2445,	-- Large Metal Shield
+					928,	-- Long Staff
+					923,	-- Longsword
+					852,	-- Mace
+					924,	-- Maul
+					17189,	-- Metal Buckler
+					17190,	-- Ornate Buckler
+					2208,	-- Poniard
+					854,	-- Quarter Staff
+					17192,	-- Reinforced Targe
+					17188,	-- Ringed Buckler
+					2026,	-- Rock Hammer
+					2027,	-- Scimitar
+					1196,	-- Tabar
+				}},
+				groups = {
+					i(4817),	-- Blessed Claymore
+					i(4818),	-- Executioner's Sword
+				},
+			}),
 			n(260565, {	-- Kor'gar <Engineering Supplies>
 				coord = { 77.6, 50.8, MAP.RIVERGLADES },
 				groups = {

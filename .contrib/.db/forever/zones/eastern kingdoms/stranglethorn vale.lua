@@ -2391,6 +2391,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				sym = {
 					SymSelector.select("VENDOR_AUGMENTED_CHAIN"),	-- Augmented Chain
 					{ "pop" },
+					{ "select", "itemID",
+						2448,	-- Heavy Pavise
+						17189,	-- Metal Buckler
+					},
 				},
 				groups = {
 					i(12257, {	-- Heavy Notched Belt

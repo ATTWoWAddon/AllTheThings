@@ -859,6 +859,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 		}),
 		n(VENDORS, {
+			n(28990, {	-- Anthony Durain <Shields>
+				coords = {
+					{ 20.0, 63.4, MAP.ALTERAC_MOUNTAINS },
+					{ 20.0, 63.6, MAP.ALTERAC_MOUNTAINS },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				sym = {{ "select", "itemID",
+					2451,	-- Crested Heater Shield
+					2448,	-- Heavy Pavise
+					2446,	-- Kite Shield
+					2445,	-- Large Metal Shield
+					17189,	-- Metal Buckler
+					17190,	-- Ornate Buckler
+					17192,	-- Reinforced Targe
+					17188,	-- Ringed Buckler
+				}},
+			}),
 			n(29547, {	-- Applebough <Fruit Vendor>
 				coord = { 14.4, 65.8, MAP.ALTERAC_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
