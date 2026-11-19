@@ -96,6 +96,86 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 			}),
 		}),
 		n(QUESTS, {
+			q(96076, {	-- In Demand - Ancient Elven Curiosities
+				qg = 227853,	-- Pix Xizzix <Undermine Trader>
+				coord = { 28.4, 75.8, MAP.STRANGLETHORN_VALE },
+				lvl = 60,
+				groups = {
+					objective(1, {	-- 0/1 Felvine Seed
+						provider = { "i", 272020 },	-- Felvine Seed
+					}),
+					objective(2, {	-- 0/1 Earthstone Diamond Pinky Ring
+						provider = { "i", 272022 },	-- Earthstone Diamond Pinky Ring
+					}),
+					objective(3, {	-- 0/1 Ancient Memento
+						provider = { "i", 272021 },	-- Ancient Memento
+					}),
+					i(271994),	-- Undermine Satchel
+				},
+			}),
+			q(96075, {	-- In Demand - Blackrock Legal Records
+				qg = 227853,	-- Pix Xizzix <Undermine Trader>
+				coord = { 28.4, 75.8, MAP.STRANGLETHORN_VALE },
+				maps = { MAP.BLACKROCK_SPIRE, MAP.BLACKROCK_DEPTHS },
+				races = ALLIANCE_ONLY,
+				lvl = 60,
+				groups = {
+					objective(1, {	-- 0/1 Nefarion's Remit
+						provider = { "i", 272017 },	-- Nefarion's Remit
+						cr = 10363,	-- General Drakkisath
+					}),
+					objective(2, {	-- 0/1 Overseer's License
+						provider = { "i", 272018 },	-- Overseer's License
+						cr = 9568,	-- Overlord Wyrmthalak
+					}),
+					objective(3, {	-- 0/1 Bronzebeard Wedding Contract
+						provider = { "i", 272019 },	-- Bronzebeard Wedding Contract
+						cr = 9019,	-- Emperor Dagran Thaurissan
+					}),
+					i(271994),	-- Undermine Satchel
+				},
+			}),
+			q(96087, {	-- In Demand - Plague Records
+				qg = 227853,	-- Pix Xizzix <Undermine Trader>
+				coord = { 28.4, 75.8, MAP.STRANGLETHORN_VALE },
+				maps = { MAP.SCHOLOMANCE, MAP.STRATHOLME },
+				lvl = 60,
+				groups = {
+					objective(1, {	-- 0/1 Headmaster's Records
+						provider = { "i", 272023 },	-- Headmaster's Records
+						cr = 1853,	-- Darkmaster Gandling
+					}),
+					objective(2, {	-- 0/1 Grain Shipment Records
+						provider = { "i", 272024 },	-- Grain Shipment Records
+						cr = 10440,	-- Baron Rivendare
+					}),
+					objective(3, {	-- 0/1 Dathrohan's Correspondance
+						provider = { "i", 272025 },	-- Dathrohan's Correspondance
+						cr = 10812,	-- Grand Crusader Dathrohan
+					}),
+					i(271994),	-- Undermine Satchel
+				},
+			}),
+			q(96088, {	-- In Demand - Titan Relics
+				qg = 227853,	-- Pix Xizzix <Undermine Trader>
+				coord = { 28.4, 75.8, MAP.STRANGLETHORN_VALE },
+				lvl = 60,
+				groups = {
+					objective(1, {	-- 0/1 Ysera's Tear
+						provider = { "i", 272026 },	-- Ysera's Tear
+						cr = 5709,	-- Shade of Eranikus
+					}),
+					objective(2, {	-- 0/1 Mark of Xavius
+						provider = { "i", 272027 },	-- Mark of Xavius
+						cr = 247234,	-- Varrox Bleakhoof
+					}),
+					objective(3, {	-- 0/1 Freya's Sigil
+						provider = { "i", 272028 },	-- Freya's Sigil
+						-- TODO: Dropped by Nanaya in the Shaper's Terrace; Wowhead doesn't list the NPC yet.
+					}),
+					i(271994),	-- Undermine Satchel
+				},
+			}),
 			q(83934, {	-- Show Me the Money!
 				description = "Only a Tarnished Undermine Real looted while you have this quest counts; Reals you already own do not.",
 				qg = 227853,	-- Pix Xizzix <Undermine Trader>
