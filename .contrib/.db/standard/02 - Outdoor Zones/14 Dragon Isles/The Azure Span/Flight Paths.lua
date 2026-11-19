@@ -24,7 +24,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 			}),
 			fp(2775, {	-- Iskaara, Azure Span
 				coord = { 13.3, 48.8, THE_AZURE_SPAN },
-				cr = 186443,	-- Skyhgazer Paatu
+				cr = 186443,	-- Skygazer Paatu
 			}),
 			fp(2786, {	-- Rhonin's Shield, Azure Span
 				coord = { 66.0, 25.4, THE_AZURE_SPAN },

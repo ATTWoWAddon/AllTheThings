@@ -1128,7 +1128,7 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 			}),
 			q(27069, {	-- Steel Thunder
 				sourceQuest = 27065,	-- The Warchief's Fleet
-				qg = 44916,	-- Admiral Hatcher
+				qg = 44916,	-- Admiral Hatchet
 				coord = { 44.0, 21.3, SILVERPINE_FOREST },
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,

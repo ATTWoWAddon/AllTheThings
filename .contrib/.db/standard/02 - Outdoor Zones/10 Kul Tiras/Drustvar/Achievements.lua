@@ -156,7 +156,7 @@ maproot(KUL_TIRAS, DRUSTVAR, {
 				}),
 				crit(41789, {	-- Falcons
 					crs = {
-						122961,	-- Cursed Game-hawk
+						122961,	-- Cursed Game-Hawk
 					},
 					coord = { 31.6, 25.0, DRUSTVAR },
 				}),

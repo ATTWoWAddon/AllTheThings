@@ -1804,7 +1804,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 				races = ALLIANCE_ONLY,
 			}),
 			q(51217, {	-- WANTED: Yarsel'ghun
-				provider = { "o", 288157 },	-- WANTED: Yarsel'ghun
+				provider = { "o", 288157 },	-- Wanted: Yarsel'ghun
 				coord = { 57.8, 55.8, STORMSONG_VALLEY },
 				races = ALLIANCE_ONLY,
 			}),

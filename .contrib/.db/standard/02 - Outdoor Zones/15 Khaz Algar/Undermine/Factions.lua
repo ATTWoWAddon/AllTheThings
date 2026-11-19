@@ -305,7 +305,7 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 					isRepeatable = true,
 					groups = {
 						i(232465, {	-- Darkfuse Trove (Paragon)
-							i(233064),	-- Bronze Goblin Wave Shredder (MOUNT!)
+							i(233064),	-- Bronze Goblin Waveshredder (MOUNT!)
 						}),
 					},
 				}),
@@ -614,7 +614,7 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 								timeline = { ADDED_11_2_7 },
 							}),
 						}, {	-- Exalted
-							i(229946, {	-- Ocher Delivery Rocket (MOUNT!)
+							i(229946, {	-- Ochre Delivery Rocket (MOUNT!)
 								cost = { { "c", RESONANCE_CRYSTALS, 11375 } },
 							}),
 							i(231542, {	-- Venture Co. Undermine Tabard (COSMETIC!)

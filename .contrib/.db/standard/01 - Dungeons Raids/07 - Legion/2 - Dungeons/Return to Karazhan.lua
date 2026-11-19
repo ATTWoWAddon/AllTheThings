@@ -245,7 +245,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					groups = {
 						i(142302),	-- Armguards of Burning Passion
 						i(142146),	-- Blackfin Wristband
-						i(142154),	-- Bracelets of the Sorrowful Bridge
+						i(142154),	-- Bracelets of the Sorrowful Bride
 						i(142201),	-- Mantle of Conflicted Loyalties
 						i(142160),	-- Mrrgria's Favor
 						i(142164),	-- Toe Knee's Promise
@@ -446,7 +446,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					groups = {
 						i(142302),	-- Armguards of Burning Passion
 						i(142146),	-- Blackfin Wristband
-						i(142154),	-- Bracelets of the Sorrowful Bridge
+						i(142154),	-- Bracelets of the Sorrowful Bride
 						i(142201),	-- Mantle of Conflicted Loyalties
 						i(142160),	-- Mrrgria's Favor
 						i(142164),	-- Toe Knee's Promise

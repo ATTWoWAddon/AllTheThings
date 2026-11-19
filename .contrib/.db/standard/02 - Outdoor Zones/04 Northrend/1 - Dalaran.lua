@@ -1683,7 +1683,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						coord = { 40.6, 64.9, NORTHREND_DALARAN },
 					}),
 					hordeQuestData = q(13115, {	-- Cheese for Glowergold [H]
-						qg = 29631,	-- Awilo Longomba
+						qg = 29631,	-- Awilo Lon'gomba
 						coord = { 70.0, 39.0, NORTHREND_DALARAN },
 					}),
 					maxReputation = { FACTION_KIRIN_TOR, EXALTED },
@@ -1737,7 +1737,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						coord = { 40.6, 64.9, NORTHREND_DALARAN },
 					}),
 					hordeQuestData = q(13113, {	-- Convention at the Legerdemain [H]
-						qg = 29631,	-- Awilo Longomba
+						qg = 29631,	-- Awilo Lon'gomba
 						coord = { 70.0, 39.0, NORTHREND_DALARAN },
 					}),
 					maxReputation = { FACTION_KIRIN_TOR, EXALTED },
@@ -1836,7 +1836,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						coord = { 40.6, 64.9, NORTHREND_DALARAN },
 					}),
 					hordeQuestData = q(13112, {	-- Infused Mushroom Meatloaf [H]
-						qg = 29631,	-- Awilo Longomba
+						qg = 29631,	-- Awilo Lon'gomba
 						coord = { 70.0, 39.0, NORTHREND_DALARAN },
 					}),
 					maxReputation = { FACTION_KIRIN_TOR, EXALTED },
@@ -1966,7 +1966,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						coord = { 40.6, 64.9, NORTHREND_DALARAN },
 					}),
 					hordeQuestData = q(13116, {	-- Mustard Dogs! [H]
-						qg = 29631,	-- Awilo Longomba
+						qg = 29631,	-- Awilo Lon'gomba
 						coord = { 70.0, 39.0, NORTHREND_DALARAN },
 					}),
 					maxReputation = { FACTION_KIRIN_TOR, EXALTED },
@@ -2334,7 +2334,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						coord = { 40.6, 64.9, NORTHREND_DALARAN },
 					}),
 					hordeQuestData = q(13114, {	-- Sewer Stew [H]
-						qg = 29631,	-- Awilo Longomba
+						qg = 29631,	-- Awilo Lon'gomba
 						coord = { 70.0, 39.0, NORTHREND_DALARAN },
 					}),
 					maxReputation = { FACTION_KIRIN_TOR, EXALTED },

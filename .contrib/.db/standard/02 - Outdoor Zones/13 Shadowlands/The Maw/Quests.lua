@@ -47,7 +47,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 				}),
 				q(59752, {	-- A Fractured Blade
 					sourceQuests = { 59751 },	-- Through the Shattered Sky
-					provider = { "n", 165918 },	-- Highlord Darion Morgraine
+					provider = { "n", 165918 },	-- Highlord Darion Mograine
 					coord = { 19.2, 57.0, 1648 },	-- pre-SL scenario
 				}),
 				q(59907, {	-- Mawsworn Menace
@@ -66,7 +66,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 						59907,	-- Mawsworn Menace
 						59753,	-- Ruiner's End
 					},
-					provider = { "n", 165918 },	-- Highlord Darion Morgraine
+					provider = { "n", 165918 },	-- Highlord Darion Mograine
 					coord = { 21.5, 41.7, 1648 },	-- pre-SL scenario
 				}),
 				q(59754, {	-- On Blackened Wings
@@ -86,7 +86,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 				}),
 				q(59757, {	-- Field Seance
 					sourceQuests = { 59756 },	-- A Moment's Respite
-					provider = { "n", 165918 },	-- Highlord Darion Morgraine
+					provider = { "n", 165918 },	-- Highlord Darion Mograine
 					coord = { 24.4, 35.9, 1648 },	-- pre-SL scenario
 					groups = {
 						i(178495),	-- Shattered Helm of Domination (QI!)

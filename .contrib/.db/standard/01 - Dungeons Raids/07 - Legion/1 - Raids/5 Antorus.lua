@@ -227,7 +227,7 @@ local EncounterToLoot = {
 		i(152414),	-- Bracers of Wanton Morality
 		i(152010),	-- Burning Coven Sabatons
 		i(152046),	-- Coven Prayer Bead
-		i(151977),	-- Dilma's Glacial Aegis
+		i(151977),	-- Diima's Glacial Aegis
 		i(152117),	-- Dreadwake Pauldrons
 		i(152123),	-- Felreaper Spaulders
 		i(151946),	-- Fervent Twilight Legwraps

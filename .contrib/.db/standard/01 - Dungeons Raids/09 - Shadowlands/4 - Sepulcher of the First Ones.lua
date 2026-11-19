@@ -712,7 +712,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(WORLD_QUESTS, {
-					q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
+					q(66695, {	-- Tempting Fate: Sepulcher of the First Ones
 						timeline = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 						isWorldQuest = true,
 					}),

@@ -627,7 +627,7 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				groups = {
 					objective(1, {	-- 0/3 Feed Squirky
 						providers = {
-							{ "n", 53544 },	-- Squirky
+							{ "n", 53544 },	-- Squrky
 							{ "i", 69933 },	-- Blind Minnow
 						},
 						coord = { 47.1, 14.5, IRONFORGE },

@@ -64,7 +64,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, {
 					title(554),	-- Forged Warlord <Name>
 				},
 			}),
-			ach(40233, {	-- The Strategist: The War Within Season 1
+			ach(40233, {	-- Strategist: The War Within Season 1
 				i(225933),	-- Forged Legend's Pennant (TOY!)
 			}),
 			-- Solo

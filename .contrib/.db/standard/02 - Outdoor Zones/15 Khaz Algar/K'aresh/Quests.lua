@@ -227,7 +227,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 					qg = 230814,	-- Ve'nari
 					coord = { 47.1, 54.6, KARESH },
 					groups = {
-						o(500813, {	-- Rod of analysis
+						o(500813, {	-- Rod of Analysis
 							coord = { 47.2, 58.6, KARESH },
 							groups = { i(233068) },	-- Rod of Analysis (QI!)
 						}),
@@ -2288,7 +2288,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 				}),
 			}),
 		}),
-		header(HEADERS.Achievement, 41980, {	-- Vigiliante
+		header(HEADERS.Achievement, 41980, {	-- Vigilante
 			q(87344, {	-- A Key Threat
 				sourceQuests = { 84967 },	-- The Shadowguard Shattered
 				qg = 238255,	-- Constable Zo'ardaz
@@ -2547,7 +2547,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 			}),
 			header(HEADERS.Quest, 87345, {	-- Warrant: Xy'vox the Twisted
 				q(87345, {	-- Warrant: Xy'vox the Twisted
-					qg = 238271,	-- Warrant: Xy'Vox the Twisted
+					qg = 238271,	-- Warrant: Xy'vox the Twisted
 					coord = { 48.5, 58.4, KARESH_TAZAVESH },
 					isMonthly = true,	-- unflagged after completing 4 warrants
 					groups = { i(236753) },	-- Xy'vox Refuge Dampener (QS!)

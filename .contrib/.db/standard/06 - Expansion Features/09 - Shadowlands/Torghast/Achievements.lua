@@ -120,7 +120,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ timeline = 
 					},
 				}),
 			})),
-			ach(15088, {timeline = { ADDED_9_1_0 }}),	-- Flawless: Upper Reaches (Layer 12)
+			ach(15088, {timeline = { ADDED_9_1_0 }}),	-- Flawless: The Upper Reaches (Layer 12)
 			ach(15087, {timeline = { ADDED_9_1_0 }}),	-- Flawless: Mort'regar (Layer 12)
 			ach(15084, {timeline = { ADDED_9_1_0 }}),	-- Flawless: The Soulforges (Layer 12)
 			ach(15083, {timeline = { ADDED_9_1_0 }}),	-- Flawless: Coldheart Interstitia (Layer 12)
@@ -130,7 +130,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, timelineSelf({ timeline = 
 				timeline = { ADDED_9_1_0 },
 				groups = { i(186655) },	-- Mawsworn Charger (MOUNT!)
 			}),
-			ach(15320, {timeline = { ADDED_9_2_0 }}),	-- Flawless: Upper Reaches (Layer 16)
+			ach(15320, {timeline = { ADDED_9_2_0 }}),	-- Flawless: The Upper Reaches (Layer 16)
 			ach(15319, {timeline = { ADDED_9_2_0 }}),	-- Flawless: Mort'regar (Layer 16)
 			ach(15317, {timeline = { ADDED_9_2_0 }}),	-- Flawless: The Soulforges (Layer 16)
 			ach(15318, {timeline = { ADDED_9_2_0 }}),	-- Flawless: Coldheart Interstitia (Layer 16)

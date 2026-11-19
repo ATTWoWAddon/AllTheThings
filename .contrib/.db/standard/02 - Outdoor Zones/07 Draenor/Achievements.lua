@@ -110,7 +110,7 @@ maproot(DRAENOR, {
 					crit(27014),	-- Vesharr [Spires of Arak)
 				},
 			})),
-			ach(14728, {		-- To All The Squirrels Through Time and Space
+			ach(14728, {		-- To All the Squirrels Through Time and Space
 				crit(49746, {	-- Royal Moth
 					crs = { 88975 },	-- Royal Moth
 					coord = { 39.0, 36.0, DRAENOR_SHADOWMOON_VALLEY },

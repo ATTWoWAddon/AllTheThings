@@ -1637,7 +1637,7 @@ i(0, 356802);		-- Holy Lightstrider
 i(191566, 370620);	-- Elusive Emerald Hawkstrider
 i(191290, 370346);	-- Eternal Gladiator's Soul Eater
 i(191123, 369666);	-- Grimhowl
-i(190170, 366791);	-- Jigglesworth Sr.
+i(190170, 366791);	-- Jigglesworth, Sr.
 i(190581, 367676);	-- Nether-Gorged Greatwyrm
 i(192557, 334482);	-- Restoration Deathwalker
 -- #if AFTER 11.2.5
@@ -1946,7 +1946,7 @@ i(213601, 435115);	-- Guardian Quilen
 i(213621, 435147);	-- Jade Pterrordax
 i(87784, 127178);	-- Jungle Riding Crane
 i(84753, 123182);	-- Kafa Yak
-i(223449, 449126);	-- Korkron Warsaber
+i(223449, 449126);	-- Kor'kron Warsaber
 i(213609, 435133);	-- Little Red Riding Goat
 i(213607, 435124);	-- Luxurious Riding Crane
 i(213600, 435118);	-- Marble Quilen
@@ -2123,7 +2123,7 @@ i(229952, 466023);	-- Asset Advocator
 i(229957, 466024);	-- Bilgewater Bombardier
 i(229937, 466001);	-- Blackwater Bonecrusher
 i(229948, 466019);	-- Blackwater Shredder Deluxe Mk 2
-i(233064, 473188);	-- Bronze Goblin Wave Shredder
+i(233064, 473188);	-- Bronze Goblin Waveshredder
 i(229935, 465999);	-- Crimson Armored Growler
 i(235549, 1217235);	-- Crimson Shreddertank
 i(229924, 466000);	-- Darkfuse Chompactor
@@ -2143,7 +2143,7 @@ i(233284, 473743);	-- Meeksi Rollingpaw
 i(233282, 473739);	-- Meeksi Rufflefur
 i(233283, 473741);	-- Meeksi Softpaw
 i(233285, 473744);	-- Meeksi Teatuft
-i(229946, 466013);	-- Ocher Delivery Rocket
+i(229946, 466013);	-- Ochre Delivery Rocket
 i(235650, 1217994);	-- Pearlescent Butterfly
 i(229949, 466020);	-- Personalized Goblin S.C.R.A.Per
 i(229987, 466144);	-- Prized Gladiator's Fel Bat
@@ -2227,7 +2227,7 @@ i(242734, 1233561);	-- Curious Slateback
 i(238051, 1224048);	-- Delver's Mana-Skimmer
 i(247792, 1245358);	-- High Shaman's Aerie Gryphon
 i(242717, 1233518);	-- Lavender K'arroc
-i(246921, 1244261);	-- Legion Forged Elekk
+i(246921, 1244261);	-- Legion-Forged Elekk
 i(243020, 1234305);	-- Lightwing Dragonhawk
 i(247795, 1245370);	-- Ornery Breezestrider
 i(246067, 1240632);	-- Pearlescent Krolusk

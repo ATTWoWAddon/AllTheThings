@@ -1494,7 +1494,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(10266, {	-- Request for Assistance
 					sourceQuest = 10205,	-- Warp-Raider Nesaad
-					qg = 19880,	-- Nether-Stalker Khay-ji
+					qg = 19880,	-- Nether-Stalker Khay'ji
 					coord = { 32.4, 64.2, NETHERSTORM },
 				}),
 				q(10435, {	-- Retrieving the Goods

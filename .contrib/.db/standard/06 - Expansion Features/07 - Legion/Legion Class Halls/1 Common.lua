@@ -510,7 +510,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							provider = { "i", 143329 },	-- Dire Summons
 							u = REMOVED_FROM_GAME,
 							groups = {
-								un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
+								un(REMOVED_FROM_GAME, i(143607)),	-- Soldier's Footlocker
 							},
 						}),
 					}),
@@ -518,11 +518,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						i(140465),	-- Duskpelt Hide
 					}),
 					mission(1507, {	-- The Greatest Stage of All
-						q(45179, {	-- Win the Crowed
+						q(45179, {	-- Win the Crowd
 							provider = { "i", 143478 },	-- Arena Invitation
 							u = REMOVED_FROM_GAME,
 							groups = {
-								un(REMOVED_FROM_GAME, i(143607, {	-- Solider's Footlocker
+								un(REMOVED_FROM_GAME, i(143607, {	-- Soldier's Footlocker
 									un(REMOVED_FROM_GAME, i(140415)),	-- Blaze of Glory
 									i(140423),	-- Exhaustive Research
 								})),
@@ -534,7 +534,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							provider = { "i", 143479 },	-- Frayed Banner
 							u = REMOVED_FROM_GAME,
 							groups = {
-								un(REMOVED_FROM_GAME, i(143607)),	-- Solider's Footlocker
+								un(REMOVED_FROM_GAME, i(143607)),	-- Soldier's Footlocker
 							},
 						}),
 					}),
@@ -1145,7 +1145,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						i(147348, { timeline = { ADDED_7_2_0 } }),	-- Bulky Armor Set
 						i(139814),	-- Carrot on a Stick
 						i(147556, { timeline = { ADDED_7_2_0 } }),	-- Cloak of Concealment
-						i(139808),	-- Cuiro of Abundant Happiness
+						i(139808),	-- Curio of Abundant Happiness
 						i(152454, { timeline = { ADDED_7_3_0 } }),	-- Darklost Claw
 						i(139830),	-- Demon in a Box
 						i(139795),	-- Draught of Courage

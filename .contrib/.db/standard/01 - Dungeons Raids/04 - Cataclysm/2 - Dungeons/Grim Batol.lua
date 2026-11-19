@@ -123,7 +123,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					40290,	-- Crimsonborne Seer
 					39626,	-- Crimsonborne Warlord
 					40166,	-- Enslaved Gronn Brute
-					39392,	-- Faceless Corrupter
+					39392,	-- Faceless Corruptor
 					41073,	-- Twilight Armsmaster
 					40306,	-- Twilight Armsmaster
 					40167,	-- Twilight Beguiler

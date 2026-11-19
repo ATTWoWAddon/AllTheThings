@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						groups = {
 							i(55856),	-- Greaves of Wu the Elder
 							i(55857),	-- Ionic Gloves
-							i(55858),	-- Kaleti Cloak
+							i(55858),	-- Kaleki Cloak
 							i(55860),	-- Siliza's Spear
 							i(55859),	-- Spirit Creeper Ring
 						},

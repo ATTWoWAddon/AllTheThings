@@ -2182,7 +2182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(12318),	-- Orbital Devastation
 						ach(12317),	-- Orbital Bombardment
 						ach(12316),	-- Shutout
-						ach(12315),	-- Take Out Those Turret
+						ach(12315),	-- Take Out Those Turrets
 						ach(12314, {	-- Three Car Garage
 							crit(39309),	-- Salvaged Chopper
 							crit(39310),	-- Salvaged Siege Engine
@@ -2423,7 +2423,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						32857,	-- Stormcaller Brundir
 					},
 					groups = {
-						ach(12335, {	-- But I'm On Your Side!
+						ach(12335, {	-- But I'm On Your Side
 							description = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
 							provider = { "i", 43499 },	-- Iron Boot Flask
 						}),

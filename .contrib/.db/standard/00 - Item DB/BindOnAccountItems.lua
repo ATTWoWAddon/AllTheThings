@@ -151,7 +151,7 @@ i(153138);	-- Unsullied Mail Legguards
 i(153152);	-- Unsullied Mail Boots
 i(153155);	-- Unsullied Plate Helmet
 i(153153);	-- Unsullied Plate Pauldrons
-i(153143);	-- Unsullied Plate Breasplate
+i(153143);	-- Unsullied Plate Breastplate
 i(153150);	-- Unsullied Plate Vambraces
 i(153157);	-- Unsullied Plate Gauntlets
 i(153140);	-- Unsullied Plate Waistplate

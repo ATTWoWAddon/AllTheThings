@@ -151,7 +151,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 					}),
 					q(14281, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Worgen)
 						sourceQuest = 14277,	-- Arcane Inquiries
-						qg = 35872,	-- Myriam Spellwalker
+						qg = 35872,	-- Myriam Spellwaker
 						coord = { 68.01, 64.68, GILNEAS_CITY },
 						timeline = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 						races = { WORGEN },
@@ -236,7 +236,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 							75189,	-- Safety in Numbers [Monk]
 							-- #endif
 						},
-						qg = 35112,	-- King Geen Greymane
+						qg = 35112,	-- King Genn Greymane
 						coord = { 65.83, 77.84, GILNEAS_CITY },
 						races = { WORGEN },
 					}),
@@ -470,7 +470,7 @@ maproot(EASTERN_KINGDOMS, GILNEAS, {
 							26129,	-- Brothers in Arms
 							24930,	-- While You're At It
 						},
-						qg = 35112,	-- King Geen Greymane
+						qg = 35112,	-- King Genn Greymane
 						coord = { 65.83, 77.84, GILNEAS_CITY },
 						races = { WORGEN },
 					}),

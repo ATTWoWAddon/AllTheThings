@@ -154,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				},
 				crs = {
 					152736,	-- Guardian Tannin
-					152729,	-- Moon Princess Liara
+					152729,	-- Moon Priestess Liara
 					152697,	-- Ulmath
 				},
 				timeline = { ADDED_8_2_0 },

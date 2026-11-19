@@ -404,7 +404,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 				}),
 				q(36941, {	-- Report to the King
-					sourceQuest = 35500,	-- Gar'mark Bladetwist
+					sourceQuest = 35500,	-- Gar'mak Bladetwist
 					qg = 84929,	-- Vindicator Maraad
 					coord = { 52.0, 28.6, BLASTED_LANDS },
 					races = ALLIANCE_ONLY,

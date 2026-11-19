@@ -913,7 +913,7 @@ maproot(ZANDALAR, ZULDAZAR, {
 			}),
 			q(56205, {	-- Just Ptrust Me On This
 				sourceQuests = { 50944 },	-- Down, But Not Out
-				provider = { "n", 127377 },	-- Pa'Ku
+				provider = { "n", 127377 },	-- Pa'ku
 				coord = { 71.5, 49.4, ZULDAZAR },
 				races = HORDE_ONLY,
 				groups = {

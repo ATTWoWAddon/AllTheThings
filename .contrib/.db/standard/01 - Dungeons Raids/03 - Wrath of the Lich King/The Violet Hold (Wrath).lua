@@ -356,7 +356,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							29316,	-- Moragg
 							29313,	-- Ichoron
 							29266,	-- Xevozz
-							29312,	-- Levanthor
+							29312,	-- Lavanthor
 							29314,	-- Zuramat the Obliterator
 						},
 						groups = {

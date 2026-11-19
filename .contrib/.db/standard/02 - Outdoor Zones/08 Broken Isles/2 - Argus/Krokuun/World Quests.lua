@@ -90,7 +90,7 @@ maproot(BROKEN_ISLES, ARGUS, KROKUUN, {
 		q(48192, {	-- Tar Spitter
 			sym = {{"select","npcID",125479}},	-- Select the WQ NPC
 		}),
-		q(47953, {	-- Terek the Selector
+		q(47953, {	-- Tereck the Selector
 			sym = {{"select","npcID",124804}},	-- Select the WQ NPC
 		}),
 		q(47712, {	-- The Devastator

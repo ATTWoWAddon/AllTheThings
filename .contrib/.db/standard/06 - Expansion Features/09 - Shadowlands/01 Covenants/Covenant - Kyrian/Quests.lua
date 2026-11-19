@@ -188,7 +188,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 			}),
 			q(58557, {	-- Assistance from Sinfall
 				description = "Requires Renown 13.",
-				sourceQuests = { 61878 },	-- Creat of Greatness
+				sourceQuests = { 61878 },	-- Crest of Greatness
 				provider = { "n", 160037 },	-- Polemarch Adrestes
 				coord = { 45.0, 56.9, ARCHONS_RISE },
 			}),

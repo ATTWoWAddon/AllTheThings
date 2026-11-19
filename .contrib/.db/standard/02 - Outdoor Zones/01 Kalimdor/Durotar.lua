@@ -2372,7 +2372,7 @@ maproot(KALIMDOR, DUROTAR, {
 			}),
 			q(29690, {	-- Into the Mists
 				sourceQuest = 31853,	-- All Aboard!
-				qg = 55054,	-- General Nazrim
+				qg = 55054,	-- General Nazgrim
 				coord = { 61.2, 44.6, DUROTAR },
 				timeline = { ADDED_5_0_4 },
 				races = HORDE_ONLY,

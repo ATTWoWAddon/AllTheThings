@@ -286,7 +286,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 								i(207027),	-- Greater Encapsulated Destiny
 							},
 						}),
-						q(77250, {	-- Realized Potentional
+						q(77250, {	-- Realized Potential
 							provider = { "n", 204450 },	-- Soridormi
 							coords = {
 								{ 51.1, 57.1, THALDRASZUS },
@@ -471,7 +471,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 				n(VENDORS, bubbleDownFiltered({
 					timeline = { ADDED_10_1_5 },
 				},FILTERFUNC_itemID,{
-					n(208338, {	-- Baron Silver <Azmourne Vendor>
+					n(208338, {	-- Baron Sliver <Azmourne Vendor>
 						coord = { 51.0, 56.7, THALDRASZUS },
 						groups = {
 							i(206680, {	-- Reins of the Scourgebound Vanquisher (MOUNT!)
@@ -626,7 +626,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 							}),
 						},
 					}),
-					n(208345, {	-- Sir Finely Mrrgglton <Azmerloth Vendor>
+					n(208345, {	-- Sir Finley Mrrgglton <Azmerloth Vendor>
 						coord = { 51.0, 56.6, THALDRASZUS },
 						groups = {
 							i(208009, {	-- Gill'dan (PET!)

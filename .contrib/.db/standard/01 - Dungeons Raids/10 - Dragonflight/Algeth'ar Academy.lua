@@ -35,7 +35,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2509, {	-- Vexamus
 					crs = {
-						189668,	-- Professor Madormu
+						189668,	-- Professor Maxdormu
 						195416,	-- Magic Book
 						194181,	-- Vexamus
 					},
@@ -90,7 +90,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2509, {	-- Vexamus
 					crs = {
-						189668,	-- Professor Madormu
+						189668,	-- Professor Maxdormu
 						195416,	-- Magic Book
 						194181,	-- Vexamus
 					},
@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2509, {	-- Vexamus
 					crs = {
-						189668,	-- Professor Madormu
+						189668,	-- Professor Maxdormu
 						195416,	-- Magic Book
 						194181,	-- Vexamus
 					},

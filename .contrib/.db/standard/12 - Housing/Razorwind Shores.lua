@@ -19,7 +19,7 @@ root(ROOTS.Housing, m(RAZORWIND_SHORES, {
 		n(FLIGHT_PATHS, {
 			fp(2978, {	-- Cragthorn Highlands, Razorwind Shores
 				coord = { 66.3, 56.5, RAZORWIND_SHORES },
-				cr = 227952,	-- Jarg Riverbend
+				cr = 227952,	-- Jarg Riverbender
 			}),
 			fp(2972, {	-- Entrance Gate, Razorwind Shores
 				coord = { 54.8, 51.2, RAZORWIND_SHORES },

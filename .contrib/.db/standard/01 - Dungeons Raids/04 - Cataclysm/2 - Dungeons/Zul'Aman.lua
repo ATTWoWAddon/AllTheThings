@@ -238,7 +238,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					n(ZULAMAN_TIMED_EVENT, {
 						sharedDescription = "Stay with the captives after their release to get additional loot.",
 						groups = {
-							n(52941),	-- Bakkal'zu
+							n(52941),	-- Bakkalzu
 							n(52939),	-- Hazlek
 							n(52945),	-- Kasha
 							n(52943),	-- Norkani

@@ -443,7 +443,7 @@ root(ROOTS.Zones, {
 						coord = { 50.6, 24.0, ZULDAZAR },
 					}),
 				})),
-				petbattle(ach(13271, {	-- Critters with Huge Teeth
+				petbattle(ach(13271, {	-- Critters With Huge Teeth
 					crit(43641, {	-- Burly
 						cr = 141479,	-- Burly
 						coord = { 67.6, 12.8, TIRAGARDE_SOUND },

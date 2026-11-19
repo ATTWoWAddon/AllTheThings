@@ -121,7 +121,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 				}),
 			}),
 			ach(14305),	-- Explore Maldraxxus
-			ach(14721, {	-- It's in the Mix
+			ach(14721, {	-- It's In The Mix
 				i(183903),	-- Smelly Jelly (TOY!)
 				crit(48854, {
 					_npcs = { 157294 },	-- Pulsing Leech
@@ -206,7 +206,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 					sourceQuests = { 58794 },	-- Stabbing Wasteward
 				}),
 			}),
-			achWithRep(14336, FACTION_THE_UNDYING_ARMY),	-- The Undying Army
+			achWithRep(14336, FACTION_THE_UNDYING_ARMY),	-- Undying Army
 			pvp(ach(14513)),	-- Tour of Duty: Maldraxxus
 			ach(14312, {	-- Treasures of Maldraxxus
 				crit(50063, {	-- Ornate Bone Shield

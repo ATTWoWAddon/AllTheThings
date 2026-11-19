@@ -75,7 +75,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 				}),
 				q(80013, {	-- How to Glide with Your Dragon
 					sourceQuests = { 80012 },	-- Dragonriding
-					provider = { "n", 218469 },	-- Lord Anderstrasz
+					provider = { "n", 218469 },	-- Lord Andestrasz
 					coord = { 65.2, 37.2, THE_JADE_FOREST },
 					groups = {
 						i(216712),	-- Bronze Timepiece (QI!)
@@ -83,7 +83,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 				}),
 				q(80015, {	-- How to Dive with Your Dragon
 					sourceQuests = { 80013 },	-- How to Glide with Your Dragon
-					provider = { "n", 218469 },	-- Lord Anderstrasz
+					provider = { "n", 218469 },	-- Lord Andestrasz
 					coord = { 65.2, 37.2, THE_JADE_FOREST },
 					groups = {
 						i(216712),	-- Bronze Timepiece (QI!)
@@ -91,7 +91,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 				}),
 				q(80016, {	-- The Need For Higher Velocities
 					sourceQuests = { 80015 },	-- How to Dive with Your Dragon
-					provider = { "n", 218469 },	-- Lord Anderstrasz
+					provider = { "n", 218469 },	-- Lord Andestrasz
 					coord = { 65.2, 37.2, THE_JADE_FOREST },
 					groups = {
 						i(216712),	-- Bronze Timepiece (QI!)
@@ -99,7 +99,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 				}),
 				q(80017, {	-- The Need For Higher Altitudes
 					sourceQuests = { 80016 },	-- The Need For Higher Velocities
-					provider = { "n", 218469 },	-- Lord Anderstrasz
+					provider = { "n", 218469 },	-- Lord Andestrasz
 					coord = { 65.2, 37.2, THE_JADE_FOREST },
 					groups = {
 						i(216712),	-- Bronze Timepiece (QI!)
@@ -107,12 +107,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 				}),
 				q(80018, {	-- Fashionable Flying
 					sourceQuests = { 80017 },	-- The Need For Higher Altitudes
-					provider = { "n", 218469 },	-- Lord Anderstrasz
+					provider = { "n", 218469 },	-- Lord Andestrasz
 					coord = { 65.2, 37.2, THE_JADE_FOREST },
 				}),
 				q(80349, {	-- Time to Return
 					sourceQuests = { 80018 },	-- Fashionable Flying
-					provider = { "n", 218469 },	-- Lord Anderstrasz
+					provider = { "n", 218469 },	-- Lord Andestrasz
 					coord = { 65.2, 37.2, THE_JADE_FOREST },
 				}),
 				q(79489, {	-- Gems of Power

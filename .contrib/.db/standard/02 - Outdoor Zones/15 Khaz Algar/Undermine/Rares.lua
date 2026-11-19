@@ -23,12 +23,12 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 				233471,	-- Scrapchewer
 				-- 230947,	-- Slimesby
 				230800,	-- Slugger the Smart
-				231288,	-- Swogs Farsight
+				231288,	-- Swigs Farsight
 				230940,	-- Tally Doublespeak
 				230793,	-- The Junk-Wall
 				230951,	-- Thwack
 				230946,	-- V.V. Goosworth
-				233472,	-- Volstrike the Charged
+				233472,	-- Voltstrike the Charged
 			},
 			groups = {
 				i(234415),	-- Handcrank Casing

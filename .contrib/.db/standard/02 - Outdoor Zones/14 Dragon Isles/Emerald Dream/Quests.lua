@@ -1034,7 +1034,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 					i(210951),	-- Treacherous Research Notes
 				},
 			}),
-			q(78044, {	-- Apalling Pollen
+			q(78044, {	-- Appalling Pollen
 				sourceQuests = {
 					78042,	-- Aviana's Assessment
 					78043,	-- Q'Onzu's Quandary
@@ -1062,7 +1062,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 			}),
 			q(78046, {	-- Overseer Oversight
 				sourceQuests = {
-					78044,	-- Apalling Pollen
+					78044,	-- Appalling Pollen
 					78045,	-- Uproot the Cause
 				},
 				provider = { "n", 210587 },	-- Aviana

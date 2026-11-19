@@ -1996,7 +1996,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 									i(98084),	-- Ooze-Soaked Shirt
 								}),
 							}),
-							n(70666, {	-- Ty'Thar
+							n(70666, {	-- Ty'thar
 								i(151224, {	-- Bitten Brawler's Purse
 									i(98082),	-- Undisputed Champion's Shirt
 								}),
@@ -2257,7 +2257,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 									i(98084),	-- Ooze-Soaked Shirt
 								}),
 							}),
-							n(70666, {	-- Ty'Thar
+							n(70666, {	-- Ty'thar
 								i(151224, {	-- Bitten Brawler's Purse
 									i(98082),	-- Undisputed Champion's Shirt
 								}),

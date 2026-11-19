@@ -312,7 +312,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 					coord = { 61.1, 16.0, MAP.MIDNIGHT.HARANDAR },
 					questID = 93473,
 				}),
-				o(579233, {	-- Lament of Wey'nan--Part 1: Finding Hope
+				o(579233, {	-- Laments of Wey'nan--Part 1: Finding Hope
 					sourceQuest = 88993,	-- Wey'nan's Ward
 					coord = { 43.2, 37.3, MAP.MIDNIGHT.HARANDAR },
 					questID = 93470,
@@ -322,7 +322,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 					coord = { 41.6, 35.9, MAP.MIDNIGHT.HARANDAR },
 					questID = 93471,
 				}),
-				o(579235, {	-- Lament of Wey'nan--Part 3: There Must Be More
+				o(579235, {	-- Laments of Wey'nan--Part 3: There Must Be More
 					sourceQuest = 88993,	-- Wey'nan's Ward
 					coord = { 42.3, 35.5, MAP.MIDNIGHT.HARANDAR },
 					questID = 93472,

@@ -781,7 +781,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 					}),
 					i(63722),	-- Throat-Slitter Gauntlets
 					i(63721),	-- Lifecrusher Treads
-					i(63723),	-- Redestributed Signet
+					i(63723),	-- Redistributed Signet
 				},
 			}),
 			q(28249, {	-- Crushblow
@@ -1151,7 +1151,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 					28109,	-- Pressing Forward (A)
 					28093,	-- Pressing Forward (H)
 				},
-				qg = 47603,	-- Alextrasza the Life-Binder
+				qg = 47603,	-- Alexstrasza the Life-Binder
 				coord = { 21.8, 57.0, TWILIGHT_HIGHLANDS },
 			}),
 			q(27644, {	-- Eoin Dunwald

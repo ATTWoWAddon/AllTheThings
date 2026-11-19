@@ -76,12 +76,12 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 				coord = { 28.8, 54.5, ISLE_OF_DORN },
 			}),
 			q(78530, {	-- Slay the Saboteurs
-				sourceQuests = { 78529 },	-- Violet Impact
+				sourceQuests = { 78529 },	-- Violent Impact
 				provider = { "n", 211994 },	-- Lady Jaina Proudmoore
 				coord = { 29.5, 55.0, ISLE_OF_DORN },
 			}),
 			q(78531, {	-- Urgent Recovery
-				sourceQuests = { 78529 },	-- Violet Impact
+				sourceQuests = { 78529 },	-- Violent Impact
 				provider = { "n", 211993 },	-- Thrall
 				coord = { 29.5, 55.1, ISLE_OF_DORN },
 			}),
@@ -96,7 +96,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 				isBreadcrumb = true,
 			}),
 			q(78532, {	-- Erratic Artifacts
-				sourceQuests = { 78529 },	-- Violet Impact
+				sourceQuests = { 78529 },	-- Violent Impact
 				provider = { "n", 223166 },	-- Archmage Aethas Sunreaver
 				coord = { 30.1, 55.1, ISLE_OF_DORN },
 				groups = {
@@ -270,7 +270,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 				provider = { "n", 217878 },	-- Moira Thaurissan
 				coord = { 41.9, 72.7, ISLE_OF_DORN },
 			}),
-			q(79701, {	-- The Calvalry is Here
+			q(79701, {	-- The Cavalry is Here
 				sourceQuests = { 78470 },	-- The Proscenium
 				provider = { "n", 217766 },	-- Baelgrim
 				coord = { 56.5, 52.1, ISLE_OF_DORN },
@@ -283,7 +283,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 			q(78471, {	-- Convergence
 				sourceQuests = {
 					79721,	-- Fire in the Hole
-					79701,	-- The Calvalry is Here
+					79701,	-- The Cavalry is Here
 				},
 				provider = { "n", 217898 },	-- Moira Thaurissan
 				coord = { 56.6, 48.8, ISLE_OF_DORN },
@@ -519,7 +519,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 				provider = { "n", 217095 },	-- Merrix
 				coord = { 49.3, 26.3, DORNOGAL },
 			}),
-			q(79545, {	-- The Market Reeveo of the Forgegrounds
+			q(79545, {	-- The Market Reeve of the Forgegrounds
 				sourceQuests = { 79544 },	-- Security Through Trade
 				provider = { "n", 217072 },	-- Bevrusi
 				coord = { 55.6, 50.2, DORNOGAL },
@@ -619,7 +619,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 			}),
 		}),
 		header(HEADERS.AchCriteria, 20595.04, {	-- Lost Lord of the Storm
-			q(78289, {	-- To Rumbleshire
+			q(78289, {	-- To Rambleshire
 				sourceQuests = { 78536 },	-- Impossible Odds
 				provider = { "n", 214352 },	-- Rooktender Otwin
 				coord = { 32.8, 33.6, DORNOGAL },
@@ -946,7 +946,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 		header(HEADERS.AchCriteria, 20595.09, {	-- Brotherhood in the Skolzgal Wood
 			q(80456, {	-- A Sassy Arathi
 				sourceQuests = { 78630 },	-- The Rise of the Reckoning
-				provider = { "n", 219437 },	-- Dornogal CItizen
+				provider = { "n", 219437 },	-- Dornogal Citizen
 				coord = { 55.4, 55.8, ISLE_OF_DORN },
 				isBreadcrumb = true,
 			}),
@@ -1196,7 +1196,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 			provider = { "n", 224392 },	-- Olbarig
 			coord = { 74.6, 19.7, ISLE_OF_DORN },
 		}),
-		q(82682, {	-- Elemental Hors D'Oeuvers
+		q(82682, {	-- Elemental Hors D'Oeuvres
 			sourceQuests = { 82681 },	-- Cloudrook Down
 			provider = { "n", 224392 },	-- Olbarig
 			coord = { 74.6, 19.7, ISLE_OF_DORN },
@@ -1206,7 +1206,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 			},
 		}),
 		q(82768, {	-- Cloud Fishing
-			sourceQuests = { 82682 },	-- Elemental Hors D'Oeuvers
+			sourceQuests = { 82682 },	-- Elemental Hors D'Oeuvres
 			provider = { "n", 224392 },	-- Olbarig
 			coord = { 74.6, 19.7, ISLE_OF_DORN },
 			groups = {
@@ -1239,7 +1239,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 			coord = { 37.6, 72.6, ISLE_OF_DORN },
 		}),
 		q(83337, {	-- Stormscarred
-			provider = { "n", 226792 },	-- Rancher Edidither
+			provider = { "n", 226792 },	-- Rancher Edidithet
 			coord = { 58.4, 28.3, ISLE_OF_DORN },
 		}),
 		q(83336, {	-- The Earthwound

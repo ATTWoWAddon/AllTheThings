@@ -44,7 +44,7 @@ maproot(THE_MAELSTROM, KEZAN, {
 			}),
 			q(14120, {	-- A Bazillion Macaroons?!
 				sourceQuest = 14116,	-- The Uninvited Guest
-				qg = 35222,	-- Trady Prince Gallywix
+				qg = 35222,	-- Trade Prince Gallywix
 				coord = { 56.7, 76.9, KEZAN },
 			}),
 			q(14008, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Goblin)

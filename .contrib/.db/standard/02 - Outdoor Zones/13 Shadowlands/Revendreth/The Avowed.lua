@@ -17,7 +17,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 						icon = 458226,
 					}),
 					n(ACHIEVEMENTS, {
-						ach(14274, {	-- Absolution For All
+						ach(14274, {	-- Absolution for All
 							description = "Fugitive Souls are friendly NPCs that can be found all over the Court of Harvesters. Find them and bring them to an Avowed Ritualist to perform a ritual of absolution.\n\nOnly one soul can be picked up at a time.",
 							crs = { 156150 },	-- Fugitive Soul
 						}),
@@ -60,7 +60,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 						ach(14277, {	-- The Accuser's Avowed
 							-- Meta Achievement
 							sym = {{"meta_achievement",
-								14274,	-- Absolution For All
+								14274,	-- Absolution for All
 								14273,	-- Crypt Kicker
 								14276,	-- It's Always Sinny in Revendreth
 							}},
@@ -125,7 +125,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 								crs = {
 									156918,	-- Inquisitor Otilia
 									156919,	-- Inquisitor Petre
-									156916,	-- Inquisitor Sorian
+									156916,	-- Inquisitor Sorin
 									159151,	-- Inquisitor Traian
 								},
 								groups = {

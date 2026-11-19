@@ -27,7 +27,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 			description = "Use healing spells, bandages or Algari Healing Potion to heal 20 patients over 20 days. This does not have to be done on consecutive days.",
 			coord = { 43.2, 51.8, HALLOWFALL },
 			crs = {
-				213306,	-- Injured Solider
+				213306,	-- Injured Soldier
 				215678,	-- Injured Soldier
 				220225,	-- Injured Soldier
 			},

@@ -30,12 +30,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				}),
 				q(72524, {	-- Basic Climbing Gear
 					sourceQuests = { 69855 },	-- A Climber's Calling
-					provider = { "n", 187700 },	-- Pathfinder Jab
+					provider = { "n", 187700 },	-- Pathfinder Jeb
 					coord = { 47.3, 83.4, THE_WAKING_SHORES },
 				}),
 				q(66351, {	-- Smoke Over the Mountain
 					sourceQuests = { 72524 },	-- Basic Climbing Gear
-					provider = { "n", 187700 },	-- Pathfinder Jab
+					provider = { "n", 187700 },	-- Pathfinder Jeb
 					coord = { 47.3, 83.4, THE_WAKING_SHORES },
 				}),
 				q(65421, {	-- Climb Every Mountain

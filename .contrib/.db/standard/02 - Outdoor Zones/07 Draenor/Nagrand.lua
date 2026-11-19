@@ -872,7 +872,7 @@ maproot(DRAENOR, DRAENOR_NAGRAND, {
 				qg = 80864,	-- Gar'rok
 				coord = { 40.4, 56.7, DRAENOR_NAGRAND },
 			}),
-			q(35062, {	-- Lok'rath is Secured
+			q(35062, {	-- Lok-rath is Secured
 				sourceQuest = 35061,	-- The Pride of Lok-rath
 				qg = 81039,	-- Vindicator Yrel
 				coord = { 61.9, 40.5, DRAENOR_NAGRAND },
@@ -1051,7 +1051,7 @@ maproot(DRAENOR, DRAENOR_NAGRAND, {
 			}),
 			q(35375, {	-- Queen of the Clefthoof
 				sourceQuest = 35374,	-- That Pounding Sound
-				qg = 82078,	-- Shadow Hunter Tax
+				qg = 82078,	-- Shadow Hunter Taz
 				coord = { 82.5, 43.9, DRAENOR_NAGRAND },
 				races = HORDE_ONLY,
 			}),
@@ -1287,7 +1287,7 @@ maproot(DRAENOR, DRAENOR_NAGRAND, {
 			}),
 			q(35069, {	-- Terror of Nagrand
 				sourceQuest = 35060,	-- Terms of Surrender
-				qg = 81134,	-- Fallen Alliance Solder
+				qg = 81134,	-- Fallen Alliance Soldier
 				coord = { 56.1, 43.7, DRAENOR_NAGRAND },
 				races = ALLIANCE_ONLY,
 			}),

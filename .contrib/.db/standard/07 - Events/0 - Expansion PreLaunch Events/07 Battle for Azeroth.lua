@@ -13,7 +13,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			},
 			groups = {	-- [Note: Do not adjust ordering.]
 				-- ALLIANCE PART I
-				q(52062, {	-- A Disturbancee in Ashenvale
+				q(52062, {	-- A Disturbance in Ashenvale
 					sourceQuest = 52060,	-- The Horde Uprising
 					qg = 139798,	-- Master Mathias Shaw
 					races = ALLIANCE_ONLY,
@@ -47,7 +47,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					qg = 140728,	-- Captain Delaryn Silvermoon
 					races = ALLIANCE_ONLY,
 				}),
-				q(52245, {	-- Enraged Furblogs
+				q(52245, {	-- Enraged Furbolgs
 					sourceQuest = 52240,	-- Garden Grove
 					qg = 33072,	-- Onu <Ancient of Lore>
 					races = ALLIANCE_ONLY,
@@ -57,7 +57,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 						52234,	-- Hidden Amongst the Leaves
 						53617,	-- Mercy for the Mad
 					},
-					qg = 134578,	-- Captain  Delaryn Summermoon
+					qg = 134578,	-- Captain Delaryn Summermoon
 					races = ALLIANCE_ONLY,
 				}),
 				q(52234, {	-- Hidden Amongst the Leaves
@@ -66,7 +66,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					races = ALLIANCE_ONLY,
 				}),
 				q(53616, {	-- Knives of the Forsaken
-					sourceQuest = 52062,	-- A Disturbancee in Ashenvale
+					sourceQuest = 52062,	-- A Disturbance in Ashenvale
 					qg = 134578,	-- Captain Delaryn Summermoon
 					races = ALLIANCE_ONLY,
 				}),
@@ -84,7 +84,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					races = ALLIANCE_ONLY,
 				}),
 				q(52060, {	-- The Horde Uprising
-					sourceQuest = 52058,	-- A Short-Lived Pace
+					sourceQuest = 52058,	-- A Short-Lived Peace
 					qg = 107574,	-- Anduin Wrynn
 					races = ALLIANCE_ONLY,
 					groups = {
@@ -102,18 +102,18 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					races = ALLIANCE_ONLY,
 				}),
 				q(52257, {	-- "Rock" The World
-					sourceQuest = 52256,	-- Malufrion Returns
+					sourceQuest = 52256,	-- Malfurion Returns
 					qg = 133693,	-- Malfurion Stormrage
 					races = ALLIANCE_ONLY,
 				}),
 				q(52072, {	-- The Light of Elune
-					sourceQuest = 52062,	-- A Disturbancee in Ashenvale
+					sourceQuest = 52062,	-- A Disturbance in Ashenvale
 					qg = 134578,	-- Captain Delaryn Summermoon
 					races = ALLIANCE_ONLY,
 				}),
 				q(52242, {	-- The Wake of Something New
 					sourceQuests = {
-						52245,	-- Enraged Furblogs
+						52245,	-- Enraged Furbolgs
 						53551,	-- Elves in the Machine
 					},
 					qg = 33072,	-- Onu <Ancient of Lore>
@@ -350,7 +350,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					q(52894, {	-- Don't Stop Me Now
 						races = HORDE_ONLY,
 					}),
-					q(52312, {	-- Extinguish the Light
+					q(52312, {	-- Extinguish the Lights
 						races = HORDE_ONLY,
 					}),
 					q(52885, {	-- Fey There

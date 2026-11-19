@@ -1314,7 +1314,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(10124, {	-- Forward Base: Reaver's Fall
 					sourceQuest = 10123,	-- Felspark Ravine
-					qg = 19256,	-- Sergeeant Shatterskull
+					qg = 19256,	-- Sergeant Shatterskull
 					coord = { 55.0, 35.9, HELLFIRE_PENINSULA },
 					races = HORDE_ONLY,
 					lvl = lvlsquish(60, 60, 10),
@@ -1950,7 +1950,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(10129, {	-- Mission: Gateways Murketh and Shaadraz [Horde]
 					sourceQuest = 10208,	-- Disrupt Their Reinforcements [Horde]
-					qg = 19273,	-- Forwarad Commander To'arch
+					qg = 19273,	-- Forward Commander To'arch
 					coord = { 65.8, 43.5, HELLFIRE_PENINSULA },
 					races = HORDE_ONLY,
 					lvl = lvlsquish(58, 58, 10),
@@ -2008,7 +2008,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(10162, {	-- Mission: The Abyssal Shelf [Horde]
 					sourceQuest = 10129,	-- Mission: Gateways Murketh and Shaadraz [Horde]
-					qg = 19273,	-- Forwarad Commander To'arch
+					qg = 19273,	-- Forward Commander To'arch
 					coord = { 65.8, 43.5, HELLFIRE_PENINSULA },
 					races = HORDE_ONLY,
 					lvl = lvlsquish(58, 58, 10),
@@ -2237,7 +2237,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				q(10388, {	-- Return to Thrallmar
 					sourceQuest = 10129,	-- Mission: Gateways Murketh and Shaadraz [Horde]
 					qgs = {
-						19273,	-- Forwarad Commander To'arch
+						19273,	-- Forward Commander To'arch
 						16576,	-- Overlord Hun Maimfist
 					},
 					coords = {
@@ -2425,7 +2425,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(10838, {	-- The Demonaic Scryer
 					sourceQuest = 10864,	-- A Burden of Souls
-					qg = 16588,	-- Apothecary Antonivichk
+					qg = 16588,	-- Apothecary Antonivich
 					coord = { 52.2, 36.4, HELLFIRE_PENINSULA },
 					races = HORDE_ONLY,
 					lvl = lvlsquish(58, 58, 10),
@@ -2541,7 +2541,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							},
 							coord = { 47.6, 49.8, HELLFIRE_PENINSULA },
 							crs = {
-								19264,	-- Force Commander Gorax
+								19264,	-- Force-Commander Gorax
 								22374,	-- Hand of Kargath
 							},
 						}),
@@ -2597,7 +2597,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9406, {	-- The Mag'har
 					sourceQuest = 9410,	-- A Spirit Guide
-					qg = 16845,	-- Gorkan Bloodfish
+					qg = 16845,	-- Gorkan Bloodfist
 					qi = 23569,	-- Letter from the Mag'har
 					coord = { 31.9, 27.7, HELLFIRE_PENINSULA },
 					races = HORDE_ONLY,
@@ -2629,7 +2629,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(10287, {	-- The Mistress Revealed
 					sourceQuest = 10286,	-- Arelion's Secret
-					qg = 20159,	-- Megister Aledis
+					qg = 20159,	-- Magister Aledis
 					coords = {
 						{ 10.3, 50.3, HELLFIRE_PENINSULA },
 						{ 15.7, 50.0, HELLFIRE_PENINSULA },

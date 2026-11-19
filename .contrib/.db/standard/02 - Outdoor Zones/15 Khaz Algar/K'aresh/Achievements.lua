@@ -73,7 +73,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 		skyriding(ach(42719, {	-- Skydiving Glyphs: North Sufaad
 			coord = { 76.5, 46.3, KARESH },
 		})),
-		skyriding(ach(42713, {	-- Skyriding Glyphs: Serrated Peaks
+		skyriding(ach(42713, {	-- Skyriding Glyph: Serrated Peaks
 			coord = { 54.7, 53.2, KARESH },
 		})),
 		skyriding(ach(42716, {	-- Skydiving Glyphs: Shadow Point

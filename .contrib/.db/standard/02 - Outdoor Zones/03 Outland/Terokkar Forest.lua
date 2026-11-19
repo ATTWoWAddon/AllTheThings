@@ -582,7 +582,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							provider = { "n", 21661 },	-- Cabal Skirmisher
 						}),
 						objective(2, {	-- 0/4 Cabal Spell-weaver slain
-							provider = { "n", 21902 },	-- Cabal Spell-weaver
+							provider = { "n", 21902 },	-- Cabal Spell-Weaver
 						}),
 						objective(3, {	-- 0/2 Cabal Initiate slain
 							provider = { "n", 21907 },	-- Cabal Initiate
@@ -601,7 +601,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					provider = { "i", 31707 },	-- Cabal Orders
 					crs = {
 						21661,	-- Cabal Skirmisher
-						21902,	-- Cabal Spell-weaver
+						21902,	-- Cabal Spell-Weaver
 						21907,	-- Cabal Initiate
 					},
 				}),

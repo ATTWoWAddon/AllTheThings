@@ -32,7 +32,7 @@ maproot(BROKEN_ISLES, SURAMAR, {
 		}),
 		ach(11125),	-- Now You're Thinking With Portals
 		ach(11260),	-- Treasures of Suramar
-		ach(11133, {	-- Why Can't I Hold All This Mana
+		ach(11133, {	-- Why Can't I Hold All This Mana?
 			-- TODO: Put sourceQuests on the actual objects in Treasure Chests file
 			sourceQuests = {
 				41138,	-- Feeding Shal'aran

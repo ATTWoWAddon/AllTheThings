@@ -3060,7 +3060,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 		filter(TOYS, {
 			i(197719),	-- Artisan's Sign (TOY!)
 			i(193476),	-- Gnoll Tent (TOY!)
-			i(193478),	-- Tuskarr Bean Bag (TOY!)
+			i(193478),	-- Tuskarr Beanbag (TOY!)
 		}),
 		n(WEAPONS, {
 			i(193449),	-- Bow of the Dragon Hunters

@@ -158,7 +158,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			i(253032),	-- Felscorned Reins of the Netherlord's Dreadsteed (MOUNT!)
 		}),
 		ach(42684, {	-- Timerunner: Warrior
-			i(253033),	-- Iron Reins of the Felscorned War Wrym (MOUNT!)
+			i(253033),	-- Iron Reins of the Felscorned War Wyrm (MOUNT!)
 		}),
 		ach(61337, {	-- To Fel and Back
 			iensemble(253343),	-- Ensemble: Sargerei Commander's Felscorned Regalia

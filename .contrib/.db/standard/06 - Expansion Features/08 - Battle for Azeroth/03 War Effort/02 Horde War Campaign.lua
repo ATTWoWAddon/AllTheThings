@@ -151,7 +151,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 					q(53079, {	-- Reinforcements
 						sourceQuests = { 51771 },	-- War of Shadows
-						provider = { "n", 138708 },	-- Garona Halforceen
+						provider = { "n", 138708 },	-- Garona Halforcen
 						coords = {
 							{ 51.7, 99.7, DAZARALOR },
 							{ 58.4, 62.6, ZULDAZAR },

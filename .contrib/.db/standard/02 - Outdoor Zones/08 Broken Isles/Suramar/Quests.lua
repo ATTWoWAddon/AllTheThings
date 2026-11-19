@@ -621,7 +621,7 @@ maproot(BROKEN_ISLES, SURAMAR, {
 		}),
 		q(45066, {	-- Experimental Instability
 			sourceQuest = 45065,	-- Survey the City
-			provider = { "n", 115710 },	-- Chief Telemancy Oculeth
+			provider = { "n", 115710 },	-- Chief Telemancer Oculeth
 			coord = { 36.6, 45.0, SURAMAR },
 		}),
 		q(40883, {	-- Fate of the Guard
@@ -924,7 +924,7 @@ maproot(BROKEN_ISLES, SURAMAR, {
 			provider = { "n", 114948 },	-- Silgryn
 			coord = { 52.1, 79.1, SURAMAR },
 		}),
-		q(42833, {	-- How It's Made: Arcwinee
+		q(42833, {	-- How It's Made: Arcwine
 			sourceQuest = 42832,	-- The Fruit of Our Efforts
 			provider = { "n", 108872 },	-- Margaux
 			coord = { 56.0, 51.8, SURAMAR },
@@ -2062,7 +2062,7 @@ maproot(BROKEN_ISLES, SURAMAR, {
 			},
 		}),
 		q(40008, {	-- The Only Way Out is Through
-			sourceQuest = 39987,	-- Trail of Echos
+			sourceQuest = 39987,	-- Trail of Echoes
 			provider = { "n", 98312 },	-- First Arcanist Thalyssra
 			coord = { 34.6, 53.3, SURAMAR },
 		}),

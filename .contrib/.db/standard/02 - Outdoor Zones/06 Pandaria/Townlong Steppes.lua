@@ -1147,7 +1147,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 			}),
 			applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32681, {	-- The Storm Gathers (A)
 				sourceQuest = 32679,	-- Thunder Calls (A)
-				qg = 70360,	-- Vareesa Windrunner
+				qg = 70360,	-- Vereesa Windrunner
 				coord = { 49.8, 69.0, TOWNLONG_STEPPES },
 				timeline = { ADDED_5_2_0 },
 				races = ALLIANCE_ONLY,

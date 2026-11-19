@@ -451,7 +451,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 									crs = { 177769 },	-- Kearnen the Blade
 								}),
 								crit(52046, {	-- Winslow Swan
-									crs = { 177764 },	-- Winslow Swain
+									crs = { 177764 },	-- Winslow Swan
 								}),
 								crit(52047, {	-- Boil Master Yetch
 									crs = { 177767 },	-- Boil Master Yetch
@@ -479,7 +479,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 							{ 33.0, 57.0, THE_MAW },
 							{ 33.0, 71.0, THE_MAW },
 						},
-						crs = { 179601 },	-- Mad Maw Construct
+						crs = { 179601 },	-- Maw Mad Construct
 					}),
 					o(369143, {	-- Quartered Ancient Ring
 						description = "This ring can be found in Perdition Hold once you've looted another |cFF1eff00Quartered Ancient Ring|r.",

@@ -775,7 +775,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				q(11290, {	-- Dragonflayer Battle Plans
 					sourceQuest = 11255,	-- Prisoners of Wyrmskull
-					qg = 23546,	-- Vice Admiral Kellar
+					qg = 23546,	-- Vice Admiral Keller
 					coord = { 60.4, 61.1, HOWLING_FJORD },
 					races = ALLIANCE_ONLY,
 					groups = {

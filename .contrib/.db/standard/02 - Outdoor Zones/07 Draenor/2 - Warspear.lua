@@ -560,7 +560,7 @@ maproot(DRAENOR, WARSPEAR, {
 				n(86382, {	-- Dawn-Seeker Alkset <Apexis Leggings Trader>
 					coord = { 65.2, 64.2, WARSPEAR },
 					groups = {
-						i(119821, {	-- Contact: Dawnseeker Rukaryx
+						i(119821, {	-- Contract: Dawnseeker Rukaryx
 							cost = {
 								{ "c", APEXIS_CRYSTAL, 5000 },
 								{ "g", 50000000 },	-- 5,000g

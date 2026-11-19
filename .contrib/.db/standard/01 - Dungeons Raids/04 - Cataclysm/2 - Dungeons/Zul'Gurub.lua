@@ -681,11 +681,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29154, {	-- Booty Bay's Interests
-						qg = 53151,	-- Overseer Blingblang
+						qg = 53151,	-- Overseer Blingbang
 						races = ALLIANCE_ONLY,
 					}),
 					q(29252, {	-- Booty Bay's Interests
-						qg = 53151,	-- Overseer Blingblang
+						qg = 53151,	-- Overseer Blingbang
 						races = HORDE_ONLY,
 					}),
 					q(29241, {	-- Break the Godbreaker

@@ -1056,7 +1056,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					coord = { 60.6, 22.4, NAGRAND },
 					groups = {
 						objective(1, {	-- 0/5 Murkblood Putrifier slain
-							provider = { "n", 18202 },	-- Murkblood Putrifier
+							provider = { "n", 18202 },	-- Murkblood Putrefier
 						}),
 						i(25567),	-- Cord of the Ring
 						i(25566),	-- Judicator's Gauntlets
@@ -1718,7 +1718,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/10 Murkblood Idol
 							provider = { "i", 24542 },	-- Murkblood Idol
 							crs = {
-								18202,	-- Murkblood Putrifier
+								18202,	-- Murkblood Putrefier
 								18203,	-- Murkblood Raider
 								18204,	-- Ortor of Murkblood
 								18207,	-- Murkblood Scavenger

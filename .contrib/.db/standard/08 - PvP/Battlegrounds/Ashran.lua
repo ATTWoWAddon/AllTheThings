@@ -383,7 +383,7 @@ battleground(1478, {	-- Ashran
 				repeatable = true,
 				u = REMOVED_FROM_GAME,
 			}),
-			q(37484, {	-- Captian's Whistle (H)
+			q(37484, {	-- Captain's Whistle (H)
 				provider = { "n", 84473 },	-- General Ushet Wolfbarger
 				coord = { 45.0, 27.8, 1478 },
 				races = HORDE_ONLY,
@@ -1087,7 +1087,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115825)),	-- Primal Gladiator's Felweave Cord
 							un(REMOVED_FROM_GAME, i(115957)),	-- Primal Gladiator's Felweave Cowl
 							un(REMOVED_FROM_GAME, i(115956)),	-- Primal Gladiator's Felweave Handguards
-							un(REMOVED_FROM_GAME, i(115959)),	-- Primal Gladiator's Felweave Rainment
+							un(REMOVED_FROM_GAME, i(115959)),	-- Primal Gladiator's Felweave Raiment
 							un(REMOVED_FROM_GAME, i(115828)),	-- Primal Gladiator's Felweave Treads
 							un(REMOVED_FROM_GAME, i(115958)),	-- Primal Gladiator's Felweave Trousers
 						}),
@@ -1152,7 +1152,7 @@ battleground(1478, {	-- Ashran
 						}),
 						cl(MONK, {
 							un(REMOVED_FROM_GAME, i(125694)),	-- Wild Gladiator's Ironskin Waistband
-							un(REMOVED_FROM_GAME, i(125695)),	-- Wild Gladiator's Ironskin boosts
+							un(REMOVED_FROM_GAME, i(125695)),	-- Wild Gladiator's Ironskin Boots
 							un(REMOVED_FROM_GAME, i(125696)),	-- Wild Gladiator's Ironskin Gloves
 							un(REMOVED_FROM_GAME, i(125697)),	-- Wild Gladiator's Ironskin Helm
 							un(REMOVED_FROM_GAME, i(125698)),	-- Wild Gladiator's Ironskin Legguards
@@ -1187,9 +1187,9 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(125725)),	-- Wild Gladiator's Mooncloth Gloves
 							un(REMOVED_FROM_GAME, i(125726)),	-- Wild Gladiator's Mooncloth Hood
 							un(REMOVED_FROM_GAME, i(125727)),	-- Wild Gladiator's Mooncloth Leggings
-							un(REMOVED_FROM_GAME, i(125729)),	-- Wild Gladiator's Mooncloth manthle
+							un(REMOVED_FROM_GAME, i(125729)),	-- Wild Gladiator's Mooncloth Mantle
 							un(REMOVED_FROM_GAME, i(125728)),	-- Wild Gladiator's Mooncloth Robe
-							un(REMOVED_FROM_GAME, i(125643)),	-- Wild Gladiator's Mooncloth trads
+							un(REMOVED_FROM_GAME, i(125643)),	-- Wild Gladiator's Mooncloth Treads
 							un(REMOVED_FROM_GAME, i(125783)),	-- Wild Gladiator's Satin Cord
 							un(REMOVED_FROM_GAME, i(125730)),	-- Wild Gladiator's Satin Gloves
 							un(REMOVED_FROM_GAME, i(125731)),	-- Wild Gladiator's Satin Hood
@@ -1200,7 +1200,7 @@ battleground(1478, {	-- Ashran
 						}),
 						cl(ROGUE, {
 							un(REMOVED_FROM_GAME, i(125735)),	-- Wild Gladiator's Leather Waistband
-							un(REMOVED_FROM_GAME, i(125736)),	-- Wild Gladiator's Leather boosts
+							un(REMOVED_FROM_GAME, i(125736)),	-- Wild Gladiator's Leather Boots
 							un(REMOVED_FROM_GAME, i(125737)),	-- Wild Gladiator's Leather Tunic
 							un(REMOVED_FROM_GAME, i(125738)),	-- Wild Gladiator's Leather Gloves
 							un(REMOVED_FROM_GAME, i(125739)),	-- Wild Gladiator's Leather Helm
@@ -1234,7 +1234,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(125639)),	-- Wild Gladiator's Felweave Cord
 							un(REMOVED_FROM_GAME, i(125771)),	-- Wild Gladiator's Felweave Cowl
 							un(REMOVED_FROM_GAME, i(125770)),	-- Wild Gladiator's Felweave Handguards
-							un(REMOVED_FROM_GAME, i(125773)),	-- Wild Gladiator's Felweave Rainment
+							un(REMOVED_FROM_GAME, i(125773)),	-- Wild Gladiator's Felweave Raiment
 							un(REMOVED_FROM_GAME, i(125642)),	-- Wild Gladiator's Felweave Treads
 							un(REMOVED_FROM_GAME, i(125772)),	-- Wild Gladiator's Felweave Trousers
 						}),
@@ -1336,7 +1336,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(126839)),	-- Warmongering Gladiator's Mooncloth Gloves
 							un(REMOVED_FROM_GAME, i(126840)),	-- Warmongering Gladiator's Mooncloth Hood
 							un(REMOVED_FROM_GAME, i(126841)),	-- Warmongering Gladiator's Mooncloth Leggings
-							un(REMOVED_FROM_GAME, i(126843)),	-- Warmongering Gladiator's Mooncloth manthle
+							un(REMOVED_FROM_GAME, i(126843)),	-- Warmongering Gladiator's Mooncloth Mantle
 							un(REMOVED_FROM_GAME, i(126842)),	-- Warmongering Gladiator's Mooncloth Robe
 							un(REMOVED_FROM_GAME, i(126757)),	-- Warmongering Gladiator's Mooncloth Treads
 							un(REMOVED_FROM_GAME, i(126897)),	-- Warmongering Gladiator's Satin Cord
@@ -1348,7 +1348,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(126896)),	-- Warmongering Gladiator's Satin Treads
 						}),
 						cl(ROGUE, {
-							un(REMOVED_FROM_GAME, i(126850)),	-- Warmongering Gladiator's Leather boosts
+							un(REMOVED_FROM_GAME, i(126850)),	-- Warmongering Gladiator's Leather Boots
 							un(REMOVED_FROM_GAME, i(126852)),	-- Warmongering Gladiator's Leather Gloves
 							un(REMOVED_FROM_GAME, i(126853)),	-- Warmongering Gladiator's Leather Helm
 							un(REMOVED_FROM_GAME, i(126854)),	-- Warmongering Gladiator's Leather Legguards
@@ -1384,7 +1384,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(126753)),	-- Warmongering Gladiator's Felweave Cord
 							un(REMOVED_FROM_GAME, i(126885)),	-- Warmongering Gladiator's Felweave Cowl
 							un(REMOVED_FROM_GAME, i(126884)),	-- Warmongering Gladiator's Felweave Handguards
-							un(REMOVED_FROM_GAME, i(126887)),	-- Warmongering Gladiator's Felweave Rainment
+							un(REMOVED_FROM_GAME, i(126887)),	-- Warmongering Gladiator's Felweave Raiment
 							un(REMOVED_FROM_GAME, i(126756)),	-- Warmongering Gladiator's Felweave Treads
 							un(REMOVED_FROM_GAME, i(126886)),	-- Warmongering Gladiator's Felweave Trousers
 						}),
@@ -1656,7 +1656,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115825)),	-- Primal Gladiator's Felweave Cord
 							un(REMOVED_FROM_GAME, i(115957)),	-- Primal Gladiator's Felweave Cowl
 							un(REMOVED_FROM_GAME, i(115956)),	-- Primal Gladiator's Felweave Handguards
-							un(REMOVED_FROM_GAME, i(115959)),	-- Primal Gladiator's Felweave Rainment
+							un(REMOVED_FROM_GAME, i(115959)),	-- Primal Gladiator's Felweave Raiment
 							un(REMOVED_FROM_GAME, i(115828)),	-- Primal Gladiator's Felweave Treads
 							un(REMOVED_FROM_GAME, i(115958)),	-- Primal Gladiator's Felweave Trousers
 						}),
@@ -1721,7 +1721,7 @@ battleground(1478, {	-- Ashran
 						}),
 						cl(MONK, {
 							un(REMOVED_FROM_GAME, i(125694)),	-- Wild Gladiator's Ironskin Waistband
-							un(REMOVED_FROM_GAME, i(125695)),	-- Wild Gladiator's Ironskin boosts
+							un(REMOVED_FROM_GAME, i(125695)),	-- Wild Gladiator's Ironskin Boots
 							un(REMOVED_FROM_GAME, i(125696)),	-- Wild Gladiator's Ironskin Gloves
 							un(REMOVED_FROM_GAME, i(125697)),	-- Wild Gladiator's Ironskin Helm
 							un(REMOVED_FROM_GAME, i(125698)),	-- Wild Gladiator's Ironskin Legguards
@@ -1756,9 +1756,9 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(125725)),	-- Wild Gladiator's Mooncloth Gloves
 							un(REMOVED_FROM_GAME, i(125726)),	-- Wild Gladiator's Mooncloth Hood
 							un(REMOVED_FROM_GAME, i(125727)),	-- Wild Gladiator's Mooncloth Leggings
-							un(REMOVED_FROM_GAME, i(125729)),	-- Wild Gladiator's Mooncloth manthle
+							un(REMOVED_FROM_GAME, i(125729)),	-- Wild Gladiator's Mooncloth Mantle
 							un(REMOVED_FROM_GAME, i(125728)),	-- Wild Gladiator's Mooncloth Robe
-							un(REMOVED_FROM_GAME, i(125643)),	-- Wild Gladiator's Mooncloth trads
+							un(REMOVED_FROM_GAME, i(125643)),	-- Wild Gladiator's Mooncloth Treads
 							un(REMOVED_FROM_GAME, i(125783)),	-- Wild Gladiator's Satin Cord
 							un(REMOVED_FROM_GAME, i(125730)),	-- Wild Gladiator's Satin Gloves
 							un(REMOVED_FROM_GAME, i(125731)),	-- Wild Gladiator's Satin Hood
@@ -1769,7 +1769,7 @@ battleground(1478, {	-- Ashran
 						}),
 						cl(ROGUE, {
 							un(REMOVED_FROM_GAME, i(125735)),	-- Wild Gladiator's Leather Waistband
-							un(REMOVED_FROM_GAME, i(125736)),	-- Wild Gladiator's Leather boosts
+							un(REMOVED_FROM_GAME, i(125736)),	-- Wild Gladiator's Leather Boots
 							un(REMOVED_FROM_GAME, i(125737)),	-- Wild Gladiator's Leather Tunic
 							un(REMOVED_FROM_GAME, i(125738)),	-- Wild Gladiator's Leather Gloves
 							un(REMOVED_FROM_GAME, i(125739)),	-- Wild Gladiator's Leather Helm
@@ -1803,7 +1803,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(125639)),	-- Wild Gladiator's Felweave Cord
 							un(REMOVED_FROM_GAME, i(125771)),	-- Wild Gladiator's Felweave Cowl
 							un(REMOVED_FROM_GAME, i(125770)),	-- Wild Gladiator's Felweave Handguards
-							un(REMOVED_FROM_GAME, i(125773)),	-- Wild Gladiator's Felweave Rainment
+							un(REMOVED_FROM_GAME, i(125773)),	-- Wild Gladiator's Felweave Raiment
 							un(REMOVED_FROM_GAME, i(125642)),	-- Wild Gladiator's Felweave Treads
 							un(REMOVED_FROM_GAME, i(125772)),	-- Wild Gladiator's Felweave Trousers
 						}),
@@ -1905,7 +1905,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(126839)),	-- Warmongering Gladiator's Mooncloth Gloves
 							un(REMOVED_FROM_GAME, i(126840)),	-- Warmongering Gladiator's Mooncloth Hood
 							un(REMOVED_FROM_GAME, i(126841)),	-- Warmongering Gladiator's Mooncloth Leggings
-							un(REMOVED_FROM_GAME, i(126843)),	-- Warmongering Gladiator's Mooncloth manthle
+							un(REMOVED_FROM_GAME, i(126843)),	-- Warmongering Gladiator's Mooncloth Mantle
 							un(REMOVED_FROM_GAME, i(126842)),	-- Warmongering Gladiator's Mooncloth Robe
 							un(REMOVED_FROM_GAME, i(126757)),	-- Warmongering Gladiator's Mooncloth Treads
 							un(REMOVED_FROM_GAME, i(126897)),	-- Warmongering Gladiator's Satin Cord
@@ -1917,7 +1917,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(126896)),	-- Warmongering Gladiator's Satin Treads
 						}),
 						cl(ROGUE, {
-							un(REMOVED_FROM_GAME, i(126850)),	-- Warmongering Gladiator's Leather boosts
+							un(REMOVED_FROM_GAME, i(126850)),	-- Warmongering Gladiator's Leather Boots
 							un(REMOVED_FROM_GAME, i(126852)),	-- Warmongering Gladiator's Leather Gloves
 							un(REMOVED_FROM_GAME, i(126853)),	-- Warmongering Gladiator's Leather Helm
 							un(REMOVED_FROM_GAME, i(126854)),	-- Warmongering Gladiator's Leather Legguards
@@ -1953,7 +1953,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(126753)),	-- Warmongering Gladiator's Felweave Cord
 							un(REMOVED_FROM_GAME, i(126885)),	-- Warmongering Gladiator's Felweave Cowl
 							un(REMOVED_FROM_GAME, i(126884)),	-- Warmongering Gladiator's Felweave Handguards
-							un(REMOVED_FROM_GAME, i(126887)),	-- Warmongering Gladiator's Felweave Rainment
+							un(REMOVED_FROM_GAME, i(126887)),	-- Warmongering Gladiator's Felweave Raiment
 							un(REMOVED_FROM_GAME, i(126756)),	-- Warmongering Gladiator's Felweave Treads
 							un(REMOVED_FROM_GAME, i(126886)),	-- Warmongering Gladiator's Felweave Trousers
 						}),

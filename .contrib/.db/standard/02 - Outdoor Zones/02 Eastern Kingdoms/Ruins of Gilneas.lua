@@ -290,7 +290,7 @@ maproot(EASTERN_KINGDOMS, RUINS_OF_GILNEAS, {
 				}),
 				q(78183, {	-- Scarlet Blood
 					sourceQuest = 78182,	-- Knee-High
-					qg = 210964,	-- Lillian Voss
+					qg = 210964,	-- Lilian Voss
 					coord = { 57.0, 53.0, RUINS_OF_GILNEAS },
 					groups = {
 						objective(1, {	-- 0/12 Scarlet forces slain
@@ -328,7 +328,7 @@ maproot(EASTERN_KINGDOMS, RUINS_OF_GILNEAS, {
 				}),
 				q(78186, {	-- Crushing the Crusade
 					sourceQuest = 78185,	-- Hounds of War
-					qg = 210964,	-- Lillian Voss
+					qg = 210964,	-- Lilian Voss
 					coord = { 55.8, 58.3, RUINS_OF_GILNEAS },
 					groups = {
 						objective(1, {	-- 0/12 Scarlet elite slain

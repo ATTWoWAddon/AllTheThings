@@ -702,7 +702,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 					i(173312),	-- Toc's Key (QI!)
 				},
 			}),
-			q(62320, {	-- Regalia de Rigeuer
+			q(62320, {	-- Regalia de Rigueur
 				sourceQuests = { 61749 },	-- Necessary Ingredients
 				provider = { "n", 174120 },	-- Moret the Vogue
 				coord = { 71.7, 32.9, MALDRAXXUS },

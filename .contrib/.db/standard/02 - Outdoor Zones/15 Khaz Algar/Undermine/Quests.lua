@@ -1250,7 +1250,7 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 			}),
 			q(84380, {	-- Weapons Cash
 				sourceQuests = { 84376 },	-- Property Devalued
-				provider = { "o", 461492 },	-- Weapon Cache
+				provider = { "o", 461492 },	-- Weapons Cache
 				coord = { 44.7, 66.1, UNDERMINE },
 				groups = {
 					i(229392),	-- Crumpled Delivery Note (QI!)
@@ -1293,7 +1293,7 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 				},
 				coord = { 42.7, 52.8, UNDERMINE },	-- TODO: ^
 			}),
-			q(84892, {	-- G.E.T.A. The Crocodillian
+			q(84892, {	-- G.E.T.A. The Crocodilian
 				sourceQuests = { 84885 },	-- Working for G.E.T.A.
 				provider = { "n", 228393 },	-- Bruxie Slyhook
 				coord = { 32.9, 52.0, UNDERMINE },
@@ -1311,7 +1311,7 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 			}),
 			q(84893, {	-- G.E.T.A. The Captain
 				sourceQuests = {
-					84892,	-- G.E.T.A. The Crocodillian
+					84892,	-- G.E.T.A. The Crocodilian
 					84891,	-- G.E.T.A. The Radioactive Rat
 				},
 				provider = { "n", 228393 },	-- Bruxie Slyhook
@@ -1637,7 +1637,7 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 		-- Unsure
 		q(87496, {	-- Benefit Packages
 			sourceQuests = { 83096 },	-- Welcome to Undermine (TODO: it is up during this quest so should fire inaccurate?)
-			provider = { "n", 231049 },	-- Kaydee Racketting
+			provider = { "n", 231049 },	-- Kaydee Racketring
 			coord = { 42.8, 52.2, UNDERMINE },
 		}),
 		-- pop after learning Handcrank/Steamboil or Handcrank AND Steamboil

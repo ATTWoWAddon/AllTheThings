@@ -692,7 +692,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 										},
 									}),
 									q(61489, {	-- Of Hearsay and Heresy
-										sourceQuests = { 61356 },	-- Echthre, Dame of Hatred
+										sourceQuests = { 61356 },	-- Echthra, Dame of Hatred
 										provider = { "n", 168430 },	-- Dactylis
 										coord = { 29.9, 38.8, ARCHONS_RISE },
 										groups = {

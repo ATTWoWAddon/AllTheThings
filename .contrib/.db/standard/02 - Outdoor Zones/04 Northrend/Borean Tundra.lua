@@ -2692,9 +2692,9 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					provider = { "i", 34984 },	-- The Ultrasonic Screwdriver
 					races = ALLIANCE_ONLY,
 					crs = {
-						25753,	-- Sentry-Bot 57-K
+						25753,	-- Sentry-bot 57-K
 						25752,	-- Scavenge-bot 004-A8
-						25758,	-- Defendo-tank 66D
+						25758,	-- Defendo-Tank 66D
 						25793,	-- 55-D Collect-a-tron
 					},
 				}),
@@ -3212,7 +3212,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					},
 					timeline = { ADDED_7_0_3 },
 					crs = {
-						25758,	-- Defendo-tank 66D
+						25758,	-- Defendo-Tank 66D
 						25814,	-- Fizzcrank Mechagnome
 						25752,	-- Scavenge-bot 004-A8
 						25753,	-- Sentry-bot 57-K

@@ -68,7 +68,7 @@ maproot(PANDARIA, SHRINE_OF_SEVEN_STARS, {	-- Shrine of Seven Stars
 				_drop = { "g" },	-- drop Heroic Cache of Treasures
 			}),
 			q(33248, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {	-- Proving Grounds
-				qg = 64101,	-- Taijin the Cyclone
+				qg = 64101,	-- Taijing the Cyclone
 				coord = { 47.23, 49.71, SHRINE_OF_SEVEN_STARS },
 				timeline = { ADDED_5_4_0 },
 			})),

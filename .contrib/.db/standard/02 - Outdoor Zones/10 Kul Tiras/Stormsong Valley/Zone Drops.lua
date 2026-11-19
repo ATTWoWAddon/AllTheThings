@@ -23,7 +23,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 					132226,	-- Briarback Kraultender
 					129750,	-- Briarback Skirmisher
 					130039,	-- Brinebrawn Cannoneer
-					135585,	-- Drowned Acendant
+					135585,	-- Drowned Ascendant
 					131404,	-- Foreman Scripps
 					138170,	-- Irontide  Cutthroat
 					138167,	-- Irontide Trickshot

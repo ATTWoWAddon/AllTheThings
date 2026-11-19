@@ -112,7 +112,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 			groups = { i(138023) },	-- Stonefang's Jaw (QI!)
 		}),
 		q(42639, {	-- A Stone of Blood
-			provider = { "n", 108072 },	-- Sir Finley Mrrggglton
+			provider = { "n", 108072 },	-- Sir Finley Mrrgglton
 			coord = { 74.8, 55.5, STORMHEIM },
 			groups = {
 				i(138150),	-- Broketooth's Ruby Amulet (QI!)
@@ -320,7 +320,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 		}),
 		q(38624, {	-- Cry Thunder!
 			sourceQuests = { 39652 },	-- Where Dragons Rule
-			provider = { "n", 92218 },	-- Thymjaris
+			provider = { "n", 92218 },	-- Thrymjaris
 			coord = { 40.8, 80.8, STORMHEIM },
 		}),
 		q(39472, {	-- Cut Out the Heart
@@ -714,7 +714,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 				42635,	-- The Mystery of Dreyrgrot
 				42639,	-- A Stone of Blood
 			},
-			provider = { "n", 108072 },	-- Sir Finley Mrrggglton
+			provider = { "n", 108072 },	-- Sir Finley Mrrgglton
 			coord = { 74.8, 55.5, STORMHEIM },
 		}),
 		q(40003, {	-- Stem the Tide
@@ -903,7 +903,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 			races = ALLIANCE_ONLY,
 		}),
 		q(42635, {	-- The Mystery of Dreyrgrot
-			provider = { "n", 108072 },	-- Sir Finley Mrrggglton
+			provider = { "n", 108072 },	-- Sir Finley Mrrgglton
 			coord = { 74.8, 55.5, STORMHEIM },
 			groups = {
 				o_repeated({	-- Ancient Dreyrgrot Tablet
@@ -1164,7 +1164,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 				42635,	-- The Mystery of Dreyrgrot
 				42639,	-- A Stone of Blood
 			},
-			provider = { "n", 108072 },	-- Sir Finley Mrrggglton
+			provider = { "n", 108072 },	-- Sir Finley Mrrgglton
 			coord = { 74.8, 55.5, STORMHEIM },
 			groups = {
 				i(138190),	-- Sharp Wooden Stake (QI!)

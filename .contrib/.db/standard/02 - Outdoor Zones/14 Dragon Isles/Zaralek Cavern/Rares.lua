@@ -18,7 +18,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 					203592,	-- General Zskorro
 					203477,	-- Goopal
 					-- 203611,	-- Hadexia <Ember of Twilight>
-					203627,	-- Invohq
+					203627,	-- Invoq
 					203625,	-- Karokta
 					203466,	-- Kapraku
 					203618,	-- Klakatak
@@ -247,7 +247,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 				-- 	bo(, true),
 				-- },
 			-- }),
-			n(203627, {	-- Invohq
+			n(203627, {	-- Invoq
 				coord = { 46.0, 33.3, ZARALEK_CAVERN },
 				questID = 75335,	-- Old QuestID: 75558
 				groups = {

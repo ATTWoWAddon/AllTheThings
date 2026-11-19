@@ -16,7 +16,7 @@ root("Zones", m(DRAGON_ISLES, {
 						i(197725),	-- Deathrip's Curled Claw
 					},
 				}),
-				n(191746, {	-- Ketess the Pilager
+				n(191746, {	-- Ketess the Pillager
 					coord = { 56.7, 65.6, THE_FORBIDDEN_REACH_DRACTHYR },
 					questID = 66975,
 					groups = {

@@ -105,7 +105,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						DF_ACCOUNT_ZC_UNLOCK_QUEST,
 					},
 					sourceQuestNumRequired = 1,
-					provider = { "n", 201099 },	-- Gorgul
+					provider = { "n", 201099 },	-- Grogul
 					coord = { 44.5, 80.4, ZARALEK_CAVERN },
 					maxReputation = { FACTION_LOAMM_NIFFEN, 20 },
 				}, {

@@ -2827,7 +2827,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(84237, {	-- The "Great" Detective
 							description = "1. Talk to the members of Team Solid in following order until the quest shows 48% progress.\n- Ellanoir\n- Duryllin\n- Juddson Rakes\n- Ellanoir\n2. Use your Torch of Pyrreth at Wavestrider Beach to reveal Herrkrop's body.\n3. Talk to all nearby NPCs.\n4. Talk to Athelton Jones to complete the quest requirements.",
 							sourceQuest = 84236,	-- The Great Detective
-							provider = { "n", 226796 },	-- Athektin Jones
+							provider = { "n", 226796 },	-- Athelton Jones
 							coord = { 63.9, 51.7, TANARIS },
 							groups = {
 								n(226805, { coord = { 63.8, 51.0, TANARIS } }),	-- Ellanoir
@@ -2905,7 +2905,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								n(228250, { coord = { 62.5, 51.9, TANARIS } }),	-- Hemet Nesingwary Sr.
 								n(158192, { coord = { 63.3, 52.3, TANARIS } }),	-- Leeroy Jenkins
 								n(228661, { coord = { 63.3, 52.3, TANARIS } }),	-- Athelton Jones (!)
-								n(228663, { coord = { 60.0, 62.5, TANARIS } }),	-- Y'illiya Xennin
+								n(228663, { coord = { 60.0, 62.5, TANARIS } }),	-- Y'lliya Xennin
 							},
 						}),
 						-- Chapter 2

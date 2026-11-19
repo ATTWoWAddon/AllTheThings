@@ -27,10 +27,10 @@ maproot(NAZJATAR, {
 					i(187920),	-- Flipper Fish
 				},
 			}),
-			header(HEADERS.Achievement, 13715, {	-- From the Belly of the Jelly
+			header(HEADERS.Achievement, 13715, {	-- From The Belly Of The Jelly
 				description = "Feed the same |cFFFFD700Ravenous Slime|r a critter by using a |cFFFFD700Prismatic Crystal|r to charm them. Do this for 5 days to get a random pet from the cocoon. You can do this for each |cFFFFD700Ravenous Slime|r once per week.",
 				groups = {
-					ach(13715),	-- From the Belly of the Jelly
+					ach(13715),	-- From The Belly Of The Jelly
 					n(151218, {	-- Ravenous Slime (South)
 						coord = { 55.1, 48.8, NAZJATAR },
 						questID = 55427,

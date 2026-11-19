@@ -1297,7 +1297,7 @@ maproot(SHADOWLANDS, KORTHIA, {
 			}),
 			q(64557, {	-- In Darkness, Found
 				sourceQuests = { 63902 },	-- Good News, Everyone!
-				provider = { "n", 178845 },	-- Xy'lony
+				provider = { "n", 178845 },	-- Xy'lonu
 				coord = { 64.5, 25.4, KORTHIA },
 				isBreadcrumb = true,
 			}),

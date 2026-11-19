@@ -272,7 +272,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							}),
 							q(67079, {	-- Hard Lock Life
 								sourceQuests = { 67078 },	-- Parting Instructions
-								provider = { "n", 192480 },	-- Watcher Karanos
+								provider = { "n", 192480 },	-- Watcher Koranos
 								coord = { 60.4, 58.9, THALDRASZUS },
 								groups = {
 									i(197862),	-- Primary Security Disc (QI!)
@@ -353,7 +353,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							}),
 							q(75633, {	-- We Have the Technology
 								sourceQuests = { 75632 },	-- A Dislocated Disc
-								provider = { "n", 204574 },	-- Etenrus
+								provider = { "n", 204574 },	-- Eternus
 								coord = { 60.4, 58.9, THALDRASZUS },
 							}),
 							q(75634, {	-- Reforging the Tyr`s Guard
@@ -420,7 +420,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							}),
 							q(75636, {	-- Tyrangulation
 								sourceQuests = { 76176 },	-- First Steps
-								provider = { "n", 204667 },	-- Etenrus
+								provider = { "n", 204667 },	-- Eternus
 								coord = { 60.3, 58.8, THALDRASZUS },
 								maps = { THE_STORM_PEAKS },
 							}),

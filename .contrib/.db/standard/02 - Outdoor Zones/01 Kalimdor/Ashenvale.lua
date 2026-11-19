@@ -2385,7 +2385,7 @@ maproot(KALIMDOR, ASHENVALE, {
 			}),
 			q(13751, {	-- Tell No One!
 				sourceQuest = 13730,	-- Playing With Felfire
-				qg = 33726,	-- Sprintertree Demolisher
+				qg = 33726,	-- Splintertree Demolisher
 				coord = { 73.3, 62.1, ASHENVALE },
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,

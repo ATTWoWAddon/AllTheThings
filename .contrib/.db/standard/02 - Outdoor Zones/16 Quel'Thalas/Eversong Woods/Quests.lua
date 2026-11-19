@@ -391,7 +391,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.EVERSONG_WOODS, {
 				}),
 				q(86648, {	-- Light Guide Us
 					sourceQuests = { 86647 },	-- Beat of Blood
-					provider = { "n", 236612 },	-- Lor'Themar Theron
+					provider = { "n", 236612 },	-- Lor'themar Theron
 					coord = { 55.1, 81.4, MAP.MIDNIGHT.EVERSONG_WOODS },
 					groups = {
 						i(248027),	-- Eversong Defender's Crown
@@ -402,7 +402,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.EVERSONG_WOODS, {
 				}),
 				q(86649, {	-- Past Redemption
 					sourceQuests = { 86648 },	-- Light Guide Us
-					provider = { "n", 241654 },	-- High-Exarch Turalyon
+					provider = { "n", 241654 },	-- High Exarch Turalyon
 					coord = { 60.2, 81.5, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),
 				q(86650, {	-- Fractured
@@ -434,7 +434,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.EVERSONG_WOODS, {
 							coord = { 50.6, 58.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 							groups = { i(243240) },	-- Drained Wyrm Core (QI!)
 						}),
-						o(539772, {	-- "Empty" Wine Bottle"
+						o(539772, {	-- "Empty" Wine Bottle
 							coord = { 52.1, 56.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 							groups = { i(243237) },	-- Bottled Fel Dust (QI!)
 						}),
@@ -796,7 +796,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.EVERSONG_WOODS, {
 					provider = { "n", 246806 },	-- Arcanist Taemin
 					coord = { 57.4, 39.9, MAP.MIDNIGHT.EVERSONG_WOODS },
 					groups = {
-						o(555830, {	-- Index of Ranger Corps Recipes vol. VII
+						o(555830, {	-- Index of Ranger Corps Recipes Vol. VII
 							coord = { 56.5, 40.6, MAP.MIDNIGHT.EVERSONG_WOODS },
 							groups = { i(254557) },	-- Index of Ranger Corps Recipes vol. VII (QI!)
 						}),

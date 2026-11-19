@@ -60,7 +60,7 @@ q(49171, 5380)	-- Greater Invasion Point: Sotanathor
 q(49169, 5381)	-- Greater Invasion Point: Matron Folnuna
 
 -- Worldsoul Memories
-q(82207, 7833)	-- Worldsoul Memory: Descendants of Distant Waters
+q(82207, 7833)	-- Worldsoul Memory: Descendant of Distant Waters
 q(82164, 7834)	-- Worldsoul Memory: Reign of the Old Gods
 q(82263, 7835)	-- Worldsoul Memory: Elemental Fury
 q(82260, 7836)	-- Worldsoul Memory: Primal Predators

@@ -923,7 +923,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							groups = {
 								q(42517, {	-- Ritual of Doom
 									sourceQuest = 42601,	-- Tech It Up A Notch
-									provider = { "n", 111740 },	-- Mile Raithborne
+									provider = { "n", 111740 },	-- Mile Raitheborne
 									coord = { 57.0, 41.0, DREADSCAR_RIFT },
 								}),
 								i(139577, {	-- The Burning Jewel of Sargeras

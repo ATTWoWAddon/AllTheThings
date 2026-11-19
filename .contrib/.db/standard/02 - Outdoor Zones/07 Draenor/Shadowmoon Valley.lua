@@ -808,7 +808,7 @@ maproot(DRAENOR, DRAENOR_SHADOWMOON_VALLEY, {
 				coord = { 35.7, 36.8, DRAENOR_SHADOWMOON_VALLEY },
 				races = ALLIANCE_ONLY,
 			}),
-			q(36315, {	-- Orukai's Staff
+			q(36315, {	-- Oru'kai's Staff
 				sourceQuest = 36313,	-- Failed Apprentice
 				qg = 84963,	-- Deema
 				coord = { 35.6, 72.2, DRAENOR_SHADOWMOON_VALLEY },
@@ -1732,7 +1732,7 @@ maproot(DRAENOR, DRAENOR_SHADOWMOON_VALLEY, {
 				coord = { 55.8, 20.0, DRAENOR_SHADOWMOON_VALLEY },
 				groups = { i(118104) },	-- Umbrafen Spore (PET!)
 			}),
-			o(233101, {	-- Sunken Fishing Boat
+			o(233101, {	-- Sunken Fishing boat
 				questID = 35677,
 				coord = { 37.2, 26.0, DRAENOR_SHADOWMOON_VALLEY },
 				groups = { i(118414) },	-- Awesomefish

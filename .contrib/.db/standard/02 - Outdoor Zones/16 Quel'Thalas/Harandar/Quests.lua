@@ -602,7 +602,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 				}),
 				q(86896, {	-- Light Finds a Way
 					sourceQuests = { 86892 },	-- Survive
-					provider = { "n", 241130 },	-- Halduron Broghtwing
+					provider = { "n", 241130 },	-- Halduron Brightwing
 					coord = { 58.7, 57.2, MAP.MIDNIGHT.EVERSONG_WOODS },
 					groups = { i(247234) },	-- Rustic Harandar Planter (DECOR!)
 				}),

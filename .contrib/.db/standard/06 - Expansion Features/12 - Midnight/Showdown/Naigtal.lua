@@ -263,7 +263,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							qg = 266541,	-- Archmage Y'mera
 							coord = { 75.3, 43.8, 2646 },	-- Vilaldoun
 						}),
-						q(97031, {	-- Vilaldoun VValediction
+						q(97031, {	-- Vilaldoun Valediction
 							sourceQuest = 96574,	-- Cryptside Rendezvous
 							provider = { "o", 658789 },	-- Dust-Covered Hologem
 							coords = {
@@ -722,7 +722,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 						i(276288),	-- Forgotten Sword of Vilaldoun (COSMETIC!)
 						i(276368),	-- Partially-Digested Redcap
 						i(275520, {	-- Technoseer's Communique (QS!)
-							provider = { "n", 265537 },	-- Hal'hadar Forge Grunt
+							provider = { "n", 265537 },	-- Hal'hadar Forge-Grunt
 							coord = { 74.2, 73.5, NAIGTAL },
 						}),
 						i(276300),	-- Vilaldoun Anchorite's Scepter (COSMETIC!)

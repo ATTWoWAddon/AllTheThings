@@ -63,7 +63,7 @@ maproot(SHADOWLANDS, ARDENWEALD, {
 			}),
 			n(WEAPONS, {
 				i(179562),	-- Duskwarder Branch
-				i(179517),	-- Duskwarder Censor
+				i(179517),	-- Duskwarder Censer
 				i(181433),	-- Duskwarder Gavel
 				i(179500),	-- Duskwarder Knife
 				i(179537),	-- Duskwarder Maul

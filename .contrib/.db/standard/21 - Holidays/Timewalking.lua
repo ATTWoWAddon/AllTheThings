@@ -3562,7 +3562,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 		inst_tw(280, {	-- The Forge of Souls
 			timeline = { ADDED_9_1_5 },
 			groups = {
-				cr(36497, e(615, {	-- Brojahm
+				cr(36497, e(615, {	-- Bronjahm
 					i(50316),	-- Papa's Brand New Bag
 					i(50317),	-- Papa's New Bag
 					i(188457),	-- Bewildering Shoulderpads
@@ -4466,7 +4466,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 		inst_tw(66, {	-- Blackrock Caverns
 			timeline = { ADDED_9_1_5 },
 			groups = {
-				cr(39665, e(105, {	-- Rom'ogg Boncrusher
+				cr(39665, e(105, {	-- Rom'ogg Bonecrusher
 					i(188520),	-- Groundrumble Boots
 					i(188506),	-- Inquisition Robes
 					i(188508),	-- Manacles of Pain
@@ -4497,7 +4497,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					i(188519),	-- Gently Gnawed Hauberk
 					i(188502),	-- Kibble
 				})),
-				cr(39705, e(109, {	-- Ascendent Lord Obsidius
+				cr(39705, e(109, {	-- Ascendant Lord Obsidius
 					i(188511),	-- Amber Messenger
 					i(188513),	-- Carrier Wave Pendant
 					i(188517),	-- Clutches of Dying Light
@@ -4515,7 +4515,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				crs = {
 					54431,	-- Echo of Baine
 					54445,	-- Echo of Jaina
-					54123,	-- Echo of Sylvannas
+					54123,	-- Echo of Sylvanas
 					54544,	-- Echo of Tyrande
 				},
 				groups = {
@@ -7316,7 +7316,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 			}),
 			e(2170, {	-- The Council of Tribes
 				crs = {
-					135470,	-- Aka'ali  the Conqueror
+					135470,	-- Aka'ali the Conqueror
 					135475,	-- Kula the Butcher
 					135472,	-- Zanazal the Wise
 				},
@@ -7507,7 +7507,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				crs = {
 					131863,	-- Raal the Gluttonous
 					133361,	-- Wasting Servant
-					136541,	-- Bile Oozing
+					136541,	-- Bile Oozeling
 				},
 				sym = {{"select", "modItemID",
 					modItemId(163833,1),	-- Recipe: Heartsbane Hexwurst (RECIPE!)
@@ -8338,7 +8338,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 		inst_tw(1201, {	-- Algeth'ar Academy
 			e(2509, {	-- Vexamus
 					crs = {
-						189668,	-- Professor Madormu
+						189668,	-- Professor Maxdormu
 						195416,	-- Magic Book
 						194181,	-- Vexamus
 					},

@@ -281,7 +281,7 @@ maproot(DRAENOR, GORGROND, {
 			}),
 			fp(1523, {	-- Deeproot, Gorgrond
 				-- sourceQuest = ,	-- sourceQuest required. Flight Path does not exist until the player establishes the outpost
-				cr = 81888,	-- Rengari Nogo
+				cr = 81888,	-- Rangari Nogo
 				coord = { 46.4, 76.6, GORGROND },
 				races = ALLIANCE_ONLY,
 			}),
@@ -446,7 +446,7 @@ maproot(DRAENOR, GORGROND, {
 								{ 62.0, 65.4, GORGROND },
 								{ 63.1, 63.6, GORGROND },
 							},
-							groups = { i(113136) },	-- Angient Growth Sap (QI!)
+							groups = { i(113136) },	-- Ancient Growth Sap (QI!)
 						}),
 					},
 				}),
@@ -471,7 +471,7 @@ maproot(DRAENOR, GORGROND, {
 								{ 62.0, 65.4, GORGROND },
 								{ 63.1, 63.6, GORGROND },
 							},
-							groups = { i(113136) },	-- Angient Growth Sap (QI!)
+							groups = { i(113136) },	-- Ancient Growth Sap (QI!)
 						}),
 					},
 				}),
@@ -1562,7 +1562,7 @@ maproot(DRAENOR, GORGROND, {
 						80696,	-- Botani Greensworn
 						81631,	-- Botani Grovetender
 						81575,	-- Bloom Weaver
-						81721,	-- Dionar Seedpriest
+						81721,	-- Dionor Seedpriest
 						83826,	-- Tarlna Thorncaster
 						81634,	-- Voice of Iyu
 					},
@@ -1652,7 +1652,7 @@ maproot(DRAENOR, GORGROND, {
 						80696,	-- Botani Greensworn
 						81631,	-- Botani Grovetender
 						81575,	-- Bloom Weaver
-						81721,	-- Dionar Seedpriest
+						81721,	-- Dionor Seedpriest
 						83826,	-- Tarlna Thorncaster
 						81634,	-- Voice of Iyu
 					},
@@ -2188,7 +2188,7 @@ maproot(DRAENOR, GORGROND, {
 					33661,	-- Steamscar "Reagents"
 					33660,	-- The Sacking of the Saberon
 				},
-				qg = 82225,	-- Rokthoth
+				qg = 82225,	-- Rakthoth
 				coord = { 52.8, 51.7, GORGROND },
 				races = HORDE_ONLY,
 			}),

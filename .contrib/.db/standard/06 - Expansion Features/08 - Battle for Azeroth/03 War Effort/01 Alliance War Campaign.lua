@@ -1723,7 +1723,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					}),
 				}),
 				n(QUESTS, sharedData({ timeline = { ADDED_8_2_5 } }, {
-					q(56494, {	-- The Eye of Battle
+					q(56494, {	-- The Eve of Battle
 						sourceQuests = { 55783 },	-- Stay of Execution
 						provider = { "n", 135614 },	-- Master Mathias Shaw
 						coord = { 70.5, 27.0, BORALUS },
@@ -1731,7 +1731,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						lvl = 120,
 					}),
 					q(56719, {	-- This Ain't Mine
-						sourceQuests = { 56494 },	-- The Eye of Battle
+						sourceQuests = { 56494 },	-- The Eve of Battle
 						provider = { "n", 155784 },	-- Anduin Wrynn
 						coord = { 54.0, 42.6, DUROTAR },
 						races = ALLIANCE_ONLY,

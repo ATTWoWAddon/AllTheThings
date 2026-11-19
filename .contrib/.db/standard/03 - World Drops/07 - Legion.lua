@@ -117,7 +117,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, {
 			i(134379),	-- Infernal Bloodstone Shard
 			i(134366),	-- Legionnaire's Mandate
 			i(141586),	-- Marfisi's Giant Censer
-			i(141585),	-- Six-feater Fan
+			i(141585),	-- Six-Feather Fan
 		}),
 	}),
 	n(WEAPONS, {

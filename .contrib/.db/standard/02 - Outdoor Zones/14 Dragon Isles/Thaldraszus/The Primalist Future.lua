@@ -68,8 +68,8 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 							provider = { "n", 201562 },	-- Shardwing
 							coord = { 48.3, 16.9, THE_PRIMALIST_FUTURE },
 						}),
-						q(74451, {	-- Tikar Frostclaw
-							provider = { "n", 201542 },	-- Tikar Frostclaw
+						q(74451, {	-- Tikarr Frostclaw
+							provider = { "n", 201542 },	-- Tikarr Frostclaw
 							coord = { 61.7, 31.7, THE_PRIMALIST_FUTURE },
 						}),
 					})),
@@ -117,7 +117,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 						i(200241),	-- Stormcaller's Ritual Hatchet
 					},
 				}),
-				n(201542, {	-- Tikar Frostclaw
+				n(201542, {	-- Tikarr Frostclaw
 					coord = { 61.7, 31.7, THE_PRIMALIST_FUTURE },
 					questID = 74558,
 					groups = {
@@ -223,7 +223,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 							i(201813),	-- Spoiled Firewine
 						},
 					}),
-					n(199541, {	-- Tarndormu <Temporal Squadron Commander>
+					n(199541, {	-- Tarnormu <Temporal Squadron Commander>
 						description = "This Vendor is only visible during the Storm's Fury event.",
 						coord = { 60.8, 46.6, THE_PRIMALIST_FUTURE },
 						groups = {

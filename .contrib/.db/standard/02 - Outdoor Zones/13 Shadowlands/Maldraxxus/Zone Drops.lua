@@ -86,7 +86,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 					170456,	-- Diseased Galescreamer
 					162259,	-- Galescreamer Pup
 					162588,	-- Gristlebeak
-					162589,	-- Neonate Boontooth
+					162589,	-- Neonate Bonetooth
 					162258,	-- Ravenous Galescreamer
 					164587,	-- Satiated Sawtooth
 				},

@@ -510,19 +510,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					}),
 					q(42928, {	-- Silkweave Bandages
 						sourceQuests = { 42436 },	-- Aiding Our Allies
-						provider = { "n", 109227 },	-- Mellah Greyfeather
+						provider = { "n", 109227 },	-- Meliah Grayfeather
 						coord = { 53.0, 44.5, HIGHMOUNTAIN },
 						repeatable = true,	-- Aiding Our Allies
 					}),
 					q(42929, {	-- Highmountain Salmon
 						sourceQuests = { 42436 },	-- Aiding Our Allies
-						provider = { "n", 109227 },	-- Mellah Greyfeather
+						provider = { "n", 109227 },	-- Meliah Grayfeather
 						coord = { 53.0, 44.5, HIGHMOUNTAIN },
 						repeatable = true,	-- Aiding Our Allies
 					}),
 					q(42930, {	-- Big Gamy Ribs
 						sourceQuests = { 42436 },	-- Aiding Our Allies
-						provider = { "n", 109227 },	-- Mellah Greyfeather
+						provider = { "n", 109227 },	-- Meliah Grayfeather
 						coord = { 53.0, 44.5, HIGHMOUNTAIN },
 						repeatable = true,	-- Aiding Our Allies
 					}),

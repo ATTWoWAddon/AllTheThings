@@ -2017,7 +2017,7 @@ maproot(KALIMDOR, TANARIS, {
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/10 Explorer's League Digger slain
-						provider = { "n", 38998 },	-- Explorer's League Digger
+						provider = { "n", 38998 },	-- Explorers' League Digger
 					}),
 				},
 			}),
@@ -2443,7 +2443,7 @@ maproot(KALIMDOR, TANARIS, {
 			}),
 			q(53820, {	-- She's in a Happier Place
 				sourceQuest = 53819,	-- Return to the Nest
-				qg = 151129,	-- Sapphronetta Flavvers
+				qg = 151129,	-- Sapphronetta Flivvers
 				coord = { 27.1, 60.0, TANARIS },
 				timeline = { ADDED_8_1_5 },
 				races = ALLIANCE_ONLY,

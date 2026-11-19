@@ -192,7 +192,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 				i(223347),	-- Viper's Stone Mitts
 			},
 		}),
-		n(220068, {	-- Malfuctioning Spire
+		n(220068, {	-- Malfunctioning Spire
 			description = "This Rare might only be available during the introduction.",
 			coord = { 26.7, 57.4, ISLE_OF_DORN },
 			questID = 81891,

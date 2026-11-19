@@ -92,7 +92,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				12575,	-- Tour of Duty: Zuldazar
 			}},
 			groups = {
-				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
+				i(163577),	-- Conqueror's Scythemaw (MOUNT!)
 				title(377),	-- <Name>, Conqueror of Azeroth
 			},
 		})),
@@ -111,7 +111,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				12575,	-- Tour of Duty: Zuldazar
 			}},
 			groups = {
-				i(163577),	-- Conquerer's Scythemaw (MOUNT!)
+				i(163577),	-- Conqueror's Scythemaw (MOUNT!)
 				title(377),	-- <Name>, Conqueror of Azeroth
 			},
 		})),
@@ -388,7 +388,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		ach(13061, {	-- Three Sheets to the Wind
 			sym = {{ "achievement_criteria" }},
 		}),
-		ach(14730, {	-- To All The Squirrels I Set Sail to See
+		ach(14730, {	-- To All the Squirrels I Set Sail to See
 			crit(50236, {	-- Honey Bee
 				crs = { 131376 },	-- Honey Bee
 				coord = { 45.87, 62.73, STORMSONG_VALLEY },

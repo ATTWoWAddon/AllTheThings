@@ -1735,7 +1735,7 @@ maproot(KUL_TIRAS, DRUSTVAR, {
 					}),
 					q(50959),	-- Plundering Pirates
 					q(50448, {	-- Reclaiming Corlain
-						sourceQuest = 50253,	-- An Improved Arsenal
+						sourceQuest = 50253,	-- An Improvised Arsenal
 					}),
 					q(45972, {	-- The Accursed Thicket
 						sourceQuest = 47428,	-- Kitty?

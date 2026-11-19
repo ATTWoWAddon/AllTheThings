@@ -9,7 +9,7 @@ maproot(ZANDALAR, NAZMIR, {
 			o(298921, {	-- Ancient Nazmani Tablet
 				coord = { 56.3, 57.3, NAZMIR },
 			}),
-			o(279260, {	-- Cleverly Disguised Chest
+			o(279260, {	-- "Cleverly" Disguised Chest
 				questID = 49885,
 				coord = { 35.7, 85.6, NAZMIR },
 			}),

@@ -75,7 +75,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(155868),	-- Kilt of Fanatical Consumption
 						i(158303),	-- Devilsaur Worshiper's Sandals
 						i(159458),	-- Seal of the Regal Loa
-						i(158712),	-- Rezan's Gleaning Eye
+						i(158712),	-- Rezan's Gleaming Eye
 						i(168128),	-- Essence of the Regal Loa
 					},
 				}),
@@ -136,7 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(155868),	-- Kilt of Fanatical Consumption
 							i(158303),	-- Devilsaur Worshiper's Sandals
 							i(159458),	-- Seal of the Regal Loa
-							i(158712),	-- Rezan's Gleaning Eye
+							i(158712),	-- Rezan's Gleaming Eye
 							i(168128),	-- Essence of the Regal Loa
 						},
 					}),
@@ -217,7 +217,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(155868),	-- Kilt of Fanatical Consumption
 							i(158303),	-- Devilsaur Worshiper's Sandals
 							i(159458),	-- Seal of the Regal Loa
-							i(158712),	-- Rezan's Gleaning Eye
+							i(158712),	-- Rezan's Gleaming Eye
 							i(168128),	-- Essence of the Regal Loa
 						},
 					}),

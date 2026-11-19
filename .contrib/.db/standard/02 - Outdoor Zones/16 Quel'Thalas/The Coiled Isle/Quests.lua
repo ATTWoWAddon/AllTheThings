@@ -50,7 +50,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 					qg = 255282,	-- Zul'jarra
 					coord = { 37.4, 23.8, MAP.MIDNIGHT.ZULAMAN },
 				}),
-				q(93266, {	-- Drumming up the Tropps
+				q(93266, {	-- Drumming Up the Troops
 					sourceQuest = 92921,	-- To the Skybridge
 					qg = 257078,	-- Zul'jarra
 					coord = { 44.1, 54.4, MAP.MIDNIGHT.ZULAMAN },
@@ -63,7 +63,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 				q(92920, {	-- Down with the Skies
 					-- Turning in this quest unlocks literally everything on The Coiled Isle (Renown, FPs, Vendors, Treasures)
 					sourceQuests = {
-						93266,	-- Drumming up the Tropps
+						93266,	-- Drumming Up the Troops
 						93263,	-- It Just Had to Be...
 					},
 					qg = 258992,	-- Zul'jarra
@@ -128,7 +128,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 						i(280377),	-- Breath of Jan'alai
 					},
 				}),
-				q(93023, {	-- Deaths of Furies
+				q(93023, {	-- Death of Furies
 					sourceQuests = {
 						93018,	-- Them That Were Lost
 						93022,	-- Fire, the Only Way to Be Sure
@@ -142,7 +142,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 					},
 				}),
 				q(93024, {	-- Come With Me
-					sourceQuest = 93023,	-- Deaths of Furies
+					sourceQuest = 93023,	-- Death of Furies
 					qg = 253528,	-- Zul'jarra
 					coord = { 44.8, 27.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),

@@ -867,7 +867,7 @@ maproot(ZANDALAR, THE_GREAT_SEAL, {
 			}),
 			q(49615, {	-- Trust of a King
 				sourceQuests = { 47514 },	-- Zuldazar
-				provider = { "n", 133050 },	-- Princes Talanji
+				provider = { "n", 133050 },	-- Princess Talanji
 				coord = { 40.1, 69.4, HALL_OF_CHRONICLERS },
 				races = HORDE_ONLY,
 			}),

@@ -1822,7 +1822,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 				},
 			}),
 			applyclassicphase(PHASE_SIX, q(9665, {	-- Bolstering Our Defenses
-				qg = 17072,	-- Emmisary Gormok
+				qg = 17072,	-- Emissary Gormok
 				coords = {
 					-- #if AFTER WRATH
 					{ 74.4, 51.6, EASTERN_PLAGUELANDS },
@@ -2033,7 +2033,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 			}),
 			q(27531, {	-- Counter-Plague Research
 				sourceQuest = 27532,	-- The Plaguewood Tower
-				qg = 45828,	-- Argent Apotehcary Judkins
+				qg = 45828,	-- Argent Apothecary Judkins
 				coord = { 17.6, 27.8, EASTERN_PLAGUELANDS },
 				timeline = { ADDED_4_0_3 },
 				groups = {
@@ -2908,7 +2908,7 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 				},
 			}),
 			q(27535, {	-- Just a Little Touched
-				qg = 45828,	-- Argent Apotehcary Judkins
+				qg = 45828,	-- Argent Apothecary Judkins
 				coord = { 17.6, 27.8, EASTERN_PLAGUELANDS },
 				timeline = { ADDED_4_0_3 },
 				isBreadcrumb = true,

@@ -1627,7 +1627,7 @@ maproot(KALIMDOR, ULDUM, {
 				},
 				groups = {
 					i(63046, {	-- Grey Riding Camel (MOUNT!)
-						crs = { 50245 },	-- Dormus the Camel Hoarder
+						crs = { 50245 },	-- Dormus the Camel-Hoarder
 					}),
 				},
 			}),

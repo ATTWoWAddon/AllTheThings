@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(139282),	-- Solid Gold Bracelets
 						i(134207),	-- Tideskorn Cinch
 						i(139280),	-- Treads of Light
-						i(139283),	-- Wristbands of Magnificent Splender
+						i(139283),	-- Wristbands of Magnificent Splendor
 						i(133685),	-- Odyn's Boon
 						i(133686),	-- Stormforged Inferno
 						i(136784),	-- Eternity Sand
@@ -283,7 +283,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(139282),	-- Solid Gold Bracelets
 							i(134207),	-- Tideskorn Cinch
 							i(139280),	-- Treads of Light
-							i(139283),	-- Wristbands of Magnificent Splender
+							i(139283),	-- Wristbands of Magnificent Splendor
 							i(133685),	-- Odyn's Boon
 							i(133686),	-- Stormforged Inferno
 							i(136784),	-- Eternity Sand
@@ -389,7 +389,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(139282),	-- Solid Gold Bracelets
 							i(134207),	-- Tideskorn Cinch
 							i(139280),	-- Treads of Light
-							i(139283),	-- Wristbands of Magnificent Splender
+							i(139283),	-- Wristbands of Magnificent Splendor
 							i(133685),	-- Odyn's Boon
 							i(133686),	-- Stormforged Inferno
 							i(136784),	-- Eternity Sand

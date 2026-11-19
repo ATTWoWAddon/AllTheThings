@@ -121,7 +121,7 @@ root(ROOTS.ExpansionFeatures,
 							provider = { "i", 150941 },	-- Voidcallers' Scroll (QS!)
 						}),
 						q(47557, {	-- Smoldering Chronoshard
-							sourceQuest = 47645,	-- Voidcaller's Scroll
+							sourceQuest = 47645,	-- Voidcallers' Scroll
 							provider = { "i", 150943 },	-- Smoldering Chronoshard (QS!)
 							coord = { 56.6, 66.1, 897 },	-- Dragonblight
 						}),

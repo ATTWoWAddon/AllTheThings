@@ -6,7 +6,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 	n(FLIGHT_PATHS, {
 		fp(2920, {	-- Faerin's Advance, Azj-Kahet
 			coord = { 59.9, 18.7, AZJ_KAHET },
-			cr = 216973,	-- Couruier Aidal
+			cr = 216973,	-- Courier Aidal
 		}),
 		fp(2921, {	-- Mmarl, Azj-Kahet
 			coord = { 76.8, 64.4, AZJ_KAHET },

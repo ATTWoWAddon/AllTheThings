@@ -111,7 +111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 						}),
 					}),
 					n(236076, {	-- Darlia <Poison Supplies>
-						i(237765, {	-- Hearthstop Blade
+						i(237765, {	-- Heartstop Blade
 							cost = { { "c", 3250, 1 } },	-- 1x Faceted Crystaline Fel
 						}),
 					}),

@@ -172,7 +172,7 @@ maproot(KUL_TIRAS, BORALUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 120,
 			}),
-			q(51027, {	-- Supplis Needed: Sea Stalk
+			q(51027, {	-- Supplies Needed: Sea Stalk
 				provider = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 				coord = { 73.21, 11.01, BORALUS },
 				races = ALLIANCE_ONLY,

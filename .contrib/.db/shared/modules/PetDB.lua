@@ -2556,7 +2556,7 @@ n(99528, 1810);		-- Thornclaw Broodling
 n(97952, 1750);		-- Tiny Apparition
 n(97547, 1737);		-- Vale Flitter
 n(99513, 1807);		-- Vicious Broodling
-n(110666, 1912);	-- Young Mutant Wartutle
+n(110666, 1912);	-- Young Mutant Warturtle
 --- TRAINER ---
 i(0, 1893);			-- Allured Tadpole
 i(0, 1860);			-- Ancient Catacomb Spider
@@ -2859,7 +2859,7 @@ i(163515, 2429);	-- Azeriti
 i(162578, 2352);	-- Baa'l
 i(163859, 2477);	-- Baby Crawg
 i(163799, 2456);	-- Barnaby
-i(163511, 2425);	-- Barnacled Hemit Crab
+i(163511, 2425);	-- Barnacled Hermit Crab
 i(163494, 2408);	-- Bilefang Skitterer
 i(163861, 2476);	-- Bloated Bloodfeaster
 i(163500, 2414);	-- Bloodfeaster Larva

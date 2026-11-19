@@ -137,7 +137,7 @@ maproot(BROKEN_ISLES, ARGUS, {
 		i(153153, {	-- Unsullied Plate Pauldrons
 			i(152750),	-- Praetorium Guard's Pauldrons
 		}),
-		i(153143, {	-- Unsullied Plate Breasplate
+		i(153143, {	-- Unsullied Plate Breastplate
 			i(152748),	-- Praetorium Guard's Breastplate
 		}),
 		i(153150, {	-- Unsullied Plate Vambraces

@@ -87,7 +87,7 @@ local STOLEN_PRESENT_GROUPS = {
 	i(116689, { timeline = { ADDED_6_0_2 } }),	-- Pineapple Lounge Cushion (TOY!)
 	i(128776, { timeline = { ADDED_6_2_2 } }),	-- Red Wooden Sled (TOY!)
 	i(187422, { timeline = { ADDED_10_0_2 } }),	-- Rockin' Rollin' Racer Customizer 19.9.3 (TOY!)
-	i(116690, { timeline = { ADDED_6_0_2 } }),	-- Safarai Lounge Cushion (TOY!)
+	i(116690, { timeline = { ADDED_6_0_2 } }),	-- Safari Lounge Cushion (TOY!)
 	i(116456, { timeline = { ADDED_6_0_2 } }),	-- Scroll of Storytelling (TOY!)
 	i(90888, { timeline = { ADDED_6_2_3 } }),	-- Special Edition Foot Ball (TOY!)
 	i(90883, { timeline = { ADDED_6_2_3 } }),	-- The Pigskin (TOY!)
@@ -115,7 +115,7 @@ local STOLEN_PRESENT_GROUPS = {
 	i(188680, { timeline = { ADDED_9_1_5 } }),	-- Winter Veil Chorus Book (TOY!)
 	i(210656, { timeline = { ADDED_11_0_7 } }),	-- Winter Veil Socks (TOY!)
 	i(178530, { timeline = { ADDED_9_1_5 } }),	-- Wreath-A-Rang (TOY!)
-	i(116691, { timeline = { ADDED_6_0_2 } }),	-- Zhevra Lounge Cusion (TOY!)
+	i(116691, { timeline = { ADDED_6_0_2 } }),	-- Zhevra Lounge Cushion (TOY!)
 	-- Mount Mods
 	i(210432, { timeline = { ADDED_10_2_0 } }),	-- Highland Drake: Winter Veil Armor (MM!)
 	-- Illusions
@@ -787,7 +787,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			provider = { "i", 218310 },	-- Box of Puntables (TOY!)
 			timeline = { ADDED_11_0_7 },
 		}),
-		ach(42192, {	-- Snowball Fight (2025)
+		ach(42192, {	-- Snowball Fight! (2025)
 			provider = { "i", 243304 },	-- Jubilant Snowman Costume (TOY!)
 			timeline = { ADDED_11_2_7 },
 		}),
@@ -1152,8 +1152,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #if BEFORE 6.2.2
 				i(116692, { timeline = { ADDED_6_0_2 } }),	-- Fuzzy Green Lounge Cushion (TOY!)
 				i(116689, { timeline = { ADDED_6_0_2 } }),	-- Pineapple Lounge Cushion (TOY!)
-				i(116690, { timeline = { ADDED_6_0_2 } }),	-- Safarai Lounge Cushion (TOY!)
-				i(116691, { timeline = { ADDED_6_0_2 } }),	-- Zhevra Lounge Cusion (TOY!)
+				i(116690, { timeline = { ADDED_6_0_2 } }),	-- Safari Lounge Cushion (TOY!)
+				i(116691, { timeline = { ADDED_6_0_2 } }),	-- Zhevra Lounge Cushion (TOY!)
 				-- #endif
 				i(21235, { timeline = { REMOVED_6_2_3 } }),	-- Winter Veil Roast
 			},
@@ -1173,8 +1173,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 				-- #if BEFORE 6.2.2
 				i(116692, { timeline = { ADDED_6_0_2 } }),	-- Fuzzy Green Lounge Cushion (TOY!)
 				i(116689, { timeline = { ADDED_6_0_2 } }),	-- Pineapple Lounge Cushion (TOY!)
-				i(116690, { timeline = { ADDED_6_0_2 } }),	-- Safarai Lounge Cushion (TOY!)
-				i(116691, { timeline = { ADDED_6_0_2 } }),	-- Zhevra Lounge Cusion (TOY!)
+				i(116690, { timeline = { ADDED_6_0_2 } }),	-- Safari Lounge Cushion (TOY!)
+				i(116691, { timeline = { ADDED_6_0_2 } }),	-- Zhevra Lounge Cushion (TOY!)
 				-- #endif
 				i(21241, { timeline = { REMOVED_6_2_3 } }),	-- Winter Veil Eggnog
 			},

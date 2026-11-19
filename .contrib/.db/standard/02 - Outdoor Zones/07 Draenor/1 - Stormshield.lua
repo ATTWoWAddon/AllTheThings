@@ -536,7 +536,7 @@ maproot(DRAENOR, STORMSHIELD, {
 				n(92501, {	-- Dawn-Seeker Kasrek <Apexis Belt Trader>
 					coord = { 51.2, 61.8, STORMSHIELD },
 					groups = {
-						i(119821, {	-- Contact: Dawnseeker Rukaryx
+						i(119821, {	-- Contract: Dawnseeker Rukaryx
 							cost = {
 								{ "c", APEXIS_CRYSTAL, 5000 },
 								{ "g", 50000000 },	-- 5,000g
@@ -1070,7 +1070,7 @@ maproot(DRAENOR, STORMSHIELD, {
 						}),
 					},
 				}),
-				n(85946, {	-- Shadow Sage Brakoss <Arakkoa Outcasts Quartermaster>
+				n(85946, {	-- Shadow-Sage Brakoss <Arakkoa Outcasts Quartermaster>
 					coord = { 44.5, 75.0, STORMSHIELD },
 					groups = bubbleDownClassicRep(FACTION_ARAKKOA_OUTCASTS, {
 						{		-- Neutral

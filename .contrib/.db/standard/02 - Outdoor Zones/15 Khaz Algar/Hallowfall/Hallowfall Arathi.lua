@@ -255,7 +255,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 								i(211073),	-- Sentry Flare (QI!)
 							},
 						}),
-						q(79470, {	-- Water of War
+						q(79470, {	-- Waters of War
 							description = "Faded Shore keyflame.",
 							coord = { 62.6, 17.0, HALLOWFALL },
 							groups = {
@@ -322,7 +322,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 						}),
 						q(79346, {	-- Chew On That
 							sourceQuests = { 79295 },	-- Keyflame: Taerry Bligestone
-							provider = { "n", 215956 },	-- Taerry Bligestone
+							provider = { "n", 215956 },	-- Taerry Bilgestone
 							coord = { 65.8, 24.4, HALLOWFALL },
 							groups = {
 								o(423714, {	-- Duskstem Stalk
@@ -397,7 +397,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 						}),
 						q(78656, {	-- Hose It Down
 							sourceQuests = { 79295 },	-- Keyflame: Taerry Bligestone
-							provider = { "n", 215956 },	-- Taerry Bligestone
+							provider = { "n", 215956 },	-- Taerry Bilgestone
 							coord = { 65.8, 24.4, HALLOWFALL },
 							groups = {
 								i(211942),	-- Water Hose (QI!)
@@ -420,7 +420,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 							minReputation = { FACTION_HALLOWFALL_ARATHI, 16 },
 						}),
 						q(76600, {	-- Right Between the Gyro-Optics
-							sourceQuests = { 76599 },	-- Right Between the Gyro-Optics - Activate
+							sourceQuests = { 76599 },	-- Right Between Gyro-Optics - Activate
 							qgs = {
 								208019,	-- Auebry Irongear
 								206441,	-- Auebry Irongear
@@ -1336,7 +1336,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 								}),
 							},
 						}),
-						n(215956, {	-- Taerry Bligestone
+						n(215956, {	-- Taerry Bilgestone
 							coord = { 65.8, 24.4, HALLOWFALL },
 							groups = {
 								i(218107, {	-- Sparkbug Jar

@@ -592,7 +592,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 			header(HEADERS.AchCriteria, 14799.01, {	-- Theater of Pain
 				q(62785, {	-- I Could Be A Contender
 					sourceQuests = { 57425 },	-- Land of Opportunity
-					provider = { "n", 161733 },	-- Anzio The Infallible
+					provider = { "n", 161733 },	-- Anzio the Infallible
 					coord = { 50.5, 51.6, MALDRAXXUS },
 					isBreadcrumb = true,
 				}),
@@ -690,7 +690,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 				}),
 				q(57316, {	-- The Ladder
 					sourceQuests = { 58900 },	-- A Sure Bet
-					provider = { "n", 161733 },	-- Anzio The Infallible
+					provider = { "n", 161733 },	-- Anzio the Infallible
 					coord = { 50.5, 51.6, MALDRAXXUS },
 					groups = {
 						i(181529),	-- Ruthless Contender's Blade
@@ -757,7 +757,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 					sourceQuests = { 60900 },	-- Archival Protection
 					provider = { "n", 162476 },	-- Ta'eran
 					groups = {
-						o(340455, {	-- Volume of Victory: Vol 1
+						o(340455, {	-- Volumes of Victory: Vol 1
 							coord = { 45.5, 32.1, MALDRAXXUS },
 							groups = { i(178020) },	-- Volume of Victory: Vol 1 (QI!)
 						}),

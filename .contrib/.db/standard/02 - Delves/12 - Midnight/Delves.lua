@@ -1447,7 +1447,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 				i(271996),	-- Crumpled Scroll
 				i(271998),	-- Discarded Potion
 				-- Story Variant: Speaking Their Language
-				i(276206),	-- Leagally Sourced Cannon Shot
+				i(276206),	-- Legally Sourced Cannon Shot
 				i(276205),	-- Legitimate Shipment of Swivel Guns
 				i(276198),	-- Shellman's 195
 				i(276186),	-- Totally Not Stolen Powder

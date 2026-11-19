@@ -39,7 +39,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 				}),
 				n(QUESTS, {
 					q(77437, {	-- Eon's Fringe
-						provider = { "n", 209020 },	-- Slaszerathel
+						provider = { "n", 209020 },	-- Siaszerathel
 						coord = { 79.0, 44.5, VALDRAKKEN },
 						isBreadcrumb = true,
 					}),
@@ -188,7 +188,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 						},
 					}),
 					q(76251, {	-- Fowl Beasts
-						provider = { "n", 206072 },	-- Nathanox Matris
+						provider = { "n", 206072 },	-- Nathanos Marris
 						coord = { 52.2, 81.7, THALDRASZUS },
 					}),
 					q(75466, {	-- Lost Time-Lost Vikings
@@ -198,7 +198,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 							i(204989),	-- Eric's Camera (QI!)
 						},
 					}),
-					q(75988, {	-- Lucky Hearthsone Card
+					q(75988, {	-- Lucky Hearthstone Card
 						provider = { "n", 205604 },	-- Anduin Wrynn
 						coord = { 52.1, 81.5, THALDRASZUS },
 						groups = {

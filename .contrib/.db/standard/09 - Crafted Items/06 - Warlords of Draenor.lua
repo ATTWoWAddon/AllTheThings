@@ -583,7 +583,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(202214, {timeline = {ADDED_10_0_5}}),	-- Impressive True Iron Trigger
 			i(127738, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Infrablue-Blocker Lenses
 			i(128011, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Linkgrease Locksprocke
-			i(118007),	-- Mecha-Blast Rockett
+			i(118007),	-- Mecha-Blast Rocket
 			i(202213, {timeline = {ADDED_10_0_5}}),	-- Remarkable Linkgrease Locksprocket
 			i(202215, {timeline = {ADDED_10_0_5}}),	-- Remarkable True Iron Trigger
 			i(119299),	-- Secrets of Draenor Engineering

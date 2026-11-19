@@ -126,7 +126,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 						sym = SYM.SHADOWLANDS.ALL_CONDUITS,
 					}),
 				}, {	-- Friendly
-					i(177665),	-- Spectral Hankerchief
+					i(177665),	-- Spectral Handkerchief
 				}, {	-- Honored
 					i(184723),	-- Bedazzled Belt
 					i(183099, {	-- Design: Revitalizing Jewel Doublet (RECIPE!)

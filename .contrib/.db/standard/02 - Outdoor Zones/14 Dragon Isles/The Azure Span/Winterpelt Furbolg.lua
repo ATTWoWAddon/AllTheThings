@@ -187,7 +187,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, { header(HEADERS.Faction, FACTION_WINTERPE
 			}),
 			q(72558, {	-- Our Honored Ancestors
 				sourceQuests = { 73035 },	-- Path of Trust
-				provider = { "n", 199267 },	-- Radze Thunderclaw
+				provider = { "n", 199267 },	-- Radza Thunderclaw
 				coord = { 66.0, 12.6, THE_AZURE_SPAN },
 				-- minReputation = { TODO, TODO },	-- Language Furbolg 75
 			}),
@@ -205,7 +205,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, { header(HEADERS.Faction, FACTION_WINTERPE
 			}),
 			q(72559, {	-- History Heist
 				sourceQuests = { 72558 },	-- Our Honored Ancestors
-				provider = { "n", 199299 },	-- Jhagaze the Wordkeeper
+				provider = { "n", 199299 },	-- Jhagaza the Wordkeeper
 				coord = { 67.0, 11.9, THE_AZURE_SPAN },
 				-- minReputation = { TODO, TODO },	-- Language Furbolg 75
 				groups = {

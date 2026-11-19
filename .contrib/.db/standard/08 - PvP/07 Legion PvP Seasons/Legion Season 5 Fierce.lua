@@ -8,13 +8,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 		timeline = { ADDED_7_3_0, REMOVED_7_3_2, ADDED_8_0_1_LAUNCH },
 	}, {
 		n(ACHIEVEMENTS, timelineSelf({ timeline = { ADDED_7_3_0, REMOVED_7_3_2 } }, {
-			ach(12032, {	-- Fierce  Combatant [A]
+			ach(12032, {	-- Fierce Combatant [A]
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(103533),	-- Vicious Saddle
 				},
 			}),
-			ach(12031, {	-- Fierce  Combatant [H]
+			ach(12031, {	-- Fierce Combatant [H]
 				races = HORDE_ONLY,
 				groups = {
 					i(103533),	-- Vicious Saddle

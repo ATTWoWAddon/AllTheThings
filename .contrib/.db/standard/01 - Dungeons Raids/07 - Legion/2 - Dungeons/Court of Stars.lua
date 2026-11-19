@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					isWorldQuest = true,
 					lvl = 110,
 				}),
-				q(42781, {	-- Court of Stars: Disarmning the Watch
+				q(42781, {	-- Court of Stars: Disarming the Watch
 					isWorldQuest = true,
 					lvl = 110,
 				}),

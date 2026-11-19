@@ -151,7 +151,7 @@ maproot(SHADOWLANDS, BASTION, {
 					coord = { 51.6, 80.9, BASTION },
 				}),
 				q(57266, {	-- The First Cleansing
-					sourceQuests = { 57291 },	-- The Chamber of First Reflectiont
+					sourceQuests = { 57291 },	-- The Chamber of First Reflection
 					provider = { "n", 159583 },	-- Kleia
 					coord = { 57.2, 86.5, BASTION },
 					groups = {

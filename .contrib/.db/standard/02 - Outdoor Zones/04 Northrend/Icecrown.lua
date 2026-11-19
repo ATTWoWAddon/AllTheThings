@@ -651,7 +651,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				q(13305, {	-- Do Your Worst (H)
 					sourceQuest = 13304,	-- Field Repairs
-					qg = 32408,	-- Mathias Lehner
+					qg = 32408,	-- Matthias Lehner
 					coord = { 68.0, 51.5, ICECROWN },
 					races = HORDE_ONLY,
 					groups = {

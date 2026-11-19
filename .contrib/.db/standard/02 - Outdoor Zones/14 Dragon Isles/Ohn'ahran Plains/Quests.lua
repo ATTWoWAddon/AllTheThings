@@ -9,7 +9,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 			header(HEADERS.Achievement, 15394, {	-- Ohn'a'Roll
 				------ Chapter 1 ------
 				q(65795, {	-- Next Steppes
-					sourceQuests = { 65794 },	-- A Change of Care
+					sourceQuests = { 65794 },	-- A Charge of Care
 					provider = { "n", 193377 },	-- Alexstrasza the Life-Binder
 					coord = { 61.6, 68.6, THE_WAKING_SHORES },
 				}),
@@ -279,7 +279,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				}),
 				q(66222, {	-- The Calm Before the Storm
 					sourceQuests = { 66201 },	-- Hooves of War
-					provider = { "n", 187787 },	-- Khansguard Jebotal
+					provider = { "n", 187787 },	-- Khansguard Jebotai
 					coord = { 41.8, 61.7, OHNAHRAN_PLAINS },
 					groups = {
 						i(197649),	-- Nokhud Reaver Legplates
@@ -290,7 +290,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				}),
 				q(70229, {	-- Boku the Mystic
 					sourceQuests = { 66222 },	-- The Calm Before the Storm
-					provider = { "n", 187787 },	-- Khansguard Jebotal
+					provider = { "n", 187787 },	-- Khansguard Jebotai
 					coord = { 41.8, 61.7, OHNAHRAN_PLAINS },
 				}),
 				q(66254, {	-- Pessimistic Mystic
@@ -894,7 +894,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 						i(193375),	-- Nelthazan Artifact Fragments (QI!)
 					},
 				}),
-				q(65891, {	-- Tools of the Trade
+				q(65891, {	-- Tools of the Tirade
 					sourceQuests = { 65890 },	-- The Nelthazan Ruins
 					provider = { "n", 186300 },	-- Skyscribe Adenedal
 					coord = { 64.0, 18.3, OHNAHRAN_PLAINS },
@@ -902,7 +902,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				q(65895, {	-- Competing Company
 					sourceQuests = {
 						65893,	-- The Relic Inquiry
-						65891,	-- Tools of the Trade
+						65891,	-- Tools of the Tirade
 					},
 					provider = { "n", 186300 },	-- Skyscribe Adenedal
 					coord = { 64.0, 18.3, OHNAHRAN_PLAINS },
@@ -933,7 +933,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 						i(193601),	-- The Black Locus
 					},
 				}),
-				q(66700, {	-- The Black Lotus
+				q(66700, {	-- The Black Locus
 					sourceQuests = { 65898 },	-- Proto Problems
 					provider = { "n", 191154 },	-- Skyscribe Adenedal
 					coord = { 66.3, 24.3, OHNAHRAN_PLAINS },
@@ -1019,7 +1019,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				}),
 			})),
 			header(HEADERS.Item, 200597, {	-- Lover's Bouquet
-				q(70739, {	-- Bloodlines, Sweets, and Teraai
+				q(70739, {	-- Bloodlines, Sweets, and Teerai
 					sourceQuests = {
 						65806,	-- Maruukai
 						DF_ACCOUNT_CAMPAIGN_QUEST,
@@ -1044,7 +1044,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				}),
 				q(70721, {	-- After My Ohn Heart
 					sourceQuests = {
-						70739,	-- Bloodlines, Sweets, and Teraai
+						70739,	-- Bloodlines, Sweets, and Teerai
 						70730,	-- Shikaar Giver
 					},
 					provider = { "n", 190192 },	-- Windsage Dawa
@@ -1096,33 +1096,33 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 					coord = { 62.3, 42.3, OHNAHRAN_PLAINS },
 					isBreadcrumb = true,
 				}),
-				q(66459, {	-- The Fields of Ferocity: Terror of the Swamp!
+				q(66459, {	-- The Field of Ferocity: Terror of the Swamp!
 					sourceQuests = { 70444 },	-- The Fields of Ferocity
 					provider = { "n", 188868 },	-- Gurgthock
 					coord = { 53.2, 37.3, OHNAHRAN_PLAINS },
 				}),
-				q(66460, {	-- The Fields of Ferocity: Lord of Decay!
-					sourceQuests = { 66459 },	-- The Fields of Ferocity: Terror of the Swamp!
+				q(66460, {	-- The Field of Ferocity: Lord of Decay!
+					sourceQuests = { 66459 },	-- The Field of Ferocity: Terror of the Swamp!
 					provider = { "n", 188868 },	-- Gurgthock
 					coord = { 53.2, 37.3, OHNAHRAN_PLAINS },
 				}),
-				q(66461, {	-- The Fields of Ferocity: Foe from the Volcano!
-					sourceQuests = { 66460 },	-- The Fields of Ferocity: Lord of Decay!
+				q(66461, {	-- The Field of Ferocity: Foe from the Volcano!
+					sourceQuests = { 66460 },	-- The Field of Ferocity: Lord of Decay!
 					provider = { "n", 188868 },	-- Gurgthock
 					coord = { 53.2, 37.3, OHNAHRAN_PLAINS },
 				}),
-				q(66462, {	-- The Fields of Ferocity: Lost in the Dream!
-					sourceQuests = { 66461 },	-- The Fields of Ferocity: Foe from the Volcano!
+				q(66462, {	-- The Field of Ferocity: Lost in the Dream!
+					sourceQuests = { 66461 },	-- The Field of Ferocity: Foe from the Volcano!
 					provider = { "n", 188868 },	-- Gurgthock
 					coord = { 53.2, 37.3, OHNAHRAN_PLAINS },
 				}),
-				q(66463, {	-- The Fields of Ferocity: Elemental Revenge Round!
-					sourceQuests = { 66462 },	-- The Fields of Ferocity: Lost in the Dream!
+				q(66463, {	-- The Field of Ferocity: Elemental Revenge Round!
+					sourceQuests = { 66462 },	-- The Field of Ferocity: Lost in the Dream!
 					provider = { "n", 188868 },	-- Gurgthock
 					coord = { 53.2, 37.3, OHNAHRAN_PLAINS },
 				}),
-				q(66464, {	-- The Fields of Ferocity: Master of the Hunt!
-					sourceQuests = { 66463 },	-- The Fields of Ferocity: Elemental Revenge Round!
+				q(66464, {	-- The Field of Ferocity: Master of the Hunt!
+					sourceQuests = { 66463 },	-- The Field of Ferocity: Elemental Revenge Round!
 					provider = { "n", 188868 },	-- Gurgthock
 					coord = { 53.2, 37.3, OHNAHRAN_PLAINS },
 					groups = {

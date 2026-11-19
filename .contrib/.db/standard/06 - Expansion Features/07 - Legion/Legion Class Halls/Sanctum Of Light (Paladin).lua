@@ -964,7 +964,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						description = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
 						sourceQuest = 45770,	-- Stirring in the Shadows
 						groups = {
-							i(153177, {	-- Golden Charger's Birdle
+							i(153177, {	-- Golden Charger's Bridle
 								cost = { { "c", ORDER_RESOURCES, 500 } },
 							}),
 							i(143503, {	-- Highlord's Vengeful Charger (MOUNT!)

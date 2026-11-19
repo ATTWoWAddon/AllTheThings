@@ -67,7 +67,7 @@ maproot(DRAGON_ISLES, {
 					coord = { 62.8, 74.0, THE_WAKING_SHORES }
 				}),
 				------ Ohn'ahran Plains ------
-				q(70422, {	-- Dragonrider Racing - Emerald Garden Ascent
+				q(70422, {	-- Dragonrider Racing - Emerald Gardens Ascent
 					coord = { 25.6, 55.0, OHNAHRAN_PLAINS }
 				}),
 				q(70420, {	-- Dragonrider Racing - Fen Flythrough
@@ -117,7 +117,7 @@ maproot(DRAGON_ISLES, {
 				q(70433, {	-- Dragonrider Racing - Cliffside Circuit
 					coord = { 37.6, 49.0, THALDRASZUS }
 				}),
-				q(70431, {	-- Dragonrider Racing - Flowing Forst Flight
+				q(70431, {	-- Dragonrider Racing - Flowing Forest Flight
 					coord = { 57.8, 75.0, THALDRASZUS }
 				}),
 				q(70435, {	-- Dragonrider Racing - Garden Gallivant

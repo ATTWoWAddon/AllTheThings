@@ -718,7 +718,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Gorefiend's Armor
 							provider = { "i", 30797 },	-- Gorefiend's Armor
 							coord = { 69.8, 85.8, SHADOWMOON_VALLEY },
-							cr = 21801,	-- Vhelkur
+							cr = 21801,	-- Vhel'kur
 						}),
 					},
 				}),
@@ -910,7 +910,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						provider = { "i", 30579 },	-- Illidari Bane-Shard (H)
 					}),
 					coord = { 23.0, 35.6, SHADOWMOON_VALLEY },
-					crs = { 21499 },	-- Overseer Ripwsaw
+					crs = { 21499 },	-- Overseer Ripsaw
 					lvl = lvlsquish(67, 67, 25),
 				},
 				q(10782, {	-- Imbuing the Headpiece

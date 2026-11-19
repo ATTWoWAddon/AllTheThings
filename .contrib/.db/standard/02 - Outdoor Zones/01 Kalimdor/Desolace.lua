@@ -383,8 +383,8 @@ maproot(KALIMDOR, DESOLACE, {
 				groups = {
 					objective(1, {	-- 0/10 Blood-Filled Leech
 						providers = {
-							{ "n", 35412 },	-- Rejuvenated Thunder Lizzard
-							{ "n", 36059 },	-- Blood-filled Leech
+							{ "n", 35412 },	-- Rejuvenated Thunder Lizard
+							{ "n", 36059 },	-- Blood-Filled Leech
 						},
 					}),
 				},

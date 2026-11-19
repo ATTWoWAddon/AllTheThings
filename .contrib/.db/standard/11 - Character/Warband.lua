@@ -48,7 +48,7 @@ root(ROOTS.Character, n(WARBAND, timelineSelf({ timeline = { ADDED_11_0_0 } }, {
 			provider = { "n", 226658 },	-- Blue
 			coord = { 52.5, 26.9, TANARIS },
 			groups = {
-				i(225783),	-- Spetial Residue
+				i(225783),	-- Spatial Residue
 			},
 		}),
 		q(83495, {	-- Twinsposition

@@ -209,7 +209,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 			q(52133, {	-- Good Boy!
 				races = ALLIANCE_ONLY,
 			}),
-			q(51779, {	-- Grimscowl the Harebrained
+			q(51779, {	-- Grimscowl the Hairbrained
 				coord = { 62.0, 73.9, STORMSONG_VALLEY },
 			}),
 			q(53771, {	-- Gurin Stonebinder (Faction Assault WQ)

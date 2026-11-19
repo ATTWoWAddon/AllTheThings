@@ -596,7 +596,7 @@ maproot(KUL_TIRAS, BORALUS, {
 				groups = {
 					o_repeated({
 						i(161438),	-- Large Azerite Grenade (QI!)
-						o(296252),	-- Box of Lare Azerite Grenades
+						o(296252),	-- Box of Large Azerite Grenades
 						o(293134),	-- Large Azerite Grenade
 					}),
 				},

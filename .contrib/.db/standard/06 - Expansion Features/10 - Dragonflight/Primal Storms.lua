@@ -21,7 +21,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					ach(16482, {	-- Firestorms in The Azure Span
 						maps = { THE_AZURE_SPAN },
 					}),
-					ach(16478, {	-- Firestorms in The Ohn'ahran Plains
+					ach(16478, {	-- Firestorms in the Ohn'ahran Plains
 						maps = { OHNAHRAN_PLAINS },
 					}),
 					ach(16466, {	-- Firestorms in The Waking Shores
@@ -35,7 +35,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					ach(16481, {	-- Sandstorms in The Azure Span
 						maps = { THE_AZURE_SPAN },
 					}),
-					ach(16477, {	-- Sandstorms in The Ohn'ahran Plains
+					ach(16477, {	-- Sandstorms in the Ohn'ahran Plains
 						maps = { OHNAHRAN_PLAINS },
 					}),
 					ach(16465, {	-- Sandstorms in The Waking Shores
@@ -49,7 +49,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					ach(16483, {	-- Snowstorms in The Azure Span
 						maps = { THE_AZURE_SPAN },
 					}),
-					ach(16479, {	-- Snowstorms in The Ohn'ahran Plains
+					ach(16479, {	-- Snowstorms in the Ohn'ahran Plains
 						maps = { OHNAHRAN_PLAINS },
 					}),
 					ach(16467, {	-- Snowstorms in The Waking Shores
@@ -63,7 +63,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					ach(16480, {	-- Thunderstorms in The Azure Span
 						maps = { THE_AZURE_SPAN },
 					}),
-					ach(16475, {	-- Thunderstorms in The Ohn'ahran Plains
+					ach(16475, {	-- Thunderstorms in the Ohn'ahran Plains
 						maps = { OHNAHRAN_PLAINS },
 					}),
 					ach(16463, {	-- Thunderstorms in The Waking Shores
@@ -92,10 +92,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}},
 					maps = { THE_AZURE_SPAN },
 				}),
-				ach(16476, {	-- Chasing Storms in The Ohn'ahran Plains
+				ach(16476, {	-- Chasing Storms in the Ohn'ahran Plains
 					-- Meta Achievement
 					sym = {{"meta_achievement",
-						16478,	-- Firestorms in The Ohn'ahran Plains
+						16478,	-- Firestorms in the Ohn'ahran Plains
 						16477,	-- Sandstorms in The Ohn'ahran Plains
 						16479,	-- Snowstorms in The Ohn'ahran Plains
 						16475,	-- Thunderstorms in The Ohn'ahran Plains

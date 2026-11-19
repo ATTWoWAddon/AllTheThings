@@ -4194,7 +4194,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				5465,	-- Land Rager
 				2735,	-- Lesser Rock Elemental
 				-- #else
-				37553,	-- Disturbed Earth elemental
+				37553,	-- Disturbed Earth Elemental
 				48960,	-- Frostshard Rumbler
 				41993,	-- Raging Earth Elemental
 				-- #endif
@@ -4780,7 +4780,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				2164,	-- Rabid Thistle Bear
 				2163,	-- Thistle Bear
 				-- #else
-				44638,	-- Hill grizzly
+				44638,	-- Hill Grizzly
 				-- #endif
 			},
 			description =

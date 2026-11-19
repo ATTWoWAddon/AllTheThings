@@ -64,7 +64,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 					provider = { "n", 200116 },	-- Elder Honeypelt
 					coord = { 64.7, 37.6, ZARALEK_CAVERN },
 				}),
-				q(72970, {	-- Niffin and Goliath
+				q(72970, {	-- Niffen and Goliath
 					sourceQuests = {
 						72872,	-- Culling the Deep
 						72873,	-- It Was Not Enough
@@ -79,7 +79,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 					},
 				}),
 				q(72980, {	-- Brother's Keeper
-					sourceQuests = { 72970 },	-- Niffin and Goliath
+					sourceQuests = { 72970 },	-- Niffen and Goliath
 					provider = { "n", 201583 },	-- Wrathion
 					coord = { 60.1, 37.5, ZARALEK_CAVERN },
 				}),
@@ -706,7 +706,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 				provider = { "n", 202597 },	-- Yarren
 				coord = { 51.1, 74.1, ZARALEK_CAVERN },
 			}),
-			q(74858, {	-- Argulculture
+			q(74858, {	-- Agrulculture
 				sourceQuests = { 74857 },	-- Mouse Detective
 				provider = { "n", 202600 },	-- Agrul
 				coord = { 50.4, 76.4, ZARALEK_CAVERN },
@@ -724,7 +724,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 			}),
 			q(74860, {	-- A Friendly Introduction
 				sourceQuests = {
-					74858,	-- Argulculture
+					74858,	-- Agrulculture
 					74859,	-- Sporemoth Exterminator
 				},
 				provider = { "n", 202600 },	-- Agrul
@@ -885,7 +885,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 				provider = { "n", 200953 },	-- Earthmender Narvra
 				coord = { 48.3, 32.8, ZARALEK_CAVERN },
 				groups = {
-					i(205254),	-- Honoary Explorer's Compass
+					i(205254),	-- Honorary Explorer's Compass
 				},
 			}),
 			q(74495, {	-- The Tale of Hraxian

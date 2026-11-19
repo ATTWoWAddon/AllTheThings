@@ -112,7 +112,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 					provider = { "n", 63072 },	-- Rik'kal the Dissector
 				}),
 				crit(20960, {	-- Battle Hymn
-					provider = { "n", 63071 },	-- Skeer The Bloodseeker
+					provider = { "n", 63071 },	-- Skeer the Bloodseeker
 				}),
 			}),
 			ach(8023, {		-- Wakener

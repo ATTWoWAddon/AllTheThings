@@ -68,7 +68,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			cl(DRUID, sharedData({ classes = { DRUID } }, {
 				q(59350, {	-- A Druid's Form [A]
 					sourceQuests = { 55639 },	-- Who Lurks in the Pit [A]
-					provider = { "n", 156932 },	-- Ralia Dreamchaster
+					provider = { "n", 156932 },	-- Ralia Dreamchaser
 					coord = { 52.0, 55.2, EXILES_REACH },
 					races = ALLIANCE_ONLY,
 				}),
@@ -1125,7 +1125,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(58910, {	-- What's Your Specialty? [A] [Druid]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				classes = { DRUID },
@@ -1133,7 +1133,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59586, {	-- What's Your Specialty? [A] [Hunter]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				classes = { HUNTER },
@@ -1141,7 +1141,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59587, {	-- What's Your Specialty? [A] [Mage]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				classes = { MAGE },
@@ -1149,7 +1149,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59588, {	-- What's Your Specialty? [A] [Monk]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				classes = { MONK },
@@ -1157,7 +1157,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59589, {	-- What's Your Specialty? [A] [Paladin]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				classes = { PALADIN },
@@ -1165,7 +1165,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59590, {	-- What's Your Specialty? [A] [Priest]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				classes = { PRIEST },
@@ -1173,7 +1173,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59591, {	-- What's Your Specialty? [A] [Rogue]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				classes = { ROGUE },
@@ -1181,7 +1181,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59592, {	-- What's Your Specialty? [A] [Shaman]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				classes = { SHAMAN },
@@ -1189,7 +1189,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59593, {	-- What's Your Specialty? [A] [Warlock]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				classes = { WARLOCK },
@@ -1197,7 +1197,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 			}),
 			q(59594, {	-- What's Your Specialty? [A] [Warrior]
 				sourceQuests = { 58908 },	-- Finding Your Way [A]
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 77.4, 67.2, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				classes = { WARRIOR },
@@ -1217,7 +1217,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 					59594,	-- What's Your Specialty? [A] [Warrior]
 				},
 				sourceQuestNumRequired = 1,
-				provider = { "n", 163097 },	-- Lindle Springstock
+				provider = { "n", 163097 },	-- Lindie Springstock
 				coord = { 79.0, 69.8, STORMWIND_CITY },
 				timeline = { REMOVED_11_2_7 },
 				races = ALLIANCE_ONLY,

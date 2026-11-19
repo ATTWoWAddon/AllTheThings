@@ -25,7 +25,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 						200978,	-- Pyrachniss
 						200600,	-- Reisa the Drowned
 						200904,	-- Veltrax
-						200584,	-- Vraken The Hunter
+						200584,	-- Vraken the Hunter
 						200911,	-- Volcanakk
 						200960,	-- Warden Entrix
 						201013,	-- Wyrmslayer Angvardi
@@ -257,7 +257,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 					bo(74345, true),
 				},
 			}),
-			n(200584, {	-- Vraken The Hunter
+			n(200584, {	-- Vraken the Hunter
 				coord = { 59.9, 42.9, THE_FORBIDDEN_REACH },
 				questID = 73111,
 				groups = {

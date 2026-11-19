@@ -828,7 +828,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 								{ 49.8, 57.8, RE_HORRIFIC_ORGRIMMAR },	-- Rare
 							},
 							crs = {
-								238054,	-- Void Scarred Cub
+								238054,	-- Void-Scarred Cub
 								238098,	-- Void-Scarred Wyvern
 							},
 							groups = { i(235707) },	-- Reins of the Void-Scarred Windrider (MOUNT!)

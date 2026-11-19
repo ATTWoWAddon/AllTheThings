@@ -18,7 +18,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 				258920,	-- Nar'zira
 				268049,	-- Siltmouth
 				261109,	-- Sss'alik
-				263456,	-- Szarith The Fanged
+				263456,	-- Szarith the Fanged
 			},
 			groups = {
 				i(276803),	-- Ruby Writhe (MOUNT!)
@@ -126,7 +126,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 				hqt_bonusRenown(98354, FACTION_ZULJARRAS_FORCES),	-- Bonus Rep: Sss'alik
 			},
 		}),
-		n(263456, {	-- Szarith The Fanged
+		n(263456, {	-- Szarith the Fanged
 			coord = { 38.0, 17.5, MAP.MIDNIGHT.VAULTS_UNDERBELLY },
 			questID = 96030,
 			groups = {

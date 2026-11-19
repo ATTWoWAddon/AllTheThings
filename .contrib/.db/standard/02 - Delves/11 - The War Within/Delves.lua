@@ -2194,14 +2194,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 			timeline = { ADDED_11_2_0 },
 		}),
 		n(207482),	-- Invasive Sporecap
-		n(236895, {	-- Malfuctioning Pummeler
+		n(236895, {	-- Malfunctioning Pummeler
 			timeline = { ADDED_11_1_0 },
 		}),
 		n(236838, {	-- Overcharged Bot
 			timeline = { ADDED_11_1_7 },
 		}),
 		n(209721),	-- Secret Treasure
-		n(228030),	-- Sir Finley Mrgglton
+		n(228030),	-- Sir Finley Mrrgglton
 		n(223541),	-- Stolen Loader
 		n(236892, {	-- Treasure Crab
 			timeline = { ADDED_11_1_0 },
@@ -2913,7 +2913,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 				}),
 			},
 		}),
-		n(208070, {	-- Sir Finley Mrgglton <Delve Treasures>
+		n(208070, {	-- Sir Finley Mrrgglton <Delve Treasures>
 			coord = { 47.6, 43.6, DORNOGAL },
 			groups = sharedData({ timeline = { REMOVED_12_0_1_SEASONSTART } }, {	-- To avoid having the NPC itself say "This has been removed from the game", I'm gonna timeline individual headers	- Exo
 				-- After being kidnapped by Nullaeus (Lorewise), Sir Finley stopped selling stuff and all his (TWW Season 3) stock was moved to Reno Jackson.

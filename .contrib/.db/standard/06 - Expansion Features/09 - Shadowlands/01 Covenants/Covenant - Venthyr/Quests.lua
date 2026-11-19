@@ -330,7 +330,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 			}),
 			q(57772, {	-- Fangs and Minds
 				sourceQuest = 57727,	-- Stonevigil Unrest
-				qg = 167380,	-- Prince Renethal
+				qg = 167380,	-- Prince Renathal
 				coord = { 56.3, 66.7, REVENDRETH },
 				qi = 178213,	-- Prince Renathal's Decree (QI!)
 			}),
@@ -487,7 +487,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 			q(58406, {	-- Mirror to Maldraxxus
 				description = "Requires Renown 22.",
 				sourceQuest = 57646,	-- The Tithelord
-				qg = 158653,	-- Prince Renethal
+				qg = 158653,	-- Prince Renathal
 				coord = { 51.8, 37.5, SINFALL_REACHES },
 			}),
 			q(58440, {	-- Mirror, Mirror...
@@ -658,7 +658,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 			q(57727, {	-- Stonevigil Unrest
 				description = "Requires Renown 20.",
 				sourceQuest = 58395,	-- Enough Vengeance For One Day
-				qg = 158653,	-- Prince Renethal
+				qg = 158653,	-- Prince Renathal
 				coord = { 51.8, 37.5, SINFALL_REACHES },
 			}),
 			q(58393, {	-- Strategic Executions
@@ -780,7 +780,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 			}),
 			q(57646, {	-- The Tithelord
 				sourceQuest = 57729,	-- To the Estate
-				qg = 167689,	-- Prince Renethal
+				qg = 167689,	-- Prince Renathal
 				coord = { 71.9, 68.8, REVENDRETH },
 				qi = 173976,	-- Medallion of Envy (QI!)
 				groups = {
@@ -815,7 +815,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 			}),
 			q(57729, {	-- To the Estate
 				sourceQuest = 60183,	-- After Them!
-				qg = 167620,	-- Prince Renethal
+				qg = 167620,	-- Prince Renathal
 				coord = { 61.5, 69.6, REVENDRETH },
 			}),
 			q(58386, {	-- Use My Strengths

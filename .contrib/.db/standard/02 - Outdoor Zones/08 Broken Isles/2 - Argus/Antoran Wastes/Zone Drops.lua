@@ -10,8 +10,8 @@ maproot(BROKEN_ISLES, ARGUS, ANTORAN_WASTES, {
 				crs = {
 					127597,	-- Eredar War-Mind
 					126233,	-- Eredar War-Mind
-					127596,	-- Felsword Myrmidon
-					126168,	-- Felsword Myrmidon
+					127596,	-- Felsworn Myrmidon
+					126168,	-- Felsworn Myrmidon
 				},
 			}),
 			i(152941, {	-- Conductive Sheath
@@ -19,8 +19,8 @@ maproot(BROKEN_ISLES, ARGUS, ANTORAN_WASTES, {
 				crs = {
 					127597,	-- Eredar War-Mind
 					126233,	-- Eredar War-Mind
-					127596,	-- Felsword Myrmidon
-					126168,	-- Felsword Myrmidon
+					127596,	-- Felsworn Myrmidon
+					126168,	-- Felsworn Myrmidon
 				},
 			}),
 			i(152891, {	-- Power Cell
@@ -28,8 +28,8 @@ maproot(BROKEN_ISLES, ARGUS, ANTORAN_WASTES, {
 				crs = {
 					127597,	-- Eredar War-Mind
 					126233,	-- Eredar War-Mind
-					127596,	-- Felsword Myrmidon
-					126168,	-- Felsword Myrmidon
+					127596,	-- Felsworn Myrmidon
+					126168,	-- Felsworn Myrmidon
 				},
 			}),
 			i(152890, {	-- Smashed Portal Generator

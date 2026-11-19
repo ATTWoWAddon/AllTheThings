@@ -1705,7 +1705,7 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						{ 35.6, 58.8, AZUREMYST_ISLE },
 					},
 					races = ALLIANCE_ONLY,
-					cr = 17202,	-- Infected Nightstalker Runt)
+					cr = 17202,	-- Infected Nightstalker Runt
 				}),
 				i(23850, {	-- Gurf's Dignity
 					description = "It is not necessary to complete |cFFFFD700Murlocs...|r but you must at least be ON that quest to loot the item that starts Gurf's Dignity.",

@@ -110,7 +110,7 @@ maproot(KUL_TIRAS, {
 				}},
 				races = ALLIANCE_ONLY,
 			}),
-			ach(13517, {	-- Two Sides To Every Tale
+			ach(13517, {	-- Two Sides to Every Tale
 				sym = {{"meta_achievement",
 					12891,	-- A Nation United
 					13467,	-- Tides of Vengeance (A)

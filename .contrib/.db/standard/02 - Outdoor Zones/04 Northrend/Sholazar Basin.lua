@@ -677,7 +677,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						12576,	-- Forced Hand
 						12575,	-- The Lost Mistwhisper Treasure
 					},
-					qg = 28114,	-- Mistcaller Soon-gan
+					qg = 28114,	-- Mistcaller Soo-gan
 					coord = { 42.1, 38.6, SHOLAZAR_BASIN },
 				}),
 				q(12539, {	-- Hoofing It
@@ -1044,7 +1044,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				q(12645, {	-- The Taste Test
 					sourceQuest = 12644,	-- Still At It
-					qg = 29157,	-- Crimbooze Thunderbrew
+					qg = 29157,	-- Grimbooze Thunderbrew
 					coord = { 26.7, 60.0, SHOLAZAR_BASIN },
 					groups = {
 						i(38697),	-- Jungle Punch Sample (QI!)
@@ -1100,7 +1100,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						49535,	-- Warchief's Command: Sholazar Basin!
 					},
 					-- #endif
-					qg = 28160,	-- Achmage Pentarus
+					qg = 28160,	-- Archmage Pentarus
 					coord = { 68.5, 42.0, NORTHREND_DALARAN },
 				}),
 				q(12525, {	-- Wipe That Grin Off His Face

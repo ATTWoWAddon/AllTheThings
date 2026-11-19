@@ -1940,7 +1940,7 @@ maproot(KALIMDOR, DARKSHORE, {
 			}),
 			q(13529, {	-- The Corruption's Source
 				sourceQuest = 13528,	-- Buzzbox 723
-				qg = 32978,	-- Tharnarium Treetender
+				qg = 32978,	-- Tharnariun Treetender
 				coord = { 56.8, 30.1, DARKSHORE },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,

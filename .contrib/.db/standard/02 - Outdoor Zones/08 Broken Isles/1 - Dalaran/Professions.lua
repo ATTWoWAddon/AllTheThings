@@ -589,7 +589,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			}),
 		}),
 		prof(INSCRIPTION, {
-			n(92195, {	-- Profession Pallin <Inscription Trainer>
+			n(92195, {	-- Professor Pallin <Inscription Trainer>
 				coord = { 41.3, 37.0, LEGION_DALARAN },
 				groups = LEGION_INSCRIPTION,
 			}),
@@ -607,7 +607,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			n(93527, {	-- Timethy Jones <Jewelcrafting Trainer>
+			n(93527, {	-- Timothy Jones <Jewelcrafting Trainer>
 				coord = { 40.1, 35.3, LEGION_DALARAN },
 				groups = LEGION_JEWELCRAFTING,
 			}),

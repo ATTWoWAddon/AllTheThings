@@ -486,7 +486,7 @@ maproot(PANDARIA, VALE_OF_ETERNAL_BLOSSOMS, {
 			},
 			applyclassicphase(MOP_PHASE_ESCALATION, {	-- Heroic Deeds
 				aqd = q(32900, {	-- Heroic Deeds (A)
-					qg = 64101,	-- Taijin the Cyclone
+					qg = 64101,	-- Taijing the Cyclone
 					coord = { 47.23, 49.71, SHRINE_OF_SEVEN_STARS },
 				}),
 				hqd = q(32901, {	-- Heroic Deeds (H)

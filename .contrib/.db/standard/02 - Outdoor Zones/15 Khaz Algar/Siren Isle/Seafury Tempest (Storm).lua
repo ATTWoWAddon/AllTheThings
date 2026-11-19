@@ -164,7 +164,7 @@ maproot(KHAZ_ALGAR, SIREN_ISLE, {
 					231986,	-- Deepwater Matriarch
 					232080,	-- Deepwater Eggtender
 					227625,	-- Seafury Spiker
-					227569,	-- Storm-touched Clawfiend
+					227569,	-- Storm-Touched Clawfiend
 					228547,	-- Slaughtershell
 				},
 				coords = {

@@ -2068,7 +2068,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					races = ALLIANCE_ONLY,
 				}),
 				q(27579, {	-- Into the Prison [Horde]
-					qg = 45821,	-- Tha'trak Proudtusk
+					qg = 45821,	-- Thal'trak Proudtusk
 					timeline = { ADDED_4_0_3 },
 					races = HORDE_ONLY,
 				}),

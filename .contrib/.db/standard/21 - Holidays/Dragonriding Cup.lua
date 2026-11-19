@@ -2879,7 +2879,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 							cost = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 						}),
 						-- Toy
-						i(212518, {	-- Vial of Endless Daconic Scales (TOY!)
+						i(212518, {	-- Vial of Endless Draconic Scales (TOY!)
 							cost = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
 						}),
 						-- Transmogs
@@ -3500,7 +3500,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					timeline = { ADDED_10_2_6 },
 					groups = {
 						-- Toy (repeated from Outland Cup)
-						i(212518, {	-- Vial of Endless Daconic Scales (TOY!)
+						i(212518, {	-- Vial of Endless Draconic Scales (TOY!)
 							cost = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
 						}),
 						-- Transmogs
@@ -3677,7 +3677,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						cost = { { "c", RIDERS_OF_AZEROTH_BADGE, 25 } },
 					}),
 					-- Toy
-					i(212518, {	-- Vial of Endless Daconic Scales (TOY!)
+					i(212518, {	-- Vial of Endless Draconic Scales (TOY!)
 						cost = { { "c", RIDERS_OF_AZEROTH_BADGE, 50 } },
 					}),
 					-- Transmogs

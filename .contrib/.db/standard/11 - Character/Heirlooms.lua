@@ -8,8 +8,8 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		n(ACHIEVEMENTS, {
 			ach(9909, {	-- Heirloom Hoarder (35)
 				i(122718, {	-- Clinking Present
-					i(120968),	-- Chauffered Chopper (H)
-					i(122703),	-- Chauffered Chopper (A)
+					i(120968),	-- Chauffeured Chopper (H)
+					i(122703),	-- Chauffeured Chopper (A)
 				}),
 			}),
 			ach(9908),	-- Ready for Powerleveling (15)

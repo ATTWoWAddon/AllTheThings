@@ -116,7 +116,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 					}),
 					q(90770, {	-- The Grift
 						sourceQuests = { 90773 },	-- Meat my Business
-						provider = { "n", 243915 },	-- Graftah
+						provider = { "n", 243915 },	-- Griftah
 						coord = { 48.7, 41.5, KARESH_TAZAVESH },
 						groups = {
 							i(243050),	-- Backfire Wish Bracelet (QI!)
@@ -129,7 +129,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 					}),
 					q(90769, {	-- A Blue for You
 						sourceQuests = { 90770 },	-- The Grift
-						provider = { "n", 243915 },	-- Graftah
+						provider = { "n", 243915 },	-- Griftah
 						coord = { 48.7, 41.5, KARESH_TAZAVESH },
 						groups = { i(242733) },	-- Blue Barry (MOUNT!)
 					}),

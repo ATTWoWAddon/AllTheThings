@@ -27,7 +27,7 @@ maproot(BROKEN_ISLES, ARGUS, {
 				}),
 				q(77410, {	-- Opening Wounds
 					sourceQuests = { 77409 },	-- Uncertainty
-					provider = { "n", 208830 },	-- Chieftan Hatuun
+					provider = { "n", 208830 },	-- Chieftain Hatuun
 					coord = { 53.8, 68.1, KROKUUN },
 				}),
 				q(77411, {	-- Contrition

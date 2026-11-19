@@ -738,7 +738,7 @@ maproot(DRAENOR, TALADOR, {
 							{ 61.5, 57.1, TALADOR },
 						},
 						groups = {
-							i(111845),	-- Snapdragon Fond (QI!)
+							i(111845),	-- Snapdragon Frond (QI!)
 							o(230820),	-- Snapdragon
 							o(230821),	-- Snapdragon
 						},
@@ -772,7 +772,7 @@ maproot(DRAENOR, TALADOR, {
 							{ 61.5, 57.1, TALADOR },
 						},
 						groups = {
-							i(111845),	-- Snapdragon Fond (QI!)
+							i(111845),	-- Snapdragon Frond (QI!)
 							o(230820),	-- Snapdragon
 							o(230821),	-- Snapdragon
 						},
@@ -791,7 +791,7 @@ maproot(DRAENOR, TALADOR, {
 			}),
 			q(33728, {	-- An Eye for a Spy
 				sourceQuests = {
-					34950,	-- Dread Piston
+					34950,	-- Dreadpiston
 					33736,	-- Iron Them Out
 					33724,	-- Vol. X Pages ?
 				},
@@ -1823,7 +1823,7 @@ maproot(DRAENOR, TALADOR, {
 				races = HORDE_ONLY,
 			}),
 			q(34094, {	-- Vol. X Pages ?
-				sourceQuest = 34091,	-- Decomissioned Mission
+				sourceQuest = 34091,	-- Decommissioned Mission
 				provider = { "n", 75874 },	-- Thaelin Darkanvil
 				coord = { 63.0, 26.1, TALADOR },
 				races = ALLIANCE_ONLY,
@@ -2169,7 +2169,7 @@ maproot(DRAENOR, TALADOR, {
 					{ 61.1, 83.9, TALADOR },	-- Deathweb Hollow Cave Entrance
 					{ 66.8, 85.6, TALADOR },	-- Klikixx
 				},
-				groups = { i(116125) },	-- Klikixx's Webspinnner (TOY!)
+				groups = { i(116125) },	-- Klikixx's Webspinner (TOY!)
 			}),
 			n(82988, {	-- Kurlosh Doomfang
 				questID = 37348,
@@ -2326,7 +2326,7 @@ maproot(DRAENOR, TALADOR, {
 				description = "Kill small spiders around the egg sacs until you see warnings. The third warning should spawn the Taladorantula.",
 				questID = 34171,
 				coord = { 59.0, 87.4, TALADOR },
-				groups = { i(116126) },	-- Taladorantula Terrofang
+				groups = { i(116126) },	-- Taladorantula Terrorfang
 			}),
 			n(79485, {	-- Talonpriest Zorkra
 				questID = 34668,

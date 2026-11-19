@@ -1159,7 +1159,7 @@ root(ROOTS.ExpansionFeatures,
 									lvl = 120,
 								}),
 								q(53974, {	-- Druids of Gloomtide
-									sourceQuest = 53957,	-- Darkshore Recuits (A)
+									sourceQuest = 53957,	-- Darkshore Recruits (A)
 									provider = { "n", 145779 },	-- Celestine of the Harvest
 									coord = { 51.8, 55.4, 1203 },
 									races = ALLIANCE_ONLY,

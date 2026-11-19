@@ -394,7 +394,7 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 								120662,	-- Doombringer
 								120663,	-- Doomguard Firecaller
 								120581,	-- Draining Eye
-								120631,	-- Helfire Infernal
+								120631,	-- Hellfire Infernal
 								120679,	-- Mo'arg Bonecrusher
 								120680,	-- Mo'arg Brute
 								120674,	-- Rotwing Ripper
@@ -461,7 +461,7 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 							groups = {
 								i(146917, {	-- Portal-Stone: Skulguloth
 									crs = {
-										120631,	-- Helfire Infernal
+										120631,	-- Hellfire Infernal
 										120640,	-- Vile Mother
 									},
 								}),
@@ -1077,7 +1077,7 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 					},
 				}),
 				q(46499, {	-- Spiders, Huh?
-					sourceQuests = { 46734 },	-- Assault on Brokeen Shore
+					sourceQuests = { 46734 },	-- Assault on Broken Shore
 					provider = { "n", 119886 },	-- Excavator Karla
 					coord = { 39.6, 71.7, BROKEN_SHORE },
 					groups = {

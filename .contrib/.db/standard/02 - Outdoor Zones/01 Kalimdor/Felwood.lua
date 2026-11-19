@@ -1262,7 +1262,7 @@ maproot(KALIMDOR, FELWOOD, {
 				timeline = { ADDED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/1 Arch Druid Navarax slain
-						provider = { "n", 47842 },	-- Arch Druid Navarax
+						provider = { "n", 47842 },	-- Archdruid Navarax
 					}),
 					i(65285),	-- Selura's Cloak
 					i(65305),	-- Demon Heart Pendant

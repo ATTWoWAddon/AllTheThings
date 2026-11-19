@@ -36,7 +36,7 @@ root(ROOTS.Character, n(LORE, {
 					provider = { "n", 176826 },	-- Lady Liadrin
 					coord = { 48.5, 32.1, GHOSTLANDS },
 				}),
-				q(63483, {	-- Magnus Installation
+				q(63483, {	-- Magus Installation
 					sourceQuests = { 63481 },	-- Tranquillien Besieged
 					provider = { "n", 176829 },	-- Archmage Aethas Sunreaver
 					coord = { 48.6, 32.1, GHOSTLANDS },
@@ -44,7 +44,7 @@ root(ROOTS.Character, n(LORE, {
 				q(63484, {	-- A Knight's Weapon
 					sourceQuests = {
 						63482,	-- Death to the Scourge
-						63483,	-- Magnus Installation
+						63483,	-- Magus Installation
 					},
 					provider = { "n", 176826 },	-- Lady Liadrin
 					coord = { 48.5, 32.1, GHOSTLANDS },
