@@ -12,6 +12,7 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 		}),
 		n(FACTIONS, {
 			faction(FACTION_BARKSKIN_BURROW),	-- Barkskin Burrow
+			faction(FACTION_FOREVER_GUARDIANS_OF_HYJAL),	-- Guardians of Hyjal
 		}),
 		explorationHeader({
 			exploration(17145),	-- Cradle of Tranquility
@@ -1954,7 +1955,7 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				groups = {
 					i(274025),	-- Guardians of Hyjal Tabard
 					i(274379, {	-- Rousing Seed Pod
-						minReputation = { 2765, REVERED },	-- Guardians of Hyjal, Revered.
+						minReputation = { FACTION_FOREVER_GUARDIANS_OF_HYJAL, REVERED },	-- Guardians of Hyjal, Revered.
 					}),
 				},
 			}),
