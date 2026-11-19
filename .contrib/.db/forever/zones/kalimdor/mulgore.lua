@@ -1099,15 +1099,19 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			q(76240, {	-- Stalk With The Earthmother 3/3
 				sourceQuest = 76160,	-- Stalk With The Earthmother
 				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
+				qi = 206344,	-- Knife Set (QI!)
 				coord = { 39.6, 65.6, MAP.THUNDER_BLUFF },
-				races = HORDE_ONLY,
-				classes = { SHAMAN },
+				races = { ORC, TAUREN, TROLL },
+				classes = { WARRIOR, SHAMAN, DRUID },
 				lvl = 4,
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				qi = 206344,	-- Knife Set (QI!)
 				groups = {
 					objective(1, {	-- 0/1 Fish Chunks
 						provider = { "i", 206345 },	-- Fish Chunks (QI!)
+						costs = {
+							{ { "i", 206344, 1 } },	-- Knife Set (QI!)
+							{ { "i", 6291, 1 } },	-- Raw Brilliant Smallfish
+						},
 					}),
 					i(277988),	-- Hoof-Holstered Blade
 					i(278002),	-- Valley Cosh
