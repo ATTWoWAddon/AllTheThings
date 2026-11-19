@@ -185,6 +185,12 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					i(8524),	-- Model 4711-FTZ Power Source
 				},
 			}),
+			q(84135, {	-- Beach Bot
+				provider = { "o", 456682 },	-- Half-Buried Mech
+				coord = { 59.2, 91.5, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
+			}),
 			q(4496, {	-- Bungle in the Jungle
 				sourceQuests = {
 					4494,	-- March of the Silithid [Horde]
@@ -338,6 +344,14 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				description = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
 				qi = 8623,	-- OOX-17/TN Distress Beacon
 				lvl = 43,
+			}),
+			q(84138, {	-- Frosty Favors
+				sourceQuest = 84137,	-- Mechanical Romance
+				qg = 228956,	-- Sebastian Jurgens
+				coord = { 59.2, 99.6, MAP.KALIMDOR },
+				maps = { MAP.WINTERSPRING },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
 			}),
 			q(992, {	-- Gadgetzan Water Survey
 				qg = 7724,	-- Senior Surveyor Fizzledowser
@@ -533,6 +547,14 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				coord = { 53.9, 29.0, MAP.TANARIS },
 				maps = { MAP.UNGORO_CRATER },
 				lvl = 47,
+			}),
+			q(84137, {	-- Mechanical Romance
+				sourceQuest = 84135,	-- Beach Bot
+				provider = { "o", 456682 },	-- Half-Buried Mech
+				qi = 226856,	-- Guided Buoyancy Accelerant (PQI!)
+				coord = { 59.2, 91.5, MAP.TANARIS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
 			}),
 			q(3644, {	-- Membership Card Renewal
 				sourceQuest = 3639,	-- Show Your Work
