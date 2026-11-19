@@ -2630,9 +2630,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				sym = {{ "select", "itemID",
 					2527,	-- Battle Staff
 					2520,	-- Broadsword
-					2523,	-- Bullova
 					2522,	-- Crescent Axe
-					2521,	-- Flamberge
 					2526,	-- Main Gauche
 					2524,	-- Truncheon
 					2525,	-- War Hammer
