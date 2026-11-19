@@ -103,11 +103,6 @@ jobs:
         if: ${{ !cancelled() && steps.setup.outcome == 'success' }}
         shell: pwsh
         run: |
-          $note = 'Existing inline checker exclusions in Parser_with_new_CD.yml remain active; the excluded section is not checked.'
-          Write-Host $note
-          if (-not [string]::IsNullOrEmpty($env:GITHUB_STEP_SUMMARY)) {
-            [System.IO.File]::AppendAllText($env:GITHUB_STEP_SUMMARY, "- $note`n`n", [System.Text.UTF8Encoding]::new($false))
-          }
           & ./.github/scripts/Check-EditorConfig.ps1 -Group github-yaml -VerboseChecker
 
       - name: Check GitHub Python
