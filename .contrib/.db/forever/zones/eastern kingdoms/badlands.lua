@@ -712,6 +712,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					}),
 				},
 			}),
+			q(78823, {	-- Terror of the Desert Skies (Primitive Drawing)
+				qs = 211269,	-- Primitive Drawing (QS!)
+				maps = { MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 26,
+			}),
 			q(692, {	-- The Lost Fragments
 				sourceQuest = 687,	-- Theldurin the Lost
 				qg = 2785,	-- Theldurin the Lost
