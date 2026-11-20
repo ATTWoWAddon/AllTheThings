@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local i,r,s=_.CreateItem,_.CreateRecipe,_.CreateItemSource;
 categories.Unsorted={
 i(7190),
-r(1249107,{itemID=249519}),
+r(1249107,{b=1,itemID=249519}),
 i(275968,{b=1,f=52,lvl=60,minReputation={2819,3000}}),
 i(275969,{b=1,f=52,lvl=60,minReputation={2819,3000}}),
 i(275970,{b=1,f=52,lvl=60,minReputation={2819,3000}}),
@@ -22,8 +22,8 @@ i(275982,{b=1,f=52,lvl=60,minReputation={2819,42000}}),
 i(275983,{b=1,f=52,lvl=60,minReputation={2819,42000}}),
 i(275984,{b=1,f=52,lvl=60,minReputation={2819,42000}}),
 i(289559),
-s(313514,282700,{f=21}),
-s(316103,284270,{f=7,loc=40}),
-s(317385,286641,{f=22}),
-s(317386,286645,{f=29})}
+s(313514,282700,{f=21,lvl=37}),
+s(316103,284270,{b=1,f=7,loc=40,lvl=51}),
+s(317385,286641,{b=1,f=22,lvl=45}),
+s(317386,286645,{b=1,f=29,lvl=45})}
 end)

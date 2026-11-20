@@ -501,7 +501,7 @@ qo(2,{coords={
 [1420]={{59.8,52.4}}},providers={{"n",276797}}}),
 qo(3,{coords={
 [1420]={{59.8,52.6}}},providers={{"n",276796}}}),
-i(265840,{f=100,lvl=60,requireSkill=554,spellID=1277336})}}),
+i(265840,{b=1,f=100,lvl=60,requireSkill=554,spellID=1277336})}}),
 q(95511,{awp=16001,coords={
 [1457]={{38.4,15.6}}},lvl=40,qgs={4730},races={4},sym={{"select","itemID",8632,274706,8631,8629}},g={
 qo(1,{coords={

@@ -10964,7 +10964,7 @@ q(1251,{coords={
 q(1321,{coords={
 [70]={{36.4,31.8}}},qgs={4926},qis={5919},r=1,rwp=40003,sourceQuests={1251},u=2}),
 q(1322,{coords={
-[70]={{36.4,30.8}}},crs={4376,4378,4379,4380,4411,4412,4413,4414,4415},qgs={5087},qis={5959},r=1,rwp=40003,sourceQuests={1321},u=2}),
+[70]={{36.4,30.8}}},crs={4411,4412,4413,4414,4415},qgs={5087},qis={5959},r=1,rwp=40003,sourceQuests={1321},u=2}),
 q(1323,{coords={
 [70]={{36.4,30.8}}},qgs={5087},r=1,rwp=40003,sourceQuests={1322},u=2}),
 q(1276,{coords={
@@ -79816,8 +79816,8 @@ n(79678,{coords={
 [525]={{61.7,26.6}}},questID=34708,g={
 s(60746,112078,{b=1,f=5,loc=47,lvl=35})}}),
 n(84374,{coords={
-[525]={{86.8,46.6}}},isDaily=1,questID=37404,g={
-s(67047,119372,{b=1,f=6,loc=45,lvl=35})}}),
+[525]={{86.8,46.6}}},isDaily=1,questID=37404,rwp=100002,u=2,g={
+s(67047,119372,{b=1,f=6,loc=45,lvl=35,u=2})}}),
 n(82614,{coords={
 [525]={{42.4,21.7}}},isDaily=1,questID=37387,g={
 s(67031,119356,{b=1,f=4,loc=41,lvl=35})}}),
@@ -119592,7 +119592,7 @@ i(182168,{b=1,cost={{"c",1813,1500}},customCollect={"SL_COV_NFA"},lvl=50,minRepu
 s(113564,181309,{cost={{"c",1813,3500}},customCollect={"SL_COV_NFA"},f=3,lvl=50,minReputation={2465,21000}})}),
 r(309644,{b=1,itemID=183096,minReputation={2465,9000},requireSkill=333,skillID=2753}),
 s(115839,184754,{b=1,f=3,lvl=60,minReputation={2465,9000}}),
-i(217588,{awp=100206,b=1,c={2},f=111,lvl=50,minReputation={2465,9000},spellID=440338}),
+i(217588,{awp=100206,b=1,c={2},lvl=50,minReputation={2465,9000},spellID=440338}),
 i(217585,{awp=100206,b=1,c={11},f=111,lvl=50,minReputation={2465,9000},spellID=440335}),
 i(217494,{awp=100206,b=1,c={10},f=111,lvl=50,minReputation={2465,9000},spellID=440196}),
 i(217583,{awp=100206,b=1,c={4},f=111,lvl=50,minReputation={2465,9000},spellID=440332}),
@@ -123026,7 +123026,9 @@ q(63965,{coords={
 [1961]={{61.4,21.4}}},isDaily=1,lvl=60,qgs={178839},sourceQuests={64556}}),
 q(64430,{coords={
 [1961]={{61.6,25.7}}},isDaily=1,lvl=60,qgs={179218},sourceQuests={64556},g={
-i(187353,{spellID=357079})}}),
+o(369688,{coords={
+[1961]={{36.5,37.5}}},g={
+i(187353,{spellID=357079})}})}}),
 q(64070,{coords={
 [1961]={{63.3,25.2}}},isDaily=1,lvl=60,qgs={179214},sourceQuests={64556},g={
 i(186458)}}),

@@ -3803,6 +3803,9 @@ i(285065)}}),
 q(98960,{coords={
 [2647]={{44.4,79.4}}},qgs={264886},sourceQuests={98961},g={
 i(285065)}}),
+q(98959,{coords={
+[2647]={{44.4,79.4}}},qgs={264886},sourceQuests={98960},g={
+i(285065)}}),
 q(98566,{repeatable=1}),
 q(97241,{coords={
 [2647]={{77.9,62.7},{78,51.4},{79.7,55.2},{82.9,65.6},{84.3,54.1}}},providers={{"o",649924},{"o",649937},{"o",649938},{"o",649939},{"o",649940}}}),
@@ -3987,6 +3990,8 @@ o(705956),
 o(705957,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."}),
 o(705958),
 o(705959,{description="Can be found behind the 'Locked Doors' inside the Labyrinth."})}),
+h(-58,{
+n(264886,{sym={{"select","symselector",3,4}}})}),
 h(-64,{providers={{"o",705929}},g={
 s(316034,284052,{f=3}),
 de(8992,{itemID=252044,spellID=1254109}),
