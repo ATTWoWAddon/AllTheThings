@@ -1521,14 +1521,15 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			n(3056, {	-- Ghost Howl
 				description = "For this rare mob to appear at one of its random spawn points, you must first speak to Skorn Whitecloud in Bloodhoof Village. It will then appear within 5 to 30 minutes.",
 				coords = {
-					{ 50.6, 15.0, MAP.MULGORE },
-					{ 39.6, 13.8, MAP.MULGORE },
-					{ 37.4, 17.8, MAP.MULGORE },
-					{ 32.8, 19.2, MAP.MULGORE },
-					{ 32.0, 26.0, MAP.MULGORE },
-					{ 34.0, 29.2, MAP.MULGORE },
-					{ 37.0, 42.6, MAP.MULGORE },
-					{ 44.2, 41.2, MAP.MULGORE },
+					{ 39.5, 23.9, MAP.MULGORE },
+					{ 48.0, 24.1, MAP.MULGORE },
+					{ 13.0, 29.6, MAP.THUNDER_BLUFF },
+					{ 15.2, 14.2, MAP.THUNDER_BLUFF },
+					{ 15.2, 15.2, MAP.THUNDER_BLUFF },
+					{ 23.2, 5.0, MAP.THUNDER_BLUFF },
+					{ 25.4, 3.2, MAP.THUNDER_BLUFF },
+					{ 33.6, 2.8, MAP.THUNDER_BLUFF },
+					{ 35.4, 3.4, MAP.THUNDER_BLUFF },
 				},
 				groups = {
 					i(4854, {	-- Demon Scarred Cloak (QS!)
