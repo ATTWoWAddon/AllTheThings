@@ -337,7 +337,6 @@ root(ROOTS.Craftables, {
 		n(COMMON_VENDOR_ITEMS, {
 			groups = appendAllGroups(
 				sharedData({	-- Vanilla cooking reagents
-					description = "Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",
 				}, {
 					i(159),	-- Refreshing Spring Water
 					i(2678),	-- Mild Spices
@@ -356,9 +355,7 @@ root(ROOTS.Craftables, {
 					i(2596),	-- Skin of Dwarven Stout
 				}),
 				{
-					i(1179, {	-- Ice Cold Milk
-						description = "Can be bought from bartenders, innkeepers and general goods vendors.",
-					}),
+					i(1179),	-- Ice Cold Milk
 				}
 			),
 		}),
@@ -809,7 +806,6 @@ root(ROOTS.Craftables, {
 	}),
 	prof(FISHING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			description = "Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 			--[[coords = {
 				{ 47.8, 6.6, MAP.IRONFORGE },
@@ -842,7 +838,6 @@ root(ROOTS.Craftables, {
 		})),
 		filter(ONE_HANDED_MACES, {
 			i(6360, {	-- Steelscale Crushfish
-				description = "Can be caught in open water in the given zones.",
 				maps_disp = {
 					MAP.ASHENVALE,
 					MAP.HILLSBRAD_FOOTHILLS,
@@ -1054,7 +1049,6 @@ root(ROOTS.Craftables, {
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(6366, {	-- Darkwood Fishing Pole
-				description = "Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Stranglethorn Vale, Redridge Mountains and Wetlands.",
 				maps_disp = {
 					MAP.ASHENVALE,
 					MAP.ARATHI_HIGHLANDS,
@@ -1068,7 +1062,6 @@ root(ROOTS.Craftables, {
 		-- Danny Donkey: The post Cata data for fish and school locations is accurate for viability in retail and might deviate from Cata+ classic. Pre Cata data is also not validated in-game.
 		-- Fish:
 		i(13888, {	-- Darkclaw Lobster
-			description = "Can be caught on the seaside.",
 			maps_disp = {
 				MAP.AZSHARA,
 			},
@@ -1083,7 +1076,6 @@ root(ROOTS.Craftables, {
 			provider = { "o", 180658 },	-- School of Deviate Fish
 		}),
 		i(6359, {	-- Firefin Snapper
-			description = "Schools can be found on the seaside.",
 			maps_disp = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
@@ -1108,14 +1100,12 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13893, {	-- Large Raw Mightfish
-			description = "Can be caught on the seaside.",
 			maps_disp = {
 				MAP.AZSHARA,
 			},
 		}),
 		i(13757, {	-- Lightning Eel
 			coord = { 60.6, 71.7, MAP.SILITHUS },
-			description = "Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",
 			maps_disp = {
 				MAP.BURNING_STEPPES,
 				MAP.EASTERN_PLAGUELANDS,
@@ -1124,7 +1114,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6358, {	-- Oily Blackmouth
-			description = "Schools can be found on the seaside.",
 			maps_disp = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
@@ -1149,7 +1138,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6291, {	-- Raw Brilliant Smallfish
-			description = "Can be caught in inland waters and waterways.",
 			maps_disp = {
 				MAP.DUN_MOROGH,
 				MAP.ELWYNN_FOREST,
@@ -1158,7 +1146,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6308, {	-- Raw Bristle Whisker Catfish
-			description = "Can be caught in inland waters and waterways.",
 			maps_disp = {
 				MAP.ASHENVALE,
 				MAP.DUSKWOOD,
@@ -1167,7 +1154,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13754, {	-- Raw Glossy Mightfish
-			description = "Can be caught on the seaside.",
 			maps_disp = {
 				MAP.TANARIS,
 				MAP.AZSHARA,
@@ -1176,7 +1162,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(21153, {	-- Raw Greater Sagefish
-			description = "Schools can be found in inland waters and waterways.",
 			maps_disp = {
 				MAP.ALTERAC_MOUNTAINS,
 				MAP.STRANGLETHORN_VALE,
@@ -1184,11 +1169,9 @@ root(ROOTS.Craftables, {
 			provider = { "o", 180684 },	-- Greater Sagefish School
 		}),
 		i(6317, {	-- Raw Loch Frenzy
-			description = "Can be caught in The Loch.",
 			maps_disp = { MAP.LOCH_MODAN },
 		}),
 		i(6289, {	-- Raw Longjaw Mud Snapper
-			description = "Can be caught in inland waters and waterways.",
 			maps_disp = {
 				MAP.DARNASSUS,
 				MAP.ORGRIMMAR,
@@ -1197,7 +1180,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(8365, {	-- Raw Mithril Head Trout
-			description = "Can be caught in inland waters and waterways.",
 			maps_disp = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.THOUSAND_NEEDLES,
@@ -1217,7 +1199,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6361, {	-- Raw Rainbow Fin Albacore
-			description = "Can be caught on the seaside.",
 			maps_disp = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
@@ -1229,7 +1210,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13758, {	-- Raw Redgill
-			description = "Can be caught in inland waters and waterways.",
 			maps_disp = {
 				MAP.FELWOOD,
 				MAP.MOONGLADE,
@@ -1238,7 +1218,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6362, {	-- Raw Rockscale Cod
-			description = "Can be caught on the seaside.",
 			maps_disp = {
 				MAP.DUSTWALLOW_MARSH,
 				MAP.SWAMP_OF_SORROWS,
@@ -1248,7 +1227,6 @@ root(ROOTS.Craftables, {
 			coords = {
 				{ 50.0, 40.0, MAP.STONETALON_MOUNTAINS },	-- Mirkfallon Lake
 			},
-			description = "Schools can be found in inland waters and waterways.",
 			maps_disp = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
@@ -1261,14 +1239,12 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(6303, {	-- Raw Slitherskin Mackerel
-			description = "Can be caught on the seaside.",
 			maps_disp = {
 				MAP.DUROTAR,
 				MAP.TELDRASSIL,
 			},
 		}),
 		i(4603, {	-- Raw Spotted Yellowtail
-			description = "Can be caught on the seaside.",
 			maps_disp = {
 				MAP.TANARIS,
 				MAP.SWAMP_OF_SORROWS,
@@ -1281,7 +1257,6 @@ root(ROOTS.Craftables, {
 			coord = { 60.6, 71.7, MAP.SILITHUS },
 		}),
 		i(13889, {	-- Raw Whitescale Salmon
-			description = "Can be caught in inland waters and waterways.",
 			maps_disp = {
 				MAP.DEADWIND_PASS,
 				MAP.EASTERN_PLAGUELANDS,
@@ -1290,7 +1265,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		i(13422, {	-- Stonescale Eel
-			description = "Schools can be found on the seaside.",
 			maps_disp = {
 				MAP.TANARIS,
 				MAP.AZSHARA,
@@ -1303,7 +1277,6 @@ root(ROOTS.Craftables, {
 		--i(13755),	-- Winter Squid: Is properly sourced in 21 - Holidays/Seasonal Fish.lua.
 		-- Fish schools:
 		o(180683, {	-- Firefin Snapper School
-			description = "Can be found on the seaside.",
 			maps = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
@@ -1329,14 +1302,12 @@ root(ROOTS.Craftables, {
 		o(180752),	-- Firefin Snapper School 4
 		o(180902),	-- Firefin Snapper School 5
 		o(180684, {	-- Greater Sagefish School
-			description = "Can be found in inland waters and waterways.",
 			maps = {
 				MAP.ALTERAC_MOUNTAINS,
 				MAP.STRANGLETHORN_VALE,
 			},
 		}),
 		o(180682, {	-- Oily Blackmouth School
-			description = "Can be found on the seaside.",
 			maps_disp = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.ASHENVALE,
@@ -1357,14 +1328,9 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		-- The following pre-5.1.0 Sagefish school IDs needs to be confirmed in game.
-		o(180656, {	-- Sagefish School
-			description = "Can be found in inland waters and waterways.",
-		}),
-		o(180663, {	-- Sagefish School
-			description = "Can be found in inland waters and waterways.",
-		}),
+		o(180656),	-- Sagefish School
+		o(180663),	-- Sagefish School
 		o(216764, {	-- Sagefish School
-			description = "Can be found in inland waters and waterways.",
 			maps = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
@@ -1384,7 +1350,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180712, {	-- Stonescale Eel Swarm
-			description = "Can be found on the seaside.",
 			maps = {
 				MAP.TANARIS,
 				MAP.AZSHARA,
@@ -1395,13 +1360,11 @@ root(ROOTS.Craftables, {
 		}),
 		-- Wreckages:
 		o(180901, {	-- Bloodsail Wreckage
-			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 			maps = {
 				MAP.STRANGLETHORN_VALE,
 			},
 		}),
 		o(180655, {	-- Floating Debris
-			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 			maps = {
 				MAP.DARKSHORE,
 				MAP.DUSKWOOD,
@@ -1412,7 +1375,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180751, {	-- Floating Wreckage
-			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 			maps = {
 				MAP.BLASTED_LANDS,
 				MAP.EASTERN_PLAGUELANDS,
@@ -1421,7 +1383,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180662, {	-- Schooner Wreckage / Pre WotLK: Floating Wreckage
-			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 			maps = {
 				MAP.ASHENVALE,
 				MAP.HILLSBRAD_FOOTHILLS,
@@ -1430,7 +1391,6 @@ root(ROOTS.Craftables, {
 			},
 		}),
 		o(180685, {	-- Waterlogged Wreckage / Pre WotLK: Floating Wreckage
-			description = "Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",
 			maps = {
 				MAP.TANARIS,
 				MAP.STRANGLETHORN_VALE,
@@ -1479,7 +1439,6 @@ root(ROOTS.Craftables, {
 					MAP.REDRIDGE_MOUNTAINS,
 					MAP.SILVERPINE_FOREST,
 				},
-				description = "Usually found near trees.",
 			}),
 			o(3729, {	-- Briarthorn (The Barrens)
 				-- Note: This node get replaced by o(1621) at an unknown point between MOP and TWW.
@@ -1499,7 +1458,6 @@ root(ROOTS.Craftables, {
 					MAP.THOUSAND_NEEDLES,
 					MAP.WETLANDS,
 				},
-				description = "Usually found near hillsides, buildings and structures.",
 			}),
 			o(3730, {	-- Bruiseweed (The Barrens/Stonetalon Mountains)
 				-- Note: This node get replaced by o(1622) at an unknown point between MOP and TWW.
@@ -1522,7 +1480,6 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WESTERN_PLAGUELANDS,
 				},
-				description = "Can usually be found on flat open spaces.",
 			}),
 			o(176693, {	-- Dreamfoil (Felwood)
 				learnedAt = 270,
@@ -1542,7 +1499,6 @@ root(ROOTS.Craftables, {
 					MAP.DARKSHORE,
 					MAP.REDRIDGE_MOUNTAINS,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(3726, {	-- Earthroot (The Barrens)
 				-- Note: This node get replaced by o(1619) at an unknown point between MOP and TWW.
@@ -1557,7 +1513,6 @@ root(ROOTS.Craftables, {
 					MAP.DUSTWALLOW_MARSH,
 					MAP.STRANGLETHORN_VALE,
 				},
-				description = "Can be found in fertile terrain and fields.",
 			}),
 			o(2866, {	-- Firebloom
 				learnedAt = 205,
@@ -1567,7 +1522,6 @@ root(ROOTS.Craftables, {
 					MAP.TANARIS,
 					MAP.BLASTED_LANDS,
 				},
-				description = "Can be found on hot deserts.",
 			}),
 			o(142144, {	-- Ghost Mushroom
 				coords = {
@@ -1575,7 +1529,6 @@ root(ROOTS.Craftables, {
 					{ 55.8, 68.1, MAP.THE_HINTERLANDS },
 					{ 57.0, 81.0, MAP.THE_HINTERLANDS },
 				},
-				description = "Can be found inside caves.",
 				learnedAt = 245,
 			}),
 			o(176583, {	-- Golden Sansam
@@ -1589,7 +1542,6 @@ root(ROOTS.Craftables, {
 					MAP.FERALAS,
 					MAP.THE_HINTERLANDS,
 				},
-				description = "Can be found by trees and other natural structures.",
 			}),
 			o(176638, {	-- Golden Sansam (Felwood)
 				learnedAt = 260,
@@ -1606,7 +1558,6 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(1628, {	-- Grave Moss
 				coords = {
@@ -1614,7 +1565,6 @@ root(ROOTS.Craftables, {
 					{ 50.0, 58.0, MAP.DESOLACE },
 					{ 80.0, 71.0, MAP.DUSKWOOD },
 				},
-				description = "Can be found on graves.",
 				learnedAt = 120,
 			}),
 			o(142145, {	-- Gromsblood
@@ -1623,7 +1573,6 @@ root(ROOTS.Craftables, {
 					{ 53.5, 46.5, MAP.BLASTED_LANDS },
 					{ 50.0, 80.0, MAP.DESOLACE },
 				},
-				description = "Found in locations corrupted by the Burning Legion.",
 				learnedAt = 250,
 			}),
 			o(176637, {	-- Gromsblood (Felwood)
@@ -1646,7 +1595,6 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.SWAMP_OF_SORROWS,
 				},
-				description = "Can be found near trees.",
 			}),
 			o(1624, {	-- Kingsblood
 				learnedAt = 125,
@@ -1665,7 +1613,6 @@ root(ROOTS.Craftables, {
 					MAP.SWAMP_OF_SORROWS,
 					MAP.THOUSAND_NEEDLES,
 				},
-				description = "Can be found in the woods.",
 			}),
 			o(2041, {	-- Liferoot
 				learnedAt = 150,
@@ -1713,7 +1660,6 @@ root(ROOTS.Craftables, {
 					MAP.UNGORO_CRATER,
 					MAP.WINTERSPRING,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(176640, {	-- Mountain Silversage (Felwood)
 				learnedAt = 280,
@@ -1747,7 +1693,6 @@ root(ROOTS.Craftables, {
 					MAP.TANARIS,
 					MAP.THE_HINTERLANDS,
 				},
-				description = "Can be found in elven or troll ruins.",
 				learnedAt = 210,
 			}),
 			o(1617, {	-- Silverleaf
@@ -1798,7 +1743,6 @@ root(ROOTS.Craftables, {
 					MAP.STRANGLETHORN_VALE,
 					MAP.THE_BARRENS,
 				},
-				description = "Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",
 			}),
 			o(142142, {	-- Sungrass
 				learnedAt = 230,
@@ -1825,7 +1769,6 @@ root(ROOTS.Craftables, {
 					MAP.STONETALON_MOUNTAINS,
 					MAP.WETLANDS,
 				},
-				description = "Can be found on uneven terrain and mountain sides.",
 			}),
 			o(656160, {	-- Wilted Peacebloom
 				maps = {
@@ -3407,9 +3350,7 @@ root(ROOTS.Craftables, {
 	}),
 	prof(SKINNING, {
 		n(COMMON_VENDOR_ITEMS, {
-			i(7005, {	-- Skinning Knife
-				description = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
-			}),
+			i(7005),	-- Skinning Knife
 			i(277114, {	-- Apprentice's Skinning Satchel
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
