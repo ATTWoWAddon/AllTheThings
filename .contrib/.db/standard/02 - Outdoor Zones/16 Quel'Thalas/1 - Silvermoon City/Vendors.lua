@@ -68,6 +68,9 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 						{ "where", "difficultyID", DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS },
 						{ "extract", "itemID" },
 						SYM.SUB.INVTYPE_ALL_SLOTS,
+						{ "exclude", "itemID",
+							258045,	-- Dawnblade's Glaives (COSMETIC!)
+						},
 					},
 				}),
 			},
