@@ -111,7 +111,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				sourceQuest = 1117,	-- Rumors for Kravel
 				qg = 4452,	-- Kravel Koalbeard
 				qi = 5826,	-- Kravel's Scheme
-				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
+				coord = { 77.8, 77.2, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 35,
 			}),
@@ -155,9 +155,8 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(1114, {	-- Delivery to the Gnomes
 				sourceQuest = 1112,	-- Parts for Kravel
 				qg = 4452,	-- Kravel Koalbeard
-				qg = 4452,	-- Kravel Koalbeard
 				qi = 5802,	-- Delicate Car Parts
-				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
+				coord = { 77.8, 77.2, MAP.THOUSAND_NEEDLES },
 				lvl = 30,
 			}),
 			q(79360, {	-- Elemental Aid
@@ -242,7 +241,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				altQuests = { 1121 },	-- Get the Goblins Drunk
 				qg = 4452,	-- Kravel Koalbeard
 				qi = 5806,	-- Fool's Stout
-				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
+				coord = { 77.8, 77.2, MAP.THOUSAND_NEEDLES },
 				lvl = 35,
 			}),
 			q(1121, {	-- Get the Goblins Drunk
@@ -250,7 +249,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				altQuests = { 1120 },	-- Get the Gnomes Drunk
 				qg = 4452,	-- Kravel Koalbeard
 				qi = 5806,	-- Fool's Stout
-				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
+				coord = { 77.8, 77.2, MAP.THOUSAND_NEEDLES },
 				lvl = 35,
 			}),
 			q(1950, {	-- Get the Scoop
@@ -382,7 +381,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(5762, {	-- Hemet Nesingwary
 				qg = 4452,	-- Kravel Koalbeard
 				qi = 14542,	-- Kravel's Crate
-				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
+				coord = { 77.8, 77.2, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 28,
 			}),
@@ -551,7 +550,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				},
 				qg = 4452,	-- Kravel Koalbeard
 				qi = 5807,	-- Fool's Stout Report
-				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
+				coord = { 77.8, 77.2, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 35,
 			}),
@@ -566,7 +565,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			}),
 			q(1110, {	-- Rocket Car Parts
 				qg = 4452,	-- Kravel Koalbeard
-				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
+				coord = { 77.8, 77.2, MAP.THOUSAND_NEEDLES },
 				lvl = 28,
 				groups = {
 					objective(1, {	-- 0/30 Rocket Car Parts
@@ -851,7 +850,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			}),
 			q(1115, {	-- The Rumormonger
 				qg = 4452,	-- Kravel Koalbeard
-				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
+				coord = { 77.8, 77.2, MAP.THOUSAND_NEEDLES },
 				maps = { MAP.STRANGLETHORN_VALE },
 				lvl = 30,
 			}),
@@ -923,7 +922,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			q(1111, {	-- Wharfmaster Dizzywig
 				qg = 4452,	-- Kravel Koalbeard
 				qi = 5799,	-- Kravel's Parts Order
-				coord = { 78.8, 77.3, MAP.THOUSAND_NEEDLES },
+				coord = { 77.8, 77.2, MAP.THOUSAND_NEEDLES },
 				lvl = 30,
 			}),
 			q(4767, {	-- Wind Rider
