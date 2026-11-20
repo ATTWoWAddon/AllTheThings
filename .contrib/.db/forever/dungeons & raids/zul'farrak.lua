@@ -37,7 +37,6 @@ instanceroot(241, {	-- Zul'Farrak
 					i(11122, {	-- Carrot on a Stick
 						description = "Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (Which you do a lot in Classic!)",
 					}),
-					i(9653),	-- Speedy Racer Goggles
 				},
 			}),
 			q(2991, {	-- Nekrum's Medallion
