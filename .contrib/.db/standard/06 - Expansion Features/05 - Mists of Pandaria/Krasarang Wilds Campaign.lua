@@ -666,7 +666,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 							32417,	-- Sewer Cleaning
 							32418,	-- Unfair Trade
 						},
-						qg = 68687,	-- Vareesa Windrunner
+						qg = 68687,	-- Vereesa Windrunner
 						coord = { 34.6, 48.7, 501 },
 					}),
 				})),
