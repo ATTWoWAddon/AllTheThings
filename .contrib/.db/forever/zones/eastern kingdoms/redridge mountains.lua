@@ -863,7 +863,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			n(3096, {	-- Captured Servant of Azora <Specialist Tailoring Supplies>
 				coord = { 69.4, 79.5, MAP.REDRIDGE_MOUNTAINS },
-				races = ALLIANCE_ONLY,
 				groups = {
 					i(4790, {	-- Inferno Cloak
 						isLimited = true,

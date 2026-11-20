@@ -1814,7 +1814,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 			n(3096, {	-- Captured Servant of Azora <Specialist Tailoring Supplies>
 				coord = { 74.5, 79.6, REDRIDGE_MOUNTAINS },
 				timeline = { REMOVED_4_0_3 },
-				races = ALLIANCE_ONLY,
 				groups = {
 					-- No longer sells any of this stuff after 4.0.3
 					i(4790, {	-- Inferno Cloak
