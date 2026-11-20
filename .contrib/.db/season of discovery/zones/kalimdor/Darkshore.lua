@@ -372,9 +372,9 @@ maproot(KALIMDOR, DARKSHORE, {
 				requireSkill = COOKING,
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				sym = {{ "select", "itemID", 5477 }},	-- Strider Stew
 				groups = {
 					i(5486),	-- Recipe: Strider Stew (RECIPE!)
-					i(5477),	-- Strider Stew
 				},
 			}),
 			q(1580, {	-- Electropellers
@@ -520,6 +520,7 @@ maproot(KALIMDOR, DARKSHORE, {
 				coord = { 56.7, 13.5, DARKSHORE },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
+				sym = {{ "select", "itemID", 5996 }},	-- Elixir of Water Breathing
 				groups = {
 					objective(1, {	-- 0/1 Gelkak's First Mate slain
 						providers = {
@@ -528,7 +529,6 @@ maproot(KALIMDOR, DARKSHORE, {
 						},
 						coord = { 55.8, 18.2, DARKSHORE },
 					}),
-					i(5996),	-- Elixir of Water Breathing
 				},
 			}),
 			q(984, {	-- How Big a Threat? (1/2)

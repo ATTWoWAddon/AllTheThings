@@ -606,9 +606,7 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 				qg = 4880,	-- "Stinky" Ignatz
 				coord = { 46.9, 17.5, DUSTWALLOW_MARSH },
 				lvl = 30,
-				groups = {
-					i(3825),	-- Elixir of Fortitude
-				},
+				sym = {{ "select", "itemID", 3825 }},	-- Elixir of Fortitude
 			},
 			q(1284, {	-- Suspicious Hoofprints [A]
 				providers = {

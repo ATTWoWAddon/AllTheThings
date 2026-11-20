@@ -615,8 +615,8 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				sym = {{ "select", "itemID", 3220 }},	-- Blood Sausage
 				groups = {
-					i(3220),	-- Blood Sausage
 					i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 				},
 			}),

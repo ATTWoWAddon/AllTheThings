@@ -713,9 +713,7 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				cost = { { "i", 159, 1 } },	-- Refreshing Spring Water
 				races = ALLIANCE_ONLY,
 				repeatable = true,
-				groups = {
-					i(4536),	-- Shiny Red Apple
-				},
+				sym = {{ "select", "itemID", 4536 }},	-- Shiny Red Apple
 			}),
 			q(47, {	-- Gold Dust Exchange
 				qg = 241,	-- Remy "Two Times"
@@ -949,10 +947,12 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				maps = { STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				lvl = 3,
+				sym = {{ "select", "itemID",
+					2454,	-- Elixir of Lion's Strength
+					1177,	-- Oil of Olaf
+				}},
 				groups = {
-					i(2454),	-- Elixir of Lion's Strength
 					i(1178),	-- Explosive Rocket
-					i(1177),	-- Oil of Olaf
 				},
 			}),
 			q(2300, {	-- SI:7

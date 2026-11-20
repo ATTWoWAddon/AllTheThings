@@ -355,8 +355,8 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				sym = {{ "select", "itemID", 1082 }},	-- Redridge Goulash
 				groups = {
-					i(1082),	-- Redridge Goulash
 					i(2699),	-- Recipe: Redridge Goulash (RECIPE!)
 				},
 			}),
@@ -381,6 +381,7 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				coord = { 27.8, 47.2, REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
+				sym = {{ "select", "itemID", 3663 }},	-- Murloc Fin Soup
 				groups = {
 					objective(1, {	-- 0/10 Spotted Sunfish
 						provider = { "i", 1467 },	-- Spotted Sunfish (QI!)
@@ -394,7 +395,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 							14270,	-- Squiddic
 						},
 					}),
-					i(3663),	-- Murloc Fin Soup
 					i(1322),	-- Fishliver Oil
 					i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
 				},
@@ -485,6 +485,7 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				coord = { 32.2, 48.7, REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				sym = {{ "select", "itemID", 2313 }},	-- Medium Armor Kit
 				groups = {
 					objective(1, {	-- 0/1 Oslow's Toolbox
 						providers = {
@@ -493,7 +494,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 						},
 						coord = { 41.5, 54.68, REDRIDGE_MOUNTAINS },
 					}),
-					i(2313),	-- Medium Armor Kit
 				},
 			}),
 			q(118, {	-- The Price of Shoes

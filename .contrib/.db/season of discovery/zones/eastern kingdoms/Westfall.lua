@@ -230,8 +230,8 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				cost = { { "i", 723, 8 } },	-- Goretusk Liver
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				sym = {{ "select", "itemID", 724 }},	-- Goretusk Liver Pie
 				groups = {
-					i(724),	-- Goretusk Liver Pie
 					i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
 				},
 			}),
@@ -641,9 +641,9 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				sym = {{ "select", "itemID", 733 }},	-- Westfall Stew
 				groups = {
 					i(728),	-- Recipe: Westfall Stew (RECIPE!)
-					i(733),	-- Westfall Stew
 					i(1479),	-- Salma's Oven Mitts
 					i(2225),	-- Sharp Kitchen Knife
 				},

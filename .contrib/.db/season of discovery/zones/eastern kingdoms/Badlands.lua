@@ -184,8 +184,8 @@ maproot(EASTERN_KINGDOMS, BADLANDS, {
 				coord = { 42.39, 52.93, BADLANDS },
 				cost = { { "i", 3404, 4 } },	-- Buzzard Wing
 				lvl = 33,
+				sym = {{ "select", "itemID", 4457 }},	-- Barbecued Buzzard Wing
 				groups = {
-					i(4457),	-- Barbecued Buzzard Wing
 					i(4609),	-- Recipe: Barbecued Buzzard Wing (available from a vendor still) (RECIPE!)
 				},
 			}),
@@ -326,9 +326,9 @@ maproot(EASTERN_KINGDOMS, BADLANDS, {
 					{ "i", 3823, 1 },	-- Lesser Invisibility Potion
 				},
 				lvl = 35,
+				sym = {{ "select", "itemID", 4623 }},	-- Lesser Stoneshield Potion
 				groups = {
 					i(4624),	-- Recipe: Lesser Stoneshield Potion (RECIPE!)
-					i(4623),	-- Lesser Stoneshield Potion
 				},
 			}),
 			q(718, {	-- Mirages

@@ -172,12 +172,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				sym = {{ "select", "itemID", 22218 }},	-- Handful of Rose Petals
 				groups = {
 					objective(1, {	-- 0/1 Alliance Gift Collection
 						provider = { "i", 22262 },	-- Alliance Gift Collection
 					}),
 					i(21812),	-- Box of Chocolates
-					i(22218),	-- Handful of Rose Petals
 					i(22200),	-- Silver Shafted Arrow
 				},
 			}),
@@ -190,12 +190,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				},
 				races = HORDE_ONLY,
 				isYearly = true,
+				sym = {{ "select", "itemID", 22218 }},	-- Handful of Rose Petals
 				groups = {
 					objective(1, {	-- 0/1 Horde Gift Collection
 						provider = { "i", 22263 },	-- Horde Gift Collection
 					}),
 					i(21812),	-- Box of Chocolates
-					i(22218),	-- Handful of Rose Petals
 					i(22200),	-- Silver Shafted Arrow
 				},
 			}),
@@ -205,9 +205,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				coord = { 56.2, 64.8, STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				isYearly = true,
+				sym = {{ "select", "itemID", 22218 }},	-- Handful of Rose Petals
 				groups = {
 					i(21812),	-- Box of Chocolates
-					i(22218),	-- Handful of Rose Petals
 				},
 			}),
 			q(9028, {	-- The Source Revealed (A)
@@ -260,9 +260,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 				coord = { 50.0, 68.6, UNDERCITY },
 				races = HORDE_ONLY,
 				isYearly = true,
+				sym = {{ "select", "itemID", 22218 }},	-- Handful of Rose Petals
 				groups = {
 					i(21812),	-- Box of Chocolates
-					i(22218),	-- Handful of Rose Petals
 				},
 			}),
 		}),

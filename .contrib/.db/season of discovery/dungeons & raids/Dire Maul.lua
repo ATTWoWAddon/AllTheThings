@@ -645,17 +645,17 @@ instanceroot(230, applyclassicphase(PHASE_ONE_DIREMAUL, {	-- Dire Maul
 				},
 				repeatable = true,
 				lvl = 56,
-				groups = { i(18258) },	-- Gordok Ogre Suit
+				sym = {{ "select", "itemID", 18258 }},	-- Gordok Ogre Suit
 			}),
 			q(5528, {	-- The Gordok Taste Test
 				description = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
 				qg = 14322,	-- Stomper Kreeg <The Drunk>
 				maps = GORDOK_COMMONS_MAPS,
 				lvl = 56,
-				groups = {
-					i(18269),	-- Gordok Green Grog
-					i(18284),	-- Kreeg's Stout Beatdown
-				},
+				sym = {{ "select", "itemID",
+					18269,	-- Gordok Green Grog
+					18284,	-- Kreeg's Stout Beatdown
+				}},
 			}),
 			q(7503, {	-- The Greatest Race of Hunters
 				providers = {

@@ -350,9 +350,7 @@ root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(THE_SCOU
 				cost = { { "i", 22484, 15 } },	-- Necrotic Rune
 				repeatable = true,
 				lvl = 50,
-				groups = {
-					i(13446),	-- Major Healing Potion
-				},
+				sym = {{ "select", "itemID", 13446 }},	-- Major Healing Potion
 			},
 			{	-- Major Mana Potion
 				allianceQuestData = q(9337, {	-- Major Mana Potion [A]
@@ -378,9 +376,7 @@ root(ROOTS.WorldEvents, applyclassicphase(PHASE_SIX_SCOURGE_INVASION, n(THE_SCOU
 				cost = { { "i", 22484, 15 } },	-- Necrotic Rune
 				repeatable = true,
 				lvl = 50,
-				groups = {
-					i(13444),	-- Major Mana Potion
-				},
+				sym = {{ "select", "itemID", 13444 }},	-- Major Mana Potion
 			},
 			q(9302, {	-- Missive from the Front
 				providers = {

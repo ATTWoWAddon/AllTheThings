@@ -459,8 +459,8 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 18,
+				sym = {{ "select", "itemID", 1017 }},	-- Seasoned Wolf Kabob
 				groups = {
-					i(1017),	-- Seasoned Wolf Kabob
 					i(2701),	-- Recipe: Seasoned Wolf Kabob (RECIPE!)
 				},
 			}),

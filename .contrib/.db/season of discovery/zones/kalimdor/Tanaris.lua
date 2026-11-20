@@ -525,9 +525,7 @@ maproot(KALIMDOR, TANARIS, {
 				qg = 7564,	-- Marin Noggenfogger
 				coord = { 51.8, 28.6, TANARIS },
 				lvl = 44,
-				groups = {
-					i(8529),	-- Noggenfogger Elixir
-				},
+				sym = {{ "select", "itemID", 8529 }},	-- Noggenfogger Elixir
 			}),
 			q(82, {	-- Noxious Lair Investigation
 				sourceQuest = 992,	-- Gadgetzan Water Survey

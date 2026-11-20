@@ -269,6 +269,7 @@ maproot(EASTERN_KINGDOMS, HILLSBRAD_FOOTHILLS, {
 				coord = { 52.4, 56.0, HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				sym = {{ "select", "itemID", 3728 }},	-- Tasty Lion Steak
 				groups = {
 					objective(1, {	-- 0/8 Mountain Lion slain
 						provider = { "n", 2406 },	-- Mountain Lion
@@ -281,7 +282,6 @@ maproot(EASTERN_KINGDOMS, HILLSBRAD_FOOTHILLS, {
 					i(3736, {	-- Recipe: Tasty Lion Steak (RECIPE!)
 						-- Moved to Trainers
 					}),
-					i(3728),	-- Tasty Lion Steak
 				},
 			}),
 			q(545, {	-- Dalaran Patrols
@@ -348,6 +348,7 @@ maproot(EASTERN_KINGDOMS, HILLSBRAD_FOOTHILLS, {
 				coord = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
 				lvl = 24,
+				sym = {{ "select", "itemID", 2459 }},	-- Swiftness Potion
 				groups = {
 					objective(1, {	-- 0/6 Mudsnout Blossoms
 						providers = {
@@ -356,7 +357,6 @@ maproot(EASTERN_KINGDOMS, HILLSBRAD_FOOTHILLS, {
 						},
 						coord = { 64.2, 62.5, HILLSBRAD_FOOTHILLS },
 					}),
-					i(2459),	-- Swiftness Potion
 				},
 			}),
 			q(513, {	-- Elixir of Agony (2/5)
@@ -716,9 +716,9 @@ maproot(EASTERN_KINGDOMS, HILLSBRAD_FOOTHILLS, {
 					{ "i", 3713, 1 },	-- Soothing Spices
 				},
 				lvl = 28,
+				sym = {{ "select", "itemID", 3729 }},	-- Soothing Turtle Bisque
 				groups = {
 					i(3737),	-- Recipe: Soothing Turtle Bisque (RECIPE!)
-					i(3729),	-- Soothing Turtle Bisque
 				},
 			},
 			q(538, {	-- Southshore

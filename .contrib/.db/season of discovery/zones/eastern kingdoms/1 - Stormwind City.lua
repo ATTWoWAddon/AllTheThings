@@ -2152,9 +2152,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					{ 57.0, 63.4, STORMWIND_CITY },
 				},
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(2723),	-- Bottle of Dalaran Noir
-				},
+				sym = {{ "select", "itemID", 2723 }},	-- Bottle of Dalaran Noir
 			}),
 			q(397, {	-- You Have Served Us Well
 				sourceQuest = 336,	-- A Noble Brew (2/2)
