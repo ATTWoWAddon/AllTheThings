@@ -564,11 +564,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(227345),	-- Divine Will Gloves and Belt Set
 				},
 			}),
-			q(95820, {	-- Karolek
-				sourceQuest = 95819,	-- Sign Me Up! [H]
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Karolek (3365) in the Kodohide Leatherworkers shop.
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
 			q(1945, {	-- Laughing Sisters
 				sourceQuest = 1944,	-- Waters of Xavian
 				qg = 5885,	-- Deino <Mage Trainer>

@@ -5,6 +5,41 @@ root(ROOTS.ExpansionFeatures, {
 	n(TRADE_LOGISTICS, {
 		timeline = { TIMELINE.ADDED_1_60_1 },
 		groups = {
+			n(QUESTS, {
+				q(95820, {	-- Karolek
+					sourceQuest = 95819,	-- Sign Me Up! [H]
+					-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Karolek (3365) in the Kodohide Leatherworkers shop.
+				}),
+				q(95817, {	-- Rotgath Stonebeard
+					sourceQuest = 95816,	-- Sign Me Up! [A]
+					-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Rotgath Stonebeard (10276) near the Great Forge.
+					timeline = { TIMELINE.CREATED_1_60_1 },
+				}),
+				q(95816, {	-- Sign Me Up! [A]
+					qg = 256391,	-- Elaine Compton <Contract Coordinator>
+					qs = 270888,	-- Advertising License Application (QS!)
+					qi = 270896,	-- Massive Pile of Forms (PQI!)
+					coord = { 10.2, 71.2, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					groups = {
+						objective(2, {	-- 0/1 Massive Pile of Completed Forms
+							provider = { "i", 270897 },	-- Massive Pile of Completed Forms
+						}),
+					},
+				}),
+				q(95819, {	-- Sign Me Up! [H]
+					qg = 256388,	-- Jornah <Contract Coordinator>
+					qs = 270887,	-- Advertising License Application (QS!)
+					qi = 270896,	-- Massive Pile of Forms (PQI!)
+					coord = { 49.8, 29.4, MAP.THE_BARRENS },
+					races = HORDE_ONLY,
+					groups = {
+						objective(2, {	-- 0/1 Massive Pile of Completed Forms
+							provider = { "i", 270897 },	-- Massive Pile of Completed Forms
+						}),
+					},
+				}),
+			}),
 			n(VENDORS, {
 				n(256732, {	-- Alynsia <Enchanter>
 					coord = { 11.1, 71.6, MAP.REDRIDGE_MOUNTAINS },

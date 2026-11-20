@@ -504,19 +504,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					}),
 				},
 			}),
-			q(95816, {	-- Sign Me Up! [A]
-				qg = 256391,	-- Elaine Compton <Contract Coordinator>
-				qs = 270888,	-- Advertising License Application (QS!)
-				qi = 270896,	-- Massive Pile of Forms (PQI!)
-				coord = { 10.2, 71.2, MAP.REDRIDGE_MOUNTAINS },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				groups = {
-					objective(2, {	-- 0/1 Massive Pile of Completed Forms
-						provider = { "i", 270897 },	-- Massive Pile of Completed Forms
-					}),
-				},
-			}),
 			q(91, {	-- Solomon's Law
 				qg = 900,	-- Bailiff Conacher
 				coord = { 24.6, 44.3, MAP.REDRIDGE_MOUNTAINS },

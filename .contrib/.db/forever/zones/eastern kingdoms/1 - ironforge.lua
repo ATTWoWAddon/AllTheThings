@@ -868,11 +868,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					}),
 				},
 			}),
-			q(95817, {	-- Rotgath Stonebeard
-				sourceQuest = 95816,	-- Sign Me Up! [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Rotgath Stonebeard (10276) near the Great Forge.
-				timeline = { TIMELINE.CREATED_1_60_1 },
-			}),
 			q(683, {	-- Sara Balloo's Plea
 				sourceQuest = 637,	-- Sully Balloo's Letter
 				qg = 2695,	-- Sara Balloo
