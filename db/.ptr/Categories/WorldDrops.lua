@@ -3557,8 +3557,8 @@ i(5637,{coords={
 i(1288,{description="Can drop from spiders in most vanilla zones, and are most abundant in Ashenvale and Duskwood. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={47,63}}),
 i(1015,{coords={
 [47]={{64,20.1}}},crs={43704},description="Drops from wolves in previously lower intermediate level vanilla zones like Dire wolves in Duskwood."}),
-i(17056,{description="Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend."}),
-i(2589,{description="Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={1,7,18,21,27,37,48,52,213}}),
+i(17056),
+i(2589,{maps={1,7,18,21,27,37,48,52,213}}),
 i(3731,{coords={
 [25]={{44.5,57.5},{49,56.3}}},crs={2385},description="Drops from lions in previously lower intermediate level vanilla zones like lions in Hillsbrad Foothills."}),
 i(12803,{coords={
@@ -3572,9 +3572,9 @@ i(4589,{coords={
 [76]={{20,57}}},crs={2347,2473,2474,2651,2657,2658,2659,5300,6375},description="Alliance players can disregard The Hinterlands due to most mob sources being friendly.",maps={26},rwp=40003,u=2}),
 i(5116,{coords={
 [64]={{79,77}},
-[65]={{32.4,66}}},description="Drops from birds and harpies in the given zones.",maps={14,15,66},rwp=40003,u=2}),
+[65]={{32.4,66}}},maps={14,15,66},rwp=40003,u=2}),
 i(27668,{awp=20001,crs={15651,15652,16347,16348,16349},description="Only drops from lynxes in Eversong Forest (except Sunstrider Isle) and Ghostlands.",maps={94,95}}),
-i(4338,{description="Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={15,32,36,71,77,219,235}}),
+i(4338,{maps={15,32,36,71,77,219,235}}),
 i(12223,{crs={1553,1554,16353,16354,16355},description="Only drops from bats in Ghostlands and Tirisfal Glades.",maps={18,95}}),
 i(1468,{coords={
 [56]={{15.1,39.3}}},crs={41425,41426,42110,42111},description="Drops from murlocs in previously lower intermediate level vanilla zones like Bluegill murlocs in Wetlands."}),
@@ -3592,11 +3592,11 @@ i(4461,{coords={
 [14]={{50,70}}},crs={2561},description="Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents."}),
 i(12203,{coords={
 [77]={{45.2,69},{54.1,86.7}}},crs={8959,8960},description="Drops from wolves in previously higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood."}),
-i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={17,51,81,83,242,317}}),
-i(10285,{crs={5856,5857,5858},description="Drops from spiders in Searing Gorge.",maps={32}}),
+i(14047,{maps={17,51,81,83,242,317}}),
+i(10285,{crs={5856,5857,5858},maps={32}}),
 i(5635,{coords={
 [95]={{27,60},{50,60},{70,38}}},crs={16347,16348,16349},description="Cataclysm messed up with the drop sources for Sharp Claws. Supposed to drop from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats. The Ghostclaw lynxs in Ghostland seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents!"}),
-i(4306,{description="Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={14,26,66,69,230,235,280,301}}),
+i(4306,{maps={14,26,66,69,230,235,280,301}}),
 i(5784,{description="Drops from murlocs Blackfathom Deeps.",maps={221}}),
 i(5523,{description="Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the listed zones.",maps={1,10,18,21,37,48,49,52,62,63,76,95,97,106},spellID=58172,g={
 i(5503),
@@ -3607,14 +3607,14 @@ i(5465,{coords={
 [21]={{35.7,13.7}}},crs={1780,1781,1998,1999,2000,2001,7319,12433},description="Drops from spiders in previously entry- and lower level vanilla zones like spiders in Silverpine Forest and Teldrassil.",maps={57}}),
 i(1475,{coords={
 [106]={{18.8,35.8}}},crs={17522,17523,17683},description="Cataclysm messed up with the drop sources for Small Venom Sac, and unfortunately for Horde players the only reliable farming spot is on Bloodmyst Isle."}),
-i(5468,{crs={2173,6033},description="Drops from frenzies found in bodies of water.",maps={21}}),
+i(5468,{crs={2173,6033},maps={21}}),
 i(3174,{crs={217,442,930,949,1111,1195,1780,1781,3819,3820,3821,4005,4006,4007,4040},maps={21,47,48,49,56,63,65}}),
 i(3182,{crs={3819,3820,3821},description="Drops from spiders in previously lower intermediate level vanilla zones, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={63}}),
 i(67229,{awp=40003,coords={
 [62]={{45.2,40.8},{47.4,29.5}},
 [76]={{26.2,72.8}}},crs={33311,35096,37786},description="Only drops from the given stags. Brown Stags can only be found in phased Gilneas for fresh Worgen characters."}),
 i(5471,{coords={
-[63]={{19.7,29.9},{39.5,63.6},{69.9,62.7}}},crs={3816,3817,3818},description="Drops from stags in Ashenvale as well as some other vanilla zones."}),
+[63]={{19.7,29.9},{39.5,63.6},{69.9,62.7}}},crs={3816,3817,3818}}),
 i(5469,{coords={
 [1]={{34.6,44.6}},
 [10]={{64.8,41.1},{69.5,55.9}}},crs={2172,2321,3244,3245,3246,39337},description="The only viable source is striders by River Southfury dividing Durotar and Northern Barrens."}),
@@ -3627,7 +3627,7 @@ i(12208,{coords={
 [77]={{45.2,69},{54.1,86.7}}},crs={8959,8960},description="Drops from wolves in previously higher intermediate to highlevel vanilla zones like Felpaw wolves in Felwood."}),
 i(5785,{coords={
 [56]={{15.1,39.3}}},crs={41425,41426,42110,42111},description="Drops from Bluegill murlocs in Wetlands."}),
-i(4337,{crs={4376,4378,4379,4412,4414,4415},description="Drops from spiders in the level bracket 32-60.",maps={70}}),
+i(4337,{crs={4376,4378,4379,4412,4414,4415},maps={70}}),
 i(5524,{description="Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the listed zones.",maps={25,50,56,62,63,221},spellID=58168,g={
 i(5500),
 i(5498),
@@ -3644,7 +3644,7 @@ i(9260,{coords={
 i(12205,{coords={
 [70]={{34.1,22.5},{55.2,54.8}}},crs={4376,4378,4379,4415},description="Drops from spiders in previously higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh."}),
 i(8153,{description="Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source."}),
-i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={47,56,63,221,225}})})}}),
+i(2592,{maps={47,56,63,221,225}})})}}),
 x(2,{awp=20003,g={
 flt(3,{
 s(10068,25043,{f=3,lvl=27}),
@@ -8936,7 +8936,7 @@ r(370710,{description="Drops from Earthen World Creatures.",itemID=191580,requir
 r(370707,{description="Drops from Fiery World Creatures.",itemID=191578,requireSkill=171,skillID=2823}),
 r(416149,{b=1,description="You must be a mage or get one to help you. The mage character needs to have DF cooking and a rare quality Chef's Splendid Rolling Pin equipped with the special tooltip \"Whenever you gain Well Fed, you conjure a DF Dessert from among the recipes you have learned.\" and at least 1 DF dessert recipe learned. The engineer needs DF engineering skill leveled to 50, 1 Light Parchment and 1 Engineer's Ink. If the engineer is close enough to the mage when they get the Well Fed buff, the engineer will get the recipe.",itemID=207461,requireSkill=202,skillID=2827}),
 r(383545,{itemID=198876,requireSkill=773,skillID=2828})}),
-h(-101,{symselector=11,g={
+h(-101,{symselector=39,g={
 s(181873,199020,{f=31,lvl=60}),
 s(181882,199032,{f=8,lvl=60}),
 s(181880,199027,{f=26,lvl=60}),

@@ -1512,10 +1512,10 @@ ach(9755,{e=1}),
 i(93724,{awp=50200,b=1,e=1,f=55})}})}})}})}}),
 h(-43,{awp=50004,e=1,pb=1,g={
 n(67370,{coords={
-[407]={{47,62.75}}},description="Jeremy's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",e=1,pb=1,petBattleLvl=25,g={
+[407]={{47,62.75}}},e=1,pb=1,petBattleLvl=25,g={
 crit(26986,{achID=9069,awp=60002,id=20,pb=1})}}),
 n(85519,{coords={
-[407]={{47.3,62}}},description="Cristoph's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Beast - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",e=1,pb=1,petBattleLvl=25,g={
+[407]={{47.3,62}}},e=1,pb=1,petBattleLvl=25,g={
 crit(26976,{achID=9069,awp=60002,id=10,pb=1})}})}}),
 h(-44,{e=1,g={
 prof(356,{e=1,g={
@@ -14879,7 +14879,8 @@ inst(246,{awp=90105,difficultyID=24,e=643,savedInstanceID=1007,g={
 e(659,{crs={58633,58664},e=643,sym={{"select","modItemID",144201.002,144180.002,143967.002,144200.002,144202.002}}}),
 e(663,{e=643,npcID=59184,sym={{"select","modItemID",144207.002,144029.002,144208.002,144012.002,144013.002}}}),
 e(665,{e=643,npcID=59153,sym={{"select","modItemID",144011.002,144204.002,144203.002,144205.002,144206.002,144015.002}}}),
-n(59369,{description="This is a Rare Creature and is not always present.",e=643,sym={{"select","itemID",88566}}}),
+h(-46,{e=643,g={
+n(59369,{e=643,sym={{"select","itemID",88566}}})}}),
 e(666,{e=643,npcID=58722,sym={{"select","modItemID",144030.002,144181.002,143968.002,144209.002,144014.002}}}),
 e(684,{e=643,npcID=59080,sym={{"select","modItemID",144212.002,144211.002,144213.002,144161.002,144159.002,144160.002,144016.002,144210.002,144015.002}}})}}),
 inst(312,{difficultyID=24,e=643,savedInstanceID=959,g={
@@ -16846,7 +16847,7 @@ q(57298,{coords={
 [75]={{53.5,54.7}}},e=242,lvl=30,qgs={157113},rwp=90001,sourceQuests={57249},u=2}),
 q(57300,{awp=110002,coords={
 [71]={{62.3,51.8}}},e=242,isWeekly=1,lvl=10,pvp=1,qgs={223882},g={
-i(233014,{awp=110005,b=1,e=242,f=55,lvl=80,pvp=1,sym={{"select","symselector",29},{"pop"},{"where","headerID",-58},{"extract","itemID"}}})}})}}),
+i(233014,{awp=110005,b=1,e=242,f=55,lvl=80,pvp=1,sym={{"select","symselector",57},{"pop"},{"where","headerID",-58},{"extract","itemID"}}})}})}}),
 h(-58,{e=242,g={
 n(158061,{coords={
 [75]={{50.7,41.1}}},e=242,g={
@@ -16895,7 +16896,7 @@ i(171177,{b=1,e=242,u=2})}})}}),
 h(-45,{e=242,g={
 q(60215,{coords={
 [71]={{62.3,51.8}}},e=242,isWeekly=1,lvl=30,qgs={223882},g={
-i(233014,{awp=110005,b=1,e=242,f=55,lvl=80,sym={{"select","symselector",29},{"pop"},{"where","headerID",-58},{"extract","itemID"}}})}})}}),
+i(233014,{awp=110005,b=1,e=242,f=55,lvl=80,sym={{"select","symselector",57},{"pop"},{"where","headerID",-58},{"extract","itemID"}}})}})}}),
 h(-58,{e=242,g={
 n(158061,{coords={
 [75]={{50.7,41.1}}},e=242,g={
@@ -17027,7 +17028,7 @@ ach(41038,{e=242,rwp=110007,u=2}),
 ach(41013,{e=242,questID=85661}),
 ach(40661,{coords={
 [71]={{61.7,50},{61.8,49.9},{61.9,50.1},{62.2,49.6},{62.3,49.3}}},crs={227559},e=242,providers={{"i",224157},{"n",227682}}})}}),
-inst(1301,{e=242,isRaid=1,maps={2362,2363},savedInstanceID=2792,symselector=29,g={
+inst(1301,{e=242,isRaid=1,maps={2362,2363},savedInstanceID=2792,symselector=57,g={
 h(-12,{e=242,g={
 ach(40999,{e=242,g={
 crit(70571,{achID=40999,e=242,id=2,providers={{"n",232243}}}),
@@ -17039,7 +17040,7 @@ h(-45,{e=242,g={
 q(82817,{coords={
 [84]={{56,18.4}},
 [85]={{52.8,82.8}}},e=242,isWeekly=1,lvl=30,qgs={234556},rwp=110007,u=2,g={
-i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",29},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",57},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 q(84735,{coords={
 [71]={{63,49.7}}},e=242,lvl=30,qgs={229494},rwp=110007,u=2}),
 hqt(84743,{coords={
@@ -17148,11 +17149,11 @@ s(229527,231428,{b=1,e=242,f=23,lvl=22,u=2}),
 s(229522,231422,{b=1,e=242,f=5,loc=46,lvl=22,u=2}),
 s(229538,231441,{b=1,e=242,f=5,loc=43,lvl=22,u=2}),
 n(223881,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",29},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",57},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 n(233209,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",29},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",57},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
 n(224322,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",29},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",57},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
 d(116,{difficulties={17,14,15},e=242,g={
 h(-63,{e=242,g={
 s(229587,231501,{e=242,f=4,loc=43,lvl=80}),
@@ -17819,7 +17820,7 @@ q(82783,{coords={
 [71]={{62.6,50}}},e=242,isWeekly=1,lvl=10,maps={2354},qgs={226368},g={
 ach(40977,{e=242,g={
 crit(70589,{achID=40976,e=242,id=8})}}),
-i(233014,{b=1,e=242,f=55,lvl=80,sym={{"select","symselector",29},{"pop"},{"where","headerID",-58},{"extract","itemID"}}}),
+i(233014,{b=1,e=242,f=55,lvl=80,sym={{"select","symselector",57},{"pop"},{"where","headerID",-58},{"extract","itemID"}}}),
 cu(1166,{e=242})}})}}),
 h(-56,{e=242,g={
 o(455795,{coords={

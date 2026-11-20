@@ -1129,6 +1129,290 @@ q(72748,{description="Available on the next reset after \"A Piece of Gold\", fro
 q(72749,{description="Available on the next reset after \"A Bag of Gold\", from the adventure guide.",sourceQuests={72748},g={
 ach(16790),
 i(202107,{b=1})}})}}),
+h(-22,{
+flt(113,{awp=30002,g={
+i(39489,{f=113,isLimited=1})}}),
+flt(4,{
+ah(2435,{symselector=6,type="i",g={
+s(1468,3892,{f=2,loc=40,lvl=20}),
+s(799,2435,{f=4,loc=42,lvl=20}),
+s(1341,3588,{f=4,loc=43,lvl=20}),
+s(802,2440,{f=4,loc=44,lvl=20}),
+s(1340,3587,{f=4,loc=45,lvl=20}),
+s(800,2437,{f=4,loc=46,lvl=20}),
+s(801,2438,{f=4,loc=47,lvl=20})}}),
+ah(837,{symselector=7,type="i",g={
+s(109,837,{f=4,loc=42,lvl=6}),
+s(1343,3590,{f=4,loc=43,lvl=6}),
+s(111,839,{f=4,loc=44,lvl=6}),
+s(1342,3589,{f=4,loc=45,lvl=6}),
+s(110,838,{f=4,loc=46,lvl=6}),
+s(112,840,{f=4,loc=47,lvl=6})}}),
+ah(795,{symselector=8,type="i",g={
+s(94,795,{f=4,loc=42,lvl=3}),
+s(1355,3603,{f=4,loc=43,lvl=3}),
+s(92,793,{f=4,loc=44,lvl=3}),
+s(1354,3602,{f=4,loc=45,lvl=3}),
+s(93,794,{f=4,loc=46,lvl=3}),
+s(91,792,{f=4,loc=47,lvl=3})}}),
+ah(2160,{symselector=9,type="i",g={
+s(635,2160,{f=4,loc=42,lvl=10}),
+s(1345,3592,{f=4,loc=43,lvl=10}),
+s(633,2158,{f=4,loc=44,lvl=10}),
+s(1344,3591,{f=4,loc=45,lvl=10}),
+s(634,2159,{f=4,loc=46,lvl=10}),
+s(632,2156,{f=4,loc=47,lvl=10})}}),
+ah(2429,{symselector=10,type="i",g={
+s(1465,3889,{f=2,loc=40,lvl=14}),
+s(795,2429,{f=4,loc=42,lvl=14}),
+s(1347,3594,{f=4,loc=43,lvl=14}),
+s(798,2434,{f=4,loc=44,lvl=14}),
+s(1346,3593,{f=4,loc=45,lvl=14}),
+s(796,2431,{f=4,loc=46,lvl=14}),
+s(797,2432,{f=4,loc=47,lvl=14})}}),
+ah(193,{symselector=11,type="i",g={
+s(52,193,{f=4,loc=42}),
+s(1349,3596,{f=4,loc=43}),
+s(70,711,{f=4,loc=44}),
+s(1348,3595,{f=4,loc=45}),
+s(53,194,{f=4,loc=46}),
+s(54,195,{f=4,loc=47})}}),
+ah(200,{symselector=12,type="i",g={
+s(55,200,{f=4,loc=42,lvl=8}),
+s(1351,3598,{f=4,loc=43,lvl=8}),
+s(58,203,{f=4,loc=44,lvl=8}),
+s(1350,3597,{f=4,loc=45,lvl=8}),
+s(56,201,{f=4,loc=46,lvl=8}),
+s(57,202,{f=4,loc=47,lvl=8})}}),
+ah(2121,{symselector=13,type="i",g={
+s(603,2121,{f=4,loc=42}),
+s(1353,3600,{f=4,loc=43}),
+s(601,2119,{f=4,loc=44}),
+s(1352,3599,{f=4,loc=45}),
+s(602,2120,{f=4,loc=46}),
+s(600,2117,{f=4,loc=47})}}),
+ah(2364,{symselector=14,type="i",g={
+s(747,2364,{f=4,loc=42,lvl=3}),
+s(1357,3607,{f=4,loc=43,lvl=3}),
+s(750,2369,{f=4,loc=44,lvl=3}),
+s(1356,3606,{f=4,loc=45,lvl=3}),
+s(748,2366,{f=4,loc=46,lvl=3}),
+s(749,2367,{f=4,loc=47,lvl=3})}})}),
+flt(55,{
+i(6533,{f=55,isLimited=1,requireSkill=356,spellID=8089}),
+i(6532,{f=55,requireSkill=356,spellID=8090}),
+i(2594,{f=55,spellID=11009}),
+i(2593,{f=55,spellID=11008}),
+i(58265,{awp=40003,f=55,lvl=32,spellID=1286535}),
+i(1179,{f=55,lvl=3,spellID=1291950}),
+i(2595,{f=55,spellID=11009}),
+i(6530,{f=55,requireSkill=356,spellID=8088}),
+i(136377,{awp=70003,f=55,spellID=207700}),
+i(159,{f=55,spellID=1291950}),
+i(6529,{f=55,spellID=8087}),
+i(2596,{f=55,spellID=11008}),
+i(58278,{awp=40003,f=55,lvl=27,spellID=45548})}),
+flt(5,{
+ah(2372,{symselector=15,type="i",g={
+s(755,2374,{f=5,loc=43,lvl=3}),
+s(756,2375,{f=5,loc=44,lvl=3}),
+s(752,2371,{f=5,loc=45,lvl=3}),
+s(753,2372,{f=5,loc=46,lvl=3}),
+s(754,2373,{f=5,loc=47,lvl=3})}}),
+ah(2127,{symselector=16,type="i",g={
+s(609,2127,{f=5,loc=42}),
+s(606,2124,{f=5,loc=43}),
+s(607,2125,{f=5,loc=44}),
+s(604,2122,{f=5,loc=45}),
+s(608,2126,{f=5,loc=46}),
+s(605,2123,{f=5,loc=47})}}),
+ah(2141,{symselector=17,type="i",g={
+s(619,2141,{f=5,loc=42,lvl=10}),
+s(622,2144,{f=5,loc=43,lvl=10}),
+s(623,2145,{f=5,loc=44,lvl=10}),
+s(620,2142,{f=5,loc=45,lvl=10}),
+s(624,2146,{f=5,loc=46,lvl=10}),
+s(621,2143,{f=5,loc=47,lvl=10})}}),
+ah(236,{symselector=18,type="i",g={
+s(61,236,{f=5,loc=42,lvl=8}),
+s(470,1850,{f=5,loc=43,lvl=8}),
+s(64,239,{f=5,loc=44,lvl=8}),
+s(469,1849,{f=5,loc=45,lvl=8}),
+s(62,237,{f=5,loc=46,lvl=8}),
+s(63,238,{f=5,loc=47,lvl=8})}}),
+ah(85,{symselector=19,type="i",g={
+s(39,85,{f=5,loc=42}),
+s(462,1836,{f=5,loc=43}),
+s(71,714,{f=5,loc=44}),
+s(461,1835,{f=5,loc=45}),
+s(59,209,{f=5,loc=46}),
+s(60,210,{f=5,loc=47})}}),
+ah(2470,{symselector=20,type="i",g={
+s(1469,3893,{f=5,loc=40,lvl=20}),
+s(813,2470,{f=5,loc=42,lvl=20}),
+s(817,2474,{f=5,loc=43,lvl=20}),
+s(818,2475,{f=5,loc=44,lvl=20}),
+s(814,2471,{f=5,loc=45,lvl=20}),
+s(815,2472,{f=5,loc=46,lvl=20}),
+s(816,2473,{f=5,loc=47,lvl=20})}}),
+ah(799,{symselector=21,type="i",g={
+s(98,799,{f=5,loc=42,lvl=3}),
+s(464,1840,{f=5,loc=43,lvl=3}),
+s(96,797,{f=5,loc=44,lvl=3}),
+s(463,1839,{f=5,loc=45,lvl=3}),
+s(97,798,{f=5,loc=46,lvl=3}),
+s(95,796,{f=5,loc=47,lvl=3})}}),
+ah(2465,{symselector=22,type="i",g={
+s(1466,3890,{f=5,loc=40,lvl=14}),
+s(811,2468,{f=5,loc=43,lvl=14}),
+s(812,2469,{f=5,loc=44,lvl=14}),
+s(808,2464,{f=5,loc=45,lvl=14}),
+s(809,2465,{f=5,loc=46,lvl=14}),
+s(810,2467,{f=5,loc=47,lvl=14})}}),
+ah(846,{symselector=23,type="i",g={
+s(116,846,{f=5,loc=42,lvl=6}),
+s(466,1844,{f=5,loc=43,lvl=6}),
+s(114,844,{f=5,loc=44,lvl=6}),
+s(465,1843,{f=5,loc=45,lvl=6}),
+s(115,845,{f=5,loc=46,lvl=6}),
+s(113,843,{f=5,loc=47,lvl=6})}})}),
+flt(6,{
+ah(2417,{symselector=24,type="i",g={
+s(1467,3891,{f=6,loc=40,lvl=14}),
+s(783,2417,{f=6,loc=42,lvl=14}),
+s(787,2421,{f=6,loc=43,lvl=14}),
+s(788,2422,{f=6,loc=44,lvl=14}),
+s(785,2419,{f=6,loc=45,lvl=14}),
+s(784,2418,{f=6,loc=46,lvl=14}),
+s(786,2420,{f=6,loc=47,lvl=14})}}),
+ah(2423,{symselector=25,type="i",g={
+s(1470,3894,{f=6,loc=40,lvl=20}),
+s(789,2423,{f=6,loc=42,lvl=20}),
+s(793,2427,{f=6,loc=43,lvl=20}),
+s(794,2428,{f=6,loc=44,lvl=20}),
+s(790,2424,{f=6,loc=45,lvl=20}),
+s(791,2425,{f=6,loc=46,lvl=20}),
+s(792,2426,{f=6,loc=47,lvl=20})}}),
+ah(847,{symselector=26,type="i",g={
+s(117,847,{f=6,loc=42,lvl=6}),
+s(468,1846,{f=6,loc=43,lvl=6}),
+s(120,850,{f=6,loc=44,lvl=6}),
+s(467,1845,{f=6,loc=45,lvl=6}),
+s(118,848,{f=6,loc=46,lvl=6}),
+s(119,849,{f=6,loc=47,lvl=6})}}),
+ah(2398,{symselector=27,type="i",g={
+s(776,2398,{f=6,loc=42,lvl=3}),
+s(780,2402,{f=6,loc=43,lvl=3}),
+s(781,2403,{f=6,loc=44,lvl=3}),
+s(777,2399,{f=6,loc=45,lvl=3}),
+s(778,2400,{f=6,loc=46,lvl=3}),
+s(779,2401,{f=6,loc=47,lvl=3})}}),
+ah(2392,{symselector=28,type="i",g={
+s(770,2392,{f=6,loc=42,lvl=3}),
+s(774,2396,{f=6,loc=43,lvl=3}),
+s(775,2397,{f=6,loc=44,lvl=3}),
+s(771,2393,{f=6,loc=45,lvl=3}),
+s(772,2394,{f=6,loc=46,lvl=3}),
+s(773,2395,{f=6,loc=47,lvl=3})}}),
+ah(2153,{symselector=29,type="i",g={
+s(631,2153,{f=6,loc=42,lvl=10}),
+s(628,2150,{f=6,loc=43,lvl=10}),
+s(629,2151,{f=6,loc=44,lvl=10}),
+s(626,2148,{f=6,loc=45,lvl=10}),
+s(630,2152,{f=6,loc=46,lvl=10}),
+s(627,2149,{f=6,loc=47,lvl=10})}}),
+ah(2386,{symselector=30,type="i",g={
+s(764,2386,{f=6,loc=42}),
+s(768,2390,{f=6,loc=43}),
+s(769,2391,{f=6,loc=44}),
+s(765,2387,{f=6,loc=45}),
+s(766,2388,{f=6,loc=46,r=1}),
+s(767,2389,{f=6,loc=47})}}),
+ah(285,{symselector=31,type="i",g={
+s(65,285,{f=6,loc=42,lvl=8}),
+s(471,1852,{f=6,loc=43,lvl=8}),
+s(72,718,{f=6,loc=44,lvl=8}),
+s(472,1853,{f=6,loc=45,lvl=8}),
+s(66,286,{f=6,loc=46,lvl=8}),
+s(67,287,{f=6,loc=47,lvl=8})}}),
+ah(2379,{symselector=32,type="i",g={
+s(758,2379,{f=6,loc=42}),
+s(762,2384,{f=6,loc=43}),
+s(763,2385,{f=6,loc=44}),
+s(759,2380,{f=6,loc=45}),
+s(760,2381,{f=6,loc=46,r=2}),
+s(761,2383,{f=6,loc=47})}})}),
+flt(7,{
+ah(8094,{symselector=33,type="i",g={
+s(3025,8092,{f=7,loc=40,lvl=20}),
+s(3027,8094,{f=7,loc=42,lvl=20}),
+s(3023,8090,{f=7,loc=43,lvl=20}),
+s(3024,8091,{f=7,loc=44,lvl=20}),
+s(3021,8088,{f=7,loc=45,lvl=20}),
+s(3026,8093,{f=7,loc=46,lvl=20}),
+s(3022,8089,{f=7,loc=47,lvl=20})}})}),
+flt(57,{
+s(2213,5956,{collectible=false,f=57,spellID=395392}),
+s(2326,6256,{collectible=false,f=57,requireSkill=356,spellID=395369}),
+s(43958,85663,{awp=50004,collectible=false,description="Can only be bought from Trade suppliers.",f=57,requireSkill=182,spellID=124353}),
+i(20815,{awp=20001,collectible=false,f=57}),
+s(2680,7005,{collectible=false,f=57,requireSkill=393,spellID=124181}),
+s(2361,6365,{collectible=false,f=57,isLimited=1,lvl=3,requireSkill=356,spellID=7823}),
+i(39505,{awp=30002,collectible=false,f=57,requireSkill=773})}),
+flt(56,{
+i(2325),
+i(2324),
+i(67348,{awp=40003}),
+i(6260),
+i(3857),
+i(2320),
+i(10648,{awp=30002,rwp=50004,u=2}),
+i(6217),
+i(8925,{rwp=40001,u=2}),
+i(62323,{awp=40003}),
+i(18567),
+i(3371),
+i(40411,{awp=30002,rwp=40001,u=2}),
+i(38682,{awp=40001}),
+i(2321),
+i(2605),
+i(4340),
+i(39684,{awp=30002}),
+i(39501,{awp=30002,rwp=50004,u=2}),
+i(8343),
+i(4400),
+i(2692,{rwp=30002,u=2}),
+i(18256,{rwp=40001,u=2}),
+i(52188,{awp=40003}),
+i(3372,{rwp=40001,u=2}),
+i(10938,{isLimited=1,spellID=13361}),
+i(39354,{awp=30002}),
+i(2678),
+i(6261),
+i(10290),
+i(67319,{awp=40003}),
+i(4342),
+i(2604),
+i(39502,{awp=30002,rwp=50004,u=2}),
+i(14341),
+i(127037,{awp=70003}),
+i(4289),
+i(68047,{awp=40003}),
+i(67335,{awp=40003}),
+i(4291),
+i(30817,{awp=20001}),
+i(20824,{awp=20001,rwp=50004,u=2}),
+i(4470),
+i(3713,{rwp=30002,u=2}),
+i(11291),
+i(10940,{isLimited=1}),
+i(3466),
+i(90146,{awp=50004}),
+i(64670,{awp=40001,spellID=210212}),
+i(40533,{awp=30002}),
+i(2880),
+i(4399),
+i(4341)})}),
 m(12,{awp=10100,icon=236807,isContinent=1,lore="Kalimdor is home to the night elves, orcs, tauren, trolls, and draenei. Other races present include the ogres, centaur, naga, demons, and other, more minor races.",g={
 h(-12,{
 ach(43,{
@@ -1374,15 +1658,9 @@ n(4216,{coords={
 [89]={{49.55,69.44}}},r=2,g={
 i(22250,{description="Only select Herbalism Suppliers sells this pouch.",f=113,providers={{"n",3548},{"n",4216},{"n",4615},{"n",5138},{"n",5503},{"n",16367},{"n",46742}}})}}),
 n(4164,{coords={
-[89]={{56.8,53.6}}},r=2,sym={{"select","itemID",847,1845,849,1846,850,848,837,3589,3590,839,838,840,3602,3603,793,794,792,795,2392,2393,2395,2396,2397,2394,1839,796,1840,797,798,799,1843,843,1844,844,846,845}}}),
+[89]={{56.8,53.6}}},r=2,sym={{"select","symselector",26,7,8,28,21,23},{"pop"}}}),
 n(4236,{coords={
-[89]={{52.6,77}}},r=2,sym={{"select","itemID",2142,2143,2144,2145,2146,2141,236,1849,238,1850,239,237,2471,2473,2474,3893,2475,2472,2470,1839,796,1840,797,798,799,2464,2467,2468,2463,2469,3890,2465,1843,843,1844,844,846,845}},g={
-s(604,2122,{f=5,loc=45}),
-s(605,2123,{f=5,loc=47}),
-s(606,2124,{f=5,loc=43}),
-s(607,2125,{f=5,loc=44}),
-s(608,2126,{f=5,loc=46}),
-s(609,2127,{f=5,loc=42})}}),
+[89]={{52.6,77}}},r=2,sym={{"select","symselector",16,17,18,20,21,22,23},{"pop"},{"select","itemID",2463}}}),
 n(4180,{coords={
 [89]={{57.8,71.6}}},r=2,sym={{"select","itemID",2523,2521,2531,2525,2533,2529}}}),
 n(4168,{coords={
@@ -1436,13 +1714,7 @@ s(32501,64893,{b=1,f=3,lvl=15,minReputation={1134,42000},r=2}),
 s(32500,64892,{b=1,f=3,lvl=15,minReputation={1134,42000},r=2}),
 s(32502,64894,{b=1,f=3,lvl=15,minReputation={1134,42000},r=2})}}),
 n(4177,{coords={
-[89]={{55.6,75}}},r=2,sym={{"select","itemID",2419,2420,2421,2422,3891,2418,2417,2424,2426,2427,2428,3894,2425,2423,847,1845,849,1846,850,848,2451,2448,17189,17190,2392,2393,2395,2396,2397,2394,2149,2150,2151,2152,2153,8094,8088,8089,8090,8091,8092,8093,2148,1853,287,1852,718,286,285}},g={
-s(759,2380,{f=6,loc=45}),
-s(761,2383,{f=6,loc=47}),
-s(762,2384,{f=6,loc=43}),
-s(763,2385,{f=6,loc=44}),
-s(760,2381,{f=6,loc=46,r=2}),
-s(758,2379,{f=6,loc=42})}}),
+[89]={{55.6,75}}},r=2,sym={{"select","symselector",24,25,26,28,33,29,31,32},{"pop"},{"select","itemID",2451,2448,17189,17190}}}),
 n(4171,{coords={
 [89]={{61.6,63.8}}},r=2,sym={{"select","itemID",2520,1198,851,922,2024,2528,2207,2209,923,2526,2208,2534,2027}}}),
 n(50305,{awp=40003,coords={
@@ -1484,14 +1756,8 @@ r(17553,{itemID=13477,requireSkill=171,rwp=20001,skillID=2485,u=2})}}),
 n(4228,{coords={
 [89]={{56.5,32.2}}},r=2,sym={{"sub","common_recipes_vendor",1318},{"select","itemID",20753,20752,20758,22307}}}),
 n(4175,{coords={
-[89]={{57.9,71.8}}},r=2,sym={{"select","itemID",2435,3587,2438,3588,2440,3892,2437,837,3589,3590,839,838,840,3602,3603,793,794,792,795,2160,3591,2156,3592,2158,2159,3593,2432,3594,2434,3889,2431,2429,3597,3598,203,201,202,200}},g={
-s(4380,12256,{f=4,isLimited=1,loc=46,lvl=19}),
-s(603,2121,{f=4,loc=42}),
-s(1353,3600,{f=4,loc=43}),
-s(1352,3599,{f=4,loc=45}),
-s(601,2119,{f=4,loc=44}),
-s(602,2120,{f=4,loc=46}),
-s(600,2117,{f=4,loc=47})}})}),
+[89]={{57.9,71.8}}},r=2,sym={{"select","symselector",6,7,8,9,10,12,13},{"pop"}},g={
+s(4380,12256,{f=4,isLimited=1,loc=46,lvl=19})}})}),
 h(-43,{awp=50004,pb=1,g={
 crit(19847,{achID=6584,id=3,pb=1})}})}}),
 m(85,{icon=255142,isRaid=1,lore="Named in honor of the legendary Orgrim Doomhammer, Orgrimmar was founded as the capital city of the orcs' new homeland. Built within a huge, winding canyon in the harsh land of Durotar, Orgrimmar stands as one of the mightiest warrior cities in the world. Behind Orgrimmar's immense walls, elderly shaman pass their knowledge on to the Horde's newest generation of leaders, while warriors spar in the gladiatorial arena, honing their skills in preparation for the trials that await them in this dangerous land.",maps={86},g={
@@ -3504,7 +3770,7 @@ n(133261,{awp=70305,coords={
 r(25954,{itemID=21219,requireSkill=185,skillID=2548}),
 r(25704,{itemID=21099,requireSkill=185,skillID=2548})}}),
 n(12795,{coords={
-[85]={{38.2,72.6}}},r=1,sym={{"select","symselector",6},{"pop"},{"exclude","headerID",-101}}}),
+[85]={{38.2,72.6}}},r=1,sym={{"select","symselector",34},{"pop"},{"exclude","headerID",-101}}}),
 n(50323,{awp=40003,coords={
 [85]={{50,58.6}}},r=1,g={
 s(32513,64906,{b=1,f=3,lvl=15,minReputation={1133,42000},r=1}),
@@ -3814,7 +4080,7 @@ n(3335,{coords={
 r(6618,{isLimited=1,itemID=5643,requireSkill=171,skillID=2485}),
 r(6617,{isLimited=1,itemID=5640,requireSkill=171,skillID=2485})}}),
 n(3316,{coords={
-[85]={{60.8,54}}},r=1,sym={{"select","itemID",2142,2143,2144,2145,2146,2141,2435,3587,2438,3588,2440,3892,2437,2160,3591,2156,3592,2158,2159,2471,2473,2474,3893,2475,2472,2470,3593,2432,3594,2434,3889,2431,2429,2464,2467,2468,2463,2469,3890,2465}},g={
+[85]={{60.8,54}}},r=1,sym={{"select","symselector",17,6,9,20,10,22},{"pop"},{"select","itemID",2463}},g={
 s(4380,12256,{f=4,isLimited=1,loc=46,lvl=19})}}),
 n(110035,{awp=70100,coords={
 [85]={{36.6,74.6}}},e=242,r=1}),
@@ -4413,19 +4679,8 @@ de(2526,{cost=20000000,itemID=246860,spellID=1244132}),
 de(2511,{cost=20000000,itemID=246845,spellID=1244117}),
 de(768,{cost=20000000,itemID=239179,spellID=1227844})}}),
 n(3321,{coords={
-[85]={{60,55.6}}},r=1,g={
-s(752,2371,{f=5,loc=45,lvl=3}),
-s(754,2373,{f=5,loc=47,lvl=3}),
-s(755,2374,{f=5,loc=43,lvl=3}),
-s(756,2375,{f=5,loc=44,lvl=3}),
+[85]={{60,55.6}}},r=1,sym={{"select","symselector",15,18,23},{"pop"}},g={
 s(751,2370,{f=5,loc=42,lvl=3}),
-s(753,2372,{f=5,loc=46,lvl=3}),
-s(61,236,{f=5,loc=42,lvl=8}),
-s(469,1849,{f=5,loc=45,lvl=8}),
-s(63,238,{f=5,loc=47,lvl=8}),
-s(470,1850,{f=5,loc=43,lvl=8}),
-s(64,239,{f=5,loc=44,lvl=8}),
-s(62,237,{f=5,loc=46,lvl=8}),
 s(8245,20896,{awp=100005,f=5,loc=46}),
 s(8247,20898,{awp=100005,f=5,loc=47}),
 s(28828,58238,{awp=100005,f=5,loc=42}),
@@ -4433,12 +4688,6 @@ s(2259,6124,{awp=100005,f=5,loc=46}),
 s(2269,6139,{awp=100005,f=5,loc=42}),
 s(49,153,{awp=100005,f=5,loc=46}),
 s(2265,6135,{awp=100005,f=5,loc=46}),
-s(465,1843,{f=5,loc=45,lvl=6}),
-s(113,843,{f=5,loc=47,lvl=6}),
-s(466,1844,{f=5,loc=43,lvl=6}),
-s(114,844,{f=5,loc=44,lvl=6}),
-s(116,846,{f=5,loc=42,lvl=6}),
-s(115,845,{f=5,loc=46,lvl=6}),
 s(41,121,{awp=100005,f=5,loc=47}),
 s(40,120,{awp=100005,f=5,loc=46}),
 s(28834,58246,{awp=100005,f=5,loc=42})}}),
@@ -4479,28 +4728,10 @@ mnt(16080,{b=1,itemID=12330,lvl=10,r=1,rwp=10400,u=2})}})),
 n(44975,{awp=40003,coords={
 [85]={{35,67.6}}},r=1,sym={{"select","itemID",6365}}}),
 n(3317,{coords={
-[85]={{60.6,58.6}}},r=1,g={
+[85]={{60.6,58.6}}},r=1,sym={{"select","symselector",7,12,14},{"pop"}},g={
 s(1255,3428,{f=10}),
 s(6580,16059,{f=10}),
 s(6581,16060,{f=10}),
-s(109,837,{f=4,loc=42,lvl=6}),
-s(1342,3589,{f=4,loc=45,lvl=6}),
-s(1343,3590,{f=4,loc=43,lvl=6}),
-s(111,839,{f=4,loc=44,lvl=6}),
-s(110,838,{f=4,loc=46,lvl=6}),
-s(112,840,{f=4,loc=47,lvl=6}),
-s(1350,3597,{f=4,loc=45,lvl=8}),
-s(1351,3598,{f=4,loc=43,lvl=8}),
-s(58,203,{f=4,loc=44,lvl=8}),
-s(56,201,{f=4,loc=46,lvl=8}),
-s(57,202,{f=4,loc=47,lvl=8}),
-s(55,200,{f=4,loc=42,lvl=8}),
-s(1356,3606,{f=4,loc=45,lvl=3}),
-s(749,2367,{f=4,loc=47,lvl=3}),
-s(1357,3607,{f=4,loc=43,lvl=3}),
-s(750,2369,{f=4,loc=44,lvl=3}),
-s(748,2366,{f=4,loc=46,lvl=3}),
-s(747,2364,{f=4,loc=42,lvl=3}),
 s(31,55,{awp=100005,f=4,loc=47}),
 s(8244,20895,{awp=100005,f=4,loc=47}),
 s(263,1395,{awp=100005,f=4,loc=46}),
@@ -4922,7 +5153,7 @@ s(28621,57928,{b=1,f=21,lvl=32}),
 s(28814,58195,{f=7,loc=47,lvl=32}),
 s(28773,58124,{b=1,f=6,loc=41,lvl=32})}}),
 n(3319,{coords={
-[85]={{45.6,77.8}}},r=1,sym={{"select","itemID",17187,847,1845,849,1846,850,848,2445,2398,2399,2401,2402,2403,2400,17185,17188,1853,287,1852,718,286,285,1202,2376}},g={
+[85]={{45.6,77.8}}},r=1,sym={{"select","symselector",26,27,31},{"pop"},{"select","itemID",17187,2445,17185,17188,1202,2376}},g={
 s(43,129,{awp=100005,f=6,loc=47}),
 s(47,147,{awp=100005,f=6,loc=46}),
 s(28823,58232,{awp=100005,f=6,loc=42}),
@@ -5036,7 +5267,7 @@ s(32516,64909,{b=1,f=3,lvl=15,minReputation={76,42000},r=1}),
 s(32517,64910,{b=1,f=3,lvl=15,minReputation={76,42000},r=1}),
 s(32515,64908,{b=1,f=3,lvl=15,minReputation={76,42000},r=1})}}),
 n(12794,{coords={
-[85]={{38.6,72.8}}},r=1,sym={{"select","symselector",6},{"find","headerID",-101},{"pop"}}}),
+[85]={{38.6,72.8}}},r=1,sym={{"select","symselector",34},{"find","headerID",-101},{"pop"}}}),
 n(46708,{awp=40001,coords={
 [85]={{56.6,61.2}}},r=1,g={
 r(25954,{itemID=21219,requireSkill=185,skillID=2548}),
@@ -5098,70 +5329,18 @@ n(133127,{awp=70305,coords={
 r(23066,{isLimited=1,itemID=18647,requireSkill=202,skillID=2506}),
 r(28327,{awp=20300,b=1,isLimited=1,itemID=22729,requireSkill=202,skillID=2506})}}),
 n(3315,{coords={
-[85]={{60.8,59.6}}},r=1,g={
+[85]={{60.8,59.6}}},r=1,sym={{"select","symselector",17,6,9,20,10,22},{"pop"}},g={
 s(894,2617,{f=4,loc=42,lvl=14}),
 s(892,2615,{f=4,loc=42,lvl=11}),
-s(620,2142,{f=5,loc=45,lvl=10}),
-s(621,2143,{f=5,loc=47,lvl=10}),
-s(622,2144,{f=5,loc=43,lvl=10}),
-s(623,2145,{f=5,loc=44,lvl=10}),
-s(624,2146,{f=5,loc=46,lvl=10}),
-s(619,2141,{f=5,loc=42,lvl=10}),
 s(890,2613,{f=4,loc=42,lvl=4}),
-s(799,2435,{f=4,loc=42,lvl=20}),
-s(1340,3587,{f=4,loc=45,lvl=20}),
-s(801,2438,{f=4,loc=47,lvl=20}),
-s(1341,3588,{f=4,loc=43,lvl=20}),
-s(802,2440,{f=4,loc=44,lvl=20}),
-s(1468,3892,{f=2,loc=40,lvl=20}),
-s(800,2437,{f=4,loc=46,lvl=20}),
-s(635,2160,{f=4,loc=42,lvl=10}),
-s(1344,3591,{f=4,loc=45,lvl=10}),
-s(632,2156,{f=4,loc=47,lvl=10}),
-s(1345,3592,{f=4,loc=43,lvl=10}),
-s(633,2158,{f=4,loc=44,lvl=10}),
-s(634,2159,{f=4,loc=46,lvl=10}),
 s(4379,12255,{f=4,isLimited=1,loc=46,lvl=18}),
 s(889,2612,{f=4,loc=42,lvl=2}),
-s(814,2471,{f=5,loc=45,lvl=20}),
-s(816,2473,{f=5,loc=47,lvl=20}),
-s(817,2474,{f=5,loc=43,lvl=20}),
-s(1469,3893,{f=5,loc=40,lvl=20}),
-s(818,2475,{f=5,loc=44,lvl=20}),
-s(815,2472,{f=5,loc=46,lvl=20}),
-s(813,2470,{f=5,loc=42,lvl=20}),
 s(891,2614,{f=4,loc=42,lvl=6}),
-s(1346,3593,{f=4,loc=45,lvl=14}),
-s(797,2432,{f=4,loc=47,lvl=14}),
-s(1347,3594,{f=4,loc=43,lvl=14}),
-s(798,2434,{f=4,loc=44,lvl=14}),
-s(1465,3889,{f=2,loc=40,lvl=14}),
-s(796,2431,{f=4,loc=46,lvl=14}),
-s(795,2429,{f=4,loc=42,lvl=14}),
 s(893,2616,{f=4,loc=42,lvl=9}),
 s(895,2618,{f=4,loc=42,lvl=20}),
-s(808,2464,{f=5,loc=45,lvl=14}),
-s(810,2467,{f=5,loc=47,lvl=14}),
-s(811,2468,{f=5,loc=43,lvl=14}),
-s(807,2463,{f=5,loc=42,lvl=14}),
-s(812,2469,{f=5,loc=44,lvl=14}),
-s(1466,3890,{f=5,loc=40,lvl=14}),
-s(809,2465,{f=5,loc=46,lvl=14})}}),
+s(807,2463,{f=5,loc=42,lvl=14})}}),
 n(5812,{coords={
-[85]={{75.8,35.2}}},r=1,g={
-s(785,2419,{f=6,loc=45,lvl=14}),
-s(786,2420,{f=6,loc=47,lvl=14}),
-s(787,2421,{f=6,loc=43,lvl=14}),
-s(788,2422,{f=6,loc=44,lvl=14}),
-s(1467,3891,{f=6,loc=40,lvl=14}),
-s(784,2418,{f=6,loc=46,lvl=14}),
-s(783,2417,{f=6,loc=42,lvl=14}),
-s(117,847,{f=6,loc=42,lvl=6}),
-s(467,1845,{f=6,loc=45,lvl=6}),
-s(119,849,{f=6,loc=47,lvl=6}),
-s(468,1846,{f=6,loc=43,lvl=6}),
-s(120,850,{f=6,loc=44,lvl=6}),
-s(118,848,{f=6,loc=46,lvl=6}),
+[85]={{75.8,35.2}}},r=1,sym={{"select","symselector",24,26,28,29,31},{"pop"}},g={
 s(806,2451,{f=8,lvl=20}),
 s(31311,62260,{f=6,loc=45,lvl=20}),
 s(31312,62261,{f=6,loc=47,lvl=20}),
@@ -5179,27 +5358,9 @@ s(31310,62259,{f=7,loc=40,lvl=20}),
 s(31309,62258,{f=7,loc=46,lvl=20}),
 s(805,2448,{f=8,lvl=14}),
 s(804,2446,{f=8,lvl=10}),
-s(770,2392,{f=6,loc=42,lvl=3}),
-s(771,2393,{f=6,loc=45,lvl=3}),
-s(773,2395,{f=6,loc=47,lvl=3}),
-s(774,2396,{f=6,loc=43,lvl=3}),
-s(775,2397,{f=6,loc=44,lvl=3}),
-s(772,2394,{f=6,loc=46,lvl=3}),
 s(7105,17189,{f=8,lvl=13}),
 s(7106,17190,{f=8,lvl=18}),
-s(626,2148,{f=6,loc=45,lvl=10}),
-s(627,2149,{f=6,loc=47,lvl=10}),
-s(628,2150,{f=6,loc=43,lvl=10}),
-s(629,2151,{f=6,loc=44,lvl=10}),
-s(630,2152,{f=6,loc=46,lvl=10}),
-s(631,2153,{f=6,loc=42,lvl=10}),
-s(7108,17192,{f=8,lvl=9}),
-s(472,1853,{f=6,loc=45,lvl=8}),
-s(67,287,{f=6,loc=47,lvl=8}),
-s(471,1852,{f=6,loc=43,lvl=8}),
-s(72,718,{f=6,loc=44,lvl=8}),
-s(66,286,{f=6,loc=46,lvl=8}),
-s(65,285,{f=6,loc=42,lvl=8})}}),(function(t)if _.RaceIndex==26 then	t.minReputation=nil end	return t end)(
+s(7108,17192,{f=8,lvl=9})}}),(function(t)if _.RaceIndex==26 then	t.minReputation=nil end	return t end)(
 n(66022,{awp=50004,coords={
 [85]={{69.8,41}}},minReputation={1352,42000},r=1,g={
 mnt(127286,{b=1,itemID=91008,lvl=10,races={25,26}}),
@@ -5368,9 +5529,9 @@ r(30341,{isLimited=1,itemID=23811,requireSkill=202,skillID=2505})}}),
 n(221817,{awp=100207,coords={
 [103]={{56.6,81.8}}},r=2,sym={{"select","itemID",208684,208755,208683,208677,208662,206195,208685,208688,208686}}}),
 n(16716,{coords={
-[103]={{71.5,91.7}}},r=2,sym={{"select","itemID",16059,3428,16060,837,3589,3590,839,838,840,3602,3603,793,794,792,795,3597,3598,203,201,202,200}}}),
+[103]={{71.5,91.7}}},r=2,sym={{"select","symselector",7,8,12},{"pop"},{"select","itemID",16059,3428,16060}}}),
 n(16753,{coords={
-[103]={{67.6,96}}},r=2,sym={{"select","itemID",2424,2426,2427,2428,3894,2425,2423,2451,17190,8094,8088,8089,8090,8091,8092,8093}}}),
+[103]={{67.6,96}}},r=2,sym={{"select","symselector",25,33},{"pop"},{"select","itemID",2451,17190}}}),
 n(16748,{coords={
 [103]={{66.6,73.7}}},r=2,sym={{"sub","common_vendor",5565}},g={
 r(32482,{isLimited=1,itemID=25726,requireSkill=165,skillID=2531}),
@@ -5385,7 +5546,7 @@ s(22001,45580,{awp=30100,b=1,f=9,r=2,spellID=93811}),
 s(32497,64889,{b=1,f=3,lvl=15,minReputation={930,42000},r=2}),
 s(32499,64891,{b=1,f=3,lvl=15,minReputation={930,42000},r=2})}}),
 n(16747,{coords={
-[103]={{70.6,92.2}}},r=2,sym={{"select","itemID",236,1849,238,1850,239,237,1839,796,1840,797,798,799,1843,843,1844,844,846,845}}}),
+[103]={{70.6,92.2}}},r=2,sym={{"select","symselector",18,21,23},{"pop"}}}),
 n(16751,{coords={
 [103]={{59.9,88.6}}},r=2,sym={{"sub","common_vendor",4256}}}),
 n(16735,{coords={
@@ -5423,7 +5584,7 @@ n(16762,{coords={
 n(16714,{coords={
 [103]={{69.8,89.4}}},r=2,sym={{"select","itemID",926,2025,2520,1198,2029,851,922,927,2024,2528,852,2207,2209,923,2526,2208,2534,2027,1196}}}),
 n(16750,{coords={
-[103]={{67.6,94.6}}},r=2,sym={{"select","itemID",847,1845,849,1846,850,848,2392,2393,2395,2396,2397,2394,1853,287,1852,718,286,285}}})}),
+[103]={{67.6,94.6}}},r=2,sym={{"select","symselector",26,28,31},{"pop"}}})}),
 h(-43,{awp=50004,pb=1,g={
 crit(19848,{achID=6584,id=4,pb=1})}}),
 h(-12,{awp=30002,g={
@@ -5596,7 +5757,7 @@ s(93213,156986,{awp=70305,b=1,f=23}),
 i(57793,{b=1,f=113})}})}),
 h(-58,{
 n(8359,{coords={
-[88]={{45.6,55.8}}},r=1,sym={{"select","itemID",236,1849,238,1850,239,237,1843,843,1844,844,846,845}}}),
+[88]={{45.6,55.8}}},r=1,sym={{"select","symselector",18,23},{"pop"}}}),
 n(50483,{awp=40003,coords={
 [88]={{47.05,50.23}}},r=1,g={
 i(167860,{awp=80200,b=1,minReputation={81,0},races={6},spellID=294378}),
@@ -5610,11 +5771,11 @@ n(3019,{coords={
 [88]={{53.8,57.2}}},r=1,sym={{"select","itemID",926,2025,2523,2029,2522,927,2530,2531,853,12249,1196,37}},g={
 s(4373,12249,{f=22,isLimited=1,lvl=12})}}),
 n(8360,{coords={
-[88]={{45.2,56.6}}},r=1,sym={{"select","itemID",17187,847,1845,849,1846,850,848,2445,17188,1853,287,1852,718,286,285,1202}}}),
+[88]={{45.2,56.6}}},r=1,sym={{"select","symselector",26,31},{"pop"},{"select","itemID",17187,2445,17188,1202}}}),
 n(3020,{coords={
 [88]={{58.2,52}}},r=1,sym={{"select","itemID",925,1197,2030,2028,928,852,924,20981,854,2026}}}),
 n(3095,{coords={
-[88]={{42.8,44.6}}},r=1,sym={{"select","itemID",2419,2420,2421,2422,3891,2418,2417,2451,62260,62261,62262,62266,62263,62264,62265,62253,62254,62255,62256,62257,62259,62258,2448,2446,17189,17190,2148,2149,2150,2151,2152,2153,17192}}}),
+[88]={{42.8,44.6}}},r=1,sym={{"select","symselector",24,29},{"pop"},{"select","itemID",2451,62260,62261,62262,62266,62263,62264,62265,62253,62254,62255,62256,62257,62259,62258,2448,2446,17189,17190,17192}}}),
 n(3003,{coords={
 [88]={{41.4,53.2}}},r=1,g={
 i(4541,{f=55,lvl=3,spellID=1291822}),
@@ -5624,12 +5785,12 @@ i(4544,{f=55,lvl=11,spellID=1291822}),
 i(4601,{f=55,lvl=15,spellID=1291822}),
 i(4540,{f=55,spellID=1291822})}}),
 n(3093,{coords={
-[88]={{42.4,43.2}}},r=1,sym={{"select","itemID",2371,2373,2374,2375,2370,2372,236,1849,238,1850,239,237,1843,843,1844,844,846,845}}}),
+[88]={{42.4,43.2}}},r=1,sym={{"select","symselector",15,18,23},{"pop"},{"select","itemID",2370}}}),
 n(8401,{coords={
 [88]={{62.2,58.6}}},r=1,g={
 p(70,{itemID=10394,npcID=14421,spellID=10709})}}),
 n(8358,{coords={
-[88]={{45.6,56.7}}},r=1,sym={{"select","itemID",16059,3428,16060,837,3589,3590,839,838,840,3597,3598,203,201,202,200}}}),
+[88]={{45.6,56.7}}},r=1,sym={{"select","symselector",7,12},{"pop"},{"select","itemID",16059,3428,16060}}}),
 n(3018,{coords={
 [88]={{55.6,56.6}}},r=1,sym={{"select","itemID",3024,2511,3023,2509}},g={
 s(835,2510,{f=31})}}),
@@ -5723,13 +5884,7 @@ n(3022,{coords={
 n(3023,{coords={
 [88]={{51.8,54.6}}},r=1,sym={{"select","itemID",6526,6523,6525,6524}}}),
 n(3092,{coords={
-[88]={{43.4,43.8}}},r=1,sym={{"select","itemID",2617,2615,2613,2435,3587,2438,3588,2440,3892,2437,837,3589,3590,839,838,840,2160,3591,2156,3592,2158,2159,2612,2614,3593,2432,3594,2434,3889,2431,2429,2616,2618,3597,3598,203,201,202,200}},g={
-s(1354,3602,{f=4,loc=45,lvl=3}),
-s(1355,3603,{f=4,loc=43,lvl=3}),
-s(92,793,{f=4,loc=44,lvl=3}),
-s(93,794,{f=4,loc=46,lvl=3}),
-s(91,792,{f=4,loc=47,lvl=3}),
-s(94,795,{f=4,loc=42,lvl=3})}}),
+[88]={{43.4,43.8}}},r=1,sym={{"select","symselector",6,7,8,9,10,12},{"pop"},{"select","itemID",2617,2615,2613,2612,2614,2616,2618}}}),
 n(3016,{coords={
 [88]={{49.1,34.2}}},r=1,sym={{"select","itemID",4498,4497,4496}}}),
 n(2999,{coords={
@@ -5828,7 +5983,7 @@ fp(58,{coords={
 [63]={{11.2,34.4}}},crs={11901},r=1})}),
 h(-43,{awp=50004,pb=1,g={
 n(66136,{coords={
-[63]={{20.2,29.6}}},description="This pet tamer is Horde only.\n\nAnalynn's pets are level 5 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",pb=1,petBattleLvl=5,r=1,g={
+[63]={{20.2,29.6}}},pb=1,petBattleLvl=5,r=1,g={
 q(31854,{isDaily=1,pb=1,r=1,sourceAchievements={6603},g={
 crit(23456,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21404,{achID=6602,id=3,pb=1,r=1}),
@@ -8984,7 +9139,7 @@ fp(369,{awp=40003,coords={
 [66]={{70.7,32.9}}},crs={35556}})}),
 h(-43,{awp=50004,pb=1,g={
 n(66372,{coords={
-[66]={{57.2,45.8}}},description="This pet tamer is Horde only.\n\nMerda's pets are level 9 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",pb=1,petBattleLvl=9,r=1,g={
+[66]={{57.2,45.8}}},pb=1,petBattleLvl=9,r=1,g={
 q(31872,{isDaily=1,pb=1,r=1,sourceAchievements={6602},g={
 crit(23459,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21406,{achID=6602,id=5,pb=1,r=1}),
@@ -9960,7 +10115,7 @@ fp(536,{coords={
 [1]={{55.4,73.4}}},crs={41142},r=1})}}),
 h(-43,{awp=50004,pb=1,g={
 n(66126,{coords={
-[1]={{43.9,28.9}}},description="This pet tamer is Horde only.\n\nZunta's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.",pb=1,petBattleLvl=2,r=1,g={
+[1]={{43.9,28.9}}},pb=1,petBattleLvl=2,r=1,g={
 q(31818,{isDaily=1,pb=1,r=1,sourceAchievements={6602},g={
 crit(23454,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21402,{achID=6602,id=1,pb=1,r=1}),
@@ -10434,7 +10589,7 @@ fp(32,{coords={
 [70]={{67.5,51.3}}},crs={4321},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(66436,{coords={
-[70]={{53.8,74.8}}},description="This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGrazzle's pets are level 14 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",pb=1,petBattleLvl=14,g={
+[70]={{53.8,74.8}}},description="Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.",pb=1,petBattleLvl=14,g={
 q(31905,{isDaily=1,pb=1,r=1,sourceAchievements={6602},g={
 crit(23461,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21410,{achID=6602,id=9,pb=1,r=1}),
@@ -11342,7 +11497,7 @@ fp(595,{awp=40003,coords={
 [77]={{44.2,61.8}}},crs={43079}})}),
 h(-43,{awp=50004,pb=1,g={
 n(66442,{coords={
-[77]={{40,56.6}}},description="This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nZoltan's pets are level 16 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",pb=1,petBattleLvl=16,g={
+[77]={{40,56.6}}},pb=1,petBattleLvl=16,g={
 q(31907,{isDaily=1,pb=1,r=1,sourceAchievements={6602},g={
 crit(23463,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21411,{achID=6602,id=10,pb=1,r=1}),
@@ -12022,7 +12177,7 @@ fp(567,{awp=40003,coords={
 [69]={{57.1,53.9}}},crs={41580},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(66352,{coords={
-[69]={{59.6,49.6}}},description="This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGluk's pets are level 13 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",pb=1,petBattleLvl=13,g={
+[69]={{59.6,49.6}}},pb=1,petBattleLvl=13,g={
 q(31871,{isDaily=1,pb=1,r=1,sourceAchievements={6602},g={
 crit(23458,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21407,{achID=6602,id=6,pb=1,r=1}),
@@ -12721,7 +12876,7 @@ fp(62,{c={11},coords={
 [80]={{44.4,45.6}}},crs={11798},r=1})}),
 h(-43,{awp=50004,pb=1,g={
 n(66412,{coords={
-[80]={{46,60.6}}},description="This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nElena's pets are level 17 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",pb=1,petBattleLvl=17,g={
+[80]={{46,60.6}}},pb=1,petBattleLvl=17,g={
 q(31908,{isDaily=1,pb=1,r=1,sourceAchievements={6602},g={
 crit(23466,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21408,{achID=6602,id=7,pb=1,r=1}),
@@ -14384,7 +14539,7 @@ i(142447,{b=1,f=55,pb=1,spellID=231015,g={
 p(1984,{itemID=142448,npcID=116080,pb=1,spellID=231017}),
 p(381,{itemID=89587,npcID=61086,pb=1,spellID=118414})}})}})}}),
 n(66135,{coords={
-[10]={{58.6,53}}},description="This pet tamer is Horde only.\n\nDagra's pets are level 3 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",pb=1,petBattleLvl=3,r=1,g={
+[10]={{58.6,53}}},pb=1,petBattleLvl=3,r=1,g={
 q(31819,{isDaily=1,pb=1,r=1,sourceAchievements={6602},g={
 crit(23455,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21403,{achID=6602,id=2,pb=1,r=1}),
@@ -16469,7 +16624,7 @@ fp(77,{awp=40006,coords={
 [199]={{41.6,47.6}}},crs={52060},r=1})}}),
 h(-43,{awp=50004,pb=1,g={
 n(66422,{coords={
-[199]={{39.6,79.2}}},description="This pet tamer is Horde only.\n\nCassandra's pets are level 11 of the following consecutive pet classes:\nMechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.",pb=1,petBattleLvl=11,r=1,g={
+[199]={{39.6,79.2}}},pb=1,petBattleLvl=11,r=1,g={
 q(31904,{isDaily=1,pb=1,r=1,sourceAchievements={6602},g={
 crit(23460,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21409,{achID=6602,id=8,pb=1,r=1}),
@@ -17127,7 +17282,7 @@ fp(361,{awp=40003,coords={
 [65]={{58.8,54.2}}},crs={35137},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(66137,{coords={
-[65]={{59.6,71.6}}},description="This pet tamer is Horde only.\n\nZonya's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",pb=1,petBattleLvl=7,r=1,g={
+[65]={{59.6,71.6}}},pb=1,petBattleLvl=7,r=1,g={
 q(31862,{isDaily=1,pb=1,r=1,sourceAchievements={6602},g={
 crit(23457,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21405,{achID=6602,id=4,pb=1,r=1}),
@@ -18956,7 +19111,7 @@ fp(30,{coords={
 [64]={{11.2,11.6}}},crs={44399},r=1})}),
 h(-43,{awp=50004,pb=1,g={
 n(66452,{coords={
-[64]={{31.8,32.8}}},description="This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nKela's pets are level 15 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",pb=1,petBattleLvl=15,g={
+[64]={{31.8,32.8}}},pb=1,petBattleLvl=15,g={
 q(31906,{isDaily=1,pb=1,r=1,sourceAchievements={6602},g={
 crit(23462,{achID=8348,awp=50300,id=9,pb=1,r=1})}}),
 crit(21416,{achID=6602,id=11,pb=1,r=1}),
@@ -19669,7 +19824,9 @@ n(41452,{awp=40003,coords={
 s(4162,11305,{f=32,isLimited=1,lvl=13}),
 s(4161,11304,{c={3},f=32,isLimited=1,lvl=7})}}),
 n(9551,{coords={
-[64]={{45,50.6}}},r=1,rwp=40003,u=2})}),
+[64]={{45,50.6}}},r=1,rwp=40003,u=2}),
+n(3053,{coords={
+[64]={{80.4,76.8}}},rwp=40003,u=2})}),
 h(-63,{
 s(312,1493,{awp=100107,coords={
 [64]={{86.4,49},{87.6,52},{88.6,46.8},{90.2,54.4}}},crs={40062},f=25,lvl=10}),
@@ -20912,7 +21069,7 @@ fp(53,{coords={
 [83]={{58.8,48.2}}},crs={11139},r=1})}),
 h(-43,{awp=50004,pb=1,g={
 n(66466,{coords={
-[83]={{65.6,64.6}}},description="Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Blighted Squarrel and Turkey.",pb=1,petBattleLvl=19,g={
+[83]={{65.6,64.6}}},pb=1,petBattleLvl=19,g={
 q(31909,{isDaily=1,pb=1,sourceAchievements={6602},g={
 i(89125,{b=1,f=55,pb=1}),
 crit(23453,{achID=8348,awp=50300,id=3,pb=1})}}),
@@ -21840,7 +21997,7 @@ n(5120,{coords={
 n(5123,{coords={
 [87]={{72.8,64.8}}},r=2,sym={{"select","itemID",3024,3023,2509,2510}}}),
 n(5106,{coords={
-[87]={{32.6,58.2}}},r=2,sym={{"select","itemID",2392,2393,2395,2396,2397,2394}},g={
+[87]={{32.6,58.2}}},r=2,sym={{"select","symselector",28},{"pop"}},g={
 s(201,1201,{f=8,lvl=3,r=2}),
 s(7102,17186,{f=8,lvl=2,r=2})}}),
 n(5163,{coords={
@@ -21870,7 +22027,7 @@ de(8982,{cost=4500000,itemID=252010,minReputation={47,9000},spellID=1253922}),
 de(2243,{cost=6000000,itemID=246426,minReputation={47,9000},spellID=1242110}),
 de(11160,{cost=3500000,itemID=256425,spellID=1260360})}}),
 n(5125,{coords={
-[87]={{54.8,88.6}}},r=2,sym={{"select","itemID",2419,2420,2421,2422,3891,2418,2417,2448,17189,2148,2149,2150,2151,2152,2153,1853,287,1852,718,286,285}}}),
+[87]={{54.8,88.6}}},r=2,sym={{"select","symselector",24,29,31},{"pop"},{"select","itemID",2448,17189}}}),
 n(5102,{coords={
 [87]={{36.6,66.6}}},r=2,sym={{"select","itemID",2492,2493}},g={
 s(195,1194,{f=26}),
@@ -21929,7 +22086,7 @@ n(253232,{awp=110207,coords={
 de(2228,{cost=7000000,itemID=246411,spellID=1242065}),
 de(2229,{cost=4500000,itemID=246412,spellID=1242066})}}),
 n(5155,{coords={
-[87]={{39.2,5}}},r=2,sym={{"select","itemID",2435,3587,2438,3588,2440,3892,2437,3593,2432,3594,2434,3889,2431,2429,3597,3598,203,201,202,200}}}),
+[87]={{39.2,5}}},r=2,sym={{"select","symselector",6,10,12},{"pop"}}}),
 n(5121,{coords={
 [87]={{61.4,88.4}}},r=2,sym={{"select","itemID",2527,925,1197,2030,2028,928,852,924,854,2026,2525,2533,2535}},g={
 s(853,2532,{f=23,lvl=18}),
@@ -22024,7 +22181,7 @@ heir(122392,{cost=5000000,f=8,sourceID=69219})})}}),
 n(52584,{awp=40100,coords={
 [87]={{50.6,27}}},r=2,sym={{"sub","common_recipes_vendor",50480}}}),
 n(5129,{coords={
-[87]={{54.6,88.2}}},r=2,sym={{"select","itemID",2435,3587,2438,3588,2440,3892,2437,2471,2473,2474,3893,2475,2472,2470,2464,2467,2468,2463,2469,3890,2465}}}),
+[87]={{54.6,88.2}}},r=2,sym={{"select","symselector",6,20,22},{"pop"},{"select","itemID",2463}}}),
 n(5049,{coords={
 [87]={{36.4,84.4}}},r=2,sym={{"sub","common_vendor",5193}}}),
 n(5156,{coords={
@@ -22037,7 +22194,7 @@ s(21999,45578,{awp=30100,b=1,f=9,r=2,spellID=93821}),
 s(32503,64895,{b=1,f=3,lvl=15,minReputation={54,42000},r=2}),
 s(32505,64897,{b=1,f=3,lvl=15,minReputation={54,42000},r=2})}}),
 n(5107,{coords={
-[87]={{32,58.8}}},r=2,sym={{"select","itemID",847,1845,849,1846,850,848}},g={
+[87]={{32,58.8}}},r=2,sym={{"select","symselector",26},{"pop"}},g={
 s(7103,17187,{f=8,lvl=4}),
 s(202,1202,{f=8,lvl=6})}}),
 n(5109,{coords={
@@ -22048,7 +22205,7 @@ i(4544,{f=55,lvl=11,spellID=1291822}),
 i(4601,{f=55,lvl=15,spellID=1291822}),
 i(4540,{f=55,spellID=1291822})}}),
 n(5126,{coords={
-[87]={{55,88.4}}},r=2,sym={{"select","itemID",2424,2426,2427,2428,3894,2425,2423,2451,2448,2446,2445,17189,17190,8094,8088,8089,8090,8091,8092,8093,17192,17188}}}),
+[87]={{55,88.4}}},r=2,sym={{"select","symselector",25,33},{"pop"},{"select","itemID",2451,2448,2446,2445,17189,17190,17192,17188}}}),
 n(8681,{coords={
 [87]={{43,29.2}}},r=2,g={
 r(12075,{isLimited=1,itemID=10314,requireSkill=197,skillID=2540}),
@@ -22073,7 +22230,7 @@ r(75304,{awp=40003,b=1,cost={{"i",53643,8}},itemID=54596,requireSkill=197,skillI
 r(75302,{awp=40003,b=1,cost={{"i",53643,8}},itemID=54597,requireSkill=197,skillID=2537}),
 r(75303,{awp=40003,b=1,cost={{"i",53643,8}},itemID=54598,requireSkill=197,skillID=2537})}}),
 n(5108,{coords={
-[87]={{32.6,58}}},r=2,sym={{"select","itemID",16059,3428,16060,837,3589,3590,839,838,840,1843,843,1844,844,846,845}}}),
+[87]={{32.6,58}}},r=2,sym={{"select","symselector",7,23},{"pop"},{"select","itemID",16059,3428,16060}}}),
 n(5122,{coords={
 [87]={{71.6,66.2}}},r=2,sym={{"select","itemID",3027,3026}},g={
 s(4160,11303,{f=32,isLimited=1,lvl=5}),
@@ -22209,7 +22366,7 @@ mnt(34767,{c={2},races={10},u=2}),
 crit(8907,{achID=2358,awp=30100,id=3,u=2})}})}),
 h(-58,{
 n(16631,{coords={
-[110]={{65.2,47.2}}},r=1,sym={{"select","itemID",16059,3428,16060,837,3589,3590,839,838,840}}}),
+[110]={{65.2,47.2}}},r=1,sym={{"select","symselector",7},{"pop"},{"select","itemID",16059,3428,16060}}}),
 n(16619,{coords={
 [110]={{86,36.6}}},r=1,sym={{"select","itemID",3027,2507,3026,2504}},g={
 s(831,2506,{f=32,lvl=2}),
@@ -22239,7 +22396,7 @@ r(25619,{isLimited=1,itemID=20975,requireSkill=755,skillID=2524})}}),
 n(17630,{coords={
 [110]={{67.85,72.9}}},r=1}),
 n(16625,{coords={
-[110]={{61.2,86.4}}},r=1,sym={{"select","itemID",847,1845,849,1846,850,848,2398,2399,2401,2402,2403,2400,1853,287,1852,718,286,285}}}),
+[110]={{61.2,86.4}}},r=1,sym={{"select","symselector",26,27,31},{"pop"}}}),
 n(16610,{coords={
 [110]={{78.6,84.6}}},r=1,sym={{"sub","common_vendor",5188}}}),
 n(16635,{coords={
@@ -22254,7 +22411,7 @@ n(16641,{coords={
 r(28543,{isLimited=1,itemID=22900,requireSkill=171,skillID=2484}),
 r(29688,{isLimited=1,itemID=23574,requireSkill=171,skillID=2484})}}),
 n(16691,{coords={
-[110]={{55.6,62.6}}},r=1,sym={{"select","itemID",2371,2373,2374,2375,2370,2372,236,1849,238,1850,239,237,1843,843,1844,844,846,845}}}),
+[110]={{55.6,62.6}}},r=1,sym={{"select","symselector",15,18,23},{"pop"},{"select","itemID",2370}}}),
 n(16677,{coords={
 [110]={{69.6,71.2}}},r=1,g={
 r(25954,{itemID=21219,requireSkill=185,skillID=2548}),
@@ -22262,21 +22419,7 @@ r(25704,{itemID=21099,requireSkill=185,skillID=2548})}}),
 n(16678,{coords={
 [110]={{52.6,64.6}}},r=1,sym={{"select","itemID",2520,2528,2521,2526,2534,2529}}}),
 n(16626,{coords={
-[110]={{60.8,86.6}}},r=1,sym={{"select","itemID",2451,17190}},g={
-s(790,2424,{f=6,loc=45,lvl=20}),
-s(792,2426,{f=6,loc=47,lvl=20}),
-s(793,2427,{f=6,loc=43,lvl=20}),
-s(794,2428,{f=6,loc=44,lvl=20}),
-s(1470,3894,{f=6,loc=40,lvl=20}),
-s(791,2425,{f=6,loc=46,lvl=20}),
-s(789,2423,{f=6,loc=42,lvl=20}),
-s(3027,8094,{f=7,loc=42,lvl=20}),
-s(3021,8088,{f=7,loc=45,lvl=20}),
-s(3022,8089,{f=7,loc=47,lvl=20}),
-s(3023,8090,{f=7,loc=43,lvl=20}),
-s(3024,8091,{f=7,loc=44,lvl=20}),
-s(3025,8092,{f=7,loc=40,lvl=20}),
-s(3026,8093,{f=7,loc=46,lvl=20})}}),
+[110]={{60.8,86.6}}},r=1,sym={{"select","symselector",25,33},{"pop"},{"select","itemID",2451,17190}}}),
 n(16442,{coords={
 [110]={{79.5,58.5}}},r=1}),
 n(16637,{coords={
@@ -22284,7 +22427,7 @@ n(16637,{coords={
 s(853,2532,{f=23,lvl=18}),
 s(845,2524,{f=23,lvl=13})}}),
 n(16693,{coords={
-[110]={{60.6,86.6}}},r=1,sym={{"select","itemID",17187,2446,2445,2398,2399,2401,2402,2403,2400,17192,17188,1202}},g={
+[110]={{60.6,86.6}}},r=1,sym={{"select","symselector",27},{"pop"},{"select","itemID",17187,2446,2445,17192,17188,1202}},g={
 s(7099,17183,{f=8}),
 s(200,1200,{f=8}),
 s(7101,17185,{f=8,lvl=2,r=1}),
@@ -22307,7 +22450,7 @@ n(16636,{coords={
 n(16664,{coords={
 [110]={{78.45,42.55}}},r=1,sym={{"sub","common_vendor",4599}}}),
 n(16623,{coords={
-[110]={{64.8,48.6}}},r=1,sym={{"select","itemID",16059,3428,16060,837,3589,3590,839,838,840,3597,3598,203,201,202,200,3606,2367,3607,2369,2366,2364}}})}),
+[110]={{64.8,48.6}}},r=1,sym={{"select","symselector",7,12,14},{"pop"},{"select","itemID",16059,3428,16060}}})}),
 o(207325,{awp=40001,coords={
 [110]={{62.5,60.5}}},r=1,skipFill=1,sym={{"select","questID",49851,29390,29388,36499,29612,29611,43926,28790,29157,49817,49852,28572,28493,28496,28580,28711,39198,28671,28667,27722,28548,39203,49543,28554,28577,28542,28510,49545,39206,28560,49546,28571,49533,49537,49538,49540,49541,27721,49549,39196,39201,28494,28688,28705,28581,49532,49535,28527,28568,28549,49548,49536,28532,28677,49547,28509,39182,28704,28574,28504,49542,28717,28557,28526,49539,27718,28575,28545,39180,49534}}}),
 h(-43,{awp=50004,pb=1,g={
@@ -24546,7 +24689,7 @@ n(55285,{awp=80001,coords={
 mnt(103195,{awp=40300,b=1,itemID=73838,lvl=10,r=2,u=2}),
 mnt(103196,{awp=40300,b=1,itemID=73839,lvl=10,r=2,u=2})}})),
 n(1349,{coords={
-[84]={{53.6,57.8}}},r=2,sym={{"select","itemID",2419,2420,2421,2422,3891,2418,2417,2424,2426,2427,2428,3894,2425,2423,2451,2448,2446,17189,17190,8094,8088,8089,8090,8091,8092,8093,2148,2149,2150,2151,2152,2153,17192}}}),
+[84]={{53.6,57.8}}},r=2,sym={{"select","symselector",24,25,33,29},{"pop"},{"select","itemID",2451,2448,2446,17189,17190,17192}}}),
 n(1302,{coords={
 [84]={{69.2,71.8}}},r=2,sym={{"select","itemID",2453,2449,3356,3357,785,3355}},g={
 s(1250,3422,{f=1}),
@@ -24627,28 +24770,10 @@ r(53924,{b=1,itemID=41573,pvp=1,requireSkill=755,skillID=2522,u=2}),
 r(53884,{b=1,itemID=41563,pvp=1,requireSkill=755,skillID=2522,u=2})}}),
 n(12782,{r=2,rwp=30002,u=2}),
 n(1291,{coords={
-[84]={{62.2,67.6}}},r=2,g={
+[84]={{62.2,67.6}}},r=2,sym={{"select","symselector",7,8,12},{"pop"}},g={
 s(6580,16059,{f=10}),
 s(1255,3428,{f=10}),
 s(6581,16060,{f=10}),
-s(109,837,{f=4,loc=42,lvl=6}),
-s(1342,3589,{f=4,loc=45,lvl=6}),
-s(1343,3590,{f=4,loc=43,lvl=6}),
-s(111,839,{f=4,loc=44,lvl=6}),
-s(110,838,{f=4,loc=46,lvl=6}),
-s(112,840,{f=4,loc=47,lvl=6}),
-s(1354,3602,{f=4,loc=45,lvl=3}),
-s(1355,3603,{f=4,loc=43,lvl=3}),
-s(92,793,{f=4,loc=44,lvl=3}),
-s(93,794,{f=4,loc=46,lvl=3}),
-s(91,792,{f=4,loc=47,lvl=3}),
-s(94,795,{f=4,loc=42,lvl=3}),
-s(1350,3597,{f=4,loc=45,lvl=8}),
-s(1351,3598,{f=4,loc=43,lvl=8}),
-s(58,203,{f=4,loc=44,lvl=8}),
-s(56,201,{f=4,loc=46,lvl=8}),
-s(57,202,{f=4,loc=47,lvl=8}),
-s(55,200,{f=4,loc=42,lvl=8}),
 s(31,55,{awp=100005,f=4,loc=47}),
 s(25769,52554,{awp=100005,f=4,loc=47}),
 s(263,1395,{awp=100005,f=4,loc=46}),
@@ -24720,47 +24845,8 @@ i(67395,{f=113}),
 i(67394,{f=113}),
 i(67387,{f=113})}}),
 n(1314,{coords={
-[84]={{53.2,81.8}}},r=2,g={
-s(620,2142,{f=5,loc=45,lvl=10}),
-s(621,2143,{f=5,loc=47,lvl=10}),
-s(622,2144,{f=5,loc=43,lvl=10}),
-s(623,2145,{f=5,loc=44,lvl=10}),
-s(624,2146,{f=5,loc=46,lvl=10}),
-s(619,2141,{f=5,loc=42,lvl=10}),
-s(799,2435,{f=4,loc=42,lvl=20}),
-s(1340,3587,{f=4,loc=45,lvl=20}),
-s(801,2438,{f=4,loc=47,lvl=20}),
-s(1341,3588,{f=4,loc=43,lvl=20}),
-s(802,2440,{f=4,loc=44,lvl=20}),
-s(1468,3892,{f=2,loc=40,lvl=20}),
-s(800,2437,{f=4,loc=46,lvl=20}),
-s(635,2160,{f=4,loc=42,lvl=10}),
-s(1344,3591,{f=4,loc=45,lvl=10}),
-s(632,2156,{f=4,loc=47,lvl=10}),
-s(1345,3592,{f=4,loc=43,lvl=10}),
-s(633,2158,{f=4,loc=44,lvl=10}),
-s(634,2159,{f=4,loc=46,lvl=10}),
-s(814,2471,{f=5,loc=45,lvl=20}),
-s(816,2473,{f=5,loc=47,lvl=20}),
-s(817,2474,{f=5,loc=43,lvl=20}),
-s(1469,3893,{f=5,loc=40,lvl=20}),
-s(818,2475,{f=5,loc=44,lvl=20}),
-s(815,2472,{f=5,loc=46,lvl=20}),
-s(813,2470,{f=5,loc=42,lvl=20}),
-s(1346,3593,{f=4,loc=45,lvl=14}),
-s(797,2432,{f=4,loc=47,lvl=14}),
-s(1347,3594,{f=4,loc=43,lvl=14}),
-s(798,2434,{f=4,loc=44,lvl=14}),
-s(1465,3889,{f=2,loc=40,lvl=14}),
-s(796,2431,{f=4,loc=46,lvl=14}),
-s(795,2429,{f=4,loc=42,lvl=14}),
-s(808,2464,{f=5,loc=45,lvl=14}),
-s(810,2467,{f=5,loc=47,lvl=14}),
-s(811,2468,{f=5,loc=43,lvl=14}),
-s(807,2463,{f=5,loc=42,lvl=14}),
-s(812,2469,{f=5,loc=44,lvl=14}),
-s(1466,3890,{f=5,loc=40,lvl=14}),
-s(809,2465,{f=5,loc=46,lvl=14})}}),
+[84]={{53.2,81.8}}},r=2,sym={{"select","symselector",17,6,9,20,10,22},{"pop"}},g={
+s(807,2463,{f=5,loc=42,lvl=14})}}),
 n(52029,{awp=40006,coords={
 [84]={{74.7,68.2}}},r=2,sym={{"sub","pvp_gear_base",4,-256,-299},{"merge"},{"pop"}}}),
 n(1286,{coords={
@@ -25420,30 +25506,12 @@ n(69974,{coords={
 n(40606,{coords={
 [84]={{74.8,67.6}}},r=2,u=2}),
 n(1295,{coords={
-[84]={{62.2,67.6}}},r=2,g={
-s(61,236,{f=5,loc=42,lvl=8}),
-s(469,1849,{f=5,loc=45,lvl=8}),
-s(63,238,{f=5,loc=47,lvl=8}),
-s(470,1850,{f=5,loc=43,lvl=8}),
-s(64,239,{f=5,loc=44,lvl=8}),
-s(62,237,{f=5,loc=46,lvl=8}),
+[84]={{62.2,67.6}}},r=2,sym={{"select","symselector",18,21,23},{"pop"}},g={
 s(26,48,{awp=100005,f=5,loc=46}),
 s(25,47,{awp=100005,f=5,loc=47}),
 s(28825,58234,{awp=100005,f=5,loc=42}),
 s(2259,6124,{awp=100005,f=5,loc=46}),
-s(2258,6123,{awp=100005,f=5,loc=42}),
-s(463,1839,{f=5,loc=45,lvl=3}),
-s(95,796,{f=5,loc=47,lvl=3}),
-s(464,1840,{f=5,loc=43,lvl=3}),
-s(96,797,{f=5,loc=44,lvl=3}),
-s(97,798,{f=5,loc=46,lvl=3}),
-s(98,799,{f=5,loc=42,lvl=3}),
-s(465,1843,{f=5,loc=45,lvl=6}),
-s(113,843,{f=5,loc=47,lvl=6}),
-s(466,1844,{f=5,loc=43,lvl=6}),
-s(114,844,{f=5,loc=44,lvl=6}),
-s(116,846,{f=5,loc=42,lvl=6}),
-s(115,845,{f=5,loc=46,lvl=6})}}),
+s(2258,6123,{awp=100005,f=5,loc=42})}}),
 n(52027,{awp=40006,coords={
 [84]={{79.4,69.7}}},r=2,rwp=60002,sym={{"select","npcID",32509},{"pop"}},u=2}),(function(t)if _.RaceIndex==4 then	t.minReputation=nil end	return t end)(
 n(4730,{awp=80001,coords={
@@ -25461,7 +25529,7 @@ toy(97921,{awp=70100,b=1}),
 i(138382,{awp=70003}),
 s(80190,138385,{awp=70003,f=10})}}),
 n(12784,{awp=20001,coords={
-[84]={{75.2,67.2}}},description="Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",r=2,sym={{"select","symselector",7},{"find","headerID",-101},{"pop"}}}),
+[84]={{75.2,67.2}}},description="Blizzard strikes again. In order to transmog these, you need to have the original title associated with the gear. However, you can still collect them even if you've never had the title.\n\nThese items will require a refresh/reload to register as collected, and it's highly recommended that you keep them in your bank/void storage for later. You'll likely randomly lose credit for them and have to re-equip them to remind the game they exist.",r=2,sym={{"select","symselector",35},{"find","headerID",-101},{"pop"}}}),
 n(12783,{coords={
 [84]={{76.2,65.6}}},pvp=1,r=2,g={
 mnt(22719,{awp=20001,b=1,cost={{"i",137642,15}},itemID=29465,lvl=10,pvp=1,r=2}),
@@ -25856,7 +25924,7 @@ mnt(127289,{b=1,itemID=91006,lvl=10,races={25,26}}),
 mnt(127290,{b=1,itemID=87800,lvl=10,races={1,2,3,4,5,6,7,8,9,10,11,22,27,28,29,30,31,32,34,35,36,37,52,70,84,85,86,91}}),
 mnt(127290,{b=1,itemID=91007,lvl=10,races={25,26}})}})),
 n(1323,{coords={
-[84]={{77,61.2}}},r=2,sym={{"select","itemID",2419,2420,2421,2422,3891,2418,2417,2424,2426,2427,2428,3894,2425,2423,2451,2448,2446,17189,17190,8094,8088,8089,8090,8091,8092,8093,2148,2149,2150,2151,2152,2153,17192}}}),
+[84]={{77,61.2}}},r=2,sym={{"select","symselector",24,25,33,29},{"pop"},{"select","itemID",2451,2448,2446,17189,17190,17192}}}),
 n(87501,{awp=60002,coords={
 [84]={{73,59.5}}},r=2,g={
 mnt(171846,{b=1,cost=1000000000,itemID=116789,lvl=10})}}),
@@ -25901,9 +25969,9 @@ n(277,{coords={
 [84]={{59.4,77.2}}},r=2,g={
 i(1941)}}),
 n(1320,{coords={
-[84]={{72,62.2}}},r=2,sym={{"select","itemID",2471,2473,2474,3893,2475,2472,2470,2464,2467,2468,2463,2469,3890,2465}}}),
+[84]={{72,62.2}}},r=2,sym={{"select","symselector",20,22},{"pop"},{"select","itemID",2463}}}),
 n(12785,{awp=20001,coords={
-[84]={{75.4,67}}},r=2,sym={{"select","symselector",7},{"pop"},{"exclude","headerID",-101}}}),
+[84]={{75.4,67}}},r=2,sym={{"select","symselector",35},{"pop"},{"exclude","headerID",-101}}}),
 n(8665,{awp=80001,coords={
 [84]={{56,3.22}}},r=2,rwp=100205,u=2,g={
 p(68,{itemID=8500,npcID=7553,spellID=10707,u=2}),
@@ -26288,7 +26356,7 @@ i(33042,{f=55,lvl=27,spellID=27089})}}),
 n(261231,{awp=120000,coords={
 [84]={{48.5,58.8}}},description="This Vendor sells additional copies of the Promotional Decor only to players that have obtained it when the Promotion was active.",r=2}),
 n(1341,{coords={
-[84]={{77.4,61.6}}},r=2,sym={{"select","itemID",2148,2149,2150,2151,2152,2153,1853,287,1852,718,286,285}}}),
+[84]={{77.4,61.6}}},r=2,sym={{"select","symselector",29,31},{"pop"}}}),
 n(1309,{coords={
 [84]={{52,83.6}}},r=2,sym={{"select","itemID",2617,2615,2613,2612,2614,2616,2618}}})})}}),
 m(90,{icon=255133,isRaid=1,lore="The Undercity is the capital city of the Forsaken undead of the Horde.\n\nFar beneath the ruined Capital City of the kingdom of Lordaeron, its royal crypts were turned into a bastion of evil and undeath. Originally intended by Prince Arthas to be the Scourge's seat of power, the budding \"Undercity\" was abandoned when Arthas was recalled to aid the Lich King in the distant Northrend. In Arthas' absence, the Dark Lady, Sylvanas Windrunner, led the rebel Forsaken to the Undercity, and claimed it for her own. Since taking up residence, the Forsaken worked to complete the Undercity's construction by dredging the twisted maze of catacombs, tombs, and dungeons that Arthas began.",maps={998},g={
@@ -26665,13 +26733,7 @@ s(6469,15810,{f=29,lvl=10})}}),
 n(4600,{coords={
 [90]={{58.4,32.6}}},r=1,sym={{"select","itemID",2520,2523,2528,2521,2531,2526,2534,2525,2533,2529}}}),
 n(5820,{coords={
-[90]={{70.6,59.6}}},r=1,sym={{"select","itemID",2142,2143,2144,2145,2146,2141,236,1849,238,1850,239,237,2471,2473,2474,3893,2475,2472,2470,2464,2467,2468,2463,2469,3890,2465,1843,843,1844,844,846,845}},g={
-s(463,1839,{f=5,loc=45,lvl=3}),
-s(95,796,{f=5,loc=47,lvl=3}),
-s(464,1840,{f=5,loc=43,lvl=3}),
-s(96,797,{f=5,loc=44,lvl=3}),
-s(97,798,{f=5,loc=46,lvl=3}),
-s(98,799,{f=5,loc=42,lvl=3})}}),
+[90]={{70.6,59.6}}},r=1,sym={{"select","symselector",17,18,20,21,22,23},{"pop"},{"select","itemID",2463}}}),
 n(4556,{coords={
 [90]={{61.4,41.2}}},r=1,sym={{"select","itemID",1194,2479,2130,2492,2139,2488,2134,2491,2480,2132,2131,2494,2490,2489,2495,2493}}}),
 n(8403,{coords={
@@ -26687,19 +26749,7 @@ n(4615,{coords={
 [90]={{54.73,48.9}}},r=1,g={
 i(22250,{description="Only select Herbalism Suppliers sells this pouch.",f=113,providers={{"n",3548},{"n",4216},{"n",4615},{"n",5138},{"n",5503},{"n",16367},{"n",46742}}})}}),
 n(4558,{coords={
-[90]={{64,38}}},r=1,sym={{"select","itemID",2371,2373,2374,2375,2370,2372,16059,3428,16060,837,3589,3590,839,838,840,1843,843,1844,844,846,845,3606,2367,3607,2369,2366,2364}},g={
-s(461,1835,{f=5,loc=45}),
-s(60,210,{f=5,loc=47}),
-s(462,1836,{f=5,loc=43}),
-s(71,714,{f=5,loc=44}),
-s(59,209,{f=5,loc=46}),
-s(39,85,{f=5,loc=42}),
-s(1348,3595,{f=4,loc=45}),
-s(54,195,{f=4,loc=47}),
-s(1349,3596,{f=4,loc=43}),
-s(70,711,{f=4,loc=44}),
-s(53,194,{f=4,loc=46}),
-s(52,193,{f=4,loc=42})}}),
+[90]={{64,38}}},r=1,sym={{"select","symselector",15,19,7,23,11,14},{"pop"},{"select","itemID",2370,16059,3428,16060}}}),
 n(4574,{coords={
 [90]={{81,30.8}}},r=1,g={
 r(7751,{itemID=6325,requireSkill=185,skillID=2548}),
@@ -26720,7 +26770,7 @@ r(12093,{isLimited=1,itemID=10326,requireSkill=197,skillID=2540}),
 r(12089,{isLimited=1,itemID=10323,requireSkill=197,skillID=2540}),
 r(12085,{isLimited=1,itemID=10321,requireSkill=197,skillID=2540})}}),
 n(5819,{coords={
-[90]={{61.6,28.4}}},r=1,sym={{"select","itemID",2419,2420,2421,2422,3891,2418,2417,2424,2426,2427,2428,3894,2425,2423,847,1845,849,1846,850,848,2451,2448,2446,2392,2393,2395,2396,2397,2394,17189,17190,8094,8088,8089,8090,8091,8092,8093,2148,2149,2150,2151,2152,2153,17192,1853,287,1852,718,286}}}),
+[90]={{61.6,28.4}}},r=1,sym={{"select","symselector",24,25,26,28,33,29},{"pop"},{"select","itemID",2451,2448,2446,17189,17190,17192,1853,287,1852,718,286}}}),
 n(4592,{coords={
 [90]={{77.2,50.2}}},r=1,sym={{"select","itemID",3027,2506,2507,2505,3026,2504}}}),
 n(4603,{coords={
@@ -26740,7 +26790,7 @@ n(4599,{coords={
 s(995,2901,{collectible=false,f=57,requireSkill=186,spellID=124349}),
 i(30746,{awp=20001,f=113,providers={{"n",3002},{"n",3358},{"n",4256},{"n",4599},{"n",5514},{"n",16664},{"n",16751},{"n",52643}}})}}),
 n(5821,{coords={
-[90]={{70.6,28.8}}},r=1,sym={{"select","itemID",2435,3587,2438,3588,2440,3892,2437,837,3589,3590,839,838,840,3602,3603,793,794,792,795,2160,3591,2156,3592,2158,2159,3593,2432,3594,2434,3889,2431,2429,3597,3598,203,201,202,200}},g={
+[90]={{70.6,28.8}}},r=1,sym={{"select","symselector",6,7,8,9,10,12},{"pop"}},g={
 s(5049,13896,{f=2,loc=42}),
 s(5051,13898,{f=2,loc=42}),
 s(5050,13897,{f=2,loc=42})}}),
@@ -26761,21 +26811,9 @@ r(25125,{itemID=20752,requireSkill=333,skillID=2494}),
 r(25124,{itemID=20758,requireSkill=333,skillID=2494}),
 r(27658,{itemID=22307,requireSkill=197,skillID=2540})}}),
 n(4559,{coords={
-[90]={{63.6,39.6}}},r=1,sym={{"select","itemID",17187,17183,1200,17185,1202,2376}},g={
-s(776,2398,{f=6,loc=42,lvl=3}),
-s(777,2399,{f=6,loc=45,lvl=3}),
-s(779,2401,{f=6,loc=47,lvl=3}),
-s(780,2402,{f=6,loc=43,lvl=3}),
-s(781,2403,{f=6,loc=44,lvl=3}),
-s(778,2400,{f=6,loc=46,lvl=3}),
-s(765,2387,{f=6,loc=45}),
-s(767,2389,{f=6,loc=47}),
-s(768,2390,{f=6,loc=43}),
-s(769,2391,{f=6,loc=44}),
-s(766,2388,{f=6,loc=46,r=1}),
-s(764,2386,{f=6,loc=42})}}),
+[90]={{63.6,39.6}}},r=1,sym={{"select","symselector",27,30},{"pop"},{"select","itemID",17187,17183,1200,17185,1202,2376}}}),
 n(4560,{coords={
-[90]={{62.8,39.6}}},r=1,sym={{"select","itemID",17187,847,1845,849,1846,850,848,1202}}}),
+[90]={{62.8,39.6}}},r=1,sym={{"select","symselector",26},{"pop"},{"select","itemID",17187,1202}}}),
 n(5754,{coords={
 [90]={{70,27.2}}},r=1,sym={{"select","itemID",5239,5210,5236,5211,5209,5347,5238,5208}}})}),
 o(207324,{awp=40001,coords={
@@ -28552,7 +28590,7 @@ fp(71,{coords={
 [36]={{72.2,65.6}}},crs={2299},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(66520,{coords={
-[36]={{25.6,47.6}}},description="This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDurin's pets are level 17 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.",pb=1,petBattleLvl=17,g={
+[36]={{25.6,47.6}}},pb=1,petBattleLvl=17,g={
 q(31914,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23451,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21603,{achID=6603,id=10,pb=1,r=2}),
@@ -29095,7 +29133,7 @@ exp(2561,{
 crit(1159,{achID=777,id=3})})}),
 h(-43,{awp=50004,pb=1,g={
 n(66522,{coords={
-[42]={{40.2,76.6}}},description="Lydia's pets are level 19 of the following consecutive pet classes:\n1. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Alpine Chipmunk and Alpine Hare.",pb=1,petBattleLvl=19,g={
+[42]={{40.2,76.6}}},pb=1,petBattleLvl=19,g={
 q(31916,{isDaily=1,pb=1,sourceAchievements={6603},g={
 i(89125,{b=1,f=55,pb=1}),
 crit(23452,{achID=8348,awp=50300,id=2,pb=1})}}),
@@ -29975,7 +30013,7 @@ fp(622,{awp=40001,coords={
 [47]={{21,56.6}}},crs={43697},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(65655,{coords={
-[47]={{19.8,44.8}}},description="This pet tamer is Alliance only.\n\nEric's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Beast - see above.",pb=1,petBattleLvl=7,r=2,g={
+[47]={{19.8,44.8}}},pb=1,petBattleLvl=7,r=2,g={
 q(31850,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23444,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21399,{achID=6603,id=4,pb=1,r=2}),
@@ -30480,7 +30518,7 @@ s(1879,4827,{f=4,isLimited=1,loc=45,lvl=11}),
 r(7255,{isLimited=1,itemID=6053,requireSkill=171,skillID=2485}),
 r(9273,{isLimited=1,itemID=7561,requireSkill=202,skillID=2506})}}),
 n(226,{coords={
-[47]={{73.8,48.6}}},r=2,sym={{"select","itemID",2446,2148,2149,2150,2151,2152,2153,17192}},g={
+[47]={{73.8,48.6}}},r=2,sym={{"select","symselector",29},{"pop"},{"select","itemID",2446,17192}},g={
 s(1867,4799,{f=3,isLimited=1,lvl=9}),
 s(1865,4797,{f=3,isLimited=1,lvl=10}),
 s(1866,4798,{f=3,isLimited=1,lvl=10}),
@@ -31031,7 +31069,7 @@ fp(383,{awp=30300,coords={
 [23]={{10.1,65.7}}},crs={37888}})}),
 h(-43,{awp=50004,pb=1,g={
 n(66512,{coords={
-[23]={{66.5,56.9}}},description="This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDeiza's pets are level 14 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Undead - use Critter (powerful) or Aquatic (tanky) pet.",pb=1,petBattleLvl=14,g={
+[23]={{66.5,56.9}}},pb=1,petBattleLvl=14,g={
 q(31911,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23448,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21599,{achID=6603,id=8,pb=1,r=2}),
@@ -31800,7 +31838,7 @@ i(13810,{b=1,f=55,lvl=20,minReputation={529,21000},spellID=18124}),
 i(13813,{b=1,f=55,lvl=20,minReputation={529,21000},spellID=18140}),
 i(18182,{b=1,description="You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",f=55,lvl=21,minReputation={529,42000},sourceQuests={5517,5521,5524},spellID=22599})}}),
 n(45500,{awp=40003,coords={
-[23]={{35,68.2}}},sym={{"select","itemID",2424,2426,2427,2428,3894,2425,2423,2451,17190,8094,8088,8089,8090,8091,8092,8093}}})}),
+[23]={{35,68.2}}},sym={{"select","symselector",25,33},{"pop"},{"select","itemID",2451,17190}}})}),
 h(-63,{
 i(61387,{awp=40003,b=1,description="Before being able to farm for this companion, players must complete a quest chain from Fiona. When asked to choose a buff from the carriage, choose Fiona's Lucky Charm. This gives a buff with a blue rabbit's foot while in the zone.",g={
 p(286,{b=1,itemID=66076,npcID=50586,spellID=93739})}}),
@@ -32106,9 +32144,9 @@ i(56147,{b=1,f=113}),
 s(567,2055,{awp=100107,f=23})}})}}),
 h(-58,{
 n(190,{coords={
-[425]={{31.3,50.6}}},sym={{"select","itemID",2122,2123,2124,2125,2126,2127,2121,3599,3600,2119,2120,2117}}}),
+[425]={{31.3,50.6}}},sym={{"select","symselector",16,13},{"pop"}}}),
 n(1213,{coords={
-[425]={{31.7,50.7}}},sym={{"select","itemID",2129,17184,2380,2383,2384,2385,2381,2379}}}),
+[425]={{31.7,50.7}}},sym={{"select","symselector",32},{"pop"},{"select","itemID",2129,17184}}}),
 n(78,{coords={
 [425]={{30.1,52.4}}},sym={{"select","itemID",1194,2479,2130,2139,2134,2480,2131,2132}}})}),
 h(-63,{
@@ -32200,7 +32238,7 @@ fp(582,{coords={
 [37]={{41.7,64.6}}},crs={42983},r=2})}}),
 h(-43,{awp=50004,pb=1,g={
 n(64330,{coords={
-[37]={{41.6,83.6}}},description="This pet tamer is Alliance only.\n\nJulia's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.",pb=1,petBattleLvl=2,r=2,g={
+[37]={{41.6,83.6}}},pb=1,petBattleLvl=2,r=2,g={
 q(31693,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23418,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21396,{achID=6603,id=1,pb=1,r=2}),
@@ -32429,7 +32467,7 @@ s(3008,7997,{b=1,c={4},f=5,loc=40}),
 s(569,2057,{f=25})}})}}),
 h(-58,{
 n(2046,{coords={
-[37]={{41.7,65.9}}},r=2,sym={{"select","itemID",1201,2392,2393,2395,2396,2397,2394,17186}}}),
+[37]={{41.7,65.9}}},r=2,sym={{"select","symselector",28},{"pop"},{"select","itemID",1201,17186}}}),
 n(844,{coords={
 [37]={{42.6,66.6},{75,72.4}},
 [47]={{19.6,60.6},{74.4,41.2},{75,46.4}},
@@ -32469,9 +32507,9 @@ mnt(23229,{b=1,itemID=18777,lvl=10,r=2}),
 mnt(23227,{b=1,itemID=18776,lvl=10,r=2}),
 mnt(23228,{b=1,itemID=18778,lvl=10,r=2})}})),
 n(74,{coords={
-[37]={{41.4,65.6}}},r=2,sym={{"select","itemID",3602,3603,793,794,792,795,1839,796,1840,797,798,799}}}),
+[37]={{41.4,65.6}}},r=2,sym={{"select","symselector",8,21},{"pop"}}}),
 n(959,{coords={
-[37]={{64.7,69.5}}},r=2,sym={{"select","itemID",3602,3603,793,794,792,795}}}),
+[37]={{64.7,69.5}}},r=2,sym={{"select","symselector",8},{"pop"}}}),
 n(1198,{coords={
 [37]={{83.2,66}}},r=2,g={
 s(4160,11303,{f=32,isLimited=1,lvl=5})}}),
@@ -35686,7 +35724,7 @@ s(2471,6547,{f=6,loc=44,lvl=6}),
 i(4596,{f=55,lvl=3,spellID=440})}})}}),
 h(-58,{
 n(1214,{coords={
-[48]={{64.8,66}}},r=2,sym={{"select","itemID",16059,3428,16060,837,3589,3590,839,838,840}},g={
+[48]={{64.8,66}}},r=2,sym={{"select","symselector",7},{"pop"},{"select","itemID",16059,3428,16060}},g={
 s(1854,4782,{f=4,isLimited=1,loc=42,lvl=6}),
 s(1853,4781,{f=4,isLimited=1,loc=42,lvl=7}),
 s(1856,4786,{f=4,isLimited=1,loc=45,lvl=7})}}),
@@ -35700,7 +35738,7 @@ de(2239,{awp=110207,cost=2850000,itemID=246422,spellID=1242106})}}),
 n(1686,{coords={
 [48]={{83.2,63.5}}},r=2,sym={{"select","itemID",2511,3023}}}),
 n(954,{coords={
-[48]={{82.6,64}}},r=2,sym={{"select","itemID",1843,843,1844,844,846,845}},g={
+[48]={{82.6,64}}},r=2,sym={{"select","symselector",23},{"pop"}},g={
 s(1857,4788,{f=5,isLimited=1,loc=47,lvl=7}),
 s(1858,4789,{f=5,isLimited=1,loc=47,lvl=6})}}),
 n(1684,{coords={
@@ -35709,9 +35747,9 @@ r(7751,{itemID=6325,requireSkill=185,skillID=2548}),
 r(7754,{itemID=6329,requireSkill=185,skillID=2548}),
 r(7753,{itemID=6328,requireSkill=185,skillID=2548})}}),
 n(1362,{coords={
-[48]={{24.1,18.2}}},r=2,sym={{"select","itemID",847,1845,849,1846,850,848}}}),
+[48]={{24.1,18.2}}},r=2,sym={{"select","symselector",26},{"pop"}}}),
 n(167,{coords={
-[48]={{34,46.6}}},r=2,sym={{"select","itemID",847,1845,849,1846,850,848}},g={
+[48]={{34,46.6}}},r=2,sym={{"select","symselector",26},{"pop"}},g={
 s(1845,4765,{f=25,isLimited=1,lvl=4}),
 s(1846,4766,{f=25,isLimited=1,lvl=4})}}),
 n(222,{coords={
@@ -35840,7 +35878,7 @@ fp(195,{awp=20300,coords={
 [50]={{47.8,11.8}}},crs={43045},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(63194,{coords={
-[50]={{46,40.4}}},description="This pet tamer is Alliance only.\n\nSteven's pets are level 9 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",pb=1,petBattleLvl=9,r=2,g={
+[50]={{46,40.4}}},pb=1,petBattleLvl=9,r=2,g={
 q(31852,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23446,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21400,{achID=6603,id=5,pb=1,r=2}),
@@ -36549,7 +36587,7 @@ o(121264,{coords={
 i(7871,{requireSkill=633,u=2})}})}}),
 h(-43,{awp=50004,pb=1,g={
 n(65651,{coords={
-[49]={{33.3,52.6}}},description="This pet tamer is Alliance only.\n\nLindsay's pets are level 5 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Critter - see above.",pb=1,petBattleLvl=5,r=2,g={
+[49]={{33.3,52.6}}},pb=1,petBattleLvl=5,r=2,g={
 q(31781,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23420,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21398,{achID=6603,id=3,pb=1,r=2}),
@@ -37000,7 +37038,7 @@ n(2697,{coords={
 [49]={{78.8,63.5}}},r=2,g={
 r(9070,{isLimited=1,itemID=7289,requireSkill=165,skillID=2532})}}),
 n(956,{coords={
-[49]={{29.7,42.9}}},r=2,sym={{"select","itemID",1853,287,1852,718,286,285}}}),
+[49]={{29.7,42.9}}},r=2,sym={{"select","symselector",31},{"pop"}}}),
 n(3091,{coords={
 [49]={{26.5,42}}},r=2,g={
 s(1854,4782,{f=4,isLimited=1,loc=42,lvl=6}),
@@ -37255,7 +37293,7 @@ fp(75,{coords={
 [32]={{34.8,30.6}}},crs={3305},r=1})}),
 h(-43,{awp=50004,pb=1,g={
 n(66515,{coords={
-[32]={{35.4,27.8}}},description="This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nKortas' pets are level 15 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",pb=1,petBattleLvl=15,g={
+[32]={{35.4,27.8}}},pb=1,petBattleLvl=15,g={
 q(31912,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23449,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21600,{achID=6603,id=9,pb=1,r=2}),
@@ -38148,7 +38186,7 @@ fp(600,{awp=40003,coords={
 [51]={{30.6,34.6}}},crs={43088},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(66518,{coords={
-[51]={{76.6,41.6}}},description="This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nEveressa's pets are level 16 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",pb=1,petBattleLvl=16,g={
+[51]={{76.6,41.6}}},pb=1,petBattleLvl=16,g={
 q(31913,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23450,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21601,{achID=6603,id=11,pb=1,r=2}),
@@ -38617,7 +38655,7 @@ fp(592,{awp=40001,coords={
 [210]={{35,29.2}}},crs={43053},r=1})}),
 h(-43,{awp=50004,pb=1,g={
 n(65656,{coords={
-[210]={{51.4,73.2}}},description="This pet tamer is Alliance only.\n\nBill's pets are level 11 of the following consecutive pet classes:\n1. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Flying - see above.",pb=1,petBattleLvl=11,r=2,g={
+[210]={{51.4,73.2}}},pb=1,petBattleLvl=11,r=2,g={
 q(31851,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23445,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21401,{achID=6603,id=6,pb=1,r=2}),
@@ -39227,7 +39265,7 @@ n(2838,{coords={
 [210]={{43,72.7}}},g={
 r(23068,{isLimited=1,itemID=18648,requireSkill=202,skillID=2506})}}),
 n(2845,{coords={
-[210]={{44.1,70}}},sym={{"select","itemID",2419,2420,2421,2422,3891,2418,2417,2448,17189}},g={
+[210]={{44.1,70}}},sym={{"select","symselector",24},{"pop"},{"select","itemID",2448,17189}},g={
 s(4381,12257,{f=6,isLimited=1,loc=45,lvl=16})}}),
 n(2848,{coords={
 [210]={{42.7,75.1}}},g={
@@ -39259,7 +39297,7 @@ n(2840,{coords={
 s(1852,4778,{f=24,isLimited=1,lvl=7}),
 s(1851,4777,{f=24,isLimited=1,lvl=6})}}),
 n(44083,{awp=40001,coords={
-[210]={{55.4,42.2}}},r=2,sym={{"select","itemID",2471,2473,2474,3893,2475,2472,2470,2464,2467,2468,2463,2469,3890,2465}}}),
+[210]={{55.4,42.2}}},r=2,sym={{"select","symselector",20,22},{"pop"},{"select","itemID",2463}}}),
 n(2685,{coords={
 [210]={{43.2,70.2}}},g={
 r(3979,{itemID=13310,requireSkill=202,rwp=50004,skillID=2506,u=2}),
@@ -39281,7 +39319,7 @@ n(2626,{coords={
 [210]={{41.6,73.4}}},g={
 r(7732,{itemID=16083,rank=3,requireSkill=356,rwp=30100,u=2})}}),
 n(2849,{coords={
-[210]={{42.7,74.2}}},sym={{"select","itemID",2435,3587,2438,3588,2440,3892,2437,2160,3591,2156,3592,2158,2159,3593,2432,3594,2434,3889,2431,2429,3597,3598,203,201,202,200}},g={
+[210]={{42.7,74.2}}},sym={{"select","symselector",6,9,10,12},{"pop"}},g={
 i(7341,{collectible=false,f=52,providers={{"n",2849},{"n",16624},{"n",17512},{"n",49887}}}),
 i(7340,{collectible=false,f=52,providers={{"n",2849},{"n",16624},{"n",17512},{"n",49887}}}),
 i(7339,{collectible=false,f=52,providers={{"n",2849},{"n",16624},{"n",17512},{"n",49887}}}),
@@ -39396,7 +39434,7 @@ fp(618,{awp=40003,coords={
 [26]={{65.6,44.8}}},crs={43570},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(66478,{coords={
-[26]={{62.8,54.6}}},description="This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDavid's pets are level 13 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",pb=1,petBattleLvl=13,g={
+[26]={{62.8,54.6}}},pb=1,petBattleLvl=13,g={
 q(31910,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23447,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21598,{achID=6603,id=7,pb=1,r=2}),
@@ -39866,7 +39904,7 @@ n(8219,{coords={
 [26]={{24.8,65.6}}}})}),
 h(-58,{
 n(12040,{awp=40003,coords={
-[26]={{66.6,44.2}}},r=2,sym={{"select","itemID",2424,2426,2427,2428,3894,2425,2423,2451,17190,8094,8088,8089,8090,8091,8092,8093}},g={
+[26]={{66.6,44.2}}},r=2,sym={{"select","symselector",25,33},{"pop"},{"select","itemID",2451,17190}},g={
 s(4381,12257,{f=6,isLimited=1,loc=45,lvl=16}),
 s(4382,12258,{f=6,isLimited=1,loc=45,lvl=17})}}),
 n(12958,{coords={
@@ -43263,7 +43301,7 @@ o(123214,{coords={
 i(7908,{requireSkill=633,u=2})}})}}),
 h(-43,{awp=50004,pb=1,g={
 n(65648,{coords={
-[52]={{60.8,18.6}}},description="This pet tamer is Alliance only.\n\nMacDonald's pets are level 3 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",pb=1,petBattleLvl=3,r=2,g={
+[52]={{60.8,18.6}}},pb=1,petBattleLvl=3,r=2,g={
 q(31780,{isDaily=1,pb=1,r=2,sourceAchievements={6603},g={
 crit(23419,{achID=8348,awp=50300,id=9,pb=1,r=2})}}),
 crit(21397,{achID=6603,id=2,pb=1,r=2}),
@@ -44126,7 +44164,7 @@ o(202083,{coords={
 p(238,{itemID=48124,npcID=35398,spellID=67419})}})}}),
 h(-58,{
 n(1450,{coords={
-[56]={{11.6,59.9}}},r=2,sym={{"select","itemID",2446,2148,2149,2150,2151,2152,2153,17192}}}),
+[56]={{11.6,59.9}}},r=2,sym={{"select","symselector",29},{"pop"},{"select","itemID",2446,17192}}}),
 n(1441,{coords={
 [56]={{11.6,59.5}}},r=2,sym={{"select","itemID",926,922,927,925,2209,923,928,924}},g={
 s(1871,4817,{f=26,isLimited=1,lvl=8}),
@@ -44284,7 +44322,7 @@ fp(128,{coords={
 [111]={{64.08,41.12}}},crs={18940}})}),
 h(-43,{awp=50004,pb=1,g={
 n(66553,{coords={
-[111]={{59,70}}},description="Morulu's pets are level 23 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Aquatic - see above.\n3. Aquatic - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",pb=1,petBattleLvl=23,g={
+[111]={{59,70}}},pb=1,petBattleLvl=23,g={
 q(31925,{isDaily=1,pb=1,sourceAchievements={6604},g={
 crit(23470,{achID=8348,awp=50300,id=1,pb=1})}}),
 crit(21607,{achID=6604,id=4,pb=1}),
@@ -46479,7 +46517,7 @@ fp(99,{coords={
 [100]={{56.2,36.2}}},crs={16587},r=1})}),
 h(-43,{awp=50004,pb=1,g={
 n(66550,{coords={
-[100]={{64.4,49.2}}},description="Nicki's pets are level 20 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",pb=1,petBattleLvl=20,g={
+[100]={{64.4,49.2}}},pb=1,petBattleLvl=20,g={
 q(31922,{isDaily=1,pb=1,sourceAchievements={6604},g={
 crit(23473,{achID=8348,awp=50300,id=1,pb=1})}}),
 crit(21604,{achID=6604,id=1,pb=1}),
@@ -48184,7 +48222,7 @@ fp(119,{coords={
 [107]={{54.2,75}}},crs={18789},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(66552,{coords={
-[107]={{61,49.4}}},description="Narrok's pets are level 22 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Demolish/Sandstorm/Deflection) and Turkey (Peck/Squawk/Food Coma).",pb=1,petBattleLvl=22,g={
+[107]={{61,49.4}}},pb=1,petBattleLvl=22,g={
 q(31924,{isDaily=1,pb=1,sourceAchievements={6604},g={
 crit(23472,{achID=8348,awp=50300,id=1,pb=1})}}),
 crit(21606,{achID=6604,id=3,pb=1}),
@@ -50121,7 +50159,7 @@ fp(124,{coords={
 [104]={{37.6,55.4}}},crs={18939},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(66557,{coords={
-[104]={{30.6,41.8}}},description="Antari's pets are level 24 of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Crystal Spider (Strike/Brittle Webbing/Leech Life) and Sporeling Sprout (Jab/Leech Seed/Crouch).",pb=1,petBattleLvl=24,g={
+[104]={{30.6,41.8}}},pb=1,petBattleLvl=24,g={
 q(31926,{isDaily=1,pb=1,sourceAchievements={6604},g={
 i(89125,{b=1,f=55,pb=1}),
 crit(23475,{achID=8348,awp=50300,id=1,pb=1})}}),
@@ -51650,7 +51688,7 @@ o(184740,{coords={
 [102]={{42.5,63.5},{48.9,61.7}}},learnedAt=300,requireSkill=633})}}),
 h(-43,{awp=50004,pb=1,g={
 n(66551,{coords={
-[102]={{17.2,50.6}}},description="Ras'an's pets are level 21 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake and Blighted Squirrel.",pb=1,petBattleLvl=21,g={
+[102]={{17.2,50.6}}},pb=1,petBattleLvl=21,g={
 q(31923,{isDaily=1,pb=1,sourceAchievements={6604},g={
 crit(23469,{achID=8348,awp=50300,id=1,pb=1})}}),
 crit(21605,{achID=6604,id=2,pb=1}),
@@ -54711,7 +54749,7 @@ i(40685,{b=1,f=53,lvl=30,spellID=33953}),
 i(40683,{b=1,f=53,lvl=30,spellID=60054})}}),
 n(28726,{coords={
 [125]={{35.6,34.4}}},g={
-i(38426,{awp=30003,description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",providers={{"n",23802},{"n",24341},{"n",26941},{"n",27012},{"n",28726}}})}}),
+i(38426,{awp=30003,providers={{"n",23802},{"n",24341},{"n",26941},{"n",27012},{"n",28726}}})}}),
 n(34252,{coords={
 [125]={{46.2,27.2}}},g={
 cl(6,{
@@ -57692,7 +57730,7 @@ fp(336,{coords={
 [127]={{72,80.8}}},crs={30271},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(66636,{coords={
-[127]={{50.2,59}}},description="Jacob's pets are level 25 of the following consecutive pet classes:\n1. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n2. Undead - see above.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Biletoad (Tongue Lash/Cleansing Rain/Swarm of Flies) and Huge Toad (Tongue Lash/Healing Wave/Swarm of Flies).",pb=1,petBattleLvl=25,g={
+[127]={{50.2,59}}},pb=1,petBattleLvl=25,g={
 q(31932,{isDaily=1,pb=1,sourceAchievements={6605},g={
 crit(23480,{achID=8348,awp=50300,id=4,pb=1})}}),
 crit(21849,{achID=6605,id=2,pb=1}),
@@ -57861,7 +57899,7 @@ fp(252,{coords={
 [115]={{60.2,51.4}}},crs={26851}})}),
 h(-43,{awp=50004,pb=1,g={
 n(66638,{coords={
-[115]={{59,77}}},description="Okrut's pets are level 25 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anubisath Idol (Crush/Deflection) and Alpine Hare (Flurry/Dodge/Burrow).",pb=1,petBattleLvl=25,g={
+[115]={{59,77}}},pb=1,petBattleLvl=25,g={
 q(31933,{isDaily=1,pb=1,sourceAchievements={6605},g={
 crit(23479,{achID=8348,awp=50300,id=4,pb=1})}}),
 crit(21850,{achID=6605,id=3,pb=1}),
@@ -59746,7 +59784,7 @@ fp(185,{coords={
 [117]={{31.2,44}}},crs={23859},r=2})}),
 h(-43,{awp=50004,pb=1,g={
 n(66635,{coords={
-[117]={{28.6,33.8}}},description="Beegle's pets are level 25 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Flying - see above.\n3. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake (Tail Sweap/Ancient Blessing/Rewind Time) and Abyssius (Crush/Flamethrower/Metero Strike).",pb=1,petBattleLvl=25,g={
+[117]={{28.6,33.8}}},pb=1,petBattleLvl=25,g={
 q(31931,{isDaily=1,pb=1,sourceAchievements={6605},g={
 crit(23481,{achID=8348,awp=50300,id=4,pb=1})}}),
 crit(21848,{achID=6605,id=1,pb=1}),
@@ -60781,7 +60819,7 @@ n(71438,{awp=50300,coords={
 [118]={{47.8,14.3}}},pb=1,g={
 i(97984,{b=1,lvl=40,pb=1,rwp=70003,u=2})}}),
 n(66675,{coords={
-[118]={{77.4,19.6}}},description="Major Payne's pets are level 25 of epic quality and exceptionally powerful of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Mechanical - use Elemental (powerful and tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Cogblade Raptor (Batter/Overtune/Exposed Wounds) and Flayer Youngling (Blitz/Focus/Kick).",pb=1,petBattleLvl=25,g={
+[118]={{77.4,19.6}}},pb=1,petBattleLvl=25,g={
 q(31935,{isDaily=1,pb=1,sourceAchievements={6605},g={
 i(89125,{b=1,f=55,pb=1}),
 crit(23482,{achID=8348,awp=50300,id=4,pb=1})}}),
@@ -62265,7 +62303,7 @@ fp(326,{coords={
 [120]={{44.4,28.2}}},crs={29951}})}),
 h(-43,{awp=50004,pb=1,g={
 n(115307,{awp=70100,coords={
-[120]={{41.5,24.4}}},description="Algalon's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",pb=1,petBattleLvl=25,g={
+[120]={{41.5,24.4}}},pb=1,petBattleLvl=25,g={
 q(44767,{pb=1,qss={142210},g={
 p(1969,{b=1,itemID=142100,npcID=115158,pb=1,spellID=229110})}})}}),
 crit(21484,{achID=6615,id=8,pb=1}),
@@ -63427,7 +63465,7 @@ fp(307,{coords={
 [121]={{60,56.8}}},crs={28624}})}),
 h(-43,{awp=50004,pb=1,g={
 n(66639,{coords={
-[121]={{13.2,66.8}}},description="Gutretch's pets are level 25 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anodized Robo Cub (Demolish/Maul) and Anubisath Idol (Demolish/Sandstorm/Deflection).",pb=1,petBattleLvl=25,g={
+[121]={{13.2,66.8}}},pb=1,petBattleLvl=25,g={
 q(31934,{isDaily=1,pb=1,sourceAchievements={6605},g={
 crit(23478,{achID=8348,awp=50300,id=4,pb=1})}}),
 crit(21851,{achID=6605,id=4,pb=1}),
@@ -101736,7 +101774,7 @@ i(169900,{b=1,cost={{"i",169590,15}},description="The amount of |cff9832dfBurgeo
 i(169899,{b=1,cost={{"i",169590,15}},description="Requires reaching Elite rating in PvP and opening your next weekly chest.\n",f=55,lvl=50,pvp=1,spellID=303835,u=2})}}),
 q(54978,{coords={
 [1161]={{70.4,27}}},isWeekly=1,lvl=50,pvp=1,qgs={135614},r=2,g={
-i(167100,{b=1,modID=53,pvp=1,sym={{"select","symselector",8},{"find","headerID",-210},{"extract","sourceID"},{"modID",53}}})}}),
+i(167100,{b=1,modID=53,pvp=1,sym={{"select","symselector",36},{"find","headerID",-210},{"extract","sourceID"},{"modID",53}}})}}),
 q(52944,{coords={
 [1161]={{56.4,26}}},isWeekly=1,lvl=50,pvp=1,qgs={143559},r=2,g={
 i(167744,{b=1,pvp=1,sym={{"sub","pvp_gear_base",8,-279,-293},{"merge"},{"pop"},{"pop"},{"modID",47}}}),
@@ -102555,7 +102593,7 @@ i(168269,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"wh
 i(170144,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175021,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175024,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
-i(154992,{b=1,pvp=1,sym={{"select","symselector",9},{"pop"}},u=2}),
+i(154992,{b=1,pvp=1,sym={{"select","symselector",37},{"pop"}},u=2}),
 i(164261,{b=1,pvp=1,r=2,u=2}),
 i(167744,{awp=80100,b=1,pvp=1,rwp=90001,sym={{"sub","pvp_gear_base",8,-279,-293},{"merge"},{"pop"},{"pop"},{"modID",47}},u=2})}),
 h(-45,{
@@ -110558,7 +110596,7 @@ i(168269,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"wh
 i(170144,{awp=80200,b=1,rwp=80300,sym={{"select","instanceID",1179},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175021,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",14},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
 i(175024,{awp=80300,b=1,lvl=50,rwp=90001,sym={{"select","instanceID",1180},{"pop"},{"where","difficultyID",15},{"pop"},{"is","encounterID"},{"pop"},{"contains","f",1,2,3,4,5,6,7,8,20,21,22,23,24,25,26,27,28,29,31,32,33,34,35,51,52,53,54}},u=2}),
-i(154992,{b=1,pvp=1,sym={{"select","symselector",9},{"pop"}},u=2}),
+i(154992,{b=1,pvp=1,sym={{"select","symselector",37},{"pop"}},u=2}),
 i(164262,{b=1,pvp=1,r=1,u=2}),
 i(167744,{awp=80100,b=1,pvp=1,rwp=90001,sym={{"sub","pvp_gear_base",8,-279,-293},{"merge"},{"pop"},{"pop"},{"modID",47}},u=2})}),
 h(-45,{
@@ -119177,7 +119215,7 @@ q(65775,{awp=90200,coords={
 h(-58,{pvp=1,g={
 n(164095,{coords={
 [1670]={{36,58.6}}},pvp=1,g={
-h(-221,{pvp=1,symselector=10,g={
+h(-221,{pvp=1,symselector=38,g={
 rfl(202,{b=1,cost={{"c",1792,1500}},itemID=183246,pvp=1,spellID=342040}),
 rfl(67,{b=1,c={3},cost={{"c",1792,1500}},itemID=183252,pvp=1,spellID=342040}),
 rfl(8,{b=1,c={8},cost={{"c",1792,1500}},itemID=183268,pvp=1,spellID=342040}),
@@ -119792,7 +119830,7 @@ faction(2464),
 h(-58,{
 n(162447,{coords={
 [1565]={{59.6,52.9}}},g={
-i(184665,{b=1,cost={{"c",1885,35}},f=55,lvl=60,minReputation={2464,1},spellID=347413,sym={{"select","symselector",10},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
+i(184665,{b=1,cost={{"c",1885,35}},f=55,lvl=60,minReputation={2464,1},spellID=347413,sym={{"select","symselector",38},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
 h(-167,{
 i(187871,{awp=90105,b=1,cost={{"c",1885,25},{"c",1813,15000}},customCollect={"SL_COV_NFA"},lvl=50,minReputation={2464,1}}),
 i(187881,{awp=90105,b=1,cost={{"c",1885,50},{"c",1813,25000}},customCollect={"SL_COV_NFA"},lvl=50,minReputation={2464,1}}),
@@ -123702,7 +123740,7 @@ i(187613,{b=1,cost={{"c",1931,25}},minReputation={2472,2},spellID=355192}),
 i(186984,{b=1,cost={{"c",1931,25}},minReputation={2472,2},spellID=355192}),
 cq(64339,{b=1,cost={{"c",1931,100}},itemID=186714,minReputation={2472,2},spellID=356208}),
 cq(64307,{b=1,cost={{"c",1931,800}},itemID=187145,minReputation={2472,2},spellID=356226}),
-i(184665,{b=1,cost={{"c",1931,1500}},description="|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",f=55,lvl=60,minReputation={2472,3},spellID=347413,sym={{"select","symselector",10},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
+i(184665,{b=1,cost={{"c",1931,1500}},description="|cFFfe040fYou will not receive a Covenant specific Legendary if you are not part of said Covenant.|r",f=55,lvl=60,minReputation={2472,3},spellID=347413,sym={{"select","symselector",38},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
 i(186718,{b=1,cost={{"c",1931,50}},minReputation={2472,3}}),
 i(186470,{b=1,cost={{"c",1931,2500}},minReputation={2472,4},spellID=353824,g={
 r(343676,{learnedAt=200,minReputation={2472,4},requireSkill=171,skillID=2750}),
@@ -123734,7 +123772,7 @@ i(187077,{cost={{"c",1828,300}},spellID=355776}),
 i(191031,{awp=90200,cost={{"c",1906,300}},spellID=368867}),
 i(187532,{b=1,cost={{"c",1767,2500}},lvl=60,spellID=358498}),
 i(187134,{b=1,cost={{"c",1906,1000}},f=55,spellID=356613}),
-i(184665,{b=1,cost={{"c",1906,400}},f=55,lvl=60,spellID=347413,sym={{"select","symselector",10},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}})}}),
+i(184665,{b=1,cost={{"c",1906,400}},f=55,lvl=60,spellID=347413,sym={{"select","symselector",38},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}})}}),
 n(179321,{coords={
 [1961]={{63.5,23.3}}},g={
 i(188156,{awp=90105,b=2,cost={{"c",1767,750}},f=55,lvl=60,minReputation={2470,3000},spellID=361698,sym={{"sub","korthian_armaments","INVTYPE_FINGER"},{"sub","korthian_armaments","INVTYPE_TRINKET"}}}),
@@ -146272,7 +146310,7 @@ i(209837,{awp=100200,b=1,lvl=70,spellID=423532}),
 i(209839,{awp=100200,b=1,lvl=70,spellID=423537}),
 i(217243,{awp=100206,b=1,lvl=70,spellID=439060}),
 i(217242,{awp=100206,b=1,lvl=70,spellID=439058}),
-i(215362,{awp=100206,b=1,description="Rewarded from any 'Awakened' Zone Activity",f=55,lvl=70,sym={{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","filterID",4,5,6,7,53},{"finalize"},{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101},{"finalize"},{"select","symselector",11}},g={
+i(215362,{awp=100206,b=1,description="Rewarded from any 'Awakened' Zone Activity",f=55,lvl=70,sym={{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"whereany","filterID",4,5,6,7,53},{"finalize"},{"select","mapID",1978},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-101},{"finalize"},{"select","symselector",39}},g={
 i(202172,{b=1})}}),
 flt(4,{
 s(179951,191989,{b=1,f=4,loc=45,lvl=60}),
