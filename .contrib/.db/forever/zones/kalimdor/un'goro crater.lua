@@ -875,6 +875,9 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 				cr = 6527,	-- Tar Creeper
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(15758, {	-- Pattern: Devilsaur Gauntlets (RECIPE!)
+				cr = 6498,	-- Devilsaur
+			}),
 			i(15772, {	-- Pattern: Devilsaur Leggings (RECIPE!)
 				crs = {
 					9477,	-- Cloned Ooze
