@@ -3450,30 +3450,14 @@ root(ROOTS.WorldDrops, {
 	filter(MISC, {
 		timeline = { TIMELINE.ADDED_1_60_1 },
 		groups = sharedData({ classes = { MAGE } }, {
-			i(211786, {	-- Scroll: CHAP BALK WELLES
-				description = "'Black Sheep Wall'",
-			}),
-			i(211785, {	-- Scroll: CWAL
-				description = "'Claw'",
-			}),
-			i(211780, {	-- Scroll: KWYJIBO
-				description = "This might just be a Simpsons quote.",
-			}),
-			i(211787, {	-- Scroll: LOWER PING WHOMEVER
-				description = "'Overwhelming Power'",
-			}),
-			i(211854, {	-- Scroll: OMIT KESA
-				description = "'Time Soak'",
-			}),
-			i(211855, {	-- Scroll: STHENIC LUNATE
-				description = "'Ancient Hustle'",
-			}),
-			i(211853, {	-- Scroll: VOCE WELL
-				description = "'Cow Level'",
-			}),
-			i(211784, {	-- Scroll: WUBBA WUBBA
-				description = "This might just be a Pee Wee Herman quote.",
-			}),
+			i(211786),	-- Scroll: CHAP BALK WELLES
+			i(211785),	-- Scroll: CWAL
+			i(211780),	-- Scroll: KWYJIBO
+			i(211787),	-- Scroll: LOWER PING WHOMEVER
+			i(211854),	-- Scroll: OMIT KESA
+			i(211855),	-- Scroll: STHENIC LUNATE
+			i(211853),	-- Scroll: VOCE WELL
+			i(211784),	-- Scroll: WUBBA WUBBA
 			i(213545),	-- PEATCHY ATTAX
 			i(213546),	-- Scroll: SHOOBEEDOOP
 			i(213547),	-- Scroll: THAW WORDS

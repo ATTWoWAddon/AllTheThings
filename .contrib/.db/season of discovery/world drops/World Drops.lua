@@ -3161,35 +3161,27 @@ root(ROOTS.WorldDrops, {
 		i(11734),	-- Libram of Tenacity
 		i(11737),	-- Libram of Voracity
 		applyclassicphase(SOD_PHASE_ONE, i(211786, {	-- Scroll: CHAP BALK WELLES
-			description = "'Black Sheep Wall'",
 			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211785, {	-- Scroll: CWAL
-			description = "'Claw'",
 			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211780, {	-- Scroll: KWYJIBO
-			description = "This might just be a Simpsons quote.",
 			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211787, {	-- Scroll: LOWER PING WHOMEVER
-			description = "'Overwhelming Power'",
 			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211854, {	-- Scroll: OMIT KESA
-			description = "'Time Soak'",
 			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211855, {	-- Scroll: STHENIC LUNATE
-			description = "'Ancient Hustle'",
 			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211853, {	-- Scroll: VOCE WELL
-			description = "'Cow Level'",
 			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_ONE, i(211784, {	-- Scroll: WUBBA WUBBA
-			description = "This might just be a Pee Wee Herman quote.",
 			classes = { MAGE },
 		})),
 		applyclassicphase(SOD_PHASE_TWO, i(213545, {	-- PEATCHY ATTAX

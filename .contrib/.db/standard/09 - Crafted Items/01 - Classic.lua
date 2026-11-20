@@ -2974,7 +2974,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 6.0.0
 					learnedAt = 235,
 					-- #endif
-					description = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
 				}),
 				o(1621, {	-- Briarthorn
 					-- #if BEFORE 6.0.0
@@ -3345,7 +3344,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						WESTERN_PLAGUELANDS,
 						-- #endif
 					},
-					description = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
 				}),
 				o(1620, {	-- Mageroyal
 					-- #if BEFORE 6.0.0

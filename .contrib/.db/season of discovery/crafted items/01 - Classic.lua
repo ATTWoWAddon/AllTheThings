@@ -1858,7 +1858,6 @@ root(ROOTS.Craftables, {
 				o(142143, {	-- Blindweed
 					maps = { SWAMP_OF_SORROWS },
 					learnedAt = 235,
-					description = "Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",
 				}),
 				o(1621, {	-- Briarthorn
 					learnedAt = 70,
@@ -2075,7 +2074,6 @@ root(ROOTS.Craftables, {
 						SWAMP_OF_SORROWS,
 						WESTERN_PLAGUELANDS,
 					},
-					description = "Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",
 				}),
 				o(1620, {	-- Mageroyal
 					learnedAt = 50,
