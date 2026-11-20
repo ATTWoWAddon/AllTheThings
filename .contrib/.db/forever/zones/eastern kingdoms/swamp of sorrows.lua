@@ -711,6 +711,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 			}),
 		}),
 		n(TREASURES, {
+			o(424265, {	-- Grave
+				coord = { 16.3, 53.1, MAP.SWAMP_OF_SORROWS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(215425),	-- Swamp Echo
+				},
+			}),
 			o(441247, {	-- Book
 				coord = { 70.3, 51.7, MAP.SWAMP_OF_SORROWS },
 				timeline = { TIMELINE.ADDED_1_60_1 },

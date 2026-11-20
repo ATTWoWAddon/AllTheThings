@@ -1123,6 +1123,13 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					i(215822),	-- RwlRwlRwlRwl!
 				},
 			}),
+			o(424264, {	-- Grave
+				coord = { 63.7, 42.4, MAP.DUSTWALLOW_MARSH },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(215428),	-- Theramore Echo
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(13476, {	-- Balai Lok'Wein <Potions, Scrolls and Reagents>

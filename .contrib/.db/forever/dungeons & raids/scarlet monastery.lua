@@ -263,6 +263,14 @@ instanceroot(316, {	-- Scarlet Monastery
 						i(7686),	-- Ironspine's Eye
 					}),
 				}),
+				n(TREASURES, {
+					o(424266, {	-- Grave
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						groups = {
+							i(215426),	-- Graveyard Echo
+						},
+					}),
+				}),
 				n(3983, {	-- Interrogator Vishas
 					i(7683),	-- Bloody Brass Knuckles
 					i(7682),	-- Torturing Poker
@@ -352,6 +360,19 @@ instanceroot(316, {	-- Scarlet Monastery
 						description = "Found in the chest after killing Arcanist Doan.",
 						groups = {
 							i(7146),	-- The Scarlet Key
+						},
+					}),
+					o(424373, {	-- Scarlet Banner
+						description = "Use each Echo at its statue in the Library, in this order: Swamp Echo at the Warrior statue, Arathi Echo at the Mage statue, Theramore Echo at the Paladin statue, then Graveyard Echo at the Priest statue. The banner then appears in the middle of the room.",
+						cost = {
+							{ "i", 215425, 1 },	-- Swamp Echo
+							{ "i", 215427, 1 },	-- Arathi Echo
+							{ "i", 215428, 1 },	-- Theramore Echo
+							{ "i", 215426, 1 },	-- Graveyard Echo
+						},
+						timeline = { TIMELINE.ADDED_1_60_1 },
+						groups = {
+							i(278030),	-- Scarlet Banner
 						},
 					}),
 				}),

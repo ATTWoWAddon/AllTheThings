@@ -1284,6 +1284,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 					i(215816),	-- A Web of Lies: Debunking Myths and Legends
 				},
 			}),
+			o(424267, {	-- Grave
+				coord = { 62.2, 54.3, MAP.ARATHI_HIGHLANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(215427),	-- Arathi Echo
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(2816, {	-- Androd Fadran <Leatherworking Supplies>
