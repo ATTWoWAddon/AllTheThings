@@ -3678,7 +3678,7 @@ n(179250, 3135);	-- Young Garnetgullet
 --- TRAINER ---
 i(0, 3091);			-- Churro
 i(0, 3155);			-- Gurgl
-i(0, 3156);			-- Hornswoggl
+i(0, 3156);			-- Hornswoggle
 i(0, 3158);			-- Missing1
 i(0, 3089);			-- RT-3 M15
 i(0, 3090);			-- Squibbles
@@ -4392,7 +4392,7 @@ n(234367, 4710);	-- Pillaged Parrot
 n(234097, 4702);	-- Rusty Kroling
 n(236041, 4732);	-- Scavenging Snapdragon
 n(234369, 4711);	-- Snapdragon Pup
-n(236040, 4731);	-- Storminfused Snapdragon
+n(236040, 4731);	-- Storm-Infused Snapdragon
 n(230394, 4628);	-- Tidal Kroling
 --- NYI ---
 i(0, 4725);			-- Titan Orb
@@ -4542,9 +4542,9 @@ i(0, 4837);			-- Worm, Cosmic - Critter (Red)
 ------------------
 -- PATCH 11.2.5 --
 ------------------
-i(252200, 4900);	-- Bundled-up Bob
+i(252200, 4900);	-- Bundled-Up Bob
 i(246339, 4854);	-- Duskytooth Fel Snooter
-i(252301, 4901);	-- Fledgeling Warden's Companion
+i(252301, 4901);	-- Fledgling Warden's Companion
 i(257518, 4908);	-- Lil' Ashlee
 i(239705, 4802);	-- Morsel
 i(246342, 4855);	-- Mustyfur Fel Snooter
@@ -4599,7 +4599,7 @@ i(260942, 4951);	-- Bubbly Snapling
 i(246314, 4974);	-- Dali
 i(238793, 4790);	-- Devouring Runt
 i(260306, 4942);	-- Distorted Memory
-i(258189, 4910);	-- Do, child of Filo
+i(258189, 4910);	-- Do, Child of Filo
 i(250143, 4883);	-- Dragonhawk Mosswing
 i(259224, 4928);	-- Dragonhawk Munchkin
 i(250139, 4878);	-- Ebon Snapling

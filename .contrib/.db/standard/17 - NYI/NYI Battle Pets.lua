@@ -1147,7 +1147,7 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			-- Trainer Pets --
 			pet(3091),	-- Churro (PET!)
 			pet(3155),	-- Gurgl (PET!)
-			pet(3156),	-- Hornswoggl (PET!)
+			pet(3156),	-- Hornswoggle (PET!)
 			pet(3158),	-- Missing1 (PET!)
 			pet(3089),	-- RT-3 M15 (PET!)
 			pet(3090),	-- Squibbles (PET!)

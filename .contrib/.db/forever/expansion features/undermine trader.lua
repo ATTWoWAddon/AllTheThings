@@ -150,7 +150,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 						cr = 10440,	-- Baron Rivendare
 					}),
 					objective(3, {	-- 0/1 Dathrohan's Correspondance
-						provider = { "i", 272025 },	-- Dathrohan's Correspondance
+						provider = { "i", 272025 },	-- Dathrohan's Correspondence
 						cr = 10812,	-- Grand Crusader Dathrohan
 					}),
 					i(271994),	-- Undermine Satchel

@@ -919,7 +919,7 @@ root(ROOTS.Character, n(HERITAGE, {
 			}),
 			q(76194, {	-- A Grim Portent
 				sourceQuests = { 75891 },	-- Ancient Curses
-				provider = { "n", 202702 },	-- Maiev Stormsong
+				provider = { "n", 202702 },	-- Maiev Shadowsong
 				coord = { 54.0, 79.4, FELWOOD },
 			}),
 			q(76195, {	-- Countering Corruption
@@ -940,17 +940,17 @@ root(ROOTS.Character, n(HERITAGE, {
 					76195,	-- Countering Corruption
 					76196,	-- Mercy or Misery
 				},
-				provider = { "n", 202702 },	-- Maiev Stormsong
+				provider = { "n", 202702 },	-- Maiev Shadowsong
 				coord = { 36.1, 57.9, FELWOOD },
 			}),
 			q(76197, {	-- A Glimpse of Terror
 				sourceQuests = { 76203 },	-- Stepping into the Shadows
-				provider = { "n", 202702 },	-- Maiev Stormsong
+				provider = { "n", 202702 },	-- Maiev Shadowsong
 				coord = { 38.0, 53.7, FELWOOD },
 			}),
 			q(76205, {	-- Balancing the Scales
 				sourceQuests = { 76197 },	-- A Glimpse of Terror
-				provider = { "n", 202702 },	-- Maiev Stormsong
+				provider = { "n", 202702 },	-- Maiev Shadowsong
 				coord = { 36.7, 51.6, FELWOOD },
 			}),
 			q(76206, {	-- Heart of the Issue
@@ -973,7 +973,7 @@ root(ROOTS.Character, n(HERITAGE, {
 			}),
 			q(76213, {	-- Honor of the Goddess
 				sourceQuests = { 76212 },	-- A Mark For A Protector
-				provider = { "n", 209140 },	-- Maiev Stormsong
+				provider = { "n", 209140 },	-- Maiev Shadowsong
 				coord = { 52.7, 4.2, STORMWIND_CITY },
 				groups = {
 					title(511),	-- Ama'shan <Name>

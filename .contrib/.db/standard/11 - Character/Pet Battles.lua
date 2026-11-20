@@ -870,7 +870,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 					pet(75, {	-- Black Kingsnake (PET!)
 						races = { ORC, TROLL },
 					}),
-					pet(70, {	-- Brown Praire Dog (PET!)
+					pet(70, {	-- Brown Prairie Dog (PET!)
 						races = { TAUREN },
 					}),
 					pet(142, {	-- Golden Dragonhawk Hatchling (PET!)

@@ -1508,7 +1508,7 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								q(53212, {	-- Back to Zuldazar
 									sourceQuest = 53210,	-- Touring the Front
-									provider = { "n", 143019 },	-- Wistel Sliversnitch
+									provider = { "n", 143019 },	-- Wistel Silversnitch
 									coord = { 26.11, 35.59, ARATHI_HIGHLANDS },
 									races = HORDE_ONLY,
 									lockCriteria = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
@@ -1545,7 +1545,7 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								q(53210, {	-- Touring the Front (H)
 									sourceQuest = 53208,	-- To The Front
-									provider = { "n", 143019 },	-- Wistel Sliversnitch
+									provider = { "n", 143019 },	-- Wistel Silversnitch
 									coord = { 26.1, 35.5, ARATHI_HIGHLANDS },
 									races = HORDE_ONLY,
 									lockCriteria = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag

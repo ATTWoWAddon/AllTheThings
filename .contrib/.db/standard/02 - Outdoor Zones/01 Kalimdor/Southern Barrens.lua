@@ -80,7 +80,7 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				635,	-- Adder (PET!)
 				474,	-- Cheetah Cub (PET!)
 				631,	-- Emerald Boa (PET!)
-				386,	-- Prarie Dog (PET!)
+				386,	-- Prairie Dog (PET!)
 				419,	-- Small Frog (PET!)
 			}},
 			groups = {

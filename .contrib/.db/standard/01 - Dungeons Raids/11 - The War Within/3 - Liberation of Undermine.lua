@@ -948,7 +948,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(88867, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
 			q(88829, name(HEADERS.NPC, 229283)),	-- Scraps Trash
 			q(88859, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88850, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88850, name(HEADERS.NPC, 229434)),	-- Melbo the Magnificent Trash
 			q(88854, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- Normal
 			q(88833, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
@@ -958,7 +958,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(88869, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
 			q(88830, name(HEADERS.NPC, 229283)),	-- Scraps Trash
 			q(88861, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88852, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88852, name(HEADERS.NPC, 229434)),	-- Melbo the Magnificent Trash
 			q(88856, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- Heroic
 			q(88836, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
@@ -968,7 +968,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(88866, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
 			q(88831, name(HEADERS.NPC, 229283)),	-- Scraps Trash
 			q(88858, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88849, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88849, name(HEADERS.NPC, 229434)),	-- Melbo the Magnificent Trash
 			q(88853, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- Mythic
 			q(88834, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
@@ -978,7 +978,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(88868, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
 			q(88832, name(HEADERS.NPC, 229283)),	-- Scraps Trash
 			q(88860, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+			q(88851, name(HEADERS.NPC, 229434)),	-- Melbo the Magnificent Trash
 			q(88855, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
 			-- All
 			q(89478, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash first per week any difficulty
@@ -986,7 +986,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			q(89484, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash first per week any difficulty
 			q(89477, name(HEADERS.NPC, 229283)),	-- Scraps Trash first per week any difficulty
 			q(89482, name(HEADERS.NPC, 234640)),	-- Globikus Trash first per week any difficulty
-			q(89480, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash first per week any difficulty
+			q(89480, name(HEADERS.NPC, 229434)),	-- Melbo the Magnificent Trash first per week any difficulty
 			q(89481, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash first per week any difficulty
 
 			q(89452),	-- Vexie Fullthrottle

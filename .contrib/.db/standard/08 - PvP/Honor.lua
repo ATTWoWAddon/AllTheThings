@@ -16,7 +16,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 						crs = {
 							119272,	-- Sarah the Savage (Horde / Dalaran)
 							145837,	-- Violet Shadowmend (Horde / Zuldazar)
-							146626,	-- Legionaire Voladis (Horde / OG)
+							146626,	-- Legionnaire Voladis (Horde / OG)
 						},
 					}),
 					i(142379, {	-- Dutiful Squire (PET!)
@@ -41,7 +41,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 					crs = {
 						119272,	-- Sarah the Savage (Horde / Dalaran)
 						145837,	-- Violet Shadowmend (Horde / Zuldazar)
-						146626,	-- Legionaire Voladis (Horde / OG)
+						146626,	-- Legionnaire Voladis (Horde / OG)
 					},
 				}),
 				i(139775, {	-- Alliance Enthusiast (PET!)
@@ -104,7 +104,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 					crs = {
 						119272,	-- Sarah the Savage (Horde / Dalaran)
 						145837,	-- Violet Shadowmend (Horde / Zuldazar)
-						146626,	-- Legionaire Voladis (Horde / OG)
+						146626,	-- Legionnaire Voladis (Horde / OG)
 					},
 				}),
 				i(163975, {	-- Sir Snips (PET!)

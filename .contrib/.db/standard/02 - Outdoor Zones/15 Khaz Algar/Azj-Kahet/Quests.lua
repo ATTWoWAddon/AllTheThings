@@ -617,7 +617,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 		header(HEADERS.AchCriteria, 40636.06, {	-- The Wormlands
 			q(83321, {	-- Strange Bats
 				sourceQuests = { 78233 },	-- The Weaver's Gift
-				provider = { "n", 223754 },	-- Linny Leadlinger
+				provider = { "n", 223754 },	-- Linny Leadfinger
 				coord = { 55.8, 43.7, AZJ_KAHET },
 				isBreadcrumb = true,
 			}),
@@ -663,7 +663,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 		header(HEADERS.AchCriteria, 40636.07, {	-- Haggling with Mmarl
 			q(79651, {	-- Trade Partners
 				sourceQuests = { 78256 },	-- The General's Consensus
-				provider = { "n", 223754 },	-- Linny Leadlinger
+				provider = { "n", 223754 },	-- Linny Leadfinger
 				coord = { 55.8, 43.7, AZJ_KAHET },
 				isBreadcrumb = true,
 			}),
@@ -864,7 +864,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 		header(HEADERS.AchCriteria, 40636.13, {	-- Silken Ward
 			q(83324, {	-- A Silken Thread
 				sourceQuests = { 78256 },	-- The General's Consensus
-				provider = { "n", 223754 },	-- Linny Leadlinger
+				provider = { "n", 223754 },	-- Linny Leadfinger
 				coord = { 55.8, 43.7, AZJ_KAHET },
 				isBreadcrumb = true
 			}),
@@ -1120,7 +1120,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 		------ Miscellaneous ------
 		q(84664, {	-- Making the Underworld Go Round
 			-- sourceQuests = { ? },	-- ?
-			provider = { "n", 223754 },	-- Linny Leadlinger
+			provider = { "n", 223754 },	-- Linny Leadfinger
 			coord = { 55.8, 43.7, AZJ_KAHET },
 			groups = {
 				i(228913),	-- Dubious Vial of Vigor (QI!)

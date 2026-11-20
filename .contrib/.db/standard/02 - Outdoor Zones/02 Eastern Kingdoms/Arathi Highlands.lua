@@ -28,7 +28,7 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 		}),
 		battlepets({
 			sym = {{"select","speciesID",
-				386,	-- Prarie Dog (PET!)
+				386,	-- Prairie Dog (PET!)
 				417,	-- Rat (PET!)
 				419,	-- Small Frog (PET!)
 			}},

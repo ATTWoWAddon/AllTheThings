@@ -146,7 +146,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 			}),
 			i(210738, {	-- Mark of the Loamy Umbraclaw (CI!)
 				provider = { "i", 210766 },	-- Silent Mark of the Umbraclaw
-				crs = { 211342 },	-- Angered Umberclaw
+				crs = { 211342 },	-- Angered Umbraclaw
 				coord = {47.5, 44.0, EMERALD_DREAM},
 			}),
 			i(210731, {	-- Mark of the Lush Dreamstag (CI!)

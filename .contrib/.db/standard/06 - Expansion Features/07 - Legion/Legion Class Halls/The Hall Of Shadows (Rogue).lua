@@ -778,7 +778,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						}),
 						q(44758, {	-- What's the Cache? (A)
 							sourceQuest = 45833,	-- The Pirate's Bay
-							provider = { "n", 119821 },	-- Tess Graymane
+							provider = { "n", 119821 },	-- Princess Tess Greymane
 							coord = { 57.7, 63.5, AZSUNA },
 							timeline = { ADDED_7_2_0 },
 							races = ALLIANCE_ONLY,
@@ -794,7 +794,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						}),
 						q(45835, {	-- False Orders (A)
 							sourceQuest = 45833,	-- The Pirate's Bay
-							provider = { "n", 119821 },	-- Tess Graymane
+							provider = { "n", 119821 },	-- Princess Tess Greymane
 							coord = { 57.7, 63.5, AZSUNA },
 							timeline = { ADDED_7_2_0 },
 							races = ALLIANCE_ONLY,
@@ -1018,14 +1018,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							coord = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
 							timeline = { REMOVED_7_3_0 },
 						}),
-						q(46148, {	-- Knowledge is Power
+						q(46148, {	-- Furthering Knowledge
 							sourceQuest = 43885,	-- Hitting the Books
 							provider = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 							coord = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
 							timeline = { ADDED_7_1_5, REMOVED_7_3_0 },
 						}),
-						q(46129, {	-- Furthering Knowledge
-							sourceQuest = 46148,	-- Knowledge is Power
+						q(46129, {	-- Knowledge is Power
+							sourceQuest = 46148,	-- Furthering Knowledge
 							provider = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 							coord = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
 							timeline = { ADDED_7_1_5, REMOVED_7_3_0 },

@@ -93,7 +93,7 @@ maproot(BROKEN_ISLES, AZSUNA, {
 			},
 		}),
 		q(42692, {	-- Children of Nar'thalas
-			provider = { "n", 89326 },	-- Kallista Starlance
+			provider = { "n", 89326 },	-- Kallistia Starlance
 			coord = { 53.3, 45.4, AZSUNA },
 		}),
 		q(42567, {	-- Cursed to Wither
@@ -799,7 +799,7 @@ maproot(BROKEN_ISLES, AZSUNA, {
 				37658,	-- Reignite the Wards
 				37653,	-- Demon Souls
 			},
-			provider = { "n", 89398 },	-- Allari the Souleateer
+			provider = { "n", 89398 },	-- Allari the Souleater
 			coord = { 43.2, 43.1, AZSUNA },
 			groups = {
 				i(129172),	-- Band of Demonic Guile

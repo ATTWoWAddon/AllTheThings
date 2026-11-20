@@ -167,7 +167,7 @@ root(ROOTS.NeverImplemented, {
 				i(16479),	-- Marshal's Plate Legguards
 				i(16483),	-- Marshal's Plate Boots
 				-- Rare set
-				i(23314),	-- Lieutenant Commander's Plate Helmet
+				i(23314),	-- Lieutenant Commander's Plate Helm
 				i(23315),	-- Lieutenant Commander's Plate Shoulders
 				i(23300),	-- Knight-Captain's Plate Hauberk
 				i(23286),	-- Knight-Lieutenant's Plate Gauntlets
@@ -192,7 +192,7 @@ root(ROOTS.NeverImplemented, {
 			i(18455, {	-- Sergeant Major's Dragonhide Armsplints (45)
 				classes = { DRUID },
 			}),
-			i(18452, {	-- Sergeant Major's Leather  (58)
+			i(18452, {	-- Sergeant Major's Leather Armsplints  (58)
 				classes = { ROGUE },
 			}),
 			i(18453, {	-- Sergeant Major's Leather Armsplints (45)
@@ -283,7 +283,7 @@ root(ROOTS.NeverImplemented, {
 				i(16565),	-- Warlord's Chain Chestpiece
 				i(16571),	-- General's Chain Gloves
 				i(16567),	-- General's Chain Legguards
-				i(16569),	-- General's Chain Boots
+				i(16569),	-- General's Chain Sabatons
 				-- Rare set
 				i(23251),	-- Champion's Chain Helm
 				i(23252),	-- Champion's Chain Shoulders

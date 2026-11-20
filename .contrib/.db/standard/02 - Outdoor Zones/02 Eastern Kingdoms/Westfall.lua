@@ -37,7 +37,7 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 		battlepets({
 			sym = {{"select","speciesID",
 				385,	-- Mouse (PET!)
-				386,	-- Prarie Dog (PET!)
+				386,	-- Prairie Dog (PET!)
 				387,	-- Snake (PET!)
 				419,	-- Small Frog (PET!)
 				379,	-- Squirrel (PET!)

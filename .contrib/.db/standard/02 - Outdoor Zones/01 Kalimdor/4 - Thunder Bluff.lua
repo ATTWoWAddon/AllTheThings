@@ -59,7 +59,7 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			sym = {{"select","speciesID",
 				477,	-- Gazelle Fawn (PET!)
 				385,	-- Mouse  (PET!)
-				386,	-- Prarie Dog (PET!)
+				386,	-- Prairie Dog (PET!)
 				378,	-- Rabbit (PET!)
 			}},
 		}),

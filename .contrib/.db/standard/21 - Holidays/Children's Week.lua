@@ -769,7 +769,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		q(172, {	-- Children's Week [Horde - Orc - START]
 			providers = {
 				-- #if AFTER CATA
-				{ "n", 51989 },	-- Orphan Matron Battlewall
+				{ "n", 51989 },	-- Orphan Matron Battlewail
 				-- #else
 				{ "n", 14451 },	-- Orphan Matron Battlewail
 				-- #endif
