@@ -148,7 +148,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 			battlepets({
 				sym = {{"select","speciesID",
 					635,	-- Adder (PET!)
-					386,	-- Prarie Dog (PET!)
+					386,	-- Prairie Dog (PET!)
 					417,	-- Rat (PET!)
 					379,	-- Squirrel (PET!)
 					420,	-- Toad (PET!)

@@ -6,7 +6,7 @@ maproot(KHAZ_ALGAR, SIREN_ISLE, {
 	header(HEADERS.Spell, 458069, {	-- Seafury Tempest (Storm)
 		petbattle(filter(BATTLE_PETS, {
 			pet(4732),	-- Scavenging Snapdragon (storm phase)
-			pet(4731),	-- Storminfused Snapdragon (storm phase)
+			pet(4731),	-- Storm-Infused Snapdragon (storm phase)
 		})),
 		n(QUESTS, {
 			q(84225, {	-- Eggstinction

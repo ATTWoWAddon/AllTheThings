@@ -5,7 +5,7 @@
 maproot(BROKEN_ISLES, AZSUNA, {
 	petbattle(filter(BATTLE_PETS, {
 		sym = {{"select","speciesID",
-			396,	-- Dusk Spidering (PET!)
+			396,	-- Dusk Spiderling (PET!)
 			1731,	-- Felspider (PET!)
 			478,	-- Forest Moth (PET!)
 			464,	-- Grey Moth (PET!)

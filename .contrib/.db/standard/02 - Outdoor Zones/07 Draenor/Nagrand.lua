@@ -124,7 +124,7 @@ maproot(DRAENOR, DRAENOR_NAGRAND, {
 			sym = {{"select","speciesID",
 				635,	-- Adder (PET!)
 				1441,	-- Mud Jumper (PET!)
-				386,	-- Prarie Dog (PET!)
+				386,	-- Prairie Dog (PET!)
 				378,	-- Rabbit (PET!)
 				417,	-- Rat (PET!)
 				388,	-- Shore Crab (PET!)

@@ -6,7 +6,7 @@ maproot(ZANDALAR, NAZMIR, {
 	timeline = { ADDED_8_0_1 },
 	groups = {
 		petbattle(filter(BATTLE_PETS, {
-			pet(2388, {	-- Bloodfeaver Tarantula (PET!)
+			pet(2388, {	-- Bloodfever Tarantula (PET!)
 				description = "Found all around the Terrace of Sorrows.",
 				coords = {
 					{ 35.0, 54.6, NAZMIR },

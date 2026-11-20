@@ -618,7 +618,7 @@ i(46748, 65643);	-- Swift Violet Ram [NON-DWARF]
 i(46762, 65643);	-- Swift Violet Ram [DWARF]
 i(45592, 63641);	-- Thunder Bluff Kodo
 i(46747, 65642);	-- Turbostrider [NON-GNOME]
-i(46763, 65642);	-- Turbostride [GNOME]
+i(46763, 65642);	-- Turbostrider [GNOME]
 i(46102, 64659);	-- Venomhide Ravasaur
 i(46746, 65645);	-- White Skeletal Warhorse [NON-UNDEAD]
 i(46764, 65645);	-- White Skeletal Warhorse [UNDEAD]
@@ -1078,7 +1078,7 @@ i(143643, 232519);	-- Abyss Worm
 i(0, 231437);		-- Archdruid's Lunarwing Form
 i(0, 241857);		-- Archdruid's Lunarwing Form
 i(0, 229376);		-- Archmage's Prismatic Disc
-i(0, 229385);		-- Ban-lu, Grandmaster's Companion
+i(0, 229385);		-- Ban-Lu, Grandmaster's Companion
 i(0, 229388);		-- Battlelord's Bloodthirsty War Wyrm
 i(147806, 242881);	-- Cloudwing Hippogryph
 i(0, 229387);		-- Deathlord's Vilebrood Vanquisher
@@ -1356,7 +1356,7 @@ i(172022, 308250);	-- Stormpike Battle Ram
 -----------------
 i(174836, 316637);	-- Awakened Mindborer
 i(174654, 305182);	-- Black Serpent of N'Zoth
-i(156884, 262027);	-- Corrupted Gladiator Proto Drake
+i(156884, 262027);	-- Corrupted Gladiator's Proto-Drake
 i(174066, 306423);	-- Caravan Hyena
 i(173887, 312751);	-- Clutch of Ha-Li
 i(174641, 315847);	-- Drake of the Four Winds
@@ -1534,7 +1534,7 @@ i(186713, 354354);	-- Hand of Nilganihmaht
 i(186654, 354355);	-- Hand of Salaranga
 i(185996, 332904);	-- Harvester's Dredwing
 i(186489, 347250);	-- Lord of the Corpseflies
-i(186643, 354362);	-- Maelie The Wanderer
+i(186643, 354362);	-- Maelie, the Wanderer
 i(186487, 353883);	-- Maldraxxian Corpsefly
 i(186479, 215545);	-- Mastercraft Gravewing
 i(186655, 339956);	-- Mawsworn Charger
@@ -2145,7 +2145,7 @@ i(233283, 473741);	-- Meeksi Softpaw
 i(233285, 473744);	-- Meeksi Teatuft
 i(229946, 466013);	-- Ochre Delivery Rocket
 i(235650, 1217994);	-- Pearlescent Butterfly
-i(229949, 466020);	-- Personalized Goblin S.C.R.A.Per
+i(229949, 466020);	-- Personalized Goblin S.C.R.A.P.per
 i(229987, 466144);	-- Prized Gladiator's Fel Bat
 i(236960, 1221155);	-- Prototype A.S.M.R.
 i(235657, 1218012);	-- Ruby Butterfly
@@ -2202,7 +2202,7 @@ i(243572, 1235756);	-- Grandmaster's Prophetic Board
 i(243591, 1235803);	-- Grandmaster's Royal Board
 i(246264, 1241429);	-- Inarius' Charger
 i(245694, 1237703);	-- Ivory Savagemane
-i(239076, 1227192);	-- Herald of Sa'Bak
+i(239076, 1227192);	-- Herald of Sa'bak
 i(221270, 446352);	-- Kickin' Kezan Waveshredder
 i(245695, 1237631);	-- Moonlit Nightsaber
 i(246237, 1241263);	-- OC91 Chariot
@@ -2253,7 +2253,7 @@ i(243019, 1234303);	-- Voidwing Dragonhawk
 i(186639, 353264);	-- Xy Trustee's Gearglider
 --- NYI ---
 i(247791, 1245357);	-- Adorned Northeron Gryphon
-i(246919, 1244259);	-- Cinder-seared Elekk
+i(246919, 1244259);	-- Cinder-Seared Elekk
 i(247794, 1245361);	-- Emberwing Sky Guide
 i(247722, 1245202);	-- The Headless Horseman's Burning Charger
 i(247720, 1245197);	-- The Headless Horseman's Chilling Charger
@@ -2277,7 +2277,7 @@ i(251795, 1253130);	-- Brimstone Courser
 i(251796, 1253129);	-- Chestnut Courser
 i(253573, 1256677);	-- Cobalt Phase-Hunter
 i(253031, 1255478);	-- Farseer's Felscorned Tempest
-i(250745, 1251279);	-- Fel-scarred Mana Ray
+i(250745, 1251279);	-- Fel-Scarred Mana Ray
 i(253024, 1255451);	-- Feldruid's Scornwing Form
 i(253027, 1255467);	-- Felscorned Grandmaster's Companion
 i(253028, 1255471);	-- Felscorned Highlord's Charger
@@ -2287,7 +2287,7 @@ i(253033, 1255482);	-- Felscorned War Wyrm
 i(253025, 1255456);	-- Felscorned Wolfhawk
 i(250425, 1250880);	-- Felslate Basilisk
 i(250803, 1251397);	-- Garnet Ruinstrider
-i(250192, 1250482);	-- Ghastly Ur'zu
+i(250192, 1250482);	-- Ghastly Ur'zul
 i(250757, 1251300);	-- Gloomdark Nightmare
 i(250752, 1251297);	-- Golden Sunrunner
 i(243194, 1234971);	-- Grandiose Grrloc
@@ -2297,8 +2297,8 @@ i(250926, 1251680);	-- Highlands Gobbler
 i(250427, 1250884);	-- Illidari Blightstalker
 i(250428, 1250882);	-- Illidari Dreadstalker
 i(211085, 428062);	-- Jeweled Sapphire Scarab
-i(248994, 1248309);	-- Kalu'ak Crest-horn
-i(242795, 1233925);	-- Lana'Thel's Crimson Cascade
+i(248994, 1248309);	-- Kalu'ak Crest-Horn
+i(242795, 1233925);	-- Lana'thel's Crimson Cascade
 i(250424, 1250879);	-- Leystone Basilisk
 i(250805, 1251399);	-- Longhorned Argussian Talbuk
 i(250806, 1251400);	-- Longhorned Beryl Talbuk
@@ -2321,13 +2321,13 @@ i(246920, 1244260);	-- Void-Razed Elekk
 i(239687, 1229288);	-- Wretched Fel Bat
 --- NYI ---
 i(0, 1254363);	-- (PH LEGION REMIX MOUNT)
-i(239647, 1229264);	-- Bloodguard Fel Ba
+i(239647, 1229264);	-- Bloodguard Fel Bat
 i(250762, 0);		-- Felfueled Memento of the Abyss
 i(250106, 1250287);	-- Floestrider Crest-Horn
-i(239686, 1229286);	-- Forgotten Fel Batt
-i(250726, 1251257);	-- Leyfrost Manasabe
-i(250727, 1251264);	-- Nightwell Manasabr
-i(250927, 1251685);	-- Quirky Turkeyer
+i(239686, 1229286);	-- Forgotten Fel Bat
+i(250726, 1251257);	-- Leyfrost Manasaber
+i(250727, 1251264);	-- Nightwell Manasaber
+i(250927, 1251685);	-- Quirky Turkey
 i(239666, 1229278);	-- Risen Fel Bat
 i(250105, 1250285);	-- Sharktested Crest-Horn
 i(250321, 1250740);	-- Thorignir Drake
@@ -2442,14 +2442,14 @@ i(262500, 1268924);	-- Silvermoon's Arcane Defender
 i(262914, 1263635);	-- Spectral Hawkstrider
 i(235658, 1218013);	-- Spring Butterfly
 i(260887, 1266980);	-- Tenebrous Harrower
-i(246917, 1244247);	-- Thunder-ridged Elekk
+i(246917, 1244247);	-- Thunder-Ridged Elekk
 i(257144, 1261296);	-- Umbral Dragonhawk
 i(256423, 1260354);	-- Untainted Grove Crawler
 i(252012, 1253927);	-- Vibrant Petalwing
 i(257504, 1261648);	-- Vicious Snaplizard [A]
 i(257502, 1261629);	-- Vicious Snaplizard [H]
 i(262705, 1269273);	-- Vicious Snapvine
-i(263579, 1270673);	-- Vivacious Chlorocoers
+i(263579, 1270673);	-- Vivacious Chloroceros
 i(263580, 1270675);	-- Vivid Chloroceros
 i(260696, 1266702);	-- Voidbound Stormray
 i(257200, 1261351);	-- Witherbark Pango

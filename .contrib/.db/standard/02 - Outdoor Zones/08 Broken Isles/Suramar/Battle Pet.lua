@@ -7,8 +7,8 @@ maproot(BROKEN_ISLES, SURAMAR, {
 		sym = {{"select","speciesID",
 			425,	-- Ash Viper (PET!)
 			1914,	-- Coastal Sandpiper (PET!)
-			751,	-- Dancing Watter Skimmer (PET!)
-			1325,	-- Flamering moth (PET!)
+			751,	-- Dancing Water Skimmer (PET!)
+			1325,	-- Flamering Moth (PET!)
 			1591,	-- Violet Firefly (PET!)
 		}},
 		groups = {
