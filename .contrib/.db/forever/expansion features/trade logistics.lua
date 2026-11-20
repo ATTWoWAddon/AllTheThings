@@ -8,12 +8,17 @@ root(ROOTS.ExpansionFeatures, {
 			n(QUESTS, {
 				q(95820, {	-- Karolek
 					sourceQuest = 95819,	-- Sign Me Up! [H]
-					-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Karolek (3365) in the Kodohide Leatherworkers shop.
+					qg = 256388,	-- Jornah <Contract Coordinator>
+					coord = { 49.8, 29.4, MAP.THE_BARRENS },
+					maps = { MAP.ORGRIMMAR },
+					races = HORDE_ONLY,
 				}),
 				q(95817, {	-- Rotgath Stonebeard
 					sourceQuest = 95816,	-- Sign Me Up! [A]
-					-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Rotgath Stonebeard (10276) near the Great Forge.
-					timeline = { TIMELINE.CREATED_1_60_1 },
+					qg = 256391,	-- Elaine Compton <Contract Coordinator>
+					coord = { 10.2, 71.2, MAP.REDRIDGE_MOUNTAINS },
+					maps = { MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
 				}),
 				q(95816, {	-- Sign Me Up! [A]
 					qg = 256391,	-- Elaine Compton <Contract Coordinator>
