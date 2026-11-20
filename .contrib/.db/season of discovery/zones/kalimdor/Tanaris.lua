@@ -910,6 +910,7 @@ maproot(KALIMDOR, TANARIS, {
 			}),
 			q(2741, {	-- The Super Egg-O-Matic
 				provider = { "o", 142071 },	-- Egg-O-Matic
+				coord = { 52.4, 27.0, TANARIS },
 				maps = { FERALAS },
 				cost = { { "i", 8564, 1 } },	-- Hippogryph Egg
 				lvl = 42,
