@@ -410,7 +410,10 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 			}),
 		}),
 		filter(PROFESSION_EQUIPMENT, {
+			i(5956),	-- Blacksmith Hammer
 			i(6256),	-- Fishing Pole
+			i(2901),	-- Mining Pick
+			i(7005),	-- Skinning Knife
 			i(6365, {	-- Strong Fishing Pole
 				isLimited = true,
 			}),
@@ -612,11 +615,6 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 				i(5347),	-- Pestilent Wand
 				i(5238),	-- Pitchwood Wand
 				i(5208),	-- Smoldering Wand
-			}),
-			filter(MISC, {
-				i(5956),	-- Blacksmith Hammer
-				i(2901),	-- Mining Pick
-				i(7005),	-- Skinning Knife
 			}),
 		}),
 	},
