@@ -914,6 +914,13 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 					}),
 				},
 			}),
+			n(3053, {	-- Synge <Gun Merchant>
+				coord = { 80.4, 76.8, THOUSAND_NEEDLES },
+				sym = {{"select","itemID",
+					3024,	-- BKP 2700 "Enforcer"
+					3023,	-- Large Bore Blunderbuss
+				}},
+			}),
 		}),
 		n(ZONE_DROPS, {
 			i(1493, {	-- Heavy Marauder Scimitar
