@@ -5277,25 +5277,25 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 			}, {
 				------ Requires 25 Skill ------
 				q(66945, {	-- Icy Ink
-					description = "Requires 25 Skill.",
+					learnedAt = 25,
 					qg = 191000,	-- Dothenos
 					coord = { 36.6, 62.6, VALDRAKKEN },
 					qi = 194451,	-- Icy Excrement (QI!)
 				}),
 				q(66944, {	-- Peacock Pigments
-					description = "Requires 25 Skill.",
+					learnedAt = 25,
 					qg = 191001,	-- Gnoklin Quirkcoil
 					coord = { 36.8, 62.8, VALDRAKKEN },
 					qi = 194321,	-- Peacock Feather (QI!)
 				}),
 				q(72438, {	-- Tarasek Intentions
-					description = "Requires 25 Skill.",
+					learnedAt = 25,
 					qg = 191000,	-- Dothenos
 					coord = { 36.6, 62.6, VALDRAKKEN },
 					qi = 201835,	-- Draconic Scroll (QI!)
 				}),
 				q(66943, {	-- Wood for Writing
-					description = "Requires 25 Skill.",
+					learnedAt = 25,
 					qg = 191000,	-- Dothenos
 					coord = { 36.6, 62.6, VALDRAKKEN },
 					qi = 194332,	-- Bark Parchment (QI!)
@@ -5303,27 +5303,27 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 
 				------ Requires 45 Skill ------
 				q(70561, {	-- A Scribe's Tragedy
-					description = "Requires 45 Skill.",
+					learnedAt = 45,
 					qg = 185540,	-- Talendara
 					coord = { 39.4, 73.6, VALDRAKKEN },
 				}),
 				q(70558, {	-- Disillusioned Illusions
-					description = "Requires 45 Skill.",
+					learnedAt = 45,
 					qg = 185540,	-- Talendara
 					coord = { 39.4, 73.6, VALDRAKKEN },
 				}),
 				q(70592, {	-- Inscription Services Requested
-					description = "Requires 25 Skill.",
+					learnedAt = 25,
 					qg = 194026,	-- Azley
 					coord = { 35.6, 58.8, VALDRAKKEN },
 				}),
 				q(70560, {	-- The Most Powerful Tool: Good Documentation
-					description = "Requires 45 Skill.",
+					learnedAt = 45,
 					qg = 185540,	-- Talendara
 					coord = { 39.4, 73.6, VALDRAKKEN },
 				}),
 				q(70559, {	-- Quill You Help?
-					description = "Requires 45 Skill.",
+					learnedAt = 45,
 					qg = 185540,	-- Talendara
 					coord = { 39.4, 73.6, VALDRAKKEN },
 				}),

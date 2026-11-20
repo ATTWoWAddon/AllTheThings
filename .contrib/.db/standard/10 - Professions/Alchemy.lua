@@ -828,7 +828,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 		},{
 			------ Requires 25 Skill ------
 			q(72427, {	-- Animated Infusion
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191002 },	-- Dhurrel
 				coord = { 36.6, 63.6, VALDRAKKEN },
 				groups = {
@@ -836,7 +836,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				},
 			}),
 			q(66937, {	-- Decaying News
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191000 },	-- Dothenos
 				coord = { 36.6, 62.6, VALDRAKKEN },
 				groups = {
@@ -844,7 +844,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				},
 			}),
 			q(66940, {	-- Elixir Experiment
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191002 },	-- Dhurrel
 				coord = { 36.6, 63.6, VALDRAKKEN },
 				groups = {
@@ -852,7 +852,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 				},
 			}),
 			q(66938, {	-- Mammoth Marrow
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191002 },	-- Dhurrel
 				coord = { 36.6, 63.6, VALDRAKKEN },
 				groups = {
@@ -862,22 +862,22 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ requireSkill = ALCHEMY },
 
 			------ Requires 45 Skill ------
 			q(70532, {	-- Aiding the Raiding
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185545 },	-- Conflago
 				coord = { 36.4, 71.4, VALDRAKKEN },
 			}),
 			q(70533, {	-- Decaying News
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185545 },	-- Conflago
 				coord = { 36.4, 71.4, VALDRAKKEN },
 			}),
 			q(70530, {	-- Examination Week
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185545 },	-- Conflago
 				coord = { 36.4, 71.4, VALDRAKKEN },
 			}),
 			q(70531, {	-- Mana Markets
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185545 },	-- Conflago
 				coord = { 36.4, 71.4, VALDRAKKEN },
 			}),

@@ -878,12 +878,12 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 		}, {
 			------ Requires 25 Skill ------
 			q(70589, {	-- Blacksmithing Services Requested
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 194026 },	-- Azley
 				coord = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66897, {	-- Fuel for the Forge
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191002 },	-- Dhurrel
 				coord = { 36.6, 63.6, VALDRAKKEN },
 				groups = {
@@ -891,7 +891,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				},
 			}),
 			q(72398, {	-- Rock and Stone
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191002 },	-- Dhurrel
 				coord = { 36.6, 63.6, VALDRAKKEN },
 				groups = {
@@ -899,7 +899,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				},
 			}),
 			q(66941, {	-- Tremendous Tools
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191002 },	-- Dhurrel
 				coord = { 36.6, 63.6, VALDRAKKEN },
 				groups = {
@@ -909,7 +909,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 
 			------ Requires 45 Skill ------
 			q(66517, {	-- A New Source of Weapons
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 191002 },	-- Dhurrel
 				coord = { 36.8, 63.6, VALDRAKKEN },
 				groups = {
@@ -917,22 +917,22 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 				},
 			}),
 			q(70234, {	-- All this Hammering
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185546 },	-- Metalshaper Kuroko
 				coord = { 37.0, 47.0, VALDRAKKEN },
 			}),
 			q(70233, {	-- Axe Shortage
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185546 },	-- Metalshaper Kuroko
 				coord = { 37.0, 47.0, VALDRAKKEN },
 			}),
 			q(70235, {	-- Repair Bill
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185546 },	-- Metalshaper Kuroko
 				coord = { 37.0, 47.0, VALDRAKKEN },
 			}),
 			q(70211, {	-- Stomping Explorers
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185546 },	-- Metalshaper Kuroko
 				coord = { 37.0, 47.0, VALDRAKKEN },
 			}),

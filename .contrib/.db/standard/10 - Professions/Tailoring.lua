@@ -957,7 +957,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 			},
 		},{
 			q(66953, {	-- All Things Fluffy
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191000 },	-- Dothenos
 				coord = { 36.6, 62.6, VALDRAKKEN },
 				groups = {
@@ -965,7 +965,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				},
 			}),
 			q(66899, {	-- Fuzzy Legs
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191001 },	-- Gnoklin Quirkcoil <Requisitions Officer>
 				coord = { 36.6, 62.6, VALDRAKKEN },
 				groups = {
@@ -973,7 +973,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				},
 			}),
 			q(72410, {	-- Pincers and Needles
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191001 },	-- Gnoklin Quirkcoil
 				coord = { 36.8, 62.8, VALDRAKKEN },
 				groups = {
@@ -981,12 +981,12 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 				},
 			}),
 			q(70595, {	-- Tailoring Services Requested
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 194026 },	-- Azley
 				coord = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66952, {	-- The Gnoll's Clothes
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191000 },	-- Dothenos
 				coord = { 36.6, 62.6, VALDRAKKEN },
 				groups = {
@@ -996,22 +996,22 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 
 			-- Requires 45 Skill
 			q(70587, {	-- A Knapsack Problem
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 193649 },	-- Threadfinder Fulafong
 				coord = { 31.8, 67.6, VALDRAKKEN },
 			}),
 			q(70586, {	-- Sew Many Cooks
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 193649 },	-- Threadfinder Fulafong
 				coord = { 31.8, 67.6, VALDRAKKEN },
 			}),
 			q(70572, {	-- The Cold Does Bother Them, Actually
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 193649 },	-- Threadfinder Fulafong
 				coord = { 31.8, 67.6, VALDRAKKEN },
 			}),
 			q(70582, {	-- Weave Well Enough Alone
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 193649 },	-- Threadfinder Fulafong
 				coord = { 31.8, 67.6, VALDRAKKEN },
 			}),

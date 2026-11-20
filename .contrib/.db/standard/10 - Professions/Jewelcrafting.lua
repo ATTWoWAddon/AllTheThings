@@ -807,7 +807,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 		},{
 			-- Requires 25 Skill
 			q(66950, {	-- Heart of a Giant
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191004 },	-- Temnaayu
 				coord = { 36.8, 62.4, VALDRAKKEN },
 				groups = {
@@ -815,7 +815,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 				},
 			}),
 			q(72428, {	-- Hornswog Hoarders
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191001 },	-- Gnoklin Quirkcoil
 				coord = { 36.8, 62.8, VALDRAKKEN },
 				groups = {
@@ -823,12 +823,12 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 				},
 			}),
 			q(70593, {	-- Jewelcrafting Services Requested
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 194026 },	-- Azley
 				coord = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66516, {	-- Mundane Gems, I Think not!
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191001 },	-- Gnoklin Quirkcoil
 				coord = { 36.8, 62.8, VALDRAKKEN },
 				groups = {
@@ -836,7 +836,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 				},
 			}),
 			q(66949, {	-- Trinket Bandits
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191004 },	-- Temnaayu
 				coord = { 36.8, 62.4, VALDRAKKEN },
 				groups = {
@@ -846,22 +846,22 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ requireSkill = JEWE
 
 			-- Requires 45 Skill
 			q(70565, {	-- Separation by Saturation
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 190094 },	-- Tuluradormi
 				coord = { 40.6, 61.2, VALDRAKKEN },
 			}),
 			q(70564, {	-- Spectacular
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 190094 },	-- Tuluradormi
 				coord = { 40.6, 61.2, VALDRAKKEN },
 			}),
 			q(70563, {	-- The Exhibition
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 190094 },	-- Tuluradormi
 				coord = { 40.6, 61.2, VALDRAKKEN },
 			}),
 			q(70562, {	-- The Plumbers, Mason
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 190094 },	-- Tuluradormi
 				coord = { 40.6, 61.2, VALDRAKKEN },
 			}),

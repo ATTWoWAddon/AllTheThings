@@ -1106,7 +1106,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 		},{
 			-- Requires 25 Skill
 			q(66363, {	-- Basilisk Bucklers
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191002 },	-- Dhurrel
 				coord = { 36.8, 63.6, VALDRAKKEN },
 				groups = {
@@ -1114,12 +1114,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				},
 			}),
 			q(70594, {	-- Leatherworking Services Requested
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 194026 },	-- Azley
 				coord = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66951, {	-- Population Control
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191004 },	-- Temnaayu
 				coord = { 36.8, 62.4, VALDRAKKEN },
 				groups = {
@@ -1127,7 +1127,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				},
 			}),
 			q(72407, {	-- Soaked in Success
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191004 },	-- Temnaayu
 				coord = { 36.8, 62.4, VALDRAKKEN },
 				groups = {
@@ -1135,7 +1135,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 				},
 			}),
 			q(66364, {	-- To Fly a Kite
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191004 },	-- Temnaayu
 				coord = { 36.8, 62.4, VALDRAKKEN },
 				groups = {
@@ -1145,22 +1145,22 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 
 			-- Requires 45 Skill
 			q(70571, {	-- Drums Here!
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185551 },	-- Hideshaper Koruz
 				coord = { 28.6, 61.4, VALDRAKKEN },
 			}),
 			q(70569, {	-- For Trisket, a Task Kit
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185551 },	-- Hideshaper Koruz
 				coord = { 28.6, 61.4, VALDRAKKEN },
 			}),
 			q(70568, {	-- Tipping the Scales
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185551 },	-- Hideshaper Koruz
 				coord = { 28.6, 61.4, VALDRAKKEN },
 			}),
 			q(70567, {	-- When You Give Bakar a Bone
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185551 },	-- Hideshaper Koruz
 				coord = { 28.6, 61.4, VALDRAKKEN },
 			}),

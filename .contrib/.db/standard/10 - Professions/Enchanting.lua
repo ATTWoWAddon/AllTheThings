@@ -556,7 +556,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 		}, {
 			------ Requires 25 Skill ------
 			q(66935, {	-- Crystal Quill Pens
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191001 },	-- Gnoklin Quirkcoil
 				coord = { 36.8, 62.8, VALDRAKKEN },
 				groups = {
@@ -564,7 +564,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 				},
 			}),
 			q(66900, {	-- Enchanted Relics
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191004 },	-- Temnaayu
 				coord = { 36.8, 62.4, VALDRAKKEN },
 				groups = {
@@ -572,7 +572,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 				},
 			}),
 			q(66884, {	-- Fireproof Gear
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191004 },	-- Temnaayu
 				coord = { 36.8, 62.4, VALDRAKKEN },
 				groups = {
@@ -580,7 +580,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 				},
 			}),
 			q(72423, {	-- Weathering the Storm
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191004 },	-- Temnaayu
 				coord = { 36.8, 62.4, VALDRAKKEN },
 				groups = {
@@ -590,17 +590,17 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 
 			------ Requires 45 Skill ------
 			q(72175, {	-- A Scept-acular Time
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 193744 },	-- Soragosa
 				coord = { 30.8, 61.4, VALDRAKKEN },
 			}),
 			q(72173, {	-- Braced for Enchantment
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 193744 },	-- Soragosa
 				coord = { 30.8, 61.4, VALDRAKKEN },
 			}),
 			q(72172, {	-- Essence, Shards, and Chromatic Dust
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				qgs = {
 					193744,	-- Soragosa
 					216267,	-- Enchanter Falrin Treeshaper <House of Shen'dralar>
@@ -611,7 +611,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ requireSkill = ENCHANT
 				},
 			}),
 			q(72155, {	-- Spread the Enchantment
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 193744 },	-- Soragosa
 				coord = { 30.8, 61.4, VALDRAKKEN },
 			}),

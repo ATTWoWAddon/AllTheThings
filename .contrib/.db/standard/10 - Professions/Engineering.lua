@@ -808,7 +808,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 		},{
 			------ Requires 25 Skill ------
 			q(66942, {	-- Enemy Engineering
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191001 },	-- Gnoklin Quirkcoil
 				coord = { 36.8, 62.8, VALDRAKKEN },
 				groups = {
@@ -816,17 +816,17 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 				},
 			}),
 			q(70591, {	-- Engineering Services Requested
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 194026 },	-- Azley
 				coord = { 35.6, 58.8, VALDRAKKEN },
 			}),
 			q(66891, {	-- Explosive Ash
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191001 },	-- Gnoklin Quirkcoil
 				coord = { 36.8, 62.8, VALDRAKKEN },
 			}),
 			q(72396, {	-- Horns of Plenty
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191000 },	-- Dothenos
 				coord = { 36.6, 62.6, VALDRAKKEN },
 				groups = {
@@ -834,7 +834,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 				},
 			}),
 			q(66890, {	-- Stolen Tools
-				description = "Requires 25 Skill.",
+				learnedAt = 25,
 				provider = { "n", 191000 },	-- Dothenos
 				coord = { 36.6, 62.6, VALDRAKKEN },
 				groups = {
@@ -844,22 +844,22 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 
 			------ Requires 45 Skill ------
 			q(70540, {	-- An Engineer's Best Friend
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185548 },	-- Clinkyclick Shatterboom
 				coord = { 42.2, 48.8, VALDRAKKEN },
 			}),
 			q(70539, {	-- And You Thought They Did Nothing
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185548 },	-- Clinkyclick Shatterboom
 				coord = { 42.2, 48.8, VALDRAKKEN },
 			}),
 			q(70545, {	-- Blingtron 8000...?
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185548 },	-- Clinkyclick Shatterboom
 				coord = { 42.2, 48.8, VALDRAKKEN },
 			}),
 			q(70557, {	-- No Scopes
-				description = "Requires 45 Skill.",
+				learnedAt = 45,
 				provider = { "n", 185548 },	-- Clinkyclick Shatterboom
 				coord = { 42.2, 48.8, VALDRAKKEN },
 			}),
