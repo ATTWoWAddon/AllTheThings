@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
--- TODO: Add vendors for Tigule's Strawberry Ice Cream (7228)
+-- TODO: Tigule's Strawberry Ice Cream (7228) is sourced at Brivelthwerp (Thousand Needles); the Sweet Treats and Hallow's End Treats vendors that also sell it still need adding.
 local WARDEN_OF_THE_GROUPS = {
 	i(23007),	-- Mr. Wiggles (PET!)
 	i(23015),	-- Whiskers the Rat (PET!)

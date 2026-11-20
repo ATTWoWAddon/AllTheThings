@@ -33,7 +33,7 @@ CHILDRENS_WEEK_HEADER = createHeader({
 	},
 });
 
--- TODO: Add vendors for Tigule's Strawberry Ice Cream (7228)
+-- TODO: Tigule's Strawberry Ice Cream (7228) is sourced at Brivelthwerp (Thousand Needles); the Sweet Treats and Hallow's End Treats vendors that also sell it still need adding.
 local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 	timeline = { ADDED_6_0_2 },
 	groups = {

@@ -2729,6 +2729,15 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 			}),
 		}),
 		n(VENDORS, {
+			n(6496, {	-- Brivelthwerp <Ice Cream Vendor>
+				coord = { 77.4, 77.0, THOUSAND_NEEDLES },
+				timeline = { REMOVED_4_0_3 },
+				-- #if BEFORE 4.0.3
+				groups = {
+					i(7228),	-- Tigule's Strawberry Ice Cream
+				},
+				-- #endif
+			}),
 			n(4877, {	-- Jandia <Trade Supplies>
 				coord = { 46.0, 51.6, THOUSAND_NEEDLES },
 				timeline = { REMOVED_4_0_3 },

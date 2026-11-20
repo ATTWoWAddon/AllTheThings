@@ -1050,6 +1050,12 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 			}),
 		}),
 		n(VENDORS, {
+			n(6496, {	-- Brivelthwerp <Ice Cream Vendor>
+				coord = { 77.4, 76.9, MAP.THOUSAND_NEEDLES },
+				groups = {
+					i(7228),	-- Tigule's Strawberry Ice Cream
+				},
+			}),
 			n(4877, {	-- Jandia <Trade Supplies>
 				coord = { 46.0, 51.6, MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
