@@ -48,7 +48,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	prof(ALCHEMY, {
 		n(COMMON_VENDOR_ITEMS, {
 			i(40411, {	-- Enchanted Vial for WotLK, turns into Shattered Vial with Cataclysm.
-				description = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 				-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 				--[[providers = {
 					{ "n", 24341},	-- Barnabas Frye <Trade Goods>
@@ -606,9 +605,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	}),
 	prof(ENGINEERING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			description = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-			--[[description = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
+			--[[
 			coords = {
 				{ 39.0, 26.0, NORTHREND_DALARAN },
 				-- #if AFTER CATA

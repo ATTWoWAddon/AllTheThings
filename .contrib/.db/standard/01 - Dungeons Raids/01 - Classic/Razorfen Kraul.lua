@@ -166,7 +166,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					groups = {
 						objective(1, {	-- 0/1 Treshala's Pendant
 							provider = { "i", 5825 },	-- Treshala's Pendant
-							description = "Drops from any creature in the Dungeon.",
 						}),
 						i(6751),	-- Mourning Shawl
 						i(6752),	-- Lancer Boots
@@ -282,6 +281,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						4538,	-- Kraul Bat
 						-- #endif
 					},
+				}),
+				i(5825, {	-- Treshala's Pendant
+					timeline = { REMOVED_4_0_3 },
 				}),
 				i(1488),	-- Avenger's Armor
 				i(2264),	-- Mantle of Thieves

@@ -113,7 +113,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			groups = appendAllGroups(
 				{
 					i(3371, {	-- Empty Vial for Vanilla, turns into Crystal Vial with Cataclysm and becomes the one vial to use in crafting recipes, deprecating all other vials.
-						description = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
 						--[[coords = {
 							{ 66.6, 54.6, IRONFORGE },
@@ -147,7 +146,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 				sharedData({	-- Leaded-/Crystal Vials for Vanilla
-					description = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 					coords = {
 						{ 55.8, 24.5, DARNASSUS },
 						{ 66.6, 54.6, IRONFORGE },
@@ -171,7 +169,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				{
 					i(18256, {	-- Imbued Vial for Vanilla/TBC/WotLK, turns into Melted Vial with Cataclysm.
-						description = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 						coords = {
 							{ 55.8, 24.5, DARNASSUS },
 							{ 66.6, 54.6, IRONFORGE },
@@ -518,13 +515,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				{
 					i(5956, {	-- Blacksmithing Hammer
 						collectible = false,
-						description = "Can be bought from Blacksmithing- and Engineering Suppliers, as well as some Trade vendors around the world.",
 					}),
 				},
 				sharedData({
-					description = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-					--[[description = "Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
+					--[[
 					coords = {
 						{ 51.8, 41.2, IRONFORGE },
 						{ 39.8, 55.6, THUNDER_BLUFF },
@@ -1200,7 +1195,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		n(COMMON_VENDOR_ITEMS, {
 			groups = appendAllGroups(
 				sharedData({	-- Enchanting supplies
-					description = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
 					--[[coords = {
 						{ 60.8, 44.2, IRONFORGE },
@@ -1309,7 +1303,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},]]
 				},{
 					i(6217, {	-- Copper Rod
-						description = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
 					}),
 					i(10938, { isLimited = true, }),	-- Lesser Magic Essence
 					i(10940, { isLimited = true, }),	-- Strange Dust
@@ -1673,9 +1666,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	}),
 	prof(ENGINEERING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			description = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
-			--[[description = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
+			--[[
 			coords = {
 				{ 67.8, 43.0, IRONFORGE },
 				{ 75.5, 74.3, UNDERCITY },
@@ -4327,9 +4319,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(INSCRIPTION, {
 		-- Inks and reagents:
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			description = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
-			--[[description = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
+			--[[
 			coords = {
 				{ 57.6, 71.64, BOREAN_TUNDRA },
 				{ 57.6, 71.64, BOREAN_TUNDRA },
@@ -4971,7 +4962,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	-- #if AFTER TBC
 	prof(JEWELCRAFTING, {
 		n(COMMON_VENDOR_ITEMS, sharedData({
-			description = "Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",
 			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 			--[[providers = {
 				{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
@@ -5154,7 +5144,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			groups = appendAllGroups(
 				{
 					i(4289, {	-- Salt
-						description = "Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",
 						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 						--[[providers = {
 							{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
@@ -5175,7 +5164,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 				sharedData({
-					description = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 					--[[providers = {
 						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
@@ -7038,7 +7026,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			filter(PROFESSION_EQUIPMENT, {
 				i(2901, {	-- Mining Pick
 					collectible = false,
-					description = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
 				}),
 			}),
 			header(HEADERS.Spell, 2656, {	-- Smelting
@@ -7681,7 +7668,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					i(14341),	-- Rune Thread
 				},
 				sharedData({
-					description = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
 					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
 					--[[providers = {
 						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>

@@ -3262,26 +3262,7 @@ root(ROOTS.Craftables, {
 			),
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(2901, {	-- Mining Pick
-				description = createLocalizationString({
-					readable = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
-					constant = "MINING_PICK_DESCRIPTION",
-					export = true,
-					text = {
-						en = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world",
-						-- TODO: de = "",
-						es = "Se puede comprar a proveedores de equipos de minería, así como a algunos comerciantes repartidos por todo el mundo.",
-						-- TODO: mx = "",
-						-- TODO: fr = "",
-						-- TODO: it = "",
-						-- TODO: ko = "",
-						-- TODO: pt = "",
-						-- TODO: ru = "",
-						-- TODO: cn = "",
-						tw = "可向採礦供應商及世界各地部分貿易商人購買。",	-- TODO: verify it.
-					},
-				}),
-			}),
+			i(2901),	-- Mining Pick
 		}),
 		header(HEADERS.Spell, 2656, {	-- Smelting
 			i(2841, {	-- Bronze Bar

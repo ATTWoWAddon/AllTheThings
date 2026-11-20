@@ -407,11 +407,6 @@ WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeli
 }));
 ETERNIUM_THREAD = applyclassicphase(WRATH_PHASE_ONE, {
 	i(38426, {	-- Eternium Thread
-		-- #if AFTER CATA
-		description = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
-		-- #else
-		description = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
-		-- #endif
 		providers = {
 			{ "n", 24341},	-- Barnabas Frye <Trade Goods>
 			{ "n", 27012},	-- Beem Goldsprocket <Trade Goods>

@@ -100,7 +100,6 @@ instanceroot(234, {	-- Razorfen Kraul
 				groups = {
 					objective(1, {	-- 0/1 Treshala's Pendant
 						provider = { "i", 5825 },	-- Treshala's Pendant
-						description = "Drops from any creature in the Dungeon.",
 					}),
 					i(6751),	-- Mourning Shawl
 					i(6752),	-- Lancer Boots
@@ -155,6 +154,7 @@ instanceroot(234, {	-- Razorfen Kraul
 					4538,	-- Kraul Bat
 				},
 			}),
+			i(5825),	-- Treshala's Pendant
 			i(1488),	-- Avenger's Armor
 			i(2264),	-- Mantle of Thieves
 			i(2039),	-- Plains Ring
