@@ -2656,34 +2656,15 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 				coords = {
 					{ 28.2, 77.6, STRANGLETHORN_VALE },
 				},
-				sym = {{"select","itemID",
-					2435,	-- Embroidered Armor
-					3587,	-- Embroidered Belt
-					2438,	-- Embroidered Boots
-					3588,	-- Embroidered Bracers
-					2440,	-- Embroidered Gloves
-					3892,	-- Embroidered Hat
-					2437,	-- Embroidered Pants
-					2160,	-- Padded Armor
-					3591,	-- Padded Belt
-					2156,	-- Padded Boots
-					3592,	-- Padded Bracers
-					2158,	-- Padded Gloves
-					2159,	-- Padded Pants
-					3593,	-- Russet Belt
-					2432,	-- Russet Boots
-					3594,	-- Russet Bracers
-					2434,	-- Russet Gloves
-					3889,	-- Russet Hat
-					2431,	-- Russet Pants
-					2429,	-- Russet Vest
-					3597,	-- Thick Cloth Belt
-					3598,	-- Thick Cloth Bracers
-					203,	-- Thick Cloth Gloves
-					201,	-- Thick Cloth Pants
-					202,	-- Thick Cloth Shoes
-					200,	-- Thick Cloth Vest
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+					},
+					{ "pop" },
+				},
 				groups = sharedData({
 					collectible = false,
 					providers = {
