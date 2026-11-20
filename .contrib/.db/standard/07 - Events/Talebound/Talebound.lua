@@ -271,7 +271,7 @@ root(ROOTS.WorldEvents, {
 					i(282413, {	-- Blood-Spattered Ritual Cap
 						cost = { { "c", BOUND_SILVER, 1000 } },
 					}),
-					iensemble(268452, {	-- Ensemble: Ambermill Rebel Streetware
+					iensemble(268452, {	-- Ensemble: Ambermill Traveler's Attire
 						cost = { { "c", BOUND_SILVER, 1000 } },
 					}),
 					iensemble(286198, {	-- Ensemble: Cursed Wood-Haunt's Mask Gallery
@@ -287,7 +287,7 @@ root(ROOTS.WorldEvents, {
 						cost = { { "c", BOUND_SILVER, 2500 } },
 					}),
 					iensemble(244227, {	-- Ensemble: Faith-Cursed Vestments
-						cost = { { "c", BOUND_SILVER, 1000 } },
+						cost = { { "c", BOUND_SILVER, 3000 } },
 					}),
 					iensemble(235592, {	-- Ensemble: Forest Dweller's Muddied Attire
 						cost = { { "c", BOUND_SILVER, 2500 } },
@@ -371,7 +371,7 @@ root(ROOTS.WorldEvents, {
 						cost = { { "c", BOUND_SILVER, 4000 } },
 					}),
 					iensemble(284007, {	-- Ensemble: Wood Haunter's Guise of the Wight
-						cost = { { "c", BOUND_SILVER, 1000 } },
+						cost = { { "c", BOUND_SILVER, 3000 } },
 					}),
 					i(235340, {	-- Mad Raven-Witch Mask
 						cost = { { "c", BOUND_SILVER, 1000 } },
@@ -454,7 +454,7 @@ root(ROOTS.WorldEvents, {
 						cost = { { "c", BOUND_SILVER, 500 } },
 					}),
 					i(287862, {	-- Sealight Sconce (DECOR!)
-						cost = { { "c", BOUND_SILVER, 500 } },
+						cost = { { "c", BOUND_SILVER, 200 } },
 					}),
 					i(288733, {	-- Storyteller's Cursed Looking Glass (DECOR!)
 						cost = { { "c", BOUND_SILVER, 500 } },
@@ -479,6 +479,9 @@ root(ROOTS.WorldEvents, {
 					i(282272, {	-- Autumn Dream Jumper (MOUNT!)
 						cost = { { "c", BOUND_SILVER, 2000 } },
 					}),
+					i(238900, {	-- Enchanted Woodland Wanderer (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 2000 } },
+					}),
 					i(243597, {	-- Faith-Cursed Courser (MOUNT!)
 						cost = { { "c", BOUND_SILVER, 3000 } },
 					}),
@@ -496,9 +499,6 @@ root(ROOTS.WorldEvents, {
 					}),
 					i(282271, {	-- Stone-Carved Crusher (MOUNT!)
 						cost = { { "c", BOUND_SILVER, 2000 } },
-					}),
-					i(238900, {	-- Summer Harvesthog (MOUNT!)
-						cost = { { "c", BOUND_SILVER, 3000 } },
 					}),
 					i(223284, {	-- The Watcher in the Waves (MOUNT!)
 						cost = { { "c", BOUND_SILVER, 3000 } },
