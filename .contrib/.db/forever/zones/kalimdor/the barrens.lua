@@ -2073,11 +2073,13 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					}),
 				},
 			}),
-			q(95819, {	-- Sign Me Up!
+			q(95819, {	-- Sign Me Up! [H]
+				qg = 256388,	-- Jornah <Contract Coordinator>
 				qs = 270887,	-- Advertising License Application (QS!)
-				-- Turned in to Jornah <Contract Coordinator> (256388).
 				qi = 270896,	-- Massive Pile of Forms (PQI!)
+				coord = { 49.8, 29.4, MAP.THE_BARRENS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
 				groups = {
 					objective(2, {	-- 0/1 Massive Pile of Completed Forms
 						provider = { "i", 270897 },	-- Massive Pile of Completed Forms

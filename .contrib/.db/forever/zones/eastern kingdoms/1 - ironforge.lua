@@ -869,7 +869,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 			}),
 			q(95817, {	-- Rotgath Stonebeard
-				sourceQuest = 95816,	-- Sign Me Up!
+				sourceQuest = 95816,	-- Sign Me Up! [A]
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Rotgath Stonebeard (10276) near the Great Forge.
 				timeline = { TIMELINE.CREATED_1_60_1 },
 			}),
