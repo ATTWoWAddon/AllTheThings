@@ -1314,7 +1314,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(13175, {	-- Voone's Twitchbow [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
 						-- #if BEFORE 10.1.7
 						-- #if AFTER 2.0.1
-						description = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 						isBounty = true,
 						-- #endif
 						-- #endif
@@ -1524,7 +1523,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					i(12337),	-- Gemstone of Bloodaxe
 					i(13148, {	-- Chillpike
 						-- #if BEFORE 10.1.7
-						description = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
 						-- #if AFTER 2.0.1
 						isBounty = true,
 						-- #endif
@@ -1771,7 +1769,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						}),
 						i(12588, {	-- Bonespike Shoulder
 							-- #if AFTER 2.0.1
-							description = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 							isBounty = true,
 							-- #endif
 							timeline = { REMOVED_2_0_1 },

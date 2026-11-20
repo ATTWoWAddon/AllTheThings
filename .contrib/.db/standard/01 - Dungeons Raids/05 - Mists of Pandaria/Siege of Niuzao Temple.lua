@@ -204,7 +204,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							i(100966, {	-- Tolakesh, Horn of the Black Ox
 								-- #if BEFORE WOD
 								-- CRIEVE NOTE: This may be available in MOP Classic, keep an eye on it.
-								description = "If you get this item to drop in MOP Classic, please @Crieve on Discord! Thanks!",
 								isBounty = true,
 								-- #endif
 								timeline = { CREATED_5_4_0 },

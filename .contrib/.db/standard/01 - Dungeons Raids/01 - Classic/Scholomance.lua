@@ -880,7 +880,6 @@ local SCHOLOMANCE_LEGACY_DATA = {
 			i(14548),	-- Royal Cap Spaulders
 			i(14543, {	-- Darkshade Gloves
 				-- #if AFTER 2.0.1
-				description = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 				isBounty = true,
 				-- #endif
 				timeline = { REMOVED_2_0_1 },
@@ -1150,7 +1149,6 @@ local SCHOLOMANCE_LEGACY_DATA = {
 			i(13944),	-- Tombstone Breastplate
 			i(13951),	-- Vigorsteel Vambraces
 			i(13950, {	-- Detention Strap [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
-				description = "This item seems to have disappeared in Classic. If you get this item in any game flavor, please screenshot this and send it directly to @Crieve on Discord!",
 				timeline = { REMOVED_2_0_1 },
 			}),
 			i(13398),	-- Boots of the Shrieker
