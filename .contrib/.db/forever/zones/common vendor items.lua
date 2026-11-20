@@ -146,29 +146,20 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 				},
 			}),
 		}),
-		filter(CONSUMABLES, appendAllGroups(
-			sharedData({
-				providers = {
-					{ "n", 1328 },	-- Elly Langston <Barmaid>
-					{ "n", 5611 },	-- Barkeep Morag
-				},
-			}, {
-				i(2594),	-- Flagon of Dwarven Honeymead/Mead
-				i(2593),	-- Flask of Stormwind Tawny
-				i(2595),	-- Jug of Badlands Bourbon
-				i(2596),	-- Skin of Dwarven Stout
+		filter(CONSUMABLES, {
+			i(6533, {	-- Aquadynamic Fish Attractor
+				isLimited = true,
 			}),
-			{
-				i(6533, {	-- Aquadynamic Fish Attractor
-					isLimited = true,
-				}),
-				i(6532),	-- Bright Baubles
-				i(1179),	-- Ice Cold Milk
-				i(6530),	-- Nightcrawlers
-				i(159),	-- Refreshing Spring Water
-				i(6529),	-- Shiny Bauble
-			}
-		)),
+			i(6532),	-- Bright Baubles
+			i(2594),	-- Flagon of Dwarven Honeymead/Mead
+			i(2593),	-- Flask of Stormwind Tawny
+			i(1179),	-- Ice Cold Milk
+			i(2595),	-- Jug of Badlands Bourbon
+			i(6530),	-- Nightcrawlers
+			i(159),	-- Refreshing Spring Water
+			i(6529),	-- Shiny Bauble
+			i(2596),	-- Skin of Dwarven Stout
+		}),
 		filter(LEATHER, {
 			header(HEADERS.Item, 2372, {	-- Battered Leather Pants
 				symselector = SymSelector.VENDOR_BATTERED_LEATHER,
