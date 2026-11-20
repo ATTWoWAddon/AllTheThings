@@ -2305,13 +2305,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(483, {	-- Elaine Trias <Mistress of Cheese>
 				coord = { 66.6, 73.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(8932),	-- Alterac Swiss
-					i(414),	-- Dalaran Sharp
-					i(2070),	-- Darnassian Bleu
-					i(422),	-- Dwarven Mild
-					i(3927),	-- Fine Aged Cheddar
-					i(1707),	-- Stormwind Brie
+				sym = {
+					SymSelector.select("VENDOR_FOOD_CHEESE"),	-- Cheese
+					{ "pop" },
 				},
 			}),
 			n(5503, {	-- Eldraeith <Herbalism Supplier>
@@ -2322,6 +2318,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(5483, {	-- Erika Tate <Cooking Supplier>
 				coord = { 77.6, 53.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -2453,13 +2460,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1301, {	-- Julia Gallina
 				coord = { 59.8, 77.4, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(2723),	-- Bottle of Dalaran Noir
-					i(2593),	-- Flask of Stormwind Tawny
-					i(2596),	-- Skin of Dwarven Stout
-					i(2594),	-- Flagon of Dwarven Honeymead
-					i(2595),	-- Jug of Badlands Bourbon
-				},
+				sym = {{ "select", "itemID",
+					2723,	-- Bottle of Dalaran Noir
+					2594,	-- Flagon of Dwarven Honeymead
+					2593,	-- Flask of Stormwind Tawny
+					2595,	-- Jug of Badlands Bourbon
+					2596,	-- Skin of Dwarven Stout
+				}},
 			}),
 			n(5512, {	-- Kaita Deepforge <Blacksmithing Supplies>
 				coord = { 63.2, 37.6, MAP.STORMWIND_CITY },
@@ -2676,6 +2683,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
 				coord = { 59.4, 77.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2723,	-- Bottle of Dalaran Noir
+					2594,	-- Flagon of Dwarven Honeymead/Mead
+					2593,	-- Flask of Stormwind Tawny
+					2595,	-- Jug of Badlands Bourbon
+					2596,	-- Skin of Dwarven Stout
+				}},
 				groups = {
 					i(1941),	-- Cask of Merlot
 				},

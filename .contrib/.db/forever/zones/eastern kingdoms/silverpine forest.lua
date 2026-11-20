@@ -1087,6 +1087,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			n(2140, {	-- Edwin Harly
 				coord = { 44.1, 39.7, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2946,	-- Balanced Throwing Dagger
+					4498,	-- Brown Leather Satchel
+					2519,	-- Heavy Shot
+					1179,	-- Ice Cold Milk
+					2516,	-- Light Shot
+					159,	-- Refreshing Spring Water
+					2512,	-- Rough Arrow
+					2515,	-- Sharp Arrow
+					4470,	-- Simple Wood
+					4496,	-- Small Brown Pouch
+					3131,	-- Weighted Throwing Axe
+				}},
 			}),
 			n(5748, {	-- Killian Sanatha <Fisherman>
 				coord = { 33.0, 17.8, MAP.SILVERPINE_FOREST },

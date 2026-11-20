@@ -1381,6 +1381,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			n(2814, {	-- Narj Deepslice <Butcher>
 				coord = { 45.6, 47.6, MAP.ARATHI_HIGHLANDS },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_MEAT"),	-- Meat
+					{ "pop" },
+				},
 				groups = {
 					i(4609),	-- Recipe: Barbecued Buzzard Wing (RECIPE!)
 				},

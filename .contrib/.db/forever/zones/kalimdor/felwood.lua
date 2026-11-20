@@ -1275,6 +1275,28 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			n(2806, {	-- Bale <General Goods>
 				coord = { 34.8, 53.2, MAP.FELWOOD },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					11284,	-- Accurate Slugs
+					4498,	-- Brown Leather Satchel
+					3137,	-- Deadly Throwing Axe
+					15326,	-- Gleaming Throwing Axe
+					4497,	-- Heavy Brown Bag
+					2519,	-- Heavy Shot
+					1179,	-- Ice Cold Milk
+					11285,	-- Jagged Arrow
+					3107,	-- Keen Throwing Knife
+					1205,	-- Melon Juice
+					1645,	-- Moonberry Juice
+					3030,	-- Razor Arrow
+					159,	-- Refreshing Spring Water
+					2515,	-- Sharp Arrow
+					3135,	-- Sharp Throwing Axe
+					4470,	-- Simple Wood
+					3033,	-- Solid Shot
+					11291,	-- Star Wood
+					1708,	-- Sweet Nectar
+					15327,	-- Wicked Throwing Dagger
+				}},
 				groups = {
 					i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 				},
@@ -1284,6 +1306,28 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					{ 62.2, 25.6, MAP.FELWOOD },
 				},
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					11284,	-- Accurate Slugs
+					4498,	-- Brown Leather Satchel
+					3137,	-- Deadly Throwing Axe
+					15326,	-- Gleaming Throwing Axe
+					4497,	-- Heavy Brown Bag
+					2519,	-- Heavy Shot
+					1179,	-- Ice Cold Milk
+					11285,	-- Jagged Arrow
+					3107,	-- Keen Throwing Knife
+					1205,	-- Melon Juice
+					1645,	-- Moonberry Juice
+					3030,	-- Razor Arrow
+					159,	-- Refreshing Spring Water
+					2515,	-- Sharp Arrow
+					3135,	-- Sharp Throwing Axe
+					4470,	-- Simple Wood
+					3033,	-- Solid Shot
+					11291,	-- Star Wood
+					1708,	-- Sweet Nectar
+					15327,	-- Wicked Throwing Dagger
+				}},
 				groups = {
 					i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 				},

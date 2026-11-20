@@ -1248,6 +1248,13 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			n(4879, {	-- Ogg'marr <Butcher>
 				coord = { 36.6, 31.0, MAP.DUSTWALLOW_MARSH },
 				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(12232),	-- Recipe: Carrion Surprise (RECIPE!)
 					i(20075),	-- Recipe: Heavy Crocolisk Stew (RECIPE!)

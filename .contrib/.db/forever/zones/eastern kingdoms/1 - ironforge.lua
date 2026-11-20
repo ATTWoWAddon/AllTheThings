@@ -1143,13 +1143,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 32.4, 21.2, MAP.IRONFORGE },
 				description = "Walks around The Mystic Ward.",
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(8953),	-- Deep Fried Plantains
-					i(4539),	-- Goldenbark Apple
-					i(4602),	-- Moon Harvest Pumpkin
-					i(4536),	-- Shiny Red Apple
-					i(4538),	-- Snapvine Watermelon
-					i(4537),	-- Tel'Abim Banana
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FRUIT"),	-- Fruit
+					{ "pop" },
 				},
 			}),
 			n(5152, {	-- Bingus
@@ -1264,6 +1260,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5160, {	-- Emrul Riknussun <Cooking Supplier>
 				coord = { 60.6, 38.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -1337,17 +1344,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5112, {	-- Gwenna Firebrew <Barmaid>
 				coord = { 18.6, 51.9, MAP.IRONFORGE },	-- The Stonefire Tavern
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(1179),	-- Ice Cold Milk
-					i(1205),	-- Melon Juice
-					i(8766),	-- Morning Glory Dew
-					i(159),		-- Refreshing Spring Water
-					i(1708),	-- Sweet Nectar
-					i(2723),	-- Bottle of Dalaran Noir
-					i(2594),	-- Flagon of Dwarven Honeymead/Mead
-					i(2593),	-- Flask of Stormwind Tawny
-					i(2595),	-- Jug of Badlands Bourbon
-					i(2596),	-- Skin of Dwarven Stout
+				sym = {
+					SymSelector.select("VENDOR_FOOD_DRINK"),	-- Drink
+					{ "pop" },
+					{ "select", "itemID",
+						2723,	-- Bottle of Dalaran Noir
+						2594,	-- Flagon of Dwarven Honeymead/Mead
+						2593,	-- Flask of Stormwind Tawny
+						2595,	-- Jug of Badlands Bourbon
+						2596,	-- Skin of Dwarven Stout
+					},
 				},
 			}),
 			n(5138, {	-- Gwina Stonebranch <Herbalism Supplier>
@@ -1474,12 +1480,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 						1202,	-- Wall Shield
 					},
 				},
-				groups = {
-					i(847),		-- Chainmail Armor
-					i(849),		-- Chainmail Boots
-					i(850),		-- Chainmail Gloves
-					i(848),		-- Chainmail Pants
-				},
 			}),
 			n(5109, {	-- Myra Tyrngaarde <Bread Vendor>
 				coord = { 29.8, 67.5, MAP.IRONFORGE },
@@ -1574,13 +1574,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 62.1, 72.0, MAP.IRONFORGE },
 				description = "Walks around The Military Ward.",
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(4599),	-- Cured Ham Steak
-					i(2287),	-- Haunch of Meat
-					i(3770),	-- Mutton Chop
-					i(8952),	-- Roasted Quail
-					i(117),		-- Tough Jerky
-					i(3771),	-- Wild Hog Shank
+				sym = {
+					SymSelector.select("VENDOR_FOOD_MEAT"),	-- Meat
+					{ "pop" },
 				},
 			}),
 			n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>

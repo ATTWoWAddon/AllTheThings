@@ -1827,6 +1827,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(465, {	-- Barkeep Dobbins <Bartender>
 				coord = { 43.8, 65.8, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_CHEESE,	-- Cheese
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2723,	-- Bottle of Dalaran Noir
+						2594,	-- Flagon of Dwarven Honeymead/Mead
+						2593,	-- Flask of Stormwind Tawny
+						2595,	-- Jug of Badlands Bourbon
+						2596,	-- Skin of Dwarven Stout
+					},
+				},
 				groups = {
 					i(1939),	-- Skin of Sweet Rum
 				},
@@ -1858,6 +1872,34 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(1250, {	-- Drake Lindgren <General & Trade Supplies>
 				coord = { 83.2, 66.7, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					277113,	-- Apprentice's Herb Pouch
+					277115,	-- Apprentice's Mining Pack
+					277114,	-- Apprentice's Skinning Satchel
+					2946,	-- Balanced Throwing Dagger
+					5956,	-- Blacksmith Hammer
+					2324,	-- Bleach
+					6260,	-- Blue Dye
+					4498,	-- Brown Leather Satchel
+					2320,	-- Coarse Thread
+					6217,	-- Copper Rod
+					3371,	-- Empty Vial
+					6256,	-- Fishing Pole
+					2516,	-- Light Shot
+					2678,	-- Mild Spices
+					2901,	-- Mining Pick
+					2604,	-- Red Dye
+					159,	-- Refreshing Spring Water
+					2512,	-- Rough Arrow
+					4289,	-- Salt
+					6529,	-- Shiny Bauble
+					4536,	-- Shiny Red Apple
+					4470,	-- Simple Wood
+					7005,	-- Skinning Knife
+					4496,	-- Small Brown Pouch
+					2880,	-- Weak Flux
+					3131,	-- Weighted Throwing Axe
+				}},
 				groups = {
 					i(6272, {	-- Pattern: Blue Linen Robe (RECIPE!)
 						isLimited = true,
@@ -1945,6 +1987,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(66, {	-- Tharynn Bouden <Trade Supplies>
 				coord = { 41.8, 67.0, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					277113,	-- Apprentice's Herb Pouch
+					277115,	-- Apprentice's Mining Pack
+					277114,	-- Apprentice's Skinning Satchel
+					5956,	-- Blacksmith Hammer
+					2324,	-- Bleach
+					6260,	-- Blue Dye
+					2320,	-- Coarse Thread
+					6217,	-- Copper Rod
+					3371,	-- Empty Vial
+					6256,	-- Fishing Pole
+					2678,	-- Mild Spices
+					2901,	-- Mining Pick
+					2604,	-- Red Dye
+					4289,	-- Salt
+					6529,	-- Shiny Bauble
+					4536,	-- Shiny Red Apple
+					7005,	-- Skinning Knife
+					2880,	-- Weak Flux
+				}},
 				groups = {
 					i(6270, {	-- Pattern: Blue Linen Vest (RECIPE!)
 						isLimited = true,

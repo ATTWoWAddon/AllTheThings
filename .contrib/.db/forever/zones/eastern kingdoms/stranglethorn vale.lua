@@ -2344,6 +2344,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			n(734, {	-- Corporal Bluth <Camp Trader>
 				coord = { 38.0, 3.0, MAP.STRANGLETHORN_VALE },
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_FRUIT,	-- Fruit
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						11284,	-- Accurate Slugs
+						4498,	-- Brown Leather Satchel
+						3137,	-- Deadly Throwing Axe
+						15326,	-- Gleaming Throwing Axe
+						4497,	-- Heavy Brown Bag
+						2519,	-- Heavy Shot
+						11285,	-- Jagged Arrow
+						3107,	-- Keen Throwing Knife
+						3030,	-- Razor Arrow
+						2515,	-- Sharp Arrow
+						3135,	-- Sharp Throwing Axe
+						4470,	-- Simple Wood
+						3033,	-- Solid Shot
+						11291,	-- Star Wood
+						15327,	-- Wicked Throwing Dagger
+					},
+				},
 				groups = {
 					i(12231),	-- Recipe: Jungle Stew (RECIPE!)
 					i(12228),	-- Recipe: Roast Raptor (RECIPE!)
@@ -2478,6 +2502,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			n(2664, {	-- Kelsey Yance <Cook>
 				coord = { 28.2, 74.4, MAP.STRANGLETHORN_VALE },
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
 					i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
@@ -2551,6 +2586,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 			n(2832, {	-- Nixxrax Fillamug <Food & Drink>
 				coord = { 40.8, 73.6, MAP.STRANGLETHORN_VALE },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_BREAD,	-- Bread
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2723,	-- Bottle of Dalaran Noir
+						2594,	-- Flagon of Dwarven Honeymead/Mead
+						2593,	-- Flask of Stormwind Tawny
+						2595,	-- Jug of Badlands Bourbon
+						2596,	-- Skin of Dwarven Stout
+					},
+				},
 				groups = {
 					i(4595),	-- Junglevine Wine
 				},
@@ -2573,17 +2622,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						7341,	-- Cubic Zirconia Ring
+						7340,	-- Flawless Diamond Solitaire
+						7339,	-- Miniscule Diamond Ring
+						7338,	-- Mood Ring
+						7342,	-- Silver Piffeny Band
+						7337,	-- The Rock
+					},
 				},
-				groups = sharedData({
-					collectible = false,
-				}, {
-					i(7341),	-- Cubic Zirconia Ring
-					i(7340),	-- Flawless Diamond Solitaire
-					i(7339),	-- Miniscule Diamond Ring
-					i(7338),	-- Mood Ring
-					i(7342),	-- Silver Piffeny Band
-					i(7337),	-- The Rock
-				}),
 			}),
 			n(2699, {	-- Rikqiz <Leatherworking Supplies>
 				coords = { 28.4, 76.0, MAP.STRANGLETHORN_VALE },
@@ -2599,6 +2646,27 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			n(1149, {	-- Uthok <General Supplies>
 				coord = { 31.6, 28.0, MAP.STRANGLETHORN_VALE },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					11284,	-- Accurate Slugs
+					4498,	-- Brown Leather Satchel
+					3137,	-- Deadly Throwing Axe
+					15326,	-- Gleaming Throwing Axe
+					4497,	-- Heavy Brown Bag
+					2519,	-- Heavy Shot
+					11285,	-- Jagged Arrow
+					3107,	-- Keen Throwing Knife
+					1205,	-- Melon Juice
+					1645,	-- Moonberry Juice
+					3030,	-- Razor Arrow
+					159,	-- Refreshing Spring Water
+					2515,	-- Sharp Arrow
+					3135,	-- Sharp Throwing Axe
+					4470,	-- Simple Wood
+					3033,	-- Solid Shot
+					11291,	-- Star Wood
+					1708,	-- Sweet Nectar
+					15327,	-- Wicked Throwing Dagger
+				}},
 				groups = {
 					i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 				},

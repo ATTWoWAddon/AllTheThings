@@ -1257,6 +1257,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 52.8, 80.2, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_DRINK"),	-- Drink
+					{ "pop" },
+					{ "select", "itemID",
+						2723,	-- Bottle of Dalaran Noir
+						2594,	-- Flagon of Dwarven Honeymead/Mead
+						2593,	-- Flask of Stormwind Tawny
+						2595,	-- Jug of Badlands Bourbon
+						2596,	-- Skin of Dwarven Stout
+					},
+				},
 				groups = {
 					i(275892, {	-- Short Stout
 						isLimited = true,
@@ -1267,6 +1278,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				coord = { 52.8, 80.0, MAP.WETLANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					4599,	-- Cured Ham Steak
+					2070,	-- Darnassian Bleu
+					422,	-- Dwarven Mild
+					4541,	-- Freshly Baked Bread
+					4542,	-- Moist Cornbread
+					3770,	-- Mutton Chop
+					8952,	-- Roasted Quail
+					1707,	-- Stormwind Brie
+					21552,	-- Striped Yellowtail
+					117,	-- Tough Jerky
+				}},
 				groups = {
 					i(278119),	-- Bread with Butter
 					i(278122),	-- Carrot Salad
@@ -1405,6 +1428,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			n(1448, {	-- Neal Allen <Engineering Supplies & General Goods>
 				coord = { 10.8, 56.8, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					5956,	-- Blacksmith Hammer
+					4498,	-- Brown Leather Satchel
+					3137,	-- Deadly Throwing Axe
+					4497,	-- Heavy Brown Bag
+					2519,	-- Heavy Shot
+					4400,	-- Heavy Stock
+					1179,	-- Ice Cold Milk
+					3107,	-- Keen Throwing Knife
+					1205,	-- Melon Juice
+					2901,	-- Mining Pick
+					3030,	-- Razor Arrow
+					159,	-- Refreshing Spring Water
+					2515,	-- Sharp Arrow
+					3135,	-- Sharp Throwing Axe
+					4470,	-- Simple Wood
+					3033,	-- Solid Shot
+					11291,	-- Star Wood
+					3466,	-- Strong Flux
+					2880,	-- Weak Flux
+					4399,	-- Wooden Stock
+				}},
 			}),
 			n(1457, {	-- Samor Festivus <Shady Dealer>
 				coord = { 10.5, 60.2, MAP.WETLANDS },
@@ -1413,6 +1458,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			n(3178, {	-- Stuart Fleming <Fisherman>
 				coord = { 8.0, 58.3, MAP.WETLANDS },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
+					{ "pop" },
+					{ "select", "itemID",
+						6533,	-- Aquadynamic Fish Attractor
+						6532,	-- Bright Baubles
+						273636,	-- Chef's Knife
+						6256,	-- Fishing Pole
+						6530,	-- Nightcrawlers
+						6529,	-- Shiny Bauble
+						6365,	-- Strong Fishing Pole
+					},
+				},
 				groups = {
 					i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)

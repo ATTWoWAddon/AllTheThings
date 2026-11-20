@@ -2166,6 +2166,26 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			n(2118, {	-- Abigail Shiel <Trade Supplies>
 				coord = { 61.0, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					277113,	-- Apprentice's Herb Pouch
+					277115,	-- Apprentice's Mining Pack
+					277114,	-- Apprentice's Skinning Satchel
+					5956,	-- Blacksmith Hammer
+					2324,	-- Bleach
+					6260,	-- Blue Dye
+					2320,	-- Coarse Thread
+					6217,	-- Copper Rod
+					3371,	-- Empty Vial
+					6256,	-- Fishing Pole
+					2678,	-- Mild Spices
+					2901,	-- Mining Pick
+					2604,	-- Red Dye
+					4289,	-- Salt
+					6529,	-- Shiny Bauble
+					4536,	-- Shiny Red Apple
+					7005,	-- Skinning Knife
+					2880,	-- Weak Flux
+				}},
 				groups = {
 					i(12226),	-- Recipe: Crispy Bat Wing (RECIPE!)
 				},

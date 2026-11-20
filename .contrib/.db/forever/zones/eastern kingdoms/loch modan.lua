@@ -1020,6 +1020,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1684, {	-- Khara Deepwater <Fishing Supplies>
 				coord = { 40.4, 39.4, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
+					{ "pop" },
+					{ "select", "itemID",
+						6533,	-- Aquadynamic Fish Attractor
+						6532,	-- Bright Baubles
+						273636,	-- Chef's Knife
+						6256,	-- Fishing Pole
+						6530,	-- Nightcrawlers
+						6529,	-- Shiny Bauble
+						6365,	-- Strong Fishing Pole
+					},
+				},
 				groups = {
 					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 					i(6329),	-- Recipe: Loch Frenzy Delight (RECIPE!)
@@ -1091,6 +1104,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 			n(1685, {	-- Xandar Goodbeard <General Supplies>
 				coord = { 82.6, 63.2, MAP.LOCH_MODAN },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2946,	-- Balanced Throwing Dagger
+					4498,	-- Brown Leather Satchel
+					2519,	-- Heavy Shot
+					1179,	-- Ice Cold Milk
+					2516,	-- Light Shot
+					159,	-- Refreshing Spring Water
+					2512,	-- Rough Arrow
+					2515,	-- Sharp Arrow
+					4470,	-- Simple Wood
+					4496,	-- Small Brown Pouch
+					3131,	-- Weighted Throwing Axe
+				}},
 				groups = {
 					i(6053, {	-- Recipe: Holy Protection Potion (RECIPE!)
 						isLimited = true,

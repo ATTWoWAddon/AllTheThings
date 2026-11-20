@@ -1080,6 +1080,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			n(2397, {	-- Derak Nightfall <Cook>
 				coord = { 63.0, 19.6, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -1113,6 +1124,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			n(2388, {	-- Innkeeper Shay <Innkeeper>
 				coord = { 62.6, 19.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(3703),	-- Southshore Stout
 				},
@@ -1188,6 +1206,35 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			n(2381, {	-- Micha Yance <Trade Goods>
 				coord = { 49.0, 55.2, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					5956,	-- Blacksmith Hammer
+					2324,	-- Bleach
+					6532,	-- Bright Baubles
+					3857,	-- Coal
+					2320,	-- Coarse Thread
+					6217,	-- Copper Rod
+					8925,	-- Crystal Vial
+					3371,	-- Empty Vial
+					2321,	-- Fine Thread
+					4400,	-- Heavy Stock
+					2692,	-- Hot Spices
+					3372,	-- Leaded Vial
+					2678,	-- Mild Spices
+					2901,	-- Mining Pick
+					6530,	-- Nightcrawlers
+					159,	-- Refreshing Spring Water
+					4289,	-- Salt
+					4536,	-- Shiny Red Apple
+					4291,	-- Silken Thread
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					3466,	-- Strong Flux
+					272941,	-- Thick Logs
+					2880,	-- Weak Flux
+					4399,	-- Wooden Stock
+				}},
 				groups = {
 					i(11163, {	-- Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
 						isLimited = true,

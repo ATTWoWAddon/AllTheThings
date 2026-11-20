@@ -902,6 +902,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			n(14738, {	-- Otho Moji'ko <Cooking Supplies>
 				coord = { 79.2, 79.0, MAP.THE_HINTERLANDS },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -918,6 +929,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			n(4782, {	-- Truk Wildbeard <Bartender>
 				coord = { 14.4, 42.3, MAP.THE_HINTERLANDS },
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_CHEESE,	-- Cheese
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 				},

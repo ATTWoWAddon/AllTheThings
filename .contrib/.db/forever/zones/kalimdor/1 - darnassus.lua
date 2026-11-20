@@ -706,6 +706,17 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4223, {	-- Fyldan <Cooking Supplies> [TBC+] / Fyldan <Cooking Supplier>
 				coord = { 48.5, 21.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -736,6 +747,13 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(6735, {	-- Innkeeper Saelienne <Innkeeper>
 				coord = { 67.2, 15.8, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_FRUIT,	-- Fruit
+					},
+					{ "pop" },
+				},
 			}),
 			n(4231, {	-- Kieran <Weapon Merchant>
 				coord = { 61.0, 63.6, MAP.DARNASSUS },

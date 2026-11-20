@@ -980,6 +980,44 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4561, {	-- Daniel Bartlett <General Trade Supplier>
 				coord = { 64.0, 37.4, MAP.UNDERCITY },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					277113,	-- Apprentice's Herb Pouch
+					277115,	-- Apprentice's Mining Pack
+					277114,	-- Apprentice's Skinning Satchel
+					2325,	-- Black Dye
+					5956,	-- Blacksmith Hammer
+					2324,	-- Bleach
+					6260,	-- Blue Dye
+					6532,	-- Bright Baubles
+					3857,	-- Coal
+					2320,	-- Coarse Thread
+					6217,	-- Copper Rod
+					8925,	-- Crystal Vial
+					3371,	-- Empty Vial
+					2321,	-- Fine Thread
+					6256,	-- Fishing Pole
+					2605,	-- Green Dye
+					4340,	-- Grey Dye
+					8343,	-- Heavy Silken Thread
+					4400,	-- Heavy Stock
+					2692,	-- Hot Spices
+					3372,	-- Leaded Vial
+					2678,	-- Mild Spices
+					2901,	-- Mining Pick
+					6530,	-- Nightcrawlers
+					4342,	-- Purple Dye
+					2604,	-- Red Dye
+					4289,	-- Salt
+					6529,	-- Shiny Bauble
+					4536,	-- Shiny Red Apple
+					4291,	-- Silken Thread
+					7005,	-- Skinning Knife
+					3713,	-- Soothing Spices
+					3466,	-- Strong Flux
+					2880,	-- Weak Flux
+					4399,	-- Wooden Stock
+					4341,	-- Yellow Dye
+				}},
 				groups = {
 					i(16217, {	-- Formula: Enchant Shield - Greater Stamina (RECIPE!)
 						isLimited = true,
@@ -989,6 +1027,32 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4555, {	-- Eleanor Rusk <General Goods>
 				coord = { 69.2, 48.9, MAP.UNDERCITY },	-- Trade Quarter
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_DRINK"),	-- Drink
+					{ "pop" },
+					{ "select", "itemID",
+						11284,	-- Accurate Slugs
+						2946,	-- Balanced Throwing Dagger
+						4498,	-- Brown Leather Satchel
+						3137,	-- Deadly Throwing Axe
+						15326,	-- Gleaming Throwing Axe
+						4497,	-- Heavy Brown Bag
+						2519,	-- Heavy Shot
+						11285,	-- Jagged Arrow
+						3107,	-- Keen Throwing Knife
+						2516,	-- Light Shot
+						3030,	-- Razor Arrow
+						2512,	-- Rough Arrow
+						2515,	-- Sharp Arrow
+						3135,	-- Sharp Throwing Axe
+						4470,	-- Simple Wood
+						4496,	-- Small Brown Pouch
+						3033,	-- Solid Shot
+						11291,	-- Star Wood
+						3131,	-- Weighted Throwing Axe
+						15327,	-- Wicked Throwing Dagger
+					},
+				},
 			}),
 			n(4585, {	-- Ezekiel
 				coord = { 75.6, 51.6, MAP.UNDERCITY },
@@ -997,6 +1061,39 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4775, {	-- Felicia Doan <Trade Supplies>
 				coord = { 64.1, 50.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					277113,	-- Apprentice's Herb Pouch
+					277115,	-- Apprentice's Mining Pack
+					277114,	-- Apprentice's Skinning Satchel
+					5956,	-- Blacksmith Hammer
+					2324,	-- Bleach
+					6260,	-- Blue Dye
+					6532,	-- Bright Baubles
+					3857,	-- Coal
+					2320,	-- Coarse Thread
+					6217,	-- Copper Rod
+					8925,	-- Crystal Vial
+					3371,	-- Empty Vial
+					2321,	-- Fine Thread
+					6256,	-- Fishing Pole
+					2605,	-- Green Dye
+					4400,	-- Heavy Stock
+					2692,	-- Hot Spices
+					3372,	-- Leaded Vial
+					2678,	-- Mild Spices
+					2901,	-- Mining Pick
+					6530,	-- Nightcrawlers
+					2604,	-- Red Dye
+					4289,	-- Salt
+					6529,	-- Shiny Bauble
+					4536,	-- Shiny Red Apple
+					4291,	-- Silken Thread
+					7005,	-- Skinning Knife
+					3713,	-- Soothing Spices
+					3466,	-- Strong Flux
+					2880,	-- Weak Flux
+					4399,	-- Wooden Stock
+				}},
 			}),
 			n(4601, {	-- Francis Eliot
 				coord = { 58.6, 32.6, MAP.UNDERCITY },
@@ -1252,6 +1349,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4553, {	-- Ronald Burch <Cooking Supplier>
 				coord = { 62.3, 43.1, MAP.UNDERCITY },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
@@ -1302,13 +1410,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 69.7, 44.8, MAP.UNDERCITY },
 				description = "Walks around the Trade Quarter, upper level.",
 				races = HORDE_ONLY,
-				groups = {
-					i(4607),	-- Delicious Cave Mold
-					i(8948),	-- Dried King Bolete
-					i(4604),	-- Forest Mushroom Cap
-					i(4608),	-- Raw Black Truffle
-					i(4605),	-- Red-speckled Mushroom
-					i(4606),	-- Spongy Morel
+				sym = {
+					SymSelector.select("VENDOR_FOOD_MUSHROOM"),	-- Mushroom
+					{ "pop" },
 				},
 			}),
 			n(4617, {	-- Thaddeus Webb <Enchanting Supplies>

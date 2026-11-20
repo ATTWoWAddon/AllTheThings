@@ -1548,6 +1548,13 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			n(8150, {	-- Janet Hommers <Food & Drink>
 				coord = { 66.2, 6.6, MAP.DESOLACE },
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MUSHROOM,	-- Mushroom
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(12240),	-- Recipe: Heavy Kodo Stew (RECIPE!)
 					i(12233),	-- Recipe: Mystery Stew (RECIPE!)
@@ -1575,6 +1582,27 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			}),
 			n(12246, {	-- Super-Seller 680
 				coord = { 40.6, 79.2, MAP.DESOLACE },
+				sym = {{ "select", "itemID",
+					11284,	-- Accurate Slugs
+					4498,	-- Brown Leather Satchel
+					3137,	-- Deadly Throwing Axe
+					15326,	-- Gleaming Throwing Axe
+					4497,	-- Heavy Brown Bag
+					2519,	-- Heavy Shot
+					11285,	-- Jagged Arrow
+					3107,	-- Keen Throwing Knife
+					1205,	-- Melon Juice
+					1645,	-- Moonberry Juice
+					3030,	-- Razor Arrow
+					159,	-- Refreshing Spring Water
+					2515,	-- Sharp Arrow
+					3135,	-- Sharp Throwing Axe
+					4470,	-- Simple Wood
+					3033,	-- Solid Shot
+					11291,	-- Star Wood
+					1708,	-- Sweet Nectar
+					15327,	-- Wicked Throwing Dagger
+				}},
 				groups = {
 					i(7087, {	-- Pattern: Crimson Silk Cloak (RECIPE!)
 						isLimited = true,
@@ -1636,6 +1664,17 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 			n(12033, {	-- Wulan <Cooking Supplies>
 				coord = { 26.2, 69.8, MAP.DESOLACE },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(16072, {	-- Expert Cookbook
 						rank = 3,

@@ -1046,18 +1046,19 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(5611, {	-- Barkeep Morag
 				coord = { 54.0, 67.0, MAP.ORGRIMMAR },	-- The Broken Tusk
 				races = HORDE_ONLY,
-				groups = {
-					i(1179),	-- Ice Cold Milk
-					i(1205),	-- Melon Juice
-					-- i(1645),	-- Moonberry Juice
-					i(8766),	-- Morning Glory Dew
-					i(159),	-- Refreshing Spring Water
-					i(1708),	-- Sweet Nectar
-					i(2723),	-- Bottle of Dalaran Noir
-					i(2594),	-- Flagon of Dwarven Honeymead/Mead
-					i(2593),	-- Flask of Stormwind Tawny
-					i(2595),	-- Jug of Badlands Bourbon
-					i(2596),	-- Skin of Dwarven Stout
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2723,	-- Bottle of Dalaran Noir
+						2594,	-- Flagon of Dwarven Honeymead/Mead
+						2593,	-- Flask of Stormwind Tawny
+						2595,	-- Jug of Badlands Bourbon
+						2596,	-- Skin of Dwarven Stout
+					},
 				},
 			}),
 			n(3364, {	-- Borya <Tailoring Supplies>
@@ -1108,6 +1109,44 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					{ 50.8, 58.7, MAP.ORGRIMMAR },
 				},
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					277113,	-- Apprentice's Herb Pouch
+					277115,	-- Apprentice's Mining Pack
+					277114,	-- Apprentice's Skinning Satchel
+					2325,	-- Black Dye
+					5956,	-- Blacksmith Hammer
+					2324,	-- Bleach
+					6260,	-- Blue Dye
+					6532,	-- Bright Baubles
+					3857,	-- Coal
+					2320,	-- Coarse Thread
+					6217,	-- Copper Rod
+					8925,	-- Crystal Vial
+					3371,	-- Empty Vial
+					2321,	-- Fine Thread
+					6256,	-- Fishing Pole
+					2605,	-- Green Dye
+					4340,	-- Grey Dye
+					8343,	-- Heavy Silken Thread
+					4400,	-- Heavy Stock
+					2692,	-- Hot Spices
+					3372,	-- Leaded Vial
+					2678,	-- Mild Spices
+					2901,	-- Mining Pick
+					6530,	-- Nightcrawlers
+					4342,	-- Purple Dye
+					2604,	-- Red Dye
+					4289,	-- Salt
+					6529,	-- Shiny Bauble
+					4536,	-- Shiny Red Apple
+					4291,	-- Silken Thread
+					7005,	-- Skinning Knife
+					3713,	-- Soothing Spices
+					3466,	-- Strong Flux
+					2880,	-- Weak Flux
+					4399,	-- Wooden Stock
+					4341,	-- Yellow Dye
+				}},
 			}),
 			n(4043, {	-- Galthuk <Two-Handed Weapons Merchant>
 				coord = { 76.0, 37.2, MAP.ORGRIMMAR },
@@ -1186,14 +1225,14 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				races = HORDE_ONLY,
 				sym = {{ "select", "itemID",
 					3024,	-- BKP 2700 "Enforcer"
+					3027,	-- Heavy Recurve Bow
 					2511,	-- Hunter's Boomstick
 					3023,	-- Large Bore Blunderbuss
 					2509,	-- Ornate Blunderbuss
+					3026,	-- Reinforced Bow
 				}},
 				groups = {
 					i(3025),	-- Bkp 42 Ultra
-					i(3027),	-- Heavy Recurve Bow
-					i(3026),	-- Reinforced Bow
 				},
 			}),
 			n(3331, {	-- Kareth
@@ -1446,6 +1485,44 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(5817, {	-- Shimra <Trade Supplies>
 				coord = { 47.8, 80.5, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					277113,	-- Apprentice's Herb Pouch
+					277115,	-- Apprentice's Mining Pack
+					277114,	-- Apprentice's Skinning Satchel
+					2325,	-- Black Dye
+					5956,	-- Blacksmith Hammer
+					2324,	-- Bleach
+					6260,	-- Blue Dye
+					6532,	-- Bright Baubles
+					3857,	-- Coal
+					2320,	-- Coarse Thread
+					6217,	-- Copper Rod
+					8925,	-- Crystal Vial
+					3371,	-- Empty Vial
+					2321,	-- Fine Thread
+					6256,	-- Fishing Pole
+					2605,	-- Green Dye
+					4340,	-- Grey Dye
+					8343,	-- Heavy Silken Thread
+					4400,	-- Heavy Stock
+					2692,	-- Hot Spices
+					3372,	-- Leaded Vial
+					2678,	-- Mild Spices
+					2901,	-- Mining Pick
+					6530,	-- Nightcrawlers
+					4342,	-- Purple Dye
+					2604,	-- Red Dye
+					4289,	-- Salt
+					6529,	-- Shiny Bauble
+					4536,	-- Shiny Red Apple
+					4291,	-- Silken Thread
+					7005,	-- Skinning Knife
+					3713,	-- Soothing Spices
+					3466,	-- Strong Flux
+					2880,	-- Weak Flux
+					4399,	-- Wooden Stock
+					4341,	-- Yellow Dye
+				}},
 			}),
 			n(3361, {	-- Shoma <Weapon Vendor>
 				coord = { 76.0, 37.8, MAP.ORGRIMMAR },
@@ -1603,6 +1680,17 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3400, {	-- Xen'to <Cooking Supplies>
 				coord = { 57.6, 53.2, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)

@@ -522,13 +522,9 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3003, {	-- Fyr Mistrunner <Bread Vendor>
 				coord = { 41.4, 53.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				groups = {
-					i(4541),	-- Freshly Baked Bread
-					i(8950),	-- Homemade Cherry Pie
-					i(4542),	-- Moist Cornbread
-					i(4544),	-- Mulgore Spice Bread
-					i(4601),	-- Soft Banana Bread
-					i(4540),	-- Tough Hunk of Bread
+				sym = {
+					SymSelector.select("VENDOR_FOOD_BREAD"),	-- Bread
+					{ "pop" },
 				},
 			}),
 			n(3093, {	-- Grod <Leather Armor Merchant>
@@ -648,13 +644,9 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3025, {	-- Kaga Mistrunner <Meat Vendor>
 				coord = { 52.3, 47.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				groups = {
-					i(4599),	-- Cured Ham Steak
-					i(2287),	-- Haunch of Meat
-					i(3770),	-- Mutton Chop
-					i(8952),	-- Roasted Quail
-					i(117),	-- Tough Jerky
-					i(3771),	-- Wild Hog Shank
+				sym = {
+					SymSelector.select("VENDOR_FOOD_MEAT"),	-- Meat
+					{ "pop" },
 				},
 			}),
 			n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
@@ -689,10 +681,38 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				coord = { 39.0, 64.4, MAP.THUNDER_BLUFF },	-- Wayfarer's Rest
 				races = HORDE_ONLY,
 				sym = {{ "select","itemID",
+					11284,	-- Accurate Slugs
+					277113,	-- Apprentice's Herb Pouch
+					277115,	-- Apprentice's Mining Pack
+					277114,	-- Apprentice's Skinning Satchel
+					2946,	-- Balanced Throwing Dagger
 					4498,	-- Brown Leather Satchel
+					3137,	-- Deadly Throwing Axe
+					15326,	-- Gleaming Throwing Axe
 					4497,	-- Heavy Brown Bag
+					2519,	-- Heavy Shot
 					4499,	-- Huge Brown Sack
+					1179,	-- Ice Cold Milk
+					11285,	-- Jagged Arrow
+					3107,	-- Keen Throwing Knife
+					2516,	-- Light Shot
+					1205,	-- Melon Juice
+					2901,	-- Mining Pick
+					1645,	-- Moonberry Juice
+					3030,	-- Razor Arrow
+					159,	-- Refreshing Spring Water
+					2512,	-- Rough Arrow
+					2515,	-- Sharp Arrow
+					3135,	-- Sharp Throwing Axe
+					4470,	-- Simple Wood
+					7005,	-- Skinning Knife
 					4496,	-- Small Brown Pouch
+					3033,	-- Solid Shot
+					11291,	-- Star Wood
+					1708,	-- Sweet Nectar
+					4540,	-- Tough Hunk of Bread
+					3131,	-- Weighted Throwing Axe
+					15327,	-- Wicked Throwing Dagger
 				}},
 			}),
 			n(3005, {	-- Mahu <Leatherworking & Tailoring Supplies>
@@ -734,6 +754,17 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3027, {	-- Naal Mistrunner <Cooking Supplies>
 				coord = { 51.0, 52.5, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(278083, {	-- Ceremonial Flint and Tinder
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -750,13 +781,9 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3017, {	-- Nan Mistrunner <Fruit Vendor>
 				coord = { 47.3, 42.4, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				groups = {
-					i(8953),	-- Deep Fried Plantains
-					i(4539),	-- Goldenbark Apple
-					i(4602),	-- Moon Harvest Pumpkin
-					i(4536),	-- Shiny Red Apple
-					i(4538),	-- Snapvine Watermelon
-					i(4537),	-- Tel'Abim Banana
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FRUIT"),	-- Fruit
+					{ "pop" },
 				},
 			}),
 			n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
@@ -829,6 +856,44 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(8363, {	-- Shadi Mistrunner <Trade Supplies>
 				coord = { 40.6, 64.0, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					277113,	-- Apprentice's Herb Pouch
+					277115,	-- Apprentice's Mining Pack
+					277114,	-- Apprentice's Skinning Satchel
+					2325,	-- Black Dye
+					5956,	-- Blacksmith Hammer
+					2324,	-- Bleach
+					6260,	-- Blue Dye
+					6532,	-- Bright Baubles
+					3857,	-- Coal
+					2320,	-- Coarse Thread
+					6217,	-- Copper Rod
+					8925,	-- Crystal Vial
+					3371,	-- Empty Vial
+					2321,	-- Fine Thread
+					6256,	-- Fishing Pole
+					2605,	-- Green Dye
+					4340,	-- Grey Dye
+					8343,	-- Heavy Silken Thread
+					4400,	-- Heavy Stock
+					2692,	-- Hot Spices
+					3372,	-- Leaded Vial
+					2678,	-- Mild Spices
+					2901,	-- Mining Pick
+					6530,	-- Nightcrawlers
+					4342,	-- Purple Dye
+					2604,	-- Red Dye
+					4289,	-- Salt
+					6529,	-- Shiny Bauble
+					4536,	-- Shiny Red Apple
+					4291,	-- Silken Thread
+					7005,	-- Skinning Knife
+					3713,	-- Soothing Spices
+					3466,	-- Strong Flux
+					2880,	-- Weak Flux
+					4399,	-- Wooden Stock
+					4341,	-- Yellow Dye
+				}},
 			}),
 			n(3022, {	-- Sunn Ragetotem <Staff Merchant>
 				coord = { 49.6, 49.8, MAP.THUNDER_BLUFF },

@@ -2123,6 +2123,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 			n(259962, {	-- Fimbo Greasemitz
 				coord = { 79.0, 54.2, MAP.RIVERGLADES },
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -2146,6 +2157,29 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					2525,	-- War Hammer
 					2526,	-- Main Gauche
 					2527,	-- Battle Staff
+					-- General Goods
+					11284,	-- Accurate Slugs
+					4498,	-- Brown Leather Satchel
+					8925,	-- Crystal Vial
+					3137,	-- Deadly Throwing Axe
+					3371,	-- Empty Vial
+					15326,	-- Gleaming Throwing Axe
+					4497,	-- Heavy Brown Bag
+					2519,	-- Heavy Shot
+					11285,	-- Jagged Arrow
+					3107,	-- Keen Throwing Knife
+					3372,	-- Leaded Vial
+					1205,	-- Melon Juice
+					1645,	-- Moonberry Juice
+					3030,	-- Razor Arrow
+					159,	-- Refreshing Spring Water
+					2515,	-- Sharp Arrow
+					3135,	-- Sharp Throwing Axe
+					4470,	-- Simple Wood
+					3033,	-- Solid Shot
+					11291,	-- Star Wood
+					1708,	-- Sweet Nectar
+					15327,	-- Wicked Throwing Dagger
 					-- Poison Supplies
 					-- Not included.
 				}},
@@ -2192,12 +2226,41 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 			n(255895, {	-- Grizzek <General Goods>
 				coord = { 76.6, 53.3, MAP.RIVERGLADES },
+				sym = {{ "select", "itemID",
+					11284,	-- Accurate Slugs
+					4498,	-- Brown Leather Satchel
+					3137,	-- Deadly Throwing Axe
+					15326,	-- Gleaming Throwing Axe
+					4497,	-- Heavy Brown Bag
+					2519,	-- Heavy Shot
+					1179,	-- Ice Cold Milk
+					11285,	-- Jagged Arrow
+					3107,	-- Keen Throwing Knife
+					1205,	-- Melon Juice
+					1645,	-- Moonberry Juice
+					3030,	-- Razor Arrow
+					159,	-- Refreshing Spring Water
+					2515,	-- Sharp Arrow
+					3135,	-- Sharp Throwing Axe
+					4470,	-- Simple Wood
+					3033,	-- Solid Shot
+					11291,	-- Star Wood
+					1708,	-- Sweet Nectar
+					15327,	-- Wicked Throwing Dagger
+				}},
 				groups = {
 					i(16767),	-- Recipe: Undermine Clam Chowder (RECIPE!)
 				},
 			}),
 			n(255894, {	-- Innkeeper Zizplink <Innkeeper>
 				coord = { 78.8, 54.0, MAP.RIVERGLADES },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 				},
@@ -2289,6 +2352,28 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			n(259860, {	-- Martha Wellsworth <General Goods>
 				coord = { 64.2, 84.0, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					11284,	-- Accurate Slugs
+					4498,	-- Brown Leather Satchel
+					3137,	-- Deadly Throwing Axe
+					15326,	-- Gleaming Throwing Axe
+					4497,	-- Heavy Brown Bag
+					2519,	-- Heavy Shot
+					1179,	-- Ice Cold Milk
+					11285,	-- Jagged Arrow
+					3107,	-- Keen Throwing Knife
+					1205,	-- Melon Juice
+					1645,	-- Moonberry Juice
+					3030,	-- Razor Arrow
+					159,	-- Refreshing Spring Water
+					2515,	-- Sharp Arrow
+					3135,	-- Sharp Throwing Axe
+					4470,	-- Simple Wood
+					3033,	-- Solid Shot
+					11291,	-- Star Wood
+					1708,	-- Sweet Nectar
+					15327,	-- Wicked Throwing Dagger
+				}},
 				groups = {
 					i(251460),	-- Plans: Mithril Warhammer (RECIPE!)
 					i(274977),	-- Recipe: Plain Ol' Paletusk (RECIPE!)
@@ -2297,6 +2382,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			n(272646, {	-- Miranda Turner <Cooking Supplier>
 				coord = { 63.6, 82.6, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)

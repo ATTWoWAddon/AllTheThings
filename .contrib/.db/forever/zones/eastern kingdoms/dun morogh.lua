@@ -1895,6 +1895,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			n(1247, {	-- Innkeeper Belm <Innkeeper>
 				coord = { 47.4, 52.6, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_BREAD,	-- Bread
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(2894),	-- Rhapsody Malt
 					i(2686),	-- Thunder Ale

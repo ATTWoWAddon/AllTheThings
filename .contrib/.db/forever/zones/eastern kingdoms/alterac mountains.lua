@@ -884,6 +884,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			n(29547, {	-- Applebough <Fruit Vendor>
 				coord = { 14.4, 65.8, MAP.ALTERAC_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FRUIT"),	-- Fruit
+					{ "pop" },
+				},
 				groups = {
 					i(285359),	-- Warm Apple Juice
 				},
@@ -964,6 +968,30 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				},
 				races = ALLIANCE_ONLY,
 			}),
+			n(251999, {	-- Debbi Moore
+				coord = { 15.4, 68.2, MAP.ALTERAC_MOUNTAINS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				sym = {{ "select", "itemID",
+					7341,	-- Cubic Zirconia Ring
+					7340,	-- Flawless Diamond Solitaire
+					7339,	-- Miniscule Diamond Ring
+					7338,	-- Mood Ring
+					7342,	-- Silver Piffeny Band
+					7337,	-- The Rock
+				}},
+			}),
+			n(251975, {	-- Harold Winston <Jewelry Vendor>
+				-- TODO: coord (none on Wowhead yet)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				sym = {{ "select", "itemID",
+					7341,	-- Cubic Zirconia Ring
+					7340,	-- Flawless Diamond Solitaire
+					7339,	-- Miniscule Diamond Ring
+					7338,	-- Mood Ring
+					7342,	-- Silver Piffeny Band
+					7337,	-- The Rock
+				}},
+			}),
 			n(32334, {	-- Nixi Fireclaw <Weapons Quartermaster>
 				coord = { 16.2, 71.2, MAP.ALTERAC_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1029,6 +1057,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 						classes = { ROGUE },
 					}),
 				},
+			}),
+			n(251976, {	-- Tiffany Cartier <Jewelry Vendor>
+				-- TODO: coord (none on Wowhead yet)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				sym = {{ "select", "itemID",
+					7341,	-- Cubic Zirconia Ring
+					7340,	-- Flawless Diamond Solitaire
+					7339,	-- Miniscule Diamond Ring
+					7338,	-- Mood Ring
+					7342,	-- Silver Piffeny Band
+					7337,	-- The Rock
+				}},
 			}),
 			n(275598, {	-- Valerie Langrom <Leather Armor Merchant>
 				coord = { 12.6, 71.0, MAP.ALTERAC_MOUNTAINS },

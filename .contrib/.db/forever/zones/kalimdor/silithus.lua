@@ -2074,6 +2074,30 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 			}),
 			n(15174, {	-- Calandrath <Innkeeper>
 				coord = { 51.8, 39.0, MAP.SILITHUS },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						11284,	-- Accurate Slugs
+						4498,	-- Brown Leather Satchel
+						3137,	-- Deadly Throwing Axe
+						15326,	-- Gleaming Throwing Axe
+						4497,	-- Heavy Brown Bag
+						2519,	-- Heavy Shot
+						11285,	-- Jagged Arrow
+						3107,	-- Keen Throwing Knife
+						3030,	-- Razor Arrow
+						2515,	-- Sharp Arrow
+						3135,	-- Sharp Throwing Axe
+						4470,	-- Simple Wood
+						3033,	-- Solid Shot
+						11291,	-- Star Wood
+						15327,	-- Wicked Throwing Dagger
+					},
+				},
 			}),
 			n(15419, {	-- Kania <Enchanting Supplies>
 				coord = { 52.0, 39.7, MAP.SILITHUS },

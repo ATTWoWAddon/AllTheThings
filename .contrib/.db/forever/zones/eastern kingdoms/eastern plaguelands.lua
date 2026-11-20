@@ -1400,6 +1400,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					6164,	-- Augustus' Receipt Book
 				},
 				coord = { 14.4, 33.6, MAP.EASTERN_PLAGUELANDS },
+				sym = {
+					SymSelector.select("VENDOR_FOOD_MUSHROOM"),	-- Mushroom
+					{ "pop" },
+				},
 				groups = {
 					i(15902, {	-- A Crazy Grab Bag
 						description = "Contains a random green item. In later expansions due to gold inflation, this might not be a bad purchase, but if you're trying to buy it before say Legion, don't bother.",

@@ -93,6 +93,17 @@ root(ROOTS.ExpansionFeatures, {
 				n(256731, {	-- Kalsey Sanden <Chef>
 					coord = { 10.8, 72.8, MAP.REDRIDGE_MOUNTAINS },
 					races = ALLIANCE_ONLY,
+					sym = {{ "select", "itemID",
+						2692,	-- Hot Spices
+						2678,	-- Mild Spices
+						159,	-- Refreshing Spring Water
+						4536,	-- Shiny Red Apple
+						10284,	-- Simple Flour
+						4470,	-- Simple Wood
+						3713,	-- Soothing Spices
+						11291,	-- Star Wood
+						272941,	-- Thick Logs
+					}},
 					groups = {
 						i(249888, {	-- Recipe: Calcified Smoothie (RECIPE!)
 							minReputation = { 2586, FRIENDLY },	-- Azeroth Commerce Authority, Friendly.

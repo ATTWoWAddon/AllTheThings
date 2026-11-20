@@ -3088,6 +3088,13 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(5848, {	-- Malgin Barleybrew <Bael'dun Morale Officer>
 				coord = { 49.4, 84.4, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2723,	-- Bottle of Dalaran Noir
+					2594,	-- Flagon of Dwarven Honeymead/Mead
+					2593,	-- Flask of Stormwind Tawny
+					2595,	-- Jug of Badlands Bourbon
+					2596,	-- Skin of Dwarven Stout
+				}},
 				groups = {
 					i(286541, {	-- Bael'dun Tankard
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -3398,15 +3405,13 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			}),
 			n(3497, {	-- Kilxx <Fisherman>
 				coord = { 62.8, 38.2, MAP.THE_BARRENS },
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
+					{ "pop" },
+				},
 				groups = {
-					i(4593),	-- Bristle Whisker Catfish
-					i(4592),	-- Longjaw Mud Snapper
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-					i(4594),	-- Rockscale Cod
-					i(787),	-- Slitherskin Mackerel
-					i(8957),	-- Spinefin Halibut
-					i(21552),	-- Striped Yellowtail
 				},
 			}),
 			n(3658, {	-- Lizzarik <Weapon Dealer>
@@ -3483,6 +3488,21 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(8307, {	-- Tarban Hearthgrain <Baker>
 				coord = { 55.0, 32.0, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_BREAD"),	-- Bread
+					{ "pop" },
+					{ "select", "itemID",
+						2692,	-- Hot Spices
+						2678,	-- Mild Spices
+						159,	-- Refreshing Spring Water
+						4536,	-- Shiny Red Apple
+						10284,	-- Simple Flour
+						4470,	-- Simple Wood
+						3713,	-- Soothing Spices
+						11291,	-- Star Wood
+						272941,	-- Thick Logs
+					},
+				},
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -3612,6 +3632,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 			n(3489, {	-- Zargh <Butcher>
 				coord = { 52.6, 29.8, MAP.THE_BARRENS },
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_MEAT"),	-- Meat
+					{ "pop" },
+				},
 				groups = {
 					i(3735),	-- Recipe: Hot Lion Chops (RECIPE!)
 				},

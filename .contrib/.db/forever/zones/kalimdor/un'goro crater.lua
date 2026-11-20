@@ -827,6 +827,30 @@ maproot(MAP.KALIMDOR, MAP.UNGORO_CRATER, {
 			}),
 			n(12959, {	-- Nergal <General Goods Vendor>
 				coord = { 43.2, 7.8, MAP.UNGORO_CRATER },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						11284,	-- Accurate Slugs
+						4498,	-- Brown Leather Satchel
+						3137,	-- Deadly Throwing Axe
+						15326,	-- Gleaming Throwing Axe
+						4497,	-- Heavy Brown Bag
+						2519,	-- Heavy Shot
+						11285,	-- Jagged Arrow
+						3107,	-- Keen Throwing Knife
+						3030,	-- Razor Arrow
+						2515,	-- Sharp Arrow
+						3135,	-- Sharp Throwing Axe
+						4470,	-- Simple Wood
+						3033,	-- Solid Shot
+						11291,	-- Star Wood
+						15327,	-- Wicked Throwing Dagger
+					},
+				},
 				groups = {
 					i(15758, {	-- Pattern: Devilsaur Gauntlets (RECIPE!)
 						isLimited = true,

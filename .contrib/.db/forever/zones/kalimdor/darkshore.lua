@@ -1224,6 +1224,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			n(4307, {	-- Heldan Galesong <Fisherman>
 				coord = { 37.0, 56.4, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
+					{ "pop" },
+				},
 				groups = {
 					i(5528),	-- Recipe: Clam Chowder (RECIPE!)
 					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
@@ -1234,6 +1238,10 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			n(4200, {	-- Laird <Fish Vendor>
 				coord = { 36.8, 44.3, MAP.DARKSHORE },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
+					{ "pop" },
+				},
 				groups = {
 					i(5485),	-- Recipe: Fillet of Frenzy (RECIPE!)
 				},

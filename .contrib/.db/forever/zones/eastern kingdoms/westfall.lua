@@ -939,6 +939,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			n(233, {	-- Farmer Saldean
 				coord = { 56.1, 31.3, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_BREAD"),	-- Bread
+					{ "pop" },
+				},
 				groups = {
 					i(11109),	-- Special Chicken Feed
 				},
@@ -983,6 +987,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 			n(4305, {	-- Kriggon Talsone <Fisherman>
 				coord = { 36.2, 90.0, MAP.WESTFALL },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
+					{ "pop" },
+				},
 				groups = {
 					i(5528),	-- Recipe: Clam Chowder (RECIPE!)
 					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)

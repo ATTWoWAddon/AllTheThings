@@ -1038,6 +1038,10 @@ instanceroot(230, {	-- Dire Maul
 						--[[ Commented out until confirmed
 						i(18487),	-- Pattern: Mooncloth Robe (RECIPE!)
 						--]]
+						sym = {
+							SymSelector.select("VENDOR_FOOD_DRINK"),	-- Drink
+							{ "pop" },
+						},
 					}),
 				}),
 				n(ZONE_DROPS, {

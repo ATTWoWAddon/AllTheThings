@@ -1757,6 +1757,26 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			n(3081, {	-- Wunna Darkmane <Trade Goods>
 				coord = { 46.2, 58.2, MAP.MULGORE },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					277113,	-- Apprentice's Herb Pouch
+					277115,	-- Apprentice's Mining Pack
+					277114,	-- Apprentice's Skinning Satchel
+					5956,	-- Blacksmith Hammer
+					2324,	-- Bleach
+					6260,	-- Blue Dye
+					2320,	-- Coarse Thread
+					6217,	-- Copper Rod
+					3371,	-- Empty Vial
+					6256,	-- Fishing Pole
+					2678,	-- Mild Spices
+					2901,	-- Mining Pick
+					2604,	-- Red Dye
+					4289,	-- Salt
+					6529,	-- Shiny Bauble
+					4536,	-- Shiny Red Apple
+					7005,	-- Skinning Knife
+					2880,	-- Weak Flux
+				}},
 				groups = {
 					i(5484),	-- Recipe: Roasted Kodo Meat (RECIPE!)
 				},

@@ -1778,6 +1778,17 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			n(4265, {	-- Nyoma <Cooking Supplies>
 				coord = { 57.2, 61.2, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 					i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)

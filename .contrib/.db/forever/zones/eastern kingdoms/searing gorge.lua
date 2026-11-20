@@ -680,6 +680,35 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 			}),
 			n(14624, {	-- Master Smith Burninate <The Thorium Brotherhood>
 				coord = { 38.8, 28.5, MAP.SEARING_GORGE },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						11284,	-- Accurate Slugs
+						5956,	-- Blacksmith Hammer
+						4498,	-- Brown Leather Satchel
+						3857,	-- Coal
+						3137,	-- Deadly Throwing Axe
+						18567,	-- Elemental Flux
+						15326,	-- Gleaming Throwing Axe
+						4497,	-- Heavy Brown Bag
+						2519,	-- Heavy Shot
+						11285,	-- Jagged Arrow
+						3107,	-- Keen Throwing Knife
+						2901,	-- Mining Pick
+						3030,	-- Razor Arrow
+						2515,	-- Sharp Arrow
+						3135,	-- Sharp Throwing Axe
+						4470,	-- Simple Wood
+						3033,	-- Solid Shot
+						3466,	-- Strong Flux
+						2880,	-- Weak Flux
+						15327,	-- Wicked Throwing Dagger
+					},
+				},
 			}),
 		}),
 		n(ZONE_DROPS, {

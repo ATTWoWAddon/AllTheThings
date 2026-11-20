@@ -1723,6 +1723,13 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			n(3881, {	-- Grimtak
 				coord = { 51.2, 42.6, MAP.DUROTAR },
 				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(5483),	-- Recipe: Scorpid Surprise (RECIPE!)
 				},

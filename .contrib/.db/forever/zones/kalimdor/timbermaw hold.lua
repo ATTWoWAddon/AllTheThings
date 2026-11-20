@@ -235,6 +235,26 @@ maproot(MAP.KALIMDOR, {
 				n(11555, {	-- Gorn One Eye
 					coord = { 65.2, 2.6, MAP.FELWOOD },
 					minReputation = { FACTION_TIMBERMAW_HOLD, HONORED },
+					sym = {{ "select", "itemID",
+						11284,	-- Accurate Slugs
+						4498,	-- Brown Leather Satchel
+						3137,	-- Deadly Throwing Axe
+						15326,	-- Gleaming Throwing Axe
+						4497,	-- Heavy Brown Bag
+						2519,	-- Heavy Shot
+						11285,	-- Jagged Arrow
+						3107,	-- Keen Throwing Knife
+						1205,	-- Melon Juice
+						1645,	-- Moonberry Juice
+						3030,	-- Razor Arrow
+						159,	-- Refreshing Spring Water
+						2515,	-- Sharp Arrow
+						3135,	-- Sharp Throwing Axe
+						4470,	-- Simple Wood
+						3033,	-- Solid Shot
+						1708,	-- Sweet Nectar
+						15327,	-- Wicked Throwing Dagger
+					}},
 					groups = {
 						i(16768),	-- Furbolg Medicine Pouch
 						i(16769),	-- Furbolg Medicine Totem

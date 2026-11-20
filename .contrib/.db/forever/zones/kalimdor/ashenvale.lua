@@ -1429,6 +1429,10 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					{ 50.0, 66.6, MAP.ASHENVALE },
 				},
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_MEAT"),	-- Meat
+					{ "pop" },
+				},
 				groups = {
 					i(3734),	-- Recipe: Big Bear Steak (RECIPE!)
 					i(5489),	-- Recipe: Lean Venison (RECIPE!)
@@ -1439,6 +1443,19 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 					{ 11.8, 34.0, MAP.ASHENVALE },
 				},
 				races = HORDE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
+					{ "pop" },
+					{ "select", "itemID",
+						6533,	-- Aquadynamic Fish Attractor
+						6532,	-- Bright Baubles
+						273636,	-- Chef's Knife
+						6256,	-- Fishing Pole
+						6530,	-- Nightcrawlers
+						6529,	-- Shiny Bauble
+						6365,	-- Strong Fishing Pole
+					},
+				},
 				groups = {
 					i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)

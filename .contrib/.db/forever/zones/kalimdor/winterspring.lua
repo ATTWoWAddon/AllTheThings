@@ -924,6 +924,14 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			}),
 			n(11187, {	-- Himmik <Food & Drink>
 				coord = { 61.2, 39.0, MAP.WINTERSPRING },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_FISH,	-- Fish
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 				},
@@ -931,6 +939,10 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 			n(2303, {	-- Lyranne Feathersong <Food & Drink>
 				coord = { 52.0, 29.2, MAP.WINTERSPRING },
 				races = ALLIANCE_ONLY,
+				sym = {
+					SymSelector.select("VENDOR_FOOD_DRINK"),	-- Drink
+					{ "pop" },
+				},
 			}),
 			n(11182, {	-- Nixxrak <Heavy Armor Merchant>
 				coord = { 61.6, 37.8, MAP.WINTERSPRING },

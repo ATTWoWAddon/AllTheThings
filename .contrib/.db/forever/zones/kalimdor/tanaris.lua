@@ -1399,12 +1399,26 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			n(8125, {	-- Dirge Quikcleave <Butcher>
 				coord = { 52.6, 28.0, MAP.TANARIS },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 				},
 			}),
 			n(8137, {	-- Gikkix <Fisherman>
 				coord = { 66.6, 22.1, MAP.TANARIS },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_FISH,	-- Fish
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(13942),	-- Recipe: Grilled Squid (RECIPE!)
 					i(13945),	-- Recipe: Nightfin Soup (RECIPE!)
@@ -1414,12 +1428,41 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			}),
 			n(7733, {	-- Innkeeper Fizzgrimble <Innkeeper>
 				coord = { 52.4, 27.8, MAP.TANARIS },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 				},
 			}),
 			n(8139, {	-- Jabbey <General Goods>
 				coord = { 67.0, 22.0, MAP.TANARIS },
+				sym = {{ "select", "itemID",
+					11284,	-- Accurate Slugs
+					4498,	-- Brown Leather Satchel
+					3137,	-- Deadly Throwing Axe
+					15326,	-- Gleaming Throwing Axe
+					4497,	-- Heavy Brown Bag
+					2519,	-- Heavy Shot
+					1179,	-- Ice Cold Milk
+					11285,	-- Jagged Arrow
+					3107,	-- Keen Throwing Knife
+					1205,	-- Melon Juice
+					1645,	-- Moonberry Juice
+					3030,	-- Razor Arrow
+					159,	-- Refreshing Spring Water
+					2515,	-- Sharp Arrow
+					3135,	-- Sharp Throwing Axe
+					4470,	-- Simple Wood
+					3033,	-- Solid Shot
+					11291,	-- Star Wood
+					1708,	-- Sweet Nectar
+					15327,	-- Wicked Throwing Dagger
+				}},
 				groups = {
 					i(16767, {	-- Recipe: Undermine Clam Chowder (RECIPE!)
 						isLimited = true,

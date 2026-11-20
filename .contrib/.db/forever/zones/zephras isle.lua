@@ -1921,6 +1921,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 		n(VENDORS, {
 			n(254089, {	-- Coriella Calmbreeze <Innkeeper>
 				coord = { 43.0, 43.2, MAP.ZEPHRAS_ISLE },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+						SymSelector.VENDOR_FOOD_MUSHROOM,	-- Mushroom
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(252027),	-- Gustberry Juice
 					i(252026),	-- Gustberry Pie
@@ -1942,6 +1950,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(255940, {	-- Donaal Downbreeze <Innkeeper>
 				coord = { 62.2, 72.6, MAP.ZEPHRAS_ISLE },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_FOOD_DRINK,	-- Drink
+						SymSelector.VENDOR_FOOD_MEAT,	-- Meat
+						SymSelector.VENDOR_FOOD_MUSHROOM,	-- Mushroom
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(252027),	-- Gustberry Juice
 					i(252026),	-- Gustberry Pie
@@ -2023,6 +2039,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(257006, {	-- Nyalah Brightfire
 				coord = { 60.7, 72.7, MAP.ZEPHRAS_ISLE },
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
@@ -2153,6 +2180,17 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(251905, {	-- Fimbo Greasemitz <Cook>
 				coord = { 43.9, 43.8, MAP.ZEPHRAS_ISLE },
+				sym = {{ "select", "itemID",
+					2692,	-- Hot Spices
+					2678,	-- Mild Spices
+					159,	-- Refreshing Spring Water
+					4536,	-- Shiny Red Apple
+					10284,	-- Simple Flour
+					4470,	-- Simple Wood
+					3713,	-- Soothing Spices
+					11291,	-- Star Wood
+					272941,	-- Thick Logs
+				}},
 				groups = {
 					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
