@@ -269,14 +269,15 @@ instanceroot(232, {	-- Maraudon
 					i(17754),	-- Infernal Trickster Leggings
 				},
 			}),
-			n(12237, {	-- Meshlok the Harvester
-				description = "This is a Rare Creature and, as such, is not always present.",
-				coord = { 24.0, 75.0, MAP.MARAUDON },
-				groups = {
-					i(17741),	-- Nature's Embrace
-					i(17742),	-- Fungus Shroud Armor
-					i(17767),	-- Bloomsprout Headpiece
-				},
+			n(RARES, {
+				n(12237, {	-- Meshlok the Harvester
+					coord = { 24.0, 75.0, MAP.MARAUDON },
+					groups = {
+						i(17741),	-- Nature's Embrace
+						i(17742),	-- Fungus Shroud Armor
+						i(17767),	-- Bloomsprout Headpiece
+					},
+				}),
 			}),
 		}),
 		n(MARAUDON_PORTAL, {

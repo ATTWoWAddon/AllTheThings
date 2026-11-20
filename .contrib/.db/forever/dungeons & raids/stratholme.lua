@@ -441,13 +441,12 @@ instanceroot(236, {	-- Stratholme
 						cr = 10426,	-- Crimson Inquisitor
 					}),
 				}),
-				n(10393, {	-- Skul
-					description = "This is a Rare Creature and, as such, is not always present.",
-					groups = {
+				n(RARES, {
+					n(10393, {	-- Skul
 						i(13396),	-- Skul's Ghastly Touch
 						i(13394),	-- Skul's Cold Embrace
 						i(13395),	-- Skul's Fingerbone Claws
-					},
+					}),
 				}),
 				n(11058, {	-- Fras Siabi / Ezra Grimm
 					description = "In order to summon this boss, one of your party members must be on the quest.",
@@ -646,13 +645,12 @@ instanceroot(236, {	-- Stratholme
 						cr = 10405,	-- Plague Ghoul
 					}),
 				}),
-				n(10809, {	-- Stonespine
-					description = "This is a Rare Creature and, as such, is not always present.",
-					groups = {
+				n(RARES, {
+					n(10809, {	-- Stonespine
 						i(13399),	-- Gargoyle Shredder Talons
 						i(13397),	-- Stoneskin Gargoyle Cape
 						i(13954),	-- Verdant Footpads
-					},
+					}),
 				}),
 				e(452, {	-- Nerub'enkan
 					creatureID = 10437,	-- Nerub'enkan

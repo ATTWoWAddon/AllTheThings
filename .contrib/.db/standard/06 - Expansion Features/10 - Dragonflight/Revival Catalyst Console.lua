@@ -26,7 +26,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			-- #if BEFORE TWW
 			header(HEADERS.LFGDungeon, VAULT_OF_THE_INCARNATES, {
 				d(DIFFICULTY.RAID.LFR, {
-					description = "",
 					groups = bubbleDown({ bonusID = 451 }, {
 						cl(DEATHKNIGHT, {
 							sym = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
@@ -148,7 +147,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
-					description = "",
 					groups = bubbleDown({ modID = 3 }, {
 						cl(DEATHKNIGHT, {
 							sym = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
@@ -270,7 +268,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}),
 				d(DIFFICULTY.RAID.HEROIC, {
-					description = "",
 					groups = bubbleDown({ bonusID = 1 }, {
 						cl(DEATHKNIGHT, {
 							sym = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
@@ -392,7 +389,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}),
 				d(DIFFICULTY.RAID.MYTHIC, {
-					description = "",
 					groups = bubbleDown({ bonusID = 450 }, {
 						cl(DEATHKNIGHT, {
 							sym = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
@@ -518,7 +514,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			-- #if BEFORE TWW
 			header(HEADERS.LFGDungeon, ABERRUS_THE_SHADOWED_CRUCIBLE, {
 				d(DIFFICULTY.RAID.LFR, {
-					description = "",
 					timeline = { ADDED_10_1_0 },
 					groups = bubbleDown({ modID = 4 }, {
 						cl(DEATHKNIGHT, {
@@ -641,7 +636,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
-					description = "",
 					timeline = { ADDED_10_1_0 },
 					groups = {
 						cl(DEATHKNIGHT, {
@@ -764,7 +758,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					},
 				}),
 				d(DIFFICULTY.RAID.HEROIC, {
-					description = "",
 					timeline = { ADDED_10_1_0 },
 					groups = bubbleDown({ modID = 5 }, {
 						cl(DEATHKNIGHT, {
@@ -887,7 +880,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}),
 				d(DIFFICULTY.RAID.MYTHIC, {
-					description = "",
 					timeline = { ADDED_10_1_0 },
 					groups = bubbleDown({ modID = 6 }, {
 						cl(DEATHKNIGHT, {
@@ -1014,7 +1006,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 			-- #if BEFORE TWW
 			header(HEADERS.LFGDungeon, ADMIRDRASSIL_THE_DREAMS_HOPE, {
 				d(DIFFICULTY.RAID.LFR, {
-					description = "",
 					timeline = { ADDED_10_2_0 },
 					groups = bubbleDown({ modID = 4 }, {
 						cl(DEATHKNIGHT, {
@@ -1137,7 +1128,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
-					description = "",
 					timeline = { ADDED_10_2_0 },
 					groups = {
 						cl(DEATHKNIGHT, {
@@ -1260,7 +1250,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					},
 				}),
 				d(DIFFICULTY.RAID.HEROIC, {
-					description = "",
 					timeline = { ADDED_10_2_0 },
 					groups = bubbleDown({ modID = 5 }, {
 						cl(DEATHKNIGHT, {
@@ -1383,7 +1372,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}),
 				d(DIFFICULTY.RAID.MYTHIC, {
-					description = "",
 					timeline = { ADDED_10_2_0 },
 					groups = bubbleDown({ modID = 6 }, {
 						cl(DEATHKNIGHT, {
@@ -1513,7 +1501,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				-- There are new IDs only for "Tier Slots" in season 4 - main source in raid from tokens
 				-- "Off Slots" use old IDs of original items - main source in Catalyst of previous tiers/raids (new "Off Slot" IDs are NYI)
 				d(DIFFICULTY.RAID.LFR, {
-					description = "",
 					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 					groups = bubbleDown({ modID = 4 }, {
 						cl(DEATHKNIGHT, {
@@ -1688,7 +1675,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
-					description = "",
 					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 					groups = bubbleDown({ modID = 3 }, {
 						cl(DEATHKNIGHT, {
@@ -1863,7 +1849,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}),
 				d(DIFFICULTY.RAID.HEROIC, {
-					description = "",
 					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 					groups = bubbleDown({ modID = 5 }, {
 						cl(DEATHKNIGHT, {
@@ -2038,7 +2023,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 				}),
 				d(DIFFICULTY.RAID.MYTHIC, {
-					description = "",
 					timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 					groups = bubbleDown({ modID = 6 }, {
 						cl(DEATHKNIGHT, {
@@ -2221,7 +2205,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					-- There are new IDs only for "Tier Slots" in season 4 - main source in raid from tokens
 					-- "Off Slots" use old IDs of original items - main source in Catalyst of previous tiers/raids (new "Off Slot" IDs are NYI)
 					d(DIFFICULTY.RAID.LFR, {
-						description = "",
 						timeline = { REMOVED_TWW_LAUNCH },
 						groups = bubbleDown({ modID = 4 }, {
 							cl(DEATHKNIGHT, {
@@ -2423,7 +2406,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 					-- #if BEFORE 11.0.2
 					d(DIFFICULTY.RAID.NORMAL, {
-						description = "",
 						groups = bubbleDown({ modID = 3 }, {
 							cl(DEATHKNIGHT, {
 								sym = {{"select","modItemID",
@@ -2735,7 +2717,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					}),
 					-- #endif
 					d(DIFFICULTY.RAID.HEROIC, {
-						description = "",
 						timeline = { REMOVED_TWW_LAUNCH },
 						groups = bubbleDown({ modID = 5 }, {
 							cl(DEATHKNIGHT, {
@@ -2936,7 +2917,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						}),
 					}),
 					d(DIFFICULTY.RAID.MYTHIC, {
-						description = "",
 						timeline = { REMOVED_TWW_LAUNCH },
 						groups = bubbleDown({ modID = 6 }, {
 							cl(DEATHKNIGHT, {

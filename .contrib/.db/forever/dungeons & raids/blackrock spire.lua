@@ -981,27 +981,36 @@ instanceroot(229, {	-- Blackrock Spire
 				description = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Warosh.",
 				provider = { "o", 175886 },	-- Roughshod Pike
 			}),
-			n(9218, {	-- Spirestone Battle Lord (Rare)
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
+			n(RARES, {
+				n(9218, {	-- Spirestone Battle Lord (Rare)
 					i(13285),	-- The Blackrock Slicer
 					i(13284),	-- Swiftdart Battleboots
-				},
-			}),
-			n(9219, {	-- Spirestone Butcher (Rare)
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
+				}),
+				n(9219, {	-- Spirestone Butcher (Rare)
 					i(13286),	-- Rivenspike
 					i(12608),	-- Butcher's Apron
-				},
-			}),
-			n(9217, {	-- Spirestone Lord Magus (Rare)
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
+				}),
+				n(9217, {	-- Spirestone Lord Magus (Rare)
 					i(13261),	-- Globe of D'sak
 					i(13282),	-- Ogreseer Tower Boots
 					i(13283),	-- Magus Ring
-				},
+				}),
+				n(9596, {	-- Bannok Grimaxe (Rare)
+					i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
+					i(12621),	-- Demonfork
+					i(12637),	-- Backusarian Gauntlets
+					i(12634),	-- Chiselbrand Girdle
+				}),
+				n(10376, {	-- Crystal Fang (Rare)
+					i(13218),	-- Fang of the Crystal Spider
+					i(13185),	-- Sunderseer Mantle
+					i(13184),	-- Fallbrush Handgrips
+				}),
+				n(9718, {	-- Ghok Bashguud <Bloodaxe Champion> (Rare)
+					i(13204),	-- Bashguuder
+					i(13198),	-- Hurd Smasher
+					i(13203),	-- Armswake Cloak
+				}),
 			}),
 			e(388, {	-- Highlord Omokk
 				creatureID = 9196,	-- Highlord Omokk
@@ -1070,23 +1079,6 @@ instanceroot(229, {	-- Blackrock Spire
 					i(22398),	-- Idol of Rejuvenation
 				},
 			}),
-			n(9596, {	-- Bannok Grimaxe (Rare)
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
-					i(12621),	-- Demonfork
-					i(12637),	-- Backusarian Gauntlets
-					i(12634),	-- Chiselbrand Girdle
-				},
-			}),
-			n(10376, {	-- Crystal Fang (Rare)
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(13218),	-- Fang of the Crystal Spider
-					i(13185),	-- Sunderseer Mantle
-					i(13184),	-- Fallbrush Handgrips
-				},
-			}),
 			e(391, {	-- Mother Smolderweb
 				creatureID = 10596,	-- Mother Smolderweb
 				groups = {
@@ -1147,14 +1139,6 @@ instanceroot(229, {	-- Blackrock Spire
 					i(16718),	-- Wildheart Spaulders
 					i(13208),	-- Bleak Howler Armguards
 					i(13206),	-- Wolfshear Leggings
-				},
-			}),
-			n(9718, {	-- Ghok Bashguud <Bloodaxe Champion> (Rare)
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(13204),	-- Bashguuder
-					i(13198),	-- Hurd Smasher
-					i(13203),	-- Armswake Cloak
 				},
 			}),
 			e(396, {	-- Overlord Wyrmthalak
@@ -1231,13 +1215,12 @@ instanceroot(229, {	-- Blackrock Spire
 						i(12589),	-- Dustfeather Sash
 					},
 				}),
-				n(10509, {	-- Jed Runewatcher
-					description = "This is a Rare Creature and, as such, is not always present.",
-					groups = {
+				n(RARES, {
+					n(10509, {	-- Jed Runewatcher
 						i(12605),	-- Serpentine Skuller
 						i(12604),	-- Starfire Tiara
 						i(12930),	-- Briarwood Reed
-					},
+					}),
 				}),
 				n(10899, {	-- Goraluk Anvilcrack
 					i(18779),	-- Bottom Half of Advanced Armorsmithing: Volume I

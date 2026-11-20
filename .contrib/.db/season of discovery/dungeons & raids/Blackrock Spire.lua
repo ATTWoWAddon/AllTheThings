@@ -1067,57 +1067,105 @@ instanceroot(229, {	-- Blackrock Spire
 				description = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Warosh.",
 				provider = { "o", 175886 },	-- Roughshod Pike
 			}),
-			n(9218, {	-- Spirestone Battle Lord (Rare)
-				coord = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
-				description =
-					"This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(13285),	-- The Blackrock Slicers
-					applyclassicphase(SOD_PHASE_FOUR, i(228557, {	-- Swiftdart Battleboots
-						timeline = { ADDED_1_15_3 },
-					})),
-					i(13284, {	-- Swiftdart Battleboots
-						timeline = { REMOVED_1_15_3 },
-					}),
-				},
-			}),
-			n(9219, {	-- Spirestone Butcher (Rare)
-				coord = { 54.0, 58.0, LBRS_HORDEMAR_CITY },
-				description =
-					"This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(13286),	-- Rivenspike
-					applyclassicphase(SOD_PHASE_FOUR, i(228556, {	-- Butcher's Apron
-						timeline = { ADDED_1_15_3 },
-					})),
-					i(12608, {	-- Butcher's Apron
-						timeline = { REMOVED_1_15_3 },
-					}),
-				},
-			}),
-			n(9217, {	-- Spirestone Lord Magus (Rare)
-				coord = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					applyclassicphase(SOD_PHASE_FOUR, i(228563, {	-- Globe of D'sak
-						timeline = { ADDED_1_15_3 },
-					})),
-					i(13261, {	-- Globe of D'sak
-						timeline = { REMOVED_1_15_3 },
-					}),
-					applyclassicphase(SOD_PHASE_FOUR, i(228564, {	-- Ogreseer Tower Boots
-						timeline = { ADDED_1_15_3 },
-					})),
-					i(13282, {	-- Ogreseer Tower Boots
-						timeline = { REMOVED_1_15_3 },
-					}),
-					applyclassicphase(SOD_PHASE_FOUR, i(228565, {	-- Magus Ring
-						timeline = { ADDED_1_15_3 },
-					})),
-					i(13283, {	-- Magus Ring
-						timeline = { REMOVED_1_15_3 },
-					}),
-				},
+			n(RARES, {
+				n(9218, {	-- Spirestone Battle Lord (Rare)
+					coord = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
+					groups = {
+						i(13285),	-- The Blackrock Slicers
+						applyclassicphase(SOD_PHASE_FOUR, i(228557, {	-- Swiftdart Battleboots
+							timeline = { ADDED_1_15_3 },
+						})),
+						i(13284, {	-- Swiftdart Battleboots
+							timeline = { REMOVED_1_15_3 },
+						}),
+					},
+				}),
+				n(9219, {	-- Spirestone Butcher (Rare)
+					coord = { 54.0, 58.0, LBRS_HORDEMAR_CITY },
+					groups = {
+						i(13286),	-- Rivenspike
+						applyclassicphase(SOD_PHASE_FOUR, i(228556, {	-- Butcher's Apron
+							timeline = { ADDED_1_15_3 },
+						})),
+						i(12608, {	-- Butcher's Apron
+							timeline = { REMOVED_1_15_3 },
+						}),
+					},
+				}),
+				n(9217, {	-- Spirestone Lord Magus (Rare)
+					coord = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
+					groups = {
+						applyclassicphase(SOD_PHASE_FOUR, i(228563, {	-- Globe of D'sak
+							timeline = { ADDED_1_15_3 },
+						})),
+						i(13261, {	-- Globe of D'sak
+							timeline = { REMOVED_1_15_3 },
+						}),
+						applyclassicphase(SOD_PHASE_FOUR, i(228564, {	-- Ogreseer Tower Boots
+							timeline = { ADDED_1_15_3 },
+						})),
+						i(13282, {	-- Ogreseer Tower Boots
+							timeline = { REMOVED_1_15_3 },
+						}),
+						applyclassicphase(SOD_PHASE_FOUR, i(228565, {	-- Magus Ring
+							timeline = { ADDED_1_15_3 },
+						})),
+						i(13283, {	-- Magus Ring
+							timeline = { REMOVED_1_15_3 },
+						}),
+					},
+				}),
+				n(9596, {	-- Bannok Grimaxe (Rare)
+					coords = {
+						{ 53.0, 67.0, BLACKROCK_SPIRE },
+						{ 49.0, 55.0, BLACKROCK_SPIRE },
+					},
+					groups = {
+						i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
+						i(12621),	-- Demonfork
+						applyclassicphase(SOD_PHASE_FOUR, i(228568, {	-- Backusarian Gauntlets
+							timeline = { ADDED_1_15_3 },
+						})),
+						i(12637, {	-- Backusarian Gauntlets
+							timeline = { REMOVED_1_15_3 },
+						}),
+						applyclassicphase(SOD_PHASE_FOUR, i(228567, {	-- Chiselbrand Girdle
+							timeline = { ADDED_1_15_3 },
+						})),
+						i(12634, {	-- Chiselbrand Girdle
+							timeline = { REMOVED_1_15_3 },
+						}),
+					},
+				}),
+				n(10376, {	-- Crystal Fang (Rare)
+					coord = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
+					groups = {
+						applyclassicphase(SOD_PHASE_FOUR, i(228592, {	-- Fang of the Crystal Spider
+							timeline = { ADDED_1_15_3 },
+						})),
+						i(13218, {	-- Fang of the Crystal Spider
+							timeline = { REMOVED_1_15_3 },
+						}),
+						applyclassicphase(SOD_PHASE_FOUR, i(228590, {	-- Sunderseer Mantle
+							timeline = { ADDED_1_15_3 },
+						})),
+						i(13185, {	-- Sunderseer Mantle
+							timeline = { REMOVED_1_15_3 },
+						}),
+						i(13184),	-- Fallbrush Handgrips
+					},
+				}),
+				n(9718, {	-- Ghok Bashguud <Bloodaxe Champion> (Rare)
+					coords = {
+						{ 36.0, 72.0, LBRS_HALYCONS_LAIR },
+						{ 36.0, 60.0, LBRS_HALYCONS_LAIR },
+					},
+					groups = {
+						i(13204),	-- Bashguuder
+						i(13198),	-- Hurd Smasher
+						i(13203),	-- Armswake Cloak
+					},
+				}),
 			}),
 			e(388, {	-- Highlord Omokk
 				creatureID = 9196,	-- Highlord Omokk
@@ -1262,49 +1310,6 @@ instanceroot(229, {	-- Blackrock Spire
 					i(22398),	-- Idol of Rejuvenation
 				},
 			})),
-			n(9596, {	-- Bannok Grimaxe (Rare)
-				coords = {
-					{ 53.0, 67.0, BLACKROCK_SPIRE },
-					{ 49.0, 55.0, BLACKROCK_SPIRE },
-				},
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
-					i(12621),	-- Demonfork
-					applyclassicphase(SOD_PHASE_FOUR, i(228568, {	-- Backusarian Gauntlets
-						timeline = { ADDED_1_15_3 },
-					})),
-					i(12637, {	-- Backusarian Gauntlets
-						timeline = { REMOVED_1_15_3 },
-					}),
-					applyclassicphase(SOD_PHASE_FOUR, i(228567, {	-- Chiselbrand Girdle
-						timeline = { ADDED_1_15_3 },
-					})),
-					i(12634, {	-- Chiselbrand Girdle
-						timeline = { REMOVED_1_15_3 },
-					}),
-				},
-			}),
-			n(10376, {	-- Crystal Fang (Rare)
-				coord = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
-				description =
-					"This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					applyclassicphase(SOD_PHASE_FOUR, i(228592, {	-- Fang of the Crystal Spider
-						timeline = { ADDED_1_15_3 },
-					})),
-					i(13218, {	-- Fang of the Crystal Spider
-						timeline = { REMOVED_1_15_3 },
-					}),
-					applyclassicphase(SOD_PHASE_FOUR, i(228590, {	-- Sunderseer Mantle
-						timeline = { ADDED_1_15_3 },
-					})),
-					i(13185, {	-- Sunderseer Mantle
-						timeline = { REMOVED_1_15_3 },
-					}),
-					i(13184),	-- Fallbrush Handgrips
-				},
-			}),
 			e(391, {	-- Mother Smolderweb
 				creatureID = 10596,	-- Mother Smolderweb
 				groups = {
@@ -1407,19 +1412,6 @@ instanceroot(229, {	-- Blackrock Spire
 					}),
 					i(13208),	-- Bleak Howler Armguards
 					i(13206),	-- Wolfshear Leggings
-				},
-			}),
-			n(9718, {	-- Ghok Bashguud <Bloodaxe Champion> (Rare)
-				coords = {
-					{ 36.0, 72.0, LBRS_HALYCONS_LAIR },
-					{ 36.0, 60.0, LBRS_HALYCONS_LAIR },
-				},
-				description =
-					"This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(13204),	-- Bashguuder
-					i(13198),	-- Hurd Smasher
-					i(13203),	-- Armswake Cloak
 				},
 			}),
 			e(396, {	-- Overlord Wyrmthalak

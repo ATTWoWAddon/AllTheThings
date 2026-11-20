@@ -2657,14 +2657,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11832),	-- Burst of Knowledge
 					},
 				}),
-				n(8923, {	-- Panzor the Invincible
-					description = "This is a Rare Creature and, as such, is not always present.",
-					groups = {
+				n(RARES, {
+					n(8923, {	-- Panzor the Invincible
 						i(11786),	-- Stone of the Earth
 						i(11785),	-- Rock Golem Bulwark
 						i(11787),	-- Shalehusk Boots
 						applyclassicphase(PHASE_FIVE, i(22245)),	-- Soot Encrusted Footwear
-					},
+					}),
 				}),
 				e(385, {	-- The Seven
 					creatureID = 9039,	-- Doom'rel

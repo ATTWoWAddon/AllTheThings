@@ -114,7 +114,7 @@ instanceroot(63, {	-- Deadmines
 		}),
 		n(RARES, {
 			n(596, {	-- Brainwashed Noble
-				description = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+				description = "Located in the cavern before the instance.",
 				coords = {
 					{ 44.0, 78.3, WESTFALL },
 				},
@@ -124,7 +124,7 @@ instanceroot(63, {	-- Deadmines
 				},
 			}),
 			n(626, {	-- Foreman Thistlenettle
-				description = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+				description = "Located in the cavern before the instance.",
 				coords = {
 					{ 42.2, 82.6, WESTFALL },
 				},
@@ -136,7 +136,7 @@ instanceroot(63, {	-- Deadmines
 				},
 			}),
 			n(599, {	-- Marisa du'Paige
-				description = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+				description = "Located in the cavern before the instance.",
 				coords = {
 					{ 42.2, 79.9, WESTFALL },
 				},
@@ -144,6 +144,10 @@ instanceroot(63, {	-- Deadmines
 					i(3019),	-- Noble's Robe
 					i(4660),	-- Walking Boots
 				},
+			}),
+			n(3586, {	-- Miner Johnson
+				i(5443),	-- Gold-plated Buckler
+				i(5444),	-- Miner's Cape
 			}),
 		}),
 		n(ZONE_DROPS, {
@@ -251,13 +255,6 @@ instanceroot(63, {	-- Deadmines
 				},
 			}),
 		}),
-			n(3586, {	-- Miner Johnson
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(5443),	-- Gold-plated Buckler
-					i(5444),	-- Miner's Cape
-				},
-			}),
 			n(644, {	-- Rhahk'Zor <The Foreman>
 				groups = {
 					i(5187, {	-- Rhahk'Zor's Hammer [Classic] / Foe Reaper [TBC+]

@@ -203,30 +203,35 @@ instanceroot(241, {	-- Zul'Farrak
 				i(221262),	-- Wild Offering
 			},
 		})),
-		n(10080, {	-- Sandarr Dunereaver
-			description = "This is a Rare Creature and, as such, is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
-			groups = {
-				i(9512),	-- Blackmetal Cape
-				i(9511),	-- Bloodletter Scalpel
-				i(6440),	-- Brainlash
-				i(9480),	-- Eyegouger
-				i(9483),	-- Flaming Incinerator
-				i(5616),	-- Gutwrencher
-				i(862),	-- Runed Ring
-				i(9484),	-- Spellshock Leggings
-				i(9481),	-- The Minotaur
-				i(2040),	-- Troll Protector (2022-02-07 confirmed from Sandfury Shadowcaster)
-				i(9482),	-- Witch Doctor's Cane
-			},
-		}),
-		n(10082, {	-- Zerillis
-			description = "This is a Rare Creature and, as such, is not always present.",
-			groups = {
+		n(RARES, {
+			n(10080, {	-- Sandarr Dunereaver
+				description = "Items listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
+				groups = {
+					i(9512),	-- Blackmetal Cape
+					i(9511),	-- Bloodletter Scalpel
+					i(6440),	-- Brainlash
+					i(9480),	-- Eyegouger
+					i(9483),	-- Flaming Incinerator
+					i(5616),	-- Gutwrencher
+					i(862),	-- Runed Ring
+					i(9484),	-- Spellshock Leggings
+					i(9481),	-- The Minotaur
+					i(2040),	-- Troll Protector (2022-02-07 confirmed from Sandfury Shadowcaster)
+					i(9482),	-- Witch Doctor's Cane
+				},
+			}),
+			n(10082, {	-- Zerillis
 				applyclassicphase(SOD_PHASE_THREE, i(223962)),	-- Sandstalker Ankleguards
 				i(12470, {	-- Sandstalker Ankleguards
 					timeline = { REMOVED_1_15_2 },
 				}),
-			},
+			}),
+			n(10081, {	-- Dustwraith
+				applyclassicphase(SOD_PHASE_THREE, i(223533)),	-- Desertwalker Cane
+				i(12471, {	-- Desertwalker Cane
+					timeline = { REMOVED_1_15_2 },
+				}),
+			}),
 		}),
 		e(485, {	-- Theka the Martyr
 			creatureID = 7272,
@@ -252,15 +257,6 @@ instanceroot(241, {	-- Zul'Farrak
 				i(18082),	-- Zum'rah's Vexing Cane
 				applyclassicphase(SOD_PHASE_THREE, i(223534)),	-- Jumanza Grips
 				i(18083, {	-- Jumanza Grips
-					timeline = { REMOVED_1_15_2 },
-				}),
-			},
-		}),
-		n(10081, {	-- Dustwraith
-			description = "This is a Rare Creature and, as such, is not always present.",
-			groups = {
-				applyclassicphase(SOD_PHASE_THREE, i(223533)),	-- Desertwalker Cane
-				i(12471, {	-- Desertwalker Cane
 					timeline = { REMOVED_1_15_2 },
 				}),
 			},

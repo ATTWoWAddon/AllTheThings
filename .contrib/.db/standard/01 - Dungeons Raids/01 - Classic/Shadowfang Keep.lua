@@ -1995,12 +1995,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				n(3872, {	-- Deathsworn Captain
-					description = "This is a Rare Creature and, as such, is not always present.\nCan be found in place of a Tormented Officer patrolling the outdoor wall section just after the boss Commander Springvale.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command..",
-					groups = {
-						i(6641),	-- Haunting Blade
-						i(6642),	-- Phantom Armor
-					},
+				n(RARES, {
+					n(3872, {	-- Deathsworn Captain
+						description = "Can be found in place of a Tormented Officer patrolling the outdoor wall section just after the boss Commander Springvale.",
+						groups = {
+							i(6641),	-- Haunting Blade
+							i(6642),	-- Phantom Armor
+						},
+					}),
 				}),
 				n(4279, {	-- Odo the Blindwatcher
 					timeline = { REMOVED_4_0_3 },

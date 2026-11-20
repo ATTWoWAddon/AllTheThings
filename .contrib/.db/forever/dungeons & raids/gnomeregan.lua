@@ -592,14 +592,13 @@ instanceroot(231, {	-- Gnomeregan
 				}),
 			},
 		}),
-		n(6228, {	-- Dark Iron Ambassador
-			description = "This is a Rare Creature and, as such, is not always present.",
-			groups = {
+		n(RARES, {
+			n(6228, {	-- Dark Iron Ambassador
 				i(5108),	-- Dark Iron Leather
 				i(9456),	-- Glass Shooter
 				i(9457),	-- Royal Diplomatic Scepter
 				i(9455),	-- Emissary Cuffs
-			},
+			}),
 		}),
 		e(422, {	-- Mekgineer Thermaplugg
 			creatureID = 7800,

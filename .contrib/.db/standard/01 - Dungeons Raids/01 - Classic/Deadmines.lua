@@ -293,7 +293,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		}),
 		n(RARES, {
 			n(596, {	-- Brainwashed Noble
-				description = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+				description = "Located in the cavern before the instance.",
 				coords = {
 					-- #if BEFORE CATA
 					{ 44.0, 78.3, WESTFALL },
@@ -316,7 +316,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			n(626, {	-- Foreman Thistlenettle
-				description = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+				description = "Located in the cavern before the instance.",
 				coords = {
 					-- #if BEFORE CATA
 					{ 42.2, 82.6, WESTFALL },
@@ -332,7 +332,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			n(599, {	-- Marisa du'Paige
-				description = "This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",
+				description = "Located in the cavern before the instance.",
 				coords = {
 					-- #if BEFORE CATA
 					{ 42.2, 79.9, WESTFALL },
@@ -351,6 +351,15 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },
 					}),
 				},
+			}),
+			n(3586, {	-- Miner Johnson
+				timeline = { REMOVED_4_0_3 },
+				-- #if BEFORE 4.0.3
+				groups = {
+					i(5443),	-- Gold-plated Buckler
+					i(5444),	-- Miner's Cape
+				},
+				-- #endif
 			}),
 		}),
 		n(ZONE_DROPS, {
@@ -562,16 +571,6 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 		-- #if AFTER CATA
 		d(DIFFICULTY.DUNGEON.NORMAL, {
 		-- #endif
-			n(3586, {	-- Miner Johnson
-				description = "This is a Rare Creature and, as such, is not always present.",
-				timeline = { REMOVED_4_0_3 },
-				-- #if BEFORE 4.0.3
-				groups = {
-					i(5443),	-- Gold-plated Buckler
-					i(5444),	-- Miner's Cape
-				},
-				-- #endif
-			}),
 			n(644, {	-- Rhahk'Zor <The Foreman>
 				timeline = { REMOVED_4_0_3 },
 				-- #if BEFORE 4.0.3

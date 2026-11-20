@@ -301,12 +301,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(1978),	-- Wolfclaw Gloves
 			}),
 			n(74900, {	-- Kraulshaper Tukaar
-				description =
-					-- #if AFTER 10.1.7
-					"This NPC is always present since 10.1.7.\nTo obtain their drops you have to be in an appropriate loot spec or they will not drop. However their drops are also located on other bosses in the dungeon.",
-					-- #else
-					"This is a Rare Creature and, as such, is not always present.",
-					-- #endif
+				-- #if AFTER 10.1.7
+				description = "This NPC is always present since 10.1.7.\nTo obtain their drops you have to be in an appropriate loot spec or they will not drop. However their drops are also located on other bosses in the dungeon.",
+				-- #endif
 				timeline = { ADDED_6_0_2 },
 				groups = {
 					i(6689),	-- Wind Spirit Staff
@@ -393,24 +390,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			}),
-			n(4842, {	-- Earthcaller Halmgar
-				timeline = { REMOVED_6_0_2 },
-				-- #if BEFORE 6.0.2
-				description = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.\n\nThis is a Rare Creature and, as such, is not always present.",
-				-- #endif
-				groups = {
-					i(6689),	-- Wind Spirit Staff
-					i(6688),	-- Whisperwind Headdress
-				},
-			}),
-			n(4425, {	-- Blind Hunter
-				description = "This is a Rare Creature and, as such, is not always present.",
-				timeline = { REMOVED_6_0_2 },
-				groups = {
-					i(6696),	-- Nightstalker Bow
-					i(6695),	-- Stygian Bone Amulet
-					i(6697),	-- Batwing Mantle
-				},
+			n(RARES, {
+				n(4842, {	-- Earthcaller Halmgar
+					timeline = { REMOVED_6_0_2 },
+					-- #if BEFORE 6.0.2
+					description = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.",
+					-- #endif
+					groups = {
+						i(6689),	-- Wind Spirit Staff
+						i(6688),	-- Whisperwind Headdress
+					},
+				}),
+				n(4425, {	-- Blind Hunter
+					timeline = { REMOVED_6_0_2 },
+					groups = {
+						i(6696),	-- Nightstalker Bow
+						i(6695),	-- Stygian Bone Amulet
+						i(6697),	-- Batwing Mantle
+					},
+				}),
 			}),
 			n(4422, {	-- Agathelos the Raging
 				timeline = { REMOVED_6_0_2 },

@@ -1115,13 +1115,12 @@ instanceroot(230, {	-- Dire Maul
 						i(18371),	-- Mindtap Talisman
 					},
 				}),
-				n(11467, {	-- Tsu'zee
-					description = "This is a Rare Creature and, as such, is not always present.",
-					groups = {
+				n(RARES, {
+					n(11467, {	-- Tsu'zee
 						i(18387),	-- Brightspark Gloves
 						i(18345),	-- Murmuring Ring
 						i(18346),	-- Threadbare Trousers
-					},
+					}),
 				}),
 				e(407, {	-- Illyanna Ravenoak
 					creatureID = 11488,

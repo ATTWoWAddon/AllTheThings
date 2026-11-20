@@ -1572,14 +1572,16 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 				}),
 			},
 		}),
-		n(59369, {	-- Doctor Theolen Krastinov
-			description = "This is a Rare Creature and, as such, is not always present.\nThe only way to find out if you will encounter him is right after Rattlegore is killed.\nHe will make his presence known...",
-			timeline = { ADDED_5_0_4 },
-			groups = {
-				i(88566, {	-- Krastinov's Bag of Horrors (TOY!)
-					timeline = { ADDED_5_0_4 },
-				}),
-			},
+		n(RARES, {
+			n(59369, {	-- Doctor Theolen Krastinov
+				description = "The only way to find out if you will encounter him is right after Rattlegore is killed.\nHe will make his presence known...",
+				timeline = { ADDED_5_0_4 },
+				groups = {
+					i(88566, {	-- Krastinov's Bag of Horrors (TOY!)
+						timeline = { ADDED_5_0_4 },
+					}),
+				},
+			}),
 		}),
 		e(666, {	-- Lilian Voss
 			creatureID = 58722,	-- Lilian Voss

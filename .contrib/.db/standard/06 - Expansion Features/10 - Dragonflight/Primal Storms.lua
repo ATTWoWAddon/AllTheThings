@@ -571,7 +571,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				modelScale = 4,
 				groups = bubbleDown({ modID = 4 }, {
 					d(DIFFICULTY.RAID.NORMAL, {
-						description = "",
 						groups = bubbleDown({ modID = 3 }, {
 							cl(DEATHKNIGHT, {
 								sym = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
@@ -693,7 +692,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						}),
 					}),
 					d(DIFFICULTY.RAID.HEROIC, {
-						description = "",
 						groups = bubbleDown({ bonusID = 1 }, {
 							cl(DEATHKNIGHT, {
 								sym = SymRaidVault(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),

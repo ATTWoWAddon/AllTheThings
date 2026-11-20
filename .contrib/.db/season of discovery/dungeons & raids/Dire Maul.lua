@@ -1409,9 +1409,8 @@ instanceroot(230, applyclassicphase(PHASE_ONE_DIREMAUL, {	-- Dire Maul
 						i(18371),	-- Mindtap Talisman
 					},
 				}),
-				n(11467, {	-- Tsu'zee
-					description = "This is a Rare Creature and, as such, is not always present.",
-					groups = {
+				n(RARES, {
+					n(11467, {	-- Tsu'zee
 						applyclassicphase(SOD_PHASE_FOUR, i(228061, {	-- Brightspark Gloves
 							timeline = { ADDED_1_15_3 },
 						})),
@@ -1420,7 +1419,7 @@ instanceroot(230, applyclassicphase(PHASE_ONE_DIREMAUL, {	-- Dire Maul
 						}),
 						i(18346),	-- Threadbare Trousers
 						i(18345),	-- Murmuring Ring
-					},
+					}),
 				}),
 				e(407, {	-- Illyanna Ravenoak
 					creatureID = 11488,

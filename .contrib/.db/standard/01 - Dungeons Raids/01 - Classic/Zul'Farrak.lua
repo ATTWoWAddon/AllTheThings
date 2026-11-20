@@ -297,27 +297,33 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(9243),	-- Shriveled Heart / Shriveled Troll Heart
 				i(9523),	-- Troll Temper
 			}),
-			n(10080, {	-- Sandarr Dunereaver
-				description = "This is a Rare Creature and, as such, is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
-				groups = {
-					i(9512),	-- Blackmetal Cape
-					i(9511),	-- Bloodletter Scalpel
-					i(6440),	-- Brainlash
-					i(9480),	-- Eyegouger
-					i(9483),	-- Flaming Incinerator
-					i(5616),	-- Gutwrencher
-					i(862),	-- Runed Ring
-					i(9484),	-- Spellshock Leggings
-					i(9481),	-- The Minotaur
-					i(2040),	-- Troll Protector (2022-02-07 confirmed from Sandfury Shadowcaster)
-					i(9482),	-- Witch Doctor's Cane
-				},
-			}),
-			n(10082, {	-- Zerillis
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
+			n(RARES, {
+				n(10080, {	-- Sandarr Dunereaver
+					description = "Items listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
+					groups = {
+						i(9512),	-- Blackmetal Cape
+						i(9511),	-- Bloodletter Scalpel
+						i(6440),	-- Brainlash
+						i(9480),	-- Eyegouger
+						i(9483),	-- Flaming Incinerator
+						i(5616),	-- Gutwrencher
+						i(862),	-- Runed Ring
+						i(9484),	-- Spellshock Leggings
+						i(9481),	-- The Minotaur
+						i(2040),	-- Troll Protector (2022-02-07 confirmed from Sandfury Shadowcaster)
+						i(9482),	-- Witch Doctor's Cane
+					},
+				}),
+				n(10082, {	-- Zerillis
 					i(12470),	-- Sandstalker Ankleguards
-				},
+				}),
+				n(10081, {	-- Dustwraith
+					i(12471, {	-- Desertwalker Cane
+						-- #if AFTER LEGION
+						description = "This item is available only in personal loot, and requires a class with an Intellect-using loot spec.",
+						-- #endif
+					}),
+				}),
 			}),
 			e(485, {	-- Theka the Martyr
 				creatureID = 7272,
@@ -345,16 +351,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						timeline = { ADDED_7_3_0 },
 					}),
 					i(18083),	-- Jumanza Grips
-				},
-			}),
-			n(10081, {	-- Dustwraith
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(12471, {	-- Desertwalker Cane
-						-- #if AFTER LEGION
-						description = "This item is available only in personal loot, and requires a class with an Intellect-using loot spec.",
-						-- #endif
-					}),
 				},
 			}),
 			-- #if BEFORE MOP

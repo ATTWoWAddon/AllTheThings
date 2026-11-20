@@ -216,36 +216,38 @@ instanceroot(241, {	-- Zul'Farrak
 			i(9243),	-- Shriveled Heart / Shriveled Troll Heart
 			i(9523),	-- Troll Temper
 		}),
-		n(10080, {	-- Sandarr Dunereaver
-			description = "This is a Rare Creature and, as such, is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
-			groups = {
-				i(9512),	-- Blackmetal Cape
-				i(9511),	-- Bloodletter Scalpel
-				i(6440),	-- Brainlash
-				i(9480),	-- Eyegouger
-				i(9483),	-- Flaming Incinerator
-				i(5616),	-- Gutwrencher
-				i(862),		-- Runed Ring
-				i(9484),	-- Spellshock Leggings
-				i(9481),	-- The Minotaur
-				i(2040),	-- Troll Protector
-				i(9482),	-- Witch Doctor's Cane
-				i(274659, {	-- Bloodsand Belt
-					timeline = { TIMELINE.ADDED_1_60_1 },
-				}),
-				i(274660, {	-- Sandarr's Shoulders
-					timeline = { TIMELINE.ADDED_1_60_1 },
-				}),
-			},
-		}),
-		n(10082, {	-- Zerillis
-			description = "This is a Rare Creature and, as such, is not always present.",
-			groups = {
+		n(RARES, {
+			n(10080, {	-- Sandarr Dunereaver
+				description = "Items listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
+				groups = {
+					i(9512),	-- Blackmetal Cape
+					i(9511),	-- Bloodletter Scalpel
+					i(6440),	-- Brainlash
+					i(9480),	-- Eyegouger
+					i(9483),	-- Flaming Incinerator
+					i(5616),	-- Gutwrencher
+					i(862),		-- Runed Ring
+					i(9484),	-- Spellshock Leggings
+					i(9481),	-- The Minotaur
+					i(2040),	-- Troll Protector
+					i(9482),	-- Witch Doctor's Cane
+					i(274659, {	-- Bloodsand Belt
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(274660, {	-- Sandarr's Shoulders
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
+			}),
+			n(10082, {	-- Zerillis
 				i(12470),	-- Sandstalker Ankleguards
 				i(274658, {	-- Dune Hacker
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
-			},
+			}),
+			n(10081, {	-- Dustwraith
+				i(12471),	-- Desertwalker Cane
+			}),
 		}),
 		e(485, {	-- Theka the Martyr
 			creatureID = 7272,
@@ -279,12 +281,6 @@ instanceroot(241, {	-- Zul'Farrak
 				i(274642, {	-- Blood Ritual Ring
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
-			},
-		}),
-		n(10081, {	-- Dustwraith
-			description = "This is a Rare Creature and, as such, is not always present.",
-			groups = {
-				i(12471),	-- Desertwalker Cane
 			},
 		}),
 		e(482, {	-- Hydromancer Velratha

@@ -5249,11 +5249,12 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 						modItemId(144015,2),	-- Vigorsteel Spaulders
 					}},
 				}),
-				n(59369, {	-- Doctor Theolen Krastinov
-					description = "This is a Rare Creature and is not always present.",
-					sym = {{"select", "itemID",
-						88566,	-- Krastinov's Bag of Horrors (TOY!)
-					}},
+				n(RARES, {
+					n(59369, {	-- Doctor Theolen Krastinov
+						sym = {{"select", "itemID",
+							88566,	-- Krastinov's Bag of Horrors (TOY!)
+						}},
+					}),
 				}),
 				e(666,   {	-- Lilian Voss
 					crs = { 58722 },	-- Lilian Voss

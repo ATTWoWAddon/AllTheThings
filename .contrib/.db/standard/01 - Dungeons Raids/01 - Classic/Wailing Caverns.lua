@@ -349,12 +349,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(6449),	-- Glowing Lizardscale Cloak
 				},
 			}),
-			n(5912, {	-- Deviate Faerie Dragon
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
+			n(RARES, {
+				n(5912, {	-- Deviate Faerie Dragon
 					i(5243),	-- Firebelcher
 					i(6632),	-- Feyscale Cloak
-				},
+				}),
 			}),
 			e(479, {	-- Lord Serpentis
 				creatureID = 3673,

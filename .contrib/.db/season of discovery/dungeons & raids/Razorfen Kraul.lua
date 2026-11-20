@@ -186,20 +186,19 @@ instanceroot(234, {	-- Razorfen Kraul
 				i(6686),	-- Tusken Helm
 			},
 		}),
-		n(4842, {	-- Earthcaller Halmgar
-			description = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.\n\nThis is a Rare Creature and, as such, is not always present.",
-			groups = {
-				i(6689),	-- Wind Spirit Staff
-				i(6688),	-- Whisperwind Headdress
-			},
-		}),
-		n(4425, {	-- Blind Hunter
-			description = "This is a Rare Creature and, as such, is not always present.",
-			groups = {
+		n(RARES, {
+			n(4842, {	-- Earthcaller Halmgar
+				description = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.",
+				groups = {
+					i(6689),	-- Wind Spirit Staff
+					i(6688),	-- Whisperwind Headdress
+				},
+			}),
+			n(4425, {	-- Blind Hunter
 				i(6696),	-- Nightstalker Bow
 				i(6695),	-- Stygian Bone Amulet
 				i(6697),	-- Batwing Mantle
-			},
+			}),
 		}),
 		n(4422, {	-- Agathelos the Raging
 			groups = {

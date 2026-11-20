@@ -658,13 +658,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							cr = 10426,	-- Crimson Inquisitor / Risen Inquisitor [CATA+]
 						}),
 					}),
-					n(10393, {	-- Skul
-						description = "This is a Rare Creature and, as such, is not always present.",
-						groups = {
+					n(RARES, {
+						n(10393, {	-- Skul
 							i(13396),	-- Skul's Ghastly Touch
 							i(13394),	-- Skul's Cold Embrace
 							i(13395),	-- Skul's Fingerbone Claws
-						},
+						}),
 					}),
 					n(11058, {	-- Fras Siabi / Ezra Grimm
 						-- #if BEFORE 4.0.3
@@ -977,13 +976,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							cr = 10405,	-- Plague Ghoul
 						}),
 					}),
-					n(10809, {	-- Stonespine
-						description = "This is a Rare Creature and, as such, is not always present.",
-						groups = {
+					n(RARES, {
+						n(10809, {	-- Stonespine
 							i(13399),	-- Gargoyle Shredder Talons
 							i(13397),	-- Stoneskin Gargoyle Cape
 							i(13954),	-- Verdant Footpads
-						},
+						}),
 					}),
 					e(452, {	-- Nerub'enkan
 						creatureID = 10437,	-- Nerub'enkan

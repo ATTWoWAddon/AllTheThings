@@ -1215,40 +1215,60 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				description = "This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Warosh.",
 				provider = { "o", 175886 },	-- Roughshod Pike
 			}),
-			n(9218, {	-- Spirestone Battle Lord (Rare)
-				coord = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
-				description =
-					-- #if AFTER 6.0.1
-					"This is a Rare Creature and, as such, is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
-					-- #else
-					"This is a Rare Creature and, as such, is not always present.",
-					-- #endif
-				groups = {
-					i(13285),	-- The Blackrock Slicers
-					i(13284),	-- Swiftdart Battleboots
-				},
-			}),
-			n(9219, {	-- Spirestone Butcher (Rare)
-				coord = { 54.0, 58.0, LBRS_HORDEMAR_CITY },
-				description =
-					-- #if AFTER 6.0.1
-					"This is a Rare Creature and, as such, is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
-					-- #else
-					"This is a Rare Creature and, as such, is not always present.",
-					-- #endif
-				groups = {
-					i(13286),	-- Rivenspike
-					i(12608),	-- Butcher's Apron
-				},
-			}),
-			n(9217, {	-- Spirestone Lord Magus (Rare)
-				coord = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(13261),	-- Globe of D'sak
-					i(13282),	-- Ogreseer Tower Boots
-					i(13283),	-- Magus Ring
-				},
+			n(RARES, {
+				n(9218, {	-- Spirestone Battle Lord (Rare)
+					coord = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
+					groups = {
+						i(13285),	-- The Blackrock Slicers
+						i(13284),	-- Swiftdart Battleboots
+					},
+				}),
+				n(9219, {	-- Spirestone Butcher (Rare)
+					coord = { 54.0, 58.0, LBRS_HORDEMAR_CITY },
+					groups = {
+						i(13286),	-- Rivenspike
+						i(12608),	-- Butcher's Apron
+					},
+				}),
+				n(9217, {	-- Spirestone Lord Magus (Rare)
+					coord = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
+					groups = {
+						i(13261),	-- Globe of D'sak
+						i(13282),	-- Ogreseer Tower Boots
+						i(13283),	-- Magus Ring
+					},
+				}),
+				n(9596, {	-- Bannok Grimaxe (Rare)
+					coords = {
+						{ 53.0, 67.0, BLACKROCK_SPIRE },
+						{ 49.0, 55.0, BLACKROCK_SPIRE },
+					},
+					groups = {
+						i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
+						i(12621),	-- Demonfork
+						i(12637),	-- Backusarian Gauntlets
+						i(12634),	-- Chiselbrand Girdle
+					},
+				}),
+				n(10376, {	-- Crystal Fang (Rare)
+					coord = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
+					groups = {
+						i(13218),	-- Fang of the Crystal Spider
+						i(13185),	-- Sunderseer Mantle
+						i(13184),	-- Fallbrush Handgrips
+					},
+				}),
+				n(9718, {	-- Ghok Bashguud <Bloodaxe Champion> (Rare)
+					coords = {
+						{ 36.0, 72.0, LBRS_HALYCONS_LAIR },
+						{ 36.0, 60.0, LBRS_HALYCONS_LAIR },
+					},
+					groups = {
+						i(13204),	-- Bashguuder
+						i(13198),	-- Hurd Smasher
+						i(13203),	-- Armswake Cloak
+					},
+				}),
 			}),
 			e(388, {	-- Highlord Omokk
 				creatureID = 9196,	-- Highlord Omokk
@@ -1374,33 +1394,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 				},
 			})),
-			n(9596, {	-- Bannok Grimaxe (Rare)
-				coords = {
-					{ 53.0, 67.0, BLACKROCK_SPIRE },
-					{ 49.0, 55.0, BLACKROCK_SPIRE },
-				},
-				description = "This is a Rare Creature and, as such, is not always present.",
-				groups = {
-					i(12838),	-- Plans: Arcanite Reaper (RECIPE!)
-					i(12621),	-- Demonfork
-					i(12637),	-- Backusarian Gauntlets
-					i(12634),	-- Chiselbrand Girdle
-				},
-			}),
-			n(10376, {	-- Crystal Fang (Rare)
-				coord = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
-				description =
-					-- #if AFTER 6.0.1
-					"This is a Rare Creature and, as such, is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
-					-- #else
-					"This is a Rare Creature and, as such, is not always present.",
-					-- #endif
-				groups = {
-					i(13218),	-- Fang of the Crystal Spider
-					i(13185),	-- Sunderseer Mantle
-					i(13184),	-- Fallbrush Handgrips
-				},
-			}),
 			e(391, {	-- Mother Smolderweb
 				creatureID = 10596,	-- Mother Smolderweb
 				groups = {
@@ -1488,23 +1481,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					i(13208),	-- Bleak Howler Armguards
 					i(13206),	-- Wolfshear Leggings
-				},
-			}),
-			n(9718, {	-- Ghok Bashguud <Bloodaxe Champion> (Rare)
-				coords = {
-					{ 36.0, 72.0, LBRS_HALYCONS_LAIR },
-					{ 36.0, 60.0, LBRS_HALYCONS_LAIR },
-				},
-				description =
-					-- #if AFTER 6.0.1
-					"This is a Rare Creature and, as such, is not always present.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command.",
-					-- #else
-					"This is a Rare Creature and, as such, is not always present.",
-					-- #endif
-				groups = {
-					i(13204),	-- Bashguuder
-					i(13198),	-- Hurd Smasher
-					i(13203),	-- Armswake Cloak
 				},
 			}),
 			e(396, {	-- Overlord Wyrmthalak
@@ -1669,20 +1645,21 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						}),
 					},
 				}),
-				n(10509, {	-- Jed Runewatcher
-					description = "This is a Rare Creature and, as such, is not always present.",
-					timeline = { REMOVED_6_0_2 },
-					groups = {
-						i(12605, {	-- Serpentine Skuller
-							timeline = { REMOVED_6_0_2 },
-						}),
-						i(12604, {	-- Starfire Tiara
-							timeline = { REMOVED_6_0_2 },
-						}),
-						i(12930, {	-- Briarwood Reed
-							timeline = { REMOVED_6_0_2 },
-						}),
-					},
+				n(RARES, {
+					n(10509, {	-- Jed Runewatcher
+						timeline = { REMOVED_6_0_2 },
+						groups = {
+							i(12605, {	-- Serpentine Skuller
+								timeline = { REMOVED_6_0_2 },
+							}),
+							i(12604, {	-- Starfire Tiara
+								timeline = { REMOVED_6_0_2 },
+							}),
+							i(12930, {	-- Briarwood Reed
+								timeline = { REMOVED_6_0_2 },
+							}),
+						},
+					}),
 				}),
 				n(10899, {	-- Goraluk Anvilcrack
 					timeline = { REMOVED_6_0_2 },

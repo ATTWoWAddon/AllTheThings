@@ -201,7 +201,6 @@ instanceroot(2999, {	-- Ruins of Lordaeron
 		}),
 		n(RARES, {
 			e(3408, {	-- Lordaeron Captain
-				description = "This is a Rare Creature and, as such, is not always present.",
 				creatureID = 255699,	-- Lordaeron Captain
 				groups = {
 					i(6641),	-- Haunting Blade
