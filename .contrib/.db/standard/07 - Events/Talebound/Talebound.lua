@@ -251,150 +251,394 @@ root(ROOTS.WorldEvents, {
 				currency(OUTFITTER_SUPPLIES),
 				currency(TALES_OF_VALOR),
 			}),
-			n(TALEBOUND_STORE, sharedData({
-				--cr = 278794,	-- Traveling Raven
-				--coord = { XX.X, YY.Y, MAP.MIDNIGHT.SILVERMOON_CITY },
-				cost = { { "c", BOUND_SILVER, 20 } },
-			}, {
-				filter(BATTLE_PETS, {
+			n(TALEBOUND_STORE, {
+				filter(BATTLE_PETS, sharedData({
+					cost = { { "c", BOUND_SILVER, 2000 } },
+				}, {
 					i(277270),	-- Bewitching Familiar (PET!)
 					i(284094),	-- Hex-Cursed Manifestation (PET!)
 					i(283378),	-- Inquisitor's Messenger (PET!)
 					i(283375),	-- Slayer's Faithful Tracker (PET!)
 					i(284103),	-- Zyg'ee (PET!)
-				}),
+				})),
 				filter(COSMETIC, {
-					i(287097),	-- Alchemist's Research Kit
-					i(242524),	-- Blood-Cursed Ritual Cauldron
-					i(282413),	-- Blood-Spattered Ritual Cap
-					iensemble(268452),	-- Ensemble: Ambermill Rebel Streetware
-					iensemble(286198),	-- Ensemble: Cursed Wood-Haunt's Mask Gallery
-					iensemble(282298),	-- Ensemble: Dockside Smuggler's Attire
-					iensemble(282296),	-- Ensemble: Drustvar Smuggler's Attire
-					iensemble(248953),	-- Ensemble: Expedition's Saltstained Finery
-					iensemble(244227),	-- Ensemble: Faith-Cursed Vestments
-					iensemble(235592),	-- Ensemble: Forest Dweller's Muddied Attire
-					iensemble(286199),	-- Ensemble: Noble's Literary Caps
-					iensemble(235229),	-- Ensemble: Ornaments of the Night Court Butterfly
-					iensemble(282330),	-- Ensemble: Outfitter's Autumn Attire
-					iensemble(282334),	-- Ensemble: Outfitter's Blush-Grey Attire
-					iensemble(282331),	-- Ensemble: Outfitter's Formal Attire
-					iensemble(282332),	-- Ensemble: Outfitter's Navy Attire
-					iensemble(282333),	-- Ensemble: Outfitter's Oak Attire
-					iensemble(282335),	-- Ensemble: Outfitter's Wine-Charred Attire
-					iensemble(230172),	-- Ensemble: Prowler's Lively Headgear
-					iensemble(230178),	-- Ensemble: Prowler's Plum Headgear
-					iensemble(282297),	-- Ensemble: Seabound Smuggler's Attire
-					iensemble(286164),	-- Ensemble: Traveler's Charcoal Commonwear
-					iensemble(286197),	-- Ensemble: Traveler's Colorful Mantle Collection
-					iensemble(281521),	-- Ensemble: Traveler's Dusk Headgear
-					iensemble(281519),	-- Ensemble: Traveler's Forest Headgear
-					iensemble(281523),	-- Ensemble: Traveler's Ivory Headgear
-					iensemble(281522),	-- Ensemble: Traveler's Oaken Headgear
-					iensemble(281520),	-- Ensemble: Traveler's Sanguine Headgear
-					iensemble(281518),	-- Ensemble: Traveler's Shadow Headgear
-					iensemble(286165),	-- Ensemble: Traveler's Velvet Commonwear
-					iensemble(282299),	-- Ensemble: Village Patrolman's Regalia
-					iensemble(286166),	-- Ensemble: Villager's Linen Commonwear
-					iensemble(286167),	-- Ensemble: Villager's Woolen Commonwear
-					iensemble(281078),	-- Ensemble: Witch Hunter's Forest Attire
-					iensemble(281096),	-- Ensemble: Witch Hunter's Ivory Attire
-					iensemble(281069),	-- Ensemble: Witch Hunter's Shadow Attire
-					iensemble(284007),	-- Ensemble: Wood Haunter's Guise of the Wight
-					i(235340),	-- Mad Raven-Witch Mask
-					i(230041),	-- Prowler's Lively Shoulder Cape
-					i(230047),	-- Prowler's Plum Shoulder Cape
-					i(282412),	-- Slayer's Ashen Cap
-					i(234601),	-- Wings of the Fae Courier
-					i(287098),	-- Witch-Scribe's Haunted Scroll
+					i(287097, {	-- Alchemist's Research Kit
+						cost = { { "c", BOUND_SILVER, 1500 } },
+					}),
+					i(242524, {	-- Blood-Cursed Ritual Cauldron
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(282413, {	-- Blood-Spattered Ritual Cap
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(268452, {	-- Ensemble: Ambermill Rebel Streetware
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(286198, {	-- Ensemble: Cursed Wood-Haunt's Mask Gallery
+						cost = { { "c", BOUND_SILVER, 2000 } },
+					}),
+					iensemble(282298, {	-- Ensemble: Dockside Smuggler's Attire
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(282296, {	-- Ensemble: Drustvar Smuggler's Attire
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(248953, {	-- Ensemble: Expedition's Saltstained Finery
+						cost = { { "c", BOUND_SILVER, 2500 } },
+					}),
+					iensemble(244227, {	-- Ensemble: Faith-Cursed Vestments
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(235592, {	-- Ensemble: Forest Dweller's Muddied Attire
+						cost = { { "c", BOUND_SILVER, 2500 } },
+					}),
+					iensemble(286199, {	-- Ensemble: Noble's Literary Caps
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(235229, {	-- Ensemble: Ornaments of the Night Court Butterfly
+						cost = { { "c", BOUND_SILVER, 1500 } },
+					}),
+					iensemble(282330, {	-- Ensemble: Outfitter's Autumn Attire
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(282334, {	-- Ensemble: Outfitter's Blush-Grey Attire
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(282331, {	-- Ensemble: Outfitter's Formal Attire
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(282332, {	-- Ensemble: Outfitter's Navy Attire
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(282333, {	-- Ensemble: Outfitter's Oak Attire
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(282335, {	-- Ensemble: Outfitter's Wine-Charred Attire
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(230172, {	-- Ensemble: Prowler's Lively Headgear
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					iensemble(230178, {	-- Ensemble: Prowler's Plum Headgear
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					iensemble(282297, {	-- Ensemble: Seabound Smuggler's Attire
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(286164, {	-- Ensemble: Traveler's Charcoal Commonwear
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(286197, {	-- Ensemble: Traveler's Colorful Mantle Collection
+						cost = { { "c", BOUND_SILVER, 2000 } },
+					}),
+					iensemble(281521, {	-- Ensemble: Traveler's Dusk Headgear
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					iensemble(281519, {	-- Ensemble: Traveler's Forest Headgear
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					iensemble(281523, {	-- Ensemble: Traveler's Ivory Headgear
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					iensemble(281522, {	-- Ensemble: Traveler's Oaken Headgear
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					iensemble(281520, {	-- Ensemble: Traveler's Sanguine Headgear
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					iensemble(281518, {	-- Ensemble: Traveler's Shadow Headgear
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					iensemble(286165, {	-- Ensemble: Traveler's Velvet Commonwear
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(282299, {	-- Ensemble: Village Patrolman's Regalia
+						cost = { { "c", BOUND_SILVER, 2500 } },
+					}),
+					iensemble(286166, {	-- Ensemble: Villager's Linen Commonwear
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(286167, {	-- Ensemble: Villager's Woolen Commonwear
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					iensemble(281078, {	-- Ensemble: Witch Hunter's Forest Attire
+						cost = { { "c", BOUND_SILVER, 4000 } },
+					}),
+					iensemble(281096, {	-- Ensemble: Witch Hunter's Ivory Attire
+						cost = { { "c", BOUND_SILVER, 4000 } },
+					}),
+					iensemble(281069, {	-- Ensemble: Witch Hunter's Shadow Attire
+						cost = { { "c", BOUND_SILVER, 4000 } },
+					}),
+					iensemble(284007, {	-- Ensemble: Wood Haunter's Guise of the Wight
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(235340, {	-- Mad Raven-Witch Mask
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(230041, {	-- Prowler's Lively Shoulder Cape
+						cost = { { "c", BOUND_SILVER, 600 } },
+					}),
+					i(230047, {	-- Prowler's Plum Shoulder Cape
+						cost = { { "c", BOUND_SILVER, 600 } },
+					}),
+					i(282412, {	-- Slayer's Ashen Cap
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(234601, {	-- Wings of the Fae Courier
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(287098, {	-- Witch-Scribe's Haunted Scroll
+						cost = { { "c", BOUND_SILVER, 1500 } },
+					}),
 				}),
 				n(DECOR, {	-- Exo Note: TODO: Quillgrave decor has no items currently (30-Oct-26)
-					i(287902),	-- Drust-Carved Rune Marker (DECOR!)
-					i(287904),	-- Drust-Carved Rune Pillar (DECOR!)
-					i(288745),	-- Eldritch Looking Glass (DECOR!)
-					i(288751),	-- Fae Looking Glass (DECOR!)
-					i(287983),	-- Heartsbane Hex Catcher (DECOR!)
-					i(287915),	-- Heartsbane Hex Etchings (DECOR!)
-					i(287913),	-- Heartsbane Hex Markings (DECOR!)
-					i(287900),	-- Heartsbane Hex Scar (DECOR!)
-					i(287917),	-- Heartsbane Runestone Ring (DECOR!)
-					i(287981),	-- Heartsbane Waxlight (DECOR!)
-					i(287906),	-- Heartsbane Wicker Effigy (DECOR!)
-					i(288749),	-- Hexed Looking Glass (DECOR!)
-					i(281596),	-- Ominous Ritual Wall Scroll (DECOR!)
-					rawdecor(15295),	-- Quillgrave Arcanist's Alembic (DECOR!)
-					rawdecor(15254),	-- Quillgrave Craftsman's Workmill (DECOR!)
-					rawdecor(21103),	-- Quillgrave Outfitter's Loom (DECOR!)
-					rawdecor(15296),	-- Quillgrave Scribe's Gemstation (DECOR!)
-					rawdecor(20937),	-- Quillgrave Storyteller's Lectern (DECOR!)
-					rawdecor(15294),	-- Quillgrave Talebound Shadowtome (DECOR!)
-					i(288747),	-- Sanguine Looking Glass (DECOR!)
-					i(287862),	-- Sealight Sconce (DECOR!)
-					i(288733),	-- Storyteller's Cursed Looking Glass (DECOR!)
-					i(288740),	-- Storyteller's Looking Glass (DECOR!)
-					i(287908),	-- Tidesage's Left Copper Mascaron (DECOR!)
-					i(287910),	-- Tidesage's Right Copper Mascaron (DECOR!)
-					i(272134),	-- Watchman's Iron Torch (DECOR!)
+					i(287902, {	-- Drust-Carved Rune Marker (DECOR!)
+						cost = { { "c", BOUND_SILVER, 200 } },
+					}),
+					i(287904, {	-- Drust-Carved Rune Pillar (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(288745, {	-- Eldritch Looking Glass (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(288751, {	-- Fae Looking Glass (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(287983, {	-- Heartsbane Hex Catcher (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(287915, {	-- Heartsbane Hex Etchings (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(287913, {	-- Heartsbane Hex Markings (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(287900, {	-- Heartsbane Hex Scar (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(287917, {	-- Heartsbane Runestone Ring (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(287981, {	-- Heartsbane Waxlight (DECOR!)
+						cost = { { "c", BOUND_SILVER, 200 } },
+					}),
+					i(287906, {	-- Heartsbane Wicker Effigy (DECOR!)
+						cost = { { "c", BOUND_SILVER, 800 } },
+					}),
+					i(288749, {	-- Hexed Looking Glass (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(281596, {	-- Ominous Ritual Wall Scroll (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					rawdecor(15295, {	-- Quillgrave Arcanist's Alembic (DECOR!)
+						cost = { { "c", BOUND_SILVER, 800 } },
+					}),
+					rawdecor(15254, {	-- Quillgrave Craftsman's Workmill (DECOR!)
+						cost = { { "c", BOUND_SILVER, 800 } },
+					}),
+					rawdecor(21103, {	-- Quillgrave Outfitter's Loom (DECOR!)
+						cost = { { "c", BOUND_SILVER, 800 } },
+					}),
+					rawdecor(15296, {	-- Quillgrave Scribe's Gemstation (DECOR!)
+						cost = { { "c", BOUND_SILVER, 800 } },
+					}),
+					rawdecor(20937, {	-- Quillgrave Storyteller's Lectern (DECOR!)
+						cost = { { "c", BOUND_SILVER, 800 } },
+					}),
+					rawdecor(15294, {	-- Quillgrave Talebound Shadowtome (DECOR!)
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(288747, {	-- Sanguine Looking Glass (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(287862, {	-- Sealight Sconce (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(288733, {	-- Storyteller's Cursed Looking Glass (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(288740, {	-- Storyteller's Looking Glass (DECOR!)
+						cost = { { "c", BOUND_SILVER, 500 } },
+					}),
+					i(287908, {	-- Tidesage's Left Copper Mascaron (DECOR!)
+						cost = { { "c", BOUND_SILVER, 300 } },
+					}),
+					i(287910, {	-- Tidesage's Right Copper Mascaron (DECOR!)
+						cost = { { "c", BOUND_SILVER, 300 } },
+					}),
+					i(272134, {	-- Watchman's Iron Torch (DECOR!)
+						cost = { { "c", BOUND_SILVER, 200 } },
+					}),
 				}),
 				filter(MOUNTS, {
-					i(268362),	-- Ambermill Traveler's Rouncey (MOUNT!)
-					i(282272),	-- Autumn Dream Jumper (MOUNT!)
-					i(243597),	-- Faith-Cursed Courser (MOUNT!)
-					i(235554),	-- Lost Mare of the Maddening Faire (MOUNT!)
-					i(235659),	-- Night Court Courier (MOUNT!)
-					i(275255),	-- Shadowbound Storybook (MOUNT!)
-					i(282278),	-- Shadowpaw Wood Watcher (MOUNT!)
-					i(282271),	-- Stone-Carved Crusher (MOUNT!)
-					i(238900),	-- Summer Harvesthog (MOUNT!)
-					i(223284),	-- The Watcher in the Waves (MOUNT!)
+					i(268362, {	-- Ambermill Traveler's Rouncey (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 2000 } },
+					}),
+					i(282272, {	-- Autumn Dream Jumper (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 2000 } },
+					}),
+					i(243597, {	-- Faith-Cursed Courser (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 3000 } },
+					}),
+					i(235554, {	-- Lost Mare of the Maddening Faire (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 3000 } },
+					}),
+					i(235659, {	-- Night Court Courier (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 3000 } },
+					}),
+					i(275255, {	-- Shadowbound Storybook (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 4000 } },
+					}),
+					i(282278, {	-- Shadowpaw Wood Watcher (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 2000 } },
+					}),
+					i(282271, {	-- Stone-Carved Crusher (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 2000 } },
+					}),
+					i(238900, {	-- Summer Harvesthog (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 3000 } },
+					}),
+					i(223284, {	-- The Watcher in the Waves (MOUNT!)
+						cost = { { "c", BOUND_SILVER, 3000 } },
+					}),
 				}),
 				n(WEAPONS, {
-					i(282379),	-- Abandoned Builder's Hatchet
-					i(282342),	-- Abandoned Headsman's Blade
-					i(282381),	-- Abandoned Poacher's Shortbow
-					i(282374),	-- Abandoned Soldier's Warmaul
-					i(282372),	-- Abandoned Veteran's Bootknife
-					i(248675),	-- Expedition's Saltstained Blunderbuss
-					i(248677),	-- Expedition's Saltstained Cleaver
-					i(248678),	-- Expedition's Saltstained Cutlass
-					i(248679),	-- Expedition's Saltstained Greatsword
-					i(248676),	-- Expedition's Saltstained Stave
-					i(235271),	-- Fae Courier's Gavel
-					i(235654),	-- Fae Courier's Longbow
-					i(235400),	-- Fae Courier's Polearm
-					i(235292),	-- Fae Courier's Sword
-					i(235296),	-- Fae Courier's Wand
-					i(282377),	-- Fallen Cultist's Blood-Glaive
-					i(282344),	-- Fallen Defender's Shortsword
-					i(282378),	-- Fallen Executioner's Axe
-					i(282383),	-- Fallen Guardsman's Buckler
-					i(282351),	-- Fallen Hunter's Kukri
-					i(282345),	-- Forgotten Butcher's Crudeblade
-					i(282375),	-- Forgotten Craftsman's Workmace
-					i(282341),	-- Forgotten Protector's Claymore
-					i(282353),	-- Forgotten Wanderer's Crook
-					i(213077),	-- Greenseer's Bow-quet
-					i(213072),	-- Greenseer's Poppy Spire
-					i(213069),	-- Greenseer's Rose Spear
-					i(213066),	-- Greenseer's Thorn Spike
-					i(213063),	-- Greenseer's Tulip Edge
-					i(282356),	-- Lost Greenseer's Reedstick
-					i(282352),	-- Lost Ritualist's Curved Edge
-					i(282373),	-- Lost Witch's Bloodletter
-					i(282405),	-- Lost Wood-Witch's Focus
-					i(282339),	-- Lost Woodsman's Axe
-					i(234572),	-- Mad Faire Fool's Blade
-					i(234727),	-- Mad Faire Fool's Cleaver
-					i(235640),	-- Mad Faire's Fool's Die
-					i(234609),	-- Redcap's Garden Trowel
-					i(281495),	-- Slayer's Monster Blaster
-					i(238957),	-- Wicker-Sage's Rune Blade
-					i(237177),	-- Wicker-Sage's Rune Claw
-					i(236403),	-- Wicker-Sage's Rune Crook
-					i(237181),	-- Wicker-Sage's Rune Fetish
-					i(236628),	-- Wicker-Sage's Rune Slasher
+					i(282379, {	-- Abandoned Builder's Hatchet
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282342, {	-- Abandoned Headsman's Blade
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282381, {	-- Abandoned Poacher's Shortbow
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282374, {	-- Abandoned Soldier's Warmaul
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282372, {	-- Abandoned Veteran's Bootknife
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(248675, {	-- Expedition's Saltstained Blunderbuss
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(248677, {	-- Expedition's Saltstained Cleaver
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(248678, {	-- Expedition's Saltstained Cutlass
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(248679, {	-- Expedition's Saltstained Greatsword
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(248676, {	-- Expedition's Saltstained Stave
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(235271, {	-- Fae Courier's Gavel
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(235654, {	-- Fae Courier's Longbow
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(235400, {	-- Fae Courier's Polearm
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(235292, {	-- Fae Courier's Sword
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(235296, {	-- Fae Courier's Wand
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(282377, {	-- Fallen Cultist's Blood-Glaive
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282344, {	-- Fallen Defender's Shortsword
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282378, {	-- Fallen Executioner's Axe
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282383, {	-- Fallen Guardsman's Buckler
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282351, {	-- Fallen Hunter's Kukri
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282345, {	-- Forgotten Butcher's Crudeblade
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282375, {	-- Forgotten Craftsman's Workmace
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282341, {	-- Forgotten Protector's Claymore
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282353, {	-- Forgotten Wanderer's Crook
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(213077, {	-- Greenseer's Bow-quet
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(213072, {	-- Greenseer's Poppy Spire
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(213069, {	-- Greenseer's Rose Spear
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(213066, {	-- Greenseer's Thorn Spike
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(213063, {	-- Greenseer's Tulip Edge
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(282356, {	-- Lost Greenseer's Reedstick
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282352, {	-- Lost Ritualist's Curved Edge
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282373, {	-- Lost Witch's Bloodletter
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282405, {	-- Lost Wood-Witch's Focus
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(282339, {	-- Lost Woodsman's Axe
+						cost = { { "c", BOUND_SILVER, 700 } },
+					}),
+					i(234572, {	-- Mad Faire Fool's Blade
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(234727, {	-- Mad Faire Fool's Cleaver
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(235640, {	-- Mad Faire's Fool's Die
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(234609, {	-- Redcap's Garden Trowel
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(281495, {	-- Slayer's Monster Blaster
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(238957, {	-- Wicker-Sage's Rune Blade
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(237177, {	-- Wicker-Sage's Rune Claw
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(236403, {	-- Wicker-Sage's Rune Crook
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(237181, {	-- Wicker-Sage's Rune Fetish
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
+					i(236628, {	-- Wicker-Sage's Rune Slasher
+						cost = { { "c", BOUND_SILVER, 1000 } },
+					}),
 				}),
-			})),
+			}),
 			n(ZONE_REWARDS, {
 				i(288471),	-- Barrier Potion
 				i(238669),	-- Focus Potion
