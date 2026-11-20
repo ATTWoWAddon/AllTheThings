@@ -215,13 +215,10 @@ instanceroot(2832, applyclassicphase(SOD_PHASE_SIX, {	-- Nightmare Grove
 			},
 		}),
 		n(234880, {	-- Emeriss
-			-- Unconfirmed Drop:
-			i(234159),	-- Polished Ironwood Crossbow
-
-			-- Confirmed Drops:
 			i(234157),	-- Circlet of Restless Dreams
 			i(234158),	-- Dragonheart Necklace
 			i(234156),	-- Boots of the Endless Moor
+			i(234159),	-- Polished Ironwood Crossbow
 			i(234160),	-- Ring of the Unliving
 		}),
 		n(235180, {	-- Lethon

@@ -1305,11 +1305,10 @@ instanceroot(230, applyclassicphase(PHASE_ONE_DIREMAUL, {	-- Dire Maul
 							timeline = { REMOVED_1_15_3 },
 						}),
 						applyclassicphase(SOD_PHASE_FOUR, i(228486, {	-- Treant's Bane
-							timeline = { CREATED_1_15_3 },
+							timeline = { ADDED_1_15_3 },
 						})),
 						i(18538, {	-- Treant's Bane
-							-- CRIEVE NOTE: There's no evidence that the reitemized version has dropped yet.
-							-- timeline = { REMOVED_1_15_3 },
+							timeline = { REMOVED_1_15_3 },
 						}),
 						applyclassicphase(SOD_PHASE_FOUR, i(228473, {	-- Unyielding Maul
 							timeline = { ADDED_1_15_3 },
