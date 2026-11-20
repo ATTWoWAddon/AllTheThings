@@ -807,10 +807,7 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				lvl = 30,
 			}),
 			q(1276, {	-- The Black Shield [H]
-				sourceQuests = {
-					1273,	-- Questioning Reethe
-					1323,	-- The Black Shield (4/4) [H]
-				},
+				sourceQuest = 1273,	-- Questioning Reethe
 				qg = 4926,	-- Krog
 				qi = 5919,	-- Blackened Iron Shield (PQI!)
 				coord = { 36.4, 31.8, MAP.DUSTWALLOW_MARSH },
