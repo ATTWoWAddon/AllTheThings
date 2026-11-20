@@ -1585,9 +1585,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					i(3734, {	-- Recipe: Big Bear Steak (RECIPE!)
 						isLimited = true,
 					}),
-					i(12239, {	-- Recipe: Dragonbreath Chili (RECIPE!)
-						isLimited = true,
-					}),
 					i(12229, {	-- Recipe: Hot Wolf Ribs (RECIPE!)
 						isLimited = true,
 					}),

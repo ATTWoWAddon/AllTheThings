@@ -1194,7 +1194,6 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 					i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 						isLimited = true,
 					}),
-					i(12239),	-- Recipe: Dragonbreath Chili (RECIPE!)
 					i(12233),	-- Recipe: Mystery Stew (RECIPE!)
 					i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 				},
@@ -1251,7 +1250,6 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 				races = HORDE_ONLY,
 				groups = {
 					i(12232),	-- Recipe: Carrion Surprise (RECIPE!)
-					i(12239),	-- Recipe: Dragonbreath Chili (RECIPE!)
 					i(20075),	-- Recipe: Heavy Crocolisk Stew (RECIPE!)
 					i(12228),	-- Recipe: Roast Raptor (RECIPE!)
 				},
@@ -1363,6 +1361,9 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			}),
 			i(12706, {	-- Plans: Runic Plate Shoulders (RECIPE!)
 				cr = 4366,	-- Strashaz Serpent Guard
+			}),
+			i(12239, {	-- Recipe: Dragonbreath Chili (RECIPE!)
+				cr = 4323,	-- Searing Hatchling
 			}),
 			i(250184, {	-- Recipe: Raptor Rouladen (RECIPE!)
 				cr = 4357,	-- Bloodfen Lashtail
