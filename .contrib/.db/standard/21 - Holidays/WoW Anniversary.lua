@@ -3784,6 +3784,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						}),
 					},
 				}),
+				n(231373, {	-- Carl Goodup <Balloon Vendor>
+					coord = { 64.3, 50.0, TANARIS },
+					timeline = { ADDED_11_0_5 },
+					sym = { { "select", "itemID",
+						75040,	-- Flimsy Darkmoon Balloon
+						75041,	-- Flimsy Green Balloon
+						75042,	-- Flimsy Yellow Balloon (TOY!)
+						164969,	-- Horse Balloon (PET!)
+						164971,	-- Murloc Balloon (PET!)
+						164970,	-- Wolf Balloon (PET!)
+					} },
+					groups = {
+						i(229828, {	-- 20th Anniversary Balloon Chest (TOY!)
+							cost = { { "c", TIMEWARPED_BADGE, 100 } },
+							timeline = { ADDED_12_1_5 },
+						});
+					},
+				}),
 				n(158061, {	-- Historian Ma'di
 					coord = { 62.6, 50.4, TANARIS },
 					groups = appendAllGroups({},
@@ -3943,9 +3961,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				n(223902, {	-- Traeya <Armor Vendor>
 					coord = { 63.1, 50.9, TANARIS },
-					timeline = { REMOVED_11_0_7 },
+					timeline = { REMOVED_11_0_7, ADDED_12_1_5 },
 					groups = sharedData({
+						-- #if AFTER 12.1.5
+						cost = { { "c", TIMEWARPED_BADGE, 400 } },
+						-- #else
 						cost = { { "c", BRONZE_TOKEN, 60 } },
+						-- #endif
 					}, {
 						iensemble(228205, { classes = { DEATHKNIGHT } }),	-- Ensemble: Pale Rider's Eternal Armor
 						iensemble(228206, { classes = { DEMONHUNTER } }),	-- Ensemble: Netherwalker's Eternal Armor

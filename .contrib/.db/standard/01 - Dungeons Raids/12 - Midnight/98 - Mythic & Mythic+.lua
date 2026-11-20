@@ -29,9 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				ach(63097, {	-- Midnight Keystone Myth: Season One
 					timeline = { ADDED_12_0_5, REMOVED_12_1_0 },
-					groups = {
-						title(773),	-- <Name> the Umbral Contender
-					},
+					groups = { title(773) },	-- <Name> the Umbral Contender
 				}),
 				ach(63104,{	-- Umbral Champion: Midnight Season 1
 					timeline = { ADDED_12_1_0, REMOVED_12_1_0 },
@@ -107,45 +105,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				-- Using ["_noautomation"] for all to reduce numbers a bit.
 				-- Have to see what Blizzard does with those kind of achievements	-- Goldenshacal October 2025
-				ach(61233, {	-- Midnight Season 1: Resilient Keystone 12
-					_noautomation = true,
-				}),
-				ach(61235, {	-- Midnight Season 1: Resilient Keystone 13
-					_noautomation = true,
-				}),
-				ach(61236, {	-- Midnight Season 1: Resilient Keystone 14
-					_noautomation = true,
-				}),
-				ach(61237, {	-- Midnight Season 1: Resilient Keystone 15
-					_noautomation = true,
-				}),
-				ach(61239, {	-- Midnight Season 1: Resilient Keystone 16
-					_noautomation = true,
-				}),
-				ach(61240, {	-- Midnight Season 1: Resilient Keystone 17
-					_noautomation = true,
-				}),
-				ach(61241, {	-- Midnight Season 1: Resilient Keystone 18
-					_noautomation = true,
-				}),
-				ach(61242, {	-- Midnight Season 1: Resilient Keystone 19
-					_noautomation = true,
-				}),
-				ach(61243, {	-- Midnight Season 1: Resilient Keystone 20
-					_noautomation = true,
-				}),
-				ach(61244, {	-- Midnight Season 1: Resilient Keystone 21
-					_noautomation = true,
-				}),
-				ach(61245, {	-- Midnight Season 1: Resilient Keystone 22
-					_noautomation = true,
-				}),
-				ach(61246, {	-- Midnight Season 1: Resilient Keystone 23
-					_noautomation = true,
-				}),
-				ach(61247, {	-- Midnight Season 1: Resilient Keystone 24
-					_noautomation = true,
-				}),
+				ach(61233, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 12
+				ach(61235, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 13
+				ach(61236, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 14
+				ach(61237, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 15
+				ach(61239, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 16
+				ach(61240, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 17
+				ach(61241, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 18
+				ach(61242, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 19
+				ach(61243, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 20
+				ach(61244, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 21
+				ach(61245, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 22
+				ach(61246, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 23
+				ach(61247, { _noautomation = true }),	-- Midnight Season 1: Resilient Keystone 24
 				ach(61248, {	-- Midnight Season 1: Resilient Keystone 25
 					_noautomation = true,
 					collectible = false,
@@ -252,56 +224,26 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 				}),
 				ach(63690, {	-- Midnight Keystone Myth: Season 2
 					timeline = { ADDED_12_1_5, REMOVED_12_2_0 },
-					groups = {
-						title(795),	-- <Name> the Venomous Contender
-					},
+					groups = { title(795) },	-- <Name> the Venomous Contender
 				}),
 				ach(62436, {	-- Venomous Hero: Midnight Season 2
 					title(662),	-- <Name> the Venomous Hero
 				}),
 				-- Check the comment on previous season
-				ach(62417, {	-- Midnight Season 2: Resilient Keystone 12
-					_noautomation = true,
-				}),
-				ach(62418, {	-- Midnight Season 2: Resilient Keystone 13
-					_noautomation = true,
-				}),
-				ach(62419, {	-- Midnight Season 2: Resilient Keystone 14
-					_noautomation = true,
-				}),
-				ach(62420, {	-- Midnight Season 2: Resilient Keystone 15
-					_noautomation = true,
-				}),
-				ach(62421, {	-- Midnight Season 2: Resilient Keystone 16
-					_noautomation = true,
-				}),
-				ach(62422, {	-- Midnight Season 2: Resilient Keystone 17
-					_noautomation = true,
-				}),
-				ach(62423, {	-- Midnight Season 2: Resilient Keystone 18
-					_noautomation = true,
-				}),
-				ach(62424, {	-- Midnight Season 2: Resilient Keystone 19
-					_noautomation = true,
-				}),
-				ach(62425, {	-- Midnight Season 2: Resilient Keystone 20
-					_noautomation = true,
-				}),
-				ach(62426, {	-- Midnight Season 2: Resilient Keystone 21
-					_noautomation = true,
-				}),
-				ach(62427, {	-- Midnight Season 2: Resilient Keystone 22
-					_noautomation = true,
-				}),
-				ach(62428, {	-- Midnight Season 2: Resilient Keystone 23
-					_noautomation = true,
-				}),
-				ach(62429, {	-- Midnight Season 2: Resilient Keystone 24
-					_noautomation = true,
-				}),
-				ach(62430, {	-- Midnight Season 2: Resilient Keystone 25
-					_noautomation = true,
-				}),
+				ach(62417, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 12
+				ach(62418, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 13
+				ach(62419, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 14
+				ach(62420, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 15
+				ach(62421, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 16
+				ach(62422, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 17
+				ach(62423, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 18
+				ach(62424, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 19
+				ach(62425, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 20
+				ach(62426, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 21
+				ach(62427, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 22
+				ach(62428, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 23
+				ach(62429, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 24
+				ach(62430, { _noautomation = true }),	-- Midnight Season 2: Resilient Keystone 25
 				ach(62431, {	-- Midnight Season 2: Resilient Keystone 26
 					_noautomation = true,
 					collectible = false,

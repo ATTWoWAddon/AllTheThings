@@ -1823,7 +1823,10 @@ maproot(SHADOWLANDS, KORTHIA, {
 				provider = { "n", 179218 },	-- Theotar
 				coord = { 61.6, 25.7, KORTHIA },
 				groups = {
-					i(187353),	-- Experimental Tea (QI!)
+					o(369688, {	-- Experimental Korthian Tea
+						coord = { 36.5, 37.5, KORTHIA },
+						groups = { i(187353) },	-- Experimental Tea (QI!)
+					}),
 				},
 			}),
 			q(64070, {	-- Staying Scrappy

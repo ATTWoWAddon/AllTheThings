@@ -645,6 +645,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 11.0.5
 			expansion(EXPANSION.TWW, patch(0,5), {
 				q(84611, {isRepeatable = true}),	-- bonus quest in Hallowfall after "Rise of the Colossals", Marked as repeatable because of Inaccurate Unflagged Quests report
+				q(85791),	-- Obtained in Torghast
 			}),
 
 			-- 11.0.7

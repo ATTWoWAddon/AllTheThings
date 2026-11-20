@@ -1517,6 +1517,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 				questID = 37404,
 				isDaily = true,
 				coord = { 86.8, 46.6, FROSTFIRE_RIDGE },
+				timeline = { REMOVED_10_0_2_LAUNCH },	-- Alleged
 				groups = { i(119372) },	-- Ironstudded Scale Girdle
 			}),
 			n(82614, {	-- Moltnoma

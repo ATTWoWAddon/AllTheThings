@@ -231,6 +231,12 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					coord = { 44.4, 79.4, LABYRINTH_KINDOJAN },
 					groups = { i(285065) },	-- Mythical Soul Fragment
 				}),
+				q(98959, {	-- Kindo'jan, The First Hash'ey
+					sourceQuest = 98960,	-- Nalorakk's Rest
+					qg = 264886,	-- Wah'du <Servant of de Loa>
+					coord = { 44.4, 79.4, LABYRINTH_KINDOJAN },
+					groups = { i(285065) },	-- Mythical Soul Fragment
+				}),
 				q(98566, {	-- Come to your Senses
 					isRepeatable = true,
 				}),
@@ -555,8 +561,11 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					description = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
 				}),
 			}),
-			--n(VENDORS, {
-			--}),
+			n(VENDORS, {
+				n(264886, {	-- Wah'du <Servant of de Loa>
+					sym = { { "select", "symselector", SymSelector.MID_DELVES_S2_ARMOR, SymSelector.MID_DELVES_S2_WEAPONS } },
+				}),
+			}),
 			n(ZONE_REWARDS, {
 				providers = {
 					{ "o", 705929 },	-- Mislaid Treasure

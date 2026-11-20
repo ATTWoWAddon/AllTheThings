@@ -13,55 +13,48 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 				i(259996, {	-- Quel'Thalas Equipment Chest
 					timeline = { "added 12.0.5.67602", REMOVED_12_1_0 },
 					cost = { { "c", VOIDLIGHT_MARL, 750 } },
-					sym = {
-						-- MID Season 1 dungeons (Normal+ difficulty)
-						{"select", "instanceID"
+					sym = { { "select", "instanceID"	-- MID Season 1 dungeons (Normal+ difficulty)
 							,1201	-- Algeth'ar Academy
 							,1300	-- Magister's Terrace
 							,1315	-- Maisara Caverns
 							,1316	-- Nexus-Point Xenas
 							,1299	-- Windrunner Spire
 						},
-						{"pop"},
-						{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
-						{"extract", "itemID"},
+						{ "pop" },
+						{ "where", "difficultyID", DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS },
+						{ "extract", "itemID" },
 						SYM.SUB.INVTYPE_ALL_SLOTS,
 
-						-- MID Season 1 dungeons (Heroic difficulty)
-						{"select", "instanceID"
+						{ "select", "instanceID"	-- MID Season 1 dungeons (Heroic difficulty)
 							,278	-- Pit of Saron
 						},
-						{"pop"},
-						{"where","difficultyID",DIFFICULTY.DUNGEON.HEROIC},
-						{"extract", "itemID"},
+						{ "pop" },
+						{ "where", "difficultyID", DIFFICULTY.DUNGEON.HEROIC },
+						{ "extract", "itemID" },
 						SYM.SUB.INVTYPE_ALL_SLOTS,
 
-						-- MID Season 1 dungeons (Heroic+ difficulty)
-						{"select", "instanceID"
+						{ "select", "instanceID"	-- MID Season 1 dungeons (Heroic+ difficulty)
 							,945	-- Seat of the Triumvirate
 							,476	-- Skyreach
 						},
-						{"pop"},
-						{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS},
-						{"extract", "itemID"},
+						{ "pop" },
+						{ "where", "difficultyID", DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS },
+						{ "extract", "itemID" },
 						SYM.SUB.INVTYPE_ALL_SLOTS,
 
-						-- MID Season 1 dungeons (Mythic difficulty)
-						{"select", "instanceID"
+						{ "select", "instanceID"	-- MID Season 1 dungeons (Mythic difficulty)
 							,945	-- Seat of the Triumvirate
 						},
-						{"pop"},
-						{"where","difficultyID",DIFFICULTY.DUNGEON.MYTHIC},
-						{"extract", "itemID"},
+						{ "pop" },
+						{ "where", "difficultyID", DIFFICULTY.DUNGEON.MYTHIC },
+						{ "extract", "itemID" },
 						SYM.SUB.INVTYPE_ALL_SLOTS,
 					},
 				}),
 				i(274272, {	-- Amani Equipment Chest
 					timeline = { ADDED_12_1_5, REMOVED_12_2_0 },
 					cost = { { "c", VOIDLIGHT_MARL, 750 } },
-					--[[sym = {	-- TODO: Not Accurate Enough
-						-- MID Season 2 dungeons (Normal+ difficulty)
-						{"select", "instanceID"
+					sym = {	{ "select", "instanceID"	-- MID Season 2 dungeons (Normal+ difficulty)
 							,1030	-- Temple of Sethraliss
 							,1041	-- Kings' Rest
 							,1202	-- Ruby Life Pools
@@ -71,11 +64,11 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 							,1313	-- Voidscar Arena
 							,1309	-- The Blinding Vale
 						},
-						{"pop"},
-						{"where","difficultyID",DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS},
-						{"extract", "itemID"},
+						{ "pop" },
+						{ "where", "difficultyID", DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS },
+						{ "extract", "itemID" },
 						SYM.SUB.INVTYPE_ALL_SLOTS,
-					},--]]
+					},
 				}),
 			},
 		}),
