@@ -115,7 +115,8 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 				lvl = 38,
 			}),
 			q(94969, {	-- Krol'dok No More! [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. It's an escort of Marcus Tilwell out of Krol'dok Stronghold; his NPC ID isn't known yet.
+				-- TODO: Wowhead doesn't list the quest giver yet. It's an escort of Marcus Tilwell (259253) out of Krol'dok Stronghold.
+				timeline = { TIMELINE.CREATED_1_60_1 },	-- Not in the live game yet: no giver on Wowhead, Marcus Tilwell (259253) not found in the instance
 				races = ALLIANCE_ONLY,
 				lvl = 40,
 				groups = {
@@ -125,6 +126,7 @@ instanceroot(3039, {	-- Krol'dok Stronghold
 			}),
 			q(95056, {	-- Krol'dok No More! [H]
 				-- TODO: Wowhead doesn't list the quest giver yet. Horde version of the escort out of Krol'dok Stronghold.
+				timeline = { TIMELINE.CREATED_1_60_1 },	-- Not in the live game yet: no giver on Wowhead, Marcus Tilwell (259253) not found in the instance
 				races = HORDE_ONLY,
 				lvl = 40,
 				groups = {
