@@ -1432,7 +1432,6 @@ instanceroot(229, {	-- Blackrock Spire
 						timeline = { ADDED_1_15_3 },
 					})),
 					i(13148, {	-- Chillpike
-						description = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
 						timeline = { REMOVED_1_15_3 },
 					}),
 					applyclassicphase(SOD_PHASE_FOUR, i(228601, {	-- Relentless Scythe
@@ -1786,7 +1785,6 @@ instanceroot(229, {	-- Blackrock Spire
 					groups = {
 						i(22336),	-- Draconian Aegis of the Legion
 						applyclassicphase(SOD_PHASE_FOUR, i(228682, {	-- Lord Valthalak's Staff of Command
-							description = "This version of the staff was created and added to the DB, but doesn't seem to drop. @Crieve if you get it to drop.",
 							timeline = { CREATED_1_15_3 },
 						})),
 						i(22335, {	-- Lord Valthalak's Staff of Command

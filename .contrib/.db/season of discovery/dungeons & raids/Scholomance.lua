@@ -544,7 +544,6 @@ local SCHOLOMANCE_LEGACY_DATA = {
 			}),
 			ignoreTimeline(i(14536)),	-- Bonebrace Hauberk
 			applyclassicphase(SOD_PHASE_FOUR, i(228703, {	-- Coldstone Slippers
-				description = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
 				timeline = { CREATED_1_15_3 },
 			})),
 			ignoreTimeline(i(18697, {	-- Coldstone Slippers
@@ -613,7 +612,6 @@ local SCHOLOMANCE_LEGACY_DATA = {
 				},
 			}),
 			applyclassicphase(SOD_PHASE_FOUR, i(228704, {	-- Tattered Leather Hood
-				description = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
 				timeline = { CREATED_1_15_3 },
 			})),
 			ignoreTimeline(i(18698, {	-- Tattered Leather Hood
@@ -806,7 +804,6 @@ local SCHOLOMANCE_LEGACY_DATA = {
 			i(18749),	-- Charger's Lost Soul
 			i(18880),	-- Darkreaver's Head
 			applyclassicphase(SOD_PHASE_FOUR, i(228030, {	-- Malicious Axe
-				description = "There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",
 				timeline = { CREATED_1_15_3 },
 			})),
 			i(18759, {	-- Malicious Axe
@@ -827,7 +824,6 @@ local SCHOLOMANCE_LEGACY_DATA = {
 		timeline = { ADDED_1_3_0 },
 		groups = {
 			applyclassicphase(SOD_PHASE_FOUR, i(227993, {	-- Ebon Hilt of Marduk
-				description = "There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",
 				timeline = { CREATED_1_15_3 },
 			})),
 			i(14576, {	-- Ebon Hilt of Marduk
@@ -1220,12 +1216,10 @@ local SCHOLOMANCE_LEGACY_DATA = {
 				timeline = { ADDED_1_15_3 },
 			})),
 			i(13950, {	-- Detention Strap [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
-				description = "This item seems to have disappeared in Classic. If you get this item in any game flavor, please screenshot this and send it directly to @Crieve on Discord!",
 				timeline = { REMOVED_1_15_3 },
 			}),
 			--[[
 			applyclassicphase(SOD_PHASE_FOUR, i(228043, {	-- Boots of the Shrieker
-				description = "None of these have been found on WoWHead. @Crieve if you get one to drop!",
 				timeline = { CREATED_1_15_3 },
 			})),
 			]]--

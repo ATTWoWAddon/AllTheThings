@@ -216,9 +216,7 @@ instanceroot(2832, applyclassicphase(SOD_PHASE_SIX, {	-- Nightmare Grove
 		}),
 		n(234880, {	-- Emeriss
 			-- Unconfirmed Drop:
-			i(234159, {	-- Polished Ironwood Crossbow
-				description = "If you get this to drop, @crieve on Discord!",
-			}),
+			i(234159),	-- Polished Ironwood Crossbow
 
 			-- Confirmed Drops:
 			i(234157),	-- Circlet of Restless Dreams

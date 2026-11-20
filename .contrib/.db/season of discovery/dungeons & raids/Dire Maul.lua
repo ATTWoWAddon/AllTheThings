@@ -1305,7 +1305,6 @@ instanceroot(230, applyclassicphase(PHASE_ONE_DIREMAUL, {	-- Dire Maul
 							timeline = { REMOVED_1_15_3 },
 						}),
 						applyclassicphase(SOD_PHASE_FOUR, i(228486, {	-- Treant's Bane
-							description = "There's no evidence that this version has dropped yet. @Crieve if you get one to drop.",
 							timeline = { CREATED_1_15_3 },
 						})),
 						i(18538, {	-- Treant's Bane

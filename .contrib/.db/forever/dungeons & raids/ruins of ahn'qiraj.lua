@@ -808,7 +808,6 @@ root(ROOTS.Instances, {
 						races = ALLIANCE_ONLY,
 					}),
 					i(21482, {	-- Boots of the Fiery Sands
-						description = "This item was originally a Horde exclusive drop for Shamans during vanilla. Sometime after TBC Prepatch, this item disappeared from the loot table. Please @Crieve if you get it to drop.",
 						races = HORDE_ONLY,
 					}),
 					i(21483),	-- Ring of the Desert Winds
