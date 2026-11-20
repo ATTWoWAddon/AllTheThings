@@ -343,18 +343,18 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			applyclassicphase(SOD_PHASE_ONE, q(76240, {	-- Stalk With The Earthmother (3/3)
 				sourceQuest = 76160,	-- Stalk With The Earthmother (2/3)
 				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
+				qi = 206344,	-- Knife Set (QI!)
 				coord = { 39.6, 65.6, THUNDER_BLUFF },
 				classes = { SHAMAN },
 				races = HORDE_ONLY,
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/1 Fish Chunks
-						providers = {
-							{ "i", 206345 },	-- Fish Chunks
-							{ "i", 206344 },	-- Knife Set
+						provider = { "i", 206345 },	-- Fish Chunks (QI!)
+						costs = {
+							{ { "i", 206344, 1 } },	-- Knife Set (QI!)
+							{ { "i", 6291, 1 } },	-- Raw Brilliant Smallfish
 						},
-						cost = { { "i", 6291, 1 } },	-- 1x Raw Brilliant Smallfish
-						coord = { 53.48, 9.37, THUNDER_BLUFF },
 					}),
 					recipe(674, {	-- Dual Wield
 						classes = { SHAMAN },
