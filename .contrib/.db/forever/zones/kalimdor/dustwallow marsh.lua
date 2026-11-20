@@ -795,10 +795,6 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 							4413,	-- Darkfang Spider
 							4414,	-- Darkfang Venomspitter
 							4415,	-- Giant Darkfang Spider
-							4379,	-- Darkmist Silkspinner
-							4376,	-- Darkmist Spider
-							4378,	-- Darkmist Recluse
-							4380,	-- Darkmist Widow
 						},
 					}),
 				},
