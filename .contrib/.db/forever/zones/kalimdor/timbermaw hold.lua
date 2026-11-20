@@ -256,7 +256,7 @@ maproot(MAP.KALIMDOR, {
 							i(251470, {	-- Plans: Bagh Nakh (RECIPE!)
 								timeline = { TIMELINE.ADDED_1_60_1 },
 							}),
-							i(19202),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
+							i(19202),	-- Pattern: Heavy Timbermaw Belt (RECIPE!)
 							i(251469, {	-- Plans: Stormcarver (RECIPE!)
 								timeline = { TIMELINE.ADDED_1_60_1 },
 							}),

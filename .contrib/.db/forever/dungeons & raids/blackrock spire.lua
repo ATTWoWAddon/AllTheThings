@@ -1125,7 +1125,7 @@ instanceroot(229, {	-- Blackrock Spire
 					i(13247, {	-- Quartermaster Zigris' Footlocker
 						description = "Contains a random green item.",
 					}),
-					i(273115, {	-- Blueprint: Baker's Oven (RECIPE!)
+					i(273115, {	-- Blueprint: Iron Oven (RECIPE!)
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
