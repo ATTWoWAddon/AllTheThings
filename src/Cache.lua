@@ -965,6 +965,10 @@ fieldConverters.qis = function(group, value)		-- Referenced in Modules/Search
 		CacheField(group, "qItemID", value[i])
 	end
 end
+-- offeredDuring: the questID during which this quest is offered. Referenced in Classes/Quests (CheckFollowupQuests)
+fieldConverters.offeredDuring = function(group, value)
+	CacheField(group, "offeredDuring", value);
+end
 -- symselector will make it easier to select specific headers when many share the same ID without having to traverse huge grouping selections
 fieldConverters.symselector = function(group, value)
 	CacheField(group, "symselector", value);

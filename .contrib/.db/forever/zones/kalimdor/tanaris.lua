@@ -652,6 +652,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				description = "Offered by Tooga during Tooga's Quest, after a short scene when he stops for a swim at the oasis by the ogres. He offers it to every party member for only a few seconds, so accept it quickly. He also offers it again at the end of the escort.",
 				lvl = 40,
 				lockCriteria = { 1, "questID", 1560 },	-- Tooga's Quest
+				offeredDuring = 1560,	-- Tooga's Quest
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			q(95751, {	-- Odd Totems

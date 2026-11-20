@@ -1289,18 +1289,51 @@ local function PrintBreadcrumbWarning(accepted, bc)
 	app.Audio:PlayRemoveSound()
 end
 
+-- Will print a notice and play the report sound when the given QuestID was just accepted and another quest is only
+-- offered while it is in progress (offeredDuring), e.g. a quest an escort NPC offers partway through the escort
+local function PrintOfferedDuringNotice(accepted, offered)
+	local acceptText, offeredText = accepted.text, offered.text
+	if IsRetrieving(acceptText) or IsRetrieving(offeredText) then
+		Runner.Run(PrintOfferedDuringNotice, accepted, offered)
+		return
+	end
+
+	local acceptQuestID, offeredQuestID = accepted.questID, offered.questID
+	local format = L.QUEST_OFFERED_DURING_FORMAT or "Quest '%s' %s is only offered during '%s' %s. Accept it when it is offered."
+	app.print(format:format(
+		offeredText,
+		app:Linkify(offeredQuestID, app.Colors.ChatLink, "search:questID:"..offeredQuestID),
+		acceptText,
+		app:Linkify(acceptQuestID, app.Colors.ChatLink, "search:questID:"..acceptQuestID)))
+	app.Audio:PlayReportSound()
+end
+
 local function CheckFollowupQuests(questID)
 	if questID then
 		local nextQuests = SearchForField("nextQuests", questID);
-		if #nextQuests > 0 then
+		local offeredQuests = SearchForField("offeredDuring", questID);
+		if #nextQuests > 0 or #offeredQuests > 0 then
 			local filters = app.Modules.Filter.Filters
 			---@type function,function,function
 			local RecursiveCharacterRequirementsFilter, RecursiveUnobtainableFilter
 				= filters.RecursiveCharacterRequirementsFilter, filters.RecursiveUnobtainableFilter
+			local function IsStillAvailable(o)
+				return o.collectible and not o.collected and not o.locked
+					and RecursiveCharacterRequirementsFilter(o) and RecursiveUnobtainableFilter(o)
+			end
 			-- should never use CreateQuest since it would mean we have sourceQuests linked to a QuestID which isn't cached
 			local accepted = Search("questID", questID) or app.CreateQuest(questID)
+			-- Quests offered only while the accepted quest is in progress get a notice instead of a breadcrumb warning
+			local noticed = {}
+			for _,offered in pairs(offeredQuests) do
+				local offeredQuestID = offered.questID
+				if offeredQuestID and not noticed[offeredQuestID] and IsStillAvailable(offered) then
+					noticed[offeredQuestID] = true
+					Runner.Run(PrintOfferedDuringNotice, accepted, offered)
+				end
+			end
 			for _,bc in pairs(nextQuests) do
-				if bc.collectible and not bc.collected and not bc.locked and RecursiveCharacterRequirementsFilter(bc) and RecursiveUnobtainableFilter(bc) then
+				if bc.offeredDuring ~= questID and IsStillAvailable(bc) then
 					Runner.Run(PrintBreadcrumbWarning, accepted, bc)
 				end
 			end
