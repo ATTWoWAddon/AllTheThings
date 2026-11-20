@@ -1511,7 +1511,11 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 		}),
 		n(RARES, {
 			n(5787, {	-- Enforcer Emilgund
-				coord = { 40.6, 15.8, MAP.MULGORE },
+				coords = {
+					{ 40.0, 13.4, MAP.MULGORE },
+					{ 40.4, 15.8, MAP.MULGORE },
+					{ 40.4, 25.4, MAP.MULGORE },
+				},
 				groups = {
 					i(284361, {	-- Venture Company Legguards
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1525,7 +1529,6 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 					{ 48.0, 24.1, MAP.MULGORE },
 					{ 13.0, 29.6, MAP.THUNDER_BLUFF },
 					{ 15.2, 14.2, MAP.THUNDER_BLUFF },
-					{ 15.2, 15.2, MAP.THUNDER_BLUFF },
 					{ 23.2, 5.0, MAP.THUNDER_BLUFF },
 					{ 25.4, 3.2, MAP.THUNDER_BLUFF },
 					{ 33.6, 2.8, MAP.THUNDER_BLUFF },
@@ -1539,11 +1542,12 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			n(3068, {	-- Mazzranache
 				coords = {
-					{ 34.8, 42.2, MAP.MULGORE },
-					{ 39.4, 44.2, MAP.MULGORE },
-					{ 44.4, 42.9, MAP.MULGORE },
-					{ 51.2, 43.6, MAP.MULGORE },
-					{ 56.6, 44.0, MAP.MULGORE },
+					{ 35.4, 47.2, MAP.MULGORE },
+					{ 37.1, 48.4, MAP.MULGORE },
+					{ 38.2, 43.8, MAP.MULGORE },
+					{ 40.0, 44.0, MAP.MULGORE },
+					{ 40.6, 49.7, MAP.MULGORE },
+					{ 54.2, 43.4, MAP.MULGORE },
 				},
 				groups = {
 					i(4861),	-- Sleek Feathered Tunic
@@ -1551,9 +1555,26 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			n(5785, {	-- Sister Hatelash
 				coords = {
-					{ 30.6, 21.6, MAP.MULGORE },
-					{ 36.6, 11.6, MAP.MULGORE },
-					{ 55.6, 12.0, MAP.MULGORE },
+					{ 29.2, 20.6, MAP.MULGORE },
+					{ 29.2, 22.8, MAP.MULGORE },
+					{ 30.4, 21.8, MAP.MULGORE },
+					{ 30.8, 19.2, MAP.MULGORE },
+					{ 32.2, 30.2, MAP.MULGORE },
+					{ 32.4, 31.8, MAP.MULGORE },
+					{ 35.4, 12.4, MAP.MULGORE },
+					{ 36.0, 10.0, MAP.MULGORE },
+					{ 36.6, 11.4, MAP.MULGORE },
+					{ 37.2, 22.4, MAP.MULGORE },
+					{ 37.6, 20.6, MAP.MULGORE },
+					{ 38.2, 23.8, MAP.MULGORE },
+					{ 39.0, 22.4, MAP.MULGORE },
+					{ 51.8, 23.6, MAP.MULGORE },
+					{ 52.4, 21.4, MAP.MULGORE },
+					{ 53.8, 13.8, MAP.MULGORE },
+					{ 54.4, 9.4, MAP.MULGORE },
+					{ 54.4, 11.4, MAP.MULGORE },
+					{ 55.4, 16.2, MAP.MULGORE },
+					{ 55.8, 12.8, MAP.MULGORE },
 				},
 				groups = {
 					i(4772),	-- Warm Cloak
@@ -1561,9 +1582,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			n(5786, {	-- Snagglespear
 				coords = {
-					{ 48.2, 68.0, MAP.MULGORE },
-					{ 50.6, 71.4, MAP.MULGORE },
-					{ 55.2, 72.2, MAP.MULGORE },
+					{ 47.7, 72.9, MAP.MULGORE },
+					{ 48.1, 70.9, MAP.MULGORE },
+					{ 51.7, 74.2, MAP.MULGORE },
+					{ 53.2, 72.2, MAP.MULGORE },
 				},
 			}),
 			n(276109, {	-- Snarlsnout
@@ -1589,10 +1611,10 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			}),
 			n(5807, {	-- The Rake
 				coords = {
-					{ 50.6, 26.6, MAP.MULGORE },
-					{ 55.6, 24.4, MAP.MULGORE },
-					{ 54.4, 20.2, MAP.MULGORE },
-					{ 49.6, 22.8, MAP.MULGORE },
+					{ 48.4, 17.0, MAP.MULGORE },
+					{ 49.4, 15.0, MAP.MULGORE },
+					{ 49.9, 26.3, MAP.MULGORE },
+					{ 51.8, 30.8, MAP.MULGORE },
 				},
 				groups = {
 					i(17922),	-- Lionfur Armor
