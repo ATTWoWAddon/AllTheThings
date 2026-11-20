@@ -928,19 +928,18 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					{ 54.0, 67.0, ORGRIMMAR },	-- The Broken Tusk
 				},
 				races = HORDE_ONLY,
-				groups = {
-					i(1179),	-- Ice Cold Milk
-					i(1205),	-- Melon Juice
-					-- i(1645),	-- Moonberry Juice
-					i(8766),	-- Morning Glory Dew
-					i(159),	-- Refreshing Spring Water
-					i(1708),	-- Sweet Nectar
-					i(2723),	-- Bottle of Dalaran Noir
-					i(2594),	-- Flagon of Dwarven Honeymead/Mead
-					i(2593),	-- Flask of Stormwind Tawny
-					i(2595),	-- Jug of Badlands Bourbon
-					i(2596),	-- Skin of Dwarven Stout
-				},
+				sym = {{ "select", "itemID",
+					2723,	-- Bottle of Dalaran Noir
+					2594,	-- Flagon of Dwarven Honeymead/Mead
+					2593,	-- Flask of Stormwind Tawny
+					1179,	-- Ice Cold Milk
+					2595,	-- Jug of Badlands Bourbon
+					1205,	-- Melon Juice
+					8766,	-- Morning Glory Dew
+					159,	-- Refreshing Spring Water
+					2596,	-- Skin of Dwarven Stout
+					1708,	-- Sweet Nectar
+				}},
 			}),
 			n(3364, {	-- Borya <Tailoring Supplies>
 				coords = {

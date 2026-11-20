@@ -543,13 +543,9 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			n(3003, {	-- Fyr Mistrunner <Bread Vendor>
 				coord = { 41.4, 53.2, THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				groups = {
-					i(4541),	-- Freshly Baked Bread
-					i(8950),	-- Homemade Cherry Pie
-					i(4542),	-- Moist Cornbread
-					i(4544),	-- Mulgore Spice Bread
-					i(4601),	-- Soft Banana Bread
-					i(4540),	-- Tough Hunk of Bread
+				sym = {
+					SymSelector.select("VENDOR_FOOD_BREAD"),	-- Bread
+					{ "pop" },
 				},
 			}),
 			n(3093, {	-- Grod <Leather Armor Merchant>
@@ -667,13 +663,9 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			n(3025, {	-- Kaga Mistrunner <Meat Vendor>
 				coord = { 52.3, 47.8, THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				groups = {
-					i(4599),	-- Cured Ham Steak
-					i(2287),	-- Haunch of Meat
-					i(3770),	-- Mutton Chop
-					i(8952),	-- Roasted Quail
-					i(117),	-- Tough Jerky
-					i(3771),	-- Wild Hog Shank
+				sym = {
+					SymSelector.select("VENDOR_FOOD_MEAT"),	-- Meat
+					{ "pop" },
 				},
 			}),
 			n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
@@ -743,13 +735,9 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			n(3017, {	-- Nan Mistrunner <Fruit Vendor>
 				coord = { 47.3, 42.4, THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				groups = {
-					i(8953),	-- Deep Fried Plantains
-					i(4539),	-- Goldenbark Apple
-					i(4602),	-- Moon Harvest Pumpkin
-					i(4536),	-- Shiny Red Apple
-					i(4538),	-- Snapvine Watermelon
-					i(4537),	-- Tel'Abim Banana
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FRUIT"),	-- Fruit
+					{ "pop" },
 				},
 			}),
 			n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>

@@ -2667,9 +2667,6 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 				},
 				groups = sharedData({
 					collectible = false,
-					providers = {
-						{ "n", 2849},	-- Qixdi Goodstitch <Cloth Armor & Accessories>
-					},
 				}, {
 					i(7341),	-- Cubic Zirconia Ring
 					i(7340),	-- Flawless Diamond Solitaire

@@ -419,15 +419,9 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 				lvl = 30,
 			}),
 			q(1148, {	-- Parts of the Swarm (1/2)
-				provider = { "i", 5877 },	-- Cracked Silithid Carapace
+				qs = 5877,	-- Cracked Silithid Carapace (QS!)
 				coord = { 70.2, 87.0, THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
-				crs = {
-					4133,	-- Silithid Hive Drone
-					4130,	-- Silithid Searcher
-					4131,	-- Silithid Invader
-					4132,	-- Silithid Ravager
-				},
 				lvl = 28,
 				groups = {
 					objective(1, {	-- 0/1 Silithid Heart
@@ -923,6 +917,14 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 			}),
 		}),
 		n(ZONE_DROPS, {
+			i(5877, {	-- Cracked Silithid Carapace
+				crs = {
+					4133,	-- Silithid Hive Drone
+					4130,	-- Silithid Searcher
+					4131,	-- Silithid Invader
+					4132,	-- Silithid Ravager
+				},
+			}),
 			i(1493, {	-- Heavy Marauder Scimitar
 				coords = {
 					{ 44.6, 33.6, THOUSAND_NEEDLES },

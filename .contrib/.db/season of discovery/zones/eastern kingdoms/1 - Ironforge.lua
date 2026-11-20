@@ -918,13 +918,9 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				coord = { 32.4, 21.2, IRONFORGE },
 				description = "Walks around The Mystic Ward.",
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(8953),	-- Deep Fried Plantains
-					i(4539),	-- Goldenbark Apple
-					i(4602),	-- Moon Harvest Pumpkin
-					i(4536),	-- Shiny Red Apple
-					i(4538),	-- Snapvine Watermelon
-					i(4537),	-- Tel'Abim Banana
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FRUIT"),	-- Fruit
+					{ "pop" },
 				},
 			}),
 			n(5152, {	-- Bingus
@@ -1098,19 +1094,18 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 			n(5112, {	-- Gwenna Firebrew <Barmaid>
 				coord = { 18.6, 51.9, IRONFORGE },	-- The Stonefire Tavern
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(1179),	-- Ice Cold Milk
-					i(1205),	-- Melon Juice
-					-- i(1645),	-- Moonberry Juice
-					i(8766),	-- Morning Glory Dew
-					i(159),	-- Refreshing Spring Water
-					i(1708),	-- Sweet Nectar
-					i(2723),	-- Bottle of Dalaran Noir
-					i(2594),	-- Flagon of Dwarven Honeymead/Mead
-					i(2593),	-- Flask of Stormwind Tawny
-					i(2595),	-- Jug of Badlands Bourbon
-					i(2596),	-- Skin of Dwarven Stout
-				},
+				sym = {{ "select", "itemID",
+					2723,	-- Bottle of Dalaran Noir
+					2594,	-- Flagon of Dwarven Honeymead/Mead
+					2593,	-- Flask of Stormwind Tawny
+					1179,	-- Ice Cold Milk
+					2595,	-- Jug of Badlands Bourbon
+					1205,	-- Melon Juice
+					8766,	-- Morning Glory Dew
+					159,	-- Refreshing Spring Water
+					2596,	-- Skin of Dwarven Stout
+					1708,	-- Sweet Nectar
+				}},
 			}),
 			n(5138, {	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
 				coord = { 55.08, 59.51, IRONFORGE },
@@ -1338,13 +1333,9 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				coord = { 62.1, 72.0, IRONFORGE },
 				description = "Walks around The Military Ward.",
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(4599),	-- Cured Ham Steak
-					i(2287),	-- Haunch of Meat
-					i(3770),	-- Mutton Chop
-					i(8952),	-- Roasted Quail
-					i(117),	-- Tough Jerky
-					i(3771),	-- Wild Hog Shank
+				sym = {
+					SymSelector.select("VENDOR_FOOD_MEAT"),	-- Meat
+					{ "pop" },
 				},
 			}),
 			n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
