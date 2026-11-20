@@ -948,7 +948,7 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 					26238,	-- The Savage Dwarves
 					26263,	-- Thornar Thunderclash
 				},
-				qg = 42612,	-- Malcolm Fendelson
+				qg = 42612,	-- Malcom Fendelson
 				coord = { 78.1, 81.3, THE_HINTERLANDS },
 				timeline = { ADDED_4_0_3 },
 				races = HORDE_ONLY,
