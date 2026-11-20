@@ -153,13 +153,13 @@ root(ROOTS.ExpansionFeatures,
 								{ 29.2, 40.4, LUNARFALL },
 							},
 							races = ALLIANCE_ONLY,
+							sym = {{ "select", "itemID", 122457 }},	-- Ultimate Battle-Training Stone
 							groups = {
 								o(240357, {	-- Strange Stone
 									coord = { 66.2, 42.9, LUNARFALL },
 									groups = { i(122458) },	-- Strange Stone (QI!)
 								}),
 								--
-								i(122457),	-- Ultimate Battle-Training Stone
 							},
 						}),
 						q(38242, {	-- Unearthed Magic
@@ -167,13 +167,13 @@ root(ROOTS.ExpansionFeatures,
 							qg = 79858,	-- Serr'ah
 							coord = { 32.6, 39.8, FROSTWALL },
 							races = HORDE_ONLY,
+							sym = {{ "select", "itemID", 122457 }},	-- Ultimate Battle-Training Stone
 							groups = {
 								o(240358, {	-- Strange Stone
 									coord = { 62.5, 71.1, FROSTWALL },
 									groups = { i(122467) },	-- Strange Stone (QI!)
 								}),
 								--
-								i(122457),	-- Ultimate Battle-Training Stone
 							},
 						}),
 					}),

@@ -2003,11 +2003,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			coords = FESTIVAL_MASTER_FIRE_EATER_COORDS,
 			timeline = { ADDED_2_4_0 },
 			races = ALLIANCE_ONLY,
+			sym = {{ "select", "itemID", 34599 }},	-- Juggling Torch
 			groups = {
 				objective(1, {	-- Catch 4 torches in a row.
 					provider = { "i", 34833 },	-- Unlit Torches
 				}),
-				i(34599),	-- Juggling Torch
 				i(BURNING_BLOSSOM),
 			},
 		}),
@@ -2017,11 +2017,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			coords = FESTIVAL_MASTER_FLAME_EATER_COORDS,
 			timeline = { ADDED_2_4_0 },
 			races = HORDE_ONLY,
+			sym = {{ "select", "itemID", 34599 }},	-- Juggling Torch
 			groups = {
 				objective(1, {	-- Catch 4 torches in a row.
 					provider = { "i", 34833 },	-- Unlit Torches
 				}),
-				i(34599),	-- Juggling Torch
 				i(BURNING_BLOSSOM),
 			},
 		}),

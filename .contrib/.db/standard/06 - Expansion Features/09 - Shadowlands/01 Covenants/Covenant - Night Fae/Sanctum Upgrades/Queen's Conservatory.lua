@@ -212,12 +212,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 										provider = { "n", 166476 },	-- Warden Casad
 										coord = { 33.4, 62.0, 1662 },	-- Queen's Conservatory
 										isWeekly = true,
-										groups = {
-											i(178880),	-- Greater Dutiful Spirit
-											i(178877),	-- Greater Martial Spirit
-											i(178883),	-- Greater Prideful Spirit
-											i(177699),	-- Greater Untamed Spirit
-										},
+										sym = {{ "select", "itemID",
+											178880,	-- Greater Dutiful Spirit
+											178877,	-- Greater Martial Spirit
+											178883,	-- Greater Prideful Spirit
+											177699,	-- Greater Untamed Spirit
+										}},
 									}),
 								}),
 							},

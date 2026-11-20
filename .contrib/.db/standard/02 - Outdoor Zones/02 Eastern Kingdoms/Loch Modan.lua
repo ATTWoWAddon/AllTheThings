@@ -848,6 +848,7 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				sym = {{ "select", "itemID", 2863 }},	-- Coarse Sharpening Stone
 				groups = {
 					objective(1, {	-- 0/10 Stonesplinter Shaman slain
 						provider = { "n", 1197 },	-- Stonesplinter Shaman
@@ -855,7 +856,6 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 					objective(2, {	-- 0/10 Stonesplinter Bonesnapper slain
 						provider = { "n", 1164 },	-- Stonesplinter Bonesnapper
 					}),
-					i(2863),	-- Coarse Sharpening Stone
 				},
 			}),
 			q(217, {	-- In Defense of the King's Lands (4/4)
@@ -1341,8 +1341,8 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 7,
+				sym = {{ "select", "itemID", 3220 }},	-- Blood Sausage
 				groups = {
-					i(3220),	-- Blood Sausage
 					i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 				},
 			}),

@@ -3631,7 +3631,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				races = ALLIANCE_ONLY,
 				isDaily = true,
 				lvl = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
-				groups = { i(34077) },	-- Crudely Wrapped Gift
+				sym = {{ "select", "itemID", 34077 }},	-- Crudely Wrapped Gift
 			}),
 			q(12155, {	-- Smash the Pumpkin (Horde)
 				providers = {
@@ -3647,7 +3647,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				races = HORDE_ONLY,
 				isDaily = true,
 				lvl = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
-				groups = { i(34077) },	-- Crudely Wrapped Gift
+				sym = {{ "select", "itemID", 34077 }},	-- Crudely Wrapped Gift
 			}),
 			q(92455, {	-- Specter Inspector
 				qgs = {
@@ -3723,12 +3723,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				races = ALLIANCE_ONLY,
 				isDaily = true,
 				lvl = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
+				sym = {{ "select", "itemID", 34068 }},	-- Weighted Jack-o'-Lantern
 				groups = {
 					objective(1, {	-- 0/1 Put Out the Fires
 						provider = { "i", 32971 },	-- Water Bucket
 					}),
 					i(20557),	-- Hallow's End Pumpkin Treat
-					i(34068),	-- Weighted Jack-o'-Lantern
 				},
 			}),
 			q(11219, {	-- Stop the Fires! (Horde)
@@ -3747,12 +3747,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				races = HORDE_ONLY,
 				isDaily = true,
 				lvl = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
+				sym = {{ "select", "itemID", 34068 }},	-- Weighted Jack-o'-Lantern
 				groups = {
 					objective(1, {	-- 0/1 Put Out the Fires
 						provider = { "i", 32971 },	-- Water Bucket
 					}),
 					i(20557),	-- Hallow's End Pumpkin Treat
-					i(34068),	-- Weighted Jack-o'-Lantern
 				},
 			}),
 			q(92498, {	-- Sugar Run (Drustvar)

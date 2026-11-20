@@ -376,7 +376,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 			sourceQuest = 89416,	-- Eternal Gratitude
 			qg = 241748,	-- Eternus
 			coord = { 45.7, 68.5, BROKEN_ISLES },
-			groups = { i(254320) },	-- Elixir of Remembered Sight
+			sym = {{ "select", "itemID", 254320 }},	-- Elixir of Remembered Sight
 		}),
 		q(91955, {	-- Just Between Us
 			sourceQuest = 89416,	-- Eternal Gratitude

@@ -135,9 +135,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 					-- sourceQuests = { xx },	-- TODO: some of level up/turn in HQTs?
 					provider = { "n", 222186 },	-- Nostwin
 					coord = { 45.8, 84.7, THE_JADE_FOREST },	-- missing horde coords
-					groups = {
-						i(217930),	-- Nostwin's Voucher
-					},
+					sym = {{ "select", "itemID", 217930 }},	-- Nostwin's Voucher
 				}),
 				q(78894, {	-- Infinite Growth
 					-- sourceQuests = { 81976 },	-- Bazaar, Isn't It? / unsure since I didn't teleport right after I get voucher

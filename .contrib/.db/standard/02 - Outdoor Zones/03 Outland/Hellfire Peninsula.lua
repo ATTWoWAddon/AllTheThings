@@ -2273,6 +2273,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 16915,	-- Foreman Razelcraz
 					coord = { 51.3, 30.5, HELLFIRE_PENINSULA },
 					lvl = lvlsquish(58, 58, 10),
+					sym = {{ "select", "itemID", 18588 }},	-- Ez-Thro Dynamite II
 					groups = {
 						objective(1, {	-- 0/1 Shredder Keys
 							providers = {
@@ -2283,7 +2284,6 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							coord = { 51.2, 30.6, HELLFIRE_PENINSULA },
 							cr = 21847,	-- Fel Guard Hound
 						}),
-						i(18588),	-- Ez-Thro Dynamite II
 					},
 				}),
 				q(9356, {	-- Smooth as Butter
@@ -2291,6 +2291,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					qg = 19344,	-- Legassi
 					coord = { 49.2, 74.8, HELLFIRE_PENINSULA },
 					lvl = lvlsquish(58, 58, 10),
+					sym = {{ "select", "itemID", 27651 }},	-- Buzzard Bites x5
 					groups = {
 						objective(1, {	-- 0/12 Plump Buzzard Wing
 							provider = { "i", 23239 },	-- Plump Buzzard Wing
@@ -2298,7 +2299,6 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							cr = 16972,	-- Bonestripper Buzzard
 						}),
 						i(27684),	-- Recipe: Buzzard Bites (RECIPE!)
-						i(27651),	-- Buzzard Bites x5
 					},
 				}),
 				q(9387, {	-- Source of the Corruption

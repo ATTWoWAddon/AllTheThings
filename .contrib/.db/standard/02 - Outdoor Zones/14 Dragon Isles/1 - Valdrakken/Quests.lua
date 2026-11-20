@@ -74,6 +74,7 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 						sourceQuests = { 70930 },	-- All Tea, No Shadeleaf
 						provider = { "n", 185778 },	-- Lilial Dawnburst
 						coord = { 51.7, 62.0, THE_AZURE_SPAN },
+						sym = {{ "select", "itemID", 200886 }},	-- Lemon Silverleaf Tea
 						groups = {
 							i(200759),	-- Aruunem Berrytart
 							i(200885),	-- Cinna-Cinderbloom Tea
@@ -81,7 +82,6 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 							i(246706, {	-- Elegant Dracthyr's Tea Cup (DECOR!)
 								timeline = { ADDED_11_2_7 },
 							}),
-							i(200886),	-- Lemon Silverleaf Tea
 						},
 					}),
 					------ Day 2 ------
@@ -152,11 +152,11 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 						sourceQuests = { 70981 },	-- Savory Seas
 						provider = { "n", 186212 },	-- Wayun
 						coord = { 7.4, 44.2, THE_AZURE_SPAN },
+						sym = {{ "select", "itemID", 200897 }},	-- Venrik's Goat Milk
 						groups = {
 							i(200896),	-- Captain's Caramelized Catfish
 							i(200898),	-- Mantis Shrimp Cocktail
 							i(194554),	-- Savory Deviant Dealfish (QI!)
-							i(200897),	-- Venrik's Goat Milk
 						},
 					}),
 					------ Day 6 ------
@@ -470,15 +470,17 @@ maproot(DRAGON_ISLES, VALDRAKKEN, {
 				provider = { "n", 189973 },	-- Kemora
 				coord = { 35.0, 28.1, VALDRAKKEN },
 				timeline = { ADDED_10_1_0 },
+				sym = {{ "select", "itemID",
+					200285,	-- Dragonscale Expedition Insignia [Uncommon]
+					200288,	-- Maruuk Centaur Insignia [Uncommon]
+					200287,	-- Iskaara Tuskarr Insignia [Uncommon]
+					200289,	-- Valdrakken Accord Insignia [Uncommon]
+				}},
 				groups = {
 					i(206135),	-- Heroic Dungeon Delver's Trophy Chest
 					i(206136),	-- Heroic Dungeon Delver's Trophy Crest
 					------ Reputation ------
-					i(200285),	-- Dragonscale Expedition Insignia [Uncommon]
-					i(200288),	-- Maruuk Centaur Insignia [Uncommon]
-					i(200287),	-- Iskaara Tuskarr Insignia [Uncommon]
 					i(205365),	-- Loamm Niffen Insignia [Uncommon]
-					i(200289),	-- Valdrakken Accord Insignia [Uncommon]
 				},
 			}),
 			q(66867, {	-- Relic Recovery: Algeth'ar Academy

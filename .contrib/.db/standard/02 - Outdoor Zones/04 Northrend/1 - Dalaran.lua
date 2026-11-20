@@ -1743,6 +1743,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					maxReputation = { FACTION_KIRIN_TOR, EXALTED },
 					requireSkill = COOKING,
 					isDaily = true,
+					sym = {{ "select", "itemID", 44113 }},	-- Small Spice Bag
 					groups = {
 						objective(1, {	-- 0/4 Northern Stew
 							provider = { "i", 34747 },	-- Northern Stew
@@ -1753,7 +1754,6 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 								{ "o", 192823 },	-- Full Jug of Wine
 							},
 						}),
-						i(44113),	-- Small Spice Bag
 						currency(81),	-- Epicurean's Award
 					},
 				},
@@ -1843,6 +1843,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					maps = { NORTHREND_THE_UNDERBELLY },
 					requireSkill = COOKING,
 					isDaily = true,
+					sym = {{ "select", "itemID", 44113 }},	-- Small Spice Bag
 					groups = {
 						objective(1, {	-- 0/1 Infused Mushroom Meatloaf
 							provider = { "i", 43099 },	-- Infused Mushroom Meatloaf
@@ -1852,7 +1853,6 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 								{ "i", 43013, 2 },	-- Chilled Meat
 							},
 						}),
-						i(44113),	-- Small Spice Bag
 						currency(81),	-- Epicurean's Award
 					},
 				},
@@ -1972,6 +1972,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					maxReputation = { FACTION_KIRIN_TOR, EXALTED },
 					requireSkill = COOKING,
 					isDaily = true,
+					sym = {{ "select", "itemID", 44113 }},	-- Small Spice Bag
 					groups = {
 						objective(1, {	-- 0/1 Mustard Dog Basket
 							provider = { "i", 43144 },	-- Mustard Dog Basket
@@ -1981,7 +1982,6 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 								{ "i", 43143, 4 },	-- Wild Mustard
 							},
 						}),
-						i(44113),	-- Small Spice Bag
 						currency(81),	-- Epicurean's Award
 					},
 				},
@@ -2341,6 +2341,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					maps = { NORTHREND_THE_UNDERBELLY, CRYSTALSONG_FOREST },
 					requireSkill = COOKING,
 					isDaily = true,
+					sym = {{ "select", "itemID", 44113 }},	-- Small Spice Bag
 					groups = {
 						objective(1, {	-- 0/1 Vegetable Stew
 							provider = { "i", 43149 },	-- Vegetable Stew
@@ -2350,7 +2351,6 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 								{ "i", 43013, 4 },	-- Chilled Meat
 							},
 						}),
-						i(44113),	-- Small Spice Bag
 						currency(81),	-- Epicurean's Award
 					},
 				},

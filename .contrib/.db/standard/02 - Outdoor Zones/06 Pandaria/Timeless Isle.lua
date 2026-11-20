@@ -1023,11 +1023,11 @@ maproot(PANDARIA, {
 					qg = 73303,	-- Emperor Shaohao
 					coord = { 42.8, 55.6, TIMELESS_ISLE },
 					isDaily = true,
-					groups = {
-						i(103642),	-- Book of the Ages
-						i(103643),	-- Dew of Eternal Morning
-						i(103641),	-- Singing Crystal
-					},
+					sym = {{ "select", "itemID",
+						103642,	-- Book of the Ages
+						103643,	-- Dew of Eternal Morning
+						103641,	-- Singing Crystal
+					}},
 				}),
 				q(33375, {	-- Refining The Vision
 					sourceQuest = 33337,	-- A Vision in Time

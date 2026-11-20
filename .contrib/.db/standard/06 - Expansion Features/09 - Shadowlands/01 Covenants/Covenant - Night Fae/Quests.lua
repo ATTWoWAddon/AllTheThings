@@ -192,26 +192,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 				provider = { "n", 158553 },	-- Flutterby
 				coord = { 33.9, 43.5, THE_TRUNK },
 				isWeekly = true,
+				sym = {{ "select", "itemID",
+					177699,	-- Divine Untamed Spirit Ardenweald (Rare)
+					178880,	-- Divine Dutiful Spirit (Rare)
+					178877,	-- Divine Martial Spirit (Rare)
+					178883,	-- Divine Prideful Spirit (Rare)
+				}},
 				groups = {
 					i(177698, {	-- Untamed Spirit Ardenweald (Uncommon)
 						timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 					}),
-					i(177699),	-- Divine Untamed Spirit Ardenweald (Rare)
 					i(177700),	-- Greater Untamed Spirit Ardenweald (Epic)
 					i(178881, {	-- Dutiful Spirit Bastion (Uncommon)
 						timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 					}),
-					i(178880),	-- Divine Dutiful Spirit (Rare)
 					i(178879),	-- Greater Dutiful Spirit (Epic)
 					i(178874, {	-- Martial Spirit Maldraxxus (Uncommon)
 						timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 					}),
-					i(178877),	-- Divine Martial Spirit (Rare)
 					i(178878),	-- Greater Martial Spirit (Epic)
 					i(178882, {	-- Prideful Spirit Revendreth (Uncommon)
 						timeline = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 					}),
-					i(178883),	-- Divine Prideful Spirit (Rare)
 					i(178884),	-- Greater Prideful Spirit (Epic)
 				},
 			}),

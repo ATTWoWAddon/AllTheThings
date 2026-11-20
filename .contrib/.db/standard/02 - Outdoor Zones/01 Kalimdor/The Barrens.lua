@@ -1007,9 +1007,9 @@ maproot(KALIMDOR, THE_BARRENS, {
 				requireSkill = COOKING,
 				races = HORDE_ONLY,
 				lvl = 15,
+				sym = {{ "select", "itemID", 5478 }},	-- Dig Rat Stew
 				groups = {
 					i(10919),	-- Apothecary Gloves
-					i(5478),	-- Dig Rat Stew
 					i(5487, {	-- Recipe: Dig Rat Stew (RECIPE!)
 						timeline = { REMOVED_4_3_0 },
 					}),
@@ -1974,12 +1974,12 @@ maproot(KALIMDOR, THE_BARRENS, {
 				races = HORDE_ONLY,
 				classes = { ROGUE },
 				lvl = 16,
+				sym = {{ "select", "itemID", 7676 }},	-- Thistle Tea
 				groups = {
 					objective(1, {	-- 0/1 Southsea Treasure
 						provider = { "i", 7968 },	-- Southsea Treasure
 					}),
 					i(7970),	-- E.C.A.C.
-					i(7676),	-- Thistle Tea
 				},
 			}),
 			q(903, {	-- Prowlers of the Barrens / Hunting the Huntress [CATA+]

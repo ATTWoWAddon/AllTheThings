@@ -382,12 +382,12 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 							sourceQuests = { 78472 },	-- Keyflame: Attica Whiskervale
 							provider = { "n", 212419 },	-- Attica Whiskervale
 							coord = { 64.5, 18.8, HALLOWFALL },
+							sym = {{ "select", "itemID", 217342 }},	-- Dauntless Draught
 							groups = {
 								i(219198),	-- Attica's Cave Torch (QI!)
 								o(403458, {	-- Dauntless Draught
 									i(206203),	-- Dauntless Draught (QI!)
 								}),
-								i(217342),	-- Dauntless Draught
 							},
 						}),
 						q(78972, {	-- Harvest Havoc

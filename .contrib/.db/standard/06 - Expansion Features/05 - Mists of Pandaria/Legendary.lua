@@ -446,9 +446,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 					provider = { "n", 72695 },	-- Wrathion <The Black Prince>
 					coord = { 34.6, 53.8, TIMELESS_ISLE },
-					groups = {
-						i(102457),	-- Timeless Essence of the Black Dragonflight
-					},
+					sym = {{ "select", "itemID", 102457 }},	-- Timeless Essence of the Black Dragonflight
 				}),
 				q(33105, {	-- Judgment of the Black Prince
 					sourceQuests = { 33104 },	-- A Pandaren Legend

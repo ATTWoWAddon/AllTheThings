@@ -227,10 +227,10 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				races = ALLIANCE_ONLY,
 				isYearly = true,
 				lvl = 1,
-				groups = {
-					i(23123),	-- Blessed Wizard Oil
-					i(23122),	-- Consecrated Sharpening Stone
-				},
+				sym = {{ "select", "itemID",
+					23123,	-- Blessed Wizard Oil
+					23122,	-- Consecrated Sharpening Stone
+				}},
 			}),
 			q(12773, {	-- Darnassus
 				sourceQuest = 12753,	-- A Desperate Alliance
@@ -288,10 +288,10 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				races = HORDE_ONLY,
 				isYearly = true,
 				lvl = 1,
-				groups = {
-					i(23123),	-- Blessed Wizard Oil
-					i(23122),	-- Consecrated Sharpening Stone
-				},
+				sym = {{ "select", "itemID",
+					23123,	-- Blessed Wizard Oil
+					23122,	-- Consecrated Sharpening Stone
+				}},
 			}),
 			q(9262, {	-- Investigate the Scourge of Darnassus
 				qg = 16495,	-- Lieutenant Beitha <The Argent Dawn>
@@ -557,12 +557,14 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				coord = { 81.1, 60.6, EASTERN_PLAGUELANDS },
 				isYearly = true,
 				lvl = 50,
+				sym = {{ "select", "itemID",
+					23123,	-- Blessed Wizard Oil
+					23122,	-- Consecrated Sharpening Stone
+				}},
 				groups = {
 					objective(1, {	-- 0/1 Shadow of Doom slain
 						provider = { "n", 16143 },	-- Shadow of Doom
 					}),
-					i(23123),	-- Blessed Wizard Oil
-					i(23122),	-- Consecrated Sharpening Stone
 				},
 			}),
 			q(12788, {	-- Silvermoon
@@ -628,10 +630,10 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				cr = 16281,	-- Keeper of the Rolls <The Argent Dawn>
 				isYearly = true,
 				lvl = 60,
-				groups = {
-					i(23123),	-- Blessed Wizard Oil
-					i(23122),	-- Consecrated Sharpening Stone
-				},
+				sym = {{ "select", "itemID",
+					23123,	-- Blessed Wizard Oil
+					23122,	-- Consecrated Sharpening Stone
+				}},
 			}),
 			q(12787, {	-- The Undercity
 				sourceQuest = 12752,	-- Desperate Research
@@ -657,10 +659,10 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				cost = { { "i", 22484, 10 } },	-- Necrotic Rune
 				isYearly = true,
 				lvl = 50,
-				groups = {
-					i(23123),	-- Blessed Wizard Oil
-					i(23122),	-- Consecrated Sharpening Stone
-				},
+				sym = {{ "select", "itemID",
+					23123,	-- Blessed Wizard Oil
+					23122,	-- Consecrated Sharpening Stone
+				}},
 			}),
 		}),
 		n(14684, {	-- Balzaphon

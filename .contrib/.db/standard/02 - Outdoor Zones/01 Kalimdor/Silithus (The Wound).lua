@@ -409,9 +409,9 @@ maproot(KALIMDOR, {
 							maps = {
 								1476,	-- Twilight Highlands (Scenario)
 							},
+							sym = {{ "select", "itemID", 168613 }},	-- Tempered Scale of the Scarlet Broodmother
 							groups = {
 								i(168280),	-- Lost Scale of the Scarlet Broodmother (QI!)
-								i(168613),	-- Tempered Scale of the Scarlet Broodmother
 							},
 						}),
 						q(52428, {	-- Infusing the Heart

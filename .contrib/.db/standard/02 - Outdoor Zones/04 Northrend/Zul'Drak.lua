@@ -948,12 +948,12 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					sourceQuest = 12623,	-- To the Witch Doctor
 					qg = 28484,	-- Scalper Ahunae
 					coord = { 59.1, 56.2, ZULDRAK },
+					sym = {{ "select", "itemID", 20390 }},	-- Candy Bar
 					groups = {
 						i(39775),	-- Soothsayer's Sandals
 						i(39838),	-- Supple Belt of the Bloodletter
 						i(39796),	-- Boots of the Great Sacrifice
 						i(39798),	-- Ring of Ancestral Protectors
-						i(20390),	-- Candy Bar
 					},
 				}),
 				q(12919, {	-- The Storm King's Vengeance

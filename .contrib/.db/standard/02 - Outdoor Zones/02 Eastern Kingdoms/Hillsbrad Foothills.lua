@@ -720,6 +720,7 @@ maproot(EASTERN_KINGDOMS, HILLSBRAD_FOOTHILLS, {
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				sym = {{ "select", "itemID", 3728 }},	-- Tasty Lion Steak
 				groups = {
 					objective(1, {	-- 0/8 Mountain Lion slain
 						provider = { "n", 2406 },	-- Mountain Lion
@@ -732,7 +733,6 @@ maproot(EASTERN_KINGDOMS, HILLSBRAD_FOOTHILLS, {
 					i(3736, {	-- Recipe: Tasty Lion Steak (RECIPE!)
 						-- Moved to Trainers
 					}),
-					i(3728),	-- Tasty Lion Steak
 				},
 			}),
 			-- #if AFTER CATA

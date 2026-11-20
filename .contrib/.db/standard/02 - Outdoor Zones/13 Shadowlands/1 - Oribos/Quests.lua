@@ -229,7 +229,7 @@ maproot(SHADOWLANDS, ORIBOS, {
 				},
 				crs = { 151583 },	-- Secret Fish
 				_drop = { "isDaily" },
-				groups = { i(161475) },	-- Secret Fish Lure
+				sym = {{ "select", "itemID", 161475 }},	-- Secret Fish Lure
 			}),
 			q(62457, {	-- The Great Vault
 				provider = { "n", 173350 },	-- Ba'vol

@@ -158,11 +158,11 @@ maproot(ZANDALAR, ZULDAZAR, {
 					provider = { "n", 143555 },	-- Xander Silberman
 					coord = { 51.6, 58.2, ZANDALAR },
 					races = HORDE_ONLY,
-					groups = {
-						i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
-						i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
-						i(168578),	-- Sphere of Suppressed Force (Rank 1)
-					},
+					sym = {{ "select", "itemID",
+						168920,	-- Azerite-Encrusted Timequartz (Rank 1)
+						168442,	-- Roiling Blood of the Vanquished (Rank 1)
+						168578,	-- Sphere of Suppressed Force (Rank 1)
+					}},
 				}),
 				q(53053, {	-- To The Mugambala!
 					description = "You have to enable War Mode to get this quest.",

@@ -833,9 +833,7 @@ maproot(EASTERN_KINGDOMS, WESTERN_PLAGUELANDS, {
 				cost = { { "i", 12844, 25 } },	-- Argent Dawn Valor Token
 				timeline = { REMOVED_4_0_3 },
 				lvl = 55,
-				groups = {
-					i(18182),	-- Chromatic Mantle of the Dawn
-				},
+				sym = {{ "select", "itemID", 18182 }},	-- Chromatic Mantle of the Dawn
 			},
 			q(5092, {	-- Clear the Way
 				sourceQuests = {

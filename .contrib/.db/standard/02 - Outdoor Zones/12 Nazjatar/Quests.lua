@@ -1334,7 +1334,7 @@ maproot(NAZJATAR, {
 					{ 46.9, 61.4, NAZJATAR },	-- Alliance
 					{ 39.1, 54.3, NAZJATAR },	-- Horde
 				},
-				groups = { i(168093) },	-- Grimy Manapearl Bracelet
+				sym = {{ "select", "itemID", 168093 }},	-- Grimy Manapearl Bracelet
 			}),
 			q(56422, {	-- On Ghostly Wings
 				sourceQuest = 56321,	-- Saving Corin
@@ -1892,10 +1892,12 @@ maproot(NAZJATAR, {
 				provider = { "n", 150101 },	-- Lady Jaina Proudmoore
 				coord = { 40.2, 55.2, NAZJATAR },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					169482,	-- Benthic Leggings
+					169483,	-- Benthic Treads
+					169485,	-- Benthic Gauntlets
+				}},
 				groups = {
-					i(169482),	-- Benthic Leggings
-					i(169483),	-- Benthic Treads
-					i(169485),	-- Benthic Gauntlets
 					currency(1721),	-- Prismatic Manapearls x20
 				},
 			}),
@@ -1907,10 +1909,12 @@ maproot(NAZJATAR, {
 				provider = { "n", 151848 },	-- Lor'themar Theron
 				coord = { 48.5, 62.1, NAZJATAR },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					169482,	-- Benthic Leggings
+					169483,	-- Benthic Treads
+					169485,	-- Benthic Gauntlets
+				}},
 				groups = {
-					i(169482),	-- Benthic Leggings
-					i(169483),	-- Benthic Treads
-					i(169485),	-- Benthic Gauntlets
 					currency(1721),	-- Prismatic Manapearls
 				},
 			}),
@@ -2687,11 +2691,13 @@ maproot(NAZJATAR, {
 				provider = { "n", 153496 },	-- Adaru
 				coord = { 38.9, 30.3, NAZJATAR },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					169477,	-- Benthic Girdle
+					169478,	-- Benthic Bracers
+					169481,	-- Benthic Cloak
+				}},
 				groups = {
 					i(168948),	-- Dried Kelp (QI!)
-					i(169477),	-- Benthic Girdle
-					i(169478),	-- Benthic Bracers
-					i(169481),	-- Benthic Cloak
 				},
 			}),
 			q(55865, {	-- What We Know of the Naga
@@ -2702,11 +2708,13 @@ maproot(NAZJATAR, {
 				provider = { "n", 153492 },	-- Fenn
 				coord = { 38.9, 30.3, NAZJATAR },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					169477,	-- Benthic Girdle
+					169478,	-- Benthic Bracers
+					169481,	-- Benthic Cloak
+				}},
 				groups = {
 					i(168948),	-- Dried Kelp (QI!)
-					i(169477),	-- Benthic Girdle
-					i(169478),	-- Benthic Bracers
-					i(169481),	-- Benthic Cloak
 				},
 			}),
 			q(55426, {	-- What Will It Grow?

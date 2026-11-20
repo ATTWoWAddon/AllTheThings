@@ -628,9 +628,9 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ u = REAL_MONEY }, 
 					19232,	-- Innkeeper Haelthol <Innkeeper> (SCYRER)
 					19046,	-- Minalei (ALDOR)
 				},
+				sym = {{ "select", "itemID", 38233 }},	-- Path of Illidan
 				groups = {
 					i(184871),	-- Dark Portal
-					i(38233),	-- Path of Illidan
 					i(184865),	-- Reawakened Phase-Hunter (MOUNT!)
 				},
 			}),

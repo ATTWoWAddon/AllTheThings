@@ -630,9 +630,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					q(70833, {	-- Rumors of the Jeweled Whelplings
 						provider = { "n", 189065 },	-- Boss Magor
 						coord = { 46.9, 82.9, THE_WAKING_SHORES },
-						groups = {
-							i(200738),	-- Onyx Gem Cluster Map
-						},
+						sym = {{ "select", "itemID", 200738 }},	-- Onyx Gem Cluster Map
 					}),
 					q(72046, {	-- Dragon Isles Supplies
 						provider = { "n", 189226 },	-- Cataloger Jakes

@@ -1222,9 +1222,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				provider = { "n", 198846 },	-- Cataloger Jakes
 				coord = { 76.5, 34.2, THE_WAKING_SHORES },
 				lockCriteria = { 1, "questID", 70409 },	-- Archeologist Artifact Notes
-				groups = {
-					i(198854),	-- Archeologist Artifact Notes
-				},
+				sym = {{ "select", "itemID", 198854 }},	-- Archeologist Artifact Notes
 			}),
 			q(71141, {	-- Gills with Gall
 				sourceQuests = {

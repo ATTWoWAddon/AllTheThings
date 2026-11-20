@@ -404,8 +404,8 @@ maproot(EASTERN_KINGDOMS, BADLANDS, {
 				timeline = { REMOVED_4_0_3 },
 				cost = { { "i", 3404, 4 } },	-- Buzzard Wing
 				lvl = 33,
+				sym = {{ "select", "itemID", 4457 }},	-- Barbecued Buzzard Wing
 				groups = {
-					i(4457),	-- Barbecued Buzzard Wing
 					i(4609),	-- Recipe: Barbecued Buzzard Wing (available from a vendor still) (RECIPE!)
 				},
 			}),

@@ -618,9 +618,9 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 				requireSkill = COOKING,
 				races = HORDE_ONLY,
 				lvl = 15,
+				sym = {{ "select", "itemID", 5478 }},	-- Dig Rat Stew
 				groups = {
 					i(10919),	-- Apothecary Gloves
-					i(5478),	-- Dig Rat Stew
 					i(5487, {	-- Recipe: Dig Rat Stew (RECIPE!)
 						timeline = { REMOVED_4_3_0 },
 					}),

@@ -472,9 +472,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 				},
 				provider = { "n", 217565 },	-- Al'kubian
 				coord = { 60.0, 66.2, AZJ_KAHET },
-				groups = {
-					i(223287),	-- Atomized Salien Slime (QI!)
-				},
+				sym = {{ "select", "itemID", 223287 }},	-- Atomized Salien Slime (QI!)
 			}),
 			q(79715, {	-- Grand, Gutsy Solutions
 				sourceQuests = {

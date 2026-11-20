@@ -242,9 +242,7 @@ root(ROOTS.Professions, prof(SKINNING, bubbleDownSelf({ requireSkill = SKINNING 
 				},
 				qg = 98721,	-- Seymour <Skinning Trainer>
 				coord = { 45.7, 25.6, STORMHEIM },
-				groups = {
-					i(130102),	-- Mother's Skinning Knife (TOY!)
-				},
+				sym = {{ "select", "itemID", 130102 }},	-- Mother's Skinning Knife (TOY!)
 			}),
 			q(40151, {	-- Immaculate Stormscale
 				sourceQuest = 40145,	-- Under Down

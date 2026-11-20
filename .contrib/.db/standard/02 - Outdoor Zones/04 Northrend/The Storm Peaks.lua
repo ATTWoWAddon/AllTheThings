@@ -562,6 +562,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					qg = 29796,	-- Gretta the Arbiter
 					coord = { 50.8, 65.6, THE_STORM_PEAKS },
 					isDaily = true,
+					sym = {{ "select", "itemID", 44751 }},	-- Hyldnir Spoils
 					groups = {
 						objective(1, {	-- 0/6 Hyldsmeet Warbear slain
 							providers = {
@@ -569,7 +570,6 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 								{ "n", 30174 },	-- Hyldsmeet Warbear
 							},
 						}),
-						i(44751),	-- Hyldnir Spoils
 					},
 				}),
 				q(12967, {	-- Battling the Elements
@@ -662,9 +662,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					qg = 29796,	-- Gretta the Arbiter
 					coord = { 50.8, 65.6, THE_STORM_PEAKS },
 					isDaily = true,
-					groups = {
-						i(44751),	-- Hyldnir Spoils
-					},
+					sym = {{ "select", "itemID", 44751 }},	-- Hyldnir Spoils
 				}),
 				q(12824, {	-- Demolitionist Extraordinaire
 					sourceQuest = 12823,	-- A Flawless Plan
@@ -950,6 +948,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					qg = 29796,	-- Gretta the Arbiter
 					coord = { 50.8, 65.6, THE_STORM_PEAKS },
 					isDaily = true,
+					sym = {{ "select", "itemID", 44751 }},	-- Hyldnir Spoils
 					groups = {
 						objective(1, {	-- 0/6 Exhausted Vrykul disciplined
 							providers = {
@@ -957,7 +956,6 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 								{ "n", 30146 },	-- Exhausted Vrykul
 							},
 						}),
-						i(44751),	-- Hyldnir Spoils
 					},
 				}),
 				q(12900, {	-- Making a Harness
@@ -1231,9 +1229,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					qg = 29796,	-- Gretta the Arbiter
 					coord = { 50.8, 65.6, THE_STORM_PEAKS },
 					isDaily = true,
-					groups = {
-						i(44751),	-- Hyldnir Spoils
-					},
+					sym = {{ "select", "itemID", 44751 }},	-- Hyldnir Spoils
 				}),
 				q(12980, {	-- The Armor's Secrets
 					sourceQuest = 12979,	-- Armor of Darkness

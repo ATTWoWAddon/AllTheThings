@@ -1015,9 +1015,7 @@ root(ROOTS.ExpansionFeatures,
 									provider = { "n", 149418 },	-- Maiev Shadowsong
 									coord = { 47.5, 34.3, DARKSHORE },
 									races = ALLIANCE_ONLY,
-									groups = {
-										i(166525),	-- Nightwreathed Egg
-									},
+									sym = {{ "select", "itemID", 166525 }},	-- Nightwreathed Egg
 								}),
 								q(54044, {	-- Black Moon Rising
 									sourceQuest = 54042,	-- Trouble in Darkshore

@@ -2320,9 +2320,7 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 				cost = { { "i", 159, 1 } },	-- Refreshing Spring Water
 				races = ALLIANCE_ONLY,
 				repeatable = true,
-				groups = {
-					i(4536),	-- Shiny Red Apple
-				},
+				sym = {{ "select", "itemID", 4536 }},	-- Shiny Red Apple
 			}),
 			q(47, {	-- Gold Dust Exchange
 				qg = 241,	-- Remy "Two Times"

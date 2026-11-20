@@ -999,10 +999,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						sourceQuest = 56541,	-- The Engine of Nalak'sha
 						provider = { "n", 154418 },	-- Ra-den
 						coord = { 45.3, 74.3, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
-						groups = {
-							i(168573),	-- Death-Resistant Leaf (Rank 1)
-							i(168436),	-- Focused Star Point (Rank 1)
-						},
+						sym = {{ "select", "itemID",
+							168573,	-- Death-Resistant Leaf (Rank 1)
+							168436,	-- Focused Star Point (Rank 1)
+						}},
 					}),
 					q(56541, {	-- The Engine of Nalak'sha
 						sourceQuest = 56540,	-- Proof of Tenacity

@@ -472,9 +472,9 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					races = HORDE_ONLY,
 					lvl = lvlsquish(12, 12, 1),
+					sym = {{ "select", "itemID", 22645 }},	-- Crunchy Spider Surprise
 					groups = {
 						i(22647),	-- Recipe: Crunchy Spider Surprise (RECIPE!)
-						i(22645),	-- Crunchy Spider Surprise
 					},
 				}),
 				q(9159, {	-- Curbing the Plague

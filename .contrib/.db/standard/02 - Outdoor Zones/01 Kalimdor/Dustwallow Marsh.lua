@@ -1598,11 +1598,11 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 				timeline = { ADDED_2_3_0, REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				lvl = 30,
+				sym = {{ "select", "itemID", 19221 }},	-- Darkmoon Special Reserve
 				groups = {
 					objective(1, {	-- Fish Paste Tested
 						provider = { "i", 33166 },	-- Pagle's Fish Paste, Extra Strength
 					}),
-					i(19221),	-- Darkmoon Special Reserve
 				},
 			}),
 			q(13826, {	-- Nat Pagle, Angler Extreme
@@ -2277,9 +2277,7 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 				qg = 4880,	-- "Stinky" Ignatz
 				coord = { 46.9, 17.5, DUSTWALLOW_MARSH },
 				lvl = lvlsquish(30, 30, 15),
-				groups = {
-					i(3825),	-- Elixir of Fortitude
-				},
+				sym = {{ "select", "itemID", 3825 }},	-- Elixir of Fortitude
 			},
 			q(27239, {	-- Survey Alcaz Island
 				sourceQuest = 27238,	-- Jaina Must Know

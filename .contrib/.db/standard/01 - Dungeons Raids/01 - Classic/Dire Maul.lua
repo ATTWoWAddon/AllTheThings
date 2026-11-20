@@ -879,10 +879,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					timeline = { REMOVED_4_0_3 },
 					maps = GORDOK_COMMONS_MAPS,
 					lvl = 56,
-					groups = {
-						i(18269),	-- Gordok Green Grog
-						i(18284),	-- Kreeg's Stout Beatdown
-					},
+					sym = {{ "select", "itemID",
+						18269,	-- Gordok Green Grog
+						18284,	-- Kreeg's Stout Beatdown
+					}},
 				}),
 				q(27114, {	-- The Gordok Taste Test
 					description = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
@@ -890,10 +890,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					timeline = { ADDED_4_0_3 },
 					maps = GORDOK_COMMONS_MAPS,
 					lvl = lvlsquish(42, 42, 15),
-					groups = {
-						i(18269),	-- Gordok Green Grog
-						i(18284),	-- Kreeg's Stout Beatdown
-					},
+					sym = {{ "select", "itemID",
+						18269,	-- Gordok Green Grog
+						18284,	-- Kreeg's Stout Beatdown
+					}},
 				}),
 				q(7503, {	-- The Greatest Race of Hunters
 					providers = {

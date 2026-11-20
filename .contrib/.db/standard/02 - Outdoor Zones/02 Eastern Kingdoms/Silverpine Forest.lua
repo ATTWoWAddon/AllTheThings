@@ -1420,11 +1420,11 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 				cost = { { "i", 3164, 6 } },	-- Discolored Worg Heart
 				races = HORDE_ONLY,
 				lvl = 10,
+				sym = {{ "select", "itemID", 4596 }},	-- Discolored Healing Potion
 				groups = {
 					i(4597, {	-- Recipe: Discolored Healing Potion (RECIPE!)
 						description = "This item can be sold on the Neutral Auction House to Alliance Alchemists for a... nominal fee.\n\nOnly naturally accessible to Horde Alchemists.",
 					}),
-					i(4596),	-- Discolored Healing Potion
 				},
 			}),
 			q(1359, {	-- Zinge's Delivery

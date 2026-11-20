@@ -12,19 +12,19 @@ root(ROOTS.ExpansionFeatures,
 							qg = 77377,	-- Kristen Stoneforge
 							races = ALLIANCE_ONLY,
 							isDaily = true,
-							groups = {
-								i(120301),	-- Armor Enhancement Token
-								i(120302),	-- Weapon Enhancement Token
-							},
+							sym = {{ "select", "itemID",
+								120301,	-- Armor Enhancement Token
+								120302,	-- Weapon Enhancement Token
+							}},
 						}),
 						q(38188, {	-- Scrap Meltdown
 							qg = 79815,	-- Grun'lek
 							races = HORDE_ONLY,
 							isDaily = true,
-							groups = {
-								i(120301),	-- Armor Enhancement Token
-								i(120302),	-- Weapon Enhancement Token
-							},
+							sym = {{ "select", "itemID",
+								120301,	-- Armor Enhancement Token
+								120302,	-- Weapon Enhancement Token
+							}},
 						}),
 						q(37092, {	-- Scraps of Iron
 							qg = 77377,	-- Kristen Stoneforge <Quartermaster>

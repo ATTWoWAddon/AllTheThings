@@ -887,9 +887,9 @@ maproot(KALIMDOR, DARKSHORE, {
 				requireSkill = COOKING,
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				sym = {{ "select", "itemID", 5477 }},	-- Strider Stew
 				groups = {
 					i(5486),	-- Recipe: Strider Stew (RECIPE!)
-					i(5477),	-- Strider Stew
 				},
 			}),
 			q(1580, {	-- Electropellers

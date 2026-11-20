@@ -182,11 +182,11 @@ maproot(KUL_TIRAS, BORALUS, {
 					provider = { "n", 143560 },	-- Marshal Gabriel
 					coord = { 56.4, 25.8, BORALUS },
 					races = ALLIANCE_ONLY,
-					groups = {
-						i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
-						i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
-						i(168578),	-- Sphere of Suppressed Force (Rank 1)
-					},
+					sym = {{ "select", "itemID",
+						168920,	-- Azerite-Encrusted Timequartz (Rank 1)
+						168442,	-- Roiling Blood of the Vanquished (Rank 1)
+						168578,	-- Sphere of Suppressed Force (Rank 1)
+					}},
 				}),
 			})),
 			n(OUTPOSTS, {

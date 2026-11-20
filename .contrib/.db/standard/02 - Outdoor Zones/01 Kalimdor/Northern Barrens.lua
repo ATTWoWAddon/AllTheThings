@@ -2406,11 +2406,11 @@ maproot(KALIMDOR, NORTHERN_BARRENS, {
 				races = HORDE_ONLY,
 				classes = { ROGUE },
 				lvl = 16,
+				sym = {{ "select", "itemID", 7676 }},	-- Thistle Tea
 				groups = {
 					objective(1, {	-- 0/1 Southsea Treasure
 						provider = { "i", 7968 },	-- Southsea Treasure
 					}),
-					i(7676),	-- Thistle Tea
 				},
 			}),
 			q(26642, {	-- Preserving the Barrens

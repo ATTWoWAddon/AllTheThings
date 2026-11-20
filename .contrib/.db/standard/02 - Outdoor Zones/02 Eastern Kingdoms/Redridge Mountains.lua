@@ -639,6 +639,7 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				classes = { ROGUE },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
+				sym = {{ "select", "itemID", 7676 }},	-- Thistle Tea
 				groups = {
 					objective(1, {	-- 0/1 Horns of Nez'ra
 						provider = { "i", 7906 },	-- Horns of Nez'ra (QI!)
@@ -651,7 +652,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 							437,	-- Blackrock Renegade
 						},
 					}),
-					i(7676),	-- Thistle Tea
 				},
 			}),
 			q(126, {	-- Howling in the Hills
@@ -979,8 +979,8 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 15,
+				sym = {{ "select", "itemID", 1082 }},	-- Redridge Goulash
 				groups = {
-					i(1082),	-- Redridge Goulash
 					i(2699),	-- Recipe: Redridge Goulash (RECIPE!)
 				},
 			}),
@@ -1062,6 +1062,7 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				lvl = 16,
+				sym = {{ "select", "itemID", 3663 }},	-- Murloc Fin Soup
 				groups = {
 					objective(1, {	-- 0/10 Spotted Sunfish
 						provider = { "i", 1467 },	-- Spotted Sunfish (QI!)
@@ -1075,7 +1076,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 							14270,	-- Squiddic
 						},
 					}),
-					i(3663),	-- Murloc Fin Soup
 					i(1322),	-- Fishliver Oil
 					i(3680),	-- Recipe: Murloc Fin Soup (RECIPE!)
 				},
