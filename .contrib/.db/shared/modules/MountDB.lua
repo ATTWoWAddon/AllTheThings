@@ -84,9 +84,9 @@ i(0, 446902);		-- Polly Roger
 --- Wrath/CATA/MOP CLASSIC CN ONLY ---
 i(265944, 1250045);	-- Ashened Cataclysm (CN ONLY)
 -- #if AFTER 5.5.2
-i(235562, 1217476);	-- Blazing Royal Fire Hawk		(CN Only Classic Version)
+i(235562, 1217476);	-- Flaming Royal Fire Hawk		(CN Only Classic Version)
 -- #else
-i(0, 1217476);		-- Blazing Royal Fire Hawk		(CN Only Classic Version)
+i(0, 1217476);		-- Flaming Royal Fire Hawk		(CN Only Classic Version)
 -- #endif
 -- #if AFTER 5.5.2
 i(226805, 459486);	-- Golden Ashes of Al'ar		(CN Only)
