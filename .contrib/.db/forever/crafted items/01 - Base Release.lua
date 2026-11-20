@@ -3,12 +3,6 @@
 ---------------------------------------------
 root(ROOTS.Craftables, {
 	prof(ALCHEMY, {
-		n(COMMON_VENDOR_ITEMS, {
-			i(3371),	-- Empty Vial
-			i(3372),	-- Leaded Vial
-			i(8925),	-- Crystal Vial
-			i(18256),	-- Imbued Vial
-		}),
 		filter(CONSUMABLES, {
 			i(9155),	-- Arcane Elixir
 			i(10592),	-- Catseye Draught
@@ -103,13 +97,6 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	prof(BLACKSMITHING, {
-		n(COMMON_VENDOR_ITEMS, {
-			i(5956),	-- Blacksmithing Hammer
-			i(3857),	-- Coal
-			i(18567),	-- Elemental Flux
-			i(3466),	-- Strong Flux
-			i(2880),	-- Weak Flux
-		}),
 		prof(ARMORSMITH, {
 			i(17014),	-- Dark Iron Bracers
 			i(11604),	-- Dark Iron Plate
@@ -334,31 +321,6 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	prof(COOKING, {
-		n(COMMON_VENDOR_ITEMS, {
-			groups = appendAllGroups(
-				sharedData({	-- Vanilla cooking reagents
-				}, {
-					i(159),	-- Refreshing Spring Water
-					i(2678),	-- Mild Spices
-					i(2692),	-- Hot Spices
-					i(3713),	-- Soothing Spices
-				}),
-				sharedData({
-					providers = {
-						{ "n", 1328 },	-- Elly Langston <Barmaid>
-						{ "n", 5611 },	-- Barkeep Morag
-					},
-				}, {
-					i(2594),	-- Flagon of Dwarven Honeymead/Mead
-					i(2593),	-- Flask of Stormwind Tawny
-					i(2595),	-- Jug of Badlands Bourbon
-					i(2596),	-- Skin of Dwarven Stout
-				}),
-				{
-					i(1179),	-- Ice Cold Milk
-				}
-			),
-		}),
 		i(13935),	-- Baked Salmon
 		i(4457),	-- Barbecued Buzzard Wing
 		i(2888),	-- Beer Basted Boar Ribs
@@ -439,11 +401,6 @@ root(ROOTS.Craftables, {
 		i(733),	-- Westfall Stew
 	}),
 	prof(ENCHANTING, {
-		n(COMMON_VENDOR_ITEMS, {
-			i(6217),	-- Copper Rod
-			i(4470),	-- Simple Wood
-			i(11291),	-- Star Wood
-		}),
 		header(HEADERS.Spell, 13262, {	-- Disenchant
 			-- Dust:
 			i(11176, {	-- Dream Dust
@@ -546,10 +503,6 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	prof(ENGINEERING, {
-		n(COMMON_VENDOR_ITEMS, {
-			i(4400),	-- Heavy Stock
-			i(4399),	-- Wooden Stock
-		}),
 		prof(GNOMISH_ENGINEERING, {
 			n(ARMOR, {
 				i(10545, {	-- Gnomish Goggles
@@ -805,37 +758,6 @@ root(ROOTS.Craftables, {
 		i(3530),	-- Wool Bandage
 	}),
 	prof(FISHING, {
-		n(COMMON_VENDOR_ITEMS, sharedData({
-			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-			--[[coords = {
-				{ 47.8, 6.6, MAP.IRONFORGE },
-				{ 55.8, 47.0, MAP.THUNDER_BLUFF },
-				{ 81.0, 30.8, MAP.UNDERCITY },
-				{ 45.8, 58.5, MAP.STORMWIND_CITY },
-				{ 46.9, 56.9, MAP.DARNASSUS },
-				{ 66.6, 41.6, MAP.ORGRIMMAR },
-			},
-			providers = {
-				{ "n", 5494 },	-- Catherine Leland <Fishing Supplier>
-				{ "n", 4574 },	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
-				{ "n", 3029 },	-- Sewa Mistrunner <Fishing Supplies>
-				{ "n", 3333 },	-- Shankys <Fishing Supplies>
-				{ "n", 5162 },	-- Tansy Puddlefizz <Fishing Supplier>
-				{ "n", 4222 },	-- Voloren <Fishing Supplies>
-			},]]
-		}, {
-			i(6533, { isLimited = true, }),	-- Aquadynamic Fish Attractor
-			i(6532),	-- Bright Baubles
-			i(6256),	-- Fishing Pole
-			i(6530),	-- Nightcrawlers
-			i(6529),	-- Shiny Bauble
-			i(6365, {	-- Strong Fishing Pole
-				isLimited = true,
-			}),
-			i(273636, {	-- Chef's Knife
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-		})),
 		filter(ONE_HANDED_MACES, {
 			i(6360, {	-- Steelscale Crushfish
 				maps_disp = {
@@ -2184,20 +2106,6 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	prof(LEATHERWORKING, {
-		n(COMMON_VENDOR_ITEMS, {
-			i(2325),	-- Black Dye
-			i(6260),	-- Blue Dye
-			i(2320),	-- Coarse Thread
-			i(2321),	-- Fine Thread
-			i(2605),	-- Green Dye
-			i(4340),	-- Grey Dye
-			i(8343),	-- Heavy Silken Thread
-			i(4342),	-- Purple Dye
-			i(2604),	-- Red Dye
-			i(14341),	-- Rune Thread
-			i(4289),	-- Salt
-			i(4291),	-- Silken Thread
-		}),
 		prof(DRAGONSCALE_LEATHERWORKING, {
 			filter(MAIL, {
 				i(15052),	-- Black Dragonscale Leggings
@@ -3330,12 +3238,6 @@ root(ROOTS.Craftables, {
 		i(10922),	-- Wound Poison IV
 	}),
 	prof(SKINNING, {
-		n(COMMON_VENDOR_ITEMS, {
-			i(7005),	-- Skinning Knife
-			i(277114, {	-- Apprentice's Skinning Satchel
-				timeline = { TIMELINE.ADDED_1_60_1 },
-			}),
-		}),
 		spell(8613, {	-- Skinning
 			-- Base leathers:
 			i(4234, {	-- Heavy Leather
@@ -3520,23 +3422,6 @@ root(ROOTS.Craftables, {
 		}),
 	}),
 	prof(TAILORING, {
-		n(COMMON_VENDOR_ITEMS, {
-			i(2325),	-- Black Dye
-			i(2324),	-- Bleach
-			i(6260),	-- Blue Dye
-			i(2320),	-- Coarse Thread
-			i(2321),	-- Fine Thread
-			i(2605),	-- Green Dye
-			i(4340),	-- Grey Dye
-			i(8343),	-- Heavy Silken Thread
-			i(6261),	-- Orange Dye
-			i(10290),	-- Pink Dye
-			i(4342),	-- Purple Dye
-			i(2604),	-- Red Dye
-			i(14341),	-- Rune Thread
-			i(4291),	-- Silken Thread
-			i(4341),	-- Yellow Dye
-		}),
 		n(ARMOR, {
 			cl(MAGE, {
 				i(14152),	-- Robe of the Archmage

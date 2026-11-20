@@ -292,10 +292,6 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		}),
 	}),
 	prof(COOKING, {
-		n(COMMON_VENDOR_ITEMS, {
-			i(10284),	-- Simple Flour
-			i(272941),	-- Thick Logs
-		}),
 		filter(CONSUMABLES, {
 			i(250067),	-- Bat Hachee
 			i(250074),	-- Bear Brisket
@@ -524,9 +520,6 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		}),
 		i(268416, {	-- Uncommon Herb Seeds
 			description = "Gathered from Briarthorn and Stranglekelp.",
-		}),
-		n(COMMON_VENDOR_ITEMS, {
-			i(277113),	-- Apprentice's Herb Pouch
 		}),
 		filter(MISC, {
 			i(279964),	-- Greenhouse
@@ -831,9 +824,6 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 		}),
 	}),
 	prof(MINING, {
-		n(COMMON_VENDOR_ITEMS, {
-			i(277115),	-- Apprentice's Mining Pack
-		}),
 		header(HEADERS.Spell, 2656, {
 			i(249726, {	-- Azerothium Bar
 				cost = { { "i", 249426, 2 }, { "i", 3857, 1 } },	-- 2x Pitchblende, 1x Coal
