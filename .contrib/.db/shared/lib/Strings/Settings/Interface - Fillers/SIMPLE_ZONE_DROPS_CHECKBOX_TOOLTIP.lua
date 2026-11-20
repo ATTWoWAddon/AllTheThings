@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		-- TODO: cn = "",
+		cn = "启用此选项后，生物的地区掉落会直接显示在鼠标提示中，而不是收纳在“地区掉落”标题下。",
 		-- TODO: tw = "",
 	},
 })

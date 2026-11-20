@@ -14,7 +14,7 @@ REMIX_WRATH = createHeader({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		-- TODO: cn = "",
+		cn = "巫妖王之怒：幻境新生",
 		-- TODO: tw = "",
 	},
 	-- description = {
