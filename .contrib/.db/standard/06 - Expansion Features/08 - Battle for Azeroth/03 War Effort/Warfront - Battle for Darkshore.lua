@@ -109,7 +109,7 @@ root(ROOTS.ExpansionFeatures,
 							148497,	-- Burninator Mark V
 							149141,	-- Burninator Mark V
 							147845,	-- Commander Drald
-							148025,	-- Commander Ralesh
+							148025,	-- Commander Ral'esh
 							147260,	-- Conflagros
 							149661,	-- Croz Bloodrage
 							149655,	-- Croz Bloodrage
@@ -121,8 +121,8 @@ root(ROOTS.ExpansionFeatures,
 							149662,	-- Grimhorn
 							147240,	-- Hydrath
 							149657,	-- Madfeather
-							147701,	-- Moxo The Beheader
-							147970,	-- Mrggrmarr
+							147701,	-- Moxo the Beheader
+							147970,	-- Mrggr'marr
 							147758,	-- Onu
 							149664,	-- Orwell Stevenson
 							149659,	-- Orwell Stevenson
@@ -130,11 +130,11 @@ root(ROOTS.ExpansionFeatures,
 							149665,	-- Scalefiend
 							149663,	-- Shadowclaw
 							147751,	-- Shattershard
-							147897,	-- Soggoth The Slitherer
-							147332,	-- Stonebinder Ssravess
+							147897,	-- Soggoth the Slitherer
+							147332,	-- Stonebinder Ssra'vess
 							147435,	-- Thelar Moonstrike
 							147942,	-- Twilight Prophet Graeme
-							147664,	-- Zimkaga
+							147664,	-- Zim'kaga
 						},
 						groups = {
 							n(FACTION_HEADER_ALLIANCE, {
@@ -420,7 +420,7 @@ root(ROOTS.ExpansionFeatures,
 								i(166790),	-- Highborne Memento (TOY!)
 							},
 						}),
-						n(148025, {	-- Commander Ralesh
+						n(148025, {	-- Commander Ral'esh
 							allianceQuestID = 54426,	-- Commander Ralesh [Alliance]
 							hordeQuestID = 54427,	-- Commander Ralesh [Horde]
 							isWeekly = true,
@@ -527,7 +527,7 @@ root(ROOTS.ExpansionFeatures,
 							isWeekly = true,
 							coord = { 44.03, 48.21, DARKSHORE },
 						}),
-						n(147701, {	-- Moxo The Beheader [A Only]
+						n(147701, {	-- Moxo the Beheader [A Only]
 							-- questID = 54430,	-- Moxo The Beheader [Alliance]
 							races = ALLIANCE_ONLY,
 							questID = 54277,
@@ -543,7 +543,7 @@ root(ROOTS.ExpansionFeatures,
 								i(166434),	-- Captured Umber Nightsaber (MOUNT!)
 							},
 						}),
-						n(147970, {	-- Mrggrmarr
+						n(147970, {	-- Mrggr'marr
 							allianceQuestID = 54408,	-- Mrggrmarr [Alliance]
 							hordeQuestID = 54409,	-- Mrggrmarr [Horde]
 							isWeekly = true,
@@ -605,7 +605,7 @@ root(ROOTS.ExpansionFeatures,
 							isWeekly = true,
 							coord = { 43.48, 29.38, DARKSHORE },
 						}),
-						n(147897, {	-- Soggoth The Slitherer
+						n(147897, {	-- Soggoth the Slitherer
 							allianceQuestID = 54320,	-- Soggoth The Slitherer [Alliance]
 							hordeQuestID = 54321,	-- Soggoth The Slitherer [Horde]
 							isWeekly = true,
@@ -614,7 +614,7 @@ root(ROOTS.ExpansionFeatures,
 								i(166454),	-- Void Jelly (PET!)
 							},
 						}),
-						n(147332, {	-- Stonebinder Ssravess
+						n(147332, {	-- Stonebinder Ssra'vess
 							allianceQuestID = 54247,	-- Stonebinder Ssravess [Alliance]
 							hordeQuestID = 54248,	-- Stonebinder Ssravess [Horde]
 							isWeekly = true,

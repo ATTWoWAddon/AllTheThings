@@ -536,7 +536,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 				}),
 				q(74523, {	-- A Traitor's Due
 					sourceQuests = { 74521 },	-- A Flame, Extinguished
-					provider = { "n", 202810 },	-- Seballian
+					provider = { "n", 202810 },	-- Sabellian
 					maps = { 2171, 2172 },	-- Aberrus, the Shadowed Crucible
 				}),
 				q(74525, {	-- Honorbound

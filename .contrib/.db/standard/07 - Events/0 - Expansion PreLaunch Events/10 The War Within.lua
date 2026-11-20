@@ -264,7 +264,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			}),
 		}),
 		n(VENDORS, {
-			n(223710, {	-- Rememberance Amuul
+			n(223710, {	-- Remembrancer Amuul
 				coord = { 33.3, 84.6, AEGWYNNS_GALLERY },	-- Legion Dalaran, Aegwynn's Gallery
 				groups = {
 					filter(MISC, {

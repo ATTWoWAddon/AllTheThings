@@ -61,7 +61,7 @@ maproot(ZANDALAR, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 					}),
 				},
 			}),
-			n(140137, {	-- Bugcatacher Cal'yoon
+			n(140137, {	-- Bugcatcher Cal'yoon
 				coord = { 77.0, 15.8, ZULDAZAR },
 				races = HORDE_ONLY,
 				sym = {

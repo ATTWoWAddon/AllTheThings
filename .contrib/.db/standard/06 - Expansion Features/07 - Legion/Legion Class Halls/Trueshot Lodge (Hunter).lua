@@ -209,7 +209,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 								40402,	-- Clandestine Operation (H non-BE)
 								40403,	-- Clandestine Operation (Blood Elf)
 							},
-							provider = { "n", 100190 },	-- Vareesa Windrunner
+							provider = { "n", 100190 },	-- Vereesa Windrunner
 							coord = { 32.3, 32.5, BROKEN_SHORE },
 							groups = {
 								o(248419, {	-- Thas'dorah, Legacy of the Windrunners

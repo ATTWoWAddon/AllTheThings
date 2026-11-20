@@ -1204,7 +1204,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						}),
 						q(54094, {	-- A Goblin's Definition of Success
 							sourceQuests = { 54028 },	-- Mech versus Airship
-							provider = { "n", 146623 },	-- G.M.O.D.
+							provider = { "n", 146623 },	-- G.M.O.D
 							coord = { 87.6, 53.5, TIRAGARDE_SOUND },
 							races = HORDE_ONLY,
 						}),

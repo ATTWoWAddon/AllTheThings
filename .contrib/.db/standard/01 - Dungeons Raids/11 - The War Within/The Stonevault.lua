@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					},
 				}),
 				e(2582, {	-- Void Speaker Eirich
-					crs = { 213119 },	-- High Speaker Eirich
+					crs = { 213119 },	-- Void Speaker Eirich
 					groups = {
 						ach(40643),	-- The Stonevault
 						i(221091),	-- Cutting-Edge Sermon
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2582, {	-- Void Speaker Eirich
-					crs = { 213119 },	-- High Speaker Eirich
+					crs = { 213119 },	-- Void Speaker Eirich
 					groups = {
 						ach(40644),	-- Heroic: The Stonevault
 					},
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2582, {	-- Void Speaker Eirich
-					crs = { 213119 },	-- High Speaker Eirich
+					crs = { 213119 },	-- Void Speaker Eirich
 					groups = {
 						ach(40648),	-- Mythic: The Stonevault
 						ach(61602, {timeline = { ADDED_12_0_0 }}),	-- Mythic: The Stonevault Guild Run

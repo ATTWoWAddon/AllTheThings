@@ -536,7 +536,7 @@ maproot(BROKEN_ISLES, HIGHMOUNTAIN, {
 		}),
 		q(39572, {	-- Moozy's Adventure
 			sourceQuests = { 39323 },	-- Moozy's Sojourn
-			provider = { "n", 95130 },	-- Mooze Waterwise
+			provider = { "n", 95130 },	-- Moozy Waterwise
 			coord = { 37.5, 64.2, HIGHMOUNTAIN },
 			groups = { i(121724) },	-- Whitewater Safety Blanket
 		}),

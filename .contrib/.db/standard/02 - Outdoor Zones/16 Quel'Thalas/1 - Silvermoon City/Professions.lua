@@ -210,7 +210,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 					i(240991),	-- Sunglass Vial+
 				},
 			}),
-			n(247420, {	-- Camberon's Coaching Cauldron
+			n(247420, {	-- Camberon's Cauldron
 				coord = { 47.0, 51.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				groups = {
 					r(1230892, {	-- Bouquet of Herbs

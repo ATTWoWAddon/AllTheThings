@@ -17,7 +17,7 @@ root(ROOTS.Zones, {
 		description = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		groups = {
 			q(49851, {	-- Cataclysm First Responder (Horde)
-				sourceQuests = { 49846 },	-- War on Two Fronts (Cataclysm)
+				sourceQuests = { 49846 },	-- Wars on Two Fronts (Cataclysm)
 				timeline = { ADDED_7_3_5 },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
@@ -51,7 +51,7 @@ root(ROOTS.Zones, {
 		description = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		groups = {
 			q(49865, {	-- Cataclysm First Responder (Alliance)
-				sourceQuest = 49846,	-- War on Two Fronts (Cataclysm)
+				sourceQuest = 49846,	-- Wars on Two Fronts (Cataclysm)
 				timeline = { ADDED_7_3_5 },
 				races = ALLIANCE_ONLY,
 				isBreadcrumb = true,

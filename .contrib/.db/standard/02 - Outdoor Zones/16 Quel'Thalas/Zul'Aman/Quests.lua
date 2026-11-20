@@ -697,7 +697,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ZULAMAN, {
 				}),
 				q(90482, {	-- Cuisine Connection
 					sourceQuests = { 90481 },	-- I Have a Permit
-					provider = { "n", 242394 },	-- Amaxel
+					provider = { "n", 242394 },	-- Amaxi
 					coord = { 47.2, 24.6, MAP.MIDNIGHT.ZULAMAN },
 					qi = 241013,	-- Zapgut Eel Stomach (QI!)
 					groups = {
@@ -753,7 +753,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ZULAMAN, {
 				}),
 				q(90486, {	-- Dangerous Delicacies
 					sourceQuests = { 90482 },	-- Cuisine Connection
-					provider = { "n", 242394 },	-- Amaxel
+					provider = { "n", 242394 },	-- Amaxi
 					coord = { 47.2, 24.6, MAP.MIDNIGHT.ZULAMAN },
 				}),
 				q(90568, {	-- Unlikely Friends

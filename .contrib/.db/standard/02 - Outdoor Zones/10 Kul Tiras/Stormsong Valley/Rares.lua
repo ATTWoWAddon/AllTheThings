@@ -431,7 +431,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 					}),
 				},
 			}),
-			n(140398, {	-- Zeritaj
+			n(140398, {	-- Zeritarj
 				questID = 53624,
 				coord = { 31.7, 55.1, STORMSONG_VALLEY },
 			}),
