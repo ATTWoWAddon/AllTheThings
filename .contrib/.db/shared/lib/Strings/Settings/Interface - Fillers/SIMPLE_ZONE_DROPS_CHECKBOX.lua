@@ -12,7 +12,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		-- TODO: ko = "",
-		cn = "简化区域掉落",
+		cn = "简化地区掉落",
 		-- TODO: tw = "",
 	},
 })
