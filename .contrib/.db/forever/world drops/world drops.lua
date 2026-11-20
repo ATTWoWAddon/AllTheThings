@@ -4035,14 +4035,12 @@ root(ROOTS.WorldDrops, {
 		--
 		-- Cloth:
 		i(14256, {	-- Felcloth
-			description = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
 			maps = {
 				MAP.DIRE_MAUL_WARPWOOD_QUARTER,
 				MAP.FELWOOD,
 			},
 		}),
 		i(2589, {	-- Linen Cloth
-			description = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				MAP.DUN_MOROGH,
 				MAP.DUROTAR,
@@ -4056,7 +4054,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(4338, {	-- Mageweave Cloth
-			description = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				MAP.BADLANDS,
 				MAP.BURNING_STEPPES,
@@ -4068,7 +4065,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(14047, {	-- Runecloth
-			description = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				MAP.BLACKROCK_DEPTHS,
 				MAP.BLASTED_LANDS,
@@ -4080,7 +4076,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(4306, {	-- Silk Cloth
-			description = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.DESOLACE,
@@ -4093,7 +4088,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(2592, {	-- Wool Cloth
-			description = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				MAP.ASHENVALE,
 				MAP.BLACKFATHOM_DEEPS,
@@ -4104,7 +4098,6 @@ root(ROOTS.WorldDrops, {
 		}),
 		-- Silk:
 		i(14227, {	-- Ironweb Spider Silk
-			description = "Drops from spiders in the level bracket 45-60.",
 			crs = {
 				1821,	-- Carrion Lurker
 				5858,	-- Greater Lava Spider
@@ -4125,7 +4118,6 @@ root(ROOTS.WorldDrops, {
 				5857,	-- Searing Lava Spider
 				1822,	-- Venom Mist Lurker
 			},
-			description = "Drops from spiders in the level bracket 45-60.",
 		}),
 		i(3182, {	-- Spider's Silk
 			description = "Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
@@ -4154,7 +4146,6 @@ root(ROOTS.WorldDrops, {
 				1824,	-- Plague Lurker
 				1822,	-- Venom Mist Lurker
 			},
-			description = "Drops from spiders in the level bracket 32-60.",
 			maps = {
 				MAP.DUSTWALLOW_MARSH,
 				MAP.SEARING_GORGE,
@@ -4440,7 +4431,6 @@ root(ROOTS.WorldDrops, {
 				12380,	-- Unliving Resident
 				12377,	-- Wailing Spectre
 			},
-			description = "Drops from Undead creatures in the given zones.",
 			maps = {
 				MAP.EASTERN_PLAGUELANDS,
 				MAP.WESTERN_PLAGUELANDS,
@@ -4450,7 +4440,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(12808, {	-- Essence of Undeath
-			description = "Drops from Undead creatures in the given instances.",
 			maps = {
 				MAP.NAXXRAMAS,
 				MAP.SCHOLOMANCE,
@@ -4590,7 +4579,6 @@ root(ROOTS.WorldDrops, {
 				2164,	-- Rabid Thistle Bear
 				2163,	-- Thistle Bear
 			},
-			description = "Drops from bears in the level bracket 10-20 like Black Bears in Loch Modan.",
 		}),
 		i(3730, {	-- Big Bear Meat
 			coords = {
@@ -4601,7 +4589,6 @@ root(ROOTS.WorldDrops, {
 				3809,	-- Ashenvale Bear
 				3810,	-- Elder Ashenvale Bear
 			},
-			description = "Drops from bears in the level bracket 20-30 like bears in Ashenvale.",
 		}),
 		i(2677, {	-- Boar Ribs
 			coords = {
@@ -4611,7 +4598,6 @@ root(ROOTS.WorldDrops, {
 				157,	-- Goretusk
 				454,	-- Young Goretusk
 			},
-			description = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
 		}),
 		i(3404, {	-- Buzzard Wing
 			coords = {
@@ -4655,7 +4641,6 @@ root(ROOTS.WorldDrops, {
 				1190,	-- Mountain Boar
 				390,	-- Porcine Entourage
 			},
-			description = "Drops from boars in the level bracket 5-20 like Goretusks in Westfall.",
 		}),
 		i(2675, {	-- Crawler Claw
 			maps = {
@@ -4663,7 +4648,6 @@ root(ROOTS.WorldDrops, {
 				MAP.DARKSHORE,
 				MAP.WESTFALL,
 			},
-			description = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
 		}),
 		i(2674, {	-- Crawler Meat
 			maps = {
@@ -4671,7 +4655,6 @@ root(ROOTS.WorldDrops, {
 				MAP.DARKSHORE,
 				MAP.WESTFALL,
 			},
-			description = "Drops from crawlers in the level bracket 10-20 like crawlers throughout the shoreline in Ashenvale, Darskshore and Westfall.",
 		}),
 		i(1081, {	-- Crisp Spider Meat
 			maps = {
@@ -4718,7 +4701,6 @@ root(ROOTS.WorldDrops, {
 		i(2924, {	-- Crocolisk Meat
 			coord = { 54.3, 57.8, MAP.LOCH_MODAN },	-- The Loch (southern isle)
 			cr = 1693,	-- Loch Crocolisk
-			description = "Drops from crocolisks in the level bracket 10-20 like crocolisks in Loch Modan.",
 		}),
 		i(12207, {	-- Giant Egg
 			coords = {
@@ -4742,7 +4724,6 @@ root(ROOTS.WorldDrops, {
 				930,	-- Black Widow Hatchling
 				217,	-- Venom Web Spider
 			},
-			description = "Drops from spiders in the level bracket 15-40 like spiders in Duskwood.",
 		}),
 		i(723, {	-- Goretusk Liver
 			coords = {
@@ -4755,7 +4736,6 @@ root(ROOTS.WorldDrops, {
 				157,	-- Goretusk
 				454,	-- Young Goretusk
 			},
-			description = "Drops from boars in the level bracket 10-20 like Goretusks in Westfall.",
 		}),
 		i(12204, {	-- Heavy Kodo Meat
 			coords = {
@@ -4766,7 +4746,6 @@ root(ROOTS.WorldDrops, {
 				4702,	-- Ancient Kodo
 				4701,	-- Dying Kodo
 			},
-			description = "Drops from kodos in Desolace.",
 		}),
 		i(5467, {	-- Kodo Meat
 			maps = {
@@ -4783,7 +4762,6 @@ root(ROOTS.WorldDrops, {
 				3474,	-- Lakota'mani
 				3237,	-- Wooly Kodo
 			},
-			description = "Drops from kodos in Mulgore and southern Barrens.",
 		}),
 		i(1015, {	-- Lean Wolf Flank
 			coords = {
@@ -4793,7 +4771,6 @@ root(ROOTS.WorldDrops, {
 				565,	-- Rapid Dire Wolf
 				213,	-- Starving Dire Wolf
 			},
-			description = "Drops from wolves in the level bracket 15-30 like Dire wolves in Duskwood.",
 		}),
 		i(3731, {	-- Lion Meat
 			coords = {
@@ -4804,7 +4781,6 @@ root(ROOTS.WorldDrops, {
 				2385,	-- Foothill Stalker
 				2384,	-- Starving Mountain Lion
 			},
-			description = "Drops from lions in the level bracket 15-35 like lions in Hillsbrad Foothills and Alterac Mountains.",
 		}),
 		i(12223, {	-- Meaty Bat Wing
 			maps = {
@@ -4814,7 +4790,6 @@ root(ROOTS.WorldDrops, {
 				1553,	-- Greater Duskbat
 				1554,	-- Vampiric Duskbat
 			},
-			description = "Only drops from bats in Tirisfal Glades.",
 		}),
 		i(730, {	-- Murloc Eye
 			crs = {
@@ -4871,7 +4846,6 @@ root(ROOTS.WorldDrops, {
 				 1958,	-- Vile Fin Tidecaller
 				 1768,	-- Vile Fin Tidehunter
 			},
-			description = "Drops from murlocs in the level bracket 10-30 like murlocs along the Westfall coast.",
 		}),
 		i(1468, {	-- Murloc Fin
 			coords = {
@@ -4886,7 +4860,6 @@ root(ROOTS.WorldDrops, {
 				1418,	-- Bluegill Raider
 				1027,	-- Bluegill Warrior
 			},
-			description = "Drops from murlocs in the level bracket 15-30 like Bluegill murlocs in Wetlands.",
 		}),
 		i(12037, {	-- Mystery Meat
 			coords = {
@@ -4899,7 +4872,6 @@ root(ROOTS.WorldDrops, {
 				1151,	-- Saltwater Crocolisk
 				1152,	-- Snapjaw Crocolisk
 			},
-			description = "Drops from a diverse selection of creatures ranging from hyenas to scorpids in the level bracket 30-60 like Crocolisks in Stranglethorn.",
 		}),
 		i(3685, {	-- Raptor Egg
 			coords = {
@@ -4910,7 +4882,6 @@ root(ROOTS.WorldDrops, {
 				687,	-- Jungle Stalker
 				686,	-- Lashtail Raptor
 			},
-			description = "Drops from raptors in the level bracket 20-40 like raptors in Stranglethorn Vale.",
 		}),
 		i(12184, {	-- Raptor Flesh
 			coords = {
@@ -4921,7 +4892,6 @@ root(ROOTS.WorldDrops, {
 				687,	-- Jungle Stalker
 				686,	-- Lashtail Raptor
 			},
-			description = "Drops from raptors in the level bracket 30-60 like raptors in Stranglethorn Vale.",
 		}),
 		i(12203, {	-- Red Wolf Meat
 			coords = {
@@ -4932,7 +4902,6 @@ root(ROOTS.WorldDrops, {
 				8960,	-- Felpaw Scavenger
 				8959,	-- Felpaw Wolf
 			},
-			description = "Drops from wolves in the level bracket 30-60 like Felpaw wolves in Felwood.",
 		}),
 		i(6889, {	-- Small Egg
 			coords = {
@@ -4960,7 +4929,6 @@ root(ROOTS.WorldDrops, {
 				10160,	-- Raging Moonkin
 				10159,	-- Young Moonkin
 			},
-			description = "Drops from birds, owlkin and striders in entry- and lower level vanilla zones",
 		}),
 		i(5465, {	-- Small Spider Leg
 			coord = { 35.7, 13.7, MAP.SILVERPINE_FOREST },	-- The Skittering Dark
@@ -4975,7 +4943,6 @@ root(ROOTS.WorldDrops, {
 				2000,	-- Webwood Silkspinner
 				1999,	-- Webwood Venomfang
 			},
-			description = "Drops from spiders in the level bracket 5-20 like spiders in Silverpine Forest and Teldrassil.",
 		}),
 		i(5468, {	-- Soft Frenzy Flesh
 			coords = {
@@ -4987,7 +4954,6 @@ root(ROOTS.WorldDrops, {
 				6033,	-- Lake Frenzy
 				2173,	-- Reef Frenzy
 			},
-			description = "Drops from frenzies found in bodies of water.",
 			maps = { MAP.SILVERPINE_FOREST },
 		}),
 		i(5471, {	-- Stag Meat
@@ -5001,7 +4967,6 @@ root(ROOTS.WorldDrops, {
 				3817,	-- Shadowhorn Stag
 				3816,	-- Wild Buck
 			},
-			description = "Drops from stags in Ashenvale as well as some other vanilla zones.",
 		}),
 		i(5469, {	-- Strider Meat
 			maps = { MAP.DARKSHORE },
@@ -5014,7 +4979,6 @@ root(ROOTS.WorldDrops, {
 				3245,	-- Ornery Plainstrider
 				2172,	-- Strider Clutchmother
 			},
-			description = "Drops from striders in the level bracket 10-20 like Foreststriders throughout Darkshore.",
 		}),
 		i(2672, {	-- Stringy Wolf Meat
 			maps = {
@@ -5030,7 +4994,6 @@ root(ROOTS.WorldDrops, {
 				2960,	-- Prairie Wolf Alpha
 				118,	-- Prowler
 			},
-			description = "Drops from wolves in the level bracket 5-17 like wolves in Elwynn Forest and Mulgore.",
 		}),
 		i(12206, {	-- Tender Crab Meat
 			coords = {
@@ -5041,7 +5004,6 @@ root(ROOTS.WorldDrops, {
 				1088,	-- Monstrous Crawler
 				922,	-- Silt Crawler
 			},
-			description = "Drops from crawlers in the level bracket 40-45 like Crawlers in Swamp of Sorrows.",
 		}),
 		i(3667, {	-- Tender Crocolisk Meat
 			coords = {
@@ -5054,7 +5016,6 @@ root(ROOTS.WorldDrops, {
 				1151,	-- Saltwater Crocolisk
 				1152,	-- Snapjaw Crocolisk
 			},
-			description = "Drops from crocolisks in the level bracket 20-40 like Crocolisks in Stranglethorn.",
 		}),
 		i(12208, {	-- Tender Wolf Meat
 			coords = {
@@ -5065,12 +5026,10 @@ root(ROOTS.WorldDrops, {
 				8960,	-- Felpaw Scavenger
 				8959,	-- Felpaw Wolf
 			},
-			description = "Drops from wolves in the level bracket 40-60 like Felpaw wolves in Felwood.",
 		}),
 		i(5470, {	-- Thunder Lizard Tail
 			coord = { 47.0, 48.0, MAP.THE_BARRENS },	-- Taurajo, north of.
 			cr = 3240,	-- Stormsnout
-			description = "Drops from lizards in the level bracket 15-30 like Stormsnouts in The Barrens.",
 		}),
 		i(12202, {	-- Tiger Meat
 			coords = {
@@ -5081,7 +5040,6 @@ root(ROOTS.WorldDrops, {
 				1085,	-- Elder Stranglethorn Tiger
 				682,	-- Stranglethorn Tiger
 			},
-			description = "Drops from tigers in the level bracket 30-60 like tigers in Stranglethorn Vale.",
 		}),
 		i(3712, {	-- Turtle Meat
 			coords = {
@@ -5089,7 +5047,6 @@ root(ROOTS.WorldDrops, {
 				{ 61.5, 8.3, MAP.DUSTWALLOW_MARSH },	-- Outer Dreadmurk Shore (between murloc isles)
 			},
 			cr = 4397,	-- Mudrock Spikeshell
-			description = "Drops from turtles in the level bracket 30-60 like Mudrock turtles in Dustwallow Marsh.",
 		}),
 		i(12205, {	-- White Spider Meat
 			coords = {
@@ -5103,7 +5060,6 @@ root(ROOTS.WorldDrops, {
 				4376,	-- Darkmist Spider
 				4415,	-- Giant Darkfang Spiders
 			},
-			description = "Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",
 		}),
 		-- Sacks of Gems
 		i(17962),	-- Blue Sack of Gems
@@ -5133,7 +5089,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(5637, {	-- Large Fang
-			description = "Drops from some Beast and Demon creatures like hounds, feline, spiders, raptors and bats ranging from level 25 to 40.",
 			maps = {
 				MAP.ASHENVALE,
 				MAP.BADLANDS,
@@ -5166,7 +5121,6 @@ root(ROOTS.WorldDrops, {
 				10160,	-- Raging Moonkin
 				10159,	-- Young Moonkin
 			},
-			description = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
 		}),
 		i(4589, {	-- Long Elegant Feather
 			coords = {
@@ -5193,7 +5147,6 @@ root(ROOTS.WorldDrops, {
 				{ 32.4, 66.0, MAP.STONETALON_MOUNTAINS },
 				{ 79.0, 77.0, MAP.THOUSAND_NEEDLES },
 			},
-			description = "Drops from birds and harpies in the given zones.",
 			maps = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.BADLANDS,
@@ -5201,7 +5154,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(7072, {	-- Naga Scale
-			description = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
 			maps = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.DESOLACE,
@@ -5210,7 +5162,6 @@ root(ROOTS.WorldDrops, {
 		}),
 		i(12804, {	-- Powerful Mojo
 			coord = { 72.0, 15.0, MAP.EASTERN_PLAGUELANDS },	-- Zul'mashar
-			description = "Can drop from trolls.",
 			maps = {
 				MAP.BLACKROCK_SPIRE,
 				MAP.ZULGURUB,
@@ -5220,7 +5171,6 @@ root(ROOTS.WorldDrops, {
 			description = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
 		}),
 		i(4461, {	-- Raptor Hide
-			description = "Drops from raptors ranging from level 30 to 40.",
 			maps = {
 				MAP.ARATHI_HIGHLANDS,
 				MAP.DUSTWALLOW_MARSH,
@@ -5228,7 +5178,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(5635, {	-- Sharp Claw
-			description = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
 			maps = {
 				MAP.ASHENVALE,
 				MAP.DARKSHORE,
@@ -5248,7 +5197,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(5784, {	-- Slimy Murloc Scale
-			description = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
 			coord = { 15.1, 39.3, MAP.WETLANDS },	-- Bluegill Marsh
 			crs = {
 				1026,	-- Bluegill Forager
@@ -5269,7 +5217,6 @@ root(ROOTS.WorldDrops, {
 				{ 15.0, 61.0, MAP.SWAMP_OF_SORROWS },
 				{ 62.0, 42.0, MAP.WETLANDS },
 			},
-			description = "Drops from small dragonkin like darters and whelps.",
 		}),
 		i(1475, {	-- Small Venom Sac
 			description = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
@@ -5350,7 +5297,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(8153, {	-- Wildvine
-			description = "Drops from trolls ranging from level 40 to 50.",
 			maps = {
 				MAP.STRANGLETHORN_VALE,
 				MAP.THE_HINTERLANDS,
