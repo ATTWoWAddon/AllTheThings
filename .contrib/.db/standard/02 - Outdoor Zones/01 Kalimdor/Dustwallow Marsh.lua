@@ -2483,9 +2483,9 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 					objective(1, {	-- 0/5 Acidic Venom Sac
 						provider = { "i", 5959 },	-- Acidic Venom Sac
 						crs = {
-							4376,	-- Darkmist Spider
 							4378,	-- Darkmist Recluse
 							4379,	-- Darkmist Silkspinner
+							4376,	-- Darkmist Spider
 							4380,	-- Darkmist Widow
 						},
 					}),
@@ -2535,18 +2535,11 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 					objective(1, {	-- 0/6 Acidic Venom Sac
 						provider = { "i", 5959 },	-- Acidic Venom Sac
 						crs = {
-							-- #if BEFORE CATA
 							4412,	-- Darkfang Creeper
 							4411,	-- Darkfang Lurker
 							4413,	-- Darkfang Spider
 							4414,	-- Darkfang Venomspitter
 							4415,	-- Giant Darkfang Spider
-							-- #else
-							4379,	-- Darkmist Silkspinner
-							4376,	-- Darkmist Spider
-							4378,	-- Darkmist Recluse
-							4380,	-- Darkmist Widow
-							-- #endif
 						},
 					}),
 				},

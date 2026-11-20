@@ -3963,11 +3963,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					coord = { 63.1, 50.9, TANARIS },
 					timeline = { REMOVED_11_0_7, ADDED_12_1_5 },
 					groups = sharedData({
-						-- #if AFTER 12.1.5
-						cost = { { "c", TIMEWARPED_BADGE, 400 } },
-						-- #else
-						cost = { { "c", BRONZE_TOKEN, 60 } },
-						-- #endif
+						cost = {
+							-- #if AFTER 11.2.5
+							{ "c", TIMEWARPED_BADGE, 400 },
+							-- #else
+							{ "c", BRONZE_TOKEN, 60 },
+							-- #endif
+						},
 					}, {
 						iensemble(228205, { classes = { DEATHKNIGHT } }),	-- Ensemble: Pale Rider's Eternal Armor
 						iensemble(228206, { classes = { DEMONHUNTER } }),	-- Ensemble: Netherwalker's Eternal Armor
