@@ -4147,7 +4147,6 @@ root(ROOTS.Craftables, {
 						7445,	-- Elder Shardtooth
 						7444,	-- Shardtooth Mauler
 					},
-					description = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
 					coords = {
 						{ 55.1, 37.8, WINTERSPRING },
 						{ 58.1, 89.4, WINTERSPRING },
@@ -4160,19 +4159,16 @@ root(ROOTS.Craftables, {
 						768,	-- Shadow Panther
 						684,	-- Shadowmaw Panther
 					},
-					description = "Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",
 					maps_disp = {
 						STRANGLETHORN_VALE,
 						SWAMP_OF_SORROWS,
 					},
 				}),
 				i(8368, {	-- Thick Wolfhide
-					description = "Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",
 					maps_disp = { BURNING_STEPPES },
 				}),
 				-- Scales
 				i(15416, {	-- Black Dragonscale
-					description = "Can be skinned from elite creatures of the Black Dragonflight.",
 					maps_disp = {
 						BLACKWING_LAIR,
 						BLACKROCK_SPIRE,
@@ -4181,7 +4177,6 @@ root(ROOTS.Craftables, {
 				}),
 				i(7286),	-- Black Whelp Scale (Sourced in Wetlands [CATA+] / Redridge Mountains)
 				i(15415, {	-- Blue Dragonscale
-					description = "Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",
 					coords = {
 						{ 57.2, 65.9, WINTERSPRING },	-- Mazthoril
 						{ 38.0, 75.0, AZSHARA },	-- Lake Mennar
@@ -4189,32 +4184,26 @@ root(ROOTS.Craftables, {
 				}),
 				i(12607),	-- Brilliant Chromatic Scale (Sourced in Blackwing Lair [WOD+] / Blackwing Spire)
 				i(15412, {	-- Green Dragonscale
-					description = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
 					maps_disp = { SUNKEN_TEMPLE },
 				}),
 				i(15408, {	-- Heavy Scorpid Scale
-					description = "Can be skinned from scorpids in the level bracket 50-60.",
 					maps_disp = {
 						BURNING_STEPPES,
 						SILITHUS
 					},
 				}),
 				i(15414, {	-- Red Dragonscale
-					description = "Can be skinned from elite creatures of the Red Dragonflight around the world.",
 					coord = { 80.0, 48.0, WETLANDS },
 				}),
 				i(8154, {	-- Scorpid Scale
 					maps_disp = { TANARIS },
-					description = "Drops from scorpids in the level bracket 40-60 like scorpids in Tanaris.",
 				}),
 				i(8167, {	-- Turtle Scale
-					description = "Can be skinned from turtles in the level bracket 35-60 like Mudrock turtles in Dustwallow.",
 					maps_disp = {
 						DUSTWALLOW_MARSH,
 					},
 				}),
 				i(8165, {	-- Worn Dragonscale
-					description = "Can be skinned from elite creatures of any Dragonflights around the world.",
 					maps_disp = { SUNKEN_TEMPLE },
 				}),
 			}),

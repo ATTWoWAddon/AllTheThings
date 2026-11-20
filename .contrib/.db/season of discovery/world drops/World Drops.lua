@@ -3619,14 +3619,12 @@ root(ROOTS.WorldDrops, {
 		--
 		-- Cloth:
 		i(14256, {	-- Felcloth
-			description = "Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",
 			maps = {
 				DIRE_MAUL_WARPWOOD_QUARTER,
 				FELWOOD,
 			},
 		}),
 		i(2589, {	-- Linen Cloth
-			description = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				DUN_MOROGH,
 				DUROTAR,
@@ -3640,7 +3638,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(4338, {	-- Mageweave Cloth
-			description = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				BADLANDS,
 				BURNING_STEPPES,
@@ -3652,7 +3649,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(14047, {	-- Runecloth
-			description = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				BLACKROCK_DEPTHS,
 				BLASTED_LANDS,
@@ -3664,7 +3660,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(4306, {	-- Silk Cloth
-			description = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				ARATHI_HIGHLANDS,
 				DESOLACE,
@@ -3677,7 +3672,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(2592, {	-- Wool Cloth
-			description = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				ASHENVALE,
 				BLACKFATHOM_DEEPS,
@@ -3710,7 +3704,6 @@ root(ROOTS.WorldDrops, {
 				5857,	-- Searing Lava Spider
 				1822,	-- Venom Mist Lurker
 			},
-			description = "Drops from spiders in the level bracket 45-60.",
 		}),
 		i(3182, {	-- Spider's Silk
 			description =
@@ -3741,7 +3734,6 @@ root(ROOTS.WorldDrops, {
 				1824,	-- Plague Lurker
 				1822,	-- Venom Mist Lurker
 			},
-			description = "Drops from spiders in the level bracket 32-60.",
 			maps = {
 				DUSTWALLOW_MARSH,
 				SEARING_GORGE,
@@ -4563,7 +4555,6 @@ root(ROOTS.WorldDrops, {
 				6033,	-- Lake Frenzy
 				2173,	-- Reef Frenzy
 			},
-			description = "Drops from frenzies found in bodies of water.",
 			maps = { SILVERPINE_FOREST },
 		}),
 		i(5471, {	-- Stag Meat
@@ -4577,7 +4568,6 @@ root(ROOTS.WorldDrops, {
 				3817,	-- Shadowhorn Stag
 				3816,	-- Wild Buck
 			},
-			description = "Drops from stags in Ashenvale as well as some other vanilla zones.",
 		}),
 		i(5469, {	-- Strider Meat
 			maps = { DARKSHORE },
@@ -4761,7 +4751,6 @@ root(ROOTS.WorldDrops, {
 				10160,	-- Raging Moonkin
 				10159,	-- Young Moonkin
 			},
-			description = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
 		}),
 		i(4589, {	-- Long Elegant Feather
 			coords = {
@@ -4788,7 +4777,6 @@ root(ROOTS.WorldDrops, {
 				{ 32.4, 66.0, STONETALON_MOUNTAINS },
 				{ 79.0, 77.0, THOUSAND_NEEDLES },
 			},
-			description = "Drops from birds and harpies in the given zones.",
 			maps = {
 				ARATHI_HIGHLANDS,
 				BADLANDS,
@@ -4796,7 +4784,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(7072, {	-- Naga Scale
-			description = "Drops from nagas ranging from level 28 to 40, though the droprate is low.",
 			maps = {
 				ARATHI_HIGHLANDS,
 				DESOLACE,
@@ -4805,7 +4792,6 @@ root(ROOTS.WorldDrops, {
 		}),
 		i(12804, {	-- Powerful Mojo
 			coord = { 72.0, 15.0, EASTERN_PLAGUELANDS },	-- Zul'mashar
-			description = "Can drop from trolls.",
 			maps = {
 				BLACKROCK_SPIRE,
 				ZULGURUB,
@@ -4815,7 +4801,6 @@ root(ROOTS.WorldDrops, {
 			description = "Can drop from ANY content intended for level-capped vanilla players, whether it be Dire Maul, Stratholme, Scholomance, or the raids. This is a rare item, farming it requires luck.",
 		}),
 		i(4461, {	-- Raptor Hide
-			description = "Drops from raptors ranging from level 30 to 40.",
 			maps = {
 				ARATHI_HIGHLANDS,
 				DUSTWALLOW_MARSH,
@@ -4823,7 +4808,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(5635, {	-- Sharp Claw
-			description = "Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",
 			maps = {
 				ASHENVALE,
 				DARKSHORE,
@@ -4843,7 +4827,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(5784, {	-- Slimy Murloc Scale
-			description = "Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",
 			coord = { 15.1, 39.3, WETLANDS },	-- Bluegill Marsh
 			crs = {
 				1026,	-- Bluegill Forager
@@ -4864,7 +4847,6 @@ root(ROOTS.WorldDrops, {
 				{ 15.0, 61.0, SWAMP_OF_SORROWS },
 				{ 62.0, 42.0, WETLANDS },
 			},
-			description = "Drops from small dragonkin like darters and whelps.",
 		}),
 		i(1475, {	-- Small Venom Sac
 			description = "Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",
@@ -4946,7 +4928,6 @@ root(ROOTS.WorldDrops, {
 			},
 		}),
 		i(8153, {	-- Wildvine
-			description = "Drops from trolls ranging from level 40 to 50.",
 			maps = {
 				STRANGLETHORN_VALE,
 				THE_HINTERLANDS,

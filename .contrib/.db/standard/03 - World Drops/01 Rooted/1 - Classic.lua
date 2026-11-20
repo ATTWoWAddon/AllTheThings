@@ -3876,7 +3876,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(2589, {	-- Linen Cloth
-			description = "Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				DUN_MOROGH,
 				DUROTAR,
@@ -3890,7 +3889,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(4338, {	-- Mageweave Cloth
-			description = "Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				BADLANDS,
 				BURNING_STEPPES,
@@ -3902,7 +3900,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(14047, {	-- Runecloth
-			description = "Runecloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				BLACKROCK_DEPTHS,
 				BLASTED_LANDS,
@@ -3916,7 +3913,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(4306, {	-- Silk Cloth
-			description = "Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				ARATHI_HIGHLANDS,
 				DESOLACE,
@@ -3929,7 +3925,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 		}),
 		i(2592, {	-- Wool Cloth
-			description = "Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",
 			maps = {
 				ASHENVALE,
 				BLACKFATHOM_DEEPS,
@@ -3976,7 +3971,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				5858,	-- Greater Lava Spider
 				5857,	-- Searing Lava Spider
 			},
-			description = "Drops from spiders in Searing Gorge.",
 			maps = { SEARING_GORGE },
 			-- #elseif AFTER 4.0.3
 			crs = {
@@ -4037,7 +4031,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				1822,	-- Venom Mist Lurker
 				-- #endif
 			},
-			description = "Drops from spiders in the level bracket 32-60.",
 			maps = {
 				DUSTWALLOW_MARSH,
 				-- #if BEFORE CATA
@@ -5422,7 +5415,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				6033,	-- Lake Frenzy
 				2173,	-- Reef Frenzy
 			},
-			description = "Drops from frenzies found in bodies of water.",
 			maps = { SILVERPINE_FOREST },
 		}),
 		i(67229, {	-- Stag Flank
@@ -5450,7 +5442,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				3817,	-- Shadowhorn Stag
 				3816,	-- Wild Buck
 			},
-			description = "Drops from stags in Ashenvale as well as some other vanilla zones.",
 		}),
 		i(5469, {	-- Strider Meat
 			-- #if AFTER 4.0.3
@@ -5772,11 +5763,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				10159,	-- Young Moonkin
 			},
 			-- #endif
-			-- #if AFTER 4.0.3
-			description = "Can drop from all birds, harpies, owlkin and striders on Kalimdor, Eastern Kingdoms, Outland and Northrend.",
-			-- #else
-			description = "Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",
-			-- #endif
 		}),
 		i(4589, {	-- Long Elegant Feather
 			coords = {
@@ -5804,7 +5790,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				{ 32.4, 66.0, STONETALON_MOUNTAINS },
 				{ 79.0, 77.0, THOUSAND_NEEDLES },
 			},
-			description = "Drops from birds and harpies in the given zones.",
 			maps = {
 				ARATHI_HIGHLANDS,
 				BADLANDS,

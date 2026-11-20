@@ -7340,11 +7340,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						7444,	-- Shardtooth Mauler
 						-- #endif
 					},
-					-- #if AFTER BFA
-					description = "Can be skinned from bears in previously highlevel vanilla zones like shardtooths in Winterspring.",
-					-- #else
-					description = "Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",
-					-- #endif
 					coords = {
 						{ 55.1, 37.8, WINTERSPRING },
 						{ 58.1, 89.4, WINTERSPRING },
@@ -7357,7 +7352,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						768,	-- Shadow Panther
 						684,	-- Shadowmaw Panther
 					},
-					description = "Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",
 					maps_disp = {
 						STRANGLETHORN_VALE,
 						SWAMP_OF_SORROWS,
@@ -7365,13 +7359,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					timeline = { REMOVED_3_1_0 },
 				}),
 				i(8368, {	-- Thick Wolfhide
-					description = "Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",
 					maps_disp = { BURNING_STEPPES },
 					timeline = { REMOVED_3_1_0 },
 				}),
 				-- Scales
 				i(15416, {	-- Black Dragonscale
-					description = "Can be skinned from elite creatures of the Black Dragonflight.",
 					maps_disp = {
 						BLACKWING_LAIR,
 						-- #if BEFORE WOD
@@ -7395,7 +7387,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						10814,	-- Chromatic Elite Guard
 						10442,	-- Chromatic Whelp
 					},
-					description = "Can be skinned from creatures of the Chromatic Dragonflight, though is a pain to farm in regards to drop rate.",
 					maps_disp = { BLACKROCK_SPIRE },
 					-- #else
 					description = "Can be skinned from elite creatures of the Blue Dragonflight, though is a pain to farm in regards to drop rate.",
@@ -7407,7 +7398,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				i(12607),	-- Brilliant Chromatic Scale (Sourced in Blackwing Lair [WOD+] / Blackwing Spire)
 				i(15412, {	-- Green Dragonscale
-					description = "Can be skinned from elite creatures of the Green Dragonflight around the world.",
 					maps_disp = { SUNKEN_TEMPLE },
 				}),
 				i(15408, {	-- Heavy Scorpid Scale
@@ -7434,7 +7424,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						10814,	-- Chromatic Elite Guard
 						10442,	-- Chromatic Whelp
 					},
-					description = "Can be skinned from creatures of the Chromatic Dragonflight, though is a pain to farm in regards to drop rate.",
 					maps_disp = { BLACKROCK_SPIRE },
 					-- #else
 					description = "Can be skinned from elite creatures of the Red Dragonflight around the world.",
@@ -7443,22 +7432,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				i(8154, {	-- Scorpid Scale
 					maps_disp = { TANARIS },
-					-- #if AFTER BFA
-					description = "Drops from scorpids in previously higher intermediate- to higher level vanilla zones like scorpids in Tanaris.",
-					-- #elseif AFTER 4.0.3
-					description = "Drops from scorpids in higher intermediate- to higher level vanilla zones like scorpids in Tanaris.",
-					-- #else
-					description = "Drops from scorpids in the level bracket 40-60 like scorpids in Tanaris.",
-					-- #endif
 				}),
 				i(8167, {	-- Turtle Scale
-					-- #if AFTER BFA
-					description = "Can be skinned from turtles in previously higher intermediate- to higher level vanilla zones like Tanaris and Thousand Needles.",
-					-- #elseif AFTER 4.0.3
-					description = "Can be skinned from turtles in higher intermediate- to higher level vanilla zones like Tanaris and Thousand Needles.",
-					-- #else
-					description = "Can be skinned from turtles in the level bracket 35-60 like Mudrock turtles in Dustwallow.",
-					-- #endif
 					maps_disp = {
 						-- #if AFTER CATA
 						TANARIS,
@@ -7469,7 +7444,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(8165, {	-- Worn Dragonscale
-					description = "Can be skinned from elite creatures of any Dragonflights around the world.",
 					maps_disp = { SUNKEN_TEMPLE },
 				}),
 			}),
