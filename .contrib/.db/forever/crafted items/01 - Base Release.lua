@@ -755,9 +755,7 @@ root(ROOTS.Craftables, {
 		}),
 		filter(TOYS, {
 			i(17716),	-- Snowmaster 9000 (TOY!)
-			i(22728, {	-- Steam Tonk Controller (TOY!)	-- CRIEVE NOTE: This might not be in the game, originally added with TBC
-				description = "This might not be in the game, please @crieve if you craft it!",
-			}),
+			i(22728),	-- Steam Tonk Controller (TOY!)
 		}),
 		filter(TRINKET_F, {
 			i(16022),	-- Arcanite Dragonling
