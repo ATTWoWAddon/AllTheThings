@@ -150,7 +150,6 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 		petbattles({
 			n(66478, {	-- David Kosse <Master Pet Tamer>
 				coord = { 62.8, 54.6, THE_HINTERLANDS },
-				description = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDavid's pets are level 13 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
 				timeline = { ADDED_5_0_4 },
 				petBattleLvl = 13,
 				groups = {

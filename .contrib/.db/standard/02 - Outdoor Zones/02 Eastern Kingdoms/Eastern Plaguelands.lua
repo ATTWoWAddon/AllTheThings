@@ -1446,7 +1446,6 @@ maproot(EASTERN_KINGDOMS, EASTERN_PLAGUELANDS, {
 					66.5, 56.9, EASTERN_PLAGUELANDS,
 					-- #endif
 				},
-				description = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDeiza's pets are level 14 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Undead - use Critter (powerful) or Aquatic (tanky) pet.",
 				timeline = { ADDED_5_0_4 },
 				petBattleLvl = 14,
 				groups = {

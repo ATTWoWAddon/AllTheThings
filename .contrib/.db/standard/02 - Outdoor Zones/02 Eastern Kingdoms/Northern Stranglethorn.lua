@@ -122,7 +122,6 @@ maproot(EASTERN_KINGDOMS, NORTHERN_STRANGLETHORN, {
 		petbattles({
 			n(63194, {	-- Steven Lisbane <Master Pet Tamer>
 				coord = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
-				description = "This pet tamer is Alliance only.\n\nSteven's pets are level 9 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
 				timeline = { ADDED_5_0_4 },
 				races = ALLIANCE_ONLY,
 				petBattleLvl = 9,

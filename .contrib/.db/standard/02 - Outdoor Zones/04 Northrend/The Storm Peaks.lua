@@ -343,7 +343,6 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 			petbattles({
 				n(115307, {	-- Algalon the Observer <Celestial Pet Tamer>
 					coord = { 41.5, 24.4, THE_STORM_PEAKS },
-					description = "Algalon's pets are level 25 of legendary quality and exceptionally powerful of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
 					timeline = { ADDED_7_1_0 },
 					petBattleLvl = 25,
 					groups = {

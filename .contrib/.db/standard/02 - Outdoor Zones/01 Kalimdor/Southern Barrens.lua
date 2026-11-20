@@ -149,7 +149,6 @@ maproot(KALIMDOR, SOUTHERN_BARRENS, {
 		petbattles({
 			n(66422, {	-- Cassandra Kaboom <Master Pet Tamer>
 				coord = { 39.6, 79.2, SOUTHERN_BARRENS },
-				description = "This pet tamer is Horde only.\n\nCassandra's pets are level 11 of the following consecutive pet classes:\nMechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.",
 				timeline = { ADDED_5_0_4 },
 				races = HORDE_ONLY,
 				petBattleLvl = 11,

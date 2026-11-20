@@ -219,7 +219,6 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 			petbattles({
 				n(66635, {	-- Beegle Blastfuse <Master Pet Tamer>
 					coord = { 28.6, 33.8, HOWLING_FJORD },
-					description = "Beegle's pets are level 25 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Flying - see above.\n3. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake (Tail Sweap/Ancient Blessing/Rewind Time) and Abyssius (Crush/Flamethrower/Metero Strike).",
 					timeline = { ADDED_5_0_4 },
 					petBattleLvl = 25,
 					groups = {

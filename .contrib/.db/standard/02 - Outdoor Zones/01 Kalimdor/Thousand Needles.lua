@@ -106,7 +106,6 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 		petbattles({
 			n(66452, {	-- Kela Grimtotem <Master Pet Tamer>
 				coord = { 31.8, 32.8, THOUSAND_NEEDLES },
-				description = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nKela's pets are level 15 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
 				timeline = { ADDED_5_0_4 },
 				petBattleLvl = 15,
 				groups = {

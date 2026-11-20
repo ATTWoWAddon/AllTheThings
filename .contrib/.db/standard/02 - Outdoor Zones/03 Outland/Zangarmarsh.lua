@@ -215,7 +215,6 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 			petbattles({
 				n(66551, {	-- Ras'an <Master Pet Tamer>
 					coord = { 17.2, 50.6, ZANGARMARSH },
-					description = "Ras'an's pets are level 21 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Ageless Bronze Drake and Blighted Squirrel.",
 					timeline = { ADDED_5_0_4 },
 					petBattleLvl = 21,
 					groups = {

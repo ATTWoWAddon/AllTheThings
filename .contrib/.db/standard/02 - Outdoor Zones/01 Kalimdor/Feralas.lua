@@ -159,7 +159,6 @@ maproot(KALIMDOR, FERALAS, {
 		petbattles({
 			n(66352, {	-- Traitor Gluk <Master Pet Tamer>
 				coord = { 59.6, 49.6, FERALAS },
-				description = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGluk's pets are level 13 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
 				timeline = { ADDED_5_0_4 },
 				petBattleLvl = 13,
 				groups = {

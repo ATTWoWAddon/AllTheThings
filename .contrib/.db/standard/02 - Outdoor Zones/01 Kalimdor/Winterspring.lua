@@ -238,7 +238,6 @@ maproot(KALIMDOR, WINTERSPRING, {
 		petbattles({
 			n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
 				coord = { 65.6, 64.6, WINTERSPRING },
-				description = "Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Blighted Squarrel and Turkey.",
 				timeline = { ADDED_5_0_4 },
 				petBattleLvl = 19,
 				groups = {

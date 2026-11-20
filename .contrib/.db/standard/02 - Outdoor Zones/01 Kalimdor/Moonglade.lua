@@ -52,7 +52,6 @@ maproot(KALIMDOR, MOONGLADE, {
 		petbattles({
 			n(66412, {	-- Elena Flutterfly <Master Pet Tamer>
 				coord = { 46.0, 60.6, MOONGLADE },
-				description = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nElena's pets are level 17 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
 				timeline = { ADDED_5_0_4 },
 				petBattleLvl = 17,
 				groups = {

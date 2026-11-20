@@ -680,7 +680,6 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 			petbattles({
 				n(66553, {	-- Morulu The Elder <Master Pet Tamer>
 					coord = { 59.0, 70.0, SHATTRATH_CITY },
-					description = "Morulu's pets are level 23 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Aquatic - see above.\n3. Aquatic - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
 					timeline = { ADDED_5_0_4 },
 					petBattleLvl = 23,
 					groups = {

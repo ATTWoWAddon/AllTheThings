@@ -106,7 +106,6 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 		petbattles({
 			n(65656, {	-- Bill Buckler <Master Pet Tamer>
 				coord = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
-				description = "This pet tamer is Alliance only.\n\nBill's pets are level 11 of the following consecutive pet classes:\n1. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Flying - see above.",
 				timeline = { ADDED_5_0_4 },
 				races = ALLIANCE_ONLY,
 				petBattleLvl = 11,

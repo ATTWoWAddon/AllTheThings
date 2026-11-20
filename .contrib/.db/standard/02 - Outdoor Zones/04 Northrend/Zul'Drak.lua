@@ -120,7 +120,6 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 			petbattles({
 				n(66639, {	-- Gutretch <Master Pet Tamer>
 					coord = { 13.2, 66.8, ZULDRAK },
-					description = "Gutretch's pets are level 25 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets such as Anodized Robo Cub (Demolish/Maul) and Anubisath Idol (Demolish/Sandstorm/Deflection).",
 					timeline = { ADDED_5_0_4 },
 					petBattleLvl = 25,
 					groups = {

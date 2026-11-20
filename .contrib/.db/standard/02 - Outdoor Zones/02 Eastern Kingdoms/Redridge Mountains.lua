@@ -116,7 +116,6 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 		petbattles({
 			n(65651, {	-- Lindsay <Master Pet Tamer>
 				coord = { 33.3, 52.6, REDRIDGE_MOUNTAINS },
-				description = "This pet tamer is Alliance only.\n\nLindsay's pets are level 5 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Critter - see above.",
 				timeline = { ADDED_5_0_4 },
 				races = ALLIANCE_ONLY,
 				petBattleLvl = 5,

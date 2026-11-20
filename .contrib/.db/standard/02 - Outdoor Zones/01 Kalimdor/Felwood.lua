@@ -137,7 +137,6 @@ maproot(KALIMDOR, FELWOOD, {
 		petbattles({
 			n(66442, {	-- Zoltan <Master Pet Tamer>
 				coord = { 40.0, 56.6, FELWOOD },
-				description = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nZoltan's pets are level 16 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
 				timeline = { ADDED_5_0_4 },
 				petBattleLvl = 16,
 				groups = {

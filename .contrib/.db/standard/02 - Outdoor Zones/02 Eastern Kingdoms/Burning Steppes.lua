@@ -104,7 +104,6 @@ maproot(EASTERN_KINGDOMS, BURNING_STEPPES, {
 		petbattles({
 			n(66520, {	-- Durin Darkhammer <Master Pet Tamer>
 				coord = { 25.6, 47.6, BURNING_STEPPES },
-				description = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDurin's pets are level 17 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.",
 				timeline = { ADDED_5_0_4 },
 				petBattleLvl = 17,
 				groups = {

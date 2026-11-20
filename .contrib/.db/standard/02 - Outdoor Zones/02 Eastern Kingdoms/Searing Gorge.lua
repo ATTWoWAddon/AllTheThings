@@ -88,7 +88,6 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 		petbattles({
 			n(66515, {	-- Kortas Darkhammer <Master Pet Tamer>
 				coord = { 35.4, 27.8, SEARING_GORGE },
-				description = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nKortas' pets are level 15 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
 				timeline = { ADDED_5_0_4 },
 				petBattleLvl = 15,
 				groups = {
