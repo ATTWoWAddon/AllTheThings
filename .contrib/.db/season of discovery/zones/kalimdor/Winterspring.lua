@@ -889,6 +889,16 @@ maproot(KALIMDOR, WINTERSPRING, {
 			})),
 		}),
 		n(VENDORS, {
+			n(11183, {	-- Blixxrak <Light Armor Merchant>
+				coord = { 61.6, 37.8, WINTERSPRING },
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+					},
+					{ "pop" },
+				},
+			}),
 			n(11188, {	-- Evie Whirlbrew <Alchemy Supplies>
 				coords = {
 					{ 60.8, 37.8, WINTERSPRING },
@@ -912,6 +922,21 @@ maproot(KALIMDOR, WINTERSPRING, {
 					i(231780, {	-- Tome of Conjure Water VIII
 						timeline = { ADDED_1_15_4 },
 					}),
+				},
+			}),
+			n(11182, {	-- Nixxrak <Heavy Armor Merchant>
+				coord = { 61.6, 37.8, WINTERSPRING },
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						17190,	-- Ornate Buckler
+					},
 				},
 			}),
 			n(228216, {	-- Numi

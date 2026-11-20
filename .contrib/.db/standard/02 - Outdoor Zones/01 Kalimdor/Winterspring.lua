@@ -2160,6 +2160,20 @@ maproot(KALIMDOR, WINTERSPRING, {
 			}),
 		}),
 		n(VENDORS, {
+			n(11183, {	-- Blixxrak <Light Armor Merchant>
+				-- #if BEFORE CATA
+				coord = { 61.6, 37.8, WINTERSPRING },
+				-- #else
+				-- TODO: coord after Cataclysm (none on Wowhead)
+				-- #endif
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+					},
+					{ "pop" },
+				},
+			}),
 			n(50129, {	-- Daleohm <Blacksmithing Supplies>
 				coord = { 58.0, 63.8, WINTERSPRING },
 				timeline = { ADDED_4_0_3 },
@@ -2207,6 +2221,27 @@ maproot(KALIMDOR, WINTERSPRING, {
 				timeline = { ADDED_4_1_0 },
 				groups = {
 					i(69239),	-- Winterspring Cub (PET!)
+				},
+			}),
+			n(11182, {	-- Nixxrak <Heavy Armor Merchant>
+				coords = {
+					-- #if AFTER CATA
+					{ 60.2, 50.2, WINTERSPRING },
+					-- #else
+					{ 61.6, 37.8, WINTERSPRING },
+					-- #endif
+				},
+				races = HORDE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						17190,	-- Ornate Buckler
+					},
 				},
 			}),
 			n(11189, {	-- Qia <Trade Supplies>
