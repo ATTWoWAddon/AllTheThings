@@ -1853,14 +1853,10 @@ maproot(EASTERN_KINGDOMS, REDRIDGE_MOUNTAINS, {
 					-- #endif
 				},
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					1853,	-- Scalemail Belt
-					287,	-- Scalemail Boots
-					1852,	-- Scalemail Bracers
-					718,	-- Scalemail Gloves
-					286,	-- Scalemail Pants
-					285,	-- Scalemail Vest
-				}},
+				sym = {
+					SymSelector.select("VENDOR_SCALEMAIL"),	-- Scalemail
+					{ "pop" },
+				},
 			}),
 			n(3091, {	-- Franklin Hamar <Tailoring Supplies>
 				coords = {

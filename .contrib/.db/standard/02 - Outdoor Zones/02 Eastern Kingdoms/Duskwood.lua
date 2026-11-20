@@ -2116,16 +2116,14 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 			n(226, {	-- Morg Gnarltree <Armorer>
 				coord = { 73.8, 48.6, DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					2446,	-- Kite Shield
-					2148,	-- Polished Scale Belt
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					17192,	-- Reinforced Targe
-				}},
+				sym = {
+					SymSelector.select("VENDOR_POLISHED_SCALE"),	-- Polished Scale
+					{ "pop" },
+					{ "select", "itemID",
+						2446,	-- Kite Shield
+						17192,	-- Reinforced Targe
+					},
+				},
 				groups = {
 					i(4799, {	-- Antiquated Cloak
 						isLimited = true,

@@ -109,95 +109,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		},
 	}),
 	prof(ALCHEMY, {
-		n(COMMON_VENDOR_ITEMS, {
-			groups = appendAllGroups(
-				{
-					i(3371, {	-- Empty Vial for Vanilla, turns into Crystal Vial with Cataclysm and becomes the one vial to use in crafting recipes, deprecating all other vials.
-						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
-						--[[coords = {
-							{ 66.6, 54.6, IRONFORGE },
-							{ 47.4, 33.73, THUNDER_BLUFF },
-							{ 51.8, 74.6, UNDERCITY },
-							-- #if AFTER TBC
-							{ 67.0, 19.2, SILVERMOON_CITY },
-							{ 28.1, 61.9, THE_EXODAR },
-							-- #endif
-							-- #if AFTER WRATH
-							{ 55.6, 85.6, STORMWIND_CITY },
-							-- #else
-							{ 46.6, 78.8, STORMWIND_CITY },
-							-- #endif
-							-- #if AFTER CATA
-							{ 57.7, 72.32, BOREAN_TUNDRA },
-							{ 41.34, 34.61, BOREAN_TUNDRA },
-							{ 54.6, 39.6, DARNASSUS },
-							{ 52.2, 36.4, HELLFIRE_PENINSULA },
-							{ 53.8, 65.8, HELLFIRE_PENINSULA },
-							{ 79.5, 30.47, HOWLING_FJORD },
-							{ 58.4, 62.75, HOWLING_FJORD },
-							{ 41.54, 33.32, NORTHREND_DALARAN },
-							{ 55.6, 45.4, ORGRIMMAR },
-							{ 45.8, 20.8, SHATTRATH_CITY },
-							-- #else
-							{ 55.8, 24.5, DARNASSUS },
-							{ 56.2, 34.2, ORGRIMMAR },
-							-- #endif
-						},]]
-					}),
-				},
-				sharedData({	-- Leaded-/Crystal Vials for Vanilla
-					coords = {
-						{ 55.8, 24.5, DARNASSUS },
-						{ 66.6, 54.6, IRONFORGE },
-						{ 56.2, 34.2, ORGRIMMAR },
-						{ 47.4, 33.73, THUNDER_BLUFF },
-						{ 51.8, 74.6, UNDERCITY },
-						-- #if AFTER TBC
-						{ 67.0, 19.2, SILVERMOON_CITY },
-						{ 28.1, 61.9, THE_EXODAR },
-						-- #endif
-						-- #if AFTER WRATH
-						{ 55.6, 85.6, STORMWIND_CITY },
-						-- #else
-						{ 46.6, 78.8, STORMWIND_CITY },
-						-- #endif
-					},
-					timeline = { REMOVED_4_0_1 },
-				}, {
-					i(3372),	-- Leaded Vial, turns into Cracked Vial with Cataclysm.
-					i(8925),	-- Crystal Vial, turns into Tainted Vial with Cataclysm.
-				}),
-				{
-					i(18256, {	-- Imbued Vial for Vanilla/TBC/WotLK, turns into Melted Vial with Cataclysm.
-						coords = {
-							{ 55.8, 24.5, DARNASSUS },
-							{ 66.6, 54.6, IRONFORGE },
-							{ 56.2, 34.2, ORGRIMMAR },
-							{ 47.4, 33.73, THUNDER_BLUFF },
-							{ 51.8, 74.6, UNDERCITY },
-							-- #if AFTER TBC
-							{ 52.2, 36.4, HELLFIRE_PENINSULA },
-							{ 53.8, 65.8, HELLFIRE_PENINSULA },
-							{ 45.8, 20.8, SHATTRATH_CITY },
-							{ 67.0, 19.2, SILVERMOON_CITY },
-							{ 28.1, 61.9, THE_EXODAR },
-							-- #endif
-							-- #if AFTER WRATH
-							{ 57.7, 72.32, BOREAN_TUNDRA },
-							{ 41.34, 34.61, BOREAN_TUNDRA },
-							{ 79.5, 30.47, HOWLING_FJORD },
-							{ 58.4, 62.75, HOWLING_FJORD },
-							{ 41.54, 33.32, NORTHREND_DALARAN },
-							{ 55.6, 85.6, STORMWIND_CITY },
-							-- #else
-							{ 46.6, 78.8, STORMWIND_CITY },
-							-- #endif
-						},
-						timeline = { REMOVED_4_0_1 },
-					}),
-				}
-			)
-		}),
 		filter(CONSUMABLES, {
 			i(6452, {timeline = { ADDED_8_0_1 }}),	-- Anti-Venom
 			i(9155),	-- Arcane Elixir
@@ -510,60 +421,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		},
 	}),
 	prof(BLACKSMITHING, {
-		n(COMMON_VENDOR_ITEMS, {
-			groups = appendAllGroups(
-				{
-					i(5956, {	-- Blacksmithing Hammer
-						collectible = false,
-					}),
-				},
-				sharedData({
-					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-					--[[
-					coords = {
-						{ 51.8, 41.2, IRONFORGE },
-						{ 39.8, 55.6, THUNDER_BLUFF },
-						{ 61.4, 30.1, UNDERCITY },
-						-- #if AFTER TBC
-						{ 80.6, 37.0, SILVERMOON_CITY },
-						{ 61.3, 89.3, THE_EXODAR },
-						-- #endif
-						-- #if AFTER 3.0.2
-						{ 63.2, 37.6, STORMWIND_CITY },
-						-- #else
-						{ 56.3, 17.2, STORMWIND_CITY },
-						-- #endif
-						-- #if AFTER CATA
-						{ 75.8, 35.2, ORGRIMMAR },
-						-- #else
-						{ 82.4, 23.8, ORGRIMMAR },
-						-- #endif
-						-- #if AFTER 4.1.0
-						{ 56.6, 52.6, DARNASSUS },
-						-- #endif
-					},
-					providers = {
-						{ "n", 5512},	-- Kaita Deepforge <Blacksmithing Supplies>
-						{ "n", 4597},	-- Samuel Van Brunt <Blacksmithing Supplies>
-						{ "n", 3356},	-- Sumi <Blacksmithing Supplies>
-						{ "n", 2999},	-- Taur Stonehoof <Blacksmithing Supplies>
-						{ "n", 4259},	-- Thurgrum Deepforge <Blacksmithing Supplies>
-						-- #if AFTER TBC
-						{ "n", 16713},	-- Arras <Blacksmithing Supplies>
-						{ "n", 16670},	-- Eriden <Blacksmithing Supplies>
-						-- #endif
-						-- #if AFTER 4.1.0
-						{ "n", 52641},	-- Layna Karner <Blacksmithing Supplies>
-						-- #endif
-					},]]
-				}, {
-					i(2880),	-- Weak Flux
-					i(3466),	-- Strong Flux
-					i(18567),	-- Elemental Flux
-					i(3857),	-- Coal
-				})
-			)
-		}),
 		-- #if BEFORE TBC
 		prof(9788, {	-- Armorsmith
 			description = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
@@ -1046,37 +903,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 	prof(COOKING, {
-		n(COMMON_VENDOR_ITEMS, {
-			groups = appendAllGroups(
-				sharedData({	-- Vanilla cooking reagents
-				}, {
-					i(159),	-- Refreshing Spring Water
-					i(30817, {timeline = { ADDED_2_0_1 }}),	-- Simple Flour
-					i(2678),	-- Mild Spices
-					i(2692, {timeline = { REMOVED_3_0_2 }}),	-- Hot Spices
-					i(3713, {timeline = { REMOVED_3_0_2 }}),	-- Soothing Spices
-				}),
-				sharedData({
-					-- #if AFTER CATA
-					description = "This item is only common among Alliance bartenders. Horde players only have a few sources.",
-					-- #endif
-					providers = {
-						{ "n", 1328 },	-- Elly Langston <Barmaid>
-						-- #if AFTER TBC
-						{ "n", 16442 },	-- Vinemaster Suntouched <Wine & Spirits Merchant>
-						-- #endif
-					},
-				}, {
-					i(2594),	-- Flagon of Dwarven Honeymead/Mead
-					i(2593),	-- Flask of Stormwind Tawny
-					i(2595),	-- Jug of Badlands Bourbon
-					i(2596),	-- Skin of Dwarven Stout
-				}),
-				{
-					i(1179),	-- Ice Cold Milk
-				}
-			),
-		}),
 		i(13935),	-- Baked Salmon
 		i(4457),	-- Barbecued Buzzard Wing
 		applyclassicphase(TBC_PHASE_ONE, i(27636, {timeline = { ADDED_2_0_5 }})),	-- Bat Bites
@@ -1192,123 +1018,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 	}),
 	prof(ENCHANTING, {
-		n(COMMON_VENDOR_ITEMS, {
-			groups = appendAllGroups(
-				sharedData({	-- Enchanting supplies
-					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-					--[[coords = {
-						{ 60.8, 44.2, IRONFORGE },
-						{ 39.9, 40.2, THE_EXODAR },
-						{ 44.9, 37.7, THUNDER_BLUFF },
-						{ 62.0, 60.8, UNDERCITY },
-						-- #if AFTER TBC
-						{ 52.2, 36.0, HELLFIRE_PENINSULA },
-						{ 53.6, 66.0, HELLFIRE_PENINSULA },
-						{ 44.6, 96.8, SHATTRATH_CITY },
-						{ 70.0, 24.6, SILVERMOON_CITY },
-						-- #endif
-						-- #if AFTER WRATH
-						{ 53.0, 74.2, STORMWIND_CITY },
-						-- #else
-						{ 43.0, 64.2, STORMWIND_CITY },
-						-- #endif
-						-- #if AFTER 3.1.0
-						{ 36.4, 44.6, SHATTRATH_CITY },
-						-- #endif
-						-- #if AFTER CATA
-						{ 56.5, 32.2, DARNASSUS },
-						{ 53.2, 48.8, ORGRIMMAR },
-						-- #else
-						{ 58.6, 14.7, DARNASSUS },
-						{ 53.6, 38.0, ORGRIMMAR },
-						-- #endif
-					},
-					providers = {
-						{ "n", 1318},	-- Jessara Cordell <Enchanting Supplies>
-						{ "n", 3346},	-- Kithas <Enchanting Supplies>
-						{ "n", 3012},	-- Nata Dawnstrider <Enchanting Supplies>
-						{ "n", 4617},	-- Thaddeus Webb <Enchanting Supplies>
-						{ "n", 5158},	-- Tilli Thistlefuzz <Enchanting Supplies>
-						{ "n", 4228},	-- Vaean <Enchanting Supplies>
-						-- #if AFTER TBC
-						{ "n", 16722},	-- Egomis <Enchanting Supplies>
-						{ "n", 18753},	-- Felannia <Enchanting Trainer>
-						{ "n", 18773},	-- Johan Barnes <Enchanting Trainer>
-						{ "n", 16635},	-- Lyna <Enchanting Supplies>
-						{ "n", 19234},	-- Yurial Soulwater <Enchanting Supplies>
-						-- #endif
-						-- #if AFTER 3.1.0
-						{ "n", 33676},	-- Zurii <Enchanting Supplies>
-						-- #endif
-					},]]
-				},{
-					i(4470),	-- Simple Wood
-					i(11291),	-- Star Wood
-					-- #if AFTER CATA
-					i(38682),	-- Enchanting Vellum
-					-- #endif
-				}),
-				sharedData({	-- Runed Copper Rod reagents
-					-- Danny Donkey:	This structure is used for Vanilla content as well as BFA and onwards when professions
-					-- 					are split on an expansion-basis, but one still need to craft and use this basic rod.
-					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-					--[[coords = {
-						{ 60.8, 44.2, IRONFORGE },
-						{ 39.9, 40.2, THE_EXODAR },
-						{ 44.9, 37.7, THUNDER_BLUFF },
-						{ 62.0, 60.8, UNDERCITY },
-						-- #if AFTER TBC
-						{ 70.0, 24.6, SILVERMOON_CITY },
-						-- #endif
-						-- #if AFTER WRATH
-						{ 53.0, 74.2, STORMWIND_CITY },
-						-- #else
-						{ 43.0, 64.2, STORMWIND_CITY },
-						-- #endif
-						-- #if AFTER CATA
-						{ 56.5, 32.2, DARNASSUS },
-						{ 53.2, 48.8, ORGRIMMAR },
-						-- #else
-						{ 58.6, 14.7, DARNASSUS },
-						{ 53.6, 38.0, ORGRIMMAR },
-						-- #endif
-						-- #if AFTER BFA
-						{ 46.7, 32.5, BOREAN_TUNDRA },
-						{ 52.2, 36.0, HELLFIRE_PENINSULA },
-						{ 53.6, 66.0, HELLFIRE_PENINSULA },
-						{ 38.78, 41.56, NORTHREND_DALARAN },
-						{ 44.6, 96.8, SHATTRATH_CITY },
-						{ 36.4, 44.6, SHATTRATH_CITY },
-						-- #endif
-					},
-					providers = {
-						{ "n", 1318},	-- Jessara Cordell <Enchanting Supplies>
-						{ "n", 3346},	-- Kithas <Enchanting Supplies>
-						{ "n", 3012},	-- Nata Dawnstrider <Enchanting Supplies>
-						{ "n", 4617},	-- Thaddeus Webb <Enchanting Supplies>
-						{ "n", 5158},	-- Tilli Thistlefuzz <Enchanting Supplies>
-						{ "n", 4228},	-- Vaean <Enchanting Supplies>
-						-- #if AFTER TBC
-						{ "n", 16722},	-- Egomis <Enchanting Supplies>
-						{ "n", 16635},	-- Lyna <Enchanting Supplies>
-						-- #endif
-						-- #if AFTER BFA
-						{ "n", 18753},	-- Felannia <Enchanting Trainer>
-						{ "n", 28714},	-- Ildine Sorrowspear <Enchanting Supplies>
-						{ "n", 18773},	-- Johan Barnes <Enchanting Trainer>
-						{ "n", 27147},	-- Librarian Erickson <Enchanting Supplies>
-						{ "n", 19234},	-- Yurial Soulwater <Enchanting Supplies>
-						{ "n", 33676},	-- Zurii <Enchanting Supplies>
-						-- #endif
-					},]]
-				},{
-					i(6217, {	-- Copper Rod
-					}),
-					i(10938, { isLimited = true, }),	-- Lesser Magic Essence
-					i(10940, { isLimited = true, }),	-- Strange Dust
-				})
-			)
-		}),
 		header(HEADERS.Spell, 13262, {	-- Disenchant
 			-- Danny Donkey: We need ilvl data from WoD and BfA stat squishes.
 			-- Dust:
@@ -1665,55 +1374,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 	prof(ENGINEERING, {
-		n(COMMON_VENDOR_ITEMS, sharedData({
-			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
-			--[[
-			coords = {
-				{ 67.8, 43.0, IRONFORGE },
-				{ 75.5, 74.3, UNDERCITY },
-				-- #if AFTER TBC
-				{ 44.6, 96.8, SHATTRATH_CITY },
-				{ 27.93, 47.6, SHATTRATH_CITY },
-				{ 75.8, 40.6, SILVERMOON_CITY },
-				{ 53.6, 90.8, THE_EXODAR },
-				-- #endif
-				-- #if AFTER 3.0.2
-				{ 63.07, 31.97, STORMWIND_CITY },
-				-- #else
-				{ 55.0, 7.0, STORMWIND_CITY },
-				-- #endif
-				-- #if AFTER CATA
-				{ 50.0, 32.8, DARNASSUS },
-				{ 56.0, 56.0, ORGRIMMAR },
-				-- #else
-				{ 75.6, 25.2, ORGRIMMAR },
-				-- #endif
-				-- #if AFTER 4.1.0
-				{ 36.22, 60.21, THUNDER_BLUFF },
-				-- #endif
-			},
-			providers = {
-				{ "n", 5519},	-- Billibub Cogspinner <Engineering Supplies>
-				{ "n", 4587},	-- Elizabeth Van Talen <Engineering Supplies>
-				{ "n", 5175},	-- Gearcutter Cogspinner <Engineering Supplies>
-				{ "n", 3413},	-- Sovik <Engineering Supplies>
-				-- #if AFTER TBC
-				{ "n", 16657},	-- Feera <Engineering Supplies>
-				{ "n", 27711},	-- Technician Halmaha <Engineering Supplies>
-				{ "n", 19244},	-- Trader Endernor <Trade Goods>
-				{ "n", 16782},	-- Yatheon <Engineering Supplies>
-				-- #endif
-				-- #if AFTER CATA
-				{ "n", 52637},	-- Hugo Letner <Engineering Supplies>
-				-- #endif
-				-- #if AFTER 4.1.0
-				{ "n", 52655},	-- Palehoof's Big Bag of Parts <Engineering Supplies>
-				-- #endif
-			},]]
-		}, {
-			i(4400),	-- Heavy Stock
-			i(4399),	-- Wooden Stock
-		})),
 		prof(GNOMISH_ENGINEERING, {
 			description = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
 			groups = {
@@ -1997,61 +1657,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	prof(FISHING, {
 		description = "If you struggle to catch an open water fish in a given zone, try a different spot or a different body of water. There might be local variations of which fish you can reliably catch from a given spot.",
 		groups = {
-			n(COMMON_VENDOR_ITEMS, sharedData({
-				-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords/providers are given.
-				--[[coords = {
-					{ 47.8, 6.6, IRONFORGE },
-					{ 55.8, 47.0, THUNDER_BLUFF },
-					{ 81.0, 30.8, UNDERCITY },
-					-- #if AFTER TBC
-					{ 77.04, 68.2, SILVERMOON_CITY },
-					{ 29.5, 20.1, THE_EXODAR },
-					-- #endif
-					-- #if AFTER WRATH
-					{ 55.0, 69.6, STORMWIND_CITY },
-					-- #else
-					{ 45.8, 58.5, STORMWIND_CITY },
-					-- #endif
-					-- #if AFTER CATA
-					{ 48.44, 61.2, DARNASSUS },
-					{ 70.0, 29.4, ORGRIMMAR },
-					-- #else
-					{ 46.9, 56.9, DARNASSUS },
-					{ 66.6, 41.6, ORGRIMMAR },
-					-- #endif
-				},
-				providers = {
-					{ "n", 5494 },	-- Catherine Leland <Fishing Supplier>
-					{ "n", 4574 },	-- Lizbeth Cromwell <Fishing Supplies> [TBC+] / Lizbeth Cromwell <Fishing Supplier>
-					{ "n", 3029 },	-- Sewa Mistrunner <Fishing Supplies>
-					{ "n", 3333 },	-- Shankys <Fishing Supplies>
-					{ "n", 5162 },	-- Tansy Puddlefizz <Fishing Supplier>
-					{ "n", 4222 },	-- Voloren <Fishing Supplies>
-					-- #if AFTER TBC
-					{ "n", 20121 },	-- Dekin <Fishing Supplies>
-					{ "n", 18347 },	-- Olirea <Fishing Supplies>
-					-- #endif
-				},]]
-			}, {
-				i(6533, {isLimited = true, }),	-- Aquadynamic Fish Attractor
-				i(6532),	-- Bright Baubles
-				i(6256, {	-- Fishing Pole
-					-- #if AFTER 10.0.0
-					collectible = false,
-					-- #endif
-				}),
-				i(6530),	-- Nightcrawlers
-				-- #if AFTER LEGION
-				i(136377, {timeline = { ADDED_7_0_3 }}),	-- Oversized Bobber
-				-- #endif
-				i(6529),	-- Shiny Bauble
-				i(6365, {	-- Strong Fishing Pole
-					-- #if AFTER 10.0.0
-					collectible = false,
-					-- #endif
-					isLimited = true,
-				}),
-			})),
 			filter(ONE_HANDED_MACES, {
 				i(6360, {	-- Steelscale Crushfish
 					maps_disp = {
@@ -4303,71 +3908,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 			}),
-			-- #if AFTER MOP
-			n(COMMON_VENDOR_ITEMS, {
-				i(85663, {	-- Herbalist's Spade
-					-- Danny Donkey: For some Blizzard reason Herbalism Suppliers does not sell this equipment.
-					collectible = false,
-					description = "Can only be bought from Trade suppliers.",
-					timeline = { ADDED_5_0_4 },
-				}),
-			}),
-			-- #endif
 		},
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
 		-- Inks and reagents:
-		n(COMMON_VENDOR_ITEMS, sharedData({
-			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when coords are given.
-			--[[
-			coords = {
-				{ 57.6, 71.64, BOREAN_TUNDRA },
-				{ 57.6, 71.64, BOREAN_TUNDRA },
-				{ 56.7, 31.8, DARNASSUS },
-				{ 54.0, 65.6, HELLFIRE_PENINSULA },
-				{ 52.4, 36.0, HELLFIRE_PENINSULA },
-				{ 79.36, 29.25, HOWLING_FJORD },
-				{ 58.27, 62.48, HOWLING_FJORD },
-				{ 60.55, 43.65, IRONFORGE },
-				{ 41.8, 36.8, NORTHREND_DALARAN },
-				{ 69.8, 23.2, SILVERMOON_CITY },
-				{ 49.6, 74.6, STORMWIND_CITY },
-				{ 39.6, 38.7, THE_EXODAR },
-				{ 28.63, 20.26, THUNDER_BLUFF },
-				{ 61.83, 57.53, UNDERCITY },
-				-- #if AFTER 3.1.0
-				{ 55.9, 74.34, SHATTRATH_CITY },
-				{ 36.4, 44.6, SHATTRATH_CITY },
-				-- #endif
-				-- #if AFTER CATA
-				{ 35.85, 69.5, ORGRIMMAR },
-				{ 55.3, 56.0, ORGRIMMAR },
-				-- #else
-				{ 56.0, 46.2, ORGRIMMAR },
-				-- #endif
-			},]]
-		}, {
-			i(10648, {	-- Common Parchment
-				timeline = { REMOVED_5_0_4 },
-			}),
-			i(39501, {	-- Heavy Parchment
-				timeline = { REMOVED_5_0_4 },
-			}),
-			i(39354),	-- Light Parchment
-			i(39502, {	-- Resilient Parchment
-				timeline = { REMOVED_5_0_4 },
-			}),
-			i(39489, {	-- Scribe's Satchel
-				isLimited = true,
-			}),
-			i(64670, {	-- Vanishing Powder
-				timeline = { ADDED_4_0_1 },
-			}),
-			i(39505, {	-- Virtuoso Inking Set
-				collectible = false,
-			}),
-		})),
 		header(HEADERS.Spell, 51005, {	-- Milling
 			i(39151, {	-- Alabaster Pigment
 				providers = {
@@ -4961,36 +4506,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	-- #endif
 	-- #if AFTER TBC
 	prof(JEWELCRAFTING, {
-		n(COMMON_VENDOR_ITEMS, sharedData({
-			-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
-			--[[providers = {
-				{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
-				{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
-				{ "n", 19065},	-- Inessera <Jewelcrafting Supplies>
-				{ "n", 18751},	-- Kalaen <Jewelcrafting Trainer>
-				{ "n", 18774},	-- Tatiana <Jewelcrafting Trainer>
-				-- #if AFTER WRATH
-				{ "n", 28721},	-- Tiffany Cartier <Jewelcrafting Supplies>
-				-- #endif
-				-- #if AFTER 3.1.0
-				{ "n", 33637},	-- Kirembri Silvermane <Jewelcrafting Trainer>
-				-- #endif
-				-- #if AFTER CATA
-				{ "n", 52584},	-- Laida Gembold <Jewelcrafting Supplies>
-				{ "n", 50482},	-- Marith Lazuria <Jewelcrafting Supplies>
-				{ "n", 52658},	-- Paku Cloudchaser <Jewelcrafting Supplies>
-				{ "n", 52588},	-- Sara Lanner <Jewelcrafting Supplies>
-				{ "n", 52644},	-- Tarien Silverdew <Jewelcrafting Supplies>
-				{ "n", 44583},	-- Terrance Denman <Jewelcrafting Supplies>
-				-- #endif
-			},]]
-		}, {
-			-- #if AFTER CATA
-			i(52188, { timeline = { ADDED_4_0_3 } }),	-- Jeweler's Setting
-			-- #endif
-			i(20815, {collectible = false}),	-- Jeweler's Toolset/-Kit
-			i(20824, {timeline = { REMOVED_5_0_4 }}),	-- Simple Grinder
-		})),
 		header(HEADERS.Spell, 31252, {	-- Prospecting
 			-- Note: Neither Gold, Silver nor Truesilver can be prospected.
 			i(7909, {	-- Aquamarine
@@ -5140,78 +4655,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	}),
 	-- #endif
 	prof(LEATHERWORKING, {
-		n(COMMON_VENDOR_ITEMS, {
-			groups = appendAllGroups(
-				{
-					i(4289, {	-- Salt
-						-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
-						--[[providers = {
-							{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
-							{ "n", 5565},	-- Jillian Tanner <Leatherworking Supplies>
-							{ "n", 4589},	-- Joseph Moore <Leatherworking Supplies>
-							{ "n", 4225},	-- Saenorion <Leatherworking Supplies>
-							{ "n", 3366},	-- Tamar <Leatherworking Supplies>
-							-- #if AFTER TBC
-							{ "n", 16748},	-- Haferet <Leatherworking Supplies>
-							{ "n", 16689},	-- Zaralda <Leatherworking Supplies>
-							-- #endif
-							-- #if AFTER CATA
-							{ "n", 3008},	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
-							-- #else
-							{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-							-- #endif
-						},]]
-					}),
-				},
-				sharedData({
-					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
-					--[[providers = {
-						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
-						{ "n", 5128},	-- Bombus Finespindle <Leatherworking Supplies>
-						{ "n", 3364},	-- Borya <Tailoring Supplies>
-						{ "n", 4168},	-- Elynna <Tailoring Supplies>
-						{ "n", 5565},	-- Jillian Tanner <Leatherworking Supplies>
-						{ "n", 4589},	-- Joseph Moore <Leatherworking Supplies>
-						{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-						{ "n", 4577},	-- Millie Gregorian <Tailoring Supplies>
-						{ "n", 8681},	-- Outfitter Eric <Speciality Tailoring Supplies>
-						{ "n", 5154},	-- Poranna Snowbraid <Tailoring Supplies>
-						{ "n", 4225},	-- Saenorion <Leatherworking Supplies>
-						{ "n", 3366},	-- Tamar <Leatherworking Supplies>
-						-- #if AFTER TBC
-						{ "n", 18754},	-- Barim Spilthoof <Leatherworking Trainer>
-						{ "n", 18771},	-- Brumman <Leatherworking Trainer>
-						{ "n", 19196},	-- Cro Threadstrong <Leatherworking Supplies>
-						{ "n", 18749},	-- Dalinna <Tailoring Trainer>
-						{ "n", 16638},	-- Deynna <Tailoring Supplies>
-						{ "n", 19213},	-- Eiin <Specialty Tailoring Supplies>
-						{ "n", 16748},	-- Haferet <Leatherworking Supplies>
-						{ "n", 18772},	-- Hama <Tailoring Trainer>
-						{ "n", 16767},	-- Neii <Tailoring Supplies>
-						{ "n", 16689},	-- Zaralda <Leatherworking Supplies>
-						-- #endif
-						-- #if AFTER WRATH
-						{ "n", 28726},	-- Dominique Stefano <Tailoring Supplies>
-						-- #endif
-						-- #if AFTER CATA
-						{ "n", 3008},	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
-						-- #endif
-					},]]
-				}, {
-					i(2325),	-- Black Dye
-					i(6260),	-- Blue Dye
-					i(2605),	-- Green Dye
-					i(4340),	-- Grey Dye
-					i(4342),	-- Purple Dye
-					i(2604),	-- Red Dye
-					i(2320),	-- Coarse Thread
-					i(2321),	-- Fine Thread
-					i(4291),	-- Silken Thread
-					i(8343),	-- Heavy Silken Thread
-					i(14341),	-- Rune Thread
-				})
-			)
-		}),
 		-- #if BEFORE TBC
 		prof(10656, {	-- Dragonscale Leatherworking
 			description = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
@@ -7119,11 +6562,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		description = "The following items can be gathered by skinning creatures out in the world.",
 		-- #endif
 		groups = {
-			n(COMMON_VENDOR_ITEMS, {
-				i(7005, {	-- Skinning Knife
-					collectible = false,
-				}),
-			}),
 			spell(8613, {	-- Skinning
 				-- Base leathers:
 				i(4234, {	-- Heavy Leather
@@ -7651,50 +7089,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag
 			applyclassicphase(PHASE_FIVE_RECIPES, i(22248)),	-- Enchanted Runecloth Bag
 			applyclassicphase(PHASE_FIVE, i(22252)),	-- Satchel of Cenarius
-		}),
-		n(COMMON_VENDOR_ITEMS, {
-			groups = appendAllGroups(
-				{	-- Danny Donkey: These are shared with Leatherworking.
-					i(2325),	-- Black Dye
-					i(6260),	-- Blue Dye
-					i(2605),	-- Green Dye
-					i(4340),	-- Grey Dye
-					i(4342),	-- Purple Dye
-					i(2604),	-- Red Dye
-					i(2320),	-- Coarse Thread
-					i(2321),	-- Fine Thread
-					i(4291),	-- Silken Thread
-					i(8343),	-- Heavy Silken Thread
-					i(14341),	-- Rune Thread
-				},
-				sharedData({
-					-- Danny Donkey: Disabling this for now, Common Vendor Items is being filled into Minilists when providers are given.
-					--[[providers = {
-						{ "n", 1347},	-- Alexandra Bolero <Tailoring Supplies>
-						{ "n", 3364},	-- Borya <Tailoring Supplies>
-						{ "n", 4168},	-- Elynna <Tailoring Supplies>
-						{ "n", 3005},	-- Mahu <Tailoring Supplies> [CATA+] / <Leatherworking & Tailoring Supplies>
-						{ "n", 4577},	-- Millie Gregorian <Tailoring Supplies>
-						{ "n", 8681},	-- Outfitter Eric <Speciality Tailoring Supplies>
-						{ "n", 5154},	-- Poranna Snowbraid <Tailoring Supplies>
-						-- #if AFTER TBC
-						{ "n", 18749},	-- Dalinna <Tailoring Trainer>
-						{ "n", 16638},	-- Deynna <Tailoring Supplies>
-						{ "n", 19213},	-- Eiin <Specialty Tailoring Supplies>
-						{ "n", 18772},	-- Hama <Tailoring Trainer>
-						{ "n", 16767},	-- Neii <Tailoring Supplies>
-						-- #endif
-						-- #if AFTER WRATH
-						{ "n", 28726},	-- Dominique Stefano <Tailoring Supplies>
-						-- #endif
-					},]]
-				}, {
-					i(2324),	-- Bleach (Only sold by Tailoring Suppliers)
-					i(6261),	-- Orange Dye (Only used in Tailoring)
-					i(10290),	-- Pink Dye (Only used in Tailoring)
-					i(4341),	-- Yellow Dye (Only used in Tailoring)
-				})
-			)
 		}),
 		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(246685),	-- Dwarven District Banner (DECOR!)

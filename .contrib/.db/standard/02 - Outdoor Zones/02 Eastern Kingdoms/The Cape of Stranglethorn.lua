@@ -2501,17 +2501,14 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 			}),
 			n(2845, {	-- Fargon Mortalak <Superior Armorer>
 				coord = { 44.1, 70.0, THE_CAPE_OF_STRANGLETHORN },
-				sym = {{"select","itemID",
-					2419,	-- Augmented Chain Belt
-					2420,	-- Augmented Chain Boots
-					2421,	-- Augmented Chain Bracers
-					2422,	-- Augmented Chain Gloves
-					3891,	-- Augmented Chain Helm
-					2418,	-- Augmented Chain Leggings
-					2417,	-- Augmented Chain Vest
-					2448,	-- Heavy Pavise
-					17189,	-- Metal Buckler
-				}},
+				sym = {
+					SymSelector.select("VENDOR_AUGMENTED_CHAIN"),	-- Augmented Chain
+					{ "pop" },
+					{ "select", "itemID",
+						2448,	-- Heavy Pavise
+						17189,	-- Metal Buckler
+					},
+				},
 				groups = {
 					i(12257, {	-- Heavy Notched Belt
 						isLimited = true,
@@ -2602,22 +2599,16 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 				coord = { 55.4, 42.2, THE_CAPE_OF_STRANGLETHORN },
 				timeline = { ADDED_4_0_1 },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					2471,	-- Reinforced Leather Belt
-					2473,	-- Reinforced Leather Boots
-					2474,	-- Reinforced Leather Bracers
-					3893,	-- Reinforced Leather Cap
-					2475,	-- Reinforced Leather Gloves
-					2472,	-- Reinforced Leather Pants
-					2470,	-- Reinforced Leather Vest
-					2464,	-- Studded Belt
-					2467,	-- Studded Boots
-					2468,	-- Studded Bracers
-					2463,	-- Studded Doublet
-					2469,	-- Studded Gloves
-					3890,	-- Studded Hat
-					2465,	-- Studded Pants
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_STUDDED,	-- Studded
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2463,	-- Studded Doublet
+					},
+				},
 			}),
 			n(2685, {	-- Mazk Snipeshot <Engineering Supplies>
 				coord = { 43.2, 70.2, THE_CAPE_OF_STRANGLETHORN },
@@ -2674,34 +2665,15 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 			}),
 			n(2849, {	-- Qixdi Goodstitch <Cloth Armor & Accessories>
 				coord = { 42.7, 74.2, THE_CAPE_OF_STRANGLETHORN },
-				sym = {{"select","itemID",
-					2435,	-- Embroidered Armor
-					3587,	-- Embroidered Belt
-					2438,	-- Embroidered Boots
-					3588,	-- Embroidered Bracers
-					2440,	-- Embroidered Gloves
-					3892,	-- Embroidered Hat
-					2437,	-- Embroidered Pants
-					2160,	-- Padded Armor
-					3591,	-- Padded Belt
-					2156,	-- Padded Boots
-					3592,	-- Padded Bracers
-					2158,	-- Padded Gloves
-					2159,	-- Padded Pants
-					3593,	-- Russet Belt
-					2432,	-- Russet Boots
-					3594,	-- Russet Bracers
-					2434,	-- Russet Gloves
-					3889,	-- Russet Hat
-					2431,	-- Russet Pants
-					2429,	-- Russet Vest
-					3597,	-- Thick Cloth Belt
-					3598,	-- Thick Cloth Bracers
-					203,	-- Thick Cloth Gloves
-					201,	-- Thick Cloth Pants
-					202,	-- Thick Cloth Shoes
-					200,	-- Thick Cloth Vest
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+					},
+					{ "pop" },
+				},
 				groups = sharedData({
 					collectible = false,
 					providers = {

@@ -1754,17 +1754,15 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 			n(1214, {	-- Aldren Cordon <Clothier>
 				coord = { 64.8, 66.0, LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					16059,	-- Common Brown Shirt
-					3428,	-- Common Grey Shirt
-					16060,	-- Common White Shirt
-					837,	-- Heavy Weave Armor
-					3589,	-- Heavy Weave Belt
-					3590,	-- Heavy Weave Bracers
-					839,	-- Heavy Weave Gloves
-					838,	-- Heavy Weave Pants
-					840,	-- Heavy Weave Shoes
-				}},
+				sym = {
+					SymSelector.select("VENDOR_HEAVY_WEAVE"),	-- Heavy Weave
+					{ "pop" },
+					{ "select", "itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt
+					},
+				},
 				groups = {
 					i(4782, {	-- Solstice Robe
 						isLimited = true,
@@ -1812,14 +1810,10 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 			n(954, {	-- Kat Sampson <Leather Armor Merchant>
 				coord = { 82.6, 64.0, LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					1843,	-- Tanned Leather Belt
-					843,	-- Tanned Leather Boots
-					1844,	-- Tanned Leather Bracers
-					844,	-- Tanned Leather Gloves
-					846,	-- Tanned Leather Jerkin
-					845,	-- Tanned Leather Pants
-				}},
+				sym = {
+					SymSelector.select("VENDOR_TANNED_LEATHER"),	-- Tanned Leather
+					{ "pop" },
+				},
 				groups = {
 					i(4788, {	-- Agile Boots
 						isLimited = true,
@@ -1847,26 +1841,18 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 			n(1362, {	-- Gothor Brumn <Armorer>
 				coord = { 24.1, 18.2, LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					847,	-- Chainmail Armor
-					1845,	-- Chainmail Belt
-					849,	-- Chainmail Boots
-					1846,	-- Chainmail Bracers
-					850,	-- Chainmail Gloves
-					848,	-- Chainmail Pants
-				}},
+				sym = {
+					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
+					{ "pop" },
+				},
 			}),
 			n(167, {	-- Morhan Coppertongue <Metalsmith>
 				coord = { 34.0, 46.6, LOCH_MODAN },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					847,	-- Chainmail Armor
-					1845,	-- Chainmail Belt
-					849,	-- Chainmail Boots
-					1846,	-- Chainmail Bracers
-					850,	-- Chainmail Gloves
-					848,	-- Chainmail Pants
-				}},
+				sym = {
+					SymSelector.select("VENDOR_CHAINMAIL"),	-- Chainmail
+					{ "pop" },
+				},
 				groups = {
 					i(4765, {	-- Enamelled Broadsword
 						isLimited = true,

@@ -4388,41 +4388,23 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					-- #endif
 				},
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					2419,	-- Augmented Chain Belt
-					2420,	-- Augmented Chain Boots
-					2421,	-- Augmented Chain Bracers
-					2422,	-- Augmented Chain Gloves
-					3891,	-- Augmented Chain Helm
-					2418,	-- Augmented Chain Leggings
-					2417,	-- Augmented Chain Vest
-					2424,	-- Brigandine Belt
-					2426,	-- Brigandine Boots
-					2427,	-- Brigandine Bracers
-					2428,	-- Brigandine Gloves
-					3894,	-- Brigandine Helm
-					2425,	-- Brigandine Leggings
-					2423,	-- Brigandine Vest
-					2451,	-- Crested Heater Shield
-					2448,	-- Heavy Pavise
-					2446,	-- Kite Shield
-					17189,	-- Metal Buckler
-					17190,	-- Ornate Buckler
-					8094,	-- Platemail Armor
-					8088,	-- Platemail Belt
-					8089,	-- Platemail Boots
-					8090,	-- Platemail Bracers
-					8091,	-- Platemail Gloves
-					8092,	-- Platemail Helm
-					8093,	-- Platemail Leggings
-					2148,	-- Polished Scale Belt
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					17192,	-- Reinforced Targe
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						17192,	-- Reinforced Targe
+					},
+				},
 			}),
 			n(1302, {	-- Bernard Gump <Florist>
 				coords = {
@@ -4771,28 +4753,18 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					-- #endif
 				},
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_KNITTED,	-- Knitted
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+					},
+					{ "pop" },
+				},
 				groups = {
 					i(16059),	-- Common Brown Shirt
 					i(3428),	-- Common Grey Shirt
 					i(16060),	-- Common White Shirt
-					i(837),	-- Heavy Weave Armor
-					i(3589),	-- Heavy Weave Belt
-					i(3590),	-- Heavy Weave Bracers
-					i(839),	-- Heavy Weave Gloves
-					i(838),	-- Heavy Weave Pants
-					i(840),	-- Heavy Weave Shoes
-					i(3602),	-- Knitted Belt
-					i(3603),	-- Knitted Bracers
-					i(793),	-- Knitted Gloves
-					i(794),	-- Knitted Pants
-					i(792),	-- Knitted Sandals
-					i(795),	-- Knitted Tunic
-					i(3597),	-- Thick Cloth Belt
-					i(3598),	-- Thick Cloth Bracers
-					i(203),	-- Thick Cloth Gloves
-					i(201),	-- Thick Cloth Pants
-					i(202),	-- Thick Cloth Shoes
-					i(200),	-- Thick Cloth Vest
 					-- #if AFTER 10.0.5
 					-- Now any class and race can buy this
 					-- MAGE --
@@ -5020,47 +4992,19 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					-- #endif
 				},
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_STUDDED,	-- Studded
+					},
+					{ "pop" },
+				},
 				groups = {
-					i(2142),	-- Cuirboulli Belt
-					i(2143),	-- Cuirboulli Boots
-					i(2144),	-- Cuirboulli Bracers
-					i(2145),	-- Cuirboulli Gloves
-					i(2146),	-- Cuirboulli Pants
-					i(2141),	-- Cuirboulli Vest
-					i(2435),	-- Embroidered Armor
-					i(3587),	-- Embroidered Belt
-					i(2438),	-- Embroidered Boots
-					i(3588),	-- Embroidered Bracers
-					i(2440),	-- Embroidered Gloves
-					i(3892),	-- Embroidered Hat
-					i(2437),	-- Embroidered Pants
-					i(2160),	-- Padded Armor
-					i(3591),	-- Padded Belt
-					i(2156),	-- Padded Boots
-					i(3592),	-- Padded Bracers
-					i(2158),	-- Padded Gloves
-					i(2159),	-- Padded Pants
-					i(2471),	-- Reinforced Leather Belt
-					i(2473),	-- Reinforced Leather Boots
-					i(2474),	-- Reinforced Leather Bracers
-					i(3893),	-- Reinforced Leather Cap
-					i(2475),	-- Reinforced Leather Gloves
-					i(2472),	-- Reinforced Leather Pants
-					i(2470),	-- Reinforced Leather Vest
-					i(3593),	-- Russet Belt
-					i(2432),	-- Russet Boots
-					i(3594),	-- Russet Bracers
-					i(2434),	-- Russet Gloves
-					i(3889),	-- Russet Hat
-					i(2431),	-- Russet Pants
-					i(2429),	-- Russet Vest
-					i(2464),	-- Studded Belt
-					i(2467),	-- Studded Boots
-					i(2468),	-- Studded Bracers
 					i(2463),	-- Studded Doublet
-					i(2469),	-- Studded Gloves
-					i(3890),	-- Studded Hat
-					i(2465),	-- Studded Pants
 				},
 			}),
 			n(52029, {	-- Edlan Halsing <Bloodthirsty Gladiator> [LEGION+] / Edlan Halsing <Honor Trade Goods>
@@ -5599,13 +5543,15 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					-- #endif
 				},
 				races = ALLIANCE_ONLY,
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+						SymSelector.VENDOR_ROUGH_LEATHER,	-- Rough Leather
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+					},
+					{ "pop" },
+				},
 				groups = {
-					i(236),	-- Cured Leather Armor
-					i(1849),	-- Cured Leather Belt
-					i(238),	-- Cured Leather Boots
-					i(1850),	-- Cured Leather Bracers
-					i(239),	-- Cured Leather Gloves
-					i(237),	-- Cured Leather Pants
 					-- #if AFTER 10.0.5
 					i(48, {	-- Footpads Pants
 						timeline = { ADDED_10_0_5 },
@@ -5623,18 +5569,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 						timeline = { ADDED_10_0_5 },
 					}),
 					-- #endif
-					i(1839),	-- Rough Leather Belt
-					i(796),	-- Rough Leather Boots
-					i(1840),	-- Rough Leather Bracers
-					i(797),	-- Rough Leather Gloves
-					i(798),	-- Rough Leather Pants
-					i(799),	-- Rough Leather Vest
-					i(1843),	-- Tanned Leather Belt
-					i(843),	-- Tanned Leather Boots
-					i(1844),	-- Tanned Leather Bracers
-					i(844),	-- Tanned Leather Gloves
-					i(846),	-- Tanned Leather Jerkin
-					i(845),	-- Tanned Leather Pants
 				},
 			}),
 			n(52027, {	-- Larisse Pembraux <Justice Heirlooms>
@@ -6458,41 +6392,23 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					-- #endif
 				},
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					2419,	-- Augmented Chain Belt
-					2420,	-- Augmented Chain Boots
-					2421,	-- Augmented Chain Bracers
-					2422,	-- Augmented Chain Gloves
-					3891,	-- Augmented Chain Helm
-					2418,	-- Augmented Chain Leggings
-					2417,	-- Augmented Chain Vest
-					2424,	-- Brigandine Belt
-					2426,	-- Brigandine Boots
-					2427,	-- Brigandine Bracers
-					2428,	-- Brigandine Gloves
-					3894,	-- Brigandine Helm
-					2425,	-- Brigandine Leggings
-					2423,	-- Brigandine Vest
-					2451,	-- Crested Heater Shield
-					2448,	-- Heavy Pavise
-					2446,	-- Kite Shield
-					17189,	-- Metal Buckler
-					17190,	-- Ornate Buckler
-					8094,	-- Platemail Armor
-					8088,	-- Platemail Belt
-					8089,	-- Platemail Boots
-					8090,	-- Platemail Bracers
-					8091,	-- Platemail Gloves
-					8092,	-- Platemail Helm
-					8093,	-- Platemail Leggings
-					2148,	-- Polished Scale Belt
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					17192,	-- Reinforced Targe
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						17192,	-- Reinforced Targe
+					},
+				},
 			}),
 			n(87501, {	-- Paulie
 				coord = { 73.0, 59.5, STORMWIND_CITY },
@@ -6625,22 +6541,16 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					-- #endif
 				},
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					2471,	-- Reinforced Leather Belt
-					2473,	-- Reinforced Leather Boots
-					2474,	-- Reinforced Leather Bracers
-					3893,	-- Reinforced Leather Cap
-					2475,	-- Reinforced Leather Gloves
-					2472,	-- Reinforced Leather Pants
-					2470,	-- Reinforced Leather Vest
-					2464,	-- Studded Belt
-					2467,	-- Studded Boots
-					2468,	-- Studded Bracers
-					2463,	-- Studded Doublet
-					2469,	-- Studded Gloves
-					3890,	-- Studded Hat
-					2465,	-- Studded Pants
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_STUDDED,	-- Studded
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2463,	-- Studded Doublet
+					},
+				},
 			}),
 			n(12785, {	-- Sergeant Major Clate <Legacy Armor Quartermaster> [WRATH+] / Sergeant Major Clate <Armor Quartermaster>
 				coord = { 75.4, 67.0, STORMWIND_CITY },
@@ -6913,20 +6823,13 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					-- #endif
 				},
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					2148,	-- Polished Scale Belt
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					1853,	-- Scalemail Belt
-					287,	-- Scalemail Boots
-					1852,	-- Scalemail Bracers
-					718,	-- Scalemail Gloves
-					286,	-- Scalemail Pants
-					285,	-- Scalemail Vest
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+					},
+					{ "pop" },
+				},
 			}),
 			n(1309, {	-- Wynne Larson <Robe Merchant>
 				coords = {

@@ -778,20 +778,13 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			n(8359, {	-- Ahanu <Leather Armor Merchant>
 				coord = { 45.6, 55.8, THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					236,	-- Cured Leather Armor
-					1849,	-- Cured Leather Belt
-					238,	-- Cured Leather Boots
-					1850,	-- Cured Leather Bracers
-					239,	-- Cured Leather Gloves
-					237,	-- Cured Leather Pants
-					1843,	-- Tanned Leather Belt
-					843,	-- Tanned Leather Boots
-					1844,	-- Tanned Leather Bracers
-					844,	-- Tanned Leather Gloves
-					846,	-- Tanned Leather Jerkin
-					845,	-- Tanned Leather Pants
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+					},
+					{ "pop" },
+				},
 			}),
 			n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>
 				coord = { 47.05, 50.23, THUNDER_BLUFF },
@@ -854,24 +847,19 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			n(8360, {	-- Elki <Mail Armor Merchant>
 				coord = { 45.2, 56.6, THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					17187,	-- Banded Buckler
-					847,	-- Chainmail Armor
-					1845,	-- Chainmail Belt
-					849,	-- Chainmail Boots
-					1846,	-- Chainmail Bracers
-					850,	-- Chainmail Gloves
-					848,	-- Chainmail Pants
-					2445,	-- Large Metal Shield
-					17188,	-- Ringed Buckler
-					1853,	-- Scalemail Belt
-					287,	-- Scalemail Boots
-					1852,	-- Scalemail Bracers
-					718,	-- Scalemail Gloves
-					286,	-- Scalemail Pants
-					285,	-- Scalemail Vest
-					1202,	-- Wall Shield
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						17187,	-- Banded Buckler
+						2445,	-- Large Metal Shield
+						17188,	-- Ringed Buckler
+						1202,	-- Wall Shield
+					},
+				},
 			}),
 			n(3020, {	-- Etu Ragetotem <Mace & Staff Merchant>
 				coord = { 58.2, 52.0, THUNDER_BLUFF },
@@ -893,41 +881,35 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			n(3095, {	-- Fela <Heavy Armor Merchant>
 				coord = { 42.8, 44.6, THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					2419,	-- Augmented Chain Belt
-					2420,	-- Augmented Chain Boots
-					2421,	-- Augmented Chain Bracers
-					2422,	-- Augmented Chain Gloves
-					3891,	-- Augmented Chain Helm
-					2418,	-- Augmented Chain Leggings
-					2417,	-- Augmented Chain Vest
-					2451,	-- Crested Heater Shield
-					62260,	-- Grunts Chain Belt
-					62261,	-- Grunts Chain Boots
-					62262,	-- Grunts Chain Bracers
-					62266,	-- Grunts Chain Circlet
-					62263,	-- Grunts Chain Gloves
-					62264,	-- Grunts Chain Leggings
-					62265,	-- Grunts Chain Vest
-					62253,	-- Grunts Plate Armor
-					62254,	-- Grunts Plate Belt
-					62255,	-- Grunts Plate Boots
-					62256,	-- Grunts Plate Bracers
-					62257,	-- Grunts Plate Gloves
-					62259,	-- Grunts Plate Helm
-					62258,	-- Grunts Plate Leggings
-					2448,	-- Heavy Pavise
-					2446,	-- Kite Shield
-					17189,	-- Metal Buckler
-					17190,	-- Ornate Buckler
-					2148,	-- Polished Scale Belt
-					2149,	-- Polished Scale Boots
-					2150,	-- Polished Scale Bracers
-					2151,	-- Polished Scale Gloves
-					2152,	-- Polished Scale Leggings
-					2153,	-- Polished Scale Vest
-					17192,	-- Reinforced Targe
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
+						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						62260,	-- Grunts Chain Belt
+						62261,	-- Grunts Chain Boots
+						62262,	-- Grunts Chain Bracers
+						62266,	-- Grunts Chain Circlet
+						62263,	-- Grunts Chain Gloves
+						62264,	-- Grunts Chain Leggings
+						62265,	-- Grunts Chain Vest
+						62253,	-- Grunts Plate Armor
+						62254,	-- Grunts Plate Belt
+						62255,	-- Grunts Plate Boots
+						62256,	-- Grunts Plate Bracers
+						62257,	-- Grunts Plate Gloves
+						62259,	-- Grunts Plate Helm
+						62258,	-- Grunts Plate Leggings
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						17192,	-- Reinforced Targe
+					},
+				},
 			}),
 			-- #endif
 			n(3003, {	-- Fyr Mistrunner <Bread Vendor>
@@ -945,26 +927,17 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			n(3093, {	-- Grod <Leather Armor Merchant>
 				coord = { 42.4, 43.2, THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					2371,	-- Battered Leather Belt
-					2373,	-- Battered Leather Boots
-					2374,	-- Battered Leather Bracers
-					2375,	-- Battered Leather Gloves
-					2370,	-- Battered Leather Harness
-					2372,	-- Battered Leather Pants
-					236,	-- Cured Leather Armor
-					1849,	-- Cured Leather Belt
-					238,	-- Cured Leather Boots
-					1850,	-- Cured Leather Bracers
-					239,	-- Cured Leather Gloves
-					237,	-- Cured Leather Pants
-					1843,	-- Tanned Leather Belt
-					843,	-- Tanned Leather Boots
-					1844,	-- Tanned Leather Bracers
-					844,	-- Tanned Leather Gloves
-					846,	-- Tanned Leather Jerkin
-					845,	-- Tanned Leather Pants
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_BATTERED_LEATHER,	-- Battered Leather
+						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2370,	-- Battered Leather Harness
+					},
+				},
 			}),
 			n(8401, {	-- Halpa <Prairie Dog Vendor>
 				coord = { 62.2, 58.6, THUNDER_BLUFF },
@@ -976,23 +949,18 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			n(8358, {	-- Hewa <Cloth Armor Merchant>
 				coord = { 45.6, 56.7, THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					16059,	-- Common Brown Shirt
-					3428,	-- Common Grey Shirt
-					16060,	-- Common White Shirt
-					837,	-- Heavy Weave Armor
-					3589,	-- Heavy Weave Belt
-					3590,	-- Heavy Weave Bracers
-					839,	-- Heavy Weave Gloves
-					838,	-- Heavy Weave Pants
-					840,	-- Heavy Weave Shoes
-					3597,	-- Thick Cloth Belt
-					3598,	-- Thick Cloth Bracers
-					203,	-- Thick Cloth Gloves
-					201,	-- Thick Cloth Pants
-					202,	-- Thick Cloth Shoes
-					200,	-- Thick Cloth Vest
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						16059,	-- Common Brown Shirt
+						3428,	-- Common Grey Shirt
+						16060,	-- Common White Shirt
+					},
+				},
 			}),
 			n(3018, {	-- Hogor Thunderhoof <Guns Merchant>
 				coord = { 55.6, 56.6, THUNDER_BLUFF },
@@ -1298,54 +1266,25 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 			n(3092, {	-- Tagain <Cloth Armor Merchant>
 				coord = { 43.4, 43.8, THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					2617,	-- Burning Robes
-					2615,	-- Chromatic Robe
-					2613,	-- Double Stitched Robes
-					2435,	-- Embroidered Armor
-					3587,	-- Embroidered Belt
-					2438,	-- Embroidered Boots
-					3588,	-- Embroidered Bracers
-					2440,	-- Embroidered Gloves
-					3892,	-- Embroidered Hat
-					2437,	-- Embroidered Pants
-					837,	-- Heavy Weave Armor
-					3589,	-- Heavy Weave Belt
-					3590,	-- Heavy Weave Bracers
-					839,	-- Heavy Weave Gloves
-					838,	-- Heavy Weave Pants
-					840,	-- Heavy Weave Shoes
-					2160,	-- Padded Armor
-					3591,	-- Padded Belt
-					2156,	-- Padded Boots
-					3592,	-- Padded Bracers
-					2158,	-- Padded Gloves
-					2159,	-- Padded Pants
-					2612,	-- Plain Robe
-					2614,	-- Robe Of Apprenticeship
-					3593,	-- Russet Belt
-					2432,	-- Russet Boots
-					3594,	-- Russet Bracers
-					2434,	-- Russet Gloves
-					3889,	-- Russet Hat
-					2431,	-- Russet Pants
-					2429,	-- Russet Vest
-					2616,	-- Shimmering Silk Robes
-					2618,	-- Silver Dress Robes
-					3597,	-- Thick Cloth Belt
-					3598,	-- Thick Cloth Bracers
-					203,	-- Thick Cloth Gloves
-					201,	-- Thick Cloth Pants
-					202,	-- Thick Cloth Shoes
-					200,	-- Thick Cloth Vest
-				}},
-				groups = {
-					i(3602),	-- Knitted Belt
-					i(3603),	-- Knitted Bracers
-					i(793),	-- Knitted Gloves
-					i(794),	-- Knitted Pants
-					i(792),	-- Knitted Sandals
-					i(795),	-- Knitted Tunic
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
+						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_KNITTED,	-- Knitted
+						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_RUSSET,	-- Russet
+						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2617,	-- Burning Robes
+						2615,	-- Chromatic Robe
+						2613,	-- Double Stitched Robes
+						2612,	-- Plain Robe
+						2614,	-- Robe Of Apprenticeship
+						2616,	-- Shimmering Silk Robes
+						2618,	-- Silver Dress Robes
+					},
 				},
 			}),
 			n(3016, {	-- Tand <Basket Weaver>

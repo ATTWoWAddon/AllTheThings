@@ -303,22 +303,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(COOKING, {
-		n(COMMON_VENDOR_ITEMS, sharedData({	-- Experimental
-			coords = {
-				{ 76.27, 52.64, TWILIGHT_HIGHLANDS },	-- Dragonmaw Port
-				{ 79.37, 78.53, TWILIGHT_HIGHLANDS },	-- Highbank
-				{ 50.21, 38.36, ULDUM },	-- Mar'at
-			},
-			description = "Coordinates are for select vendors.",
-			providers = {
-				{ "n", 49688 },	-- Innkeeper Francis <Innkeeper>
-				{ "n", 49519 },	-- Lizzy "Lemons"
-				{ "n", 48861 },	-- Umi <Produce>
-			},
-		}, {
-			i(58265),	-- Highland Pomegranate
-			i(58278),	-- Tropical Sunfruit
-		})),
 		i(62661),	-- Baked Rockfish
 		i(62665),	-- Basilisk Liverdog
 		i(62670),	-- Beer-Basted Crocolisk
@@ -482,11 +466,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(ENGINEERING, {
-		-- #if AFTER MOP
-		n(COMMON_VENDOR_ITEMS, {
-			i(90146),	-- Tinker's Kit
-		}),
-		-- #endif
 		prof(GNOMISH_ENGINEERING, {
 			description = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
 			groups = {
@@ -1016,22 +995,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 	}),
 	prof(INSCRIPTION, {
 		-- Inks and reagents:
-		n(COMMON_VENDOR_ITEMS, sharedData({
-			coords = {
-				{ 76.6, 49.4, TWILIGHT_HIGHLANDS },	-- Dragonmaw Port
-				{ 78.6, 76.2, TWILIGHT_HIGHLANDS },	-- Highbank
-			},
-			providers = {
-				{ "n", 49703 },	-- Casandra Downs <Alchemy & Inscription Supplies>
-				{ "n", 50248 },	-- Una Kobuna <Alchemy and Inscription Supplies>
-			},
-		}, {
-			i(67348),	-- Bleached Jawbone
-			i(62323),	-- Deathwing Scale Fragment
-			i(67319),	-- Preserved Ogre Eye
-			i(68047),	-- Scavenged Dragon Horn
-			i(67335),	-- Silver Charm Bracelet
-		})),
 		header(HEADERS.Spell, 51005, {	-- Milling
 			i(61979, {	-- Ashen Pigment
 				providers = {

@@ -466,51 +466,34 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(16716, {	-- Gornii <Cloth Armor Merchant>
 					coord = { 71.5, 91.7, THE_EXODAR },
 					races = ALLIANCE_ONLY,
-					sym = {{"select","itemID",
-						16059,	-- Common Brown Shirt
-						3428,	-- Common Gray Shirt
-						16060,	-- Common White Shirt
-						837,	-- Heavy Weave Armor
-						3589,	-- Heavy Weave Belt
-						3590,	-- Heavy Weave Bracers
-						839,	-- Heavy Weave Gloves
-						838,	-- Heavy Weave Pants
-						840,	-- Heavy Weave Shoes
-						3602,	-- Knitted Belt
-						3603,	-- Knitted Bracers
-						793,	-- Knitted Gloves
-						794,	-- Knitted Pants
-						792,	-- Knitted Sandals
-						795,	-- Knitted Tunic
-						3597,	-- Thick Cloth Belt
-						3598,	-- Thick Cloth Bracers
-						203,	-- Thick Cloth Gloves
-						201,	-- Thick Cloth Pants
-						202,	-- Thick Cloth Shoes
-						200,	-- Thick Cloth Vest
-					}},
+					sym = {
+						{ "select", "symselector",
+							SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+							SymSelector.VENDOR_KNITTED,	-- Knitted
+							SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+						},
+						{ "pop" },
+						{ "select", "itemID",
+							16059,	-- Common Brown Shirt
+							3428,	-- Common Gray Shirt
+							16060,	-- Common White Shirt
+						},
+					},
 				}),
 				n(16753, {	-- Gotaan
 					coord = { 67.6, 96.0, THE_EXODAR },
 					races = ALLIANCE_ONLY,
-					sym = {{"select","itemID",
-						2424,	-- Brigandine Belt
-						2426,	-- Brigandine Boots
-						2427,	-- Brigandine Bracers
-						2428,	-- Brigandine Gloves
-						3894,	-- Brigandine Helm
-						2425,	-- Brigandine Leggings
-						2423,	-- Brigandine Vest
-						2451,	-- Crested Heater Shield
-						17190,	-- Ornate Buckler
-						8094,	-- Platemail Armor
-						8088,	-- Platemail Belt
-						8089,	-- Platemail Boots
-						8090,	-- Platemail Bracers
-						8091,	-- Platemail Gloves
-						8092,	-- Platemail Helm
-						8093,	-- Platemail Leggings
-					}},
+					sym = {
+						{ "select", "symselector",
+							SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+							SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+						},
+						{ "pop" },
+						{ "select", "itemID",
+							2451,	-- Crested Heater Shield
+							17190,	-- Ornate Buckler
+						},
+					},
 				}),
 				n(16748, {	-- Haferet <Leatherworking Supplies>
 					coord = { 66.6, 73.7, THE_EXODAR },
@@ -548,26 +531,14 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(16747, {	-- Mahri
 					coord = { 70.6, 92.2, THE_EXODAR },
 					races = ALLIANCE_ONLY,
-					sym = {{"select","itemID",
-						236,	-- Cured Leather Armor
-						1849,	-- Cured Leather Belt
-						238,	-- Cured Leather Boots
-						1850,	-- Cured Leather Bracers
-						239,	-- Cured Leather Gloves
-						237,	-- Cured Leather Pants
-						1839,	-- Rough Leather Belt
-						796,	-- Rough Leather Boots
-						1840,	-- Rough Leather Bracers
-						797,	-- Rough Leather Gloves
-						798,	-- Rough Leather Pants
-						799,	-- Rough Leather Vest
-						1843,	-- Tanned Leather Belt
-						843,	-- Tanned Leather Boots
-						1844,	-- Tanned Leather Bracers
-						844,	-- Tanned Leather Gloves
-						846,	-- Tanned Leather Jerkin
-						845,	-- Tanned Leather Pants
-					}},
+					sym = {
+						{ "select", "symselector",
+							SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+							SymSelector.VENDOR_ROUGH_LEATHER,	-- Rough Leather
+							SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+						},
+						{ "pop" },
+					},
 				}),
 				n(16751, {	-- Merran <Mining Supplies>
 					coord = { 59.9, 88.6, THE_EXODAR },
@@ -705,26 +676,14 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(16750, {	-- Yil
 					coord = { 67.6, 94.6, THE_EXODAR },
 					races = ALLIANCE_ONLY,
-					sym = {{"select","itemID",
-						847,	-- Chainmail Armor
-						1845,	-- Chainmail Belt
-						849,	-- Chainmail Boots
-						1846,	-- Chainmail Bracers
-						850,	-- Chainmail Gloves
-						848,	-- Chainmail Pants
-						2392,	-- Light Mail Armor
-						2393,	-- Light Mail Belt
-						2395,	-- Light Mail Boots
-						2396,	-- Light Mail Bracers
-						2397,	-- Light Mail Gloves
-						2394,	-- Light Mail Leggings
-						1853,	-- Scalemail Belt
-						287,	-- Scalemail Boots
-						1852,	-- Scalemail Bracers
-						718,	-- Scalemail Gloves
-						286,	-- Scalemail Pants
-						285,	-- Scalemail Vest
-					}},
+					sym = {
+						{ "select", "symselector",
+							SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+							SymSelector.VENDOR_LIGHT_MAIL,	-- Light Mail
+							SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+						},
+						{ "pop" },
+					},
 				}),
 			}),
 		},

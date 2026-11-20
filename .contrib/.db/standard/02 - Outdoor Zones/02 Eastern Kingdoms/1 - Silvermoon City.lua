@@ -522,17 +522,15 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16631, {	-- Andra <Clothier>
 					coord = { 65.2, 47.2, SILVERMOON_CITY },
 					races = HORDE_ONLY,
-					sym = {{"select","itemID",
-						16059,	-- Common Brown Shirt
-						3428,	-- Common Gray Shirt
-						16060,	-- Common White Shirt
-						837,	-- Heavy Weave Armor
-						3589,	-- Heavy Weave Belt
-						3590,	-- Heavy Weave Bracers
-						839,	-- Heavy Weave Gloves
-						838,	-- Heavy Weave Pants
-						840,	-- Heavy Weave Shoes
-					}},
+					sym = {
+						SymSelector.select("VENDOR_HEAVY_WEAVE"),	-- Heavy Weave
+						{ "pop" },
+						{ "select", "itemID",
+							16059,	-- Common Brown Shirt
+							3428,	-- Common Gray Shirt
+							16060,	-- Common White Shirt
+						},
+					},
 				}),
 				n(16619, {	-- Celana
 					coord = { 86.0, 36.6, SILVERMOON_CITY },
@@ -641,26 +639,14 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16625, {	-- Keeli
 					coord = { 61.2, 86.4, SILVERMOON_CITY },
 					races = HORDE_ONLY,
-					sym = {{"select","itemID",
-						847,	-- Chainmail Armor
-						1845,	-- Chainmail Belt
-						849,	-- Chainmail Boots
-						1846,	-- Chainmail Bracers
-						850,	-- Chainmail Gloves
-						848,	-- Chainmail Pants
-						2398,	-- Light Chain Armor
-						2399,	-- Light Chain Belt
-						2401,	-- Light Chain Boots
-						2402,	-- Light Chain Bracers
-						2403,	-- Light Chain Gloves
-						2400,	-- Light Chain Leggings
-						1853,	-- Scalemail Belt
-						287,	-- Scalemail Boots
-						1852,	-- Scalemail Bracers
-						718,	-- Scalemail Gloves
-						286,	-- Scalemail Pants
-						285,	-- Scalemail Vest
-					}},
+					sym = {
+						{ "select", "symselector",
+							SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+							SymSelector.VENDOR_LIGHT_CHAIN,	-- Light Chain
+							SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
+						},
+						{ "pop" },
+					},
 				}),
 				n(16610, {	-- Kredis <Tabard Vendor>
 					coord = { 78.6, 84.6, SILVERMOON_CITY },
@@ -717,26 +703,17 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16691, {	-- Noraelath
 					coord = { 55.6, 62.6, SILVERMOON_CITY },
 					races = HORDE_ONLY,
-					sym = {{"select","itemID",
-						2371,	-- Battered Leather Belt
-						2373,	-- Battered Leather Boots
-						2374,	-- Battered Leather Bracers
-						2375,	-- Battered Leather Gloves
-						2370,	-- Battered Leather Harness
-						2372,	-- Battered Leather Pants
-						236,	-- Cured Leather Armor
-						1849,	-- Cured Leather Belt
-						238,	-- Cured Leather Boots
-						1850,	-- Cured Leather Bracers
-						239,	-- Cured Leather Gloves
-						237,	-- Cured Leather Pants
-						1843,	-- Tanned Leather Belt
-						843,	-- Tanned Leather Boots
-						1844,	-- Tanned Leather Bracers
-						844,	-- Tanned Leather Gloves
-						846,	-- Tanned Leather Jerkin
-						845,	-- Tanned Leather Pants
-					}},
+					sym = {
+						{ "select", "symselector",
+							SymSelector.VENDOR_BATTERED_LEATHER,	-- Battered Leather
+							SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
+							SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+						},
+						{ "pop" },
+						{ "select", "itemID",
+							2370,	-- Battered Leather Harness
+						},
+					},
 				}),
 				n(16677, {	-- Quelis <Cooking Supplies>
 					coord = { 69.6, 71.2, SILVERMOON_CITY },
@@ -761,25 +738,16 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16626, {	-- Tynna
 					coord = { 60.8, 86.6, SILVERMOON_CITY },
 					races = HORDE_ONLY,
-					sym = {{"select","itemID",
-						2451,	-- Crested Heater Shield
-						17190,	-- Ornate Buckler
-					}},
-					groups = {
-						i(2424),	-- Brigandine Belt
-						i(2426),	-- Brigandine Boots
-						i(2427),	-- Brigandine Bracers
-						i(2428),	-- Brigandine Gloves
-						i(3894),	-- Brigandine Helm
-						i(2425),	-- Brigandine Leggings
-						i(2423),	-- Brigandine Vest
-						i(8094),	-- Platemail Armor
-						i(8088),	-- Platemail Belt
-						i(8089),	-- Platemail Boots
-						i(8090),	-- Platemail Bracers
-						i(8091),	-- Platemail Gloves
-						i(8092),	-- Platemail Helm
-						i(8093),	-- Platemail Leggings
+					sym = {
+						{ "select", "symselector",
+							SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+							SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+						},
+						{ "pop" },
+						{ "select", "itemID",
+							2451,	-- Crested Heater Shield
+							17190,	-- Ornate Buckler
+						},
 					},
 				}),
 				n(16442, {	-- Vinemaster Suntouched <Wine & Spirits Merchant>
@@ -803,20 +771,18 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16693, {	-- Winthren
 					coord = { 60.6, 86.6, SILVERMOON_CITY },
 					races = HORDE_ONLY,
-					sym = {{"select","itemID",
-						17187,	-- Banded Buckler
-						2446,	-- Kite Shield
-						2445,	-- Large Metal Shield
-						2398,	-- Light Chain Armor
-						2399,	-- Light Chain Belt
-						2401,	-- Light Chain Boots
-						2402,	-- Light Chain Bracers
-						2403,	-- Light Chain Gloves
-						2400,	-- Light Chain Leggings
-						17192,	-- Reinforced Targe
-						17188,	-- Ringed Buckler
-						1202,	-- Wall Shield
-					}},
+					sym = {
+						SymSelector.select("VENDOR_LIGHT_CHAIN"),	-- Light Chain
+						{ "pop" },
+						{ "select", "itemID",
+							17187,	-- Banded Buckler
+							2446,	-- Kite Shield
+							2445,	-- Large Metal Shield
+							17192,	-- Reinforced Targe
+							17188,	-- Ringed Buckler
+							1202,	-- Wall Shield
+						},
+					},
 					groups = {
 						i(17183),	-- Dented Buckler
 						i(1200),	-- Large Wooden Shield
@@ -891,29 +857,19 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16623, {	-- Zyandrel <Cloth Armor Merchant>
 					coord = { 64.8, 48.6, SILVERMOON_CITY },
 					races = HORDE_ONLY,
-					sym = {{"select","itemID",
-						16059,	-- Common Brown Shirt
-						3428,	-- Common Gray Shirt
-						16060,	-- Common White Shirt
-						837,	-- Heavy Weave Armor
-						3589,	-- Heavy Weave Belt
-						3590,	-- Heavy Weave Bracers
-						839,	-- Heavy Weave Gloves
-						838,	-- Heavy Weave Pants
-						840,	-- Heavy Weave Shoes
-						3597,	-- Thick Cloth Belt
-						3598,	-- Thick Cloth Bracers
-						203,	-- Thick Cloth Gloves
-						201,	-- Thick Cloth Pants
-						202,	-- Thick Cloth Shoes
-						200,	-- Thick Cloth Vest
-						3606,	-- Woven Belt
-						2367,	-- Woven Boots
-						3607,	-- Woven Bracers
-						2369,	-- Woven Gloves
-						2366,	-- Woven Pants
-						2364,	-- Woven Vest
-					}},
+					sym = {
+						{ "select", "symselector",
+							SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+							SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
+							SymSelector.VENDOR_WOVEN,	-- Woven
+						},
+						{ "pop" },
+						{ "select", "itemID",
+							16059,	-- Common Brown Shirt
+							3428,	-- Common Gray Shirt
+							16060,	-- Common White Shirt
+						},
+					},
 				}),
 			}),
 			-- #if NOT ANYCLASSIC

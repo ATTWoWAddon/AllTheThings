@@ -2056,24 +2056,17 @@ maproot(EASTERN_KINGDOMS, THE_HINTERLANDS, {
 				coord = { 66.6, 44.2, THE_HINTERLANDS },
 				timeline = { ADDED_4_0_3 },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					2424,	-- Brigandine Belt
-					2426,	-- Brigandine Boots
-					2427,	-- Brigandine Bracers
-					2428,	-- Brigandine Gloves
-					3894,	-- Brigandine Helm
-					2425,	-- Brigandine Leggings
-					2423,	-- Brigandine Vest
-					2451,	-- Crested Heater Shield
-					17190,	-- Ornate Buckler
-					8094,	-- Platemail Armor
-					8088,	-- Platemail Belt
-					8089,	-- Platemail Boots
-					8090,	-- Platemail Bracers
-					8091,	-- Platemail Gloves
-					8092,	-- Platemail Helm
-					8093,	-- Platemail Leggings
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_BRIGANDINE,	-- Brigandine
+						SymSelector.VENDOR_PLATEMAIL,	-- Platemail
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						17190,	-- Ornate Buckler
+					},
+				},
 				groups = {
 					i(12257, {	-- Heavy Notched Belt
 						isLimited = true,
