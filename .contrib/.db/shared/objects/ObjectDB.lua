@@ -320906,6 +320906,19 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			en = "Excavation Water Wagon",
 		},
 	},
+	[456682] = {
+		readable = "Half-Buried Mech",
+		text = {
+			en = "Half-Buried Mech",
+			de = "Halbvergrabener Mech",
+			fr = "Méca à moitié enterré",
+			it = "Half-Buried Mech",
+			pt = "Meca Semienterrado",
+			ru = "Полузакопанный механизм",
+			ko = "반쯤 묻힌 기계",
+			cn = "半埋的机甲",
+		},
+	},
 	[456747] = {
 		readable = "Gig Sheets",
 		text = {
@@ -327602,6 +327615,17 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "仿生齿轮",
 		},
 	},
+	[506307] = {
+		readable = "Legashi Cauldron",
+		text = {
+			en = "Legashi Cauldron",
+			de = "Kessel der Legashi",
+			fr = "Chaudron legashi",
+			ru = "Котел племени Легаши",
+			ko = "레가쉬 가마솥",
+			cn = "雷加斯锅炉",
+		},
+	},
 	[506498] = {
 		readable = "Gilded Stash",
 		model = 1315888,
@@ -329695,6 +329719,42 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "卡洛克蛋",
 		},
 	},
+	[524260] = {
+		readable = "Highborne Tablet",
+		text = {
+			en = "Highborne Tablet",
+			de = "Tafel der Hochgeborenen",
+			fr = "Tablette de Bien-né",
+			it = "Highborne Tablet",
+			ru = "Скрижаль высокорожденных",
+			ko = "명가의 서판",
+			cn = "上层精灵石板",
+		},
+	},
+	[524284] = {
+		readable = "Highborne Tablet",
+		text = {
+			en = "Highborne Tablet",
+			de = "Tafel der Hochgeborenen",
+			fr = "Tablette de Bien-né",
+			it = "Highborne Tablet",
+			ru = "Скрижаль высокорожденных",
+			ko = "명가의 서판",
+			cn = "上层精灵石板",
+		},
+	},
+	[524298] = {
+		readable = "Highborne Tablet",
+		text = {
+			en = "Highborne Tablet",
+			de = "Tafel der Hochgeborenen",
+			fr = "Tablette de Bien-né",
+			it = "Highborne Tablet",
+			ru = "Скрижаль высокорожденных",
+			ko = "명가의 서판",
+			cn = "上层精灵石板",
+		},
+	},
 	[524348] = {
 		readable = "Snake Egg",
 		model = 1658900,
@@ -329725,6 +329785,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Призовой сундук",
 			ko = "경품 상자",
 			cn = "奖品宝箱",
+		},
+	},
+	[524759] = {
+		readable = "Sesspira's Hoard",
+		text = {
+			en = "Sesspira's Hoard",
+			de = "Sesspiras Schatz",
+			fr = "Trésor de Sesspira",
+			it = "Sesspira's Hoard",
+			ru = "Запасы Сесспиры",
+			ko = "세스피라의 비축물",
+			cn = "瑟丝彼拉的储藏",
 		},
 	},
 	[525100] = {
@@ -331769,6 +331841,14 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "짓밟힌 덤불",
 			cn = "被踏过的树丛",
 			tw = "被踐踏的灌木叢",
+		},
+	},
+	[527828] = {
+		readable = "Saria's Knapsack",
+		text = {
+			en = "Saria's Knapsack",
+			de = "Sarias Wandererknappsack",
+			fr = "Sac à dos de Saria",
 		},
 	},
 	[527829] = {
@@ -346278,6 +346358,21 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "錯置的儀式蠟燭",
 		},
 	},
+	[649374] = {
+		readable = "Vibrant Flower",
+		text = {
+			en = "Vibrant Flower",
+			es = "Flor vibrante",
+			mx = "Flor vibrante",
+			de = "Farbenprächtige Blume",
+			fr = "Fleur éclatante",
+			it = "Vibrant Flower",
+			pt = "Flor Vibrante",
+			ru = "Яркий цветок",
+			ko = "생생한 꽃",
+			cn = "鲜艳的花朵",
+		},
+	},
 	[649380] = {
 		readable = "Washed Up Kelp",
 		model = 1569583,
@@ -346439,6 +346534,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		readable = "Small Loa Figurine",
 		text = {
 			en = "Small Loa Figurine",
+		},
+	},
+	[650234] = {
+		readable = "Loose Cog",
+		text = {
+			en = "Loose Cog",
+			de = "Lockeres Zahnrad",
+			fr = "Rouage détaché",
+			it = "Loose Cog",
+			ru = "Незакрепленный зубец",
+			ko = "떨어져 나온 톱니바퀴",
+			cn = "松动的齿轮",
 		},
 	},
 	[650367] = {
@@ -348591,6 +348698,29 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			tw = "儀式寶石",
 		},
 	},
+	[651262] = {
+		readable = "Unmarked Grave",
+		text = {
+			en = "Unmarked Grave",
+			de = "Nicht gekennzeichnetes Grab",
+			fr = "Tombe sans nom",
+			it = "Unmarked Grave",
+			ru = "Могила без надписи",
+			ko = "이름 없는 무덤",
+			cn = "不起眼的墓穴",
+		},
+	},
+	[651409] = {
+		readable = "Corrupted Growth",
+		text = {
+			en = "Corrupted Growth",
+			de = "Verderbter Auswuchs",
+			fr = "Excroissance corrompue",
+			it = "Corrupted Growth",
+			ru = "Нарост порчи",
+			cn = "腐化赘生物",
+		},
+	},
 	[651948] = {
 		readable = "Mana Well",
 		model = 198798,
@@ -348631,6 +348761,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		ignorewowhead = true,
 		text = {
 			en = "Dwarven Heirloom",
+		},
+	},
+	[652449] = {
+		readable = "Bone Pile",
+		text = {
+			en = "Bone Pile",
+			de = "Knochenhaufen",
+			fr = "Tas d’os",
+			it = "Bone Pile",
+			ru = "Груда костей",
+			ko = "뼈 무더기",
+			cn = "骸骨堆",
 		},
 	},
 	[652477] = {
@@ -348773,6 +348915,17 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 625180,
 		text = {
 			en = "Loose Floorboard",
+		},
+	},
+	[654121] = {
+		readable = "Embroidered Scabbard",
+		text = {
+			en = "Embroidered Scabbard",
+			de = "Geschmückte Waffenscheide",
+			fr = "Fourreau brodé",
+			it = "Embroidered Scabbard",
+			ru = "Вышитые ножны",
+			cn = "刺绣剑鞘",
 		},
 	},
 	[654126] = {
@@ -349535,6 +349688,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "Possessed Vase",
 		},
 	},
+	[656786] = {
+		readable = "Troll Remains",
+		text = {
+			en = "Troll Remains",
+			de = "Trollüberreste",
+			fr = "Cadavre de Troll",
+			it = "Troll Remains",
+			ru = "Останки тролля",
+			ko = "트롤 유해",
+			cn = "巨魔遗骸",
+		},
+	},
 	[656789] = {
 		readable = "Lost Shipping Crate",
 		model = 198165,
@@ -349543,6 +349708,18 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Verlorene Transportkiste",
 			fr = "Caisse perdue",
 			ru = "Потерянный упаковочный ящик",
+		},
+	},
+	[656815] = {
+		readable = "Old Wardrobe",
+		text = {
+			en = "Old Wardrobe",
+			de = "Alter Kleiderschrank",
+			fr = "Vieille penderie",
+			it = "Old Wardrobe",
+			ru = "Старый платяной шкаф",
+			ko = "오래된 옷장",
+			cn = "旧衣柜",
 		},
 	},
 	[656967] = {
@@ -350729,6 +350906,22 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "闪亮的花瓶",
 		},
 	},
+	[661778] = {
+		readable = "Statue of Malorne",
+		text = {
+			en = "Statue of Malorne",
+			es = "Estatua de Malorne",
+			mx = "Estatua de Malorne",
+			de = "Statue von Malorne",
+			fr = "Statue de Malorne",
+			it = "Statue of Malorne",
+			pt = "Estátua de Malorne",
+			ru = "Статуя Малорна",
+			ko = "말로른 조각상",
+			cn = "玛洛恩雕像",
+			tw = "瑪洛尼雕像",
+		},
+	},
 	[664122] = {
 		readable = "Gozwin's Mechanic's Log",
 		ignorewowhead = true,
@@ -350872,6 +351065,38 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		readable = "Packaged Tonics",
 		text = {
 			en = "Packaged Tonics",
+		},
+	},
+	[668003] = {
+		readable = "Etched Stone",
+		text = {
+			en = "Etched Stone",
+			es = "Piedra con grabados",
+			mx = "Piedra grabada",
+			de = "Geätzter Stein",
+			fr = "Pierre gravée",
+			it = "Etched Stone",
+			pt = "Pedra Cinzelada",
+			ru = "Камень с гравировкой",
+			ko = "글이 새겨진 돌",
+			cn = "蚀刻的石头",
+			tw = "蝕刻石",
+		},
+	},
+	[668004] = {
+		readable = "Etched Stone",
+		text = {
+			en = "Etched Stone",
+			es = "Piedra con grabados",
+			mx = "Piedra grabada",
+			de = "Geätzter Stein",
+			fr = "Pierre gravée",
+			it = "Etched Stone",
+			pt = "Pedra Cinzelada",
+			ru = "Камень с гравировкой",
+			ko = "글이 새겨진 돌",
+			cn = "蚀刻的石头",
+			tw = "蝕刻石",
 		},
 	},
 	[668297] = {
@@ -351291,6 +351516,20 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ko = "노르델",
 		},
 	},
+	[671148] = {
+		readable = "Shed Dark Dragonscale",
+		text = {
+			en = "Shed Dark Dragonscale",
+			de = "Abgeworfene dunkle Drachenschuppe",
+			fr = "Écaille de dragon sombre tombée",
+			it = "Shed Dark Dragonscale",
+			pt = "Escama de Dragão Negro Caída",
+			ru = "Сброшенная чешуйка темного дракона",
+			ko = "떨어진 어두운 용비늘",
+			cn = "蜕下的黑暗龙鳞",
+			tw = "蛻下的黑龍鱗片",
+		},
+	},
 	[671154] = {
 		readable = "Dry Branch",
 		text = {
@@ -351420,6 +351659,19 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			pt = "Grimório Esfarrapado",
 			ru = "Изодранная книга заклинаний",
 			ko = "너덜너덜한 마법책",
+		},
+	},
+	[671644] = {
+		readable = "Wyrmtail",
+		text = {
+			en = "Wyrmtail",
+			de = "Drachenwinde",
+			fr = "Queue de wyrm",
+			it = "Wyrmtail",
+			pt = "Rabo-de-serpe",
+			ru = "Змейкин хвост",
+			ko = "용꼬리",
+			cn = "龙尾草",
 		},
 	},
 	[671661] = {
@@ -356302,6 +356554,15 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Gesucht",
 			fr = "Avis de recherche",
 			pt = "Procura-se",
+		},
+	},
+	[710894] = {
+		readable = "Bookshelf",
+		text = {
+			en = "Bookshelf",
+			de = "Bücherregal",
+			fr = "Étagère de livres",
+			ko = "책장",
 		},
 	},
 	[9000000] = {

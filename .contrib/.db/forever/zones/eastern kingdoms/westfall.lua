@@ -321,7 +321,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					objective(1, {	-- 0/8 Suspicious Industrial Supplies
 						providers = {
 							{ "i", 254676 },	-- Suspicious Industrial Supplies
-							{ "o", 254676 },	-- Suspicious Crate
+							{ "o", 581777 },	-- Suspicious Crate
 						},
 						coord = { 43.2, 68.3, MAP.WESTFALL },
 					}),

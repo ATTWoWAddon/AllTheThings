@@ -458,7 +458,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			}),
 			q(89470, {	-- Ill Tidings
 				-- TODO: Starts at object 527828, where Your Final Reward (89053) ends; confirm whether it requires 89053.
-				provider = { "o", 527828 },
+				provider = { "o", 527828 },	-- Saria's Knapsack
 				qi = 239609,	-- Saria's Knapsack (PQI!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
