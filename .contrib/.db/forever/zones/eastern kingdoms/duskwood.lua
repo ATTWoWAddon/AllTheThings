@@ -246,16 +246,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				},
 			}),
 			q(79362, {	-- Grant's Shield
-				aqd = {
-					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
-					coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				},
-				hqd = {
-					qg = 6176,	-- Bath'rah the Windwatcher
-					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
-				},
+				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
 				qs = 281147,	-- Grant's Shield (QS!)
+				coord = { 72.6, 47.6, MAP.DUSKWOOD },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/1 Grant's Mace
@@ -277,16 +272,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 20,
 			}),
 			q(96137, {	-- Ira's Dagger
-				aqd = {
-					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
-					coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				},
-				hqd = {
-					qg = 6176,	-- Bath'rah the Windwatcher
-					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
-				},
+				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
 				qs = 281143,	-- Ira's Dagger (QS!)
+				coord = { 72.6, 47.6, MAP.DUSKWOOD },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/10 Young Black Ravager slain
@@ -357,16 +347,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				},
 			}),
 			q(96138, {	-- Merrick's Bow
-				aqd = {
-					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
-					coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				},
-				hqd = {
-					qg = 6176,	-- Bath'rah the Windwatcher
-					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
-				},
+				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
 				qs = 281142,	-- Merrick's Bow (QS!)
+				coord = { 72.6, 47.6, MAP.DUSKWOOD },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/8 Splinter Fist Warrior slain
@@ -563,16 +548,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				lvl = 20,
 			}),
 			q(79363, {	-- Silvia's Sword
-				aqd = {
-					qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
-					coord = { 72.6, 47.6, MAP.DUSKWOOD },
-				},
-				hqd = {
-					qg = 6176,	-- Bath'rah the Windwatcher
-					coord = { 80.4, 66.8, MAP.ALTERAC_MOUNTAINS },
-				},
+				qg = 268,	-- Sirra Von'Indi <Historian of Darkshire>
 				qs = 281145,	-- Silvia's Sword (QS!)
+				coord = { 72.6, 47.6, MAP.DUSKWOOD },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 18,
 				groups = {
 					objective(1, {	-- 0/7 Defias Night Blade slain
