@@ -6,7 +6,6 @@ ExportDB.OnTooltipDB.ForSkyguard = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		tooltipInfo[#tooltipInfo+1] = { left = "Protip: Join a rep farming group.", r = 1, g = 0.5, b = 0.5 }
 		addRepInfo(tooltipInfo, reputation, "Kill Arokkoa.", 5, 42000);
 		addRepInfo(tooltipInfo, reputation, "Summon Bosses.", 100, 42000);
 		addRepInfo(tooltipInfo, reputation, "Turn in Shadow Dust.", 150, 42000);
