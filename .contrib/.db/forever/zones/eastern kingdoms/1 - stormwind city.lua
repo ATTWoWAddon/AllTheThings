@@ -249,6 +249,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					i(221344),	-- Personal Spellbook
 				},
 			}),
+			q(79940, {	-- A Lost Brother
+				sourceQuest = 79939,	-- The Broken Hammer
+				qg = 5492,	-- Katherine the Pure
+				coord = { 37.4, 32.0, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Speak with Katherine and Learn More
+						provider = { "n", 5492 },	-- Katherine the Pure
+					}),
+				},
+			}),
 			q(212, {	-- A Meal Served Cold
 				qg = 1141,	-- Angus Stern
 				coord = { 51.8, 93.7, MAP.STORMWIND_CITY },

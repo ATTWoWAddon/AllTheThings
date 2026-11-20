@@ -262,6 +262,21 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 			}),
 			q(3450, {	-- An Easy Pickup
+			q(79945, {	-- Orders from the Grand Crusader
+				-- TODO: where Orders from the Grand Crusader (216610) is obtained in Forever; a player started it in Ironforge (44.1, 58.0)
+				sourceQuest = 79940,	-- A Lost Brother
+				qs = 216610,	-- Orders from the Grand Crusader (QS!)
+				maps = { MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Report back to Katherine the Pure
+						provider = { "n", 5492 },	-- Katherine the Pure
+						coord = { 37.4, 32.0, MAP.STORMWIND_CITY },
+					}),
+				},
+			}),
 				sourceQuest = 3448,	-- Passing the Burden
 				qg = 8507,	-- Tymor
 				coord = { 31.2, 4.6, MAP.IRONFORGE },

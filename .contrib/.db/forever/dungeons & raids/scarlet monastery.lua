@@ -79,6 +79,49 @@ instanceroot(316, {	-- Scarlet Monastery
 	lvl = 25,
 	groups = {
 		n(QUESTS, {
+			q(79946, {	-- A Brother In Need
+				sourceQuest = 79945,	-- Orders from the Grand Crusader
+				qg = 5492,	-- Katherine the Pure
+				coord = { 37.4, 32.0, MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Learn more about Aeonas from Katherine
+						provider = { "n", 5492 },	-- Katherine the Pure
+					}),
+					objective(2, {	-- 0/1 Find Aeonas in the Scarlet Monastery
+						provider = { "n", 217996 },	-- Aeonas
+					}),
+				},
+			}),
+			q(79970, {	-- Aeonas the Vindicated
+				sourceQuest = 79963,	-- By The Light's Grace
+				qg = 217996,	-- Aeonas
+				maps = { MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Meet Aeonas at the Cathedral of Light in Stormwind
+						provider = { "n", 218160 },	-- Aeonas the Vindicated
+						coord = { 48.6, 49.2, MAP.STORMWIND_CITY },
+					}),
+					i(277236),	-- Pauldrons of Vindication
+				},
+			}),
+			q(79963, {	-- By The Light's Grace
+				sourceQuest = 79946,	-- A Brother In Need
+				qg = 217996,	-- Aeonas
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_PALADINS,
+				lvl = 35,
+				groups = {
+					objective(1, {	-- 0/1 Heal Aeonas
+						provider = { "n", 217996 },	-- Aeonas
+					}),
+				},
+			}),
 			q(1113, {	-- Hearts of Zeal
 				sourceQuest = 1109,	-- Going, Going, Guano!
 				qg = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
