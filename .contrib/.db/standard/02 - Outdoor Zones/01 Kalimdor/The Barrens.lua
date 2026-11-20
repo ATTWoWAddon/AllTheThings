@@ -4071,15 +4071,13 @@ maproot(KALIMDOR, THE_BARRENS, {
 					{ 62.8, 38.2, THE_BARRENS },
 					-- #endif
 				},
+				sym = {
+					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
+					{ "pop" },
+				},
 				groups = {
-					i(4593),	-- Bristle Whisker Catfish
-					i(4592),	-- Longjaw Mud Snapper
 					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-					i(4594),	-- Rockscale Cod
-					i(787),	-- Slitherskin Mackerel
-					i(8957),	-- Spinefin Halibut
-					i(21552),	-- Striped Yellowtail
 				},
 			}),
 			n(3658, {	-- Lizzarik <Weapon Dealer>

@@ -2347,13 +2347,14 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					-- #endif
 				},
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					1179,	-- Ice Cold Milk
+					1205,	-- Melon Juice
+					8766,	-- Morning Glory Dew
+					159,	-- Refreshing Spring Water
+					1708,	-- Sweet Nectar
+				}},
 				groups = {
-					i(1179),	-- Ice Cold Milk
-					i(1205),	-- Melon Juice
-					-- i(1645),	-- Moonberry Juice
-					i(8766),	-- Morning Glory Dew
-					i(159),	-- Refreshing Spring Water
-					i(1708),	-- Sweet Nectar
 					-- #if AFTER CATA
 					i(44571),	-- Bottle of Silvermoon Port
 					i(44573),	-- Cup of Frog Venom Brew
@@ -3989,24 +3990,17 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				coord = { 45.0, 77.6, ORGRIMMAR },
 				timeline = { ADDED_4_0_1 },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					2451,	-- Crested Heater Shield
-					62260,	-- Grunts Chain Belt
-					62261,	-- Grunts Chain Boots
-					62262,	-- Grunts Chain Bracers
-					62266,	-- Grunts Chain Circlet
-					62263,	-- Grunts Chain Gloves
-					62264,	-- Grunts Chain Leggings
-					62265,	-- Grunts Chain Vest
-					62253,	-- Grunts Plate Armor
-					62254,	-- Grunts Plate Belt
-					62255,	-- Grunts Plate Boots
-					62256,	-- Grunts Plate Bracers
-					62257,	-- Grunts Plate Gloves
-					62259,	-- Grunts Plate Helm
-					62258,	-- Grunts Plate Leggings
-					17190,	-- Ornate Buckler
-				}},
+				sym = {
+					{ "select", "symselector",
+						SymSelector.VENDOR_GRUNTS_CHAIN,	-- Grunts Chain
+						SymSelector.VENDOR_GRUNTS_PLATE,	-- Grunts Plate
+					},
+					{ "pop" },
+					{ "select", "itemID",
+						2451,	-- Crested Heater Shield
+						17190,	-- Ornate Buckler
+					},
+				},
 				groups = {
 					-- #if AFTER 10.0.5
 					-- Now any class and race can buy this
@@ -4809,6 +4803,8 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					{ "select", "symselector",
 						SymSelector.VENDOR_AUGMENTED_CHAIN,	-- Augmented Chain
 						SymSelector.VENDOR_CHAINMAIL,	-- Chainmail
+						SymSelector.VENDOR_GRUNTS_CHAIN,	-- Grunts Chain
+						SymSelector.VENDOR_GRUNTS_PLATE,	-- Grunts Plate
 						SymSelector.VENDOR_LIGHT_MAIL,	-- Light Mail
 						SymSelector.VENDOR_POLISHED_SCALE,	-- Polished Scale
 						SymSelector.VENDOR_SCALEMAIL,	-- Scalemail
@@ -4817,20 +4813,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				},
 				groups = {
 					i(2451),	-- Crested Heater Shield
-					i(62260),	-- Grunts Chain Belt
-					i(62261),	-- Grunts Chain Boots
-					i(62262),	-- Grunts Chain Bracers
-					i(62266),	-- Grunts Chain Circlet
-					i(62263),	-- Grunts Chain Gloves
-					i(62264),	-- Grunts Chain Leggings
-					i(62265),	-- Grunts Chain Vest
-					i(62253),	-- Grunts Plate Armor
-					i(62254),	-- Grunts Plate Belt
-					i(62255),	-- Grunts Plate Boots
-					i(62256),	-- Grunts Plate Bracers
-					i(62257),	-- Grunts Plate Gloves
-					i(62259),	-- Grunts Plate Helm
-					i(62258),	-- Grunts Plate Leggings
 					i(2448),	-- Heavy Pavise
 					i(2446),	-- Kite Shield
 					i(17189),	-- Metal Buckler

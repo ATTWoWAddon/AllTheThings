@@ -112,26 +112,122 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 		}),
 	}),
 	filter(CONSUMABLES, {
+		header(HEADERS.Item, 2070, {	-- Darnassian Bleu
+			symselector = SymSelector.VENDOR_FOOD_CHEESE,
+			groups = {
+				i(2070),	-- Darnassian Bleu
+				i(414),	-- Dalaran Sharp
+				i(422),	-- Dwarven Mild
+				i(1707),	-- Stormwind Brie
+				i(3927),	-- Fine Aged Cheddar
+				i(8932),	-- Alterac Swiss
+			},
+		}),
+		header(HEADERS.Item, 4604, {	-- Forest Mushroom Cap
+			symselector = SymSelector.VENDOR_FOOD_MUSHROOM,
+			groups = {
+				i(4604),	-- Forest Mushroom Cap
+				i(4605),	-- Red-speckled Mushroom
+				i(4606),	-- Spongy Morel
+				i(4607),	-- Delicious Cave Mold
+				i(4608),	-- Raw Black Truffle
+				i(8948),	-- Dried King Bolete
+			},
+		}),
+		header(HEADERS.Item, 159, {	-- Refreshing Spring Water
+			symselector = SymSelector.VENDOR_FOOD_DRINK,
+			groups = {
+				i(159),	-- Refreshing Spring Water
+				i(1179),	-- Ice Cold Milk
+				i(1205),	-- Melon Juice
+				i(1708),	-- Sweet Nectar
+				i(1645),	-- Moonberry Juice
+				i(8766),	-- Morning Glory Dew
+			},
+		}),
+		header(HEADERS.Item, 4536, {	-- Shiny Red Apple
+			symselector = SymSelector.VENDOR_FOOD_FRUIT,
+			groups = {
+				i(4536),	-- Shiny Red Apple
+				i(4537),	-- Tel'Abim Banana
+				i(4538),	-- Snapvine Watermelon
+				i(4539),	-- Goldenbark Apple
+				i(4602),	-- Moon Harvest Pumpkin
+				i(8953),	-- Deep Fried Plantains
+			},
+		}),
+		header(HEADERS.Item, 787, {	-- Slitherskin Mackerel
+			symselector = SymSelector.VENDOR_FOOD_FISH,
+			groups = {
+				i(787),	-- Slitherskin Mackerel
+				i(4592),	-- Longjaw Mud Snapper
+				i(4593),	-- Bristle Whisker Catfish
+				i(4594),	-- Rockscale Cod
+				i(21552),	-- Striped Yellowtail
+				i(8957),	-- Spinefin Halibut
+			},
+		}),
+		header(HEADERS.Item, 4540, {	-- Tough Hunk of Bread
+			symselector = SymSelector.VENDOR_FOOD_BREAD,
+			groups = {
+				i(4540),	-- Tough Hunk of Bread
+				i(4541),	-- Freshly Baked Bread
+				i(4542),	-- Moist Cornbread
+				i(4544),	-- Mulgore Spice Bread
+				i(4601),	-- Soft Banana Bread
+				i(8950),	-- Homemade Cherry Pie
+			},
+		}),
+		header(HEADERS.Item, 117, {	-- Tough Jerky
+			symselector = SymSelector.VENDOR_FOOD_MEAT,
+			groups = {
+				i(117),	-- Tough Jerky
+				i(2287),	-- Haunch of Meat
+				i(3770),	-- Mutton Chop
+				i(3771),	-- Wild Hog Shank
+				i(4599),	-- Cured Ham Steak
+				i(8952),	-- Roasted Quail
+			},
+		}),
 		i(6533, {	-- Aquadynamic Fish Attractor
 			isLimited = true,
 		}),
+		i(2723),	-- Bottle of Dalaran Noir
 		i(6532),	-- Bright Baubles
 		i(2594),	-- Flagon of Dwarven Honeymead/Mead
 		i(2593),	-- Flask of Stormwind Tawny
 		i(58265, {	-- Highland Pomegranate
 			timeline = { ADDED_4_0_3 },
 		}),
-		i(1179),	-- Ice Cold Milk
 		i(2595),	-- Jug of Badlands Bourbon
 		i(6530),	-- Nightcrawlers
 		i(136377, {	-- Oversized Bobber
 			timeline = { ADDED_7_0_3 },
 		}),
-		i(159),	-- Refreshing Spring Water
 		i(6529),	-- Shiny Bauble
 		i(2596),	-- Skin of Dwarven Stout
 		i(58278, {	-- Tropical Sunfruit
 			timeline = { ADDED_4_0_3 },
+		}),
+	}),
+	filter(FINGER_F, {
+		i(7341, {	-- Cubic Zirconia Ring
+			collectible = false,
+		}),
+		i(7340, {	-- Flawless Diamond Solitaire
+			collectible = false,
+		}),
+		i(7339, {	-- Miniscule Diamond Ring
+			collectible = false,
+		}),
+		i(7338, {	-- Mood Ring
+			collectible = false,
+		}),
+		i(7342, {	-- Silver Piffeny Band
+			collectible = false,
+		}),
+		i(7337, {	-- The Rock
+			collectible = false,
 		}),
 	}),
 	filter(LEATHER, {
@@ -271,6 +367,19 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 				i(849),	-- Chainmail Boots
 			},
 		}),
+		header(HEADERS.Item, 62265, {	-- Grunts Chain Vest
+			symselector = SymSelector.VENDOR_GRUNTS_CHAIN,
+			timeline = { ADDED_4_0_1 },
+			groups = {
+				i(62266),	-- Grunts Chain Circlet
+				i(62265),	-- Grunts Chain Vest
+				i(62262),	-- Grunts Chain Bracers
+				i(62263),	-- Grunts Chain Gloves
+				i(62260),	-- Grunts Chain Belt
+				i(62264),	-- Grunts Chain Leggings
+				i(62261),	-- Grunts Chain Boots
+			},
+		}),
 		header(HEADERS.Item, 2398, {	-- Light Chain Armor
 			symselector = SymSelector.VENDOR_LIGHT_CHAIN,
 			groups = {
@@ -339,6 +448,19 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 		}),
 	}),
 	filter(PLATE, {
+		header(HEADERS.Item, 62253, {	-- Grunts Plate Armor
+			symselector = SymSelector.VENDOR_GRUNTS_PLATE,
+			timeline = { ADDED_4_0_1 },
+			groups = {
+				i(62259),	-- Grunts Plate Helm
+				i(62253),	-- Grunts Plate Armor
+				i(62256),	-- Grunts Plate Bracers
+				i(62257),	-- Grunts Plate Gloves
+				i(62254),	-- Grunts Plate Belt
+				i(62258),	-- Grunts Plate Leggings
+				i(62255),	-- Grunts Plate Boots
+			},
+		}),
 		header(HEADERS.Item, 8094, {	-- Platemail Armor
 			symselector = SymSelector.VENDOR_PLATEMAIL,
 			groups = {

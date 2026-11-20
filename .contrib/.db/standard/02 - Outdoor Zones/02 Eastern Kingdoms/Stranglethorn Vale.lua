@@ -2787,27 +2787,15 @@ maproot(EASTERN_KINGDOMS, STRANGLETHORN_VALE, {
 						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
 					},
 					{ "pop" },
-				},
-				groups = sharedData({
-					collectible = false,
-					providers = {
-						{ "n", 2849},	-- Qixdi Goodstitch <Cloth Armor & Accessories>
-						-- #if AFTER TBC
-						{ "n", 17512},	-- Arred <Jewelcrafting Supplies>
-						{ "n", 16624},	-- Gelanthis <Jewelcrafting Supplies>
-						-- #endif
-						-- #if AFTER CATA
-						{ "n", 49887},	-- Gappy Silvertooth <Bling Merchant>
-						-- #endif
+					{ "select", "itemID",
+						7341,	-- Cubic Zirconia Ring
+						7340,	-- Flawless Diamond Solitaire
+						7339,	-- Miniscule Diamond Ring
+						7338,	-- Mood Ring
+						7342,	-- Silver Piffeny Band
+						7337,	-- The Rock
 					},
-				}, {
-					i(7341),	-- Cubic Zirconia Ring
-					i(7340),	-- Flawless Diamond Solitaire
-					i(7339),	-- Miniscule Diamond Ring
-					i(7338),	-- Mood Ring
-					i(7342),	-- Silver Piffeny Band
-					i(7337),	-- The Rock
-				}),
+				},
 			}),
 			n(2699, {	-- Rikqiz <Leatherworking Supplies>
 				coords = {

@@ -2145,13 +2145,9 @@ maproot(EASTERN_KINGDOMS, DUSKWOOD, {
 			n(3138, {	-- Scott Carevin <Mushroom Seller>
 				coord = { 75.7, 47.5, DUSKWOOD },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(4607),	-- Delicious Cave Mold
-					i(8948),	-- Dried King Bolete
-					i(4604),	-- Forest Mushroom Cap
-					i(4608),	-- Raw Black Truffle
-					i(4605),	-- Red-speckled Mushroom
-					i(4606),	-- Spongy Morel
+				sym = {
+					SymSelector.select("VENDOR_FOOD_MUSHROOM"),	-- Mushroom
+					{ "pop" },
 				},
 			}),
 			n(2669, {	-- Sheri Zipstitch <Tailoring Supplies>

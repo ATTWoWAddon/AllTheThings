@@ -816,9 +816,9 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 						n(33026, {	-- Sarah Brady <Alcohol>
 							coord = { 44.15, 47.63, NORTHREND_THE_UNDERBELLY },
-							groups = {
-								i(2593),	-- Flask of Stormwind Tawny
-							},
+							sym = {{ "select", "itemID",
+								2593,	-- Flask of Stormwind Tawny
+							}},
 						}),
 					}),
 					prof(FISHING, {

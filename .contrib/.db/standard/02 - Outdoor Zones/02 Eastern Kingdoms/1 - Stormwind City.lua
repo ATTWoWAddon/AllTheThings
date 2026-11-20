@@ -5045,13 +5045,9 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					-- #endif
 				},
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(8932),	-- Alterac Swiss
-					i(414),	-- Dalaran Sharp
-					i(2070),	-- Darnassian Bleu
-					i(422),	-- Dwarven Mild
-					i(3927),	-- Fine Aged Cheddar
-					i(1707),	-- Stormwind Brie
+				sym = {
+					SymSelector.select("VENDOR_FOOD_CHEESE"),	-- Cheese
+					{ "pop" },
 				},
 			}),
 			n(5503, {	-- Eldraeith <Herbalism Supplies> [TBC+] / Eldraeith <Herbalism Supplier>
