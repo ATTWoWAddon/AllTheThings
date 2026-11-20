@@ -601,6 +601,16 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			applyclassicphase(SOD_PHASE_TWO, o(424265, {	-- Grave
+				coord = { 16.7, 53.7, SWAMP_OF_SORROWS },
+				timeline = { ADDED_1_15_1 },
+				classes = { PRIEST },
+				groups = {
+					i(215425),	-- Swamp Echo
+				},
+			})),
+		}),
 		n(VENDORS, {
 			n(989, {	-- Banalash <Trade Supplies>
 				coords = {

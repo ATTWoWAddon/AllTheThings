@@ -1005,6 +1005,16 @@ maproot(KALIMDOR, DUSTWALLOW_MARSH, {
 				},
 			}),
 		}),
+		n(TREASURES, {
+			applyclassicphase(SOD_PHASE_TWO, o(424264, {	-- Grave
+				coord = { 63.7, 42.4, DUSTWALLOW_MARSH },
+				timeline = { ADDED_1_15_1 },
+				classes = { PRIEST },
+				groups = {
+					i(215428),	-- Theramore Echo
+				},
+			})),
+		}),
 		n(VENDORS, {
 			n(13476, {	-- Balai Lok'Wein <Potions, Scrolls and Reagents>
 				coord = { 36.4, 30.4, DUSTWALLOW_MARSH, },

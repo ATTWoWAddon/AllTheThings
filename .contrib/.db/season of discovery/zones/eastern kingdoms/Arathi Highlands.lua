@@ -1171,6 +1171,14 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 					recipe(426175),	-- Engrave Belt - Malleable Protection
 				},
 			})),
+			applyclassicphase(SOD_PHASE_TWO, o(424267, {	-- Grave
+				coord = { 62.2, 54.3, ARATHI_HIGHLANDS },
+				timeline = { ADDED_1_15_1 },
+				classes = { PRIEST },
+				groups = {
+					i(215427),	-- Arathi Echo
+				},
+			})),
 		}),
 		n(VENDORS, {
 			n(2816, {	-- Androd Fadran <Leatherworking Supplies>
