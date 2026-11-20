@@ -3961,7 +3961,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				n(223902, {	-- Traeya <Armor Vendor>
 					coord = { 63.1, 50.9, TANARIS },
-					timeline = { REMOVED_11_0_7, ADDED_12_1_5 },
+					timeline = { REMOVED_11_0_7, ADDED_11_2_5 },
 					groups = sharedData({
 						cost = {
 							-- #if AFTER 11.2.5
