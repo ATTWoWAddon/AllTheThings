@@ -3527,8 +3527,8 @@ i(1288,{description="Can drop from spiders in the level bracket 20-35, and are m
 i(1015,{coords={
 [1431]={{64,20.1}}},crs={213,565},description="Drops from wolves in the level bracket 15-30 like Dire wolves in Duskwood.",q=1}),
 i(17056,{coords={
-[1439]={{44,48}}},crs={10157,10158,10159,10160},description="Drops from birds, harpies, owlkin and striders in the level bracket 10-30 like Moonkin in Darkshore.",q=1}),
-i(2589,{description="Linen Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={213,1411,1412,1420,1421,1426,1429,1432,1436},q=1}),
+[1439]={{44,48}}},crs={10157,10158,10159,10160},q=1}),
+i(2589,{maps={213,1411,1412,1420,1421,1426,1429,1432,1436},q=1}),
 i(3731,{coords={
 [1424]={{41.5,37.5},{50,31.3}}},crs={2384,2385},description="Drops from lions in the level bracket 15-35 like lions in Hillsbrad Foothills and Alterac Mountains.",q=1}),
 i(12803,{coords={
@@ -3541,9 +3541,9 @@ i(4589,{coords={
 [1447]={{20,57}}},crs={2347,2473,2474,2651,2657,2658,2659,5300,6375},description="Alliance players can disregard The Hinterlands due to most mob sources being friendly.",maps={1425},q=1,rwp=40003}),
 i(5116,{coords={
 [1441]={{79,77}},
-[1442]={{32.4,66}}},description="Drops from birds and harpies in the given zones.",maps={1417,1418,1443},rwp=40003}),
+[1442]={{32.4,66}}},maps={1417,1418,1443},rwp=40003}),
 i(27668,{awp=20001,crs={15651,15652,16347,16348,16349},description="Only drops from lynxes in Eversong Forest (except Sunstrider Isle) and Ghostlands.",maps={1941,1942},q=1}),
-i(4338,{description="Mageweave Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={219,235,1418,1427,1428,1446,1448},q=1}),
+i(4338,{maps={219,235,1418,1427,1428,1446,1448},q=1}),
 i(12223,{crs={1553,1554,16353,16354,16355},description="Only drops from bats in Ghostlands and Tirisfal Glades.",maps={1420,1942},q=1}),
 i(1468,{coords={
 [1437]={{15.1,39.3}}},crs={1024,1025,1026,1027,1028,1029,1418},description="Drops from murlocs in the level bracket 15-30 like Bluegill murlocs in Wetlands.",q=1}),
@@ -3560,10 +3560,10 @@ i(12184,{coords={
 i(4461,{description="Drops from raptors ranging from level 30 to 40.",maps={1417,1434,1445},q=1}),
 i(12203,{coords={
 [1448]={{45.2,69},{54.1,86.7}}},crs={8959,8960},description="Drops from wolves in the level bracket 30-60 like Felpaw wolves in Felwood.",q=1}),
-i(14047,{description="Runecloth drops commonly from any humanoid and undead creatures within the given zones.",maps={242,250,317,1419,1435,1451,1452},q=1}),
+i(14047,{maps={242,250,317,1419,1435,1451,1452},q=1}),
 i(10285,{crs={1821,1822,1824,5856,5857},description="Drops from spiders in the level bracket 45-60.",q=1}),
 i(5635,{description="Drops from some Beast and Demon creatures like hounds, felines, spiders, raptors and bats ranging from level 10 to 30.",maps={279,301,310,1413,1421,1424,1431,1432,1433,1436,1437,1439,1440,1441,1442,1942,1950},q=1}),
-i(4306,{description="Silk Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={230,235,280,301,1417,1425,1443,1444},q=1}),
+i(4306,{maps={230,235,280,301,1417,1425,1443,1444},q=1}),
 i(5784,{coords={
 [1437]={{15.1,39.3}}},crs={1024,1025,1026,1027,1028,1029,1418},description="Drops from murlocs in the level bracket 15-25 like Bluegill murlocs in Wetlands.",q=1}),
 i(5523,{description="Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 10-20.",maps={1413,1421,1432,1433,1436,1439,1440,1942,1943,1950},q=1,g={
@@ -3587,11 +3587,11 @@ i(5465,{coords={
 [1421]={{35.7,13.7}}},crs={1780,1781,1998,1999,2000,2001,7319,12433},description="Drops from spiders in the level bracket 5-20 like spiders in Silverpine Forest and Teldrassil.",maps={1438},q=1}),
 i(1475,{description="Can drop from spiders in the level bracket 5-20, and are most abundant in Loch Modan and Stonetalon Mountains. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={1432,1442},q=1}),
 i(5468,{coords={
-[1439]={{33,70},{40,20}}},crs={2173,2174,6033},description="Drops from frenzies found in bodies of water.",maps={1421},q=1}),
+[1439]={{33,70},{40,20}}},crs={2173,2174,6033},maps={1421},q=1}),
 i(3174,{crs={217,442,505,539,569,930,949,1111,1184,1185,1195,1780,1781,3819,3820,3821,4005,4006,4007,4040,4263,4264},maps={1421,1431,1432,1433,1437,1440,1442},q=1}),
 i(3182,{crs={3819,3820,3821},description="Drops from spiders in the level bracket 16-36, and are most abundant in Ashenvale. Spiders often share a spawn with other beasts, so kill the bear or whatever if you cannot find spiders.",maps={1440},q=1}),
 i(5471,{coords={
-[1440]={{19.7,29.9},{39.5,63.6},{69.9,62.7}}},crs={3816,3817,3818},description="Drops from stags in Ashenvale as well as some other vanilla zones.",q=1}),
+[1440]={{19.7,29.9},{39.5,63.6},{69.9,62.7}}},crs={3816,3817,3818},q=1}),
 i(5469,{crs={2172,2321,2322,2323,3244,3245,3246},description="Drops from striders in the level bracket 10-20 like Foreststriders throughout Darkshore.",maps={1439},q=1}),
 i(2672,{crs={118,525,1922,2958,2959,2960,3056},description="Drops from wolves in the level bracket 5-17 like wolves in Elwynn Forest and Mulgore.",maps={1412,1429},q=1}),
 i(12206,{coords={
@@ -3601,7 +3601,7 @@ i(3667,{coords={
 i(12208,{coords={
 [1448]={{45.2,69},{54.1,86.7}}},crs={8959,8960},description="Drops from wolves in the level bracket 40-60 like Felpaw wolves in Felwood.",q=1}),
 i(5785,{crs={871,875,879,4360,4362,4363,4458,4459,4461},maps={1424,1434,1445},q=1}),
-i(4337,{crs={1821,1822,1824,4376,4377,4378,4379,4411,4412,4414,4415,4431,5856,5857,5858},description="Drops from spiders in the level bracket 32-60.",maps={1422,1427,1445},q=1}),
+i(4337,{crs={1821,1822,1824,4376,4377,4378,4379,4411,4412,4414,4415,4431,5856,5857,5858},maps={1422,1427,1445},q=1}),
 i(5524,{description="Drops commonly from humanoid- and beast sea creatures like naga, giants and turtles in the level bracket 20-30.",maps={221,1424,1437},q=1,g={
 i(5500,{q=2}),
 i(5498,{q=2}),
@@ -3617,7 +3617,7 @@ i(9260,{coords={
 i(12205,{coords={
 [1445]={{34.1,22.5},{55.2,54.8}}},crs={4376,4377,4378,4379,4415},description="Drops from spiders in the level bracket 35-60 like spiders in Dustwallow Marsh.",q=1}),
 i(8153,{description="Drops from trolls ranging from level 40 to 50.",maps={1425,1434},q=2}),
-i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={221,225,1431,1437,1440},q=1}),
+i(2592,{maps={221,225,1431,1437,1440},q=1}),
 i(17965,{crs={6109,11583,14890},q=2})})}}),
 x(2,{awp=20003,phase=17,g={
 flt(3,{

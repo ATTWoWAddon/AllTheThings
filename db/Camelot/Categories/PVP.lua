@@ -1254,7 +1254,7 @@ pvprank(14,{
 title(20,{OnUpdate=_.OnUpdateDB.ForeverRankTitle,r=2}),
 title(34,{OnUpdate=_.OnUpdateDB.ForeverRankTitle,r=1})})}}),
 h(-821,{
-h(-210,{r=2,symselector=5,g={
+h(-210,{r=2,symselector=6,g={
 h(-101,{pvp=1,g={
 s(308346,272838,{b=1,cost={{"c",1792,10500},{"i",274895,10}},f=8,lvl=60,pvp=1,spellID=13959}),
 s(310351,278468,{b=1,cost={{"c",1792,10500},{"i",274895,10}},f=8,lvl=60,pvp=1}),
@@ -1538,7 +1538,7 @@ i(275240,{b=1,cost={{"c",1792,1200}},lvl=60,pvp=1,spellID=1296349}),
 s(308207,272699,{b=1,cost={{"c",1792,4500},{"i",20559,10}},f=3,lvl=55,pvp=1}),
 s(308206,272698,{b=1,cost={{"c",1792,4500},{"i",20559,10}},f=3,lvl=55,pvp=1}),
 i(274969,{b=1,cost={{"c",1792,7500},{"i",274895,10}},f=51,lvl=55,pvp=1})}}),
-h(-211,{r=1,symselector=6,g={
+h(-211,{r=1,symselector=7,g={
 h(-101,{
 s(310352,278469,{b=1,f=8,lvl=60}),
 s(308101,272593,{b=1,f=22,lvl=60}),

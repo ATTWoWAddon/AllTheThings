@@ -58,9 +58,8 @@ ach(665,{awp=30002,rwp=30002,u=2}),(_.OnInitDB.RegionExclusiveEU)(
 p(111,{b=1,description="This was only available in the EU.",itemID=30360,petTypeID=1,q=3,spellID=24988,u=2}))}}),
 h(-524,{awp=20501,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",u=3,g={
 q(63450,{coords={
-[1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=20505,u=2,g={
+[1434]={{28,75.8}}},crs={5111,6740,6741,6746,6929,16618,16739,17630,19046,19232},maps={1453,1454,1455,1456,1458,1947,1954,1955},qgs={17249},rwp=20505,sym={{"select","itemID",38233}},u=2,g={
 toy(184871,{u=2}),
-toy(38233,{b=1,q=3,u=2}),
 mnt(348459,{itemID=184865,lvl=20,u=2})}})}}),
 h(-694,{awp=50502,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",rwp=30002,u=2,g={
 mnt(1266345,{itemID=260438,u=2}),

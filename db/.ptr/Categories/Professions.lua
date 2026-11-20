@@ -8059,7 +8059,7 @@ i(129910,{requireSkill=393})}}),
 q(40148,{coords={
 [634]={{45.7,25.6}}},lvl=10,qgs={98721},requireSkill=393,sourceQuests={40146}}),
 q(40149,{coords={
-[634]={{45.7,25.6}}},lvl=10,qgs={98721},requireSkill=393,sourceQuests={40147,40148},g={
+[634]={{45.7,25.6}}},lvl=10,qgs={98721},requireSkill=393,sourceQuests={40147,40148},sym={{"select","itemID",130102}},g={
 toy(130102,{b=1,requireSkill=393})}}),
 q(40151,{lvl=10,maps={630,634,641,650,680},qss={129867},requireSkill=393,sourceQuests={40145}}),
 q(40152,{lvl=10,maps={627},qgs={93541},requireSkill=393,sourceQuests={40151}}),

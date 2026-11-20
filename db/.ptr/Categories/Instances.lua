@@ -3857,10 +3857,8 @@ q(27119,{awp=40003,cost={{"i",18240,1}},lvl=15,maps={235},qgs={14338},g={
 i(18258,{spellID=22736})}}),
 q(27120,{awp=40003,cost={{"i",18240,1}},lvl=15,maps={235},qgs={14338},repeatable=1,sourceQuests={27119},g={
 i(18258,{spellID=22736})}}),
-q(5528,{description="With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",maps={235},qgs={14322},rwp=40003,u=2,g={
-i(18269,{b=1,f=55,spellID=22789,u=2}),
-i(18284,{b=1,f=55,spellID=22790,u=2})}}),
-q(27114,{awp=40003,description="With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",lvl=15,maps={235},qgs={14322},g={
+q(5528,{description="With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",maps={235},qgs={14322},rwp=40003,sym={{"select","itemID",18269,18284}},u=2}),
+q(27114,{awp=40003,description="With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",lvl=15,maps={235},qgs={14322},sym={{"select","itemID",18269,18284}},g={
 i(18269,{b=1,f=55,spellID=22789}),
 i(18284,{b=1,f=55,spellID=22790})}}),
 q(7503,{c={3},maps={236,237,238},providers={{"n",14382}},qss={18361},rwp=40003,u=2,g={

@@ -582,9 +582,7 @@ q(9335,{coords={
 [1456]={{43.7,52.6}},
 [1458]={{49.9,29.4}}},cost={{"i",22484,8}},lvl=50,phase=1601,qgs={16787},r=1,repeatable=1,rwp=20001,sourceQuests={9153},u=2,g={
 i(23122,{b=1,f=55,lvl=50,q=2,rwp=30003,u=2})}}),
-q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},qgs={16431},qis={22949},r=2,u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+q(9292,{description="If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1453},qgs={16431},qis={22949},r=2,sym={{"select","itemID",23123,23122}},u=2}),
 q(12773,{awp=30002,lvl=65,maps={1457},qgs={29087},qis={39698},races={4},sourceQuests={12753},u=2}),
 q(12783,{awp=30002,lvl=65,races={8},u=2}),
 q(12752,{awp=30002,lvl=65,races={5},u=2}),
@@ -593,9 +591,7 @@ q(12784,{awp=30002,lvl=65,races={6},u=2}),
 q(12811,{awp=30002,lvl=65,races={2},u=2}),
 q(9304,{lvl=45,qis={22948},qss={22975},u=2}),
 q(9301,{lvl=45,qis={22930},qss={22970},u=2}),
-q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1420,1458},qgs={16531},qis={22950},r=1,u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+q(9310,{description="If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",isYearly=1,maps={1420,1458},qgs={16531},qis={22950},r=1,sym={{"select","itemID",23123,23122}},u=2}),
 q(9262,{coords={
 [1457]={{77.7,42.7}}},isYearly=1,maps={1438},qgs={16495},r=2,u=2,g={
 qo(1,{crs={16422,16423,16437,16438},providers={{"i",22892}},u=2})}}),
@@ -655,10 +651,8 @@ q(12785,{awp=30002,lvl=65,maps={1454},qgs={28318},qis={40482},races={8},sourceQu
 q(12812,{awp=30002,lvl=65,maps={1454},qgs={28318},qis={40482},races={2},sourceQuests={12811},u=2}),
 q(9300,{lvl=45,qis={22946},qss={22974},u=2}),
 q(9085,{coords={
-[1423]={{81.1,60.6}}},isYearly=1,lvl=50,qgs={16361},u=2,g={
-qo(1,{providers={{"n",16143}},u=2}),
-i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+[1423]={{81.1,60.6}}},isYearly=1,lvl=50,qgs={16361},sym={{"select","itemID",23123,23122}},u=2,g={
+qo(1,{providers={{"n",16143}},u=2})}}),
 q(12788,{awp=30002,lvl=65,maps={1954},qgs={28318},qis={40482},races={10},sourceQuests={12782},u=2}),
 q(12774,{awp=30002,lvl=65,maps={1453},qgs={29087},qis={39698},races={1},sourceQuests={12775},u=2}),
 q(9341,{coords={
@@ -675,15 +669,11 @@ q(9343,{coords={
 s(133398,22999,{b=1,f=9,q=1,rwp=30003,u=2})}}),
 q(12776,{awp=30002,lvl=65,maps={1947},qgs={29087},qis={39698},races={11},sourceQuests={12777},u=2}),
 q(9247,{coords={
-[1423]={{81.1,60.5}}},crs={16281},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,qss={22723},u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}}),
+[1423]={{81.1,60.5}}},crs={16281},description="You should receive this in the mail at level 60.",isYearly=1,lvl=60,qss={22723},sym={{"select","itemID",23123,23122}},u=2}),
 q(12787,{awp=30002,lvl=65,maps={1458},qgs={28318},qis={40482},races={5},sourceQuests={12752},u=2}),
 q(12786,{awp=30002,lvl=65,maps={1456},qgs={28318},qis={40482},races={6},sourceQuests={12784},u=2}),
 q(9153,{coords={
-[1423]={{81.1,60.6}}},cost={{"i",22484,10}},isYearly=1,lvl=50,qgs={16361},u=2,g={
-i(23123,{b=1,f=55,lvl=50,q=2,u=2}),
-i(23122,{b=1,f=55,lvl=50,q=2,u=2})}})}}),
+[1423]={{81.1,60.6}}},cost={{"i",22484,10}},isYearly=1,lvl=50,qgs={16361},sym={{"select","itemID",23123,23122}},u=2})}}),
 n(14684,{description="Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",maps={317},u=2,g={
 s(133523,23124,{b=1,f=28,lvl=55,q=3,u=2}),
 i(23125,{b=1,f=51,lvl=55,q=3,u=2}),

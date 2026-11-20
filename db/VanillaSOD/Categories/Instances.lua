@@ -3599,10 +3599,10 @@ r(1213588,{awp=11506,b=1,itemID=234265,learnedAt=315,phase=1611,q=3,requireSkill
 r(1214145,{awp=11506,b=1,itemID=234435,learnedAt=320,phase=1611,q=3,requireSkill=202}),
 r(1217207,{awp=11506,b=1,itemID=235530,learnedAt=320,phase=1611,q=3,requireSkill=202})}}),
 n(234880,{awp=11505,g={
-s(231524,234159,{b=1,description="If you get this to drop, @crieve on Discord!",f=33,lvl=60,q=4}),
 s(231523,234157,{b=1,f=5,loc=40,lvl=60,q=4}),
 i(234158,{b=1,f=51,lvl=60,q=4}),
 s(231522,234156,{b=1,f=6,loc=47,lvl=60,q=4}),
+s(231524,234159,{b=1,f=33,lvl=60,q=4}),
 i(234160,{b=1,f=52,lvl=60,q=4})}}),
 n(235180,{awp=11505,g={
 s(231528,234164,{b=1,f=5,loc=40,lvl=60,q=4}),
@@ -3848,7 +3848,7 @@ s(164619,21479,{b=1,f=7,loc=44,lvl=60,q=4,u=2}),
 s(164623,21484,{b=1,f=5,loc=40,lvl=60,q=3,u=2}),
 s(164620,21480,{b=1,f=6,loc=44,lvl=60,q=3,u=2}),
 s(164621,21481,{b=1,f=7,loc=47,lvl=60,q=3,r=2,u=2}),
-s(164622,21482,{awp=11300,b=1,description="This item was originally a Horde exclusive drop for Shamans during vanilla. Sometime after TBC Prepatch, this item disappeared from the loot table. Please @Crieve if you get it to drop.",f=6,loc=47,lvl=60,q=3,r=1,u=2}),
+s(164622,21482,{awp=11300,b=1,f=6,loc=47,lvl=60,q=3,r=1,u=2}),
 i(21483,{b=1,f=52,lvl=60,q=3,u=2})}}),
 e(1539,{npcID=15340,u=2,g={
 s(164613,21471,{b=1,f=1,lvl=60,q=4,u=2}),
@@ -7237,11 +7237,12 @@ s(160343,11808,{b=1,f=4,loc=40,lvl=54,q=4,rwp=11503,u=2}),
 s(160345,11812,{b=1,f=3,lvl=53,q=3,rwp=11503,u=2}),
 s(160346,11814,{b=1,f=6,loc=44,lvl=53,q=3,rwp=11503,u=2}),
 i(11832,{b=1,f=53,lvl=53,q=3,rwp=11503,u=2})}}),
-n(8923,{description="This is a Rare Creature and, as such, is not always present.",g={
+h(-46,{
+n(8923,{
 s(160337,11786,{b=1,f=26,lvl=51,q=3}),
 s(160336,11785,{b=1,f=8,lvl=53,q=3}),
 s(160338,11787,{b=1,f=7,loc=47,lvl=53,q=3}),
-s(164868,22245,{b=1,f=4,loc=47,lvl=51,phase=1610,q=3})}}),
+s(164868,22245,{b=1,f=4,loc=47,lvl=51,phase=1610,q=3})})}),
 e(385,{modelScale=3,npcID=9039,providers={{"o",169243}},g={
 s(224193,227963,{awp=11503,b=1,f=20,lvl=52,phase=1608,q=3}),
 s(160405,11922,{b=1,f=20,lvl=52,q=3,rwp=11503,u=2}),
@@ -7443,11 +7444,10 @@ s(162624,15861,{b=1,f=5,loc=47,q=2}),
 o(175385,{description="This is the white tablet leaning up against the wall in the Whelp Room.",g={
 i(12358,{q=1})}})}}),
 q(5127,{coords={
-[1452]={{63.8,73.8}}},learnedAt=275,lvl=55,qgs={10918},requireSkill=9788,sourceQuests={5126},g={
+[1452]={{63.8,73.8}}},learnedAt=275,lvl=55,qgs={10918},requireSkill=9788,sourceQuests={5126},sym={{"select","itemID",9224}},g={
 qo(1,{cost={{"i",12848,1}},crs={10899},providers={{"i",12847}},requireSkill=9788}),
 qo(2,{providers={{"i",12806}},requireSkill=9788}),
 r(16667,{b=1,itemID=12696,learnedAt=285,q=3,requireSkill=9788}),
-i(9224,{f=55,lvl=40,q=1,requireSkill=9788}),
 i(12849,{b=1,q=2,requireSkill=9788})}}),
 q(4788,{coords={
 [1446]={{66.8,24}}},lvl=40,qgs={10460},sourceQuests={5065},g={
@@ -7559,24 +7559,45 @@ s(160884,13181,{b=1,f=4,loc=44,lvl=52,q=3,rwp=11503,u=2}),
 s(224657,228555,{awp=11503,b=1,f=25,lvl=52,phase=1608,q=3}),
 s(160885,13182,{b=1,f=25,lvl=52,q=3,rwp=11503,u=2})}})}}),
 i(12533,{b=1,description="This item can be found along the back wall as you cross the 2nd bridge to the sleeping orc encampment just after Warosh.",f=55,providers={{"o",175886}},q=1}),
+h(-46,{
 n(9218,{coords={
-[252]={{39,64}}},description="This is a Rare Creature and, as such, is not always present.",g={
+[252]={{39,64}}},g={
 s(160923,13285,{b=1,f=22,lvl=53,q=3}),
 s(224659,228557,{awp=11503,b=1,f=6,loc=47,lvl=53,phase=1608,q=3}),
 s(160922,13284,{b=1,f=6,loc=47,lvl=53,q=3,rwp=11503,u=2})}}),
 n(9219,{coords={
-[252]={{54,58}}},description="This is a Rare Creature and, as such, is not always present.",g={
+[252]={{54,58}}},g={
 s(160924,13286,{b=1,f=21,lvl=53,q=3}),
 s(224658,228556,{awp=11503,b=1,f=3,lvl=53,phase=1608,q=3}),
 s(160574,12608,{b=1,f=3,lvl=53,q=3,rwp=11503,u=2})}}),
 n(9217,{coords={
-[252]={{39,64}}},description="This is a Rare Creature and, as such, is not always present.",g={
+[252]={{39,64}}},g={
 s(224664,228563,{awp=11503,b=1,f=1,lvl=54,phase=1608,q=3}),
 s(160919,13261,{b=1,f=1,lvl=54,q=3,rwp=11503,u=2}),
 s(224665,228564,{awp=11503,b=1,f=4,loc=47,lvl=54,phase=1608,q=3}),
 s(160921,13282,{b=1,f=4,loc=47,lvl=54,q=3,rwp=11503,u=2}),
 i(228565,{awp=11503,b=1,f=52,lvl=54,phase=1608,q=3}),
 i(13283,{b=1,f=52,lvl=54,q=3,rwp=11503,u=2})}}),
+n(9596,{coords={
+[250]={{49,55},{53,67}}},g={
+r(16994,{itemID=12838,learnedAt=300,q=3,requireSkill=17041}),
+s(160587,12621,{b=1,f=21,lvl=54,q=3}),
+s(224668,228568,{awp=11503,b=1,f=7,loc=44,lvl=55,phase=1608,q=3}),
+s(160598,12637,{b=1,f=7,loc=44,lvl=55,q=3,rwp=11503,u=2}),
+s(224667,228567,{awp=11503,b=1,f=6,loc=45,lvl=55,phase=1608,q=3}),
+s(160596,12634,{b=1,f=6,loc=45,lvl=55,q=3,rwp=11503,u=2})}}),
+n(10376,{coords={
+[251]={{55,75}}},g={
+s(224683,228592,{awp=11503,b=1,f=20,lvl=56,phase=1608,q=3}),
+s(160899,13218,{b=1,f=20,lvl=56,q=3,rwp=11503,u=2}),
+s(224681,228590,{awp=11503,b=1,f=4,loc=41,lvl=56,phase=1608,q=3}),
+s(160888,13185,{b=1,f=4,loc=41,lvl=56,q=3,rwp=11503,u=2}),
+s(160887,13184,{b=1,f=5,loc=44,lvl=56,q=3})}}),
+n(9718,{coords={
+[254]={{36,60},{36,72}}},g={
+s(160892,13204,{b=1,f=23,lvl=55,q=3}),
+s(160889,13198,{b=1,f=34,lvl=55,q=3}),
+s(160891,13203,{b=1,f=3,lvl=55,q=3})}})}),
 e(388,{npcID=9196,g={
 i(12534,{b=1,q=1}),
 i(12336,{b=1,q=2}),
@@ -7628,21 +7649,6 @@ s(164903,22325,{b=1,f=5,loc=45,lvl=56,q=3}),
 s(224687,228596,{awp=11503,b=1,c={5,8,9},f=4,loc=45,lvl=56,phase=1608,q=3}),
 s(164894,22306,{b=1,c={5,8,9},f=4,loc=45,lvl=56,q=3,rwp=11503,u=2}),
 i(22398,{b=1,f=54,lvl=57,q=3})}}),
-n(9596,{coords={
-[250]={{49,55},{53,67}}},description="This is a Rare Creature and, as such, is not always present.",g={
-r(16994,{itemID=12838,learnedAt=300,q=3,requireSkill=17041}),
-s(160587,12621,{b=1,f=21,lvl=54,q=3}),
-s(224668,228568,{awp=11503,b=1,f=7,loc=44,lvl=55,phase=1608,q=3}),
-s(160598,12637,{b=1,f=7,loc=44,lvl=55,q=3,rwp=11503,u=2}),
-s(224667,228567,{awp=11503,b=1,f=6,loc=45,lvl=55,phase=1608,q=3}),
-s(160596,12634,{b=1,f=6,loc=45,lvl=55,q=3,rwp=11503,u=2})}}),
-n(10376,{coords={
-[251]={{55,75}}},description="This is a Rare Creature and, as such, is not always present.",g={
-s(224683,228592,{awp=11503,b=1,f=20,lvl=56,phase=1608,q=3}),
-s(160899,13218,{b=1,f=20,lvl=56,q=3,rwp=11503,u=2}),
-s(224681,228590,{awp=11503,b=1,f=4,loc=41,lvl=56,phase=1608,q=3}),
-s(160888,13185,{b=1,f=4,loc=41,lvl=56,q=3,rwp=11503,u=2}),
-s(160887,13184,{b=1,f=5,loc=44,lvl=56,q=3})}}),
 e(391,{npcID=10596,g={
 s(224672,228573,{awp=11503,b=1,f=23,lvl=55,phase=1608,q=3}),
 s(160886,13183,{b=1,f=23,lvl=55,q=3,rwp=11503,u=2}),
@@ -7679,17 +7685,12 @@ s(223208,226710,{awp=11503,b=1,f=5,loc=41,lvl=55,phase=1608,q=3}),
 s(163033,16718,{b=1,f=5,loc=41,lvl=55,q=3,rwp=11503,u=2}),
 s(160895,13208,{b=1,f=5,loc=43,lvl=56,q=3}),
 s(160894,13206,{b=1,f=4,loc=46,lvl=56,q=3})}}),
-n(9718,{coords={
-[254]={{36,60},{36,72}}},description="This is a Rare Creature and, as such, is not always present.",g={
-s(160892,13204,{b=1,f=23,lvl=55,q=3}),
-s(160889,13198,{b=1,f=34,lvl=55,q=3}),
-s(160891,13203,{b=1,f=3,lvl=55,q=3})}}),
 e(396,{npcID=9568,g={
 ach(643),
 i(12780,{b=1,q=1}),
 i(12337,{b=1,q=2}),
 s(224678,228586,{awp=11503,b=1,f=29,lvl=56,phase=1608,q=3}),
-s(160869,13148,{b=1,description="This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",f=29,lvl=56,q=3,rwp=11503,u=2}),
+s(160869,13148,{b=1,f=29,lvl=56,q=3,rwp=11503,u=2}),
 s(224691,228601,{awp=11503,b=1,f=26,lvl=57,phase=1608,q=3}),
 s(160874,13163,{b=1,f=26,lvl=57,q=3,rwp=11503,u=2}),
 s(224679,228587,{awp=11503,b=1,f=28,lvl=56,phase=1608,q=3}),
@@ -7813,7 +7814,7 @@ prof(393,{cost={{"i",19901,1},{"i",12709,1}},description="You must have 315 Skin
 i(12731,{q=4})}})}),
 n(16042,{cost={{"i",22056,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",phase=1610,providers={{"i",22057}},g={
 s(164910,22336,{b=1,f=8,lvl=58,q=3}),
-s(224722,228682,{b=1,description="This version of the staff was created and added to the DB, but doesn't seem to drop. @Crieve if you get it to drop.",f=28,lvl=58,phase=1608,q=3,u=1}),
+s(224722,228682,{b=1,f=28,lvl=58,phase=1608,q=3,u=1}),
 s(164909,22335,{b=1,f=28,lvl=58,q=3}),
 s(224721,228681,{awp=11503,b=1,c={5,8,9},f=4,loc=40,lvl=58,phase=1608,q=3}),
 s(164890,22302,{b=1,c={5,8,9},f=4,loc=40,lvl=58,q=3,rwp=11503,u=2}),
@@ -8005,11 +8006,8 @@ q(5518,{cost={{"i",18240,1},{"i",14341,2},{"i",8170,8},{"i",14048,4}},lvl=56,map
 r(22813,{learnedAt=285,requireSkill=197}),
 r(22815,{learnedAt=285,requireSkill=165}),
 i(18258,{description="Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",f=55,lvl=55,q=2})}}),
-q(5519,{cost={{"i",18240,1},{"i",14341,2},{"i",8170,8},{"i",14048,4}},lvl=56,maps={235},maxReputation={169,42000},qgs={14338},repeatable=1,sourceQuests={5518},g={
-i(18258,{f=55,lvl=55,q=2})}}),
-q(5528,{description="With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",lvl=56,maps={235},qgs={14322},g={
-i(18269,{b=1,f=55,q=2}),
-i(18284,{b=1,f=55,q=2})}}),
+q(5519,{cost={{"i",18240,1},{"i",14341,2},{"i",8170,8},{"i",14048,4}},lvl=56,maps={235},maxReputation={169,42000},qgs={14338},repeatable=1,sourceQuests={5518},sym={{"select","itemID",18258}}}),
+q(5528,{description="With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",lvl=56,maps={235},qgs={14322},sym={{"select","itemID",18269,18284}}}),
 q(7503,{c={3},lvl=54,maps={236,237,238},providers={{"n",14382}},qss={18361},g={
 i(18473,{b=1,c={3},f=53,q=3})}}),
 q(84551,{awp=11503,c={2},lvl=54,maps={236,237,238},providers={{"n",14382}},qss={228690},g={
@@ -8240,8 +8238,8 @@ s(163559,18477,{b=1,f=5,loc=46,lvl=55,q=2}),
 s(163563,18481,{b=1,f=24,lvl=55,q=2}),
 i(228469,{awp=11503,b=1,f=52,lvl=56,phase=1608,q=3}),
 i(18500,{b=1,f=52,lvl=56,q=3,rwp=11503,u=2}),
-s(224612,228486,{b=1,description="There's no evidence that this version has dropped yet. @Crieve if you get one to drop.",f=22,lvl=58,phase=1608,q=4,u=1}),
-s(163604,18538,{b=1,f=22,lvl=58,q=4}),
+s(224612,228486,{awp=11503,b=1,f=22,lvl=58,phase=1608,q=4}),
+s(163604,18538,{b=1,f=22,lvl=58,q=4,rwp=11503,u=2}),
 s(224604,228473,{awp=11503,b=1,f=24,lvl=57,phase=1608,q=3}),
 s(163598,18531,{b=1,f=24,lvl=57,q=3,rwp=11503,u=2})}})}}),
 h(-357,{coords={
@@ -8266,11 +8264,12 @@ s(163495,18374,{b=1,f=5,loc=41,lvl=57,q=3}),
 s(163485,18350,{b=1,f=3,lvl=56,q=2}),
 s(163486,18351,{b=1,f=7,loc=43,lvl=56,q=2}),
 i(18371,{b=1,f=53,lvl=56,q=3})}}),
-n(11467,{description="This is a Rare Creature and, as such, is not always present.",g={
+h(-46,{
+n(11467,{
 s(224273,228061,{awp=11503,b=1,f=4,loc=44,lvl=55,phase=1608,q=3}),
 s(163507,18387,{b=1,f=4,loc=44,lvl=55,q=3,rwp=11503,u=2}),
 s(163481,18346,{b=1,f=4,loc=46,lvl=55,q=2}),
-i(18345,{b=1,f=52,lvl=55,q=2})}}),
+i(18345,{b=1,f=52,lvl=55,q=2})})}),
 e(407,{npcID=11488,g={
 s(163482,18347,{b=1,f=21,lvl=56,q=2}),
 s(163503,18383,{b=1,f=7,loc=44,lvl=56,q=3}),
@@ -8455,11 +8454,12 @@ i(9447,{b=1,f=52,lvl=29,q=3,u=2})}}),
 e(418,{npcID=6229,u=2,g={
 s(159368,9449,{b=1,f=24,lvl=29,q=3,u=2}),
 s(159369,9450,{b=1,f=5,loc=47,lvl=28,q=2,u=2})}}),
-n(6228,{description="This is a Rare Creature and, as such, is not always present.",u=2,g={
+h(-46,{u=2,g={
+n(6228,{u=2,g={
 i(5108,{f=5,loc=42,lvl=27,q=1,u=2}),
 s(159374,9456,{b=1,f=31,lvl=30,q=3,u=2}),
 s(159375,9457,{b=1,f=23,lvl=30,q=3,u=2}),
-s(159373,9455,{b=1,f=5,loc=43,lvl=28,q=3,u=2})}}),
+s(159373,9455,{b=1,f=5,loc=43,lvl=28,q=3,u=2})}})}}),
 e(422,{npcID=7800,u=2,g={
 ach(634,{u=2}),
 s(159377,9459,{b=1,f=22,lvl=32,q=3,u=2}),
@@ -8987,11 +8987,12 @@ i(17703,{q=1}),
 s(163402,17752,{b=1,f=20,lvl=45,q=3}),
 s(163405,17755,{b=1,f=4,loc=45,lvl=45,q=3}),
 s(163404,17754,{b=1,f=6,loc=46,lvl=45,q=3})}}),
+h(-46,{
 n(12237,{coords={
-[280]={{24,75}}},description="This is a Rare Creature and, as such, is not always present.",g={
+[280]={{24,75}}},g={
 s(163393,17741,{b=1,f=4,loc=42,lvl=46,q=3}),
 s(163394,17742,{b=1,f=5,loc=42,lvl=46,q=3}),
-s(163407,17767,{b=1,f=6,loc=40,lvl=46,q=3})}})}}),
+s(163407,17767,{b=1,f=6,loc=40,lvl=46,q=3})}})})}}),
 h(-358,{coords={
 [68]={{44.5,77.1}}},cost={{"i",17191,1}},sourceQuests={7046},g={
 e(428,{npcID=12225,g={
@@ -9191,7 +9192,7 @@ qo(1,{providers={{"i",5801}}})}}),
 q(1100,{lvl=29,qis={5790},qss={5791},r=2}),
 q(1142,{coords={
 [1457]={{69.4,67.6}}},lvl=25,qgs={4510},r=2,g={
-qo(1,{description="Drops from any creature in the Dungeon.",providers={{"i",5825}}}),
+qo(1,{providers={{"i",5825}}}),
 s(158676,6751,{b=1,f=3,q=2}),
 s(158677,6752,{b=1,f=5,loc=47,q=2})}}),
 q(1101,{coords={
@@ -9208,6 +9209,7 @@ i(6749,{b=1,f=52,q=2})}})}),
 h(-63,{
 i(3172,{crs={4511,4512,4514},q=1}),
 i(5801,{crs={4538,4539},q=1}),
+i(5825,{q=1}),
 s(156336,1488,{f=6,loc=42,lvl=26,q=3}),
 s(156738,2264,{f=5,loc=41,lvl=25,q=3}),
 i(2039,{f=52,lvl=24,q=3}),
@@ -9232,13 +9234,14 @@ s(158637,6679,{b=1,f=29,lvl=24,q=2})}),
 n(4420,{
 s(158643,6687,{b=1,f=22,lvl=29,q=3}),
 s(158642,6686,{b=1,f=6,loc=40,lvl=28,q=2})}),
-n(4842,{description="After you kill Overlord Ramtusk, go west over a bridge to a plateau.\n\nThis is a Rare Creature and, as such, is not always present.",g={
+h(-46,{
+n(4842,{description="After you kill Overlord Ramtusk, go west over a bridge to a plateau.",g={
 s(158645,6689,{b=1,f=28,lvl=27,q=3}),
 s(158644,6688,{b=1,f=5,loc=40,lvl=27,q=2})}}),
-n(4425,{description="This is a Rare Creature and, as such, is not always present.",g={
+n(4425,{
 s(158650,6696,{b=1,f=32,lvl=27,q=3}),
 i(6695,{b=1,f=51,lvl=27,q=3}),
-s(158651,6697,{b=1,f=4,loc=41,lvl=27,q=3})}}),
+s(158651,6697,{b=1,f=4,loc=41,lvl=27,q=3})})}),
 n(4422,{
 s(158647,6691,{b=1,f=20,lvl=30,q=3}),
 s(158646,6690,{b=1,f=5,loc=46,lvl=29,q=2})}),
@@ -9276,6 +9279,9 @@ n(6489,{
 s(158988,7687,{b=1,f=23,lvl=30,q=3}),
 s(158989,7688,{b=1,f=6,loc=42,lvl=30,q=3}),
 i(7686,{b=1,f=52,lvl=30,q=3})})}),
+h(-56,{awp=11501,g={
+o(424266,{c={5},phase=1606,g={
+i(215426,{b=1,c={5},q=1})}})}}),
 n(3983,{
 s(158985,7683,{f=34,lvl=29,q=1}),
 s(158984,7682,{b=1,f=20,lvl=29,q=3})}),
@@ -9300,6 +9306,10 @@ qo(1,{providers={{"i",7274}}})}}),
 q(1160,{coords={
 [1458]={{57.8,65.4}}},lvl=28,qgs={4488},r=1,sourceQuests={1159},g={
 qo(1,{description="In the first cooridor with books, there are 2 pocket rooms, the first pocket room has a table with 2 clickable books on it.\n\nOne of them is a container.",providers={{"i",5861},{"o",20726}}})}})}),
+h(-56,{awp=11501,g={
+o(424373,{c={5},cost={{"i",215426,1},{"i",215428,1},{"i",215427,1},{"i",215425,1}},description="Use each Echo at its statue in the Library, in this order: Swamp Echo at the Warrior statue, Arathi Echo at the Mage statue, Theramore Echo at the Paladin statue, then Graveyard Echo at the Priest statue. The Remnant then appears in the middle of the room.",phase=1606,g={
+i(213143,{b=1,c={5},f=55,q=2,g={
+r(402855)}})}})}}),
 n(3974,{
 s(158997,7710,{b=1,f=28,lvl=31,q=3}),
 s(159025,7756,{b=1,f=5,loc=44,lvl=29,q=2}),
@@ -9555,7 +9565,7 @@ s(163643,18702,{awp=10300,f=7,loc=45,lvl=55,q=3}),
 s(223249,226751,{awp=11503,crs={10478},f=6,loc=43,lvl=52,phase=1608,q=3}),
 s(162986,16671,{awp=10300,crs={10478},f=6,loc=43,lvl=52,q=3,rwp=11503,u=2}),
 s(161568,14536,{awp=10300,f=6,loc=42,lvl=56,q=3}),
-s(224726,228703,{description="None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",f=4,loc=47,lvl=50,phase=1608,q=3,u=1}),
+s(224726,228703,{f=4,loc=47,lvl=50,phase=1608,q=3,u=1}),
 s(163639,18697,{awp=10300,f=4,loc=47,lvl=50,q=3}),
 s(223259,226761,{awp=11503,crs={10477},f=4,loc=45,lvl=53,phase=1608,q=3}),
 s(163017,16702,{awp=10300,crs={10477},f=4,loc=45,lvl=53,q=3,rwp=11503,u=2}),
@@ -9571,7 +9581,7 @@ s(162999,16684,{awp=10300,crs={10469},f=4,loc=44,lvl=54,q=3,rwp=11503,u=2}),
 s(163642,18700,{awp=10300,f=5,loc=43,lvl=53,q=3}),
 s(223202,226704,{awp=11503,crs={10472,10488,11284},f=5,loc=43,lvl=52,phase=1608,q=3}),
 s(163025,16710,{awp=10300,crs={10472,10488,11284},f=5,loc=43,lvl=52,q=3,rwp=11503,u=2}),
-s(224727,228704,{description="None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",f=5,loc=40,lvl=51,phase=1608,q=3,u=1}),
+s(224727,228704,{f=5,loc=40,lvl=51,phase=1608,q=3,u=1}),
 s(163640,18698,{awp=10300,f=5,loc=40,lvl=51,q=3}),
 s(223210,226712,{awp=11503,crs={10499,10500,11257},f=5,loc=45,lvl=53,phase=1608,q=3}),
 s(163031,16716,{awp=10300,crs={10499,10500,11257},f=5,loc=45,lvl=53,q=3,rwp=11503,u=2}),
@@ -9632,14 +9642,14 @@ s(163026,16711,{b=1,f=5,loc=47,lvl=54,q=3,rwp=11503,u=2})}}),
 n(14516,{cost={{"i",18746,1}},g={
 i(18749,{c={2},q=1}),
 i(18880,{q=1}),
-s(224249,228030,{b=1,description="There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",f=22,lvl=57,phase=1608,q=3,u=1}),
+s(224249,228030,{b=1,f=22,lvl=57,phase=1608,q=3,u=1}),
 s(163681,18759,{b=1,f=22,lvl=57,q=3}),
 s(163682,18761,{b=1,f=27,lvl=57,q=3}),
 s(163680,18758,{b=1,f=20,lvl=57,q=3}),
 i(228045,{awp=11503,b=1,f=52,lvl=57,phase=1608,q=3}),
 i(18760,{b=1,f=52,lvl=57,q=3,rwp=11503,u=2})}}),
 n(10433,{awp=10300,g={
-s(224214,227993,{b=1,description="There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",f=25,lvl=54,phase=1608,q=3,u=1}),
+s(224214,227993,{b=1,f=25,lvl=54,phase=1608,q=3,u=1}),
 s(161600,14576,{b=1,f=25,lvl=54,q=3}),
 s(163634,18692,{b=1,f=7,loc=47,lvl=54,q=3})}}),
 n(10432,{awp=10300,g={
@@ -9774,7 +9784,7 @@ s(224244,228025,{awp=11503,b=1,f=5,loc=42,lvl=57,phase=1608,q=3}),
 s(161189,13944,{b=1,f=5,loc=42,lvl=57,q=3,rwp=11503,u=2}),
 s(161191,13951,{b=1,f=7,loc=43,lvl=57,q=3}),
 s(224261,228042,{awp=11503,b=1,f=6,loc=45,lvl=57,phase=1608,q=3}),
-s(161190,13950,{b=1,description="This item seems to have disappeared in Classic. If you get this item in any game flavor, please screenshot this and send it directly to @Crieve on Discord!",f=6,loc=45,lvl=57,q=3,rwp=11503,u=2}),
+s(161190,13950,{b=1,f=6,loc=45,lvl=57,q=3,rwp=11503,u=2}),
 s(160977,13398,{b=1,f=5,loc=47,lvl=57,q=3}),
 i(228046,{awp=11503,b=1,f=52,lvl=58,phase=1608,q=3}),
 i(22433,{b=1,f=52,lvl=58,phase=1610,q=3,rwp=11503,u=2}),
@@ -9839,9 +9849,10 @@ s(157158,3191,{b=1,f=22,lvl=21,q=2}),
 s(158414,6320,{b=1,f=8,lvl=23,q=3}),
 s(158426,6341,{b=1,f=1,lvl=14,q=2})}}),
 i(209872,{b=1,c={1},phase=1605,providers={{"o",409758}},q=1}),
-n(3872,{description="This is a Rare Creature and, as such, is not always present.\nCan be found in place of a Tormented Officer patrolling the outdoor wall section just after the boss Commander Springvale.\nThe Rare can be seen at the entrance of the Dungeon via the /tar command..",g={
+h(-46,{
+n(3872,{description="Can be found in place of a Tormented Officer patrolling the outdoor wall section just after the boss Commander Springvale.",g={
 s(158620,6641,{b=1,f=26,lvl=21,q=2}),
-s(158621,6642,{b=1,f=6,loc=42,lvl=20,q=3})}}),
+s(158621,6642,{b=1,f=6,loc=42,lvl=20,q=3})}})}),
 n(4279,{
 s(158412,6318,{b=1,f=28,lvl=21,q=3}),
 s(158413,6319,{b=1,f=5,loc=45,lvl=21,q=2})}),
@@ -9873,11 +9884,9 @@ i(17045,{b=1,f=52,q=3})}}),
 q(5861,{coords={
 [1423]={{7.6,43.6}}},lvl=52,qgs={1855},qis={14872},sourceQuests={5848}}),
 q(5243,{coords={
-[1423]={{81.6,57.8}}},cost={{"i",13180,5}},description="When mousing over the crates, look for 'Requires: Disarm Trap'. If you see this, it's a trap and shouldn't be touched.\n\nIf you are a dwarf, use find treasure and on the mini map it will show a dot for the holy water in the crate. It will only show crates with items in it on the mini map and not bad crates.",lvl=55,qgs={11036},g={
+[1423]={{81.6,57.8}}},cost={{"i",13180,5}},description="When mousing over the crates, look for 'Requires: Disarm Trap'. If you see this, it's a trap and shouldn't be touched.\n\nIf you are a dwarf, use find treasure and on the mini map it will show a dot for the holy water in the crate. It will only show crates with items in it on the mini map and not bad crates.",lvl=55,qgs={11036},sym={{"select","itemID",6149,3928}},g={
 s(160898,13216,{b=1,f=4,loc=40,q=2}),
-i(13217,{b=1,f=52,q=2}),
-i(6149,{f=55,lvl=31,q=1}),
-i(3928,{f=55,lvl=35,q=1})}}),
+i(13217,{b=1,f=52,q=2})}}),
 q(5944,{coords={
 [1422]={{42,14.8}}},lvl=52,qgs={1842},sourceQuests={5862},g={
 s(162314,15418,{b=1,f=24,q=3}),
@@ -9983,10 +9992,11 @@ r(18441,{crs={10384},itemID=14495,learnedAt=290,q=2,requireSkill=197}),
 r(19103,{crs={10425},itemID=15777,learnedAt=300,q=2,requireSkill=165}),
 r(23082,{crs={10426},itemID=18658,learnedAt=300,q=2,requireSkill=202}),
 r(19819,{crs={10426},itemID=16052,learnedAt=290,q=2,requireSkill=202})}),
-n(10393,{description="This is a Rare Creature and, as such, is not always present.",g={
+h(-46,{
+n(10393,{
 s(160975,13396,{b=1,f=27,lvl=52,q=3}),
 s(160973,13394,{b=1,f=7,loc=42,lvl=54,q=3}),
-s(160974,13395,{b=1,f=5,loc=44,lvl=54,q=3})}}),
+s(160974,13395,{b=1,f=5,loc=44,lvl=54,q=3})})}),
 n(11058,{description="In order to summon this boss, one of your party members must be on the quest.",g={
 i(13172,{q=1})}}),
 n(11082,{description="Drops 3 random keys used to open postboxes found throughout Stratholme. All 3 of the postboxes must be opened to spawn the Postmaster.",g={
@@ -10113,10 +10123,11 @@ r(20033,{crs={10398},itemID=16248,learnedAt=295,q=2,requireSkill=333}),
 r(19092,{crs={10406},itemID=15768,learnedAt=300,q=2,requireSkill=165}),
 s(223202,226704,{awp=11503,crs={10405},f=5,loc=43,lvl=52,phase=1608,q=3}),
 s(163025,16710,{crs={10405},f=5,loc=43,lvl=52,q=3,rwp=11503,u=2})}),
-n(10809,{description="This is a Rare Creature and, as such, is not always present.",g={
+h(-46,{
+n(10809,{
 s(160978,13399,{b=1,f=34,lvl=54,q=3}),
 s(160976,13397,{b=1,f=3,lvl=56,q=3}),
-s(161194,13954,{b=1,f=5,loc=47,lvl=56,q=3})}}),
+s(161194,13954,{b=1,f=5,loc=47,lvl=56,q=3})})}),
 e(452,{npcID=10437,g={
 i(13176,{description="Located in the Ziggurat behind the boss.",providers={{"o",176249}},q=1}),
 s(163667,18738,{b=1,f=33,lvl=56,q=3}),
@@ -10259,19 +10270,22 @@ s(158977,7607,{b=1,f=27,q=2}),
 s(158976,7606,{b=1,f=6,loc=44,q=2})}})}),
 h(-46,{
 n(596,{coords={
-[1436]={{44,78.3}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
+[1436]={{44,78.3}}},description="Located in the cavern before the instance.",g={
 s(157521,3902,{f=28,lvl=13,q=2}),
 s(158287,5967,{f=4,loc=45,lvl=13,q=2})}}),
 n(626,{coords={
-[1436]={{42.2,82.6}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
+[1436]={{42.2,82.6}}},description="Located in the cavern before the instance.",g={
 i(1875,{q=1}),
 s(156666,2167,{f=5,loc=44,lvl=15,q=2}),
 s(156665,2166,{f=6,loc=46,lvl=15,q=2}),
 s(156667,2168,{f=4,loc=47,lvl=16,q=2})}}),
 n(599,{coords={
-[1436]={{42.2,79.9}}},description="This is a Rare Creature and, as such, is not always present.\n\nLocated in the cavern before the instance.",g={
+[1436]={{42.2,79.9}}},description="Located in the cavern before the instance.",g={
 s(157090,3019,{f=4,loc=42,lvl=13,q=2}),
-s(157827,4660,{f=4,loc=47,lvl=13,q=2})}})}),
+s(157827,4660,{f=4,loc=47,lvl=13,q=2})}}),
+n(3586,{
+s(158166,5443,{b=1,f=8,lvl=15,q=3}),
+s(158167,5444,{b=1,f=3,lvl=14,q=2})})}),
 h(-63,{
 s(160035,10402,{crs={4416},f=5,loc=47,lvl=13,q=2}),
 s(160034,10401,{crs={634,4417},f=5,loc=44,lvl=13,q=2}),
@@ -10296,9 +10310,6 @@ s(156525,1934,{crs={636},f=5,loc=46,lvl=15,q=2}),
 s(156519,1926,{crs={824},f=23,lvl=10,q=2}),
 s(156532,1945,{crs={641},f=5,loc=44,lvl=13,q=2}),
 r(6703,{crs={657},itemID=5787,learnedAt=95,q=1,requireSkill=165})}),
-n(3586,{description="This is a Rare Creature and, as such, is not always present.",g={
-s(158166,5443,{b=1,f=8,lvl=15,q=3}),
-s(158167,5444,{b=1,f=3,lvl=14,q=2})}}),
 n(644,{
 s(158043,5187,{description="This item was redesigned to a rare quality item called 'Foe Reaper' in Patch 2.3, so if you are making a twink, you may want to keep this item despite it being lower quality now.",f=24,lvl=15,q=1}),
 s(156160,872,{b=1,f=22,lvl=16,q=2})}),
@@ -11142,9 +11153,10 @@ s(160043,10410,{b=1,f=5,loc=46,lvl=18,q=3})}}),
 e(478,{npcID=3674,g={
 s(158488,6448,{b=1,f=20,lvl=17,q=2}),
 s(158489,6449,{b=1,f=3,lvl=17,q=3})}}),
-n(5912,{description="This is a Rare Creature and, as such, is not always present.",g={
+h(-46,{
+n(5912,{
 s(158072,5243,{b=1,f=27,lvl=15,q=3}),
-s(158618,6632,{b=1,f=3,lvl=15,q=2})}}),
+s(158618,6632,{b=1,f=3,lvl=15,q=2})})}),
 e(479,{npcID=3673,g={
 i(9741,{q=1}),
 s(158497,6469,{b=1,f=32,lvl=19,q=3}),
@@ -11223,7 +11235,8 @@ n(222573,{cost={{"i",221418,1}},description="Spawns after clearing any 3 bosses 
 i(221290,{q=3}),
 i(221271,{q=3}),
 i(221262,{b=1,q=2})}}),
-n(10080,{description="This is a Rare Creature and, as such, is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",g={
+h(-46,{
+n(10080,{description="Items listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",g={
 s(159406,9512,{f=3,lvl=41,q=3}),
 s(159405,9511,{f=25,lvl=41,q=3}),
 i(6440,{f=52,lvl=43,q=3}),
@@ -11235,9 +11248,12 @@ s(159393,9484,{f=4,loc=46,lvl=45,q=3}),
 s(159390,9481,{f=22,lvl=44,q=3}),
 s(156582,2040,{f=8,lvl=43,q=3}),
 s(159391,9482,{f=28,lvl=42,q=3})}}),
-n(10082,{description="This is a Rare Creature and, as such, is not always present.",g={
+n(10082,{
 s(220236,223962,{b=1,f=5,loc=47,lvl=42,phase=1607,q=3}),
-s(160536,12470,{b=1,f=5,loc=47,lvl=42,q=3,rwp=11502,u=2})}}),
+s(160536,12470,{b=1,f=5,loc=47,lvl=42,q=3,rwp=11502,u=2})}),
+n(10081,{
+s(219955,223533,{b=1,f=1,lvl=42,phase=1607,q=3}),
+s(160537,12471,{b=1,f=1,lvl=42,q=3,rwp=11502,u=2})})}),
 e(485,{npcID=7272,g={
 i(10660,{q=1})}}),
 e(484,{npcID=8127,g={
@@ -11250,9 +11266,6 @@ e(486,{npcID=7271,g={
 s(163425,18082,{b=1,f=28,lvl=42,q=3}),
 s(219956,223534,{b=1,f=4,loc=44,lvl=42,phase=1607,q=3}),
 s(163426,18083,{b=1,f=4,loc=44,lvl=42,q=3,rwp=11502,u=2})}}),
-n(10081,{description="This is a Rare Creature and, as such, is not always present.",g={
-s(219955,223533,{b=1,f=1,lvl=42,phase=1607,q=3}),
-s(160537,12471,{b=1,f=1,lvl=42,q=3,rwp=11502,u=2})}}),
 n(7796,{description="He's linked to Shadowpriest Sezz'ziz. Both will aggro once the 100 troll assault on the pyramid is complete.",g={
 i(9471,{q=1,r=2})}}),
 e(487,{npcID=7275,g={

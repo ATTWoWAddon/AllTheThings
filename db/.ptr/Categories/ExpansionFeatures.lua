@@ -3159,8 +3159,7 @@ q(33098,{awp=50400,coords={
 q(33100,{awp=50400,coords={
 [554]={{34.6,53.8}}},lvl=35,qgs={72695},sourceQuests={33088},u=2}),
 q(33104,{awp=50400,coords={
-[554]={{34.6,53.8}}},lvl=35,qgs={72695},sourceQuests={33098,33100},u=2,g={
-i(102457,{b=1,f=55,sourceAchievements={8325},spellID=146428,u=2})}}),
+[554]={{34.6,53.8}}},lvl=35,qgs={72695},sourceQuests={33098,33100},sym={{"select","itemID",102457}},u=2}),
 q(33105,{awp=50400,coords={
 [390]={{83.2,29.6}}},lvl=35,maps={557,558,559,560,561,562,563,564,565,566,567,568,569,570},qgs={72723},sourceQuests={33104},u=2,g={
 ach(8325,{u=2}),
@@ -6176,17 +6175,17 @@ gb(42,{pb=1})}}),
 q(36662,{coords={
 [590]={{32.6,39.8}}},isDaily=1,pb=1,qgs={79858},r=1,sourceQuests={36469}}),
 q(38241,{coords={
-[582]={{28.4,39.92},{29.2,40.4}}},lvl=35,pb=1,qgs={85418},r=2,sourceQuests={36615},g={
+[582]={{28.4,39.92},{29.2,40.4}}},lvl=35,pb=1,qgs={85418},r=2,sourceQuests={36615},sym={{"select","itemID",122457}},g={
 o(240357,{coords={
 [582]={{66.2,42.9}}},pb=1,g={
 i(122458,{pb=1})}}),
-i(122457,{f=55,pb=1,spellID=181062})}}),
+i(122457,{f=55,spellID=181062})}}),
 q(38242,{coords={
-[590]={{32.6,39.8}}},lvl=35,pb=1,qgs={79858},r=1,sourceQuests={36614},g={
+[590]={{32.6,39.8}}},lvl=35,pb=1,qgs={79858},r=1,sourceQuests={36614},sym={{"select","itemID",122457}},g={
 o(240358,{coords={
 [590]={{62.5,71.1}}},pb=1,g={
 i(122467,{pb=1})}}),
-i(122457,{f=55,pb=1,spellID=181062})}})}})}}),
+i(122457,{f=55,spellID=181062})}})}})}}),
 h(-115,{maps={582,590},g={
 gb(120,{
 h(-45,{
@@ -8326,10 +8325,10 @@ mnt(171626,{b=1,cost={{"c",823,5000},{"g",50000000}},itemID=116665,lvl=10,minRep
 s(66832,119140,{b=1,f=9,lvl=35,minReputation={1710,42000},r=2})}})})}),
 gb(10,{
 h(-45,{
-q(38175,{isDaily=1,lvl=10,qgs={77377},r=2,g={
+q(38175,{isDaily=1,lvl=10,qgs={77377},r=2,sym={{"select","itemID",120301,120302}},g={
 i(120301,{b=1,f=55,spellID=178444}),
 i(120302,{b=1,f=55,spellID=178445})}}),
-q(38188,{isDaily=1,lvl=10,qgs={79815},r=1,g={
+q(38188,{isDaily=1,lvl=10,qgs={79815},r=1,sym={{"select","itemID",120301,120302}},g={
 i(120301,{b=1,f=55,spellID=178444}),
 i(120302,{b=1,f=55,spellID=178445})}}),
 q(37092,{lvl=10,qgs={77377},r=2,g={
@@ -18291,7 +18290,7 @@ q(44789,{coords={
 q(45795,{coords={
 [630]={{56,60.8}}},lvl=10,qgs={118942},repeatable=1,sourceQuests={45838}}),
 q(45406,{lvl=10,qgs={116868},repeatable=1,sourceQuests={45839}})}),
-h(-49,{crs={118180,118840,118975,119579},sym={{"select","symselector",40},{"pop"},{"select","itemID",147216,147221,147218,147222,147213,147212,147215,147219,147217,147214,147220,147223}},g={
+h(-49,{crs={118180,118840,118975,119579},sym={{"select","symselector",50},{"pop"},{"select","itemID",147216,147221,147218,147222,147213,147212,147215,147219,147217,147214,147220,147223}},g={
 s(80476,139158,{b=1,f=23,lvl=45}),
 s(80481,139163,{b=1,f=23,lvl=45}),
 s(80284,138762,{b=1,f=23,lvl=45}),
@@ -18305,7 +18304,7 @@ s(80480,139162,{b=1,f=26,lvl=45}),
 s(80482,139164,{b=1,f=26,lvl=45}),
 s(80483,139165,{b=1,f=8,lvl=45}),
 s(80484,139166,{b=1,f=8,lvl=45})}}),
-h(-62,{symselector=40,g={
+h(-62,{symselector=50,g={
 s(85979,146766,{b=1,f=3,lvl=40}),
 s(85997,146786,{b=1,f=4,loc=40,lvl=40}),
 s(86002,146791,{b=1,f=4,loc=41,lvl=40}),
@@ -21188,7 +21187,7 @@ s(103039,166697,{b=1,f=7,loc=47,lvl=50,modID=3,r=1}),
 i(166793,{b=1,f=53,lvl=50,modID=3,r=1,spellID=278267}),
 i(166794,{b=1,f=53,lvl=50,modID=3,r=1,spellID=278248}),
 i(166795,{b=1,f=53,lvl=50,modID=3,r=1,spellID=278231})}})}}),
-h(-19,{crs={147240,147241,147260,147261,147332,147435,147664,147701,147708,147744,147746,147751,147758,147845,147897,147942,147966,147970,148025,148031,148037,148103,148497,148787,149141,149652,149654,149655,149657,149659,149660,149661,149662,149663,149664,149665},symselector=41,g={
+h(-19,{crs={147240,147241,147260,147261,147332,147435,147664,147701,147708,147744,147746,147751,147758,147845,147897,147942,147966,147970,148025,148031,148037,148103,148497,148787,149141,149652,149654,149655,149657,149659,149660,149661,149662,149663,149664,149665},symselector=51,g={
 h(-210,{
 h(-101,{description="Appearances from:\nDarkshore Rares/Treasures\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",g={
 s(101180,164966,{b=1,f=35,modID=3,r=2,u=1}),
@@ -21593,7 +21592,7 @@ q(54050,{coords={
 [1333]={{54.6,20.8}}},lvl=50,qgs={146601},r=1,sourceQuests={54049},g={
 toy(166678,{b=1})}}),
 q(54006,{coords={
-[62]={{47.5,34.3}}},lvl=50,qgs={149418},r=2,sourceQuests={54871},g={
+[62]={{47.5,34.3}}},lvl=50,qgs={149418},r=2,sourceQuests={54871},sym={{"select","itemID",166525}},g={
 i(166525,{b=1,f=55})}}),
 q(54044,{coords={
 [1333]={{53.6,20.4}}},lvl=50,qgs={146323},r=1,sourceQuests={54042}}),
@@ -21741,12 +21740,12 @@ q(54370,{coords={
 q(57960,{coords={
 [1161]={{66,26}}},isDaily=1,isWeekly=1,lvl=50,qgs={142721},r=2,g={
 i(166370,{b=1,g={
-h(-101,{sym={{"select","symselector",41},{"find","headerID",-210},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",23}}}),
-h(-89,{description="Each cloak might only be available to classes that wear its matching armor type.",sym={{"select","symselector",41},{"find","headerID",-210},{"pop"},{"where","headerID",-89},{"extract","sourceID"},{"modID",23}}}),
-flt(4,{sym={{"select","symselector",41},{"find","headerID",-210},{"pop"},{"where","filterID",4},{"extract","sourceID"},{"modID",23}}}),
-flt(5,{sym={{"select","symselector",41},{"find","headerID",-210},{"pop"},{"where","filterID",5},{"extract","sourceID"},{"modID",23}}}),
-flt(6,{sym={{"select","symselector",41},{"find","headerID",-210},{"pop"},{"where","filterID",6},{"extract","sourceID"},{"modID",23}}}),
-flt(7,{sym={{"select","symselector",41},{"find","headerID",-210},{"pop"},{"where","filterID",7},{"extract","sourceID"},{"modID",23}}})}})}}),
+h(-101,{sym={{"select","symselector",51},{"find","headerID",-210},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",23}}}),
+h(-89,{description="Each cloak might only be available to classes that wear its matching armor type.",sym={{"select","symselector",51},{"find","headerID",-210},{"pop"},{"where","headerID",-89},{"extract","sourceID"},{"modID",23}}}),
+flt(4,{sym={{"select","symselector",51},{"find","headerID",-210},{"pop"},{"where","filterID",4},{"extract","sourceID"},{"modID",23}}}),
+flt(5,{sym={{"select","symselector",51},{"find","headerID",-210},{"pop"},{"where","filterID",5},{"extract","sourceID"},{"modID",23}}}),
+flt(6,{sym={{"select","symselector",51},{"find","headerID",-210},{"pop"},{"where","filterID",6},{"extract","sourceID"},{"modID",23}}}),
+flt(7,{sym={{"select","symselector",51},{"find","headerID",-210},{"pop"},{"where","filterID",7},{"extract","sourceID"},{"modID",23}}})}})}}),
 q(53992,{coords={
 [1161]={{66,26}}},isDaily=1,isWeekly=1,lvl=50,qgs={142721},r=2,g={
 i(166370,{b=1,g={
@@ -21886,12 +21885,12 @@ q(54336,{coords={
 q(57959,{coords={
 [1165]={{52.9,94.3}}},isWeekly=1,lvl=50,qgs={138949},r=1,g={
 i(166369,{b=1,g={
-h(-101,{sym={{"select","symselector",41},{"find","headerID",-211},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",23}}}),
-h(-89,{description="Each cloak might only be available to classes that wear its matching armor type.",sym={{"select","symselector",41},{"find","headerID",-211},{"pop"},{"where","headerID",-89},{"extract","sourceID"},{"modID",23}}}),
-flt(4,{sym={{"select","symselector",41},{"find","headerID",-211},{"pop"},{"where","filterID",4},{"extract","sourceID"},{"modID",23}}}),
-flt(5,{sym={{"select","symselector",41},{"find","headerID",-211},{"pop"},{"where","filterID",5},{"extract","sourceID"},{"modID",23}}}),
-flt(6,{sym={{"select","symselector",41},{"find","headerID",-211},{"pop"},{"where","filterID",6},{"extract","sourceID"},{"modID",23}}}),
-flt(7,{sym={{"select","symselector",41},{"find","headerID",-211},{"pop"},{"where","filterID",7},{"extract","sourceID"},{"modID",23}}})}})}}),
+h(-101,{sym={{"select","symselector",51},{"find","headerID",-211},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",23}}}),
+h(-89,{description="Each cloak might only be available to classes that wear its matching armor type.",sym={{"select","symselector",51},{"find","headerID",-211},{"pop"},{"where","headerID",-89},{"extract","sourceID"},{"modID",23}}}),
+flt(4,{sym={{"select","symselector",51},{"find","headerID",-211},{"pop"},{"where","filterID",4},{"extract","sourceID"},{"modID",23}}}),
+flt(5,{sym={{"select","symselector",51},{"find","headerID",-211},{"pop"},{"where","filterID",5},{"extract","sourceID"},{"modID",23}}}),
+flt(6,{sym={{"select","symselector",51},{"find","headerID",-211},{"pop"},{"where","filterID",6},{"extract","sourceID"},{"modID",23}}}),
+flt(7,{sym={{"select","symselector",51},{"find","headerID",-211},{"pop"},{"where","filterID",7},{"extract","sourceID"},{"modID",23}}})}})}}),
 q(53955,{coords={
 [1165]={{52.97,94.35}}},isWeekly=1,lvl=50,qgs={138949},r=1,g={
 i(166369,{b=1,g={
@@ -22126,7 +22125,7 @@ s(97391,161458,{b=1,f=6,loc=42,lvl=50,modID=3,r=1}),
 i(161463,{b=1,f=53,lvl=50,modID=3,r=1,spellID=278364}),
 i(161461,{b=1,f=53,lvl=50,modID=3,r=1,spellID=278356}),
 i(161462,{b=1,f=53,lvl=50,modID=3,r=1,spellID=278317})}})}}),
-h(-19,{crs={141615,141616,141618,141620,141668,141942,142112,142423,142433,142435,142436,142437,142438,142440,142508,142662,142682,142683,142684,142686,142688,142690,142692,142709,142716,142725,142739,142741},description="These items can drop off any rare.",symselector=36,g={
+h(-19,{crs={141615,141616,141618,141620,141668,141942,142112,142423,142433,142435,142436,142437,142438,142440,142508,142662,142682,142683,142684,142686,142688,142690,142692,142709,142716,142725,142739,142741},description="These items can drop off any rare.",symselector=46,g={
 h(-210,{
 h(-101,{
 s(99984,163891,{b=1,f=8,modID=5,r=2}),
@@ -22539,12 +22538,12 @@ q(53235,{coords={
 q(56136,{coords={
 [1161]={{66.01,26.01}}},isWeekly=1,lvl=50,qgs={142721},r=2,g={
 i(169197,{b=1,g={
-h(-89,{sym={{"select","symselector",36},{"find","headerID",-210},{"pop"},{"where","headerID",-89},{"extract","sourceID"},{"modID",23}}}),
-flt(4,{sym={{"select","symselector",36},{"find","headerID",-210},{"pop"},{"where","filterID",4},{"extract","sourceID"},{"modID",23}}}),
-flt(5,{sym={{"select","symselector",36},{"find","headerID",-210},{"pop"},{"where","filterID",5},{"extract","sourceID"},{"modID",23}}}),
-flt(6,{sym={{"select","symselector",36},{"find","headerID",-210},{"pop"},{"where","filterID",6},{"extract","sourceID"},{"modID",23}}}),
-flt(7,{sym={{"select","symselector",36},{"find","headerID",-210},{"pop"},{"where","filterID",7},{"extract","sourceID"},{"modID",23}}}),
-h(-101,{sym={{"select","symselector",36},{"find","headerID",-210},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",23}}})}})}}),
+h(-89,{sym={{"select","symselector",46},{"find","headerID",-210},{"pop"},{"where","headerID",-89},{"extract","sourceID"},{"modID",23}}}),
+flt(4,{sym={{"select","symselector",46},{"find","headerID",-210},{"pop"},{"where","filterID",4},{"extract","sourceID"},{"modID",23}}}),
+flt(5,{sym={{"select","symselector",46},{"find","headerID",-210},{"pop"},{"where","filterID",5},{"extract","sourceID"},{"modID",23}}}),
+flt(6,{sym={{"select","symselector",46},{"find","headerID",-210},{"pop"},{"where","filterID",6},{"extract","sourceID"},{"modID",23}}}),
+flt(7,{sym={{"select","symselector",46},{"find","headerID",-210},{"pop"},{"where","filterID",7},{"extract","sourceID"},{"modID",23}}}),
+h(-101,{sym={{"select","symselector",46},{"find","headerID",-210},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",23}}})}})}}),
 q(53175,{DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",53206,"questID",53207},lvl=50,nextQuests={53194},r=2}),
 q(53194,{coords={
 [1161]={{65.89,26.03}}},lc={1,"questID",53206},lvl=50,qgs={142721},r=2,sourceQuests={53175}}),
@@ -22592,7 +22591,7 @@ s(100723,163414,{b=1,f=7,loc=44,lvl=50,modID=6,r=2}),
 s(100729,163422,{b=1,f=7,loc=45,lvl=50,modID=6,r=2}),
 s(100719,163409,{b=1,f=7,loc=46,lvl=50,modID=6,r=2}),
 s(100727,163421,{b=1,f=7,loc=47,lvl=50,modID=6,r=2})}),
-h(-101,{sym={{"select","symselector",36},{"find","headerID",-210},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",6}}})}})}}),
+h(-101,{sym={{"select","symselector",46},{"find","headerID",-210},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",6}}})}})}}),
 q(53185,{coords={
 [1161]={{66,26}}},lvl=50,qgs={142721},r=2,sourceQuests={53194}}),
 q(52792,{coords={
@@ -22666,12 +22665,12 @@ q(53252,{coords={
 q(56137,{coords={
 [1165]={{52.9,94.3}}},isWeekly=1,lvl=50,qgs={138949},r=1,sourceQuests={53212},g={
 i(169196,{b=1,g={
-h(-89,{sym={{"select","symselector",36},{"find","headerID",-211},{"pop"},{"where","headerID",-89},{"extract","sourceID"},{"modID",23}}}),
-flt(4,{sym={{"select","symselector",36},{"find","headerID",-211},{"pop"},{"where","filterID",4},{"extract","sourceID"},{"modID",23}}}),
-flt(5,{sym={{"select","symselector",36},{"find","headerID",-211},{"pop"},{"where","filterID",5},{"extract","sourceID"},{"modID",23}}}),
-flt(6,{sym={{"select","symselector",36},{"find","headerID",-211},{"pop"},{"where","filterID",6},{"extract","sourceID"},{"modID",23}}}),
-flt(7,{sym={{"select","symselector",36},{"find","headerID",-211},{"pop"},{"where","filterID",7},{"extract","sourceID"},{"modID",23}}}),
-h(-101,{sym={{"select","symselector",36},{"find","headerID",-211},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",23}}})}})}}),
+h(-89,{sym={{"select","symselector",46},{"find","headerID",-211},{"pop"},{"where","headerID",-89},{"extract","sourceID"},{"modID",23}}}),
+flt(4,{sym={{"select","symselector",46},{"find","headerID",-211},{"pop"},{"where","filterID",4},{"extract","sourceID"},{"modID",23}}}),
+flt(5,{sym={{"select","symselector",46},{"find","headerID",-211},{"pop"},{"where","filterID",5},{"extract","sourceID"},{"modID",23}}}),
+flt(6,{sym={{"select","symselector",46},{"find","headerID",-211},{"pop"},{"where","filterID",6},{"extract","sourceID"},{"modID",23}}}),
+flt(7,{sym={{"select","symselector",46},{"find","headerID",-211},{"pop"},{"where","filterID",7},{"extract","sourceID"},{"modID",23}}}),
+h(-101,{sym={{"select","symselector",46},{"find","headerID",-211},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",23}}})}})}}),
 q(53207,{coords={
 [1165]={{52.97,94.35}}},description="Automatically granted upon completing Uniting Zandalar to unlock World Quests. If it doesn't pop up, relog. I had to relog twice to receive this quest.",DisablePartySync=1,isBreadcrumb=1,lc={1,"questID",53175,"questID",53220},lvl=50,nextQuests={53208},qgs={138949},r=1,sourceQuests={52451}}),
 q(53208,{coords={
@@ -22720,11 +22719,11 @@ s(99337,163458,{b=1,f=7,loc=44,lvl=50,modID=6,r=1}),
 s(99343,163461,{b=1,f=7,loc=45,lvl=50,modID=6,r=1}),
 s(99331,163455,{b=1,f=7,loc=46,lvl=50,modID=6,r=1}),
 s(99341,163460,{b=1,f=7,loc=47,lvl=50,modID=6,r=1})}),
-h(-101,{sym={{"select","symselector",36},{"find","headerID",-211},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",6}}})}})}}),
+h(-101,{sym={{"select","symselector",46},{"find","headerID",-211},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",6}}})}})}}),
 q(53209,{coords={
 [1165]={{53,94.3}}},lvl=50,qgs={138949},r=1}),
-i(165872,{b=1,description="This cache is awarded for completing any incursion on an Alliance character.",sym={{"select","symselector",36},{"find","headerID",-210},{"extract","sourceID"},{"modID",5}}}),
-i(165871,{b=1,description="This cache is awarded for completing any incursion on a Horde character.",sym={{"select","symselector",36},{"find","headerID",-211},{"extract","sourceID"},{"modID",5}}}),
+i(165872,{b=1,description="This cache is awarded for completing any incursion on an Alliance character.",sym={{"select","symselector",46},{"find","headerID",-210},{"extract","sourceID"},{"modID",5}}}),
+i(165871,{b=1,description="This cache is awarded for completing any incursion on a Horde character.",sym={{"select","symselector",46},{"find","headerID",-211},{"extract","sourceID"},{"modID",5}}}),
 q(53198,{coords={
 [14]={{19.26,61.77}}},isBreadcrumb=1,lc={1,"questID",53206},lvl=50,nextQuests={53153},qgs={143018},r=2,sourceQuests={53197}}),
 q(53212,{coords={
@@ -22808,7 +22807,7 @@ s(99149,163414,{b=1,f=7,loc=44,lvl=50,modID=3,r=2}),
 s(99156,163422,{b=1,f=7,loc=45,lvl=50,modID=3,r=2}),
 s(99145,163409,{b=1,f=7,loc=46,lvl=50,modID=3,r=2}),
 s(99155,163421,{b=1,f=7,loc=47,lvl=50,modID=3,r=2})}),
-h(-101,{sym={{"select","symselector",36},{"find","headerID",-210},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",6}}})}}),
+h(-101,{sym={{"select","symselector",46},{"find","headerID",-210},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",6}}})}}),
 i(164577,{b=1,modID=3,g={
 h(-89,{
 s(99092,163357,{b=1,c={5,8,9},f=3,lvl=50,modID=3,r=1}),
@@ -22851,7 +22850,7 @@ s(99192,163458,{b=1,f=7,loc=44,lvl=50,modID=3,r=1}),
 s(99195,163461,{b=1,f=7,loc=45,lvl=50,modID=3,r=1}),
 s(99189,163455,{b=1,f=7,loc=46,lvl=50,modID=3,r=1}),
 s(99194,163460,{b=1,f=7,loc=47,lvl=50,modID=3,r=1})}),
-h(-101,{sym={{"select","symselector",36},{"find","headerID",-211},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",6}}})}})}})}}),
+h(-101,{sym={{"select","symselector",46},{"find","headerID",-211},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",6}}})}})}})}}),
 h(-43,{awp=50004,pb=1,g={
 crit(21419,{achID=6613,id=1,pb=1}),
 crit(21562,{achID=6560,id=36,pb=1})}})}})}),
@@ -24336,7 +24335,7 @@ s(107754,173846,{b=1,customCollect={"HOA"},f=4,loc=42,lvl=50}),
 s(107753,173845,{b=1,customCollect={"HOA"},f=4,loc=40,lvl=50}),
 s(107752,173844,{b=1,customCollect={"HOA"},f=4,loc=41,lvl=50})}}),
 q(56542,{coords={
-[1530]={{45.3,74.3}}},lvl=50,qgs={154418},sourceQuests={56541},g={
+[1530]={{45.3,74.3}}},lvl=50,qgs={154418},sourceQuests={56541},sym={{"select","itemID",168573,168436}},g={
 i(168573,{b=1,f=55,spellID=298412}),
 i(168436,{b=1,f=55,spellID=297961})}}),
 q(56541,{coords={
@@ -25200,7 +25199,7 @@ s(115982,184991,{f=2,loc=42,lvl={50}}),
 s(115988,184997,{f=2,loc=43,lvl={50}})}}),
 i(188005,{b=1,customCollect={"SL_COV_KYR"},description="Rewarded at 15 and 24 Renown.",spellID=336456}),
 i(186472,{b=1,description="Rewarded at 52, 67 and 76 Renown.",f=55,spellID=353852}),
-h(-221,{customCollect={"SL_COV_KYR"},description="Requires Renown 48.",symselector=38,g={
+h(-221,{customCollect={"SL_COV_KYR"},description="Requires Renown 48.",symselector=48,g={
 rfl(211,{b=1,c={6},customCollect={"SL_COV_KYR"},itemID=186566,spellID=342040}),
 rfl(238,{b=1,c={12},customCollect={"SL_COV_KYR"},itemID=187111,spellID=342040}),
 rfl(223,{b=1,c={11},customCollect={"SL_COV_KYR"},itemID=186673,spellID=342040}),
@@ -26071,7 +26070,7 @@ s(115587,184271,{b=1,cost={{"i",183899.083,1},{"i",183898.083,1},{"i",183897.083
 n(174937,{coords={
 [1708]={{63.3,30.6}}},customCollect={"SL_COV_KYR"},g={
 mnt(353880,{b=1,cost={{"c",1813,7500}},customCollect={"SL_COV_KYR"},itemID=186485}),
-i(184665,{b=1,cost={{"c",1885,35}},customCollect={"SL_COV_KYR"},f=55,lvl=60,spellID=347413,sym={{"select","symselector",38},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
+i(184665,{b=1,cost={{"c",1885,35}},customCollect={"SL_COV_KYR"},f=55,lvl=60,spellID=347413,sym={{"select","symselector",48},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
 mnt(334386,{b=1,cost={{"c",1885,100},{"c",1813,5000}},customCollect={"SL_COV_KYR"},itemID=180762}),
 mnt(334398,{b=1,cost={{"c",1813,5000}},customCollect={"SL_COV_KYR"},itemID=180764}),
 toy(184353,{b=1,cost={{"c",1813,750}},customCollect={"SL_COV_KYR"}}),
@@ -26693,7 +26692,7 @@ s(116011,185020,{f=2,loc=42,lvl={50}}),
 s(116018,185027,{f=2,loc=43,lvl={50}})}}),
 i(188004,{b=1,customCollect={"SL_COV_NEC"},description="Rewarded at 15 and 24 Renown.",spellID=336456}),
 i(186472,{b=1,description="Rewarded at 52, 67 and 76 Renown.",f=55,spellID=353852}),
-h(-221,{customCollect={"SL_COV_NEC"},description="Requires Renown 48.",symselector=38,g={
+h(-221,{customCollect={"SL_COV_NEC"},description="Requires Renown 48.",symselector=48,g={
 rfl(213,{b=1,c={6},customCollect={"SL_COV_NEC"},itemID=186568,spellID=342040}),
 rfl(239,{b=1,c={12},customCollect={"SL_COV_NEC"},itemID=187118,spellID=342040}),
 rfl(217,{b=1,c={11},customCollect={"SL_COV_NEC"},itemID=186577,spellID=342040}),
@@ -27547,7 +27546,7 @@ s(115575,184256,{b=1,cost={{"i",183899.085,1},{"i",183898.085,1},{"i",183897.085
 s(115584,184260,{b=1,cost={{"i",183899.085,1},{"i",183898.085,1},{"i",183897.085,1},{"i",183896.085,1}},customCollect={"SL_COV_NEC"},f=35,lvl=50,modID=85})}}),
 n(175311,{coords={
 [1698]={{57.1,48.3}}},customCollect={"SL_COV_NEC"},sym={{"select","itemID",182276,182268,182274,182271,182272,182273,182270,182269,182275,182251,182253,182258,182250,182254,182255,182252,182257,182256,182284,182281,182285,182277,182280,182283,182278,182279,182282,182266,182265,182261,182263,182267,182260,182264,182262,182259}},g={
-i(184665,{b=1,cost={{"c",1885,35}},customCollect={"SL_COV_NEC"},f=55,lvl=60,spellID=347413,sym={{"select","symselector",38},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
+i(184665,{b=1,cost={{"c",1885,35}},customCollect={"SL_COV_NEC"},f=55,lvl=60,spellID=347413,sym={{"select","symselector",48},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
 s(114617,183451,{cost={{"c",1885,10},{"c",1813,3500}},customCollect={"SL_COV_NEC"},f=8,lvl=60}),
 s(114622,183456,{cost={{"c",1885,10},{"c",1813,3500}},customCollect={"SL_COV_NEC"},f=31,lvl=60}),
 s(115043,183946,{cost={{"c",1885,10},{"c",1813,3500}},customCollect={"SL_COV_NEC"},f=21,lvl=60}),
@@ -27750,18 +27749,14 @@ q(62858,{coords={
 q(62859,{coords={
 [1701]={{33.9,43.5}}},customCollect={"SL_COV_NFA"},description="Requires Renown 24.",isWeekly=1,lvl=60,qgs={158553},rwp=90105,sourceQuests={58160},u=2}),
 q(62860,{coords={
-[1701]={{33.9,43.5}}},customCollect={"SL_COV_NFA"},description="Requires Renown 32. Depending on the level of your Queen's Conservatory this will reward higher quality spirits. Rank 5 will grant you an Epic Spirit.",isWeekly=1,lvl=60,qgs={158553},sourceQuests={58104},g={
+[1701]={{33.9,43.5}}},customCollect={"SL_COV_NFA"},description="Requires Renown 32. Depending on the level of your Queen's Conservatory this will reward higher quality spirits. Rank 5 will grant you an Epic Spirit.",isWeekly=1,lvl=60,qgs={158553},sourceQuests={58104},sym={{"select","itemID",177699,178880,178877,178883}},g={
 i(177698,{b=1,customCollect={"SL_COV_NFA"},f=55,rwp=90105,spellID=323617,u=2}),
-i(177699,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617}),
 i(177700,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617}),
 i(178881,{b=1,customCollect={"SL_COV_NFA"},f=55,rwp=90105,spellID=323617,u=2}),
-i(178880,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617}),
 i(178879,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617}),
 i(178874,{b=1,customCollect={"SL_COV_NFA"},f=55,rwp=90105,spellID=323617,u=2}),
-i(178877,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617}),
 i(178878,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617}),
 i(178882,{b=1,customCollect={"SL_COV_NFA"},f=55,rwp=90105,spellID=323617,u=2}),
-i(178883,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617}),
 i(178884,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617})}}),
 q(65090,{awp=90105,coords={
 [1701]={{33.9,43.5}}},customCollect={"SL_COV_NFA"},isDaily=1,lvl=60,qgs={158553},repeatable=1,sourceQuests={62860}}),
@@ -28105,7 +28100,7 @@ s(115965,184966,{f=2,loc=42,lvl={50}}),
 s(115961,184973,{f=2,loc=43,lvl={50}})}}),
 i(188000,{b=1,customCollect={"SL_COV_NFA"},description="Rewarded at 15 and 24 Renown.",spellID=336456}),
 i(186472,{b=1,description="Rewarded at 52, 67 and 76 Renown.",f=55,spellID=353852}),
-h(-221,{customCollect={"SL_COV_NFA"},description="Requires Renown 48.",symselector=38,g={
+h(-221,{customCollect={"SL_COV_NFA"},description="Requires Renown 48.",symselector=48,g={
 rfl(210,{b=1,c={6},customCollect={"SL_COV_NFA"},itemID=186565,spellID=342040}),
 rfl(237,{b=1,c={12},customCollect={"SL_COV_NFA"},itemID=187109,spellID=342040}),
 rfl(226,{b=1,c={11},customCollect={"SL_COV_NFA"},itemID=186687,spellID=342040}),
@@ -28320,7 +28315,7 @@ q(59873,{coords={
 q(59999,{coords={
 [1662]={{33.4,62}}},customCollect={"SL_COV_NFA"},lvl=60,qgs={166476},sourceQuests={59873}}),
 q(62441,{coords={
-[1662]={{33.4,62}}},customCollect={"SL_COV_NFA"},isDaily=1,isWeekly=1,lvl=60,qgs={166476},sourceQuests={59873},g={
+[1662]={{33.4,62}}},customCollect={"SL_COV_NFA"},isDaily=1,isWeekly=1,lvl=60,qgs={166476},sourceQuests={59873},sym={{"select","itemID",178880,178877,178883,177699}},g={
 i(178880,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617}),
 i(178877,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617}),
 i(178883,{b=1,customCollect={"SL_COV_NFA"},f=55,spellID=323617}),
@@ -29305,7 +29300,7 @@ s(116039,185057,{f=2,loc=42,lvl={50}}),
 s(116045,185063,{f=2,loc=43,lvl={50}})}}),
 i(188003,{b=1,customCollect={"SL_COV_VEN"},description="Rewarded at 15 and 24 Renown.",spellID=336456}),
 i(186472,{b=1,description="Rewarded at 52, 67 and 76 Renown.",f=55,spellID=353852}),
-h(-221,{customCollect={"SL_COV_VEN"},description="Requires Renown 48.",symselector=38,g={
+h(-221,{customCollect={"SL_COV_VEN"},description="Requires Renown 48.",symselector=48,g={
 rfl(212,{b=1,c={6},customCollect={"SL_COV_VEN"},itemID=186567,spellID=342040}),
 rfl(236,{b=1,c={12},customCollect={"SL_COV_VEN"},itemID=187105,spellID=342040}),
 rfl(220,{b=1,c={11},customCollect={"SL_COV_VEN"},itemID=186609,spellID=342040}),
@@ -30536,7 +30531,7 @@ s(114134,182418,{b=1,cost={{"i",183890.004,1},{"i",183891.004,1},{"i",183892.004
 s(114139,182423,{b=1,cost={{"i",183890.004,1},{"i",183891.004,1},{"i",183892.004,1},{"i",183893.004,1},{"i",183890.003,1},{"i",183891.003,1},{"i",183892.003,1},{"i",183893.003,1},{"i",183890.005,1},{"i",183891.005,1},{"i",183892.005,1},{"i",183893.005,1}},customCollect={"SL_COV_VEN"},f=35,lvl=50})}}),
 n(174710,{coords={
 [1699]={{54,25.6}}},customCollect={"SL_COV_VEN"},g={
-i(184665,{b=1,cost={{"c",1885,35}},customCollect={"SL_COV_VEN"},f=55,lvl=60,spellID=347413,sym={{"select","symselector",38},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
+i(184665,{b=1,cost={{"c",1885,35}},customCollect={"SL_COV_VEN"},f=55,lvl=60,spellID=347413,sym={{"select","symselector",48},{"extract","runeforgepowerID"},{"exclude","itemID",190584,190587,190588,199552,190589,190590,190591,190592,190593,190594,190595,190596,190598}}}),
 rfl(205,{b=1,cost={{"c",1813,250}},customCollect={"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"},itemID=183249,spellID=342040}),
 mnt(333021,{b=1,cost={{"c",1885,50},{"c",1813,100}},customCollect={"SL_COV_VEN"},itemID=182332}),
 mnt(332882,{b=1,cost={{"c",1885,100},{"c",1813,5000}},customCollect={"SL_COV_VEN"},itemID=180461}),
@@ -31029,7 +31024,7 @@ cd(154,{b=1,c={1},customCollect={"SL_COV_KYR"},itemID=182440,spellID=341427}),
 cd(158,{b=1,c={1},customCollect={"SL_COV_NEC"},itemID=182442,spellID=341427}),
 cd(190,{b=1,c={1},customCollect={"SL_COV_NFA"},itemID=182651,spellID=341427}),
 cd(165,{b=1,c={1},customCollect={"SL_COV_VEN"},itemID=182463,spellID=341427})})}}),
-h(-221,{symselector=38,g={
+h(-221,{symselector=48,g={
 rfl(203,{b=1,itemID=183247,spellID=342040}),
 rfl(205,{b=1,customCollect={"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"},itemID=183249,spellID=342040}),
 rfl(199,{b=1,itemID=183242,spellID=342040}),
@@ -31458,7 +31453,7 @@ ach(15324,{awp=90200,g={
 title(450),
 crit(53491,{achID=15654,awp=90205,id=15,rwp=100002,u=2}),
 crit(53491,{achID=20501,awp=100206,id=15})}})}),
-h(-221,{description="These memories only drop from Layer 3 or above, except for Phantasma Lure.",symselector=38,g={
+h(-221,{description="These memories only drop from Layer 3 or above, except for Phantasma Lure.",symselector=48,g={
 rfl(203,{b=1,description="This memory is the only exception and will only drop from Layer 6 or above.",itemID=183247,spellID=342040}),
 ah(14463,{icon=2178518,type="a",g={
 rfl(41,{b=1,c={6},itemID=182634,spellID=342040}),
@@ -32418,8 +32413,8 @@ q(72045,{coords={
 [2022]={{47.1,82.6}}},lvl=60,minReputation={2507,20},qgs={189226},rwp=110000,u=2,g={
 i(198865,{b=1,minReputation={2507,20},u=2})}}),
 q(70833,{coords={
-[2022]={{46.9,82.9}}},lvl=10,minReputation={2507,21},qgs={189065},g={
-i(200738,{b=1,minReputation={2507,21},questID=72021,spellID=391957,type="ihqt"})}}),
+[2022]={{46.9,82.9}}},lvl=10,minReputation={2507,21},qgs={189065},sym={{"select","itemID",200738}},g={
+i(200738,{b=1,questID=72021,spellID=391957,type="ihqt"})}}),
 q(72046,{coords={
 [2022]={{47.1,82.6}}},lvl=60,minReputation={2507,21},qgs={189226},rwp=110000,u=2,g={
 i(198865,{b=1,minReputation={2507,21},u=2})}}),
@@ -36487,7 +36482,7 @@ i(204071,{b=1})}}),
 n(203411,{isWeekly=1,g={
 i(204683,{b=1})}}),
 i(203683,{b=1,isWeekly=1,spellID=407054})}),
-h(-29,{crs={201673,203411},symselector=42,g={
+h(-29,{crs={201673,203411},symselector=52,g={
 i(205258,{b=1}),
 i(200453,{b=2,f=55,factionID=2511,repeatable=1,spellID=389667}),
 i(200454,{b=2,f=55,factionID=2503,repeatable=1,spellID=389668}),
@@ -36563,7 +36558,7 @@ s(185831,204749,{b=1,f=25,lvl=70}),
 s(185824,204755,{b=1,f=27,lvl=70}),
 s(185827,204737,{b=1,f=35,lvl=70})})}}),
 h(-56,{
-o(398815,{cost={{"i",203710,3}},sym={{"select","symselector",42},{"pop"}},type="AsGenericObjectContainer",g={
+o(398815,{cost={{"i",203710,3}},sym={{"select","symselector",52},{"pop"}},type="AsGenericObjectContainer",g={
 flt(101,{
 p(3512,{b=1,itemID=205003,npcID=204221,spellID=407921}),
 p(3511,{b=1,itemID=205002,npcID=204217,spellID=407918})}),
@@ -42260,7 +42255,7 @@ i(268809),
 i(266448),
 i(268808),
 i(268807)}),
-h(-29,{symselector=43,g={
+h(-29,{symselector=53,g={
 flt(101,{
 p(5040,{description="This pet can drop only during Void Assault in Eversong Woods.",itemID=270990,npcID=262788,spellID=1288381}),
 p(5038,{description="This pet can drop only during Void Assault in Zul'Aman.",itemID=270988,npcID=262786,spellID=1288378})}),
@@ -42331,21 +42326,21 @@ s(306292,270982,{f=20}),
 s(306290,270980,{f=27})})}),
 cu(3405),
 i(267051),
-i(270933,{f=55,sym={{"select","symselector",43},{"pop"},{"where","filterID",2},{"pop"}}}),
+i(270933,{f=55,sym={{"select","symselector",53},{"pop"},{"where","filterID",2},{"pop"}}}),
 i(270244,{f=55}),
-i(270247,{f=55,spellID=1289083,sym={{"select","itemID",270990},{"finalize"},{"select","itemID",270988},{"finalize"},{"select","symselector",43},{"pop"},{"where","filterID",2},{"pop"}}}),
+i(270247,{f=55,spellID=1289083,sym={{"select","itemID",270990},{"finalize"},{"select","itemID",270988},{"finalize"},{"select","symselector",53},{"pop"},{"where","filterID",2},{"pop"}}}),
 i(270932,{f=55,sym={{"select","itemID",270990,270988}}}),
-i(271222,{description="Earned with characters under level 90.",f=55,sym={{"select","symselector",43},{"pop"},{"where","filterID",2},{"pop"},{"finalize"},{"select","symselector",43},{"pop"},{"where","headerID",-712},{"pop"}}}),
-i(270934,{description="Earned with characters under level 90.",f=55,sym={{"select","symselector",43},{"pop"},{"where","headerID",-712},{"pop"}}}),
-i(270987,{description="Earned with characters under level 90.",f=55,spellID=1289083,sym={{"select","symselector",43},{"pop"},{"where","headerID",-712},{"pop"}}}),
-i(271221,{description="Earned with characters under level 90.",f=55,sym={{"select","itemID",270990},{"finalize"},{"select","itemID",270988},{"finalize"},{"select","symselector",43},{"pop"},{"where","headerID",-712},{"pop"}}})}}),
+i(271222,{description="Earned with characters under level 90.",f=55,sym={{"select","symselector",53},{"pop"},{"where","filterID",2},{"pop"},{"finalize"},{"select","symselector",53},{"pop"},{"where","headerID",-712},{"pop"}}}),
+i(270934,{description="Earned with characters under level 90.",f=55,sym={{"select","symselector",53},{"pop"},{"where","headerID",-712},{"pop"}}}),
+i(270987,{description="Earned with characters under level 90.",f=55,spellID=1289083,sym={{"select","symselector",53},{"pop"},{"where","headerID",-712},{"pop"}}}),
+i(271221,{description="Earned with characters under level 90.",f=55,sym={{"select","itemID",270990},{"finalize"},{"select","itemID",270988},{"finalize"},{"select","symselector",53},{"pop"},{"where","headerID",-712},{"pop"}}})}}),
 h(-45,{
 q(94380,{coords={
 [2393]={{49.4,65.5}}},isBreadcrumb=1,nextQuests={96080},qgs={257459}}),
 q(96080,{coords={
 [2393]={{48.1,49.7}}},qgs={257411},sourceQuests={94380},g={
 i(264914,{f=55}),
-i(272125,{f=55,sym={{"select","symselector",43},{"pop"},{"where","headerID",-712},{"pop"}}})}}),
+i(272125,{f=55,sym={{"select","symselector",53},{"pop"},{"where","headerID",-712},{"pop"}}})}}),
 q(94381,{coords={
 [2393]={{48.1,49.7}}},qgs={257411},sourceQuests={96080}}),
 q(94383,{coords={
@@ -42353,11 +42348,11 @@ q(94383,{coords={
 q(94385,{coords={
 [2393]={{48.1,49.7}}},isWeekly=1,qgs={257411},sourceQuests={94381},g={
 i(264914,{f=55}),
-i(272125,{f=55,sym={{"select","symselector",43},{"pop"},{"where","headerID",-712},{"pop"}}})}}),
+i(272125,{f=55,sym={{"select","symselector",53},{"pop"},{"where","headerID",-712},{"pop"}}})}}),
 q(94386,{coords={
 [2393]={{48.1,49.9}}},isWeekly=1,qgs={257415},sourceQuests={94381},g={
 i(264914,{f=55}),
-i(272125,{f=55,sym={{"select","symselector",43},{"pop"},{"where","headerID",-712},{"pop"}}})}}),
+i(272125,{f=55,sym={{"select","symselector",53},{"pop"},{"where","headerID",-712},{"pop"}}})}}),
 ah(62569,{type="a",g={
 q(94920,{qss={266448},g={
 crit(113766,{achID=62569,id=2})}}),
@@ -42413,7 +42408,7 @@ h(-671,{
 h(-765,{rwp=120100,u=2,g={
 h(-12,{awp=120007,u=2,g={
 ach(63164,{u=2})}}),
-h(-29,{symselector=44,u=2,g={
+h(-29,{symselector=54,u=2,g={
 h(-88,{u=2,g={
 flt(3,{u=2,g={
 s(301478,258533,{b=1,f=3,lvl=80,u=2}),
@@ -42486,10 +42481,10 @@ flt(50,{u=2,g={
 i(262928,{b=1,f=55,lvl=80,u=2}),
 i(262938,{b=1,f=55,lvl=80,u=2}),
 i(262936,{b=1,f=55,lvl=80,u=2}),
-i(257023,{b=1,f=55,lvl=80,sym={{"select","symselector",44},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",44},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
-i(257026,{b=1,f=55,lvl=80,sym={{"select","symselector",44},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",44},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
-i(262346,{b=1,f=55,lvl=80,sym={{"select","symselector",44},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",44},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
-i(268545,{f=55,sym={{"select","symselector",44},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",44},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
+i(257023,{b=1,f=55,lvl=80,sym={{"select","symselector",54},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",54},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
+i(257026,{b=1,f=55,lvl=80,sym={{"select","symselector",54},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",54},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
+i(262346,{b=1,f=55,lvl=80,sym={{"select","symselector",54},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",54},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
+i(268545,{f=55,sym={{"select","symselector",54},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",54},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}},u=2}),
 i(269768,{awp=120005,u=2})}}),
 hqtbr(95000,{isWeekly=1,maxReputation={2764,20},rwp=120001,u=2}),
 hqtbr(95001,{isWeekly=1,maxReputation={2764,20},rwp=120001,u=2}),
@@ -42501,7 +42496,7 @@ h(-766,{awp=120100,rwp=120200,g={
 h(-12,{
 ach(63611,{
 title(792)})}),
-h(-29,{symselector=45,g={
+h(-29,{symselector=55,g={
 h(-88,{
 flt(3,{
 s(309365,275525,{f=3}),
@@ -42574,10 +42569,10 @@ flt(50,{
 i(275919,{f=55}),
 i(275728,{f=55}),
 i(275917,{f=55}),
-i(275918,{f=55,sym={{"select","symselector",45},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",45},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
-i(275822,{f=55,sym={{"select","symselector",45},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",45},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
-i(275726,{f=55,sym={{"select","symselector",45},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",45},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
-i(276104,{f=55,sym={{"select","symselector",45},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",45},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
+i(275918,{f=55,sym={{"select","symselector",55},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",55},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
+i(275822,{f=55,sym={{"select","symselector",55},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",55},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
+i(275726,{f=55,sym={{"select","symselector",55},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",55},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
+i(276104,{f=55,sym={{"select","symselector",55},{"pop"},{"where","headerID",-88},{"finalize"},{"select","symselector",55},{"pop"},{"where","headerID",-101},{"finalize"},{"select","mapID",2537},{"pop"},{"where","headerID",-64},{"pop"},{"where","headerID",-88},{"pop"},{"where","filterID",53}}}),
 i(280131)}),
 hqtbr(98547,{isWeekly=1,maxReputation={2808,20}}),
 hqtbr(98548,{isWeekly=1,maxReputation={2808,20}}),
@@ -42943,7 +42938,7 @@ crit(112616,{achID=62351,id=3})}}),
 ach(62138,{providers={{"n",260848}},g={
 crit(112620,{achID=62351,id=7})}}),
 ach(63643,{awp=120100,crs={261796},providers={{"n",270900}}})}),
-h(-29,{symselector=46,g={
+h(-29,{symselector=56,g={
 flt(50,{
 i(269005,{f=55}),
 i(255825,{crs={247053,247070,247071,247072,247073,247074,247075,247076,247077,247078,247079,247080,247081,247082,268072},f=55,spellID=1259472})}),
@@ -43618,7 +43613,7 @@ i(276389,{f=55})}}),
 q(97086,{coords={
 [2600]={{48.2,81.2},{48.5,81.9}}},isWeekly=1,qgs={265303},sourceQuests={96718},g={
 i(276390,{f=55})}})}),
-h(-46,{symselector=47,g={
+h(-46,{symselector=57,g={
 n(264569,{coords={
 [2600]={{28.8,62.9}}},questID=96316,repeatable=1,sym={{"select","itemID",274827,274873}},g={
 s(309149,275151,{f=5,loc=43}),
@@ -44192,8 +44187,8 @@ i(267051),
 i(278116,{f=55,spellID=1303631}),
 s(309654,276330,{f=29,providers={{"n",264769},{"n",264876},{"n",265445},{"n",265446},{"n",265447},{"n",265879},{"n",265880},{"n",265881},{"n",265882}}}),
 s(309647,276298,{f=20,providers={{"n",264571},{"n",264869},{"n",267422}}})}}),
-h(-19,{description="Showdown Elite Patrol creatures have a small (<1%) chance to drop or reward these items, in addition to their most prevalent Source.",providers={{"n",264769},{"n",264876},{"n",265445},{"n",265446},{"n",265447},{"n",265879},{"n",265880},{"n",265881},{"n",265882}},sym={{"select","symselector",48,47},{"extract","itemID"}}}),
-h(-64,{maps={2599,2600},sharedDescription="|cffd15517It is FAR preferable to use lower-level characters to acquire these Items|r as they will always be rewarded from the constantly-rotating selection of World Quests and Bonus Objectives in the active Showdown Zone. Max level characters may see one drop after hours of active gameplay from farming the respective Rares.",symselector=48,g={
+h(-19,{description="Showdown Elite Patrol creatures have a small (<1%) chance to drop or reward these items, in addition to their most prevalent Source.",providers={{"n",264769},{"n",264876},{"n",265445},{"n",265446},{"n",265447},{"n",265879},{"n",265880},{"n",265881},{"n",265882}},sym={{"select","symselector",58,57},{"extract","itemID"}}}),
+h(-64,{maps={2599,2600},sharedDescription="|cffd15517It is FAR preferable to use lower-level characters to acquire these Items|r as they will always be rewarded from the constantly-rotating selection of World Quests and Bonus Objectives in the active Showdown Zone. Max level characters may see one drop after hours of active gameplay from farming the respective Rares.",symselector=58,g={
 h(-88,{
 flt(3,{
 s(309004,274820,{f=3}),

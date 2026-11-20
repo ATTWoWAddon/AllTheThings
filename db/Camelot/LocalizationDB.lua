@@ -650,7 +650,6 @@ L.MINIMAP_LABEL = "Minimap Button"
 L.MINIMAP_MOUSEOVER_TEXT = "Right Click to change settings.\nLeft Click to open the Main List.\n" .. CTRL_KEY_TEXT .. " Click to open the Mini List.\n" .. SHIFT_KEY_TEXT .. " Click to Refresh Collections."
 L.MINIMAP_SLIDER = "Minimap Button Size"
 L.MINIMAP_SLIDER_TOOLTIP = "Use this to customize the size of the Minimap Button.\n\nDefault: 36"
-L.MINING_PICK_DESCRIPTION = "Can be bought from Mining Suppliers, as well as some Trade vendors around the world"
 L.MINUMUM_STANDING_WITH_FACTION = "Requires a minimum standing of %s with %s."
 L.MISSING_QUESTS = "Missing Quests"
 L.MISSING_QUESTS_ATT_DATA = "ATT Data:"
@@ -822,6 +821,7 @@ L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop."
 L.QUEST_MAY_BE_REMOVED = "Failed to acquire information. This quest may have been removed from the game. "
 L.QUEST_MOBS = "Quest Mobs"
 L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective"
+L.QUEST_OFFERED_DURING_FORMAT = "Quest '%s' %s is only offered during '%s' %s. Accept it when it is offered."
 L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest"
 L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of '%s' %s"
 L.QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements"
@@ -11339,7 +11339,6 @@ L.MINIMAP_LABEL = "Botón del minimapa"
 L.MINIMAP_MOUSEOVER_TEXT = "Clic derecho para cambiar ajustes.\nClic izquierdo para abrir la Lista Principal.\n" .. CTRL_KEY_TEXT .. " + clic para abrir la Mini Lista.\n" .. SHIFT_KEY_TEXT .. " + clic para Refrescar las Colecciones."
 L.MINIMAP_SLIDER = "Tamaño del botón del minimapa"
 L.MINIMAP_SLIDER_TOOLTIP = "Usa esto para personalizar el tamaño del botón del Minimapa.\n\nPredeterminado: 36"
-L.MINING_PICK_DESCRIPTION = "Se puede comprar a proveedores de equipos de minería, así como a algunos comerciantes repartidos por todo el mundo."
 L.MINUMUM_STANDING_WITH_FACTION = "Requiere un nivel mínimo de %s con %s."
 L.MISSION_ID = "Misión ID"
 L.MODE = "Modo"
@@ -13867,6 +13866,7 @@ L.QUEST_ID = "任务 ID"
 L.QUEST_ITEMS = "任务物品"
 L.QUEST_LOOP = "可能刚刚从无限源任务循环中爆发出来。"
 L.QUEST_MAY_BE_REMOVED = "获取信息失败。这个任务可能已从游戏中移除。"
+L.QUEST_MOBS = "任务怪"
 L.QUEST_OBJECTIVE_INVALID = "无效的任务目标"
 L.QUEST_ONCE_PER_ACCOUNT = "帐号一次性任务"
 L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "任务「%s」%s 将阻止收藏任务「%s」%s"
@@ -14052,6 +14052,8 @@ L.SHOW_REMAINING_CHECKBOX = "显示剩余事物"
 L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩余事物数量而不是总进度，请启用此选项。"
 L.SHOW_SKYRIDING_CHECKBOX = "驭空术"
 L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "如果想在游戏中显示需要驭空术的内容，请启用此设置。"
+L.SIMPLE_ZONE_DROPS_CHECKBOX = "简化地区掉落"
+L.SIMPLE_ZONE_DROPS_CHECKBOX_TOOLTIP = "启用此选项后，生物的地区掉落会直接显示在鼠标提示中，而不是收纳在“地区掉落”标题下。"
 L.SKIP_AUTO_REFRESH = "不自动刷新！"
 L.SKIP_AUTO_REFRESH_TOOLTIP = "默认情况下(未勾选)，任何可能影响可见数据的设置变化都会导致自动刷新。\n\n通过启用该选项设置的变化将不会生效，直到玩家 " .. SHIFT_KEY_TEXT .. "点击 ATT 窗口执行全部刷新。"
 L.SKIP_CUTSCENES_CHECKBOX = "自动跳过场景动画"
@@ -14260,6 +14262,7 @@ localize(L.HEADER_NAMES, {
 	[-799] = "图书馆藏书",
 	[-800] = "联盟斥候",
 	[-808] = "贸易物流",
+	[-809] = "工匠文书",
 	[-810] = "遭劫的板条箱",
 })
 localize(L.HEADER_DESCRIPTIONS, {
@@ -14289,6 +14292,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-797] = "这些奖励是提供给购买了魔兽世界：无限升级包的玩家的。",
 	[-800] = "这些斥候成群在贫瘠之地各处巡逻，会袭击过于靠近的部落玩家。",
 	[-808] = "艾泽拉斯贸易局和杜隆塔尔补给后勤部为协助在艾泽拉斯各地运送货物的人支付报酬。完成工匠文书和装满遭劫的板条箱并上交，以获取声望和商人青睐，然后于他们的商人处使用你的商人青睐。",
+	[-809] = "密封的初级工匠文书、密封的高级工匠文书与密封的大师级工匠文书在艾泽拉斯全域掉落，开启后可获得对应品级的随机工匠文书。每份文书会触发一个每日任务，将订单要求的物品交给地图上标记的委托人，获取艾泽拉斯贸易局或杜隆塔尔补给后勤部的声望。你本人不需要拥有对应专业。",
 	[-810] = "遭劫的板条箱会从艾泽拉斯各地 10 级及以上的生物身上掉落。阅读标签以确认货物种类，再放入清单内任意一组物资，制成密封的板条箱，再将其交付给你阵营的贸易代表，以换取商人青睐。",
 })
 localize(L.HEADER_LORE, {
@@ -15015,7 +15019,11 @@ localize(ObjectNames, {
 	[405879] = "药剂师的会社读本",
 	[406918] = "信使行囊",
 	[407566] = "地精魔典",
+	[409496] = "卷轴",
 	[409692] = "卷轴",
+	[409711] = "卷轴",
+	[409717] = "卷轴",
+	[409731] = "卷轴",
 	[410369] = "秘密投放点",
 	[415106] = "焦焚残骸",
 	[415107] = "焦焚残骸",
@@ -15025,7 +15033,9 @@ localize(ObjectNames, {
 	[423569] = "丢下的袋子",
 	[423895] = "卷轴",
 	[423896] = "手册",
+	[423897] = "卷轴",
 	[423898] = "神秘的书籍",
+	[423899] = "卷轴",
 	[423900] = "浸水的书籍",
 	[424005] = "垃圾袋",
 	[424006] = "草草收起的包裹",
@@ -15700,7 +15710,6 @@ L.MINIMAP_LABEL = "小地圖按鈕"
 L.MINIMAP_MOUSEOVER_TEXT = "右鍵改變設定。\n左鍵打開主列表。\n" .. CTRL_KEY_TEXT .. "左鍵打開小列表。\n" .. SHIFT_KEY_TEXT .. "左鍵刷新收藏。"
 L.MINIMAP_SLIDER = "小地圖按鈕尺寸"
 L.MINIMAP_SLIDER_TOOLTIP = "使用此選項可自訂小地圖按鈕的大小。\n\n預設：36"
-L.MINING_PICK_DESCRIPTION = "可向採礦供應商及世界各地部分貿易商人購買。"
 L.MINUMUM_STANDING_WITH_FACTION = "最低陣營聲望等級 %s 和 %s。"
 L.MISSING_QUESTS = "缺少的任務"
 L.MISSING_QUESTS_ATT_DATA = "ATT 資料："

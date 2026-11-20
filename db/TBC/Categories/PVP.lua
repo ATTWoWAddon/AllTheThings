@@ -49,7 +49,7 @@ pvprank(11,{pvp=1,u=2}),
 pvprank(12,{pvp=1,u=2}),
 pvprank(13,{pvp=1,u=2}),
 pvprank(14,{pvp=1,u=2})}}),
-h(-210,{awp=10400,pvp=1,r=2,symselector=6,g={
+h(-210,{awp=10400,pvp=1,r=2,symselector=44,g={
 h(-101,{pvp=1,g={
 s(129729,18825,{b=1,f=8,lvl=60,pvp=1,q=4}),
 s(129771,18867,{b=1,f=24,lvl=60,pvp=1,q=4}),
@@ -213,7 +213,7 @@ i(18862,{b=1,c={5},f=53,pvp=1,q=3}),
 i(18857,{b=1,c={4},f=53,pvp=1,q=3}),
 i(18858,{b=1,c={9},f=53,pvp=1,q=3}),
 i(18854,{b=1,c={1},f=53,pvp=1,q=3})}}),
-h(-211,{awp=11101,pvp=1,r=1,symselector=27,g={
+h(-211,{awp=11101,pvp=1,r=1,symselector=65,g={
 h(-101,{pvp=1,g={
 s(129735,18831,{b=1,f=22,lvl=60,pvp=1,q=4}),
 s(133860,23464,{b=1,f=23,lvl=60,pvp=1,q=4}),
@@ -622,7 +622,7 @@ s(139220,28874,{b=1,c={11},f=5,loc=41,lvl=70,pvp=1,q=3}),
 s(139221,28875,{b=1,c={11},f=5,loc=42,lvl=70,pvp=1,q=3}),
 s(139217,28871,{b=1,c={11},f=5,loc=44,lvl=70,pvp=1,q=3}),
 s(139219,28873,{b=1,c={11},f=5,loc=46,lvl=70,pvp=1,q=3})}})}})}}),
-h(-247,{awp=20001,pvp=1,symselector=7,g={
+h(-247,{awp=20001,pvp=1,symselector=45,g={
 h(-12,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=nil end	end,pvp=1,rwp=20102,u=2,g={
 ach(886,{OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=nil end	end,providers={{"i",30609}},pvp=1,u=2}),
 mnt(37015,{b=1,description="Awarded to members of the Arena teams during TBC Season 1 that were in the 0.5% bracket of their battlegroup.",itemID=30609,lvl=70,OnUpdate=function(t)if settings:GetUnobtainableFilter(18)then	t.u=2 else	t.u=nil end	end,pvp=1,q=4,u=2}),
@@ -890,7 +890,7 @@ i(33948,{awp=20003,b=1,c={2},f=54,lvl=70,pvp=1,q=4,rwp=30002}),
 i(33939,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002}),
 i(33951,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002}),
 i(28357,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002})}})}})}}),
-h(-248,{phase=18,pvp=1,symselector=8,g={
+h(-248,{phase=18,pvp=1,symselector=46,g={
 h(-12,{awp=20102,OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=nil end	end,pvp=1,rwp=20300,u=2,g={
 ach(418,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=nil end	end,pvp=1,u=2,g={
 title(37,{OnUpdate=function(t)if settings:GetUnobtainableFilter(20)then	t.u=2 else	t.u=nil end	end,pvp=1,u=2})}}),
@@ -1091,7 +1091,7 @@ i(33949,{awp=20003,b=1,c={2},f=54,lvl=70,pvp=1,q=4,rwp=30002}),
 i(33940,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002}),
 i(33952,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002}),
 i(33078,{awp=20003,b=1,c={7},f=54,lvl=70,pvp=1,q=4,rwp=30002})}})}})}}),
-h(-249,{phase=19,pvp=1,symselector=9,g={
+h(-249,{phase=19,pvp=1,symselector=47,g={
 h(-12,{awp=20300,OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=nil end	end,pvp=1,rwp=20403,u=2,g={
 ach(419,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=nil end	end,pvp=1,u=2,g={
 title(40,{OnUpdate=function(t)if settings:GetUnobtainableFilter(21)then	t.u=2 else	t.u=nil end	end,pvp=1,u=2})}}),
@@ -1312,7 +1312,7 @@ i(34576,{awp=20003,b=1,f=53,lvl=70,phase=20,pvp=1,q=4,rwp=30002}),
 i(34577,{awp=20003,b=1,f=53,lvl=70,phase=20,pvp=1,q=4,rwp=30002}),
 i(34578,{awp=20003,b=1,f=53,lvl=70,phase=20,pvp=1,q=4,rwp=30002}),
 i(34580,{awp=20003,b=1,f=53,lvl=70,phase=20,pvp=1,q=4,rwp=30002})}})}})}}),
-h(-250,{phase=21,pvp=1,symselector=10,g={
+h(-250,{phase=21,pvp=1,symselector=48,g={
 h(-12,{awp=20403,OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=nil end	end,pvp=1,rwp=30002,u=4,g={
 ach(420,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=nil end	end,pvp=1,u=4,g={
 title(49,{OnUpdate=function(t)if settings:GetUnobtainableFilter(30)then	t.u=2 else	t.u=nil end	end,pvp=1,u=4})}}),

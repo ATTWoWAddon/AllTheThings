@@ -6,40 +6,6 @@ categories.Craftables=
 h(-23,{DontEnforceSkillRequirements=1,SortPriority=20,g={
 x(1,{awp=10100,g={
 prof(171,{
-h(-22,{
-i(3371,{description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(3372,{coords={
-[84]={{55.6,85.6}},
-[85]={{56.2,34.2}},
-[87]={{66.6,54.6}},
-[88]={{47.4,33.73}},
-[89]={{55.8,24.5}},
-[103]={{28.1,61.9}},
-[110]={{67,19.2}},
-[998]={{51.8,74.6}}},description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2}),
-i(8925,{coords={
-[84]={{55.6,85.6}},
-[85]={{56.2,34.2}},
-[87]={{66.6,54.6}},
-[88]={{47.4,33.73}},
-[89]={{55.8,24.5}},
-[103]={{28.1,61.9}},
-[110]={{67,19.2}},
-[998]={{51.8,74.6}}},description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2}),
-i(18256,{coords={
-[84]={{55.6,85.6}},
-[85]={{56.2,34.2}},
-[87]={{66.6,54.6}},
-[88]={{47.4,33.73}},
-[89]={{55.8,24.5}},
-[100]={{52.2,36.4},{53.8,65.8}},
-[103]={{28.1,61.9}},
-[110]={{67,19.2}},
-[111]={{45.8,20.8}},
-[114]={{41.34,34.61},{57.7,72.32}},
-[117]={{58.4,62.75},{79.5,30.47}},
-[125]={{41.54,33.32}},
-[998]={{51.8,74.6}}},description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2})}),
 flt(55,{
 i(9155,{f=55,lvl=37,q=1}),
 i(10592,{f=55,lvl=30,q=1}),
@@ -246,12 +212,6 @@ p(310,{awp=40100,b=1,cost={{"c",385,100}},itemID=69824,npcID=53232,q=3,spellID=9
 i(63115,{b=1,cost={{"c",385,27}}}),
 s(209042,64377,{b=2,cost={{"c",385,150}},f=26,lvl=85,q=4})}})}}),
 prof(164,{
-h(-22,{
-s(120862,5956,{collectible=false,description="Can be bought from Blacksmithing- and Engineering Suppliers, as well as some Trade vendors around the world.",f=2,q=1}),
-i(2880,{description="Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(3466,{description="Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(18567,{description="Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(3857,{description="Can be bought from Blacksmithing Suppliers, as well as some Trade vendors around the world.",q=1})}),
 h(-88,{
 s(122185,7916,{f=6,loc=47,lvl=31,q=2}),
 s(122183,7914,{b=1,f=6,loc=42,lvl=27,q=2,requireSkill=164}),
@@ -504,17 +464,6 @@ s(125145,12792,{awp=100107,f=23,lvl=53,q=2,rwp=40003,u=2}),
 i(29202,{awp=20005,f=36,lvl=35,phase=17,q=0,rwp=50004,u=2}),
 s(122212,7943,{f=25,lvl=40,q=2})})}),
 prof(185,{
-h(-22,{
-i(159,{description="Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",f=55,q=1}),
-i(30817,{awp=20001,description="Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(2678,{description="Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(2692,{description="Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",rwp=30002,u=2}),
-i(3713,{description="Can be bought from Cooking Suppliers, as well as some Trade vendors around the world.",rwp=30002,u=2}),
-i(2594,{description="This item is only common among Alliance bartenders. Horde players only have a few sources.",f=55,providers={{"n",1328},{"n",16442}},q=1}),
-i(2593,{description="This item is only common among Alliance bartenders. Horde players only have a few sources.",f=55,providers={{"n",1328},{"n",16442}},q=1}),
-i(2595,{description="This item is only common among Alliance bartenders. Horde players only have a few sources.",f=55,providers={{"n",1328},{"n",16442}},q=1}),
-i(2596,{description="This item is only common among Alliance bartenders. Horde players only have a few sources.",f=55,providers={{"n",1328},{"n",16442}},q=1}),
-i(1179,{description="Can be bought from bartenders, innkeepers and general goods vendors.",f=55,lvl=5,q=1})}),
 i(13935,{f=55,lvl=45,q=1}),
 i(4457,{f=55,lvl=25,q=1}),
 i(27636,{awp=20005,f=55,lvl=5,phase=17,q=1}),
@@ -615,13 +564,6 @@ i(67230,{awp=40003,f=55,lvl=5,phase=40,q=1}),
 i(733,{f=55,lvl=15,q=1}),
 i(17198,{f=55,q=1})}),
 prof(333,{
-h(-22,{
-i(4470,{description="Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(11291,{description="Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(38682,{description="Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(6217,{description="Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(10938,{isLimited=1,q=2}),
-i(10940,{isLimited=1,q=1})}),
 ah(13262,{type="s",g={
 i(11176,{description="Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 46-55.",q=1,rwp=70305}),
 i(16204,{description="Obtained from disenchanting uncommon (green) quality garments, amulets and rings within the ilvl bracket 56-65.",q=1}),
@@ -806,9 +748,6 @@ s(124207,11290,{f=27,lvl=30,q=2}),
 s(124204,11287,{f=27,lvl=5,q=2}),
 s(124206,11289,{f=27,lvl=26,q=2})})}),
 prof(202,{
-h(-22,{
-i(4400,{description="Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(4399,{description="Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",q=1})}),
 prof(20219,{description="These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",g={
 h(-88,{
 s(123773,10545,{b=1,f=4,learnedAt=210,loc=40,q=2,requireSkill=20219})}),
@@ -1005,15 +944,8 @@ i(6450,{f=55,q=1,requireSkill=129}),
 i(6453,{f=55,q=1}),
 i(3530,{f=55,q=1,requireSkill=129})}),
 prof(356,{description="If you struggle to catch an open water fish in a given zone, try a different spot or a different body of water. There might be local variations of which fish you can reliably catch from a given spot.",g={
-h(-22,{
-i(6533,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=55,isLimited=1,q=1,requireSkill=356}),
-i(6532,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=55,q=1,requireSkill=356}),
-s(121068,6256,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=57,q=1}),
-i(6530,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=55,q=1,requireSkill=356}),
-i(6529,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=55,q=1}),
-s(121175,6365,{description="Can be bought from Fishing Suppliers, as well as some Trade vendors around the world.",f=57,isLimited=1,learnedAt=10,lvl=5,q=1,requireSkill=356})}),
 flt(23,{
-s(121170,6360,{description="Can be caught in open water in the given zones.",f=23,lvl=20,maps_disp={25,50,56,63,407},q=2})}),
+s(121170,6360,{f=23,lvl=20,maps_disp={25,50,56,63,407},q=2})}),
 flt(52,{
 i(8350,{description="Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",f=52,lvl=10,q=2})}),
 flt(1,{
@@ -1085,56 +1017,56 @@ i(21113,{maps_disp={25,56,63,65},providers={{"o",180662},{"o",216764}},q=1}),
 i(21151,{f=55,providers={{"o",180655},{"o",180658},{"o",180662},{"o",180682},{"o",180683},{"o",180685},{"o",180712},{"o",180751},{"o",180901},{"o",216761},{"o",216764}},q=1}),
 i(20709,{f=55,maps_disp={10,21,47,49,52,62,76},providers={{"o",180655}},q=1})}),
 flt(57,{
-s(121176,6366,{description="Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",f=57,learnedAt=50,lvl=15,maps_disp={14,25,49,50,56,63},q=1,requireSkill=356})}),
+s(121176,6366,{f=57,learnedAt=50,lvl=15,maps_disp={14,25,49,50,56,63},q=1,requireSkill=356})}),
 flt(200,{
 r(43308,{awp=20300,b=1,description="Can be fished from schools.",itemID=34109,learnedAt=100,q=1,requireSkill=356})}),
-i(13888,{description="Can be caught on the seaside.",lvl=45,maps_disp={17,51},q=1}),
+i(13888,{lvl=45,maps_disp={17,51},q=1}),
 i(6522,{coords={
 [10]={{37.3,45.9},{39.9,74.9},{56,80.6}}},f=55,providers={{"o",180658}},q=1}),
-i(6359,{description="Schools can be found on the seaside.",maps_disp={10,14,17,21,25,26,50,51,52,56,62,63,64,66,69,70,71,76,199,210},providers={{"o",180683},{"o",216761}},q=1}),
-i(13893,{description="Can be caught on the seaside.",f=55,lvl=45,maps_disp={17,51},q=1}),
+i(6359,{maps_disp={10,14,17,21,25,26,50,51,52,56,62,63,64,66,69,70,71,76,199,210},providers={{"o",180683},{"o",216761}},q=1}),
+i(13893,{f=55,lvl=45,maps_disp={17,51},q=1}),
 i(13757,{coords={
-[81]={{60.6,71.7}}},description="Can be caught in inland waters and waterways. This fish have a 5-10% drop rate.",maps_disp={42,83},q=1}),
-i(6358,{description="Schools can be found on the seaside.",maps_disp={10,14,17,21,25,26,50,51,52,56,62,63,64,66,69,70,71,76,199,210},providers={{"o",180682},{"o",216761}},q=1}),
-i(6291,{description="Can be caught in inland waters and waterways.",maps_disp={7,18,27,37},q=1}),
-i(6308,{description="Can be caught in inland waters and waterways.",lvl=15,maps_disp={47,49,63,65},q=1}),
-i(13754,{description="Can be caught on the seaside.",lvl=35,maps_disp={71},q=1}),
-i(21153,{description="Schools can be found in inland waters and waterways.",lvl=30,maps_disp={14,17,22,23,26,65,66,69,70,78,80},providers={{"o",180684}},q=1}),
-i(6317,{description="Can be caught in The Loch.",lvl=5,maps_disp={48},q=1}),
-i(6289,{description="Can be caught in inland waters and waterways.",lvl=5,maps_disp={27,84,85,87,88,89},q=1}),
-i(8365,{description="Can be caught in inland waters and waterways.",lvl=25,maps_disp={22,23,66,69,70,80},q=1}),
+[81]={{60.6,71.7}}},maps_disp={42,83},q=1}),
+i(6358,{maps_disp={10,14,17,21,25,26,50,51,52,56,62,63,64,66,69,70,71,76,199,210},providers={{"o",180682},{"o",216761}},q=1}),
+i(6291,{maps_disp={7,18,27,37},q=1}),
+i(6308,{lvl=15,maps_disp={47,49,63,65},q=1}),
+i(13754,{lvl=35,maps_disp={71},q=1}),
+i(21153,{lvl=30,maps_disp={14,17,22,23,26,65,66,69,70,78,80},providers={{"o",180684}},q=1}),
+i(6317,{lvl=5,maps_disp={48},q=1}),
+i(6289,{lvl=5,maps_disp={27,84,85,87,88,89},q=1}),
+i(8365,{lvl=25,maps_disp={22,23,66,69,70,80},q=1}),
 i(13759,{description="Can be caught in inland waters and waterways during night time: 18:00/6pm to 12:00/12pm server time.",lvl=35,maps_disp={17,23,69,77,78},q=1}),
-i(6361,{description="Can be caught on the seaside.",lvl=5,maps_disp={62,95,106,217},q=1}),
-i(13758,{description="Can be caught in inland waters and waterways.",lvl=35,maps_disp={77,80},q=1}),
-i(6362,{description="Can be caught on the seaside.",lvl=25,maps_disp={66},q=1}),
-i(21071,{description="Schools can be found in inland waters and waterways.",lvl=10,maps_disp={21,25,47,48,49,56,63},providers={{"o",216764}},q=1}),
-i(6303,{description="Can be caught on the seaside.",maps_disp={1,57,97},q=1}),
-i(4603,{description="Can be caught on the seaside.",lvl=35,maps_disp={15,71},q=1}),
+i(6361,{lvl=5,maps_disp={62,95,106,217},q=1}),
+i(13758,{lvl=35,maps_disp={77,80},q=1}),
+i(6362,{lvl=25,maps_disp={66},q=1}),
+i(21071,{lvl=10,maps_disp={21,25,47,48,49,56,63},providers={{"o",216764}},q=1}),
+i(6303,{maps_disp={1,57,97},q=1}),
+i(4603,{lvl=35,maps_disp={15,71},q=1}),
 i(13760,{coords={
 [81]={{60.6,71.7}}},description="Can be caught in inland waters and waterways during day time: 06:00/6am to 21:00/9pm server time.",lvl=35,q=1}),
-i(13889,{description="Can be caught in inland waters and waterways.",lvl=45,maps_disp={17,78,81,83},q=1}),
-i(13422,{description="Schools can be found on the seaside.",maps_disp={17,51,71},providers={{"o",180712}},q=1}),
-o(180683,{description="Can be found on the seaside.",maps={10,14,17,21,25,26,51,52,56,62,63,64,66,69,70,71,76,199}}),
+i(13889,{lvl=45,maps_disp={17,78,81,83},q=1}),
+i(13422,{maps_disp={17,51,71},providers={{"o",180712}},q=1}),
+o(180683,{maps={10,14,17,21,25,26,51,52,56,62,63,64,66,69,70,71,76,199}}),
 o(180657),
 o(180752),
 o(180902),
-o(180684,{description="Can be found in inland waters and waterways.",maps={14,17,22,23,26,65,66,69,70,78,80}}),
+o(180684,{maps={14,17,22,23,26,65,66,69,70,78,80}}),
 o(216761,{awp=50100,maps_disp={50,210}}),
-o(180682,{description="Can be found on the seaside.",maps_disp={10,14,17,21,25,26,51,52,56,62,63,64,66,69,70,71,76,199}}),
+o(180682,{maps_disp={10,14,17,21,25,26,51,52,56,62,63,64,66,69,70,71,76,199}}),
 o(180656,{rwp=50100,u=2}),
 o(180663,{rwp=50100,u=2}),
-o(216764,{awp=50100,description="Can be found in inland waters and waterways.",maps={21,25,47,48,49,56,63}}),
+o(216764,{awp=50100,maps={21,25,47,48,49,56,63}}),
 o(180658,{coords={
 [10]={{37.3,45.9},{39.9,74.9},{56,80.6}}}}),
-o(180712,{description="Can be found on the seaside.",maps={17,51,71}}),
-o(180901,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={50,210},g={
+o(180712,{maps={17,51,71}}),
+o(180901,{maps={50,210},g={
 crit(3873,{achID=1257,awp=30002,id=3,maps={50,210},providers={{"o",180901}},requireSkill=356})}}),
-o(180655,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={10,21,47,49,52,62,76}}),
-o(180751,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={17,23,51,64,71},g={
+o(180655,{maps={10,21,47,49,52,62,76}}),
+o(180751,{maps={17,23,51,64,71},g={
 crit(3876,{achID=1257,awp=30002,id=6,maps={17,23,51,64,71},providers={{"o",180751}},requireSkill=356})}}),
-o(180662,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={25,56,63,65},g={
+o(180662,{maps={25,56,63,65},g={
 crit(3874,{achID=1257,awp=30002,id=4,maps={14,25,56,63,65},providers={{"o",180662}},requireSkill=356})}}),
-o(180685,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={22,66,69,70,71},g={
+o(180685,{maps={22,66,69,70,71},g={
 crit(3875,{achID=1257,awp=30002,id=5,maps={22,66,69,70},providers={{"o",180685}},requireSkill=356})}})}}),
 prof(182,{description="It is beneficial to gather all herbs in the area even if you only need specific herbs because the node spawns are often connected.",g={
 ah(2366,{type="s",g={
@@ -1142,55 +1074,55 @@ o(142141,{learnedAt=220,maps={22,23,300,317},requireSkill=182,rwp=40003,u=2}),
 o(176642,{learnedAt=220,maps={77},requireSkill=182,rwp=40003,u=2}),
 o(176589,{description="Black Lotus is a rare spawn, and can spawn in place of other herbs. Please let us know in the ATT discord if the listed zones does not reflect the current spawn locations.",learnedAt=300,maps={17,23,36,81,83},requireSkill=182}),
 o(142143,{coords={
-[69]={{46.65,18.9},{48.05,13.3},{49.2,5.9},{49.35,23.2},{52.8,13.9},{53.5,7.5},{62.9,51.5},{64.9,58.1},{72.1,52.85},{75.3,46.2}}},description="Can be found near wet terrain and/or waterways, somehow Blizzard managed to make this very inconsistent in some zones.",learnedAt=235,requireSkill=182}),
-o(1621,{description="Usually found near trees.",learnedAt=70,maps={10,25,47,56,62,65,76},requireSkill=182}),
+[69]={{46.65,18.9},{48.05,13.3},{49.2,5.9},{49.35,23.2},{52.8,13.9},{53.5,7.5},{62.9,51.5},{64.9,58.1},{72.1,52.85},{75.3,46.2}}},learnedAt=235,requireSkill=182}),
+o(1621,{learnedAt=70,maps={10,25,47,56,62,65,76},requireSkill=182}),
 o(3729,{learnedAt=70,maps={10},requireSkill=182}),
-o(1622,{description="Usually found near hillsides, buildings and structures.",learnedAt=100,maps={25,47,50,63,65},requireSkill=182}),
+o(1622,{learnedAt=100,maps={25,47,50,63,65},requireSkill=182}),
 o(3730,{learnedAt=100,maps={10,65},requireSkill=182}),
 o(2044,{coords={
 [15]={{33.5,52.7}}},learnedAt=195,requireSkill=182}),
-o(176584,{description="Can usually be found on flat open spaces.",learnedAt=270,maps={17,36,77,81},requireSkill=182}),
+o(176584,{learnedAt=270,maps={17,36,77,81},requireSkill=182}),
 o(176693,{learnedAt=270,maps={77},requireSkill=182,rwp=40003,u=2}),
-o(1619,{description="Can be found on uneven terrain and mountain sides.",learnedAt=15,maps={1,7,18,21,27,37,52,57},requireSkill=182}),
+o(1619,{learnedAt=15,maps={1,7,18,21,27,37,52,57},requireSkill=182}),
 o(3726,{coords={
 [10]={{65.8,13.5},{66.7,52.5},{67,23.2}}},learnedAt=15,requireSkill=182}),
-o(2042,{description="Can be found in fertile terrain and fields.",learnedAt=160,maps={22,69,210},requireSkill=182}),
-o(2866,{description="Can be found on hot deserts.",learnedAt=205,maps={15,32,36,71},requireSkill=182}),
+o(2042,{learnedAt=160,maps={22,69,210},requireSkill=182}),
+o(2866,{learnedAt=205,maps={15,32,36,71},requireSkill=182}),
 o(206085,{awp=40003,coords={
 [25]={{47,26}}},description="Found all over Alterac Mountains",learnedAt=125,requireSkill=182}),
 o(142144,{coords={
 [78]={{64.3,16.3}},
-[102]={{17.25,9.2},{74.4,92.2}}},description="Can be found inside caves.",learnedAt=245,requireSkill=182}),
-o(176583,{description="Can be found by trees and other natural structures.",learnedAt=260,maps={15,51,77,78,81},requireSkill=182}),
+[102]={{17.25,9.2},{74.4,92.2}}},learnedAt=245,requireSkill=182}),
+o(176583,{learnedAt=260,maps={15,51,77,78,81},requireSkill=182}),
 o(176638,{learnedAt=260,maps={77},requireSkill=182,rwp=40003,u=2}),
-o(2046,{description="Can be found on uneven terrain and mountain sides.",learnedAt=170,maps={14,26,69,70,199,210},requireSkill=182}),
+o(2046,{learnedAt=170,maps={14,26,69,70,199,210},requireSkill=182}),
 o(1628,{coords={
-[47]={{20,40}}},description="Can be found on graves.",learnedAt=120,requireSkill=182}),
+[47]={{20,40}}},learnedAt=120,requireSkill=182}),
 o(142145,{coords={
 [17]={{53.5,46.5}},
 [63]={{84.1,71.65}},
-[66]={{50,80}}},description="Found in locations corrupted by the Burning Legion.",learnedAt=250,maps={77},requireSkill=182}),
+[66]={{50,80}}},learnedAt=250,maps={77},requireSkill=182}),
 o(176637,{learnedAt=250,maps={77},requireSkill=182,rwp=40003,u=2}),
 o(176588,{learnedAt=290,maps={83},requireSkill=182}),
-o(2043,{description="Can be found near trees.",learnedAt=185,maps={14,22,23,26,69,70,199,210},requireSkill=182}),
-o(1624,{description="Can be found in the woods.",learnedAt=125,maps={14,22,26,47,50,56,69,199},requireSkill=182}),
-o(2041,{description="Can usually be found on fertile grounds by inland waters and waterways, but coherency is not Blizzard's forte.",learnedAt=150,maps={14,23,26,50,56,70,199},requireSkill=182}),
+o(2043,{learnedAt=185,maps={14,22,23,26,69,70,199,210},requireSkill=182}),
+o(1624,{learnedAt=125,maps={14,22,26,47,50,56,69,199},requireSkill=182}),
+o(2041,{learnedAt=150,maps={14,23,26,50,56,70,199},requireSkill=182}),
 o(1620,{learnedAt=50,maps={10,21,25,48,52,56,57,62,76},requireSkill=182}),
 o(3727,{learnedAt=50,maps={10},requireSkill=182}),
-o(176586,{description="Can be found on uneven terrain and mountain sides.",learnedAt=280,maps={17,78,81,83},requireSkill=182}),
+o(176586,{learnedAt=280,maps={17,78,81,83},requireSkill=182}),
 o(176640,{learnedAt=280,maps={77},requireSkill=182,rwp=40003,u=2}),
 o(1618,{maps={1,7,18,27,37,48,52,57,62},requireSkill=182}),
 o(3724,{maps={10},requireSkill=182}),
 o(142140,{coords={
-[77]={{38.6,67.5},{39.45,45.1},{42.2,36.1},{49.35,30.85},{56.95,85.55}}},description="Can be found in elven or troll ruins.",learnedAt=210,requireSkill=182}),
+[77]={{38.6,67.5},{39.45,45.1},{42.2,36.1},{49.35,30.85},{56.95,85.55}}},learnedAt=210,requireSkill=182}),
 o(1617,{maps={1,7,18,21,27,37,48,52,57,62},requireSkill=182}),
 o(3725,{maps={10},requireSkill=182}),
 o(176587,{learnedAt=285,maps={51},requireSkill=182}),
 o(176641,{learnedAt=285,maps={77},requireSkill=182,rwp=40003,u=2}),
-o(2045,{description="Can usually be found in the sea, but also sometimes in bodies of inland waters and waterways.",learnedAt=85,maps={21,25,26,50,51,52,56,62,63,64,70,210},requireSkill=182}),
+o(2045,{learnedAt=85,maps={21,25,26,50,51,52,56,62,63,64,70,210},requireSkill=182}),
 o(142142,{learnedAt=230,maps={15,23,32,36,64,71,81},requireSkill=182}),
 o(176636,{learnedAt=230,maps={77},requireSkill=182,rwp=40003,u=2}),
-o(1623,{description="Can be found on uneven terrain and mountain sides.",learnedAt=115,maps={14,50,56,63,65,66},requireSkill=182}),
+o(1623,{learnedAt=115,maps={14,50,56,63,65,66},requireSkill=182}),
 i(8836,{providers={{"o",142141},{"o",176642}},q=1,rwp=40003,u=2}),
 i(13468,{maps_disp={17,23,36,81,83},providers={{"o",176589},{"o",253069}},q=2}),
 i(8839,{maps_disp={69},providers={{"o",142143}},q=1}),
@@ -1224,18 +1156,8 @@ i(8153,{providers={{"o",142140}},q=2})}}),
 flt(50,{
 i(11020,{b=1,cost={{"i",11022,1},{"i",11018,2}},q=1,rwp=40003,u=2,g={
 i(11024,{b=1,q=1,u=2,g={
-i(11040,{q=1,u=2})}})}})}),
-h(-22,{awp=50004,g={
-s(271198,85663,{collectible=false,description="Can only be bought from Trade suppliers.",f=2,q=1,requireSkill=182})}})}}),
+i(11040,{q=1,u=2})}})}})})}}),
 prof(773,{
-h(-22,{
-i(10648,{description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",rwp=50004,u=2}),
-i(39501,{description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",rwp=50004,u=2}),
-i(39354,{description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(39502,{description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",rwp=50004,u=2}),
-i(39489,{description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",f=113,isLimited=1,q=2}),
-i(64670,{awp=40001,description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(39505,{collectible=false,description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",q=1})}),
 ah(51005,{type="s",g={
 i(39151,{providers={{"i",765},{"i",2447},{"i",2449}},q=1}),
 i(43104,{providers={{"i",3355},{"i",3356},{"i",3357},{"i",3369}},q=2}),
@@ -1610,10 +1532,6 @@ i(37147,{q=1}),
 i(37159,{q=1}),
 i(37160,{q=1})}})})}),
 prof(755,{
-h(-22,{
-i(52188,{awp=40003,description="Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(20815,{collectible=false,description="Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(20824,{description="Can be bought from Jewelcrafting Suppliers, as well as some Trade vendors around the world.",rwp=50004,u=2})}),
 ah(31252,{type="s",g={
 i(7909,{providers={{"i",3858}},q=2}),
 i(12800,{providers={{"i",10620}},q=2}),
@@ -1711,19 +1629,6 @@ i(21760,{b=1,f=53,lvl=40,q=2,requireSkill=755})}),
 h(-101,{
 s(131445,20954,{f=34,lvl=27,q=2})})}),
 prof(165,{
-h(-22,{
-i(4289,{description="Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(2325,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(6260,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(2605,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(4340,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(4342,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(2604,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(2320,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(2321,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(4291,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(8343,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(14341,{description="Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",q=1})}),
 h(-88,{
 h(-89,{
 s(122423,8216,{f=3,lvl=43,q=2}),
@@ -2056,7 +1961,7 @@ i(1210,{description="This gem is most reliably obtained from prospecting ores wi
 i(7910,{description="This gem is most reliably obtained from prospecting ores with Jewelcrafting. You can also obtain it from mining veins, although the droprate is low.",maps_disp={15,23,32,36,64,69,71,77},q=2}),
 i(818,{description="This gem is most reliably obtained from prospecting ores with Jewelcrafting. You can also obtain it from mining veins, although the droprate is low.",maps_disp={1,7,10,18,21,27,37,48,52,62},q=2})}),
 flt(57,{
-s(118338,2901,{collectible=false,description="Can be bought from Mining Suppliers, as well as some Trade vendors around the world",f=2,q=1,requireSkill=186})}),
+s(118338,2901,{collectible=false,f=2,q=1,requireSkill=186})}),
 ah(2656,{type="s",g={
 i(2841,{cost={{"i",3576,1},{"i",2840,1}},q=1}),
 i(2840,{cost={{"i",2770,1}},q=1}),
@@ -2094,8 +1999,6 @@ i(10920,{c={4},f=55,lvl=40,u=2}),
 i(10921,{c={4},f=55,lvl=48,u=2}),
 i(10922,{c={4},f=55,lvl=56,u=2})}}),
 prof(393,{description="The following items can be gathered by skinning creatures out in the world.",g={
-h(-22,{
-s(121696,7005,{collectible=false,description="Can be bought from Leatherworking Suppliers, as well as some Trade vendors around the world.",f=2,q=1,requireSkill=393})}),
 sp(8613,{
 i(4234,{maps_disp={22,26,70,71},q=1}),
 i(2318,{maps_disp={10,21,48,52,62,76},q=1}),
@@ -2111,19 +2014,19 @@ i(8169,{description="Is a rare drop in place of Thick Leather.",maps_disp={15,64
 i(15423,{crs={7447,7448,7449,8763,8764,10807},maps_disp={76,83},rwp=30100,u=2}),
 i(17012,{crs={11673,11982,53134},maps_disp={232,367},q=1}),
 i(15419,{coords={
-[83]={{55.1,37.8},{58.1,89.4}}},crs={7443,7446,42336},description="Can be skinned from bears in the level bracket 50-60 like shardtooths in Winterspring.",q=1}),
-i(7428,{crs={684,768,1713},description="Panthers can be found in central Stranglethorn Vale and eastern Swamp of Sorrows.",maps_disp={51,224},rwp=30100,u=2}),
-i(8368,{description="Can be skinned from all wolfs in the level bracket 40-60 though the droprate is 3-5 %.",maps_disp={36},rwp=30100,u=2}),
-i(15416,{description="Can be skinned from elite creatures of the Black Dragonflight.",maps_disp={250,287},q=1}),
+[83]={{55.1,37.8},{58.1,89.4}}},crs={7443,7446,42336},q=1}),
+i(7428,{crs={684,768,1713},maps_disp={51,224},rwp=30100,u=2}),
+i(8368,{maps_disp={36},rwp=30100,u=2}),
+i(15416,{maps_disp={250,287},q=1}),
 i(7286,{q=1}),
-i(15415,{crs={10442,10447,10814,14020},description="Can be skinned from creatures of the Chromatic Dragonflight, though is a pain to farm in regards to drop rate.",maps_disp={250},q=1}),
+i(15415,{crs={10442,10447,10814,14020},maps_disp={250},q=1}),
 i(12607,{q=3}),
-i(15412,{description="Can be skinned from elite creatures of the Green Dragonflight around the world.",maps_disp={220},q=1}),
+i(15412,{maps_disp={220},q=1}),
 i(15408,{description="Can be skinned from scorpids in Silithus.",maps_disp={81},q=1}),
-i(15414,{crs={10442,10447,10814,14020},description="Can be skinned from creatures of the Chromatic Dragonflight, though is a pain to farm in regards to drop rate.",maps_disp={250},q=1}),
-i(8154,{description="Drops from scorpids in higher intermediate- to higher level vanilla zones like scorpids in Tanaris.",maps_disp={71},q=1}),
-i(8167,{description="Can be skinned from turtles in higher intermediate- to higher level vanilla zones like Tanaris and Thousand Needles.",maps_disp={64,71},q=1}),
-i(8165,{description="Can be skinned from elite creatures of any Dragonflights around the world.",maps_disp={220},q=1})})}}),
+i(15414,{crs={10442,10447,10814,14020},maps_disp={250},q=1}),
+i(8154,{maps_disp={71},q=1}),
+i(8167,{maps_disp={64,71},q=1}),
+i(8165,{maps_disp={220},q=1})})}}),
 prof(197,{
 h(-88,{
 s(123361,10030,{f=4,loc=40,lvl=43,q=2}),
@@ -2352,22 +2255,6 @@ i(22249,{f=113,phase=15,q=2}),
 i(22251,{f=113,phase=15,q=2}),
 i(22248,{f=113,phase=15,q=2}),
 i(22252,{f=113,phase=15,q=2})}),
-h(-22,{
-i(2325,{q=1}),
-i(6260,{q=1}),
-i(2605,{q=1}),
-i(4340,{q=1}),
-i(4342,{q=1}),
-i(2604,{q=1}),
-i(2320,{q=1}),
-i(2321,{q=1}),
-i(4291,{q=1}),
-i(8343,{q=1}),
-i(14341,{q=1}),
-i(2324,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(6261,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(10290,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(4341,{description="Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",q=1})}),
 flt(50,{
 i(18258,{awp=100105,lvl=42,phase=1101,q=2,rwp=40003,u=2})}),
 flt(56,{
@@ -3486,8 +3373,6 @@ i(24272,{coords={
 i(24271,{maps_disp={109},q=3})})}})}}),
 x(3,{awp=30003,g={
 prof(171,{phase=30,g={
-h(-22,{awp=30002,g={
-i(40411,{description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2})}}),
 h(-26,{
 sp(60893,{
 r(53895,{learnedAt=400,requireSkill=171}),
@@ -3865,9 +3750,6 @@ i(38972,{q=3}),
 i(44467,{awp=30100,q=3}),
 i(44466,{awp=30100,q=3})})}}),
 prof(202,{phase=30,g={
-h(-22,{
-i(39684,{description="Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",q=1}),
-i(40533,{description="Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",q=1})}),
 prof(20219,{description="These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",g={
 flt(102,{
 toy(40895,{b=1,learnedAt=350,q=3,requireSkill=20219}),
@@ -5011,13 +4893,6 @@ s(203646,55042,{f=8,lvl=82,q=2}),
 s(212563,70163,{awp=40200,f=25,lvl=85,phase=4002,q=4}),
 s(212565,70165,{awp=40200,f=29,lvl=85,phase=4002,q=4})})}}),
 prof(185,{phase=40,g={
-h(-22,{
-i(58265,{coords={
-[241]={{76.27,52.64},{79.37,78.53}},
-[249]={{50.21,38.36}}},description="Coordinates are for select vendors.",f=55,lvl=85,providers={{"n",48861},{"n",49519},{"n",49688}},q=1}),
-i(58278,{coords={
-[241]={{76.27,52.64},{79.37,78.53}},
-[249]={{50.21,38.36}}},description="Coordinates are for select vendors.",f=55,lvl=75,providers={{"n",48861},{"n",49519},{"n",49688}},q=1})}),
 i(62661,{f=55,lvl=80,q=1}),
 i(62665,{f=55,lvl=80,q=1}),
 i(62670,{f=55,lvl=80,q=1}),
@@ -5115,8 +4990,6 @@ i(52747,{q=3}),
 i(52774,{q=1}),
 i(52775,{q=1})})}}),
 prof(202,{phase=40,g={
-h(-22,{
-i(90146,{q=1})}),
 prof(20219,{description="These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",g={
 flt(101,{
 p(262,{itemID=60216,npcID=43916,q=3,spellID=82173})}),
@@ -5226,17 +5099,6 @@ i(52988,{coords={
 [244]={{39.8,49.2}},
 [249]={{49.7,32.2},{56.2,22.6},{56.6,48.9},{62,77.9}}},providers={{"o",202752}},q=1})}})}}),
 prof(773,{phase=40,g={
-h(-22,{
-i(67348,{coords={
-[241]={{76.6,49.4},{78.6,76.2}}},providers={{"n",49703},{"n",50248}},q=1}),
-i(62323,{coords={
-[241]={{76.6,49.4},{78.6,76.2}}},providers={{"n",49703},{"n",50248}},q=1}),
-i(67319,{coords={
-[241]={{76.6,49.4},{78.6,76.2}}},providers={{"n",49703},{"n",50248}},q=1}),
-i(68047,{coords={
-[241]={{76.6,49.4},{78.6,76.2}}},providers={{"n",49703},{"n",50248}},q=1}),
-i(67335,{coords={
-[241]={{76.6,49.4},{78.6,76.2}}},providers={{"n",49703},{"n",50248}},q=1})}),
 ah(51005,{type="s",g={
 i(61979,{providers={{"o",202747},{"o",202748},{"o",202749},{"o",202750},{"o",202751},{"o",202752}},q=1}),
 i(61980,{providers={{"o",202747},{"o",202748},{"o",202749},{"o",202750},{"o",202751},{"o",202752}},q=2})}}),
