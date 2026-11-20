@@ -924,6 +924,7 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 				coord = { 44.84, 48.97, MAP.THOUSAND_NEEDLES },
 				races = HORDE_ONLY,
 				lvl = 25,
+				sym = {{ "select", "itemID", 4265 }},	-- Heavy Armor Kit
 				groups = {
 					objective(1, {	-- 0/10 Highperch Wyvern Egg
 						providers = {
@@ -932,7 +933,6 @@ maproot(MAP.KALIMDOR, MAP.THOUSAND_NEEDLES, {
 						},
 						coord = { 11.7, 35.8, MAP.THOUSAND_NEEDLES },
 					}),
-					i(4265),	-- Heavy Armor Kit
 				},
 			}),
 			q(1191, {	-- Zamek's Distraction

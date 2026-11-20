@@ -75,11 +75,13 @@ instanceroot(2998, {	-- Excavation Site: Wetlands
 				qi = 270901,	-- Reed-woven Heart
 				races = ALLIANCE_ONLY,
 				lvl = 24,
+				sym = {{ "select", "itemID",
+					2459,	-- Swiftness Potion
+					1710,	-- Greater Healing Potion
+					3827,	-- Mana Potion
+				}},
 				groups = {
 					i(280766),	-- Satchel of Potions
-					i(2459),	-- Swiftness Potion
-					i(1710),	-- Greater Healing Potion
-					i(3827),	-- Mana Potion
 				},
 			}),
 			q(98815, {	-- Highland Hides

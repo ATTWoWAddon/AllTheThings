@@ -374,13 +374,13 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 45,
+				sym = {{ "select", "itemID", 250955 }},	-- Potion of Beast Slaying
 				groups = {
 					objective(1, {	-- 0/5 Wild Honey
 						provider = { "i", 238503 },	-- Wild Honey
 						cr = 236028,	-- Honey Wasp
 					}),
 					i(290333),	-- Berdun's Trusty Rifle
-					i(250955),	-- Potion of Beast Slaying
 					i(250999),	-- Recipe: Potion of Beast Slaying (RECIPE!)
 				},
 			}),
@@ -391,13 +391,13 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 45,
+				sym = {{ "select", "itemID", 250955 }},	-- Potion of Beast Slaying
 				groups = {
 					objective(1, {	-- 0/5 Wild Honey
 						provider = { "i", 238503 },	-- Wild Honey
 						cr = 236028,	-- Honey Wasp
 					}),
 					i(290333),	-- Berdun's Trusty Rifle
-					i(250955),	-- Potion of Beast Slaying
 					i(250999),	-- Recipe: Potion of Beast Slaying (RECIPE!)
 				},
 			}),

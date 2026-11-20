@@ -572,6 +572,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				coord = { 46.8, 52.4, MAP.DUN_MOROGH },
 				races = ALLIANCE_ONLY,
 				lvl = 5,
+				sym = {{ "select", "itemID", 2888 }},	-- Beer Basted Boar Ribs
 				groups = {
 					objective(1, {	-- 0/6 Crag Boar Rib
 						provider = { "i", 2886 },	-- Tender Boar Ribs
@@ -580,7 +581,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 						provider = { "i", 2894 },	-- Rhapsody Malt
 						cr = 1247,	-- Innkeeper Belm <Innkeeper>
 					}),
-					i(2888),	-- Beer Basted Boar Ribs
 					i(2889),	-- Recipe: Beer Basted Boar Ribs (RECIPE!)
 				},
 			}),

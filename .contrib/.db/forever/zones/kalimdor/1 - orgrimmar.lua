@@ -916,10 +916,10 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 9,
-				groups = {
-					i(929),	-- Healing Potion
-					i(3385),	-- Lesser Mana Potion
-				},
+				sym = {{ "select", "itemID",
+					929,	-- Healing Potion
+					3385,	-- Lesser Mana Potion
+				}},
 			}),
 			q(65610, {	-- Wish You Were Here
 				sourceQuest = 65601,	-- Love Hurts

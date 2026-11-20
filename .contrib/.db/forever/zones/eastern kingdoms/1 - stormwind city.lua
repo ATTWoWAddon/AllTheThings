@@ -796,10 +796,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 7,
-				groups = {
-					i(6290),	-- Brilliant Smallfish
-					i(5095),	-- Rainbow Fin Albacore
-				},
+				sym = {{ "select", "itemID",
+					6290,	-- Brilliant Smallfish
+					5095,	-- Rainbow Fin Albacore
+				}},
 			}),
 			q(6184, {	-- Flint Shadowmore
 				sourceQuest = 6183,	-- Honor the Dead
@@ -843,12 +843,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				sym = {{ "select", "itemID", 414 }},	-- Dalaran Sharp
 				groups = {
 					objective(1, {	-- Gatehouse Shipment delivered
 						provider = { "i", 277198 },	-- Gatehouse Shipment
 						coord = { 66.4, 74.8, MAP.STORMWIND_CITY },
 					}),
-					i(414),	-- Dalaran Sharp
 				},
 			}),
 			q(1921, {	-- Gathering Materials
@@ -1360,6 +1360,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 13,
+				sym = {{ "select", "itemID",
+					20709,	-- Rumsey Rum Light
+					1179,	-- Ice Cold Milk
+				}},
 				groups = {
 					objective(1, {	-- 0/1 Field Accounts of Horde Razings
 						providers = {
@@ -1389,8 +1393,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 						},
 						coord = { 76.3, 29.2, MAP.STORMWIND_CITY },
 					}),
-					i(20709),	-- Rumsey Rum Light
-					i(1179),	-- Ice Cold Milk
 				},
 			}),
 			q(2206, {	-- Snatch and Grab
@@ -2045,7 +2047,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 63.8, 73.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				qi = 2722,	-- Wine Ticket (PQI!)
-				groups = { i(2723) },	-- Bottle of Dalaran Noir
+				sym = {{ "select", "itemID", 2723 }},	-- Bottle of Dalaran Noir
 			}),
 			q(397, {	-- You Have Served Us Well
 				sourceQuest = 336,	-- A Noble Brew (2/2)

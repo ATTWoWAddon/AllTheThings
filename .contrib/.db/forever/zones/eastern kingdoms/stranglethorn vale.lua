@@ -1785,13 +1785,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					{ "i", 2759, 1 },	-- Green Hills of Stranglethorn - Chapter IV
 				},
 				lvl = 30,
+				sym = {{ "select", "itemID",
+					3928,	-- Superior Healing Potion
+					8173,	-- Thick Armor Kit
+				}},
 				groups = {
 					i(4116, {	-- Olmann Sewar
 						timeline = { REMOVED_1_2_0 },
 					}),
 					i(17688),	-- Jungle Boots
-					i(3928),	-- Superior Healing Potion
-					i(8173),	-- Thick Armor Kit
 				},
 			}),
 			q(95748, {	-- The Gurubashi Legends of Old

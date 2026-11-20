@@ -34,9 +34,7 @@ maproot(MAP.EASTERN_KINGDOMS, DEEPRUN_TRAM, {
 				qi = 17118,	-- Carton of Mystery Meat
 				races = ALLIANCE_ONLY,
 				lvl = 10,
-				groups = {
-					i(17119),	-- Deeprun Rat Kabob
-				},
+				sym = {{ "select", "itemID", 17119 }},	-- Deeprun Rat Kabob
 			}),
 		}),
 	},

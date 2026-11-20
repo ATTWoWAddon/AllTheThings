@@ -632,6 +632,7 @@ instanceroot(229, {	-- Blackrock Spire
 				requireSkill = ARMORSMITH,
 				learnedAt = 275,
 				lvl = 55,
+				sym = {{ "select", "itemID", 9224 }},	-- Potion of Demonslaying
 				groups = {
 					objective(1, {	-- 0/1 Soul Stained Pike
 						provider = { "i", 12847 },	-- Soul Stained Pike
@@ -642,7 +643,6 @@ instanceroot(229, {	-- Blackrock Spire
 						provider = { "i", 12806 },	-- Unforged Rune Covered Breastplate
 					}),
 					i(12696),	-- Plans: Demon Forged Breastplate (RECIPE!)
-					i(9224),	-- Potion of Demonslaying
 					i(12849),	-- Demon Kissed Sack
 				},
 			}),

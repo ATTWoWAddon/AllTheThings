@@ -46,9 +46,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
 				races = HORDE_ONLY,
 				lvl = 4,
+				sym = {{ "select", "itemID", 250339 }},	-- Minor Mageblood Elixir
 				groups = {
 					i(263305),	-- Windshaped Shield
-					i(250339),	-- Minor Mageblood Elixir
 				},
 			}),
 			q(92708, {	-- A Grand Adventure
@@ -112,12 +112,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
 				races = ALLIANCE_ONLY,
 				lvl = 4,
+				sym = {{ "select", "itemID", 2454 }},	-- Elixir of Minor Strength
 				groups = {
 					objective(1, {	-- 0/6 Windshaper Novice Seer defeated
 						provider = { "n", 257532 },	-- Windshaper Novice Seer
 					}),
 					i(263428),	-- Dowsing Rod
-					i(2454),	-- Elixir of Minor Strength
 				},
 			}),
 			q(94493, {	-- A Sacrifice in Vain
@@ -285,9 +285,9 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				races = ALLIANCE_ONLY,
 				classes = { MAGE },
 				lvl = 10,
+				sym = {{ "select", "itemID", 250344 }},	-- Elixir of Minor Spirit
 				groups = {
 					i(263430),	-- Windbough Wand
-					i(250344),	-- Elixir of Minor Spirit
 				},
 			}),
 			q(92645, {	-- Breaking the Breaker
@@ -640,13 +640,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				races = ALLIANCE_ONLY,
 				lvl = 5,
 				qi = 254584,	-- Index Esoteria (PQI!)
+				sym = {{ "select", "itemID", 3382 }},	-- Minor Troll's Blood Elixir
 				groups = {
 					objective(1, {	-- 0/6 Gather Data on Elemental Currents
 						provider = { "o", 697118 },	-- Windstone Formation
 						coord = { 47.9, 68.9, MAP.ZEPHRAS_ISLE },
 					}),
 					i(263404),	-- Bow of Hours
-					i(3382),	-- Minor Troll's Blood Elixir
 				},
 			}),
 			q(92460, {	-- Coming of Age
@@ -852,6 +852,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
 				qi = 253666,	-- Flutterfly Swatter (PQI!)
+				sym = {{ "select", "itemID", 2455 }},	-- Minor Mana Potion
 				groups = {
 					objective(1, {	-- 0/5 Flutterfly Dust
 						providers = {
@@ -862,7 +863,6 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						coord = { 51.9, 83.4, MAP.ZEPHRAS_ISLE },
 					}),
 					i(263329),	-- Flutterfly Swatter
-					i(2455),	-- Minor Mana Potion
 				},
 			}),
 			q(92470, {	-- Foul Matriarch
@@ -915,6 +915,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 251363,	-- Dalia the Collector
 				coord = { 43.4, 24.0, MAP.ZEPHRAS_ISLE },
 				lvl = 2,
+				sym = {{ "select", "itemID", 255663 }},	-- Windstone
 				groups = {
 					objective(1, {	-- 0/15 Windstone Cluster
 						providers = {
@@ -928,7 +929,6 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(247840),	-- Mining for Dummies
 					i(247841),	-- Wild Harvest
 					i(247846),	-- Pelt Collecting for Beginners
-					i(255663),	-- Windstone
 				},
 			}),
 			q(92550, {	-- Havoc in the Highlands
@@ -1000,6 +1000,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
+				sym = {{ "select", "itemID", 252032 }},	-- Red Delicious Stormapple
 				groups = {
 					objective(1, {	-- 10/10 Ripe Stormapple
 						providers = {
@@ -1012,7 +1013,6 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						provider = { "n", 252802 },	-- Hungry Bandit
 						coord = { 48.3, 82.6, MAP.ZEPHRAS_ISLE },
 					}),
-					i(252032),	-- Red Delicious Stormapple
 				},
 			}),
 			q(92947, {	-- Making Our Move
@@ -1060,6 +1060,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
+				sym = {{ "select", "itemID", 252032 }},	-- Red Delicious Stormapple
 				groups = {
 					objective(1, {	-- 0/7 Lowlands Galestrider Tenderloin
 						provider = { "i", 253597 },	-- Lowlands Galestrider Tenderloin
@@ -1069,7 +1070,6 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					i(257340),	-- Farmer's Field Boots
 					i(257331),	-- Brass-Banded Bracers
 					i(257334),	-- Well-Worn Pants
-					i(252032),	-- Red Delicious Stormapple
 				},
 			}),
 			q(93319, {	-- Pilfered Windstones
@@ -1157,6 +1157,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
+				sym = {{ "select", "itemID", 252032 }},	-- Red Delicious Stormapple
 				groups = {
 					objective(1, {	-- 0/1 Speak with Aamelia Windfield
 						provider = { "n", 252800 },	-- Aamelia Windfield
@@ -1166,7 +1167,6 @@ maproot(MAP.ZEPHRAS_ISLE, {
 						provider = { "n", 252800 },	-- Aamelia Windfield
 						coord = { 47.3, 79.6, MAP.ZEPHRAS_ISLE },
 					}),
-					i(252032),	-- Red Delicious Stormapple
 				},
 			}),
 			q(92551, {	-- Stolen Supplies
@@ -1445,13 +1445,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
 				lvl = 5,
+				sym = {{ "select", "itemID", 252032 }},	-- Red Delicious Stormapple
 				groups = {
 					objective(1, {	-- 7/7 Blood-Stained Bandit Mask
 						provider = { "i", 253596 },	-- Blood-Stained Bandit Mask (QI!)
 						cr = 252820,	-- Bandit Highwayman
 						coord = { 47.6, 76.1, MAP.ZEPHRAS_ISLE },
 					}),
-					i(252032),	-- Red Delicious Stormapple
 				},
 			}),
 			q(93958, {	-- The Inner Sanctum

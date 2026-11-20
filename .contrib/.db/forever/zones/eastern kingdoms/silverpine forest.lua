@@ -183,6 +183,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 9,
+				sym = {{ "select", "itemID",
+					2458,	-- Elixir of Minor Fortitude
+					2459,	-- Swiftness Potion
+				}},
 				groups = {
 					objective(1, {	-- 0/6 Lake Skulker Moss
 						provider = { "i", 3256 },	-- Lake Skulker Moss
@@ -211,8 +215,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 					}),
 					i(3451),	-- Nightglow Concoction
 					i(3582),	-- Acidproof Cloak
-					i(2458),	-- Elixir of Minor Fortitude
-					i(2459),	-- Swiftness Potion
 					i(276723, {	-- Wise Gauntlets
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
@@ -546,11 +548,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				coord = { 43.4, 40.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
 				lvl = 10,
-				groups = {
-					i(3240),	-- Coarse Weightstone
-					i(2863),	-- Coarse Sharpening Stone
-					i(2313),	-- Medium Armor Kit
-				},
+				sym = {{ "select", "itemID",
+					3240,	-- Coarse Weightstone
+					2863,	-- Coarse Sharpening Stone
+					2313,	-- Medium Armor Kit
+				}},
 			}),
 			q(460, {	-- Resting in Pieces
 				qs = 3317,	-- A Talking Head (QS!)
@@ -905,9 +907,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 				cost = {{ "i", 730, 3 }},	-- 3x Murloc Eye
 				races = HORDE_ONLY,
 				lvl = 10,
+				sym = {{ "select", "itemID", 4596 }},	-- Minor Discolored Healing Potion
 				groups = {
 					i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
-					i(4596),	-- Minor Discolored Healing Potion
 				},
 			}),
 			q(429, {	-- Wild Hearts

@@ -304,11 +304,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				coord = { 63.8, 82.2, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
+				sym = {{ "select", "itemID", 4539 }},	-- Goldenbark Apple
 				groups = {
 					objective(1, {	-- 0/6 Fresh Apple
 						provider = { "i", 271431 },	-- Fresh Apple
 					}),
-					i(4539),	-- Goldenbark Apple
 				},
 			}),
 			q(97884, {	-- Armory of Sunnyglade
@@ -401,10 +401,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				coord = { 65.6, 21.4, MAP.RIVERGLADES },
 				races = HORDE_ONLY,
 				lvl = 36,
-				groups = {
-					i(3928),	-- Superior Healing Potion
-					i(13443),	-- Superior Mana Potion
-				},
+				sym = {{ "select", "itemID",
+					3928,	-- Superior Healing Potion
+					13443,	-- Superior Mana Potion
+				}},
 			}),
 			q(95063, {	-- Bloodmaster's Ring (7/7)
 				sourceQuest = 94965,	-- Bloodmaster's Ring (6/7)
@@ -1847,9 +1847,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				qi = 277974,	-- Twice Reordered Package (PQI!)
 				coord = { 26.2, 73.4, MAP.STRANGLETHORN_VALE },
 				lvl = 36,
+				sym = {{ "select", "itemID", 2595 }},	-- Jug of Badlands Bourbon
 				groups = {
 					i(278019),	-- Apology Ring
-					i(2595),	-- Jug of Badlands Bourbon
 					i(278017),	-- Refunded Ring
 					i(278018),	-- Renegotiated Ring
 				},
@@ -1954,11 +1954,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				coord = { 61.8, 83.2, MAP.RIVERGLADES },
 				races = ALLIANCE_ONLY,
 				lvl = 36,
+				sym = {{ "select", "itemID", 3928 }},	-- Superior Healing Potion
 				groups = {
 					objective(1, {	-- 0/1 Contaminant eliminated
 						provider = { "n", 263615 },	-- Contaminant eliminated
 					}),
-					i(3928),	-- Superior Healing Potion
 				},
 			}),
 			q(95912, {	-- WANTED: Blademaster Kaijo
@@ -2029,12 +2029,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				provider = { "o", 628948 },	-- WANTED!
 				coord = { 78.5, 53.9, MAP.RIVERGLADES },
 				lvl = 36,
+				sym = {{ "select", "itemID", 16766 }},	-- Undermine Clam Chowder
 				groups = {
 					objective(1, {	-- 0/1 Trapclaw's Pincer
 						provider = { "i", 268586 },	-- Trapclaw's Pincer
 						cr = 260235,	-- Trapclaw
 					}),
-					i(16766),	-- Undermine Clam Chowder
 				},
 			}),
 			q(95325, {	-- We've Been Robbed!

@@ -94,11 +94,13 @@ instanceroot(236, {	-- Stratholme
 				coord = { 81.6, 57.8, MAP.EASTERN_PLAGUELANDS },
 				cost = { { "i", 13180, 5 } },	-- Stratholme Holy Water
 				lvl = 55,
+				sym = {{ "select", "itemID",
+					6149,	-- Greater Mana Potion
+					3928,	-- Superior Healing Potion
+				}},
 				groups = {
 					i(13216),	-- Crown of the Penitent
 					i(13217),	-- Band of the Penitent
-					i(6149),	-- Greater Mana Potion
-					i(3928),	-- Superior Healing Potion
 				},
 			}),
 			q(5944, {	-- In Dreams

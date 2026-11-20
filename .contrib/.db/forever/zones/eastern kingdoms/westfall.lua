@@ -73,10 +73,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 14,
-				groups = {
-					i(2459),	-- Swiftness Potion
-					i(3388),	-- Strong Troll's Blood Potion
-				},
+				sym = {{ "select", "itemID",
+					2459,	-- Swiftness Potion
+					3388,	-- Strong Troll's Blood Potion
+				}},
 			}),
 			q(6181, {	-- A Swift Message
 				qg = 491,	-- Quartermaster Lewis
@@ -225,8 +225,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				cost = { { "i", 723, 8 } },	-- Goretusk Liver
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				sym = {{ "select", "itemID", 724 }},	-- Goretusk Liver Pie
 				groups = {
-					i(724),	-- Goretusk Liver Pie
 					i(2697),	-- Recipe: Goretusk Liver Pie (RECIPE!)
 				},
 			}),
@@ -361,8 +361,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				requireSkill = ALCHEMY,
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				sym = {{ "select", "itemID", 118 }},	-- Minor Healing Potion
 				groups = {
-					i(118),	-- Minor Healing Potion
 					i(249905),	-- Scribbled I.O.U.
 				},
 			}),
@@ -374,9 +374,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				requireSkill = ALCHEMY,
 				races = ALLIANCE_ONLY,
 				lvl = 10,
+				sym = {{ "select", "itemID", 4596 }},	-- Minor Discolored Healing Potion
 				groups = {
 					i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
-					i(4596),	-- Minor Discolored Healing Potion
 				},
 			}),
 			q(93928, {	-- Of Mice and Milk
@@ -803,9 +803,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				},
 				races = ALLIANCE_ONLY,
 				lvl = 9,
+				sym = {{ "select", "itemID", 733 }},	-- Westfall Stew
 				groups = {
 					i(728),	-- Recipe: Westfall Stew (RECIPE!)
-					i(733),	-- Westfall Stew
 					i(1479),	-- Salma's Oven Mitts
 					i(2225),	-- Sharp Kitchen Knife
 				},

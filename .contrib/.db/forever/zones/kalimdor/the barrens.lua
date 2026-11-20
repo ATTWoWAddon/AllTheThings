@@ -127,10 +127,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 14,
-				groups = {
-					i(2459),	-- Swiftness Potion
-					i(3388),	-- Strong Troll's Blood Potion
-				},
+				sym = {{ "select", "itemID",
+					2459,	-- Swiftness Potion
+					3388,	-- Strong Troll's Blood Potion
+				}},
 			}),
 			q(1153, {	-- A New Ore Sample
 				sourceQuest = 893,	-- Weapons of Choice
@@ -190,11 +190,13 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				maps = { MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 10,
+				sym = {{ "select", "itemID",
+					2458,	-- Elixir of Minor Fortitude
+					2457,	-- Elixir of Minor Agility
+					2456,	-- Minor Rejuvenation Potion
+					2459,	-- Swiftness Potion
+				}},
 				groups = {
-					i(2458),	-- Elixir of Minor Fortitude
-					i(2457),	-- Elixir of Minor Agility
-					i(2456),	-- Minor Rejuvenation Potion
-					i(2459),	-- Swiftness Potion
 					i(5340),	-- Cauldron Stirrer
 				},
 			}),
@@ -896,9 +898,9 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				requireSkill = COOKING,
 				races = HORDE_ONLY,
 				lvl = 15,
+				sym = {{ "select", "itemID", 5478 }},	-- Dig Rat Stew
 				groups = {
 					i(10919),	-- Apothecary Gloves
-					i(5478),	-- Dig Rat Stew
 					i(5487),	-- Recipe: Dig Rat Stew (RECIPE!)
 				},
 			}),
@@ -1719,12 +1721,12 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				races = HORDE_ONLY,
 				classes = { ROGUE },
 				lvl = 16,
+				sym = {{ "select", "itemID", 7676 }},	-- Thistle Tea
 				groups = {
 					objective(1, {	-- 0/1 Southsea Treasure
 						provider = { "i", 7968 },	-- Southsea Treasure
 					}),
 					i(7970),	-- E.C.A.C.
-					i(7676),	-- Thistle Tea
 				},
 			}),
 			q(903, {	-- Prowlers of the Barrens

@@ -921,6 +921,10 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				qg = 15190,	-- Noggle Ficklespragg
 				coord = { 51.6, 38.5, MAP.SILITHUS },
 				lvl = 54,
+				sym = {{ "select", "itemID",
+					13452,	-- Elixir of the Mongoose
+					13447,	-- Elixir of the Sages
+				}},
 				groups = {
 					objective(1, {	-- 0/1 Noggle's Satchel
 						providers = {
@@ -929,8 +933,6 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 						},
 						coord = { 44.7, 91.5, MAP.SILITHUS },
 					}),
-					i(13452),	-- Elixir of the Mongoose
-					i(13447),	-- Elixir of the Sages
 				},
 			}),
 			q(9416, {	-- Report to General Kirika
@@ -970,6 +972,10 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				coord = { 33.3, 51.1, MAP.SILITHUS },
 				races = ALLIANCE_ONLY,
 				lvl = 53,
+				sym = {{ "select", "itemID",
+					13446,	-- Major Healing Potion
+					13444,	-- Major Mana Potion
+				}},
 				groups = {
 					objective(1, {	-- Return Silithyst
 						providers = {
@@ -977,8 +983,6 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 							{ "o", 181597 },	-- Silithyst Mound
 						},
 					}),
-					i(13446),	-- Major Healing Potion
-					i(13444),	-- Major Mana Potion
 				},
 			}),
 			q(9422, {	-- Scouring the Desert [HORDE]
@@ -987,6 +991,10 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 				coord = { 50.8, 69.5, MAP.SILITHUS },
 				races = HORDE_ONLY,
 				lvl = 53,
+				sym = {{ "select", "itemID",
+					13446,	-- Major Healing Potion
+					13444,	-- Major Mana Potion
+				}},
 				groups = {
 					objective(1, {	-- Return Silithyst
 						providers = {
@@ -994,8 +1002,6 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 							{ "o", 181597 },	-- Silithyst Mound
 						},
 					}),
-					i(13446),	-- Major Healing Potion
-					i(13444),	-- Major Mana Potion
 				},
 			}),
 			q(8779, {	-- Scrying Materials (A)

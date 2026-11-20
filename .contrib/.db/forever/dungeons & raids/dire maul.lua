@@ -573,10 +573,10 @@ instanceroot(230, {	-- Dire Maul
 				qg = 14322,	-- Stomper Kreeg <The Drunk>
 				maps = GORDOK_COMMONS_MAPS,
 				lvl = 56,
-				groups = {
-					i(18269),	-- Gordok Green Grog
-					i(18284),	-- Kreeg's Stout Beatdown
-				},
+				sym = {{ "select", "itemID",
+					18269,	-- Gordok Green Grog
+					18284,	-- Kreeg's Stout Beatdown
+				}},
 			}),
 			q(7503, {	-- The Greatest Race of Hunters
 				qg = 14382,	-- Lorekeeper Mykos

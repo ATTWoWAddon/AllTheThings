@@ -187,8 +187,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				coord = { 42.39, 52.93, MAP.BADLANDS },
 				cost = { { "i", 3404, 4 } },	-- Buzzard Wing
 				lvl = 33,
+				sym = {{ "select", "itemID", 4457 }},	-- Barbecued Buzzard Wing
 				groups = {
-					i(4457),	-- Barbecued Buzzard Wing
 					i(4609),	-- Recipe: Barbecued Buzzard Wing (RECIPE!)
 				},
 			}),
@@ -327,9 +327,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					{ "i", 3823, 1 },	-- Lesser Invisibility Potion
 				},
 				lvl = 35,
+				sym = {{ "select", "itemID", 4623 }},	-- Lesser Stoneshield Potion
 				groups = {
 					i(4624),	-- Recipe: Lesser Stoneshield Potion (RECIPE!)
-					i(4623),	-- Lesser Stoneshield Potion
 				},
 			}),
 			q(97821, {	-- Mirage Mirror
@@ -407,10 +407,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				maps = { MAP.STRANGLETHORN_VALE },
 				cost = {{ "i", 4611, 9 }},	-- Blue Pearl
 				lvl = 30,
+				sym = {{ "select", "itemID", 4852 }},	-- Flash Bomb
 				groups = {
 					i(4086),	-- Flash Rifle
 					i(5248),	-- Flash Wand
-					i(4852),	-- Flash Bomb
 				},
 			}),
 			q(2418, {	-- Power Stones

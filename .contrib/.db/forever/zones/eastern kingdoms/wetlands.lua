@@ -168,6 +168,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 20,
+				sym = {{ "select", "itemID", 6453 }},	-- x5 Strong Anti-Venom
 				groups = {
 					objective(1, {	-- 0/1 Unruptured Stalker Gland
 						provider = { "i", 280319 },	-- Unruptured Stalker Gland
@@ -177,7 +178,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 							{ 48.5, 60.3, MAP.WETLANDS },	-- Cave Stalker
 						},
 					}),
-					i(6453),	-- x5 Strong Anti-Venom
 				},
 			}),
 			q(471, {	-- Apprentice's Duties
@@ -244,6 +244,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 27,
+				sym = {{ "select", "itemID", 6714 }},	-- Ez-Thro Dynamite
 				groups = {
 					objective(1, {	-- 0/3 Stolen Explosives
 						providers = {
@@ -252,7 +253,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 						},
 						coord = { 62.5, 28.2, MAP.WETLANDS },
 					}),
-					i(6714),	-- Ez-Thro Dynamite
 				},
 			}),
 			q(94497, {	-- Call of Water

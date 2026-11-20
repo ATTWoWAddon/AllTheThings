@@ -288,9 +288,9 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				coord = { 54.0, 84.2, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 54,
+				sym = {{ "select", "itemID", 14530 }},	-- Heavy Runecloth Bandage
 				groups = {
 					objective(1),	-- 0/1 Fraxinus soothed
-					i(14530),	-- Heavy Runecloth Bandage
 				},
 			}),
 			q(93825, {	-- Barkbound Blessings
@@ -865,6 +865,7 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 54,
+				sym = {{ "select", "itemID", 15993 }},	-- Thorium Grenade
 				groups = {
 					objective(1, {	-- 0/2 Mithril Casing
 						provider = { "i", 10561 },	-- Mithril Casing
@@ -872,7 +873,6 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 					objective(2, {	-- 0/1 Mechanical Repair Kit
 						provider = { "i", 11590 },	-- Mechanical Repair Kit
 					}),
-					i(15993),	-- Thorium Grenade
 					i(264233),	-- Schematic: Dimensional Transporter: Mt. Hyjal
 				},
 			}),
@@ -1038,12 +1038,12 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 54,
+				sym = {{ "select", "itemID", 250071 }},	-- Steaming Stag Steak
 				groups = {
 					objective(1, {	-- 0/6 Savory Stag Sliders
 						provider = { "i", 250065 },	-- Savory Stag Sliders
 					}),
 					i(250179),	-- Recipe: Steaming Stag Steak
-					i(250071),	-- Steaming Stag Steak
 				},
 			}),
 			q(97119, {	-- Now We're Cooking [H]
@@ -1052,12 +1052,12 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 54,
+				sym = {{ "select", "itemID", 250071 }},	-- Steaming Stag Steak
 				groups = {
 					objective(1, {	-- 0/6 Savory Stag Sliders
 						provider = { "i", 250065 },	-- Savory Stag Sliders
 					}),
 					i(250179),	-- Recipe: Steaming Stag Steak
-					i(250071),	-- Steaming Stag Steak
 				},
 			}),
 			q(92111, {	-- Of Friend and Fur
@@ -1376,11 +1376,11 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				coord = { 21.0, 80.0, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 54,
+				sym = {{ "select", "itemID", 267341 }},	-- Sweetpaw Jam
 				groups = {
 					objective(1, {	-- 0/30 Bear Berries
 						provider = { "i", 262818 },	-- Bear Berries
 					}),
-					i(267341),	-- Sweetpaw Jam
 				},
 			}),
 			q(92171, {	-- Taking to New Heights

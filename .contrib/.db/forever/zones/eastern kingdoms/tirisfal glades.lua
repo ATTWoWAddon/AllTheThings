@@ -557,6 +557,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				coord = { 59.5, 52.4, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
 				lvl = 6,
+				sym = {{ "select", "itemID", 3382 }},	-- Minor Troll's Blood Elixir
 				groups = {
 					objective(1, {	-- 0/5 Darkhound Blood
 						provider = { "i", 2858 },	-- Darkhound Blood
@@ -565,7 +566,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 							1547,	-- Decrepit Darkhound
 						},
 					}),
-					i(3382),	-- Minor Troll's Blood Elixir (RECIPE!)
 				},
 			}),
 			q(368, {	-- A New Plague (2/4)

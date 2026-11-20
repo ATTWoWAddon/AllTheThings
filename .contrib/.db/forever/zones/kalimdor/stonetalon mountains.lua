@@ -774,8 +774,8 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				maps = { LOCH_MODAN },
 				lvl = 14,
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				sym = {{ "select", "itemID", 20709 }},	-- Rumsey Rum Light
 				groups = {
-					i(20709),	-- Rumsey Rum Light
 					i(5432),	-- Hickory Pipe
 				},
 			}),

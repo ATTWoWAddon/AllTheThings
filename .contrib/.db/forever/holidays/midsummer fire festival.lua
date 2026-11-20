@@ -166,6 +166,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					MAP.WESTFALL,
 					MAP.WETLANDS,
 				},
+				sym = {{ "select", "itemID",
+					23211,	-- Toasted Smorc
+					23326,	-- Midsummer Sausage
+					23327,	-- Fire-toasted Bun
+					23435,	-- Elderberry Pie
+				}},
 				groups = {
 					objective(1, {	-- Flame of Hillsbrad
 						coord = { 54.2, 34.9, MAP.HILLSBRAD_FOOTHILLS },
@@ -179,10 +185,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					objective(4, {	-- Flame of the Wetlands
 						coord = { 51.1, 17.2, MAP.WETLANDS },
 					}),
-					i(23211),	-- Toasted Smorc
-					i(23326),	-- Midsummer Sausage
-					i(23327),	-- Fire-toasted Bun
-					i(23435),	-- Elderberry Pie
 				},
 			}),
 			q(9388, {	-- Flickering Flames in Kalimdor
@@ -198,6 +200,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					MAP.DARKSHORE,
 					MAP.STONETALON_MOUNTAINS,
 				},
+				sym = {{ "select", "itemID",
+					23211,	-- Toasted Smorc
+					23326,	-- Midsummer Sausage
+					23327,	-- Fire-toasted Bun
+					23435,	-- Elderberry Pie
+				}},
 				groups = {
 					objective(1, {	-- Flame of Ashenvale
 						coord = { 64.7, 71.7, MAP.ASHENVALE },
@@ -211,10 +219,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(createHeader({
 					objective(4, {	-- Flame of Stonetalon
 						coord = { 59.6, 70.0, MAP.STONETALON_MOUNTAINS },
 					}),
-					i(23211),	-- Toasted Smorc
-					i(23326),	-- Midsummer Sausage
-					i(23327),	-- Fire-toasted Bun
-					i(23435),	-- Elderberry Pie
 				},
 			}),
 			q(9332, {	-- Stealing Darnassus's Flame
