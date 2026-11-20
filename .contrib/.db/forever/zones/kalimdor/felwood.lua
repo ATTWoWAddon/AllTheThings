@@ -221,7 +221,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 						},
 					}),
 					i(11511, {	-- Cenarion Beacon
-						description = "You must keep this in your bags for the Fel Creep, Patch of Tainted Skin, Tainted Vitriol, and Corrupted Soul Shards to drop from the various means of gathering.",
+						description = "You must keep this in your bags for the Fel Creep, Tainted Vitriol, and Corrupted Soul Shards to drop from the various means of gathering.",
 					}),
 				},
 			},
@@ -1250,8 +1250,6 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 		}),
 		prof(SKINNING, {
 			i(11512, {	-- Patch of Tainted Skin
-				description = "In order for this to drop while Skinning, you must have the Cenarion Beacon in your bags.",
-				provider = { "i", 11511 },	-- Cenarion Beacon
 				crs = {
 					8956,	-- Angerclaw Bear
 					8957,	-- Angerclaw Grizzly
