@@ -2412,6 +2412,13 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 			}),
 			n(VENDORS, {
+				n(19517, {	-- Alorra <Armorer>
+					coord = { 55.4, 59.0, SHADOWMOON_VALLEY },
+					sym = {
+						SymSelector.select("VENDOR_DRAENIC_HEAVY"),	-- Heavy Draenic
+						{ "pop" },
+					},
+				}),
 				n(19521, {	-- Arrond <Tailoring Supplies>
 					coord = { 55.8, 58.2, SHADOWMOON_VALLEY },
 					minReputation = { FACTION_THE_SCRYERS, NEUTRAL },
@@ -2527,6 +2534,10 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				n(19373, {	-- Mari Stonehand <Armorsmith>
 					coord = { 36.8, 55.0, SHADOWMOON_VALLEY },
 					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("VENDOR_DRAENIC_HEAVY"),	-- Heavy Draenic
+						{ "pop" },
+					},
 					groups = {
 						i(25847, {	-- Plans: Eternium Rod (RECIPE!)
 							timeline = { REMOVED_5_0_4 },

@@ -2133,6 +2133,22 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(27693),	-- Recipe: Talbuk Steak (RECIPE!)
 					},
 				}),
+				n(19011, {	-- Osrok the Immovable <Armorsmith & Blacksmithing Supplies>
+					coord = { 56.0, 37.4, NAGRAND },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("VENDOR_DRAENIC_HEAVY"),	-- Heavy Draenic
+						{ "pop" },
+						{ "select", "itemID",
+							5956,	-- Blacksmith Hammer
+							3857,	-- Coal
+							18567,	-- Elemental Flux
+							2901,	-- Mining Pick
+							3466,	-- Strong Flux
+							2880,	-- Weak Flux
+						},
+					},
+				}),
 				n(23007, {	-- Paulsta'ats <Consortium Quartermaster>
 					coord = { 30.5, 56.9, NAGRAND },
 					sym = {{"sub","common_vendor",20242}},	-- Karaaz <Consortium Quartermaster>
@@ -2384,6 +2400,22 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 								{ "i", 26044, 2 },	-- 2x Halaa Research Token
 							},
 						}),
+					},
+				}),
+				n(19012, {	-- Sparik <Armorsmith & Blacksmithing Supplies>
+					coord = { 53.0, 70.2, NAGRAND },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("VENDOR_DRAENIC_HEAVY"),	-- Heavy Draenic
+						{ "pop" },
+						{ "select", "itemID",
+							5956,	-- Blacksmith Hammer
+							3857,	-- Coal
+							18567,	-- Elemental Flux
+							2901,	-- Mining Pick
+							3466,	-- Strong Flux
+							2880,	-- Weak Flux
+						},
 					},
 				}),
 				-- #if BEFORE CATA

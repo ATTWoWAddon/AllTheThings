@@ -2920,14 +2920,9 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				n(24347, {	-- Alexis Walker
 					coord = { 79.2, 28.8, HOWLING_FJORD },
 					races = HORDE_ONLY,
-					groups = {
-						i(30777),	-- Aldor Heavy Belt
-						i(30771),	-- Heavy Draenic Bracers
-						i(30765),	-- Heavy Draenic Breastplate
-						i(30775),	-- Layered Bone Shield
-						i(30781),	-- Mag'hari Chain Vest
-						i(30784),	-- Worn Mag'hari Gauntlets
-						-- These 6 items could be symlinked to 6 more vendors
+					sym = {
+						SymSelector.select("VENDOR_DRAENIC_HEAVY"),	-- Heavy Draenic
+						{ "pop" },
 					},
 				}),
 				n(24341, {	-- Barnabas Frye <Trade Goods>
@@ -2942,14 +2937,9 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 				n(23735, {	-- Bartleby Armorfist
 					coord = { 59.6, 63.6, HOWLING_FJORD },
 					races = ALLIANCE_ONLY,
-					groups = {
-						i(30777),	-- Aldor Heavy Belt
-						i(30771),	-- Heavy Draenic Bracers
-						i(30765),	-- Heavy Draenic Breastplate
-						i(30775),	-- Layered Bone Shield
-						i(30781),	-- Mag'hari Chain Vest
-						i(30784),	-- Worn Mag'hari Gauntlets
-						-- These 6 items could be symlinked to 6 more vendors
+					sym = {
+						SymSelector.select("VENDOR_DRAENIC_HEAVY"),	-- Heavy Draenic
+						{ "pop" },
 					},
 				}),
 				n(27151, {	-- Deniigi <Spearcrafter>

@@ -2093,6 +2093,14 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				n(19694, {	-- Loolruna <Armorer>
 					coord = { 68.6, 50.2, ZANGARMARSH },
 					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("VENDOR_DRAENIC_HEAVY"),	-- Heavy Draenic
+						{ "pop" },
+						{ "select", "itemID",
+							11284,	-- Accurate Slugs
+							11285,	-- Jagged Arrow
+						},
+					},
 					groups = {
 						i(23596, {	-- Plans: Adamantite Breastplate (RECIPE!)
 							isLimited = true,
@@ -2108,13 +2116,9 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				n(18010, {	-- Maktu <Armor Merchant>
 					coord = { 41.6, 27.4, ZANGARMARSH },
 					races = ALLIANCE_ONLY,
-					groups = {
-						i(30777),	-- Aldor Heavy Belt
-						i(30771),	-- Heavy Draenic Bracers
-						i(30765),	-- Heavy Draenic Breastplate
-						i(30775),	-- Layered Bone Shield
-						i(30781),	-- Mag'hari Chain Vest
-						i(30784),	-- Worn Mag'hari Gauntlets
+					sym = {
+						SymSelector.select("VENDOR_DRAENIC_HEAVY"),	-- Heavy Draenic
+						{ "pop" },
 					},
 				}),
 				n(19722, {	-- Muheru the Weaver <Tailoring Supplies>

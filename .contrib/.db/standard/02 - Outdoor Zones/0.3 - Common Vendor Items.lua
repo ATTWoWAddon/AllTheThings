@@ -461,6 +461,18 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 				i(62255),	-- Grunts Plate Boots
 			},
 		}),
+		header(HEADERS.Item, 30765, {	-- Heavy Draenic Breastplate
+			symselector = SymSelector.VENDOR_DRAENIC_HEAVY,
+			timeline = { ADDED_2_0_1 },
+			groups = {
+				i(30765),	-- Heavy Draenic Breastplate
+				i(30781),	-- Mag'hari Chain Vest
+				i(30771),	-- Heavy Draenic Bracers
+				i(30784),	-- Worn Mag'hari Gauntlets
+				i(30777),	-- Aldor Heavy Belt
+				i(30775),	-- Layered Bone Shield
+			},
+		}),
 		header(HEADERS.Item, 8094, {	-- Platemail Armor
 			symselector = SymSelector.VENDOR_PLATEMAIL,
 			groups = {
