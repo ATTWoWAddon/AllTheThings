@@ -15,13 +15,13 @@ class Conduit(NamedTuple):
 WORK_DIR = Path(".contrib", "Parser", "DATAS", "00 - Item DB", "Conduits")
 
 conduits: dict[int, Conduit] = {}
-with open(Path(WORK_DIR, "soulbindconduititem.csv"), newline="") as csvfile:
+with open(Path(WORK_DIR, "soulbindconduititem.csv"), encoding="utf-8-sig", newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     next(csvreader)
     for _, item_id, conduit_id in csvreader:
         conduits[int(conduit_id)] = Conduit(int(conduit_id), int(item_id))
 
-with open(Path(WORK_DIR, "soulbindconduit.csv"), newline="") as csvfile:
+with open(Path(WORK_DIR, "soulbindconduit.csv"), encoding="utf-8-sig", newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     next(csvreader)
     for conduit_id, _, covenant_id, spec_set_id, _ in csvreader:
@@ -30,7 +30,7 @@ with open(Path(WORK_DIR, "soulbindconduit.csv"), newline="") as csvfile:
             spec_set_id=int(spec_set_id), covenant_id=int(covenant_id)
         )
 
-with open(Path(WORK_DIR, "conduits_info.txt"), "w") as f:
+with open(Path(WORK_DIR, "conduits_info.txt"), "w", encoding="utf-8", newline="\n") as f:
     covenant_dict = {
         0: "",
         1: "SL_COV_KYR",
