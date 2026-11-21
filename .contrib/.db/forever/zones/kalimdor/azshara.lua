@@ -182,6 +182,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				sourceQuest = 3505,	-- Betrayed (2/4)
 				provider = { "o", 151286 },	-- Kaldorei Tome of Summoning
 				coord = { 59.5, 31.3, MAP.AZSHARA },
+				timeline = { TIMELINE.REMOVED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 44,
 				groups = {
@@ -200,6 +201,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				qg = 8576,	-- Ag'tor Bloodfist
 				qi = 10597,	-- Head of Magus Rimtori
 				coord = { 22.2, 51.4, MAP.AZSHARA },
+				timeline = { TIMELINE.REMOVED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 44,
 				groups = {

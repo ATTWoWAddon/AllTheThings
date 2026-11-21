@@ -383,7 +383,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				qg = 6271,	-- Mouse
 				coord = { 32.2, 51.2, MAP.WESTFALL },
 				maps = { MAP.STRANGLETHORN_VALE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.REMOVED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 15,
 			}),
