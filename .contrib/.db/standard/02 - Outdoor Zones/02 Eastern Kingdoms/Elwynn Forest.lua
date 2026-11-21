@@ -1837,6 +1837,7 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 							{ 47.6, 41.4, ELWYNN_FOREST },	-- WoWhead data
 							-- #endif
 						},
+						races = ALLIANCE_ONLY,
 						sym = {
 							{ "select", "symselector",
 								SymSelector.VENDOR_CRACKED_LEATHER,	-- Cracked Leather
@@ -1853,6 +1854,7 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 							{ 47.6, 41.4, ELWYNN_FOREST },	-- WoWhead data
 							-- #endif
 						},
+						races = ALLIANCE_ONLY,
 						sym = {
 							SymSelector.select("VENDOR_TARNISHED_CHAIN"),	-- Tarnished Chain
 							{ "pop" },
@@ -1870,6 +1872,7 @@ maproot(EASTERN_KINGDOMS, ELWYNN_FOREST, {
 							{ 47.2, 41.8, ELWYNN_FOREST },	-- WoWhead data
 							-- #endif
 						},
+						races = ALLIANCE_ONLY,
 						sym = {{"select","itemID",
 							1194,	-- Bastard Sword
 							2479,	-- Broad Axe

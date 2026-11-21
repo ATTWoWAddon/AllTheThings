@@ -363,6 +363,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				n(VENDORS, {
 					n(190, {	-- Dermot Johns <Cloth & Leather Armor Merchant>
 						coord = { 47.6, 41.4, MAP.ELWYNN_FOREST },
+						races = ALLIANCE_ONLY,
 						sym = {
 							{ "select", "symselector",
 								SymSelector.VENDOR_CRACKED_LEATHER,	-- Cracked Leather
@@ -373,6 +374,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					n(1213, {	-- Godric Rothgar <Armorer & Shieldcrafter>
 						coord = { 47.6, 41.4, MAP.ELWYNN_FOREST },
+						races = ALLIANCE_ONLY,
 						sym = {
 							SymSelector.select("VENDOR_TARNISHED_CHAIN"),	-- Tarnished Chain
 							{ "pop" },
@@ -384,6 +386,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					}),
 					n(78, {	-- Janos Hammerknuckle <Weaponsmith>
 						coord = { 47.2, 41.8, MAP.ELWYNN_FOREST },
+						races = ALLIANCE_ONLY,
 						sym = {{ "select", "itemID",
 							1194,	-- Bastard Sword
 							2479,	-- Broad Axe
