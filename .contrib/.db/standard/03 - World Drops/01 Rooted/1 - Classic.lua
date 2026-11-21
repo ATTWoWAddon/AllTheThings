@@ -3318,6 +3318,80 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(1685),	-- Troll-Hide Bag
 		i(5574),	-- White Leather Bag
 	}),
+	filter(CONSUMABLES, {
+		i(3012, {	-- Scroll of Agility
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(1477, {	-- Scroll of Agility II
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(4425, {	-- Scroll of Agility III
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(10309, {	-- Scroll of Agility IV
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(955, {	-- Scroll of Intellect
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(2290, {	-- Scroll of Intellect II
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(4419, {	-- Scroll of Intellect III
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(10308, {	-- Scroll of Intellect IV
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(3013, {	-- Scroll of Protection
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(1478, {	-- Scroll of Protection II
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(4421, {	-- Scroll of Protection III
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(10305, {	-- Scroll of Protection IV
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(1181, {	-- Scroll of Spirit
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(1712, {	-- Scroll of Spirit II
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(4424, {	-- Scroll of Spirit III
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(10306, {	-- Scroll of Spirit IV
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(1180, {	-- Scroll of Stamina
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(1711, {	-- Scroll of Stamina II
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(4422, {	-- Scroll of Stamina III
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(10307, {	-- Scroll of Stamina IV
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(954, {	-- Scroll of Strength
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(2289, {	-- Scroll of Strength II
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(4426, {	-- Scroll of Strength III
+			timeline = { REMOVED_4_0_3 },
+		}),
+		i(10310, {	-- Scroll of Strength IV
+			timeline = { REMOVED_4_0_3 },
+		}),
+	}),
 	filter(MISC, {
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE_RECIPES, i(23197, {	-- Idol of the Moon [Phase 5/6]

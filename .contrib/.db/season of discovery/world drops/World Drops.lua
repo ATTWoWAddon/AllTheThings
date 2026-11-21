@@ -3152,6 +3152,32 @@ root(ROOTS.WorldDrops, {
 		i(1685),	-- Troll-Hide Bag
 		i(5574),	-- White Leather Bag
 	}),
+	filter(CONSUMABLES, {
+		i(3012),	-- Scroll of Agility
+		i(1477),	-- Scroll of Agility II
+		i(4425),	-- Scroll of Agility III
+		i(10309),	-- Scroll of Agility IV
+		i(955),	-- Scroll of Intellect
+		i(2290),	-- Scroll of Intellect II
+		i(4419),	-- Scroll of Intellect III
+		i(10308),	-- Scroll of Intellect IV
+		i(3013),	-- Scroll of Protection
+		i(1478),	-- Scroll of Protection II
+		i(4421),	-- Scroll of Protection III
+		i(10305),	-- Scroll of Protection IV
+		i(1181),	-- Scroll of Spirit
+		i(1712),	-- Scroll of Spirit II
+		i(4424),	-- Scroll of Spirit III
+		i(10306),	-- Scroll of Spirit IV
+		i(1180),	-- Scroll of Stamina
+		i(1711),	-- Scroll of Stamina II
+		i(4422),	-- Scroll of Stamina III
+		i(10307),	-- Scroll of Stamina IV
+		i(954),	-- Scroll of Strength
+		i(2289),	-- Scroll of Strength II
+		i(4426),	-- Scroll of Strength III
+		i(10310),	-- Scroll of Strength IV
+	}),
 	filter(MISC, {
 		applyclassicphase(PHASE_FIVE_RECIPES, i(23197)),	-- Idol of the Moon [Phase 5/6]
 		i(11733),	-- Libram of Constitution
