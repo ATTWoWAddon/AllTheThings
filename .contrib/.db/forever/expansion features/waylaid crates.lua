@@ -7,10 +7,12 @@ local WAYLAID_CRATES_HEADER = createHeader({
 	text = {
 		en = "Waylaid Crates",
 		cn = "遭劫的板条箱",
+		tw = "遭攔截的木箱",
 	},
 	description = {
 		en = "Waylaid Crates drop from creatures of level 10 and above all over Azeroth. Read the label to identify the shipment, then fill it with any one of the listed bundles to make a Sealed Crate, and deliver it to your faction's trade representative for Merchant's Favor.",
 		cn = "遭劫的板条箱会从艾泽拉斯各地 10 级及以上的生物身上掉落。阅读标签以确认货物种类，再放入清单内任意一组物资，制成密封的板条箱，再将其交付给你阵营的贸易代表，以换取商人青睐。",
+		tw = "艾澤拉斯各地 10 級以上的生物都可能掉落遭攔截的木箱。閱讀標籤確認這批貨物的種類，再裝入清單上的任一組物資，製作密封的箱子。將箱子交給所屬陣營的貿易代表，即可獲得商人貢獻點。",
 	},
 });
 root(ROOTS.ExpansionFeatures, {

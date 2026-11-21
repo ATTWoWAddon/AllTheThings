@@ -2250,7 +2250,7 @@ maproot(DRAENOR, TALADOR, {
 					pt = "Conselho de Guerra Sargerei",
 					ru = "Саргерайский военный совет",
 					cn = "萨格雷战争议会",
-					tw = "Sargerei War Council",	-- TODO: verify it.
+					tw = "薩格萊戰事議會",
 				},
 				description = {
 					en = "Patrols the area in roughly a circle.",

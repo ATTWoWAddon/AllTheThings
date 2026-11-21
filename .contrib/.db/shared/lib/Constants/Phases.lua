@@ -491,7 +491,7 @@ local defaultDescription = {
 	pt = "Isto não estava disponível até %s de %s.",
 	ru = "Это было недоступно до %s из %s.",
 	cn = "该功能直到 %s 的 %s 才可用。",
-	tw = "該功能直到 %s 的 %s 才可用。",
+	tw = "此內容自 %s（%s）開放後才可取得。",
 };
 local defaultLore = {
 	en = "If %s of %s is active on your server, simply turn this on.",
@@ -504,7 +504,7 @@ local defaultLore = {
 	pt = "Se %s de %s estiver ativo no seu servidor, basta ativar esta opção.",
 	ru = "Если %s из %s активен на вашем сервере, просто включите это.",
 	cn = "如果 %s 中的 %s 在您的服务器上处于活动状态，只需将其打开即可。",
-	tw = "如果 %s 中的 %s 在您的伺服器上處於啟用狀態，只需將其打開即可。",
+	tw = "如果你的伺服器已開放 %s（%s），請開啟此選項。",
 };
 -- #if ANYCLASSIC
 --- Prepares a Classic phase or returns its existing ID on other clients.
@@ -593,6 +593,7 @@ CurrentClassicExpansion = {
 		en = "Classic",
 		-- #endif
 		cn = "经典旧世",
+		tw = "經典版",
 	},
 };
 PHASE_ONE = createClassicPhase({
@@ -611,7 +612,7 @@ PHASE_ONE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "阶段1",
-		-- TODO: tw = "",
+		tw = "第1階段",
 	},
 	lore = {
 		en = "Included Molten Core and Onyxia's Lair.",
@@ -624,7 +625,7 @@ PHASE_ONE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含熔火之心和奥妮克希亚的巢穴。",
-		-- TODO: tw = "",
+		tw = "開放了熔火之心與奧妮克希亞的巢穴。",
 	},
 });
 PHASE_ONE_DIREMAUL = createClassicPhase({
@@ -643,7 +644,7 @@ PHASE_ONE_DIREMAUL = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "厄运之槌",
-		-- TODO: tw = "",
+		tw = "厄運之槌",
 	},
 	description = {
 		en = "This became available with the %s Phase Release of %s.",
@@ -656,7 +657,7 @@ PHASE_ONE_DIREMAUL = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这在 %s 的 %s 阶段发布时可用了。",
-		-- TODO: tw = "",
+		tw = "此內容自 %s（%s）開放後即可取得。",
 	},
 	lore = {
 		en = "Included Dire Maul.",
@@ -669,7 +670,7 @@ PHASE_ONE_DIREMAUL = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含厄运之槌。",
-		-- TODO: tw = "",
+		tw = "開放了厄運之槌。",
 	},
 });
 PHASE_TWO = createClassicPhase({
@@ -688,7 +689,7 @@ PHASE_TWO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "阶段2",
-		-- TODO: tw = "",
+		tw = "第2階段",
 	},
 	lore = {
 		en = "Included World PvP and PvP Honor Titles.",
@@ -701,7 +702,7 @@ PHASE_TWO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含世界 PvP 和 PvP 荣誉称号。",
-		-- TODO: tw = "",
+		tw = "開放了世界 PvP 與 PvP 榮譽頭銜。",
 	},
 });
 PHASE_THREE = createClassicPhase({
@@ -720,7 +721,7 @@ PHASE_THREE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "阶段3",
-		-- TODO: tw = "",
+		tw = "第3階段",
 	},
 	lore = {
 		en = "Included Blackwing Lair and the completion for Thunderfury.",
@@ -733,7 +734,7 @@ PHASE_THREE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含黑翼之巢和完成的雷霆之怒。",
-		-- TODO: tw = "",
+		tw = "開放了黑翼之巢，也讓玩家可以完成雷霆之怒的任務。",
 	},
 });
 PHASE_THREE_DMF_CARDS = PHASE_THREE;
@@ -756,7 +757,7 @@ PHASE_FOUR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "阶段4",
-		-- TODO: tw = "",
+		tw = "第4階段",
 	},
 	lore = {
 		en = "Included Zul'Gurub and the World Dragons.",
@@ -769,7 +770,7 @@ PHASE_FOUR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含祖尔格拉布和世界巨龙。",
-		-- TODO: tw = "",
+		tw = "開放了祖爾格拉布與夢魘之龍。",
 	},
 });
 PHASE_FOUR_DARKIRON_RECIPES = PHASE_FOUR;
@@ -790,7 +791,7 @@ PHASE_FIVE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "阶段5",
-		-- TODO: tw = "",
+		tw = "第5階段",
 	},
 	lore = {
 		en = "Included Ahn'Qiraj, which was pre-faced by a unique opening event.",
@@ -803,7 +804,7 @@ PHASE_FIVE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含安其拉，其前身举办了一场独特的开幕活动。",
-		-- TODO: tw = "",
+		tw = "開放了安其拉，之前有一場特殊的開門事件。",
 	},
 });
 PHASE_FIVE_RECIPES = PHASE_FIVE;
@@ -824,7 +825,7 @@ PHASE_FIVE_WAR_EFFORT = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "安其拉战争活动",
-		-- TODO: tw = "",
+		tw = "安其拉之戰捐獻",
 	},
 	description = {
 		en = "This was only available during the Ahn'Qiraj War Effort.",
@@ -837,7 +838,7 @@ PHASE_FIVE_WAR_EFFORT = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这仅在安其拉战争期间可用。",
-		-- TODO: tw = "",
+		tw = "此內容僅在安其拉之戰捐獻期間開放。",
 	},
 	lore = {
 		en = "If the War Effort has been completed on your server, simply turn this off.",
@@ -850,7 +851,7 @@ PHASE_FIVE_WAR_EFFORT = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果您的服务器上的战争行动已经完成，只需将其关闭即可。",
-		-- TODO: tw = "",
+		tw = "如果你的伺服器已完成戰備物資捐獻，請關閉此選項。",
 	},
 });
 PHASE_FIVE_GONG = createClassicPhase({
@@ -868,7 +869,7 @@ PHASE_FIVE_GONG = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "大门未开启",
-		-- TODO: tw = "",
+		tw = "大門尚未開啟",
 	},
 	description = {
 		en = "This was only available up until the Scarab Lords on your server have rung the gong.",
@@ -881,7 +882,7 @@ PHASE_FIVE_GONG = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这项功能仅在你们服务器上的圣甲虫领主敲响战锣之前有效。",
-		-- TODO: tw = "",
+		tw = "此內容僅在你的伺服器上有聖甲蟲領主敲響銅鑼之前開放。",
 	},
 	lore = {
 		en = "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off.",
@@ -894,7 +895,7 @@ PHASE_FIVE_GONG = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果您的服务器上已开启安其拉之门，只需将其关闭即可。",
-		-- TODO: tw = "",
+		tw = "如果你的伺服器已開啟安其拉之門，請關閉此選項。",
 	},
 });
 PHASE_FIVE_WAR = createClassicPhase({
@@ -912,7 +913,7 @@ PHASE_FIVE_WAR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "10小时战争",
-		-- TODO: tw = "",
+		tw = "十小時戰爭",
 	},
 	description = {
 		en = "This was only available during the 10 Hour War after the Scarab Lord(s) bang the gong.",
@@ -925,7 +926,7 @@ PHASE_FIVE_WAR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这仅在十小时战争期间，圣甲虫领主敲响战锣后方可获得。",
-		-- TODO: tw = "",
+		tw = "此內容僅在聖甲蟲領主敲響銅鑼後的十小時戰爭期間開放。",
 	},
 	lore = {
 		en = "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off.",
@@ -938,7 +939,7 @@ PHASE_FIVE_WAR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果您的服务器上已开启安其拉之门，只需将其关闭即可。",
-		-- TODO: tw = "",
+		tw = "如果你的伺服器已開啟安其拉之門，請關閉此選項。",
 	},
 });
 PHASE_FIVE_CATCH_UP = createClassicPhase({
@@ -957,7 +958,7 @@ PHASE_FIVE_CATCH_UP = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "追赶",
-		-- TODO: tw = "",
+		tw = "追趕裝備",
 	},
 	description = {
 		en = "This became available near the end of Phase 5 in order to provide Catch-Up Nature Resist gear for those still working on AQ40.",
@@ -970,7 +971,7 @@ PHASE_FIVE_CATCH_UP = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这在第五阶段末期推出，目的是为仍在挑战安其拉神殿（AQ40）的玩家提供追赶自然抗性装备。",
-		-- TODO: tw = "",
+		tw = "這批自然抗性裝備於第5階段末期推出，供仍在挑戰安其拉神廟（AQ40）的玩家追趕進度。",
 	},
 	lore = {
 		en = "If the Catch-Up Gear is available, simply turn this on.",
@@ -983,7 +984,7 @@ PHASE_FIVE_CATCH_UP = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果追赶模式可用，只需将其打开即可。",
-		-- TODO: tw = "",
+		tw = "如果已能取得追趕裝備，請開啟此選項。",
 	},
 });
 PHASE_SIX = createClassicPhase({
@@ -1002,7 +1003,7 @@ PHASE_SIX = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "阶段6",
-		-- TODO: tw = "",
+		tw = "第6階段",
 	},
 	lore = {
 		en = "Included Naxxramas, which was heralded by the Scourge Invasion.",
@@ -1015,7 +1016,7 @@ PHASE_SIX = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含纳克萨玛斯，它以天灾入侵为标志。",
-		-- TODO: tw = "",
+		tw = "天譴軍團入侵揭開了納克薩瑪斯開放的序幕。",
 	},
 });
 PHASE_SIX_CLASS_BOOKS = PHASE_SIX;
@@ -1034,7 +1035,7 @@ PHASE_SIX_SCOURGE_INVASION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "天灾入侵",
-		-- TODO: tw = "",
+		tw = "天譴軍團入侵",
 	},
 	description = {
 		en = "This was only available during the Scourge Invasion.",
@@ -1047,7 +1048,7 @@ PHASE_SIX_SCOURGE_INVASION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这仅在天灾入侵期间可用。",
-		-- TODO: tw = "",
+		tw = "此內容僅在天譴軍團入侵期間開放。",
 	},
 	lore = {
 		en = "If the Scourge Invasion has ended on your server, simply turn this off.",
@@ -1060,7 +1061,7 @@ PHASE_SIX_SCOURGE_INVASION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果您的服务器上的天灾入侵已经结束，只需关闭此功能即可。",
-		-- TODO: tw = "",
+		tw = "如果你的伺服器已結束天譴軍團入侵，請關閉此選項。",
 	},
 });
 PHASE_SIX_SILITHYST = createClassicPhase({
@@ -1079,7 +1080,7 @@ PHASE_SIX_SILITHYST = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "水晶尘",
-		-- TODO: tw = "",
+		tw = "希利蘇斯紅塵",
 	},
 	description = {
 		en = "This was only available during the Silithyst Must Flow World PVP Event.",
@@ -1092,7 +1093,7 @@ PHASE_SIX_SILITHYST = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这仅在“水晶尘必须流动”世界 PVP 活动期间可用。",
-		-- TODO: tw = "",
+		tw = "此內容僅在爭奪希利蘇斯紅塵的世界 PvP 活動期間開放。",
 	},
 	lore = {
 		en = "If the World PVP Event is available, simply turn this on.",
@@ -1105,7 +1106,7 @@ PHASE_SIX_SILITHYST = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果世界 PVP 活动可用，只需将其开启即可。",
-		-- TODO: tw = "",
+		tw = "如果世界 PvP 活動已開放，請開啟此選項。",
 	},
 });
 PHASE_SIX_CLASSICERA = createClassicPhase({
@@ -1124,7 +1125,7 @@ PHASE_SIX_CLASSICERA = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "经典时代",
-		-- TODO: tw = "",
+		tw = "經典時期",
 	},
 	description = {
 		en = "This was only available after the start of Classic Era.",
@@ -1137,7 +1138,7 @@ PHASE_SIX_CLASSICERA = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这仅在经典时代开始后才可用。",
-		-- TODO: tw = "",
+		tw = "此內容自經典時期開始後才開放。",
 	},
 	lore = {
 		en = "If the Classic Era has begun, simply turn this on.",
@@ -1150,7 +1151,7 @@ PHASE_SIX_CLASSICERA = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果经典时代已经开始，只需打开这个开关即可。",
-		-- TODO: tw = "",
+		tw = "如果經典時期已開始，請開啟此選項。",
 	},
 });
 
@@ -1197,7 +1198,7 @@ SOM_PHASE_ONE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这仅在赛季服期间可用。",
-		-- TODO: tw = "",
+		tw = "此內容僅在大師賽季期間開放。",
 	},
 	lore = {
 		en = "If Season of Mastery is active on your server, simply turn this on.",
@@ -1210,7 +1211,7 @@ SOM_PHASE_ONE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果您的服务器已启用赛季，只需开启此选项即可。",
-		-- TODO: tw = "",
+		tw = "如果你的伺服器正在進行大師賽季，請開啟此選項。",
 	},
 });
 
@@ -1219,6 +1220,7 @@ CurrentClassicExpansion = {
 		en = "Season of Discovery",
 		mx = "Temporada de descubrimiento",
 		cn = "探索赛季",
+		tw = "探索賽季",
 	},
 };
 --- Adjusts a Season of Discovery phase for the active flavor and delegates registration.
@@ -1261,7 +1263,7 @@ SOD_PHASE_ONE = createClassicPhaseForSOD({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "直到探索季第一阶段才推出此功能。",
-		-- TODO: tw = "",
+		tw = "此內容自探索賽季第1階段起開放。",
 	},
 	lore = {
 		en = "Included the Blackfathom Deeps raid, Ashenvale World PvP, and had a level cap of 25.",
@@ -1274,7 +1276,7 @@ SOD_PHASE_ONE = createClassicPhaseForSOD({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含黑石深渊团队副本、灰谷世界 PvP，等级上限为25级。",
-		-- TODO: tw = "",
+		tw = "開放了黑澗深淵團隊副本與梣谷世界 PvP，等級上限為 25 級。",
 	},
 });
 SOD_PHASE_TWO = createClassicPhaseForSOD({
@@ -1306,7 +1308,7 @@ SOD_PHASE_TWO = createClassicPhaseForSOD({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "新增了诺莫瑞根团队副本、荆棘谷世界 PvP，并将等级上限提升至40级。",
-		-- TODO: tw = "",
+		tw = "開放了諾姆瑞根團隊副本與荊棘谷世界 PvP，並將等級上限提高至 40 級。",
 	},
 });
 SOD_PHASE_THREE = createClassicPhaseForSOD({
@@ -1338,7 +1340,7 @@ SOD_PHASE_THREE = createClassicPhaseForSOD({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "新增了沉没的神庙副本，并将等级上限提升至50级。",
-		-- TODO: tw = "",
+		tw = "開放了沉沒的神廟團隊副本，並將等級上限提高至 50 級。",
 	},
 });
 SOD_PHASE_FOUR = createClassicPhaseForSOD({
@@ -1370,7 +1372,7 @@ SOD_PHASE_FOUR = createClassicPhaseForSOD({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "新增了熔火之心、奥妮克希亚的巢穴、屠魔峡谷、风暴悬崖和腐烂之痕，并将等级上限提升至60级。",
-		-- TODO: tw = "",
+		tw = "開放了熔火之心、奧妮克希亞的巢穴、屠魔峽谷、暴風崖與腐爛之痕，並將等級上限提高至 60 級。",
 	},
 });
 SOD_PHASE_FIVE = createClassicPhaseForSOD({
@@ -1402,7 +1404,7 @@ SOD_PHASE_FIVE = createClassicPhaseForSOD({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包括黑翼之巢、祖尔格拉布和新的水晶谷团队副本。",
-		-- TODO: tw = "",
+		tw = "開放了黑翼之巢、祖爾格拉布與全新的水晶谷團隊副本。",
 	},
 });
 SOD_PHASE_SIX = createClassicPhaseForSOD({
@@ -1434,7 +1436,7 @@ SOD_PHASE_SIX = createClassicPhaseForSOD({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包括安其拉和新的梦魇林地团队副本",
-		-- TODO: tw = "",
+		tw = "開放了安其拉與全新的夢魘林地團隊副本。",
 	},
 });
 SOD_PHASE_SEVEN = createClassicPhaseForSOD({
@@ -1466,7 +1468,7 @@ SOD_PHASE_SEVEN = createClassicPhaseForSOD({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包括纳克萨玛斯和新的卡拉赞地牢地下城",
-		-- TODO: tw = "",
+		tw = "開放了納克薩瑪斯與全新的卡拉贊墓穴地城。",
 	},
 });
 SOD_PHASE_EIGHT = createClassicPhaseForSOD({
@@ -1555,6 +1557,7 @@ CurrentClassicExpansion = {
 		en = "The Burning Crusade",
 		-- #endif
 		cn = "燃烧的远征",
+		tw = "燃燒的遠征",
 	},
 };
 TBC_PHASE_ONE = createClassicPhase({
@@ -1587,7 +1590,7 @@ TBC_PHASE_ONE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包括卡拉赞、玛瑟里顿巢穴和格鲁尔的巢穴。",
-		-- TODO: tw = "",
+		tw = "開放了卡拉贊、瑪瑟里頓的巢穴與戈魯爾之巢。",
 	},
 });
 TBC_PHASE_ONE_DARKPORTAL = createClassicPhase({
@@ -1609,7 +1612,7 @@ TBC_PHASE_ONE_DARKPORTAL = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "黑暗之门开启",
-		-- TODO: tw = "",
+		tw = "黑暗之門的開啟",
 	},
 	description = {
 		en = "This was only available during the Opening of the Dark Portal event before the launch of TBC.",
@@ -1622,7 +1625,7 @@ TBC_PHASE_ONE_DARKPORTAL = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这仅在《燃烧的远征》上线前的黑暗之门开启活动期间可用。",
-		-- TODO: tw = "",
+		tw = "此內容僅在《燃燒的遠征》推出前的「黑暗之門的開啟」活動期間開放。",
 	},
 	lore = {
 		en = "If the Dark Portal has been opened on your server, simply turn this off.",
@@ -1635,7 +1638,7 @@ TBC_PHASE_ONE_DARKPORTAL = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果您的服务器上已开启黑暗之门，只需将其关闭即可。",
-		-- TODO: tw = "",
+		tw = "如果你的伺服器已開啟黑暗之門，請關閉此選項。",
 	},
 });
 TBC_PHASE_TWO = createClassicPhase({
@@ -1668,7 +1671,7 @@ TBC_PHASE_TWO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含毒蛇神殿洞穴、风暴要塞：眼睛和迅捷德鲁伊飞行形态。",
-		-- TODO: tw = "",
+		tw = "開放了毒蛇神殿洞穴、風暴要塞，以及德魯伊的迅捷飛行形態。",
 	},
 });
 TBC_PHASE_TWO_OGRILA = createClassicPhase({
@@ -1688,7 +1691,7 @@ TBC_PHASE_TWO_OGRILA = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "奥格瑞拉",
-		-- TODO: tw = "",
+		tw = "歐格利拉",
 	},
 	description = {
 		en = "This became available with the Ogri'la Faction during TBC Classic.",
@@ -1701,7 +1704,7 @@ TBC_PHASE_TWO_OGRILA = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "在 TBC 经典版中，加入奥格瑞拉阵营后即可获得此功能。",
-		-- TODO: tw = "",
+		tw = "此內容隨《燃燒的遠征》經典版的歐格利拉陣營一同開放。",
 	},
 	lore = {
 		en = "If the Ogri'la Faction is available on your server, simply turn this on.",
@@ -1714,7 +1717,7 @@ TBC_PHASE_TWO_OGRILA = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果您的服务器上有奥格瑞拉阵营，只需开启此选项即可。",
-		-- TODO: tw = "",
+		tw = "如果你的伺服器已開放歐格利拉陣營，請開啟此選項。",
 	},
 });
 TBC_PHASE_TWO_SKYGUARD = createClassicPhase({
@@ -1734,7 +1737,7 @@ TBC_PHASE_TWO_SKYGUARD = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "天空卫队",
-		-- TODO: tw = "",
+		tw = "禦天者",
 	},
 	description = {
 		en = "This became available with the Skyguard Faction during TBC Classic.",
@@ -1747,7 +1750,7 @@ TBC_PHASE_TWO_SKYGUARD = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "在 TBC 经典版中，天空卫队阵营提供了这项功能。",
-		-- TODO: tw = "",
+		tw = "此內容隨《燃燒的遠征》經典版的薩塔禦天者陣營一同開放。",
 	},
 	lore = {
 		en = "If the Skyguard Faction is available on your server, simply turn this on.",
@@ -1760,7 +1763,7 @@ TBC_PHASE_TWO_SKYGUARD = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果您的服务器上有天空卫队阵营，只需将其开启即可。",
-		-- TODO: tw = "",
+		tw = "如果你的伺服器已開放薩塔禦天者陣營，請開啟此選項。",
 	},
 });
 TBC_PHASE_TWO_SWIFTFLIGHTFORM = TBC_PHASE_TWO;
@@ -1794,7 +1797,7 @@ TBC_PHASE_THREE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "除了绝大多数的终局日常/阵营内容外，还包括海加尔山峰和黑暗神殿。",
-		-- TODO: tw = "",
+		tw = "開放了海加爾山之戰、黑暗神廟，以及絕大多數滿等日常任務與陣營內容。",
 	},
 });
 TBC_PHASE_THREE_NETHERWING = createClassicPhase({
@@ -1814,7 +1817,7 @@ TBC_PHASE_THREE_NETHERWING = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "灵翼之龙",
-		-- TODO: tw = "",
+		tw = "虛空之翼",
 	},
 	description = {
 		en = "This became available with the Netherwing Faction during TBC Classic.",
@@ -1827,7 +1830,7 @@ TBC_PHASE_THREE_NETHERWING = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "在 TBC 经典版中，加入灵翼之龙阵营后即可获得此功能。",
-		-- TODO: tw = "",
+		tw = "此內容隨《燃燒的遠征》經典版的虛空之翼陣營一同開放。",
 	},
 	lore = {
 		en = "If the Netherwing Faction is available on your server, simply turn this on.",
@@ -1840,7 +1843,7 @@ TBC_PHASE_THREE_NETHERWING = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果您的服务器上有灵翼之龙阵营，只需将其开启即可。",
-		-- TODO: tw = "",
+		tw = "如果你的伺服器已開放虛空之翼陣營，請開啟此選項。",
 	},
 });
 TBC_PHASE_THREE_GLAIVEPRIO = createClassicPhase({
@@ -1859,7 +1862,7 @@ TBC_PHASE_THREE_GLAIVEPRIO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "战刃优先",
-		-- TODO: tw = "",
+		tw = "戰刃拾取優先權",
 	},
 	description = {
 		en = "The wielder of this Glaive was prepared!",
@@ -1872,7 +1875,7 @@ TBC_PHASE_THREE_GLAIVEPRIO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这把战刃的使用者做好了准备！",
-		-- TODO: tw = "",
+		tw = "戰刃的持有者已經準備好了！",
 	},
 	lore = {
 		en = "Due to the exclusivity of the Warglaives and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after wrath prepatch.\n\nIf you do actually have Glaive prio, simply turn this on.",
@@ -1885,7 +1888,7 @@ TBC_PHASE_THREE_GLAIVEPRIO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "由于埃辛诺斯战刃的独特性，而且在分配时，并不总是优先考虑收藏玩家而非追求高难度玩法的玩家，克里夫觉得目前设置一个筛选机制来减少公会内部矛盾是恰当的。\n\n这个筛选机制在巫妖王之怒前夕补丁上线后将默认开启。\n\n如果你确实拥有战刃优先权，只需打开此功能即可。",
-		-- TODO: tw = "",
+		tw = "埃辛諾斯戰刃稀有，公會分配戰利品時也可能優先考量團隊進度。為了減少公會內的紛爭，Crieve 加入了這個篩選選項。\n\n《巫妖王之怒》前夕更新後，此選項將預設開啟。\n\n如果你有戰刃的拾取優先權，請開啟此選項。",
 	},
 });
 TBC_PHASE_FOUR = createClassicPhase({
@@ -1918,7 +1921,7 @@ TBC_PHASE_FOUR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含祖阿曼。",
-		-- TODO: tw = "",
+		tw = "開放了祖阿曼。",
 	},
 });
 TBC_PHASE_FIVE = createClassicPhase({
@@ -1951,7 +1954,7 @@ TBC_PHASE_FIVE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含太阳之井高地和奎尔丹纳斯岛的日常内容。",
-		-- TODO: tw = "",
+		tw = "開放了太陽之井高地與奎爾達納斯之島的日常任務。",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE = TBC_PHASE_FIVE;
@@ -1971,7 +1974,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "圣殿",
-		-- TODO: tw = "",
+		tw = "聖所",
 	},
 	description = {
 		en = "This was not available until the Sanctum on the Isle of Quel'Danas was completed.",
@@ -1984,7 +1987,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "直到奎尔丹纳斯岛上的圣殿建成后，此项才可用。",
-		-- TODO: tw = "",
+		tw = "此內容在奎爾達納斯之島的聖所完工後才開放。",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Sanctum and has begun working on the Armory and Portal on your server, simply turn this on.",
@@ -1997,7 +2000,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果破碎残阳已经解锁了圣殿，并且已经开始在您的服务器上建造军械库和传送门，只需开启此功能即可。",
-		-- TODO: tw = "",
+		tw = "如果破碎之日進攻部隊已在你的伺服器解鎖聖所，並開始建造軍械庫和傳送門，請開啟此選項。",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B = createClassicPhase({
@@ -2016,7 +2019,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "传送门",
-		-- TODO: tw = "",
+		tw = "傳送門",
 	},
 	description = {
 		en = "This was not available until the Portal on the Isle of Quel'Danas was completed.",
@@ -2029,7 +2032,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "直到奎尔丹纳斯岛上的传送门建成后，此项才可用。",
-		-- TODO: tw = "",
+		tw = "此內容在奎爾達納斯之島的傳送門完工後才開放。",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Portal on your server, simply turn this on.",
@@ -2042,7 +2045,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果破碎残阳已经解锁了服务器上的传送门，只需开启此功能即可。",
-		-- TODO: tw = "",
+		tw = "如果破碎之日進攻部隊已在你的伺服器解鎖傳送門，請開啟此選項。",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE = createClassicPhase({
@@ -2061,7 +2064,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "军械库",
-		-- TODO: tw = "",
+		tw = "軍械庫",
 	},
 	description = {
 		en = "This was not available until the Armory on the Isle of Quel'Danas was completed.",
@@ -2074,7 +2077,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn ="直到奎尔丹纳斯岛上的军械库建成后，此项才可用。",
-		-- TODO: tw = "",
+		tw = "此內容在奎爾達納斯之島的軍械庫完工後才開放。",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Armory and has begun working on the Harbor and Anvil on your server, simply turn this on.",
@@ -2087,7 +2090,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果破碎残阳已经解锁了军械库，并且已经开始在您的服务器上建造港口和铁砧，只需开启此功能即可。",
-		-- TODO: tw = "",
+		tw = "如果破碎之日進攻部隊已在你的伺服器解鎖軍械庫，並開始建造港口和鐵砧，請開啟此選項。",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B = createClassicPhase({
@@ -2106,7 +2109,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "铁砧",
-		-- TODO: tw = "",
+		tw = "鐵砧",
 	},
 	description = {
 		en = "This was not available until the Anvil on the Isle of Quel'Danas was completed.",
@@ -2119,7 +2122,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "直到奎尔丹纳斯岛上的铁砧建成后，此项才可用。",
-		-- TODO: tw = "",
+		tw = "此內容在奎爾達納斯之島的鐵砧完工後才開放。",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Anvil on your server, simply turn this on.",
@@ -2132,7 +2135,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果您的服务器上破碎残阳已经解锁了铁砧，只需开启此功能即可。",
-		-- TODO: tw = "",
+		tw = "如果破碎之日進攻部隊已在你的伺服器解鎖鐵砧，請開啟此選項。",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR = createClassicPhase({
@@ -2151,7 +2154,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "港口",
-		-- TODO: tw = "",
+		tw = "港口",
 	},
 	description = {
 		en = "This was not available until the Harbor on the Isle of Quel'Danas was completed.",
@@ -2164,7 +2167,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "直到奎尔丹纳斯岛港口建成后，此项才可用。",
-		-- TODO: tw = "",
+		tw = "此內容在奎爾達納斯之島的港口完工後才開放。",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Harbor and has begun working on the Alch Lab and Monument on your server, simply turn this on.",
@@ -2177,7 +2180,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果在你的服务器上，破碎残阳攻势已经解锁了港口，并且已经开始对炼金实验室和纪念碑开展相关工作，那就直接把这个打开。",
-		-- TODO: tw = "",
+		tw = "如果破碎之日進攻部隊已在你的伺服器解鎖港口，並開始建造鍊金實驗室和紀念碑，請開啟此選項。",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B = createClassicPhase({
@@ -2196,7 +2199,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "纪念碑",
-		-- TODO: tw = "",
+		tw = "紀念碑",
 	},
 	description = {
 		en = "This was not available until the Monument on the Isle of Quel'Danas was completed.",
@@ -2209,7 +2212,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "直到奎尔丹纳斯岛的纪念碑建成，此项才可用。",
-		-- TODO: tw = "",
+		tw = "此內容在奎爾達納斯之島的紀念碑完工後才開放。",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Monument on your server, simply turn this on.",
@@ -2222,7 +2225,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果在你的服务器上，破碎残阳攻势已解锁该纪念碑，直接开启此项即可。",
-		-- TODO: tw = "",
+		tw = "如果破碎之日進攻部隊已在你的伺服器解鎖紀念碑，請開啟此選項。",
 	},
 });
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = createClassicPhase({
@@ -2241,7 +2244,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "炼金实验室",
-		-- TODO: tw = "",
+		tw = "鍊金實驗室",
 	},
 	description = {
 		en = "This was not available until the Alch Lab on the Isle of Quel'Danas was completed.",
@@ -2254,7 +2257,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "直到奎尔丹纳斯岛的炼金实验室建成，此项才可用。",
-		-- TODO: tw = "",
+		tw = "此內容在奎爾達納斯之島的鍊金實驗室完工後才開放。",
 	},
 	lore = {
 		en = "If the Shattered Sun Offensive has already unlocked the Alch Lab on your server, simply turn this on.",
@@ -2267,7 +2270,7 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果在你的服务器上，破碎残阳攻势已经解锁了炼金实验室，直接打开此项。",
-		-- TODO: tw = "",
+		tw = "如果破碎之日進攻部隊已在你的伺服器解鎖鍊金實驗室，請開啟此選項。",
 	},
 });
 TBC_PHASE_FIVE_SCOURGE_INVASION = createClassicPhase({
@@ -2285,7 +2288,7 @@ TBC_PHASE_FIVE_SCOURGE_INVASION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "天灾入侵",
-		-- TODO: tw = "",
+		tw = "天譴軍團入侵",
 	},
 	description = {
 		en = "This was only available during the Scourge Invasion.",
@@ -2298,7 +2301,7 @@ TBC_PHASE_FIVE_SCOURGE_INVASION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "只有在天灾入侵期间，此项才可用。",
-		-- TODO: tw = "",
+		tw = "此內容僅在天譴軍團入侵期間開放。",
 	},
 	lore = {
 		en = "If the Scourge Invasion has ended on your server, simply turn this off.",
@@ -2311,7 +2314,7 @@ TBC_PHASE_FIVE_SCOURGE_INVASION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "如果在你的服务器上天灾入侵已经结束，直接关闭此项。",
-		-- TODO: tw = "",
+		tw = "如果你的伺服器已結束天譴軍團入侵，請關閉此選項。",
 	},
 });
 
@@ -2324,6 +2327,7 @@ CurrentClassicExpansion = {
 		en = "Wrath of the Lich King",
 		-- #endif
 		cn = "巫妖王之怒",
+		tw = "巫妖王之怒",
 	},
 };
 WRATH_PHASE_ONE = createClassicPhase({
@@ -2355,7 +2359,7 @@ WRATH_PHASE_ONE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含纳克萨玛斯、黑曜石圣殿和永恒之眼。",
-		-- TODO: tw = "",
+		tw = "開放了納克薩瑪斯、黑曜聖所與永恆之眼。",
 	},
 });
 WRATH_PHASE_ONE_REALM_FIRST = createClassicPhase({
@@ -2373,7 +2377,7 @@ WRATH_PHASE_ONE_REALM_FIRST = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "服务器第一",
-		-- TODO: tw = "",
+		tw = "伺服器第一",
 	},
 	description = {
 		en = "This was only available for the first player to do the thing on your realm!",
@@ -2386,7 +2390,7 @@ WRATH_PHASE_ONE_REALM_FIRST = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这仅对您服务器上首个完成此事的玩家可用！",
-		-- TODO: tw = "",
+		tw = "這只有你所在伺服器第一位達成的玩家能取得！",
 	},
 	lore = {
 		en = "But if you were realm first, good for you.",
@@ -2399,7 +2403,7 @@ WRATH_PHASE_ONE_REALM_FIRST = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "但要是你是服务器第一个做到的，那你可真厉害。",
-		-- TODO: tw = "",
+		tw = "如果你拿到了伺服器第一，恭喜你。",
 	},
 });
 WRATH_PHASE_TWO = createClassicPhase({
@@ -2431,7 +2435,7 @@ WRATH_PHASE_TWO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含奥杜尔。",
-		-- TODO: tw = "",
+		tw = "開放了奧杜亞。",
 	},
 });
 WRATH_PHASE_TWO_HAMMERPRIO = createClassicPhase({
@@ -2450,7 +2454,7 @@ WRATH_PHASE_TWO_HAMMERPRIO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "锤子优先",
-		-- TODO: tw = "",
+		tw = "戰錘拾取優先權",
 	},
 	description = {
 		en = "The wielder of this Hammer was on time!",
@@ -2463,7 +2467,7 @@ WRATH_PHASE_TWO_HAMMERPRIO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "持有这把锤子的人很准时！",
-		-- TODO: tw = "",
+		tw = "這把戰錘的持有者準時到場了！",
 	},
 	lore = {
 		en = "Due to the exclusivity of the Hammer and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Hammer prio, simply turn this on.",
@@ -2476,7 +2480,7 @@ WRATH_PHASE_TWO_HAMMERPRIO = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "由于这把锤子的独特性，以及优先级并非总是优先给予收藏者而非热衷竞技者，克里夫决定目前设置一个筛选器来减少公会内的纷争，此举是恰当的。\n\n这个筛选器在《大灾变》预补丁之后将默认开启。\n\n如果你确实拥有这把锤子的优先获取权，直接打开此项即可。",
-		-- TODO: tw = "",
+		tw = "這把戰錘稀有，公會分配戰利品時也可能優先考量團隊進度。為了減少公會內的紛爭，Crieve 加入了這個篩選選項。\n\n《浩劫與重生》前夕更新後，此選項將預設開啟。\n\n如果你有戰錘的拾取優先權，請開啟此選項。",
 	},
 });
 WRATH_PHASE_THREE = createClassicPhase({
@@ -2508,7 +2512,7 @@ WRATH_PHASE_THREE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含十字军试炼。",
-		-- TODO: tw = "",
+		tw = "開放了十字軍試煉。",
 	},
 });
 WRATH_PHASE_FOUR = createClassicPhase({
@@ -2540,7 +2544,7 @@ WRATH_PHASE_FOUR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含冰冠堡垒。",
-		-- TODO: tw = "",
+		tw = "開放了冰冠城塞。",
 	},
 });
 WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
@@ -2559,7 +2563,7 @@ WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "影之哀伤优先",
-		-- TODO: tw = "",
+		tw = "影之哀傷拾取優先權",
 	},
 	description = {
 		en = "The wielder of Shadowmournes for all the people that don't have it.",
@@ -2572,7 +2576,7 @@ WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "获取影之哀伤者可将其提供给尚未拥有该物品的玩家。",
-		-- TODO: tw = "",
+		tw = "影之哀傷的持有者，替所有還沒有這把武器的人哀傷。",
 	},
 	lore = {
 		en = "Due to the exclusivity of Shadowmourne and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Shadowmourne prio, simply turn this on.",
@@ -2585,7 +2589,7 @@ WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "由于影之哀伤的唯一性，加上优先级分配时，收藏党并不总能优先于冲进度的玩家，Crieve 认为目前有必要提供一个筛选器，以减少公会内部矛盾。\n\n该筛选器将在大地的裂变前夕版本后默认开启。\n\n如果你确实拥有影之哀伤的拾取优先权，只需将其开启即可。",
-		-- TODO: tw = "",
+		tw = "影之哀傷稀有，公會分配戰利品時也可能優先考量團隊進度。為了減少公會內的紛爭，Crieve 加入了這個篩選選項。\n\n《浩劫與重生》前夕更新後，此選項將預設開啟。\n\n如果你有影之哀傷的拾取優先權，請開啟此選項。",
 	},
 });
 WRATH_PHASE_FOUR_RUBYSANCTUM = createClassicPhase({
@@ -2604,7 +2608,7 @@ WRATH_PHASE_FOUR_RUBYSANCTUM = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "红玉圣殿",
-		-- TODO: tw = "",
+		tw = "晶紅聖所",
 	},
 	description = {
 		en = "This became available with the release of Ruby Sanctum during Wrath Classic.",
@@ -2617,7 +2621,7 @@ WRATH_PHASE_FOUR_RUBYSANCTUM = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这在《巫妖王之怒》怀旧服中的红玉圣殿发布时一同推出。",
-		-- TODO: tw = "",
+		tw = "此內容隨《巫妖王之怒》經典版的晶紅聖所一同開放。",
 	},
 	lore = {
 		en = "Included The Ruby Sanctum.",
@@ -2630,7 +2634,7 @@ WRATH_PHASE_FOUR_RUBYSANCTUM = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含红玉圣殿。",
-		-- TODO: tw = "",
+		tw = "開放了晶紅聖所。",
 	},
 });
 WRATH_PHASE_FOUR_OPERATION_ZALAZANE = createClassicPhase({
@@ -2649,7 +2653,7 @@ WRATH_PHASE_FOUR_OPERATION_ZALAZANE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "扎拉赞恩行动",
-		-- TODO: tw = "",
+		tw = "札拉贊恩行動",
 	},
 	description = {
 		en = "This became available with the release of Operation Gnomeregan and Zalazane's Fall during Wrath Classic.",
@@ -2662,7 +2666,7 @@ WRATH_PHASE_FOUR_OPERATION_ZALAZANE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这在《巫妖王之怒》怀旧服中 “诺莫瑞根行动” 与 “扎拉赞恩的陨落” 发布时推出。",
-		-- TODO: tw = "",
+		tw = "此內容隨《巫妖王之怒》經典版的「行動：諾姆瑞根」與「札拉贊恩之死」一同開放。",
 	},
 	lore = {
 		en = "Included Operation Gnomeregan and Zalazane's Fall",
@@ -2675,7 +2679,7 @@ WRATH_PHASE_FOUR_OPERATION_ZALAZANE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含诺莫瑞根行动和扎拉赞恩的陨落",
-		-- TODO: tw = "",
+		tw = "開放了「行動：諾姆瑞根」與「札拉贊恩之死」。",
 	},
 });
 WRATH_PHASE_FOUR_ELEMENTAL_INVASION = createClassicPhase({
@@ -2694,7 +2698,7 @@ WRATH_PHASE_FOUR_ELEMENTAL_INVASION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "元素动乱",
-		-- TODO: tw = "",
+		tw = "元素入侵",
 	},
 	description = {
 		en = "This became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.",
@@ -2707,7 +2711,7 @@ WRATH_PHASE_FOUR_ELEMENTAL_INVASION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "这在《巫妖王之怒》怀旧服期间，随着 “元素动乱（大灾变预补丁事件）” 的发布而推出。",
-		-- TODO: tw = "",
+		tw = "此內容隨《巫妖王之怒》經典版的《浩劫與重生》前夕活動「元素入侵」一同開放。",
 	},
 	lore = {
 		en = "The Elemental Unrest Pre-Expansion Event?",
@@ -2720,7 +2724,7 @@ WRATH_PHASE_FOUR_ELEMENTAL_INVASION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "元素动乱前夕事件？",
-		-- TODO: tw = "",
+		tw = "前夕活動「元素入侵」？",
 	},
 });
 
@@ -2733,6 +2737,7 @@ CurrentClassicExpansion = {
 		en = "Cataclysm",
 		-- #endif
 		cn = "大地的裂变",
+		tw = "浩劫與重生",
 	},
 };
 CATA_PHASE_ONE = createClassicPhase({
@@ -2764,7 +2769,7 @@ CATA_PHASE_ONE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包括暮光堡垒、四风王座和黑翼血环。",
-		-- TODO: tw = "",
+		tw = "開放了暮光堡壘、四風王座與黑翼陷窟。",
 	},
 });
 CATA_PHASE_RISE_OF_THE_ZANDALARI = createClassicPhase({
@@ -2783,7 +2788,7 @@ CATA_PHASE_RISE_OF_THE_ZANDALARI = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "赞达拉的崛起",
-		-- TODO: tw = "",
+		tw = "贊達拉的崛起",
 	},
 	description = {
 		en = "This was not available until the Rise of the Zandalari during Cataclysm Classic.",
@@ -2795,8 +2800,8 @@ CATA_PHASE_RISE_OF_THE_ZANDALARI = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "在《大灾变》经典服“赞达拉的崛起”内容推出之前，这些是无法获取/使用的。 "
-		-- TODO: tw = "",
+		cn = "在《大灾变》经典服“赞达拉的崛起”内容推出之前，这些是无法获取/使用的。 ",
+		tw = "此內容自《浩劫與重生》經典版推出「贊達拉的崛起」後才開放。",
 	},
 	lore = {
 		en = "Included Zul'Aman and Zul'Gurub Heroic Dungeons.",
@@ -2809,7 +2814,7 @@ CATA_PHASE_RISE_OF_THE_ZANDALARI = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包括祖阿曼和祖尔格拉布英雄难度地下城。",
-		-- TODO: tw = "",
+		tw = "開放了英雄難度的祖阿曼與祖爾格拉布地城。",
 	},
 });
 CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT = CATA_PHASE_RISE_OF_THE_ZANDALARI;	-- World Boss Loot was originally blue, they got upgraded to Epic later.
@@ -2829,7 +2834,7 @@ CATA_PHASE_MOLTEN_FRONT = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "熔火前线",
-		-- TODO: tw = "",
+		tw = "熔火前線",
 	},
 	description = {
 		en = "This was not available until the Molten Front became available during Cataclysm Classic.",
@@ -2842,7 +2847,7 @@ CATA_PHASE_MOLTEN_FRONT = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "在《大灾变》经典服中，直到熔火前线开放，这个才可用。",
-		-- TODO: tw = "",
+		tw = "此內容自《浩劫與重生》經典版的熔火前線開放後才可取得。",
 	},
 	lore = {
 		en = "Included the Molten Front Dailies.",
@@ -2855,7 +2860,7 @@ CATA_PHASE_MOLTEN_FRONT = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含熔火前线日常任务。",
-		-- TODO: tw = "",
+		tw = "開放了熔火前線的日常任務。",
 	},
 });
 CATA_PHASE_RAGE_OF_THE_FIRELANDS = createClassicPhase({
@@ -2874,7 +2879,7 @@ CATA_PHASE_RAGE_OF_THE_FIRELANDS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "火焰的愤怒",
-		-- TODO: tw = "",
+		tw = "火源的怒焰",
 	},
 	description = {
 		en = "This was not available until the Rage of the Firelands during Cataclysm Classic.",
@@ -2887,7 +2892,7 @@ CATA_PHASE_RAGE_OF_THE_FIRELANDS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "在《大灾变》经典服中，直到火焰的愤怒内容上线，这个才可用。",
-		-- TODO: tw = "",
+		tw = "此內容自《浩劫與重生》經典版推出「火源的怒焰」後才開放。",
 	},
 	lore = {
 		en = "Included Firelands.",
@@ -2900,7 +2905,7 @@ CATA_PHASE_RAGE_OF_THE_FIRELANDS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含火源之地。",
-		-- TODO: tw = "",
+		tw = "開放了火源之界。",
 	},
 });
 CATA_PHASE_HOUR_OF_TWILIGHT = createClassicPhase({
@@ -2919,7 +2924,7 @@ CATA_PHASE_HOUR_OF_TWILIGHT = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "暮光审判",
-		-- TODO: tw = "",
+		tw = "暮光之戰",
 	},
 	description = {
 		en = "This was not available until the Hour of Twilight during Cataclysm Classic.",
@@ -2932,7 +2937,7 @@ CATA_PHASE_HOUR_OF_TWILIGHT = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "在《大灾变》经典服中，直到 “暮光审判”（版本更新）时，这个才可用。",
-		-- TODO: tw = "",
+		tw = "此內容自《浩劫與重生》經典版推出「暮光之戰」後才開放。",
 	},
 	lore = {
 		en = "Included Dragon Soul.",
@@ -2945,7 +2950,7 @@ CATA_PHASE_HOUR_OF_TWILIGHT = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含巨龙之魂。",
-		-- TODO: tw = "",
+		tw = "開放了巨龍之魂。",
 	},
 });
 
@@ -2958,6 +2963,7 @@ CurrentClassicExpansion = {
 		en = "Mists of Pandaria",
 		-- #endif
 		cn = "熊猫人之谜",
+		tw = "潘達利亞之謎",
 	},
 };
 MOP_PHASE_ONE = createClassicPhase({
@@ -2990,7 +2996,7 @@ MOP_PHASE_ONE = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含85级的塞拉摩的沦陷场景战役以及更新后的天赋系统。",
-		-- TODO: tw = "",
+		tw = "開放了 85 級戰役「塞拉摩攻防戰」與更新後的天賦系統。",
 	},
 });
 MOP_PHASE_ONE_MOGUSHAN_VAULTS = createClassicPhase({
@@ -3015,7 +3021,7 @@ MOP_PHASE_ONE_MOGUSHAN_VAULTS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "魔古山宝库",
-		-- TODO: tw = "",
+		tw = "魔古山寶庫",
 	},
 	lore = {
 		en = "Included Mogu'shan Vaults.",
@@ -3028,7 +3034,7 @@ MOP_PHASE_ONE_MOGUSHAN_VAULTS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含魔古山宝库。",
-		-- TODO: tw = "",
+		tw = "開放了魔古山寶庫。",
 	},
 });
 MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV = createClassicPhase({
@@ -3053,7 +3059,7 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "天神地下城（魔古山宝库）",
-		-- TODO: tw = "",
+		tw = "天尊地城（魔古山寶庫）",
 	},
 	lore = {
 		en = "Included Celestial Dungeons with MSV loot.",
@@ -3066,7 +3072,7 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含掉落魔古山宝库（MSV）战利品的天神地下城。",
-		-- TODO: tw = "",
+		tw = "開放了可取得魔古山寶庫戰利品的天尊地城。",
 	},
 });
 MOP_PHASE_ONE_HEART_OF_FEAR = createClassicPhase({
@@ -3091,7 +3097,7 @@ MOP_PHASE_ONE_HEART_OF_FEAR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "恐惧之心",
-		-- TODO: tw = "",
+		tw = "恐懼之心",
 	},
 	lore = {
 		en = "Included Heart of Fear.",
@@ -3104,7 +3110,7 @@ MOP_PHASE_ONE_HEART_OF_FEAR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含恐惧之心。",
-		-- TODO: tw = "",
+		tw = "開放了恐懼之心。",
 	},
 });
 MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14 = createClassicPhase({
@@ -3129,7 +3135,7 @@ MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14 = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "怒之煞（套装可获取）",
-		-- TODO: tw = "",
+		tw = "憤怒之煞（套裝可取得）",
 	},
 	lore = {
 		en = "Included Tier 14 Gear from Sha of Anger.",
@@ -3142,7 +3148,7 @@ MOP_PHASE_ONE_SHA_OF_ANGER_TIER_14 = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含怒之煞掉落的 T14套装。",
-		-- TODO: tw = "",
+		tw = "憤怒之煞開始掉落 T14 套裝。",
 	},
 });
 MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF = createClassicPhase({
@@ -3167,7 +3173,7 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "天神地下城（恐惧之心）",
-		-- TODO: tw = "",
+		tw = "天尊地城（恐懼之心）",
 	},
 	lore = {
 		en = "Included Heart of Fear LFR gear for Celestial Dungeons.",
@@ -3180,7 +3186,7 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含用于天神地下城的恐惧之心随机团队副本装备。",
-		-- TODO: tw = "",
+		tw = "天尊地城新增了恐懼之心的團隊搜尋器難度裝備。",
 	},
 });
 MOP_PHASE_ONE_TERRACE_OF_ENDLESS_SPRINGS = createClassicPhase({
@@ -3205,7 +3211,7 @@ MOP_PHASE_ONE_TERRACE_OF_ENDLESS_SPRINGS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "永春台",
-		-- TODO: tw = "",
+		tw = "豐泉台",
 	},
 	lore = {
 		en = "Included Terrace of Endless Springs.",
@@ -3218,7 +3224,7 @@ MOP_PHASE_ONE_TERRACE_OF_ENDLESS_SPRINGS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含永春台。",
-		-- TODO: tw = "",
+		tw = "開放了豐泉台。",
 	},
 });
 MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES = createClassicPhase({
@@ -3243,7 +3249,7 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "天神地下城（永春台）",
-		-- TODO: tw = "",
+		tw = "天尊地城（豐泉台）",
 	},
 	lore = {
 		en = "Included Terrace of Endless Springs LFR gear for Celestial Dungeons.",
@@ -3256,7 +3262,7 @@ MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含用于天神地下城的永春台随机团队副本装备。",
-		-- TODO: tw = "",
+		tw = "天尊地城新增了豐泉台的團隊搜尋器難度裝備。",
 	},
 });
 MOP_PHASE_LANDFALL = createClassicPhase({
@@ -3276,7 +3282,7 @@ MOP_PHASE_LANDFALL = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "夺岛奇兵",
-		-- TODO: tw = "",
+		tw = "火線登陸",
 	},
 	lore = {
 		en = "Includes the Pandaria Campaign quest line in Krasarang Wilds and the Brawler's Guild.",
@@ -3289,7 +3295,7 @@ MOP_PHASE_LANDFALL = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包括卡桑琅丛林的潘达利亚战役任务线以及搏击俱乐部。",
-		-- TODO: tw = "",
+		tw = "包含喀撒朗蠻荒的潘達利亞戰役任務線與鬥陣俱樂部。",
 	},
 });
 MOP_PHASE_RISE_OF_THE_THUNDER_KING = createClassicPhase({
@@ -3309,7 +3315,7 @@ MOP_PHASE_RISE_OF_THE_THUNDER_KING = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "雷神再临",
-		-- TODO: tw = "",
+		tw = "雷王再臨",
 	},
 	lore = {
 		en = "Included Throne of Thunder, the Isle of Giants, and the Isle of Thunder.",
@@ -3322,7 +3328,7 @@ MOP_PHASE_RISE_OF_THE_THUNDER_KING = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包括雷电王座、巨兽岛和雷神岛。",
-		-- TODO: tw = "",
+		tw = "開放了雷霆王座、巨獸島與雷王島。",
 	},
 });
 MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS = createClassicPhase({
@@ -3347,7 +3353,7 @@ MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "天神地下城（雷电王座）",
-		-- TODO: tw = "",
+		tw = "天尊地城（雷霆王座）",
 	},
 	lore = {
 		en = "Included Throne of Thunder LFR gear for Celestial Dungeons.",
@@ -3360,7 +3366,7 @@ MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含适用于天神地下城的雷电王座随机团队难度装备。",
-		-- TODO: tw = "",
+		tw = "天尊地城新增了雷霆王座的團隊搜尋器難度裝備。",
 	},
 });
 MOP_PHASE_ESCALATION = createClassicPhase({
@@ -3380,7 +3386,7 @@ MOP_PHASE_ESCALATION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "绝地反击",
-		-- TODO: tw = "",
+		tw = "一觸即發",
 	},
 	lore = {
 		en = "Included Heroic Scenarios, Battlefield: Barrens Scenario, Deepwind Gorge, and the Tiger's Peak arena.",
@@ -3393,7 +3399,7 @@ MOP_PHASE_ESCALATION = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含英雄场景战役、战场：贫瘠之地场景战役、深风峡谷以及虎踞峰竞技场。",
-		-- TODO: tw = "",
+		tw = "開放了英雄戰役、戰役「戰爭前線：貧瘠之地」、深風峽谷戰場與虎峰競技場。",
 	},
 });
 MOP_PHASE_SIEGE_OF_ORGRIMMAR = createClassicPhase({
@@ -3413,7 +3419,7 @@ MOP_PHASE_SIEGE_OF_ORGRIMMAR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "决战奥格瑞玛",
-		-- TODO: tw = "",
+		tw = "圍攻奧格瑪",
 	},
 	lore = {
 		en = "Included Siege of Orgrimmar and the Timeless Isle.",
@@ -3426,7 +3432,7 @@ MOP_PHASE_SIEGE_OF_ORGRIMMAR = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含围攻奥格瑞玛和永恒岛。",
-		-- TODO: tw = "",
+		tw = "開放了圍攻奧格瑪與永恆之島。",
 	},
 });
 MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS = createClassicPhase({
@@ -3451,7 +3457,7 @@ MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "天神地下城（围攻奥格瑞玛）",
-		-- TODO: tw = "",
+		tw = "天尊地城（圍攻奧格瑪）",
 	},
 	lore = {
 		en = "Included Siege of Orgrimmar LFR gear for Celestial Dungeons.",
@@ -3464,7 +3470,7 @@ MOP_PHASE_SIEGE_OF_ORGRIMMAR_CELESTIAL_DUNGEONS = createClassicPhase({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "包含用于天神地下城的围攻奥格瑞玛随机团队副本装备。",
-		-- TODO: tw = "",
+		tw = "天尊地城新增了圍攻奧格瑪的團隊搜尋器難度裝備。",
 	},
 });
 
@@ -3477,6 +3483,7 @@ CurrentClassicExpansion = {
 		en = "Warlords of Draenor",
 		-- #endif
 		cn = "德拉诺之王",
+		tw = "德拉諾之霸",
 	},
 };
 WOD_PHASE_ONE = 60;
@@ -3493,6 +3500,7 @@ CurrentClassicExpansion = {
 		en = "Legion",
 		-- #endif
 		cn = "军团再临",
+		tw = "軍臨天下",
 	},
 };
 LEGION_PHASE_ONE = 70;
@@ -3509,6 +3517,7 @@ CurrentClassicExpansion = {
 		en = "Battle for Azeroth",
 		-- #endif
 		cn = "争霸艾泽拉斯",
+		tw = "決戰艾澤拉斯",
 	},
 };
 BFA_PHASE_ONE = 80;
@@ -3525,6 +3534,7 @@ CurrentClassicExpansion = {
 		en = "Shadowlands",
 		-- #endif
 		cn = "暗影国度",
+		tw = "暗影之境",
 	},
 };
 SL_PHASE_ONE = 90;
@@ -3541,6 +3551,7 @@ CurrentClassicExpansion = {
 		en = "Dragonflight",
 		-- #endif
 		cn = "巨龙时代",
+		tw = "巨龍崛起",
 	},
 };
 DF_PHASE_ONE = 100;
@@ -3557,6 +3568,7 @@ CurrentClassicExpansion = {
 		en = "The War Within",
 		-- #endif
 		cn = "地心之战",
+		tw = "地心之戰",
 	},
 };
 TWW_PHASE_ONE = 110;

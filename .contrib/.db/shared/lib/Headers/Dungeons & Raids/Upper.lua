@@ -13,7 +13,7 @@ createLocalizationString({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "上层",
-		-- TODO: tw = "",
+		tw = "上層",
 	},
 });
 UPPER = createHeader({

@@ -12,12 +12,12 @@ AZEROTH_ADVENTURE_HANDBOOK = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "艾泽拉斯冒险手册",
-		tw = "Azeroth Adventure Handbook",	-- TODO: verify it.
+		tw = "艾澤拉斯冒險手冊",
 	},
 	description = {
 		en = "Azeroth Adventure Handbook is a China-exclusive promotional event for retail only. Players can complete tasks to earn the listed rewards below. The 'Murloc Black Market' is also permanently available and rotates a drop pool irregularly, featuring rewards from WoW Remix: Mists of Pandaria. It was brought back for WoW's 21st Anniversary celebration, running from 13 August to 2 December 2026.",
 		cn = "艾泽拉斯冒险手册是仅限中国的促销活动。玩家可以通过完成任务来获得以下列出的奖励。“鱼人黑市”也永久可用，并不规则地轮换掉落池，展示来自魔兽世界重制版：熊猫人之谜的奖励。该活动为了庆祝魔兽世界21周年纪念而回归，时间为2026年8月13日至12月2日。",
-		tw = "Azeroth Adventure Handbook 是中國限定的《魔獸世界》正式版宣傳活動。玩家可完成任務以取得下列獎勵。Murloc Black Market 也會永久開放，並不定期輪替掉落獎池，提供來自《魔獸世界》混搭再造：潘達利亞之謎的獎勵。該活動為慶祝《魔獸世界》21週年於2026年8月13日至12月2日回歸。",	-- TODO: verify it.
+		tw = "艾澤拉斯冒險手冊是中國限定的《魔獸世界》正式版宣傳活動。玩家可完成任務以取得下列獎勵。魚人黑市也會永久開放，並不定期輪替掉落獎池，提供來自《魔獸世界》混搭再造：潘達利亞之謎的獎勵。該活動為慶祝《魔獸世界》21週年於2026年8月13日至12月2日回歸。",
 	},
 });
 CN_WOW_ANNIVERSARY_TWENTYONE = createHeader({
@@ -104,14 +104,14 @@ LUNARNEWYEAR = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "春节活动",
-		tw = "Lunar New Year Adventure",	-- TODO: verify it.
+		tw = "新春冒險",
 	},
 	description = {
 		en = "Lunar New Year Adventure is a China-exclusive promotional event for World of Warcraft, taking place from 5 February to 13 March 2026. The main event functioned similar to the Treasures of Azeroth event.",
 		es = "La Aventura del Año Nuevo Lunar es un evento promocional exclusivo para China de World of Warcraft, que se llevó a cabo del 5 de febrero al 13 de marzo de 2026. El evento principal funcionó de manera similar al evento Tesoros de Azeroth.",
 		mx = "La Aventura del Año Nuevo Lunar es un evento promocional exclusivo para China de World of Warcraft, que se llevó a cabo del 5 de febrero al 13 de marzo de 2026. El evento principal funcionó de manera similar al evento Tesoros de Azeroth.",
 		cn = "春节活动是《魔兽世界》中国区独有的促销活动，时间为2026年2月5日至3月13日。主要活动与“艾泽拉斯宝藏”活动类似。",
-		tw = "Lunar New Year Adventure 是中國限定的《魔獸世界》宣傳活動，活動期間為2026年2月5日至3月13日。主要活動玩法與 Treasures of Azeroth 類似。",	-- TODO: verify it.
+		tw = "新春冒險是中國限定的《魔獸世界》宣傳活動，活動期間為2026年2月5日至3月13日。主要活動玩法與艾澤拉斯的寶藏類似。",
 	},
 });
 CRIMSONTIDE_TREASURETROVE = createHeader({
@@ -128,12 +128,12 @@ CRIMSONTIDE_TREASURETROVE = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "猩红之潮秘宝",
-		tw = "Crimson Tide Treasure Trove",	-- TODO: verify it.
+		tw = "猩紅之潮秘寶",
 	},
 	description = {
 		en = "Crimson Tide Treasure is a China-exclusive promotional campaign for World of Warcraft, available through 23 April to 23 May 2026, where players spend Azerothian Treasure Coins to pull a random prize from a pool. Every 10 draws will also provide a 'special bonus' reward from a separate, larger pool of rewards.",
 		cn = "猩红之潮秘宝是《魔兽世界》中国区独有的促销活动，活动时间为2026年4月23日至5月23日。玩家可以使用艾泽拉斯宝藏币从奖池中随机抽取奖励。每抽取10次，玩家还将从更大的奖池中获得一份“特殊奖励”。",
-		tw = "Crimson Tide Treasure 是中國限定的《魔獸世界》宣傳活動，於2026年4月23日至5月23日開放。玩家可花費 Azerothian Treasure Coins，從獎池中抽取隨機獎勵；每抽取10次，還可從另一個更大的獎池獲得一項「特別獎勵」。",	-- TODO: verify it.
+		tw = "猩紅之潮秘寶是中國限定的《魔獸世界》宣傳活動，於2026年4月23日至5月23日開放。玩家可花費艾澤拉斯寶藏幣，從獎池中抽取隨機獎勵；每抽取10次，還可從另一個更大的獎池獲得一項「特別獎勵」。",
 	},
 });
 AZURESPAN_TREASURETROVE = createHeader({
@@ -150,12 +150,12 @@ AZURESPAN_TREASURETROVE = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "碧蓝林海秘宝",
-		tw = "Azure Span Treasure Trove",	-- TODO: verify it.
+		tw = "蒼藍高地秘寶",
 	},
 	description = {
 		en = "Azure Span Treasure Trove is a China-exclusive promotional campaign for World of Warcraft, available through 14 August to 11 September 2026 (as part of the 21st Anniversary celebration), where players spend Azerothian Treasure Coins to pull a random prize from a pool. Every 10 draws will also provide a 'special bonus' reward from a separate, larger pool of rewards.",
 		cn = "碧蓝林海秘宝是《魔兽世界》中国区独有的促销活动，活动时间为2026年8月14日至9月11日（作为21周年纪念活动的一部分），玩家可以使用艾泽拉斯宝藏币从奖池中随机抽取奖励。每抽取10次，玩家还将从更大的奖池中获得一份“特殊奖励”。",
-		tw = "Azure Span Treasure Trove 是中國限定的《魔獸世界》宣傳活動，於2026年8月14日至9月11日開放（屬於21週年紀念活動的一部分）。玩家可花費 Azerothian Treasure Coins，從獎池中抽取隨機獎勵；每抽取10次，還可從另一個更大的獎池獲得一項「特別獎勵」。",	-- TODO: verify it.
+		tw = "蒼藍高地秘寶是中國限定的《魔獸世界》宣傳活動，於2026年8月14日至9月11日開放（屬於21週年紀念活動的一部分）。玩家可花費艾澤拉斯寶藏幣，從獎池中抽取隨機獎勵；每抽取10次，還可從另一個更大的獎池獲得一項「特別獎勵」。",
 	},
 });
 LUCKY_BAMBOO_TILES = createHeader({
@@ -172,12 +172,12 @@ LUCKY_BAMBOO_TILES = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "福运竹牌",
-		tw = "Lucky Bamboo Tiles",	-- TODO: verify it.
+		tw = "福運竹牌",
 	},
 	description = {
 		en = "Lucky Bamboo Tiles is a China-exclusive promotional campaign for World of Warcraft, available through 18 June to 8 July 2026, where players use 'Fortune Points' to flip tiles which provide rewards.",
 		cn = "福运竹牌是《魔兽世界》中国区独有的促销活动，活动时间为2026年6月18日至7月8日，玩家可以使用“幸运点数”翻转牌子以获得奖励。",
-		tw = "Lucky Bamboo Tiles 是中國限定的《魔獸世界》宣傳活動，於2026年6月18日至7月8日開放。玩家可使用 Fortune Points 翻牌取得獎勵。",	-- TODO: verify it.
+		tw = "福運竹牌是中國限定的《魔獸世界》宣傳活動，於2026年6月18日至7月8日開放。玩家可使用幸運點數 翻牌取得獎勵。",
 	},
 });
 TOP_TIER_CNONLY = createHeader({
@@ -231,12 +231,12 @@ QUICKSAND_SECRET_TREASURE_VAULT = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "流沙秘宝库",
-		tw = "Quicksand Secret Treasure Vault",	-- TODO: verify it.
+		tw = "流沙秘寶庫",
 	},
 	description = {
 		en = "Quicksand Secret Treasure Vault is a China-exclusive promotional event for World of Warcraft, first launched on 18 November 2025 along with the Titan Reforged servers and lasting to 31 December 2025. Players were able to complete tasks to obtain 'Sands of Time' that can be traded in for one of the rewards.\n\nThis campaign came back with the Lunar New Year Adventure event, running from 5 February to 13 March 2026. It came back once again as part of the 21st Anniversary celebration, running from 13 August to 11 September 2026.",
 		cn = "流沙秘宝库是《魔兽世界》中国区独有的促销活动，首次于2025年11月18日与泰坦重铸服务器一同推出，持续到2025年12月31日。玩家可以通过完成任务获得“时之砂”，用于兑换奖励。\n\n该活动在农历新年冒险活动中重新推出，时间为2026年2月5日至3月13日。之后作为21周年纪念活动的一部分再次推出，时间为2026年8月13日至9月11日。",
-		tw = "Quicksand Secret Treasure Vault 是《魔獸世界》中國限定的宣傳活動，於2025年11月18日隨 Titan Reforged 伺服器首次推出，並持續至2025年12月31日。玩家可完成任務取得 Sands of Time，再用來兌換其中一項獎勵。\n\n此活動曾配合 Lunar New Year Adventure 於2026年2月5日至3月13日回歸，並再次作為21週年紀念活動的一部分，於2026年8月13日至9月11日推出。",	-- TODO: verify it.
+		tw = "流沙秘寶庫是《魔獸世界》中國限定的宣傳活動，於2025年11月18日隨泰坦重鑄伺服器首次推出，並持續至2025年12月31日。玩家可完成任務取得時之砂，再用來兌換其中一項獎勵。\n\n此活動曾配合新春冒險於2026年2月5日至3月13日回歸，並再次作為21週年紀念活動的一部分，於2026年8月13日至9月11日推出。",
 	},
 });
 
@@ -248,13 +248,13 @@ TREASURE_OF_AZEROTH = createHeader({
 		es = "Tesoros de Azeroth",
 		mx = "Tesoros de Azeroth",
 		cn = "艾泽拉斯的宝藏",
-		tw = "Treasures of Azeroth",	-- TODO: verify it.
+		tw = "艾澤拉斯的寶藏",
 	},
 	description = {
 		en = "To celebrate the launch of Titan Reforged servers, Chinese players can participate in The Treasures of Azeroth event, offering brand new rewards. The Rewards are not shared between game types and must be obtained separately in each.",
 		es = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
 		mx = "Para celebrar el lanzamiento de los servidores forjados por los titanes, los jugadores chinos pueden participar en el evento Tesoros de Azeroth, que ofrece nuevas recompensas. Estas recompensas no se comparten entre los distintos tipos de juego y deben obtenerse por separado en cada uno.",
 		cn = "为庆祝泰坦重铸服务器上线，中国玩家可参与艾泽拉斯宝藏活动，赢取全新奖励。奖励不跨游戏类型共享，需在各自版本中分别获取。",
-		tw = "為慶祝 Titan Reforged 伺服器推出，中國玩家可參加 Treasures of Azeroth 活動，獲得全新獎勵。不同遊戲版本的獎勵不會共用，必須在各版本分別取得。",	-- TODO: verify it.
+		tw = "為慶祝泰坦重鑄伺服器推出，中國玩家可參加艾澤拉斯的寶藏活動，獲得全新獎勵。不同遊戲版本的獎勵不會共用，必須在各版本分別取得。",
 	},
 });

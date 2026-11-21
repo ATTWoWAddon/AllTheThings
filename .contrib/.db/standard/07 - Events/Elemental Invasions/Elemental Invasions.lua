@@ -16,7 +16,7 @@ local ELEMENTAL_INVASIONS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "元素入侵",
-		tw = "Elemental Invasions",	-- TODO: verify it.
+		tw = "元素入侵",
 	},
 	description = {
 		en = "Reports of elemental incursions in different parts of Kalimdor are increasing. Every few days, a new wave of elementals blasts its way into the regions of Silithus, Un'Goro Crater, Azshara, and Winterspring - ostensibly, for the sole reason of seeing just how far into these territories they can penetrate before being beaten back by the forces of the Horde or the Alliance. Investigate these regions and aid your allies in countering these mysterious invasions.",

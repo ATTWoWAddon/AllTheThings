@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		cn = "如果你希望打开拍卖行时自动打开拍卖列表，请启用此选项。\n\n快捷命令：/attauctions",
-		-- TODO: tw = "",
+		tw = "啟用此選項後，開啟拍賣場時會自動顯示拍賣清單。\n\n快捷指令：/attauctions",
 	},
 })

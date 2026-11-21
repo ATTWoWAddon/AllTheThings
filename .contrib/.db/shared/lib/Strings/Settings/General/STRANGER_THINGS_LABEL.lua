@@ -13,6 +13,6 @@ createLocalizationString({
 		ru = "Очень Странные Штучки",
 		-- TODO: ko = "",
 		cn = "陌生事物",
-		tw = "Stranger Things",	-- TODO: verify it.
+		tw = "怪奇物語",
 	},
 })

@@ -48,7 +48,7 @@ local FANTA = createHeader({
 	text = {
 		en = "Fanta",
 		cn = "芬达",
-		tw = "Fanta",
+		tw = "芬達",
 	},
 	description = {
 		en = "Go to https://www.coca-cola.com/us/en/offerings/fanta/wanta-fanta/come-get-it, play a short game and get 1 reward per week. Sweepstakes starts on April 1, 2026 and ends at 11:59 pm ET on July 30, 2026 or once all rewards have been claimed, whichever occurs first. 2392 of each reward available per week. Resets at 12:00 am ET weekly. No purchase necessary.",

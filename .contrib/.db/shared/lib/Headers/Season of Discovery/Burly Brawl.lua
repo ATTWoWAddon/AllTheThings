@@ -12,7 +12,7 @@ BURLY_BRAWL = createHeader({	-- Burly Brawl
 		pt = "Briga Corpulenta",
 		ru = "Крепкая драка",
 		cn = "魁梧斗殴",
-		tw = "Burly Brawl",	-- TODO: verify it.
+		tw = "酒館鬥毆",
 	},
 	description = {
 		en = "Only the person who gets the final hit on the drunk will get credit, regardless of who tapped the target first. There is no group credit for this.",

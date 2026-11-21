@@ -16,7 +16,7 @@ local SNIFFENSEEKING = createHeader({
 		pt = "Busca farejante",
 		ru = "Нюхорысканье",
 		cn = "嗅味探寻",
-		tw = "Sniffenseeking",	-- TODO: verify it.
+		tw = "循味尋寶",	-- TODO: verify it.
 	},
 });
 

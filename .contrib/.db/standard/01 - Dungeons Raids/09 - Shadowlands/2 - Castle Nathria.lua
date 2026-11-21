@@ -8,7 +8,7 @@ local LEECHING_VAULTS_HEADER = createHeader({
 	text = {
 		en = "Leeching Vaults",
 		cn = "汲心宝库",
-		tw = "Leeching Vaults",	-- TODO: verify it.
+		tw = "汲血寶庫",	-- TODO: verify it.
 	},
 	description = {
 		en = "The first LFR wing, featuring Huntsman Altimor, Hungering Destroyer, and Lady Inerva Darkvein.",
@@ -22,7 +22,7 @@ local RELIQUARY_OF_OPULENCE_HEADER = createHeader({
 	text = {
 		en = "Reliquary of Opulence",
 		cn = "丰饶圣物所",
-		tw = "Reliquary of Opulence",	-- TODO: verify it.
+		tw = "奢華聖物庫",	-- TODO: verify it.
 	},
 	description = {
 		en = "The second LFR wing, featuring Artificer Xy'mox, Sun King's Salvation, and The Council of Blood.",
@@ -36,7 +36,7 @@ local BLOOD_FROM_STONE_HEADER = createHeader({
 	text = {
 		en = "Blood from Stone",
 		cn = "石中殷红",
-		tw = "Blood from Stone",	-- TODO: verify it.
+		tw = "石中鮮血",	-- TODO: verify it.
 	},
 	description = {
 		en = "The third LFR wing, featuring Shriekwing, Sludgefist, and Stone Legion Generals.",
@@ -50,7 +50,7 @@ local AUDIENCE_WITH_ARROGANCE_HEADER = createHeader({
 	text = {
 		en = "Audience with Arrogance",
 		cn = "谒见傲慢",
-		tw = "Audience with Arrogance",	-- TODO: verify it.
+		tw = "覲見傲慢之王",	-- TODO: verify it.
 	},
 	description = {
 		en = "The fourth LFR wing, featuring Sire Denathrius.",

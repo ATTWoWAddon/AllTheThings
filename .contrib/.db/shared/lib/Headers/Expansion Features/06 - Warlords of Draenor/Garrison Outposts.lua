@@ -71,7 +71,7 @@ LUMBER_YARD = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "伐木场",
-		tw = "Lumber Yard",	-- TODO: verify it.
+		tw = "鋸木廠",
 	},
 });
 
@@ -105,7 +105,7 @@ ARSENAL = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "军械库",
-		tw = "Arsenal",	-- TODO: verify it.
+		tw = "軍備所",
 	},
 });
 
@@ -122,7 +122,7 @@ TANKWORKS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "坦克工厂",
-		tw = "Tankworks",	-- TODO: verify it.
+		tw = "坦克工坊",
 	},
 });
 
@@ -131,7 +131,7 @@ CORRAL = createHeader({
 	text = {
 		en = "Corral",
 		cn = "兽栏",
-		tw = "Corral",	-- TODO: verify it.
+		tw = "畜欄",
 	},
 });
 
@@ -148,7 +148,7 @@ SMUGGLING_RUN = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "走私货栈",
-		tw = "Smuggling Run",	-- TODO: verify it.
+		tw = "走私交易",
 	},
 });
 
@@ -165,6 +165,6 @@ BREWERY = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "酿酒厂",
-		tw = "Brewery",	-- TODO: verify it.
+		tw = "釀酒場",
 	},
 });

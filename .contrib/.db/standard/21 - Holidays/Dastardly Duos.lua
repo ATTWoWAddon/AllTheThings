@@ -17,7 +17,7 @@ DASTARDLY_DUOS = createHeader({
 		-- TODO: pt = "",
 		-- TODO: ru = "",
 		cn = "卑鄙双雄",
-		tw = "Dastardly Duos",	-- TODO: verify it.
+		tw = "殘虐雙煞",
 	},
 	description = {
 		en = "Hello, fight fans. The world's meanest villains are teamed up and back for revenge! Meet in Stormwind, Orgrimmar or Dornogal to fight against villainous bosses from Azeroth's past.",

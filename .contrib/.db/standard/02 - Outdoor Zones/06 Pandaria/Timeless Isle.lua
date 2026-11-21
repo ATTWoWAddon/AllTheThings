@@ -1636,12 +1636,12 @@ maproot(PANDARIA, {
 						pt = "Baú de Kukuru",
 						ru = "клада Кукуру",
 						cn = "库库鲁的宝箱",
-						tw = "Kukuru's Cache",	-- TODO: verify it.
+						tw = "庫庫魯的貯物箱",
 					},
 					description = {
 						en = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",
 						cn = "购买库库鲁的宝箱钥匙即可开启。有极低几率开出不朽之责，更常见的是宠物邦卡斯。",
-						tw = "購買 Kukuru's Cache Key 即可開啟。內容物有極低機率包含 Burden of Eternity；較常見的獎勵則是 Bonkers 寵物。",	-- TODO: verify it.
+						tw = "購買庫庫魯的貯物箱鑰匙即可開啟。有極低的機率開出永恆之負，較常見的獎勵是寵物嚎怪。",	-- TODO: verify it.
 					},
 				}), {
 					providers = {

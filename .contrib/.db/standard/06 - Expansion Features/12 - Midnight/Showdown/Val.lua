@@ -41,7 +41,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							--ru = "Portal Bridges",
 							cn = "传送门桥梁",
 							--tw = "Portal Bridges",
-							tw = "Portal Bridges",	-- TODO: verify it.
+							tw = "傳送橋",	-- TODO: verify it.
 						},
 						description = {
 							en = "Portal Bridges are teleporters used to instantly move around Val.",
@@ -54,7 +54,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 							-- TODO: pt = "",
 							-- TODO: ru = "",
 							cn = "传送门桥梁是一种传送装置，可让你在瓦尔各地瞬间移动。",
-							tw = "Portal Bridges 是可讓你在衛爾各處瞬間移動的傳送裝置。",	-- TODO: verify it.
+							tw = "傳送橋可讓你在衛爾各處瞬間移動。",	-- TODO: verify it.
 						},
 					}), {
 						groups = sharedData({

@@ -8,7 +8,7 @@ local DIVERGENT = createHeader({
 	text = {
 		en = "Divergent",
 		cn = "歧路",
-		tw = "Divergent",	-- TODO: verify it.
+		tw = "歧路",	-- TODO: verify it.
 	},
 	description = {
 		en = "Low Drop Chance",

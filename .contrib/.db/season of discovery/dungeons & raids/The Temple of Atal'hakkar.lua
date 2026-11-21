@@ -590,7 +590,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 						text = {
 							en = "Aura of Paralyzing Dread",
 							cn = "痹体恐惧氛围",
-							tw = "Aura of Paralyzing Dread",	-- TODO: verify it.
+							tw = "麻痺恐懼光環",	-- TODO: verify it.
 						},
 						description = {
 							en = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
@@ -663,7 +663,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 						text = {
 							en = "Emotional Damage",
 							cn = "心理创伤",
-							tw = "Emotional Damage",	-- TODO: verify it.
+							tw = "心靈創傷",	-- TODO: verify it.
 						},
 					}), {
 						qg = 221477,	-- Field Captain Hannalah

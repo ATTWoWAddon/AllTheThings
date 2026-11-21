@@ -3436,7 +3436,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 					es = "Inspiración Rango 1",
 					mx = "Inspiración Rango 1",
 					cn = "启迪等级一",
-					tw = "Inspiration Rank One",	-- TODO: verify it.
+					tw = "啟迪（等級 1）",	-- TODO: verify it.
 				},
 				description = {
 					en = "After receiving your squire, summon him forth using the Relic and then level him up by getting into combat and keeping him alive.",
@@ -3470,7 +3470,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, {
 					es = "Inspiración Rango 2",
 					mx = "Inspiración Rango 2",
 					cn = "启迪等级二",
-					tw = "Inspiration Rank Two",	-- TODO: verify it.
+					tw = "啟迪（等級 2）",	-- TODO: verify it.
 				},
 			}), {
 				providers = {

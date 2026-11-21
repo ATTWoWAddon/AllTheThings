@@ -16,7 +16,7 @@ local GREAT_ODYN_AND_THE_FIRELORD = createHeader({
 		pt = "O Grande Odyn e o Senhor do Fogo",
 		ru = "Великий Один и Повелитель Огня",
 		cn = "伟大的奥丁与炎魔之王",
-		tw = "Great Odyn and the Firelord",	-- TODO: verify it.
+		tw = "偉大的歐丁與炎魔之王",	-- TODO: verify it.
 	},
 });
 local THE_WANDERER_AND_THE_SERPENT = createHeader({
@@ -33,7 +33,7 @@ local THE_WANDERER_AND_THE_SERPENT = createHeader({
 		pt = "O Andarilho e a Serpente",
 		ru = "Странник и змей",
 		cn = "流浪者与蛇",
-		tw = "The Wanderer and the Serpent",	-- TODO: verify it.
+		tw = "流浪者與蛇",	-- TODO: verify it.
 	},
 });
 local HALLS_OF_GOLD_AND_GLORY = createHeader({
@@ -50,7 +50,7 @@ local HALLS_OF_GOLD_AND_GLORY = createHeader({
 		pt = "Os Salões de Ouro e Glória",
 		ru = "Чертоги золота и славы",
 		cn = "黄金与荣耀的殿堂",
-		tw = "Halls of Gold and Glory",	-- TODO: verify it.
+		tw = "黃金與榮耀的殿堂",	-- TODO: verify it.
 	},
 });
 local THE_KEEPERS_EYE = createHeader({
@@ -67,7 +67,7 @@ local THE_KEEPERS_EYE = createHeader({
 		pt = "O Olho do Guardião",
 		ru = "Глаз Хранителя",
 		cn = "守护者之眼",
-		tw = "The Keeper's Eye",	-- TODO: verify it.
+		tw = "守護者之眼",	-- TODO: verify it.
 	},
 });
 local FIRST_OF_THE_VALKYR = createHeader({
@@ -84,7 +84,7 @@ local FIRST_OF_THE_VALKYR = createHeader({
 		pt = "A Primeira das Val'kyren",
 		ru = "Первая из валь'кир",
 		cn = "首位瓦格里",
-		tw = "First of the Val'kyr",	-- TODO: verify it.
+		tw = "首位華爾琪",	-- TODO: verify it.
 	},
 });
 local THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
@@ -101,7 +101,7 @@ local THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
 		pt = "O Selamento dos Salões da Bravura",
 		ru = "Печать на Чертогах Доблести",
 		cn = "封印英灵殿",
-		tw = "The Sealing of the Halls of Valor",	-- TODO: verify it.
+		tw = "英靈殿的封印",	-- TODO: verify it.
 	},
 });
 local HIS_NAME_IS_DRAGONBLOOD = createHeader({
@@ -118,7 +118,7 @@ local HIS_NAME_IS_DRAGONBLOOD = createHeader({
 		pt = "Ele se chama Sangue de Dragão",
 		ru = "Октель Драконья Кровь",
 		cn = "他名叫龙血",
-		tw = "His Name Is Dragonblood",	-- TODO: verify it.
+		tw = "他名叫龍血",	-- TODO: verify it.
 	},
 });
 local THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
@@ -135,7 +135,7 @@ local THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
 		pt = "As Últimas Palavras de Asgrim, o Algoz Medonho",
 		ru = "Последние слова Азгрима Смертоубийцы",
 		cn = "亡灵杀手艾斯格里姆的遗言",
-		tw = "The Last Words of Asgrim the Dreadkiller",	-- TODO: verify it.
+		tw = "『恐懼殺手』阿斯格林的遺言",	-- TODO: verify it.
 	},
 });
 local A_SHIELDMAIDENS_CREED = createHeader({
@@ -152,7 +152,7 @@ local A_SHIELDMAIDENS_CREED = createHeader({
 		pt = "A Crença de uma Dama Escudeira",
 		ru = "Кредо девы щита",
 		cn = "女武神的信条",
-		tw = "A Shieldmaiden's Creed",	-- TODO: verify it.
+		tw = "持盾少女的信條",	-- TODO: verify it.
 	},
 });
 local THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
@@ -169,7 +169,7 @@ local THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
 		pt = "A Profecia de Rythas, o Oráculo",
 		ru = "Пророчество Райтаса Провидца",
 		cn = "神谕者莱萨斯的预言",
-		tw = "The Prophecy of Rythas the Oracle",	-- TODO: verify it.
+		tw = "『神諭者』萊薩斯的預言",	-- TODO: verify it.
 	},
 });
 local THE_LESSONS_OF_THE_BLACKFIST = createHeader({
@@ -186,7 +186,7 @@ local THE_LESSONS_OF_THE_BLACKFIST = createHeader({
 		pt = "As Lições do Punho Negro",
 		ru = "Уроки Черного Кулака",
 		cn = "黑拳的教诲",
-		tw = "The Lessons of the Blackfist",	-- TODO: verify it.
+		tw = "黑拳的教誨",	-- TODO: verify it.
 	},
 });
 local VOLUNDS_FOLLY = createHeader({
@@ -203,7 +203,7 @@ local VOLUNDS_FOLLY = createHeader({
 		pt = "A Tolice de Volund",
 		ru = "Безрассудный Волунд",
 		cn = "沃伦德的愚行",
-		tw = "Volund's Folly",	-- TODO: verify it.
+		tw = "沃倫德的愚行",	-- TODO: verify it.
 	},
 });
 

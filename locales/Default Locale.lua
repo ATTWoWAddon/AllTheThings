@@ -581,6 +581,42 @@ if localeString == "zhCN" or localeString == "zhTW" then
 
 		for key,value in pairs({
 			["資料片前夕"] = "前夕",
+			[GROUP_FINDER] = "地城團隊",
+			[BATTLEGROUNDS] = "戰場",
+			["%> 燃燒的遠征"] = "> BC",
+			["%> 巫妖王之怒"] = "> WotLK",
+			["%> 浩劫與重生"] = "> Cata",
+			["浩劫與重生 "] = "Cata ",
+			["%> 潘達利亞之謎"] = "> MoP",
+			["%> 德拉諾之霸"] = "> WoD",
+			["%> 決戰艾澤拉斯"] = "> BFA",
+			["%> 暗影之境"] = "> SL",
+			["第%s*(%d+)%s*賽季"] = "S%1",
+			["第%s*(%d+)%s*季"] = "S%1",
+
+			["舊時血色修道院"] = "舊血色",				-- ["Scarlet Monastery of Old"] = "SM: Old"
+			["管理者鹿盔"] = "鹿盔",					-- ["Majordomo Staghelm"] = "Majordomo"
+			["全能魔像防禦系統"] = "全能魔像",			-- ["Omnotron Defense System"] = "Omnitron"
+			["瓦莉歐娜和瑟拉里恩"] = "瓦莉歐娜、瑟拉里恩",	-- ["Theralion and Valiona"] = "Theralion&Valiona"
+			["『火焰先知』丁卓爾‧睿迅"] = "丁卓爾‧睿迅",	-- ["Tindral Sageswift, Seer of the Flame"] = "Tindral Sageswift"
+			["薇克希和齒輪幫"] = "薇克希",			-- ["Vexie and the Geargrinders"] = "Vexie & the Geargrinders"
+			["創業英雄：地心之戰第%s*2%s*季"] = "創業英雄：地心 S2",
+			["地心之戰鑰石傳奇：第%s*2%s*季"] = "地心鑰石傳奇：S2",
+
+			["軍需官米蘭達‧布利洛克"] = "軍需官米蘭達",		-- ["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda"
+			["蒼藍高地"] = "蒼藍",					-- ["The Azure Span"] = "Azure Span"
+			["禁忌之境"] = "禁忌",					-- ["The Forbidden Reach"] = "Forbidden Reach"
+			["繁盛綻放"] = "綻放",					-- ["The Superbloom"] = "Superbloom"
+			["甦醒海岸"] = "甦醒",					-- ["The Waking Shores"] = "Waking Shores"
+			["洪荒使者未來"] = "洪荒未來",				-- ["The Primalist Future"] = "Primalist Future"
+			["風暴之怒"] = "風暴",					-- ["The Storm's Fury"] = "Storm's Fury"
+			["魔獸世界週年慶"] = "週年慶",				-- ["WoW Anniversary"] = "Anniversary"
+
+			[BLACK_MARKET_AUCTION_HOUSE] = "黑市",
+			["特使任務"] = "特使",
+			[TRACKER_HEADER_WORLD_QUESTS] = "世任",
+			["誓盟:"] = "盟:",
+			["誓盟："] = "盟：",
 			["安托洛斯，燃燒王座"] = "安托洛斯",		-- ["Antorus, the Burning Throne"] = "Antorus"
 			["奈奧羅薩，甦醒之城"] = "奈奧羅薩",		-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
 			["『帷幕市集』塔札維許"] = "塔札維許",		-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
@@ -589,6 +625,34 @@ if localeString == "zhCN" or localeString == "zhTW" then
 			["『回音之城』厄拉卡拉"] = "厄拉卡拉",		-- ["Ara-Kara, City of Echoes"] = "Ara-Kara"
 		})
 		do ABBREVIATIONS[key] = value; end
+
+		if STAT_CATEGORY_PVP and STAT_CATEGORY_PVP ~= "" then
+			ABBREVIATIONS[(STAT_CATEGORY_PVP:gsub("(%p)", "%%%1"))] = "PvP";
+		end
+
+		local expansionFeatures = GetCategoryInfo and GetCategoryInfo(15301);
+		if expansionFeatures and expansionFeatures ~= "" then
+			ABBREVIATIONS[(expansionFeatures:gsub("(%p)", "%%%1"))] = "資料片";
+		end
+
+		local difficultyAbbreviations = {
+			{ 1, "N" }, { 2, "H" }, { 23, "M" },
+			{ 3, "10M" }, { 4, "25M" }, { 5, "10M (H)" }, { 6, "25M (H)" },
+			{ 7, "LFR" }, { 17, "LFR" },
+		};
+		-- Difficulty 8 was Challenge Mode before Legion.
+		if app.GameBuildVersion >= 70000 then
+			difficultyAbbreviations[#difficultyAbbreviations + 1] = { 8, "M+" };
+		end
+		for _, difficulty in ipairs(difficultyAbbreviations) do
+			local name = GetDifficultyInfo and GetDifficultyInfo(difficulty[1]);
+			if name and name ~= "" then
+				-- Match a standalone label so words in titles like 創業英雄 stay intact.
+				local escapedName = name:gsub("(%p)", "%%%1");
+				local pattern = "%f[^%s%z]"..escapedName.."%f[%s%z]";
+				ABBREVIATIONS[pattern] = ABBREVIATIONS[pattern] or difficulty[2];
+			end
+		end
 	end
 end
 
@@ -729,6 +793,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 			CUSTOM_COLLECTS_REASONS["SL_SKIP"].text = "命運絲線";
 			CUSTOM_COLLECTS_REASONS["SL_SKIP"].desc = "只有選擇跳過暗影之境故事線的角色才能收集這個。";
 			CUSTOM_COLLECTS_REASONS["HOA"].desc = "只有角色獲得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。";
+			CUSTOM_COLLECTS_REASONS["!HOA"].text = "|cffff0000未取得|r"..GetSpellName(275825);
 			CUSTOM_COLLECTS_REASONS["!HOA"].desc = "只有角色 |cffff0000沒有|r 獲得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。";
 		end
 	end

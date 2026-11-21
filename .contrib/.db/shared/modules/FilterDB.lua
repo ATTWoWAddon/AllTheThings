@@ -111,6 +111,7 @@ for filterID,filterData in pairs({
 			fr = "Artéfact",
 			ru = "Артефакты",
 			cn = "神器",
+			tw = "神兵武器",
 		},
 	},
 
@@ -435,6 +436,7 @@ for filterID,filterData in pairs({
 			fr = "Livres de classe",
 			ru = "Классовые Книги",
 			cn = "职业技能书",
+			tw = "職業技能書",
 		},
 	},
 	[60] = {
@@ -451,6 +453,7 @@ for filterID,filterData in pairs({
 			ru = "Камера СЕЛФИ",
 			ko = "\"셀카\" 사진기",
 			cn = "自拍神器",
+			tw = "自拍相機",
 		},
 	},
 	[61] = {
@@ -596,6 +599,7 @@ for filterID,filterData in pairs({
 		text = {
 			en = "Keys",
 			cn = "钥匙",
+			tw = "鑰匙",
 		},
 	},
 	[200] = {
@@ -620,6 +624,7 @@ for filterID,filterData in pairs({
 			ru = "Предметы Событий",
 			ko = "이벤트 아이템",
 			cn = "事件物品",
+			tw = "活動物品",
 		},
 	},
 })

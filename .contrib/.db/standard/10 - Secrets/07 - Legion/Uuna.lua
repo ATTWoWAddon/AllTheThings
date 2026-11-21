@@ -105,7 +105,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.LEGION, {
 					pt = "Tour Mundial de Uuna",
 					ru = "Приключения с Ууной",
 					cn = "尤娜的世界旅行",
-					tw = "Uuna's World Tour",	-- TODO: verify it.
+					tw = "烏娜環遊世界",	-- TODO: verify it.
 				},
 				description = {
 					en = "Congrats on making it this far! Now it's time to take your favorite li'l ghost on a world tour.",
