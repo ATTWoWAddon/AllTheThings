@@ -844,9 +844,11 @@ maproot(KALIMDOR, DESOLACE, {
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/15 Infused Burning Gem
-						provider = { "i", 6435 },	-- Infused Burning Gem
+						providers = {
+							{ "i", 6435 },	-- Infused Burning Gem
+							{ "i", 6436 },	-- Burning Gem
+						},
 						coord = { 55.0, 26.7, DESOLACE },
-						cost = { { "i", 6436, 1 } },	-- Burning Gem
 						crs = {
 							4665,	-- Burning Blade Adept
 							4663,	-- Burning Blade Augur
