@@ -75,7 +75,7 @@ if C_AuctionHouse then
 		local numItems = C_AuctionHouse_GetNumReplicateItems();
 		if numItems > 0 then
 			app.PrintDebug("Received data for", numItems, "auctions");
-			local auction;
+			local auction, price;
 			for i=0,numItems-1 do
 				auction = {C_AuctionHouse_GetReplicateItemInfo(i)};
 				local itemID = auction[17]
@@ -83,7 +83,15 @@ if C_AuctionHouse then
 				-- if itemID == app.DEBUGITEMID then
 				-- 	app.PrintTable(auction)
 				-- end
-				auctionData[itemID] = math_min(lowestPrice, auction[10] or auction[11] or auction[8] or GoldCap)
+				-- buyoutPrice, then bidAmount, then minBid (an auction without a buyout reports a buyoutPrice of 0)
+				price = auction[10]
+				if not price or price <= 0 then
+					price = auction[11]
+					if not price or price <= 0 then
+						price = auction[8] or GoldCap
+					end
+				end
+				auctionData[itemID] = math_min(lowestPrice, price)
 			end
 			callback(numItems);
 		end
@@ -114,14 +122,26 @@ else
 		local numItems = GetNumAuctionItems("list");
 		if numItems > 0 then
 			local index = 1;
-			local auction;
+			local auction, itemID, price, lowest;
 			repeat
 				-- Process the Auction
 				auction = {GetAuctionItemInfo("list", index)};
 				if auction[16] == 0 then	-- saleStatus
-					local itemID = auction[17];	-- itemId
+					itemID = auction[17];	-- itemId
 					if itemID and itemID > 0 then
-						auctionData[itemID] = auction[10] or auction[11] or auction[8] or 0;	-- buyoutPrice or bidAmount or minBid
+						-- buyoutPrice, then bidAmount, then minBid (an auction without a buyout reports a buyoutPrice of 0)
+						price = auction[10];
+						if not price or price <= 0 then
+							price = auction[11];
+							if not price or price <= 0 then
+								price = auction[8] or 0;
+							end
+						end
+						-- keep the cheapest auction of each item
+						lowest = auctionData[itemID];
+						if not lowest or price < lowest then
+							auctionData[itemID] = price;
+						end
 					end
 				end
 				index = index + 1;
@@ -176,6 +196,385 @@ local function ParseCommand(self, cmd, skipUpdate)
 			self:Update(true);
 		end
 	end
+end
+
+-- Buy All
+-- Searches the Auction House for each queued item, finds its cheapest buyout,
+-- and asks for confirmation (with the price) before buying it. Bid-only and own auctions are skipped.
+-- Two backends: the Classic browse frame (QueryAuctionItems) and the modern Auction House (C_AuctionHouse),
+-- which some Classic-era clients (e.g. Forever) use as well.
+local StartBuyAll;
+local BuyAllBackend;
+if QueryAuctionItems and PlaceAuctionBid and GetAuctionItemInfo and GetNumAuctionItems then
+	-- Classic Auction House: search by name (not exact, so random-suffix variants match), keep only this itemID,
+	-- page through the results, buy by list index.
+	local CanSendAuctionQuery, GetAuctionItemInfo, GetNumAuctionItems, PlaceAuctionBid, QueryAuctionItems, UnitName
+		= CanSendAuctionQuery, GetAuctionItemInfo, GetNumAuctionItems, PlaceAuctionBid, QueryAuctionItems, UnitName;
+	local PAGE_SIZE = NUM_AUCTION_ITEMS_PER_PAGE or 50;
+	local MAX_PAGES = 20;
+	-- Returns the buyout of the auction at index if it is an active, buyout-able auction of itemID that isn't ours
+	local function GetBuyout(index, itemID)
+		local _, _, _, _, _, _, _, _, _, buyoutPrice, _, _, _, owner, _, saleStatus, id = GetAuctionItemInfo("list", index);
+		if id == itemID and saleStatus == 0 and buyoutPrice and buyoutPrice > 0 and (not owner or owner ~= UnitName("player")) then
+			return buyoutPrice;
+		end
+	end
+	BuyAllBackend = {
+		Events = { "AUCTION_ITEM_LIST_UPDATE" },
+		IsOpen = function()
+			return AuctionFrame and AuctionFrame:IsShown();
+		end,
+		CanQuery = function()
+			return CanSendAuctionQuery();
+		end,
+		-- Sends the first search for job.name.
+		Search = function(job)
+			job.page = 0;
+			QueryAuctionItems(job.name, nil, nil, 0, nil, nil, false, false, nil);
+		end,
+		-- Called once the results settle. Returns "query", fn to send another query, or "done" (job.result holds the pick, if any).
+		OnResults = function(job, maxPrice)
+			local itemID = job.itemID;
+			local numBatch, numTotal = GetNumAuctionItems("list");
+			if job.locating then
+				for index=1,numBatch do
+					if GetBuyout(index, itemID) == job.best then
+						job.result = { index = index, buyout = job.best };
+						return "done";
+					end
+				end
+				return "done";
+			end
+			local buyout;
+			for index=1,numBatch do
+				buyout = GetBuyout(index, itemID);
+				if buyout and buyout <= maxPrice and (not job.best or buyout < job.best) then
+					job.best, job.bestPage = buyout, job.page;
+				end
+			end
+			if (job.page + 1) * PAGE_SIZE < (numTotal or 0) and job.page + 1 < MAX_PAGES then
+				job.page = job.page + 1;
+				return "query", function() QueryAuctionItems(job.name, nil, nil, job.page, nil, nil, false, false, nil); end;
+			end
+			if not job.best then return "done" end
+			job.locating = true;
+			if job.bestPage == job.page then
+				return BuyAllBackend.OnResults(job, maxPrice);
+			end
+			job.page = job.bestPage;
+			return "query", function() QueryAuctionItems(job.name, nil, nil, job.page, nil, nil, false, false, nil); end;
+		end,
+		-- Buys the chosen auction if it is still the same one; returns true when a bid was placed.
+		Buy = function(job)
+			local result = job.result;
+			if GetBuyout(result.index, job.itemID) == result.buyout then
+				PlaceAuctionBid("list", result.index, result.buyout);
+				return true;
+			end
+		end,
+	};
+elseif C_AuctionHouse and C_AuctionHouse.SendBrowseQuery and C_AuctionHouse.SendSearchQuery and C_AuctionHouse.PlaceBid then
+	-- Modern Auction House: browse by name to find the item key, then search that item sorted by price.
+	local C_AuctionHouse = C_AuctionHouse;
+	local PRICE_SORT = { { sortOrder = Enum.AuctionHouseSortOrder and Enum.AuctionHouseSortOrder.Price or 0, reverseSort = false } };
+	local MAX_MORE = 10;
+	BuyAllBackend = {
+		Events = { "AUCTION_HOUSE_BROWSE_RESULTS_UPDATED", "ITEM_SEARCH_RESULTS_UPDATED" },
+		IsOpen = function()
+			return AuctionHouseFrame and AuctionHouseFrame:IsShown();
+		end,
+		CanQuery = function()
+			return not C_AuctionHouse.IsThrottledMessageSystemReady or C_AuctionHouse.IsThrottledMessageSystemReady();
+		end,
+		Search = function(job)
+			job.stage = "browse";
+			C_AuctionHouse.SendBrowseQuery({ searchString = job.name, sorts = PRICE_SORT, filters = {}, itemClassFilters = {} });
+		end,
+		OnResults = function(job, maxPrice)
+			local itemID = job.itemID;
+			if job.stage == "browse" then
+				-- Random-suffix items ("of the Bear", "of the Monkey", ...) share the itemID but each variant has
+				-- its own item key, and any of them teaches the appearance: try them from the cheapest up.
+				job.keys = {};
+				for _,browse in ipairs(C_AuctionHouse.GetBrowseResults() or app.EmptyTable) do
+					if browse.itemKey and browse.itemKey.itemID == itemID then
+						job.keys[#job.keys + 1] = { itemKey = browse.itemKey, minPrice = browse.minPrice or 0 };
+					end
+				end
+				if #job.keys < 1 then return "done" end
+				table.sort(job.keys, function(a, b) return a.minPrice < b.minPrice end);
+				job.keyIndex = 0;
+				job.stage = "search";
+				return BuyAllBackend.NextKey(job, maxPrice);
+			end
+			-- Item search results for the current variant: keep the cheapest buyout that isn't ours.
+			local itemKey = job.itemKey;
+			local info, buyout;
+			for index=1,C_AuctionHouse.GetNumItemSearchResults(itemKey) do
+				info = C_AuctionHouse.GetItemSearchResultInfo(itemKey, index);
+				buyout = info and info.buyoutAmount;
+				if buyout and buyout > 0 and buyout <= maxPrice and not info.containsOwnerItem
+					and (not job.result or buyout < job.result.buyout) then
+					job.result = { auctionID = info.auctionID, buyout = buyout };
+					job.foundOnKey = true;
+				end
+			end
+			if not job.foundOnKey and not C_AuctionHouse.HasFullItemSearchResults(itemKey) and job.more < MAX_MORE then
+				job.more = job.more + 1;
+				return "query", function() C_AuctionHouse.RequestMoreItemSearchResults(itemKey); end;
+			end
+			return BuyAllBackend.NextKey(job, maxPrice);
+		end,
+		-- Searches the next variant, unless none of the remaining ones can beat the best buyout found so far.
+		NextKey = function(job, maxPrice)
+			job.keyIndex = job.keyIndex + 1;
+			local key = job.keys[job.keyIndex];
+			if not key or key.minPrice > maxPrice or (job.result and key.minPrice >= job.result.buyout) then
+				return "done";
+			end
+			job.itemKey, job.more, job.foundOnKey = key.itemKey, 0, nil;
+			return "query", function() C_AuctionHouse.SendSearchQuery(key.itemKey, PRICE_SORT, true); end;
+		end,
+		Buy = function(job)
+			C_AuctionHouse.PlaceBid(job.result.auctionID, job.result.buyout);
+			return true;
+		end,
+	};
+end
+if BuyAllBackend then
+	local Backend = BuyAllBackend;
+	local C_Timer_After, GetMoney, tremove = C_Timer.After, GetMoney, table.remove;
+	local POPUP = "ALL_THE_THINGS_AUCTION_BUY_ALL";
+
+	local queue, current, bought, total, running, token = {}, nil, 0, 0, false, 0;
+	local eventFrame = CreateFrame("Frame");
+	local ProcessNext;
+
+	local listening, lastQuery, waitToken = false, nil, 0;
+	local function SetListening(listen)
+		listening = listen;
+		if not listen then waitToken = waitToken + 1; end	-- cancels the pending watchdog
+		for _,event in ipairs(Backend.Events) do
+			if listen then eventFrame:RegisterEvent(event) else eventFrame:UnregisterEvent(event) end
+		end
+	end
+	local function Finish()
+		local wasRunning = running;
+		-- Clear the state first: hiding the popup below calls its OnHide, which must not finish again.
+		running, current = false, nil;
+		wipe(queue);
+		SetListening(false);
+		StaticPopup_Hide(POPUP);
+		if wasRunning then
+			app.print((L.AUCTIONS_BUY_ALL_DONE or "Buy All finished: bought %d of %d items."):format(bought, total));
+		end
+	end
+	local function Next()
+		C_Timer_After(0.3, ProcessNext);
+	end
+	local function ShowConfirm()
+		local buyout = current.result.buyout;
+		if buyout > GetMoney() then
+			app.print((L.AUCTIONS_BUY_ALL_TOO_EXPENSIVE or "Not enough money to buy %s for %s, skipping."):format(current.link, GetCoinTextureString(buyout)));
+			return Next();
+		end
+		local popup = StaticPopupDialogs[POPUP];
+		if not popup then
+			popup = {
+				button1 = BUYOUT,
+				button2 = L.AUCTIONS_BUY_ALL_SKIP or "Skip",
+				button3 = L.AUCTIONS_BUY_ALL_STOP or "Stop",
+				timeout = 0,
+				whileDead = true,
+				hideOnEscape = true,
+				preferredIndex = 3,
+				OnAccept = function(self, job)
+					job.handled = true;
+					-- The click on Buyout is the hardware event the purchase needs.
+					if running and Backend.IsOpen() and Backend.Buy(job) then
+						bought = bought + 1;
+						-- Mark the row as bought (green check) and skip it on later runs.
+						local row = job.row;
+						if row then
+							row.trackable = true;
+							row.saved = true;
+							local window = app:GetWindow("Auctions", true);
+							if window then window:Refresh(); end
+						end
+					end
+					Next();
+				end,
+				OnCancel = function(self, job)
+					job.handled = true;
+					Next();
+				end,
+				OnAlt = function(self, job)
+					job.handled = true;
+					Finish();
+				end,
+				OnHide = function(self)
+					-- Escape counts as Skip (OnCancel). Hidden without any button (e.g. replaced by another popup): stop Buy All.
+					local job = self.data;
+					if job and not job.handled and running then
+						Finish();
+					end
+				end,
+			};
+			StaticPopupDialogs[POPUP] = popup;
+		end
+		popup.text = (L.AUCTIONS_BUY_ALL_CONFIRM or "Buy %s\nfor %s?\n(%d of %d)"):format(current.link, GetCoinTextureString(buyout), total - #queue, total);
+		StaticPopup_Hide(POPUP);
+		local dialog = StaticPopup_Show(POPUP, nil, nil, current);
+		if not dialog then
+			return Next();
+		end
+		-- Popups stack below any other visible popup (or the previous one still hiding), so pin ours
+		-- to the first popup position to keep it in the same place for every item.
+		dialog:ClearAllPoints();
+		dialog:SetPoint("TOP", UIParent, "TOP", 0, -135);
+	end
+	local Query;
+	-- A query can go unanswered (the server dropped it for being too soon, or the search failed).
+	-- Resend it, and after a few tries skip the item so the run never stalls.
+	local MAX_RETRIES, WATCHDOG = 2, 6;
+	local function Retry()
+		local job = current;
+		if not running or not job or not lastQuery then return end
+		SetListening(false);
+		token = token + 1;	-- drop any results still settling for the unanswered query
+		job.retries = (job.retries or 0) + 1;
+		if job.retries > MAX_RETRIES then
+			app.print((L.AUCTIONS_BUY_ALL_NO_BUYOUT or "No buyout within your Maximum Price found for %s, skipping."):format(job.link or ("item:" .. job.itemID)));
+			return Next();
+		end
+		local fn = lastQuery;
+		C_Timer_After(1, function()
+			if running and current == job then Query(fn); end
+		end);
+	end
+	Query = function(fn)
+		if not running then return end
+		if not Backend.IsOpen() then return Finish() end
+		if not Backend.CanQuery() then
+			C_Timer_After(0.25, function() Query(fn) end);
+			return;
+		end
+		SetListening(true);
+		lastQuery = fn;
+		fn();
+		local myWait = waitToken;
+		C_Timer_After(WATCHDOG, function()
+			if myWait == waitToken and listening and running then Retry(); end
+		end);
+	end
+	local function OnSettled()
+		SetListening(false);
+		if not running or not current then return end
+		local job = current;
+		local state, nextQuery = Backend.OnResults(job, MaximumPrice);
+		if state == "query" then
+			return Query(nextQuery);
+		end
+		if job.result then
+			return ShowConfirm();
+		end
+		app.print((L.AUCTIONS_BUY_ALL_NO_BUYOUT or "No buyout within your Maximum Price found for %s, skipping."):format(job.link));
+		Next();
+	end
+	-- Retry when the server drops a query or a browse fails (modern Auction House only).
+	local retryFrame = CreateFrame("Frame");
+	pcall(retryFrame.RegisterEvent, retryFrame, "AUCTION_HOUSE_THROTTLED_MESSAGE_DROPPED");
+	pcall(retryFrame.RegisterEvent, retryFrame, "AUCTION_HOUSE_BROWSE_FAILURE");
+	retryFrame:SetScript("OnEvent", function()
+		if running and listening then Retry(); end
+	end);
+	-- Result events fire several times while the results load, so wait until they settle.
+	eventFrame:SetScript("OnEvent", function()
+		waitToken = waitToken + 1;	-- results are arriving: no need for the watchdog
+		token = token + 1;
+		local myToken = token;
+		C_Timer_After(0.3, function()
+			if myToken == token then OnSettled(); end
+		end);
+	end);
+	ProcessNext = function()
+		if not running then return end
+		if not Backend.IsOpen() then return Finish() end
+		current = tremove(queue, 1);
+		if not current then return Finish() end
+		local job = current;
+		-- The search needs the item's base name (without a random suffix, so every variant matches):
+		-- take it from the item cache, then the row's link, and otherwise load the item first
+		-- (most items in a big list aren't cached yet).
+		local name, link = GetItemInfo(job.itemID);
+		job.link = job.link or link;
+		if not name then
+			name = job.link and job.link:match("|h%[(.+)%]|h");
+		end
+		if name then
+			job.name = name;
+			return Query(function() Backend.Search(job) end);
+		end
+		if not (Item and Item.CreateFromItemID) then
+			return Next();
+		end
+		local item = Item:CreateFromItemID(job.itemID);
+		local waiting = true;
+		item:ContinueOnItemLoad(function()
+			if not waiting or not running or current ~= job then return end
+			waiting = false;
+			job.name = item:GetItemName();
+			job.link = item:GetItemLink() or job.link;
+			if job.name then
+				Query(function() Backend.Search(job) end);
+			else
+				Next();
+			end
+		end);
+		-- Give up on items that never load.
+		C_Timer_After(5, function()
+			if waiting and running and current == job then
+				waiting = false;
+				app.print((L.AUCTIONS_BUY_ALL_NO_BUYOUT or "No buyout within your Maximum Price found for %s, skipping."):format(job.link or ("item:" .. job.itemID)));
+				Next();
+			end
+		end);
+	end
+	StartBuyAll = function(group)
+		if running then
+			app.print(L.AUCTIONS_BUY_ALL_RUNNING or "Buy All is already running.");
+			return;
+		end
+		if not Backend.IsOpen() then
+			app.print(L.AUCTIONS_BUY_ALL_OPEN_AH or "Open the Auction House to use Buy All.");
+			return;
+		end
+		wipe(queue);
+		local seen = {};
+		for _,o in ipairs(group.g or app.EmptyTable) do
+			local itemID, price = o.itemID, o.price;
+			-- Only things ATT tracks as collectible and still missing (some items have an appearance
+			-- but aren't collectible, e.g. profession tools like the Arclight Spanner).
+			if itemID and price and price > 0 and price <= MaximumPrice and o.collectible and not o.collected
+				and not o.saved and o.visible ~= false and not seen[itemID] then
+				seen[itemID] = true;
+				queue[#queue + 1] = { itemID = itemID, link = o.link, row = o };
+			end
+		end
+		total, bought = #queue, 0;
+		if total < 1 then
+			app.print(L.AUCTIONS_BUY_ALL_NOTHING or "There are no uncollected appearances within your Maximum Price to buy.");
+			return;
+		end
+		running = true;
+		ProcessNext();
+	end
+	-- Stop if the Auction House closes mid-run.
+	local closer = CreateFrame("Frame");
+	pcall(closer.RegisterEvent, closer, "AUCTION_HOUSE_CLOSED");
+	closer:SetScript("OnEvent", function()
+		if running then Finish(); end
+	end);
 end
 
 do	-- Auction Item Type
@@ -561,6 +960,7 @@ app:CreateWindow("Auctions", {
 					icon = 135349,
 					description = L.AUCTIONS_APPEARANCES_DESC,
 					SortPriority = 2,
+					BuyAll = true,
 				}),
 				app.CreateFilter(101, {	-- Battle Pets
 					Metas = { "BattlePetWithItem", "Species" },
@@ -710,10 +1110,15 @@ app:CreateWindow("Auctions", {
 						end
 
 						-- Display Test for Raw Data + Filtering
+						-- (several keys can share one option, e.g. Appearances, so only wipe each option once)
+						local wiped = {}
 						for key, searchResults in pairs(searchResultsByKey) do
 							local subdata = self.data.metas[key];
 							if subdata then
-								wipe(subdata.g)
+								if not wiped[subdata] then
+									wipe(subdata.g)
+									wiped[subdata] = true
+								end
 							else
 								subdata = app.CreateRawText(key, {
 									text = key,
@@ -730,6 +1135,23 @@ app:CreateWindow("Auctions", {
 								subdatag[#subdatag + 1] = j
 							end
 							app.Sort(subdatag, SortByPrice)
+						end
+
+						-- Buy All row at the top of Appearances (Classic Auction House only)
+						if StartBuyAll then
+							for _,option in ipairs(data.options) do
+								if option.BuyAll and #option.g > 0 then
+									tinsert(option.g, 1, app.CreateRawText(L.AUCTIONS_BUY_ALL or "Buy All", {
+										icon = 133785,
+										description = L.AUCTIONS_BUY_ALL_DESC or "Searches the Auction House for each uncollected appearance listed below (up to your Maximum Price) and offers the cheapest buyout for each one. Every purchase asks for confirmation first. Bid-only auctions and your own auctions are skipped.",
+										OnClick = function(row, button)
+											StartBuyAll(option);
+											return true;
+										end,
+										OnUpdate = app.AlwaysShowUpdate,
+									}));
+								end
+							end
 						end
 					else
 						tinsert(g, app.CreateRawText(L.AUCTIONS_NO_DATA, {
