@@ -1897,27 +1897,14 @@ s(164845)/i(22196),	-- Thick Obsidian Breastplate
 s(164846)/i(22197),	-- Heavy Obsidian Belt
 s(164847)/i(22198),	-- Jagged Obsidian Shield
 s(164848)/i(22199),	-- Monster - Axe, 2H Arcanite Reaper
-s(164849)/i(22204),	--
-s(164850)/i(22205),	--
-s(164852)/i(22207),	--
 s(164853)/i(22208),	--
 s(164854)/i(22210),	-- Monster - Knuckle, B01 Red
 s(164855)/i(22211),	-- Monster - Knuckle, B01 Red Offhand
-s(164856)/i(22212),	--
 s(164857)/i(22213),	-- Monster - Mace, Hand of Edward the Odd
 s(164858)/i(22215),	-- Monster - Dagger, Bonescraper
-s(164859)/i(22223),	--
 s(164861)/i(22230),	-- Frightmaw Hide
-s(164864)/i(22234),	--
-s(164865)/i(22240),	--
-s(164866)/i(22241),	--
-s(164867)/i(22242),	--
-s(164868)/i(22245),	--
 s(164871)/i(22254),	--
-s(164872)/i(22256),	--
-s(164873)/i(22266),	--
 s(164876)/i(22270),	--
-s(164877)/i(22271),	--
 s(164879)/i(22273),	-- Moonshadow Hood
 s(164912)/i(22341),	-- Monster - Mace, Horde A04 Pale - Bone Wrench
 s(164915)/i(22346),	-- Monster - Mace2H, Unstoppable Force
@@ -7210,12 +7197,10 @@ s(309771)/i(276754),	-- Sunderbark Vigil
 s(309780)/i(276782),	-- Distant Communication Device
 s(309781)/i(276786),	--
 s(309903)/i(276877),	--
-s(309904)/i(276879),	--
 s(309905)/i(276884),	--
 s(309910)/i(276897),	-- A Lesson in Destruction
 s(309914)/i(276901),	-- Uncle's Heroism
 s(309915)/i(276902),	-- Youngster's First Bow
-s(309918)/i(277117),	--
 s(309947)/i(277211),	-- Dudd's Thinkin' Cap
 s(309948)/i(277212),	-- Soulwoven Epaulets
 s(309951)/i(277215),	-- Plain Handwraps \\ Nimble Gloves

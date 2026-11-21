@@ -4556,8 +4556,6 @@ i(19218),	-- Pattern: Mantle of the Timbermaw
 i(19219),	-- Pattern: Flarecore Robe
 i(19220),	-- Pattern: Flarecore Leggings
 i(19226),	-- Fast Test Fist
-i(19258),	-- Ace of Warlords
-i(19268),	-- Ace of Elementals
 i(19286),	-- Fast Test Ammo
 i(19287),	-- Darkmoon Card: Heroism
 i(19288),	-- Darkmoon Card: Blue Dragon

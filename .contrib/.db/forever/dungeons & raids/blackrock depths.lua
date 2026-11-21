@@ -917,7 +917,7 @@ instanceroot(228, {	-- Blackrock Depths
 					i(11626),	-- Blackveil Cape
 					i(11625),	-- Enthralled Sphere
 					i(11624),	-- Kentic Amice
-					--i(22240),	-- Greaves of Withering Despaire \\Commented out until confirmed
+					i(22240),	-- Greaves of Withering Despair
 				},
 			}),
 			e(370, {	-- Lord Roccor
@@ -927,8 +927,8 @@ instanceroot(228, {	-- Blackrock Depths
 					i(11632),	-- Earthslag Shoulders
 					i(11630),	-- Rockshard Pellets
 					i(11631),	-- Stoneshell Guard
-					--i(22234),	-- Mantle of Lost Hope \\Commented out until confirmed
-					--i(22397),	-- Idol of Ferocity \\Commented out until confirmed
+					i(22234),	-- Mantle of Lost Hope
+					i(22397),	-- Idol of Ferocity
 				},
 			}),
 			e(371, {	-- Houndmaster Grebmar
@@ -958,15 +958,18 @@ instanceroot(228, {	-- Blackrock Depths
 					}),
 					n(9027, {	-- Gorosh the Dervish
 						i(11726),	-- Savage Gladiator Chain
-						--i(22257),	-- Bloodclot Band \\Commented out until confirmed
-						--i(22266),	-- Flarethorn \\Commented out until confirmed
-						--i(22271),	-- Leggings of Frenzied Magic \\Commented out until confirmed
+						i(22257),	-- Bloodclot Band
+						i(22266),	-- Flarethorn
+						i(22271),	-- Leggings of Frenzied Magic
 					}),
 					n(9028, {	-- Grizzle
 						i(11610),	-- Plans: Dark Iron Pulverizer (RECIPE!)
 						i(11722),	-- Dregmetal Spaulders
 						i(11702),	-- Grizzle's Skinner
 						i(11703),	-- Stonewall Girdle
+						i(277117, {	-- Savage Gladiator Shoulders
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 						i(22270),	-- Entrenching Boots
 					}),
 					n(9032, {	-- Hedrum the Creeper
@@ -1016,7 +1019,7 @@ instanceroot(228, {	-- Blackrock Depths
 					i(11766),	-- Flameweave Cuffs
 					i(11768),	-- Incendic Bracers
 					i(11765),	-- Pyremail Wristguards
-					--i(19268),	-- Ace of Elementals \\Commented out until confirmed
+					i(19268),	-- Ace of Elementals
 				},
 			}),
 			e(376, {	-- Fineous Darkvire <Chief Architect>
@@ -1026,7 +1029,7 @@ instanceroot(228, {	-- Blackrock Depths
 					i(11839),	-- Chief Architect's Monocle
 					i(11842),	-- Land Surveyor's Mantle
 					i(11841),	-- Senior Designer's Pantaloons
-					--i(22223),	-- Foreman's Head Protector \\Commented out until confirmed
+					i(22223),	-- Foreman's Head Protector
 				},
 			}),
 		}),
@@ -1047,7 +1050,7 @@ instanceroot(228, {	-- Blackrock Depths
 					i(11784),	-- Arbiter's Blade
 					i(11782),	-- Boreal Mantle
 					i(11783),	-- Chillsteel Girdle
-					--i(22241),	-- Dark Warder's Pauldrons \\Commented out until confirmed
+					i(22241),	-- Dark Warder's Pauldrons
 				},
 			}),
 			n(9042, {	-- Verek
@@ -1055,7 +1058,7 @@ instanceroot(228, {	-- Blackrock Depths
 				i(276884, {	-- Verek's Loyal Wraps
 					timeline = { TIMELINE.ADDED_1_60_1 },
 				}),
-				--i(22242),	-- Verek's Leash \\Commented out until confirmed
+				i(22242),	-- Verek's Leash
 			}),
 			n(9476, {	-- Watchman Doomgrip
 				description = "Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",
@@ -1081,11 +1084,11 @@ instanceroot(228, {	-- Blackrock Depths
 					o(161495, {	-- Secret Safe
 						description = "This spawns after defeating Watchman Doomgrip.",
 						groups = {
-							--i(22205),	-- Black Steel Bindings \\Commented out until confirmed
+							i(22205),	-- Black Steel Bindings
 							i(11926),	-- Deathdealer Breastplate
 							i(11929),	-- Haunting Specter Leggings
-							--i(22255),	-- Magma Forged Band \\Commented out until confirmed
-							--i(22256),	-- Mana Shaping Handwraps \\Commented out until confirmed
+							i(22255),	-- Magma Forged Band
+							i(22256),	-- Mana Shaping Handwraps
 							i(11923),	-- The Hammer of Grace
 							i(22254),	-- Wand of Eternal Light
 							i(11920),	-- Wraith Scythe
@@ -1152,7 +1155,7 @@ instanceroot(228, {	-- Blackrock Depths
 				groups = {
 					i(11312),	-- Lost Thunderbrew Recipe
 					i(18043),	-- Coal Miner Boots
-					--i(22275),	-- Firemoss Boots \\Commented out until confirmed
+					i(22275),	-- Firemoss Boots
 					i(18044),	-- Hurley's Tankard
 					i(11735),	-- Ragefury Eyepatch
 				},
@@ -1184,11 +1187,13 @@ instanceroot(228, {	-- Blackrock Depths
 				description = "Private Rocknot must be sent into a drunken rage to aggro Phalanx.\nTo do that, give him 6 dark iron ale mugs, which can be bought from Plugger Spazzring.\nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
 				groups = {
 					i(11744),	-- Bloodfist
+					i(276879, {	-- Backroom Bulwark
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(11745),	-- Fists of Phalanx
-					--i(22212),	-- Golem Fitted Pauldrons \\Commented out until confirmed
+					i(22212),	-- Golem Fitted Pauldrons
 					i(11746),	-- Golem Skull Helm
 					i(11743),	-- Rockfist
-					--i(22204),	-- Wristguards of Renown \\Commented out until confirmed
 				},
 			}),
 			e(384, {	-- Ambassador Flamelash
@@ -1208,7 +1213,7 @@ instanceroot(228, {	-- Blackrock Depths
 				n(8923, {	-- Panzor the Invincible
 					i(11785),	-- Rock Golem Bulwark
 					i(11787),	-- Shalehusk Boots
-					--i(22245),	-- Soot Encrusted Footwear \\Commented out until confirmed
+					i(22245),	-- Soot Encrusted Footwear
 					i(11786),	-- Stone of the Earth
 				}),
 			}),
@@ -1262,11 +1267,11 @@ instanceroot(228, {	-- Blackrock Depths
 					i(11684),	-- Ironfoe
 					i(16724),	-- Lightforge Gauntlets
 					i(11924),	-- Robes of the Royal Crown
-					--(22207),	-- Sash of the Grand Hunt \\Commented out until confirmed
+					i(22207),	-- Sash of the Grand Hunt
 					i(12553),	-- Swiftwalker Boots
 					i(11928),	-- Thaurissan's Royal Scepter
 					i(11930),	-- The Emperor's New Cape
-					--(22204),	-- Wristguards of Renown \\Commented out until confirmed
+					i(22204),	-- Wristguards of Renown
 					i(12033),	-- Thaurissan Family Jewels
 				},
 			}),

@@ -790,7 +790,7 @@ instanceroot(230, {	-- Dire Maul
 					creatureID = 13280,
 					groups = {
 						i(18299),	-- Hydrospawn Essence
-						--i(19268),	-- Ace of Elementals //Commented out until confirmed
+						i(19268),	-- Ace of Elementals
 						i(18305),	-- Breakwater Legguards
 						i(18307),	-- Riptide Shoes
 						i(18317),	-- Tempest Talisman
@@ -992,7 +992,7 @@ instanceroot(230, {	-- Dire Maul
 					creatureID = 11501,
 					groups = {
 						i(18780),	-- Top Half of Advanced Armorsmithing: Volume I
-						--i(19258),	-- Ace of Warlords //Commented out until confirmed
+						i(19258),	-- Ace of Warlords
 						i(18522),	-- Band of the Ogre King
 						i(18520),	-- Barbarous Blade
 						i(18525),	-- Bracers of Prosperity
