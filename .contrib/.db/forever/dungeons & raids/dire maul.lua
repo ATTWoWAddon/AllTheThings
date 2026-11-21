@@ -480,6 +480,9 @@ instanceroot(230, {	-- Dire Maul
 					objective(1, {	-- 0/1 Book of Incantations
 						provider = { "i", 18261 },	-- Book of Incantations
 					}),
+					i(270127, {	-- Incanter's Pantaloons
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					i(18410),	-- Sprinter's Sword
 					i(18411),	-- Spry Boots
 				},
