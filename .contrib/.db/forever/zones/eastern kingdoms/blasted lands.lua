@@ -52,6 +52,43 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 					objective(1),	-- 0/1 Speak with Sergeant Danneth
 				},
 			}),
+			q(81919, {	-- Brought to Heel
+				sourceQuest = 81917,	-- Chains That Bind
+				qg = 7506,	-- Bloodmage Lynnore
+				qi = 220216,	-- Infernal Lasso (PQI!)
+				coord = { 50.6, 14.2, MAP.BLASTED_LANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { HUNTER, DRUID },
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/1 Fel Lifeblood
+						provider = { "i", 220213 },	-- Fel Lifeblood
+						cr = 221740,	-- Calefactus the Unleashed
+					}),
+					i(219345),	-- Infernal Lasso
+				},
+			}),
+			q(81917, {	-- Chains That Bind
+				sourceQuest = 81900,	-- The Burning Beast
+				qg = 7506,	-- Bloodmage Lynnore
+				coord = { 50.6, 14.2, MAP.BLASTED_LANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { WARRIOR, HUNTER, DRUID },
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/5 Infernal Chain Link
+						provider = { "i", 220214 },	-- Infernal Chain Link
+						crs = {
+							6006,	-- Shadowsworn Adept
+							6004,	-- Shadowsworn Cultist
+							6009,	-- Shadowsworn Dreadweaver
+							6007,	-- Shadowsworn Enforcer
+							6005,	-- Shadowsworn Thug
+							6008,	-- Shadowsworn Warlock
+						},
+					}),
+				},
+			}),
 			q(87295, {	-- Deflective Surface
 				qg = 3546,	-- Bernie Heisten
 				coord = { 63.4, 16.8, MAP.BLASTED_LANDS },
@@ -247,6 +284,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				groups = {
 					i(8423),	-- Cerebral Cortex Compound
 				},
+			}),
+			q(81900, {	-- The Burning Beast
+				provider = { "o", 441061 },	-- Weathered Etching
+				coord = { 14.5, 36.4, MAP.SEARING_GORGE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 45,
 			}),
 			q(2743, {	-- The Cover of Darkness
 				sourceQuest = 2721,	-- Kirith
