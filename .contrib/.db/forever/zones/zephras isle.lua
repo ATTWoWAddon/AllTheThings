@@ -31,7 +31,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			exploration(17676),	-- Windsong Standing Stones
 		}),
 		n(FACTIONS, {
-			faction(FACTION_NIGHTCLAW_DRUIDS, {
+			faction(FACTION_NIGHTCLAW_DRUIDS, {	-- Nightclaw Druids
+				icon = 132115,
 				groups = {
 					title(38, {	-- %s of the Nightclaw
 						description = "Awarded automatically upon reaching Exalted with the Nightclaw Druids.",

@@ -36,6 +36,7 @@ instanceroot(228, {	-- Blackrock Depths
 	groups = {
 		n(FACTIONS, {
 			faction(FACTION_THORIUM_BROTHERHOOD, {	-- Thorium Brotherhood
+				icon = 133235,
 				maps = { MAP.SEARING_GORGE },
 				OnTooltip = [[_.OnTooltipDB.ThoriumBrotherhood]],
 			}),

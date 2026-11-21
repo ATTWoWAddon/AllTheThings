@@ -319,7 +319,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 			exploration(396),	-- Winterhoof Water Well
 		}),
 		n(FACTIONS, {
-			faction(FACTION_FOREVER_EARTHEN_RING, {
+			faction(FACTION_FOREVER_EARTHEN_RING, {	-- Earthen Ring
+				icon = 456567,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),

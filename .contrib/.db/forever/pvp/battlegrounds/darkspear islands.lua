@@ -17,9 +17,11 @@ battleground(MAP.DARKSPEAR_ISLANDS, {
 		}),
 		n(FACTIONS, {
 			faction(2798, {	-- Darkspear Raiders
+				icon = 132485,
 				races = HORDE_ONLY,
 			}),
 			faction(2799, {	-- Theramore Expeditionary Force
+				icon = 132486,
 				races = ALLIANCE_ONLY,
 			}),
 		}),

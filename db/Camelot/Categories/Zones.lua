@@ -5180,8 +5180,8 @@ h(-12,{
 ach(62356,{
 crit(112671,{achID=62355,awp=16001,id=11})})}),
 h(-31,{
-faction(2747),
-faction(2765)}),
+faction(2747,{icon=136097}),
+faction(2765,{icon=456570})}),
 h(-30,{
 exp(17145,{
 crit(116907,{achID=62356,id=1})}),
@@ -5988,7 +5988,7 @@ crit(913,{achID=736,id=1})}),
 exp(396,{
 crit(905,{achID=736,id=1})})}),
 h(-31,{
-faction(2787,{awp=16001})}),
+faction(2787,{awp=16001,icon=456567})}),
 h(-45,{
 q(96294,{awp=16001,coords={
 [1412]={{33.4,22.4}}},lvl=23,qgs={259118},qss={273658},races={2,5,8,96},g={
@@ -12401,7 +12401,7 @@ crit(960,{achID=760,id=7})}),
 exp(284,{
 crit(961,{achID=760,id=13})})}),
 h(-31,{
-faction(2740,{awp=16001}),
+faction(2740,{awp=16001,icon=236693}),
 faction(349,{icon=132292,OnTooltip=_.OnTooltipDB.Ravenholdt}),
 faction(70,{description="Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",maxReputation={70,0},minReputation={70,-1}})}),
 prof(633,{c={4},g={
@@ -17097,7 +17097,7 @@ exp(16731,{
 crit(116894,{achID=62354,id=12})})}),
 h(-31,{
 faction(2826,{r=2}),
-faction(2827)}),
+faction(2827,{icon=133784})}),
 h(-32,{
 fp(3276,{coords={
 [2548]={{60.6,81.6}}},crs={257087},r=2}),
@@ -22203,8 +22203,8 @@ exp(16663),
 exp(16625),
 exp(17676)}),
 h(-31,{
-faction(2758,{
-title(38,{description="Awarded automatically upon reaching Exalted with the Nightclaw Druids."})})}),
+faction(2758,{icon=132115,g={
+title(38,{description="Awarded automatically upon reaching Exalted with the Nightclaw Druids."})}})}),
 h(-45,{
 q(93746,{coords={
 [2521]={{59,79.6}}},lvl=4,qgs={251968},r=1,sourceQuests={93738},sym={{"select","itemID",250339}},g={

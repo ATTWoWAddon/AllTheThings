@@ -29,7 +29,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			exploration(284),	-- The Uplands
 		}),
 		n(FACTIONS, {
-			faction(FACTION_FOREVER_KIRIN_TOR, {
+			faction(FACTION_FOREVER_KIRIN_TOR, {	-- Kirin Tor
+				icon = 236693,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			faction(FACTION_RAVENHOLDT, {	-- Ravenholdt

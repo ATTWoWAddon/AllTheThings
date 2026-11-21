@@ -11,8 +11,12 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 			ach(62356),	-- Explore Mount Hyjal
 		}),
 		n(FACTIONS, {
-			faction(FACTION_BARKSKIN_BURROW),	-- Barkskin Burrow
-			faction(FACTION_FOREVER_GUARDIANS_OF_HYJAL),	-- Guardians of Hyjal
+			faction(FACTION_BARKSKIN_BURROW, {	-- Barkskin Burrow
+				icon = 136097,
+			}),
+			faction(FACTION_FOREVER_GUARDIANS_OF_HYJAL, {	-- Guardians of Hyjal
+				icon = 456570,
+			}),
 		}),
 		explorationHeader({
 			exploration(17145),	-- Cradle of Tranquility

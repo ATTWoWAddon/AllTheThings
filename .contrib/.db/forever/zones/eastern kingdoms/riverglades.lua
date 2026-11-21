@@ -30,7 +30,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			faction(2826, {	-- Brotherhood of the Horse
 				races = ALLIANCE_ONLY,
 			}),
-			faction(2827),	-- Powderfuse
+			faction(2827, {	-- Powderfuse
+				icon = 133784,
+			}),
 		}),
 		n(FLIGHT_PATHS, {
 			fp(3276, {	-- Farholde Keep, Riverglades
