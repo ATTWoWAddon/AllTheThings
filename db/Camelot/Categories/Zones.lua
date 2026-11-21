@@ -20958,8 +20958,6 @@ i(249905,{b=1,requireSkill=171})}}),
 q(92110,{awp=16001,coords={
 [1436]={{41,79}}},cost={{"i",730,3}},lvl=10,qgs={249713},r=2,requireSkill=171,sym={{"select","itemID",4596}},g={
 r(4508,{b=1,itemID=4597,learnedAt=50,requireSkill=171,skillID=2937})}}),
-q(93928,{coords={
-[1436]={{32.2,51.2}}},lvl=15,maps={1434},qgs={6271},r=2,rwp=16001,u=2}),
 q(102,{coords={
 [1436]={{56.4,47.6}}},lvl=8,qgs={821},r=2,g={
 qo(1,{crs={98,117,123,124,125,452,453,500,501,506,1065,1426},providers={{"i",725}}}),

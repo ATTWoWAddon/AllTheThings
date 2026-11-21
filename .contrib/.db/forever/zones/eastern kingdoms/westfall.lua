@@ -379,14 +379,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					i(4597),	-- Recipe: Minor Discolored Healing Potion (RECIPE!)
 				},
 			}),
-			q(93928, {	-- Of Mice and Milk
-				qg = 6271,	-- Mouse
-				coord = { 32.2, 51.2, MAP.WESTFALL },
-				maps = { MAP.STRANGLETHORN_VALE },
-				timeline = { TIMELINE.REMOVED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				lvl = 15,
-			}),
 			q(102, {	-- Patrolling Westfall
 				qg = 821,	-- Captain Danuvin
 				coord = { 56.4, 47.6, MAP.WESTFALL },

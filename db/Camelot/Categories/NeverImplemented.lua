@@ -519,5 +519,7 @@ i(18852,{b=1,c={9},f=53,spellID=23273}),
 i(18834,{b=1,c={1},f=53,spellID=5579}),
 s(162120,15197,{b=1,f=9})}}),
 h(-45,{
-q(785,{description="A Classic beta quest that is still in the client's quest data but has no quest giver in WoW Forever."})})}
+q(785,{description="A Classic beta quest that is still in the client's quest data but has no quest giver in WoW Forever."}),
+q(93928,{coords={
+[1436]={{32.2,51.2}}},description="A quest that worked during the WoW Forever beta but was removed before it went live.",lvl=15,maps={1434},qgs={6271},r=2})})}
 end)
