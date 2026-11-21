@@ -2713,14 +2713,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1350, {	-- Theresa Moulaine <Robe Vendor>
 				coord = { 53.4, 58.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(2617),	-- Burning Robes
-					i(2615),	-- Chromatic Robe
-					i(2613),	-- Double-Stitched Robes
-					i(2612),	-- Plain Robe
-					i(2614),	-- Robe of Apprenticeship
-					i(2616),	-- Shimmering Silk Robes
-					i(2618),	-- Silver Dress Robes
+				sym = {
+					SymSelector.select("VENDOR_ROBES"),	-- Robes
+					{ "pop" },
 				},
 			}),
 			n(5510, {	-- Thulman Flintcrag <Guns Vendor>
@@ -2745,15 +2740,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1309, {	-- Wynne Larson <Robe Merchant>
 				coord = { 52.0, 83.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2617,	-- Burning Robes
-					2615,	-- Chromatic Robe
-					2613,	-- Double Stitched Robes
-					2612,	-- Plain Robe
-					2614,	-- Robe Of Apprenticeship
-					2616,	-- Shimmering Silk Robes
-					2618,	-- Silver Dress Robes
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ROBES"),	-- Robes
+					{ "pop" },
+				},
 			}),
 		}),
 	},

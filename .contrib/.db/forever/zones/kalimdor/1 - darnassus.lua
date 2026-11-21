@@ -561,15 +561,10 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4172, {	-- Anadyia
 				coord = { 54.6, 83.6, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2617,	-- Burning Robes
-					2615,	-- Chromatic Robe
-					2613,	-- Double Stitched Robes
-					2612,	-- Plain Robe
-					2614,	-- Robe Of Apprenticeship
-					2616,	-- Shimmering Silk Robes
-					2618,	-- Silver Dress Robes
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ROBES"),	-- Robes
+					{ "pop" },
+				},
 			}),
 			n(4203, {	-- Ariyell Skyshadow <Weapon Merchant>
 				coord = { 58.8, 44.5, MAP.DARNASSUS },

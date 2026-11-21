@@ -1418,15 +1418,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5156, {	-- Maeva Snowbraid
 				coord = { 38.8, 5.6, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					2617,	-- Burning Robes
-					2615,	-- Chromatic Robe
-					2613,	-- Double Stitched Robes
-					2612,	-- Plain Robe
-					2614,	-- Robe Of Apprenticeship
-					2616,	-- Shimmering Silk Robes
-					2618,	-- Silver Dress Robes
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ROBES"),	-- Robes
+					{ "pop" },
+				},
 			}),
 			n(5107, {	-- Mangorn Flinthammer
 				coord = { 32.0, 58.8, MAP.IRONFORGE },

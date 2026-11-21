@@ -1549,22 +1549,16 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
 						SymSelector.VENDOR_PADDED,	-- Padded
 						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_ROBES,	-- Robes
 						SymSelector.VENDOR_RUSSET,	-- Russet
 						SymSelector.VENDOR_STUDDED,	-- Studded
 					},
 					{ "pop" },
 				},
 				groups = {
-					i(2617),	-- Burning Robes
-					i(2615),	-- Chromatic Robe
-					i(2613),	-- Double Stitched Robes
 					i(12255, {	-- Pale Leggings
 						isLimited = true,
 					}),
-					i(2612),	-- Plain Robe
-					i(2614),	-- Robe Of Apprenticeship
-					i(2616),	-- Shimmering Silk Robes
-					i(2618),	-- Silver Dress Robes
 					i(2463),	-- Studded Doublet
 				},
 			}),
