@@ -830,19 +830,11 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
 						SymSelector.VENDOR_KNITTED,	-- Knitted
 						SymSelector.VENDOR_PADDED,	-- Padded
+						SymSelector.VENDOR_ROBES,	-- Robes
 						SymSelector.VENDOR_RUSSET,	-- Russet
 						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
 					},
 					{ "pop" },
-					{ "select", "itemID",
-						2617,	-- Burning Robes
-						2615,	-- Chromatic Robe
-						2613,	-- Double Stitched Robes
-						2612,	-- Plain Robe
-						2614,	-- Robe Of Apprenticeship
-						2616,	-- Shimmering Silk Robes
-						2618,	-- Silver Dress Robes
-					},
 				},
 			}),
 			n(3016, {	-- Tand <Basket Weaver>
