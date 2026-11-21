@@ -4024,6 +4024,38 @@ root(ROOTS.WorldDrops, {
 				MAP.FELWOOD,
 			},
 		}),
+		i(814, {	-- Flask of Oil
+			maps = {
+				MAP.DEADMINES,
+				MAP.DUSKWOOD,
+				MAP.STONETALON_MOUNTAINS,
+				MAP.THE_BARRENS,
+				MAP.TIRISFAL_GLADES,
+				MAP.WESTFALL,
+				MAP.WETLANDS,
+			},
+			crs = {
+				1032,	-- Black Ooze
+				1030,	-- Black Slime
+				9336,	-- Boss Copperplug
+				1031,	-- Crimson Ooze
+				276061,	-- Decrepit Harvester
+				5836,	-- Engineer Whirleygig
+				573,		-- Foe Reaper 4000
+				1731,	-- Goblin Craftsman
+				36,		-- Harvest Golem
+				115,		-- Harvest Reaper
+				114,		-- Harvest Watcher
+				1033,	-- Monstrous Ooze
+				271749,	-- Oil Slime
+				480,		-- Rusty Harvest Golem
+				14433,	-- Sludginn
+				271750,	-- Tar Ooze
+				3992,	-- Venture Co. Engineer
+				3993,	-- Venture Co. Machine Smith
+				3286,	-- Venture Co. Overseer
+			},
+		}),
 		i(2589, {	-- Linen Cloth
 			maps = {
 				MAP.DUN_MOROGH,
