@@ -7579,9 +7579,9 @@ hqt(88770),
 hqt(94952),
 hqt(94426)})}),
 ah(2838,{type="fa",g={
-hqt(97456,{isWeekly=1}),
-hqt(99246,{isWeekly=1}),
-hqt(99251,{isWeekly=1}),
+hqt(97456,{an="i:277283",isWeekly=1}),
+hqt(99246,{an="i:286563",isWeekly=1}),
+hqt(99251,{an="i:286563",isWeekly=1}),
 hqt(96495),
 hqt(97316)}}),
 h(-742,{awp=120005,g={

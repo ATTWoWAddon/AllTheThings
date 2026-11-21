@@ -38,13 +38,10 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 			}),
 			ach(62057),	-- Midnight: The Highest Peaks
 			ach(61910, {	-- Mrglgrgl of Grglmrgl
-				title(766, {timeline = { ADDED_12_0_5 }}),	-- <Name>, Mrglgrgl of Grglmrgl
+				title(766, { timeline = { ADDED_12_0_5 } }),	-- <Name>, Mrglgrgl of Grglmrgl
 			}),
 			ach(60891, { timeline = { ADDED_12_0_1_LAUNCH } }),	-- The Crimson Rogue
-			ach(63713, {	-- The Coreway Advance
-				timeline = { ADDED_12_1_7 },
-				--groups = { i(XXXXXX) },	-- TBD
-			}),
+			ach(63713, { timeline = { ADDED_12_1_7 } }),	-- The Coreway Advance
 			ach(61854, {	-- The Midnight Explorer
 				-- Meta Achievement
 				sym = {{"meta_achievement",
@@ -53,6 +50,10 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 					61857,	-- Explore Voidstorm
 					61856,	-- Explore Zul'Aman
 				}},
+			}),
+			ach(63519, {	-- The Promise of Tomorrow
+				timeline = { ADDED_12_1_5 },
+				groups = { title(780) },	-- <Name>, Light's Faithful
 			}),
 			ach(42117),	-- The War of Light and Shadow
 		}),
