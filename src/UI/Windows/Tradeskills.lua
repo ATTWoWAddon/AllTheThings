@@ -17,6 +17,7 @@ local GameTooltip = GameTooltip;
 -- WoW API Cache
 local GetItemID = app.WOWAPI.GetItemID;
 local GetSpellName = app.WOWAPI.GetSpellName;
+local GetSpellInfo = app.WOWAPI.GetSpellInfo;
 local IsSpellKnown = app.WOWAPI.IsSpellKnown;
 local CraftTypeToCraftTypeID = {
 	optimal = 3,

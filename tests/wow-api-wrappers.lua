@@ -55,6 +55,33 @@ do
 end
 
 do
+	local modernCalls = {}
+	local api, env = initialize({
+		ChatFrameUtil = {DisplayTimePlayed = function(...) modernCalls.played = {...}; return "displayed" end},
+		ChatFrame_DisplayTimePlayed = rejectLegacy,
+	})
+	-- Intercept Blizzard's real entry point, preserving ordinary chat output.
+	local suppress = true
+	equal(api.WrapDisplayTimePlayed(function(original, ...)
+		if suppress then suppress = false; return end
+		return original(...)
+	end), true)
+	equal(env.ChatFrameUtil.DisplayTimePlayed("chat", 100, 10), nil)
+	equal(modernCalls.played, nil, "programmatic time-played request suppressed")
+	equal(env.ChatFrameUtil.DisplayTimePlayed("chat", 200, 20, "extra"), "displayed")
+	equal(modernCalls.played[2], 200)
+	equal(#modernCalls.played, 3, "modern time-played arguments retained")
+	local legacy, legacyEnv = initialize({
+		ChatFrame_DisplayTimePlayed = function(...) return select("#", ...), ... end,
+	}, 11509)
+	equal(legacy.WrapDisplayTimePlayed(function(original, ...) return original(...) end), true)
+	local count, first = legacyEnv.ChatFrame_DisplayTimePlayed("chat", 1, 2, "extra")
+	equal(count, 4, "legacy time-played arguments retained")
+	equal(first, "chat")
+	equal(initialize({}).WrapDisplayTimePlayed(function() end), false, "missing chat entry point")
+end
+
+do
 	local api = initialize({
 		C_MerchantFrame = {GetItemInfo = function(index) equal(index, 3); return sentinel end},
 		GetMerchantItemInfo = rejectLegacy,
@@ -76,11 +103,190 @@ do
 end
 
 do
+	-- Modern formatting receives whole seconds and keeps ATT's abbreviated label.
+	local formatter = {}
+	function formatter:Init(_, abbreviation) equal(abbreviation, 2); self.units = 2 end
+	function formatter:Format(seconds) equal(seconds, 65); return "1 min 5 sec" end
+	local times = initialize({
+		SecondsFormatter = {Abbreviation = {Truncate = 2}},
+		SecondsFormatterMixin = formatter,
+		CreateFromMixins = function(mixin) return setmetatable({}, {__index = mixin}) end,
+		SecondsToTime = rejectLegacy,
+	})
+	equal(times.SecondsToTime(65.9), "1 min 5 sec")
+	equal(times.SecondsToTime(0.9), "")
+	local nativeTimes = initialize({SecondsToTime = function(seconds) return "legacy " .. seconds end}, 11509)
+	equal(nativeTimes.SecondsToTime(65), "legacy 65")
+end
+
+do
+    local current = {recordID = 123, entryType = 1, totalNumStored = 2, totalNumPlaced = 3, remainingRedeemable = 4}
+    local housing = initialize({C_HousingCatalog = {
+        GetCatalogEntryInfo = function(entry) equal(entry.recordID, 123); return current end,
+    }})
+    equal(housing.GetHousingCatalogEntryInfo({recordID = 123}), current, "current housing table retained")
+    local old = {entryID = {recordID = 321, entryType = 1}, quantity = 2, numPlaced = 3, remainingRedeemable = 4}
+    local normalized = housing.NormalizeHousingCatalogEntryInfo(old)
+    equal(normalized.recordID, 321); equal(normalized.entryType, 1)
+    equal(normalized.totalNumStored, 2); equal(normalized.totalNumPlaced, 3)
+    equal(normalized.remainingRedeemable, 4)
+    equal(old.recordID, nil, "Blizzard-owned old table not modified")
+    equal(housing.NormalizeHousingCatalogEntryInfo(nil), nil)
+end
+
+do
+    local housing = initialize({C_HousingCatalog = {CreateCatalogSearcher = function() return sentinel end}})
+    equal(housing.CreateHousingCatalogSearcher(), sentinel)
+end
+
+do
+	-- Modern spell records retain ATT's tuple contract and unknown-spell nils.
+	local spells = initialize({
+		Enum = {SpellBookSpellBank = {Player = 0, Pet = 1}},
+		C_Spell = {
+			GetSpellInfo = function(id)
+				if id == 999 then return end
+				equal(id, 123)
+				return {name = "Spell", iconID = 10, castTime = 1500, minRange = 0, maxRange = 40, spellID = id, originalIconID = 11}
+			end,
+			GetSpellSubtext = function() return "Rank 2" end,
+		},
+		C_SpellBook = {
+			GetSpellBookItemInfo = function(index, bank)
+				equal(index, 4); equal(bank, 1, "pet spellbook bank"); return {spellID = 123}
+			end,
+		},
+	})
+	local name, rank, icon, castTime, minRange, maxRange, id, originalIcon = spells.GetSpellInfo(123)
+	equal(name, "Spell"); equal(rank, "Rank 2"); equal(icon, 10); equal(castTime, 1500)
+	equal(minRange, 0); equal(maxRange, 40); equal(id, 123); equal(originalIcon, 11)
+	equal(select("#", spells.GetSpellInfo(999)), 0, "unknown spell returns no values")
+	equal(select(7, spells.GetSpellInfo(4, "pet")), 123, "spellbook index translated to spell ID")
+	local classicSpells = initialize({
+		C_Spell = {GetSpellInfo = function() error("spellbook index sent to spell-ID API") end},
+		GetSpellInfo = function(index, bookType) equal(index, 4); equal(bookType, "spell"); return "Ranked Spell", "Rank 3", 7, 8, 9, 10, 321 end,
+	}, 50504)
+	equal(select(7, classicSpells.GetSpellInfo(4, "spell")), 321, "native Classic spellbook lookup preserved")
+end
+
+do
+	-- Player spell knowledge selects the explicit Player bank.
+	local knownBank
+	local spells = initialize({
+		Enum = {SpellBookSpellBank = {Player = 0, Pet = 1}},
+		C_SpellBook = {
+			IsSpellKnown = function(id, bank) knownBank = bank; return id == 123 end,
+		},
+		IsPlayerSpell = rejectLegacy,
+	})
+	equal(spells.IsPlayerSpell(123), true)
+	equal(knownBank, 0, "player bank explicitly selected")
+	equal(spells.IsPlayerSpell(999), false)
+end
+
+do
+	-- Buff identities can be used only when the client discloses spellId.
+	local secret, aura = {}, {spellId = 123}
+	local buffs = initialize({
+		C_UnitAuras = {GetBuffDataByIndex = function(unit, index, filter)
+			equal(unit, "player"); equal(index, 2); equal(filter, "HELPFUL"); return aura
+		end},
+		UnitBuff = rejectLegacy,
+		issecretvalue = function(value) return value == secret end,
+	})
+	equal(buffs.GetBuffDataByIndex("player", 2, "HELPFUL"), aura)
+	aura = {spellId = secret}
+	equal(buffs.GetBuffDataByIndex("player", 2, "HELPFUL"), nil, "secret spell ID not exposed to callbacks")
+	aura = secret
+	equal(buffs.GetBuffDataByIndex("player", 2, "HELPFUL"), nil, "secret aura not inspected")
+	aura = nil
+	equal(buffs.GetBuffDataByIndex("player", 2, "HELPFUL"), nil)
+	local nativeBuffs = initialize({UnitBuff = function(unit, index)
+		if index > 1 then return end
+		return "Buff", nil, nil, nil, nil, nil, nil, nil, nil, 321
+	end}, 20506)
+	equal(nativeBuffs.GetBuffDataByIndex("player", 1).spellId, 321, "native tenth return converted to spellId")
+	equal(nativeBuffs.GetBuffDataByIndex("player", 2), nil)
+end
+
+do
 	local modernInfo = function() return 123 end
 	local modern = initialize({C_SpecializationInfo = {GetSpecializationInfo = modernInfo}, GetSpecializationInfo = rejectLegacy})
 	equal(modern.GetSpecializationInfo, modernInfo)
 	local nativeInfo = function() return 321 end
 	equal(initialize({GetSpecializationInfo = nativeInfo}, 50504).GetSpecializationInfo, nativeInfo)
 	equal(initialize({}).GetSpecializationInfo, false, "missing specialization data remains unavailable")
+end
+
+do
+	-- Combat-log access remains limited to clients with a public payload API.
+	for _, interface in ipairs({11509, 20506, 38002, 50504}) do
+		local combat = initialize({
+			C_CombatLog = {GetCurrentEventInfo = function() return 1, "UNIT_DIED", 3 end},
+			CombatLogGetCurrentEventInfo = rejectLegacy,
+		}, interface)
+		local _, event = combat.CombatLogGetCurrentEventInfo()
+		equal(event, "UNIT_DIED", "Classic uses public combat-log API")
+	end
+	for _, interface in ipairs({120105, 16001}) do
+		local combat = initialize({
+			C_CombatLogSecure = {GetCurrentEventInfo = function() error("SecureOnly API accessed") end},
+			CombatLogGetCurrentEventInfo = function() error("unavailable public payload fallback accessed") end,
+		}, interface)
+		equal(combat.CombatLogGetCurrentEventInfo, false, "Retail/Forever payload unavailable")
+	end
+	local nativeCombat = initialize({CombatLogGetCurrentEventInfo = function() return "native" end}, 11509)
+	equal(nativeCombat.CombatLogGetCurrentEventInfo(), "native")
+	equal(initialize({}, 11509).CombatLogGetCurrentEventInfo, false, "Classic without public payload remains unavailable")
+end
+
+do
+	-- Every current client opens categories through Settings.
+	for _, interface in ipairs({11509, 16001, 20506, 38002, 50504, 120105}) do
+		local opened;
+		local options = initialize({
+			Settings = {OpenToCategory = function(id) opened = id; return sentinel end},
+			InterfaceOptionsFrame_OpenToCategory = function() error("removed options API selected") end,
+		}, interface);
+		equal(options.OpenOptionsCategory(17), sentinel, "Settings opening return value");
+		equal(opened, 17, "numeric options category ID on interface " .. interface);
+		equal(options.OpenOptionsCategory("ATT"), sentinel, "Settings opening return value");
+		equal(opened, "ATT", "string options category ID on interface " .. interface);
+	end
+end
+
+do
+	-- Every current client registers root and nested categories through Settings.
+	for _, interface in ipairs({11509, 16001, 20506, 38002, 50504, 120105}) do
+		local order, rootCategory, childCategory = {}, {ID=10}, {ID=11};
+		local rootFrame, childFrame = {}, {};
+		local options = initialize({
+			Settings = {
+				RegisterCanvasLayoutCategory = function(frame, name)
+					equal(frame, rootFrame, "root frame identity");
+					order[#order+1] = "root:" .. name;
+					return rootCategory;
+				end,
+				RegisterAddOnCategory = function(category)
+					equal(category, rootCategory, "register returned root category");
+					order[#order+1] = "addon";
+				end,
+				RegisterCanvasLayoutSubcategory = function(parent, frame, name)
+					equal(parent, rootCategory, "subcategory parent identity");
+					equal(frame, childFrame, "subcategory frame identity");
+					order[#order+1] = "child:" .. name;
+					return childCategory;
+				end,
+			},
+			InterfaceOptions_AddCategory = function() error("removed category registration API selected") end,
+		}, interface);
+		local category, categoryID = options.RegisterOptionsCategory(rootFrame, "ATT");
+		equal(category, rootCategory);
+		equal(categoryID, 10);
+		category, categoryID = options.RegisterOptionsCategory(childFrame, "Audio", rootCategory, "ATT");
+		equal(category, childCategory);
+		equal(categoryID, 11);
+		equal(table.concat(order, ","), "root:ATT,addon,child:Audio", "root-before-child registration on interface " .. interface);
+	end
 end
 print("WoW API wrapper tests passed: " .. total .. " assertions")

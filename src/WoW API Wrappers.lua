@@ -229,8 +229,7 @@ AssignAPIWrapper("GetSpellName",
 -- GetSpellRank was removed in 11.0
 AssignAPIWrapper("GetSpellRank", GetSpellRank, app.EmptyFunction)
 
--- These two functions behave drastically-differently. They are not a direct swap without proper handling
--- AssignAPIWrapper("GetSpellInfo", C_Spell and C_Spell.GetSpellInfo, GetSpellInfo)
+-- GetSpellInfo below adapts the modern result to the legacy tuple and spellbook-index forms.
 
 -- SpellBook APIs
 local C_SpellBook = C_SpellBook
@@ -257,6 +256,28 @@ AssignAPIWrapper("GetAddOnMetadata", C_AddOns and C_AddOns.GetAddOnMetadata, Get
 local ChatFrameUtil = ChatFrameUtil;
 lib.InsertChatLink = false; -- Optional when the client has no chat insertion API.
 AssignAPIWrapper("InsertChatLink", ChatFrameUtil and ChatFrameUtil.InsertLink, ChatEdit_InsertLink);
+
+-- The Blizzard event handler calls the native entry point directly.
+local function WrapLegacyDisplayTimePlayed(handler)
+	local original = ChatFrame_DisplayTimePlayed;
+	if not original then return false; end
+	ChatFrame_DisplayTimePlayed = function(...)
+		return handler(original, ...);
+	end;
+	return true;
+end;
+
+AssignAPIWrapper("WrapDisplayTimePlayed",
+	ChatFrameUtil and function(handler)
+		local original = ChatFrameUtil.DisplayTimePlayed;
+		if not original then return WrapLegacyDisplayTimePlayed(handler); end
+		ChatFrameUtil.DisplayTimePlayed = function(chatFrame, totalTime, levelTime)
+			return handler(original, chatFrame, totalTime, levelTime);
+		end;
+		return true;
+	end,
+	WrapLegacyDisplayTimePlayed);
+
 -- Merchant information uses the modern table contract on every client.
 AssignAPIWrapper("GetMerchantItemInfo",
 	C_MerchantFrame and C_MerchantFrame.GetItemInfo,
@@ -269,4 +290,209 @@ AssignAPIWrapper("GetMerchantItemInfo",
 		};
 	end);
 
+-- ATT's remaining-time label uses abbreviated units, at most two terms,
+-- and truncates fractional seconds, matching its former SecondsToTime use.
+local RemainingTimeFormatter;
+AssignAPIWrapper("SecondsToTime",
+	SecondsFormatter and SecondsFormatterMixin and CreateFromMixins and function(seconds)
+		seconds = math.floor(seconds);
+		if seconds <= 0 then return ""; end
+		if not RemainingTimeFormatter then
+			RemainingTimeFormatter = CreateFromMixins(SecondsFormatterMixin);
+			RemainingTimeFormatter:Init(0, SecondsFormatter.Abbreviation.Truncate, false, false, false);
+		end
+		return RemainingTimeFormatter:Format(seconds);
+	end,
+	SecondsToTime);
+
+-- Housing catalog data switched from compound entryID and quantity fields
+-- to recordID, entryType, totalNumStored and totalNumPlaced in 12.0.5.
+-- Normalize older clients without modifying Blizzard-owned entry tables.
+lib.NormalizeHousingCatalogEntryInfo = function(info)
+	if not info or info.recordID ~= nil or not info.entryID then return info; end
+	local normalized = {};
+	for key, value in pairs(info) do normalized[key] = value; end
+	normalized.recordID = info.entryID.recordID;
+	normalized.entryType = info.entryID.entryType;
+	normalized.totalNumStored = info.totalNumStored or info.quantity or 0;
+	normalized.totalNumPlaced = info.totalNumPlaced or info.numPlaced or 0;
+	return normalized;
+end;
+local C_HousingCatalog = C_HousingCatalog;
+if app.GameBuildVersion >= 110207 and C_HousingCatalog and C_HousingCatalog.GetCatalogEntryInfo then
+	lib.GetHousingCatalogEntryInfo = function(entryID)
+		return lib.NormalizeHousingCatalogEntryInfo(C_HousingCatalog.GetCatalogEntryInfo(entryID));
+	end;
+end
+if app.GameBuildVersion >= 110207 and C_HousingCatalog and C_HousingCatalog.CreateCatalogSearcher then
+	lib.CreateHousingCatalogSearcher = C_HousingCatalog.CreateCatalogSearcher;
+end
+
+-- Spell information retains the legacy tuple and spellbook-index forms.
+do
+	local NativeGetSpellInfo = GetSpellInfo;
+	local C_Spell = C_Spell;
+	local C_SpellBook = C_SpellBook;
+	local SpellBank = Enum and Enum.SpellBookSpellBank;
+	if C_Spell and C_Spell.GetSpellInfo then
+		lib.GetSpellInfo = function(spellIdentifier, bookTypeOrRank)
+			local subtext;
+			if bookTypeOrRank ~= nil then
+				-- Classic's native API preserves spellbook indexing and rank lookup.
+				if NativeGetSpellInfo then
+					return NativeGetSpellInfo(spellIdentifier, bookTypeOrRank);
+				end
+				if bookTypeOrRank == "spell" or bookTypeOrRank == "pet" then
+					if not C_SpellBook or not C_SpellBook.GetSpellBookItemInfo or not SpellBank then return; end
+					local bank = bookTypeOrRank == "pet" and SpellBank.Pet or SpellBank.Player;
+					local item = C_SpellBook.GetSpellBookItemInfo(spellIdentifier, bank);
+					if not item or not item.spellID then return; end
+					spellIdentifier = item.spellID;
+					subtext = item.subName;
+				elseif type(spellIdentifier) == "string" and bookTypeOrRank ~= "" then
+					spellIdentifier = spellIdentifier .. "(" .. bookTypeOrRank .. ")";
+				end
+			end
+			local info = C_Spell.GetSpellInfo(spellIdentifier);
+			if not info then return; end
+			if subtext == nil and C_Spell.GetSpellSubtext then
+				subtext = C_Spell.GetSpellSubtext(spellIdentifier);
+			end
+			return info.name, subtext or "", info.iconID, info.castTime,
+				info.minRange, info.maxRange, info.spellID, info.originalIconID;
+		end;
+	else
+		AssignAPIWrapper("GetSpellInfo", NativeGetSpellInfo, app.EmptyFunction);
+	end
+end
+
+-- Player spell knowledge includes the active override, matching IsPlayerSpell.
+do
+	local C_SpellBook = C_SpellBook;
+	local SpellBank = Enum and Enum.SpellBookSpellBank;
+	AssignAPIWrapper("IsPlayerSpell",
+		C_SpellBook and C_SpellBook.IsSpellKnown and SpellBank and
+		function(spellID) return C_SpellBook.IsSpellKnown(spellID, SpellBank.Player); end,
+		IsPlayerSpell, app.ReturnFalse or function() return false; end);
+end
+
+-- Buff lookup returns AuraData, or nil when the client cannot disclose it.
+do
+	local C_UnitAuras = C_UnitAuras;
+	local NativeUnitBuff = UnitBuff;
+	local GetBuffData = C_UnitAuras and C_UnitAuras.GetBuffDataByIndex;
+	if GetBuffData then
+		lib.GetBuffDataByIndex = function(unit, index, filter)
+			local aura = GetBuffData(unit, index, filter);
+			if not aura or lib.issecretvalue(aura) or lib.issecretvalue(aura.spellId) then return; end
+			return aura;
+		end;
+	else
+		AssignAPIWrapper("GetBuffDataByIndex", NativeUnitBuff and function(unit, index, filter)
+			local name, _, _, _, _, _, _, _, _, spellID = NativeUnitBuff(unit, index, filter);
+			if not name or lib.issecretvalue(spellID) then return; end
+			return { name = name, spellId = spellID };
+		end, app.EmptyFunction);
+	end
+end
+
+-- The public combat-log payload is available to Classic addons.
+-- Retail and Forever do not expose a public replacement; never use SecureOnly APIs.
+lib.CombatLogGetCurrentEventInfo = false;
+if not app.IsRetail then
+	local C_CombatLog = C_CombatLog;
+	lib.CombatLogGetCurrentEventInfo = C_CombatLog and C_CombatLog.GetCurrentEventInfo or CombatLogGetCurrentEventInfo or false;
+end
+
+-- Options categories use Settings on every current client.
+-- Dropdowns retain the legacy UI for clients without the replacement framework.
+do
+	local Settings = Settings;
+
+	lib.OpenOptionsCategory = function(categoryID)
+		return Settings.OpenToCategory(categoryID);
+	end;
+
+	---@param frame Frame Options page to register.
+	---@param name string Display name of the options page.
+	---@param parentCategory table|nil Modern category of the parent page.
+	---@param parentName string|nil Name of the parent page; nil for a root category.
+	---@return table category Modern category.
+	---@return number|string categoryID Identifier accepted by OpenOptionsCategory.
+	lib.RegisterOptionsCategory = function(frame, name, parentCategory, parentName)
+		local category;
+		if parentName then
+			category = Settings.RegisterCanvasLayoutSubcategory(parentCategory, frame, name);
+		else
+			category = Settings.RegisterCanvasLayoutCategory(frame, name);
+			Settings.RegisterAddOnCategory(category);
+		end
+		return category, category.ID;
+	end;
+end
+
+do
+	local SetLegacyDropdownWidth = UIDropDownMenu_SetWidth;
+	local SetLegacyDropdownText = UIDropDownMenu_SetText;
+	local CreateLegacyDropdownInfo = UIDropDownMenu_CreateInfo;
+	local AddLegacyDropdownButton = UIDropDownMenu_AddButton;
+	local InitializeLegacyDropdown = UIDropDownMenu_Initialize;
+
+	---@param name string|nil Global frame name.
+	---@param parent Frame Parent frame.
+	---@param width number Width of the displayed selection.
+	---@return Frame dropdown
+	---@return number leftOffset Horizontal offset aligning the selection with its label.
+	lib.CreateDropdown = function(name, parent, width)
+		if DropdownButtonMixin and DropdownButtonMixin.SetupMenu and WowStyle1DropdownMixin then
+			local dropdown = CreateFrame("DropdownButton", name, parent, "WowStyle1DropdownTemplate");
+			dropdown.__ATTModernDropdown = true;
+			dropdown:SetWidth(width);
+			return dropdown, 0;
+		end
+		local dropdown = CreateFrame("Frame", name, parent, "UIDropDownMenuTemplate");
+		SetLegacyDropdownWidth(dropdown, width);
+		return dropdown, -15;
+	end;
+
+	lib.SetDropdownText = function(dropdown, text)
+		if dropdown.__ATTModernDropdown then
+			-- The active value can change outside the menu, including when packs
+			-- are added or reloaded. Keep its text and an open menu in sync.
+			dropdown:OverrideText(text);
+			if dropdown:IsMenuOpen() then
+				dropdown:GenerateMenu();
+			end
+		else
+			SetLegacyDropdownText(dropdown, text);
+		end
+	end;
+
+	---@param dropdown Frame
+	---@param getOptions fun():string[] Current choices, in display order.
+	---@param isSelected fun(value:string):boolean
+	---@param onSelect fun(value:string)
+	lib.SetupDropdownMenu = function(dropdown, getOptions, isSelected, onSelect)
+		if dropdown.__ATTModernDropdown then
+			dropdown:SetupMenu(function(_, rootDescription)
+				for _, value in ipairs(getOptions()) do
+					rootDescription:CreateRadio(value, isSelected, onSelect, value);
+				end
+			end);
+		else
+			local function OnClick(_, value)
+				onSelect(value);
+			end
+			InitializeLegacyDropdown(dropdown, function()
+				for _, value in ipairs(getOptions()) do
+					local info = CreateLegacyDropdownInfo();
+					info.text, info.arg1 = value, value;
+					info.checked = isSelected(value);
+					info.func = OnClick;
+					AddLegacyDropdownButton(info);
+				end
+			end);
+		end
+	end;
+end
 ---@diagnostic enable: deprecated
