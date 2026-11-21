@@ -633,10 +633,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				},
 			}),
 			q(716, {	-- Stone Is Better than Cloth
-				sourceQuests = {
-					714,	-- Gyro... What?
-					712,	-- Study of the Elements: Rock (3/3)
-				},
+				sourceQuest = 712,	-- Study of the Elements: Rock (3/3)
 				qg = 2920,	-- Lucien Tosselwrench
 				coord = { 25.8, 44.4, MAP.BADLANDS },
 				cost = { { "i", 2868, 1 } },	-- Patterned Bronze Bracers
