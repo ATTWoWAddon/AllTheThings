@@ -204,7 +204,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					objective(1, {	-- 0/12 Saltwater Murloc Eye
 						provider = { "i", 268344 },	-- Saltwater Murloc Eye
 						crs = {
+							255903,	-- Murloc Hunter
 							255898,	-- Murloc Oracle
+							255900,	-- Murloc Raider
+							255904,	-- Murloc Tidebringer
+							255899,	-- Murloc Tideskimmer
 							256801,	-- Murloc Warrior
 						},
 					}),
