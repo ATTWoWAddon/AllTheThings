@@ -572,7 +572,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			}),
 			q(3568, {	-- Seeping Corruption (1/3)
 				qg = 8390,	-- Chemist Cuely
-				coord = { 47.6, 73.0, MAP.UNDERCITY },
+				coord = { 48.8, 71.7, MAP.UNDERCITY },
 				maps = { MAP.AZSHARA },
 				races = HORDE_ONLY,
 				lvl = 45,
@@ -609,14 +609,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				sourceQuest = 3568,	-- Seeping Corruption (1/3)
 				qg = 8390,	-- Chemist Cuely
 				qi = 10712,	-- Cuely's Elixir
-				coord = { 47.6, 73.0, MAP.UNDERCITY },
+				coord = { 48.8, 71.7, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 45,
 			}),
 			q(3570, {	-- Seeping Corruption (3/3)
 				sourceQuest = 3569,	-- Seeping Corruption (2/3)
 				qg = 8390,	-- Chemist Cuely
-				coord = { 47.6, 73.0, MAP.UNDERCITY },
+				coord = { 48.8, 71.7, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				lvl = 45,
 			}),
