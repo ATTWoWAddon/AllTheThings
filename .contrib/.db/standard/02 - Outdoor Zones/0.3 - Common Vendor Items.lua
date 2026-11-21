@@ -54,6 +54,18 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 				i(2156),	-- Padded Boots
 			},
 		}),
+		header(HEADERS.Item, 2612, {	-- Plain Robe
+			symselector = SymSelector.VENDOR_ROBES,
+			groups = {
+				i(2612),	-- Plain Robe
+				i(2613),	-- Double-Stitched Robes
+				i(2614),	-- Robe of Apprenticeship
+				i(2615),	-- Chromatic Robe
+				i(2616),	-- Shimmering Silk Robes
+				i(2617),	-- Burning Robes
+				i(2618),	-- Silver Dress Robes
+			},
+		}),
 		header(HEADERS.Item, 2429, {	-- Russet Vest
 			symselector = SymSelector.VENDOR_RUSSET,
 			groups = {

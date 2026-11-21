@@ -1802,15 +1802,10 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 			n(4580, {	-- Lucille Castleton
 				coord = { 71.4, 28.4, UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					2617,	-- Burning Robes
-					2615,	-- Chromatic Robe
-					2613,	-- Double Stitched Robes
-					2612,	-- Plain Robe
-					2614,	-- Robe Of Apprenticeship
-					2616,	-- Shimmering Silk Robes
-					2618,	-- Silver Dress Robes
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ROBES"),	-- Robes
+					{ "pop" },
+				},
 			}),
 			n(5190, {	-- Merill Pleasance <Tabard Vendor>
 				-- #if AFTER 8.0.1.26297

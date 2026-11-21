@@ -2040,15 +2040,10 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 			n(5156, {	-- Maeva Snowbraid
 				coord = { 38.8, 5.6, IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{"select","itemID",
-					2617,	-- Burning Robes
-					2615,	-- Chromatic Robe
-					2613,	-- Double Stitched Robes
-					2612,	-- Plain Robe
-					2614,	-- Robe Of Apprenticeship
-					2616,	-- Shimmering Silk Robes
-					2618,	-- Silver Dress Robes
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ROBES"),	-- Robes
+					{ "pop" },
+				},
 			}),
 			n(50308, {	-- Master Tinker Trini <Gnomeregan Quartermaster>
 				coord = { 55.8, 47.8, IRONFORGE },
