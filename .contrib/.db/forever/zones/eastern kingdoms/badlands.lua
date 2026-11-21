@@ -163,7 +163,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				},
 			}),
 			q(2203, {	-- Badlands Reagent Run II
-				sourceQuest = 2202,	-- Uldaman Reagent Run
+				sourceQuest = 2202,	-- Uldaman Reagent Run [H]
 				qg = 6868,	-- Jarkal Mossmeld
 				coord = { 2.6, 46.0, MAP.BADLANDS },
 				requireSkill = ALCHEMY,
@@ -415,48 +415,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				groups = {
 					i(4086),	-- Flash Rifle
 					i(5248),	-- Flash Wand
-				},
-			}),
-			q(2418, {	-- Power Stones
-				qg = 2817,	-- Rigglefuzz
-				coord = { 42.39, 52.93, MAP.BADLANDS },
-				maps = { MAP.ULDAMAN },
-				lvl = 30,
-				groups = {
-					objective(1, {	-- 0/8 Dentrium Power Stone
-						provider = { "i", 8009 },	-- Dentrium Power Stone
-						crs = {
-							4844,	-- Shadowforge Surveyor
-							4845,	-- Shadowforge Ruffian
-							4846,	-- Shadowforge Digger
-							4847,	-- Shadowforge Relic Hunter
-							4848,	-- Shadowforge Darkcaster
-							4849,	-- Shadowforge Archaeologist
-							7030,	-- Shadowforge Geologist
-							7290,	-- Shadowforge Sharpshooter
-							7091,	-- Shadowforge Ambusher
-						},
-					}),
-					objective(2, {	-- 0/8 An'Alleum Power Stone
-						provider = { "i", 8052 },	-- An'Alleum Power Stone
-						crs = {
-							4844,	-- Shadowforge Surveyor
-							4845,	-- Shadowforge Ruffian
-							4846,	-- Shadowforge Digger
-							4847,	-- Shadowforge Relic Hunter
-							4848,	-- Shadowforge Darkcaster
-							4849,	-- Shadowforge Archaeologist
-							7030,	-- Shadowforge Geologist
-							7290,	-- Shadowforge Sharpshooter
-							7091,	-- Shadowforge Ambusher
-						},
-					}),
-					i(9522),	-- Energized Stone Circle
-					i(10358),	-- Duracin Bracers
-					i(10359),	-- Everlast Boots
-					i(270055, {	-- Charged Leather Bracers
-						timeline = { TIMELINE.ADDED_1_60_1 },
-					}),
 				},
 			}),
 			q(723, {	-- Prospect of Faith (1/2)
@@ -863,22 +821,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					i(11194),	-- Prismscale Hauberk
 					i(11195),	-- Warforged Chestplate
 					i(11196),	-- Mindburst Medallion
-				},
-			}),
-			q(2202, {	-- Uldaman Reagent Run
-				sourceQuest = 2258,	-- Badlands Reagent Run
-				qg = 6868,	-- Jarkal Mossmeld
-				coord = { 2.6, 46.0, MAP.BADLANDS },
-				maps = { MAP.ULDAMAN },
-				races = HORDE_ONLY,
-				lvl = 40,
-				groups = {
-					objective(1, {	-- 0/12 Magenta Fungus Cap
-						providers = {
-							{ "i",   8047 },	-- Magenta Fungus Cap
-							{ "o", 126049 },	-- Magenta Cap Clusters
-						},
-					}),
 				},
 			}),
 		}),
