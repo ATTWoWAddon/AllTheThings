@@ -1,30 +1,30 @@
-ExplorationPositions report  (build 1.60.1.70840)
+ExplorationPositions report  (build 1.60.1.71037)
 
 Overlay areas: 649
-Area/map pairs already harvested (used for validation): 85
-New estimates written: 560 positions for 559 areas
+Area/map pairs already harvested (used for validation): 107
+New estimates written: 538 positions for 537 areas
 Skipped areas: 5
 
 Accuracy vs harvested points (distance in map % units, 0-100 scale):
-  median 1.0   75th 1.6   90th 4.8   max 17.3
-  harvested point inside the chosen overlay rect: 85/85
+  median 1.2   75th 3.7   90th 5.5   max 17.3
+  harvested point inside the chosen overlay rect: 105/107
 
 Largest disagreements with harvested points:
    17.3  [80] Stormwind Mountains on 1429: estimate (24.2, 35.6) vs harvested (20.5, 52.5) [hit]
    17.3  [1617] Valley of Heroes on 1429: estimate (24.2, 35.6) vs harvested (20.5, 52.5) [hit]
    17.3  [1519] Stormwind City on 1429: estimate (24.2, 35.6) vs harvested (20.5, 52.5) [hit]
+    7.2  [2271] Eastwall Tower on 1423: estimate (67.9, 49.8) vs harvested (62.5, 45.0) [hit]
+    7.2  [2264] Corin's Crossing on 1423: estimate (59.6, 70.4) vs harvested (54.5, 60.5) [hit]
+    7.0  [2270] The Noxious Glade on 1423: estimate (84.3, 41.5) vs harvested (77.0, 34.0) [hit]
     6.9  [799] The Darkened Bank on 1431: estimate (54.6, 21.3) vs harvested (61.0, 24.0) [hit]
+    6.7  [2268] Light's Hope Chapel on 1423: estimate (82.1, 58.4) vs harvested (76.5, 50.0) [hit]
     5.7  [16623] Shen'dar Highlands on 2521: estimate (36.8, 50.3) vs harvested (40.0, 55.0) [hit]
     5.6  [60] Forest's Edge on 1429: estimate (25.0, 81.6) vs harvested (25.0, 76.0) [hit]
+    5.5  [2266] Tyr's Hand on 1423: estimate (84.8, 83.1) vs harvested (80.5, 74.5) [hit]
+    5.4  [2624] Blackwood Lake on 1423: estimate (51.9, 49.8) vs harvested (45.5, 44.5) [hit]
+    5.4  [2263] Crown Guard Tower on 1423: estimate (38.7, 75.6) vs harvested (34.5, 70.0) [hit]
     5.3  [924] Valley of Kings on 1432: estimate (20.5, 73.7) vs harvested (20.0, 79.0) [hit]
-    4.8  [838] North Gate Pass on 1432: estimate (22.5, 15.3) vs harvested (21.5, 20.0) [hit]
-    4.8  [146] Stonewrought Dam on 1432: estimate (47.9, 12.7) vs harvested (48.0, 17.5) [hit]
-    4.0  [77] Anvilmar on 1426: estimate (26.4, 75.2) vs harvested (27.5, 79.0) [hit]
-    4.0  [132] Coldridge Valley on 1426: estimate (26.4, 75.2) vs harvested (27.5, 79.0) [hit]
-    3.7  [17780] Krol'dok Stronghold on 2548: estimate (44.4, 26.5) vs harvested (45.5, 30.0) [hit]
-    2.6  [16635] Thendal Village on 2521: estimate (42.8, 22.0) vs harvested (44.5, 20.0) [hit]
-    2.5  [802] Shimmer Ridge on 1426: estimate (40.9, 40.0) vs harvested (38.5, 39.5) [hit]
-    2.4  [136] The Grizzled Den on 1426: estimate (40.9, 58.0) vs harvested (39.5, 60.0) [hit]
+    5.0  [2277] Plaguewood on 1423: estimate (36.4, 33.7) vs harvested (26.0, 32.5) [hit]
 
 Area/map pairs whose map arts disagree by more than 1 unit (8):
    11.1  [2739] Twilight Base Camp on 1451: used art 2177 (50.2, 48.5) (newest art); art 1264 (50.6, 37.4)
