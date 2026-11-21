@@ -3529,6 +3529,16 @@ maproot(KALIMDOR, TANARIS, {
 				u = REMOVED_FROM_GAME,
 			}),
 			-- #endif
+			applyclassicphase(TBC_PHASE_THREE, n(25178, {	-- Ecton Brasstumbler <Arena Vendor>
+				coord = { 51.4, 27.0, TANARIS },
+				timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
+				sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+			})),
+			applyclassicphase(TBC_PHASE_THREE, n(25177, {	-- Evee Copperspring <Arena Vendor>
+				coord = { 51.4, 27.0, TANARIS },
+				timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
+				sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+			})),
 			n(8137, {	-- Gikkix <Fisherman>
 				coord = { 66.6, 22.1, TANARIS },
 				timeline = { REMOVED_4_0_3 },

@@ -2589,6 +2589,11 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				applyclassicphase(TBC_PHASE_THREE, n(25179, {	-- Frixee Brasstumbler <Arena Vendor>
+					coord = { 52.8, 41.8, BLADES_EDGE_MOUNTAINS },
+					timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
+					sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+				})),
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 					coord = { 28.0, 58.6, BLADES_EDGE_MOUNTAINS },
 					timeline = { ADDED_2_1_0 },
@@ -2655,6 +2660,11 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							}),
 						},
 					}),
+				})),
+				applyclassicphase(TBC_PHASE_THREE, n(19857, {	-- Meminnie <Arena Vendor>
+					coord = { 52.8, 42.0, BLADES_EDGE_MOUNTAINS },
+					timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
+					sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
 				})),
 				applyclassicphase(TBC_PHASE_TWO_OGRILA, n(22266, {	-- Ogri'la Grubgiver
 					coord = { 27.8, 58.2, BLADES_EDGE_MOUNTAINS },
