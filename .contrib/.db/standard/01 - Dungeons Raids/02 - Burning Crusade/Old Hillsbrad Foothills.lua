@@ -47,6 +47,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
 					},
+					timeline = { ADDED_2_4_3 },
 					races = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
 					lvl = lvlsquish(66, 66, 15),
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
@@ -66,6 +67,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						{ 53.9, 28.9, TANARIS },
 						-- #endif
 					},
+					timeline = { ADDED_2_4_3 },
 					races = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME, DRACTHYR_ALLIANCE, DRACTHYR_HORDE }, ALL_RACES),
 					lvl = lvlsquish(66, 66, 15),
 					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
@@ -148,7 +150,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(ZONE_DROPS, {
 				i(25729, {	-- Pattern: Stylin' Adventure Hat (RECIPE!)
 					crs = {
+						-- #if AFTER 2.4.3
 						28132,	-- Don Carlos
+						-- #endif
 						17820,	-- Durnholde Rifleman
 					},
 				}),
@@ -159,6 +163,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				n(28132, {	-- Don Carlos
 					description = "This is a neutral Elite Creature that wanders the road.",
+					timeline = { ADDED_2_4_3 },
 					groups = {
 						i(38329),	-- Don Carlos' Hat
 					},
@@ -278,6 +283,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					}),
 					n(28132, {	-- Don Carlos
 						description = "This is a neutral Elite Creature that wanders the road.",
+						timeline = { ADDED_2_4_3 },
 						groups = {
 							applyclassicphase(LEGION_PHASE_ONE, i(134019, {	-- Don Carlos' Famous Hat (TOY!)
 								timeline = { ADDED_7_0_3 },
