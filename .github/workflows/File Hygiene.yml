@@ -1,0 +1,123 @@
+name: File Hygiene
+
+on:
+  push:
+    tags-ignore:
+      - '*'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  file-hygiene:
+    name: ${{ matrix.os }} / autocrlf=${{ matrix.autocrlf }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        autocrlf: ['false', 'true', 'input']
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+
+      - name: Install file hygiene dependency
+        run: python -m pip install -r .contrib/file-hygiene/requirements.txt
+
+      - name: Materialize files under the tested Git setting
+        run: |
+          git -c core.autocrlf=${{ matrix.autocrlf }} \
+            -c core.hooksPath=.git/file-hygiene-no-hooks \
+            checkout-index --force --all
+
+      - name: Test file hygiene validation
+        run: python -m unittest discover -s .contrib/file-hygiene -p 'test_*.py' -v
+
+      - name: Check worktree and stored text
+        run: python .contrib/file-hygiene/check_file_hygiene.py --index
+
+      - name: Confirm checks leave tracked files unchanged
+        run: |
+          changes=$(git -c core.autocrlf=${{ matrix.autocrlf }} \
+            -c core.hooksPath=.git/file-hygiene-no-hooks \
+            status --porcelain --untracked-files=no)
+          if [ -n "$changes" ]; then
+            printf '%s\n' "$changes"
+            exit 1
+          fi
+
+  generator-tests:
+    name: Generator fixtures / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+
+      - uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.x'
+          dotnet-quality: 'ga'
+
+      - name: Install Python generator test dependencies
+        run: python -m pip install -r .contrib/generator-tests/requirements.txt
+
+      - name: Test Python generator output without network access
+        run: python -m unittest discover -s .contrib/generator-tests -p 'test_python_generators.py' -v
+
+      - name: Test C# generated text
+        run: |
+          runner_temp="${RUNNER_TEMP//\\//}"
+          workspace="${GITHUB_WORKSPACE//\\//}"
+          generator_temp="$runner_temp/att-generator-tests"
+          dotnet_scope="$runner_temp/att-file-hygiene-dotnet-sdk"
+          mkdir -p "$generator_temp" "$dotnet_scope"
+          cat > "$dotnet_scope/global.json" <<'JSON'
+          {
+            "sdk": {
+              "version": "10.0.100",
+              "rollForward": "latestMinor",
+              "allowPrerelease": false
+            }
+          }
+          JSON
+          cd "$dotnet_scope"
+          sdk_version=$(dotnet --version)
+          echo "Selected .NET SDK: $sdk_version"
+          if [[ ! "$sdk_version" =~ ^10\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Expected a .NET 10 SDK, got $sdk_version"
+            exit 1
+          fi
+          dotnet run --project "$workspace/.contrib/generator-tests/TextFile.Tests.csproj" \
+            -p:BaseIntermediateOutputPath="$generator_temp/obj/" \
+            -p:OutputPath="$generator_temp/bin/"
+
+      - name: Confirm generator tests leave tracked files unchanged
+        run: |
+          changes=$(git -c core.hooksPath=.git/file-hygiene-no-hooks \
+            status --porcelain --untracked-files=no)
+          if [ -n "$changes" ]; then
+            printf '%s\n' "$changes"
+            exit 1
+          fi
