@@ -278,6 +278,79 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
+				q(2418, {	-- Power Stones
+					qg = 2817,	-- Rigglefuzz
+					coord = { 42.39, 52.93, BADLANDS },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 30,
+					groups = {
+						objective(1, {	-- 0/8 Dentrium Power Stone
+							provider = { "i", 8009 },	-- Dentrium Power Stone
+							crs = {
+								4844,	-- Shadowforge Surveyor
+								4845,	-- Shadowforge Ruffian
+								4846,	-- Shadowforge Digger
+								4847,	-- Shadowforge Relic Hunter
+								4848,	-- Shadowforge Darkcaster
+								4849,	-- Shadowforge Archaeologist
+								7030,	-- Shadowforge Geologist
+								7290,	-- Shadowforge Sharpshooter
+								7091,	-- Shadowforge Ambusher
+							},
+						}),
+						objective(2, {	-- 0/8 An'Alleum Power Stone
+							provider = { "i", 8052 },	-- An'Alleum Power Stone
+							crs = {
+								4844,	-- Shadowforge Surveyor
+								4845,	-- Shadowforge Ruffian
+								4846,	-- Shadowforge Digger
+								4847,	-- Shadowforge Relic Hunter
+								4848,	-- Shadowforge Darkcaster
+								4849,	-- Shadowforge Archaeologist
+								7030,	-- Shadowforge Geologist
+								7290,	-- Shadowforge Sharpshooter
+								7091,	-- Shadowforge Ambusher
+							},
+						}),
+						i(9522),	-- Energized Stone Circle
+						i(10358),	-- Duracin Bracers
+						i(10359),	-- Everlast Boots
+					},
+				}),
+				q(1360, {	-- Reclaimed Treasures [A]
+					qg = 6294,	-- Krom Stoutarm
+					coord = { 74.2, 9.4, IRONFORGE },
+					timeline = { REMOVED_4_0_3 },
+					maps = { LOCH_MODAN },
+					races = ALLIANCE_ONLY,
+					lvl = 33,
+					groups = {
+						objective(1, {	-- 0/1 Krom Stoutarm's Treasure
+							providers = {
+								{ "i",   8027 },	-- Krom Stoutarm's Treasure
+								{ "o", 124389 },	-- Krom Stoutarm's Chest
+							},
+							coord = { 35.2, 97.4, LOCH_MODAN },
+						}),
+					},
+				}),
+				q(2342, {	-- Reclaimed Treasures [H]
+					qg = 5651,	-- Patrick Garrett
+					coord = { 62.3, 48.6, UNDERCITY },
+					timeline = { REMOVED_4_0_3 },
+					maps = { LOCH_MODAN },
+					races = HORDE_ONLY,
+					lvl = 33,
+					groups = {
+						objective(1, {	-- 0/1 Garrett Family Treasure
+							providers = {
+								{ "i",   8026 },	-- Garrett Family Treasure
+								{ "o", 124388 },	-- Garrett Family Chest
+							},
+							coord = { 33.9, 93.0, LOCH_MODAN },
+						}),
+					},
+				}),
 				q(3375, {	-- Replacement Phial
 					sourceQuest = 2199,	-- Lore for a Price
 					qg = 6826,	-- Talvash del Kissel
@@ -359,6 +432,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					timeline = { REMOVED_4_0_3 },
 					races = HORDE_ONLY,
 					lvl = 45,
+				}),
+				q(709, {	-- Solution to Doom
+					qg = 2785,	-- Theldurin the Lost
+					coord = { 51.4, 76.9, BADLANDS },
+					timeline = { REMOVED_4_0_3 },
+					lvl = 30,
+					groups = {
+						objective(1, {	-- 0/1 Tablet of Ryun'eh
+							providers = {
+								{ "i", 4631 },	-- Tablet of Ryun'eh
+								{ "o", 126260 },	-- Ancient Chest
+							},
+							coord = { 39.3, 18.8, BADLANDS },
+						}),
+						i(4746),	-- Doomsayer's Robe
+					},
 				}),
 				q(27672, {	-- The Chamber of Khaz'mul [Alliance]
 					qg = 46234,	-- Lead Prospector Durdin <Explorer's League>
@@ -506,6 +595,39 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					timeline = { REMOVED_4_0_3 },
 					races = HORDE_ONLY,
 					lvl = 37,
+				}),
+				q(17, {	-- Uldaman Reagent Run [A]
+					sourceQuest = 2500,	-- Badlands Reagent Run
+					qg = 1470,	-- Ghak Healtouch
+					coord = { 37.07, 49.38, LOCH_MODAN },
+					timeline = { REMOVED_4_0_3 },
+					maps = { BADLANDS },
+					races = ALLIANCE_ONLY,
+					lvl = 38,
+					groups = {
+						objective(1, {	-- 0/12 Magenta Fungus Cap
+							providers = {
+								{ "i",   8047 },	-- Magenta Fungus Cap
+								{ "o", 126049 },	-- Magenta Cap Clusters
+							},
+						}),
+					},
+				}),
+				q(2202, {	-- Uldaman Reagent Run [H]
+					sourceQuest = 2258,	-- Badlands Reagent Run
+					qg = 6868,	-- Jarkal Mossmeld
+					coord = { 2.6, 46.0, BADLANDS },
+					timeline = { REMOVED_4_0_3 },
+					races = HORDE_ONLY,
+					lvl = 40,
+					groups = {
+						objective(1, {	-- 0/12 Magenta Fungus Cap
+							providers = {
+								{ "i",   8047 },	-- Magenta Fungus Cap
+								{ "o", 126049 },	-- Magenta Cap Clusters
+							},
+						}),
+					},
 				}),
 				q(27682, {	-- We Require More Minerals
 					qg = 46241,	-- Aoren Sunglow

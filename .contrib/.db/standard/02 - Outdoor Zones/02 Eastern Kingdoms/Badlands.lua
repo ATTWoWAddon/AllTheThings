@@ -371,7 +371,7 @@ maproot(EASTERN_KINGDOMS, BADLANDS, {
 				},
 			}),
 			q(2203, {	-- Badlands Reagent Run II
-				sourceQuest = 2202,	-- Uldaman Reagent Run
+				sourceQuest = 2202,	-- Uldaman Reagent Run [H]
 				qg = 6868,	-- Jarkal Mossmeld
 				coord = { 2.6, 46.0, BADLANDS },
 				timeline = { REMOVED_4_0_3 },
@@ -888,46 +888,6 @@ maproot(EASTERN_KINGDOMS, BADLANDS, {
 					-- #endif
 				},
 			}),
-			q(2418, {	-- Power Stones
-				qg = 2817,	-- Rigglefuzz
-				coord = { 42.39, 52.93, BADLANDS },
-				timeline = { REMOVED_4_0_3 },
-				maps = { ULDAMAN },
-				lvl = 30,
-				groups = {
-					objective(1, {	-- 0/8 Dentrium Power Stone
-						provider = { "i", 8009 },	-- Dentrium Power Stone
-						crs = {
-							4844,	-- Shadowforge Surveyor
-							4845,	-- Shadowforge Ruffian
-							4846,	-- Shadowforge Digger
-							4847,	-- Shadowforge Relic Hunter
-							4848,	-- Shadowforge Darkcaster
-							4849,	-- Shadowforge Archaeologist
-							7030,	-- Shadowforge Geologist
-							7290,	-- Shadowforge Sharpshooter
-							7091,	-- Shadowforge Ambusher
-						},
-					}),
-					objective(2, {	-- 0/8 An'Alleum Power Stone
-						provider = { "i", 8052 },	-- An'Alleum Power Stone
-						crs = {
-							4844,	-- Shadowforge Surveyor
-							4845,	-- Shadowforge Ruffian
-							4846,	-- Shadowforge Digger
-							4847,	-- Shadowforge Relic Hunter
-							4848,	-- Shadowforge Darkcaster
-							4849,	-- Shadowforge Archaeologist
-							7030,	-- Shadowforge Geologist
-							7290,	-- Shadowforge Sharpshooter
-							7091,	-- Shadowforge Ambusher
-						},
-					}),
-					i(9522),	-- Energized Stone Circle
-					i(10358),	-- Duracin Bracers
-					i(10359),	-- Everlast Boots
-				},
-			}),
 			q(723, {	-- Prospect of Faith (1/2)
 				sourceQuest = 722,	-- Amulet of Secrets
 				qg = 2909,	-- Hammertoe Grez
@@ -945,40 +905,6 @@ maproot(EASTERN_KINGDOMS, BADLANDS, {
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
 				lvl = 35,
-			}),
-			q(1360, {	-- Reclaimed Treasures
-				qg = 6294,	-- Krom Stoutarm
-				coord = { 74.2, 9.4, IRONFORGE },
-				timeline = { REMOVED_4_0_3 },
-				maps = { LOCH_MODAN },
-				races = ALLIANCE_ONLY,
-				lvl = 33,
-				groups = {
-					objective(1, {	-- 0/1 Krom Stoutarm's Treasure
-						providers = {
-							{ "i",   8027 },	-- Krom Stoutarm's Treasure
-							{ "o", 124389 },	-- Krom Stoutarm's Chest
-						},
-						coord = { 35.2, 97.4, LOCH_MODAN },
-					}),
-				},
-			}),
-			q(2342, {	-- Reclaimed Treasures
-				qg = 5651,	-- Patrick Garrett
-				coord = { 62.3, 48.6, UNDERCITY },
-				timeline = { REMOVED_4_0_3 },
-				maps = { LOCH_MODAN },
-				races = HORDE_ONLY,
-				lvl = 33,
-				groups = {
-					objective(1, {	-- 0/1 Garrett Family Treasure
-						providers = {
-							{ "i",   8026 },	-- Garrett Family Treasure
-							{ "o", 124388 },	-- Garrett Family Chest
-						},
-						coord = { 33.9, 93.0, LOCH_MODAN },
-					}),
-				},
 			}),
 			q(1420, {	-- Report to Helgrum
 				sourceQuest = 1418,	-- Neeka Bloodscar
@@ -1113,22 +1039,6 @@ maproot(EASTERN_KINGDOMS, BADLANDS, {
 						coord = { 70.4, 47.8, BADLANDS },
 						cr = 2725,	-- Scalding Whelp
 					}),
-				},
-			}),
-			q(709, {	-- Solution to Doom
-				qg = 2785,	-- Theldurin the Lost
-				coord = { 51.4, 76.9, BADLANDS },
-				timeline = { REMOVED_4_0_3 },
-				lvl = 30,
-				groups = {
-					objective(1, {	-- 0/1 Tablet of Ryun'eh
-						providers = {
-							{ "i", 4631 },	-- Tablet of Ryun'eh
-							{ "o", 126260 },	-- Ancient Chest
-						},
-						coord = { 39.3, 18.8, BADLANDS },
-					}),
-					i(4746),	-- Doomsayer's Robe
 				},
 			}),
 			q(716, {	-- Stone Is Better than Cloth
@@ -1713,23 +1623,6 @@ maproot(EASTERN_KINGDOMS, BADLANDS, {
 					i(63182),	-- Anti-Trogg Shield
 					i(63181),	-- Shrug of Disappointment
 					i(63180),	-- Blam Blam Gun
-				},
-			}),
-			q(2202, {	-- Uldaman Reagent Run
-				sourceQuest = 2258,	-- Badlands Reagent Run
-				qg = 6868,	-- Jarkal Mossmeld
-				coord = { 2.6, 46.0, BADLANDS },
-				timeline = { REMOVED_4_0_3 },
-				maps = { ULDAMAN },
-				races = HORDE_ONLY,
-				lvl = 40,
-				groups = {
-					objective(1, {	-- 0/12 Magenta Fungus Cap
-						providers = {
-							{ "i",   8047 },	-- Magenta Fungus Cap
-							{ "o", 126049 },	-- Magenta Cap Clusters
-						},
-					}),
 				},
 			}),
 			q(9439, {	-- Unclaimed Baggage

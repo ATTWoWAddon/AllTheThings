@@ -389,7 +389,7 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 				},
 			}),
 			q(2501, {	-- Badlands Reagent Run II
-				sourceQuest = 17,	-- Uldaman Reagent Run
+				sourceQuest = 17,	-- Uldaman Reagent Run [A]
 				qg = 1470,	-- Ghak Healtouch
 				coord = { 37.07, 49.38, LOCH_MODAN },
 				timeline = { REMOVED_4_0_3 },
@@ -1369,23 +1369,6 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 						providers = {
 							{ "i", 60737 },	-- Stabthistle Seed
 							{ "o", 205089 },	-- Stabthistle Seed
-						},
-					}),
-				},
-			}),
-			q(17, {	-- Uldaman Reagent Run
-				sourceQuest = 2500,	-- Badlands Reagent Run
-				qg = 1470,	-- Ghak Healtouch
-				coord = { 37.07, 49.38, LOCH_MODAN },
-				timeline = { REMOVED_4_0_3 },
-				maps = { BADLANDS, ULDAMAN },
-				races = ALLIANCE_ONLY,
-				lvl = 38,
-				groups = {
-					objective(1, {	-- 0/12 Magenta Fungus Cap
-						providers = {
-							{ "i",   8047 },	-- Magenta Fungus Cap
-							{ "o", 126049 },	-- Magenta Cap Clusters
 						},
 					}),
 				},
