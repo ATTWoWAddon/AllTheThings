@@ -11,7 +11,6 @@ i(0, 3811);			-- Leatherworking (Expert)
 i(0, 10662);		-- Leatherworking (Artisan)
 i(0, 6661);			-- Barbaric Harness
 i(0, 7151);			-- Barbaric Shoulders
-i(0, 1255093);		-- Brawler's Leather Helm
 i(0, 3818);			-- Cured Heavy Hide
 i(0, 3816);			-- Cured Light Hide
 i(0, 3817);			-- Cured Medium Hide
@@ -21,7 +20,6 @@ i(0, 3766);			-- Dark Leather Belt
 i(0, 2167);			-- Dark Leather Boots
 i(0, 2168);			-- Dark Leather Cloak
 i(0, 7135);			-- Dark Leather Pants
-i(0, 1255091);		-- Defender's Leather Helm
 i(0, 9206);			-- Dusky Belt
 i(0, 9201);			-- Dusky Bracers
 i(0, 9196);			-- Dusky Leather Armor
@@ -68,19 +66,15 @@ i(0, 14930);		-- Quickdraw Quiver
 i(0, 19058);		-- Rugged Armor Kit
 i(0, 22331);		-- Rugged Leather
 i(0, 9062);			-- Small Leather Ammo Pouch
-i(0, 1255089);		-- Stormrider's Leather Helm
 i(0, 10487);		-- Thick Armor Kit
 i(0, 20650);		-- Thick Leather
 i(0, 14932);		-- Thick Leather Ammo Pouch
-i(0, 1255090);		-- Totemic Leather Helm
 i(0, 2166);			-- Toughened Leather Armor
 i(0, 3770);			-- Toughened Leather Gloves
-i(0, 1255092);		-- Trapper's Leather Helm
 i(0, 10518);		-- Turtle Scale Bracers
 i(0, 10511);		-- Turtle Scale Breastplate
 i(0, 10552);		-- Turtle Scale Helm
 i(0, 10556);		-- Turtle Scale Leggings
-i(0, 1255088);		-- Wisdom's Leather Helm
 --- QUEST ---
 i(0, 1229432);	-- Camp Tent
 i(0, 19093);	-- Onyxia Scale Cloak
@@ -116,6 +110,7 @@ i(252771, 1255136);	-- Brawler's Leather Armor
 i(252765, 1255142);	-- Brawler's Leather Belt
 i(252786, 1255121);	-- Brawler's Leather Boots
 i(252777, 1255130);	-- Brawler's Leather Gloves
+i(252814, 1255093);	-- Brawler's Leather Helm
 i(252798, 1255109);	-- Brawler's Leather Hood
 i(252820, 1255087);	-- Brawler's Leather Legguards
 i(252792, 1255115);	-- Brawler's Leather Pants
@@ -145,6 +140,7 @@ i(252773, 1255134);	-- Defender's Leather Armor
 i(252767, 1255140);	-- Defender's Leather Belt
 i(252788, 1255119);	-- Defender's Leather Boots
 i(252779, 1255128);	-- Defender's Leather Gloves
+i(252816, 1255091);	-- Defender's Leather Helm
 i(252800, 1255107);	-- Defender's Leather Hood
 i(252822, 1255085);	-- Defender's Leather Kilt
 i(252794, 1255113);	-- Defender's Leather Pants
@@ -285,6 +281,7 @@ i(252775, 1255132);	-- Stormrider's Leather Armor
 i(252769, 1255138);	-- Stormrider's Leather Belt
 i(252790, 1255117);	-- Stormrider's Leather Boots
 i(252781, 1255126);	-- Stormrider's Leather Gloves
+i(252818, 1255089);	-- Stormrider's Leather Helm
 i(252802, 1255105);	-- Stormrider's Leather Hood
 i(252824, 1255083);	-- Stormrider's Leather Kilt
 i(252796, 1255111);	-- Stormrider's Leather Pants
@@ -298,6 +295,7 @@ i(252774, 1255133);	-- Totemic Leather Armor
 i(252768, 1255139);	-- Totemic Leather Belt
 i(252789, 1255118);	-- Totemic Leather Boots
 i(252780, 1255127);	-- Totemic Leather Gloves
+i(252817, 1255090);	-- Totemic Leather Helm
 i(252801, 1255106);	-- Totemic Leather Hood
 i(252823, 1255084);	-- Totemic Leather Leggings
 i(252795, 1255112);	-- Totemic Leather Pants
@@ -313,6 +311,7 @@ i(252772, 1255135);	-- Trapper's Leather Armor
 i(252766, 1255141);	-- Trapper's Leather Belt
 i(252787, 1255120);	-- Trapper's Leather Boots
 i(252778, 1255129);	-- Trapper's Leather Gloves
+i(252815, 1255092);	-- Trapper's Leather Helm
 i(252799, 1255108);	-- Trapper's Leather Hood
 i(252821, 1255086);	-- Trapper's Leather Legguards
 i(252793, 1255114);	-- Trapper's Leather Pants
@@ -346,6 +345,7 @@ i(252776, 1255131);	-- Wisdom's Leather Armor
 i(252770, 1255137);	-- Wisdom's Leather Belt
 i(252791, 1255116);	-- Wisdom's Leather Boots
 i(252782, 1255125);	-- Wisdom's Leather Gloves
+i(252819, 1255088);	-- Wisdom's Leather Helm
 i(252803, 1255104);	-- Wisdom's Leather Hood
 i(252825, 1255082);	-- Wisdom's Leather Leggings
 i(252797, 1255110);	-- Wisdom's Leather Pants

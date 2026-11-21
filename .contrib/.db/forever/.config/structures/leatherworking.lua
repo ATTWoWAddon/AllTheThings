@@ -43,12 +43,10 @@ LEATHERWORKING_RECIPES = {
 			rank = 2,
 		}),
 		n(ARMOR, {
-			r(1255093, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Brawler's Leather Helm
 			r(3766),	-- Dark Leather Belt
 			r(2167),	-- Dark Leather Boots
 			r(2168),	-- Dark Leather Cloak
 			r(7135),	-- Dark Leather Pants
-			r(1255091, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Defender's Leather Helm
 			r(3763),	-- Fine Leather Belt
 			r(2159),	-- Fine Leather Cloak
 			r(3761),	-- Fine Leather Tunic
@@ -64,13 +62,9 @@ LEATHERWORKING_RECIPES = {
 			r(1255080, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Skulker's Leather Belt
 			r(1255076, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Skycaller's Leather Belt
 			r(1255079, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Stalker's Leather Belt
-			r(1255089, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Stormrider's Leather Helm
-			r(1255090, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Totemic Leather Helm
 			r(2166),	-- Toughened Leather Armor
 			r(3770),	-- Toughened Leather Gloves
-			r(1255092, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Trapper's Leather Helm
 			r(1255078, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Warden's Leather Belt
-			r(1255088, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Wisdom's Leather Helm
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			r(3780),	-- Heavy Armor Kit
