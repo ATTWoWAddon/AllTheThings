@@ -6036,15 +6036,15 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 230812,Bandalar,230811,1,0,116081,0,0
 230813,"Ancient of Decay",230811,1,0,116079,1,0
 230814,"Time-Lost Battalion",230811,1,0,116084,2,0
-230815,"Sylvestris Dusksong",230811,1,0,116082,3,0
+230815,"Sylvestris Dusksong",230811,1,0,119832,3,0
 230816,"Old Gloomlurker",230811,1,0,116076,4,0
-230817,"Gharalis the Abyssal",230811,1,0,116083,5,0
+230817,"Gharalis the Abyssal",230811,1,0,119831,5,0
 230818,"Kathris the Haunted",230811,1,0,116073,6,0
 230819,"Anara Chillwind",230811,1,0,116078,7,0
-230820,"Elder Minderel",230811,1,0,116077,8,0
+230820,"Elder Minderel",230811,1,0,119830,8,0
 230821,"Tracker Stillwind",230811,1,0,116080,9,0
-230822,"Council of Thorns",230811,1,0,116072,10,0
-230823,"Nythus the Dreambound",230811,1,0,116071,11,0
+230822,"Council of Thorns",230811,1,0,119828,10,0
+230823,"Nythus the Dreambound",230811,1,0,119829,11,0
 230824,"The Wild King",230811,1,0,116070,12,0
 230971,"Kill Edwin VanCleef",0,1,5,0,0,0
 230972,"Edwin VanCleef",230971,1,0,3262,0,2
@@ -6451,14 +6451,14 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 234178,"Nythus the Dreambound",234166,1,0,117773,11,0
 234179,"The Wild King",234166,1,0,117774,12,0
 234180,"Complete The Barrow Deeps",0,0,4,0,0,0
-234181,"Sonya Darkhallow",234180,1,0,117775,7,0
-234182,"Elder Tangleclaw",234180,1,0,117776,1,0
-234183,"Khalith the Dreadspinner",234180,1,0,117777,2,0
-234184,Amethrax,234180,1,0,117778,4,0
-234185,"Well of Sorrow",234180,1,0,117779,3,0
-234186,"Del'lynar Songwood",234180,1,0,117780,5,0
-234187,Chillhowl,234180,1,0,117781,0,0
-234188,"Ravus and Darlissa",234180,1,0,117782,6,0
+234181,"Sonya Darkhallow",234180,1,0,119840,7,0
+234182,"Elder Tangleclaw",234180,1,0,119836,1,0
+234183,"Khalith the Dreadspinner",234180,1,0,119833,2,0
+234184,Amethrax,234180,1,0,119837,4,0
+234185,"Well of Sorrow",234180,1,0,119834,3,0
+234186,"Del'lynar Songwood",234180,1,0,119838,5,0
+234187,Chillhowl,234180,1,0,119835,0,0
+234188,"Ravus and Darlissa",234180,1,0,119839,6,0
 234189,"Rank 3",0,0,4,0,0,0
 234190,,234189,3,0,117783,0,0
 234191,"Rank 7",0,0,4,0,0,0
