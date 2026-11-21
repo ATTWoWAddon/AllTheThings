@@ -149,24 +149,59 @@ instanceroot(2974, {	-- Blackmaw Hold
 		}),
 		e(3315, {	-- Withermaw
 			creatureID = 247195,	-- Withermaw
+			groups = {
+				i(280062),	-- Cloak of the Fleshborer
+				i(280063),	-- Bloodfur Bulwark
+				i(280064),	-- Withering Grips
+			},
 		}),
 		e(3316, {	-- Impaan the Imprisoner
 			creatureID = 247206,	-- Impaan the Imprisoner
+			groups = {
+				i(280056),	-- Flameslash Crescent
+				i(280057),	-- Robes of Dark Summons
+				i(280058),	-- Impish Chain Hood
+			},
 		}),
 		e(3327, {	-- Elder Shaman Bloodmane
 			creatureID = 247209,	-- Elder Shaman Bloodmane
+			groups = {
+				i(280068),	-- Bloody Claws of Attack
+				i(280069),	-- Shamanic Wristguards
+				i(280070),	-- Veilpiercer Girdle
+			},
 		}),
 		e(3322, {	-- Bonesnout the Unbroken
 			creatureID = 247198,	-- Bonesnout the Unbroken
+			groups = {
+				i(280059),	-- Tuskblade Halberd
+				i(280060),	-- Lucky Shovelnose Tuft
+				i(280061),	-- Spike Crested Bracers
+			},
 		}),
 		e(3334, {	-- Varrox Bleakhoof
 			creatureID = 247234,	-- Varrox Bleakhoof
+			groups = {
+				i(280074),	-- Scalding Flamehoof
+				i(280075),	-- Bleak Eye Shoulderplates
+				i(280076),	-- Horns of Varrox
+			},
 		}),
 		e(3323, {	-- Blackmaw Behemoth
 			creatureID = 247207,	-- Blackmaw Behemoth
+			groups = {
+				i(280065),	-- Behemoth Bones
+				i(280066),	-- Trousers of the Ebon Giant
+				i(280067),	-- Blackmaw Chain Belt
+			},
 		}),
 		e(3336, {	-- Unbound Spirit
 			creatureID = 247231,	-- Unbound Spirit
+			groups = {
+				i(280071),	-- Flamebreak Talisman
+				i(280072),	-- Cowl of Dark Ambition
+				i(280073),	-- Burnished Pridescales
+			},
 		}),
 	},
 });
