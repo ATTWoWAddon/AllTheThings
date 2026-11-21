@@ -1,6 +1,6 @@
----------------------------------------------------
---          Z O N E S        M O D U L E         --
----------------------------------------------------
+-----------------------------------------------------
+--     W O R L D   E V E N T S   M O D U L E       --
+-----------------------------------------------------
 
 local AQIR_INVASIONS = createHeader({
 	readable = "Aqir Invasions",
@@ -20,7 +20,7 @@ local AQIR_INVASIONS = createHeader({
 	},
 });
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
+root(ROOTS.WorldEvents, {
 	n(AQIR_INVASIONS, {
 		description = "As Kith'ix stirred, Aqir swarms that had slumbered beneath Quel'Thalas for millennia following the defeat of Azj'Aqir in the Aqir and Troll War awakened and began to swarm the surface, attacking both the Kingdom of Quel'Thalas and the Amani Empire.",
 		timeline = { ADDED_12_1_5, REMOVED_12_1_7 },
@@ -195,7 +195,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 			}),
 		},
 	}),
-}));
+});
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 	timeline = { ADDED_12_1_5 },

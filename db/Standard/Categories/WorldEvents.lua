@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,artifact,cl,cq,crit,cu,d,de,e,en,faction,flt,follower,h,heir,hqt,i,ill,inst,m,mnt,n,o,p,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
+local ach,ah,artifact,cl,cq,crit,cu,d,de,e,en,faction,flt,follower,h,heir,hqt,i,ill,inst,m,mnt,n,o,p,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateInstance,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
 h(-103,{awp=20003,g={
@@ -1822,6 +1822,66 @@ q(86938,{coords={
 [241]={{40.6,46.6}}},isWorldQuest=1,u=2}),
 q(91776,{coords={
 [241]={{20.3,57.8}}},isWorldQuest=1,u=2})}})}})}}),
+h(-790,{awp=120105,description="As Kith'ix stirred, Aqir swarms that had slumbered beneath Quel'Thalas for millennia following the defeat of Azj'Aqir in the Aqir and Troll War awakened and began to swarm the surface, attacking both the Kingdom of Quel'Thalas and the Amani Empire.",maps={2395,2437},rwp=120107,g={
+h(-12,{
+ach(63659,{
+title(793)}),
+ach(63680,{providers={{"s",1309365}},g={
+crit(116853,{achID=63659,id=3})}}),
+ach(63658,{
+crit(116681,{achID=63659,id=2})})}),
+h(-29,{
+i(277283,{f=55,g={
+h(-88,{
+flt(4,{
+s(310167,277885,{f=4,loc=46}),
+s(310174,277895,{f=4,loc=42})}),
+flt(5,{
+s(310168,277888,{f=5,loc=40}),
+s(310170,277890,{f=5,loc=41})}),
+flt(6,{
+s(310175,277896,{f=6,loc=42}),
+s(310171,277891,{f=6,loc=43})}),
+flt(7,{
+s(310176,277898,{f=7,loc=46}),
+s(316088,284219,{f=7,loc=42})})}),
+h(-101,{
+s(310166,277883,{f=1}),
+s(310172,277893,{f=20,spellID=1296732}),
+s(310169,277889,{f=35}),
+s(310177,277899,{f=32}),
+s(310165,277882,{f=28}),
+s(310163,277880,{f=21}),
+s(310161,277876,{f=29}),
+s(310162,277879,{f=20,spellID=1296874})})}}),
+i(286563,{f=55})}),
+ah(2838,{icon=463478,lore="Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",type="fa",g={
+faction(2838),
+h(-12,{
+ach(63657,{minReputation={2838,5},g={
+crit(116680,{achID=63659,id=1})}})}),
+h(-58,{
+n(266188,{coords={
+[2393]={{39.3,80.3}}},g={
+p(5068,{cost={{"c",3316,1000}},itemID=274927,minReputation={2838,2},npcID=265755,spellID=1295663}),
+de(25305,{cost={{"c",3316,250}},itemID=275873,minReputation={2838,2},spellID=1298042}),
+de(25303,{cost={{"c",3316,250}},itemID=275869,minReputation={2838,2},spellID=1298038}),
+p(5066,{cost={{"c",3316,1000}},itemID=274923,minReputation={2838,3},npcID=265740,spellID=1295644}),
+de(25306,{cost={{"c",3316,250}},itemID=275879,minReputation={2838,3},spellID=1298048}),
+de(25302,{cost={{"c",3316,250}},itemID=275867,minReputation={2838,3},spellID=1298036}),
+p(5100,{cost={{"c",3316,2000}},itemID=276927,minReputation={2838,4},npcID=268483,spellID=1301393}),
+de(25304,{cost={{"c",3316,500}},itemID=275871,minReputation={2838,4},spellID=1298040}),
+de(25301,{cost={{"c",3316,500}},itemID=275865,minReputation={2838,4},spellID=1298034}),
+de(27216,{cost={{"c",3316,1000}},itemID=280050,minReputation={2838,5},spellID=1307620}),
+mnt(1301331,{cost={{"c",3316,2500}},itemID=276926,minReputation={2838,5}}),
+toy(275039,{cost={{"c",3316,2500}},minReputation={2838,5}})}}),
+n(266905,{coords={
+[2393]={{39.4,80.4}}},g={
+sp(1320744,{cost={{"i",286563,1}}}),
+sp(1320745,{cost={{"i",286563,1}}}),
+sp(1320747,{cost={{"i",286563,1}}}),
+sp(1320729,{cost={{"i",286563,1}}}),
+sp(1320749,{cost={{"i",286563,1}}})}})})}})}}),
 h(-656,{awp=50100,maps={499,500,503},g={
 h(-12,{
 ach(7944,{awp=110207,providers={{"s",136314}}}),
