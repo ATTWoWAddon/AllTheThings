@@ -1429,6 +1429,13 @@ maproot(KALIMDOR, FERALAS, {
 			n(9548, {	-- Cawind Trueaim <Gunsmith & Bowyer>
 				coord = { 74.8, 45.6, FERALAS },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					3024,	-- BKP 2700 "Enforcer"
+					3025,	-- BKP 42 "Ultra"
+					3027,	-- Heavy Recurve Bow
+					3023,	-- Large Bore Blunderbuss
+					3026,	-- Reinforced Bow
+				}},
 				groups = {
 					i(11308, {	-- Sylvan Shortbow
 						isLimited = true,

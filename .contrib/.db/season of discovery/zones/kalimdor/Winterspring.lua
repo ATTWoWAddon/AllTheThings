@@ -995,6 +995,19 @@ maproot(KALIMDOR, WINTERSPRING, {
 				coords = {
 					{ 61.6, 38.0, WINTERSPRING },
 				},
+				sym = {{ "select", "itemID",
+					3024,	-- BKP 2700 "Enforcer"
+					3025,	-- BKP 42 "Ultra"
+					2528,	-- Falchion
+					2530,	-- Francisca
+					2531,	-- Great Axe
+					3023,	-- Large Bore Blunderbuss
+					2532,	-- Morning Star
+					2534,	-- Rondel
+					2533,	-- War Maul
+					2535,	-- War Staff
+					2529,	-- Zweihander
+				}},
 			}),
 			n(11185, {	-- Xizzer Fizzbolt <Engineering Supplies>
 				coords = {
