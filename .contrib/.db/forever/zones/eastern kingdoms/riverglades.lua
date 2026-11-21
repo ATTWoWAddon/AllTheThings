@@ -2141,6 +2141,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 			n(260566, {	-- Fizzix Boomshot <Gunsmith>
 				coord = { 78.6, 53.6, MAP.RIVERGLADES },
+				sym = {{ "select", "itemID",
+					3024,	-- BKP 2700 "Enforcer"
+					3025,	-- BKP 42 "Ultra"
+					3023,	-- Large Bore Blunderbuss
+				}},
 				groups = {
 					i(18650),	-- Schematic: EZ-Thro Dynamite II (RECIPE!)
 				},

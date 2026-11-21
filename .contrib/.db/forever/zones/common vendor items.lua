@@ -667,6 +667,7 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 			}),
 			filter(GUNS, {
 				i(3024),	-- BKP 2700 "Enforcer"
+				i(3025),	-- BKP 42 "Ultra"
 				i(2511),	-- Hunter's Boomstick
 				i(3023),	-- Large Bore Blunderbuss
 				i(2509),	-- Ornate Blunderbuss

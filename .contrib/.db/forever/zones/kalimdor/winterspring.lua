@@ -1000,6 +1000,7 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 				coord = { 61.6, 38.0, MAP.WINTERSPRING },
 				sym = {{ "select", "itemID",
 					3024,	-- BKP 2700 "Enforcer"
+					3025,	-- BKP 42 "Ultra"
 					2528,	-- Falchion
 					2530,	-- Francisca
 					2531,	-- Great Axe
