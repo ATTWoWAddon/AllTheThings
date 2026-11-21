@@ -243,25 +243,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				repeatable = true,
 				lvl = 50,
 			}),
-			q(97447, {	-- An Earnest Proposition [A]
-				qg = 230319,	-- Deliana
-				coord = { 42.4, 52.2, MAP.IRONFORGE },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
-				cost = { { "g", 200000 } },	-- 20g
-				lvl = 58,
-				groups = {
-					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
-					}),
-					objective(2, {	-- 0/1 Bindings of Elements
-						provider = { "i", 16671 },	-- Bindings of Elements
-					}),
-					i(227001),	-- Bindings of The Five Thunders
-					i(227009),	-- Bracers of The Five Thunders
-					i(227017),	-- Bands of The Five Thunders
-				},
-			}),
 			q(3450, {	-- An Easy Pickup
 				sourceQuest = 3448,	-- Passing the Burden
 				qg = 8507,	-- Tymor
@@ -716,24 +697,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 						},
 						coord = { 77.9, 62.2, MAP.DUN_MOROGH },
 					}),
-				},
-			}),
-			q(97448, {	-- Just Compensation [A]
-				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Deliana.
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				maps = { MAP.BLACKROCK_SPIRE },
-				races = ALLIANCE_ONLY,
-				lvl = 58,
-				groups = {
-					objective(1, {	-- 0/1 Cord of Elements
-						provider = { "i", 16673 },	-- Cord of Elements
-					}),
-					objective(2, {	-- 0/1 Gauntlets of Elements
-						provider = { "i", 16672 },	-- Gauntlets of Elements
-					}),
-					i(227350),	-- Relief's Gloves and Belt Set
-					i(227351),	-- Eruption's Gloves and Belt Set
-					i(227352),	-- Impact's Gloves and Belt Set
 				},
 			}),
 			q(2298, {	-- Kingly Shakedown

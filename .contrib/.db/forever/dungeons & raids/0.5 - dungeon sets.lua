@@ -12,12 +12,12 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				9001,	-- Saving the Best for Last [A] (Mage)
 				9014,	-- Saving the Best for Last [H] (Mage)
 				9002,	-- Saving the Best for Last [A] (Paladin)
-				10499,	-- Saving the Best for Last [H] (Paladin)
+				97414,	-- Saving the Best for Last [H] (Paladin)
 				9003,	-- Saving the Best for Last [A] (Priest)
 				9009,	-- Saving the Best for Last [H] (Priest)
 				9004,	-- Saving the Best for Last [A] (Rogue)
 				9010,	-- Saving the Best for Last [H] (Rogue)
-				10498,	-- Saving the Best for Last [A] (Shaman)
+				97450,	-- Saving the Best for Last [A] (Shaman)
 				9011,	-- Saving the Best for Last [H] (Shaman)
 				9005,	-- Saving the Best for Last [A] (Warlock)
 				9012,	-- Saving the Best for Last [H] (Warlock)
@@ -365,45 +365,44 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 		},
 	}),
 	cl(PALADIN, {
-		{	-- An Earnest Proposition
-			allianceQuestData = q(8908, {	-- An Earnest Proposition [A]
-				qg = 16013,	-- Deliana
-				coord = { 43.5, 52.6, MAP.IRONFORGE },
-				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-				groups = {
-					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
-					}),
-				},
-			}),
-			hordeQuestData = q(10493, {	-- An Earnest Proposition [H]
-				qg = 16012,	-- Mokvar
-				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
-				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-				groups = {
-					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
-						crs = {
-							11739,	-- Rock Stalker
-							11738,	-- Sand Skitterer
-							11737,	-- Stonelash Flayer
-							11736,	-- Stonelash Pincer
-							11735,	-- Stonelash Scorpid
-						},
-					}),
-				},
-			}),
+		q(8908, {	-- An Earnest Proposition [A]
+			qg = 16013,	-- Deliana
+			coord = { 43.5, 52.6, MAP.IRONFORGE },
+			maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 			classes = { PALADIN },
+			races = ALLIANCE_ONLY,
 			cost = {
 				{ "i", 16722, 1 },	-- Lightforge Bracers
 				{ "g", 200000 },	-- 20g
 			},
 			lvl = 58,
-			groups = { i(22088) },	-- Soulforge Bracers
-		},
-		{	-- Anthion's Parting Words
-			allianceQuestData = q(8954),	-- Anthion's Parting Words [A]
-			hordeQuestData = q(10497),	-- Anthion's Parting Words [H]
+			groups = {
+				objective(1, {	-- 0/15 Winterspring Blood Sample
+					provider = { "i", 21928 },	-- Winterspring Blood Sample
+				}),
+				i(22088),	-- Soulforge Bracers
+			},
+		}),
+		q(97411, {	-- An Earnest Proposition [H]
+			qg = 230317,	-- Mokvar
+			coord = { 35.0, 38.0, MAP.ORGRIMMAR },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = HORDE_ONLY,
+			cost = { { "g", 200000 } },	-- 20g
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/15 Silithus Venom Sample
+					provider = { "i", 22381 },	-- Silithus Venom Sample
+				}),
+				objective(2, {	-- 0/1 Lightforge Bracers
+					provider = { "i", 16722 },	-- Lightforge Bracers
+				}),
+				i(226985),	-- Soulforge Wristguards
+				i(226977),	-- Soulforge Bindings
+				i(226970),	-- Soulforge Bracers
+			},
+		}),
+		q(8954, {	-- Anthion's Parting Words [A]
 			qg = 16016,	-- Anthion Harmon
 			sourceQuest = 9015,	-- The Challenge
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
@@ -412,6 +411,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			classes = { PALADIN },
+			races = ALLIANCE_ONLY,
 			cost = {
 				{ "i", 16725, 1 },	-- Lightforge Boots
 				{ "i", 16728, 1 },	-- Lightforge Legplates
@@ -423,20 +423,55 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				i(22092),	-- Soulforge Legplates
 				i(22093),	-- Soulforge Spaulders
 			},
-		},
-		{	-- Just Compensation
-			allianceQuestData = q(8933, {	-- Just Compensation [A]
-				sourceQuest = 8977,	-- Return to Deliana
-				qg = 16013,	-- Deliana
-				coord = { 43.5, 52.6, MAP.IRONFORGE },
-			}),
-			hordeQuestData = q(10495, {	-- Just Compensation [H]
-				sourceQuest = 8978,	-- Return to Mokvar
-				qg = 16012,	-- Mokvar
-				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
-			}),
+		}),
+		q(97413, {	-- Anthion's Parting Words [H]
+			qg = 230317,	-- Mokvar
+			qi = 22047,	-- Top Piece of Lord Valthalak's Amulet (PQI!)
+			coord = { 35.0, 38.0, MAP.ORGRIMMAR },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			maps = {
+				MAP.STRATHOLME,
+				MAP.BLACKROCK_SPIRE,
+			},
+			races = HORDE_ONLY,
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Lightforge Boots
+					provider = { "i", 16725 },	-- Lightforge Boots
+				}),
+				objective(2, {	-- 0/1 Lightforge Legplates
+					provider = { "i", 16728 },	-- Lightforge Legplates
+				}),
+				objective(3, {	-- 0/1 Lightforge Spaulders
+					provider = { "i", 16729 },	-- Lightforge Spaulders
+				}),
+				i(227368, {	-- Merciful Boots, Legs, and Shoulders Set
+					-- Holy
+					i(226983),	-- Soulforge Treads
+					i(226980),	-- Soulforge Leggings
+					i(226979),	-- Soulforge Epaulets
+				}),
+				i(227369, {	-- Radiant Boots, Legs, and Shoulders Set
+					-- Retribution
+					i(226974),	-- Soulforge Warboots
+					i(226972),	-- Soulforge Legplates
+					i(226969),	-- Soulforge Spaulders
+				}),
+				i(227370, {	-- Divine Will Boots, Legs, and Shoulders Set
+					-- Protection
+					i(226991),	-- Soulforge Sabatons
+					i(226988),	-- Soulforge Legguards
+					i(226987),	-- Soulforge Pauldrons
+				}),
+			},
+		}),
+		q(8933, {	-- Just Compensation [A]
+			sourceQuest = 8977,	-- Return to Deliana
+			qg = 16013,	-- Deliana
+			coord = { 43.5, 52.6, MAP.IRONFORGE },
 			maps = { MAP.BLACKROCK_DEPTHS, MAP.STRATHOLME },
 			classes = { PALADIN },
+			races = ALLIANCE_ONLY,
 			cost = {
 				{ "i", 16723, 1 },	-- Lightforge Belt
 				{ "i", 16724, 1 },	-- Lightforge Gauntlets
@@ -446,23 +481,48 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				i(22086),	-- Soulforge Belt
 				i(22090),	-- Soulforge Gauntlets
 			},
-		},
-		{	-- Saving the Best for Last
-			allianceQuestData = q(9002, {	-- Saving the Best for Last [A]
-				sourceQuest = 8997,	-- Back to the Beginning [ALLIANCE]
-				qg = 16013,	-- Deliana
-				coord = { 43.5, 52.6, MAP.IRONFORGE },
-			}),
-			hordeQuestData = q(10499, {	-- Saving the Best for Last [H]
-				sourceQuest = 8998,	-- Back to the Beginning [HORDE]
-				qg = 16012,	-- Mokvar
-				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
-			}),
+		}),
+		q(97412, {	-- Just Compensation [H]
+			qg = 230317,	-- Mokvar
+			coord = { 35.0, 38.0, MAP.ORGRIMMAR },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			maps = { MAP.STRATHOLME },
+			races = HORDE_ONLY,
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Lightforge Belt
+					provider = { "i", 16723 },	-- Lightforge Belt
+				}),
+				objective(2, {	-- 0/1 Lightforge Gauntlets
+					provider = { "i", 16724 },	-- Lightforge Gauntlets
+				}),
+				i(227343, {	-- Merciful Gloves and Belt Set
+					-- Holy
+					i(226982),	-- Soulforge Fists
+					i(226978),	-- Soulforge Cord
+				}),
+				i(227344, {	-- Radiant Gloves and Belt Set
+					-- Retribution
+					i(226975),	-- Soulforge Gauntlets
+					i(226971),	-- Soulforge Belt
+				}),
+				i(227345, {	-- Divine Will Gloves and Belt Set
+					-- Protection
+					i(226990),	-- Soulforge Handguards
+					i(226986),	-- Soulforge Waistguard
+				}),
+			},
+		}),
+		q(9002, {	-- Saving the Best for Last [A]
+			sourceQuest = 8997,	-- Back to the Beginning [ALLIANCE]
+			qg = 16013,	-- Deliana
+			coord = { 43.5, 52.6, MAP.IRONFORGE },
 			maps = {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
 			classes = { PALADIN },
+			races = ALLIANCE_ONLY,
 			cost = {
 				{ "i", 16727, 1 },	-- Lightforge Helm
 				{ "i", 16726, 1 },	-- Lightforge Breastplate
@@ -472,7 +532,41 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				i(22091),	-- Soulforge Helm
 				i(22089),	-- Soulforge Breastplate
 			},
-		},
+		}),
+		q(97414, {	-- Saving the Best for Last [H]
+			qg = 230317,	-- Mokvar
+			coord = { 35.0, 38.0, MAP.ORGRIMMAR },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			maps = {
+				MAP.SCHOLOMANCE,
+				MAP.BLACKROCK_SPIRE,
+			},
+			races = HORDE_ONLY,
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Lightforge Helm
+					provider = { "i", 16727 },	-- Lightforge Helm
+				}),
+				objective(2, {	-- 0/1 Lightforge Breastplate
+					provider = { "i", 16726 },	-- Lightforge Breastplate
+				}),
+				i(227390, {	-- Merciful Helm and Chestpiece Set
+					-- Holy
+					i(226981),	-- Soulforge Crown
+					i(226984),	-- Soulforge Embrace
+				}),
+				i(227391, {	-- Radiant Helm and Chestpiece Set
+					-- Retribution
+					i(226976),	-- Soulforge Greathelm
+					i(226973),	-- Soulforge Breastplate
+				}),
+				i(227392, {	-- Divine Will Helm and Chestpiece Set
+					-- Protection
+					i(226989),	-- Soulforge Faceguard
+					i(226992),	-- Soulforge Chestguards
+				}),
+			},
+		}),
 	}),
 	cl(PRIEST, {
 		{	-- An Earnest Proposition
@@ -698,45 +792,92 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 		},
 	}),
 	cl(SHAMAN, {
-		{	-- An Earnest Proposition
-			allianceQuestData = q(10492, {	-- An Earnest Proposition [A]
-				qg = 16013,	-- Deliana
-				coord = { 43.5, 52.6, MAP.IRONFORGE },
-				maps = { MAP.WINTERSPRING, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-				groups = {
-					objective(1, {	-- 0/15 Winterspring Blood Sample
-						provider = { "i", 21928 },	-- Winterspring Blood Sample
-					}),
-				},
-			}),
-			hordeQuestData = q(8918, {	-- An Earnest Proposition [H]
-				qg = 16012,	-- Mokvar
-				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
-				maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
-				groups = {
-					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
-						crs = {
-							11739,	-- Rock Stalker
-							11738,	-- Sand Skitterer
-							11737,	-- Stonelash Flayer
-							11736,	-- Stonelash Pincer
-							11735,	-- Stonelash Scorpid
-						},
-					}),
-				},
-			}),
+		q(97447, {	-- An Earnest Proposition [A]
+			qg = 230319,	-- Deliana
+			coord = { 42.4, 52.2, MAP.IRONFORGE },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			races = ALLIANCE_ONLY,
+			cost = { { "g", 200000 } },	-- 20g
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/15 Winterspring Blood Sample
+					provider = { "i", 21928 },	-- Winterspring Blood Sample
+				}),
+				objective(2, {	-- 0/1 Bindings of Elements
+					provider = { "i", 16671 },	-- Bindings of Elements
+				}),
+				i(227001),	-- Bindings of The Five Thunders
+				i(227009),	-- Bracers of The Five Thunders
+				i(227017),	-- Bands of The Five Thunders
+			},
+		}),
+		q(8918, {	-- An Earnest Proposition [H]
+			qg = 16012,	-- Mokvar
+			coord = { 35.0, 38.3, MAP.ORGRIMMAR },
+			maps = { MAP.SILITHUS, MAP.SCHOLOMANCE, MAP.STRATHOLME },
 			classes = { SHAMAN },
+			races = HORDE_ONLY,
 			cost = {
 				{ "i", 16671, 1 },	-- Bindings of Elements
 				{ "g", 200000 },	-- 20g
 			},
 			lvl = 58,
-			groups = { i(22095) },	-- Bindings of The Five Thunders
-		},
-		{	-- Anthion's Parting Words
-			allianceQuestData = q(10496),	-- Anthion's Parting Words [A]
-			hordeQuestData = q(8957),	-- Anthion's Parting Words [H]
+			groups = {
+				objective(1, {	-- 0/15 Silithus Venom Sample
+					provider = { "i", 22381 },	-- Silithus Venom Sample
+					crs = {
+						11739,	-- Rock Stalker
+						11738,	-- Sand Skitterer
+						11737,	-- Stonelash Flayer
+						11736,	-- Stonelash Pincer
+						11735,	-- Stonelash Scorpid
+					},
+				}),
+				i(22095),	-- Bindings of The Five Thunders
+			},
+		}),
+		q(97449, {	-- Anthion's Parting Words [A]
+			qg = 230319,	-- Deliana
+			qi = 22047,	-- Top Piece of Lord Valthalak's Amulet (PQI!)
+			coord = { 42.4, 52.2, MAP.IRONFORGE },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			maps = {
+				MAP.STRATHOLME,
+				MAP.BLACKROCK_SPIRE,
+			},
+			races = ALLIANCE_ONLY,
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Boots of Elements
+					provider = { "i", 16670 },	-- Boots of Elements
+				}),
+				objective(2, {	-- 0/1 Kilt of Elements
+					provider = { "i", 16668 },	-- Kilt of Elements
+				}),
+				objective(3, {	-- 0/1 Pauldrons of Elements
+					provider = { "i", 16669 },	-- Pauldrons of Elements
+				}),
+				i(227375, {	-- Relief's Boots, Legs, and Shoulders Set
+					-- Restoration
+					i(227015),	-- Greaves of The Five Thunders
+					i(227012),	-- Leggings of The Five Thunders
+					i(227011),	-- Mantle of The Five Thunders
+				}),
+				i(227376, {	-- Eruption's Boots, Legs, and Shoulders Set
+					-- Elemental
+					i(227007),	-- Slippers of The Five Thunders
+					i(227005),	-- Kilt of The Five Thunders
+					i(227003),	-- Pauldrons of The Five Thunders
+				}),
+				i(227377, {	-- Impact's Boots, Legs, and Shoulders Set
+					-- Enhancement DPS
+					i(227023),	-- Treads of The Five Thunders
+					i(227020),	-- Legplates of The Five Thunders
+					i(227019),	-- Spaulders of The Five Thunders
+				}),
+			},
+		}),
+		q(8957, {	-- Anthion's Parting Words [H]
 			qg = 16016,	-- Anthion Harmon
 			sourceQuest = 9015,	-- The Challenge
 			coord = { 30.9, 16.8, MAP.EASTERN_PLAGUELANDS },
@@ -745,6 +886,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				MAP.BLACKROCK_SPIRE,
 			},
 			classes = { SHAMAN },
+			races = HORDE_ONLY,
 			cost = {
 				{ "i", 16670, 1 },	-- Boots of Elements
 				{ "i", 16668, 1 },	-- Kilt of Elements
@@ -756,22 +898,47 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				i(22100),	-- Kilt of The Five Thunders
 				i(22101),	-- Pauldrons of The Five Thunders
 			},
-		},
-		{	-- Just Compensation
-			allianceQuestData = q(10494, {	-- Just Compensation [A]
-				sourceQuest = 8977,	-- Return to Deliana
-				qg = 16013,	-- Deliana
-				coord = { 43.5, 52.6, MAP.IRONFORGE },
-			}),
-			hordeQuestData = q(8942, {	-- Just Compensation [H]
-				sourceQuest = 8978,	-- Return to Mokvar
-				qg = 16012,	-- Mokvar
-				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
-			}),
+		}),
+		q(97448, {	-- Just Compensation [A]
+			qg = 230319,	-- Deliana
+			coord = { 42.4, 52.2, MAP.IRONFORGE },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			maps = { MAP.BLACKROCK_SPIRE },
+			races = ALLIANCE_ONLY,
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Cord of Elements
+					provider = { "i", 16673 },	-- Cord of Elements
+				}),
+				objective(2, {	-- 0/1 Gauntlets of Elements
+					provider = { "i", 16672 },	-- Gauntlets of Elements
+				}),
+				i(227350, {	-- Relief's Gloves and Belt Set
+					-- Restoration
+					i(227014),	-- Grasp of The Five Thunders
+					i(227010),	-- Sash of The Five Thunders
+				}),
+				i(227351, {	-- Eruption's Gloves and Belt Set
+					-- Elemental
+					i(227006),	-- Gauntlets of The Five Thunders
+					i(227008),	-- Cord of The Five Thunders
+				}),
+				i(227352, {	-- Impact's Gloves and Belt Set
+					-- Enhancement DPS
+					i(227022),	-- Fists of The Five Thunders
+					i(227018),	-- Girdle of The Five Thunders
+				}),
+			},
+		}),
+		q(8942, {	-- Just Compensation [H]
+			sourceQuest = 8978,	-- Return to Mokvar
+			qg = 16012,	-- Mokvar
+			coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 			maps = {
 				MAP.BLACKROCK_SPIRE,
 			},
 			classes = { SHAMAN },
+			races = HORDE_ONLY,
 			cost = {
 				{ "i", 16673, 1 },	-- Cord of Elements
 				{ "i", 16672, 1 },	-- Gauntlets of Elements
@@ -781,23 +948,51 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				i(22098),	-- Cord of The Five Thunders
 				i(22099),	-- Gauntlets of The Five Thunders
 			},
-		},
-		{	-- Saving the Best for Last
-			allianceQuestData = q(10498, {	-- Saving the Best for Last [A]
-				sourceQuest = 8997,	-- Back to the Beginning [ALLIANCE]
-				qg = 16013,	-- Deliana
-				coord = { 43.5, 52.6, MAP.IRONFORGE },
-			}),
-			hordeQuestData = q(9011, {	-- Saving the Best for Last [H]
-				sourceQuest = 8998,	-- Back to the Beginning [HORDE]
-				qg = 16012,	-- Mokvar
-				coord = { 35.0, 38.3, MAP.ORGRIMMAR },
-			}),
+		}),
+		q(97450, {	-- Saving the Best for Last [A]
+			qg = 230319,	-- Deliana
+			coord = { 42.4, 52.2, MAP.IRONFORGE },
+			timeline = { TIMELINE.ADDED_1_60_1 },
+			maps = {
+				MAP.SCHOLOMANCE,
+				MAP.BLACKROCK_SPIRE,
+			},
+			races = ALLIANCE_ONLY,
+			lvl = 58,
+			groups = {
+				objective(1, {	-- 0/1 Coif of Elements
+					provider = { "i", 16667 },	-- Coif of Elements
+				}),
+				objective(2, {	-- 0/1 Vest of Elements
+					provider = { "i", 16666 },	-- Vest of Elements
+				}),
+				i(227397, {	-- Relief's Helm and Chestpiece Set
+					-- Restoration
+					i(227013),	-- Crown of The Five Thunders
+					i(227016),	-- Tunic of The Five Thunders
+				}),
+				i(227398, {	-- Eruption's Helm and Chestpiece Set
+					-- Elemental
+					i(227002),	-- Coif of The Five Thunders
+					i(227004),	-- Vest of The Five Thunders
+				}),
+				i(227399, {	-- Impact's Helm and Chestpiece Set
+					-- Enhancement DPS
+					i(227021),	-- Face of The Five Thunders
+					i(227024),	-- Chain of The Five Thunders
+				}),
+			},
+		}),
+		q(9011, {	-- Saving the Best for Last [H]
+			sourceQuest = 8998,	-- Back to the Beginning [HORDE]
+			qg = 16012,	-- Mokvar
+			coord = { 35.0, 38.3, MAP.ORGRIMMAR },
 			maps = {
 				MAP.SCHOLOMANCE,
 				MAP.BLACKROCK_SPIRE,
 			},
 			classes = { SHAMAN },
+			races = HORDE_ONLY,
 			cost = {
 				{ "i", 16667, 1 },	-- Coif of Elements
 				{ "i", 16666, 1 },	-- Vest of Elements
@@ -807,7 +1002,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 				i(22097),	-- Coif of The Five Thunders
 				i(22102),	-- Vest of The Five Thunders
 			},
-		},
+		}),
 	}),
 	cl(WARLOCK, {
 		{	-- An Earnest Proposition
@@ -1063,7 +1258,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					8909,	-- An Earnest Proposition [PRIEST]
 					8910,	-- An Earnest Proposition [ROGUE]
 					-- #if AFTER TBC
-					10492,	-- An Earnest Proposition [SHAMAN]
+					97447,	-- An Earnest Proposition [SHAMAN]
 					-- #endif
 					8911,	-- An Earnest Proposition [WARLOCK]
 					8912,	-- An Earnest Proposition [WARRIOR]
@@ -1078,7 +1273,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					8914,	-- An Earnest Proposition [HUNTER]
 					8915,	-- An Earnest Proposition [MAGE]
 					-- #if AFTER TBC
-					10493,	-- An Earnest Proposition [PALADIN]
+					97411,	-- An Earnest Proposition [PALADIN]
 					-- #endif
 					8916,	-- An Earnest Proposition [PRIEST]
 					8917,	-- An Earnest Proposition [ROGUE]
@@ -1142,7 +1337,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					8958,	-- Anthion's Parting Words [ALLIANCE]
 					8959,	-- Anthion's Parting Words [ALLIANCE]
 					-- #if AFTER TBC
-					10496,	-- Anthion's Parting Words [ALLIANCE]
+					97449,	-- Anthion's Parting Words [ALLIANCE]
 					-- #endif
 				},
 				qg = 16013,	-- Deliana
@@ -1159,7 +1354,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					9021,	-- Anthion's Parting Words [HORDE]
 					9022,	-- Anthion's Parting Words [HORDE]
 					-- #if AFTER TBC
-					10497,	-- Anthion's Parting Words [HORDE]
+					97413,	-- Anthion's Parting Words [HORDE]
 					-- #endif
 				},
 				qg = 16012,	-- Mokvar
@@ -1375,7 +1570,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					8936,	-- Just Compensation [ALLIANCE]
 					8937,	-- Just Compensation [ALLIANCE]
 					-- #if AFTER TBC
-					10494,	-- Just Compensation [ALLIANCE]
+					97448,	-- Just Compensation [ALLIANCE]
 					-- #endif
 				},
 				qg = 16013,	-- Deliana
@@ -1392,7 +1587,7 @@ root(ROOTS.Instances, n(TIER_ZERO_POINT_FIVE_SETS, {
 					8943,	-- Just Compensation [HORDE]
 					8944,	-- Just Compensation [HORDE]
 					-- #if AFTER TBC
-					10495,	-- Just Compensation [HORDE]
+					97412,	-- Just Compensation [HORDE]
 					-- #endif
 				},
 				qg = 16012,	-- Mokvar

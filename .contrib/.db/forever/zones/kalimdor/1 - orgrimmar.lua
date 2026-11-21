@@ -281,25 +281,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				repeatable = true,
 				lvl = 50,
 			}),
-			q(97411, {	-- An Earnest Proposition [H]
-				qg = 230317,	-- Mokvar
-				coord = { 35.0, 38.0, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
-				cost = { { "g", 200000 } },	-- 20g
-				lvl = 58,
-				groups = {
-					objective(1, {	-- 0/15 Silithus Venom Sample
-						provider = { "i", 22381 },	-- Silithus Venom Sample
-					}),
-					objective(2, {	-- 0/1 Lightforge Bracers
-						provider = { "i", 16722 },	-- Lightforge Bracers
-					}),
-					i(226985),	-- Soulforge Wristguards
-					i(226977),	-- Soulforge Bindings
-					i(226970),	-- Soulforge Bracers
-				},
-			}),
 			q(2751, {	-- Barbaric Battlements
 				qg = 7790,	-- Orokk Omosh
 				coord = { 79.4, 22.4, MAP.ORGRIMMAR },
@@ -543,25 +524,6 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					i(7982, {	-- Plans: Barbaric Iron Gloves (RECIPE!)
 						description = "This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",
 					}),
-				},
-			}),
-			q(97412, {	-- Just Compensation [H]
-				qg = 230317,	-- Mokvar
-				coord = { 35.0, 38.0, MAP.ORGRIMMAR },
-				timeline = { TIMELINE.ADDED_1_60_1 },
-				maps = { MAP.STRATHOLME },
-				races = HORDE_ONLY,
-				lvl = 58,
-				groups = {
-					objective(1, {	-- 0/1 Lightforge Belt
-						provider = { "i", 16723 },	-- Lightforge Belt
-					}),
-					objective(2, {	-- 0/1 Lightforge Gauntlets
-						provider = { "i", 16724 },	-- Lightforge Gauntlets
-					}),
-					i(227343),	-- Merciful Gloves and Belt Set
-					i(227344),	-- Radiant Gloves and Belt Set
-					i(227345),	-- Divine Will Gloves and Belt Set
 				},
 			}),
 			q(1945, {	-- Laughing Sisters
