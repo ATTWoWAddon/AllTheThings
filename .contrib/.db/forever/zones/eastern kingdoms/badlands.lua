@@ -615,6 +615,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					}),
 				},
 			}),
+			q(78830, {	-- Terror of the Desert Skies (Hemet Nesingwary)
+				sourceQuest = 78823,	-- Terror of the Desert Skies (Primitive Drawing)
+				qg = 715,	-- Hemet Nesingwary
+				qi = 211272,	-- Empty Bait Cage (PQI!)
+				coord = { 35.6, 10.8, MAP.STRANGLETHORN_VALE },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 26,
+				groups = {
+					objective(1, {	-- 0/1 Crimson Trophy Quill
+						provider = { "i", 211293 },	-- Crimson Trophy Quill
+						cr = 213795,	-- Gharrik
+						coord = { 22.4, 67.6, MAP.BADLANDS },
+					}),
+					i(277209),	-- Ponderous Loop
+					i(277207),	-- Well-Weathered Cloak
+				},
+			}),
 			q(78823, {	-- Terror of the Desert Skies (Primitive Drawing)
 				qs = 211269,	-- Primitive Drawing (QS!)
 				maps = { MAP.STRANGLETHORN_VALE },
