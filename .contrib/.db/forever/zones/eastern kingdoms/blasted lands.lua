@@ -341,7 +341,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 			}),
 			q(93685, {	-- To Serve Kum'isha
 				sourceQuest = 93684,	-- The Found One
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 7363,	-- Kum'isha the Collector
+				coord = { 51.8, 35.4, MAP.BLASTED_LANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 45,
 				groups = {

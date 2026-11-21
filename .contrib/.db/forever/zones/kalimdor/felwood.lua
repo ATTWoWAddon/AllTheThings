@@ -1102,7 +1102,7 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				},
 			}),
 			q(5156, {	-- Verifying the Corruption
-				qg = 10921,	-- Taronn Redfeather
+				qg = 10921,	-- Taronn Redfeather <Emerald Circle>
 				coord = { 50.9, 81.6, MAP.FELWOOD },
 				lvl = 48,
 				groups = {

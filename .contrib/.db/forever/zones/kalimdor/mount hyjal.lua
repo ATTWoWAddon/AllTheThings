@@ -239,7 +239,8 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				lvl = 54,
 			}),
 			q(92189, {	-- Back to the Grind
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 265866,	-- Trigg Ironhand <Repairs>
+				coord = { 15.6, 50.4, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 54,
@@ -305,7 +306,7 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				},
 			}),
 			q(94504, {	-- Barkskin Beginnings
-				qg = 256627,	-- Elder Mistpaw
+				qg = 256627,	-- Elder Mistpaw <The Wise>
 				coord = { 21.6, 79.0, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 54,
@@ -559,7 +560,7 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				},
 			}),
 			q(93826, {	-- Deal Dread to Deadwood
-				qg = 256627,	-- Elder Mistpaw
+				qg = 256627,	-- Elder Mistpaw <The Wise>
 				coord = { 21.6, 79.0, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 54,
@@ -573,7 +574,8 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				},
 			}),
 			q(95107, {	-- Deeproar Down
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256627,	-- Elder Mistpaw <The Wise>
+				coord = { 21.4, 79.0, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 54,
 				groups = {
@@ -1002,7 +1004,8 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				},
 			}),
 			q(95108, {	-- Mystic Mix
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256650,	-- Elder Pinespeaker
+				coord = { 21.6, 79.2, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 54,
 				groups = {
@@ -1271,7 +1274,8 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				},
 			}),
 			q(93832, {	-- Shatter the Stonewatchers
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256627,	-- Elder Mistpaw <The Wise>
+				coord = { 21.4, 79.0, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 54,
 				groups = {
@@ -1524,7 +1528,8 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				lvl = 54,
 			}),
 			q(95769, {	-- Threading a Solution
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 265788,	-- Kal'tinzan
+				coord = { 13.6, 53.0, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 54,
@@ -1700,8 +1705,9 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				},
 			}),
 			q(95273, {	-- Water of Hyjal
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 256626,	-- Fennar Mossmane
 				qi = 274373,	-- Barkskin Purification Tonic (PQI!)
+				coord = { 20.2, 78.2, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 54,
 				groups = {
@@ -1733,8 +1739,9 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				},
 			}),
 			q(97007, {	-- Wood Remains
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 10781,	-- Royal Overseer Bauhaus <Undercity Census>
 				qi = 276099,	-- Sawyer Family Ledger (PQI!)
+				coord = { 69.4, 43.4, MAP.UNDERCITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 54,

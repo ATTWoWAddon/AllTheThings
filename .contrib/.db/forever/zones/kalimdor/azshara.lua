@@ -838,7 +838,8 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				lvl = 45,
 			}),
 			q(90789, {	-- Scalebeard
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 8379,	-- Archmage Xylem
+				coord = { 29.2, 40.2, MAP.AZSHARA },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { MAGE },
 				lvl = 60,

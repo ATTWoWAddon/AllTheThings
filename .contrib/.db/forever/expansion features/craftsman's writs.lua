@@ -36,7 +36,7 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94319, {	-- Craftsman's Writ: Draught of Detect Demon [Artisan]
 							qs = 264119,	-- Craftsman's Writ: Draught of Detect Demon (QS!)
-							cr = 257743,	-- Hastings
+							cr = 257743,	-- Hastings <The Caretaker>
 							coord = { 47.2, 75.0, MAP.DEADWIND_PASS },
 							cost = { { "i", 9233, 1 } },	-- Draught of Detect Demon
 							isDaily = true,
@@ -50,7 +50,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94317, {	-- Craftsman's Writ: Dreamless Sleep Potion [Artisan]
 							qs = 264117,	-- Craftsman's Writ: Dreamless Sleep Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 7363,	-- Kum'isha the Collector
+							coord = { 51.8, 35.4, MAP.BLASTED_LANDS },
 							cost = { { "i", 12190, 1 } },	-- Dreamless Sleep Potion
 							isDaily = true,
 						}),
@@ -128,7 +129,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94320, {	-- Craftsman's Writ: Gift of Arthas [Artisan]
 							qs = 264120,	-- Craftsman's Writ: Gift of Arthas (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11706,	-- Adon
+							coord = { 50.8, 11.6, MAP.EASTERN_PLAGUELANDS },
 							cost = { { "i", 9088, 1 } },	-- Gift of Arthas
 							isDaily = true,
 						}),
@@ -148,7 +150,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94318, {	-- Craftsman's Writ: Greater Fire Protection Potion [Artisan]
 							qs = 264118,	-- Craftsman's Writ: Greater Fire Protection Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 14437,	-- Gorzeeki Wildeyes
+							coord = { 12.4, 31.4, MAP.BURNING_STEPPES },
 							cost = { { "i", 13457, 1 } },	-- Greater Fire Protection Potion
 							isDaily = true,
 						}),
@@ -188,13 +191,15 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94322, {	-- Craftsman's Writ: Limited Invulnerability Potion [Artisan]
 							qs = 264122,	-- Craftsman's Writ: Limited Invulnerability Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11805,	-- Jarund Stoutstrider <The Cenarion Circle>
+							coord = { 82.0, 18.0, MAP.SILITHUS },
 							cost = { { "i", 3387, 1 } },	-- Limited Invulnerability Potion
 							isDaily = true,
 						}),
 						q(94323, {	-- Craftsman's Writ: Major Rejuvenation Potion [Artisan]
 							qs = 264123,	-- Craftsman's Writ: Major Rejuvenation Potion (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262024,	-- Kirala Fairgrass <The Argent Dawn>
+							coord = { 59.4, 53.2, MAP.WESTERN_PLAGUELANDS },
 							cost = { { "i", 18253, 1 } },	-- Major Rejuvenation Potion
 							isDaily = true,
 						}),
@@ -214,7 +219,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94316, {	-- Craftsman's Writ: Potion of Demonslaying [Artisan]
 							qs = 264116,	-- Craftsman's Writ: Potion of Demonslaying (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 8379,	-- Archmage Xylem
+							coord = { 29.2, 40.2, MAP.AZSHARA },
 							cost = { { "i", 9224, 1 } },	-- Potion of Demon Slaying
 							isDaily = true,
 						}),
@@ -353,7 +359,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94328, {	-- Craftsman's Writ: Mithril Spurs [Artisan]
 							qs = 264128,	-- Craftsman's Writ: Mithril Spurs (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 257750,	-- Calliard <The Nightman>
+							coord = { 48.0, 68.2, MAP.DEADWIND_PASS },
 							cost = { { "i", 7969, 1 } },	-- Mithril Spurs
 							isDaily = true,
 						}),
@@ -366,13 +373,15 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94327, {	-- Craftsman's Writ: Orcish War Leggings [Artisan]
 							qs = 264127,	-- Craftsman's Writ: Orcish War Leggings (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 257673,	-- Ugkragg <Humiliated Blackrock Soldier>
+							coord = { 38.2, 35.0, MAP.BURNING_STEPPES },
 							cost = { { "i", 7929, 1 } },	-- Orcish War Leggings
 							isDaily = true,
 						}),
 						q(94271, {	-- Craftsman's Writ: Ornate Mithril Shoulders [Expert]
 							qs = 264071,	-- Craftsman's Writ: Ornate Mithril Shoulders (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 10921,	-- Taronn Redfeather <Emerald Circle>
+							coord = { 50.8, 81.6, MAP.FELWOOD },
 							cost = { { "i", 7928, 1 } },	-- Ornate Mithril Shoulders
 							isDaily = true,
 						}),
@@ -386,7 +395,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94326, {	-- Craftsman's Writ: Radiant Belt [Artisan]
 							qs = 264126,	-- Craftsman's Writ: Radiant Belt (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 7363,	-- Kum'isha the Collector
+							coord = { 51.8, 35.4, MAP.BLASTED_LANDS },
 							cost = { { "i", 12416, 1 } },	-- Radiant Belt
 							isDaily = true,
 						}),
@@ -552,7 +562,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94335, {	-- Craftsman's Writ: Green Lens [Artisan]
 							qs = 264135,	-- Craftsman's Writ: Green Lens (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 7363,	-- Kum'isha the Collector
+							coord = { 51.8, 35.4, MAP.BLASTED_LANDS },
 							cost = { { "i", 10504, 1 } },	-- Green Lens
 							isDaily = true,
 						}),
@@ -571,13 +582,15 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94334, {	-- Craftsman's Writ: Masterwork Target Dummy [Artisan]
 							qs = 264134,	-- Craftsman's Writ: Masterwork Target Dummy (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11705,	-- Rayan Dawnrisen
+							coord = { 30.0, 40.2, MAP.AZSHARA },
 							cost = { { "i", 16023, 1 } },	-- Masterwork Target Dummy
 							isDaily = true,
 						}),
 						q(94280, {	-- Craftsman's Writ: Mechanical Dragonling [Expert]
 							qs = 264080,	-- Craftsman's Writ: Mechanical Dragonling (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 257437,	-- Garyanne Fleezlebop
+							coord = { 67.6, 51.4, MAP.BADLANDS },
 							cost = { { "i", 4396, 1 } },	-- Mechanical Dragonling
 							isDaily = true,
 						}),
@@ -641,7 +654,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94341, {	-- Craftsman's Writ: Sniper Scope [Artisan]
 							qs = 264141,	-- Craftsman's Writ: Sniper Scope (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262033,	-- Suspicious Adventurer
+							coord = { 65.4, 76.0, MAP.WESTERN_PLAGUELANDS },
 							cost = { { "i", 10548, 1 } },	-- Sniper Scope
 							isDaily = true,
 						}),
@@ -653,7 +667,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94340, {	-- Craftsman's Writ: Truesilver Transformer [Artisan]
 							qs = 264140,	-- Craftsman's Writ: Truesilver Transformer (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 15175,	-- Khur Hornstriker <Reagent Vendor>
+							coord = { 48.8, 37.0, MAP.SILITHUS },
 							cost = { { "i", 18631, 1 } },	-- Truesilver Transformer
 							isDaily = true,
 						}),
@@ -814,7 +829,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94346, {	-- Craftsman's Writ: Runic Leather Headband [Artisan]
 							qs = 264146,	-- Craftsman's Writ: Runic Leather Headband (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 257743,	-- Hastings <The Caretaker>
+							coord = { 47.0, 75.2, MAP.DEADWIND_PASS },
 							cost = { { "i", 15094, 1 } },	-- Runic Leather Headband
 							isDaily = true,
 						}),
@@ -847,7 +863,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94347, {	-- Craftsman's Writ: Wicked Leather Bracers [Artisan]
 							qs = 264147,	-- Craftsman's Writ: Wicked Leather Bracers (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+							coord = { 81.4, 60.0, MAP.EASTERN_PLAGUELANDS },
 							cost = { { "i", 15084, 1 } },	-- Wicked Leather Bracers
 							isDaily = true,
 						}),
@@ -944,7 +961,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94356, {	-- Craftsman's Writ: Felcloth Boots [Artisan]
 							qs = 264156,	-- Craftsman's Writ: Felcloth Boots (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11140,	-- Egan
+							coord = { 11.4, 26.4, MAP.EASTERN_PLAGUELANDS },
 							cost = { { "i", 14108, 1 } },	-- Felcloth Boots
 							isDaily = true,
 						}),
@@ -1016,13 +1034,15 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94353, {	-- Craftsman's Writ: Runecloth Bag [Artisan]
 							qs = 264153,	-- Craftsman's Writ: Runecloth Bag (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 7363,	-- Kum'isha the Collector
+							coord = { 51.8, 35.4, MAP.BLASTED_LANDS },
 							cost = { { "i", 14046, 1 } },	-- Runecloth Bag
 							isDaily = true,
 						}),
 						q(94354, {	-- Craftsman's Writ: Runecloth Boots [Artisan]
 							qs = 264154,	-- Craftsman's Writ: Runecloth Boots (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 14437,	-- Gorzeeki Wildeyes
+							coord = { 12.4, 31.4, MAP.BURNING_STEPPES },
 							cost = { { "i", 13864, 1 } },	-- Runecloth Boots
 							isDaily = true,
 						}),
@@ -1035,7 +1055,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94358, {	-- Craftsman's Writ: Shadoweave Mask [Artisan]
 							qs = 264158,	-- Craftsman's Writ: Shadoweave Mask (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 15194,	-- Hermit Ortell
+							coord = { 67.0, 69.6, MAP.SILITHUS },
 							cost = { { "i", 10025, 1 } },	-- Shadoweave Mask
 							isDaily = true,
 						}),
@@ -1058,7 +1079,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94360, {	-- Craftsman's Writ: Soul Pouch [Artisan]
 							qs = 264160,	-- Craftsman's Writ: Soul Pouch (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 262044,	-- Zelizax
+							coord = { 57.6, 88.2, MAP.WINTERSPRING },
 							cost = { { "i", 21340, 1 } },	-- Soul Pouch
 							isDaily = true,
 						}),
@@ -1082,7 +1104,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94355, {	-- Craftsman's Writ: Tuxedo Jacket [Artisan]
 							qs = 264155,	-- Craftsman's Writ: Tuxedo Jacket (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 257743,	-- Hastings <The Caretaker>
+							coord = { 47.0, 75.2, MAP.DEADWIND_PASS },
 							cost = { { "i", 10036, 1 } },	-- Tuxedo Jacket
 							isDaily = true,
 						}),
@@ -1095,7 +1118,8 @@ root(ROOTS.ExpansionFeatures, {
 						}),
 						q(94352, {	-- Craftsman's Writ: Wizardweave Turban [Artisan]
 							qs = 264152,	-- Craftsman's Writ: Wizardweave Turban (QS!)
-							-- TODO: Wowhead doesn't list the customer yet.
+							cr = 11707,	-- Joy Ar'nareth
+							coord = { 30.0, 40.2, MAP.AZSHARA },
 							cost = { { "i", 14130, 1 } },	-- Wizardweave Turban
 							isDaily = true,
 						}),

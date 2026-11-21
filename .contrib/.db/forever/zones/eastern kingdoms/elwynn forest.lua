@@ -1529,7 +1529,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 			}),
 			q(99206, {	-- Swift as the Wind
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 4732,	-- Randal Hunter <Horse Riding Instructor>
+				coord = { 84.2, 65.0, MAP.ELWYNN_FOREST },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { HUMAN },
 				lvl = 60,

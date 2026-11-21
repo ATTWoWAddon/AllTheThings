@@ -1357,7 +1357,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 			}),
 			q(99209, {	-- Swift as the Wind
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 4772,	-- Ultham Ironhorn <Ram Riding Instructor>
+				coord = { 63.8, 50.2, MAP.DUN_MOROGH },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { DWARF },
 				lvl = 60,

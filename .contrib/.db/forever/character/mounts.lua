@@ -52,7 +52,8 @@ root(ROOTS.Character, {
 			},
 		}),
 		q(99210, {	-- An Epic Ride (Dwarf)
-			-- TODO: Wowhead doesn't list the quest giver yet.
+			qg = 1261,	-- Veron Amberstill <Ram Breeder>
+			coord = { 63.4, 50.4, MAP.DUN_MOROGH },
 			timeline = { TIMELINE.ADDED_1_60_1 },
 			races = { DWARF },
 			lvl = 60,
@@ -255,7 +256,8 @@ root(ROOTS.Character, {
 			},
 		}),
 		q(99211, {	-- An Epic Ride (Undead)
-			-- TODO: Wowhead doesn't list the quest giver yet.
+			qg = 4731,	-- Zachariah Post <Undead Horse Merchant>
+			coord = { 59.8, 52.6, MAP.TIRISFAL_GLADES },
 			timeline = { TIMELINE.ADDED_1_60_1 },
 			races = { UNDEAD },
 			lvl = 60,

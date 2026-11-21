@@ -244,7 +244,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				lvl = 50,
 			}),
 			q(97447, {	-- An Earnest Proposition [A]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 230319,	-- Deliana
+				coord = { 42.4, 52.2, MAP.IRONFORGE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				cost = { { "g", 200000 } },	-- 20g

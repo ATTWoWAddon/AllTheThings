@@ -1150,7 +1150,8 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				},
 			}),
 			q(99202, {	-- Swift as the Wind
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 3690,	-- Kar Stormsinger <Kodo Riding Instructor>
+				coord = { 46.8, 61.8, MAP.MULGORE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { TAUREN },
 				lvl = 60,

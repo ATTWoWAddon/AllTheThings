@@ -708,7 +708,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				},
 			}),
 			q(99201, {	-- Swift as the Wind (Troll)
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 7953,	-- Xar'Ti <Raptor Riding Trainer>
+				coord = { 55.2, 75.4, MAP.DUROTAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { TROLL },
 				lvl = 60,

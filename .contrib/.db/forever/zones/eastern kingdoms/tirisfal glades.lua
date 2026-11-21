@@ -667,8 +667,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			}),
 			q(97177, {	-- Acts of Mercy
 				sourceQuest = 97175,	-- Due Sacrifice
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 5994,	-- Zayus <Priest Trainer>
 				qi = 276614,	-- Zayus's Exorcism Censer (PQI!)
+				coord = { 35.2, 87.6, MAP.ORGRIMMAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				classes = { PALADIN },
 				races = HORDE_PALADINS,
@@ -726,8 +727,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 						provider = { "i", 18775 },	-- Manna-Enriched Horse Feed
 					}),
 					q(97186, {	-- Manna-Enriched Horse Feed
-						-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Nathanos Blightcaller.
-						coord = { 26.4, 74.8, MAP.EASTERN_PLAGUELANDS },
+						qg = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+						coord = { 22.2, 63.4, MAP.EASTERN_PLAGUELANDS },
 						cost = {
 							{ "i", 13724, 20 },	-- Enriched Manna Biscuit
 							{ "g", 500000 },	-- 50g
