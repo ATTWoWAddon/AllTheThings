@@ -920,6 +920,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					{ "select", "symselector",
 						SymSelector.VENDOR_EMBROIDERED,	-- Embroidered
 						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
+						SymSelector.VENDOR_KNITTED,	-- Knitted
 						SymSelector.VENDOR_PADDED,	-- Padded
 						SymSelector.VENDOR_RUSSET,	-- Russet
 						SymSelector.VENDOR_THICK_CLOTH,	-- Thick Cloth
@@ -934,10 +935,6 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 						2616,	-- Shimmering Silk Robes
 						2618,	-- Silver Dress Robes
 					},
-				},
-				sym = {
-					SymSelector.select("VENDOR_KNITTED"),	-- Knitted
-					{ "pop" },
 				},
 			}),
 			n(3016, {	-- Tand <Basket Weaver>

@@ -1133,6 +1133,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 						SymSelector.VENDOR_CUIRBOULLI,	-- Cuirboulli
 						SymSelector.VENDOR_CURED_LEATHER,	-- Cured Leather
 						SymSelector.VENDOR_REINFORCED_LEATHER,	-- Reinforced Leather
+						SymSelector.VENDOR_ROUGH_LEATHER,	-- Rough Leather
 						SymSelector.VENDOR_STUDDED,	-- Studded
 						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
 					},
@@ -1140,10 +1141,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					{ "select", "itemID",
 						2463,	-- Studded Doublet
 					},
-				},
-				sym = {
-					SymSelector.select("VENDOR_ROUGH_LEATHER"),	-- Rough Leather
-					{ "pop" },
 				},
 			}),
 			n(4556, {	-- Gordon Wendham
@@ -1217,8 +1214,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				sym = {
 					{ "select", "symselector",
 						SymSelector.VENDOR_BATTERED_LEATHER,	-- Battered Leather
+						SymSelector.VENDOR_DIRTY_LEATHER,	-- Dirty Leather
 						SymSelector.VENDOR_HEAVY_WEAVE,	-- Heavy Weave
 						SymSelector.VENDOR_TANNED_LEATHER,	-- Tanned Leather
+						SymSelector.VENDOR_TATTERED_CLOTH,	-- Tattered Cloth
 						SymSelector.VENDOR_WOVEN,	-- Woven
 					},
 					{ "pop" },
@@ -1228,13 +1227,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 						3428,	-- Common Gray Shirt
 						16060,	-- Common White Shirt
 					},
-				},
-				sym = {
-					{ "select", "symselector",
-						SymSelector.VENDOR_DIRTY_LEATHER,	-- Dirty Leather
-						SymSelector.VENDOR_TATTERED_CLOTH,	-- Tattered Cloth
-					},
-					{ "pop" },
 				},
 			}),
 			n(4574, {	-- Lizbeth Cromwell <Fishing Supplier>
@@ -1429,20 +1421,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4559, {	-- Timothy Weldon
 				coord = { 63.6, 39.6, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{"select","itemID",
-					17187,	-- Banded Buckler
-					17183,	-- Dented Buckler
-					1200,	-- Large Wooden Shield
-					17185,	-- Round Buckler
-					1202,	-- Wall Shield
-					2376,	-- Worn Heater Shield
-				}},
 				sym = {
 					{ "select", "symselector",
 						SymSelector.VENDOR_LIGHT_CHAIN,	-- Light Chain
 						SymSelector.VENDOR_RUSTED_CHAIN,	-- Rusted Chain
 					},
 					{ "pop" },
+					{ "select", "itemID",
+						17187,	-- Banded Buckler
+						17183,	-- Dented Buckler
+						1200,	-- Large Wooden Shield
+						17185,	-- Round Buckler
+						1202,	-- Wall Shield
+						2376,	-- Worn Heater Shield
+					},
 				},
 			}),
 			n(4560, {	-- Walter Ellingson
