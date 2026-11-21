@@ -8054,11 +8054,11 @@ inst(251,{coords={
 [75]={{26.8,36.8}}},description="This is an event-triggered dungeon with the following steps:\n\n1. Talk to Erozion at the beginning of the dungeon to obtain a Pack of Incendiary Bombs.\n\n2. Traverse to the internment camps in Durnholde Keep and interact with a barrel in each building to start a fire and summon the first boss Lieutenant Drake.\n\n3. Find Thrall in the basement of the keep and follow him for the remainder of the dungeon.",lore="Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",lvl=63,mapID=274,savedInstanceID=560,zoneTextAreaID=2367,g={
 h(-45,{
 q(10284,{lvl=66,qgs={17876},rwp=40300,sourceQuests={10283}}),
-q(12513,{coords={
+q(12513,{awp=20403,coords={
 [1446]={{53.9,28.9}}},lvl=66,qgs={28126},races={1,3,7},g={
 qo(1,{providers={{"i",38329}}}),
 s(145451,38276,{b=1,f=4,loc=40,q=1})}}),
-q(12515,{coords={
+q(12515,{awp=20403,coords={
 [1446]={{53.9,28.9}}},lvl=66,qgs={28126},races={2,4,5,6,8,10,11},g={
 qo(1,{providers={{"i",38329}}}),
 s(145451,38276,{b=1,f=4,loc=40,q=1})}}),
@@ -8097,7 +8097,7 @@ i(30457,{f=55,lvl=65,q=1}),
 i(30610,{f=55,lvl=55,q=1}),
 i(30458,{f=55,lvl=55,q=1})}),
 d(1,{
-n(28132,{description="This is a neutral Elite Creature that wanders the road.",g={
+n(28132,{awp=20403,description="This is a neutral Elite Creature that wanders the road.",g={
 i(38329,{q=1})}}),
 e(538,{npcID=17848,g={
 s(137764,27417,{b=1,f=5,loc=41,lvl=66,q=3}),
@@ -8126,7 +8126,7 @@ i(29434,{b=1,lvl=70,phase=20,q=4}),
 i(30589,{b=1,q=4}),
 i(30591,{b=1,q=4}),
 i(30590,{b=1,q=4})}}),
-n(28132,{description="This is a neutral Elite Creature that wanders the road.",g={
+n(28132,{awp=20403,description="This is a neutral Elite Creature that wanders the road.",g={
 toy(38506,{b=1,loc=40,q=3,rwp=70003,sourceID=145487}),
 i(38329,{q=1})}}),
 e(538,{npcID=17848,g={

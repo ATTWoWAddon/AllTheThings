@@ -1772,6 +1772,22 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					},
 				},
 			}),
+			n(10369, {	-- Trayexir <Weapon Merchant>
+				coord = { 56.4, 73.2, MAP.DUROTAR },
+				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2492,	-- Cudgel
+					2488,	-- Gladius
+					2506,	-- Hornwood Recurve Bow
+					2507,	-- Laminated Recurve Bow
+					2491,	-- Large Axe
+					2494,	-- Stiletto
+					2490,	-- Tomahawk
+					2489,	-- Two-Handed Sword
+					2495,	-- Walking Stick
+					2493,	-- Wooden Mallet
+				}},
+			}),
 			n(3167, {	-- Wuark <Armorer & Shieldcrafter>
 				coord = { 52.0, 41.2, MAP.DUROTAR },
 				races = HORDE_ONLY,

@@ -9543,10 +9543,10 @@ s(13075,29317,{b=1,f=4,loc=44}),
 s(13076,29318,{b=1,f=5,loc=47}),
 s(13077,29319,{b=1,f=6,loc=45}),
 s(13074,29316,{b=1,f=7,loc=41})}}),
-q(12513,{coords={
+q(12513,{awp=20403,coords={
 [71]={{50.8,27.5}}},lvl=15,qgs={28126},qis={38329},races={1,3,7,32,34,37},g={
 s(18356,38276,{f=2,loc=40})}}),
-q(12515,{coords={
+q(12515,{awp=20403,coords={
 [71]={{50.7,27.5}}},lvl=15,qgs={28126},qis={38329},races={2,4,5,6,8,9,10,11,22,24,25,26,27,28,29,30,31,35,36,84,85,86,91},g={
 s(18356,38276,{f=2,loc=40})}}),
 q(10282,{coords={
@@ -9584,7 +9584,7 @@ i(30457,{f=55,lvl=27,spellID=27089}),
 i(30610,{f=55,lvl=23,spellID=27094}),
 i(30458,{f=55,lvl=23,spellID=27094})}),
 d(1,{
-n(28132,{description="This is a neutral Elite Creature that wanders the road.",g={
+n(28132,{awp=20403,description="This is a neutral Elite Creature that wanders the road.",g={
 i(38329)}}),
 e(538,{npcID=17848,g={
 s(12331,28210,{b=1,f=23,lvl=27,modID=1}),
@@ -9641,7 +9641,7 @@ h(-19,{crs={17848,17862,18096},g={
 i(30589,{b=1,modID=2}),
 i(30591,{b=1,modID=2}),
 i(30590,{b=1,modID=2})}}),
-n(28132,{description="This is a neutral Elite Creature that wanders the road.",g={
+n(28132,{awp=20403,description="This is a neutral Elite Creature that wanders the road.",g={
 toy(134019,{awp=70003,b=1}),
 i(38506,{modID=2,rwp=70003,u=2}),
 i(38329)}}),
