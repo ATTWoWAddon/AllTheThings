@@ -14042,6 +14042,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Retrieve and display all of the following items in the Arcantina.","Well Decorated",,63620,-1,-1,0,15553,0,5,131072,56,466729,0,231317,0,0,0,0
 "Attain a region-best keystone dungeon completion for Altar of Fangs.","Keystone Victor: Altar of Fangs",,63621,-1,-1,0,15272,0,0,6144,227,7956175,0,0,0,0,0,0
 "Attain a region-best keystone dungeon completion for Den of Nalorakk.","Keystone Victor: Den of Nalorakk",,63622,-1,-1,0,15272,0,0,6144,228,7266214,0,0,0,0,0,0
+,"<DNT> Vendor - XP Potion 2",,64411,-1,-1,0,15631,0,0,1179648,60,136243,0,236899,0,0,0,0
 "Attain a region-best keystone dungeon completion for Murder Row.","Keystone Victor: Murder Row",,63623,-1,-1,0,15272,0,0,6144,229,7266213,0,0,0,0,0,0
 "Attain a region-best keystone dungeon completion for The Blinding Vale.","Keystone Victor: The Blinding Vale",,63624,-1,-1,0,15272,0,0,6144,230,7354408,0,0,0,0,0,0
 "Attain a region-best keystone dungeon completion for Voidscar Arena.","Keystone Victor: Voidscar Arena",,63625,-1,-1,0,15272,0,0,6144,231,7439626,0,0,0,0,0,0
@@ -14104,6 +14105,7 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "Logged in during WoW's 22nd Anniversary.","WoW's 22nd Anniversary",,63714,-1,-1,0,15274,0,0,2048,81,133783,0,232921,0,0,0,0
 "Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","Let Me Solo Him: Kindo'jan","Reward: Loa-Blessed Wayfarer",63715,-1,-1,0,15531,0,0,14336,24,8269989,0,232931,0,0,0,0
 "Defeat Kindo'jan within his Labyrinth.","The First Hash'ey","Title: Loa-Blessed",63716,-1,-1,0,15531,0,0,14336,13,3601564,0,232998,0,0,0,0
+,"<DNT> Vendor - XP Potion 3",,64412,-1,-1,0,15631,0,0,1179648,61,136243,0,236901,0,0,0,0
 "Find and open all Sturdy Chests hidden in Kindo'jan's Labyrinth.","Kindo'jan's Labyrinth Discoveries","Title: Treasure Hound",63717,-1,-1,0,15522,0,10,131200,41,4203076,0,233000,0,0,0,0
 "Open the locked door hidden within Kindo'jan's Labyrinth.","Lock and Key",,63718,-1,-1,0,15522,0,5,131072,33,134241,0,235189,0,0,0,0
 "Open the locked door hidden within Kindo'jan's Labyrinth 20 times.","Lock and Key Master","Title: Lockpickin'",63719,-1,-1,63718,15522,0,5,131200,34,134241,0,235187,0,0,0,0
@@ -14233,6 +14235,33 @@ This achievement will become a Feat of Strength at the end of Midnight.","Pinnac
 "[DNT] Potatoad Egg Secret","[DNT] Potatoad Egg Secret",,64373,-1,-1,0,15541,0,0,1179652,40,6100921,251903,236760,0,0,0,0
 "[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","[DNT] Let Me Solo Him: Kindo'jan (copy)","Reward: Loa-Blessed Wayfarer",64380,-1,-1,0,15531,0,0,1179652,25,8269989,283363,236817,0,0,0,0
 "[DNT] Defeat Kindo'jan in the Labyrinth on Tier 11 without any other players in your party during Midnight Season 2.","[DNT] Let Me Solo Him: Kindo'jan (copy) (copy)","Reward: Loa-Blessed Wayfarer",64384,-1,-1,0,15531,0,0,1179652,26,8269989,280820,236819,0,0,0,0
+,"<DNT> Vendor - Champion Cache",,64385,-1,-1,0,15631,0,0,1179648,34,136243,0,236847,0,0,0,0
+,"<DNT> Vendor - Heroic Cache 1",,64386,-1,-1,0,15631,0,0,1179648,35,136243,0,236849,0,0,0,0
+,"<DNT> Vendor - Heroic Cache 2",,64387,-1,-1,0,15631,0,0,1179648,36,136243,0,236851,0,0,0,0
+,"<DNT> Vendor - Heroic Cache 3",,64388,-1,-1,0,15631,0,0,1179648,37,136243,0,236853,0,0,0,0
+,"<DNT> Vendor - Heroic Cache 4",,64389,-1,-1,0,15631,0,0,1179648,38,136243,0,236855,0,0,0,0
+,"<DNT> Vendor - Heroic Cache 5",,64390,-1,-1,0,15631,0,0,1179648,39,136243,0,236857,0,0,0,0
+,"<DNT> Vendor - Myth Cache 1",,64391,-1,-1,0,15631,0,0,1179648,40,136243,0,236859,0,0,0,0
+,"<DNT> Vendor - Myth Cache 2",,64392,-1,-1,0,15631,0,0,1179648,41,136243,0,236861,0,0,0,0
+,"<DNT> Vendor - Champion Crests",,64393,-1,-1,0,15631,0,0,1179648,42,136243,0,236863,0,0,0,0
+,"<DNT> Vendor - Hero Crests 1",,64394,-1,-1,0,15631,0,0,1179648,43,136243,0,236865,0,0,0,0
+,"<DNT> Vendor - Hero Crests 2",,64395,-1,-1,0,15631,0,0,1179648,44,136243,0,236867,0,0,0,0
+,"<DNT> Vendor - Myth Crests 1",,64396,-1,-1,0,15631,0,0,1179648,45,136243,0,236869,0,0,0,0
+,"<DNT> Vendor - Myth Crests 2",,64397,-1,-1,0,15631,0,0,1179648,46,136243,0,236871,0,0,0,0
+,"<DNT> Vendor - Marl Small",,64398,-1,-1,0,15631,0,0,1179648,47,136243,0,236873,0,0,0,0
+,"<DNT> Vendor - Marl Large 1",,64399,-1,-1,0,15631,0,0,1179648,48,136243,0,236875,0,0,0,0
+,"<DNT> Vendor - Marl Large 2",,64400,-1,-1,0,15631,0,0,1179648,49,136243,0,236877,0,0,0,0
+,"<DNT> Vendor - Outfitter",,64401,-1,-1,0,15631,0,0,1179648,50,136243,0,236879,0,0,0,0
+,"<DNT> Vendor - Alchemy",,64402,-1,-1,0,15631,0,0,1179648,51,136243,0,236881,0,0,0,0
+,"<DNT> Vendor - Venomstone 1",,64403,-1,-1,0,15631,0,0,1179648,52,136243,0,236883,0,0,0,0
+,"<DNT> Vendor - Venomstone 2",,64404,-1,-1,0,15631,0,0,1179648,53,136243,0,236885,0,0,0,0
+,"<DNT> Vendor - Venomstone 3",,64405,-1,-1,0,15631,0,0,1179648,54,136243,0,236887,0,0,0,0
+,"<DNT> Vendor - Venomstone 4",,64406,-1,-1,0,15631,0,0,1179648,55,136243,0,236889,0,0,0,0
+,"<DNT> Vendor - Nebulous Void 1",,64407,-1,-1,0,15631,0,0,1179648,56,136243,0,236891,0,0,0,0
+,"<DNT> Vendor - Nebulous Void 2",,64408,-1,-1,0,15631,0,0,1179648,57,136243,0,236893,0,0,0,0
+,"<DNT> Vendor - Nebulous Void 3",,64409,-1,-1,0,15631,0,0,1179648,58,136243,0,236895,0,0,0,0
+,"<DNT> Vendor - XP Potion 1",,64410,-1,-1,0,15631,0,0,1179648,59,136243,0,236897,0,0,0,0
+,"<DNT> Vendor - XP Potion 4",,64413,-1,-1,0,15631,0,0,1179648,62,136243,0,236903,0,0,0,0
 "Visit the Traveling Raven near the Trading Post in Silvermoon City.","Tapping at the Trader's Door",,64416,-1,-1,0,15631,0,0,131072,1,1733737,0,236926,0,0,0,0
 "Complete the Talebound tutorial, enter your first Storyteller's Tale, and defeat a boss.","Delving into a Tale","Quest: Seeking Knowledge: Memories and Tales",64417,-1,-1,0,15631,0,0,131076,2,458721,0,237309,0,0,0,0
 "Complete every puzzle in the Tales of the Storyteller.","The Tale of the Puzzle Master Rewarded","Traveling Raven: Voidlight Marl Crystal",64418,-1,-1,0,15631,0,0,131076,8,4094821,0,237098,0,0,0,0

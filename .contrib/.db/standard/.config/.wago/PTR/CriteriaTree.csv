@@ -115359,7 +115359,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225687,"Defeat Placeholder",225686,1,0,113875,0,0
 225690,"12.1.7 GM3 - Revendreth - Scenario - Vampire Boss",0,0,4,0,0,2
 225694,"12.1.7 GM3 - Quillgrave - Scenario - Death",0,0,4,0,0,2
-225697,"Storyteller defeated",225694,1,0,113875,0,0
+225697,"Storyteller defeated",225694,1,0,117269,0,0
 225701,"Burrow Fledglings slain",222605,100,0,113862,2,0
 225703,"Candlepot Wax-filled",0,0,4,0,0,0
 225704,"Candlepot Wax-filled",225703,0,0,113863,0,0
@@ -120491,7 +120491,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 235587,,235586,0,0,118666,0,0
 235753,"Tales Completed",0,5,5,0,0,8193
 235764,,235753,0,0,119890,0,0
-235767,"Tales Completed",0,10,8,0,0,8193
+235767,"Tales Completed",0,10,5,0,0,8193
 235771,,235767,0,0,119890,0,0
 235781,"Potions Consumed",0,15,5,0,0,8193
 235782,,235781,0,0,118666,0,0

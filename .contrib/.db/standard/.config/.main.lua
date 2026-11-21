@@ -4,7 +4,7 @@
 assignRootCategoryHeader( 1, ROOTS.Instances, DUNGEONS_AND_RAIDS);
 assignRootCategoryHeader( 2, ROOTS.Delves, DELVES);
 assignRootCategoryHeader(10, ROOTS.Zones, OUTDOOR_ZONES, {
-	mapID = 947,	-- Assign the Azeroth mapID. (is this necessary?
+	mapID = 947,	-- Assign the Azeroth mapID. (is this necessary?)
 });
 assignRootCategoryHeader(15, ROOTS.WorldDrops, WORLD_DROPS);
 assignRootCategoryHeader(20, ROOTS.Craftables, CRAFTED_ITEMS, {

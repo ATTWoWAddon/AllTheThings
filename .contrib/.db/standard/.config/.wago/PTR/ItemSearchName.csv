@@ -99647,6 +99647,14 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 272318,"Spellbreaker's Phoenixblade",3,-3,0,0,-1,1,0,0,0,1,134254592,139264,0,65536,0,-1,-1
 272320,"Nullbeacon Rift Channeler",3,-3,0,0,-1,1,0,0,0,1,134254592,139264,0,65536,0,-1,-1
 272321,"Arcane Ranger's Spellbow",3,-3,0,0,-1,1,0,0,0,1,134254592,139264,0,65536,0,-1,-1
+272326,"Varian's Azure Dragon Crown",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272327,"Varian's Azure Dragon Sabatons",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272328,"Varian's Azure Dragon Chestplate",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272329,"Varian's Azure Dragon Claws",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272330,"Varian's Azure Dragon Greaves",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272331,"Varian's Azure Dragon Pauldron",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272332,"Varian's Azure Dragon Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
+272333,"Varian's Azure Dragon Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 272336,"Nullbeacon Rift Smasher",3,-3,0,0,-1,1,0,0,0,1,134254592,139264,0,65536,0,-1,-1
 272337,"Mage Guard's Spellblade",3,-3,0,0,-1,1,0,0,0,1,134254592,139264,0,65536,0,-1,-1
 272338,"Mage Guard's Spellsteel",3,-3,0,0,-1,1,0,0,0,1,134254592,139264,0,65536,0,-1,-1
@@ -100837,7 +100845,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 284237,"Baker's Citrine Tray",2,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
 284605,"Wardens' Pool of Judgment",2,-3,0,0,-1,1,0,0,0,1,134283328,139264,0,0,0,-1,-1
 284846,"Venomous Gladiator's Smasher",4,11,0,0,-1,90,0,0,0,298,4096,8192,0,0,0,-1,-1
-284862,"Varian's Azure Dragon Pauldron",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 285096,"Azure Mage Hunter's Rune Circle",2,-3,0,0,-1,1,0,0,0,1,134283328,139264,0,0,0,-1,-1
 285221,"Baker's Sapphire Bulwark",2,-3,0,0,-1,1,0,0,0,1,134250496,143360,8388608,65536,0,-1,-1
 285222,"Baker's Emerald Bulwark",2,-3,0,0,-1,1,0,0,0,1,134250496,143360,8388608,65536,0,-1,-1
@@ -101001,14 +101008,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 274934,"Blade of the Blood Knight Matriarch",4,11,0,0,-1,90,0,0,0,1,134250496,159744,8388608,65536,0,-1,-1
 274937,"Shield of the Blood Knight Matriarch",4,11,0,0,-1,90,0,0,0,1,134250496,159744,8388608,65536,0,-1,-1
 275999,"Flowering Mantle",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
-272326,"Varian's Azure Dragon Crown",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
-272327,"Varian's Azure Dragon Sabatons",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
-272328,"Varian's Azure Dragon Chestplate",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
-272329,"Varian's Azure Dragon Claws",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
-272330,"Varian's Azure Dragon Greaves",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
-272331,"Varian's Azure Dragon Pauldron",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
-272332,"Varian's Azure Dragon Cloak",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
-272333,"Varian's Azure Dragon Belt",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 279173,"Veteran Adventurer's Chestpiece",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
 279174,"Veteran Adventurer's Belt",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
 279175,"Veteran Adventurer's Legguards",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
@@ -101735,7 +101734,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 70619,"Vicious Gladiator's Ornamented Spaulders",4,3,0,0,2,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
 70618,"Vicious Gladiator's Ornamented Legplates",4,3,0,0,2,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
 70617,"Vicious Gladiator's Ornamented Headcover",4,3,0,0,2,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
-66043,"Tribute Gun",3,0,0,0,-1,0,0,0,0,25,65536,8192,0,0,0,-1,-1
 70616,"Vicious Gladiator's Ornamented Gloves",4,3,0,0,2,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
 70615,"Vicious Gladiator's Ornamented Chestguard",4,3,0,0,2,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
 70601,"Vicious Gladiator's Mail Spaulders",4,3,0,0,64,32,0,0,0,37,4096,8192,8388608,0,0,-1,-1
@@ -101854,6 +101852,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 66037,"Cookie's Table Cloth",3,0,0,0,-1,0,0,0,0,10,65536,8192,0,0,0,-1,-1
 66038,"Breastplate of the Terrible Price",3,0,0,0,-1,0,0,0,0,13,65536,8192,0,0,0,-1,-1
 66039,"Shield Against the Evil Presence",3,0,0,0,-1,0,0,0,0,18,65536,8192,0,0,0,-1,-1
+66043,"Tribute Gun",3,0,0,0,-1,0,0,0,0,25,65536,8192,0,0,0,-1,-1
 66046,"Interrogator's Shackles",3,0,0,0,-1,0,0,0,0,18,65536,8192,8388608,0,0,-1,-1
 82892,"Ragefire Leggings",3,0,0,0,-1,0,0,0,0,11,65536,8192,0,0,0,-1,-1
 82893,"Hide Vest of the Shaman",3,0,0,0,-1,0,0,0,0,11,65536,8192,0,0,0,-1,-1
@@ -102177,6 +102176,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 91571,"Malevolent Gladiator's Sabatons of Alacrity",4,4,0,0,4164,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91539,"Malevolent Gladiator's Footguards of Alacrity",4,4,0,0,1536,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91705,"Malevolent Gladiator's Footguards of Alacrity",4,4,0,0,64,35,0,0,0,39,4096,8192,0,0,0,-1,-1
+87036,"Soulgrasp Choker",4,4,0,0,-1,35,0,0,0,39,0,1073766400,0,0,0,-1,-1
 91707,"Malevolent Gladiator's Footguards of Meditation",4,4,0,0,64,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91695,"Malevolent Gladiator's Leather Gloves",4,4,0,0,8,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91642,"Malevolent Gladiator's Ornamented Gloves",4,4,0,0,2,35,0,0,0,39,4096,8192,0,0,0,-1,-1
@@ -102253,6 +102253,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 85125,"Malevolent Gladiator's Barrier",4,4,0,0,-1,35,0,0,0,39,4096,8192,8388608,0,0,-1,-1
 85126,"Malevolent Gladiator's Redoubt",4,4,0,0,-1,35,0,0,0,39,4096,8192,8388608,0,0,-1,-1
 91701,"Malevolent Gladiator's Leather Spaulders",4,4,0,0,8,35,0,0,0,39,4096,8192,0,0,0,-1,-1
+99980,"Tyrannical Gladiator's Pike",4,4,0,0,-1,35,0,0,0,39,4096,8193,8388608,0,0,1309324210,-1440044374
 91648,"Malevolent Gladiator's Ornamented Spaulders",4,4,0,0,2,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91628,"Malevolent Gladiator's Scaled Shoulders",4,4,0,0,2,35,0,0,0,39,4096,8192,0,0,0,-1,-1
 91518,"Malevolent Gladiator's Dragonhide Spaulders",4,4,0,0,1024,35,0,0,0,39,4096,8192,0,0,0,-1,-1
@@ -102331,7 +102332,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 87031,"Legplates of Sagacious Shadows",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87029,"Hood of Cursed Dreams",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
 87027,"Imperial Ghostbinder's Robes",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
-87036,"Soulgrasp Choker",4,4,0,0,-1,35,0,0,0,39,0,1073766400,0,0,0,-1,-1
 87035,"Sollerets of Spirit Splitting",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87034,"Fetters of Death",4,4,0,0,-1,35,0,0,0,39,0,1073750016,0,0,0,-1,-1
 87032,"Gara'kal, Fist of the Spiritbinder",4,4,0,0,-1,35,0,0,0,39,4096,1073750016,0,0,0,-1,-1
@@ -102410,7 +102410,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 89266,"Chest of the Shadowy Protector",4,0,0,0,581,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89264,"Chest of the Shadowy Vanquisher",4,0,0,0,1192,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89271,"Gauntlets of the Shadowy Conqueror",4,0,0,0,274,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
-90896,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
 89272,"Gauntlets of the Shadowy Protector",4,0,0,0,581,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89270,"Gauntlets of the Shadowy Vanquisher",4,0,0,0,1192,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
 89268,"Leggings of the Shadowy Conqueror",4,0,0,0,274,35,0,0,0,39,134221824,155648,0,2,1,-1,-1
@@ -102452,6 +102451,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 90373,"Landfall Plate Boots",2,4,0,0,-1,0,0,0,0,37,65536,8192,0,0,0,-1,-1
 90894,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
 90895,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
+90896,"Straw Hat",2,0,0,0,-1,1,0,0,0,1,32768,8396800,0,0,0,-1,-1
 99767,"Tyrannical Gladiator's Bonegrinder",4,4,0,0,-1,35,0,0,0,39,4096,8194,8388608,0,0,-1321907123,1427461461
 99773,"Tyrannical Gladiator's Cape of Cruelty",4,4,0,0,1612,35,0,0,0,39,4096,8194,0,0,0,-1321907123,1427461461
 99774,"Tyrannical Gladiator's Cape of Prowess",4,4,0,0,1612,35,0,0,0,39,4096,8194,0,0,0,-1321907123,1427461461
@@ -102607,7 +102607,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 99964,"Tyrannical Gladiator's Longbow",4,4,0,0,-1,35,0,0,0,39,4096,8193,8388608,0,0,1309324210,-1440044374
 99970,"Tyrannical Gladiator's Rifle",4,4,0,0,-1,35,0,0,0,39,4096,8193,8388608,0,0,1309324210,-1440044374
 99975,"Tyrannical Gladiator's Fleshslicer",4,4,0,0,-1,35,0,0,0,39,4096,8193,8388608,0,0,1309324210,-1440044374
-99980,"Tyrannical Gladiator's Pike",4,4,0,0,-1,35,0,0,0,39,4096,8193,8388608,0,0,1309324210,-1440044374
 99985,"Tyrannical Gladiator's Bonegrinder",4,4,0,0,-1,35,0,0,0,39,4096,8193,8388608,0,0,1309324210,-1440044374
 99988,"Tyrannical Gladiator's Wyrmhide Robes",4,4,0,0,1024,35,0,0,0,39,4096,8193,0,0,0,1309324210,-1440044374
 99989,"Tyrannical Gladiator's Mooncloth Gloves",4,4,0,0,16,35,0,0,0,39,4096,8193,0,0,0,1309324210,-1440044374
@@ -103077,6 +103076,7 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 103292,"Grievous Gladiator's Ringmail Spaulders",4,4,0,0,64,35,0,0,0,40,4096,8194,0,0,0,-1321907123,1427461461
 103293,"Grievous Gladiator's Linked Armor",4,4,0,0,64,35,0,0,0,40,4096,8194,0,0,0,-1321907123,1427461461
 103294,"Grievous Gladiator's Linked Gauntlets",4,4,0,0,64,35,0,0,0,40,4096,8194,0,0,0,-1321907123,1427461461
+104423,"Ichor-Dripping Shoulderpads",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
 103295,"Grievous Gladiator's Linked Helm",4,4,0,0,64,35,0,0,0,40,4096,8194,0,0,0,-1321907123,1427461461
 103296,"Grievous Gladiator's Linked Leggings",4,4,0,0,64,35,0,0,0,40,4096,8194,0,0,0,-1321907123,1427461461
 103297,"Grievous Gladiator's Linked Spaulders",4,4,0,0,64,35,0,0,0,40,4096,8194,0,0,0,-1321907123,1427461461
@@ -103312,7 +103312,6 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 104522,"Earthripper Gloves",4,4,0,0,-1,35,0,0,0,42,0,1073750016,8388608,0,0,-1,-1
 105269,"Earthripper Gloves",4,4,0,0,-1,35,0,0,0,42,0,1073750016,8388608,0,0,-1,-1
 105518,"Earthripper Gloves",4,4,0,0,-1,35,0,0,0,42,0,1073750016,8388608,0,0,-1,-1
-104423,"Ichor-Dripping Shoulderpads",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
 105170,"Ichor-Dripping Shoulderpads",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
 105419,"Ichor-Dripping Shoulderpads",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
 104501,"Shoulderpads of Pulsing Protection",4,4,0,0,-1,35,0,0,0,42,4096,1073750016,8388608,0,0,-1,-1
@@ -105069,4 +105068,5 @@ ID,Display_lang,OverallQualityID,ExpansionID,MinFactionID,MinReputation,Allowabl
 262728,"Found Plunder Key",3,9,0,0,-1,1,0,0,0,1,134250496,139264,1024,65536,0,-1,-1
 271814,"Spring Dagger-Tined Rake",2,-3,0,0,-1,1,0,0,0,1,134250496,143360,8388608,65536,0,-1,-1
 273866,"Righteous Lawbringer's Tunic",3,-3,0,0,-1,1,0,0,0,1,134250496,139264,8388608,65536,0,-1,-1
+284862,"Varian's Azure Dragon Pauldron",4,-3,0,0,-1,1,0,0,0,1,134250496,139264,0,65536,0,-1,-1
 280315,"Phalanx Shield",4,11,0,0,-1,1,0,0,0,1,134217728,143360,0,589824,0,-1,-1
