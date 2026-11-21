@@ -1745,6 +1745,20 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					{ "pop" },
 				},
 			}),
+			n(3159, {	-- Kzan Thornslash <Weaponsmith>
+				coord = { 40.4, 68.0, MAP.DUROTAR },
+				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					1194,	-- Bastard Sword
+					2479,	-- Broad Axe
+					2130,	-- Club
+					2139,	-- Dirk
+					2134,	-- Hand Axe
+					2480,	-- Large Club
+					2132,	-- Short Staff
+					2131,	-- Shortsword
+				}},
+			}),
 			n(3161, {	-- Rarc <Armorer & Shieldcrafter>
 				coords = {
 					{ 40.4, 67.8, MAP.DUROTAR },

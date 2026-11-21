@@ -3390,6 +3390,8 @@ r(400094)}})}}),
 n(3881,{coords={
 [1411]={{51.2,42.6}}},r=1,g={
 r(6413,{itemID=5483,learnedAt=20,q=1,requireSkill=185})}}),
+n(3159,{coords={
+[1411]={{40.4,68}}},r=1,sym={{"select","itemID",1194,2479,2130,2139,2134,2480,2132,2131}}}),
 n(208184,{coords={
 [1411]={{52.2,44}}},cost={{"i",207631,1}},crs={3300},description="Use the pheromone and tame an adder and then bring it to Razzil.",phase=1605,r=1,g={
 i(206032,{b=1,c={3},f=55,q=2,g={

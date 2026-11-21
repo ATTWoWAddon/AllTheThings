@@ -1535,6 +1535,20 @@ maproot(KALIMDOR, DUROTAR, {
 					i(5483),	-- Recipe: Scorpid Surprise (RECIPE!)
 				},
 			}),
+			n(3159, {	-- Kzan Thornslash <Weaponsmith>
+				coord = { 40.4, 68.0, DUROTAR },
+				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					1194,	-- Bastard Sword
+					2479,	-- Broad Axe
+					2130,	-- Club
+					2139,	-- Dirk
+					2134,	-- Hand Axe
+					2480,	-- Large Club
+					2132,	-- Short Staff
+					2131,	-- Shortsword
+				}},
+			}),
 			applyclassicphase(SOD_PHASE_ONE, n(208184, {	-- Razzil <Snake Charmer>
 				description = "Use the pheromone and tame an adder and then bring it to Razzil.",
 				coord = { 52.2, 44.0, DUROTAR },

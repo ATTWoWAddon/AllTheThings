@@ -3498,6 +3498,26 @@ maproot(KALIMDOR, DUROTAR, {
 					i(5483),	-- Recipe: Scorpid Surprise (RECIPE!)
 				},
 			}),
+			n(3159, {	-- Kzan Thornslash <Weaponsmith>
+				coords = {
+					-- #if AFTER CATA
+					{ 43.2, 65.8, VALLEY_OF_TRIALS },
+					-- #else
+					{ 40.4, 68.0, DUROTAR },
+					-- #endif
+				},
+				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					1194,	-- Bastard Sword
+					2479,	-- Broad Axe
+					2130,	-- Club
+					2139,	-- Dirk
+					2134,	-- Hand Axe
+					2480,	-- Large Club
+					2132,	-- Short Staff
+					2131,	-- Shortsword
+				}},
+			}),
 			n(113615, {	-- Ravika <Darkspear Quartermaster> Legion Version
 				description = "Only available with the quests |cFFFFD700The Legion Returns|r or |cFFFFD700To Be Prepared|r. Permanently available on the Echo Isles.",
 				coords = {

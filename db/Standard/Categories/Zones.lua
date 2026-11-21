@@ -10539,6 +10539,8 @@ h(-58,{
 n(3881,{coords={
 [1]={{50.8,42.8}}},r=1,g={
 r(6413,{itemID=5483,requireSkill=185,skillID=2548})}}),
+n(3159,{coords={
+[461]={{43.2,65.8}}},r=1,sym={{"select","itemID",1194,2479,2130,2139,2134,2480,2132,2131}}}),
 n(113615,{awp=70003,coords={
 [1]={{55.4,11.2}},
 [463]={{57.4,62.2}}},description="Only available with the quests |cFFFFD700The Legion Returns|r or |cFFFFD700To Be Prepared|r. Permanently available on the Echo Isles.",r=1,g={

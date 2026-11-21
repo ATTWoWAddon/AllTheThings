@@ -3618,6 +3618,8 @@ n(3881,{coords={
 r(6413,{itemID=5483,learnedAt=20,requireSkill=185,skillID=2939})}}),
 n(3160,{coords={
 [1411]={{40.6,67.8}}},r=1,sym={{"select","symselector",28,14},{"pop"}}}),
+n(3159,{coords={
+[1411]={{40.4,68}}},r=1,sym={{"select","itemID",1194,2479,2130,2139,2134,2480,2132,2131}}}),
 n(3161,{coords={
 [1411]={{40.4,67.8},{40.6,67.8}}},r=1,sym={{"select","symselector",40},{"pop"},{"select","itemID",17183,1200}}}),
 n(3167,{coords={
