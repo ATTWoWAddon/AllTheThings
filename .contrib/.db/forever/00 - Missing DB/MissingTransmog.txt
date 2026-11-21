@@ -590,7 +590,6 @@ s(160902)/i(13221),	-- Monster - Item, Staff Glowing Jeweled B01 Red Offhand
 s(160903)/i(13222),	-- Monster - Sword, Flaming Crimson Battlemage Longsword
 s(160914)/i(13256),	--
 s(160920)/i(13262),	-- Ashbringer
-s(160925)/i(13289),	-- Egan's Blaster
 s(160926)/i(13290),	-- Monster - Wand, Horde Purple Orb
 s(160927)/i(13291),	-- Monster - Wand, Horde Red Feathered
 s(160928)/i(13292),	-- Monster - Wand, Horde Demon Skull

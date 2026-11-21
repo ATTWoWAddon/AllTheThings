@@ -296,6 +296,7 @@ instanceroot(236, {	-- Stratholme
 							11122,	-- Restless Soul
 						},
 					}),
+					i(13289),	-- Egan's Blaster
 					i(13315),	-- Testament of Hope
 				},
 			}),

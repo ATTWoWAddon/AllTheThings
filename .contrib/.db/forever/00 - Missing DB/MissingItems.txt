@@ -3431,7 +3431,6 @@ i(13222),	-- Monster - Sword, Flaming Crimson Battlemage Longsword
 i(13223),	-- Stratholme Courier's Pouch
 i(13242),	-- Deprecated Stormrage Boots
 i(13262),	-- Ashbringer
-i(13289),	-- Egan's Blaster
 i(13290),	-- Monster - Wand, Horde Purple Orb
 i(13291),	-- Monster - Wand, Horde Red Feathered
 i(13292),	-- Monster - Wand, Horde Demon Skull

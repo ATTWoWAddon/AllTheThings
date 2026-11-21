@@ -3707,6 +3707,7 @@ q(5281,{coords={
 q(5282,{coords={
 [1423]={{14.4,33.6}}},lvl=55,qgs={11140},sourceQuests={5281},g={
 qo(1,{crs={10384,10385,11122},providers={{"i",13289}}}),
+s(160925,13289,{collectible=false,f=104,spellID=17368}),
 s(160933,13315,{f=1,spellID=17448})}}),
 q(5262,{lvl=55,qss={13250},sourceQuests={5251}})}),
 h(-56,{
