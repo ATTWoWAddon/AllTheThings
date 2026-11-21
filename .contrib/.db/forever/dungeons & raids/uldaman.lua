@@ -212,6 +212,38 @@ instanceroot(239, {	-- Uldaman
 					}),
 				},
 			}),
+			q(1360, {	-- Reclaimed Treasures [A]
+				qg = 6294,	-- Krom Stoutarm
+				coord = { 74.2, 9.4, MAP.IRONFORGE },
+				maps = { MAP.LOCH_MODAN },
+				races = ALLIANCE_ONLY,
+				lvl = 33,
+				groups = {
+					objective(1, {	-- 0/1 Krom Stoutarm's Treasure
+						providers = {
+							{ "i", 8027 },		-- Krom Stoutarm's Treasure
+							{ "o", 124389 },	-- Krom Stoutarm's Chest
+						},
+						coord = { 35.2, 97.4, MAP.LOCH_MODAN },
+					}),
+				},
+			}),
+			q(2342, {	-- Reclaimed Treasures [H]
+				qg = 5651,	-- Patrick Garrett
+				coord = { 62.3, 48.6, MAP.UNDERCITY },
+				maps = { MAP.LOCH_MODAN },
+				races = HORDE_ONLY,
+				lvl = 33,
+				groups = {
+					objective(1, {	-- 0/1 Garrett Family Treasure
+						providers = {
+							{ "i", 8026 },		-- Garrett Family Treasure
+							{ "o", 124388 },	-- Garrett Family Chest
+						},
+						coord = { 33.9, 93.0, MAP.LOCH_MODAN },
+					}),
+				},
+			}),
 			q(3375, {	-- Replacement Phial
 				sourceQuest = 2199,	-- Lore for a Price
 				qg = 6826,	-- Talvash del Kissel
@@ -290,6 +322,27 @@ instanceroot(239, {	-- Uldaman
 				coord = { 75.6, 31.2, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				lvl = 45,
+			}),
+			q(709, {	-- Solution to Doom
+				qg = 2785,	-- Theldurin the Lost
+				coord = { 51.4, 76.9, MAP.BADLANDS },
+				lvl = 30,
+				groups = {
+					objective(1, {	-- 0/1 Tablet of Ryun'eh
+						providers = {
+							{ "i", 4631 },	-- Tablet of Ryun'eh
+							{ "o", 126260 },	-- Ancient Chest
+						},
+						coord = { 39.3, 18.8, MAP.BADLANDS },
+					}),
+					i(4746),	-- Doomsayer's Robe
+					i(270074, {	-- Doomcaller's Pants
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270075, {	-- Fists of Impending Doom
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			q(2240, {	-- The Hidden Chamber
 				sourceQuest = 2398,	-- The Lost Dwarves

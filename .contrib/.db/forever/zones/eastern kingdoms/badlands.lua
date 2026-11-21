@@ -433,38 +433,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				races = ALLIANCE_ONLY,
 				lvl = 35,
 			}),
-			q(1360, {	-- Reclaimed Treasures
-				qg = 6294,	-- Krom Stoutarm
-				coord = { 74.2, 9.4, MAP.IRONFORGE },
-				maps = { MAP.LOCH_MODAN },
-				races = ALLIANCE_ONLY,
-				lvl = 33,
-				groups = {
-					objective(1, {	-- 0/1 Krom Stoutarm's Treasure
-						providers = {
-							{ "i", 8027 },		-- Krom Stoutarm's Treasure
-							{ "o", 124389 },	-- Krom Stoutarm's Chest
-						},
-						coord = { 35.2, 97.4, MAP.LOCH_MODAN },
-					}),
-				},
-			}),
-			q(2342, {	-- Reclaimed Treasures
-				qg = 5651,	-- Patrick Garrett
-				coord = { 62.3, 48.6, MAP.UNDERCITY },
-				maps = { MAP.LOCH_MODAN },
-				races = HORDE_ONLY,
-				lvl = 33,
-				groups = {
-					objective(1, {	-- 0/1 Garrett Family Treasure
-						providers = {
-							{ "i", 8026 },		-- Garrett Family Treasure
-							{ "o", 124388 },	-- Garrett Family Chest
-						},
-						coord = { 33.9, 93.0, MAP.LOCH_MODAN },
-					}),
-				},
-			}),
 			q(1420, {	-- Report to Helgrum
 				sourceQuest = 1418,	-- Neeka Bloodscar
 				qg = 5394,	-- Neeka Bloodscar
@@ -570,27 +538,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					i(4645, {	-- Chains of Hematus
 						coord = { 81.4, 50.6, MAP.BADLANDS },
 						cr = 2759,	-- Hematus
-					}),
-				},
-			}),
-			q(709, {	-- Solution to Doom
-				qg = 2785,	-- Theldurin the Lost
-				coord = { 51.4, 76.9, MAP.BADLANDS },
-				lvl = 30,
-				groups = {
-					objective(1, {	-- 0/1 Tablet of Ryun'eh
-						providers = {
-							{ "i", 4631 },	-- Tablet of Ryun'eh
-							{ "o", 126260 },	-- Ancient Chest
-						},
-						coord = { 39.3, 18.8, MAP.BADLANDS },
-					}),
-					i(4746),	-- Doomsayer's Robe
-					i(270074, {	-- Doomcaller's Pants
-						timeline = { TIMELINE.ADDED_1_60_1 },
-					}),
-					i(270075, {	-- Fists of Impending Doom
-						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
 				},
 			}),
