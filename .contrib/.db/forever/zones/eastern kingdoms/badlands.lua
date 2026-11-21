@@ -333,14 +333,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				},
 			}),
 			q(97821, {	-- Mirage Mirror
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				aqd = {
+					qg = 269577,	-- Dorgaron
+					coord = { 54.4, 12.8, MAP.BADLANDS },
+				},
+				hqd = {
+					qg = 269647,	-- Mus'hale
+					coord = { 4.2, 46.2, MAP.BADLANDS },
+				},
+				qs = 278744,	-- Mirage Mirror (QS!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
 				lvl = 37,
 				groups = {
-					objective(1, {	-- 0/1 Mirage Mirror
-						provider = { "i", 277844 },	-- Mirage Mirror
-					}),
 					i(277844),	-- Mirage Mirror
 				},
 			}),
@@ -1063,6 +1067,35 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 			}),
 			i(255726, {	-- Manual: Leather Tourniquet (RECIPE!)
 				cr = 2739,	-- Shadowforge Tunneler
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(278744, {	-- Mirage Mirror (QS!)
+				coords = {
+					{ 15.2, 74.0, MAP.BADLANDS },
+					{ 15.4, 73.4, MAP.BADLANDS },
+					{ 15.4, 75.4, MAP.BADLANDS },
+					{ 15.6, 74.2, MAP.BADLANDS },
+					{ 15.8, 74.6, MAP.BADLANDS },
+					{ 15.8, 76.0, MAP.BADLANDS },
+					{ 17.6, 77.2, MAP.BADLANDS },
+					{ 30.2, 74.4, MAP.BADLANDS },
+					{ 30.4, 75.0, MAP.BADLANDS },
+					{ 31.0, 75.2, MAP.BADLANDS },
+					{ 31.1, 71.9, MAP.BADLANDS },
+					{ 31.1, 72.5, MAP.BADLANDS },
+					{ 31.4, 75.8, MAP.BADLANDS },
+					{ 31.6, 75.4, MAP.BADLANDS },
+					{ 32.4, 72.4, MAP.BADLANDS },
+					{ 32.6, 73.0, MAP.BADLANDS },
+					{ 37.4, 44.4, MAP.BADLANDS },
+					{ 37.8, 46.8, MAP.BADLANDS },
+					{ 38.0, 45.4, MAP.BADLANDS },
+					{ 38.0, 45.6, MAP.BADLANDS },
+					{ 67.7, 36.8, MAP.BADLANDS },
+					{ 68.2, 36.3, MAP.BADLANDS },
+					{ 68.6, 36.0, MAP.BADLANDS },
+				},
+				cr = 269756,	-- Malevolent Mirage
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(1993, {	-- Ogremind Ring
