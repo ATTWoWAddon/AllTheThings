@@ -3518,6 +3518,7 @@ i(14256,{coords={
 [17]={{33.4,46.8},{37.7,67.85},{45.9,46.8}},
 [77]={{17.7,37.7},{42,40}},
 [83]={{52,70.15},{52.3,75.7},{52.75,64.65}}},crs={6011,7136,41253,41470,41471,46950,50315,50318,50321},description="Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",maps={239},q=1}),
+i(814,{crs={36,114,115,480,573,1031,1033,1731,3286,4260,11684,14224,44576,44616,45185,45399,48259},maps={10,15,48,50,52,56,63,77,241,291},q=1}),
 i(7191,{q=1}),
 i(12207,{coords={
 [71]={{36.5,61.2},{47.1,42}}},crs={5429,5430},description="Drops from birds and owlbeasts in higher intermediate to highlevel vanilla zones like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",q=1}),

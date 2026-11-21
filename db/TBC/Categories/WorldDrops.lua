@@ -3490,6 +3490,7 @@ i(7080,{coords={
 [1448]={{56,17}},
 [1452]={{54,40}}},crs={7132,8519,8520,8521,8522,14458},q=2}),
 i(14256,{description="Felcloth drops uncommonly from given satyrs and creatures of the Burning Legion within the given zones.",maps={239,1448},q=1}),
+i(814,{crs={36,114,115,480,573,1030,1031,1032,1033,1731,3286,3992,3993,4073,4074,5836,9336,11684,14433},maps={291,1413,1436,1437,1440,1442},q=1}),
 i(7191,{q=1}),
 i(12207,{coords={
 [1446]={{36.5,61.2},{47.1,42}}},crs={5428,5429,5430},description="Drops from birds and owlbeasts in the level bracket 40-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",q=1}),

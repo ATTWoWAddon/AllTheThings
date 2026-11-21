@@ -3875,6 +3875,56 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			},
 		}),
+		i(814, {	-- Flask of Oil
+			maps = {
+				ASHENVALE,
+				DEADMINES,
+				WESTFALL,
+				WETLANDS,
+				-- #if BEFORE 4.0.3
+				STONETALON_MOUNTAINS,
+				THE_BARRENS,
+				-- #else
+				BADLANDS,
+				FELWOOD,
+				LOCH_MODAN,
+				NORTHERN_BARRENS,
+				NORTHERN_STRANGLETHORN,
+				TWILIGHT_HIGHLANDS,
+				-- #endif
+			},
+			crs = {
+				1031,	-- Crimson Ooze
+				573,		-- Foe Reaper 4000
+				1731,	-- Goblin Craftsman
+				36,		-- Harvest Golem
+				115,		-- Harvest Reaper
+				114,		-- Harvest Watcher
+				1033,	-- Monstrous Ooze
+				480,		-- Rusty Harvest Golem
+				3286,	-- Venture Co. Overseer
+				11684,	-- Warsong Shredder
+				-- #if BEFORE 4.0.3
+				1032,	-- Black Ooze
+				1030,	-- Black Slime
+				9336,	-- Boss Copperplug
+				5836,	-- Engineer Whirleygig
+				14433,	-- Sludginn
+				3992,	-- Venture Co. Engineer
+				3993,	-- Venture Co. Machine Smith
+				4073,	-- XT:4
+				4074,	-- XT:9
+				-- #else
+				14224,	-- 7:XT
+				45185,	-- Diamond-Blade Shredder
+				44616,	-- Haywire Battle-Chicken
+				48259,	-- Irontree Shredder
+				45399,	-- Optimo
+				44576,	-- Proto-Strider
+				4260,	-- Venture Co. Shredder
+				-- #endif
+			},
+		}),
 		i(2589, {	-- Linen Cloth
 			maps = {
 				DUN_MOROGH,
