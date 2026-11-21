@@ -160,11 +160,11 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				qg = 4485,	-- Belgrom Rockmaul
 				qi = 10643,	-- Sealed Letter to Ag'tor
 				coord = { 75.0, 34.2, MAP.ORGRIMMAR },
+				timeline = { TIMELINE.REMOVED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 44,
 			}),
 			q(3505, {	-- Betrayed (2/4)
-				sourceQuest = 3504,	-- Betrayed (1/4)
 				qg = 8576,	-- Ag'tor Bloodfist
 				coord = { 22.2, 51.4, MAP.AZSHARA },
 				races = HORDE_ONLY,
