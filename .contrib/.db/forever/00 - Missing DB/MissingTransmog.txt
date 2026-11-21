@@ -6381,8 +6381,6 @@ s(304959)/i(270120),	--
 s(304960)/i(270121),	--
 s(304961)/i(270122),	-- Yesterday's Pants
 s(304962)/i(270123),	--
-s(304963)/i(270124),	--
-s(304964)/i(270125),	--
 s(305022)/i(270270),	-- Scale of the Tidebender
 s(305042)/i(270303),	-- Monster - Trident, Naga (Brass)
 s(305043)/i(270304),	-- Monster - Trident, Silver

@@ -395,6 +395,12 @@ instanceroot(230, {	-- Dire Maul
 						provider = { "i", 18426 },	-- Lethtendris's Web
 					}),
 					i(18491),	-- Lorespinner
+					i(270125, {	-- Satyrhide Armbands
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270124, {	-- Warpwood Bracers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(7489, {	-- Lethtendris's Web [Horde]
@@ -409,6 +415,12 @@ instanceroot(230, {	-- Dire Maul
 						provider = { "i", 18426 },	-- Lethtendris's Web
 					}),
 					i(18491),	-- Lorespinner
+					i(270125, {	-- Satyrhide Armbands
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(270124, {	-- Warpwood Bracers
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			q(7484, {	-- Libram of Focus
