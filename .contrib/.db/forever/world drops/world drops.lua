@@ -4588,12 +4588,45 @@ root(ROOTS.WorldDrops, {
 				{ 47.1, 42.0, MAP.TANARIS },	-- Northern Abyssal Sands
 				{ 36.5, 61.2, MAP.TANARIS },	-- Southern Abyssal Sands
 			},
+			maps = {
+				MAP.ARATHI_HIGHLANDS,
+				MAP.ASHENVALE,
+				MAP.BADLANDS,
+				MAP.BLASTED_LANDS,
+				MAP.DEADWIND_PASS,
+				MAP.DESOLACE,
+				MAP.DUSKWOOD,
+				MAP.HILLSBRAD_FOOTHILLS,
+				MAP.RIVERGLADES,
+				MAP.SHENDRALAS,
+				MAP.TIRISFAL_GLADES,
+				MAP.WESTERN_PLAGUELANDS,
+			},
 			crs = {
+				5982,	-- Black Slayer
+				2830,	-- Buzzard
+				4695,	-- Carrion Horror
+				1809,	-- Carrion Vulture
+				4693,	-- Dread Flyer
+				4694,	-- Dread Ripper
+				4692,	-- Dread Swoop
+				2580,	-- Elder Mesa Buzzard
 				5429,	-- Fire Roc
+				2831,	-- Giant Buzzard
+				8207,	-- Greater Firebird
+				263343,	-- Low Plains Buzzard
+				2579,	-- Mesa Buzzard
+				1811,	-- Plaguewing Vulture
 				5428,	-- Roc
 				5430,	-- Searing Roc
+				12676,	-- Sharptalon
+				7376,	-- Sky Shadow
+				8299,	-- Spiteflayer
+				2829,	-- Starving Buzzard
+				2578,	-- Young Mesa Buzzard
+				2931,	-- Zaricotl
+				222243,	-- Zopilote
 			},
-			description = "Drops from carrion birds in the level bracket 30-60 like Rocs in Tanaris. The rocs can be found around the big skeleton rib cages.",
 		}),
 		i(769, {	-- Chunk of Boar Meat
 			coords = {
