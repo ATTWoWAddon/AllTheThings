@@ -1524,8 +1524,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(96876, {	-- Ukor's Lost Pack
 				qs = 275722,	-- Ukor's Lost Pack (QS!)
-				coord = { 49.5, 56.4, MAP.DUROTAR },
-				cr = 266851,	-- Ukorsbane
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 5,
@@ -1820,6 +1818,11 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			i(4882, {	-- Benedict's Key
 				cr = 3192,	-- Lieutenant Benedict
 				coord = { 59.6, 58.2, MAP.DUROTAR },
+			}),
+			i(275722, {	-- Ukor's Lost Pack (QS!)
+				coord = { 49.5, 56.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 266851,	-- Ukorsbane
 			}),
 			i(275724, {	-- Hexed Pendant
 				description = "You can continue to Disenchant these to level your enchanting well beyond skill level 40.",
