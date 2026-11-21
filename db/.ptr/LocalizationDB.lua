@@ -145,6 +145,17 @@ L.AUCTIONATOR_GROUPS = "Group-based searches are only supported using Auctionato
 L.AUCTIONS = "Auctions"
 L.AUCTIONS_APPEARANCES_DESC = "All items that could be learned for transmog are listed here."
 L.AUCTIONS_BATTLE_PETS_DESC = "All battle pets that you have not collected yet are displayed here."
+L.AUCTIONS_BUY_ALL = "Buy All"
+L.AUCTIONS_BUY_ALL_CONFIRM = "Buy %s\nfor %s?\n(%d of %d)"
+L.AUCTIONS_BUY_ALL_DESC = "Searches the Auction House for each uncollected appearance listed below (up to your Maximum Price) and offers the cheapest buyout for each one. Every purchase asks for confirmation first. Bid-only auctions and your own auctions are skipped."
+L.AUCTIONS_BUY_ALL_DONE = "Buy All finished: bought %d of %d items."
+L.AUCTIONS_BUY_ALL_NO_BUYOUT = "No buyout within your Maximum Price found for %s, skipping."
+L.AUCTIONS_BUY_ALL_NOTHING = "There are no uncollected appearances within your Maximum Price to buy."
+L.AUCTIONS_BUY_ALL_OPEN_AH = "Open the Auction House to use Buy All."
+L.AUCTIONS_BUY_ALL_RUNNING = "Buy All is already running."
+L.AUCTIONS_BUY_ALL_SKIP = "Skip"
+L.AUCTIONS_BUY_ALL_STOP = "Stop"
+L.AUCTIONS_BUY_ALL_TOO_EXPENSIVE = "Not enough money to buy %s for %s, skipping."
 L.AUCTIONS_CLEAR_CACHE_DESC = "Click this button to clear all of the cached auction data."
 L.AUCTIONS_CLEAR_DATA = "Clear Auction Data"
 L.AUCTIONS_CONTAINER_DESC = "Container for '%s' object types."
@@ -27864,12 +27875,14 @@ localize(L.HEADER_NAMES, {
 	[-742] = "Ritualstätten",
 	[-745] = "Postroute in der Nachbarschaft",
 	[-749] = "Dekorationsduell",
+	[-753] = "Eine feurige Erinnerung",
 	[-755] = "Dunkelspeerrennen",
 	[-756] = "Zerschlagener Thron",
 	[-757] = "Säbelflossenspitze",
 	[-758] = "Verweilende Schatten",
 	[-759] = "Konfrontationen",
 	[-770] = "Fluchwellen",
+	[-790] = "Aqirinvasionen",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-36] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -36613,12 +36626,14 @@ localize(L.HEADER_NAMES, {
 	[-742] = "Sites rituels",
 	[-745] = "Tournée postale dans le quartier",
 	[-749] = "Duel de décoration",
+	[-753] = "Une explosion venue du passé",
 	[-755] = "Marathon des Sombrelances",
 	[-756] = "Trône Brisé",
 	[-757] = "Pointe des Daguéchines",
 	[-758] = "Ombres Persistantes",
 	[-759] = "Épreuve de force",
 	[-770] = "Vagues de Malédiction",
+	[-790] = "Invasions des Aqir",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -45045,12 +45060,14 @@ localize(L.HEADER_NAMES, {
 	[-742] = "Siti Rituali",
 	[-745] = "Percorso postale nel Vicinato",
 	[-749] = "Duello di Decorazioni",
+	[-753] = "Un ardente ritorno di fiamma",
 	[-755] = "Slancio dei Lanciascura",
 	[-756] = "Trono Distrutto",
 	[-757] = "Promontorio dei Liscaguzza",
 	[-758] = "Ombre Persistenti",
 	[-759] = "Scontro Decisivo",
 	[-770] = "Scariche di Maledizione",
+	[-790] = "Invasioni degli Aqir",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ottieni esperienza e reputazione bonus nel corso delle tue avventure ad Azeroth, e trova tesori misteriosi sulle Isole dei Draghi e a Khaz Algar!",
@@ -52885,12 +52902,14 @@ localize(L.HEADER_NAMES, {
 	[-742] = "Sítios Ritualísticos",
 	[-745] = "Rota postal na vizinhança",
 	[-749] = "Duelo de Decoração",
+	[-753] = "Um estouro do passado",
 	[-755] = "Arremetida Lançanegra",
 	[-756] = "Trono Partido",
 	[-757] = "Ponto de Espinhadaga",
 	[-758] = "Sombras Duradouras",
 	[-759] = "Confronto Final",
 	[-770] = "Surtos Malditos",
+	[-790] = "Invasões Aqir",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "Ganhe bônus de experiência e reputação em suas aventuras em Azeroth e ache fortuitos mistérios nas Ilhas do Dragão e em Khaz Algar!",
@@ -61891,12 +61910,14 @@ localize(L.HEADER_NAMES, {
 	[-742] = "Места проведения ритуалов",
 	[-745] = "Pайонный почтовый маршрут",
 	[-749] = "Дуэль декораторов",
+	[-753] = "Горячий привет из прошлого",
 	[-755] = "Забег Черного Копья",
 	[-756] = "Разрушенный трон",
 	[-757] = "Высота Пронзающего Гребня",
 	[-758] = "Последние тени",
 	[-759] = "Решающая схватка",
 	[-770] = "Проклятых Натисков",
+	[-790] = "Вторжений акиров",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
@@ -70379,12 +70400,14 @@ localize(L.HEADER_NAMES, {
 	[-742] = "의식 지점",
 	[-745] = "거주구 우편 경로를",
 	[-749] = "하우징 장식 결투",
+	[-753] = "불타오르는 과거",
 	[-755] = "검은창 대질주",
 	[-756] = "부서진 왕좌",
 	[-757] = "비수가시 지점",
 	[-758] = "남겨진 그림자",
 	[-759] = "최후의 대결",
 	[-770] = "저주받은 쇄도",
+	[-790] = "아퀴르 침공",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-106] = "아제로스를 모험하며 추가 경험치와 평판을 획득하고, 용의 섬과 카즈 알가르에서 수수께끼의 보물을 발견해 보십시오!",
@@ -79058,6 +79081,7 @@ localize(L.HEADER_NAMES, {
 	[-745] = "Ruta postal del vecindario",
 	[-746] = "Nodos de profesión",
 	[-749] = "Duelo de adornos",
+	[-753] = "Ascuas del pasado",
 	[-755] = "Carrera Lanza Negra",
 	[-756] = "Trono Destrozado",
 	[-757] = "Punto de Espinadaga",
@@ -79066,6 +79090,7 @@ localize(L.HEADER_NAMES, {
 	[-760] = "Aventura del Año Nuevo Lunar",
 	[-767] = "Tesoro Escondido de las Tierras Azures",
 	[-770] = "Oleadas Malditas",
+	[-790] = "Invasiones aqir",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-24] = "Contiene recompensas que dan al completar el evento.",
@@ -87679,6 +87704,7 @@ localize(L.HEADER_NAMES, {
 	[-742] = "Sitios de ritual",
 	[-745] = "Ruta postal de vecindario",
 	[-749] = "Duelo de decoraciones",
+	[-753] = "Las llamas del pasado",
 	[-756] = "Trono Quebrado",
 	[-758] = "Sombras Tenaces",
 	[-767] = "Tesoro escondido del Trecho Azur",
@@ -100458,7 +100484,7 @@ localize(L.HEADER_NAMES, {
 	[-749] = "裝迷藏競賽",
 	[-750] = "Phase Conduits",
 	[-752] = "Soggy Nest",
-	[-753] = "A Fiery Blast from the Past",
+	[-753] = "來自過去的烈焰衝擊",
 	[-754] = "法力熔爐移位裝置",
 	[-755] = "暗矛衝刺賽",
 	[-756] = "破碎王座",
