@@ -693,18 +693,15 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					}),
 					objective(2, {	-- 0/1 Small rock rubbing
 						provider = { "o", 668003 },	-- Etched Stone
-						coords = {
-							{ 31.5, 61.1, MAP.BADLANDS },
-							{ 31.8, 61.9, MAP.BADLANDS },
-						},
+						coord = { 31.5, 61.0, MAP.BADLANDS },
 					}),
 					objective(3, {	-- 0/1 Large rock rubbing
 						provider = { "o", 668004 },	-- Etched Stone
 						coords = {
-							{ 27.9, 60.8, MAP.BADLANDS },
 							{ 28.4, 59.9, MAP.BADLANDS },
 							{ 28.6, 59.9, MAP.BADLANDS },
-							{ 28.9, 60.6, MAP.BADLANDS },
+							{ 28.9, 60.7, MAP.BADLANDS },
+							{ 28.4, 61.4, MAP.BADLANDS },
 						},
 					}),
 				},
