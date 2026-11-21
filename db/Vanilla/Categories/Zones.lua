@@ -16888,6 +16888,7 @@ i(1189,{coords={
 [1436]={{60.2,70.8},{60.2,76.6},{63.6,72.8},{63.8,78.6}}},crs={125},f=52,lvl=15,q=2,rwp=40003}),
 r(6686,{crs={590},itemID=5771,learnedAt=70,q=1,requireSkill=197}),
 r(6688,{crs={450},itemID=5772,learnedAt=115,q=1,requireSkill=197}),
+r(2545,{description="Has a chance to drop from any creature in Westfall.\nRecommended farming spot: Murlocs in the north area.",itemID=2698,learnedAt=85,q=1,requireSkill=185}),
 s(156129,821,{crs={123},f=5,loc=42,lvl=8,q=2}),
 s(156287,1391,{crs={453},f=28,lvl=13,q=2}),
 s(156132,832,{coords={

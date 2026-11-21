@@ -1215,6 +1215,7 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 					{ "i", 209056, 1 },	-- Spare Reaper Parts
 				},
 			})),
+			i(2698),	-- Recipe: Cooked Crab Claw (RECIPE!)
 			i(821, {	-- Riverpaw Leather Vest
 				cr = 123,	-- Riverpaw Mongrel
 			}),

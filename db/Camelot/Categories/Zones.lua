@@ -21168,6 +21168,7 @@ r(6686,{crs={590},itemID=5771,learnedAt=50,requireSkill=197,skillID=2948}),
 r(6688,{crs={450},itemID=5772,learnedAt=90,requireSkill=197,skillID=2948}),
 i(255155,{awp=16001,b=1,coords={
 [1436]={{38.6,50.7},{46.6,67},{48.6,33.2},{56.4,35.4},{57.4,19.6}}},crs={36,114,480},lvl=8}),
+r(2545,{itemID=2698,learnedAt=85,requireSkill=185,skillID=2939}),
 s(156129,821,{crs={123},f=5,loc=42,lvl=8}),
 s(156287,1391,{crs={453},f=28,lvl=13}),
 s(156132,832,{coords={

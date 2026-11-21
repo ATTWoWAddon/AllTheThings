@@ -1182,6 +1182,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 					480,	-- Rusty Harvest Golem
 				},
 			}),
+			i(2698),	-- Recipe: Cooked Crab Claw (RECIPE!)
 			i(821, {	-- Riverpaw Leather Vest
 				cr = 123,	-- Riverpaw Mongrel
 			}),

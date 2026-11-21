@@ -18883,6 +18883,7 @@ i(1189,{coords={
 r(6686,{crs={590},itemID=5771,learnedAt=70,q=1,requireSkill=197}),
 r(6688,{crs={450},itemID=5772,learnedAt=115,q=1,requireSkill=197}),
 i(209057,{b=1,c={8,9},cost={{"i",209056,1}},f=55,phase=1605,q=1}),
+r(2545,{itemID=2698,learnedAt=85,q=1,requireSkill=185}),
 s(156129,821,{crs={123},f=5,loc=42,lvl=8,q=2}),
 s(156287,1391,{crs={453},f=28,lvl=13,q=2}),
 i(208741,{b=1,c={1},coords={

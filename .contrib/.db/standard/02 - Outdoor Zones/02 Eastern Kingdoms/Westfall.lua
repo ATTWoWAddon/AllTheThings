@@ -1955,10 +1955,10 @@ maproot(EASTERN_KINGDOMS, WESTFALL, {
 				cr = 450,	-- Defias Renegade Mage
 			}),
 			-- #endif
-			-- #if AFTER CATA
 			i(2698, {	-- Recipe: Cooked Crab Claw (RECIPE!)
 				description = "Has a chance to drop from any creature in Westfall.\nRecommended farming spot: Murlocs in the north area.",
 			}),
+			-- #if AFTER CATA
 			i(728, {	-- Recipe: Westfall Stew (RECIPE!)
 				description = "Has a chance to drop from any creature in Westfall.\nRecommended: farm the Riverpaw Gnolls.",
 			}),
