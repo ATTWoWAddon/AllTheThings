@@ -111,6 +111,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 				lvl = 60,
 			}),
 			q(97986, {	-- Argent Arbiter
+				sourceQuest = 8152,	-- Rapid Escape
 				qg = 16284,	-- Argent Medic
 				coord = { 80.6, 57.8, MAP.EASTERN_PLAGUELANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -647,6 +648,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 						},
 					}),
 				},
+			}),
+			q(8152, {	-- Rapid Escape
+				sourceQuest = 7790,	-- River Ends
+				provider = { "o", 668183 },	-- Argent Wayfinder
+				qi = 280504,	-- Mudsoaked Scrap (PQI!)
+				coord = { 4.0, 33.1, MAP.EASTERN_PLAGUELANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 53,
 			}),
 			q(5941, {	-- Return to Chromie
 				sourceQuest = 5206,	-- Marauders of Darrowshire

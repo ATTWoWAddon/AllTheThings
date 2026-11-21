@@ -641,6 +641,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTERN_PLAGUELANDS, {
 				coord = { 53.0, 65.7, MAP.WESTERN_PLAGUELANDS },
 				lvl = 50,
 			},
+			q(7790, {	-- River Ends
+				qg = 270191,	-- Fallen Skyborne
+				coord = { 70.1, 44.1, MAP.WESTERN_PLAGUELANDS },
+				maps = { MAP.EASTERN_PLAGUELANDS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 53,
+			}),
 			q(5096, {	-- Scarlet Diversions
 				sourceQuests = {
 					5093,	-- A Call to Arms: The Plaguelands! [Orgrimmar]

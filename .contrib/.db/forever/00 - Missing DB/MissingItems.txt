@@ -9755,7 +9755,6 @@ i(280426),	-- Sack of Fish
 i(280449),	-- Skyborne Tabard
 i(280459),	-- Crystal Infused Scale
 i(280502),	-- Relic of the Fang
-i(280504),	-- Mudsoaked Scrap
 i(280615),	-- Galestrider Chick
 i(280679),	-- Relic of the Claw
 i(280680),	-- Relic of the Silent Shadow

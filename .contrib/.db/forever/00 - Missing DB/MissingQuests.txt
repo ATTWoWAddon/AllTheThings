@@ -237,7 +237,6 @@ q(7786),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7787),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7788),	-- Vanquish the Invaders!	 CLASSIC:Vanquish the Invaders!	 TBC:Vanquish the Invaders!	 WOTLK:Vanquish the Invaders!	 CATA:	 MOP:
 q(7789),	-- Quell the Silverwing Usurpers	 CLASSIC:Quell the Silverwing Usurpers	 TBC:Quell the Silverwing Usurpers	 WOTLK:Quell the Silverwing Usurpers	 CATA:	 MOP:
-q(7790),	-- The Written Word	 CLASSIC:REUSE	 TBC:REUSE	 WOTLK:REUSE	 CATA:	 MOP:
 q(7848),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7869),	-- test quest - do not use	 CLASSIC:test quest - do not use	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7870),	-- test quest2 - do not use	 CLASSIC:test quest2 - do not use	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -315,7 +314,6 @@ q(8145),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(8146),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(8147),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(8148),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(8152),	-- REUSE	 CLASSIC:REUSE	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(8154),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	 CATA:	 MOP:
 q(8155),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	 CATA:	 MOP:
 q(8156),	-- Arathi Basin Resources!	 CLASSIC:Arathi Basin Resources!	 TBC:Arathi Basin Resources!	 WOTLK:Arathi Basin Resources!	 CATA:	 MOP:
