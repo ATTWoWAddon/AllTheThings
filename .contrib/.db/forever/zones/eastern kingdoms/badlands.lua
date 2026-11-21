@@ -881,28 +881,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 					}),
 				},
 			}),
-			q(9439, {	-- Unclaimed Baggage
-				qg = 17097,	-- Advisor Sarophas
-				coord = { 5.8, 48.0, MAP.BADLANDS },
-				races = HORDE_ONLY,
-				lvl = 36,
-				groups = {
-					objective(1, {	-- 0/1 Advisor's Pack
-						providers = {
-							{ "i",  23658 },	-- Advisor's Pack
-							{ "o", 181628 },	-- Empty Barrel
-						},
-						coord = { 41.0, 29.2, MAP.BADLANDS },
-					}),
-					objective(2, {	-- 0/1 Advisor's Rapier
-						providers = {
-							{ "i",  23660 },	-- Advisor's Rapier
-							{ "o", 181627 },	-- Weapon Rack
-						},
-						coord = { 41.7, 26.8, MAP.BADLANDS },
-					}),
-				},
-			}),
 		}),
 		n(RARES, {
 			n(14224, {	-- 7:XT <Long Distance Recovery Unit>
