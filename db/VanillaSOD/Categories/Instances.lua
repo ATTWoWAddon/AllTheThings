@@ -10467,7 +10467,7 @@ i(19991,{b=1,f=53,q=3,u=2}),
 i(19992,{b=1,f=53,q=3,u=2}),
 s(164138,20083,{b=1,f=29,q=3,u=2})}}),
 q(1445,{coords={
-[1435]={{64.2,20.8}}},lvl=38,qgs={1443},r=1,sourceQuests={1424},u=2,g={
+[1435]={{47.9,55}}},lvl=38,qgs={1443},r=1,sourceQuests={1424},u=2,g={
 qo(1,{providers={{"i",6181}},u=2}),
 i(1490,{b=1,f=53,q=2,u=2})}}),
 q(8422,{c={9},coords={
@@ -10667,7 +10667,7 @@ s(164138,20083,{b=1,f=29,q=3})}}),
 q(82102,{description="Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",lvl=50,providers={{"o",148512}},qss={221475},g={
 i(221474,{b=1,f=53,lvl=50,q=3})}}),
 q(82100,{coords={
-[1435]={{64.2,20.8}}},lvl=50,qgs={1443},r=1,g={
+[1435]={{47.9,55}}},lvl=50,qgs={1443},r=1,g={
 qo(1,{providers={{"i",6181}}}),
 i(1490,{b=1,f=53,q=2})}}),
 q(82115,{c={9},coords={

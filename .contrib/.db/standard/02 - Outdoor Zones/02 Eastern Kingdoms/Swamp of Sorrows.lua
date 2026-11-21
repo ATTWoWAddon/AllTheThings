@@ -762,7 +762,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 			}),
 			q(1418, {	-- Neeka Bloodscar
 				qg = 1442,	-- Helgrum the Swift
-				coord = { 47.7, 55.2, DUSTWALLOW_MARSH },
+				coord = { 47.7, 55.2, SWAMP_OF_SORROWS },
 				timeline = { REMOVED_4_0_3 },
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
@@ -832,7 +832,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				}),
 				hordeQuestData = q(1424, {	-- Pool of Tears (H)
 					qg = 1443,	-- Fel'zerul
-					coord = { 64.2, 20.8, SWAMP_OF_SORROWS },
+					coord = { 47.9, 55.0, SWAMP_OF_SORROWS },
 					timeline = { REMOVED_4_0_3 },
 				}),
 				lvl = 38,
@@ -851,7 +851,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 			-- #else
 			q(1424, {	-- Pool of Tears (H)
 				qg = 1443,	-- Fel'zerul
-				coord = { 64.2, 20.8, SWAMP_OF_SORROWS },
+				coord = { 47.9, 55.0, SWAMP_OF_SORROWS },
 				timeline = { REMOVED_4_0_3 },
 				races = HORDE_ONLY,
 				lvl = 38,
@@ -1052,7 +1052,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 				sourceQuest = 1424,	-- Pool of Tears [Horde]
 				qg = 1443,	-- Fel'zerul
 				qi = 6193,	-- Bundle of Atal'ai Artifacts
-				coord = { 64.2, 20.8, SWAMP_OF_SORROWS },
+				coord = { 47.9, 55.0, SWAMP_OF_SORROWS },
 				timeline = { REMOVED_4_0_3 },
 				maps = { THE_HINTERLANDS },
 				races = HORDE_ONLY,

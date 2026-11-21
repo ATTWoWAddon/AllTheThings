@@ -418,7 +418,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(1445, {	-- The Temple of Atal'Hakkar
 					sourceQuest = 1424,	-- Pool of Tears
 					qg = 1443,	-- Fel'zerul
-					coord = { 64.2, 20.8, SWAMP_OF_SORROWS },
+					coord = { 47.9, 55.0, SWAMP_OF_SORROWS },
 					timeline = { REMOVED_4_0_3 },
 					races = HORDE_ONLY,
 					lvl = 38,

@@ -324,7 +324,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 			q(1445, {	-- The Temple of Atal'Hakkar
 				sourceQuest = 1424,	-- Pool of Tears
 				qg = 1443,	-- Fel'zerul
-				coord = { 64.2, 20.8, SWAMP_OF_SORROWS },
+				coord = { 47.9, 55.0, SWAMP_OF_SORROWS },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -883,7 +883,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 					}),
 					q(82100, {	-- The Temple of Atal'Hakkar
 						qg = 1443,	-- Fel'zerul
-						coord = { 64.2, 20.8, SWAMP_OF_SORROWS },
+						coord = { 47.9, 55.0, SWAMP_OF_SORROWS },
 						races = HORDE_ONLY,
 						lvl = 50,
 						groups = {

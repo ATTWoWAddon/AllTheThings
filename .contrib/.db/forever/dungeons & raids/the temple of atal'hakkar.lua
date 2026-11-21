@@ -291,7 +291,7 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 			q(1445, {	-- The Temple of Atal'Hakkar
 				sourceQuests = { 1444 },	-- Return to Fel'Zerul
 				qg = 1443,	-- Fel'zerul
-				coord = { 64.2, 20.8, MAP.SWAMP_OF_SORROWS },
+				coord = { 47.9, 55.0, MAP.SWAMP_OF_SORROWS },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {

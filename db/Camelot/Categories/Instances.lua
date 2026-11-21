@@ -1993,6 +1993,8 @@ n(14354,{description="Talk to him and then chase him. Eventually he will go up a
 i(18249,{b=1,description="This key is required to enter the Gordok Commons and Capital Gardens.",spellID=3366}),
 r(22761,{b=1,itemID=18267,learnedAt=275,requireSkill=185,skillID=2939}),
 i(18261),
+s(163466,18320,{awp=16001,f=6,loc=41}),
+s(163463,18316,{awp=16001,f=1}),
 i(18255,{f=55,lvl=45,spellID=1129})}}),
 n(14349,{
 i(18354,{c={9},f=53,spellID=22855})}),
@@ -2034,6 +2036,7 @@ s(163458,18309,{f=5,loc=44}),
 s(163464,18318,{f=6,loc=47}),
 s(163472,18326,{f=7,loc=44,spellID=1302193}),
 i(18314,{f=52}),
+i(18315,{f=52}),
 s(163474,18328,{f=3}),
 s(163473,18327,{f=4,loc=45}),
 crit(545,{achID=62033,awp=16001,id=14})}})}}),
@@ -2157,7 +2160,9 @@ e(409,{npcID=11496,g={
 s(163504,18384,{f=7,loc=41}),
 s(163493,18372,{f=20}),
 s(163509,18389,{f=3}),
+s(163514,18394,{f=6,loc=43}),
 i(18381,{f=51}),
+i(282712,{awp=16001,f=200,lvl=50}),
 s(163511,18391,{f=5,loc=45}),
 s(163500,18379,{f=6,loc=47}),
 s(163498,18377,{f=5,loc=44}),
@@ -2661,7 +2666,8 @@ e(427,{npcID=12236,g={
 i(17703),
 s(163402,17752,{f=20}),
 s(163405,17755,{f=4,loc=45}),
-s(163404,17754,{f=6,loc=46,spellID=1294769})}}),
+s(163404,17754,{f=6,loc=46,spellID=1294769}),
+s(309505,275864,{awp=16001,b=1,f=8,lvl=45})}}),
 h(-46,{
 n(12237,{coords={
 [280]={{24,75}}},g={
@@ -3420,10 +3426,14 @@ s(163680,18758,{f=20}),
 i(18760,{b=1,f=52,lvl=57})}}),
 n(10433,{
 s(161600,14576,{f=25,spellID=1298501}),
-s(163634,18692,{f=7,loc=47})}),
+s(163634,18692,{f=7,loc=47}),
+s(309580,276069,{awp=16001,b=1,f=24,lvl=54}),
+s(309581,276071,{awp=16001,b=1,f=7,loc=40,lvl=54})}),
 n(10432,{
 i(18691,{f=51}),
 s(161601,14577,{f=4,loc=46}),
+i(276073,{awp=16001,b=1,f=52,lvl=56}),
+s(309582,276072,{awp=16001,b=1,f=3,lvl=56}),
 r(1263079,{awp=16001,itemID=273121,learnedAt=300,requireSkill=165,skillID=2945}),
 i(273130,{awp=16001})}),
 n(10508,{
@@ -3718,6 +3728,9 @@ s(160973,13394,{f=7,loc=42}),
 s(160974,13395,{f=5,loc=44})})}),
 n(11058,{description="In order to summon this boss, one of your party members must be on the quest.",g={
 i(13172),
+i(276396,{awp=16001,b=1,f=52,lvl=54}),
+s(309665,276395,{awp=16001,b=1,f=4,loc=44,lvl=54}),
+s(309664,276394,{awp=16001,b=1,f=4,loc=42,lvl=54}),
 r(1263083,{awp=16001,itemID=273117,learnedAt=300,requireSkill=202,skillID=2941}),
 i(273129,{awp=16001})}}),
 n(11082,{description="Drops 3 random keys used to open postboxes found throughout Stratholme. All 3 of the postboxes must be opened to spawn the Postmaster.",g={
@@ -3753,10 +3766,16 @@ s(163039,16724,{f=7,loc=44,lvl=54}),
 s(160982,13403,{f=4,loc=45}),
 s(160981,13402,{f=6,loc=47})}}),
 n(11032,{
-i(12845,{description="Located in Malor's Strongbox. Can be turned in to Aurius on the Dead side of Stratholme to have him aide you during the Baron Rivendare encounter.",providers={{"o",176112}}})}),
+i(12845,{description="Located in Malor's Strongbox. Can be turned in to Aurius on the Dead side of Stratholme to have him aide you during the Baron Rivendare encounter.",providers={{"o",176112}}}),
+s(309666,276397,{awp=16001,b=1,f=24,lvl=55}),
+s(309668,276399,{awp=16001,b=1,f=7,loc=42,lvl=55}),
+s(309667,276398,{awp=16001,b=1,f=23,lvl=55})}),
 n(11120,{description="Found in the Hoard on the way to Cannon Master Willey.",providers={{"o",176325}},g={
 i(18781,{lvl=50,spellID=23232}),
 i(13351),
+s(309685,276419,{awp=16001,b=1,f=23,lvl=55}),
+s(309670,276404,{awp=16001,b=1,f=23,lvl=55}),
+s(309669,276403,{awp=16001,b=1,f=24,lvl=55}),
 r(16983,{description="You must be a Blacksmith in order to loot this from the Plans on the floor.",itemID=12827,learnedAt=285,requireSkill=17040,skillID=2938})}}),
 e(446,{npcID=10997,g={
 r(16995,{itemID=12839,learnedAt=300,requireSkill=9787,skillID=2938}),
@@ -3830,6 +3849,9 @@ i(13508,{f=55,spellID=126})}}),
 n(11121,{description="Found outside of Baroness Anastari's ziggurat.",providers={{"o",176325}},g={
 i(18783,{lvl=50,spellID=23233}),
 i(13350),
+s(309688,276434,{awp=16001,b=1,f=6,loc=40,lvl=55}),
+s(309694,276456,{awp=16001,b=1,f=8,lvl=55}),
+s(309693,276455,{awp=16001,b=1,f=5,loc=44,lvl=55}),
 r(16985,{description="You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",itemID=12830,learnedAt=290,requireSkill=17039,skillID=2938})}}),
 e(451,{npcID=10436,g={
 s(161006,13534,{f=27}),
@@ -4307,7 +4329,7 @@ i(19991,{f=53,spellID=24352}),
 i(19992,{f=53,spellID=24353}),
 s(164138,20083,{f=29})}}),
 q(1445,{coords={
-[1435]={{64.2,20.8}}},lvl=38,qgs={1443},r=1,sourceQuests={1444},g={
+[1435]={{47.9,55}}},lvl=38,qgs={1443},r=1,sourceQuests={1444},g={
 qo(1,{providers={{"i",6181}}}),
 i(1490,{f=53,spellID=1300364})}}),
 q(8422,{c={9},coords={
@@ -4364,8 +4386,7 @@ n(8580,{description="Summoned by activating the Atal'ai Statues in the proper or
 i(22444),
 s(160179,10799,{f=29}),
 s(160180,10800,{f=5,loc=43}),
-s(160178,10798,{f=7,loc=45}),
-r(1255036,{awp=16001,itemID=252871,learnedAt=250,requireSkill=165,skillID=2945})}})}}),
+s(160178,10798,{f=7,loc=45})}})}}),
 h(-367,{crs={5712,5713,5714,5715,5716,5717},g={
 s(160170,10783,{f=5,loc=41}),
 s(160174,10787,{f=4,loc=44}),
