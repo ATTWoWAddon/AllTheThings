@@ -19,52 +19,114 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - name: Set up stable .NET 10 SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.x'
+          dotnet-quality: 'ga'
+
+      - name: Build Parser from source
+        shell: pwsh
+        working-directory: ${{ github.workspace }}
+        run: |
+          $PSNativeCommandUseErrorActionPreference = $false
+          $repoRoot = (Get-Location).Path
+          $globalJsonPath = Join-Path $repoRoot 'global.json'
+          $originalGlobalJsonExisted = Test-Path -LiteralPath $globalJsonPath -PathType Leaf
+          $originalGlobalJsonBytes = $null
+          if ($originalGlobalJsonExisted) {
+            $originalGlobalJsonBytes = [System.IO.File]::ReadAllBytes($globalJsonPath)
+          }
+          $outputPath = (Join-Path $env:RUNNER_TEMP 'parser') + [System.IO.Path]::DirectorySeparatorChar
+          $intermediatePath = (Join-Path $env:RUNNER_TEMP 'parser-obj') + [System.IO.Path]::DirectorySeparatorChar
+          $buildExitCode = $null
+          $repoLocationPushed = $false
+          try {
+            Push-Location -LiteralPath $repoRoot
+            $repoLocationPushed = $true
+            # .NET SDK 10.0.100 is the minimum; latestMinor selects the highest stable .NET 10 SDK.
+            $globalJson = '{"sdk":{"version":"10.0.100","rollForward":"latestMinor","allowPrerelease":false}}'
+            [System.IO.File]::WriteAllText(
+              $globalJsonPath,
+              $globalJson + [Environment]::NewLine,
+              [System.Text.UTF8Encoding]::new($false)
+            )
+            $dotnetVersion = (& dotnet --version 2>&1 | Out-String).Trim()
+            if ($LASTEXITCODE -ne 0 -or $dotnetVersion -notmatch '^10\.\d+\.\d+$') {
+              throw "Expected a stable .NET SDK 10.x; got '$dotnetVersion'."
+            }
+            Write-Host "Using .NET SDK $dotnetVersion"
+            dotnet build '.contrib/src/Parser/Parser.csproj' --configuration Release -p:Platform=x64 -p:OutputType=Exe --output $outputPath --nologo "-p:BaseIntermediateOutputPath=$intermediatePath" "-p:IntermediateOutputPath=$intermediatePath"
+            $buildExitCode = $LASTEXITCODE
+          }
+          finally {
+            try {
+              if ($repoLocationPushed) {
+                Pop-Location
+              }
+            }
+            finally {
+              if ($originalGlobalJsonExisted) {
+                [System.IO.File]::WriteAllBytes($globalJsonPath, $originalGlobalJsonBytes)
+              }
+              elseif (Test-Path -LiteralPath $globalJsonPath) {
+                Remove-Item -LiteralPath $globalJsonPath -Force
+              }
+            }
+          }
+          if ($buildExitCode -ne 0) { exit $buildExitCode }
+          $parserPath = Join-Path $outputPath 'Parser.exe'
+          if (-not (Test-Path -LiteralPath $parserPath -PathType Leaf)) {
+            throw "The newly built Parser was not found: $parserPath"
+          }
+          "ATT_PARSER=$parserPath" >> $env:GITHUB_ENV
+
       - name: Database Parser for Retail with objective
         timeout-minutes: 5
         run: |
-          "Parser.exe" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/retail/objectives.config"
+          "%ATT_PARSER%" baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/retail/objectives.config"
         shell: cmd
 
       - name: Database Parser for Classic Era
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
         shell: cmd
 
       - name: Database Parser for Season of Discovery
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/season of discovery/.config/season of discovery.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/season of discovery/.config/season of discovery.config"
         shell: cmd
 
       - name: Database Parser for The Burning Crusade
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
         shell: cmd
 
       - name: Database Parser for Wrath of the Lich King
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
         shell: cmd
 
       - name: Database Parser for Cataclysm
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
         shell: cmd
 
       - name: Database Parser for Mists of Pandaria
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
         shell: cmd
 
       - name: Database Parser for Forever
         timeout-minutes: 5
         run: |
-          "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
+          "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
         shell: cmd
 
       - uses: actions/upload-artifact@v7
