@@ -833,11 +833,6 @@ local AccountWideIcon = app.GameBuildVersion >= 110005 and "|T6124644:0:0:0:0:64
 
 -- All of the Default Information Types.
 local InformationTypes = {
-	-- Only displayed in NPC Tooltips that are alive and exist in the world.
-	CreateInformationType("Alive", { text = L.ALIVE, priority = 0, IsStandaloneProperty = false }),
-	CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, IsStandaloneProperty = false }),
-	CreateInformationType("Layer", { text = L.LAYER, priority = 1, IsStandaloneProperty = false }),
-
 	-- Progress Fields (top most)
 	CreateInformationType("Progress", { text = L.SOCIAL_PROGRESS, priority = 1, HideCheckBox = true,
 		Process = function(t, reference, tooltipInfo)
@@ -1740,6 +1735,13 @@ local InformationTypes = {
 		end,
 	}),
 };
+if not app.IsForever then
+	-- Only displayed in NPC Tooltips that are alive and exist in the world.
+	-- Forever obfuscates the spawn time and layer in NPC GUIDs, so these are hidden there.
+	tinsert(InformationTypes, CreateInformationType("Alive", { text = L.ALIVE, priority = 0, IsStandaloneProperty = false }));
+	tinsert(InformationTypes, CreateInformationType("Spawned", { text = L.SPAWNED, priority = 0, IsStandaloneProperty = false }));
+	tinsert(InformationTypes, CreateInformationType("Layer", { text = L.LAYER, priority = 1, IsStandaloneProperty = false }));
+end
 if app.GameBuildVersion >= 70000 then
 	tinsert(InformationTypes, CreateInformationType("artifactID", { text = L.ARTIFACT_ID }));
 end

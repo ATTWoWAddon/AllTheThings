@@ -1152,20 +1152,22 @@ local function TryShowUnitTooltipInfo(self, guid, unitName)
 		end
 	elseif t == "Creature" or t == "Vehicle" then
 		if InCombatLockdown() and app.Settings:GetTooltipSetting("DisplayInCombatExceptNPCs") then return end
-		-- Forever obfuscates the spawn timestamp in NPC GUIDs (since build 70425), so the Alive/Spawned math gives nonsense there
-		if spawn_uid and not app.IsForever then
-			local showAliveTime = app.Settings:GetTooltipSetting("Alive");
-			local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
-			if showAliveTime or showSpawnTime then
-				local serverTime = GetServerTime();
-				local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
-				if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
-				if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
-				if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date(app.Settings:GetTooltipSetting("DateFormat"), spawnTime), app.Colors.White)); end
+		-- Forever obfuscates the spawn timestamp (since build 70425) and the layer in NPC GUIDs, so Alive/Spawned/Layer give nonsense there
+		if not app.IsForever then
+			if spawn_uid then
+				local showAliveTime = app.Settings:GetTooltipSetting("Alive");
+				local showSpawnTime = app.Settings:GetTooltipSetting("Spawned");
+				if showAliveTime or showSpawnTime then
+					local serverTime = GetServerTime();
+					local spawnTime = (serverTime - (serverTime % 2^23)) + bit.band(tonumber(spawn_uid:sub(5), 16), 0x7fffff);
+					if spawnTime > serverTime then spawnTime = spawnTime - ((2^23) - 1); end
+					if showAliveTime then self:AddDoubleLine(L.ALIVE, app.Modules.Color.Colorize(timeFormatter:Format(serverTime - spawnTime), app.Colors.White)); end
+					if showSpawnTime then self:AddDoubleLine(L.SPAWNED, app.Modules.Color.Colorize(date(app.Settings:GetTooltipSetting("DateFormat"), spawnTime), app.Colors.White)); end
+				end
 			end
-		end
-		if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
-			self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
+			if server_id and zone_uid and app.Settings:GetTooltipSetting("Layer") then
+				self:AddDoubleLine(L.LAYER, app.Modules.Color.Colorize((ServerUID ~= server_id and (server_id .. "-") or "") .. zone_uid, app.Colors.White));
+			end
 		end
 		AttachTypicalSearchResults(self, "npcID", npc_id)
 	end
