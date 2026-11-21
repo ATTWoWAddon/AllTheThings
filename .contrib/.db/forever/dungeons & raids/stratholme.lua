@@ -454,6 +454,15 @@ instanceroot(236, {	-- Stratholme
 					description = "In order to summon this boss, one of your party members must be on the quest.",
 					groups = {
 						i(13172),	-- Siabi's Premium Tobacco / Grimm's Premium Tobacco
+						i(276396, {	-- Ezra's Seal of Authenticity
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(276395, {	-- Grimm's Packing Gloves
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(276394, {	-- Luxurious Smoking Jacket
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 						i(273117, {	-- Blueprint: Anarchist's Workbench (RECIPE!)
 							timeline = { TIMELINE.ADDED_1_60_1 },
 						}),
@@ -527,6 +536,15 @@ instanceroot(236, {	-- Stratholme
 						description = "Located in Malor's Strongbox. Can be turned in to Aurius on the Dead side of Stratholme to have him aide you during the Baron Rivendare encounter.",
 						provider = { "o", 176112 },	-- Malor's Strongbox
 					}),
+					i(276397, {	-- Hand of the Zealous
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(276399, {	-- Plate of the Scarlet Bastion
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+					i(276398, {	-- Scarlet Malice
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				}),
 				n(11120, {	-- Crimson Hammersmith
 					description = "Found in the Hoard on the way to Cannon Master Willey.",
@@ -534,6 +552,15 @@ instanceroot(236, {	-- Stratholme
 					groups = {
 						i(18781),	-- Bottom Half of Advanced Armorsmithing: Volume II
 						i(13351),	-- Crimson Hammersmith's Apron
+						i(276419, {	-- Lightcrest Hammer
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(276404, {	-- Masterwork Crimson Hammer
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(276403, {	-- Scarlet Bonebreaker
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 						i(12827, {	-- Plans: Serenity (RECIPE!)
 							description = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
 						}),
@@ -679,6 +706,15 @@ instanceroot(236, {	-- Stratholme
 					groups = {
 						i(18783),	-- Bottom Half of Advanced Armorsmithing: Volume III
 						i(13350),	-- Insignia of the Black Guard
+						i(276434, {	-- Black Guard Skullcap
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(276456, {	-- Plague Defiled Buckler
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(276455, {	-- Swordsmith Mitts
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 						i(12830, {	-- Plans: Corruption (RECIPE!)
 							description = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
 						}),

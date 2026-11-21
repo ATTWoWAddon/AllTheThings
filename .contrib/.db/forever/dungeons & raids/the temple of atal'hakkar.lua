@@ -439,9 +439,6 @@ instanceroot(237, {	-- The Temple of Atal'hakkar
 						i(10799),	-- Headspike
 						i(10800),	-- Darkwater Bracers
 						i(10798),	-- Atal'alarion's Tusk Ring
-						i(252871, {	-- Pattern: Mender's Leather Gauntlets (RECIPE!)
-							timeline = { TIMELINE.ADDED_1_60_1 },
-						}),
 					},
 				}),
 			},

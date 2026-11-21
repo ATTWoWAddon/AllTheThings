@@ -267,6 +267,9 @@ instanceroot(232, {	-- Maraudon
 					i(17752),	-- Satyr's Lash
 					i(17755),	-- Satyrmane Sash
 					i(17754),	-- Infernal Trickster Leggings
+					i(275864, {	-- Putridus Wall
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(RARES, {

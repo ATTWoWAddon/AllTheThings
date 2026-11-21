@@ -695,10 +695,22 @@ instanceroot(246, {	-- Scholomance
 		n(10433, {	-- Marduk Blackpool
 			i(14576),	-- Ebon Hilt of Marduk
 			i(18692),	-- Death Knight Sabatons
+			i(276069, {	-- Gravetoll Gavel
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(276071, {	-- The Black Helm
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 		}),
 		n(10432, {	-- Vectus
 			i(18691),	-- Dark Advisor's Pendant
 			i(14577),	-- Skullsmoke Pants
+			i(276073, {	-- Band of the Damned
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(276072, {	-- Soulwoven Drape
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(273121, {	-- Blueprint: Sewing Machine (RECIPE!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),

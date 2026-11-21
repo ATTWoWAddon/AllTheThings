@@ -103,6 +103,42 @@ local FEET_AND_WAIST_RECIPE_BOSSES = {	-- boot/shoe plans and patterns and the C
 	10081,	-- Dustwraith
 	10082,	-- Zerillis
 };
+local HANDS_RECIPE_BOSSES = {	-- Gloves plans and Gauntlets/Gloves patterns
+	2748,	-- Archaedas <Ancient Stone Watcher>
+	5709,	-- Shade of Eranikus
+	5710,	-- Jammal'an the Prophet
+	5715,	-- Hukku
+	5719,	-- Morphaz
+	5721,	-- Dreamscythe
+	7267,	-- Chief Ukorz Sandscalp
+	7271,	-- Witch Doctor Zum'rah
+	7272,	-- Theka the Martyr
+	7273,	-- Gahz'rilla
+	7275,	-- Shadowpriest Sezz'ziz
+	7796,	-- Nekrum Gutchewer
+	7797,	-- Ruuzlu
+	8127,	-- Antu'sul <Overseer of Sul>
+	8440,	-- Shade of Hakkar
+	8580,	-- Atal'alarion <Guardian of the Idol>
+	9018,	-- High Interrogator Gerstahn <Twilight's Hammer Interrogator>
+	9024,	-- Pyromancer Loregrain
+	9025,	-- Lord Roccor
+	9056,	-- Fineous Darkvire <Chief Architect>
+	9319,	-- Houndmaster Grebmar
+	9499,	-- Plugger Spazzring
+	9502,	-- Phalanx
+	9537,	-- Hurley Blackbreath
+	9543,	-- Ribbly Screwspigot
+	12201,	-- Princess Theradras
+	12203,	-- Landslide
+	12225,	-- Celebras the Cursed
+	12236,	-- Lord Vyletongue
+	12237,	-- Meshlok the Harvester
+	12258,	-- Razorlash
+	13282,	-- Noxxion
+	13596,	-- Rotgrip
+	13601,	-- Tinkerer Gizlock
+};
 root(ROOTS.WorldDrops, {
 	pickpocketing(true, {
 		description = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
@@ -3478,9 +3514,13 @@ root(ROOTS.WorldDrops, {
 		groups = sharedData({ classes = { MAGE } }, {
 			i(211786),	-- Scroll: CHAP BALK WELLES
 			i(211785),	-- Scroll: CWAL
+			i(281015),	-- Scroll: DOST OREM
+			i(281016),	-- Scroll: FORGOT HOOF THUD
+			i(281017),	-- Scroll: KEEP CLEF FOCI
 			i(211780),	-- Scroll: KWYJIBO
 			i(211787),	-- Scroll: LOWER PING WHOMEVER
 			i(211854),	-- Scroll: OMIT KESA
+			i(281018),	-- Scroll: RARE SERVICHI RADAR
 			i(211855),	-- Scroll: STHENIC LUNATE
 			i(211853),	-- Scroll: VOCE WELL
 			i(211784),	-- Scroll: WUBBA WUBBA
@@ -3624,6 +3664,10 @@ root(ROOTS.WorldDrops, {
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(251407, {	-- Plans: Justicar's Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(12717),	-- Plans: Lionheart Helm (RECIPE!)
 			i(3608),	-- Plans: Mighty Iron Hammer (RECIPE!)
 			i(7991),	-- Plans: Mithril Plate Shoulders (RECIPE!)
@@ -3633,9 +3677,17 @@ root(ROOTS.WorldDrops, {
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(251403, {	-- Plans: Officer's Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
 			i(251401, {	-- Plans: Prefect's Boots (RECIPE!)
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251406, {	-- Plans: Prefect's Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(251352, {	-- Plans: Protector's Chain Helm (RECIPE!)
@@ -3661,6 +3713,10 @@ root(ROOTS.WorldDrops, {
 			i(12261),	-- Plans: Searing Golden Blade (RECIPE!)
 			i(251399, {	-- Plans: Sentinel's Boots (RECIPE!)
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251404, {	-- Plans: Sentinel's Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(3869),	-- Plans: Shadow Crescent Axe (RECIPE!)
@@ -3695,6 +3751,10 @@ root(ROOTS.WorldDrops, {
 			}),
 			i(251400, {	-- Plans: Warder's Boots (RECIPE!)
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(251405, {	-- Plans: Warder's Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12711),	-- Plans: Whitesoul Helm (RECIPE!)
@@ -3812,6 +3872,10 @@ root(ROOTS.WorldDrops, {
 			i(252804, {timeline = {TIMELINE.ADDED_1_60_1}}),	-- Pattern: Hillman's Leather Boots (RECIPE!)
 			i(4293),	-- Pattern: Hillman's Leather Vest (RECIPE!)
 			i(12728),	-- Pattern: Invulnerable Mail (RECIPE!)
+			i(252871, {	-- Pattern: Mender's Leather Gauntlets (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(252847, {	-- Pattern: Mender's Leather Shoes (RECIPE!)
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -3820,7 +3884,15 @@ root(ROOTS.WorldDrops, {
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(252921, {	-- Pattern: Mender's Mail Gauntlets (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
+			i(252867, {	-- Pattern: Prowler's Leather Gauntlets (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(7288),	-- Pattern: Rugged Leather Pants (RECIPE!)
 			i(15745),	-- Pattern: Runic Leather Belt (RECIPE!)
 			i(15731),	-- Pattern: Runic Leather Gauntlets (RECIPE!)
@@ -3829,8 +3901,20 @@ root(ROOTS.WorldDrops, {
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(252920, {	-- Pattern: Skirmisher's Mail Gauntlets (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252868, {	-- Pattern: Skulker's Leather Gauntlets (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(252844, {	-- Pattern: Skulker's Leather Shoes (RECIPE!)
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252870, {	-- Pattern: Skycaller's Leather Gauntlets (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(252846, {	-- Pattern: Skycaller's Leather Shoes (RECIPE!)
@@ -3841,8 +3925,16 @@ root(ROOTS.WorldDrops, {
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(252919, {	-- Pattern: Skycaller's Mail Gauntlets (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(252896, {	-- Pattern: Stalker's Mail Boots (RECIPE!)
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(252918, {	-- Pattern: Stalker's Mail Gauntlets (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(12703),	-- Pattern: Storm Gauntlets (RECIPE!)
@@ -3885,6 +3977,10 @@ root(ROOTS.WorldDrops, {
 			}),
 			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 			--i(15742),	-- Pattern: Warbear Harness (RECIPE!)
+			i(252869, {	-- Pattern: Warden's Leather Gauntlets (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(252845, {	-- Pattern: Warden's Leather Shoes (RECIPE!)
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -3912,6 +4008,10 @@ root(ROOTS.WorldDrops, {
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(254102, {	-- Pattern: Black Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(4352),	-- Pattern: Boots of the Enchanter (RECIPE!)
 			i(14510),	-- Pattern: Bottomless Bag (RECIPE!)
 			i(14484),	-- Pattern: Brightcloth Cloak (RECIPE!)
@@ -3929,6 +4029,10 @@ root(ROOTS.WorldDrops, {
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(254100, {	-- Pattern: Fiery Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(14474),	-- Pattern: Frostweave Gloves (RECIPE!)
 			i(14489),	-- Pattern: Frostweave Pants (RECIPE!)
 			i(14467),	-- Pattern: Frostweave Robe (RECIPE!)
@@ -3937,13 +4041,25 @@ root(ROOTS.WorldDrops, {
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(254098, {	-- Pattern: Frothing Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(254038, {	-- Pattern: Gilded Cord (RECIPE!)
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(254096, {	-- Pattern: Gilded Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(14511),	-- Pattern: Gloves of Spell Mastery (RECIPE!)
 			i(254046, {	-- Pattern: Golden Cord (RECIPE!)
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(254104, {	-- Pattern: Golden Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2601),	-- Pattern: Gray Woolen Robe (RECIPE!)
@@ -3961,6 +4077,10 @@ root(ROOTS.WorldDrops, {
 			i(4349),	-- Pattern: Phoenix Pants (RECIPE!)
 			i(254048, {	-- Pattern: Radiant Cord (RECIPE!)
 				crs = FEET_AND_WAIST_RECIPE_BOSSES,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(254106, {	-- Pattern: Radiant Gloves (RECIPE!)
+				crs = HANDS_RECIPE_BOSSES,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 			i(2598),	-- Pattern: Red Linen Robe (RECIPE!)

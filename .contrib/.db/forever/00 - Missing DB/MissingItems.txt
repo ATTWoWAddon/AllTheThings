@@ -6615,7 +6615,6 @@ i(213552),	-- Tear of Theradras
 i(213553),	-- Tear of Theradras
 i(213554),	-- Vial of Crystal Water
 i(213558),	-- Elemental Salve
-i(213563),	-- Field Guide
 i(213564),	-- Scroll of Minor Evocation
 i(213583),	-- Brimstone Carving
 i(213594),	-- Idol of the Heckler
@@ -7835,11 +7834,6 @@ i(251333),	-- Plans: Strange Copper Boots
 i(251334),	-- Plans: Glowing Copper Boots
 i(251393),	-- Plans: Shining Mithril Pauldrons
 i(251396),	-- Plans: Shining Mithril Pants
-i(251403),	-- Plans: Officer's Gloves
-i(251404),	-- Plans: Sentinel's Gloves
-i(251405),	-- Plans: Warder's Gloves
-i(251406),	-- Plans: Prefect's Gloves
-i(251407),	-- Plans: Justicar's Gloves
 i(251408),	-- Plans: Officer's Belt
 i(251409),	-- Plans: Sentinel's Belt
 i(251410),	-- Plans: Warder's Belt
@@ -7910,10 +7904,6 @@ i(252674),	-- Indari's Offering
 i(252675),	-- Taleen's Offering
 i(252678),	-- Demon Dust
 i(252858),	-- Pattern: Tooled Leather Belt
-i(252867),	-- Pattern: Prowler's Leather Gauntlets
-i(252868),	-- Pattern: Skulker's Leather Gauntlets
-i(252869),	-- Pattern: Warden's Leather Gauntlets
-i(252870),	-- Pattern: Skycaller's Leather Gauntlets
 i(252878),	-- Pattern: Blue Suede Pants
 i(252880),	-- Pattern: Tooled Leather Gauntlets
 i(252881),	-- Pattern: Blue Suede Shoulders \\ Pattern: Blue Suede Shoulder
@@ -7936,10 +7926,6 @@ i(252914),	-- Pattern: Supple Scorpid Leggings
 i(252915),	-- Pattern: Charged Scorpid Helm
 i(252916),	-- Pattern: Supple Scorpid Bracers
 i(252917),	-- Pattern: Charged Scorpid Shoulders \\ Pattern: Charged Scorpid Shoulder
-i(252918),	-- Pattern: Stalker's Mail Gauntlets
-i(252919),	-- Pattern: Skycaller's Mail Gauntlets
-i(252920),	-- Pattern: Skirmisher's Mail Gauntlets
-i(252921),	-- Pattern: Mender's Mail Gauntlets
 i(252926),	-- Pattern: Supple Scorpid Shoulders \\ Pattern: Supple Scorpid Shoulder
 i(252927),	-- Pattern: Charged Scorpid Bracers
 i(252929),	-- Pattern: Supple Scorpid Belt
@@ -7982,12 +7968,6 @@ i(254014),	-- Pattern: Earthen Silk Slippers
 i(254074),	-- Pattern: Ghostweave Cord
 i(254076),	-- Pattern: Earthenweave Gloves
 i(254094),	-- Pattern: Earthenweave Boots
-i(254096),	-- Pattern: Gilded Gloves
-i(254098),	-- Pattern: Frothing Gloves
-i(254100),	-- Pattern: Fiery Gloves
-i(254102),	-- Pattern: Black Gloves
-i(254104),	-- Pattern: Golden Gloves
-i(254106),	-- Pattern: Radiant Gloves
 i(254120),	-- Pattern: Earthenweave Mantle
 i(254126),	-- Pattern: Earthenweave Leggings
 i(254128),	-- Pattern: Ghostweave Mantle
@@ -9786,10 +9766,6 @@ i(280806),	-- Stolen Explosives
 i(280839),	-- Blackrock Supplies \\ Stolen Supplies
 i(280841),	-- Stolen Weapon
 i(280911),	-- Spiked Collar
-i(281015),	-- Scroll: DOST OREM
-i(281016),	-- Scroll: FORGOT HOOF THUD
-i(281017),	-- Scroll: KEEP CLEF FOCI
-i(281018),	-- Scroll: RARE SERVICHI RADAR
 i(281019),	-- Monster - Sword1H, Skyborne Back Sheathe (Blue) \\ Monster - Sword1H, Skyborne Back Sheathe (White)
 i(281020),	-- Monster - Shield, Skyborne (White)
 i(281030),	-- Treaty of Understanding

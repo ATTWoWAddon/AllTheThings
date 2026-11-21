@@ -762,6 +762,12 @@ instanceroot(230, {	-- Dire Maul
 						}),
 						i(18267),	-- Recipe: Runn Tum Tuber Surprise (RECIPE!)
 						i(18261),	-- Book of Incantations
+						i(18320, {	-- Demondash Spaulders
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
+						i(18316, {	-- Obsidian Bauble
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 						i(18255),	-- Runn Tum Tuber
 					},
 				}),
@@ -840,6 +846,7 @@ instanceroot(230, {	-- Dire Maul
 						i(18318),	-- Merciful Greaves
 						i(18326),	-- Razor Gauntlets
 						i(18314),	-- Ring of Demonic Guile
+						i(18315),	-- Ring of Demonic Potency
 						i(18328),	-- Shadewood Cloak
 						i(18327),	-- Whipvine Cord
 					},
@@ -1153,7 +1160,11 @@ instanceroot(230, {	-- Dire Maul
 						i(18384),	-- Bile-Etched Spaulders
 						i(18372),	-- Blade of the New Moon
 						i(18389),	-- Cloak of the Cosmos
+						i(18394),	-- Demon Howl Wristguards
 						i(18381),	-- Evil Eye Pendant
+						i(282712, {	-- Libram of Binding
+							timeline = { TIMELINE.ADDED_1_60_1 },
+						}),
 						i(18391),	-- Eyestalk Cord
 						i(18379),	-- Odious Greaves
 						i(18377),	-- Quickdraw Gloves
