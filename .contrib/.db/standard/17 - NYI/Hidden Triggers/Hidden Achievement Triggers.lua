@@ -4276,6 +4276,37 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(64380),	-- [DNT] Let Me Solo Him: Kindo'jan (copy)
 			ach(64384),	-- [DNT] Let Me Solo Him: Kindo'jan (copy) (copy)
 			ach(64373),	-- [DNT] Potatoad Egg Secret
+
+			-- 12.1.7.71087
+			ach(64402),	-- <DNT> Vendor - Alchemy
+			ach(64385),	-- <DNT> Vendor - Champion Cache
+			ach(64393),	-- <DNT> Vendor - Champion Crests
+			ach(64394),	-- <DNT> Vendor - Hero Crests 1
+			ach(64395),	-- <DNT> Vendor - Hero Crests 2
+			ach(64386),	-- <DNT> Vendor - Heroic Cache 1
+			ach(64387),	-- <DNT> Vendor - Heroic Cache 2
+			ach(64388),	-- <DNT> Vendor - Heroic Cache 3
+			ach(64389),	-- <DNT> Vendor - Heroic Cache 4
+			ach(64390),	-- <DNT> Vendor - Heroic Cache 5
+			ach(64399),	-- <DNT> Vendor - Marl Large 1
+			ach(64400),	-- <DNT> Vendor - Marl Large 2
+			ach(64398),	-- <DNT> Vendor - Marl Small
+			ach(64391),	-- <DNT> Vendor - Myth Cache 1
+			ach(64392),	-- <DNT> Vendor - Myth Cache 2
+			ach(64396),	-- <DNT> Vendor - Myth Crests 1
+			ach(64397),	-- <DNT> Vendor - Myth Crests 2
+			ach(64407),	-- <DNT> Vendor - Nebulous Void 1
+			ach(64408),	-- <DNT> Vendor - Nebulous Void 2
+			ach(64409),	-- <DNT> Vendor - Nebulous Void 3
+			ach(64401),	-- <DNT> Vendor - Outfitter
+			ach(64403),	-- <DNT> Vendor - Venomstone 1
+			ach(64404),	-- <DNT> Vendor - Venomstone 2
+			ach(64405),	-- <DNT> Vendor - Venomstone 3
+			ach(64406),	-- <DNT> Vendor - Venomstone 4
+			ach(64410),	-- <DNT> Vendor - XP Potion 1
+			ach(64411),	-- <DNT> Vendor - XP Potion 2
+			ach(64412),	-- <DNT> Vendor - XP Potion 3
+			ach(64413),	-- <DNT> Vendor - XP Potion 4
 		}),
 	}),
 });
