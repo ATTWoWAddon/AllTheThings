@@ -3477,6 +3477,11 @@ maproot(KALIMDOR, TANARIS, {
 					{ 50.8, 27.6, TANARIS },
 					-- #endif
 				},
+				sym = {{ "select", "itemID",
+					3024,	-- BKP 2700 "Enforcer"
+					3025,	-- BKP 42 "Ultra"
+					3023,	-- Large Bore Blunderbuss
+				}},
 				groups = {
 					i(18650, {	-- Schematic: EZ-Thro Dynamite II (RECIPE!)
 						isLimited = true,
