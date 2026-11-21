@@ -1279,7 +1279,7 @@ i(279964,{f=55,spellID=1307248}),
 i(279962,{f=55,spellID=1307251}),
 i(279947,{f=55,spellID=1307387})}),
 i(268415,{description="Gathered from Peacebloom and Silverleaf.",spellID=1282398}),
-i(268416,{description="Gathered from Briarthorn and Stranglekelp.",spellID=1282736})}}),
+i(268416,{description="Gathered from Briarthorn, Bruiseweed and Stranglekelp.",spellID=1282736})}}),
 prof(165,{awp=16001,g={
 prof(10656,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.",g={
 flt(6,{

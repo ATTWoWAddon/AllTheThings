@@ -1699,6 +1699,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 });
 
 root(ROOTS.HiddenQuestTriggers, {
+	q(98224, {	-- Completed at 59.9, 39.0 in the Wetlands (Contributor Report, trigger unknown)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 	q(98294, {	-- Forced Disarmament? (Triggered shortly after I picked up the Dragonmaw Armaments)
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
