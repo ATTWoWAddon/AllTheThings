@@ -8663,9 +8663,9 @@ n(8125,{coords={
 [1446]={{52.6,28}}},rwp=40003,g={
 r(22480,{itemID=18046,learnedAt=225,q=1,requireSkill=185})}}),
 n(25178,{awp=20003,coords={
-[1446]={{51.4,27}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
+[1446]={{51.4,27}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(25177,{awp=20003,coords={
-[1446]={{51.4,27}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
+[1446]={{51.4,27}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(8137,{coords={
 [1446]={{66.6,22.1}}},rwp=40003,g={
 r(18240,{itemID=13942,learnedAt=240,q=1,requireSkill=185}),
@@ -23141,9 +23141,9 @@ n(19196,{coords={
 [1955]={{67.2,67.6}}},minReputation={1011,0},g={
 i(25720,{f=200,isLimited=1,q=1,requireSkill=165,rwp=30200,u=2})}}),
 n(27721,{coords={
-[1955]={{36.2,46.2}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
+[1955]={{36.2,46.2}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(27722,{coords={
-[1955]={{57.2,73.8}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
+[1955]={{57.2,73.8}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(19213,{coords={
 [1955]={{66.2,68.8}}},minReputation={1011,0},g={
 r(26747,{itemID=21892,learnedAt=325,q=1,requireSkill=197}),
@@ -23614,7 +23614,7 @@ n(19045,{coords={
 i(27858,{f=55,lvl=55,q=1}),
 i(29452,{f=55,lvl=65,q=1})}}),
 n(27668,{coords={
-[1955]={{73.4,56.2}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
+[1955]={{73.4,56.2}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(27666,{coords={
 [1955]={{48.8,41.8}}},phase=21,sym={{"sub","common_vendor",25950}}}),
 n(19321,{coords={
@@ -24680,7 +24680,7 @@ r(28557,{b=1,isLimited=1,itemID=22909,learnedAt=345,q=1,requireSkill=171}),
 r(28562,{b=1,isLimited=1,itemID=22911,learnedAt=350,q=1,requireSkill=171}),
 r(28555,{b=1,isLimited=1,itemID=22907,learnedAt=340,q=1,requireSkill=171})}}),
 n(25179,{coords={
-[1949]={{52.8,41.8}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
+[1949]={{52.8,41.8}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(23428,{awp=20100,coords={
 [1949]={{28,58.6}}},phase=1801,g={
 i(33934,{b=1,f=55,lvl=55,minReputation={1038,0},q=1}),
@@ -24697,7 +24697,7 @@ s(143172,32828,{b=1,cost={{"i",32569,10}},f=9,minReputation={1038,42000},q=1}),
 s(142992,32647,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=5,loc=43,lvl=70,minReputation={1038,42000},q=4}),
 s(142993,32648,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=7,loc=47,lvl=70,minReputation={1038,42000},q=4})}}),
 n(19857,{coords={
-[1949]={{52.8,42}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
+[1949]={{52.8,42}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(22266,{awp=20100,coords={
 [1949]={{27.8,58.2}}},minReputation={1038,0},phase=1801,g={
 i(32686,{f=55,lvl=65,q=1}),
@@ -27015,9 +27015,9 @@ mnt(39316,{b=1,cost={{"i",26044,15},{"i",26045,70}},itemID=28915,lvl=40,pvp=1,q=
 mnt(34790,{b=1,cost={{"i",26044,20},{"i",26045,100}},itemID=29228,lvl=40,pvp=1,q=4}),
 s(140915,30569,{b=1,f=25,lvl=64,pvp=1,q=0})}}),
 n(18898,{coords={
-[1951]={{65.8,59.8}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
+[1951]={{65.8,59.8}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(25176,{coords={
-[1951]={{66.2,59.6}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
+[1951]={{66.2,59.6}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(19015,{coords={
 [1951]={{55.2,37},{57,40}}},description="This vendor pats around Garadar.",minReputation={941,0},r=1,g={
 r(26750,{isLimited=1,itemID=21894,learnedAt=345,q=1,requireSkill=197}),
@@ -27945,7 +27945,7 @@ n(32354,{awp=30002,coords={
 n(24392,{coords={
 [1953]={{33,64}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
 n(20278,{coords={
-[1953]={{33,64.2}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
+[1953]={{33,64.2}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(20112,{coords={
 [1953]={{34.6,37.8}}},sym={{"select","itemID",30754,30749,30750,30752,30755,30751,30753}},g={
 s(141101,30755,{f=34,isLimited=1,lvl=60,q=2}),

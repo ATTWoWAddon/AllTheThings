@@ -3537,6 +3537,7 @@ maproot(KALIMDOR, TANARIS, {
 				sym = {
 					{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },	-- Gladiator's Set
 					{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
+					{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
 					{ "merge" },
 					{ "pop" },
 				},
@@ -3547,6 +3548,7 @@ maproot(KALIMDOR, TANARIS, {
 				sym = {
 					{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },	-- Gladiator's Set
 					{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
+					{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
 					{ "merge" },
 					{ "pop" },
 				},
