@@ -7637,7 +7637,7 @@ q(4508,{coords={
 [1446]={{50.8,27}}},lvl=50,maps={1457},qgs={5594},qis={11844},r=2,rwp=40003,sourceQuests={4507}}),
 q(4509,{coords={
 [1446]={{50.8,27}}},lvl=50,maps={1454},qgs={5594},qis={11844},r=1,rwp=40003,sourceQuests={4507}}),
-q(6610,{altQuests={13825},coords={
+q(6610,{coords={
 [1446]={{52.6,28.1}}},cost={{"i",8932,20},{"i",7974,10},{"i",12207,12}},learnedAt=225,lvl=35,qgs={8125},requireSkill=185,sourceQuests={6611,6612},g={
 i(16971,{f=55,lvl=40,q=1,requireSkill=185}),
 r(18260,{learnedAt=200,rank=4,requireSkill=185,rwp=30100})}}),

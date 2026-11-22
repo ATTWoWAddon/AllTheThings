@@ -375,7 +375,9 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 			}),
 			q(25542, {	-- Circle the Wagons... er, Boats [A]
 				sourceQuest = 25532,	-- Pirate Accuracy Increasing [A]
+				-- #if NOT ANYCLASSIC
 				altQuests = { 25561 },	-- Circle the Wagons... er, Boats [A]
+				-- #endif
 				qg = 40475,	-- Jinky Twizzlefixxit
 				coord = { 76.5, 73.6, THOUSAND_NEEDLES },
 				timeline = { ADDED_4_0_3 },
@@ -403,7 +405,9 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 			-- #ENDIF
 			q(25543, {	-- Circle the Wagons... er, Boats [H]
 				sourceQuest = 25533,	-- Pirate Accuracy Increasing [H]
+				-- #if NOT ANYCLASSIC
 				altQuests = { 25562 },	-- Circle the Wagons... er, Boats [H]
+				-- #endif
 				qg = 40487,	-- Razzeric
 				coord = { 77.0, 74.4, THOUSAND_NEEDLES },
 				timeline = { ADDED_4_0_3 },

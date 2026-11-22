@@ -1633,7 +1633,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					-- #if BEFORE 3.0.0
 					description = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
 					-- #endif
+					-- #if NOT ANYCLASSIC
 					altQuests = { 12420 },	-- Brew of the Month Club (A) [???]
+					-- #endif
 					providers = {
 						-- #if ANYCLASSIC
 						-- #if NOT CLASSIC_ANNIVERSARY
@@ -1677,7 +1679,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					-- #if BEFORE 3.0.0
 					description = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
 					-- #endif
+					-- #if NOT ANYCLASSIC
 					altQuests = { 12421 },	-- Brew of the Month Club (H) [???]
+					-- #endif
 					providers = {
 						-- #if ANYCLASSIC
 						-- #if NOT CLASSIC_ANNIVERSARY

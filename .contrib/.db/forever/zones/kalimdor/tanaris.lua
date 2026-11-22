@@ -238,7 +238,6 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 					6611,	-- To Gadgetzan You Go!
 					6612,	-- I Know A Guy...
 				},
-				altQuests = { 13825 },	-- Clamlette Surprise
 				qgs = {
 					8125,	-- Dirge Quikcleave
 				},

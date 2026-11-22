@@ -185,9 +185,9 @@ q(29394,{awp=40200,coords={
 [27]={{53.6,38.6}}},e=7,isDaily=1,qgs={23558},qis={33306,33797},r=2,sourceQuests={11122}}),
 q(29393,{awp=40200,coords={
 [1]={{42.6,17.6}}},e=7,isDaily=1,qgs={24497},qis={33306,33797},r=1,sourceQuests={11412}}),
-q(12278,{altQuests={12420},e=7,maps={27},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2 t.OnUpdate=nil end	end	end,qss={37736},r=2,repeatable=1,g={
+q(12278,{e=7,maps={27},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2 t.OnUpdate=nil end	end	end,qss={37736},r=2,repeatable=1,g={
 crit(9860,{achID=2796,awp=30002,e=7,id=3})}}),
-q(12306,{altQuests={12421},e=7,maps={1},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2 t.OnUpdate=nil end	end	end,qss={37737},r=1,repeatable=1,g={
+q(12306,{e=7,maps={1},OnUpdate=function(t)if not(_.IsQuestFlaggedCompleted(t.questID)or _.IsQuestFlaggedCompleted(t.altQuests[1]))then	if ATTAccountWideData.Achievements[2796] then	t.collected=2 t.OnUpdate=nil end	end	end,qss={37737},r=1,repeatable=1,g={
 crit(9862,{achID=2796,awp=30002,e=7,id=5})}}),
 q(11117,{awp=30002,coords={
 [27]={{55.2,37.8}}},e=7,isYearly=1,qgs={23486},r=2,g={

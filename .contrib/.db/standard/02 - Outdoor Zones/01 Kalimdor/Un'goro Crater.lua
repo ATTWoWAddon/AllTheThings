@@ -717,7 +717,9 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 				timeline = { ADDED_4_0_3 },
 			}),
 			q(13903, {	-- Gorishi Grub
+				-- #if NOT ANYCLASSIC
 				altQuests = { 13917 },	-- Gorishi Grub (Undead, Troll, Tauren version until MOP)
+				-- #endif
 				qg = 34320,	-- Venomhide Hatchling
 				qi = 46362,	-- Venomhide Hatchling
 				timeline = { ADDED_3_2_0 },
@@ -836,7 +838,9 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 				},
 			}),
 			q(13889, {	-- Hungry, Hungry Hatchling
+				-- #if NOT ANYCLASSIC
 				altQuests = { 13915 },	-- Hungry, Hungry Hatchling (Undead, Troll, Tauren version until MOP)
+				-- #endif
 				qg = 34320,	-- Venomhide Hatchling
 				qi = 46362,	-- Venomhide Hatchling
 				timeline = { ADDED_3_2_0 },
@@ -1115,7 +1119,9 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 				},
 			}),
 			q(13904, {	-- Poached, Scrambled, Or Raw?
+				-- #if NOT ANYCLASSIC
 				altQuests = { 13916 },	-- Poached, Scrambled, Or Raw? (Undead, Troll, Tauren version until MOP)
+				-- #endif
 				qg = 34320,	-- Venomhide Hatchling
 				qi = 46362,	-- Venomhide Hatchling
 				timeline = { ADDED_3_2_0 },
@@ -1238,7 +1244,9 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 				},
 			}),
 			q(13905, {	-- Searing Roc Feathers
+				-- #if NOT ANYCLASSIC
 				altQuests = { 13914 },	-- Searing Roc Feathers (Undead, Troll, Tauren version until MOP)
+				-- #endif
 				qg = 34320,	-- Venomhide Hatchling
 				qi = 46362,	-- Venomhide Hatchling
 				timeline = { ADDED_3_2_0 },

@@ -1393,7 +1393,9 @@ maproot(KALIMDOR, TANARIS, {
 					6611,	-- To Gadgetzan You Go!
 					6612,	-- I Know A Guy...
 				},
+				-- #if AFTER 3.1.0
 				altQuests = { 13825 },	-- Clamlette Surprise
+				-- #endif
 				qgs = {
 					-- #if AFTER 4.0.3
 					40589,	-- Dirge Quikcleave

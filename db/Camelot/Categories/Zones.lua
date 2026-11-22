@@ -7638,7 +7638,7 @@ qo(1,{crs={6551,6552,6553,6554,6555},providers={{"i",11837}}}),
 qo(2,{providers={{"i",11018}}})}}),
 q(95753,{awp=16001,c={7},coords={
 [1446]={{43,41.2}}},lvl=37,qgs={222856},races={3},sourceQuests={95751}}),
-q(6610,{altQuests={13825},coords={
+q(6610,{coords={
 [1446]={{52.6,28.1}}},cost={{"i",8932,20},{"i",7974,10},{"i",12207,12}},learnedAt=225,lvl=35,qgs={8125},requireSkill=185,sourceQuests={6611,6612},g={
 i(16971,{f=55,lvl=40,requireSkill=185,spellID=10256}),
 r(18260,{learnedAt=200,rank=4,requireSkill=185})}}),

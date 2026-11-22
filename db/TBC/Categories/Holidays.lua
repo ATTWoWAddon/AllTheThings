@@ -63,8 +63,8 @@ i(34020,{e=7,f=55,lvl=25,q=1}),
 i(34017,{e=7,f=55,q=1})}}),
 q(11400,{e=7,lvl=40,maps={1426},qss={33978},r=2,rwp=30002}),
 q(11419,{e=7,lvl=40,maps={1411},qss={34028},r=1,rwp=30002}),
-q(12278,{altQuests={12420},description="We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",e=7,maps={1426},qss={37571},r=2,repeatable=1}),
-q(12306,{altQuests={12421},description="We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",e=7,maps={1411},qss={37599},r=1,repeatable=1}),
+q(12278,{description="We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",e=7,maps={1426},qss={37571},r=2,repeatable=1}),
+q(12306,{description="We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",e=7,maps={1411},qss={37599},r=1,repeatable=1}),
 q(11117,{awp=30002,coords={
 [1426]={{48,39.5}}},e=7,isYearly=1,qgs={23486},r=2,u=1,g={
 qo(1,{cost={{"i",32907,1}},crs={23487},e=7,providers={{"i",32906}},u=1})}}),
