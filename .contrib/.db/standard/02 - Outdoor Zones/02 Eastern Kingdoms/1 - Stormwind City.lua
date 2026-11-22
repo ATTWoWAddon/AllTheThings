@@ -4553,10 +4553,10 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				},
 				-- #elseif BEFORE 3.0.2.8970
 				sym = {
-					{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR }, { "finalize" },	-- Vengeful Gladiator's Set
-					{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
-					{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
-					{"sub", "pvp_gear_base", EXPANSION.TBC, PVP_HONOR, FACTION_HEADER_ALLIANCE },{ "finalize" },	-- Honor Set
+					{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
+					{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
+					{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },	-- Gladiator's Set
+					{"sub", "pvp_gear_base", EXPANSION.TBC, PVP_HONOR, FACTION_HEADER_ALLIANCE },	-- Honor Set
 					{"merge"},
 					{"pop"},
 					{ "exclude", "headerID", WEAPONS, BACK },
