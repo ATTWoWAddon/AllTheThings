@@ -1039,6 +1039,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			q(79242, {	-- No Honor Among Thieves
+				sourceQuest = 79236,	-- Cherry for Your Thoughts?
 				qg = 215643,	-- Tokal
 				coord = { 27.0, 77.2, MAP.STRANGLETHORN_VALE },
 				maps = { MAP.ARATHI_HIGHLANDS },
@@ -1255,6 +1256,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				lvl = 45,
 			}),
 			q(97048, {	-- Returning to Port
+				sourceQuest = 97047,	-- The Cook in the Cage
 				qg = 218230,	-- Wendel Mathers
 				coord = { 44.2, 8.0, MAP.STRANGLETHORN_VALE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
