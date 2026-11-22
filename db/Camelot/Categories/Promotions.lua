@@ -40,5 +40,6 @@ mnt(1309405,{b=1,itemID=280611,lvl=40,u=3}),
 p(5160,{b=1,itemID=281167,npcID=272329,spellID=1310330,u=3})}})}})}}),
 h(-818,{
 toy(289439,{awp=16001,b=1,description="Obtained through watching any eligible World of Warcraft stream on Twitch with Drops enabled for at least 4 hours between November 4th, 4:30 p.m. & November 12th, 4:29 a.m. PST. It first appeared as a surprise drop at the end of the launch-day Legendary crafting stream.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nThis toy is ephemeral: it only works during the WoW: Forever Launch Celebration, and it is slated to be removed from players' collections when that event ends in early December. A week-long, Twitch-only window for an item that gets taken away a month later is exactly the kind of FOMO that disheartens collectors: it can't be earned by playing the game at all, and even those who get it don't get to keep it."}),
-i(287960,{awp=16001,description="Reward from the WoW: Forever launch event on the Chinese World of Warcraft site (wow.blizzard.cn/h5/20261103/foreverup).",spellID=1324635})})}})
+i(287960,{awp=16001,description="Reward from the WoW: Forever launch event on the Chinese World of Warcraft site (wow.blizzard.cn/h5/20261103/foreverup).",spellID=1324635}),
+i(287961,{awp=16001,description="Reward from the WoW: Forever launch event on the Chinese World of Warcraft site (wow.blizzard.cn/h5/20261103/foreverup).",spellID=1324661})})}})
 end)

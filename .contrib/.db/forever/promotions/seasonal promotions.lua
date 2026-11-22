@@ -23,4 +23,8 @@ root(ROOTS.Promotions, n(FOREVER_SEASONAL_PROMOTIONS, {
 		description = "Reward from the WoW: Forever launch event on the Chinese World of Warcraft site (wow.blizzard.cn/h5/20261103/foreverup).",
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
+	i(287961, {	-- Portable Repair Bot
+		description = "Reward from the WoW: Forever launch event on the Chinese World of Warcraft site (wow.blizzard.cn/h5/20261103/foreverup).",
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 }));
