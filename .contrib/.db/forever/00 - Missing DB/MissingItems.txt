@@ -8125,7 +8125,6 @@ i(260628),	-- Stuffed Pumpkin
 i(260629),	-- Spectral Spirits
 i(260632),	-- Slushberry Brandy
 i(260633),	-- Sip of Lemonale
-i(260704),	-- Polished Bronze Safety Goggles
 i(260826),	-- Gnomish Weather Machine NYI
 i(260880),	-- Air Construct Core
 i(260881),	-- Crystallized Lightning
@@ -9824,7 +9823,6 @@ i(281689),	-- Restored Cloth Handwraps
 i(281690),	-- Restored Cloth Belt
 i(281691),	-- Restored Cloth Pants
 i(281692),	-- Restored Cloth Shoes
-i(281693),	-- Restored Leather Hood
 i(281694),	-- Restored Leather Spaulders
 i(281695),	-- Restored Leather Tunic
 i(281696),	-- Restored Leather Wristcuffs

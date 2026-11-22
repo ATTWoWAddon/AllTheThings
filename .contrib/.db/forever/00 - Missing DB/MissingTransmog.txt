@@ -6325,7 +6325,6 @@ s(302094)/i(260212),	-- Bad Hat
 s(302095)/i(260213),	--
 s(302096)/i(260214),	--
 s(302097)/i(260215),	--
-s(302227)/i(260704),	-- Polished Bronze Safety Goggles
 s(302286)/i(260897),	-- (DNT) Moonglaive
 s(302298)/i(260912),	--
 s(302642)/i(263187),	--
@@ -7800,7 +7799,6 @@ s(313001)/i(281690),	-- Restored Cloth Belt
 s(313002)/i(281691),	-- Restored Cloth Pants
 s(313003)/i(281692),	-- Restored Cloth Shoes
 s(313004)/i(281717),	-- Restored Cloak
-s(313005)/i(281693),	-- Restored Leather Hood
 s(313006)/i(281694),	-- Restored Leather Spaulders
 s(313007)/i(281695),	-- Restored Leather Tunic
 s(313008)/i(281696),	-- Restored Leather Wristcuffs
