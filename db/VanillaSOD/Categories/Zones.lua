@@ -10454,7 +10454,7 @@ n(1319,{coords={
 [1453]={{64.6,43}}},r=2,sym={{"select","itemID",2451,2448,2446,17189,17190,17192}},g={
 s(156831,2445,{f=8,lvl=17,q=1}),
 s(163288,17188,{f=8,lvl=14,q=1})}}),
-n(12777,{description="Found within the Champion's Hall.",r=2,sym={{"sub","pvp_gear_base",1,-210},{"pop"},{"exclude","headerID",-101},{"exclude","f",53,51}}}),
+n(12777,{description="Found within the Champion's Hall.",r=2,sym={{"sub","pvp_gear_base",1,-210},{"merge"},{"pop"},{"exclude","headerID",-101},{"exclude","f",53,51}}}),
 n(12782,{description="Found within the Champion's Hall.",r=2,sym={{"select","symselector",3},{"find","headerID",-101},{"pop"}}}),
 n(1291,{coords={
 [1453]={{55,56}}},r=2,sym={{"select","symselector",6,7,12},{"pop"}},g={

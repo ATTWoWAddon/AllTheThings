@@ -4482,7 +4482,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(54661, {	-- Captain Dirgehammer <Conquest Quartermaster> // Original S11 Vendor // Cataclysmic Gladiator: Season 11 Gladiator Gear
 				coord = { 75.0, 67.4, STORMWIND_CITY },
 				-- #if BEFORE MOP
-				sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{ "pop" }},	-- Cataclysmic Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Cataclysmic Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_5_0_4 },
 				races = ALLIANCE_ONLY,
@@ -4490,7 +4490,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(52546, {	-- Captain Dirgehammer <Conquest Quartermaster> // Original S10 Vendor // Ruthless Gladiator: Season 10 Gladiator Gear
 				coord = { 75.0, 67.4, STORMWIND_CITY },
 				-- #if BEFORE MOP
-				sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{ "pop" }},	-- Ruthless Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Ruthless Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_5_0_4 },
 				races = ALLIANCE_ONLY,
@@ -4498,7 +4498,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(CATA_PHASE_ONE, n(51254, {	-- Captain Dirgehammer <Conquest Quartermaster> // Original S9 Vendor // Vicious Gladiator: Season 9 Gladiator Gear
 				coord = { 75.0, 67.4, STORMWIND_CITY },
 				-- #if BEFORE MOP
-				sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{ "pop" }},	-- Vicious Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Vicious Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_5_0_4 },
 				races = ALLIANCE_ONLY,
@@ -4506,7 +4506,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(WRATH_PHASE_FOUR, n(34075, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S8 Vendor // Relentless Gladiator: Season 8 Gladiator Gear
 				coord = { 75.0, 67.4, STORMWIND_CITY },
 				-- #if BEFORE 4.0.3.13277
-				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Relentless Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -4514,7 +4514,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(WRATH_PHASE_THREE, n(34074, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S7 Vendor // Furious Gladiator: Season 7 Gladiator Gear
 				coord = { 75.0, 67.4, STORMWIND_CITY },
 				-- #if BEFORE 4.0.3.13277
-				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Furious Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -4522,7 +4522,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(WRATH_PHASE_TWO, n(34073, {	-- Captain Dirgehammer <Apprentice Armor Quartermaster> // Original S6 Vendor // Deadly Gladiator: Season 6 Gladiator Gear
 				coord = { 75.0, 67.4, STORMWIND_CITY },
 				-- #if BEFORE 4.0.3.13277
-				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Deadly Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -4530,7 +4530,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(WRATH_PHASE_ONE, n(32381, {	-- Captain Dirgehammer // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
 				coord = { 75.0, 67.4, STORMWIND_CITY },
 				-- #if BEFORE 4.0.3.13277
-				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "merge" },{ "pop" }},	-- Hateful Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -4545,6 +4545,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				-- #if BEFORE TBC
 				sym = {	-- Grand Marshal Armor
 					{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE },
+					{ "merge" },
 					{ "pop" },
 					{ "exclude", "headerID", WEAPONS },
 					-- #if BEFORE WRATH
@@ -5482,7 +5483,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(WRATH_PHASE_FOUR, n(34084, {	-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
 				coord = { 74.8, 67.3, STORMWIND_CITY },
 				-- #if BEFORE 4.0.3.13277
-				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{ "pop" }},	-- Furious Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{ "merge" },{ "pop" }},	-- Furious Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -5490,7 +5491,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(WRATH_PHASE_THREE, n(34083, {	-- Knight-Lieutenant Moonstrike <Northrend Armor Quartermaster> // Original S7 Vendor // Deadly Gladiator: Season 7 Honor Gear
 				coord = { 74.8, 67.3, STORMWIND_CITY },
 				-- #if BEFORE 4.0.3.13277
-				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Deadly Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -5498,7 +5499,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(WRATH_PHASE_TWO, n(34082, {	-- Knight-Lieutenant Moonstrike <Armor Quartermaster> // Original S6 Vendor // Hateful Gladiator: Season 6 Honor Gear
 				coord = { 74.8, 67.3, STORMWIND_CITY },
 				-- #if BEFORE 4.0.3.13277
-				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "merge" },{ "pop" }},	-- Hateful Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -5506,7 +5507,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 			applyclassicphase(WRATH_PHASE_ONE, n(32834, {	-- Knight-Lieutenant Moonstrike <Armor Quartermaster> // Original S5 Vendor // Savage Gladiator: Season 5 Honor Gear
 				coord = { 74.8, 67.3, STORMWIND_CITY },
 				-- #if BEFORE 4.0.3.13277
-				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },{ "pop" }},	-- Savage Gladiator's Set
+				sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },{ "merge" },{ "pop" }},	-- Savage Gladiator's Set
 				-- #endif
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,

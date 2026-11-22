@@ -958,21 +958,21 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						applyclassicphase(WRATH_PHASE_FOUR, n(33936, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S8 Vendor // Wrathful Gladiator: Season 8 Gladiator Gear
 							coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{ "pop" }},	-- Wrathful Gladiator's Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Wrathful Gladiator's Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
 						applyclassicphase(WRATH_PHASE_THREE, n(33927, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S7 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
 							coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Relentless Gladiator's Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
 						applyclassicphase(WRATH_PHASE_TWO, n(33921, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 							coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Furious Gladiator's Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
@@ -981,7 +981,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 							coord = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE CATA
 							sym = {
-								{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR }, { "pop" },	-- Deadly Gladiator's Set
+								{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR }, { "merge" }, { "pop" },	-- Deadly Gladiator's Set
 								-- #if ANYCLASSIC
 								{ "select", "itemID", 201993 },	-- Deadly Gladiator's Tabard (Wrath Classic Only)
 								-- #endif
@@ -1055,21 +1055,21 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						applyclassicphase(WRATH_PHASE_FOUR, n(33937, {	-- Xazi Smolderpipe <Arena Vendor> // Original S8 Vendor // Relentless Gladiator: Season 7 Gladiator Gear
 							coord = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "pop" }},	-- Relentless Gladiator's Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Relentless Gladiator's Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
 						applyclassicphase(WRATH_PHASE_THREE, n(33926, {	-- Xazi Smolderpipe <Arena Vendor> // Original S7 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 							coord = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Furious Gladiator's Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
 						applyclassicphase(WRATH_PHASE_TWO, n(33922, {	-- Xazi Smolderpipe <Arena Vendor> // Original S6 Vendor // Deadly Gladiator: Season 5 Gladiator Gear
 							coord = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Deadly Gladiator's Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
@@ -1077,7 +1077,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 							-- Wouter NOTE: I adjusted this NPC with Classic specific data starting from MoP, expansions before that may be inaccurate
 							coord = { 58.8, 59.6, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE CATA
-							sym = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL }, { "pop" }},	-- Hateful Gladiator's Set
+							sym = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL }, { "merge" }, { "pop" }},	-- Hateful Gladiator's Set
 							-- #elseif ANYCLASSIC
 							sym = {
 								{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_GLADIATOR }, { "merge" },	-- Relentless Gladiator's Set
@@ -1127,21 +1127,21 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						applyclassicphase(WRATH_PHASE_FOUR, n(33938, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
 							coord = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "pop" }},	-- Furious Gladiator's Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Furious Gladiator's Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
 						applyclassicphase(WRATH_PHASE_THREE, n(33925, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S7 Vendor // Deadly Gladiator: Season 7 Honor Gear
 							coord = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "merge" },{ "pop" }},	-- Deadly Gladiator's Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
 						applyclassicphase(WRATH_PHASE_TWO, n(33923, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S6 Vendor // Hateful Gladiator: Season 6 Honor Gear
 							coord = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "pop" }},	-- Hateful Gladiator's Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{ "merge" },{ "pop" }},	-- Hateful Gladiator's Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
@@ -1149,7 +1149,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 							-- Wouter NOTE: I adjusted this NPC with Classic specific data starting from MoP, expansions before that may be inaccurate
 							coord = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE CATA
-							sym = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR }, { "pop" }},	-- Savage Gladiator's Set
+							sym = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR }, { "merge" }, { "pop" }},	-- Savage Gladiator's Set
 							-- #elseif ANYCLASSIC
 							sym = {
 								{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_HONOR },							-- Savage Gladiator's Set

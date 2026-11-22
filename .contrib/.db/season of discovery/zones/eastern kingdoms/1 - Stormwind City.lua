@@ -2374,6 +2374,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				description = "Found within the Champion's Hall.",
 				sym = {	-- Grand Marshal Armor
 					{"sub", "pvp_gear_base", EXPANSION.CLASSIC, FACTION_HEADER_ALLIANCE },
+					{ "merge" },
 					{ "pop" },
 					{ "exclude", "headerID", WEAPONS },
 					{ "exclude", "f", TRINKET_F, NECK_F },

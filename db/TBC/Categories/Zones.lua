@@ -26372,7 +26372,7 @@ s(139467,29121,{b=1,f=20,lvl=70,minReputation={933,42000},q=4}),
 i(29119,{b=1,f=51,lvl=70,minReputation={933,42000},q=4}),
 s(139468,29122,{b=1,f=4,loc=40,lvl=70,minReputation={933,42000},q=4})}}),
 n(23396,{coords={
-[1953]={{33,64}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"pop"}}}),
+[1953]={{33,64}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"merge"},{"pop"}}}),
 n(24392,{coords={
 [1953]={{33,64}}},phase=17,rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}}}),
 n(20278,{coords={
