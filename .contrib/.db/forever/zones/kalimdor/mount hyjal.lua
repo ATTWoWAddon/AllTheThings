@@ -1995,6 +1995,9 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 					275173,	-- Blackthorne Outrunner
 				},
 			}),
+			i(274517, {	-- Unerring Purpose
+				cr = 249247,	-- Forgotten Soldier
+			}),
 		}),
 	},
 });

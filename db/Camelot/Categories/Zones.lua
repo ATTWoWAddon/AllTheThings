@@ -5901,7 +5901,8 @@ p(5006,{crs={260422},itemID=11903,npcID=9936,spellID=15648}),
 r(1250146,{b=1,crs={249225},itemID=250177,learnedAt=275,requireSkill=185,skillID=2939}),
 r(1250145,{b=1,crs={249224},itemID=250176,learnedAt=275,requireSkill=185,skillID=2939}),
 s(308616,273828,{crs={264570,275174},f=28,lvl=57}),
-s(308619,273832,{crs={249551,275173},f=20,lvl=57})})}}),
+s(308619,273832,{crs={249551,275173},f=20,lvl=57}),
+s(308901,274517,{crs={249247},f=25,lvl=56})})}}),
 m(1412,{icon=236809,lore="A land of windswept mesas and grassy plains, Mulgore is the tauren's ancestral homeland. Centaur often send raiding parties into Mulgore, and the tauren, now with the help of their Horde allies, beat them back. Tauren are naturally a nomadic people, and their tent cities are scattered across the landscape and change with the seasons and the weather.\n\nNow that they are members of the Horde, the tauren have constructed several permanent settlements, including fortified Dalsh-Beran and their capital of Thunder Bluff.",g={
 m(462,{icon=236454,lore="Camp Narache is the starting area and town for the Tauren, which is located in southern Mulgore at the northern edge of the Red Cloud Mesa. Tauren Shamans will find their first totem quest here for the Earth Totem. Camp Narache is the main village of the Hawkwind Tribe, and its Chief is a member of that Tribe.",zoneTextAreaIDs={221},g={
 h(-45,{
