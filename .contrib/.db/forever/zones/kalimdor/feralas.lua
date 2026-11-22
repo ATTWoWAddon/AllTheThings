@@ -434,6 +434,9 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					}),
 					i(9658),	-- Boots of the Maharishi
 					i(9660),	-- Stargazer Cloak
+					i(287073, {	-- Orwin's Axe
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 					o(144064, {	-- Gordunni Dirt Mound
 						i(15794),	-- Ripped Ogre Loincloth
 					}),
