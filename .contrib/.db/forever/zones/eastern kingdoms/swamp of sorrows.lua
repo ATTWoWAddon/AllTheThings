@@ -320,11 +320,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					213563,	-- Field Guide (PQI!)
 				},
 				coord = { 25.0, 53.4, MAP.SWAMP_OF_SORROWS },
+				maps = { MAP.STRANGLETHORN_VALE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 25,
 				groups = {
 					objective(1, {	-- 0/1 Arbor Tarantula Specimen
 						provider = { "i", 213566 },	-- Arbor Tarantula Specimen
+						coord = { 45.5, 22.1, MAP.STRANGLETHORN_VALE },
+						cr = 217588,	-- Arbor Tarantula
 					}),
 					objective(2, {	-- 0/1 Hay Weevil Specimen
 						provider = { "i", 213568 },	-- Hay Weevil Specimen
