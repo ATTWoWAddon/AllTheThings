@@ -320,7 +320,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					213563,	-- Field Guide (PQI!)
 				},
 				coord = { 25.0, 53.4, MAP.SWAMP_OF_SORROWS },
-				maps = { MAP.STRANGLETHORN_VALE },
+				maps = {
+					MAP.ARATHI_HIGHLANDS,
+					MAP.DESOLACE,
+					MAP.STRANGLETHORN_VALE,
+				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 25,
 				groups = {
@@ -331,9 +335,17 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 					}),
 					objective(2, {	-- 0/1 Hay Weevil Specimen
 						provider = { "i", 213568 },	-- Hay Weevil Specimen
+						coords = {
+							{ 31.0, 27.4, MAP.ARATHI_HIGHLANDS },
+							{ 54.2, 38.6, MAP.ARATHI_HIGHLANDS },
+							{ 61.2, 55.6, MAP.ARATHI_HIGHLANDS },
+						},
+						cr = 217589,	-- Hay Weevil
 					}),
 					objective(3, {	-- 0/1 Flesh Picker Specimen
 						provider = { "i", 213567 },	-- Flesh Picker Specimen
+						coord = { 51.6, 58.2, MAP.DESOLACE },
+						cr = 217590,	-- Flesh Picker
 					}),
 					i(280456),	-- Weevil K. Neevil
 				},

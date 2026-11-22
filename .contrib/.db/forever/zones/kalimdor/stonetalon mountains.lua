@@ -396,6 +396,9 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					objective(1, {	-- 0/1 Venture Co. Work Order
 						provider = { "i", 210187 },	-- Venture Co. Work Order
 					}),
+					i(210188, {	-- Shredded Work Order
+						description = "Drops if you kill the Venture Co. goblins instead of picking their pockets; it can't be used for the quest.",
+					}),
 					i(210186, {	-- Breaching Charge
 						description = "Use this on the door that's normally opened by the NPC after defeating the first boss.",
 					}),

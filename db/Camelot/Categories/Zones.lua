@@ -7336,6 +7336,7 @@ qo(1,{providers={{"n",3989}}})}}),
 q(78270,{awp=16001,c={4},coords={
 [1442]={{58.2,51.6}}},lvl=20,maps={310,1421},qgs={4086},g={
 qo(1,{providers={{"i",210187}}}),
+i(210188,{b=1,description="Drops if you kill the Venture Co. goblins instead of picking their pockets; it can't be used for the quest."}),
 i(210186,{b=1,description="Use this on the door that's normally opened by the NPC after defeating the first boss.",spellID=425067})}}),
 q(6282,{coords={
 [1442]={{47.17,61.08}}},lvl=18,qgs={11860},r=1,g={
@@ -19376,11 +19377,13 @@ q(87451,{awp=16001,lvl=45,qis={280390},r=1,g={
 s(311851,281259,{b=1,f=7,loc=47}),
 s(311852,281260,{b=1,f=4,loc=45})}}),
 q(93176,{awp=16001,coords={
-[1435]={{25,53.4}}},lvl=25,maps={1434},qgs={217412},qis={213562,213563,213565},g={
+[1435]={{25,53.4}}},lvl=25,maps={1417,1434,1443},qgs={217412},qis={213562,213563,213565},g={
 qo(1,{coords={
 [1434]={{45.5,22.1}}},crs={217588},providers={{"i",213566}}}),
-qo(2,{providers={{"i",213568}}}),
-qo(3,{providers={{"i",213567}}}),
+qo(2,{coords={
+[1417]={{31,27.4},{54.2,38.6},{61.2,55.6}}},crs={217589},providers={{"i",213568}}}),
+qo(3,{coords={
+[1443]={{51.6,58.2}}},crs={217590},providers={{"i",213567}}}),
 p(5136,{b=1,itemID=280456,npcID=271636,spellID=1308870})}}),
 q(1418,{coords={
 [1435]={{47.7,55.2}}},isBreadcrumb=1,lvl=30,nextQuests={1420},qgs={1442},r=1}),
