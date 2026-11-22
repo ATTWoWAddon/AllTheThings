@@ -6973,10 +6973,6 @@ i(220105),	-- Deputization Authorization: Feralas Mission XVII
 i(220106),	-- Deputization Authorization: Feralas Mission XVIII
 i(220164),	-- Rune of the Gladiator
 i(220165),	-- Rune of Wrath
-i(220166),	-- Fiery Infernal Core
-i(220167),	-- Shimmering Grave Dust
-i(220168),	-- Triple-Brewed Molten Lager
-i(220169),	-- Symbol of Faith
 i(220213),	-- Fel Lifeblood
 i(220214),	-- Infernal Chain Link
 i(220216),	-- Infernal Lasso
@@ -7139,8 +7135,6 @@ i(221514),	-- Rune of Firepower
 i(221515),	-- Rune of Detonation
 i(221516),	-- Rune of Primal Energy
 i(221517),	-- Rune of Bloodshed
-i(221518),	-- Whisper
-i(221519),	-- Mannoroc Orb
 i(221544),	-- Stormcrow Egg
 i(221545),	-- Deciphered Warlock Notes
 i(221547),	-- Coded Warlock Notes

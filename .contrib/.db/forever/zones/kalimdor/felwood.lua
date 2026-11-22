@@ -668,6 +668,51 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					i(18762),	-- Shard of the Green Flame
 				},
 			}),
+			q(81790, {	-- Materials of Significance
+				qg = 221636,	-- Gregory <Truthbearer>
+				coord = { 44.6, 52.0, MAP.FELWOOD },
+				maps = { MAP.MARAUDON, MAP.HILLSBRAD_FOOTHILLS, MAP.BLACKROCK_DEPTHS },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 44,
+				groups = {
+					objective(1, {	-- 0/3 Fiery Infernal Core
+						provider = { "i", 220166 },	-- Fiery Infernal Core
+						coord = { 42.8, 43.6, MAP.FELWOOD },
+						crs = {
+							7135,	-- Infernal Bodyguard
+							7136,	-- Infernal Sentry
+							9878,	-- Entropic Beast
+							9879,	-- Entropic Horror
+						},
+					}),
+					objective(2, {	-- 0/1 Shimmering Grave Dust
+						providers = {
+							{ "i", 220167 },	-- Shimmering Grave Dust
+							{ "o", 441222 },	-- Grave Mound
+						},
+						description = "You can find this after killing Princess in Maraudon, right in front of Zaetar's Spirit next to his feet.",
+					}),
+					objective(3, {	-- 0/1 Triple-Brewed Molten Lager
+						provider = { "i", 220168 },	-- Triple-Brewed Molten Lager
+						description = "Sold by Plugger Spazzring in Blackrock Depths.",
+					}),
+					q(81944, {	-- A Newly Discovered Purpose...
+						qg = 214529,	-- Brave Stonetorch
+						coord = { 67.4, 14.8, MAP.HILLSBRAD_FOOTHILLS },
+						classes = { PALADIN },
+						races = ALLIANCE_ONLY,
+						lvl = 44,
+						groups = {
+							objective(4, {	-- 0/1 Symbol of Faith
+								questID = 81790,	-- Materials of Significance
+								provider = { "i", 220169 },	-- Symbol of Faith
+							}),
+						},
+					}),
+				},
+			}),
 			q(5085, {	-- Mystery Goo
 				sourceQuest = 5084,	-- Falling to Corruption
 				providers = {
@@ -1045,6 +1090,23 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 					}),
 				},
 			}),
+			q(82135, {	-- The Price of Hope
+				sourceQuest = 81885,	-- The Ritual
+				qg = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+				qi = 221519,	-- Mannoroc Orb (PQI!)
+				coord = { 45.0, 52.0, MAP.FELWOOD },
+				maps = { MAP.STORMWIND_CITY },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 44,
+				groups = {
+					objective(1, {	-- 0/1 Withered Protector slain
+						provider = { "n", 7149 },	-- Withered Protector
+					}),
+					i(221518),	-- Whisper
+				},
+			}),
 			q(5385, {	-- The Remains of Trey Lightforge
 				sourceQuest = 5204,	-- Retribution of the Light
 				qg = 11020,	-- Remains of Trey Lightforge
@@ -1054,6 +1116,21 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				groups = {
 					i(15706),	-- Hunt Tracker Blade
 					i(15705),	-- Tidecrest Blade
+				},
+			}),
+			q(81885, {	-- The Ritual
+				sourceQuest = 81790,	-- Materials of Significance
+				qg = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+				coord = { 45.0, 52.0, MAP.FELWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { PALADIN },
+				races = ALLIANCE_ONLY,
+				lvl = 44,
+				groups = {
+					objective(1, {	-- Complete the Ritual
+						provider = { "n", 221636 },	-- Gregory
+						coord = { 44.6, 52.0, MAP.FELWOOD },
+					}),
 				},
 			}),
 			q(91952, {	-- The Source of the Corruption
@@ -1457,4 +1534,15 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 			}),
 		}),
 	},
+});
+root(ROOTS.HiddenQuestTriggers, {
+	q(81879, {	-- Aeonas: Journey to Felwood (paladin Whisper chain, before Materials of Significance)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+	q(81883, {	-- Aeonas: Trust in a Friend (talking to Aeonas the Vindicated)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+	q(81884, {	-- Gregory: You Can Trust Me... Probably. (talking to Gregory)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 });

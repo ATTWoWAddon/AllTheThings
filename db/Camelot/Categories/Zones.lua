@@ -4284,6 +4284,15 @@ qo(1,{coords={
 [1448]={{45.4,35.4}}},crs={14467},providers={{"i",18625},{"i",18626}}}),
 r(1122),
 s(163683,18762,{b=1,f=1})}}),
+q(81790,{awp=16001,c={2},coords={
+[1448]={{44.6,52}}},lvl=44,maps={242,280,1424},qgs={221636},r=2,g={
+qo(1,{coords={
+[1448]={{42.8,43.6}}},crs={7135,7136,9878,9879},providers={{"i",220166}}}),
+qo(2,{description="You can find this after killing Princess in Maraudon, right in front of Zaetar's Spirit next to his feet.",providers={{"i",220167},{"o",441222}}}),
+qo(3,{description="Sold by Plugger Spazzring in Blackrock Depths.",providers={{"i",220168}}}),
+q(81944,{c={2},coords={
+[1424]={{67.4,14.8}}},lvl=44,qgs={214529},r=2,g={
+qo(4,{providers={{"i",220169}},questID=81790})}})}}),
 q(5085,{coords={
 [1448]={{60.2,5.9}}},lvl=52,providers={{"o",176091}},qis={12813},sourceQuests={5084}}),
 q(4442,{coords={
@@ -4371,10 +4380,18 @@ qo(4,{providers={{"n",9454}}}),
 qo(1,{providers={{"n",7109}}}),
 qo(2,{providers={{"n",7110}}}),
 qo(3,{providers={{"n",7106}}})}}),
+q(82135,{awp=16001,c={2},coords={
+[1448]={{45,52}}},lvl=44,maps={1453},qgs={221587},qis={221519},r=2,sourceQuests={81885},g={
+qo(1,{providers={{"n",7149}}}),
+s(219290,221518,{b=1,f=24})}}),
 q(5385,{coords={
 [1448]={{38.4,50.4}}},lvl=49,qgs={11020},qis={13562},sourceQuests={5204},g={
 s(162582,15706,{b=1,f=20}),
 s(162581,15705,{b=1,f=25})}}),
+q(81885,{awp=16001,c={2},coords={
+[1448]={{45,52}}},lvl=44,qgs={221587},r=2,sourceQuests={81790},g={
+qo(1,{coords={
+[1448]={{44.6,52}}},providers={{"n",221636}}})}}),
 q(91952,{awp=16001,coords={
 [1448]={{51.2,82.2}}},lvl=55,qgs={10922}}),
 q(8421,{c={9},coords={

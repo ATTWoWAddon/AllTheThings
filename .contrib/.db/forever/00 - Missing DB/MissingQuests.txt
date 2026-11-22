@@ -802,7 +802,6 @@ q(81786),	-- CLASSIC:Hinterlands Mission I: Defeat Moonkin	 TBC:	 WOTLK:	 CATA:	
 q(81787),	-- CLASSIC:Hinterlands Mission II: Defeat Giant Turtles	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81788),	-- CLASSIC:Hinterlands Mission III: Defeat Dragonkin	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81789),	-- CLASSIC:Hinterlands Mission IV: Dragon Intelligence	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81790),	-- 	 CLASSIC:Materials of Significance	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81801),	-- 	 CLASSIC:Return to the Arena	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81817),	-- CLASSIC:Hinterlands Mission V: Turtle Intelligence	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81820),	-- CLASSIC:Hinterlands Mission VI: Moonkin Intelligence	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -837,14 +836,9 @@ q(81872),	-- CLASSIC:Feralas Mission XVI: Rescue Mellias Earthtender	 TBC:	 WOTL
 q(81873),	-- CLASSIC:Feralas Mission XVII: Rescue Nerene Brooksinger	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81874),	-- CLASSIC:Feralas Mission XVIII: Rescue Jamniss Treemender	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81877),	-- 	 CLASSIC:Fight Night	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81879),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81883),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81884),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81885),	-- 	 CLASSIC:The Ritual	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81900),	-- CLASSIC:The Burning Beast	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81917),	-- CLASSIC:Chains That Bind	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81919),	-- CLASSIC:Brought to Heel	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(81944),	-- 	 CLASSIC:A Newly Discovered Purpose...	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81951),	-- CLASSIC:The Liminal and the Arcane	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81960),	-- CLASSIC:Clarifying Air	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(81961),	-- TBC:	 WOTLK:	 CATA:	 MOP:
@@ -918,7 +912,6 @@ q(82113),	-- 	 CLASSIC:Da Voodoo	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(82114),	-- 	 CLASSIC:Destroy Morphaz	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(82115),	-- 	 CLASSIC:Trolls of a Feather	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(82132),	-- TBC:	 WOTLK:	 CATA:	 MOP:
-q(82135),	-- 	 CLASSIC:The Price of Hope	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(82304),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(82305),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(82306),	-- TBC:	 WOTLK:	 CATA:	 MOP:
