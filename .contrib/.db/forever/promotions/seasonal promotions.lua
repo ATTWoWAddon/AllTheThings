@@ -19,12 +19,12 @@ root(ROOTS.Promotions, n(FOREVER_SEASONAL_PROMOTIONS, {
 		timeline = { TIMELINE.ADDED_1_60_1 },	-- Twitch drop ends November 12th, 4:29 a.m. PST; removed from collections when the Launch Celebration ends (early December)
 	}),
 	-- China Launch Event
-	i(287960, {	-- Portable Wormhole Generator
+	cnONLY(i(287960, {	-- Portable Wormhole Generator
 		description = "Reward from the WoW: Forever launch event on the Chinese World of Warcraft site (wow.blizzard.cn/h5/20261103/foreverup).",
 		timeline = { TIMELINE.ADDED_1_60_1 },
-	}),
-	i(287961, {	-- Portable Repair Bot
+	})),
+	cnONLY(i(287961, {	-- Portable Repair Bot
 		description = "Reward from the WoW: Forever launch event on the Chinese World of Warcraft site (wow.blizzard.cn/h5/20261103/foreverup).",
 		timeline = { TIMELINE.ADDED_1_60_1 },
-	}),
+	})),
 }));

@@ -5,7 +5,9 @@ _.ExplorationAreaPositionDB=
 _.FlightPathDB=
 {FlightPathMapIDs={1464,1463,2665}}
 _.OnInitDB=
-{}
+{
+	RegionExclusiveCN = function(t)if t.u ~=1 and GetCVar("portal")~="CN" then	_.AssignFieldValue(t,"u",1)end	return t end
+}
 _.OnTooltipDB=
 {
 	DesolaceCentaurs = function(t,tooltipInfo)local reputation=t.reputation if reputation>0 and reputation<9000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Kill Centaurs to Honored.",20,9000)end	end,
