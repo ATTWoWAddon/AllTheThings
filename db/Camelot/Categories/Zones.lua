@@ -13386,7 +13386,7 @@ qo(3,{coords={
 q(78830,{awp=16001,coords={
 [1434]={{35.6,10.8}}},lvl=26,qgs={715},qis={211272},sourceQuests={78823},g={
 qo(1,{coords={
-[1418]={{22.4,67.6}}},crs={213795},providers={{"i",211293}}}),
+[1418]={{22.4,67.6}}},crs={213795},description="Use the Empty Bait Cage on a critter to get a Trapped Critter, then place it as bait to lure Gharrik.",providers={{"i",211273},{"i",211293}}}),
 i(277209,{b=1,f=52}),
 s(309946,277207,{b=1,f=3})}}),
 q(78823,{awp=16001,lvl=26,maps={1434},qss={211269}}),

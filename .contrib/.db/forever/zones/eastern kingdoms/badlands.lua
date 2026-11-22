@@ -624,7 +624,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				lvl = 26,
 				groups = {
 					objective(1, {	-- 0/1 Crimson Trophy Quill
-						provider = { "i", 211293 },	-- Crimson Trophy Quill
+						providers = {
+							{ "i", 211293 },	-- Crimson Trophy Quill
+							{ "i", 211273 },	-- Trapped Critter
+						},
+						description = "Use the Empty Bait Cage on a critter to get a Trapped Critter, then place it as bait to lure Gharrik.",
 						cr = 213795,	-- Gharrik
 						coord = { 22.4, 67.6, MAP.BADLANDS },
 					}),
