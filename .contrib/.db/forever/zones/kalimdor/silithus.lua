@@ -1821,7 +1821,13 @@ maproot(MAP.KALIMDOR, MAP.SILITHUS, {
 					{ 61.6, 84.0, MAP.SILITHUS },
 					{ 64.2, 83.6, MAP.SILITHUS },
 					{ 64.8, 82.4, MAP.SILITHUS },
+					{ 65.0, 81.0, MAP.SILITHUS },
 					{ 64.2, 79.4, MAP.SILITHUS },
+				},
+				groups = {
+					i(286573, {	-- Unleashed Swarm (TOY!)
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(14475, {	-- Rex Ashil
