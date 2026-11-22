@@ -1013,14 +1013,14 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						applyclassicphase(WRATH_PHASE_FOUR, n(34095, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S8 ELITE VENDOR
 							coord = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE }},	-- Wrathful Gladiator's Elite Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
 						applyclassicphase(WRATH_PHASE_THREE, n(34092, {	-- Trapjaw Rix <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S7 ELITE VENDOR
 							coord = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE 4.0.3.13277
-							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
+							sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE }},	-- Relentless Gladiator's Elite Set
 							-- #endif
 							timeline = { REMOVED_4_0_3 },
 						})),
@@ -1028,7 +1028,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 							-- Wouter NOTE: I adjusted this NPC with Classic specific data starting from MoP, expansions before that may be inaccurate
 							coord = { 59.9, 57.0, NORTHREND_THE_UNDERBELLY },
 							-- #if BEFORE CATA
-							sym = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE }, { "merge" }},	-- Furious Gladiator's Elite Set
+							sym = {{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE }},	-- Furious Gladiator's Elite Set
 							-- #elseif ANYCLASSIC
 							sym = {
 								{ "sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE }, { "merge" },	-- Wrathful Gladiator's Elite Set

@@ -2257,21 +2257,21 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 				applyclassicphase(WRATH_PHASE_FOUR, n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S8 ELITE VENDOR
 					coord = { 33.1, 64.0, NETHERSTORM },
 					-- #if BEFORE 4.0.3.13277
-					sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE },{"merge"}},	-- Wrathful Gladiator's Elite Set
+					sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_WRATHFUL, PVP_ELITE }},	-- Wrathful Gladiator's Elite Set
 					-- #endif
 					timeline = { ADDED_3_3_2, REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, n(34091, {	-- Grex Brainboiler <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S7 ELITE VENDOR
 					coord = { 33.1, 64.0, NETHERSTORM },
 					-- #if BEFORE 4.0.3.13277
-					sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE },{"merge"}},	-- Relentless Gladiator's Elite Set
+					sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_RELENTLESS, PVP_ELITE }},	-- Relentless Gladiator's Elite Set
 					-- #endif
 					timeline = { ADDED_3_2_0, REMOVED_4_0_3 },
 				})),
 				applyclassicphase(WRATH_PHASE_TWO, n(34089, {	-- Grex Brainboiler <Veteran Arena Vendor> / <Exceptional Arena Weaponry> [WRATH] Original WOTLK S6 ELITE VENDOR
 					coord = { 33.1, 64.0, NETHERSTORM },
 					-- #if BEFORE 4.0.3
-					sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
+					sym = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE }},	-- Furious Gladiator's Elite Set
 					-- #endif
 					timeline = { ADDED_3_1_0, REMOVED_4_0_3 },
 				})),

@@ -4218,8 +4218,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- Masks & Wands & Candy
 					{ "selectparent" },	-- Select the "Rewards" header.
 					{ "pop" },	-- Get the Rewards.
-					{ "exclude", "itemID", 20393, 34077 },	-- Treat Bag & Crudely Wrapped Gift
-					{ "exclude", "itemID", 69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195 },	-- Exclude Murloc, Naga, Ogre, Vrykul Masks
+					{ "exclude", "itemID",
+						20393, 34077,	-- Treat Bag & Crudely Wrapped Gift
+						69187, 69188, 69189, 69190, 69192, 69193, 69194, 69195,	-- Murloc, Naga, Ogre, Vrykul Masks
+					},
 					{ "finalize" },	-- Push the processed items on to the finalized stack and ignore further queries on them.
 					{"select","itemID",
 						33292,	-- Hallowed Helm

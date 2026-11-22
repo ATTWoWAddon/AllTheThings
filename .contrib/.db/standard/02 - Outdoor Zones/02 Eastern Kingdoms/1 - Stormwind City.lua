@@ -5694,10 +5694,13 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				timeline = { ADDED_3_0_2, REMOVED_5_0_4 },
 				-- #if ANYCLASSIC
 				sym = {
-					SymSelector.select("TBC_PVP_SEASON_GLADIATOR"),
-					SymSelector.select("TBC_PVP_SEASON_MERCILESS"),
-					SymSelector.select("TBC_PVP_SEASON_VENGEFUL"),
-					SymSelector.select("TBC_PVP_SEASON_BRUTAL"), { "pop" },
+					{ "select", "symselector",
+						SymSelector.TBC_PVP_SEASON_GLADIATOR,
+						SymSelector.TBC_PVP_SEASON_MERCILESS,
+						SymSelector.TBC_PVP_SEASON_VENGEFUL,
+						SymSelector.TBC_PVP_SEASON_BRUTAL,
+					},
+					{ "pop" },
 					{ "where", "headerID", PVP_GLADIATOR }, { "pop" },
 				},
 				-- #endif
