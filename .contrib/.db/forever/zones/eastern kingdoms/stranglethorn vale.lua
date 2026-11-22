@@ -1661,7 +1661,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				qg = 218230,	-- Wendel Mathers
 				coord = { 44.2, 8.0, MAP.STRANGLETHORN_VALE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = ALLIANCE_ONLY,
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Compound Cage Key
