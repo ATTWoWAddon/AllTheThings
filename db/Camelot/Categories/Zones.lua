@@ -74,6 +74,9 @@ q(5647,{altQuests={5641,5645},c={5},coords={
 r(6346)}}),
 q(7801,{coords={
 [1457]={{64,23}}},cost={{"i",14047,20}},lvl=50,maxReputation={69,42000},qgs={14725},r=2,repeatable=1,sourceQuests={7800}}),
+q(5678,{altQuests={5676,5677},c={5},coords={
+[1457]={{40,80}}},lvl=20,qgs={11401},races={1},g={
+r(13896,{rank=1})}}),
 q(3763,{coords={
 [1457]={{67.4,15.7}}},isBreadcrumb=1,lvl=47,nextQuests={3764},qgs={6735},r=2}),
 q(3790,{coords={
@@ -874,16 +877,15 @@ qo(1,{coords={
 [1411]={{51.6,9.7}}},providers={{"i",6535},{"o",58595}}})}}),
 q(2458,{c={4},coords={
 [1454]={{43,53.4}}},lvl=20,qgs={3401},qis={8051},r=1,sourceQuests={2460}}),
+q(5646,{altQuests={5644,5679},c={5},coords={
+[1454]={{35.6,87.6}}},lvl=20,qgs={6018},races={5},g={
+r(2944,{rank=1})}}),
 q(97249,{awp=16001,coords={
 [1454]={{57.4,53.4}}},lvl=5,qgs={3368},qis={277284},r=1,sourceQuests={97246}}),
 q(2378,{altQuests={2380},c={4},coords={
 [1458]={{83.2,69}}},isBreadcrumb=1,lvl=16,nextQuests={2379},qgs={6467},r=1}),
 q(5652,{altQuests={5654,5655,5656,5657},c={5},coords={
-[1411]={{54.2,42.8}},
-[1412]={{47,58.8}},
-[1454]={{35.6,87.6}},
-[1456]={{26,15.8}},
-[1458]={{49.01,18.32}}},lvl=10,qgs={3044,3706,4606,6018,11407},races={8},g={
+[1454]={{35.6,87.6}}},lvl=10,qgs={6018},races={8},g={
 r(9035,{rank=1})}}),
 q(5726,{coords={
 [1454]={{32,37.8}}},lvl=9,maps={1411},qgs={4949},r=1,g={
@@ -927,9 +929,7 @@ s(311859,281269,{b=1,f=4,loc=43}),
 s(311861,281271,{b=1,f=5,loc=43}),
 s(311860,281270,{b=1,f=5,loc=43})}}),
 q(5680,{altQuests={5642,5643},c={5},coords={
-[1454]={{35.6,87.6}},
-[1456]={{26,15.8}},
-[1458]={{49.01,18.32}}},lvl=20,qgs={3044,4606,6018},races={8},g={
+[1454]={{35.6,87.6}}},lvl=20,qgs={6018},races={8},g={
 r(18137,{rank=1})}}),
 q(1943,{c={8},coords={
 [1458]={{85,10.2}}},isBreadcrumb=1,lvl=26,nextQuests={1944},qgs={4568},races={5,8}}),
@@ -973,6 +973,9 @@ q(6611,{coords={
 [1454]={{57.4,53.6}}},isBreadcrumb=1,learnedAt=225,lvl=35,nextQuests={6610},qgs={3399},r=1,requireSkill=185}),
 q(2380,{altQuests={2378},c={4},coords={
 [1411]={{51.98,43.7}}},isBreadcrumb=1,lvl=16,nextQuests={2460},qgs={3170},r=1}),
+q(5662,{altQuests={5658,5660,5661,5663},c={5},coords={
+[1454]={{35.6,87.6}}},lvl=10,qgs={6018},races={5},g={
+r(2652,{rank=1})}}),
 q(2753,{coords={
 [1454]={{79.4,22.4}}},cost={{"i",3842,2},{"i",3835,4},{"i",3836,4}},learnedAt=140,lvl=32,qgs={7790},r=1,requireSkill=164,sourceQuests={2752},g={
 r(9818,{description="This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",itemID=7981,requireSkill=164})}}),
@@ -1234,6 +1237,9 @@ q(1205,{coords={
 [1456]={{61.52,80.88}}},lvl=35,maps={1445},qgs={3441},r=1,g={
 qo(1,{coords={
 [1445]={{47.6,56.6}}},crs={4841},providers={{"i",5945}}})}}),
+q(5644,{altQuests={5646,5679},c={5},coords={
+[1456]={{26,15.8}}},lvl=20,qgs={3044},races={5},g={
+r(2944,{rank=1})}}),
 q(1064,{coords={
 [1456]={{69.85,30.91}}},lvl=13,qgs={4046},r=1,sourceQuests={1063}}),
 q(1136,{coords={
@@ -1246,6 +1252,9 @@ q(768,{coords={
 [1456]={{44,44.6}}},cost={{"i",2318,12}},description="This quest becomes available at Skinning skill level 1 when the character level requirement is met.",lvl=4,qgs={3050},r=1,requireSkill=393,g={
 s(158270,5936,{b=1,f=5,loc=45,requireSkill=393}),
 s(157990,4962,{b=1,f=5,loc=44,requireSkill=393})}}),
+q(5656,{altQuests={5652,5654,5655,5657},c={5},coords={
+[1456]={{26,15.8}}},lvl=10,qgs={3044},races={8},g={
+r(9035,{rank=1})}}),
 q(769,{coords={
 [1456]={{44,44.6}}},learnedAt=10,lvl=5,qgs={3050},r=1,requireSkill=165,g={
 r(5244,{description="This recipe is not soulbound and can be mailed to Horde alts.",itemID=5083,learnedAt=35,requireSkill=165,skillID=2945})}}),
@@ -1272,6 +1281,9 @@ q(6364,{coords={
 [1456]={{46.8,50}}},lvl=10,maps={1413},qgs={2995},qis={16283},races={6},sourceQuests={6363}}),
 q(6362,{coords={
 [1413]={{51.5,30.34}}},lvl=10,qgs={3615},qis={16282},races={6},sourceQuests={6361}}),
+q(5642,{altQuests={5643,5680},c={5},coords={
+[1456]={{26,15.8}}},lvl=20,qgs={3044},races={8},g={
+r(18137,{rank=1})}}),
 q(1131,{coords={
 [1456]={{61.51,80.88}}},lvl=20,maps={1441},qgs={3441},r=1,sourceQuests={1130},g={
 qo(1,{coords={
@@ -1295,6 +1307,9 @@ qo(1,{coords={
 [1441]={{42,35}}},providers={{"i",5869},{"o",20807}}}),
 s(158668,6739,{b=1,f=32}),
 s(158669,6740,{b=1,f=5,loc=45})}}),
+q(5663,{altQuests={5658,5660,5661,5662},c={5},coords={
+[1456]={{26,15.8}}},lvl=10,qgs={3044},races={5},g={
+r(2652,{rank=1})}}),
 q(97485,{awp=16001,coords={
 [1456]={{38.2,56.2}}},description="While on this quest, buy a Bundle of Herbs from Nida Winterhoof, a Bundle of Dried Cedar Twigs from Nata Dawnstrider, Sinew Thread from Mahu and Ceremonial Flint and Tinder from Naal Mistrunner (1 copper each). Combine them into Prepared Incense, then spread it at the ceremonial site on the south-facing cliff of Hunter Rise.",lvl=3,qgs={269068},r=1,g={
 qo(1,{cost={{"i",278083,1},{"i",278081,1},{"i",278080,1},{"i",278079,1}},providers={{"i",278078}}}),
@@ -11452,9 +11467,7 @@ q(7645,{coords={
 [1424]={{52,55.6}}},cost={{"i",13724,20},{"g",500000}},qgs={2357},repeatable=1,g={
 qo(1,{providers={{"i",18775}},questID=7643})}})}}),
 q(5676,{altQuests={5677,5678},c={5},coords={
-[1453]={{38.8,26.6}},
-[1455]={{26.4,7.6}},
-[1457]={{40,80}}},lvl=20,qgs={376,11401,11406},races={1},g={
+[1453]={{38.8,26.6}}},lvl=20,qgs={376},races={1},g={
 r(13896,{rank=1})}}),
 q(1942,{c={8},coords={
 [1453]={{52,83.6}}},lvl=26,qgs={1309},r=2,sourceQuests={1940},g={
@@ -12103,9 +12116,7 @@ q(1507,{altQuests={1472},c={9},isBreadcrumb=1,lvl=20,nextQuests={1476,1508,65601
 q(1472,{altQuests={1507},c={9},coords={
 [1458]={{85,25.6}}},isBreadcrumb=1,lvl=20,nextQuests={1476,1508,65593},qgs={5675},races={2,5}}),
 q(5679,{altQuests={5644,5646},c={5},coords={
-[1454]={{35.6,87.6}},
-[1456]={{26,15.8}},
-[1458]={{49,18.3}}},lvl=20,qgs={3044,4606,6018},races={5},g={
+[1458]={{49.01,18.32}}},lvl=20,qgs={4606},races={5},g={
 r(2944,{rank=1})}}),
 q(1846,{c={1},coords={
 [1458]={{62.4,39.2}}},lvl=20,maps={1437},qgs={6411},r=1,sourceQuests={1841},g={
@@ -12139,6 +12150,9 @@ qo(1,{coords={
 [1421]={{46.6,84.2}}},crs={5682},providers={{"i",6312}}}),
 qo(2,{coords={
 [1437]={{50.6,12.6}}},crs={5683},providers={{"i",6313}}})}}),
+q(5657,{altQuests={5652,5654,5655,5656},c={5},coords={
+[1458]={{49.01,18.32}}},lvl=10,qgs={4606},races={8},g={
+r(9035,{rank=1})}}),
 q(243,{coords={
 [1458]={{50.1,68}}},lvl=38,maps={1446},qgs={5204},qis={8523},r=1,sourceQuests={238}}),
 q(1960,{c={8},coords={
@@ -12205,6 +12219,9 @@ q(3569,{coords={
 [1458]={{48.8,71.7}}},lvl=45,qgs={8390},qis={10712},r=1,sourceQuests={3568}}),
 q(3570,{coords={
 [1458]={{48.8,71.7}}},lvl=45,qgs={8390},r=1,sourceQuests={3569}}),
+q(5643,{altQuests={5642,5680},c={5},coords={
+[1458]={{49.01,18.32}}},lvl=20,qgs={4606},races={8},g={
+r(18137,{rank=1})}}),
 q(1881,{altQuests={1883},c={8},coords={
 [1420]={{61.8,52.4}}},isBreadcrumb=1,lvl=10,nextQuests={1882,1884},qgs={2128},races={5,8}}),
 q(1962,{c={8},coords={
@@ -12261,11 +12278,7 @@ q(1999,{c={4},coords={
 [1458]={{83.2,69}}},lvl=16,maps={1421},qgs={6467},races={5},sourceQuests={1998},g={
 qo(1,{providers={{"i",7309}}})}}),
 q(5658,{altQuests={5660,5661,5662,5663},c={5},coords={
-[1411]={{54.2,42.8}},
-[1412]={{47,58.8}},
-[1454]={{35.6,87.6}},
-[1456]={{26,15.8}},
-[1458]={{49.01,18.32}}},lvl=10,qgs={3044,3706,4606,6018,11407},races={5},g={
+[1458]={{49,18.3}}},lvl=10,qgs={4606},races={5},g={
 r(2652,{rank=1})}}),
 q(1841,{c={1},coords={
 [1413]={{57.2,30.2}}},lvl=20,qgs={5878},r=1,sourceQuests={1838}}),

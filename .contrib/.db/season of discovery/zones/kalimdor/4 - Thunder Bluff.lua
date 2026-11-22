@@ -153,6 +153,23 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					}),
 				},
 			}),
+			q(5644, {	-- Devouring Plague [Thunder Bluff]
+				altQuests = {
+					5646,	-- Devouring Plague [Orgrimmar]
+					5679,	-- Devouring Plague [Undercity]
+				},
+				qg = 3044,	-- Miles Welsh <Priest Trainer>
+				coord = { 26.0, 15.8, THUNDER_BLUFF },
+				classes = { PRIEST },
+				races = { UNDEAD },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 2944,	-- Devouring Plague (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
 			q(1064, {	-- Forsaken Aid
 				sourceQuest = 1063,	-- The Elder Crone
 				qg = 4046,	-- Magatha Grimtotem
@@ -297,6 +314,23 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 				},
 				races = { TAUREN },
 				lvl = 10,
+			}),
+			q(5642, {	-- Shadowguard [Thunder Bluff]
+				altQuests = {
+					5643,	-- Shadowguard [Undercity]
+					5680,	-- Shadowguard [Orgrimmar]
+				},
+				qg = 3044,	-- Miles Welsh <Priest Trainer>
+				coord = { 26.0, 15.8, THUNDER_BLUFF },
+				classes = { PRIEST },
+				races = { TROLL },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 18137,	-- Shadowguard (Rank 1)
+						rank = 1,
+					},
+				},
 			}),
 			applyclassicphase(SOD_PHASE_ONE, q(76156, {	-- Stalk With The Earthmother (1/3)
 				qg = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
@@ -448,6 +482,25 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					}),
 					i(6739),	-- Cliffrunner's Aim
 					i(6740),	-- Azure Sash
+				},
+			}),
+			q(5663, {	-- Touch of Weakness [Thunder Bluff]
+				altQuests = {
+					5658,	-- Touch of Weakness [Undercity]
+					5660,	-- Touch of Weakness [Durotar]
+					5661,	-- Touch of Weakness [Mulgore]
+					5662,	-- Touch of Weakness [Orgrimmar]
+				},
+				qg = 3044,	-- Miles Welsh <Priest Trainer>
+				coord = { 26.0, 15.8, THUNDER_BLUFF },
+				classes = { PRIEST },
+				races = { UNDEAD },
+				lvl = 10,
+				groups = {
+					{
+						recipeID = 2652,	-- Touch of Weakness (Rank 1)
+						rank = 1,
+					},
 				},
 			}),
 			q(3761, {	-- Un'Goro Soil

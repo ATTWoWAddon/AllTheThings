@@ -410,7 +410,6 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				races = ALLIANCE_ONLY,
 				lvl = 45,
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5677, {	-- Arcane Feedback [Ironforge]
 				altQuests = {
 					5676,	-- Arcane Feedback [Stormwind City]
@@ -431,7 +430,6 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(3449, {	-- Arcane Runes
 				sourceQuests = {
 					3448,	-- Passing the Burden

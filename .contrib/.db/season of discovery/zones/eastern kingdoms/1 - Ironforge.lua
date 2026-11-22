@@ -229,6 +229,23 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				races = ALLIANCE_ONLY,
 				lvl = 45,
 			}),
+			q(5677, {	-- Arcane Feedback [Ironforge]
+				altQuests = {
+					5676,	-- Arcane Feedback [Stormwind City]
+					5678,	-- Arcane Feedback [Darnassus]
+				},
+				qg = 11406,	-- High Priest Rohan <Priest Trainer>
+				coord = { 26.4, 7.6, IRONFORGE },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 13896,	-- Feedback (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
 			q(3449, {	-- Arcane Runes
 				sourceQuests = {
 					3448,	-- Passing the Burden

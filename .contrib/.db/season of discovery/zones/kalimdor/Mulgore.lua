@@ -297,6 +297,25 @@ maproot(KALIMDOR, MULGORE, {
 							i(4913),	-- Painted Chain Belt
 						},
 					}),
+					q(5661, {	-- Touch of Weakness [Mulgore]
+						altQuests = {
+							5658,	-- Touch of Weakness [Undercity]
+							5660,	-- Touch of Weakness [Durotar]
+							5662,	-- Touch of Weakness [Orgrimmar]
+							5663,	-- Touch of Weakness [Thunder Bluff]
+						},
+						qg = 11407,	-- Var'jun
+						coord = { 47.0, 58.8, MULGORE },
+						classes = { PRIEST },
+						races = { UNDEAD },
+						lvl = 10,
+						groups = {
+							{
+								recipeID = 2652,	-- Touch of Weakness (Rank 1)
+								rank = 1,
+							},
+						},
+					}),
 					q(3094, {	-- Verdant Note
 						sourceQuest = 747,	-- The Hunt Begins
 						qg = 2980,	-- Grull Hawkwind

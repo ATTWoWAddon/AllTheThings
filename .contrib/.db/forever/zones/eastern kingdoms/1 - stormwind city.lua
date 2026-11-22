@@ -391,23 +391,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					5677,	-- Arcane Feedback [Ironforge]
 					5678,	-- Arcane Feedback [Darnassus]
 				},
-				qgs = {
-					11406,	-- High Priest Rohan <Priest Trainer>
-					376,	-- High Priestess Laurena <Priest Trainer>
-					11401,	-- Priestess Alathea <Priest Trainer>
-				},
-				coords = {
-					{ 26.4, 7.6, MAP.IRONFORGE },
-					{ 38.8, 26.6, MAP.STORMWIND_CITY },
-					{ 40.0, 80.0, MAP.DARNASSUS },
-				},
+				qg = 376,	-- High Priestess Laurena <Priest Trainer>
+				coord = { 38.8, 26.6, MAP.STORMWIND_CITY },
 				races = { HUMAN },
 				classes = { PRIEST },
 				lvl = 20,
 				groups = {
-					r(13896, {	-- Feedback (Rank 1)
+					{
+						recipeID = 13896,	-- Feedback (Rank 1)
 						rank = 1,
-					}),
+					},
 				},
 			}),
 			q(1942, {	-- Astral Knot Garment

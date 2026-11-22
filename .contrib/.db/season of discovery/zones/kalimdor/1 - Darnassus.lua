@@ -74,6 +74,23 @@ maproot(KALIMDOR, DARNASSUS, {
 				repeatable = true,
 				lvl = 50,
 			}),
+			q(5678, {	-- Arcane Feedback [Stormwind City]
+				altQuests = {
+					5676,	-- Arcane Feedback [Stormwind City]
+					5677,	-- Arcane Feedback [Ironforge]
+				},
+				qg = 11401,	-- Priestess Alathea <Priest Trainer>
+				coord = { 40.0, 80.0, DARNASSUS },
+				races = { HUMAN },
+				classes = { PRIEST },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 13896,	-- Feedback (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
 			q(3763, {	-- Assisting Arch Druid Staghelm [Darnassus]
 				qg = 6735,	-- Innkeeper Saelienne
 				coord = { 67.4, 15.7, DARNASSUS },

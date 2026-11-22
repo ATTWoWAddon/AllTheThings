@@ -119,15 +119,7 @@ q(5520),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP
 q(5523),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:<UNUSED>	 WOTLK:<UNUSED>	 CATA:	 MOP:
 q(5530),	-- <NYI> <TXT> Necklace of the Dawn	 CLASSIC:<NYI> <TXT> Necklace of the Dawn	 TBC:	 WOTLK:<NYI> <TXT> Necklace of the Dawn	 CATA:	 MOP:
 q(5532),	-- <NYI> <TXT> Ring of the Dawn	 CLASSIC:<NYI> <TXT> Ring of the Dawn	 TBC:<NYI> <TXT> Ring of the Dawn	 WOTLK:<NYI> <TXT> Ring of the Dawn	 CATA:	 MOP:
-q(5642),	-- Shadowguard	 CLASSIC:Shadowguard	 TBC:Shadowguard	 WOTLK:Shadowguard	 CATA:Shadowguard	 MOP:Shadowguard
-q(5643),	-- Shadowguard	 CLASSIC:Shadowguard	 TBC:Shadowguard	 WOTLK:Shadowguard	 CATA:Shadowguard	 MOP:Shadowguard
-q(5644),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WOTLK:Devouring Plague	 CATA:Devouring Plague	 MOP:Devouring Plague
-q(5646),	-- Devouring Plague	 CLASSIC:Devouring Plague	 TBC:Devouring Plague	 WOTLK:Devouring Plague	 CATA:Devouring Plague	 MOP:Devouring Plague
 q(5653),	-- <NYI> Hex of Weakness	 CLASSIC:<NYI> Hex of Weakness	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(5656),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	 CATA:Hex of Weakness	 MOP:Hex of Weakness
-q(5657),	-- Hex of Weakness	 CLASSIC:Hex of Weakness	 TBC:Hex of Weakness	 WOTLK:Hex of Weakness	 CATA:Hex of Weakness	 MOP:Hex of Weakness
-q(5662),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	 CATA:Touch of Weakness	 MOP:Touch of Weakness
-q(5663),	-- Touch of Weakness	 CLASSIC:Touch of Weakness	 TBC:Touch of Weakness	 WOTLK:Touch of Weakness	 CATA:Touch of Weakness	 MOP:Touch of Weakness
 q(5664),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(5665),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(5666),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
@@ -137,7 +129,6 @@ q(5669),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light	 TBC:	 
 q(5670),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(5671),	-- <NYI> A Blessing of Light	 CLASSIC:<NYI> A Blessing of Light	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(5674),	-- Elune's Grace	 CLASSIC:Elune's Grace	 TBC:Elune's Grace	 WOTLK:Elune's Grace	 CATA:Elune's Grace	 MOP:
-q(5678),	-- Arcane Feedback	 CLASSIC:Arcane Feedback	 TBC:Arcane Feedback	 WOTLK:Arcane Feedback	 CATA:Arcane Feedback	 MOP:Arcane Feedback
 q(5681),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(5682),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(5683),	-- <UNUSED>	 CLASSIC:<UNUSED>	 TBC:	 WOTLK:	 CATA:	 MOP:

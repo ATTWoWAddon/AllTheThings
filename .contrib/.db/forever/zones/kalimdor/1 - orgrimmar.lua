@@ -403,6 +403,23 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				races = HORDE_ONLY,
 				lvl = 20,
 			}),
+			q(5646, {	-- Devouring Plague [Orgrimmar]
+				altQuests = {
+					5679,	-- Devouring Plague [Undercity]
+					5644,	-- Devouring Plague [Thunder Bluff]
+				},
+				qg = 6018,	-- Ur'kyo <Priest Trainer>
+				coord = { 35.6, 87.6, MAP.ORGRIMMAR },
+				classes = { PRIEST },
+				races = { UNDEAD },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 2944,	-- Devouring Plague (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
 			q(97249, {	-- Favorite Food
 				sourceQuest = 97246,	-- Meal Appeal
 				qg = 3368,	-- Borstan <Meat Vendor>
@@ -428,20 +445,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					5656,	-- Hex of Weakness [Thunder Bluff]
 					5657,	-- Hex of Weakness [Undercity]
 				},
-				qgs = {
-					6018,	-- Ur'kyo <Priest Trainer>
-					3706,	-- Tai'jin <Priest Trainer>
-					11407,	-- Var'jun
-					3044,	-- Miles Welsh <Priest Trainer>
-					4606,	-- Aelthalyste <Priest Trainer>
-				},
-				coords = {
-					{ 35.6, 87.6, MAP.ORGRIMMAR },
-					{ 54.2, 42.8, MAP.DUROTAR },
-					{ 47.0, 58.8, MAP.MULGORE },
-					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
-					{ 49.01, 18.32, MAP.UNDERCITY },
-				},
+				qg = 6018,	-- Ur'kyo <Priest Trainer>
+				coord = { 35.6, 87.6, MAP.ORGRIMMAR },
 				classes = { PRIEST },
 				races = { TROLL },
 				lvl = 10,
@@ -631,16 +636,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					5643,	-- Shadowguard [Undercity]
 					5642,	-- Shadowguard [Thunder Bluff]
 				},
-				qgs = {
-					6018,	-- Ur'kyo <Priest Trainer>
-					4606,	-- Aelthalyste
-					3044,	-- Miles Welsh <Priest Trainer>
-				},
-				coords = {
-					{ 35.6, 87.6, MAP.ORGRIMMAR },
-					{ 49.01, 18.32, MAP.UNDERCITY },
-					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
-				},
+				qg = 6018,	-- Ur'kyo <Priest Trainer>
+				coord = { 35.6, 87.6, MAP.ORGRIMMAR },
 				classes = { PRIEST },
 				races = { TROLL },
 				lvl = 20,
@@ -812,6 +809,25 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				classes = { ROGUE },
 				isBreadcrumb = true,
 				lvl = 16,
+			}),
+			q(5662, {	-- Touch of Weakness [Orgrimmar]
+				altQuests = {
+					5658,	-- Touch of Weakness [Undercity]
+					5660,	-- Touch of Weakness [Durotar]
+					5661,	-- Touch of Weakness [Mulgore]
+					5663,	-- Touch of Weakness [Thunder Bluff]
+				},
+				qg = 6018,	-- Ur'kyo <Priest Trainer>
+				coord = { 35.6, 87.6, MAP.ORGRIMMAR },
+				classes = { PRIEST },
+				races = { UNDEAD },
+				lvl = 10,
+				groups = {
+					{
+						recipeID = 2652,	-- Touch of Weakness (Rank 1)
+						rank = 1,
+					},
+				},
 			}),
 			q(2753, {	-- Trampled Under Foot
 				sourceQuest = 2752,	-- On Iron Pauldrons

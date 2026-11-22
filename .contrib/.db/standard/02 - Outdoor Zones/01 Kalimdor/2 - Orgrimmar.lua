@@ -1114,7 +1114,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				races = HORDE_ONLY,
 				lvl = 20,
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5646, {	-- Devouring Plague [Orgrimmar]
 				altQuests = {
 					5679,	-- Devouring Plague [Undercity]
@@ -1135,7 +1134,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(49855, {	-- Disaster at Mount Hyjal
 				sourceQuest = 28805,	-- The Eye of the Storm
 				qg = 45244,	-- Farseer Krogar
@@ -1682,37 +1680,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				races = HORDE_ONLY,
 				isBreadcrumb = true,
 			}),
-			-- #if ANYCLASSIC
-			q(5680, {	-- Shadowguard [Orgrimmar]
-				altQuests = {
-					5643,	-- Shadowguard [Undercity]
-					5642,	-- Shadowguard [Thunder Bluff]
-				},
-				qgs = {
-					6018,	-- Ur'kyo <Priest Trainer>
-					4606,	-- Aelthalyste
-					3044,	-- Miles Welsh <Priest Trainer>
-				},
-				coords = {
-					{ 35.6, 87.6, ORGRIMMAR },
-					{ 49.01, 18.32, UNDERCITY },
-					{ 26.0, 15.8, THUNDER_BLUFF },
-				},
-				timeline = { REMOVED_2_4_1 },
-				classes = { PRIEST },
-				races = { TROLL },
-				lvl = 20,
-				-- #if BEFORE 2.4.1
-				groups = {
-					{
-						recipeID = 18137,	-- Shadowguard (Rank 1)
-						rank = 1,
-					},
-				},
-				-- #endif
-			}),
-			-- #endif
-			-- #if NOT ANYCLASSIC
 			q(5680, {	-- Shadowguard [Orgrimmar]
 				altQuests = {
 					5643,	-- Shadowguard [Undercity]
@@ -1733,7 +1700,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(1943, {	-- Speak with Deino
 				qg = 4568,	-- Anastasia Hartwell <Mage Trainer>
 				coord = { 85.0, 10.2, UNDERCITY },
@@ -2005,7 +1971,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				isBreadcrumb = true,
 				lvl = 16,
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5662, {	-- Touch of Weakness [Orgrimmar]
 				altQuests = {
 					5658,	-- Touch of Weakness [Undercity]
@@ -2028,7 +1993,6 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(26830, {	-- Traitor's Bait
 				sourceQuest = 26798,	-- Saurfang Will be Pleased
 				qg = 3144,	-- Eitrigg

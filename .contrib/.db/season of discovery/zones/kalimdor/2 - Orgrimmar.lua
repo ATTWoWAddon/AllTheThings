@@ -369,6 +369,23 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				races = HORDE_ONLY,
 				lvl = 20,
 			}),
+			q(5646, {	-- Devouring Plague [Orgrimmar]
+				altQuests = {
+					5679,	-- Devouring Plague [Undercity]
+					5644,	-- Devouring Plague [Thunder Bluff]
+				},
+				qg = 6018,	-- Ur'kyo <Priest Trainer>
+				coord = { 35.6, 87.6, ORGRIMMAR },
+				classes = { PRIEST },
+				races = { UNDEAD },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 2944,	-- Devouring Plague (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
 			q(2378, {	-- Find the Shattered Hand
 				altQuests = { 2380 },	-- To Orgrimmar!
 				qg = 6467,	-- Mennet Carkad
@@ -586,16 +603,8 @@ maproot(KALIMDOR, ORGRIMMAR, {
 					5643,	-- Shadowguard [Undercity]
 					5642,	-- Shadowguard [Thunder Bluff]
 				},
-				qgs = {
-					6018,	-- Ur'kyo <Priest Trainer>
-					4606,	-- Aelthalyste
-					3044,	-- Miles Welsh <Priest Trainer>
-				},
-				coords = {
-					{ 35.6, 87.6, ORGRIMMAR },
-					{ 49.01, 18.32, UNDERCITY },
-					{ 26.0, 15.8, THUNDER_BLUFF },
-				},
+				qg = 6018,	-- Ur'kyo <Priest Trainer>
+				coord = { 35.6, 87.6, ORGRIMMAR },
 				classes = { PRIEST },
 				races = { TROLL },
 				lvl = 20,
@@ -758,6 +767,25 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				classes = { ROGUE },
 				isBreadcrumb = true,
 				lvl = 16,
+			}),
+			q(5662, {	-- Touch of Weakness [Orgrimmar]
+				altQuests = {
+					5658,	-- Touch of Weakness [Undercity]
+					5660,	-- Touch of Weakness [Durotar]
+					5661,	-- Touch of Weakness [Mulgore]
+					5663,	-- Touch of Weakness [Thunder Bluff]
+				},
+				qg = 6018,	-- Ur'kyo <Priest Trainer>
+				coord = { 35.6, 87.6, ORGRIMMAR },
+				classes = { PRIEST },
+				races = { UNDEAD },
+				lvl = 10,
+				groups = {
+					{
+						recipeID = 2652,	-- Touch of Weakness (Rank 1)
+						rank = 1,
+					},
+				},
 			}),
 			q(2753, {	-- Trampled Under Foot
 				description =

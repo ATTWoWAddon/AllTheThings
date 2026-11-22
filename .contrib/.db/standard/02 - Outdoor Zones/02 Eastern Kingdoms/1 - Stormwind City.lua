@@ -1048,37 +1048,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			q(5676, {	-- Arcane Feedback [Stormwind City]
-				altQuests = {
-					5677,	-- Arcane Feedback [Ironforge]
-					5678,	-- Arcane Feedback [Darnassus]
-				},
-				qgs = {
-					11406,	-- High Priest Rohan <Priest Trainer>
-					376,	-- High Priestess Laurena <Priest Trainer>
-					11401,	-- Priestess Alathea <Priest Trainer>
-				},
-				coords = {
-					{ 26.4, 7.6, IRONFORGE },
-					{ 38.8, 26.6, STORMWIND_CITY },
-					{ 40.0, 80.0, DARNASSUS },
-				},
-				timeline = { REMOVED_3_0_2 },
-				races = { HUMAN },
-				classes = { PRIEST },
-				lvl = 20,
-				-- #if BEFORE 3.0.2
-				groups = {
-					{
-						recipeID = 13896,	-- Feedback (Rank 1)
-						rank = 1,
-					},
-				},
-				-- #endif
-			}),
-			-- #endif
-			-- #if NOT ANYCLASSIC
 			q(5676, {	-- Arcane Feedback [Stormwind City]
 				altQuests = {
 					5677,	-- Arcane Feedback [Ironforge]
@@ -1099,7 +1068,6 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(1942, {	-- Astral Knot Garment
 				sourceQuest = 1940,	-- Pristine Spider Silk
 				qg = 1309,	-- Wynne Larson <Robe Merchant>

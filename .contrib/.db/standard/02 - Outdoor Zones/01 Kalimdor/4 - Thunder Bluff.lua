@@ -256,7 +256,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					}),
 				},
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5644, {	-- Devouring Plague [Thunder Bluff]
 				altQuests = {
 					5646,	-- Devouring Plague [Orgrimmar]
@@ -277,7 +276,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(1064, {	-- Forsaken Aid
 				sourceQuest = 1063,	-- The Elder Crone
 				qg = 4046,	-- Magatha Grimtotem
@@ -537,7 +535,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 				races = { TAUREN },
 				lvl = lvlsquish(10, 10, 1),
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5642, {	-- Shadowguard [Thunder Bluff]
 				altQuests = {
 					5643,	-- Shadowguard [Undercity]
@@ -558,7 +555,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(29354, {	-- Shiny Baubles
 				qg = 3028,	-- Kah Mistrunner
 				coord = { 56.12, 46.34, THUNDER_BLUFF },
@@ -697,7 +693,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					i(6740),	-- Azure Sash
 				},
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5663, {	-- Touch of Weakness [Thunder Bluff]
 				altQuests = {
 					5658,	-- Touch of Weakness [Undercity]
@@ -720,7 +715,6 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(3761, {	-- Un'Goro Soil
 				sourceQuests = {
 					936,	-- Assisting Arch Druid Runetotem [Orgrimmar]

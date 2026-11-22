@@ -151,6 +151,23 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					}),
 				},
 			}),
+			q(5644, {	-- Devouring Plague [Thunder Bluff]
+				altQuests = {
+					5646,	-- Devouring Plague [Orgrimmar]
+					5679,	-- Devouring Plague [Undercity]
+				},
+				qg = 3044,	-- Miles Welsh <Priest Trainer>
+				coord = { 26.0, 15.8, MAP.THUNDER_BLUFF },
+				classes = { PRIEST },
+				races = { UNDEAD },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 2944,	-- Devouring Plague (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
 			q(1064, {	-- Forsaken Aid
 				sourceQuest = 1063,	-- The Elder Crone
 				qg = 4046,	-- Magatha Grimtotem
@@ -199,6 +216,25 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				groups = {
 					i(5936),	-- Animal Skin Belt
 					i(4962),	-- Double-layered Gloves
+				},
+			}),
+			q(5656, {	-- Hex of Weakness [Thunder Bluff]
+				altQuests = {
+					5652,	-- Hex of Weakness [Orgrimmar]
+					5654,	-- Hex of Weakness [Durotar]
+					5655,	-- Hex of Weakness [Mulgore]
+					5657,	-- Hex of Weakness [Undercity]
+				},
+				qg = 3044,	-- Miles Welsh <Priest Trainer>
+				coord = { 26.0, 15.8, MAP.THUNDER_BLUFF },
+				classes = { PRIEST },
+				races = { TROLL },
+				lvl = 10,
+				groups = {
+					{
+						recipeID = 9035,	-- Hex of Weakness (Rank 1)
+						rank = 1,
+					},
 				},
 			}),
 			q(769, {	-- Kodo Hide Bag
@@ -295,6 +331,23 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				races = { TAUREN },
 				lvl = 10,
 			}),
+			q(5642, {	-- Shadowguard [Thunder Bluff]
+				altQuests = {
+					5643,	-- Shadowguard [Undercity]
+					5680,	-- Shadowguard [Orgrimmar]
+				},
+				qg = 3044,	-- Miles Welsh <Priest Trainer>
+				coord = { 26.0, 15.8, MAP.THUNDER_BLUFF },
+				classes = { PRIEST },
+				races = { TROLL },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 18137,	-- Shadowguard (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
 			q(1131, {	-- Steelsnap
 				sourceQuest = 1130,	-- Melor Sends Word
 				qg = 3441,	-- Melor Stonehoof
@@ -379,6 +432,25 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					}),
 					i(6739),	-- Cliffrunner's Aim
 					i(6740),	-- Azure Sash
+				},
+			}),
+			q(5663, {	-- Touch of Weakness [Thunder Bluff]
+				altQuests = {
+					5658,	-- Touch of Weakness [Undercity]
+					5660,	-- Touch of Weakness [Durotar]
+					5661,	-- Touch of Weakness [Mulgore]
+					5662,	-- Touch of Weakness [Orgrimmar]
+				},
+				qg = 3044,	-- Miles Welsh <Priest Trainer>
+				coord = { 26.0, 15.8, MAP.THUNDER_BLUFF },
+				classes = { PRIEST },
+				races = { UNDEAD },
+				lvl = 10,
+				groups = {
+					{
+						recipeID = 2652,	-- Touch of Weakness (Rank 1)
+						rank = 1,
+					},
 				},
 			}),
 			q(97485, {	-- Traditions of the Bluff

@@ -3277,7 +3277,6 @@ maproot(KALIMDOR, DUROTAR, {
 				},
 				-- #endif
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5660, {	-- Touch of Weakness [Durotar]
 				altQuests = {
 					5658,	-- Touch of Weakness [Undercity]
@@ -3300,7 +3299,6 @@ maproot(KALIMDOR, DUROTAR, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(47867, {	-- Two If By Sea
 				sourceQuests = {
 					48507,	-- The Hand of Fate

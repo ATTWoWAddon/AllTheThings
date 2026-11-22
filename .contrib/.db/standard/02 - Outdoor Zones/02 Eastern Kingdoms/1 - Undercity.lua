@@ -311,37 +311,6 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 				isBreadcrumb = true,
 				lvl = 20,
 			}),
-			-- #if ANYCLASSIC
-			q(5679, {	-- Devouring Plague [Undercity]
-				altQuests = {
-					5646,	-- Devouring Plague [Orgrimmar]
-					5644,	-- Devouring Plague [Thunder Bluff]
-				},
-				qgs = {
-					4606,	-- Aelthalyste
-					6018,	-- Ur'kyo <Priest Trainer>
-					3044,	-- Miles Welsh <Priest Trainer>
-				},
-				coords = {
-					{ 49.0, 18.3, UNDERCITY },
-					{ 35.6, 87.6, ORGRIMMAR },
-					{ 26.0, 15.8, THUNDER_BLUFF },
-				},
-				timeline = { REMOVED_3_0_2 },
-				classes = { PRIEST },
-				races = { UNDEAD },
-				lvl = 20,
-				-- #if BEFORE 3.0.2
-				groups = {
-					{
-						recipeID = 2944,	-- Devouring Plague (Rank 1)
-						rank = 1,
-					},
-				},
-				-- #endif
-			}),
-			-- #endif
-			-- #if NOT ANYCLASSIC
 			q(5679, {	-- Devouring Plague [Undercity]
 				altQuests = {
 					5646,	-- Devouring Plague [Orgrimmar]
@@ -362,7 +331,6 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(1846, {	-- Dragonmaw Shinbones
 				sourceQuest = 1841,	-- Velora Nitely and the Brutal Legguards
 				qg = 6411,	-- Velora Nitely
@@ -896,7 +864,6 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 				races = HORDE_ONLY,
 				lvl = 45,
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5643, {	-- Shadowguard [Undercity]
 				altQuests = {
 					5680,	-- Shadowguard [Orgrimmar]
@@ -917,7 +884,6 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(1881, {	-- Speak with Anastasia
 				altQuests = { 1883 },	-- Speak with Un'thuwa
 				qg = 2128,	-- Cain Firesong <Mage Trainer>
@@ -1231,43 +1197,6 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 					}),
 				},
 			}),
-			-- #if ANYCLASSIC
-			q(5658, {	-- Touch of Weakness [Undercity]
-				altQuests = {
-					5660,	-- Touch of Weakness [Durotar]
-					5661,	-- Touch of Weakness [Mulgore]
-					5662,	-- Touch of Weakness [Orgrimmar]
-					5663,	-- Touch of Weakness [Thunder Bluff]
-				},
-				qgs = {
-					4606,	-- Aelthalyste
-					3706,	-- Tai'jin <Priest Trainer>
-					11407,	-- Var'jun
-					6018,	-- Ur'kyo <Priest Trainer>
-					3044,	-- Miles Welsh <Priest Trainer>
-				},
-				coords = {
-					{ 49.01, 18.32, UNDERCITY },
-					{ 54.2, 42.8, DUROTAR },
-					{ 47.0, 58.8, MULGORE },
-					{ 35.6, 87.6, ORGRIMMAR },
-					{ 26.0, 15.8, THUNDER_BLUFF },
-				},
-				timeline = { REMOVED_3_0_2 },
-				classes = { PRIEST },
-				races = { UNDEAD },
-				lvl = 10,
-				-- #if BEFORE 3.0.2
-				groups = {
-					{
-						recipeID = 2652,	-- Touch of Weakness (Rank 1)
-						rank = 1,
-					},
-				},
-				-- #endif
-			}),
-			-- #endif
-			-- #if NOT ANYCLASSIC
 			q(5658, {	-- Touch of Weakness [Undercity]
 				altQuests = {
 					5660,	-- Touch of Weakness [Durotar]
@@ -1290,7 +1219,6 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(1841, {	-- Velora Nitely and the Brutal Legguards
 				sourceQuest = 1838,	-- Brutal Armor
 				qg = 5878,	-- Thun'grim Firegaze

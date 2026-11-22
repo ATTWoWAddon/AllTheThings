@@ -226,7 +226,6 @@ maproot(KALIMDOR, DARNASSUS, {
 				races = { NIGHTELF },
 			}),
 			-- #endif
-			-- #if NOT ANYCLASSIC
 			q(5678, {	-- Arcane Feedback [Stormwind City]
 				altQuests = {
 					5676,	-- Arcane Feedback [Stormwind City]
@@ -247,7 +246,6 @@ maproot(KALIMDOR, DARNASSUS, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(3763, {	-- Assisting Arch Druid Staghelm [Darnassus]
 				qg = 6735,	-- Innkeeper Saelienne
 				coord = { 67.4, 15.7, DARNASSUS },

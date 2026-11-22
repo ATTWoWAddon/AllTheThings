@@ -1626,7 +1626,6 @@ maproot(KALIMDOR, MULGORE, {
 					}),
 				},
 			}),
-			-- #if NOT ANYCLASSIC
 			q(5661, {	-- Touch of Weakness [Mulgore]
 				altQuests = {
 					5658,	-- Touch of Weakness [Undercity]
@@ -1649,7 +1648,6 @@ maproot(KALIMDOR, MULGORE, {
 				},
 				-- #endif
 			}),
-			-- #endif
 			q(6089, {	-- Training the Beast
 				sourceQuest = 6088,	-- Taming the Beast (3/3)
 				qg = 3065,	-- Yaw Sharpmane <Hunter Trainer>

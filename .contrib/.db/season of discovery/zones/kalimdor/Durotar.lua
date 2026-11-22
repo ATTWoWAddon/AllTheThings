@@ -456,6 +456,25 @@ maproot(KALIMDOR, DUROTAR, {
 							}),
 						},
 					}),
+					q(5660, {	-- Touch of Weakness [Durotar]
+						altQuests = {
+							5658,	-- Touch of Weakness [Undercity]
+							5661,	-- Touch of Weakness [Mulgore]
+							5662,	-- Touch of Weakness [Orgrimmar]
+							5663,	-- Touch of Weakness [Thunder Bluff]
+						},
+						qg = 3706,	-- Tai'jin <Priest Trainer>
+						coord = { 54.2, 42.8, DUROTAR },
+						classes = { PRIEST },
+						races = { UNDEAD },
+						lvl = 10,
+						groups = {
+							{
+								recipeID = 2652,	-- Touch of Weakness (Rank 1)
+								rank = 1,
+							},
+						},
+					}),
 					q(792, {	-- Vile Familiars
 						qg = 3145,	-- Zureetha Fargaze
 						coord = { 42.85, 69.14, DUROTAR },

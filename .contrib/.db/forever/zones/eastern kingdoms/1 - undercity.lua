@@ -202,16 +202,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					5646,	-- Devouring Plague [Orgrimmar]
 					5644,	-- Devouring Plague [Thunder Bluff]
 				},
-				qgs = {
-					4606,	-- Aelthalyste
-					6018,	-- Ur'kyo <Priest Trainer>
-					3044,	-- Miles Welsh <Priest Trainer>
-				},
-				coords = {
-					{ 49.0, 18.3, MAP.UNDERCITY },
-					{ 35.6, 87.6, MAP.ORGRIMMAR },
-					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
-				},
+				qg = 4606,	-- Aelthalyste
+				coord = { 49.01, 18.32, MAP.UNDERCITY },
 				classes = { PRIEST },
 				races = { UNDEAD },
 				lvl = 20,
@@ -394,6 +386,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 						coord = { 50.6, 12.6, MAP.WETLANDS },
 						cr = 5683,	-- Comar Villard
 					}),
+				},
+			}),
+			q(5657, {	-- Hex of Weakness [Undercity]
+				altQuests = {
+					5652,	-- Hex of Weakness [Orgrimmar]
+					5654,	-- Hex of Weakness [Durotar]
+					5655,	-- Hex of Weakness [Mulgore]
+					5656,	-- Hex of Weakness [Thunder Bluff]
+				},
+				qg = 4606,	-- Aelthalyste <Priest Trainer>
+				coord = { 49.01, 18.32, MAP.UNDERCITY },
+				classes = { PRIEST },
+				races = { TROLL },
+				lvl = 10,
+				groups = {
+					{
+						recipeID = 9035,	-- Hex of Weakness (Rank 1)
+						rank = 1,
+					},
 				},
 			}),
 			q(243, {	-- Into the Field
@@ -620,6 +631,23 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				races = HORDE_ONLY,
 				lvl = 45,
 			}),
+			q(5643, {	-- Shadowguard [Undercity]
+				altQuests = {
+					5680,	-- Shadowguard [Orgrimmar]
+					5642,	-- Shadowguard [Thunder Bluff]
+				},
+				qg = 4606,	-- Aelthalyste
+				coord = { 49.01, 18.32, MAP.UNDERCITY },
+				classes = { PRIEST },
+				races = { TROLL },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 18137,	-- Shadowguard (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
 			q(1881, {	-- Speak with Anastasia
 				altQuests = { 1883 },	-- Speak with Un'thuwa
 				qg = 2128,	-- Cain Firesong <Mage Trainer>
@@ -831,20 +859,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					5662,	-- Touch of Weakness [Orgrimmar]
 					5663,	-- Touch of Weakness [Thunder Bluff]
 				},
-				qgs = {
-					4606,	-- Aelthalyste
-					3706,	-- Tai'jin <Priest Trainer>
-					11407,	-- Var'jun
-					6018,	-- Ur'kyo <Priest Trainer>
-					3044,	-- Miles Welsh <Priest Trainer>
-				},
-				coords = {
-					{ 49.01, 18.32, MAP.UNDERCITY },
-					{ 54.2, 42.8, MAP.DUROTAR },
-					{ 47.0, 58.8, MAP.MULGORE },
-					{ 35.6, 87.6, MAP.ORGRIMMAR },
-					{ 26.0, 15.8, MAP.THUNDER_BLUFF },
-				},
+				qg = 4606,	-- Aelthalyste
+				coord = { 49.0, 18.3, MAP.UNDERCITY },
 				classes = { PRIEST },
 				races = { UNDEAD },
 				lvl = 10,

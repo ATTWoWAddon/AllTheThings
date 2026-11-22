@@ -205,16 +205,8 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 					5646,	-- Devouring Plague [Orgrimmar]
 					5644,	-- Devouring Plague [Thunder Bluff]
 				},
-				qgs = {
-					4606,	-- Aelthalyste
-					6018,	-- Ur'kyo <Priest Trainer>
-					3044,	-- Miles Welsh <Priest Trainer>
-				},
-				coords = {
-					{ 49.0, 18.3, UNDERCITY },
-					{ 35.6, 87.6, ORGRIMMAR },
-					{ 26.0, 15.8, THUNDER_BLUFF },
-				},
+				qg = 4606,	-- Aelthalyste
+				coord = { 49.01, 18.32, UNDERCITY },
 				classes = { PRIEST },
 				races = { UNDEAD },
 				lvl = 20,
@@ -656,6 +648,23 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 				races = HORDE_ONLY,
 				lvl = 45,
 			}),
+			q(5643, {	-- Shadowguard [Undercity]
+				altQuests = {
+					5680,	-- Shadowguard [Orgrimmar]
+					5642,	-- Shadowguard [Thunder Bluff]
+				},
+				qg = 4606,	-- Aelthalyste
+				coord = { 49.01, 18.32, UNDERCITY },
+				classes = { PRIEST },
+				races = { TROLL },
+				lvl = 20,
+				groups = {
+					{
+						recipeID = 18137,	-- Shadowguard (Rank 1)
+						rank = 1,
+					},
+				},
+			}),
 			applyclassicphase(SOD_PHASE_ONE, q(79080, {	-- Sharing the Faith
 				qg = 4607,	-- Father Lankester <Priest Trainer>
 				coord = { 49.6, 15.6, UNDERCITY },
@@ -866,20 +875,8 @@ maproot(EASTERN_KINGDOMS, UNDERCITY, {
 					5662,	-- Touch of Weakness [Orgrimmar]
 					5663,	-- Touch of Weakness [Thunder Bluff]
 				},
-				qgs = {
-					4606,	-- Aelthalyste
-					3706,	-- Tai'jin <Priest Trainer>
-					11407,	-- Var'jun
-					6018,	-- Ur'kyo <Priest Trainer>
-					3044,	-- Miles Welsh <Priest Trainer>
-				},
-				coords = {
-					{ 49.01, 18.32, UNDERCITY },
-					{ 54.2, 42.8, DUROTAR },
-					{ 47.0, 58.8, MULGORE },
-					{ 35.6, 87.6, ORGRIMMAR },
-					{ 26.0, 15.8, THUNDER_BLUFF },
-				},
+				qg = 4606,	-- Aelthalyste
+				coord = { 49.0, 18.3, UNDERCITY },
 				classes = { PRIEST },
 				races = { UNDEAD },
 				lvl = 10,
