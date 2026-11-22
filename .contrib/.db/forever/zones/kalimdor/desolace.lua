@@ -1139,6 +1139,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				maps = { MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Torn Letter

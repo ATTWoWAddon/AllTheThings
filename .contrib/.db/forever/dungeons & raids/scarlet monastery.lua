@@ -85,6 +85,7 @@ instanceroot(316, {	-- Scarlet Monastery
 				coord = { 37.4, 32.0, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Learn more about Aeonas from Katherine
@@ -101,6 +102,7 @@ instanceroot(316, {	-- Scarlet Monastery
 				maps = { MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Meet Aeonas at the Cathedral of Light in Stormwind
@@ -115,6 +117,7 @@ instanceroot(316, {	-- Scarlet Monastery
 				qg = 217996,	-- Aeonas
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Heal Aeonas

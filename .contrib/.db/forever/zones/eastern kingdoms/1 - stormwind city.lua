@@ -255,6 +255,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 37.4, 32.0, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_PALADINS,
+				classes = { PALADIN },
 				lvl = 35,
 				groups = {
 					objective(1, {	-- 0/1 Speak with Katherine and Learn More
