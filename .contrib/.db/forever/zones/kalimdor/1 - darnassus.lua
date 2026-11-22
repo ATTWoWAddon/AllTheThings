@@ -146,7 +146,7 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				},
 				qg = 11401,	-- Priestess Alathea <Priest Trainer>
 				coord = { 39.6, 80.8, MAP.DARNASSUS },
-				races = { HUMAN, DWARF },
+				races = { DWARF },
 				classes = { PRIEST },
 				lvl = 10,
 				groups = {

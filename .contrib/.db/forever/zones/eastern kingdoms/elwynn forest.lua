@@ -1076,7 +1076,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 				},
 				qg = 377,	-- Priestess Josetta <Priest Trainer>
 				coord = { 43.4, 65.6, MAP.ELWYNN_FOREST },
-				races = { HUMAN, DWARF },
+				races = { DWARF },
 				classes = { PRIEST },
 				lvl = 10,
 				groups = {

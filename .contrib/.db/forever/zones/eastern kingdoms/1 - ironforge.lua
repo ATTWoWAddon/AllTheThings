@@ -490,7 +490,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				},
 				qg = 11406,	-- High Priest Rohan <Priest Trainer>
 				coord = { 26.4, 7.6, MAP.IRONFORGE },
-				races = { HUMAN, DWARF },
+				races = { DWARF },
 				classes = { PRIEST },
 				lvl = 10,
 				groups = {

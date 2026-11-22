@@ -922,7 +922,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				},
 				qg = 1226,	-- Maxan Anvol <Priest Trainer>
 				coord = { 47.2, 52.2, MAP.DUN_MOROGH },
-				races = { HUMAN, DWARF },
+				races = { DWARF },
 				classes = { PRIEST },
 				lvl = 10,
 				groups = {

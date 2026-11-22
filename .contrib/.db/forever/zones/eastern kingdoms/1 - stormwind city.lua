@@ -582,7 +582,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 				qg = 376,	-- High Priestess Laurena <Priest Trainer>
 				coord = { 38.8, 26.6, MAP.STORMWIND_CITY },
-				races = { HUMAN, DWARF },
+				races = { DWARF },
 				classes = { PRIEST },
 				lvl = 10,
 				groups = {
@@ -602,7 +602,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 				qg = 11397,	-- Nara Meideros <Priest Trainer>
 				coord = { 20.8, 50.2, MAP.STORMWIND_CITY },
-				races = { HUMAN, DWARF },
+				races = { DWARF },
 				classes = { PRIEST },
 				lvl = 10,
 				groups = {

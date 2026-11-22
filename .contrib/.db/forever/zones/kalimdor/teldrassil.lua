@@ -857,7 +857,7 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				},
 				qg = 3600,	-- Laurna Morninglight <Priest Trainer>
 				coord = { 55.6, 56.8, MAP.TELDRASSIL },
-				races = { HUMAN, DWARF },
+				races = { DWARF },
 				classes = { PRIEST },
 				lvl = 10,
 				groups = {
