@@ -956,7 +956,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 			},
 		}),
 	}),
-	mapped(n(SPECIAL, {
+	n(SPECIAL, {
 		n(256593, {	-- Sanctified Banner
 			coords = {
 				-- Atal'Aman
@@ -1000,7 +1000,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDED_12
 				{ 20.85, 62.86, TWILIGHT_CRYPTS },
 			},
 		}),
-	})),
+	}),
 	mapped(n(TREASURES, {
 		o(584752, {	-- Mislaid Curiosity
 			description = "Contains Chunk of Companion Experience tokens.",
