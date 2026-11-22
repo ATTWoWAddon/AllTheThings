@@ -103,28 +103,31 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 				},
 			}),
 			q(97066, {	-- Tip the Scales - Brownell's Blue Striped Racer
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 267806,	-- "Flipfin"
+				coord = { 27.7, 76.9, MAP.STRANGLETHORN_VALE },
 				cost = { { "i", 19803, 1 } },	-- Brownell's Blue Striped Racer
 				requireSkill = FISHING,
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(19807),	-- Speckled Tastyfish (x3)
 				},
 			}),
 			q(97067, {	-- Tip the Scales - Dezian Queenfish
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 267806,	-- "Flipfin"
+				coord = { 27.7, 76.9, MAP.STRANGLETHORN_VALE },
 				cost = { { "i", 19806, 1 } },	-- Dezian Queenfish
 				requireSkill = FISHING,
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(19807),	-- Speckled Tastyfish (x3)
 				},
 			}),
 			q(97065, {	-- Tip the Scales - Keefer's Angelfish
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qg = 267806,	-- "Flipfin"
+				coord = { 27.7, 76.9, MAP.STRANGLETHORN_VALE },
 				cost = { { "i", 19805, 1 } },	-- Keefer's Angelfish
 				requireSkill = FISHING,
-				timeline = { TIMELINE.CREATED_1_60_1 },
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				groups = {
 					i(19807),	-- Speckled Tastyfish (x3)
 				},

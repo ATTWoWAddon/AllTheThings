@@ -1197,11 +1197,14 @@ i(19971,{b=1,e=6,requireSkill=356,spellID=24302})}}),
 q(8221,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19805,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={
 s(164090,19972,{b=1,e=6,f=4,loc=40,requireSkill=356})}}),
-q(97066,{cost={{"i",19803,1}},e=6,requireSkill=356,u=1,g={
+q(97066,{awp=16001,coords={
+[1434]={{27.7,76.9}}},cost={{"i",19803,1}},e=6,qgs={267806},requireSkill=356,g={
 i(19807,{b=1,e=6,requireSkill=356})}}),
-q(97067,{cost={{"i",19806,1}},e=6,requireSkill=356,u=1,g={
+q(97067,{awp=16001,coords={
+[1434]={{27.7,76.9}}},cost={{"i",19806,1}},e=6,qgs={267806},requireSkill=356,g={
 i(19807,{b=1,e=6,requireSkill=356})}}),
-q(97065,{cost={{"i",19805,1}},e=6,requireSkill=356,u=1,g={
+q(97065,{awp=16001,coords={
+[1434]={{27.7,76.9}}},cost={{"i",19805,1}},e=6,qgs={267806},requireSkill=356,g={
 i(19807,{b=1,e=6,requireSkill=356})}})}}),
 prof(356,{e=6,g={
 o(180248,{e=6,g={
