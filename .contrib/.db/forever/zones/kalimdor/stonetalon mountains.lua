@@ -385,6 +385,22 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 					}),
 				},
 			}),
+			q(78270, {	-- Goblin Lockpicks
+				qg = 4086,	-- Veenix <Venture Co. Merchant>
+				coord = { 58.2, 51.6, MAP.STONETALON_MOUNTAINS },
+				maps = { MAP.SILVERPINE_FOREST, MAP.SHADOWFANG_KEEP },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				classes = { ROGUE },
+				lvl = 20,
+				groups = {
+					objective(1, {	-- 0/1 Venture Co. Work Order
+						provider = { "i", 210187 },	-- Venture Co. Work Order
+					}),
+					i(210186, {	-- Breaching Charge
+						description = "Use this on the door that's normally opened by the NPC after defeating the first boss.",
+					}),
+				},
+			}),
 			q(6282, {	-- Harpies Threaten
 				qg = 11860,	-- Maggran Earthbinder
 				coord = { 47.17, 61.08, MAP.STONETALON_MOUNTAINS },

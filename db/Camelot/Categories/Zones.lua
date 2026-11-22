@@ -7333,6 +7333,10 @@ s(158629,6666,{b=1,f=6,loc=47})}}),
 q(1062,{coords={
 [1413]={{35.28,27.84}}},lvl=13,qgs={4049},r=1,sourceQuests={1061},g={
 qo(1,{providers={{"n",3989}}})}}),
+q(78270,{awp=16001,c={4},coords={
+[1442]={{58.2,51.6}}},lvl=20,maps={310,1421},qgs={4086},g={
+qo(1,{providers={{"i",210187}}}),
+i(210186,{b=1,description="Use this on the door that's normally opened by the NPC after defeating the first boss.",spellID=425067})}}),
 q(6282,{coords={
 [1442]={{47.17,61.08}}},lvl=18,qgs={11860},r=1,g={
 qo(1,{providers={{"n",4022}}}),

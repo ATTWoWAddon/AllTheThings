@@ -6379,8 +6379,6 @@ i(210138),	-- Dark Iron Ordinance
 i(210146),	-- Shredder Turbocharger
 i(210179),	-- Spell Notes: ILMEGAI SARRBES
 i(210183),	-- Horn of Xelthos
-i(210186),	-- Breaching Charge
-i(210187),	-- Venture Co. Work Order
 i(210188),	-- Shredded Work Order
 i(210195),	-- Unbalanced Idol
 i(210209),	-- Twin Key
