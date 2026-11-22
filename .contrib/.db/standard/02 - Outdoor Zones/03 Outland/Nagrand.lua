@@ -2096,15 +2096,25 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				applyclassicphase(TBC_PHASE_THREE, n(18898, {	-- Explodyne Fizzlespurt <Arena Vendor>
+				applyclassicphase(TBC_PHASE_ONE, n(18898, {	-- Explodyne Fizzlespurt <Arena Vendor>
 					coord = { 65.8, 59.8, NAGRAND },
-					timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
-					sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+					timeline = { ADDED_2_0_3, REMOVED_3_0_2 },
+					sym = {
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
+						{ "merge" },
+						{ "pop" },
+					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE, n(25176, {	-- Grikkin Copperspring <Arena Vendor>
+				applyclassicphase(TBC_PHASE_ONE, n(25176, {	-- Grikkin Copperspring <Arena Vendor>
 					coord = { 66.2, 59.6, NAGRAND },
-					timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
-					sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+					timeline = { ADDED_2_0_3, REMOVED_3_0_2 },
+					sym = {
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
+						{ "merge" },
+						{ "pop" },
+					},
 				})),
 				n(19015, {	-- Mathar G'ochar <Trade Supplies>
 					description = "This vendor pats around Garadar.",

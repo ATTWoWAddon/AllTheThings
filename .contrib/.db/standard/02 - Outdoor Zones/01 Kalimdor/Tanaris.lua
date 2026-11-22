@@ -3529,15 +3529,25 @@ maproot(KALIMDOR, TANARIS, {
 				u = REMOVED_FROM_GAME,
 			}),
 			-- #endif
-			applyclassicphase(TBC_PHASE_THREE, n(25178, {	-- Ecton Brasstumbler <Arena Vendor>
+			applyclassicphase(TBC_PHASE_ONE, n(25178, {	-- Ecton Brasstumbler <Arena Vendor>
 				coord = { 51.4, 27.0, TANARIS },
-				timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
-				sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+				timeline = { ADDED_2_0_3, REMOVED_3_0_2 },
+				sym = {
+					{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
+					{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
+					{ "merge" },
+					{ "pop" },
+				},
 			})),
-			applyclassicphase(TBC_PHASE_THREE, n(25177, {	-- Evee Copperspring <Arena Vendor>
+			applyclassicphase(TBC_PHASE_ONE, n(25177, {	-- Evee Copperspring <Arena Vendor>
 				coord = { 51.4, 27.0, TANARIS },
-				timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
-				sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+				timeline = { ADDED_2_0_3, REMOVED_3_0_2 },
+				sym = {
+					{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
+					{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
+					{ "merge" },
+					{ "pop" },
+				},
 			})),
 			n(8137, {	-- Gikkix <Fisherman>
 				coord = { 66.6, 22.1, TANARIS },

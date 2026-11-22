@@ -1891,15 +1891,25 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
-				applyclassicphase(TBC_PHASE_THREE, n(27721, {	-- Drelik Blastpipe <Arena Vendor>
+				applyclassicphase(TBC_PHASE_ONE, n(27721, {	-- Drelik Blastpipe <Arena Vendor>
 					coord = { 36.2, 46.2, SHATTRATH_CITY },
-					timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
-					sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+					timeline = { ADDED_2_0_3, REMOVED_3_0_2 },
+					sym = {
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
+						{ "merge" },
+						{ "pop" },
+					},
 				})),
-				applyclassicphase(TBC_PHASE_THREE, n(27722, {	-- Drolig Blastpipe <Arena Vendor>
+				applyclassicphase(TBC_PHASE_ONE, n(27722, {	-- Drolig Blastpipe <Arena Vendor>
 					coord = { 57.2, 73.8, SHATTRATH_CITY },
-					timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
-					sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+					timeline = { ADDED_2_0_3, REMOVED_3_0_2 },
+					sym = {
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
+						{ "merge" },
+						{ "pop" },
+					},
 				})),
 				n(19213, {	-- Eiin <Specialty Tailoring Supplies>
 					coord = { 66.2, 68.8, SHATTRATH_CITY },
@@ -2448,10 +2458,15 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						i(29452),	-- Zangar Trout
 					},
 				}),
-				applyclassicphase(TBC_PHASE_THREE, n(27668, {	-- Ontok Shatterhorn <Arena Vendor>
+				applyclassicphase(TBC_PHASE_ONE, n(27668, {	-- Ontok Shatterhorn <Arena Vendor>
 					coord = { 73.4, 56.2, SHATTRATH_CITY },
-					timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
-					sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+					timeline = { ADDED_2_0_3, REMOVED_3_0_2 },
+					sym = {
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
+						{ "merge" },
+						{ "pop" },
+					},
 				})),
 				applyclassicphase(TBC_PHASE_FIVE, n(27666, {	-- Ontuvo <Jewelcrafting Supplies>
 					coord = { 48.8, 41.8, SHATTRATH_CITY },

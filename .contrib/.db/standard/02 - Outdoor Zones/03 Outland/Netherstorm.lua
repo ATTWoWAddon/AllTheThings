@@ -2619,10 +2619,15 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					timeline = { ADDED_3_0_2, REMOVED_4_0_3 },
 				})),
-				applyclassicphase(TBC_PHASE_THREE, n(24392, {	-- Leeni "Smiley" Smalls <Arena Vendor>
+				applyclassicphase(TBC_PHASE_ONE, n(24392, {	-- Leeni "Smiley" Smalls <Arena Vendor>
 					coord = { 33.0, 64.0, NETHERSTORM },
-					timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
-					sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+					timeline = { ADDED_2_0_3, REMOVED_3_0_2 },
+					sym = {
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
+						{ "merge" },
+						{ "pop" },
+					},
 				})),
 				n(58152, {	-- Tini Smalls <Classic Horde Cloth & Leather>
 					coord = { 33.0, 64.2, NETHERSTORM },
@@ -2744,10 +2749,15 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					}))),
 					-- #endif
 				}),
-				applyclassicphase(TBC_PHASE_THREE, n(20278, {	-- Vixton Pinchwhistle <Arena Vendor>
+				applyclassicphase(TBC_PHASE_ONE, n(20278, {	-- Vixton Pinchwhistle <Arena Vendor>
 					coord = { 33.0, 64.2, NETHERSTORM },
-					timeline = { ADDED_2_1_2, REMOVED_3_0_2 },
-					sym = {{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "merge" }, { "pop" }},	-- Merciless Gladiator's Set
+					timeline = { ADDED_2_0_3, REMOVED_3_0_2 },
+					sym = {
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR }, { "finalize" },	-- Gladiator's Set
+						{ "sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR }, { "finalize" },	-- Merciless Gladiator's Set
+						{ "merge" },
+						{ "pop" },
+					},
 				})),
 				n(20112, {	-- Wind Trader Tuluman <Weapon Merchant>
 					coord = { 34.6, 37.8, NETHERSTORM },
