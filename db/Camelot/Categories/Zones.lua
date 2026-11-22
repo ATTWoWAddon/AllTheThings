@@ -3009,7 +3009,7 @@ qo(1,{providers={{"i",256057}}}),
 s(307699,271794,{b=1,f=29,lvl=35}),
 s(307700,271795,{b=1,f=26,lvl=35}),
 s(307704,271799,{b=1,f=20,lvl=35})}}),
-q(79939,{awp=16001,coords={
+q(79939,{awp=16001,c={2},coords={
 [1443]={{52.7,84.8}}},lvl=35,maps={1453},providers={{"o",423703}},qis={215441},races={1,3},sourceQuests={96438},g={
 qo(1,{crs={4668},providers={{"i",216956}}})}}),
 q(1435,{coords={
@@ -10264,6 +10264,11 @@ q(92859,{awp=16001,coords={
 qo(1,{providers={{"i",281241}}}),
 qo(2,{providers={{"i",281242}}}),
 i(281234,{b=1,f=55,spellID=1310655})}}),
+q(98462,{awp=16001,coords={
+[1452]={{60.8,37.8}}},lvl=55,qgs={11188},repeatable=1,sourceQuests={92859},g={
+qo(1,{providers={{"i",281241}}}),
+qo(2,{providers={{"i",281242}}}),
+i(281234,{b=1,f=55,spellID=1310655})}}),
 q(5056,{coords={
 [1452]={{61.8,38.4}}},lvl=53,qgs={10303},r=1,sourceQuests={5055},g={
 qo(1,{coords={
@@ -10716,7 +10721,7 @@ qo(2,{providers={{"i",18335}}})}}),
 q(3647,{coords={
 [1455]={{69.8,50.2}}},cost=20000,learnedAt=200,lvl=30,qgs={7944},r=2,repeatable=1,requireSkill=202,sourceQuests={3641},g={
 i(10790,{b=1,requireSkill=202})}}),
-q(79945,{awp=16001,lvl=35,maps={1453},qss={216610},races={1,3},sourceQuests={79940},g={
+q(79945,{awp=16001,c={2},lvl=35,maps={1453},qss={216610},races={1,3},sourceQuests={79940},g={
 qo(1,{coords={
 [1453]={{37.4,32}}},providers={{"n",5492}}})}}),
 q(3448,{coords={
@@ -11417,7 +11422,7 @@ qo(1,{crs={2927,2928,2929},providers={{"i",221359}}}),
 qo(2,{crs={5244,5245,5246,5247},providers={{"i",221361}}}),
 qo(3,{crs={7286},providers={{"i",221360}}}),
 s(219209,221344,{b=1,c={8},f=1})}})),
-q(79940,{awp=16001,coords={
+q(79940,{awp=16001,c={2},coords={
 [1453]={{37.4,32}}},lvl=35,qgs={5492},races={1,3},sourceQuests={79939},g={
 qo(1,{providers={{"n",5492}}})}}),
 q(212,{coords={

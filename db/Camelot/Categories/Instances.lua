@@ -3074,15 +3074,15 @@ crit(116049,{achID=62031,awp=16001,id=2})}})}}),
 inst(316,{coords={
 [1420]={{82.6,32.4}}},icon=136354,lore="The Monastery was once a proud bastion of Lordaeron's priesthood - a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. Reports indicate that adventurers who enter the monastery are forced to contend with Scarlet Commander Mograine - who commands a large garrison of fanatically devoted warriors. However, the monastery's true master is High Inquisitor Whitemane - a fearsome priestess who possesses the ability to resurrect fallen warriors to do battle in her name.",lvl=25,mapID=435,zoneTextAreaID=796,g={
 h(-45,{
-q(79946,{awp=16001,coords={
+q(79946,{awp=16001,c={2},coords={
 [1453]={{37.4,32}}},lvl=35,qgs={5492},races={1,3},sourceQuests={79945},g={
 qo(1,{providers={{"n",5492}}}),
 qo(2,{providers={{"n",217996}}})}}),
-q(79970,{awp=16001,lvl=35,maps={1453},qgs={217996},races={1,3},sourceQuests={79963},g={
+q(79970,{awp=16001,c={2},lvl=35,maps={1453},qgs={217996},races={1,3},sourceQuests={79963},g={
 qo(1,{coords={
 [1453]={{48.6,49.2}}},providers={{"n",218160}}}),
 s(310135,277236,{b=1,f=7,loc=41})}}),
-q(79963,{awp=16001,lvl=35,qgs={217996},races={1,3},sourceQuests={79946},g={
+q(79963,{awp=16001,c={2},lvl=35,qgs={217996},races={1,3},sourceQuests={79946},g={
 qo(1,{providers={{"n",217996}}})}}),
 q(1113,{coords={
 [1458]={{48.82,69.28}}},lvl=30,qgs={2055},r=1,sourceQuests={1109},g={

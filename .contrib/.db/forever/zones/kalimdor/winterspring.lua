@@ -486,11 +486,28 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					}),
 				},
 			}),
-			q(92859, {	-- Shroud of the Winter Wilds
+			q(92859, {	-- Shroud of the Winter Wilds (1/2)
 				qg = 11188,	-- Evie Whirlbrew
 				coord = { 60.8, 37.8, MAP.WINTERSPRING },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				lvl = 55,
+				groups = {
+					objective(1, {	-- 0/5 Chillwind Chimaera Fur
+						provider = { "i", 281241 },	-- Chillwind Chimaera Fur
+					}),
+					objective(2, {	-- 0/5 Winterspring Owl Feather
+						provider = { "i", 281242 },	-- Winterspring Owl Feather
+					}),
+					i(281234),	-- Potion of Winterspring Shrouding
+				},
+			}),
+			q(98462, {	-- Shroud of the Winter Wilds (2/2)
+				sourceQuest = 92859,	-- Shroud of the Winter Wilds (1/2)
+				qg = 11188,	-- Evie Whirlbrew
+				coord = { 60.8, 37.8, MAP.WINTERSPRING },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 55,
+				repeatable = true,
 				groups = {
 					objective(1, {	-- 0/5 Chillwind Chimaera Fur
 						provider = { "i", 281241 },	-- Chillwind Chimaera Fur
