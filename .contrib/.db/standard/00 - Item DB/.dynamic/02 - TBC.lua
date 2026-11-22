@@ -15219,7 +15219,7 @@ _.ItemDB = {
 [20307]={["b"]=1,["class"]=4,["equippable"]=1,["iLvl"]=90,["inventoryType"]=11,["lvl"]=60,["name"]="90 Green Rogue Ring",["q"]=2,["subclass"]=0},
 [20308]={["b"]=1,["class"]=4,["equippable"]=1,["iLvl"]=90,["inventoryType"]=3,["lvl"]=60,["name"]="90 Green Rogue Spaulders",["q"]=2,["subclass"]=2},
 [20309]={["b"]=1,["class"]=4,["equippable"]=1,["iLvl"]=90,["inventoryType"]=5,["lvl"]=60,["name"]="90 Green Rogue Tunic",["q"]=2,["subclass"]=2},
-[20310]={["b"]=1,["class"]=12,["equippable"]=0,["iLvl"]=25,["lvl"]=25,["minReputation"]={"Horde",0},["name"]="Flayed Demon Skin",["q"]=1,["subclass"]=0},
+[20310]={["b"]=1,["class"]=12,["equippable"]=0,["iLvl"]=25,["lvl"]=25,["minReputation"]={67,0},["name"]="Flayed Demon Skin",["q"]=1,["subclass"]=0},
 [20311]={["class"]=4,["equippable"]=1,["iLvl"]=63,["inventoryType"]=6,["lvl"]=58,["name"]="63 Green Rogue Belt",["q"]=2,["subclass"]=2},
 [20312]={["b"]=1,["class"]=4,["equippable"]=1,["iLvl"]=63,["inventoryType"]=8,["lvl"]=58,["name"]="63 Green Rogue Boots",["q"]=2,["subclass"]=2},
 [20313]={["b"]=1,["class"]=2,["equippable"]=1,["iLvl"]=63,["inventoryType"]=15,["lvl"]=58,["name"]="63 Green Rogue Bow",["q"]=2,["subclass"]=2},
