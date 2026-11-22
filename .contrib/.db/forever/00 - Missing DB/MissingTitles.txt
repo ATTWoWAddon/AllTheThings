@@ -8,7 +8,6 @@ title(5),	-- %s the Engineer
 title(6),	-- %s the Leatherworker
 title(7),	-- %s the Tailor
 title(36),	-- [DNT] Test %s
-title(37),	-- Master Angler %s
 title(39),	-- %s the Harbinger of Darkness
 title(111),	-- Bloodsail Admiral %s
 1.60.1.70862

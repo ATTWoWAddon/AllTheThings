@@ -1187,7 +1187,7 @@ q(8193,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19807,40}},e=6,isWeekly=1,qgs={15077},requireSkill=356,g={
 s(164089,19970,{b=1,e=6,f=57,learnedAt=300,requireSkill=356}),
 i(274026,{awp=16001,b=1,e=6,requireSkill=356}),
-title(1313,{awp=16001,collectible=false,description="Granted by the Master Angler! aura for the week after winning the contest.",e=6,requireSkill=356})}}),
+title(37,{awp=16001,collectible=false,description="Granted by the Master Angler! aura for the week after winning the contest.",e=6,requireSkill=356})}}),
 q(8225,{coords={
 [1434]={{27.4,76.9}}},cost={{"i",19803,1}},e=6,qgs={15079},repeatable=1,requireSkill=356,g={
 s(164088,19969,{b=1,e=6,f=4,loc=47,requireSkill=356})}}),

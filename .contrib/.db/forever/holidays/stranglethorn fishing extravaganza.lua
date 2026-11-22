@@ -65,7 +65,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(cre
 					i(274026, {	-- Extravagant Extravaganza Coin
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
-					title(1313, {	-- Master Angler <Name>
+					title(37, {	-- Master Angler <Name>
 						description = "Granted by the Master Angler! aura for the week after winning the contest.",
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						collectible = false,
