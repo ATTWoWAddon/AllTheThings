@@ -6601,7 +6601,6 @@ i(213513),	-- Libram of Deliverance
 i(213526),	-- Hybrid Haunch
 i(213527),	-- Smuggler's Spice Blend
 i(213528),	-- Balmy Brew
-i(213529),	-- Viscous Venom
 i(213548),	-- Scroll of Liminal Passage
 i(213549),	-- Scroll of Arcane Angling
 i(213550),	-- Scroll of Polymorph: Odd Melon

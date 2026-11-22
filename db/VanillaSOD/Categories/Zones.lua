@@ -17358,7 +17358,8 @@ r(13868,{crs={764,765,766,1081,14448},itemID=11205,learnedAt=225,q=2,requireSkil
 s(158215,5608,{crs={766,14448},f=4,loc=40,lvl=35,q=2}),
 i(6172,{b=1,lvl=30,q=1}),
 s(158359,6196,{b=1,crs={5477},f=23,lvl=29,q=0}),
-p(59,{crs={741},itemID=8498,petTypeID=2,q=1,spellID=10698})})}}),
+p(59,{crs={741},itemID=8498,petTypeID=2,q=1,spellID=10698}),
+i(213529,{awp=11501,b=1,c={1},crs={769},phase=1606,q=1})})}}),
 m(1425,{icon=236780,lore="The Hinterlands, located in the Northern part of the Eastern Kingdoms, are probably most notable for the Wildhammer dwarves who make their residence at Aerie Peak in the west. The Wildhammers have always been staunch allies of the Alliance. It is from the Hinterlands that these dwarves find and tame their world-renowned gryphons. The Razorbeak gryphons roam wild in this region.\n\nAlso in the Hinterlands is one of the last remaining settlements of the high elves in Lordaeron at the Quel'Danil Lodge.\n\nThe Hinterlands are also home to a large population of forest trolls, which are divided into three separate tribes. The Revantusk tribe is the only one of the three that has declared sides in the Horde/Alliance conflict and support the warchief Thrall of the Horde. The Vilebranch tribe holds residence in the massive troll city of Jintha'Alor as well as the Altar of Zul while the Witherbark tribe holds the smallest influence, hailing from the temples of Shadra'Alor.",g={
 h(-12,{
 ach(773,{

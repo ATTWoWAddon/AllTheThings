@@ -886,6 +886,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				cr = 752,	-- Marsh Oracle
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(213529, {	-- Viscous Venom
+				description = "Left over from Season of Discovery, where it was needed for A Quick Grocery Run. Forever's version of that quest doesn't ask for it, so it has no use.",
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 769,	-- Deathstrike Tarantula
+			}),
 		}),
 	},
 });

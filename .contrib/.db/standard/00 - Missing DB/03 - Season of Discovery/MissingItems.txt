@@ -110,7 +110,6 @@ i(213427),	-- Grime-Encrusted Salvage
 i(213526),	-- Hybrid Haunch
 i(213527),	-- Smuggler's Spice Blend
 i(213528),	-- Balmy Brew
-i(213529),	-- Viscous Venom
 i(213549),	-- Scroll of Arcane Angling
 i(213551),	-- Scroll of Controlled Displacement
 i(213552),	-- Tear of Theradras

@@ -704,6 +704,11 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 					741,	-- Dreaming Whelp
 				},
 			}),
+			applyclassicphase(SOD_PHASE_TWO, i(213529, {	-- Viscous Venom
+				timeline = { ADDED_1_15_1 },
+				cr = 769,	-- Deathstrike Tarantula
+				classes = { WARRIOR },
+			})),
 		}),
 	},
 });
