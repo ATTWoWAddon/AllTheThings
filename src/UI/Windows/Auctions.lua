@@ -614,6 +614,12 @@ do	-- Auction Item Type
 		return c
 	end
 end
+if app.IsRetail then
+	app.AddEventHandler("OnStartup", function()
+		-- Retail now uses a Tab system which tries to share with other addons, so we don't allow auto-show here anymore
+		app.Settings:SetTooltipSetting("Auto:AuctionList", false)
+	end)
+end
 
 app:CreateWindow("Auctions", {
 	Commands = { "attauctions" },
@@ -700,7 +706,6 @@ app:CreateWindow("Auctions", {
 				end
 
 				if app.IsRetail then
-					app.Settings:SetTooltipSetting("Auto:AuctionList", false)
 					self:SetResizable(false)
 					self:SetWidth(350)
 					self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that
