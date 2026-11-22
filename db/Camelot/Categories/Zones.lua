@@ -19241,7 +19241,8 @@ s(157571,3985,{coords={
 [1434]={{23,71.4}}},crs={1493},f=4,loc=45,lvl=35}),
 s(158243,5755,{crs={4260},f=6,loc=42}),
 p(49,{crs={1563,1564,1653,2546,4505,4506},itemID=8494,npcID=7391,spellID=10682}),
-i(213127,{awp=16001,b=1,crs={780},lvl=35}),
+i(213127,{awp=16001,b=1,coords={
+[1434]={{44,35.4},{46.4,31.4},{47,39.4}}},crs={780},lvl=35}),
 r(1257434,{awp=16001,crs={701},itemID=254018,learnedAt=160,requireSkill=197,skillID=2948}),
 r(1257436,{awp=16001,crs={873},itemID=254022,learnedAt=165,requireSkill=197,skillID=2948}),
 r(6705,{b=1,crs={1561},itemID=5789,learnedAt=165,requireSkill=165,skillID=2945}),

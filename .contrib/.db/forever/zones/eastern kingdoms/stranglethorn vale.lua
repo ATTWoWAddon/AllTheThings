@@ -2804,6 +2804,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				},
 			}),
 			i(213127, {	-- Partial Mystical Notes (QS!)
+				coords = {
+					{ 44.0, 35.4, MAP.STRANGLETHORN_VALE },
+					{ 46.4, 31.4, MAP.STRANGLETHORN_VALE },
+					{ 47.0, 39.4, MAP.STRANGLETHORN_VALE },
+				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cr = 780,	-- Skullsplitter Mystic
 			}),
