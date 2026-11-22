@@ -145,6 +145,19 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				qg = 7363,	-- Kum'isha the Collector
 				coord = { 51.8, 35.6, MAP.BLASTED_LANDS },
 				cost = { { "i", 8244, 1 } },	-- Flawless Draenethyst Sphere
+				timeline = { TIMELINE.REMOVED_1_60_1 },
+				repeatable = true,
+				lvl = 45,
+				groups = {
+					i(10752),	-- Emerald Encrusted Chest
+				},
+			}),
+			q(93686, {	-- Kum'isha's Endeavors
+				sourceQuest = 93685,	-- To Serve Kum'isha
+				qg = 7363,	-- Kum'isha the Collector
+				coord = { 51.8, 35.6, MAP.BLASTED_LANDS },
+				cost = { { "i", 8244, 1 } },	-- Flawless Draenethyst Sphere
+				timeline = { TIMELINE.ADDED_1_60_1 },
 				repeatable = true,
 				lvl = 45,
 				groups = {
@@ -377,6 +390,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				qg = 7363,	-- Kum'isha the Collector
 				coord = { 51.8, 35.6, MAP.BLASTED_LANDS },
 				cost = { { "i", 8244, 1 } },	-- Flawless Draenethyst Sphere
+				timeline = { TIMELINE.REMOVED_1_60_1 },
 				lvl = 45,
 				groups = {
 					i(10752),	-- Emerald Encrusted Chest
