@@ -8,10 +8,12 @@ local FOREVER_SEASONAL_PROMOTIONS = createHeader({
 	text = {
 		en = "Forever Seasonal Promotions",
 		cn = "无限季节促销活动",
+		tw = "《永恆》季節性促銷",
 	},
 	description = {
 		en = "These promotions happened during World of Warcraft: Forever.\n\nThey are listed in the order of their first appearance.",
 		cn = "这些促销活动发生于《魔兽世界：无限》期间。\n\n它们按照首次出现的顺序排列。",
+		tw = "這些促銷活動在《魔獸世界：永恆》期間舉辦。\n\n以下按活動首次出現的時間順序列出。",
 	},
 });
 root(ROOTS.Promotions, n(FOREVER_SEASONAL_PROMOTIONS, {

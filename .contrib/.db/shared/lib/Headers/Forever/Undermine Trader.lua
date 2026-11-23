@@ -4,5 +4,6 @@ UNDERMINE_TRADER = createHeader({	-- Undermine Trader
 	text = {
 		en = "Undermine Trader",
 		cn = "安德麦商人",
+		tw = "幽坑城商人",
 	},
 });
