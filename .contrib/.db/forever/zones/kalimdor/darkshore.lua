@@ -29,8 +29,51 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 			}),
 		}),
 		n(PROFESSIONS, {
+			prof(BLACKSMITHING, {
+				n(6299, {	-- Delfrum Flintbeard <Journeyman Blacksmith>
+					coord = { 38.2, 41.0, MAP.DARKSHORE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENGINEERING, {
+				n(11037, {	-- Jenna Lemkenilli <Journeyman Engineer>
+					coord = { 38.2, 41.0, MAP.DARKSHORE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(FISHING, {
 				i(12238),	-- Darkshore Grouper
+			}),
+			prof(MINING, {
+				n(6297, {	-- Kurdram Stonehammer <Mining Trainer>
+					coord = { 38.2, 41.0, MAP.DARKSHORE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(4193, {	-- Grondal Moonbreeze <Journeyman Tailor>
+					coord = { 38.2, 40.4, MAP.DARKSHORE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
 			}),
 		}),
 		n(QUESTS, {
@@ -1227,10 +1270,12 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 				sym = {
 					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
 					{ "pop" },
+					{ "select", "itemID",
+						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+					},
 				},
 				groups = {
 					i(5528),	-- Recipe: Clam Chowder (RECIPE!)
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 					i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 				},

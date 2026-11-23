@@ -450,6 +450,159 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 				]]--
 			},
 		}),
+		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(2132, {	-- Carolai Anise <Journeyman Alchemist>
+					coord = { 59.4, 52.2, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(BLACKSMITHING, {
+				n(276067, {	-- Angus Hammerhand <Blacksmith>
+					coord = { 21.2, 45.8, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(265944, {	-- William Pickman <Cooking Trainer>
+					coord = { 61.8, 51.4, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(5695, {	-- Vance Undergloom <Journeyman Enchanter>
+					coord = { 61.6, 51.4, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
+					groups = {
+						i(6342),	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(5759, {	-- Nurse Neela <First Aid Trainer>
+					coord = { 61.8, 52.8, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(5690, {	-- Clyde Kellen <Fisherman>
+					coord = { 67.2, 51.0, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(2114, {	-- Faruza <Apprentice Herbalist>
+					coord = { 59.8, 52.0, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(267326, {	-- Florence Nightshade <Junior Herbalism Trainer>
+					coord = { 32.4, 65.2, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(3549, {	-- Shelene Rhobart <Journeyman Leatherworker>
+					coord = { 65.4, 60.0, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(267325, {	-- Walter Mason <Junior Mining Trainer>
+					coord = { 32.2, 65.4, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(2130, {	-- Marion Call <Rogue Trainer>
+					coord = { 61.6, 52.0, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(267324, {	-- Margaret Weaver <Junior Skinning Trainer>
+					coord = { 32.4, 65.6, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(6289, {	-- Rand Rhobart <Skinner>
+					coord = { 65.4, 60.0, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(3523, {	-- Bowen Brisboise <Journeyman Tailor>
+					coord = { 52.4, 55.6, MAP.TIRISFAL_GLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(97319, {	-- A Cousin Abroad
 				qg = 10839,	-- Argent Officer Garush
@@ -2287,6 +2440,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.TIRISFAL_GLADES, {
 			n(3548, {	-- Selina Weston <Alchemy & Herbalism Supplies>
 				coord = { 61.8, 50.0, MAP.TIRISFAL_GLADES },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					22250,	-- Herb Pouch
+				}},
 			}),
 			n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
 				coord = { 83.2, 69.6, MAP.TIRISFAL_GLADES },

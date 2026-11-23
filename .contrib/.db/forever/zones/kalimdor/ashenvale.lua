@@ -59,6 +59,65 @@ maproot(MAP.KALIMDOR, MAP.ASHENVALE, {
 				learnedAt = 70,
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(3964, {	-- Kylanna <Expert Alchemist>
+					coord = { 50.8, 67.0, MAP.ASHENVALE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(12961, {	-- Kil'Hiwana <Fisherman>
+					coord = { 10.8, 33.4, MAP.ASHENVALE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(3965, {	-- Cylania Rootstalker <Herbalist>
+					coord = { 50.4, 67.0, MAP.ASHENVALE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(3967, {	-- Aayndia Floralwind <Expert Leatherworker>
+					coord = { 35.8, 52.0, MAP.ASHENVALE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(6288, {	-- Jayla <Skinner>
+					coord = { 50.0, 67.2, MAP.ASHENVALE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(98252, {	-- A Void Path
 				sourceQuest = 98251,	-- Never Coming Back

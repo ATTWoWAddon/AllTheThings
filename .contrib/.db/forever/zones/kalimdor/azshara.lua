@@ -59,7 +59,10 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				n(7866, {	-- Peter Galen <Master Dragonscale Leatherworker>
 					coord = { 37.6, 65.4, MAP.AZSHARA },
 					races = ALLIANCE_ONLY,
-					groups = LEATHERWORKING_RECIPES.DRAGONSCALE,
+					sym = {
+						SymSelector.select("LEATHERWORKING_DRAGONSCALE"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),

@@ -66,21 +66,50 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 			}),
 		}),
 		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(4900, {	-- Alchemist Narett <Expert Alchemist>
+					coord = { 64.0, 47.6, MAP.DUSTWALLOW_MARSH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(FIRST_AID, {
 				n(12939, {	-- Doctor Gustaf VanHowzen <Trauma Surgeon>
 					coord = { 67.6, 48.8, MAP.DUSTWALLOW_MARSH },
 					races = ALLIANCE_ONLY,
-					groups = FIRST_AID_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("FIRST_AID_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(FISHING, {
 				o(180685),	-- Waterlogged Wreckage
 			}),
+			prof(HERBALISM, {
+				n(4898, {	-- Brant Jasperbloom <Herbalist>
+					coord = { 64.0, 47.6, MAP.DUSTWALLOW_MARSH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(TAILORING, {
 				n(11052, {	-- Timothy Worthington <Master Tailor>
 					coord = { 66.2, 51.6, MAP.DUSTWALLOW_MARSH },
 					races = ALLIANCE_ONLY,
-					groups = TAILORING_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("TAILORING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -1301,6 +1330,13 @@ maproot(MAP.KALIMDOR, MAP.DUSTWALLOW_MARSH, {
 						isLimited = true,
 					}),
 				},
+			}),
+			n(4899, {	-- Uma Bartulm <Herbalism & Alchemy Supplies>
+				coord = { 64.0, 47.6, MAP.DUSTWALLOW_MARSH },
+				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					22250,	-- Herb Pouch
+				}},
 			}),
 			n(9552, {	-- Zanara <Bowyer>
 				coord = { 35.6, 30.2, MAP.DUSTWALLOW_MARSH, },

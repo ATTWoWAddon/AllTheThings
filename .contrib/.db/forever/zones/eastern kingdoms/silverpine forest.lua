@@ -47,7 +47,33 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			prof(ALCHEMY, {
 				n(1937, {	-- Apothecary Renferrel <Royal Apothecary Society>
 					coord = { 42.8, 40.8, MAP.SILVERPINE_FOREST },
-					groups = ALCHEMY_RECIPES.DISCOLORED_HEALING_POTION,
+					sym = {
+						SymSelector.select("ALCHEMY_DISCOLORED_POTIONS"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(BLACKSMITHING, {
+				n(3557, {	-- Guillaume Sorouy <Journeyman Blacksmith>
+					coord = { 43.0, 40.4, MAP.SILVERPINE_FOREST },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(3555, {	-- Johan Focht <Miner>
+					coord = { 43.4, 40.4, MAP.SILVERPINE_FOREST },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -1106,21 +1132,20 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			n(5748, {	-- Killian Sanatha <Fisherman>
 				coord = { 33.0, 17.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+				}},
 				groups = {
 					i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 				},
 			}),
 			n(5758, {	-- Leo Sarn <Enchanting Supplies>
 				coord = { 54.0, 82.2, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
-				sym = {{ "select","itemID",
-					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-					20752,	-- Formula: Minor Mana Oil (RECIPE!)
-					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-					6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ENCHANTING_RECIPES"),
+					{"pop"},
+				},
 				groups = {
 					i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 				},
@@ -1128,13 +1153,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SILVERPINE_FOREST, {
 			n(5757, {	-- Lilly <Enchanting Supplies>
 				coord = { 43.0, 50.8, MAP.SILVERPINE_FOREST },
 				races = HORDE_ONLY,
-				sym = {{ "select","itemID",
-					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-					20752,	-- Formula: Minor Mana Oil (RECIPE!)
-					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-					6342,	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ENCHANTING_RECIPES"),
+					{"pop"},
+				},
 				groups = {
 					i(6346),	-- Formula: Enchant Chest - Lesser Intellect (RECIPE!)
 				},

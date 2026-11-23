@@ -410,6 +410,146 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			exploration(372),	-- Tiragarde Keep
 			exploration(363),	-- Valley of Trials
 		}),
+		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(3184, {	-- Miao'zan <Journeyman Alchemist>
+					coord = { 55.4, 74.0, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(BLACKSMITHING, {
+				n(3174, {	-- Dwukk <Journeyman Blacksmith>
+					coord = { 52.0, 40.6, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(3191, {	-- Cook Torka
+					coord = { 51.2, 42.4, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(266881, {	-- Pa'zula <Journeyman Enchanter>
+					coord = { 56.4, 73.6, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENGINEERING, {
+				n(11025, {	-- Mukdrak <Journeyman Engineer>
+					coord = { 52.2, 40.8, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(5943, {	-- Rawrk <First Aid Trainer>
+					coord = { 54.0, 42.0, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(5941, {	-- Lau'Tiki <Fisherman>
+					coord = { 53.2, 81.4, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(3185, {	-- Mishiki <Herbalist>
+					coord = { 55.4, 75.0, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(267329, {	-- Zor'la <Junior Herbalism Trainer>
+					coord = { 42.6, 67.4, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(3175, {	-- Krunn <Miner>
+					coord = { 51.8, 40.8, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(267328, {	-- Norzsh <Junior Mining Trainer>
+					coord = { 40.4, 68.0, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(3170, {	-- Kaplak <Rogue Trainer>
+					coord = { 52.0, 43.4, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(267327, {	-- Kagil <Junior Skinning Trainer>
+					coord = { 40.8, 67.8, MAP.DUROTAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(99048, {	-- A Missing Hand
 				qg = 3142,	-- Orgnil Soulscar
@@ -1804,8 +1944,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			n(5942, {	-- Zansoa <Fishing Supplies>
 				coord = { 56.0, 73.4, MAP.DUROTAR },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+				}},
 				groups = {
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 				},
 			}),

@@ -1367,6 +1367,9 @@ localize(L.HEADER_NAMES, {
 	[-823] = "Moonwell",
 	[-824] = "Currencies",
 	[-825] = "Undermine Trader",
+	[-837] = "Shadoweave Tailoring",
+	[-838] = "Discolored Potions",
+	[-839] = "Trainer Recipes",
 })
 localize(L.HEADER_DESCRIPTIONS, {
 	[-25] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -1512,6 +1515,9 @@ localize(L.HEADER_ICONS, {
 	[-823] = 134754,
 	[-824] = 133784,
 	[-825] = 133799,
+	[-837] = 136240,
+	[-838] = 136240,
+	[-839] = 136240,
 })
 localize(L.HEADER_EVENTS, {
 	[-37] = 1,

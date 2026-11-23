@@ -56,7 +56,10 @@ maproot(MAP.KALIMDOR, MAP.STONETALON_MOUNTAINS, {
 				n(11074, {	-- Hgarth <Artisan Enchanter>
 					coord = { 49.2, 57.2, MAP.STONETALON_MOUNTAINS },
 					races = HORDE_ONLY,
-					groups = ENCHANTING_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("ENCHANTING_EXPERT"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(FISHING, {

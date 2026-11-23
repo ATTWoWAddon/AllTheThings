@@ -18,6 +18,26 @@ maproot(MAP.KALIMDOR, MAP.SHENDRALAS, {
 			exploration(16676),	-- Outcast Hideaway
 			exploration(2657),	-- Valley of Bones
 		}),
+		n(PROFESSIONS, {
+			prof(LEATHERWORKING, {
+				n(255721, {	-- Jarael <Leatherworking>
+					coord = { 42.4, 78.0, MAP.SHENDRALAS },
+					sym = {
+						SymSelector.select("LEATHERWORKING_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(255724, {	-- Melanori <Tailoring>
+					coord = { 43.4, 77.8, MAP.SHENDRALAS },
+					sym = {
+						SymSelector.select("TAILORING_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(93016, {	-- A Brief History Lesson
 				qg = 253471,	-- Mordent Evenshade

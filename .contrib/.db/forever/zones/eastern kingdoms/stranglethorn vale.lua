@@ -156,23 +156,114 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 			}),
 		}),
 		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(2837, {	-- Jaxin Chong <Expert Alchemist>
+					coord = { 28.0, 78.0, MAP.STRANGLETHORN_VALE },
+					sym = {
+						SymSelector.select("ALCHEMY_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(BLACKSMITHING, {
 				n(2836, {	-- Brikk Keencraft <Master Blacksmith>
 					coord = { 29.0, 75.4, MAP.STRANGLETHORN_VALE },
-					groups = BLACKSMITHING_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("BLACKSMITHING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(1382, {	-- Mudduk <Superior Cook>
+					coord = { 31.4, 28.0, MAP.STRANGLETHORN_VALE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(ENGINEERING, {
 				n(7406, {	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 					coord = { 28.2, 76.2, MAP.STRANGLETHORN_VALE },
-					groups = ENGINEERING_RECIPES.GNOMISH_ENGINEERING,
+					sym = {
+						SymSelector.select("ENGINEERING_GNOMISH_ENGINEERING"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(2834, {	-- Myizz Luckycatch <Superior Fisherman>
+					coord = { 27.4, 77.0, MAP.STRANGLETHORN_VALE },
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(2856, {	-- Angrun <Superior Herbalist>
+					coord = { 32.2, 27.4, MAP.STRANGLETHORN_VALE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(908, {	-- Flora Silverwind <Superior Herbalist>
+					coord = { 27.6, 77.8, MAP.STRANGLETHORN_VALE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(LEATHERWORKING, {
+				n(1385, {	-- Brawn <Expert Leatherworker>
+					coord = { 31.6, 28.8, MAP.STRANGLETHORN_VALE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
 				n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 					coord = { 36.6, 34.2, MAP.STRANGLETHORN_VALE },
 					races = HORDE_ONLY,
-					groups = LEATHERWORKING_RECIPES.TRIBAL,
+					sym = {
+						SymSelector.select("LEATHERWORKING_TRIBAL"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(1411, {	-- Ian Strom <Rogue Trainer>
+					coord = { 26.8, 77.2, MAP.STRANGLETHORN_VALE },
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(2627, {	-- Grarnik Goodstitch <Expert Tailor>
+					coord = { 28.6, 76.8, MAP.STRANGLETHORN_VALE },
+					sym = {
+						SymSelector.select("TAILORING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -2490,6 +2581,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -2505,8 +2598,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STRANGLETHORN_VALE, {
 					i(13943),	-- Recipe: Hot Smoked Bass (RECIPE!)
 					i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
 			n(2840, {	-- Kizz Bluntstrike <Macecrafter>

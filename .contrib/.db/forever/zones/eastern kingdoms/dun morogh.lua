@@ -504,6 +504,137 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 			exploration(136),	-- The Grizzled Den
 			exploration(804),	-- The Tundrid Hills
 		}),
+		n(PROFESSIONS, {
+			prof(BLACKSMITHING, {
+				n(1241, {	-- Tognus Flintfire <Journeyman Blacksmith>
+					coord = { 45.2, 52.0, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(1355, {	-- Cook Ghilm <Cooking Trainer>
+					coord = { 68.4, 54.4, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(1699, {	-- Gremlock Pilsnor <Cooking Trainer>
+					coord = { 47.6, 52.4, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENGINEERING, {
+				n(1702, {	-- Bronk Guzzlegear <Journeyman Engineer>
+					coord = { 50.2, 50.4, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(2326, {	-- Thamner Pol <Physician>
+					coord = { 47.2, 52.4, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(1700, {	-- Paxton Ganter <Fisherman>
+					coord = { 35.4, 40.2, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(267338, {	-- Emrys Flintbeard <Junior Herbalism Trainer>
+					coord = { 28.8, 66.4, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(1701, {	-- Dank Drizzlecut <Mining Trainer>
+					coord = { 69.2, 55.4, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(267337, {	-- Sally Swiftwrench <Junior Mining Trainer>
+					coord = { 28.8, 67.8, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(5392, {	-- Yarr Hammerstone <Mining Trainer>
+					coord = { 50.0, 50.2, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(1234, {	-- Hogral Bakkan <Rogue Trainer>
+					coord = { 47.4, 52.4, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(267336, {	-- Brighid Stormflayer <Junior Skinning Trainer>
+					coord = { 29.0, 67.4, MAP.DUN_MOROGH },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(319, {	-- A Favor for Evershine
 				sourceQuest = 318,	-- Evershine

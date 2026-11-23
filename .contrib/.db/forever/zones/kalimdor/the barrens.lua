@@ -114,6 +114,82 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				learnedAt = 1,
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(BLACKSMITHING, {
+				n(3478, {	-- Traugh <Expert Blacksmith>
+					coord = { 51.2, 28.8, MAP.THE_BARRENS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(8306, {	-- Duhng <Cook>
+					coord = { 55.2, 31.8, MAP.THE_BARRENS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENGINEERING, {
+				n(3494, {	-- Tinkerwiz <Journeyman Engineer>
+					coord = { 62.6, 36.2, MAP.THE_BARRENS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(3703, {	-- Krulmoo Fullmoon <Expert Leatherworker>
+					coord = { 44.8, 59.4, MAP.THE_BARRENS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(6387, {	-- Dranh <Skinner>
+					coord = { 45.0, 59.0, MAP.THE_BARRENS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(3484, {	-- Kil'hala <Journeyman Tailor>
+					coord = { 52.2, 31.6, MAP.THE_BARRENS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(3704, {	-- Mahani <Expert Tailor>
+					coord = { 44.8, 59.4, MAP.THE_BARRENS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(79007, {	-- ... and that note you found (H)
 				providers = {
@@ -3399,10 +3475,10 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 				sym = {
 					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
 					{ "pop" },
-				},
-				groups = {
-					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+					{ "select", "itemID",
+						6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+					},
 				},
 			}),
 			n(3658, {	-- Lizzarik <Weapon Dealer>
@@ -3485,6 +3561,8 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ "select", "itemID",
 						2692,	-- Hot Spices
 						2678,	-- Mild Spices
+						21219,	-- Recipe: Sagefish Delight (RECIPE!)
+						21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 						159,	-- Refreshing Spring Water
 						4536,	-- Shiny Red Apple
 						10284,	-- Simple Flour
@@ -3493,10 +3571,6 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 						11291,	-- Star Wood
 						272941,	-- Thick Logs
 					},
-				},
-				groups = {
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
 			n(3482, {	-- Tari'qa <Trade Supplies>

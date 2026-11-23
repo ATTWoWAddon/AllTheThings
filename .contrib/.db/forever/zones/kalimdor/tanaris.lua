@@ -75,11 +75,29 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 			prof(ENGINEERING, {
 				n(8736, {	-- Buzzek Bracketswing <Master Engineer>
 					coord = { 52.2, 27.6, MAP.TANARIS },
-					groups = ENGINEERING_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("ENGINEERING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 				n(8126, {	-- Nixx Sprocketspring <Master Goblin Engineer>
 					coord = { 52.4, 27.2, MAP.TANARIS },
-					groups = ENGINEERING_RECIPES.GOBLIN_ENGINEERING,
+					sym = {
+						SymSelector.select("ENGINEERING_GOBLIN_ENGINEERING"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(8128, {	-- Pikkle <Miner>
+					coord = { 51.0, 28.0, MAP.TANARIS },
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),

@@ -33,6 +33,41 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 				races = ALLIANCE_ONLY,
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(BLACKSMITHING, {
+				n(3136, {	-- Clarise Gnarltree <Expert Blacksmith>
+					coord = { 73.8, 48.6, MAP.DUSKWOOD },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENGINEERING, {
+				n(1676, {	-- Finbus Geargrind <Expert Engineer>
+					coord = { 77.4, 48.4, MAP.DUSKWOOD },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENGINEERING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(3137, {	-- Matt Johnson <Mining Trainer>
+					coord = { 74.0, 49.4, MAP.DUSKWOOD },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(231, {	-- A Daughter's Love
 				sourceQuest = 229,	-- The Daughter Who Lived
@@ -1145,15 +1180,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					928,	-- Long Staff
 					923,	-- Longsword
 					924,	-- Maul
+					12249,	-- Merciless Axe
 					2208,	-- Poniard
 					2026,	-- Rock Hammer
 					2027,	-- Scimitar
 				}},
 				groups = {
 					i(12247, {	-- Broad Bladed Knife
-						isLimited = true,
-					}),
-					i(12249, {	-- Merciless Axe
 						isLimited = true,
 					}),
 				},

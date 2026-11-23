@@ -62,11 +62,25 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 			}),
 		}),
 		n(PROFESSIONS, {
+			prof(FISHING, {
+				n(14740, {	-- Katoom the Angler <Fishing Trainer & Supplies>
+					coord = { 80.2, 81.4, MAP.THE_HINTERLANDS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(LEATHERWORKING, {
 				n(11097, {	-- Drakk Stonehand <Master Leatherworking Trainer>
 					coord = { 13.4, 43.4, MAP.THE_HINTERLANDS },
 					races = ALLIANCE_ONLY,
-					groups = LEATHERWORKING_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("LEATHERWORKING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -905,6 +919,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -913,10 +929,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.THE_HINTERLANDS, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
+			}),
+			n(270780, {	-- Qujo
+				coord = { 77.8, 78.0, MAP.THE_HINTERLANDS },
+				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+				}},
 			}),
 			n(2688, {	-- Ruppo Zipcoil <Engineering Supplies>
 				coord = { 34.2, 37.8, MAP.THE_HINTERLANDS },

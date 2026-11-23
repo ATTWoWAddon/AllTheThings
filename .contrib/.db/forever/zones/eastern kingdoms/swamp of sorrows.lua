@@ -46,7 +46,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SWAMP_OF_SORROWS, {
 				n(1386, {	-- Rogvar <Alchemy Trainer>
 					coord = { 49.8, 56.0, MAP.SWAMP_OF_SORROWS },
 					races = HORDE_ONLY,
-					groups = ALCHEMY_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("ALCHEMY_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(SKINNING, {

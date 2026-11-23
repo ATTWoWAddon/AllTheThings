@@ -62,6 +62,17 @@ local AlternateDataTypes = {
 	o = function(id)
 		return { name = app.ObjectNames[tonumber(id)] or ("Object ID #"..id), icon = app.ObjectIcons[tonumber(id)] };
 	end,
+	-- Spell name with its rank text, e.g. "Cooking (Apprentice)"
+	sr = function(id)
+		local name, subtext = app.WOWAPI.GetSpellName(id), app.WOWAPI.GetSpellSubtext(id);
+		-- nil subtext means the spell data is still loading, so leave the name unset to retry
+		if subtext == nil then name = nil;
+		else
+			subtext = subtext:match("^%s*(.-)%s*$");
+			if name and subtext ~= "" then name = name .. " (" .. subtext .. ")"; end
+		end
+		return { name = name, icon = app.WOWAPI.GetSpellIcon(id) };
+	end,
 	["_G"] = function(id)
 		return { name = _G[id] };
 	end,

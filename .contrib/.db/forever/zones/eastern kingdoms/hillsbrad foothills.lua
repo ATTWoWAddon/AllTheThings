@@ -49,14 +49,58 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			}),
 		}),
 		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(2391, {	-- Serge Hinott <Expert Alchemist>
+					coord = { 61.4, 19.2, MAP.HILLSBRAD_FOOTHILLS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(FISHING, {
 				o(180662),	-- Schooner Wreckage
+				n(2367, {	-- Donald Rabonne <Fisherman>
+					coord = { 50.4, 61.0, MAP.HILLSBRAD_FOOTHILLS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(255877, {	-- Hunter Moore <Fisherman>
+					coord = { 54.0, 80.2, MAP.HILLSBRAD_FOOTHILLS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(2390, {	-- Aranae Venomblood <Herbalist>
+					coord = { 61.4, 19.8, MAP.HILLSBRAD_FOOTHILLS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
 			}),
 			prof(TAILORING, {
 				n(2399, {	-- Daryl Stack <Master Tailor>
 					coord = { 63.6, 20.8, MAP.HILLSBRAD_FOOTHILLS },
 					races = HORDE_ONLY,
-					groups = TAILORING_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("TAILORING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -1083,6 +1127,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -1091,11 +1138,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
 			}),
 			n(2698, {	-- George Candarte <Leatherworking Supplies>
 				coord = { 92.0, 38.6, MAP.HILLSBRAD_FOOTHILLS },
@@ -1165,8 +1207,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			n(2383, {	-- Lindea Rabonne <Tackle and Bait>
 				coord = { 50.6, 61.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+				}},
 				groups = {
-					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 					i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 				},
@@ -1222,6 +1266,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					2678,	-- Mild Spices
 					2901,	-- Mining Pick
 					6530,	-- Nightcrawlers
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4289,	-- Salt
 					4536,	-- Shiny Red Apple
@@ -1245,8 +1291,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 					i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
 						isLimited = true,
 					}),
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
 			n(2380, {	-- Nandar Branson <Alchemy Supplies>
@@ -1261,6 +1305,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 			n(3539, {	-- Ott <Weaponsmith>
 				coord = { 60.4, 26.0, MAP.HILLSBRAD_FOOTHILLS },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					12249,	-- Merciless Axe
+				}},
 				groups = {
 					i(4817, {	-- Blessed Claymore
 						isLimited = true,
@@ -1278,9 +1325,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.HILLSBRAD_FOOTHILLS, {
 						isLimited = true,
 					}),
 					i(4826, {	-- Marauder Axe
-						isLimited = true,
-					}),
-					i(12249, {	-- Merciless Axe
 						isLimited = true,
 					}),
 				},

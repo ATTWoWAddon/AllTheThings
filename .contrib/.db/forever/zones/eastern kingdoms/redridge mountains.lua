@@ -55,11 +55,59 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 		}),
 		n(PROFESSIONS, {
+			prof(COOKING, {
+				n(3087, {	-- Crystal Boughman <Cooking Trainer>
+					coord = { 17.6, 43.4, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(1680, {	-- Matthew Hooper <Fishing Trainer>
+					coord = { 21.2, 50.4, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(812, {	-- Alma Jainrose <Herbalism Trainer>
+					coord = { 16.4, 45.6, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(SKINNING, {
 				i(7286, {	-- Black Whelp Scale
 					crs = {
 						441,	-- Black Dragon Whelp
 						14272,	-- Snarlflare
+					},
+				}),
+				n(6295, {	-- Wilma Ranthal <Skinning Trainer>
+					coord = { 83.6, 71.0, MAP.REDRIDGE_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
 					},
 				}),
 			}),
@@ -908,6 +956,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -916,10 +966,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
 			}),
 			n(3088, {	-- Henry Chapal <Gunsmith>
 				coord = { 18.8, 41.3, MAP.REDRIDGE_MOUNTAINS },

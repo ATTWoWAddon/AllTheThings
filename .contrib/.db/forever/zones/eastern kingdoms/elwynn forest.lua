@@ -472,11 +472,152 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			exploration(120),	-- Westbrook Garrison
 		}),
 		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(1215, {	-- Alchemist Mallory <Journeyman Alchemist>
+					coord = { 39.8, 48.4, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(BLACKSMITHING, {
+				n(514, {	-- Smith Argus <Journeyman Blacksmith>
+					coord = { 41.6, 65.4, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(1430, {	-- Tomas <Cook>
+					coord = { 44.2, 66.0, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(ENCHANTING, {
 				n(11072, {	-- Kitta Firewind <Artisan Enchanter>
 					coord = { 64.8, 70.6, MAP.ELWYNN_FOREST },
 					races = ALLIANCE_ONLY,
-					groups = ENCHANTING_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("ENCHANTING_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(2329, {	-- Michelle Belle <Physician>
+					coord = { 43.4, 65.6, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(1651, {	-- Lee Brown <Fisherman>
+					coord = { 47.4, 62.2, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(1218, {	-- Herbalist Pomeroy <Herbalism Trainer>
+					coord = { 39.8, 48.4, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(247223, {	-- Nancy Songflower <Junior Herbalism Trainer>
+					coord = { 52.2, 43.4, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(1632, {	-- Adele Fielder <Journeyman Leatherworker>
+					coord = { 46.4, 62.2, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(247226, {	-- Kelsey Fargo <Junior Mining Trainer>
+					coord = { 47.2, 32.2, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(917, {	-- Keryn Sylvius <Rogue Trainer>
+					coord = { 43.8, 65.8, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(6306, {	-- Helene Peltskinner <Skinner>
+					coord = { 46.2, 62.2, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(247227, {	-- Riley Peltskinner <Junior Skinning Trainer>
+					coord = { 47.0, 39.8, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(1103, {	-- Eldrin <Journeyman Tailor>
+					coord = { 79.2, 69.0, MAP.ELWYNN_FOREST },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -1978,10 +2119,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 			n(1198, {	-- Rallic Finn <Bowyer>
 				coord = { 83.2, 66.0, MAP.ELWYNN_FOREST },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					11303,	-- Fine Shortbow
+				}},
 				groups = {
-					i(11303, {	-- Fine Shortbow
-						isLimited = true,
-					}),
 					i(287063, {	-- Serrated Knife
 						isLimited = true,
 						timeline = { TIMELINE.ADDED_1_60_1 },

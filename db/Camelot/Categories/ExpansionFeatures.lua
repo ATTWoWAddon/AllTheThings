@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local cu,flt,h,hqt,i,inst,n,p,prof,q,qo,r,s=_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateInstance,_.CreateNPC,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
-h(-554,{symselector=5,u=3,g={
+h(-554,{symselector=6,u=3,g={
 h(-88,{
 s(162989,16674,{b=1,f=6,loc=42,lvl=58}),
 s(163001,16686,{b=1,f=4,loc=40,lvl=57}),
@@ -603,6 +603,8 @@ r(1251747,{b=1,cost={{"c",3402,180}},itemID=250993,learnedAt=280,minReputation={
 r(1251734,{b=1,cost={{"c",3402,180}},itemID=250981,learnedAt=285,minReputation={2587,9000},requireSkill=171,skillID=2937}),
 r(1251752,{b=1,cost={{"c",3402,180}},itemID=250998,learnedAt=280,minReputation={2587,9000},requireSkill=171,skillID=2937}),
 r(1251748,{b=1,cost={{"c",3402,180}},itemID=250994,learnedAt=275,minReputation={2587,9000},requireSkill=171,skillID=2937})}}),
+n(248198,{coords={
+[1413]={{49.6,29.2}}},r=1,sym={{"select","itemID",21219,21099}}}),
 n(248199,{coords={
 [1413]={{49.6,29.8}}},r=1,g={
 i(271624,{b=1,cost={{"c",3402,1000}},minReputation={2587,0},questID=95946,requireSkill=333,spellID=1289197}),
@@ -943,12 +945,10 @@ r(1257479,{b=1,cost={{"c",3402,90}},itemID=254108,learnedAt=235,minReputation={2
 r(1257483,{b=1,cost={{"c",3402,90}},itemID=254116,learnedAt=235,minReputation={2587,9000},requireSkill=197,skillID=2948}),
 r(1257484,{b=1,cost={{"c",3402,90}},itemID=254118,learnedAt=235,minReputation={2587,9000},requireSkill=197,skillID=2948})}}),
 n(256731,{coords={
-[1433]={{10.8,72.8}}},r=2,sym={{"select","itemID",2692,2678,159,4536,10284,4470,3713,11291,272941}},g={
+[1433]={{10.8,72.8}}},r=2,sym={{"select","itemID",2692,2678,21219,21099,159,4536,10284,4470,3713,11291,272941}},g={
 r(1249966,{b=1,cost={{"c",3402,60}},itemID=249888,learnedAt=180,minReputation={2586,3000},requireSkill=185,skillID=2939}),
 r(1249965,{b=1,cost={{"c",3402,30}},itemID=249887,learnedAt=125,requireSkill=185,skillID=2939}),
-r(25954,{itemID=21219,learnedAt=175,requireSkill=185,skillID=2939}),
 r(1249964,{b=1,cost={{"c",3402,30}},itemID=249886,learnedAt=100,requireSkill=185,skillID=2939}),
-r(25704,{itemID=21099,learnedAt=80,requireSkill=185,skillID=2939}),
 r(1249967,{b=1,cost={{"c",3402,60}},itemID=249889,learnedAt=200,minReputation={2586,3000},requireSkill=185,skillID=2939}),
 r(1249963,{b=1,cost={{"c",3402,30}},itemID=249885,learnedAt=25,requireSkill=185,skillID=2939}),
 r(1249968,{b=1,cost={{"c",3402,90}},itemID=249890,learnedAt=250,minReputation={2586,9000},requireSkill=185,skillID=2939})}}),

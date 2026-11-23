@@ -62,7 +62,20 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 				n(7948, {	-- Kylanna Windwhisper <Alchemy Trainer>
 					coord = { 32.6, 43.8, MAP.FERALAS },
 					races = ALLIANCE_ONLY,
-					groups = ALCHEMY_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("ALCHEMY_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(7949, {	-- Xylinnia Starshine <Expert Enchanter>
+					coord = { 31.4, 44.2, MAP.FERALAS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(FISHING, {
@@ -72,17 +85,58 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 						{ 62.0, 52.0, MAP.FERALAS },	-- Verdantis River
 					},
 				}),
+				n(7946, {	-- Brannock <Fisherman>
+					coord = { 32.2, 41.4, MAP.FERALAS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(8146, {	-- Ruw <Herbalism Trainer>
+					coord = { 76.0, 43.4, MAP.FERALAS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
 			}),
 			prof(LEATHERWORKING, {
 				n(7870, {	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>
 					coord = { 89.4, 46.4, MAP.FERALAS },
 					races = ALLIANCE_ONLY,
-					groups = LEATHERWORKING_RECIPES.TRIBAL,
+					sym = {
+						SymSelector.select("LEATHERWORKING_TRIBAL"),
+						{"pop"},
+					},
 				}),
 				n(11098, {	-- Hahrana Ironhide <Master Leatherworker>
 					coord = { 74.4, 43.0, MAP.FERALAS },
 					races = HORDE_ONLY,
-					groups = LEATHERWORKING_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("LEATHERWORKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(8144, {	-- Kulleg Stonehorn <Skinning Trainer>
+					coord = { 74.4, 43.0, MAP.FERALAS },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),

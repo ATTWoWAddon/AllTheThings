@@ -1421,6 +1421,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.EASTERN_PLAGUELANDS, {
 					}),
 				},
 			}),
+			n(240604, {	-- Carrie Hearthfire <Head Chef>
+				coord = { 95.2, 78.4, MAP.EASTERN_PLAGUELANDS },
+				sym = {{ "select", "itemID",
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+				}},
+			}),
 			n(12941, {	-- Jase Farlane <Trade Supplies>
 				coord = { 80.6, 57.6, MAP.EASTERN_PLAGUELANDS },
 				groups = {

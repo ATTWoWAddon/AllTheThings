@@ -35,141 +35,249 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				n(11046, {	-- Whuut <Journeyman Alchemist>
 					coord = { 56.0, 33.8, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = ALCHEMY_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 				n(3347, {	-- Yelmak <Expert Alchemist>
 					coord = { 55.6, 46.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = ALCHEMY_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("ALCHEMY_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(BLACKSMITHING, {
 				n(11178, {	-- Borgosh Corebender <Weaponsmith>
 					coord = { 79.6, 23.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = BLACKSMITHING_RECIPES.WEAPONSMITHING,
+					sym = {
+						SymSelector.select("BLACKSMITHING_WEAPONSMITHING"),
+						{"pop"},
+					},
 				}),
 				n(11177, {	-- Okothos Ironrager <Armorsmith>
 					coord = { 79.8, 23.8, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = BLACKSMITHING_RECIPES.ARMORSMITHING,
+					sym = {
+						SymSelector.select("BLACKSMITHING_ARMORSMITHING"),
+						{"pop"},
+					},
 				}),
 				n(3355, {	-- Saru Steelfury <Artisan Blacksmith>
 					coord = { 76.4, 34.4, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = BLACKSMITHING_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("BLACKSMITHING_EXPERT"),
+						{"pop"},
+					},
 				}),
 				n(1383, {	-- Snarl <Expert Blacksmith>
 					coord = { 79.8, 23.4, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = BLACKSMITHING_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("BLACKSMITHING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 				n(10266, {	-- Ug'thok <Journeyman Blacksmith>
 					coord = { 80.6, 23.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = BLACKSMITHING_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(COOKING, {
 				n(3399, {	-- Zamja <Cooking Trainer>
 					coord = { 57.4, 53.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = CLASSIC_CATA_COOKING,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(ENCHANTING, {
 				n(3345, {	-- Godan <Expert Enchanter>
 					coord = { 53.8, 38.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = ENCHANTING_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("ENCHANTING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 				n(11066, {	-- Jhag <Journeyman Enchanter>
 					coord = { 53.6, 38.2, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = ENCHANTING_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(ENGINEERING, {
 				n(3412, {	-- Nogg <Expert Engineer>
 					coord = { 75.8, 25.2, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = ENGINEERING_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("ENGINEERING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 				n(11017, {	-- Roxxik <Artisan Engineer>
 					coord = { 76.0, 25.0, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = ENGINEERING_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("ENGINEERING_EXPERT"),
+						{"pop"},
+					},
 				}),
 				n(2857, {	-- Thund <Journeyman Engineer>
 					coord = { 75.8, 24.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = ENGINEERING_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(FIRST_AID, {
 				n(3373, {	-- Arnok <First Aid Trainer>
 					coord = { 34.0, 84.4, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = FIRST_AID_RECIPES.APPRENTICE_JOURNEYMAN,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(FISHING, {
 				n(3332, {	-- Lumak <Fishing Trainer>
 					coord = { 66.6, 41.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = CLASSIC_CATA_FISHING,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(HERBALISM, {
 				n(3404, {	-- Jandi <Herbalism Trainer>
 					coord = { 55.6, 39.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = CLASSIC_CATA_HERBALISM,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(LEATHERWORKING, {
 				n(5811, {	-- Kamari <Journeyman Leatherworker>
 					coord = { 63.2, 44.4, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = LEATHERWORKING_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 				n(3365, {	-- Karolek <Expert Leatherworker>
 					coord = { 62.8, 44.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = LEATHERWORKING_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(7088, {	-- Thuwd <Skinning Trainer>
+					coord = { 63.2, 45.2, MAP.ORGRIMMAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(MINING, {
 				n(3357, {	-- Makaru <Mining Trainer>
 					coord = { 73.0, 27.0, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = CLASSIC_CATA_MINING,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(POISONS, {
+				n(3327, {	-- Gest <Rogue Trainer>
+					coord = { 42.8, 51.4, MAP.ORGRIMMAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
 				n(3328, {	-- Ormok <Rogue Trainer>
 					coord = { 44.6, 61.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = CLASSIC_POISONS,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+				n(3401, {	-- Shenthul <Rogue Trainer>
+					coord = { 43.0, 53.4, MAP.ORGRIMMAR },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(SKINNING, {
 				n(7088, {	-- Thuwd <Skinning Trainer>
 					coord = { 63.2, 45.2, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = CLASSIC_CATA_SKINNING,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(TAILORING, {
 				n(3363, {	-- Magar <Expert Tailor>
 					coord = { 63.6, 50.0, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = TAILORING_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("TAILORING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 				n(2855, {	-- Snang <Journeyman Tailor>
 					coord = { 63.0, 49.6, MAP.ORGRIMMAR },
 					races = HORDE_ONLY,
-					groups = TAILORING_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("TAILORING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -1182,17 +1290,11 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3410, {	-- Jin'sora <Bow Merchant>
 				coord = { 77.8, 38.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				groups = {
-					i(11303, {	-- Fine Shortbow
-						isLimited = true,
-					}),
-					i(11307, {	-- Massive Longbow
-						isLimited = true,
-					}),
-					i(11306, {	-- Sturdy Recurve
-						isLimited = true,
-					}),
-				},
+				sym = {{ "select", "itemID",
+					11303,	-- Fine Shortbow
+					11307,	-- Massive Longbow
+					11306,	-- Sturdy Recurve
+				}},
 			}),
 			n(3322, {	-- Kaja <Bow & Rifle Vendor>
 				coord = { 40.8, 49.6, MAP.ORGRIMMAR },
@@ -1255,14 +1357,18 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3346, {	-- Kithas <Enchanting Supplies>
 				coord = { 53.6, 38.0, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				groups = appendGroups(ENCHANTING_RECIPES.COMMON_RECIPES, {
+				sym = {
+					SymSelector.select("VENDOR_ENCHANTING_RECIPES"),
+					{"pop"},
+				},
+				groups = {
 					i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 						isLimited = true,
 					}),
 					i(6346, {	-- Formula: Enchant Chest - Lesser Intellect (RECIPE!)
 						isLimited = true,
 					}),
-				}),
+				},
 			}),
 			n(8122, {	-- Kizzak Sparks
 				coord = { 57.8, 56.6, MAP.ORGRIMMAR },
@@ -1450,9 +1556,11 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 			n(3333, {	-- Shankys <Fishing Supplies>
 				coord = { 66.6, 41.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+				}},
 				groups = {
 					i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 				},
 			}),
@@ -1651,6 +1759,8 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -1659,17 +1769,13 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
 			}),
 			n(3405, {	-- Zeal'aya <Herbalism Supplies>
 				coord = { 55.0, 39.6, MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				sym = {
-					{ "sub", "common_vendor", 4615 },	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
-				},
+				sym = {{ "select", "itemID",
+					22250,	-- Herb Pouch
+				}},
 			}),
 			n(3409, {	-- Zendo'jian <Weapon Vendor>
 				coord = { 75.0, 36.6, MAP.ORGRIMMAR },

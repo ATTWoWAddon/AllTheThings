@@ -39,6 +39,41 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				coord = { 55.0, 82.8, MAP.MOUNT_HYJAL },
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(COOKING, {
+				n(249968, {	-- Hnaz Blunderflame
+					coord = { 15.4, 50.0, MAP.MOUNT_HYJAL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(244512, {	-- Ortak Lomgok <Innkeeper>
+					coord = { 13.0, 52.8, MAP.MOUNT_HYJAL },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENGINEERING, {
+				n(249235, {	-- Kaylaena Springwhisper <Cenarion Circle>
+					coord = { 59.9, 62.7, MAP.MOUNT_HYJAL },
+					sym = {
+						SymSelector.select("ENGINEERING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(92500, {	-- A Bit of the Sky
 				sourceQuest = 92171,	-- Taking to New Heights

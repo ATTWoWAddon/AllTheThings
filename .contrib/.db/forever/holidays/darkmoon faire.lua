@@ -603,14 +603,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ 36.4, 38.0, MAP.MULGORE },
 					{ 41.2, 69.8, MAP.ELWYNN_FOREST },
 				},
+				sym = {{ "select", "itemID",
+					11303,	-- Fine Shortbow
+					11306,	-- Sturdy Recurve
+				}},
 				groups = {
 					i(12251),	-- Big Stick
 					i(12248),	-- Daring Dirk
 					i(19303),	-- Darkmoon Necklace
 					i(19302),	-- Darkmoon Ring
 					i(11305),	-- Dense Shortbow
-					i(11303),	-- Fine Shortbow
-					i(11306),	-- Sturdy Recurve
 					i(11308),	-- Sylvan Shortbow
 				},
 			}),

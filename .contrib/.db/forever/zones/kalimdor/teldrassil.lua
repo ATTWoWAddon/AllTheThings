@@ -434,6 +434,136 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				races = ALLIANCE_ONLY,
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(3603, {	-- Cyndra Kindwhisper <Journeyman Alchemist>
+					coord = { 57.6, 60.6, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(6286, {	-- Zarrin <Cook>
+					coord = { 57.0, 61.2, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(3606, {	-- Alanna Raveneye <Journeyman Enchanter>
+					coord = { 36.8, 34.2, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(6094, {	-- Byancie <First Aid Trainer>
+					coord = { 55.2, 56.8, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(3607, {	-- Androl Oakhand <Fisherman>
+					coord = { 55.8, 93.4, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(267335, {	-- Eleyna Duskbreeze <Junior Herbalism Trainer>
+					coord = { 59.8, 41.4, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(3604, {	-- Malorne Bladeleaf <Herbalist>
+					coord = { 57.4, 60.6, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(3605, {	-- Nadyia Maneweaver <Journeyman Leatherworker>
+					coord = { 41.8, 49.4, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(267334, {	-- Fanorran Stilloak <Junior Mining Trainer>
+					coord = { 58.2, 41.4, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(3599, {	-- Jannok Breezesong <Rogue Trainer>
+					coord = { 56.2, 60.0, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(6287, {	-- Radnaal Maneweaver <Skinner>
+					coord = { 42.0, 50.0, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(267333, {	-- Terunne Bearshaper <Junior Skinning Trainer>
+					coord = { 59.4, 38.6, MAP.TELDRASSIL },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(475, {	-- A Troubling Breeze
 				qg = 2078,	-- Athridas Bearmantle
@@ -1770,8 +1900,10 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 			n(10118, {	-- Nessa Shadowsong <Fishing Supplies>
 				coord = { 56.2, 92.4, MAP.TELDRASSIL },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+				}},
 				groups = {
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 				},
 			}),
@@ -1781,6 +1913,8 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -1792,8 +1926,6 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				groups = {
 					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
 					i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
 		}),

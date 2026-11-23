@@ -14,6 +14,8 @@ HEADERS = {
 	Race = "r",
 	Quest = "q",
 	Spell = "s",
+	-- Spell name with its rank text (GetSpellSubtext), e.g. "Cooking (Apprentice)"
+	SpellWithRank = "sr",
 	AchCategory = "ac",
 	AchCriteria = "crit",
 	-- Provides name/icon using the GetLFGDungeonInfo API ref: https://warcraft.wiki.gg/wiki/LfgDungeonID

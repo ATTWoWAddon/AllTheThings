@@ -27,28 +27,245 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			}),
 		}),
 		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(5177, {	-- Tally Berryfizz <Expert Alchemist>
+					coord = { 66.4, 55.2, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(1246, {	-- Vosur Brakthel <Journeyman Alchemist>
+					coord = { 66.4, 55.2, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(BLACKSMITHING, {
 				n(4258, {	-- Bengus Deepforge <Artisan Blacksmith>
 					coord = { 52.6, 40.8, MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					groups = BLACKSMITHING_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("BLACKSMITHING_EXPERT"),
+						{"pop"},
+					},
+				}),
+				n(10277, {	-- Groum Stonebeard <Journeyman Blacksmith>
+					coord = { 51.2, 42.4, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 				n(5164, {	-- Grumnus Steelshaper <Armor Crafter>
 					coord = { 50.2, 42.6, MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					groups = BLACKSMITHING_RECIPES.ARMORSMITHING,
+					sym = {
+						SymSelector.select("BLACKSMITHING_ARMORSMITHING"),
+						{"pop"},
+					},
 				}),
 				n(11146, {	-- Ironus Coldsteel <Special Weapon Crafter>
 					coord = { 50.8, 43.0, MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					groups = BLACKSMITHING_RECIPES.WEAPONSMITHING,
+					sym = {
+						SymSelector.select("BLACKSMITHING_WEAPONSMITHING"),
+						{"pop"},
+					},
+				}),
+				n(10276, {	-- Rotgath Stonebeard <Expert Blacksmith>
+					coord = { 51.2, 42.4, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(5159, {	-- Daryl Riknussun <Cooking Trainer>
+					coord = { 60.0, 36.8, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(5157, {	-- Gimble Thistlefuzz <Expert Enchanter>
+					coord = { 59.0, 45.2, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(11065, {	-- Thonys Pillarstone <Journeyman Enchanter>
+					coord = { 59.0, 45.2, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(ENGINEERING, {
+				n(11028, {	-- Jemma Quikswitch <Journeyman Engineer>
+					coord = { 67.8, 43.4, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
 				n(5174, {	-- Springspindle Fizzlegear <Artisan Engineer>
 					coord = { 68.8, 45.2, MAP.IRONFORGE },
 					races = ALLIANCE_ONLY,
-					groups = ENGINEERING_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("ENGINEERING_EXPERT"),
+						{"pop"},
+					},
+				}),
+				n(11029, {	-- Trixie Quikswitch <Expert Engineer>
+					coord = { 67.4, 43.2, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENGINEERING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(5150, {	-- Nissa Firestone <First Aid Trainer>
+					coord = { 54.8, 58.4, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(5161, {	-- Grimnur Stonebrand <Fishing Trainer>
+					coord = { 48.2, 6.6, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(5137, {	-- Reyna Stonebranch <Herbalism Trainer>
+					coord = { 55.4, 58.4, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(5127, {	-- Fimble Finespindle <Expert Leatherworker>
+					coord = { 39.4, 33.4, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(1466, {	-- Gretta Finespindle <Journeyman Leatherworker>
+					coord = { 39.0, 32.4, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(4254, {	-- Geofram Bouldertoe <Mining Trainer>
+					coord = { 50.2, 26.0, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(5167, {	-- Fenthwick <Rogue Trainer>
+					coord = { 51.4, 15.0, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+				n(5165, {	-- Hulfdan Blackbeard <Rogue Trainer>
+					coord = { 51.2, 16.0, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+				n(5166, {	-- Ormyr Flinteye <Rogue Trainer>
+					coord = { 52.2, 13.4, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(6291, {	-- Balthus Stoneflayer <Skinning Trainer>
+					coord = { 39.4, 32.4, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(5153, {	-- Jormund Stonebrow <Expert Tailor>
+					coord = { 43.2, 28.4, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(1703, {	-- Uthrar Threx <Journeyman Tailor>
+					coord = { 43.4, 28.2, MAP.IRONFORGE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -1223,6 +1440,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -1231,10 +1450,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
 			}),
 			n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
 				coord = { 67.8, 43.0, MAP.IRONFORGE },
@@ -1319,7 +1534,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5138, {	-- Gwina Stonebranch <Herbalism Supplier>
 				coord = { 55.08, 59.51, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
+				sym = {{ "select", "itemID",
+					22250,	-- Herb Pouch
+				}},
 			}),
 			n(5133, {	-- Harick Boulderdrum
 				coord = { 22.8, 16.6, MAP.IRONFORGE },
@@ -1440,12 +1657,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 29.8, 67.5, MAP.IRONFORGE },
 				description = "Walks around The Commons.",
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(4541),	-- Freshly Baked Bread
-					i(4542),	-- Moist Cornbread
-					i(4544),	-- Mulgore Spice Bread
-					i(4601),	-- Soft Banana Bread
-					i(4540),	-- Tough Hunk of Bread
+				sym = {
+					SymSelector.select("VENDOR_FOOD_BREAD"),	-- Bread
+					{ "pop" },
 				},
 			}),
 			n(5126, {	-- Olthran Craghelm
@@ -1510,20 +1724,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				coord = { 71.6, 66.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
+					11303,	-- Fine Shortbow
 					3027,	-- Heavy Recurve Bow
+					11307,	-- Massive Longbow
 					3026,	-- Reinforced Bow
+					11306,	-- Sturdy Recurve
 				}},
-				groups = {
-					i(11303, {	-- Fine Shortbow
-						isLimited = true,
-					}),
-					i(11307, {	-- Massive Longbow
-						isLimited = true,
-					}),
-					i(11306, {	-- Sturdy Recurve
-						isLimited = true,
-					}),
-				},
 			}),
 			n(5124, {	-- Sognar Cliffbeard <Meat Vendor>
 				coord = { 62.1, 72.0, MAP.IRONFORGE },
@@ -1584,13 +1790,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 			n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
 				coord = { 60.8, 44.2, MAP.IRONFORGE },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-					20752,	-- Formula: Minor Mana Oil (RECIPE!)
-					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-					6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
-					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ENCHANTING_RECIPES"),
+					{"pop"},
+				},
 				groups = {
 					i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 						isLimited = true,

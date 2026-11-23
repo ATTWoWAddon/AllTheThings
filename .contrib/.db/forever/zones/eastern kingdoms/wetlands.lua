@@ -48,8 +48,42 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 			}),
 		}),
 		n(PROFESSIONS, {
+			prof(FIRST_AID, {
+				n(3181, {	-- Fremal Doohickey <First Aid Trainer>
+					coord = { 10.8, 61.2, MAP.WETLANDS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(FISHING, {
 				o(180662),	-- Schooner Wreckage
+				n(3179, {	-- Harold Riggs <Fishing Trainer>
+					coord = { 8.0, 58.4, MAP.WETLANDS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(1458, {	-- Telurinon Moonshadow <Herbalism Trainer>
+					coord = { 8.0, 55.8, MAP.WETLANDS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
 			}),
 			prof(MINING, {
 				i(3340, {	-- Incendicite Ore
@@ -1467,13 +1501,13 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WETLANDS, {
 						273636,	-- Chef's Knife
 						6256,	-- Fishing Pole
 						6530,	-- Nightcrawlers
+						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 						6529,	-- Shiny Bauble
 						6365,	-- Strong Fishing Pole
 					},
 				},
 				groups = {
 					i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
 				},
 			}),

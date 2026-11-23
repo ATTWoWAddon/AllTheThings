@@ -26,19 +26,233 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				n(4611, {	-- Doctor Herbert Halsey <Artisan Alchemist>
 					coord = { 47.6, 73.0, MAP.UNDERCITY },
 					races = HORDE_ONLY,
-					groups = ALCHEMY_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("ALCHEMY_EXPERT"),
+						{"pop"},
+					},
+				}),
+				n(4609, {	-- Doctor Marsh <Expert Alchemist>
+					coord = { 51.2, 75.0, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(11044, {	-- Doctor Martin Felben <Journeyman Alchemist Trainer>
+					coord = { 45.8, 73.2, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(BLACKSMITHING, {
+				n(4605, {	-- Basil Frye <Journeyman Blacksmith>
+					coord = { 59.2, 29.4, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(4596, {	-- James Van Brunt <Expert Blacksmith>
+					coord = { 61.2, 29.2, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(4552, {	-- Eunice Burch <Cooking Trainer>
+					coord = { 62.2, 44.4, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(4616, {	-- Lavinia Crowe <Expert Enchanter>
+					coord = { 62.2, 61.6, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(11067, {	-- Malcomb Wynn <Journeyman Enchanter>
+					coord = { 62.2, 60.4, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENGINEERING, {
+				n(11031, {	-- Franklin Lloyd <Expert Engineer>
+					coord = { 75.4, 73.0, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ENGINEERING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(4586, {	-- Graham Van Talen <Journeyman Engineer>
+					coord = { 75.2, 72.4, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(4591, {	-- Mary Edras <First Aid Trainer>
+					coord = { 73.4, 55.4, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(4573, {	-- Armand Cromwell <Fishing Trainer>
+					coord = { 80.4, 31.2, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(4614, {	-- Martha Alliestar <Herbalism Trainer>
+					coord = { 54.2, 49.4, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(4588, {	-- Arthur Moore <Expert Leatherworker>
+					coord = { 70.4, 57.4, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(223, {	-- Dan Golthas <Journeyman Leatherworker>
+					coord = { 70.4, 58.4, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(4598, {	-- Brom Killian <Mining Trainer>
+					coord = { 55.4, 36.2, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(4582, {	-- Carolyn Ward <Rogue Trainer>
+					coord = { 83.0, 72.8, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+				n(4584, {	-- Gregory Charles <Rogue Trainer>
+					coord = { 84.2, 72.4, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+				n(4583, {	-- Miles Dexter <Rogue Trainer>
+					coord = { 84.2, 71.0, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(7087, {	-- Killian Hagey <Skinning Trainer>
+					coord = { 70.4, 58.4, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(TAILORING, {
 				n(4576, {	-- Josef Gregorian <Artisan Tailor>
 					coord = { 70.8, 29.2, MAP.UNDERCITY },
 					races = HORDE_ONLY,
-					groups = TAILORING_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("TAILORING_EXPERT"),
+						{"pop"},
+					},
 				}),
 				n(4578, {	-- Josephine Lister <Master Shadoweave Tailor>
 					coord = { 87.0, 20.8, MAP.UNDERCITY },
 					races = HORDE_ONLY,
-					groups = TAILORING_RECIPES.SHADOWEAVE,
+					sym = {
+						SymSelector.select("TAILORING_SHADOWEAVE"),
+						{"pop"},
+					},
+				}),
+				n(11049, {	-- Rhiannon Davis <Expert Tailor>
+					coord = { 70.2, 30.2, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(11048, {	-- Victor Ward <Journeyman Tailor>
+					coord = { 70.2, 29.6, MAP.UNDERCITY },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -923,20 +1137,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				coord = { 54.8, 38.0, MAP.UNDERCITY },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
+					11303,	-- Fine Shortbow
 					3027,	-- Heavy Recurve Bow
+					11307,	-- Massive Longbow
 					3026,	-- Reinforced Bow
+					11306,	-- Sturdy Recurve
 				}},
-				groups = {
-					i(11303, {	-- Fine Shortbow
-						isLimited = true,
-					}),
-					i(11307, {	-- Massive Longbow
-						isLimited = true,
-					}),
-					i(11306, {	-- Sturdy Recurve
-						isLimited = true,
-					}),
-				},
 			}),
 			n(4610, {	-- Algernon <Alchemy Supplies>
 				coord = { 51.8, 74.6, MAP.UNDERCITY },
@@ -1210,19 +1416,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4615, {	-- Katrina Alliestar <Herbalism Supplier>
 				coord = { 54.73, 48.9, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				groups = {
-					i(22250, {	-- Herb Pouch
-						description = "Only select Herbalism Suppliers sells this pouch.",
-						providers = {
-							{ "n", 4216},	-- Chardryn <Herbalism Supplies>
-							{ "n", 5503},	-- Eldraeith <Herbalism Supplier>
-							{ "n", 5138},	-- Gwina Stonebranch <Herbalism Supplier>
-							{ "n", 4615},	-- Katrina Alliestar <Herbalism Supplier>
-							{ "n", 3548},	-- Selina Weston <Alchemy & Herbalism Supplies>
-							{ "n", 3405},	-- Zeal'aya <Herbalism Supplies>
-						},
-					}),
-				},
+				sym = {{ "select", "itemID",
+					22250,	-- Herb Pouch
+				}},
 			}),
 			n(4558, {	-- Lauren Newcomb <Light Armor Merchant>
 				coord = { 64.0, 38.0, MAP.UNDERCITY },
@@ -1355,6 +1551,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+					6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -1363,12 +1563,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
 			}),
 			n(4597, {	-- Samuel Van Brunt <Blacksmithing Supplies>
 				coord = { 61.4, 30.1, MAP.UNDERCITY },
@@ -1421,13 +1615,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 			n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
 				coord = { 62.0, 60.8, MAP.UNDERCITY },
 				races = HORDE_ONLY,
-				sym = {{ "select","itemID",
-					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-					20752,	-- Formula: Minor Mana Oil (RECIPE!)
-					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-					6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
-					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ENCHANTING_RECIPES"),
+					{"pop"},
+				},
 			}),
 			n(4559, {	-- Timothy Weldon
 				coord = { 63.6, 39.6, MAP.UNDERCITY },

@@ -57,7 +57,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				n(12920, {	-- Doctor Gregory Victor <Trauma Surgeon>
 					coord = { 73.4, 36.8, MAP.ARATHI_HIGHLANDS },
 					races = HORDE_ONLY,
-					groups = FIRST_AID_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("FIRST_AID_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(FISHING, {
@@ -67,7 +70,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 				n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>
 					coord = { 28.2, 45.0, MAP.ARATHI_HIGHLANDS },
 					races = HORDE_ONLY,
-					groups = LEATHERWORKING_RECIPES.ELEMENTAL,
+					sym = {
+						SymSelector.select("LEATHERWORKING_ELEMENTAL"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(MINING, {

@@ -226,6 +226,12 @@ AssignAPIWrapper("GetSpellName",
 	C_Spell and C_Spell.GetSpellName,
 	GetSpellInfo);
 
+-- Rank text such as "Apprentice" (empty when the spell has none, nil until the spell data loads)
+AssignAPIWrapper("GetSpellSubtext",
+	C_Spell and C_Spell.GetSpellSubtext,
+	GetSpellSubtext,
+	app.EmptyFunction);
+
 -- GetSpellRank was removed in 11.0
 AssignAPIWrapper("GetSpellRank", GetSpellRank, app.EmptyFunction)
 

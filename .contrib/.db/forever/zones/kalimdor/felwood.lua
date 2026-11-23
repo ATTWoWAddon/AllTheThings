@@ -50,6 +50,26 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				provider = { "i", 11511 },	-- Cenarion Beacon
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(259585, {	-- Master Mycologist Shurome <Emerald Circle>
+					coord = { 51.4, 82.0, MAP.FELWOOD },
+					sym = {
+						SymSelector.select("ALCHEMY_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(11557, {	-- Meilosh
+					coord = { 65.2, 1.5, MAP.FELWOOD },
+					sym = {
+						SymSelector.select("TAILORING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(5242, {	-- A Final Blow
 				sourceQuest = 5165,	-- Dousing the Flames of Protection

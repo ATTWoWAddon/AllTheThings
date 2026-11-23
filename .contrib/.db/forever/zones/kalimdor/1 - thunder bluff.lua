@@ -22,11 +22,187 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			}),
 		}),
 		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(3009, {	-- Bena Winterhoof <Expert Alchemist>
+					coord = { 46.8, 33.4, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(11047, {	-- Kray <Journeyman Alchemist>
+					coord = { 46.8, 34.2, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(BLACKSMITHING, {
+				n(2998, {	-- Karn Stonehoof <Expert Blacksmith>
+					coord = { 38.8, 54.0, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(10278, {	-- Thrag Stonehoof <Journeyman Blacksmith>
+					coord = { 39.0, 57.8, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(3026, {	-- Aska Mistrunner <Cooking Trainer>
+					coord = { 50.8, 52.4, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(11071, {	-- Mot Dawnstrider <Journeyman Enchanter>
+					coord = { 43.8, 37.8, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(3011, {	-- Teg Dawnstrider <Expert Enchanter>
+					coord = { 44.8, 37.4, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(2798, {	-- Pand Stonebinder <First Aid Trainer>
+					coord = { 29.4, 21.4, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(3028, {	-- Kah Mistrunner <Fishing Trainer>
+					coord = { 55.8, 47.6, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(3013, {	-- Komin Winterhoof <Herbalism Trainer>
+					coord = { 49.4, 39.2, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(LEATHERWORKING, {
+				n(3008, {	-- Mak <Journeyman Leatherworker>
+					coord = { 42.2, 43.2, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(11084, {	-- Tarn <Expert Leatherworker>
+					coord = { 42.4, 43.0, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
 				n(3007, {	-- Una <Artisan Leatherworker>
 					coord = { 41.8, 42.6, MAP.THUNDER_BLUFF },
 					races = HORDE_ONLY,
-					groups = LEATHERWORKING_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("LEATHERWORKING_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(3001, {	-- Brek Stonehoof <Mining Trainer>
+					coord = { 34.4, 57.4, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(205729, {	-- Boarton Shadetotem <Rogue Trainer?>
+					coord = { 39.4, 64.4, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(7089, {	-- Mooranta <Skinning Trainer>
+					coord = { 44.4, 42.4, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(3004, {	-- Tepa <Expert Tailor>
+					coord = { 43.8, 44.4, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(11051, {	-- Vhan <Journeyman Tailor>
+					coord = { 43.4, 43.6, MAP.THUNDER_BLUFF },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -528,11 +704,6 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					1196,	-- Tabar
 					37,	-- Worn Axe
 				}},
-				groups = {
-					i(12249, {	-- Merciless Axe
-						isLimited = true,
-					}),
-				},
 			}),
 			n(8360, {	-- Elki <Mail Armor Merchant>
 				coord = { 45.2, 56.6, MAP.THUNDER_BLUFF },
@@ -725,22 +896,16 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				coord = { 46.8, 45.8, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
+					11303,	-- Fine Shortbow
 					3027,	-- Heavy Recurve Bow
+					11307,	-- Massive Longbow
 					3026,	-- Reinforced Bow
+					11306,	-- Sturdy Recurve
 				}},
 				groups = {
-					i(11303, {	-- Fine Shortbow
-						isLimited = true,
-					}),
-					i(11307, {	-- Massive Longbow
-						isLimited = true,
-					}),
 					i(287063, {	-- Serrated Knife
 						isLimited = true,
 						timeline = { TIMELINE.ADDED_1_60_1 },
-					}),
-					i(11306, {	-- Sturdy Recurve
-						isLimited = true,
 					}),
 				},
 			}),
@@ -829,6 +994,9 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -844,10 +1012,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					i(281044, {	-- Ceremonial Flint and Tinder
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
-					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 					i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
 			n(3017, {	-- Nan Mistrunner <Fruit Vendor>
@@ -861,13 +1026,10 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
 				coord = { 44.9, 37.7, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
-				sym = {{ "select","itemID",
-					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-					20752,	-- Formula: Minor Mana Oil (RECIPE!)
-					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-					6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
-					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ENCHANTING_RECIPES"),
+					{"pop"},
+				},
 				groups = {
 					i(278080, {	-- Bundle of Dried Cedar Twigs
 						timeline = { TIMELINE.ADDED_1_60_1 },
@@ -920,9 +1082,11 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 			n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
 				coord = { 55.8, 47.0, MAP.THUNDER_BLUFF },
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+				}},
 				groups = {
 					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
-					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
 				},
 			}),
 			n(8363, {	-- Shadi Mistrunner <Trade Supplies>

@@ -26,6 +26,7 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 			}),
 			i(4498),	-- Brown Leather Satchel
 			i(4497),	-- Heavy Brown Bag
+			i(22250),	-- Herb Pouch
 			i(4499),	-- Huge Brown Sack
 			i(2101),	-- Light Quiver
 			i(11362),	-- Medium Quiver
@@ -548,6 +549,26 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 			i(4399),	-- Wooden Stock
 			i(4341),	-- Yellow Dye
 		}),
+		filter(RECIPES, {
+			prof(COOKING, {
+				i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+				i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+				i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
+				i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
+			}),
+			prof(ENCHANTING, {
+				symselector = SymSelector.VENDOR_ENCHANTING_RECIPES,
+				groups = {
+					i(6342, {	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
+						isLimited = true,
+					}),
+					i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
+					i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
+					i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
+					i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+				},
+			}),
+		}),
 		filter(SHIELDS, {
 			i(17187),	-- Banded Buckler
 			i(2451),	-- Crested Heater Shield
@@ -626,6 +647,9 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 				i(2523),	-- Bullova
 				i(2531),	-- Great Axe
 				i(2491),	-- Large Axe
+				i(12249, {	-- Merciless Axe
+					isLimited = true,
+				}),
 				i(1196),	-- Tabar
 			}),
 			filter(TWO_HANDED_MACES, {
@@ -663,11 +687,20 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 				i(277109),	-- Zephrali Greatstaff
 			}),
 			filter(BOWS, {
+				i(11303, {	-- Fine Shortbow
+					isLimited = true,
+				}),
 				i(3027),	-- Heavy Recurve Bow
 				i(2506),	-- Hornwood Recurve Bow
 				i(2507),	-- Laminated Recurve Bow
+				i(11307, {	-- Massive Longbow
+					isLimited = true,
+				}),
 				i(2505),	-- Polished Shortbow
 				i(3026),	-- Reinforced Bow
+				i(11306, {	-- Sturdy Recurve
+					isLimited = true,
+				}),
 				i(2504),	-- Worn Shortbow
 				i(277110),	-- Zephrali Bow
 			}),

@@ -49,7 +49,71 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 		n(PROFESSIONS, {
 			n(260562, {	-- Melbin Powderfuse <Master Goblin Engineer>
 				coord = { 77.8, 50.8, MAP.RIVERGLADES },
-				groups = ENGINEERING_RECIPES.GOBLIN_ENGINEERING,
+				sym = {
+					SymSelector.select("ENGINEERING_GOBLIN_ENGINEERING"),
+					{"pop"},
+				},
+			}),
+			prof(BLACKSMITHING, {
+				n(259250, {	-- Alphonse Dumas <Journeyman Blacksmith>
+					coord = { 64.4, 82.0, MAP.RIVERGLADES },
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(256658, {	-- Gur'dok <Journeyman Blacksmith>
+					coord = { 60.0, 46.2, MAP.RIVERGLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(256655, {	-- Gorg <Cook>
+					coord = { 58.6, 44.4, MAP.RIVERGLADES },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(259287, {	-- Melanie Sable <Expert Enchanter>
+					coord = { 66.2, 83.2, MAP.RIVERGLADES },
+					sym = {
+						SymSelector.select("ENCHANTING_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(260558, {	-- Krix <Superior Fisherman>
+					coord = { 79.2, 54.8, MAP.RIVERGLADES },
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(255891, {	-- Grungle <Miner>
+					coord = { 77.6, 51.8, MAP.RIVERGLADES },
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
 			}),
 		}),
 		n(QUESTS, {
@@ -2132,6 +2196,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -2140,10 +2206,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
 			}),
 			n(260566, {	-- Fizzix Boomshot <Gunsmith>
 				coord = { 78.6, 53.6, MAP.RIVERGLADES },
@@ -2229,9 +2291,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 			n(260487, {	-- Gritta Chumwater <Fisherman>
 				coord = { 78.4, 55.1, MAP.RIVERGLADES },
+				sym = {{ "select", "itemID",
+					6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+					6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+				}},
 				groups = {
-					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					i(271657),	-- Fresh Chum
 				},
 			}),
@@ -2396,6 +2460,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -2404,10 +2470,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
 			}),
 			n(263384, {	-- Mister Graphed <Agent of the Black Market>
 				coord = { 78.1, 51.9, MAP.RIVERGLADES },

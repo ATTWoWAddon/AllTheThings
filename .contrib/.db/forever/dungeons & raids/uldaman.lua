@@ -22,7 +22,10 @@ instanceroot(239, {	-- Uldaman
 			prof(ENCHANTING, {
 				n(11073, {	-- Annora <Master Enchanter>
 					description = "To get the Annora to spawn, you'll have to kill all scorpions first.",
-					groups = ENCHANTING_RECIPES.ARTISAN,
+					sym = {
+						SymSelector.select("ENCHANTING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),

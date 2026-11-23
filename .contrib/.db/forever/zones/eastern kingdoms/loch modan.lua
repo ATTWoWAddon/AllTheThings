@@ -30,6 +30,65 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.LOCH_MODAN, {
 				races = ALLIANCE_ONLY,
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(1470, {	-- Ghak Healtouch <Journeyman Alchemist>
+					coord = { 37.0, 49.2, MAP.LOCH_MODAN },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENGINEERING, {
+				n(3290, {	-- Deek Fizzlebizz <Journeyman Engineer>
+					coord = { 45.8, 13.4, MAP.LOCH_MODAN },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(1683, {	-- Warg Deepwater <Fisherman>
+					coord = { 40.4, 39.4, MAP.LOCH_MODAN },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(1473, {	-- Kali Healtouch <Herbalist>
+					coord = { 36.4, 48.4, MAP.LOCH_MODAN },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(1681, {	-- Brock Stoneseeker <Mining Trainer>
+					coord = { 37.0, 47.8, MAP.LOCH_MODAN },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(250, {	-- A Dark Threat Looms (1/7)
 				qg = 1093,	-- Chief Engineer Hinderweir VII

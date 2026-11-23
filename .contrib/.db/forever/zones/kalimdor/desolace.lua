@@ -61,6 +61,42 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				learnedAt = 150,
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(FISHING, {
+				n(12032, {	-- Lui'Mala <Fisherman>
+					coord = { 22.6, 72.6, MAP.DESOLACE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(8153, {	-- Narv Hidecrafter <Expert Leathercrafter>
+					coord = { 55.2, 56.2, MAP.DESOLACE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(12030, {	-- Malux <Skinning Trainer>
+					coord = { 23.2, 69.8, MAP.DESOLACE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(93044, {	-- A Cleansing Cry
 				sourceQuest = 93041,	-- Facing the Truth
@@ -1539,10 +1575,10 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					{ 25.8, 71.0, MAP.DESOLACE },
 				},
 				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					12249,	-- Merciless Axe
+				}},
 				groups = {
-					i(12249, {	-- Merciless Axe
-						isLimited = true,
-					}),
 					i(12250, {	-- Midnight Axe
 						isLimited = true,
 					}),
@@ -1670,6 +1706,8 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -1684,8 +1722,6 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 					}),
 					i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
 					i(6369),	-- Recipe: Rockscale Cod (RECIPE!)
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 				},
 			}),
 		}),

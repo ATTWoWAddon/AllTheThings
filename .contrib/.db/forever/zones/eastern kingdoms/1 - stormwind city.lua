@@ -30,131 +30,247 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				n(5499, {	-- Lilyssia Nightbreeze <Expert Alchemist>
 					coord = { 55.6, 85.8, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = ALCHEMY_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("ALCHEMY_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 				n(5500, {	-- Tel'Athir <Journeyman Alchemist>
 					coord = { 55.6, 85.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = ALCHEMY_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(BLACKSMITHING, {
 				n(957, {	-- Dane Lindgren <Journeyman Blacksmith>
 					coord = { 64.0, 37.2, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = BLACKSMITHING_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(5513, {	-- Gelman Stonehand <Mining Trainer>
+					coord = { 59.0, 37.8, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 				n(5511, {	-- Therum Deepforge <Expert Blacksmith>
 					coord = { 63.8, 37.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = BLACKSMITHING_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("BLACKSMITHING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(COOKING, {
 				n(5482, {	-- Stephen Ryback <Cooking Trainer>
 					coord = { 78.2, 53.0, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = CLASSIC_CATA_COOKING,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(ENCHANTING, {
 				n(11068, {	-- Betty Quin <Journeyman Enchanter>
 					coord = { 53.0, 73.8, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = ENCHANTING_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 				n(1317, {	-- Lucan Cordell <Expert Enchanter>
 					coord = { 53.0, 74.2, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = ENCHANTING_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("ENCHANTING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(ENGINEERING, {
 				n(5518, {	-- Lilliam Sparkspindle <Expert Engineer>
 					coord = { 62.2, 30.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = ENGINEERING_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("ENGINEERING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 				n(11026, {	-- Sprite Jumpsprocket <Journeyman Engineer>
 					coord = { 62.0, 30.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = ENGINEERING_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(FIRST_AID, {
 				n(2327, {	-- Shaina Fuller <First Aid Trainer>
 					coord = { 52.8, 44.8, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = FIRST_AID_RECIPES.APPRENTICE_JOURNEYMAN,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(FISHING, {
 				n(5493, {	-- Arnold Leland <Fishing Trainer>
 					coord = { 55.0, 69.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = CLASSIC_CATA_FISHING,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(HERBALISM, {
+				n(5502, {	-- Shylamiir <Herbalism Trainer>
+					coord = { 31.4, 63.0, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
 				n(5566, {	-- Tannysa <Herbalism Trainer>
 					coord = { 44.8, 77.0, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = CLASSIC_CATA_HERBALISM,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(5500, {	-- Tel'Athir <Journeyman Alchemist>
+					coord = { 55.4, 85.4, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(LEATHERWORKING, {
 				n(11096, {	-- Randal Worth <Journeyman Leatherworker>
 					coord = { 72.4, 62.2, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = LEATHERWORKING_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 				n(5564, {	-- Simon Tanner <Expert Leatherworker>
 					coord = { 71.8, 62.8, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = LEATHERWORKING_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(MINING, {
 				n(5513, {	-- Gelman Stonehand <Mining Trainer>
 					coord = { 59.2, 37.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = CLASSIC_CATA_MINING,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(POISONS, {
 				n(13283, {	-- Lord Tony Romano <Rogue Trainer>
 					coord = { 80.2, 68.8, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = CLASSIC_POISONS,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+				n(918, {	-- Osborne the Night Man <Rogue Trainer>
+					coord = { 77.2, 65.2, MAP.STORMWIND_CITY },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(SKINNING, {
 				n(1292, {	-- Maris Granger <Skinning Trainer>
 					coord = { 72.6, 62.0, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = CLASSIC_CATA_SKINNING,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(TAILORING, {
 				n(1346, {	-- Georgio Bolero <Artisan Tailor>
 					coord = { 53.2, 81.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = TAILORING_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("TAILORING_EXPERT"),
+						{"pop"},
+					},
 				}),
 				n(9584, {	-- Jalane Ayrole <Master Shadoweave Tailor>
 					coord = { 40.6, 83.8, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = TAILORING_RECIPES.SHADOWEAVE,
+					sym = {
+						SymSelector.select("TAILORING_SHADOWEAVE"),
+						{"pop"},
+					},
 				}),
 				n(1300, {	-- Lawrence Schneider <Journeyman Tailor>
 					coord = { 53.6, 81.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = TAILORING_RECIPES.APPRENTICE,
+					sym = {
+						SymSelector.select("TAILORING_EXPERT"),
+						{"pop"},
+					},
 				}),
 				n(5567, {	-- Sellandus <Expert Tailor>
 					coord = { 52.2, 83.6, MAP.STORMWIND_CITY },
 					races = ALLIANCE_ONLY,
-					groups = TAILORING_RECIPES.JOURNEYMAN,
+					sym = {
+						SymSelector.select("TAILORING_JOURNEYMAN"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -2241,10 +2357,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(5494, {	-- Catherine Leland <Fishing Supplier>
 				coord = { 55.0, 69.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					6330,	-- Recipe: Bristle Whisker Catfish (RECIPE!)
+					6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+				}},
 				groups = {
 					i(6325),	-- Recipe: Brilliant Smallfish (RECIPE!)
-					i(6330),	-- Recipe: Bristle Whisker Catfish (RECIPE!)
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 				},
 			}),
 			n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
@@ -2309,7 +2427,9 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(5503, {	-- Eldraeith <Herbalism Supplier>
 				coord = { 55.6, 85.6, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				sym = {{ "sub", "common_vendor", 4216 }},	-- Chardryn <Herbalism Supplies>
+				sym = {{ "select", "itemID",
+					22250,	-- Herb Pouch
+				}},
 			}),
 			n(5483, {	-- Erika Tate <Cooking Supplier>
 				coord = { 77.6, 53.2, MAP.STORMWIND_CITY },
@@ -2317,6 +2437,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -2325,10 +2447,6 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
 			}),
 			n(1303, {	-- Felicia Gump <Herbalism Supplier>
 				coord = { 64.2, 60.6, MAP.STORMWIND_CITY },
@@ -2346,22 +2464,16 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				coord = { 58.6, 69.0, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
+					11303,	-- Fine Shortbow
 					3027,	-- Heavy Recurve Bow
+					11307,	-- Massive Longbow
 					3026,	-- Reinforced Bow
+					11306,	-- Sturdy Recurve
 				}},
 				groups = {
-					i(11303, {	-- Fine Shortbow
-						isLimited = true,
-					}),
-					i(11307, {	-- Massive Longbow
-						isLimited = true,
-					}),
 					i(287063, {	-- Serrated Knife
 						isLimited = true,
 						timeline = { TIMELINE.ADDED_1_60_1 },
-					}),
-					i(11306, {	-- Sturdy Recurve
-						isLimited = true,
 					}),
 				},
 			}),
@@ -2439,7 +2551,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 			n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 				coord = { 53.0, 74.2, MAP.STORMWIND_CITY },
 				races = ALLIANCE_ONLY,
-				groups = ENCHANTING_RECIPES.COMMON_RECIPES,
+				sym = {
+					SymSelector.select("VENDOR_ENCHANTING_RECIPES"),
+					{"pop"},
+				},
 			}),
 			n(5565, {	-- Jillian Tanner <Leatherworking Supplies>
 				coord = { 71.7, 62.6, MAP.STORMWIND_CITY },

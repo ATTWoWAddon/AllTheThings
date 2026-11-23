@@ -324,6 +324,104 @@ maproot(MAP.KALIMDOR, MAP.MULGORE, {
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(COOKING, {
+				n(3067, {	-- Pyall Silentstride <Cook>
+					coord = { 45.0, 61.6, MAP.MULGORE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENGINEERING, {
+				n(10993, {	-- Twizwick Sprocketgrind <Journeyman Engineer>
+					coord = { 58.6, 39.4, MAP.MULGORE },
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(5939, {	-- Vira Younghoof <First Aid Trainer>
+					coord = { 46.0, 63.8, MAP.MULGORE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(5938, {	-- Uthan Stillwater <Fisherman>
+					coord = { 44.2, 63.8, MAP.MULGORE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(267332, {	-- Garan Sunstrider <Junior Herbalism Trainer>
+					coord = { 44.2, 77.8, MAP.MULGORE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(3069, {	-- Chaw Stronghide <Journeyman Leatherworker>
+					coord = { 45.0, 61.4, MAP.MULGORE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(267331, {	-- Vartha Rockmane <Junior Mining Trainer>
+					coord = { 44.2, 78.2, MAP.MULGORE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(267330, {	-- Nawka Wildsong <Junior Skinning Trainer>
+					coord = { 44.4, 76.8, MAP.MULGORE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(6290, {	-- Yonn Deepcut <Skinner>
+					coord = { 45.0, 61.4, MAP.MULGORE },
+					races = HORDE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(96294, {	-- A Darker Truth
 				qs = 273658,	-- Bloody Parchment (QS!)

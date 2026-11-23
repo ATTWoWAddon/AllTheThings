@@ -46,7 +46,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.SEARING_GORGE, {
 				n(7868, {	-- Sarah Tanner <Master Elemental Leatherworker>
 					coord = { 63.6, 75.8, MAP.SEARING_GORGE },
 					races = ALLIANCE_ONLY,
-					groups = LEATHERWORKING_RECIPES.ELEMENTAL,
+					sym = {
+						SymSelector.select("LEATHERWORKING_ELEMENTAL"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),

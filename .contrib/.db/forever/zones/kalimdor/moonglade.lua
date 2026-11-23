@@ -39,6 +39,20 @@ maproot(MAP.KALIMDOR, MAP.MOONGLADE, {
 				races = HORDE_ONLY,
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(HERBALISM, {
+				n(12025, {	-- Malvor <Herbalist>
+					coord = { 45.4, 47.0, MAP.MOONGLADE },
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(26, {	-- A Lesson to Learn [A]
 				qg = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>

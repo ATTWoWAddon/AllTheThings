@@ -40,6 +40,243 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 			}),
 		}),
+		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(253004, {	-- Iaadaria Bitterwind <Alchemist>
+					coord = { 66.2, 79.4, MAP.ZEPHRAS_ISLE },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(257019, {	-- Nyassa Swiftdraught <Alchemist>
+					coord = { 43.6, 43.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(257005, {	-- Valiena Swiftgale <Alchemist>
+					coord = { 59.2, 76.2, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(BLACKSMITHING, {
+				n(251913, {	-- Aedi Thriceforged <Blacksmith>
+					coord = { 44.8, 44.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("BLACKSMITHING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(252479, {	-- Daeann Steelwind <Blacksmith>
+					coord = { 65.4, 80.2, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("BLACKSMITHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(257006, {	-- Nyalah Brightfire <Cook>
+					coord = { 60.6, 72.6, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(251905, {	-- Zerril Softbreeze <Cook>
+					coord = { 43.8, 43.8, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(257004, {	-- Eaysaa Brightgust <Enchanter>
+					coord = { 59.2, 76.2, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
+					groups = {
+						i(6342),	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
+					},
+				}),
+				n(257020, {	-- Nasalanna Windsinger <Enchanter>
+					coord = { 43.2, 43.2, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENGINEERING, {
+				n(251684, {	-- Strange Hermit
+					coord = { 54.0, 39.0, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("ENGINEERING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(257007, {	-- Melasa Fairmend <Medic>
+					coord = { 63.0, 72.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+				n(257018, {	-- Naleeia Tattermend <Medic>
+					coord = { 43.0, 46.2, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(257008, {	-- Baelann Swiftcurrent <Fisher>
+					coord = { 63.2, 75.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(251992, {	-- Fenn Fairweather <Fisherman>
+					coord = { 45.0, 48.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(257021, {	-- Halassa Fernbreeze <Herbalist>
+					coord = { 43.0, 43.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(254345, {	-- Syriel Nightrain <Herbalist>
+					coord = { 57.8, 75.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(252376, {	-- Emerii Tallgust <Leatherworker>
+					coord = { 63.8, 80.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(251993, {	-- Indari Sunseam <Leatherworker>
+					coord = { 44.6, 44.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(MINING, {
+				n(252388, {	-- Halavuul Cragwind <Mining Trainer>
+					coord = { 65.4, 80.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(257022, {	-- Messana Crestwind <Miner>
+					coord = { 44.6, 44.6, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("MINING_APPRENTICE"),
+						SymSelector.select("MINING_JOURNEYMAN"),
+						SymSelector.select("MINING_EXPERT"),
+						SymSelector.select("MINING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(252379, {	-- Eltheen Nightbreeze <Rogue Trainer>
+					coord = { 59.8, 72.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(257003, {	-- Ishlee Breezewhisper <Skinner>
+					coord = { 59.4, 76.0, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(257024, {	-- Mendalass Tattermend <Skinner>
+					coord = { 43.2, 43.4, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(252380, {	-- Othesia Evengale <Tailor>
+					coord = { 64.4, 81.0, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("TAILORING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(251991, {	-- Taleen Shimmerthread <Tailor>
+					coord = { 44.8, 44.2, MAP.ZEPHRAS_ISLE },
+					sym = {
+						SymSelector.select("TAILORING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+		}),
 		n(QUESTS, {
 			q(93746, {	-- A Firm Response
 				sourceQuest = 93738,	-- The Broken Construct
@@ -2036,13 +2273,18 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			n(257020, {	-- Nasalanna Windsinger <Enchanter>
 				coord = { 60.8, 44.2, MAP.ZEPHRAS_ISLE },
-				groups = ENCHANTING_RECIPES.COMMON_RECIPES,
+				sym = {
+					SymSelector.select("VENDOR_ENCHANTING_RECIPES"),
+					{"pop"},
+				},
 			}),
 			n(257006, {	-- Nyalah Brightfire
 				coord = { 60.7, 72.7, MAP.ZEPHRAS_ISLE },
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -2060,15 +2302,15 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			n(257422, {	-- Railee Thriceforged
 				coord = { 59.0, 75.5, MAP.ZEPHRAS_ISLE },
 				sym = {{ "select", "itemID",
-					2488,	-- Gladius
-					2489,	-- Two-handed Sword
-					2490,	-- Tomahawk
-					2491,	-- Large Axe
 					2492,	-- Cudgel
-					2493,	-- Wooden Mallet
-					2494,	-- Stiletto
-					2495,	-- Walking Stick
 					11303,	-- Fine Shortbow
+					2488,	-- Gladius
+					2491,	-- Large Axe
+					2494,	-- Stiletto
+					2490,	-- Tomahawk
+					2489,	-- Two-handed Sword
+					2495,	-- Walking Stick
+					2493,	-- Wooden Mallet
 				}},
 				groups = {
 					i(287063, {	-- Serrated Knife
@@ -2184,6 +2426,8 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -2192,10 +2436,6 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
 			}),
 		}),
 		n(ZONE_DROPS, {

@@ -19,14 +19,176 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				n(4160, {	-- Ainethil <Artisan Alchemist>
 					coord = { 55.6, 24.6, MAP.DARNASSUS },
 					races = ALLIANCE_ONLY,
-					groups = ALCHEMY_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("ALCHEMY_EXPERT"),
+						{"pop"},
+					},
+				}),
+				n(11041, {	-- Milla Fairancora <Journeyman Alchemist>
+					coord = { 55.2, 21.4, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(11042, {	-- Sylvanna Forestmoon <Expert Alchemist>
+					coord = { 55.6, 23.4, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(4210, {	-- Alegorn <Cooking Trainer>
+					coord = { 48.4, 21.2, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(11070, {	-- Lalina Summermoon <Journeyman Enchanter>
+					coord = { 58.4, 13.2, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(4213, {	-- Taladan <Expert Enchanter>
+					coord = { 58.4, 13.2, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(4211, {	-- Dannelor <First Aid Trainer>
+					coord = { 51.4, 12.4, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FISHING, {
+				n(4156, {	-- Astaia <Fishing Trainer>
+					coord = { 47.4, 56.4, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FISHING_APPRENTICE"),
+						SymSelector.select("FISHING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(HERBALISM, {
+				n(4204, {	-- Firodren Mooncaller <Herbalism Trainer>
+					coord = { 48.0, 68.4, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
 				}),
 			}),
 			prof(LEATHERWORKING, {
+				n(11083, {	-- Darianna <Journeyman Leatherworker>
+					coord = { 64.2, 21.6, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_APPRENTICE"),
+						{"pop"},
+					},
+				}),
+				n(11081, {	-- Faldron <Expert Leatherworker>
+					coord = { 64.4, 21.4, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("LEATHERWORKING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
 				n(4212, {	-- Telonis <Artisan Leatherworker>
 					coord = { 64.6, 21.6, MAP.DARNASSUS },
 					races = ALLIANCE_ONLY,
-					groups = LEATHERWORKING_RECIPES.EXPERT,
+					sym = {
+						SymSelector.select("LEATHERWORKING_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(4215, {	-- Anishar <Rogue Trainer>
+					coord = { 37.8, 19.6, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+				n(4214, {	-- Erion Shadewhisper <Rogue Trainer>
+					coord = { 34.4, 25.4, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+				n(4163, {	-- Syurna <Rogue Trainer>
+					coord = { 36.2, 21.4, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(SKINNING, {
+				n(6292, {	-- Eladriel <Skinning Trainer>
+					coord = { 64.2, 21.8, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("SKINNING_APPRENTICE"),
+						SymSelector.select("SKINNING_JOURNEYMAN"),
+						SymSelector.select("SKINNING_EXPERT"),
+						SymSelector.select("SKINNING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(4159, {	-- Me'lynn <Expert Tailor>
+					coord = { 62.4, 22.4, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_JOURNEYMAN"),
+						{"pop"},
+					},
+				}),
+				n(11050, {	-- Trianna <Journeyman Tailor>
+					coord = { 63.4, 21.4, MAP.DARNASSUS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_APPRENTICE"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -640,19 +802,9 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4216, {	-- Chardryn <Herbalism Supplies>
 				coord = { 49.55, 69.44, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				groups = {
-					i(22250, {	-- Herb Pouch
-						description = "Only select Herbalism Suppliers sells this pouch.",
-						providers = {
-							{ "n", 4216 },	-- Chardryn <Herbalism Supplies>
-							{ "n", 5503 },	-- Eldraeith <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
-							{ "n", 5138 },	-- Gwina Stonebranch <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
-							{ "n", 4615 },	-- Katrina Alliestar <Herbalism Supplies> [TBC+] / <Herbalism Supplier>
-							{ "n", 3548 },	-- Selina Weston <Alchemy & Herbalism Supplies>
-							{ "n", 3405 },	-- Zeal'aya <Herbalism Supplies>
-						},
-					}),
-				},
+				sym = {{ "select", "itemID",
+					22250,	-- Herb Pouch
+				}},
 			}),
 			n(4164, {	-- Cylania
 				coord = { 56.8, 53.6, MAP.DARNASSUS },
@@ -721,6 +873,8 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				sym = {{ "select", "itemID",
 					2692,	-- Hot Spices
 					2678,	-- Mild Spices
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 					159,	-- Refreshing Spring Water
 					4536,	-- Shiny Red Apple
 					10284,	-- Simple Flour
@@ -729,10 +883,6 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					11291,	-- Star Wood
 					272941,	-- Thick Logs
 				}},
-				groups = {
-					i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
-					i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
-				},
 			}),
 			n(4232, {	-- Glorandiir <Axe Merchant>
 				coord = { 64.2, 59.0, MAP.DARNASSUS },
@@ -750,11 +900,6 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 					12249,	-- Merciless Axe
 					1196,	-- Tabar
 				}},
-				groups = {
-					i(12249, {	-- Merciless Axe
-						isLimited = true,
-					}),
-				},
 			}),
 			n(6735, {	-- Innkeeper Saelienne <Innkeeper>
 				coord = { 67.2, 15.8, MAP.DARNASSUS },
@@ -812,19 +957,15 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 				coord = { 63.3, 66.3, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
 				sym = {{ "select", "itemID",
+					11303,	-- Fine Shortbow
 					3027,	-- Heavy Recurve Bow
 					3026,	-- Reinforced Bow
+					11306,	-- Sturdy Recurve
 				}},
 				groups = {
-					i(11303, {	-- Fine Shortbow
-						isLimited = true,
-					}),
 					i(287063, {	-- Serrated Knife
 						isLimited = true,
 						timeline = { TIMELINE.ADDED_1_60_1 },
-					}),
-					i(11306, {	-- Sturdy Recurve
-						isLimited = true,
 					}),
 					i(11308, {	-- Sylvan Shortbow
 						isLimited = true,
@@ -992,13 +1133,10 @@ maproot(MAP.KALIMDOR, MAP.DARNASSUS, {
 			n(4228, {	-- Vaean <Enchanting Supplies>
 				coord = { 58.6, 14.7, MAP.DARNASSUS },
 				races = ALLIANCE_ONLY,
-				sym = {{ "select", "itemID",
-					20753,	-- Formula: Lesser Wizard Oil (RECIPE!)
-					20752,	-- Formula: Minor Mana Oil (RECIPE!)
-					20758,	-- Formula: Minor Wizard Oil (RECIPE!)
-					6342,	-- Formula: Enchant Chest - Minor Intellect (RECIPE!)
-					22307,	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-				}},
+				sym = {
+					SymSelector.select("VENDOR_ENCHANTING_RECIPES"),
+					{"pop"},
+				},
 			}),
 			n(4175, {	-- Vinasia <Cloth Armor Merchant>
 				coord = { 60.7, 72.5, MAP.DARNASSUS },

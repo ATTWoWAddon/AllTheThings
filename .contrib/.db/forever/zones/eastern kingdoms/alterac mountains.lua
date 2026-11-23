@@ -70,8 +70,118 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 			}),
 		}),
 		n(PROFESSIONS, {
+			prof(ALCHEMY, {
+				n(246795, {	-- Linzy Blackbolt <Alchemist>
+					coord = { 18.4, 62.4, MAP.ALTERAC_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_EXPERT"),
+						{"pop"},
+					},
+				}),
+				n(275322, {	-- Patricia Egan <Alchemist>
+					coord = { 18.4, 62.4, MAP.ALTERAC_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ALCHEMY_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(BLACKSMITHING, {
+				n(28694, {	-- Alard Schmied <Blacksmith>
+					coord = { 19.4, 63.2, MAP.ALTERAC_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("BLACKSMITHING_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(COOKING, {
+				n(252084, {	-- Katherine Lee <Cooking Trainer>
+					coord = { 12.4, 65.8, MAP.ALTERAC_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+					},
+				}),
+				n(267000, {	-- Paige <Chef>
+					coord = { 20.8, 74.6, MAP.ALTERAC_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("COOKING_APPRENTICE"),
+						SymSelector.select("COOKING_JOURNEYMAN"),
+						SymSelector.select("COOKING_EXPERT"),
+						SymSelector.select("COOKING_ARTISAN"),
+						{"pop"},
+						{ "select", "itemID",
+							21219,	-- Recipe: Sagefish Delight (RECIPE!)
+							21099,	-- Recipe: Smoked Sagefish (RECIPE!)
+						},
+					},
+				}),
+			}),
+			prof(ENCHANTING, {
+				n(251978, {	-- Vanessa Sellers <Enchanting Trainer>
+					coord = { 16.6, 62.6, MAP.ALTERAC_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("ENCHANTING_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(FIRST_AID, {
+				n(251977, {	-- Angelique Butler <First Aid Trainer>
+					coord = { 17.2, 61.0, MAP.ALTERAC_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("FIRST_AID_APPRENTICE"),
+						SymSelector.select("FIRST_AID_JOURNEYMAN"),
+						SymSelector.select("FIRST_AID_EXPERT"),
+						{"pop"},
+					},
+				}),
+			}),
 			prof(FISHING, {
 				o(180685),	-- Waterlogged Wreckage
+			}),
+			prof(HERBALISM, {
+				n(275321, {	-- Edward Egan <Herbalist>
+					coord = { 18.4, 63.2, MAP.ALTERAC_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("HERBALISM_APPRENTICE"),
+						SymSelector.select("HERBALISM_JOURNEYMAN"),
+						SymSelector.select("HERBALISM_EXPERT"),
+						SymSelector.select("HERBALISM_ARTISAN"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(POISONS, {
+				n(6707, {	-- Fahrad <Grand Master Rogue>
+					coord = { 84.4, 80.2, MAP.ALTERAC_MOUNTAINS },
+					sym = {
+						SymSelector.select("POISONS_RECIPES"),
+						{"pop"},
+					},
+				}),
+			}),
+			prof(TAILORING, {
+				n(251972, {	-- Charles Worth <Expert Tailor>
+					coord = { 17.6, 60.2, MAP.ALTERAC_MOUNTAINS },
+					races = ALLIANCE_ONLY,
+					sym = {
+						SymSelector.select("TAILORING_EXPERT"),
+						{"pop"},
+					},
+				}),
 			}),
 		}),
 		n(QUESTS, {
@@ -979,6 +1089,14 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 					7338,	-- Mood Ring
 					7342,	-- Silver Piffeny Band
 					7337,	-- The Rock
+				}},
+			}),
+			n(252083, {	-- Derek Odds <Cooking Supplies>
+				coord = { 12.4, 65.8, MAP.ALTERAC_MOUNTAINS },
+				races = ALLIANCE_ONLY,
+				sym = {{ "select", "itemID",
+					21219,	-- Recipe: Sagefish Delight (RECIPE!)
+					21099,	-- Recipe: Smoked Sagefish (RECIPE!)
 				}},
 			}),
 			n(251975, {	-- Harold Winston <Jewelry Vendor>

@@ -56,7 +56,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				n(249713, {	-- Odd Child
 					coord = { 41.2, 79.0, MAP.WESTFALL },
 					timeline = { TIMELINE.ADDED_1_60_1 },
-					groups = ALCHEMY_RECIPES.DISCOLORED_HEALING_POTION,
+					sym = {
+						SymSelector.select("ALCHEMY_DISCOLORED_POTIONS"),
+						{"pop"},
+					},
 				}),
 			}),
 		}),
@@ -982,10 +985,12 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 				sym = {
 					SymSelector.select("VENDOR_FOOD_FISH"),	-- Fish
 					{ "pop" },
+					{ "select", "itemID",
+						6368,	-- Recipe: Rainbow Fin Albacore (RECIPE!)
+					},
 				},
 				groups = {
 					i(5528),	-- Recipe: Clam Chowder (RECIPE!)
-					i(6368),	-- Recipe: Rainbow Fin Albacore (RECIPE!)
 					i(6326),	-- Recipe: Slitherskin Mackerel (RECIPE!)
 					i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 				},

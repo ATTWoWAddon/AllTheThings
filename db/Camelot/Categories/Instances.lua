@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,ah,cl,crit,e,faction,flt,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,toy=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateEncounter,_.CreateFaction,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateToy;
+local ach,ah,cl,crit,e,faction,h,i,inst,mnt,n,o,p,prof,q,qo,r,s,settings,toy=_.CreateAchievement,_.CreateHeader,_.CreateCharacterClass,_.CreateAchievementCriteria,_.CreateEncounter,_.CreateFaction,_.CreateCustomHeader,_.CreateItem,_.CreateInstance,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateQuestObjective,_.CreateRecipe,_.CreateItemSource,_.Settings,_.CreateToy;
 categories.Instances=
 h(-75,{SortPriority=1,g={
 h(-318,{
@@ -4465,21 +4465,7 @@ inst(239,{coords={
 [1418]={{64,44}}},icon=136363,lore="Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",lvl=35,mapID=230,zoneTextAreaID=1337,g={
 h(-44,{
 prof(333,{
-n(11073,{description="To get the Annora to spawn, you'll have to kill all scorpions first.",g={
-r(13920,{learnedAt=200,lvl=35,rank=4,requireSkill=333}),
-h(-243,{
-r(13935,{learnedAt=235,requireSkill=333,skillID=2940}),
-r(13939,{learnedAt=240,requireSkill=333,skillID=2940}),
-r(13941,{learnedAt=245,requireSkill=333,skillID=2940}),
-r(13917,{learnedAt=230,requireSkill=333,skillID=2940}),
-r(13948,{learnedAt=250,requireSkill=333,skillID=2940})}),
-flt(56,{
-r(17181,{learnedAt=250,requireSkill=333,skillID=2940}),
-r(17180,{learnedAt=250,requireSkill=333,skillID=2940})}),
-h(-245,{
-r(13937,{learnedAt=240,requireSkill=333,skillID=2940}),
-r(13905,{learnedAt=230,requireSkill=333,skillID=2940}),
-r(13943,{learnedAt=245,requireSkill=333,skillID=2940})})}})})}),
+n(11073,{description="To get the Annora to spawn, you'll have to kill all scorpions first.",sym={{"select","symselector",4},{"pop"}}})})}),
 h(-45,{
 q(2964,{coords={
 [1455]={{77.2,11.8}}},lvl=45,qgs={2916},r=2,sourceQuests={2977}}),
@@ -4744,7 +4730,7 @@ o(409692,{awp=16001,coords={
 i(209846,{b=1})}})}),
 h(-58,{
 n(5783,{coords={
-[1413]={{45.9,35.7}}},sym={{"select","symselector",4},{"pop"}},g={
+[1413]={{45.9,35.7}}},sym={{"select","symselector",5},{"pop"}},g={
 r(7953,{itemID=6474,learnedAt=65,requireSkill=165,skillID=2945}),
 r(7954,{itemID=6475,learnedAt=80,requireSkill=165,skillID=2945})}})}),
 h(-63,{
