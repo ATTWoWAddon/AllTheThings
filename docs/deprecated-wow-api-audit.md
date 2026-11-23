@@ -1,15 +1,16 @@
 # Deprecated WoW APIs and client support
 
-Audit date November 23, 2026 (Asia/Taipei).
+Audit date November 24, 2026 (Asia/Taipei).
 
-Baseline: ATT upstream `master` at [`f9f3fc6516`](https://github.com/ATTWoWAddon/AllTheThings/commit/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6). All ATT counts and current implementation statements below refer to this exact source tree. Pending work on `codex/deprecated-wow-api-audit` at `d3c2053110` is identified explicitly; its migrations are not treated as already merged. Historical deprecation and removal evidence is retained alongside the refreshed client snapshots.
+Baseline: ATT upstream `master` at [`78d6fc20f5`](https://github.com/ATTWoWAddon/AllTheThings/commit/78d6fc20f5048ac3931ea726572d3e9960d895c6). ATT counts and implementation statements use this source tree. Pending work on `codex/deprecated-wow-api-audit` at `d3c2053110` is identified explicitly; its migrations are not treated as already merged. The client tables retain historical deprecation and removal evidence.
 
 ## Results
 
-- **Master exports 54 public wrapper members.** The inventory also identifies 14 pending adapters from the development branch. Its underlying API matrix covers 47 namespaced candidates used by master and seven additional candidates used by those pending adapters.
+- **Master exports 55 public wrapper members.** The new `GetSpellSubtext` wrapper supplies rank text for Forever profession headers. Of the 54 distinct namespaced candidates, master uses 48 and the 14 pending adapters add six.
 - **Maintained master code has 27 invocation paths for 14 names with Gethe-confirmed deprecation/framework evidence on at least one track**: 25 calls spelled with legacy names and two differently named alias delegations. The table below distinguishes guarded fallbacks and Classic-only paths from unconditional calls. Two further Classic `IsTradeSkillLinked` calls are listed separately: Retail native removal is Wiki-only evidence, and no local Classic D/R is established.
 - **Generated databases store 105 legacy call expressions across five families**: 80 in current output routes and 25 in the historical Cata output. These are stored-code counts, not assertions that every path executes on every client.
-- **Gethe snapshots are refreshed for all seven tracks.** Retail, Mists, Forever and Retail PTR have newer builds. Their deprecated payloads and TOC loaders have no added/removed compatibility definitions relative to the prior pins. PTR still has the same three additional deprecated names relative to Retail live; their first observed builds are now recorded.
+- **All seven Gethe branch heads still match the previous audit.** Retail PTR retains the same three additional deprecated names relative to Retail live. The audit adds source evidence for the scroll templates, `ReloadUI` and the spell subtext namespace transition.
+- **The Windows settings redesign adds two Classic-only uses of `UIPanelScrollFrameTemplate`.** Blizzard marks the template deprecated and still defines it on all seven tracks. The two added sites bring the count of deprecated scroll template uses to four. The Audio dropdown and guarded Settings fallbacks still account for the same function call paths.
 - **Inherited deprecations retain their upstream dates.** TBC Anniversary and Titan cells distinguish Era history from first-local observations; Forever cells retain Retail history with a verified 1.60.1 / 69876 beta bound. Missing shims do not imply native-global removal.
 - **Pending migrations do not finish the audit.** The shared spell-tooltip callback still invokes `GetSpellCooldown` and `SecondsToTime` on both master and the development branch. Rebuilding databases after the existing 15 migrations alone would retain those calls.
 
@@ -27,13 +28,11 @@ Each row pins the latest Gethe branch revision retrieved on the audit date. Inte
 | Forever | Live | [1.60.1 / 71037](https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/version.txt#L1) | `16001` | `Camelot` | 3 |
 | Retail PTR | Test | [12.1.7 / 71087](https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/version.txt#L1) | `120107` | `Standard / .ptr` | 0 |
 
-Refresh comparisons: [live](https://github.com/Gethe/wow-ui-source/compare/297d7aaaa736f346b3e036f38ee088eaf7f8c07f...ab5cb850a3f65e742959e379c4689353a2f4549f), [classic](https://github.com/Gethe/wow-ui-source/compare/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf...e171ae99b8e582ce9547bd8fc87054fe2e348f20), [forever](https://github.com/Gethe/wow-ui-source/compare/eac30af597e5aaa43a60f6675ef5fdcea100375f...734f065329cff4992835b01a84f210a297db91b6), [ptr](https://github.com/Gethe/wow-ui-source/compare/e927c305f67ed6b3b460bc00d0c39055747b9119...fbb18ce126862cedee284308dec404ff93fa27b1).
-
 Forever is a live track following its November 4 launch at 23:00 UTC (November 5 at 07:00 in Taiwan). [Blizzard launch schedule](https://worldofwarcraft.blizzard.com/en-us/news/24315820/world-of-warcraft-forever-goes-live-globally-4-november).
 
 Retail PTR is a test channel of Retail. Its Standard and .ptr outputs both have zero matches in the legacy call families counted here. The Era datasets are mutually exclusive at runtime, so ten stored calls correspond to five per selected dataset. Titan uses the Wrath output route at interface 38002. Historical Cata output is counted separately, not presented as a current flavour.
 
-Compared with the previous pins, Retail, Mists, Forever and PTR advance; Era, TBC Anniversary and Titan are unchanged. All deprecated payloads and their TOC files are byte-identical at the old and new pins. Referenced API-documentation anchors were checked separately; Battle.net line offsets changed in Forever/PTR. Gethe's stale `ptr2` (12.1.5 / 70340) and `beta` (12.0.1 / 66220) branches are not newer current test tracks.
+All seven version pins were reconfirmed against their Gethe branch heads on November 24. `ptr2` remains at 12.1.5 / 70340 and `beta` at 12.0.1 / 66220. The `ptr` branch is the current Retail test track.
 
 ## Evidence and table notation
 
@@ -68,7 +67,7 @@ The TBC and Titan comparisons establish shared payloads, not an exact whole-clie
 
 ## Master wrappers and pending adapters
 
-All **54 public members** in the [master wrapper source](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/WoW%20API%20Wrappers.lua) are marked **Present**. The other **14 rows** are pending adapters in the development branch, not current master members. Preferred candidates and legacy fallbacks are audited independently below. `AssignAPIWrapper`, its metatable, and local helper functions are implementation details.
+All **55 public members** in the [master wrapper source](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/WoW%20API%20Wrappers.lua) are marked **Present**. The other **14 rows** are pending adapters in the development branch, not current master members. Preferred candidates and legacy fallbacks are audited independently below. `AssignAPIWrapper`, its metatable, and local helper functions are implementation details.
 
 | ATT member | Status on master | Preferred API or implementation | Fallback or alternative | Lifecycle group |
 | --- | --- | --- | --- | --- |
@@ -117,6 +116,7 @@ All **54 public members** in the [master wrapper source](https://github.com/ATTW
 | `GetSpellIcon` | Present | `C_Spell.GetSpellTexture` | GetSpellTexture | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
 | `GetSpellCooldown` | Present | `C_Spell.GetSpellCooldown` with ATT start-time adaptation | GetSpellCooldown | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
 | `GetSpellName` | Present | `C_Spell.GetSpellName` | GetSpellInfo | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetSpellSubtext` | Present | `C_Spell.GetSpellSubtext` | `GetSpellSubtext` or ATT empty function | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
 | `GetSpellRank` | Present | GetSpellRank | ATT empty function | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
 | `IsSpellKnown` | Present | `C_SpellBook.IsSpellKnown` | IsSpellKnown | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
 | `IsSpellKnownOrOverridesKnown` | Present | `C_SpellBook.IsSpellInSpellBook` | IsSpellKnownOrOverridesKnown | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
@@ -197,6 +197,7 @@ These selected implementations have no deprecation/removal event identified in t
 | `DropdownButtonMixin.SetupMenu` | [L][e228] | [L][e229] | [L][e230] | [L][e231] | [L][e232] | [L][e233] | [L][e234] |
 | `DropdownSelectionTextMixin.OverrideText` | [L][e235] | [L][e236] | [L][e237] | [L][e238] | [L][e239] | [L][e240] | [L][e241] |
 | `MenuUtil.CreateRadio` | [L][e242] | [L][e243] | [L][e244] | [L][e245] | [L][e246] | [L][e247] | [L][e248] |
+| `ReloadUI` | [L][ui-reload-retail] | [L][ui-reload-era] | [L][ui-reload-tbc] | [L][ui-reload-mists] | [L][ui-reload-titan] | [L][ui-reload-forever] | [L][ui-reload-ptr] |
 | `SecondsFormatterMixin.Format` | [L][e249] | [L][e250] | [L][e251] | [L][e252] | [L][e253] | [L][e254] | [L][e255] |
 | `SecondsFormatterMixin.Init` | [L][e256] | [L][e257] | [L][e258] | [L][e259] | [L][e260] | [L][e261] | [L][e262] |
 | `Settings.OpenToCategory` | [L][e263] | [L][e264] | [L][e265] | [L][e266] | [L][e267] | [L][e268] | [L][e269] |
@@ -254,6 +255,7 @@ The six faction members in the inventory share `GetFactionInfoByID`. Retail repl
 | `GetSpellTexture` | D 11.0.0 (55793); R 11.0.2 (56110) [1][e91] [2][e173] [3][e434] | UI caller; D/R — [1][e435] | UI caller; D/R — [1][e436] | ?; D/R — | UI caller; D/R — [1][e437] | H Retail D 11.0.0 / R shim 11.0.2; O beta 1.60.1 (69876): shim absent; native ? [1][e91] [2][e173] [3][e434] [first beta loader][lineage-forever-generic] | D 11.0.0 (55793); R 11.0.2 (56110) [1][e91] [2][e173] [3][e434] |
 | `GetSpellCooldown` | D 11.0.0 (55793); R 11.0.2 (56110) [1][e91] [2][e173] [3][e438] | ?; D/R — | ?; D/R — | UI caller; D/R — [1][e439] | ?; D/R — | H Retail D 11.0.0 / R shim 11.0.2; O beta 1.60.1 (69876): shim absent; native ? [1][e91] [2][e173] [3][e438] [first beta loader][lineage-forever-generic] | D 11.0.0 (55793); R 11.0.2 (56110) [1][e91] [2][e173] [3][e438] |
 | `GetSpellInfo` | D 11.0.0 (55793); R 11.0.2 (56110) [1][e91] [2][e173] [3][e440] | UI caller; D/R — [1][e441] | UI caller; D/R — [1][e442] | UI caller; D/R — [1][e443] | UI caller; D/R — [1][e444] | H Retail D 11.0.0 / R shim 11.0.2; O beta 1.60.1 (69876): shim absent; native ? [1][e91] [2][e173] [3][e440] [first beta loader][lineage-forever-generic] | D 11.0.0 (55793); R 11.0.2 (56110) [1][e91] [2][e173] [3][e440] |
+| `GetSpellSubtext` | UI namespace switch 11.0.0 (55793); native R 11.0.0 (Wiki) [guide][spell-subtext-guide] [Wiki][spell-subtext-wiki] | Native ?; D/R — | Native ?; D/R — | Native ?; D/R — | Native ?; D/R — | H Retail namespace switch 11.0.0; native ?; local D/R — [guide][spell-subtext-guide] | Retail UI switch 11.0.0; native R 11.0.0 (Wiki) [guide][spell-subtext-guide] [Wiki][spell-subtext-wiki] |
 | `GetSpellRank` | D —; R 11.0.0 (Wiki) [Wiki][e445] [2][e446] | UI caller; D/R — [1][e447] | UI caller; D/R — [1][e448] | UI caller; D/R — [1][e449] | UI caller; D/R — [1][e450] | ?; D/R — | D —; R 11.0.0 (Wiki) [Wiki][e445] [2][e451] |
 | `IsSpellKnown` | D 11.2.0 (62417); retained [1][e413] [2][e452] [3][e453] | D 1.15.8 (63829); retained [1][e417] [2][e454] [3][e455] | Era D 1.15.8 (63829); O PTR 2.5.5 (64508); retained [1][e419] [2][e456] [3][e457] [origin][e417] [first PTR][lineage-tbc-first] | D 5.5.1 (63311); retained [1][e458] [2][e459] [3][e460] | Era D 1.15.8 (63829); O 3.80.0 (64393); retained [1][e423] [2][e461] [3][e462] [origin][e417] | Retail D 11.2.0 (62417); O beta 1.60.1 (69876); retained [first beta][lineage-forever-e463] [2][e464] [3][e465] [origin][e413] | D 11.2.0 (62417); retained [1][e413] [2][e466] [3][e467] |
 | `IsSpellKnownOrOverridesKnown` | D 11.2.0 (62417); retained [1][e413] [2][e468] [3][e453] | D 1.15.8 (63829); retained [1][e417] [2][e469] [3][e455] | Era D 1.15.8 (63829); O PTR 2.5.5 (64508); retained [1][e419] [2][e470] [3][e457] [origin][e417] [first PTR][lineage-tbc-first] | D 5.5.1 (63311); retained [1][e458] [2][e471] [3][e460] | Era D 1.15.8 (63829); O 3.80.0 (64393); retained [1][e423] [2][e472] [3][e462] [origin][e417] | Retail D 11.2.0 (62417); O beta 1.60.1 (69876); retained [first beta][lineage-forever-e463] [2][e473] [3][e465] [origin][e413] | D 11.2.0 (62417); retained [1][e413] [2][e474] [3][e467] |
@@ -263,7 +265,7 @@ The six faction members in the inventory share `GetFactionInfoByID`. Retail repl
 | `IsPlayerSpell` | D 11.2.0 (62417); retained [1][e413] [2][e486] [3][e453] | D 1.15.8 (63829); retained [1][e417] [2][e487] [3][e455] | Era D 1.15.8 (63829); O PTR 2.5.5 (64508); retained [1][e419] [2][e488] [3][e457] [origin][e417] [first PTR][lineage-tbc-first] | D 5.5.1 (63311); retained [1][e458] [2][e489] [3][e460] | Era D 1.15.8 (63829); O 3.80.0 (64393); retained [1][e423] [2][e490] [3][e462] [origin][e417] | Retail D 11.2.0 (62417); O beta 1.60.1 (69876); retained [first beta][lineage-forever-e463] [2][e491] [3][e465] [origin][e413] | D 11.2.0 (62417); retained [1][e413] [2][e492] [3][e467] |
 | `UnitBuff` | D 10.2.5 (52902); R 11.0.2 (56110) [1][e91] [2][e493] [3][e494] | D 1.15.9 (68808); retained [1][e79] [2][e495] [3][e496] | O PTR 2.5.5 (64508): deprecated shim; retained; D origin ? [1][e419] [2][e497] [3][e498] [first PTR][lineage-tbc-aura] | D 5.5.4 (67849); retained [1][e81] [2][e499] [3][e500] | D 3.80.1 (66860); retained [1][e83] [2][e501] [3][e502] | H Retail D 10.2.5 / R shim 11.0.2; O beta 1.60.1 (69876): shim files gated classic; native ? [1][e91] [2][e493] [3][e494] [loader][lineage-forever-generic] | D 10.2.5 (52902); R 11.0.2 (56110) [1][e91] [2][e493] [3][e494] |
 
-The Retail 11.0.0 spell transition is not one uniform lifecycle. `GetSpellInfo`, `GetSpellTexture`, `GetSpellCooldown`, `GetNumSpellTabs` and `GetSpellTabInfo` have explicit 11.0.0 Lua shims removed in 11.0.2. `GetSpellLink` and `GetSpellRank` are listed in the 11.0.0 transition guide, but no corresponding shim was established; Wiki supplies their native-name removal version. A wrapper comment is not used as lifecycle evidence.
+The Retail 11.0.0 spell transition is not one uniform lifecycle. `GetSpellInfo`, `GetSpellTexture`, `GetSpellCooldown`, `GetNumSpellTabs` and `GetSpellTabInfo` have explicit 11.0.0 Lua shims removed in 11.0.2. `GetSpellLink` and `GetSpellRank` are listed in the 11.0.0 transition guide, but no corresponding shim was established; Wiki supplies their native-name removal version. The `GetSpellSubtext` transition guide and adjacent ObjectAPI exports date its namespace switch to 11.0.0. Wiki records the old Retail native name in the removal list. Gethe does not show a separate Lua grace period for this global. Current source evidence for the namespaced API is in the declaration table. [Previous UI][spell-subtext-old], [Updated UI][spell-subtext-new], [Transition guide][spell-subtext-guide], [Wiki native history][spell-subtext-wiki].
 
 Classic specialization bridges select `GetActiveTalentGroup`, not the Standard-only `GetSpecialization`/`GetSpecializationInfo` file. The package allows only classic/standard game types, excluding Forever's Camelot output even though those files are bundled. No specialization D/R or native availability is inferred for Forever from them. [First-beta loader][lineage-forever-spec].
 
@@ -294,7 +296,7 @@ Classic declares public `C_CombatLog.GetCurrentEventInfo` with `HasRestrictions`
 
 ## Current native API declarations
 
-This table covers **54 distinct namespaced candidates**: 47 referenced by the master wrapper and seven used only by pending adapters (`C_CombatLog.GetCurrentEventInfo`, both housing candidates, `C_Spell.GetSpellInfo`, `C_Spell.GetSpellSubtext`, `C_SpellBook.GetSpellBookItemInfo`, and `C_UnitAuras.GetBuffDataByIndex`). `P` means a public generated declaration at the pinned build; `P*` also carries `HasRestrictions`. `?` means no public generated declaration was found, and does **not** mean removal. Blizzard Lua caller evidence for undocumented functions is recorded in the lifecycle notes. None of these preferred names is classified as deprecated merely because its old global was deprecated. A public declaration is not evidence that a gameplay system exists or that ATT registers the wrapper on that client.
+This table covers **54 distinct namespaced candidates**: 48 referenced by the master wrapper and six used only by pending adapters (`C_CombatLog.GetCurrentEventInfo`, both housing candidates, `C_Spell.GetSpellInfo`, `C_SpellBook.GetSpellBookItemInfo`, and `C_UnitAuras.GetBuffDataByIndex`). `P` means a public generated declaration at the pinned build; `P*` also carries `HasRestrictions`. `?` means no public generated declaration was found, and does **not** mean removal. Blizzard Lua caller evidence for undocumented functions is recorded in the lifecycle notes. None of these preferred names is classified as deprecated merely because its old global was deprecated. A public declaration is not evidence that a gameplay system exists or that ATT registers the wrapper on that client.
 
 | Namespaced API | Retail | Era | TBC Anniversary | Mists | Titan Reforged | Forever | Retail PTR |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -385,31 +387,60 @@ The latest PTR payload still adds these three legacy names relative to Retail li
 
 Classic exports declare the two legacy Transmog methods. Their Blizzard UI still calls `BNSetBlocked`; this caller evidence does not prove that a native export remains available. Replacement declarations are unconfirmed on those tracks. Retail live likewise still has the [Battle.net caller][retail-bn-caller]. None of these facts justifies assigning the PTR deprecation to every flavour.
 
-The two Transmog aliases forward new option records without rebuilding the old `weaponOption` field; the replacement field is `type`. [Current PTR Transmog structures][ptr-transmog-structure]. The old and new PTR/Forever deprecated payloads are byte-identical, so no additional shim deprecation or removal was found between the previous and refreshed snapshots.
+The two Transmog aliases forward new option records without rebuilding the old `weaponOption` field; the replacement field is `type`. [Current PTR Transmog structures][ptr-transmog-structure]. The PTR and Forever pins match the November 23 audit.
 
 ## Master callers and generated outputs
 
 ### Maintained callers
 
-These **27 invocation paths across 14 names** have Gethe-confirmed deprecation/framework evidence on at least one scanned track. They comprise **25 calls spelled with the legacy name** (including two via same-name local caches) and **two invocations via differently named fallback/hook bindings**. Only usages outside `src/WoW API Wrappers.lua` are counted. Local fallback checks and flavour guards are retained when interpreting each finding: a name deprecated on Retail can remain native on a Classic path. The table identifies compatibility work, not 27 proven runtime failures.
+These **27 invocation paths across 14 names** have Gethe-confirmed deprecation/framework evidence on at least one scanned track. They comprise **25 calls spelled with the legacy name** (including locally cached globals) and **two invocations via differently named fallback/hook bindings**. Only usages outside `src/WoW API Wrappers.lua` are counted. Local fallback checks and flavour guards are retained when interpreting each finding: a name deprecated on Retail can remain native on a Classic path. The table identifies compatibility work, not 27 proven runtime failures.
 
 | Legacy name or family | Invocation paths | Current master use | Master source |
 | --- | --- | --- | --- |
-| `GetSpellInfo` | 2 | Classic class spells and profession/rank lookup | [class spells](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Classes/Spell.lua#L243), [profession](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/UI/Windows/Tradeskills.lua#L204) |
-| `IsPlayerSpell` | 5 | One flavour-gated source call and four canonical callbacks | [Spell](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Classes/Spell.lua#L64), [Vale](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/standard/02%20-%20Outdoor%20Zones/06%20Pandaria/Vale%20of%20Eternal%20Blossoms.lua#L24) |
-| `UnitBuff` | 5 | Canonical aura callbacks; native status differs by lineage | [shared template](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/shared/lib/Functions/Function%20Templates.lua#L32), [Standard achievements](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/standard/11%20-%20Character/Achievements.lua#L811) |
-| `CombatLogGetCurrentEventInfo` | 3 | Canonical Bloodsail callbacks; no public payload replacement on Retail/PTR/Forever | [Forever](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/forever/zones/eastern%20kingdoms/stranglethorn%20vale.lua#L47) |
-| `SecondsToTime` | 2 | Remaining-time label and newer shared spell tooltip | [label](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Modules/Color.lua#L277), [shared tooltip](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/shared/lib/Functions/Function%20Templates.lua#L109) |
-| `GetSpellCooldown` | 1 | Shared tooltip calls the legacy function only when the namespace method is unavailable | [guarded fallback](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/shared/lib/Functions/Function%20Templates.lua#L104) |
-| Five `UIDropDownMenu_*` functions | 6 | SetWidth 1, SetText 2, CreateInfo 1, AddButton 1, Initialize 1 | [sound-pack dropdown](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Settings/Pages/Features%20-%20Audio.lua#L154) |
-| `InterfaceOptions_AddCategory` | 1 | Guarded legacy fallback | [Settings](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Settings/Settings.lua#L1598) |
-| `InterfaceOptionsFrame_OpenToCategory` | 1 | Conditional local alias binding and invocation | [binding/delegation](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Settings/Settings.lua#L1567) |
-| `ChatFrame_DisplayTimePlayed` | 1 | Global hook captures the old function and conditionally delegates through that alias | [binding/hook/delegation](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/UI/Windows/Account%20Management.lua#L26) |
+| `GetSpellInfo` | 2 | Classic class spells and profession/rank lookup | [class spells](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Classes/Spell.lua#L243), [profession](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/UI/Windows/Tradeskills.lua#L205) |
+| `IsPlayerSpell` | 5 | One flavour-gated source call and four canonical callbacks | [Spell](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Classes/Spell.lua#L64), [Vale](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/.contrib/.db/standard/02%20-%20Outdoor%20Zones/06%20Pandaria/Vale%20of%20Eternal%20Blossoms.lua#L24) |
+| `UnitBuff` | 5 | Canonical aura callbacks; native status differs by lineage | [shared template](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/.contrib/.db/shared/lib/Functions/Function%20Templates.lua#L32), [Standard achievements](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/.contrib/.db/standard/11%20-%20Character/Achievements.lua#L811) |
+| `CombatLogGetCurrentEventInfo` | 3 | Canonical Bloodsail callbacks; no public payload replacement on Retail/PTR/Forever | [Forever](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/.contrib/.db/forever/zones/eastern%20kingdoms/stranglethorn%20vale.lua#L47) |
+| `SecondsToTime` | 2 | Remaining-time label and newer shared spell tooltip | [label](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Modules/Color.lua#L277), [shared tooltip](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/.contrib/.db/shared/lib/Functions/Function%20Templates.lua#L109) |
+| `GetSpellCooldown` | 1 | Shared tooltip calls the legacy function only when the namespace method is unavailable | [guarded fallback](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/.contrib/.db/shared/lib/Functions/Function%20Templates.lua#L104) |
+| Five `UIDropDownMenu_*` functions | 6 | SetWidth 1, SetText 2, CreateInfo 1, AddButton 1, Initialize 1 | [sound-pack dropdown](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Settings/Pages/Features%20-%20Audio.lua#L154) |
+| `InterfaceOptions_AddCategory` | 1 | Guarded legacy fallback | [Settings](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Settings/Settings.lua#L1608) |
+| `InterfaceOptionsFrame_OpenToCategory` | 1 | Conditional local alias binding and invocation | [binding/delegation](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Settings/Settings.lua#L1577-L1580) |
+| `ChatFrame_DisplayTimePlayed` | 1 | Global hook captures the old function and conditionally delegates through that alias | [binding/hook/delegation](https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/UI/Windows/Account%20Management.lua#L26) |
 | **Total** | **27** | **25 direct calls + 2 alias delegations** | |
 
 The `ChatFrame_DisplayTimePlayed` assignment/hook and its captured binding are exposures in addition to its one delegated invocation, not extra calls. The Audio page also uses `UIDropDownMenuTemplate` once; templates are counted separately from function calls. Classic Tradeskills contains two additional `IsTradeSkillLinked()` calls. Gethe shows the Retail UI changing from the [global in 6.2.4][trade-linked-old] to the [namespace in 7.0.3][trade-linked-new]; [Wiki supplies the old native-name endpoint](https://warcraft.wiki.gg/wiki/API_IsTradeSkillLinked). Since native removal is Wiki-only and no active Classic D/R is established, these two uses are reported separately rather than included in the 27 source-confirmed paths. This is an evidence distinction, not a rule excluding all Classic calls to names deprecated on Retail. Housing's retained API names and changed result contracts are also separate below.
 
-The development branch retains 15 migration commits. They cover the earlier call sites, but the newer shared tooltip still calls `GetSpellCooldown` and `SecondsToTime`. Its cooldown calculation needs both start and duration; the modern branch of `WOWAPI.GetSpellCooldown` returns only the start time, while its native legacy fallback can retain multiple returns. The wrapper therefore does not guarantee the duration required by this callback. The document does not claim that merging the existing work or regenerating outputs alone removes every remaining call.
+The development branch retains 15 migration commits for the earlier call sites. The pending UI adapters cover settings registration, opening and the sound-pack dropdown. The scroll template sites are outside that migration set. The shared tooltip still calls `GetSpellCooldown` and `SecondsToTime` on both branches. Its cooldown calculation needs both start and duration, and the modern branch of `WOWAPI.GetSpellCooldown` returns only the start time, while its native legacy fallback can retain multiple returns. This callback needs a wrapper that consistently returns both values.
+
+### Settings UI and template exposure
+
+The Windows page now groups windows in one scrollable list. It shows progress and slash commands, moves the Flat toggles from the old Style subpage, and adds an **In Main List** checkbox for windows that support dynamic categories. The dynamic-category guard enables that checkbox for Classic and Forever. The handler saves the choice per window and the category builders read it on reload. [Redesign][att-windows-redesign], [Category state and guards][att-category-state].
+
+| Master path | Era, TBC Anniversary, Mists and Titan | Retail, Forever and Retail PTR |
+| --- | --- | --- |
+| Windows page scroller [source][att-windows-scroller] | `UIPanelScrollFrameTemplate` | `ScrollFrameTemplate` |
+| Shared settings scroller used by Profiles [helper][att-settings-scroller] [caller][att-profiles-scroller] | `UIPanelScrollFrameTemplate` | `ScrollFrameTemplate` |
+| Shared edit box [source][att-edit-scroll] | `UIPanelScrollFrameTemplate` | `UIPanelScrollFrameTemplate` |
+| Window list scrollbar [source][att-window-scrollbar] | `UIPanelScrollBarTemplate` | `UIPanelScrollBarTemplate` |
+
+The first two rows add Classic uses of the old scroll-frame template. The shared edit box and window list retain their earlier uses. These four sites are template references. The maintained call total counts function invocations separately. ATT resolves the settings scrollbar from the frame field or its named global. Forever shares the Retail scroll-frame route through `app.IsRetail` and qualifies for dynamic categories through `app.IsForever`. [Build flags][att-build-flags].
+
+Blizzard explicitly deprecates both panel templates in `SecureScrollTemplates.xml`. All seven pinned clients still load their definitions. Blizzard recommends `ScrollBox` for scrollable content and `ScrollFrameTemplate` where ScrollBox is unsuitable. The table dates the XML deprecation notice and records the first checked child exports carrying it.
+
+| Client track | Panel scroll templates (`UIPanelScrollFrameTemplate` and `UIPanelScrollBarTemplate`) | Current source |
+| --- | --- | --- |
+| Retail | D 10.1.0 (PTR 48480, Live 49407) | Retained [XML][ui-panel-scroll-retail] |
+| Classic Era family | D 1.14.4 (PTR 50252, Live 51001) | Retained [XML][ui-panel-scroll-era] |
+| TBC Anniversary | Era D 1.14.4, O 2.5.5 PTR (64508) | Retained [XML][ui-panel-scroll-tbc] |
+| Mists Classic | Wrath D 3.4.2 (PTR 49311, Live 50063) | Retained [XML][ui-panel-scroll-mists] |
+| Titan Reforged | Era D 1.14.4, O 3.80.0 (64393) | Retained [XML][ui-panel-scroll-titan] |
+| Forever | Retail D 10.1.0, O 1.60.1 beta (69876) | Retained [XML][ui-panel-scroll-forever] |
+| Retail PTR | Retail D 10.1.0 (PTR 48480, Live 49407) | Retained [XML][ui-panel-scroll-ptr] |
+
+The historical Gethe notices date the change on [Retail PTR][ui-scroll-d-retail-ptr] and [Live][ui-scroll-d-retail], [Era PTR][ui-scroll-d-era-ptr] and [Live][ui-scroll-d-era], and [Wrath PTR][ui-scroll-d-wrath-ptr] and [Live][ui-scroll-d-wrath]. The matching notices are present in the first checked [TBC PTR][ui-scroll-o-tbc], [Titan][ui-scroll-o-titan] and [Forever beta][ui-scroll-o-forever] exports.
+
+A saved dynamic-category change shows a reload button. Clicking it invokes `ReloadUI()`. Gethe exports `ReloadUI` as an ordinary Lua helper calling `C_UI.Reload()` on all seven tracks, as shown in the current implementation table. The Windows page still registers through `CreateOptionsPage`. Its window button passes `SettingsPanel or InterfaceOptionsFrame` to `HideUIPanel`, adding a reference to the old frame name. The Settings registration and open fallbacks remain guarded, and the Audio page keeps its six `UIDropDownMenu_*` calls and one legacy template use. [Reload button][att-reload-button], [Window button][att-window-button].
 
 ### Stored generated calls
 
@@ -426,7 +457,7 @@ The remaining 25 calls are `UnitBuff` calls in historical Cata output. Generated
 
 ## GetSpellInfo and rank-era compatibility
 
-Master has no `WOWAPI.GetSpellInfo` adapter; its two maintained global calls are on Classic paths. The pending adapter reconstructs the multiple-return contract from modern results and supports spellbook indices. A complete, separately reviewed rank-era layer is still required for both class spells and profession abilities; native delegation alone does not establish localized rank selection on every flavour.
+Master still has no `WOWAPI.GetSpellInfo` adapter; its two maintained global calls are on Classic paths. The pending adapter reconstructs the multiple-return contract from modern results and supports spellbook indices. A complete, separately reviewed rank-era layer is still required for both class spells and profession abilities; native delegation alone does not establish localized rank selection on every flavour.
 
 | Input form | Required behaviour |
 | --- | --- |
@@ -435,6 +466,8 @@ Master has no `WOWAPI.GetSpellInfo` adapter; its two maintained global calls are
 | `GetSpellInfo(name, rank)` | Resolve the requested localized rank rather than silently selecting another rank |
 
 The current master name/rank call is evidence of a compatibility requirement. The native second-string behaviour is undocumented in the current GetSpellInfo signature and remains unverified across the client tracks. A future layer should reuse ATT's existing rank indexes and validate class-spell and profession cases. The namespace SpellInfo table has no rank/subtext member. Classic's object API obtains subtext separately through `C_Spell.GetSpellSubtext`, whose text may load asynchronously. [Classic object API](https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_ObjectAPI/Classic/Spell.lua#L39). [Classic spell/subtext contract](https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L341). [GetSpellInfo documentation](https://warcraft.wiki.gg/wiki/API_GetSpellInfo).
+
+Master now renders Forever profession tier and specialization headers with `WOWAPI.GetSpellName(spellID)` and `WOWAPI.GetSpellSubtext(spellID)`. The header leaves its name unset while subtext is `nil` and appends nonempty rank text after trimming whitespace. This covers rendering a known spell ID. The two Classic `GetSpellInfo` call sites still need the slot/book-type and name/rank lookup contracts above. [Header callback][att-rank-header], [Wrapper][att-spell-subtext].
 
 The historical namespaced `C_SpellBook.GetSpellInfo(spellID)` is a third distinct interface, not another spelling of the global multiple-return API. Gethe first declares its structured `SpellInfo` result in [9.1.0 (39229)][spellbook-info-first]; the first [11.0.0 (55793) transition guide][spellbook-info-move] records the move to `C_Spell.GetSpellInfo`.
 
@@ -452,22 +485,22 @@ The following master tree IDs make the rescan reproducible. Pending branch conte
 
 | Source tree | Git object ID |
 | --- | --- |
-| `src` | `3ae921bed9cf4cd626e97b9c4714cce68557a802` |
+| `src` | `60b8cb3c8011165ab3eebedb4164d12dcfcb8b88` |
 | `lib` | `242db747213fc6f4c8a4da22253d748635d2f720` |
-| `.contrib/.db` | `df964dd042efb68b9a1e0236e6b305e39c0b42b1` |
-| `db` | `c7d0c8afc8692e1019d1223c07790ae54f820198` |
+| `.contrib/.db` | `6e4e2e60aa7aa11a26b677d05d0136ac54874236` |
+| `db` | `6826d6e6b57e55b44bf861713365cff861c1cfb1` |
 
-- Master has 4,265 tracked Lua files, 16 XML files and one addon TOC. Maintained code, canonical callback sources and generated output are classified separately; wrappers, comments, fixtures and non-addon tooling do not count as caller bypasses.
-- Enumerated the 54 actual public wrapper members and marked the 14 development-only adapters. All 68 inventory rows map to a lifecycle family; the native table distinguishes the 47 master candidates from seven pending candidates.
-- Scanned 563 distinct full candidate names: the union of 390 current Gethe export/alias candidates, 67 framework/helper names and 139 identifiers retained from the earlier audit. Candidate lists are broader than applicable addon deprecations; matching calls were classified by definition, loader, receiver and flavour. A separate suffix pass checked 22 object/UI method names and excluded generic ATT handlers.
-- Rechecked current Gethe compatibility definitions and loader files on all seven pinned tracks, plus referenced current API declarations. The historical D/R links remain pinned to their event/adjacent exports; the new first-build, spell-namespace and tradeskill history is primary Gethe evidence. Missing documentation or a stale caller alone does not establish native removal.
-- Compared predecessor and first-child compatibility bodies, their game-type selectors and TOCs. Matching TBC/Titan payloads carry Era D history; Forever matches carry Retail history. First imports are O bounds, missing-first shims retain H history, and later local events remain distinct. This lineage refinement does not change the pinned ATT tree or its caller counts.
-- Recounted direct legacy call expressions, conditional alias delegations and stored generated copies. Framework/template exposure and unchanged-name contract changes are recorded separately. No source migration, generated data, Lua test, or runtime behaviour was changed by this documentation refresh.
+- Master has 4,266 tracked Lua files, 16 XML files and one addon TOC. Maintained code, canonical callback sources and generated output are classified separately; wrappers, comments, fixtures and non-addon tooling do not count as caller bypasses.
+- Enumerated the 55 public wrapper members and marked the 14 development-only adapters. All 69 inventory rows map to a lifecycle family. The native table distinguishes 48 master candidates from six pending candidates.
+- Rescanned the tracked Lua under `src`, `lib`, `.contrib/.db` and `db` against 665 identifiers from Gethe deprecation payloads, transition guides and the existing audit. Compared matches with the previous ATT baseline and checked new UI call receivers, aliases, guards and template literals in the source. The scan includes ordinary names and data constructors that were excluded from the deprecation counts.
+- Reconfirmed all seven Gethe version pins and checked the shared XML, flavour TOCs, reload helpers and spell subtext sources relevant to the master changes. Historical D/R evidence remains pinned to each event or adjacent export. Missing documentation or a stale caller alone does not establish native removal.
+- The lifecycle tables retain the predecessor and first-local source comparisons, including game-type selectors, TOCs and later local events.
+- Recounted legacy call expressions, conditional alias delegations, stored generated copies and deprecated scroll template references. Framework/template exposure and unchanged-name contract changes are recorded separately. No source migration, generated data, Lua test, or runtime behaviour was changed by this documentation refresh.
 - This is static source evidence. Runtime native exports, conditional loader/CVar state, protected execution, Parser regeneration and in-game behaviour need separate validation; neither the native matrix nor a generated-call count proves client execution.
 
 ## AI Assistance
 
-gpt-6.1-sol assisted with the earlier implementation and with source comparison, static analysis and this documentation refresh. gpt-6.2-astra reviewed audit scope, source fidelity, lifecycle history, inherited-versus-local events and the master-versus-pending distinctions. No human review or in-game validation is claimed.
+gpt-6.1-sol assisted with the earlier implementation and with source comparison, static analysis and this documentation refresh. gpt-6.2-astra reviewed audit scope, source fidelity, lifecycle history, inherited-versus-local events and the master-versus-pending distinctions. gpt-6.2-sol and gpt-6.1-sol assisted with the November 24 master and UI rescan, source comparisons and documentation.
 
 [e1]: https://github.com/Gethe/wow-ui-source/blob/e97025bc56d48bac9341aae1cc5f4ec07d17ef6e/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
 [e2]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
@@ -1327,3 +1360,43 @@ gpt-6.1-sol assisted with the earlier implementation and with source comparison,
 [lineage-forever-e521]: https://github.com/Gethe/wow-ui-source/blob/f0da0a9171aa736c8a64d2b3a8ae70195f5d2afb/Interface/AddOns/Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua#L18
 [lineage-retail-bootstrap]: https://github.com/Gethe/wow-ui-source/blob/f663342f08a6e06060b0d77628abf4e503907e67/version.txt#L1
 [lineage-forever-first]: https://github.com/Gethe/wow-ui-source/blob/f0da0a9171aa736c8a64d2b3a8ae70195f5d2afb/version.txt#L1
+
+[att-windows-redesign]: https://github.com/ATTWoWAddon/AllTheThings/commit/78d6fc20f5048ac3931ea726572d3e9960d895c6
+[att-windows-scroller]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Settings/Pages/Features%20-%20Windows.lua#L104-L123
+[att-profiles-scroller]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Settings/Pages/Profiles.lua#L41
+[att-settings-scroller]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Settings/Settings.lua#L1455-L1481
+[att-reload-button]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Settings/Pages/Features%20-%20Windows.lua#L125-L150
+[att-category-state]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/UI/Window%20Definitions.lua#L2926-L2987
+[att-build-flags]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/WoW%20API%20Wrappers.lua#L2-L5
+[att-rank-header]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Classes/Header.lua#L65-L75
+[att-spell-subtext]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/WoW%20API%20Wrappers.lua#L229-L233
+[spell-subtext-old]: https://github.com/Gethe/wow-ui-source/blob/6b65c2922baca3db5a28fb39b69c95cef1047bec/Interface/AddOns/Blizzard_ObjectAPI/Mainline/Spell.lua#L49-L51
+[spell-subtext-new]: https://github.com/Gethe/wow-ui-source/blob/a2be406dbd035af8d82716449610aba97090ffe3/Interface/AddOns/Blizzard_ObjectAPI/Mainline/Spell.lua#L49-L51
+[spell-subtext-guide]: https://github.com/Gethe/wow-ui-source/blob/a2be406dbd035af8d82716449610aba97090ffe3/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua#L104
+[spell-subtext-wiki]: https://warcraft.wiki.gg/wiki/Patch_11.0.0/API_changes#Global_API
+[att-edit-scroll]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/base.lua#L775-L783
+[att-window-scrollbar]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/UI/Window%20Definitions.lua#L2704
+[ui-panel-scroll-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_SharedXML/SecureScrollTemplates.xml#L3-L53
+[ui-reload-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_SharedXML/InterfaceUtil.lua#L1-L3
+[ui-panel-scroll-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_SharedXML/SecureScrollTemplates.xml#L3-L53
+[ui-reload-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_SharedXML/InterfaceUtil.lua#L1-L3
+[ui-panel-scroll-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_SharedXML/SecureScrollTemplates.xml#L3-L53
+[ui-reload-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_SharedXML/InterfaceUtil.lua#L1-L3
+[ui-panel-scroll-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_SharedXML/SecureScrollTemplates.xml#L3-L53
+[ui-reload-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_SharedXML/InterfaceUtil.lua#L1-L3
+[ui-panel-scroll-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_SharedXML/SecureScrollTemplates.xml#L3-L53
+[ui-reload-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_SharedXML/InterfaceUtil.lua#L1-L3
+[ui-panel-scroll-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_SharedXML/SecureScrollTemplates.xml#L3-L53
+[ui-reload-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_SharedXML/InterfaceUtil.lua#L1-L3
+[ui-panel-scroll-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_SharedXML/SecureScrollTemplates.xml#L3-L53
+[ui-reload-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_SharedXML/InterfaceUtil.lua#L1-L3
+[ui-scroll-d-retail-ptr]: https://github.com/Gethe/wow-ui-source/blob/2e924f73114377163da31609e56822d74df0becc/Interface/SharedXML/SecureScrollTemplates.xml#L5-L7
+[ui-scroll-d-retail]: https://github.com/Gethe/wow-ui-source/blob/6eca162dbca161e850b735bd5b08039f96caf2df/Interface/SharedXML/SecureScrollTemplates.xml#L5-L7
+[ui-scroll-d-era-ptr]: https://github.com/Gethe/wow-ui-source/blob/ddfbf3288df2e897818d8a8cdf76f1309bb20481/Interface/SharedXML/SecureScrollTemplates.xml#L5-L7
+[ui-scroll-d-era]: https://github.com/Gethe/wow-ui-source/blob/8681bc05e92f528c52c6a0b4ad1556688154ce71/Interface/SharedXML/SecureScrollTemplates.xml#L5-L7
+[ui-scroll-d-wrath-ptr]: https://github.com/Gethe/wow-ui-source/blob/62ad44ef5ba5b0b5e02fd112d01fc23ee5674dee/Interface/SharedXML/SecureScrollTemplates.xml#L5-L7
+[ui-scroll-d-wrath]: https://github.com/Gethe/wow-ui-source/blob/3006c90fedfc06ce3fbc0c246424202eda50bbb0/Interface/SharedXML/SecureScrollTemplates.xml#L5-L7
+[ui-scroll-o-tbc]: https://github.com/Gethe/wow-ui-source/blob/28ab608edf2f127cca8235e95be0ad478587714b/Interface/AddOns/Blizzard_SharedXML/SecureScrollTemplates.xml#L3-L5
+[ui-scroll-o-titan]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_SharedXML/SecureScrollTemplates.xml#L3-L5
+[ui-scroll-o-forever]: https://github.com/Gethe/wow-ui-source/blob/f0da0a9171aa736c8a64d2b3a8ae70195f5d2afb/Interface/AddOns/Blizzard_SharedXML/SecureScrollTemplates.xml#L3-L5
+[att-window-button]: https://github.com/ATTWoWAddon/AllTheThings/blob/78d6fc20f5048ac3931ea726572d3e9960d895c6/src/Settings/Pages/Features%20-%20Windows.lua#L40-L43
