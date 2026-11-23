@@ -10,6 +10,9 @@ instanceroot(2970, {	-- The Drowned City
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	lvl = 35,
 	groups = {
+		n(ZONE_DROPS, {
+			i(286997),	-- Depth-Risen Leggings
+		}),
 		n(QUESTS, {
 			q(96078, {	-- A Tale Spun Around the Fire
 				sourceQuest = 95775,	-- The Drowned City
