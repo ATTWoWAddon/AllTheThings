@@ -33,13 +33,12 @@ These guidelines apply to contributions to AllTheThings (ATT), including code, d
 - Keep each commit-body bullet item at 80 characters or fewer, including its marker and spaces.
 - For database maintenance commits, identify the affected quests, NPCs, objects, items, or other records. Detailed field values, such as exact coordinates or cost quantities, do not need to be listed in the commit message.
 
-Every commit containing AI-assisted work must end with exactly one `Assisted-by:` trailer on a single line. Include every contributing model on that line, separated by a comma and a space. End the trailer with an ASCII period after the final model name; the period is punctuation, not part of a model name.
+Every commit containing AI-assisted work must attribute all contributing models at the end of the commit message. Choose exactly one trailer format for AI attribution per commit:
 
-```text
-Assisted-by: <model name(s)>.
-```
+- `Assisted-by: <model name(s)>.` Use one line, separate model names with a comma and a space, and end the line with an ASCII period. For example, `Assisted-by: claude-opus-5-5.`
+- `Co-Authored-By: <model name> <email>` Use one line per model with its corresponding co-author email address. For example, `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
 
-Use the actual model name for each contributor. A single-model commit lists one name; for example, a multi-model commit can use `Assisted-by: gpt-6-luna, gpt-6.1-terra, gpt-6.1-sol.` Do not substitute a tool or product name for an unknown model name; obtain the model name before committing. Preserve all applicable model attribution when amending or squashing commits.
+Use the actual model name for each contributor. If a model name is unknown, obtain it before committing. Preserve all applicable model attribution in the chosen format when amending or squashing commits.
 
 ## PR Descriptions
 
