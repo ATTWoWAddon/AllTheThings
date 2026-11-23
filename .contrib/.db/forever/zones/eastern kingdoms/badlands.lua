@@ -627,6 +627,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 						providers = {
 							{ "i", 211293 },	-- Crimson Trophy Quill
 							{ "i", 211273 },	-- Trapped Critter
+							{ "o", 413699 },	-- Large Nest
 						},
 						description = "Use the Empty Bait Cage on a critter to get a Trapped Critter, then place it as bait to lure Gharrik.",
 						cr = 213795,	-- Gharrik

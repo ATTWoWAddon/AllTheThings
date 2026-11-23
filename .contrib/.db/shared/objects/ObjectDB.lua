@@ -310382,6 +310382,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			cn = "可疑的排气口",
 		},
 	},
+	[413699] = {
+		readable = "Large Nest",
+		text = {
+			en = "Large Nest",
+			de = "Großes Nest",
+			fr = "Grand nid",
+			ru = "Большое гнездо",
+			cn = "大型巢穴",
+		},
+	},
 	[413774] = {
 		readable = "The Legend of Elun'Ahir",
 		model = 1124086,
