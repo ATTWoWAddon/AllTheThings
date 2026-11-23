@@ -1,35 +1,38 @@
 # Deprecated WoW APIs and client support
 
-Audit date November 5, 2026 (Asia/Taipei).
+Audit date November 23, 2026 (Asia/Taipei).
 
-ATT branch `codex/deprecated-wow-api-audit`, rebased onto upstream `master` at `b96c21ade5b7a533ba31ed230d96c003b1cb8a6e`. Audited source tree IDs are recorded below. This document combines caller migration history and the complete wrapper audit in one report.
+Baseline: ATT upstream `master` at [`f9f3fc6516`](https://github.com/ATTWoWAddon/AllTheThings/commit/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6). All ATT counts and current implementation statements below refer to this exact source tree. Pending work on `codex/deprecated-wow-api-audit` at `d3c2053110` is identified explicitly; its migrations are not treated as already merged. Historical deprecation and removal evidence is retained alongside the refreshed client snapshots.
 
 ## Results
 
-- **All 68 public wrapper members are covered**, including preferred APIs, legacy candidates, ATT helpers, and their per-track lifecycle evidence.
-- **No confirmed unwrapped deprecated function calls remain in maintained addon code or Parser callback sources.** All 18 originally reported function names are covered by the retained migrations. Completed migrations are represented by their API history below.
-- **The latest Retail PTR contains three additional deprecated names.** They have no ATT references. The same compatibility definitions are already present in the current Forever live source.
-- **Generated databases retain 99 direct calls across three API families.** Of these, 74 are stored in current client data routes and 25 in the historical Cata output. Their maintained callback sources already use ATT wrappers.
+- **Master exports 54 public wrapper members.** The inventory also identifies 14 pending adapters from the development branch. Its underlying API matrix covers 47 namespaced candidates used by master and seven additional candidates used by those pending adapters.
+- **Maintained master code has 27 invocation paths for 14 names with Gethe-confirmed deprecation/framework evidence on at least one track**: 25 calls spelled with legacy names and two differently named alias delegations. The table below distinguishes guarded fallbacks and Classic-only paths from unconditional calls. Two further Classic `IsTradeSkillLinked` calls are listed separately: Retail native removal is Wiki-only evidence, and no local Classic D/R is established.
+- **Generated databases store 105 legacy call expressions across five families**: 80 in current output routes and 25 in the historical Cata output. These are stored-code counts, not assertions that every path executes on every client.
+- **Gethe snapshots are refreshed for all seven tracks.** Retail, Mists, Forever and Retail PTR have newer builds. Their deprecated payloads and TOC loaders have no added/removed compatibility definitions relative to the prior pins. PTR still has the same three additional deprecated names relative to Retail live; their first observed builds are now recorded.
+- **Pending migrations do not finish the audit.** The shared spell-tooltip callback still invokes `GetSpellCooldown` and `SecondsToTime` on both master and the development branch. Rebuilding databases after the existing 15 migrations alone would retain those calls.
 
 ## Client versions scanned
 
-Each row pins the latest Gethe branch revision retrieved for that track. Interface values describe ATT's existing TOC declarations. Counts are stored generated calls outside ATT's wrapper. They do not measure runtime failures.
+Each row pins the latest Gethe branch revision retrieved on the audit date. Interface values are present in master's TOC; old interface entries do not make retired clients current. The last column counts generated calls outside ATT's wrapper.
 
-| Client track | Status | Pinned Gethe version / build | ATT interface | Generated outputs checked | Stored bypass calls |
+| Client track | Status | Pinned Gethe version / build | ATT interface | Generated outputs checked | Stored legacy calls |
 | --- | --- | --- | --- | --- | --- |
-| Retail | Live | [12.1.5 / 70783](https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/version.txt#L1) | `120105` | `Standard` | 0 |
-| Classic Era family | Live | [1.15.9 / 70576](https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/version.txt#L1) | `11509` | `Vanilla / VanillaSOD` | 6 stored (3 per active dataset) |
+| Retail | Live | [12.1.5 / 70961](https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/version.txt#L1) | `120105` | `Standard` | 0 |
+| Classic Era family | Live | [1.15.9 / 70576](https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/version.txt#L1) | `11509` | `Vanilla / VanillaSOD` | 10 stored (5 per active dataset) |
 | TBC Anniversary | Live | [2.5.6 / 70577](https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/version.txt#L1) | `20506` | `TBC` | 1 |
-| Mists Classic | Live | [5.5.4 / 70631](https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/version.txt#L1) | `50504` | `Mists` | 42 |
+| Mists Classic | Live | [5.5.4 / 71060](https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/version.txt#L1) | `50504` | `Mists` | 42 |
 | Titan Reforged | Live | [3.80.2 / 70522](https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/version.txt#L1) | `38002` | `Wrath` | 24 |
-| Forever | Live | [1.60.1 / 70790](https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/version.txt#L1) | `16001` | `Camelot` | 1 |
-| Retail PTR | Test | [12.1.7 / 70740](https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/version.txt#L1) | `120107` | `Standard / .ptr` | 0 |
+| Forever | Live | [1.60.1 / 71037](https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/version.txt#L1) | `16001` | `Camelot` | 3 |
+| Retail PTR | Test | [12.1.7 / 71087](https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/version.txt#L1) | `120107` | `Standard / .ptr` | 0 |
 
-Forever launched on November 4 at 23:00 UTC, November 5 at 07:00 in Taiwan. It is now a live track. [Blizzard launch schedule](https://worldofwarcraft.blizzard.com/en-us/news/24315820/world-of-warcraft-forever-goes-live-globally-4-november).
+Refresh comparisons: [live](https://github.com/Gethe/wow-ui-source/compare/297d7aaaa736f346b3e036f38ee088eaf7f8c07f...ab5cb850a3f65e742959e379c4689353a2f4549f), [classic](https://github.com/Gethe/wow-ui-source/compare/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf...e171ae99b8e582ce9547bd8fc87054fe2e348f20), [forever](https://github.com/Gethe/wow-ui-source/compare/eac30af597e5aaa43a60f6675ef5fdcea100375f...734f065329cff4992835b01a84f210a297db91b6), [ptr](https://github.com/Gethe/wow-ui-source/compare/e927c305f67ed6b3b460bc00d0c39055747b9119...fbb18ce126862cedee284308dec404ff93fa27b1).
 
-Retail PTR is a test channel of Retail. Its Standard and .ptr generated outputs both have zero matches. The two Era datasets are mutually exclusive at runtime. The six stored calls comprise three in each dataset. Titan uses the Wrath data route at interface 38002. Retired international Wrath and Cata clients are excluded from the current-track table.
+Forever is a live track following its November 4 launch at 23:00 UTC (November 5 at 07:00 in Taiwan). [Blizzard launch schedule](https://worldofwarcraft.blizzard.com/en-us/news/24315820/world-of-warcraft-forever-goes-live-globally-4-november).
 
-Retail, PTR and Forever advance to newer Gethe builds than the November 2 audit. The four Classic branch revisions are unchanged. Retail, PTR and Forever deprecated Lua files and their TOCs are byte-identical to their previous pinned snapshots, so the refreshed PTR adds no further deprecated definitions beyond the three already identified.
+Retail PTR is a test channel of Retail. Its Standard and .ptr outputs both have zero matches in the legacy call families counted here. The Era datasets are mutually exclusive at runtime, so ten stored calls correspond to five per selected dataset. Titan uses the Wrath output route at interface 38002. Historical Cata output is counted separately, not presented as a current flavour.
+
+Compared with the previous pins, Retail, Mists, Forever and PTR advance; Era, TBC Anniversary and Titan are unchanged. All deprecated payloads and their TOC files are byte-identical at the old and new pins. Referenced API-documentation anchors were checked separately; Battle.net line offsets changed in Forever/PTR. Gethe's stale `ptr2` (12.1.5 / 70340) and `beta` (12.0.1 / 66220) branches are not newer current test tracks.
 
 ## Evidence and table notation
 
@@ -44,86 +47,86 @@ Retail, PTR and Forever advance to newer Gethe builds than the November 2 audit.
 
 The seven tracks below are the six existing live flavours and Retail PTR. Historical Wrath/Cata patch numbers appear only where the current Mists progression lineage inherited an API change. Forever inherited several deprecated definitions in its first published snapshot on September 16, 2026; that snapshot has no version.txt, so no patch number is invented.
 
-## Complete wrapper inventory
+## Master wrappers and pending adapters
 
-All **68 public members** declared in `src/WoW API Wrappers.lua` are included below. ATT member names are not necessarily Blizzard API names. The preferred candidate and each Blizzard fallback are audited separately in the lifecycle tables; an ATT helper has no Blizzard deprecation version. `AssignAPIWrapper`, its metatable, and local helper functions are ATT implementation details.
+All **54 public members** in the [master wrapper source](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/WoW%20API%20Wrappers.lua) are marked **Present**. The other **14 rows** are pending adapters in the development branch, not current master members. Preferred candidates and legacy fallbacks are audited independently below. `AssignAPIWrapper`, its metatable, and local helper functions are implementation details.
 
-| ATT member | Preferred API or implementation | Fallback or alternative | Lifecycle group |
-| --- | --- | --- | --- |
-| `issecretvalue` | issecretvalue | ATT function returning false | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `SendGameData` | `C_BattleNet.SendGameData` | BNSendGameData | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `SendChatMessage` | `C_ChatInfo.SendChatMessage` | SendChatMessage | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `SendAddonMessage` | `C_ChatInfo.SendAddonMessage` | SendAddonMessage | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `GetCoinTextureString` | `C_CurrencyInfo.GetCoinTextureString` | GetCoinTextureString | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetCurrencyInfo` | `C_CurrencyInfo.GetCurrencyInfo` | GetCurrencyInfo | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetCurrencyLink` | `C_CurrencyInfo.GetCurrencyLink` | GetCurrencyLink | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetFactionName` | `C_Reputation.GetFactionDataByID`.name | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetFactionLore` | `C_Reputation.GetFactionDataByID`.description | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetFactionBonusReputation` | `C_Reputation.GetFactionDataByID`.hasBonusRepGain | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetFactionCurrentReputation` | `C_Reputation.GetFactionDataByID`.currentStanding | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetFactionReputationCeiling` | `C_Reputation.GetFactionDataByID` threshold fields | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetFactionReaction` | `C_Reputation.GetFactionDataByID`.reaction | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetFriendshipReputation` | `C_GossipInfo.GetFriendshipReputation` | ATT empty function | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetItemCount` | `C_Item.GetItemCount` | GetItemCount | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetItemClassInfo` | `C_Item.GetItemClassInfo` | GetItemClassInfo | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetItemSubClassInfo` | `C_Item.GetItemSubClassInfo` | GetItemSubClassInfo | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetItemIcon` | `C_Item.GetItemIconByID` | GetItemIcon | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetItemInfoInstant` | `C_Item.GetItemInfoInstant` | `GetItemInfoInstant` | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetItemID` | `C_Item.GetItemIDForItemInfo` | `GetItemInfoInstant` | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetItemInfo` | `C_Item.GetItemInfo` | GetItemInfo | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetItemSpell` | `C_Item.GetItemSpell` | GetItemSpell | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetDetailedItemLevelInfo` | `C_Item.GetDetailedItemLevelInfo` | GetDetailedItemLevelInfo | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetItemSpecInfo` | `C_Item.GetItemSpecInfo` | GetItemSpecInfo | [Currency / reputation / items](#currency-reputation-and-items) |
-| `IsArtifactRelicItem` | `C_ItemSocketInfo.IsArtifactRelicItem` | IsArtifactRelicItem | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetItemLinkByGUID` | `C_Item.GetItemLinkByGUID` | ATT identity function | [Currency / reputation / items](#currency-reputation-and-items) |
-| `GetMerchantNumItems` | `C_MerchantFrame.GetNumItems` | GetMerchantNumItems | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `GetMerchantItemLink` | `C_MerchantFrame.GetItemLink` | GetMerchantItemLink | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `GetLootMethod` | `C_PartyInfo.GetLootMethod` | GetLootMethod | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `SetLootMethod` | `C_PartyInfo.SetLootMethod` | SetLootMethod | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `ConvertToRaid` | `C_PartyInfo.ConvertToRaid` | ConvertToRaid | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `InviteUnit` | `C_PartyInfo.InviteUnit` | InviteUnit | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `LeaveParty` | `C_PartyInfo.LeaveParty` | LeaveParty | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `IsQuestFlaggedCompletedOnAccount` | `C_QuestLog.IsQuestFlaggedCompletedOnAccount` | ATT account quest cache | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetQuestRewardCurrencies` | `C_QuestLog.GetQuestRewardCurrencies` | ATT empty function | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetTradeSkillTexture` | `C_TradeSkillUI.GetTradeSkillTexture` | GetTradeSkillTexture | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetTradeSkillDisplayName` | `C_TradeSkillUI.GetTradeSkillDisplayName` | ATT empty function | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetProfessionInfoByRecipeID` | `C_TradeSkillUI.GetProfessionInfoByRecipeID` | `C_TradeSkillUI.GetTradeSkillLineForRecipe` with ATT result adaptation | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `IsTradeSkillLinked` | `C_TradeSkillUI.IsTradeSkillLinked` | IsTradeSkillLinked | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetSpecialization` | `C_SpecializationInfo.GetSpecialization` | GetSpecialization or GetActiveTalentGroup | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetSpecializationInfo` | `C_SpecializationInfo.GetSpecializationInfo` | GetSpecializationInfo | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetSpellLink` | `C_Spell.GetSpellLink` | GetSpellLink | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetSpellIcon` | `C_Spell.GetSpellTexture` | GetSpellTexture | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetSpellCooldown` | `C_Spell.GetSpellCooldown` with ATT start-time adaptation | GetSpellCooldown | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetSpellName` | `C_Spell.GetSpellName` | GetSpellInfo | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetSpellRank` | GetSpellRank | ATT empty function | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `IsSpellKnown` | `C_SpellBook.IsSpellKnown` | IsSpellKnown | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `IsSpellKnownOrOverridesKnown` | `C_SpellBook.IsSpellInSpellBook` | IsSpellKnownOrOverridesKnown | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetNumSpellTabs` | `C_SpellBook.GetNumSpellBookSkillLines` | GetNumSpellTabs | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetSpellTabInfo` | `C_SpellBook.GetSpellBookSkillLineInfo` | GetSpellTabInfo | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetPlayerAuraBySpellID` | `C_UnitAuras.GetPlayerAuraBySpellID` | GetPlayerAuraBySpellID | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetAddOnMetadata` | `C_AddOns.GetAddOnMetadata` | GetAddOnMetadata | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `InsertChatLink` | ChatFrameUtil.InsertLink | ChatEdit_InsertLink | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `WrapDisplayTimePlayed` | ATT installer around ChatFrameUtil.DisplayTimePlayed | ATT installer around ChatFrame_DisplayTimePlayed | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `GetMerchantItemInfo` | `C_MerchantFrame.GetItemInfo` | GetMerchantItemInfo with ATT tuple adaptation | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `SecondsToTime` | SecondsFormatterMixin | SecondsToTime | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `NormalizeHousingCatalogEntryInfo` | ATT normalization of housing result fields | ATT helper | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `GetHousingCatalogEntryInfo` | `C_HousingCatalog.GetCatalogEntryInfo` with ATT normalization | No older API selected | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `CreateHousingCatalogSearcher` | `C_HousingCatalog.CreateCatalogSearcher` | No older API selected | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `GetSpellInfo` | `C_Spell.GetSpellInfo` plus `C_Spell.GetSpellSubtext` and `C_SpellBook.GetSpellBookItemInfo` | Native GetSpellInfo for legacy input forms | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `IsPlayerSpell` | `C_SpellBook.IsSpellKnown` with Player bank | IsPlayerSpell | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `GetBuffDataByIndex` | `C_UnitAuras.GetBuffDataByIndex` | UnitBuff with ATT tuple adaptation | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
-| `CombatLogGetCurrentEventInfo` | `C_CombatLog.GetCurrentEventInfo` on Classic | CombatLogGetCurrentEventInfo on Classic | [Combat log](#combat-log-payload-access) |
-| `OpenOptionsCategory` | ATT forwarder to Settings.OpenToCategory | No older API selected | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `RegisterOptionsCategory` | ATT adapter around Settings.RegisterCanvasLayoutCategory, Settings.RegisterCanvasLayoutSubcategory and Settings.RegisterAddOnCategory | No older API selected | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `CreateDropdown` | ATT adapter around DropdownButton and WowStyle1DropdownTemplate | UIDropDownMenu_SetWidth and UIDropDownMenuTemplate | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `SetDropdownText` | DropdownSelectionTextMixin.OverrideText and DropdownButton methods | UIDropDownMenu_SetText | [Communication / UI](#communication-merchant-party-and-ui-functions) |
-| `SetupDropdownMenu` | DropdownButtonMixin.SetupMenu and menu description methods | UIDropDownMenu_Initialize, UIDropDownMenu_CreateInfo and UIDropDownMenu_AddButton | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| ATT member | Status on master | Preferred API or implementation | Fallback or alternative | Lifecycle group |
+| --- | --- | --- | --- | --- |
+| `issecretvalue` | Present | issecretvalue | ATT function returning false | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `SendGameData` | Present | `C_BattleNet.SendGameData` | BNSendGameData | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `SendChatMessage` | Present | `C_ChatInfo.SendChatMessage` | SendChatMessage | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `SendAddonMessage` | Present | `C_ChatInfo.SendAddonMessage` | SendAddonMessage | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `GetCoinTextureString` | Present | `C_CurrencyInfo.GetCoinTextureString` | GetCoinTextureString | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetCurrencyInfo` | Present | `C_CurrencyInfo.GetCurrencyInfo` | GetCurrencyInfo | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetCurrencyLink` | Present | `C_CurrencyInfo.GetCurrencyLink` | GetCurrencyLink | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetFactionName` | Present | `C_Reputation.GetFactionDataByID`.name | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetFactionLore` | Present | `C_Reputation.GetFactionDataByID`.description | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetFactionBonusReputation` | Present | `C_Reputation.GetFactionDataByID`.hasBonusRepGain | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetFactionCurrentReputation` | Present | `C_Reputation.GetFactionDataByID`.currentStanding | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetFactionReputationCeiling` | Present | `C_Reputation.GetFactionDataByID` threshold fields | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetFactionReaction` | Present | `C_Reputation.GetFactionDataByID`.reaction | `GetFactionInfoByID` | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetFriendshipReputation` | Present | `C_GossipInfo.GetFriendshipReputation` | ATT empty function | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetItemCount` | Present | `C_Item.GetItemCount` | GetItemCount | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetItemClassInfo` | Present | `C_Item.GetItemClassInfo` | GetItemClassInfo | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetItemSubClassInfo` | Present | `C_Item.GetItemSubClassInfo` | GetItemSubClassInfo | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetItemIcon` | Present | `C_Item.GetItemIconByID` | GetItemIcon | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetItemInfoInstant` | Present | `C_Item.GetItemInfoInstant` | `GetItemInfoInstant` | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetItemID` | Present | `C_Item.GetItemIDForItemInfo` | `GetItemInfoInstant` | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetItemInfo` | Present | `C_Item.GetItemInfo` | GetItemInfo | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetItemSpell` | Present | `C_Item.GetItemSpell` | GetItemSpell | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetDetailedItemLevelInfo` | Present | `C_Item.GetDetailedItemLevelInfo` | GetDetailedItemLevelInfo | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetItemSpecInfo` | Present | `C_Item.GetItemSpecInfo` | GetItemSpecInfo | [Currency / reputation / items](#currency-reputation-and-items) |
+| `IsArtifactRelicItem` | Present | `C_ItemSocketInfo.IsArtifactRelicItem` | IsArtifactRelicItem | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetItemLinkByGUID` | Present | `C_Item.GetItemLinkByGUID` | ATT identity function | [Currency / reputation / items](#currency-reputation-and-items) |
+| `GetMerchantNumItems` | Present | `C_MerchantFrame.GetNumItems` | GetMerchantNumItems | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `GetMerchantItemLink` | Present | `C_MerchantFrame.GetItemLink` | GetMerchantItemLink | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `GetLootMethod` | Present | `C_PartyInfo.GetLootMethod` | GetLootMethod | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `SetLootMethod` | Present | `C_PartyInfo.SetLootMethod` | SetLootMethod | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `ConvertToRaid` | Present | `C_PartyInfo.ConvertToRaid` | ConvertToRaid | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `InviteUnit` | Present | `C_PartyInfo.InviteUnit` | InviteUnit | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `LeaveParty` | Present | `C_PartyInfo.LeaveParty` | LeaveParty | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `IsQuestFlaggedCompletedOnAccount` | Present | `C_QuestLog.IsQuestFlaggedCompletedOnAccount` | ATT account quest cache | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetQuestRewardCurrencies` | Present | `C_QuestLog.GetQuestRewardCurrencies` | ATT empty function | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetTradeSkillTexture` | Present | `C_TradeSkillUI.GetTradeSkillTexture` | GetTradeSkillTexture | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetTradeSkillDisplayName` | Present | `C_TradeSkillUI.GetTradeSkillDisplayName` | ATT empty function | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetProfessionInfoByRecipeID` | Present | `C_TradeSkillUI.GetProfessionInfoByRecipeID` | `C_TradeSkillUI.GetTradeSkillLineForRecipe` with ATT result adaptation | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `IsTradeSkillLinked` | Present | `C_TradeSkillUI.IsTradeSkillLinked` | IsTradeSkillLinked | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetSpecialization` | Present | `C_SpecializationInfo.GetSpecialization` | GetSpecialization or GetActiveTalentGroup | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetSpecializationInfo` | Present | `C_SpecializationInfo.GetSpecializationInfo` | GetSpecializationInfo | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetSpellLink` | Present | `C_Spell.GetSpellLink` | GetSpellLink | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetSpellIcon` | Present | `C_Spell.GetSpellTexture` | GetSpellTexture | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetSpellCooldown` | Present | `C_Spell.GetSpellCooldown` with ATT start-time adaptation | GetSpellCooldown | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetSpellName` | Present | `C_Spell.GetSpellName` | GetSpellInfo | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetSpellRank` | Present | GetSpellRank | ATT empty function | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `IsSpellKnown` | Present | `C_SpellBook.IsSpellKnown` | IsSpellKnown | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `IsSpellKnownOrOverridesKnown` | Present | `C_SpellBook.IsSpellInSpellBook` | IsSpellKnownOrOverridesKnown | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetNumSpellTabs` | Present | `C_SpellBook.GetNumSpellBookSkillLines` | GetNumSpellTabs | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetSpellTabInfo` | Present | `C_SpellBook.GetSpellBookSkillLineInfo` | GetSpellTabInfo | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetPlayerAuraBySpellID` | Present | `C_UnitAuras.GetPlayerAuraBySpellID` | GetPlayerAuraBySpellID | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetAddOnMetadata` | Present | `C_AddOns.GetAddOnMetadata` | GetAddOnMetadata | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `InsertChatLink` | Present | ChatFrameUtil.InsertLink | ChatEdit_InsertLink | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `WrapDisplayTimePlayed` | Pending | ATT installer around ChatFrameUtil.DisplayTimePlayed | ATT installer around ChatFrame_DisplayTimePlayed | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `GetMerchantItemInfo` | Present | `C_MerchantFrame.GetItemInfo` | GetMerchantItemInfo with ATT tuple adaptation | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `SecondsToTime` | Pending | SecondsFormatterMixin | SecondsToTime | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `NormalizeHousingCatalogEntryInfo` | Pending | ATT normalization of housing result fields | ATT helper | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `GetHousingCatalogEntryInfo` | Pending | `C_HousingCatalog.GetCatalogEntryInfo` with ATT normalization | No older API selected | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `CreateHousingCatalogSearcher` | Pending | `C_HousingCatalog.CreateCatalogSearcher` | No older API selected | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `GetSpellInfo` | Pending | `C_Spell.GetSpellInfo` plus `C_Spell.GetSpellSubtext` and `C_SpellBook.GetSpellBookItemInfo` | Native GetSpellInfo for legacy input forms | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `IsPlayerSpell` | Pending | `C_SpellBook.IsSpellKnown` with Player bank | IsPlayerSpell | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `GetBuffDataByIndex` | Pending | `C_UnitAuras.GetBuffDataByIndex` | UnitBuff with ATT tuple adaptation | [Quest / profession / spell](#quests-professions-specialization-spells-and-auras) |
+| `CombatLogGetCurrentEventInfo` | Pending | `C_CombatLog.GetCurrentEventInfo` on Classic | CombatLogGetCurrentEventInfo on Classic | [Combat log](#combat-log-payload-access) |
+| `OpenOptionsCategory` | Pending | ATT forwarder to Settings.OpenToCategory | No older API selected | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `RegisterOptionsCategory` | Pending | ATT adapter around Settings.RegisterCanvasLayoutCategory, Settings.RegisterCanvasLayoutSubcategory and Settings.RegisterAddOnCategory | No older API selected | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `CreateDropdown` | Pending | ATT adapter around DropdownButton and WowStyle1DropdownTemplate | UIDropDownMenu_SetWidth and UIDropDownMenuTemplate | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `SetDropdownText` | Pending | DropdownSelectionTextMixin.OverrideText and DropdownButton methods | UIDropDownMenu_SetText | [Communication / UI](#communication-merchant-party-and-ui-functions) |
+| `SetupDropdownMenu` | Pending | DropdownButtonMixin.SetupMenu and menu description methods | UIDropDownMenu_Initialize, UIDropDownMenu_CreateInfo and UIDropDownMenu_AddButton | [Communication / UI](#communication-merchant-party-and-ui-functions) |
 
-The inventory describes selection order, not equivalent return contracts or guaranteed runtime registration. `IsArtifactRelicItem` is registered only for interface values at least `70000`; housing getters/searchers require at least `110207`. Those numeric guards exclude all four Classic tracks and Forever, even where a native declaration is bundled. Combat-log access is explicitly disabled on Retail/PTR/Forever. `SendGameData` and `GetSpecializationInfo` can retain their initial `false` value if no candidate is available.
+The inventory records candidate selection, not equivalent return contracts or guaranteed runtime availability. On master, `IsArtifactRelicItem` is registered only for interface values at least `70000`; `SendGameData` and `GetSpecializationInfo` may retain `false` when no candidate exists. The housing guards (`110207`) and Retail/PTR/Forever combat-log disablement belong to pending adapters; they are not master protections. Public declarations alone do not establish that a gameplay system exists on a flavour.
 
 ## Lifecycle by client
 
-Tables below record the underlying Blizzard name rather than assigning Blizzard version numbers to ATT helper names. The preferred native names have their separate current-source matrix after the lifecycle tables.
+Tables below retain the lifecycle evidence for APIs selected by master, names still used directly, and pending adapter candidates. Blizzard version numbers belong to the underlying API, not ATT helper names. The separate native matrix records current declarations and does not imply that every listed adapter is merged.
 
 ### Communication, merchant, party and UI functions
 
@@ -149,16 +152,16 @@ Tables below record the underlying Blizzard name rather than assigning Blizzard 
 | `UIDropDownMenu_CreateInfo` | D 11.0.0 framework; retained [1][e130] [2][e131] [3][e151] | D 1.15.4 (56738); retained [1][e133] [2][e152] | D 2.5.5 (65340); retained [1][e135] [2][e153] | D 4.4.1 (57294); retained [1][e137] [2][e154] | D 3.80.0 (64393); retained [1][e139] [2][e155] | D first export 2026-09-16; retained [1][e141] [2][e156] | D 11.0.0 framework; retained [1][e130] [2][e131] [3][e157] |
 | `UIDropDownMenu_AddButton` | D 11.0.0 framework; retained [1][e130] [2][e131] [3][e158] | D 1.15.4 (56738); retained [1][e133] [2][e159] | D 2.5.5 (65340); retained [1][e135] [2][e160] | D 4.4.1 (57294); retained [1][e137] [2][e161] | D 3.80.0 (64393); retained [1][e139] [2][e162] | D first export 2026-09-16; retained [1][e141] [2][e163] | D 11.0.0 framework; retained [1][e130] [2][e131] [3][e164] |
 | `UIDropDownMenu_Initialize` | D 11.0.0 framework; retained [1][e130] [2][e131] [3][e165] | D 1.15.4 (56738); retained [1][e133] [2][e166] | D 2.5.5 (65340); retained [1][e135] [2][e167] | D 4.4.1 (57294); retained [1][e137] [2][e168] | D 3.80.0 (64393); retained [1][e139] [2][e169] | D first export 2026-09-16; retained [1][e141] [2][e170] | D 11.0.0 framework; retained [1][e130] [2][e131] [3][e171] |
-| `InterfaceOptions_AddCategory` (migrated history) | D 10.0.0 (46293); R 11.0.0 (55793) [1][e172] [2][e173] | D 1.14.4; R 1.15.4 [1][e174] [2][e175] [3][e176] | Absent at first export; no local D/R [1][e177] | D 3.4.2; R 4.4.1 [1][e178] [2][e179] [3][e180] | Absent at first export; no local D/R [1][e181] | Absent at first export; no local D/R [1][e182] | D 10.0.0 (46293); R 11.0.0 (55793) [1][e172] [2][e173] |
-| `InterfaceOptionsFrame_OpenToCategory` (migrated history) | D 10.0.0 (46293); R 11.0.0 (55793) [1][e183] [2][e173] | D 1.14.4; R 1.15.4 [1][e174] [2][e184] [3][e176] | Absent at first export; no local D/R [1][e177] | D 3.4.2; R 4.4.1 [1][e178] [2][e185] [3][e180] | Absent at first export; no local D/R [1][e181] | Absent at first export; no local D/R [1][e182] | D 10.0.0 (46293); R 11.0.0 (55793) [1][e183] [2][e173] |
+| `InterfaceOptions_AddCategory` (pending migration) | D 10.0.0 (46293); R 11.0.0 (55793) [1][e172] [2][e173] | D 1.14.4; R 1.15.4 [1][e174] [2][e175] [3][e176] | Absent at first export; no local D/R [1][e177] | D 3.4.2; R 4.4.1 [1][e178] [2][e179] [3][e180] | Absent at first export; no local D/R [1][e181] | Absent at first export; no local D/R [1][e182] | D 10.0.0 (46293); R 11.0.0 (55793) [1][e172] [2][e173] |
+| `InterfaceOptionsFrame_OpenToCategory` (pending migration) | D 10.0.0 (46293); R 11.0.0 (55793) [1][e183] [2][e173] | D 1.14.4; R 1.15.4 [1][e174] [2][e184] [3][e176] | Absent at first export; no local D/R [1][e177] | D 3.4.2; R 4.4.1 [1][e178] [2][e185] [3][e180] | Absent at first export; no local D/R [1][e181] | Absent at first export; no local D/R [1][e182] | D 10.0.0 (46293); R 11.0.0 (55793) [1][e183] [2][e173] |
 
-The five `UIDropDownMenu` functions share the framework deprecation and remain defined in all seven sources. The Blizzard migration guide explicitly retains the older framework; its introduction on each product is dated from that track rather than assigned the Retail patch number. `SecondsToTime` remains a deprecated Lua utility, while ATT uses `SecondsFormatterMixin` for its remaining-time label.
+The five `UIDropDownMenu` functions share the framework deprecation and remain defined in all seven sources. The guide marks the framework deprecated and supplies no conversion shims; actual definitions establish that it is retained in these snapshots. Each product's introduction is dated on its own lineage. Master still calls `SecondsToTime`; the pending formatter migration covers the label in `Color.lua`, not the newer shared spell-tooltip callback.
 
 `C_MerchantFrame.GetNumItems` and `C_MerchantFrame.GetItemLink` are unconfirmed candidate identifiers on every pinned track. Their corresponding globals still have Blizzard UI callers, and no deprecation was established. They must not be marked deprecated merely because ATT lists a namespaced candidate first.
 
 The Retail `GetLootMethod`/`SetLootMethod` namespace declarations first appear in 11.2.0; Wiki supplies removal of their old native names, with no separately established Lua grace period. `SendAddonMessage` moved to the current `C_ChatInfo` namespace in 8.0.1. A later same-name `C_ChatInfo.SendAddonMessage` return-value bridge is a contract change, not deprecation of the current API name.
 
-Both historical InterfaceOptions functions are preserved as migration history, although the current ATT wrappers call `Settings` directly. Their Era transition is D 1.14.4 / R 1.15.4, and their Mists progression transition is D Wrath 3.4.2 / R Cata 4.4.1. Immediate parent bodies and empty files after deletion distinguish real removal from a source-path move. TBC Anniversary, Titan and Forever already have empty stubs at their first published snapshots; a product-specific earlier removal version is not asserted.
+Both InterfaceOptions functions remain relevant: master has guarded legacy fallbacks, while the pending settings adapter uses `Settings` directly. Their Era transition is D 1.14.4 / R 1.15.4, and their Mists progression transition is D Wrath 3.4.2 / R Cata 4.4.1. Immediate parent bodies and empty files after deletion distinguish real removal from a source-path move. TBC Anniversary, Titan and Forever already have empty stubs at their first published snapshots; a product-specific earlier removal version is not asserted.
 
 ### Current global and UI implementations
 
@@ -194,7 +197,7 @@ These selected implementations have no deprecation/removal event identified in t
 | `GetCurrencyInfo` | D —; R 9.0.1 (Wiki fallback) [1][e309] [Wiki][e310] | D 1.15.4; R 1.15.9 [1][e311] [2][e312] [3][e79] | Legacy ?; D/R — [1][e313] | D 4.4.1; R 5.5.4 [1][e314] [2][e315] [3][e81] | D 3.80.0; R 3.80.1 [1][e316] [2][e317] [3][e83] | Legacy ?; D/R — | D —; R 9.0.1 (Wiki fallback) [1][e309] [Wiki][e310] |
 | `GetCurrencyLink` | D —; R 9.0.1 (Wiki fallback) [1][e318] [Wiki][e319] | UI caller; D/R — [1][e320] | UI caller; D/R — [1][e321] | UI caller; D/R — [1][e322] | UI caller; D/R — [1][e323] | Legacy ?; D/R — | D —; R 9.0.1 (Wiki fallback) [1][e318] [Wiki][e319] |
 | `GetFactionInfoByID` | D —; R 11.0.0 (Wiki fallback) [1][e324] [Wiki][e325] | UI/native inventory (Wiki); D/R — [Wiki][e326] | UI/native inventory (Wiki); D/R — [Wiki][e326] | UI caller; D/R — [1][e327] | Legacy ?; D/R — | Legacy ?; D/R — | D —; R 11.0.0 (Wiki fallback) [1][e324] [Wiki][e325] |
-| `C_GossipInfo.GetFriendshipReputation` | No old API; ATT fallback | No old API; ATT fallback | No old API; ATT fallback | No old API; ATT fallback | No old API; ATT fallback | No old API; ATT fallback | No old API; ATT fallback |
+| `C_GossipInfo.GetFriendshipReputation` | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback |
 | `GetItemCount` | D 10.2.6; R 12.1.5 [1][e328] [2][e299] | D 1.15.2; retained [1][e329] [2][e330] | D 2.5.5; retained [1][e331] [2][e332] | D 4.4.0; retained [1][e333] [2][e334] | D 3.80.0; retained [1][e335] [2][e336] | Legacy ?; D/R — | D 10.2.6 (Retail product history); R 12.1.5 (Retail product history) [1][e328] [2][e299] [3][e308] |
 | `GetItemClassInfo` | D 10.2.6; R 12.1.5 [1][e337] [2][e299] | D 1.15.2; retained [1][e338] [2][e339] | D 2.5.5; retained [1][e340] [2][e341] | D 4.4.0; retained [1][e342] [2][e343] | D 3.80.0; retained [1][e344] [2][e345] | Legacy ?; D/R — | D 10.2.6 (Retail product history); R 12.1.5 (Retail product history) [1][e337] [2][e299] [3][e308] |
 | `GetItemSubClassInfo` | D 10.2.6; R 12.1.5 [1][e346] [2][e299] | D 1.15.2; retained [1][e347] [2][e348] | D 2.5.5; retained [1][e349] [2][e350] | D 4.4.0; retained [1][e351] [2][e352] | D 3.80.0; retained [1][e353] [2][e354] | Legacy ?; D/R — | D 10.2.6 (Retail product history); R 12.1.5 (Retail product history) [1][e346] [2][e299] [3][e308] |
@@ -205,7 +208,7 @@ These selected implementations have no deprecation/removal event identified in t
 | `GetDetailedItemLevelInfo` | D 10.2.6; R 12.1.5 [1][e391] [2][e299] | D 1.15.2; retained [1][e392] [2][e393] | D 2.5.5; retained [1][e394] [2][e395] | D 4.4.0; retained [1][e396] [2][e397] | D 3.80.0; retained [1][e398] [2][e399] | Legacy ?; D/R — | D 10.2.6 (Retail product history); R 12.1.5 (Retail product history) [1][e391] [2][e299] [3][e308] |
 | `GetItemSpecInfo` | D 10.2.6; R 12.1.5 [1][e400] [2][e299] | D 1.15.2; retained [1][e401] [2][e402] | D 2.5.5; retained [1][e403] [2][e404] | D 4.4.0; retained [1][e405] [2][e406] | D 3.80.0; retained [1][e407] [2][e408] | Legacy ?; D/R — | D 10.2.6 (Retail product history); R 12.1.5 (Retail product history) [1][e400] [2][e299] [3][e308] |
 | `IsArtifactRelicItem` | D 11.2.5; R 12.0.0 [1][e409] [2][e58] | ATT gated; D/R — | ATT gated; D/R — | ATT gated; D/R — | ATT gated; D/R — | ATT gated; legacy ? | D 11.2.5; R 12.0.0 [1][e409] [2][e58] |
-| `C_Item.GetItemLinkByGUID` | No old API; ATT fallback | No old API; ATT fallback | No old API; ATT fallback | No old API; ATT fallback | No old API; ATT fallback | No old API; ATT fallback | No old API; ATT fallback |
+| `C_Item.GetItemLinkByGUID` | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback | No legacy API selected; ATT fallback |
 | `GetItemInfoInstant` (ATT `GetItemID`) | D 10.2.6; R 12.1.5 [1][e364] [2][e299] | D 1.15.2; retained [1][e365] | D 2.5.5; retained [1][e367] | D 4.4.0; retained [1][e369] | D 3.80.0; retained [1][e371] | Legacy ?; D/R — | D 10.2.6 (Retail product history); R 12.1.5 (Retail product history) [1][e364] [2][e299] [3][e308] |
 
 The nine distinct item globals cover ten ATT members: `GetItemID` uses `GetItemInfoInstant` as its fallback. Their coin/item shims first appear in Retail 10.2.6, Era 1.15.2, TBC Anniversary 2.5.5, the Mists progression lineage at Cata 4.4.0, and Titan 3.80.0. The current Classic shims require `loadDeprecationFallbacks`. Cata is historical lineage evidence, not an additional current track. Retail removes the dedicated item/coin compatibility files in 12.1.5; the PTR source catches up in 12.1.7. Forever has no independently dated removal event in its published history.
@@ -221,7 +224,7 @@ The six faction members in the inventory share `GetFactionInfoByID`. Retail repl
 
 | API or ATT-only selection | Retail | Era | TBC Anniversary | Mists | Titan Reforged | Forever | Retail PTR |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `GetTradeSkillTexture` | Unverified identifier; D/R — | Unverified identifier; D/R — | Unverified identifier; D/R — | Unverified identifier; D/R — | Unverified identifier; D/R — | Unverified identifier; D/R — | Unverified identifier; D/R — |
+| `GetTradeSkillTexture` | UI namespace switch 7.0.3 (22267); native D/R unconfirmed [history][trade-texture-new] | Native status ?; no local D/R established | Native status ?; no local D/R established | Native status ?; no local D/R established | Native status ?; no local D/R established | Native status ?; no local D/R established | Retail-lineage UI switch 7.0.3; native D/R unconfirmed [history][trade-texture-new] |
 | `IsTradeSkillLinked` | D —; R 7.0.3 (Wiki) [Wiki][e410] | ?; D/R — | ?; D/R — | UI caller; D/R — [1][e411] | UI caller; D/R — [1][e412] | ?; D/R — | D —; R 7.0.3 (Wiki) [Wiki][e410] |
 | `GetSpecialization` | D 11.2.0 (62417); retained [1][e413] [2][e414] | ?; D/R — | ?; D/R — | ?; D/R — | ?; D/R — | ?; D/R — | D 11.2.0 (62417); retained [1][e413] [2][e415] |
 | `GetActiveTalentGroup` | D —; R 5.0.4 (Wiki) [Wiki][e416] | D 1.15.8 (63829); retained [1][e417] [2][e418] | D 2.5.5 (65340); retained [1][e419] [2][e420] | D 5.5.0 (61767); retained [1][e421] [2][e422] | D 3.80.0 (64393); retained [1][e423] [2][e424] | ?; D/R — | D —; R 5.0.4 (Wiki) [Wiki][e416] |
@@ -243,7 +246,7 @@ The Retail 11.0.0 spell transition is not one uniform lifecycle. `GetSpellInfo`,
 
 Classic specialization bridges select `GetActiveTalentGroup`, not the Standard-only `GetSpecialization`/`GetSpecializationInfo` file. The Classic aura shim is game-type gated. Its rollover filename mentions 1.15.8, but blame and predecessor files date its first confirmed Era export to 1.15.9; the other track dates are separately recorded above. Files excluded by the client loader do not prove a usable fallback.
 
-`GetTradeSkillTexture` without a namespace remains an unverified legacy identifier on all seven tracks; no reliable deprecation/removal date was found. Its preferred namespaced API has both Classic declarations and modern Blizzard UI callers. `C_TradeSkillUI.GetTradeSkillLineForRecipe` is still referenced by Blizzard UI despite lacking a generated declaration; it must not be classified as removed merely because the wrapper prefers `GetProfessionInfoByRecipeID`.
+`GetTradeSkillTexture()` is a real historical global: Gethe shows it in [4.0.1][trade-texture-old] and the [last 6.2.4 UI][trade-texture-last]. The immediate [7.0.3 (22267) successor][trade-texture-new] instead calls `C_TradeSkillUI.GetTradeSkillTexture(tradeSkillID)`. This dates the UI transition, not a proven native-name removal or deprecation grace period. The comment in ATT's wrapper attributing the namespaced API to 4.0.1 conflates these two interfaces. Current Classic/Forever native-global availability and local D/R remain unconfirmed. The preferred namespaced API has Classic declarations and modern Blizzard UI callers. `C_TradeSkillUI.GetTradeSkillLineForRecipe` is still referenced by Blizzard UI despite lacking a generated declaration; it must not be classified as removed merely because the wrapper prefers `GetProfessionInfoByRecipeID`.
 
 The quest-cache fallback, the empty profession/currency-reward fallbacks, and spell/aura empty-return functions are ATT code, with no Blizzard deprecation/removal version. Preferred API availability is listed in the native declaration matrix. The rank-era compatibility requirement remains separately documented below.
 
@@ -260,11 +263,11 @@ The quest-cache fallback, the empty profession/currency-reward fallbacks, and sp
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `CombatLogGetCurrentEventInfo` | D 12.0.0 (65459); public payload removed 12.0.0 [1][e516] | D 1.15.9 (68808); conditional fallback retained [1][e517] | D 2.5.6 (68502); conditional fallback retained [1][e518] | D 5.5.4 (67849); conditional fallback retained [1][e519] | D 3.80.2 (68943); conditional fallback retained [1][e520] | D first export 2026-09-16; public payload unavailable [1][e521] | D 12.0.0 (65459); public payload removed 12.0.0 [1][e516] |
 
-Classic declares public `C_CombatLog.GetCurrentEventInfo` with `HasRestrictions`. Retail/PTR/Forever expose `C_CombatLogSecure` in a SecureOnly environment; that function is not an addon replacement. Their deprecated bridge explicitly describes the lack of a public replacement, and ATT keeps the wrapper disabled on those clients. [Classic restrictions][e522] [PTR secure environment][e523] [Bridge explanation][e524].
+Classic declares public `C_CombatLog.GetCurrentEventInfo` with `HasRestrictions`. Retail/PTR/Forever expose `C_CombatLogSecure` in a SecureOnly environment; that function is not an addon replacement. Their deprecated bridge explicitly describes the lack of a public replacement, and the pending adapter disables access on those clients. Master still contains direct combat-log callback calls. [Classic restrictions][e522] [PTR secure environment][e523] [Bridge explanation][e524].
 
 ## Current native API declarations
 
-This table covers all **54 distinct namespaced API candidates actually referenced by the wrapper**, including support functions used inside adapters. `P` means a public generated declaration at the pinned build; `P*` also carries `HasRestrictions`. `?` means no public generated declaration was found, and does **not** mean removal. Blizzard Lua caller evidence for undocumented functions is recorded in the lifecycle notes. None of these preferred names is classified as deprecated merely because its old global was deprecated. A public declaration is not evidence that a gameplay system exists or that ATT registers the wrapper on that client.
+This table covers **54 distinct namespaced candidates**: 47 referenced by the master wrapper and seven used only by pending adapters (`C_CombatLog.GetCurrentEventInfo`, both housing candidates, `C_Spell.GetSpellInfo`, `C_Spell.GetSpellSubtext`, `C_SpellBook.GetSpellBookItemInfo`, and `C_UnitAuras.GetBuffDataByIndex`). `P` means a public generated declaration at the pinned build; `P*` also carries `HasRestrictions`. `?` means no public generated declaration was found, and does **not** mean removal. Blizzard Lua caller evidence for undocumented functions is recorded in the lifecycle notes. None of these preferred names is classified as deprecated merely because its old global was deprecated. A public declaration is not evidence that a gameplay system exists or that ATT registers the wrapper on that client.
 
 | Namespaced API | Retail | Era | TBC Anniversary | Mists | Titan Reforged | Forever | Retail PTR |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -323,11 +326,11 @@ This table covers all **54 distinct namespaced API candidates actually reference
 | `C_UnitAuras.GetBuffDataByIndex` | [P][n53-retail] | [P][n53-era] | [P][n53-tbc] | [P][n53-mists] | [P][n53-titan] | [P][n53-forever] | [P][n53-ptr] |
 | `C_UnitAuras.GetPlayerAuraBySpellID` | [P][n54-retail] | [P][n54-era] | [P][n54-tbc] | [P][n54-mists] | [P][n54-titan] | [P][n54-forever] | [P][n54-ptr] |
 
-Non-namespaced UI methods (`ChatFrameUtil`, `Settings`, `SecondsFormatterMixin`, and the dropdown framework) are covered in the lifecycle notes below. Public `C_CombatLog.GetCurrentEventInfo` has a Classic-only declaration; the Retail/PTR/Forever secure counterpart is not an addon replacement.
+Non-namespaced UI methods (`ChatFrameUtil`, `Settings`, `SecondsFormatterMixin`, and the dropdown framework) are covered in the lifecycle notes above. Public `C_CombatLog.GetCurrentEventInfo` has a Classic-only declaration; the Retail/PTR/Forever secure counterpart is not an addon replacement.
 
 ## Historical version checks
 
-Dates above come from the first Live source export containing the deprecation or removal. Dates identify the export commit. The earlier builds establish that the previous state still existed.
+The Retail Live transitions below compare adjacent Gethe exports. Dates and builds identify source exports; earlier builds bound the previous state. PTR previews, first-product imports and Wiki-only native-name events remain separately labelled in the lifecycle tables.
 
 | API | Previous Live state | First changed Live state |
 | --- | --- | --- |
@@ -343,30 +346,58 @@ The five UIDropDownMenu functions share the 11.0.0 framework deprecation. Their 
 
 ## Latest Retail PTR deprecations
 
-| Deprecated API | Replacement | Deprecated in | Removal state | ATT references |
+The latest PTR payload still adds these three legacy names relative to Retail live. The first observed PTR/Forever definitions are pinned separately from the current retained definitions; they do not all originate in the same build.
+
+| Deprecated API | Replacement | First source-confirmed definition | Current removal state | Master references |
 | --- | --- | --- | --- | --- |
-| `BNSetBlocked` | `C_BattleNet.SetBlocked` | [Retail 12.1.7 PTR](https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L39) and [Forever 1.60.1 live](https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L39) | Conditional fallback retained in the audited sources | 0 |
-| `C_TransmogOutfitInfo.GetWeaponOptionsForSlot` | `C_TransmogOutfitInfo.GetOptionsForSlot` | [Retail 12.1.7 PTR](https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedTransmog/Deprecated_Transmog.lua#L9) and [Forever 1.60.1 live](https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedTransmog/Deprecated_Transmog.lua#L9) | Conditional fallback retained in the audited sources | 0 |
-| `C_TransmogOutfitInfo.SetViewedWeaponOptionForSlot` | `C_TransmogOutfitInfo.SetViewedOptionForSlot` | [Retail 12.1.7 PTR](https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedTransmog/Deprecated_Transmog.lua#L10) and [Forever 1.60.1 live](https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedTransmog/Deprecated_Transmog.lua#L10) | Conditional fallback retained in the audited sources | 0 |
+| `BNSetBlocked` | `C_BattleNet.SetBlocked` | [Retail PTR 12.1.7 (70424)][ptr-bn-first]; [Forever 1.60.1 (70009)][forever-bn-first] | [PTR][ptr-bn-current] and [Forever][forever-bn-current] conditional shims retained | 0 |
+| `C_TransmogOutfitInfo.GetWeaponOptionsForSlot` | `C_TransmogOutfitInfo.GetOptionsForSlot` | [Retail PTR 12.1.7 (70424)][ptr-transmog-first]; already present in [first versioned Forever export, 1.60.1 (69876)][forever-transmog-first] | [PTR][ptr-transmog-current] and [Forever][forever-transmog-current] conditional aliases retained | 0 |
+| `C_TransmogOutfitInfo.SetViewedWeaponOptionForSlot` | `C_TransmogOutfitInfo.SetViewedOptionForSlot` | [Retail PTR 12.1.7 (70424)][ptr-transmog-first]; already present in [first versioned Forever export, 1.60.1 (69876)][forever-transmog-first] | [PTR][ptr-transmog-current] and [Forever][forever-transmog-current] conditional aliases retained | 0 |
 
-These three legacy interfaces remain native in the four Classic exports. Their replacement declarations are unconfirmed there. The Retail 12.1.5 source also retains the old interfaces. [Native Battle.net caller](https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_FriendsFrame/Mainline/FriendsFrame.lua#L1397). The PTR deprecation therefore applies to the pinned PTR and Forever sources.
+Classic exports declare the two legacy Transmog methods. Their Blizzard UI still calls `BNSetBlocked`; this caller evidence does not prove that a native export remains available. Replacement declarations are unconfirmed on those tracks. Retail live likewise still has the [Battle.net caller][retail-bn-caller]. None of these facts justifies assigning the PTR deprecation to every flavour.
 
-The two Transmog aliases forward the new option records unchanged. The replacement field is `type`. The aliases do not reconstruct the old `weaponOption` field. [PTR Transmog structures](https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/TransmogOutfitInfoDocumentation.lua#L919).
+The two Transmog aliases forward new option records without rebuilding the old `weaponOption` field; the replacement field is `type`. [Current PTR Transmog structures][ptr-transmog-structure]. The old and new PTR/Forever deprecated payloads are byte-identical, so no additional shim deprecation or removal was found between the previous and refreshed snapshots.
 
-## Remaining generated calls
+## Master callers and generated outputs
 
-| API | All stored generated calls | Current client routes | Maintained source status |
+### Maintained callers
+
+These **27 invocation paths across 14 names** have Gethe-confirmed deprecation/framework evidence on at least one scanned track. They comprise **25 calls spelled with the legacy name** (including two via same-name local caches) and **two invocations via differently named fallback/hook bindings**. Only usages outside `src/WoW API Wrappers.lua` are counted. Local fallback checks and flavour guards are retained when interpreting each finding: a name deprecated on Retail can remain native on a Classic path. The table identifies compatibility work, not 27 proven runtime failures.
+
+| Legacy name or family | Invocation paths | Current master use | Master source |
 | --- | --- | --- | --- |
-| `UnitBuff` | 78 | 53 | Callback sources use `WOWAPI.GetBuffDataByIndex` |
-| `IsPlayerSpell` | 16 | 16 | Phoenix callback source uses `WOWAPI.IsPlayerSpell` |
-| `CombatLogGetCurrentEventInfo` | 5 | 5 | Bloodsail callback sources use the optional combat-log wrapper |
-| **Total** | **99** | **74** | **Regenerate the affected outputs from migrated sources** |
+| `GetSpellInfo` | 2 | Classic class spells and profession/rank lookup | [class spells](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Classes/Spell.lua#L243), [profession](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/UI/Windows/Tradeskills.lua#L204) |
+| `IsPlayerSpell` | 5 | One flavour-gated source call and four canonical callbacks | [Spell](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Classes/Spell.lua#L64), [Vale](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/standard/02%20-%20Outdoor%20Zones/06%20Pandaria/Vale%20of%20Eternal%20Blossoms.lua#L24) |
+| `UnitBuff` | 5 | Canonical aura callbacks; native status differs by lineage | [shared template](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/shared/lib/Functions/Function%20Templates.lua#L32), [Standard achievements](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/standard/11%20-%20Character/Achievements.lua#L811) |
+| `CombatLogGetCurrentEventInfo` | 3 | Canonical Bloodsail callbacks; no public payload replacement on Retail/PTR/Forever | [Forever](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/forever/zones/eastern%20kingdoms/stranglethorn%20vale.lua#L47) |
+| `SecondsToTime` | 2 | Remaining-time label and newer shared spell tooltip | [label](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Modules/Color.lua#L277), [shared tooltip](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/shared/lib/Functions/Function%20Templates.lua#L109) |
+| `GetSpellCooldown` | 1 | Shared tooltip calls the legacy function only when the namespace method is unavailable | [guarded fallback](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/.contrib/.db/shared/lib/Functions/Function%20Templates.lua#L104) |
+| Five `UIDropDownMenu_*` functions | 6 | SetWidth 1, SetText 2, CreateInfo 1, AddButton 1, Initialize 1 | [sound-pack dropdown](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Settings/Pages/Features%20-%20Audio.lua#L154) |
+| `InterfaceOptions_AddCategory` | 1 | Guarded legacy fallback | [Settings](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Settings/Settings.lua#L1598) |
+| `InterfaceOptionsFrame_OpenToCategory` | 1 | Conditional local alias binding and invocation | [binding/delegation](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/Settings/Settings.lua#L1567) |
+| `ChatFrame_DisplayTimePlayed` | 1 | Global hook captures the old function and conditionally delegates through that alias | [binding/hook/delegation](https://github.com/ATTWoWAddon/AllTheThings/blob/f9f3fc6516e06bde81b2ad5e588af28fa4f318e6/src/UI/Windows/Account%20Management.lua#L26) |
+| **Total** | **27** | **25 direct calls + 2 alias delegations** | |
 
-The remaining 25 calls are UnitBuff calls in the historical Cata output. Stored generated calls and source migrations are counted separately. No generated database was edited or regenerated in this audit.
+The `ChatFrame_DisplayTimePlayed` assignment/hook and its captured binding are exposures in addition to its one delegated invocation, not extra calls. The Audio page also uses `UIDropDownMenuTemplate` once; templates are counted separately from function calls. Classic Tradeskills contains two additional `IsTradeSkillLinked()` calls. Gethe shows the Retail UI changing from the [global in 6.2.4][trade-linked-old] to the [namespace in 7.0.3][trade-linked-new]; [Wiki supplies the old native-name endpoint](https://warcraft.wiki.gg/wiki/API_IsTradeSkillLinked). Since native removal is Wiki-only and no active Classic D/R is established, these two uses are reported separately rather than included in the 27 source-confirmed paths. This is an evidence distinction, not a rule excluding all Classic calls to names deprecated on Retail. Housing's retained API names and changed result contracts are also separate below.
+
+The development branch retains 15 migration commits. They cover the earlier call sites, but the newer shared tooltip still calls `GetSpellCooldown` and `SecondsToTime`. Its cooldown calculation needs both start and duration; the modern branch of `WOWAPI.GetSpellCooldown` returns only the start time, while its native legacy fallback can retain multiple returns. The wrapper therefore does not guarantee the duration required by this callback. The document does not claim that merging the existing work or regenerating outputs alone removes every remaining call.
+
+### Stored generated calls
+
+| API | All stored calls | Current output routes | Maintained callback status |
+| --- | --- | --- | --- |
+| `UnitBuff` | 78 | 53 | Five canonical calls remain on master; migration is pending |
+| `IsPlayerSpell` | 16 | 16 | Four canonical calls remain on master; migration is pending |
+| `CombatLogGetCurrentEventInfo` | 5 | 5 | Three canonical calls remain on master; migration is pending |
+| `SecondsToTime` | 3 | 3 | Newer shared tooltip remains on master and the development branch |
+| `GetSpellCooldown` | 3 | 3 | Guarded fallback in that shared tooltip remains on both |
+| **Total** | **105** | **80** | **Refresh canonical sources before regeneration** |
+
+The remaining 25 calls are `UnitBuff` calls in historical Cata output. Generated copies are distinct from canonical maintained callbacks and are not counted again in the maintained-call table. Qualified current API calls such as `C_Spell.GetSpellCooldown` are excluded from these legacy totals. No generated database was edited or regenerated for this refresh.
 
 ## GetSpellInfo and rank-era compatibility
 
-The existing GetSpellInfo wrapper adapts modern results and spellbook indices. Complete rank-aware resolution remains a separate requirement for class spells and profession abilities. Its native delegation does not establish localized rank selection on every client track.
+Master has no `WOWAPI.GetSpellInfo` adapter; its two maintained global calls are on Classic paths. The pending adapter reconstructs the multiple-return contract from modern results and supports spellbook indices. A complete, separately reviewed rank-era layer is still required for both class spells and profession abilities; native delegation alone does not establish localized rank selection on every flavour.
 
 | Input form | Required behaviour |
 | --- | --- |
@@ -374,103 +405,105 @@ The existing GetSpellInfo wrapper adapts modern results and spellbook indices. C
 | `GetSpellInfo(slot, bookType)` | Preserve player and pet spellbook indexing |
 | `GetSpellInfo(name, rank)` | Resolve the requested localized rank rather than silently selecting another rank |
 
-The existing ATT name/rank call is evidence of a compatibility requirement. The native second-string behaviour is undocumented in the current GetSpellInfo signature and remains unverified across the client tracks. A future layer should reuse ATT's existing rank indexes and validate class-spell and profession cases. The namespace SpellInfo table has no rank/subtext member. Classic's object API obtains subtext separately through `C_Spell.GetSpellSubtext`, whose text may load asynchronously. [Classic object API](https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_ObjectAPI/Classic/Spell.lua#L39). [Classic spell/subtext contract](https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L341). [GetSpellInfo documentation](https://warcraft.wiki.gg/wiki/API_GetSpellInfo).
+The current master name/rank call is evidence of a compatibility requirement. The native second-string behaviour is undocumented in the current GetSpellInfo signature and remains unverified across the client tracks. A future layer should reuse ATT's existing rank indexes and validate class-spell and profession cases. The namespace SpellInfo table has no rank/subtext member. Classic's object API obtains subtext separately through `C_Spell.GetSpellSubtext`, whose text may load asynchronously. [Classic object API](https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_ObjectAPI/Classic/Spell.lua#L39). [Classic spell/subtext contract](https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L341). [GetSpellInfo documentation](https://warcraft.wiki.gg/wiki/API_GetSpellInfo).
 
-The historical `C_SpellBook.GetSpellInfo(spellID)` returned a structured SpellInfo table. It was introduced in 9.1.0 and moved to `C_Spell.GetSpellInfo` in 11.0.0. [Warcraft Wiki history](https://warcraft.wiki.gg/wiki/API_C_SpellBook.GetSpellInfo). [Blizzard transition guide](https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua).
+The historical namespaced `C_SpellBook.GetSpellInfo(spellID)` is a third distinct interface, not another spelling of the global multiple-return API. Gethe first declares its structured `SpellInfo` result in [9.1.0 (39229)][spellbook-info-first]; the first [11.0.0 (55793) transition guide][spellbook-info-move] records the move to `C_Spell.GetSpellInfo`.
 
 ## Related contracts and exclusions
 
-- Housing catalog functions retain their names. Their historical bridge adapted fields such as quantity, placement totals and entry identifiers. The existing migration normalizes these results through ATT's wrapper. Their public declarations do not prove the housing system exists on each client. [Current housing contract](https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L125).
+- Housing catalog functions retain their names. Their historical bridge adapted fields such as quantity, placement totals and entry identifiers. Master still consumes the legacy contract directly; normalization and search adapters are pending. The historical field/search bridge is source-confirmed in [12.0.5 (67088)][housing-contract-first] and [its searcher adapter][housing-search-first]. Their public declarations do not prove the housing system exists on each client. [Current housing contract](https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L125).
 - C_ChatInfo.RegisterAddonMessagePrefix and C_ChatInfo.SendAddonMessage retain their current names. Their historical bridges adapted return values. The matched ATT callers ignore those returns. C_AreaPoiInfo.GetAreaPOIInfo and C_VignetteInfo.GetVignetteInfo also retain their names. ATT does not read the obsolete widgetSetID/addPaddingAboveWidgets fields on the matched paths. These are excluded from deprecated-function totals.
 - The PTR/Wiki notes about GUID server/spawn components and trial/veteran addon-message restrictions require separate behaviour validation. They do not deprecate UnitGUID or the current C_ChatInfo.SendAddonMessage name. Forever already shares the account restriction described by the Wiki. [12.1.7 API notes](https://warcraft.wiki.gg/wiki/Patch_12.1.7/API_changes). [Addon-message contract](https://warcraft.wiki.gg/wiki/API_C_ChatInfo.SendAddonMessage).
 
+- The PTR generated declaration of `MinimapFrameAPI.UpdateMouseoverAtPoint` disappears in [12.1.7 (70892)](https://github.com/Gethe/wow-ui-source/commit/a750208e2382f24eb3d3a83939082a182420c44b), after the [immediate-parent declaration](https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/MinimapFrameAPIDocumentation.lua#L318-L328). Master has no references to this method. This is a source-declaration deletion, not proof of native runtime removal, so it is not added to the confirmed deprecated-call totals.
+
 ## Method and validation
 
-The following Git tree IDs identify the audited runtime and callback contents across the documentation rewrite.
+The following master tree IDs make the rescan reproducible. Pending branch content is not substituted for any of them.
 
 | Source tree | Git object ID |
 | --- | --- |
-| `src` | `10ef95a6be3c51b01c334dd3114ceec3a59e7bad` |
-| `lib` | `5ddc123157f7c43b50287ee12cc53bac52721adf` |
-| `.contrib/.db` | `4f256fa2286f78f77acae5d4b60698a29afe9cc5` |
-| `db` | `34bfe66d1c14a3f3d0d2e4ea8672fb275cb7be04` |
+| `src` | `3ae921bed9cf4cd626e97b9c4714cce68557a802` |
+| `lib` | `242db747213fc6f4c8a4da22253d748635d2f720` |
+| `.contrib/.db` | `df964dd042efb68b9a1e0236e6b305e39c0b42b1` |
+| `db` | `c7d0c8afc8692e1019d1223c07790ae54f820198` |
 
-- Scanned 4,031 tracked Lua files, 25 XML files and the addon TOC in the rebased ATT source trees, including hidden .contrib callback sources and generated database copies.
-- Enumerated all 68 public wrapper members, 54 distinct namespaced API candidates, and the non-namespaced framework/support functions. Every public member is mapped to a lifecycle family; current native declarations were checked separately from legacy definitions.
-- Compared 431 candidate deprecated global/namespaced names and 37 framework methods across current and historical Gethe exports. Local aliases were resolved before classifying calls. Wrapper implementations, comments, fixtures and completed wrapper calls are excluded from bypass findings.
-- Historical 11.0.0, 11.0.5 and 12.1.0 exports retain evidence for APIs whose shims are absent from current source. An old name, missing documentation, a stale Blizzard caller, or a language-server diagnostic alone does not establish deprecation or runtime removal. Historical file moves were distinguished from deletion by checking earlier bodies and loader rules.
-- The rebase omitted five migrations already applied to master and retained the audit document. All 16 remaining commits have valid signatures. The 11 Lua 5.1 regression suites passed after rebase.
-- Public declarations and call sites were inspected statically. Runtime API availability, Parser regeneration, native client export tests and in-game behaviour remain separate validation work.
+- Master has 4,265 tracked Lua files, 16 XML files and one addon TOC. Maintained code, canonical callback sources and generated output are classified separately; wrappers, comments, fixtures and non-addon tooling do not count as caller bypasses.
+- Enumerated the 54 actual public wrapper members and marked the 14 development-only adapters. All 68 inventory rows map to a lifecycle family; the native table distinguishes the 47 master candidates from seven pending candidates.
+- Scanned 563 distinct full candidate names: the union of 390 current Gethe export/alias candidates, 67 framework/helper names and 139 identifiers retained from the earlier audit. Candidate lists are broader than applicable addon deprecations; matching calls were classified by definition, loader, receiver and flavour. A separate suffix pass checked 22 object/UI method names and excluded generic ATT handlers.
+- Rechecked current Gethe compatibility definitions and loader files on all seven pinned tracks, plus referenced current API declarations. The historical D/R links remain pinned to their event/adjacent exports; the new first-build, spell-namespace and tradeskill history is primary Gethe evidence. Missing documentation or a stale caller alone does not establish native removal.
+- Recounted direct legacy call expressions, conditional alias delegations and stored generated copies. Framework/template exposure and unchanged-name contract changes are recorded separately. No source migration, generated data, Lua test, or runtime behaviour was changed by this documentation refresh.
+- This is static source evidence. Runtime native exports, conditional loader/CVar state, protected execution, Parser regeneration and in-game behaviour need separate validation; neither the native matrix nor a generated-call count proves client execution.
 
 ## AI Assistance
 
-gpt-6.1-sol assisted with implementation, per-flavour API/source history, static call analysis, rebase verification and documentation.
+gpt-6.1-sol assisted with the earlier implementation and with source comparison, static analysis and this documentation refresh. gpt-6.2-astra reviewed audit scope, source fidelity, lifecycle history and the master-versus-pending distinctions. No human review or in-game validation is claimed.
 
 [e1]: https://github.com/Gethe/wow-ui-source/blob/e97025bc56d48bac9341aae1cc5f4ec07d17ef6e/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
-[e2]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
+[e2]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
 [e3]: https://github.com/Gethe/wow-ui-source/blob/6edfb32fe366d0759aee9749e53e549cf98da9fc/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
 [e4]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
 [e5]: https://github.com/Gethe/wow-ui-source/blob/fa643dda0b6266402dceea40e90a5f7c381ad26e/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
 [e6]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
 [e7]: https://github.com/Gethe/wow-ui-source/blob/6d4fe9dc25ece7871f9bdd1a747e65933d7c9e2d/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
-[e8]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
+[e8]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
 [e9]: https://github.com/Gethe/wow-ui-source/blob/fc86c0e9dcdcf6be3938fb3e2547581f509572ea/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
 [e10]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
 [e11]: https://github.com/Gethe/wow-ui-source/blob/cf7fa921a8d8e8256a987f0b6f8bc3a09bd2ef24/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
-[e12]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
-[e13]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
+[e12]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
+[e13]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L8
 [e14]: https://github.com/Gethe/wow-ui-source/blob/9ad649eb770673ad5a49367396e568f394480cf0/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
-[e15]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
+[e15]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
 [e16]: https://github.com/Gethe/wow-ui-source/blob/5de3826697acde236ccda485bc7deccee5a2f8ab/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
 [e17]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
 [e18]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
 [e19]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
 [e20]: https://github.com/Gethe/wow-ui-source/blob/44f8dfdaeb3d12a2c145d645055b8aac7e5fdea9/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
-[e21]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
+[e21]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
 [e22]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
 [e23]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
 [e24]: https://github.com/Gethe/wow-ui-source/blob/cf7fa921a8d8e8256a987f0b6f8bc3a09bd2ef24/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
-[e25]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
-[e26]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
+[e25]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
+[e26]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatInfo.lua#L8
 [e27]: https://github.com/Gethe/wow-ui-source/blob/aaaeb7f6ee6acd55932fe5d50fe86aba20697de0/AddOns/Blizzard_APIDocumentation/ChatInfoDocumentation.lua#L114
 [e28]: https://warcraft.wiki.gg/wiki/Patch_8.0.1/API_changes
 [e29]: https://github.com/Gethe/wow-ui-source/blob/742bf9604e0009bebb9a61a4f953d2661f8b387e/Interface/AddOns/Blizzard_Deprecated/Deprecated_10_2_7.lua#L95
-[e30]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L246
-[e31]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L271
+[e30]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L246
+[e31]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L271
 [e32]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/MerchantFrame.lua#L163
 [e33]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/MerchantFrame.lua#L188
 [e34]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L166
 [e35]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L191
-[e36]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L166
-[e37]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L191
+[e36]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L166
+[e37]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L191
 [e38]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L166
 [e39]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L191
-[e40]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L253
-[e41]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L278
-[e42]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L253
-[e43]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L278
-[e44]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L251
-[e45]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L300
+[e40]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L253
+[e41]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L278
+[e42]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L253
+[e43]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L278
+[e44]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L251
+[e45]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L300
 [e46]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/MerchantFrame.lua#L168
 [e47]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/MerchantFrame.lua#L216
 [e48]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L171
 [e49]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L219
-[e50]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L171
-[e51]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L219
+[e50]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L171
+[e51]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L219
 [e52]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L171
 [e53]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L219
-[e54]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L258
-[e55]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L307
-[e56]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L258
-[e57]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L307
+[e54]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L258
+[e55]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L307
+[e56]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L258
+[e57]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L307
 [e58]: https://github.com/Gethe/wow-ui-source/commit/e97025bc56d48bac9341aae1cc5f4ec07d17ef6e
 [e59]: https://github.com/Gethe/wow-ui-source/blob/fa3531505e3e2406f9e3d5a0fbd9644bd5c85227/Interface/AddOns/Blizzard_Deprecated/Deprecated_11_0_5.lua#L11
 [e60]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/MerchantFrame.lua#L200
 [e61]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/MerchantFrame.lua#L586
 [e62]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L203
 [e63]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L597
-[e64]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L203
-[e65]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L597
+[e64]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L203
+[e65]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L597
 [e66]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L203
 [e67]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L597
 [e68]: https://github.com/Gethe/wow-ui-source/blob/9ad649eb770673ad5a49367396e568f394480cf0/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L287
@@ -480,7 +513,7 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e72]: https://github.com/Gethe/wow-ui-source/commit/1cf759abedf90eaf4adaa1be3629855626c2d998
 [e73]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UnitPopup/Classic/UnitPopupButtons_Shared.lua#L491
 [e74]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UnitPopup/Classic/UnitPopupButtons_Shared.lua#L491
-[e75]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UnitPopup/Classic/UnitPopupButtons_Shared.lua#L491
+[e75]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UnitPopup/Classic/UnitPopupButtons_Shared.lua#L491
 [e76]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UnitPopup/Classic/UnitPopupButtons_Shared.lua#L491
 [e77]: https://github.com/Gethe/wow-ui-source/blob/f75b527f976856af9b61c23768d2222dc850f1bb/AddOns/Blizzard_Deprecated/Deprecated_8_2_5.lua#L369
 [e78]: https://github.com/Gethe/wow-ui-source/blob/3cbcb5e9ee42e5f9bd8b63ce8d59b1ad54d3a20b/Interface/AddOns/Blizzard_Deprecated/Deprecated_4_4_0.lua#L31
@@ -492,10 +525,10 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e84]: https://github.com/Gethe/wow-ui-source/blob/f75b527f976856af9b61c23768d2222dc850f1bb/AddOns/Blizzard_Deprecated/Deprecated_8_2_5.lua#L364
 [e85]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UnitPopup/Classic/UnitPopupButtons_Shared.lua#L499
 [e86]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UnitPopup/Classic/UnitPopupButtons_Shared.lua#L499
-[e87]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UnitPopup/Classic/UnitPopupButtons_Shared.lua#L499
+[e87]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UnitPopup/Classic/UnitPopupButtons_Shared.lua#L499
 [e88]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UnitPopup/Classic/UnitPopupButtons_Shared.lua#L499
-[e89]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_CompactRaidFrames/Mainline/Blizzard_CompactRaidFrameManager.lua#L433
-[e90]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_CompactRaidFrames/Mainline/Blizzard_CompactRaidFrameManager.lua#L433
+[e89]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_CompactRaidFrames/Mainline/Blizzard_CompactRaidFrameManager.lua#L433
+[e90]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_CompactRaidFrames/Mainline/Blizzard_CompactRaidFrameManager.lua#L433
 [e91]: https://github.com/Gethe/wow-ui-source/commit/afa2ff42802ff4cdb2fe8e4f9c533930c6061d4c
 [e92]: https://github.com/Gethe/wow-ui-source/blob/742bf9604e0009bebb9a61a4f953d2661f8b387e/Interface/AddOns/Blizzard_Deprecated/Deprecated_10_1_0.lua#L11
 [e93]: https://github.com/Gethe/wow-ui-source/blob/8681bc05e92f528c52c6a0b4ad1556688154ce71/Interface/AddOns/Blizzard_Deprecated/Deprecated_3_4_2.lua#L10
@@ -503,80 +536,80 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e95]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_Deprecated/Deprecated_3_4_2.lua#L10
 [e96]: https://github.com/Gethe/wow-ui-source/blob/74fbbd65a807931b7a28ab31e82e94c571368398/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
 [e97]: https://github.com/Gethe/wow-ui-source/blob/74fbbd65a807931b7a28ab31e82e94c571368398/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
-[e98]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
+[e98]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
 [e99]: https://github.com/Gethe/wow-ui-source/blob/6edfb32fe366d0759aee9749e53e549cf98da9fc/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
 [e100]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
 [e101]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
 [e102]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
 [e103]: https://github.com/Gethe/wow-ui-source/blob/6d4fe9dc25ece7871f9bdd1a747e65933d7c9e2d/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
-[e104]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
+[e104]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
 [e105]: https://github.com/Gethe/wow-ui-source/blob/afd96906dc4a82480117614afddf738f96957ace/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
 [e106]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
 [e107]: https://github.com/Gethe/wow-ui-source/blob/cf7fa921a8d8e8256a987f0b6f8bc3a09bd2ef24/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
-[e108]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
-[e109]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
-[e110]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
+[e108]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
+[e109]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L43
+[e110]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
 [e111]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
 [e112]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
-[e113]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
+[e113]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
 [e114]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
-[e115]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
-[e116]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
+[e115]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
+[e116]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedChatInfo/Deprecated_ChatFrame.lua#L66
 [e117]: https://github.com/Gethe/wow-ui-source/blob/f0084386950fe3dc31a1d61de33b364e268cf66b/Interface/SharedXML/TimeUtil.lua#L265
-[e118]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L364
+[e118]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L364
 [e119]: https://github.com/Gethe/wow-ui-source/blob/8681bc05e92f528c52c6a0b4ad1556688154ce71/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L308
 [e120]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L309
 [e121]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L308
 [e122]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L309
 [e123]: https://github.com/Gethe/wow-ui-source/blob/acf102a7d64ccdb97f13961b64aabefa29c69501/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L308
-[e124]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L309
+[e124]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L309
 [e125]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L308
 [e126]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L309
 [e127]: https://github.com/Gethe/wow-ui-source/blob/cf7fa921a8d8e8256a987f0b6f8bc3a09bd2ef24/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L363
-[e128]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L364
-[e129]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L364
+[e128]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L364
+[e129]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L364
 [e130]: https://github.com/Gethe/wow-ui-source/blob/742bf9604e0009bebb9a61a4f953d2661f8b387e/Interface/AddOns/Blizzard_Deprecated/Deprecated_11_0_0.lua#L5
-[e131]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Menu/11_0_0_MenuImplementationGuide.lua#L4
-[e132]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1375
+[e131]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Menu/11_0_0_MenuImplementationGuide.lua#L4
+[e132]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1375
 [e133]: https://github.com/Gethe/wow-ui-source/blob/a433729bcb12b683d7853c7a7bd3eaff3d23d642/Interface/AddOns/Blizzard_Menu/11_0_0_MenuImplementationGuide.lua#L4
 [e134]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L1262
 [e135]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_Menu/11_0_0_MenuImplementationGuide.lua#L4
 [e136]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L1262
 [e137]: https://github.com/Gethe/wow-ui-source/blob/8701c9bff1da9826e0d81f5aab7c9e37a96bf227/Interface/AddOns/Blizzard_Menu/11_0_0_MenuImplementationGuide.lua#L4
-[e138]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L1262
+[e138]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L1262
 [e139]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_Menu/11_0_0_MenuImplementationGuide.lua#L4
 [e140]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L1262
 [e141]: https://github.com/Gethe/wow-ui-source/blob/cf7fa921a8d8e8256a987f0b6f8bc3a09bd2ef24/Interface/AddOns/Blizzard_Menu/11_0_0_MenuImplementationGuide.lua#L4
-[e142]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1378
-[e143]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1378
-[e144]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1401
+[e142]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1378
+[e143]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1378
+[e144]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1401
 [e145]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L1289
 [e146]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L1289
-[e147]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L1289
+[e147]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L1289
 [e148]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L1289
-[e149]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1404
-[e150]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1404
-[e151]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L338
+[e149]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1404
+[e150]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L1404
+[e151]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L338
 [e152]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L297
 [e153]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L297
-[e154]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L297
+[e154]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L297
 [e155]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L297
-[e156]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L338
-[e157]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L338
-[e158]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L414
+[e156]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L338
+[e157]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L338
+[e158]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L414
 [e159]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L373
 [e160]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L373
-[e161]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L373
+[e161]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L373
 [e162]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L373
-[e163]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L414
-[e164]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L414
-[e165]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L77
+[e163]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L414
+[e164]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L414
+[e165]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L77
 [e166]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L76
 [e167]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L76
-[e168]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L76
+[e168]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L76
 [e169]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_SharedXML/Classic/UIDropDownMenu.lua#L76
-[e170]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L77
-[e171]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L77
+[e170]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L77
+[e171]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua#L77
 [e172]: https://github.com/Gethe/wow-ui-source/blob/f0084386950fe3dc31a1d61de33b364e268cf66b/Interface/SharedXML/Settings/Blizzard_Deprecated.lua#L4
 [e173]: https://github.com/Gethe/wow-ui-source/commit/a2be406dbd035af8d82716449610aba97090ffe3
 [e174]: https://github.com/Gethe/wow-ui-source/blob/a433729bcb12b683d7853c7a7bd3eaff3d23d642/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Deprecated.lua#L1
@@ -591,118 +624,118 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e183]: https://github.com/Gethe/wow-ui-source/blob/f0084386950fe3dc31a1d61de33b364e268cf66b/Interface/SharedXML/Settings/Blizzard_Deprecated.lua#L24
 [e184]: https://github.com/Gethe/wow-ui-source/blob/8681bc05e92f528c52c6a0b4ad1556688154ce71/Interface/SharedXML/Settings/Blizzard_Deprecated.lua#L24
 [e185]: https://github.com/Gethe/wow-ui-source/blob/3006c90fedfc06ce3fbc0c246424202eda50bbb0/Interface/SharedXML/Settings/Blizzard_Deprecated.lua#L24
-[e186]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L251
+[e186]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L251
 [e187]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L184
 [e188]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L184
-[e189]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L184
+[e189]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L184
 [e190]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L184
-[e191]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L251
-[e192]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L251
-[e193]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_ChatFrameBase/Mainline/ChatFrameUtilOverrides.lua#L14
+[e191]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L251
+[e192]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua#L251
+[e193]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_ChatFrameBase/Mainline/ChatFrameUtilOverrides.lua#L14
 [e194]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrameUtilOverrides.lua#L1
 [e195]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrameUtilOverrides.lua#L1
-[e196]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrameUtilOverrides.lua#L1
+[e196]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrameUtilOverrides.lua#L1
 [e197]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrameUtilOverrides.lua#L1
-[e198]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_ChatFrameBase/Mainline/ChatFrameUtilOverrides.lua#L14
-[e199]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_ChatFrameBase/Mainline/ChatFrameUtilOverrides.lua#L14
-[e200]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L994
+[e198]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_ChatFrameBase/Mainline/ChatFrameUtilOverrides.lua#L14
+[e199]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_ChatFrameBase/Mainline/ChatFrameUtilOverrides.lua#L14
+[e200]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L994
 [e201]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/MerchantFrame.lua#L791
 [e202]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L855
-[e203]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L855
+[e203]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L855
 [e204]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L855
-[e205]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L1052
-[e206]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L1052
-[e207]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L97
+[e205]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L1052
+[e206]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_UIPanels_Game/Mainline/MerchantFrame.lua#L1052
+[e207]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L97
 [e208]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L78
 [e209]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L78
-[e210]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L78
+[e210]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L78
 [e211]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L78
-[e212]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L97
-[e213]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L97
-[e214]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
+[e212]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L97
+[e213]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L97
+[e214]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
 [e215]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
 [e216]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
-[e217]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
+[e217]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
 [e218]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
-[e219]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
-[e220]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
-[e221]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
+[e219]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
+[e220]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L255
+[e221]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
 [e222]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
 [e223]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
-[e224]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
+[e224]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
 [e225]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
-[e226]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
-[e227]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
-[e228]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
+[e226]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
+[e227]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L275
+[e228]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
 [e229]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
 [e230]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
-[e231]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
+[e231]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
 [e232]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
-[e233]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
-[e234]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
-[e235]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L751
+[e233]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
+[e234]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Menu/DropdownButton.lua#L237
+[e235]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L751
 [e236]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L603
 [e237]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L603
-[e238]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L603
+[e238]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L603
 [e239]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L603
-[e240]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L804
-[e241]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L804
-[e242]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
+[e240]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L804
+[e241]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Menu/MenuTemplates.lua#L804
+[e242]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
 [e243]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
 [e244]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
-[e245]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
+[e245]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
 [e246]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
-[e247]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
-[e248]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
-[e249]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L212
+[e247]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
+[e248]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Menu/MenuUtil.lua#L224
+[e249]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L212
 [e250]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L178
 [e251]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L178
-[e252]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L178
+[e252]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L178
 [e253]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L178
-[e254]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L212
-[e255]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L212
-[e256]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L101
+[e254]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L212
+[e255]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L212
+[e256]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L101
 [e257]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L67
 [e258]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L67
-[e259]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L67
+[e259]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L67
 [e260]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L67
-[e261]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L101
-[e262]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L101
-[e263]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L143
+[e261]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L101
+[e262]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_SharedXML/TimeUtil.lua#L101
+[e263]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L143
 [e264]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L143
 [e265]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L143
-[e266]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L143
+[e266]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L143
 [e267]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L143
-[e268]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L144
-[e269]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L144
-[e270]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L133
+[e268]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L144
+[e269]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L144
+[e270]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L133
 [e271]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L133
 [e272]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L133
-[e273]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L133
+[e273]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L133
 [e274]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L133
-[e275]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L134
-[e276]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L134
-[e277]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L161
+[e275]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L134
+[e276]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L134
+[e277]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L161
 [e278]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L161
 [e279]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L161
-[e280]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L161
+[e280]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L161
 [e281]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L161
-[e282]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L162
-[e283]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L162
-[e284]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L165
+[e282]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L162
+[e283]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L162
+[e284]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L165
 [e285]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L165
 [e286]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L165
-[e287]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L165
+[e287]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L165
 [e288]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L165
-[e289]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L166
-[e290]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L166
-[e291]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L287
+[e289]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L166
+[e290]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua#L166
+[e291]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L287
 [e292]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L233
 [e293]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L233
-[e294]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L233
+[e294]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L233
 [e295]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L242
-[e296]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L287
-[e297]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L287
+[e296]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L287
+[e297]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/FrameScriptDocumentation.lua#L287
 [e298]: https://github.com/Gethe/wow-ui-source/blob/2ab5d546be8afbb381671c99ce8147ddc9004780/Interface/AddOns/Blizzard_DeprecatedCurrencyScript/Deprecated_CurrencyScript.lua#L11
 [e299]: https://github.com/Gethe/wow-ui-source/commit/7b27d6845ca49ecb713d49f49c22d9f0fb43f3e4
 [e300]: https://github.com/Gethe/wow-ui-source/blob/fbee1ffe0d1d9523b2080a4ce3efa96623e47694/Interface/AddOns/Blizzard_DeprecatedCurrencyScript/Deprecated_CurrencyScript.lua#L11
@@ -710,7 +743,7 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e302]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedCurrencyScript/Deprecated_CurrencyScript.lua#L11
 [e303]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedCurrencyScript/Deprecated_CurrencyScript.lua#L11
 [e304]: https://github.com/Gethe/wow-ui-source/blob/1dd6c2eabedc28f0aec08516b7816bb9e1010017/Interface/AddOns/Blizzard_DeprecatedCurrencyScript/Deprecated_CurrencyScript.lua#L11
-[e305]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedCurrencyScript/Deprecated_CurrencyScript.lua#L11
+[e305]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedCurrencyScript/Deprecated_CurrencyScript.lua#L11
 [e306]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedCurrencyScript/Deprecated_CurrencyScript.lua#L11
 [e307]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedCurrencyScript/Deprecated_CurrencyScript.lua#L11
 [e308]: https://github.com/Gethe/wow-ui-source/commit/b87363e0770c2f15b1e2f154de8ad3b0cf3ea90a
@@ -719,7 +752,7 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e311]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/MerchantFrame.lua#L803
 [e312]: https://github.com/Gethe/wow-ui-source/blob/a433729bcb12b683d7853c7a7bd3eaff3d23d642/Interface/AddOns/Blizzard_Deprecated/Deprecated_4_4_1.lua#L11
 [e313]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L867
-[e314]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L867
+[e314]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L867
 [e315]: https://github.com/Gethe/wow-ui-source/blob/8701c9bff1da9826e0d81f5aab7c9e37a96bf227/Interface/AddOns/Blizzard_Deprecated/Deprecated_4_4_1.lua#L11
 [e316]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanels_Game/TBC/MerchantFrame.lua#L867
 [e317]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_Deprecated/Deprecated_4_4_1.lua#L11
@@ -727,19 +760,19 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e319]: https://warcraft.wiki.gg/wiki/API_GetCurrencyLink
 [e320]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanelTemplates/Classic/UIPanelTemplates.lua#L204
 [e321]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanelTemplates/Classic/UIPanelTemplates.lua#L204
-[e322]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanelTemplates/Classic/UIPanelTemplates.lua#L204
+[e322]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanelTemplates/Classic/UIPanelTemplates.lua#L204
 [e323]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanelTemplates/Classic/UIPanelTemplates.lua#L204
 [e324]: https://github.com/Gethe/wow-ui-source/blob/a2be406dbd035af8d82716449610aba97090ffe3/Interface/AddOns/Blizzard_APIDocumentationGenerated/ReputationInfoDocumentation.lua#L45
 [e325]: https://warcraft.wiki.gg/wiki/Patch_11.0.0/API_changes
 [e326]: https://warcraft.wiki.gg/wiki/World_of_Warcraft_API/Classic
-[e327]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_QuestChoice/Blizzard_QuestChoice.lua#L144
+[e327]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_QuestChoice/Blizzard_QuestChoice.lua#L144
 [e328]: https://github.com/Gethe/wow-ui-source/blob/2ab5d546be8afbb381671c99ce8147ddc9004780/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L46
 [e329]: https://github.com/Gethe/wow-ui-source/blob/fbee1ffe0d1d9523b2080a4ce3efa96623e47694/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L46
 [e330]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L46
 [e331]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L46
 [e332]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L46
 [e333]: https://github.com/Gethe/wow-ui-source/blob/1dd6c2eabedc28f0aec08516b7816bb9e1010017/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L46
-[e334]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L46
+[e334]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L46
 [e335]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L46
 [e336]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L46
 [e337]: https://github.com/Gethe/wow-ui-source/blob/2ab5d546be8afbb381671c99ce8147ddc9004780/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L30
@@ -748,7 +781,7 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e340]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L30
 [e341]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L30
 [e342]: https://github.com/Gethe/wow-ui-source/blob/1dd6c2eabedc28f0aec08516b7816bb9e1010017/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L30
-[e343]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L30
+[e343]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L30
 [e344]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L30
 [e345]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L30
 [e346]: https://github.com/Gethe/wow-ui-source/blob/2ab5d546be8afbb381671c99ce8147ddc9004780/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L48
@@ -757,7 +790,7 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e349]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L48
 [e350]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L48
 [e351]: https://github.com/Gethe/wow-ui-source/blob/1dd6c2eabedc28f0aec08516b7816bb9e1010017/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L48
-[e352]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L48
+[e352]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L48
 [e353]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L48
 [e354]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L48
 [e355]: https://github.com/Gethe/wow-ui-source/blob/2ab5d546be8afbb381671c99ce8147ddc9004780/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L16
@@ -766,7 +799,7 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e358]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L16
 [e359]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L16
 [e360]: https://github.com/Gethe/wow-ui-source/blob/1dd6c2eabedc28f0aec08516b7816bb9e1010017/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L16
-[e361]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L16
+[e361]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L16
 [e362]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L16
 [e363]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L16
 [e364]: https://github.com/Gethe/wow-ui-source/blob/2ab5d546be8afbb381671c99ce8147ddc9004780/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L10
@@ -775,7 +808,7 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e367]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L10
 [e368]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L10
 [e369]: https://github.com/Gethe/wow-ui-source/blob/1dd6c2eabedc28f0aec08516b7816bb9e1010017/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L10
-[e370]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L10
+[e370]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L10
 [e371]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L10
 [e372]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L10
 [e373]: https://github.com/Gethe/wow-ui-source/blob/2ab5d546be8afbb381671c99ce8147ddc9004780/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L42
@@ -784,7 +817,7 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e376]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L42
 [e377]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L42
 [e378]: https://github.com/Gethe/wow-ui-source/blob/1dd6c2eabedc28f0aec08516b7816bb9e1010017/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L42
-[e379]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L42
+[e379]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L42
 [e380]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L42
 [e381]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L42
 [e382]: https://github.com/Gethe/wow-ui-source/blob/2ab5d546be8afbb381671c99ce8147ddc9004780/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L18
@@ -793,7 +826,7 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e385]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L18
 [e386]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L18
 [e387]: https://github.com/Gethe/wow-ui-source/blob/1dd6c2eabedc28f0aec08516b7816bb9e1010017/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L18
-[e388]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L18
+[e388]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L18
 [e389]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L18
 [e390]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L18
 [e391]: https://github.com/Gethe/wow-ui-source/blob/2ab5d546be8afbb381671c99ce8147ddc9004780/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L43
@@ -802,7 +835,7 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e394]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L43
 [e395]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L43
 [e396]: https://github.com/Gethe/wow-ui-source/blob/1dd6c2eabedc28f0aec08516b7816bb9e1010017/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L43
-[e397]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L43
+[e397]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L43
 [e398]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L43
 [e399]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L43
 [e400]: https://github.com/Gethe/wow-ui-source/blob/2ab5d546be8afbb381671c99ce8147ddc9004780/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L44
@@ -811,116 +844,116 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e403]: https://github.com/Gethe/wow-ui-source/blob/1d85c59fd23cd1543c03dd1a15631466f8ef071a/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L44
 [e404]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L44
 [e405]: https://github.com/Gethe/wow-ui-source/blob/1dd6c2eabedc28f0aec08516b7816bb9e1010017/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L44
-[e406]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L44
+[e406]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L44
 [e407]: https://github.com/Gethe/wow-ui-source/blob/ff85f79b0b41af33b07303506db95e354a065cdd/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L44
 [e408]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedItemScript/Deprecated_ItemScript.lua#L44
 [e409]: https://github.com/Gethe/wow-ui-source/blob/2d236a6c436878b20405013cd6dfcfcca0dbec1c/Interface/AddOns/Blizzard_Deprecated/Deprecated_11_2_5.lua#L17
 [e410]: https://warcraft.wiki.gg/wiki/API_C_TradeSkillUI.IsTradeSkillLinked
-[e411]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_TradeSkillUI/Mists/Blizzard_TradeSkillUI.lua#L234
+[e411]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_TradeSkillUI/Mists/Blizzard_TradeSkillUI.lua#L234
 [e412]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_TradeSkillUI/Wrath/Blizzard_TradeSkillUI.lua#L189
 [e413]: https://github.com/Gethe/wow-ui-source/commit/9ad649eb770673ad5a49367396e568f394480cf0
-[e414]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua#L16
-[e415]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua#L16
+[e414]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua#L16
+[e415]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua#L16
 [e416]: https://warcraft.wiki.gg/wiki/API_GetActiveTalentGroup
 [e417]: https://github.com/Gethe/wow-ui-source/commit/5de3826697acde236ccda485bc7deccee5a2f8ab
 [e418]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Vanilla.lua#L21
 [e419]: https://github.com/Gethe/wow-ui-source/commit/1d85c59fd23cd1543c03dd1a15631466f8ef071a
 [e420]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_TBC.lua#L21
 [e421]: https://github.com/Gethe/wow-ui-source/commit/f6321eafdaec9621fb6287ac7f016925fc83fdd7
-[e422]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Mists.lua#L30
+[e422]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Mists.lua#L30
 [e423]: https://github.com/Gethe/wow-ui-source/commit/ff85f79b0b41af33b07303506db95e354a065cdd
 [e424]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Wrath.lua#L21
-[e425]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua#L13
-[e426]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua#L13
+[e425]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua#L13
+[e426]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedSpecialization/Deprecated_Specialization_Standard.lua#L13
 [e427]: https://warcraft.wiki.gg/wiki/API_GetSpellLink
-[e428]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua#L27
+[e428]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua#L27
 [e429]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/QuestInfo.lua#L1036
 [e430]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanels_Game/TBC/QuestInfo.lua#L1034
-[e431]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanels_Game/Cata/QuestLogFrame.lua#L555
+[e431]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanels_Game/Cata/QuestLogFrame.lua#L555
 [e432]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanels_Game/Wrath/QuestInfo.lua#L1066
-[e433]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua#L27
+[e433]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua#L27
 [e434]: https://github.com/Gethe/wow-ui-source/blob/742bf9604e0009bebb9a61a4f953d2661f8b387e/Interface/AddOns/Blizzard_Deprecated/Deprecated_11_0_0.lua#L53
 [e435]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/SpellBookFrame.lua#L232
 [e436]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/SpellBookFrame.lua#L232
 [e437]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/SpellBookFrame.lua#L232
 [e438]: https://github.com/Gethe/wow-ui-source/blob/742bf9604e0009bebb9a61a4f953d2661f8b387e/Interface/AddOns/Blizzard_Deprecated/Deprecated_11_0_0.lua#L39
-[e439]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_UIPanels_Game/Cata/SpellBookProfessions.lua#L42
+[e439]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_UIPanels_Game/Cata/SpellBookProfessions.lua#L42
 [e440]: https://github.com/Gethe/wow-ui-source/blob/742bf9604e0009bebb9a61a4f953d2661f8b387e/Interface/AddOns/Blizzard_Deprecated/Deprecated_11_0_0.lua#L12
 [e441]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_ObjectAPI/Classic/Spell.lua#L39
 [e442]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_ObjectAPI/Classic/Spell.lua#L39
-[e443]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_ObjectAPI/Classic/Spell.lua#L39
+[e443]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_ObjectAPI/Classic/Spell.lua#L39
 [e444]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_ObjectAPI/Classic/Spell.lua#L39
 [e445]: https://warcraft.wiki.gg/wiki/API_GetSpellRank
-[e446]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua#L106
+[e446]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua#L106
 [e447]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_FrameXML/Classic/AlertFrameSystems.lua#L921
 [e448]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_FrameXML/Classic/AlertFrameSystems.lua#L921
-[e449]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_FrameXML/Classic/AlertFrameSystems.lua#L921
+[e449]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_FrameXML/Classic/AlertFrameSystems.lua#L921
 [e450]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_FrameXML/Classic/AlertFrameSystems.lua#L921
-[e451]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua#L106
-[e452]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
-[e453]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
+[e451]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua#L106
+[e452]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
+[e453]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
 [e454]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
 [e455]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
 [e456]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
 [e457]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
 [e458]: https://github.com/Gethe/wow-ui-source/commit/44f8dfdaeb3d12a2c145d645055b8aac7e5fdea9
-[e459]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
-[e460]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
+[e459]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
+[e460]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
 [e461]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
 [e462]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
 [e463]: https://github.com/Gethe/wow-ui-source/commit/cf7fa921a8d8e8256a987f0b6f8bc3a09bd2ef24
-[e464]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
-[e465]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
-[e466]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
-[e467]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
-[e468]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
+[e464]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
+[e465]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
+[e466]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L16
+[e467]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L4
+[e468]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
 [e469]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
 [e470]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
-[e471]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
+[e471]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
 [e472]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
-[e473]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
-[e474]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
+[e473]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
+[e474]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L22
 [e475]: https://github.com/Gethe/wow-ui-source/blob/742bf9604e0009bebb9a61a4f953d2661f8b387e/Interface/AddOns/Blizzard_Deprecated/Deprecated_11_0_0.lua#L23
 [e476]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_FrameXMLBase/Classic/IconDataProviderOverrides.lua#L5
 [e477]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_FrameXMLBase/Classic/IconDataProviderOverrides.lua#L5
-[e478]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_FrameXMLBase/Classic/IconDataProviderOverrides.lua#L4
+[e478]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_FrameXMLBase/Classic/IconDataProviderOverrides.lua#L4
 [e479]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_FrameXMLBase/Classic/IconDataProviderOverrides.lua#L5
 [e480]: https://github.com/Gethe/wow-ui-source/blob/742bf9604e0009bebb9a61a4f953d2661f8b387e/Interface/AddOns/Blizzard_Deprecated/Deprecated_11_0_0.lua#L25
 [e481]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_FrameXMLBase/Classic/IconDataProviderOverrides.lua#L6
 [e482]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_FrameXMLBase/Classic/IconDataProviderOverrides.lua#L6
-[e483]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_FrameXMLBase/Classic/IconDataProviderOverrides.lua#L5
+[e483]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_FrameXMLBase/Classic/IconDataProviderOverrides.lua#L5
 [e484]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_FrameXMLBase/Classic/IconDataProviderOverrides.lua#L6
 [e485]: https://warcraft.wiki.gg/wiki/API_GetPlayerAuraBySpellID
-[e486]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
+[e486]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
 [e487]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
 [e488]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
-[e489]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
+[e489]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
 [e490]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
-[e491]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
-[e492]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
+[e491]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
+[e492]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua#L11
 [e493]: https://github.com/Gethe/wow-ui-source/commit/45cb43fde1273ac34a6238cd5c1a377013067049
 [e494]: https://github.com/Gethe/wow-ui-source/blob/742bf9604e0009bebb9a61a4f953d2661f8b387e/Interface/AddOns/Blizzard_Deprecated/Deprecated_10_2_5.lua#L42
 [e495]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Deprecated/Deprecated_1_15_8.lua#L18
 [e496]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_Deprecated/Deprecated_1_15_8.lua#L5
 [e497]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Deprecated/Deprecated_1_15_8.lua#L18
 [e498]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_Deprecated/Deprecated_1_15_8.lua#L5
-[e499]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Deprecated/Deprecated_1_15_8.lua#L18
-[e500]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_Deprecated/Deprecated_1_15_8.lua#L5
+[e499]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Deprecated/Deprecated_1_15_8.lua#L18
+[e500]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_Deprecated/Deprecated_1_15_8.lua#L5
 [e501]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Deprecated/Deprecated_1_15_8.lua#L18
 [e502]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_Deprecated/Deprecated_1_15_8.lua#L5
-[e503]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L997
-[e504]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L997
-[e505]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L997
-[e506]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L986
+[e503]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L997
+[e504]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L997
+[e505]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L997
+[e506]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L986
 [e507]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_FrameXML/Classic/AlertFrameSystems.lua#L912
 [e508]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_FrameXML/Classic/AlertFrameSystems.lua#L912
-[e509]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_FrameXML/Classic/AlertFrameSystems.lua#L912
+[e509]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_FrameXML/Classic/AlertFrameSystems.lua#L912
 [e510]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_FrameXML/Classic/AlertFrameSystems.lua#L912
-[e511]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L986
-[e512]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L986
-[e513]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_ProfessionsTemplates/Blizzard_Professions.lua#L371
-[e514]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_ProfessionsTemplates/Blizzard_Professions.lua#L378
-[e515]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_ProfessionsTemplates/Blizzard_Professions.lua#L378
+[e511]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L986
+[e512]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_FrameXML/Mainline/AlertFrameSystems.lua#L986
+[e513]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_ProfessionsTemplates/Blizzard_Professions.lua#L371
+[e514]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_ProfessionsTemplates/Blizzard_Professions.lua#L378
+[e515]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_ProfessionsTemplates/Blizzard_Professions.lua#L378
 [e516]: https://github.com/Gethe/wow-ui-source/blob/e97025bc56d48bac9341aae1cc5f4ec07d17ef6e/Interface/AddOns/Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua#L18
 [e517]: https://github.com/Gethe/wow-ui-source/blob/6edfb32fe366d0759aee9749e53e549cf98da9fc/Interface/AddOns/Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua#L18
 [e518]: https://github.com/Gethe/wow-ui-source/blob/fa643dda0b6266402dceea40e90a5f7c381ad26e/Interface/AddOns/Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua#L18
@@ -928,297 +961,317 @@ gpt-6.1-sol assisted with implementation, per-flavour API/source history, static
 [e520]: https://github.com/Gethe/wow-ui-source/blob/fc86c0e9dcdcf6be3938fb3e2547581f509572ea/Interface/AddOns/Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua#L18
 [e521]: https://github.com/Gethe/wow-ui-source/blob/cf7fa921a8d8e8256a987f0b6f8bc3a09bd2ef24/Interface/AddOns/Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua#L18
 [e522]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/CombatLogDocumentation.lua#L60
-[e523]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/CombatLogSecureDocumentation.lua#L6
-[e524]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua#L10
-[n1-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L165
+[e523]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/CombatLogSecureDocumentation.lua#L6
+[e524]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedCombatLog/Deprecated_CombatLog.lua#L10
+[n1-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L165
 [n1-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L154
 [n1-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L154
-[n1-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L154
+[n1-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L154
 [n1-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L154
-[n1-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L165
-[n1-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L165
-[n2-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L255
+[n1-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L165
+[n1-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/AddOnsDocumentation.lua#L165
+[n2-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L255
 [n2-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L153
 [n2-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L153
-[n2-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L162
+[n2-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L162
 [n2-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L162
-[n2-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L319
-[n2-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L303
-[n3-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L516
+[n2-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L334
+[n2-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/BattleNetDocumentation.lua#L334
+[n3-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L516
 [n3-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L358
 [n3-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L358
-[n3-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L358
+[n3-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L358
 [n3-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L358
-[n3-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L516
-[n3-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L516
-[n4-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L564
+[n3-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L516
+[n3-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L516
+[n4-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L564
 [n4-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L403
 [n4-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L403
-[n4-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L403
+[n4-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L403
 [n4-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L403
-[n4-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L564
-[n4-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L564
+[n4-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L564
+[n4-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua#L564
 [n5-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/CombatLogDocumentation.lua#L58
 [n5-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/CombatLogDocumentation.lua#L58
-[n5-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/CombatLogDocumentation.lua#L58
+[n5-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/CombatLogDocumentation.lua#L58
 [n5-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/CombatLogDocumentation.lua#L58
-[n6-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L161
+[n6-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L161
 [n6-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L56
 [n6-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L56
-[n6-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L56
+[n6-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L56
 [n6-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L56
-[n6-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L161
-[n6-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L161
-[n7-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L249
+[n6-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L161
+[n6-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L161
+[n7-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L249
 [n7-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L87
 [n7-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L87
-[n7-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L87
+[n7-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L87
 [n7-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L87
-[n7-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L249
-[n7-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L249
-[n8-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L281
-[n8-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L281
-[n8-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L281
-[n9-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
+[n7-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L249
+[n7-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L249
+[n8-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L281
+[n8-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L281
+[n8-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/CurrencyInfoDocumentation.lua#L281
+[n9-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
 [n9-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
 [n9-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
-[n9-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
+[n9-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
 [n9-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
-[n9-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
-[n9-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
-[n10-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
+[n9-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
+[n9-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/GossipInfoDocumentation.lua#L60
+[n10-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
 [n10-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
 [n10-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
-[n10-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
+[n10-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
 [n10-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
-[n10-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
-[n10-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
-[n11-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L125
+[n10-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
+[n10-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L11
+[n11-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L125
 [n11-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L119
 [n11-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L119
-[n11-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L119
+[n11-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L119
 [n11-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L119
-[n11-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L125
-[n11-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L125
-[n12-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L332
+[n11-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L125
+[n11-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/HousingCatalogUIDocumentation.lua#L125
+[n12-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L332
 [n12-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L197
 [n12-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L197
-[n12-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L197
+[n12-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L197
 [n12-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L197
-[n12-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L354
-[n12-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L354
-[n13-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L382
+[n12-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L354
+[n12-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L354
+[n13-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L382
 [n13-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L229
 [n13-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L229
-[n13-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L229
+[n13-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L229
 [n13-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L229
-[n13-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L404
-[n13-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L404
-[n14-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L429
+[n13-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L404
+[n13-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L404
+[n14-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L429
 [n14-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L243
 [n14-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L243
-[n14-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L243
+[n14-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L243
 [n14-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L243
-[n14-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L451
-[n14-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L451
-[n15-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L559
+[n14-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L451
+[n14-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L451
+[n15-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L559
 [n15-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L351
 [n15-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L351
-[n15-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L351
+[n15-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L351
 [n15-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L351
-[n15-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L581
-[n15-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L581
-[n16-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L589
+[n15-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L581
+[n15-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L581
+[n16-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L589
 [n16-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L379
 [n16-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L379
-[n16-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L379
+[n16-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L379
 [n16-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L379
-[n16-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L611
-[n16-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L611
-[n17-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L604
+[n16-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L611
+[n16-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L611
+[n17-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L604
 [n17-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L393
 [n17-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L393
-[n17-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L393
+[n17-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L393
 [n17-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L393
-[n17-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L626
-[n17-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L626
-[n18-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L637
+[n17-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L626
+[n17-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L626
+[n18-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L637
 [n18-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L425
 [n18-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L425
-[n18-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L425
+[n18-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L425
 [n18-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L425
-[n18-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L659
-[n18-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L659
-[n19-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L749
-[n19-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L771
-[n19-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L771
-[n20-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L932
+[n18-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L659
+[n18-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L659
+[n19-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L749
+[n19-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L771
+[n19-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L771
+[n20-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L932
 [n20-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L659
 [n20-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L659
-[n20-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L659
+[n20-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L659
 [n20-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L659
-[n20-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L954
-[n20-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L954
-[n21-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L948
+[n20-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L954
+[n20-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L954
+[n21-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L948
 [n21-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L674
 [n21-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L674
-[n21-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L674
+[n21-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L674
 [n21-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L674
-[n21-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L970
-[n21-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L970
-[n22-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L998
+[n21-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L970
+[n21-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L970
+[n22-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L998
 [n22-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L690
 [n22-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L690
-[n22-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L690
+[n22-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L690
 [n22-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L690
-[n22-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L1020
-[n22-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L1020
-[n23-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemSocketInfoDocumentation.lua#L168
-[n23-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemSocketInfoDocumentation.lua#L168
-[n23-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemSocketInfoDocumentation.lua#L168
-[n24-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/MerchantFrameDocumentation.lua#L27
-[n24-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/MerchantFrameDocumentation.lua#L27
-[n24-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/MerchantFrameDocumentation.lua#L27
-[n27-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L134
-[n27-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L134
-[n27-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L143
-[n28-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L287
+[n22-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L1020
+[n22-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemDocumentation.lua#L1020
+[n23-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemSocketInfoDocumentation.lua#L168
+[n23-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemSocketInfoDocumentation.lua#L168
+[n23-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ItemSocketInfoDocumentation.lua#L168
+[n24-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/MerchantFrameDocumentation.lua#L27
+[n24-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/MerchantFrameDocumentation.lua#L27
+[n24-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/MerchantFrameDocumentation.lua#L27
+[n27-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L134
+[n27-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L134
+[n27-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L143
+[n28-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L287
 [n28-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L105
 [n28-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L105
-[n28-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L105
+[n28-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L105
 [n28-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L105
-[n28-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L287
-[n28-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L296
-[n29-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L357
+[n28-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L287
+[n28-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L296
+[n29-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L357
 [n29-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L139
 [n29-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L139
-[n29-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L139
+[n29-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L139
 [n29-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L139
-[n29-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L357
-[n29-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L366
-[n30-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L484
-[n30-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L484
-[n30-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L493
-[n31-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L562
+[n29-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L357
+[n29-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L366
+[n30-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L484
+[n30-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L484
+[n30-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L493
+[n31-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L562
 [n31-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L253
 [n31-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L253
-[n31-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L253
+[n31-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L253
 [n31-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L253
-[n31-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L562
-[n31-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L571
-[n32-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L493
-[n32-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L493
-[n32-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L493
-[n33-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L898
-[n33-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L931
-[n33-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L931
-[n34-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ReputationInfoDocumentation.lua#L48
-[n34-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ReputationInfoDocumentation.lua#L48
-[n34-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/ReputationInfoDocumentation.lua#L48
-[n35-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L213
+[n31-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L562
+[n31-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/PartyInfoDocumentation.lua#L571
+[n32-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L493
+[n32-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L493
+[n32-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L493
+[n33-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L898
+[n33-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L931
+[n33-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/QuestLogDocumentation.lua#L931
+[n34-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/ReputationInfoDocumentation.lua#L48
+[n34-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/ReputationInfoDocumentation.lua#L48
+[n34-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/ReputationInfoDocumentation.lua#L48
+[n35-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L213
 [n35-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L60
 [n35-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L60
-[n35-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L60
+[n35-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L60
 [n35-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L60
-[n35-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L237
-[n35-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L237
-[n36-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L230
+[n35-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L237
+[n35-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L237
+[n36-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L230
 [n36-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L76
 [n36-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L76
-[n36-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L76
+[n36-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L76
 [n36-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L76
-[n36-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L254
-[n36-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L254
-[n37-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L268
+[n36-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L254
+[n36-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpecializationInfoDocumentation.lua#L254
+[n37-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L268
 [n37-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L108
 [n37-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L108
-[n37-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L108
+[n37-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L108
 [n37-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L108
-[n37-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L309
-[n37-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L326
-[n38-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L375
+[n37-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L309
+[n37-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L326
+[n38-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L375
 [n38-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L190
 [n38-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L190
-[n38-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L190
+[n38-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L190
 [n38-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L190
-[n38-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L416
-[n38-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L433
-[n39-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L408
+[n38-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L416
+[n38-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L433
+[n39-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L408
 [n39-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L221
 [n39-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L221
-[n39-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L221
+[n39-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L221
 [n39-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L221
-[n39-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L449
-[n39-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L466
-[n40-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L477
+[n39-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L449
+[n39-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L466
+[n40-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L477
 [n40-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L284
 [n40-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L284
-[n40-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L284
+[n40-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L284
 [n40-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L284
-[n40-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L518
-[n40-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L535
-[n41-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L537
+[n40-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L518
+[n40-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L535
+[n41-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L537
 [n41-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L341
 [n41-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L341
-[n41-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L341
+[n41-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L341
 [n41-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L341
-[n41-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L578
-[n41-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L595
-[n42-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L554
+[n41-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L578
+[n41-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L595
+[n42-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L554
 [n42-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L357
 [n42-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L357
-[n42-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L357
+[n42-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L357
 [n42-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L357
-[n42-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L595
-[n42-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L612
-[n43-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L117
-[n43-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L137
-[n43-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L137
-[n44-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L270
-[n44-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L290
-[n44-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L290
-[n45-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L466
-[n45-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L486
-[n45-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L486
-[n46-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L666
+[n42-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L595
+[n42-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellDocumentation.lua#L612
+[n43-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L117
+[n43-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L137
+[n43-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L137
+[n44-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L270
+[n44-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L290
+[n44-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L290
+[n45-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L466
+[n45-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L486
+[n45-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L486
+[n46-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L666
 [n46-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L65
 [n46-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L65
-[n46-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L65
+[n46-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L65
 [n46-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L65
-[n46-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L720
-[n46-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L720
-[n47-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L684
+[n46-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L720
+[n46-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L720
+[n47-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L684
 [n47-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L82
 [n47-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L82
-[n47-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L82
+[n47-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L82
 [n47-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L82
-[n47-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L738
-[n47-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L738
-[n48-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L458
-[n48-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L473
-[n48-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L473
-[n49-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L867
+[n47-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L738
+[n47-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/SpellBookDocumentation.lua#L738
+[n48-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L458
+[n48-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L473
+[n48-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L473
+[n49-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L867
 [n49-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L25
 [n49-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L25
-[n49-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L25
+[n49-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L25
 [n49-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L25
-[n49-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L882
-[n49-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L882
+[n49-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L882
+[n49-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L882
 [n51-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L39
 [n51-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L39
-[n51-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L39
+[n51-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L39
 [n51-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/TradeSkillUIDocumentation.lua#L39
-[n53-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L324
+[n53-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L324
 [n53-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L256
 [n53-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L256
-[n53-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L256
+[n53-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L256
 [n53-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L256
-[n53-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L324
-[n53-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L324
-[n54-retail]: https://github.com/Gethe/wow-ui-source/blob/297d7aaaa736f346b3e036f38ee088eaf7f8c07f/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L395
+[n53-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L324
+[n53-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L324
+[n54-retail]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L395
 [n54-era]: https://github.com/Gethe/wow-ui-source/blob/4192ac60067fc55566182291bc67c85dd9b6794d/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L302
 [n54-tbc]: https://github.com/Gethe/wow-ui-source/blob/68e0a2ec559d9761dfc4e7f864c3944f9d758a49/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L302
-[n54-mists]: https://github.com/Gethe/wow-ui-source/blob/e5d9b3a22c3f0f6f41ebac0e454f4969594261cf/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L302
+[n54-mists]: https://github.com/Gethe/wow-ui-source/blob/e171ae99b8e582ce9547bd8fc87054fe2e348f20/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L302
 [n54-titan]: https://github.com/Gethe/wow-ui-source/blob/7014c309a25338905c41dc3799a93f9719ebb533/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L302
-[n54-forever]: https://github.com/Gethe/wow-ui-source/blob/eac30af597e5aaa43a60f6675ef5fdcea100375f/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L397
-[n54-ptr]: https://github.com/Gethe/wow-ui-source/blob/e927c305f67ed6b3b460bc00d0c39055747b9119/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L397
+[n54-forever]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L397
+[n54-ptr]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/UnitAuraDocumentation.lua#L397
+
+[trade-linked-old]: https://github.com/Gethe/wow-ui-source/blob/8cab5e2d17f139d5b9ef0d48a2811bc1c1de1ee4/AddOns/Blizzard_TradeSkillUI/Blizzard_TradeSkillUI.lua#L694
+[trade-linked-new]: https://github.com/Gethe/wow-ui-source/blob/71fe1c05d301125ea99b3f74ed45f3baf52e9b4b/AddOns/Blizzard_TradeSkillUI/Blizzard_TradeSkillUI.lua#L125
+[trade-texture-old]: https://github.com/Gethe/wow-ui-source/blob/fdd93e958514381434b386ce4e7ff14e25880b4a/AddOns/Blizzard_TradeSkillUI/Blizzard_TradeSkillUI.lua#L54
+[trade-texture-last]: https://github.com/Gethe/wow-ui-source/blob/8cab5e2d17f139d5b9ef0d48a2811bc1c1de1ee4/AddOns/Blizzard_TradeSkillUI/Blizzard_TradeSkillUI.lua#L68
+[trade-texture-new]: https://github.com/Gethe/wow-ui-source/blob/71fe1c05d301125ea99b3f74ed45f3baf52e9b4b/AddOns/Blizzard_TradeSkillUI/Blizzard_TradeSkillUI.lua#L140
+[ptr-bn-first]: https://github.com/Gethe/wow-ui-source/blob/b87363e0770c2f15b1e2f154de8ad3b0cf3ea90a/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L39
+[ptr-transmog-first]: https://github.com/Gethe/wow-ui-source/blob/b87363e0770c2f15b1e2f154de8ad3b0cf3ea90a/Interface/AddOns/Blizzard_DeprecatedTransmog/Deprecated_Transmog.lua#L9-L10
+[forever-bn-first]: https://github.com/Gethe/wow-ui-source/blob/bd2470aed543f72697a044e989285b6c83e63f73/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L39
+[forever-transmog-first]: https://github.com/Gethe/wow-ui-source/blob/f0da0a9171aa736c8a64d2b3a8ae70195f5d2afb/Interface/AddOns/Blizzard_DeprecatedTransmog/Deprecated_Transmog.lua#L9-L10
+[ptr-bn-current]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L39
+[forever-bn-current]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_DeprecatedBattleNet/Deprecated_BattleNet.lua#L39
+[ptr-transmog-current]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_DeprecatedTransmog/Deprecated_Transmog.lua#L9-L10
+[forever-transmog-current]: https://github.com/Gethe/wow-ui-source/blob/734f065329cff4992835b01a84f210a297db91b6/Interface/AddOns/Blizzard_DeprecatedTransmog/Deprecated_Transmog.lua#L9-L10
+[retail-bn-caller]: https://github.com/Gethe/wow-ui-source/blob/ab5cb850a3f65e742959e379c4689353a2f4549f/Interface/AddOns/Blizzard_FriendsFrame/Mainline/FriendsFrame.lua#L1397
+[ptr-transmog-structure]: https://github.com/Gethe/wow-ui-source/blob/fbb18ce126862cedee284308dec404ff93fa27b1/Interface/AddOns/Blizzard_APIDocumentationGenerated/TransmogOutfitInfoDocumentation.lua#L921
+[spellbook-info-first]: https://github.com/Gethe/wow-ui-source/blob/135bcb0078dfd6cf243398fdc6ced1fe5ffb07e4/AddOns/Blizzard_APIDocumentation/SpellBookDocumentation.lua#L47-L57
+[spellbook-info-move]: https://github.com/Gethe/wow-ui-source/blob/a2be406dbd035af8d82716449610aba97090ffe3/Interface/AddOns/Blizzard_Deprecated/11_0_0_SpellBookAPITransitionGuide.lua#L126-L135
+[housing-contract-first]: https://github.com/Gethe/wow-ui-source/blob/dc62c613606d0be2467791243eae5eea79201de0/Interface/AddOns/Blizzard_DeprecatedHousingCatalog/Deprecated_HousingCatalog.lua#L74-L86
+[housing-search-first]: https://github.com/Gethe/wow-ui-source/blob/dc62c613606d0be2467791243eae5eea79201de0/Interface/AddOns/Blizzard_DeprecatedHousingCatalog/Deprecated_HousingCatalog.lua#L241-L252
