@@ -519,7 +519,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 			description = "Gathered from Peacebloom and Silverleaf.",
 		}),
 		i(268416, {	-- Uncommon Herb Seeds
-			description = "Gathered from Briarthorn, Bruiseweed and Stranglekelp.",
+			description = "Gathered from Briarthorn, Bruiseweed, Mageroyal and Stranglekelp.",
 		}),
 		filter(MISC, {
 			i(279964),	-- Greenhouse
