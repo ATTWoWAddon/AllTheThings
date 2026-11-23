@@ -37,7 +37,6 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 			fp(3242, {	-- Tainted Foothills, Mount Hyjal
 				cr = 260626,	-- Bluebell <Flight Mistress>
 				coord = { 55.0, 82.8, MAP.MOUNT_HYJAL },
-				races = ALLIANCE_ONLY,
 			}),
 		}),
 		n(QUESTS, {
