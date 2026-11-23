@@ -6,9 +6,11 @@ local DAWN_WAKER = createHeader({
 	icon = 7789512,	-- Eluvi'ana
 	text = {
 		en = "The Dawn Waker",
+		cn = "黎明唤醒者",
 	},
 	description = {
 		en = "A secret chain that starts with the Ancient Heirloom on Zephras Isle and leads across Kalimdor to cleanse a befouled water globe. The community hasn't found its end yet, so the last steps may change.",
+		cn = "一条秘密任务链，始于泽风岛上的远古传家宝，横跨卡利姆多，途中需要净化一颗被污染的水球。社区尚未找到它的终点，因此最后的步骤可能会有所变动。",
 	},
 });
 root(ROOTS.Secrets, {
