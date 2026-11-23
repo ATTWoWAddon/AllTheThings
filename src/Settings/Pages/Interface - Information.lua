@@ -297,12 +297,18 @@ local function GetCharacterDisplayName(character, realmName, normalizedRealmName
 	if stripRealm and realm ~= realmName and realm ~= normalizedRealmName then
 		realmName, normalizedRealmName = realm, realm;
 	end
-	if not realm or realm == "" or (realm ~= realmName and realm ~= normalizedRealmName) then return text; end
+	if not realm then return text; end
+	if realm ~= "" and realm ~= realmName and realm ~= normalizedRealmName then return text; end
 	local ending = text:match(" %(x%d+%)$") or "";
 	local display = text:sub(1, #text - #ending);
 	if display:sub(-2) == "|r" then
 		display = display:sub(1, -3);
 		ending = "|r" .. ending;
+	end
+	-- Realmless clients (WoW Forever) save names as "Name-"; drop the empty realm suffix.
+	if realm == "" then
+		if display:sub(-1) == "-" then return display:sub(1, -2) .. ending; end
+		return text;
 	end
 	-- Compare suffixes literally so spaces and realm punctuation retain their meaning.
 	local suffix = "-" .. realmName;
