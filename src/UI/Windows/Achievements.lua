@@ -133,6 +133,7 @@ end
 
 -- Implementation
 app:CreateWindow("Achievements", {
+	SettingsGroup = "Collections",
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attachievements", "attach" },

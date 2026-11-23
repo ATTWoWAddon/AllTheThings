@@ -446,6 +446,8 @@ end
 
 -- Implementation
 app:CreateWindow("MiniList", {
+	SettingsGroup = "Main",
+	SettingsOrder = 2,
 	AllowCompleteSound = true,
 	SettingsName = L.MINI_LIST,
 	-- IsTopLevel = true,

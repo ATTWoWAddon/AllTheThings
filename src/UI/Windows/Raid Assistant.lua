@@ -181,6 +181,8 @@ end
 
 -- Implementation
 app:CreateWindow("RaidAssistant", {
+	SettingsGroup = "Main",
+	SettingsOrder = 4,
 	IgnoreQuestUpdates = true,
 	Commands = { "attra" },
 	RootCommands = { "ra" },

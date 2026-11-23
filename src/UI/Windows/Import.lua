@@ -37,6 +37,7 @@ end
 
 -- Implementation
 app:CreateWindow("Import", {
+	SettingsGroup = "Tools",
 	Commands = { "attimport" },
 	RootCommands = { "import" },
 	OnCommand = function(self, args)

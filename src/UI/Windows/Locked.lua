@@ -8,6 +8,7 @@ local ipairs, tinsert
 
 -- Implementation
 app:CreateWindow("Locked", {
+	SettingsGroup = "Progress",
 	AllowCompleteSound = true,
 	Commands = { "attlocked" },
 	OnInit = function(self, handlers)

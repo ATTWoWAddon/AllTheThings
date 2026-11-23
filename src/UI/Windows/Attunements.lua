@@ -199,6 +199,7 @@ end
 
 -- Implementation
 app:CreateWindow("Attunements", {
+	SettingsGroup = "Collections",
 	IsDynamicCategory = true,
 	Commands = {
 		"attuned",

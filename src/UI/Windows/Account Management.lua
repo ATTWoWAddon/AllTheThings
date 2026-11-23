@@ -2395,6 +2395,7 @@ end
 
 -- Implementation
 app:CreateWindow("Account Management", {
+	SettingsGroup = "Tools",
 	Commands = { "attsync", "attaccount" },
 	RootCommands = { "sync", "account" },
 	IgnoreQuestUpdates = true,
@@ -2681,6 +2682,7 @@ app:CreateWindow("Account Management", {
 });
 
 app:CreateWindow("Character Unique Data", {
+	SettingsGroup = "Tools",
 	OnInit = function(self)
 		local SearchForObject = app.SearchForObject
 

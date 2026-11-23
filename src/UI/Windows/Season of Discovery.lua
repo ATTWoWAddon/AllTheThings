@@ -14,6 +14,7 @@ local function IsExclusiveToSod(group)
 	end
 end
 app:CreateWindow("Season of Discovery", {
+	SettingsGroup = "Progress",
 	Commands = { "attsod" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.SEASON_OF_DISCOVERY, {

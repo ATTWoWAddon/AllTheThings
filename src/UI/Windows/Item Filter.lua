@@ -68,6 +68,7 @@ local function ParseCommand(self, cmd)
 	end
 end
 app:CreateWindow("Item Filter", {
+	SettingsGroup = "Tools",
 	Commands = { "attfilter" },
 	RootCommands = { "filter", "filters" },
 	OnCommand = function(self, args, params)

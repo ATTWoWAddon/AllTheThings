@@ -8,6 +8,7 @@ local Flat;
 
 -- Window Definition
 app:CreateWindow("Heirlooms", {
+	SettingsGroup = "Collections",
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attheirlooms" },

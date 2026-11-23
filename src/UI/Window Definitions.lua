@@ -2905,6 +2905,45 @@ local function GetLocalizedWindowName(suffix)
 	-- Note: rawget avoids triggering the Localization table's fallback (which would report a MISSING LOCALE & return UNKNOWN)
 	return constant and rawget(L, constant) or nil;
 end
+-- Players can turn off a window's Dynamic Category (its entry in the Main List) per window.
+-- The choice is saved with the window's settings and applies the next time the data loads (/reload).
+-- Note: reads the saved table directly, since a window may still hold a temporary Settings table
+-- (not yet linked to the saved variables) while the data cache is being built.
+local function GetSavedWindowSettings(suffix, create)
+	local savedVariables = AllTheThingsSavedVariables;
+	if not savedVariables then return; end
+	local windows = savedVariables.Windows;
+	if not windows then
+		if not create then return; end
+		windows = {};
+		savedVariables.Windows = windows;
+	end
+	local windowSettings = windows[suffix];
+	if not windowSettings and create then
+		windowSettings = {};
+		windows[suffix] = windowSettings;
+	end
+	return windowSettings;
+end
+local function IsDynamicCategoryEnabled(suffix)
+	local windowSettings = GetSavedWindowSettings(suffix);
+	return not (windowSettings and windowSettings.DynamicCategory == false);
+end
+app.IsDynamicCategoryEnabled = IsDynamicCategoryEnabled;
+app.SetDynamicCategoryEnabled = function(suffix, enabled)
+	-- only store the non-default value (note: 'x and false or nil' would always give nil)
+	local value;
+	if not enabled then value = false; end
+	local windowSettings = GetSavedWindowSettings(suffix, true);
+	if windowSettings then
+		windowSettings.DynamicCategory = value;
+	end
+	-- keep the window's own Settings table in step, in case it isn't the saved one
+	local window = app.Windows[suffix];
+	if window and window.Settings and window.Settings ~= windowSettings then
+		window.Settings.DynamicCategory = value;
+	end
+end
 function app:CreateWindow(suffix, definition)
 	app.WindowDefinitions[suffix] = definition;
 	if not definition then
@@ -2918,8 +2957,10 @@ function app:CreateWindow(suffix, definition)
 	definition.Suffix = suffix
 	-- Dynamic Categories are neat, but currently only a Classic Feature (for now?)
 	if definition.IsDynamicCategory and (app.IsClassic or app.IsForever) then
+		definition.SupportsDynamicCategory = true;
 		if definition.DynamicCategoryHeader then
 			app.AddEventHandler("OnDataCached", function(categories)
+				if not IsDynamicCategoryEnabled(suffix) then return; end
 				local category = categories.Professions;
 				if category then
 					for i,group in ipairs(category.g) do
@@ -2942,6 +2983,7 @@ function app:CreateWindow(suffix, definition)
 			end);
 		else
 			app.AddEventHandler("OnBuildDataCache", function(categories)
+				if not IsDynamicCategoryEnabled(suffix) then return; end
 				categories["Dynamic" .. suffix] = app.CreateDynamicCategory(suffix, {
 					SortPriority = 100,
 					sourceIgnored = 1

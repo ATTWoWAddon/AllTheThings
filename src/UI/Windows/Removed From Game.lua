@@ -5,6 +5,7 @@ local tinsert = tinsert;
 
 -- Implementation
 app:CreateWindow("Removed From Game", {
+	SettingsGroup = "Progress",
 	Commands = { "attrfg" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateRawText(L.REMOVED_FROM_GAME, {

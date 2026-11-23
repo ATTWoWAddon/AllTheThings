@@ -5,6 +5,7 @@ local L = app.L;
 
 -- Implementation
 app:CreateWindow("White and Gray Transmog", {
+	SettingsGroup = "Progress",
 	Commands = { "attwgt", "attwct" },
 	RootCommands = { "wgt", "wct" },
 	OnLoad = function(self, settings)

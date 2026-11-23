@@ -8,6 +8,7 @@ local ipairs
 
 -- Implementation
 app:CreateWindow("Commands", {
+	SettingsGroup = "Tools",
 	Commands = { "attcommands", "atthelp" },
 	RootCommands = { "commands", "help" },
 	OnInit = function(self)

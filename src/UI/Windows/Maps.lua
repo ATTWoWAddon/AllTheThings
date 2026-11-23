@@ -10,6 +10,7 @@ local C_Map_GetMapInfo
 
 -- Implementation
 app:CreateWindow("Maps", {
+	SettingsGroup = "Progress",
 	IgnoreQuestUpdates = true,
 	Commands = { "attmaps" },
 	OnInit = function(self, handlers)

@@ -1456,7 +1456,9 @@ ATTSettingsPanelMixin = {
 		-- Create the ScrollFrame
 		--- Scrollable viewport for the settings panel's child controls.
 		---@class ATTOptionsScrollFrame: ScrollFrame
-		local scrollFrame = CreateFrame("ScrollFrame", settings:GetName().."SF"..app.UniqueCounter.AddScrollframe, self, "ScrollFrameTemplate")
+		-- Classic clients give ScrollFrameTemplate a boxy scrollbar, so they use the classic panel scrollbar instead
+		local scrollFrameName = settings:GetName().."SF"..app.UniqueCounter.AddScrollframe
+		local scrollFrame = CreateFrame("ScrollFrame", scrollFrameName, self, app.IsClassic and "UIPanelScrollFrameTemplate" or "ScrollFrameTemplate")
 		--- Settings control container inside an options scroll frame.
 		---@class ATTOptionsScrollFrameChild: Frame
 		local child = CreateFrame("Frame", settings:GetName().."SCF"..app.UniqueCounter.AddScrollableframe)
@@ -1468,7 +1470,15 @@ ATTSettingsPanelMixin = {
 		child.ScrollContainer = scrollFrame
 		-- Move the Scrollbar inside of the frame which it scrolls
 		---@diagnostic disable-next-line: undefined-field
-		scrollFrame.ScrollBar:SetPoint("RIGHT", -36, 0)
+		local scrollBar = scrollFrame.ScrollBar or _G[scrollFrameName.."ScrollBar"]
+		if app.IsClassic then
+			-- keep the bar and its arrow buttons inside the frame's right edge
+			scrollBar:ClearAllPoints()
+			scrollBar:SetPoint("TOPRIGHT", scrollFrame, "TOPRIGHT", -4, -18)
+			scrollBar:SetPoint("BOTTOMRIGHT", scrollFrame, "BOTTOMRIGHT", -4, 18)
+		else
+			scrollBar:SetPoint("RIGHT", -36, 0)
+		end
 		return child
 	end,
 	CreateCheckBoxWithCount = function(self, text, OnRefresh, OnClick)

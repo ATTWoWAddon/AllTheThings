@@ -4,6 +4,7 @@ local L = app.L;
 
 -- Implementation
 app:CreateWindow("Dailies", {
+	SettingsGroup = "Progress",
 	AllowCompleteSound = true,
 	Commands = { "attdailies" },
 	OnInit = function(self, handlers)

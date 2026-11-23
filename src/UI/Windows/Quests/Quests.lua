@@ -4,6 +4,7 @@ local L = app.L;
 
 -- Implementation
 app:CreateWindow("Quests", {
+	SettingsGroup = "Progress",
 	AllowCompleteSound = true,
 	Commands = { "attquests" },
 	OnInit = function(self, handlers)

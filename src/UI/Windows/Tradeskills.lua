@@ -91,6 +91,7 @@ end
 
 -- Implementation
 app:CreateWindow("Tradeskills", {
+	SettingsGroup = "Professions",
 	Commands = { "attskills" },
 	AllowCompleteSound = true,
 	HideFromSettings = true,

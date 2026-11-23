@@ -28,6 +28,7 @@ local function AnyProfessionRecipeFilter(group)
 end
 function app:CreateDynamicProfessionCategory(name, commands, professionID, specializationProfessionIDs)
 	app:CreateWindow("Recipes: " .. name, {
+		SettingsGroup = "Professions",
 		AllowCompleteSound = true,
 		IsDynamicCategory = true,
 		DynamicCategoryHeader = app.HeaderConstants.PROFESSIONS,

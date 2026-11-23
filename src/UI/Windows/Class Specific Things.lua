@@ -6,6 +6,7 @@ local tinsert = tinsert;
 
 -- Implementation
 app:CreateWindow("Class Specific Things", {
+	SettingsGroup = "Progress",
 	Commands = { "attclasses" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateRawText(L.CLASS_SPECIFIC_THINGS, {

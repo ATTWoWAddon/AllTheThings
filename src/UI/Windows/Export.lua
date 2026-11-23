@@ -66,6 +66,7 @@ local ExportWindowRowGroups = setmetatable({}, {
 
 -- Window
 app:CreateWindow("Export", {
+	SettingsGroup = "Tools",
 	Commands = {
 		"attexport",
 	},

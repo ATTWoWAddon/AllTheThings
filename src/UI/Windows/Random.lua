@@ -178,6 +178,8 @@ end
 
 -- Implementation
 app:CreateWindow("Random", {
+	SettingsGroup = "Main",
+	SettingsOrder = 5,
 	Commands = { "attrandom" },
 	RootCommands = { "ran", "rand", "random" },
 	IgnoreQuestUpdates = true,

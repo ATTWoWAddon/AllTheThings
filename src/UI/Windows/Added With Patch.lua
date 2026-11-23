@@ -113,6 +113,7 @@ end
 
 -- Implementation
 app:CreateWindow("Added With Patch", {
+	SettingsGroup = "Progress",
 	Commands = { "attawp" },
 	RootCommands = { "awp" },
 	OnCommand = function(self, args, params)

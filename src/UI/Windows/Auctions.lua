@@ -622,6 +622,7 @@ if app.IsRetail then
 end
 
 app:CreateWindow("Auctions", {
+	SettingsGroup = "Progress",
 	Commands = { "attauctions" },
 	TooltipAnchor = "ANCHOR_RIGHT",
 	IgnoreQuestUpdates = true,

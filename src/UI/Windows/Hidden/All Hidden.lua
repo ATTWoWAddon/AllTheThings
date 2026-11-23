@@ -12,6 +12,7 @@ local HiddenWindowSuffixes = {
 	"Unsorted",
 };
 app:CreateWindow("All-Hidden", {
+	SettingsGroup = "Tools",
 	AllowCompleteSound = true,
 	Commands = { "atthidden" },
 	RootCommands = { "hidden" },

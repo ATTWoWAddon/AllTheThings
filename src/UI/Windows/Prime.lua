@@ -6,6 +6,8 @@ local ipairs, pairs
 
 -- Implementation
 app:CreateWindow("Prime", {
+	SettingsGroup = "Main",
+	SettingsOrder = 1,
 	AllowCompleteSound = true,
 	SettingsName = L.MAIN_LIST,
 	Preload = true,

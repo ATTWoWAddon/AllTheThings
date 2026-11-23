@@ -4,6 +4,7 @@ local L = app.L;
 
 -- Implementation
 app:CreateWindow("Exploration", {
+	SettingsGroup = "Collections",
 	AllowCompleteSound = true,
 	Commands = { "attexploration" },
 	OnInit = function(self, handlers)

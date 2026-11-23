@@ -13,6 +13,7 @@ local SearchInfo = {
 
 -- Implementation
 app:CreateWindow("New With Patch", {
+	SettingsGroup = "Progress",
 	Commands = { "attnwp" },
 	RootCommands = { "nwp" },
 	OnLoad = function(self, settings)

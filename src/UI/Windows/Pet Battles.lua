@@ -11,6 +11,7 @@ local ipairs, tinsert
 
 -- Implementation
 app:CreateWindow("Pet Battles", {
+	SettingsGroup = "Collections",
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attpetbattles" },

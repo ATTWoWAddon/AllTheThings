@@ -14,6 +14,7 @@ local ipairs, pairs, type, wipe
 
 -- Implementation
 app:CreateWindow("WorldQuests", {
+	SettingsGroup = "Progress",
 	AllowCompleteSound = true,
 	Commands = { "attwq" },
 	RootCommands = { "wq" },

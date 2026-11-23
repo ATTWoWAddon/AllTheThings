@@ -78,6 +78,7 @@ local function BuildDataFromCache()
 	MaximumID = #cache;
 end
 app:CreateWindow("List", {
+	SettingsGroup = "Tools",
 	Commands = { "attrawlist" },
 	RootCommands = { "rawlist", "finder" },
 	OnCommand = function(self, args, params)

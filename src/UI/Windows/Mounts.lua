@@ -7,6 +7,7 @@ local Flat;
 
 -- Window Definition
 app:CreateWindow("Mounts", {
+	SettingsGroup = "Collections",
 	AllowCompleteSound = true,
 	IsDynamicCategory = true,
 	Commands = { "attmounts" },

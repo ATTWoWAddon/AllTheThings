@@ -21,6 +21,7 @@ end
 
 -- Implementation
 app:CreateWindow("Collected Sources", {
+	SettingsGroup = "Progress",
 	Commands = { "attcollectedsources" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateRawText(L.COLLECTED_SOURCES, {

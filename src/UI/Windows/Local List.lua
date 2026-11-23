@@ -59,6 +59,8 @@ local CachedLocalMapData = setmetatable({}, {
 
 -- Implementation
 app:CreateWindow("Local List", {
+	SettingsGroup = "Main",
+	SettingsOrder = 3,
 	AllowCompleteSound = true,
 	Defaults = {
 		["y"] = 0,

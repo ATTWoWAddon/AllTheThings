@@ -8,6 +8,7 @@ local ipairs, tinsert
 
 -- Implementation
 app:CreateWindow("Breadcrumbs", {
+	SettingsGroup = "Progress",
 	AllowCompleteSound = true,
 	Commands = { "attbreadcrumbs" },
 	OnInit = function(self, handlers)

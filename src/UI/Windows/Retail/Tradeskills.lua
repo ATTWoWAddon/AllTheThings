@@ -171,6 +171,7 @@ do -- TradeSkill Functionality
 end -- TradeSkill Functionality
 
 app:CreateWindow("Tradeskills", {
+	SettingsGroup = "Professions",
 	Commands = { "attskills" },
 	AllowCompleteSound = true,
 	HideFromSettings = true,

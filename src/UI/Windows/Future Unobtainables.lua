@@ -95,6 +95,7 @@ end
 
 -- Implementation
 app:CreateWindow("Future Unobtainables", {
+	SettingsGroup = "Progress",
 	Commands = { "attrwp" },
 	RootCommands = { "rwp" },
 	OnCommand = function(self, args, params)

@@ -7,6 +7,7 @@ local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 
 -- Implementation
 app:CreateWindow("Race Specific Things", {
+	SettingsGroup = "Progress",
 	Commands = { "attraces" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateRawText(L.RACE_SPECIFIC_THINGS, {

@@ -8,6 +8,7 @@ if app.GameBuildVersion >= 20000 then
 	local Flat;
 
 	app:CreateWindow("Titles", {
+		SettingsGroup = "Collections",
 		AllowCompleteSound = true,
 		IsDynamicCategory = true,
 		Commands = { "atttitles" },
@@ -50,6 +51,7 @@ if app.GameBuildVersion >= 20000 then
 	});
 else
 	app:CreateWindow("Titles", {
+		SettingsGroup = "Collections",
 		AllowCompleteSound = true,
 		IsDynamicCategory = true,
 		Commands = { "atttitles" },

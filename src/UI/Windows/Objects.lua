@@ -156,6 +156,7 @@ end
 
 -- Implementation
 app:CreateWindow("Objects", {
+	SettingsGroup = "Progress",
 	IgnoreQuestUpdates = true,
 	Commands = { "attobjects" },
 	OnLoad = function(self, settings)
