@@ -927,6 +927,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(254115),	-- Golden Sandals
 				i(254009),	-- Golden Slippers
 				i(254089),	-- Golden Waistcord
+				i(215366),	-- Invoker's Cord
 				i(254065),	-- Netherflame Cuffs
 				i(254053),	-- Netherflame Shoulders
 				i(254063),	-- Netherfroth Cuffs

@@ -4489,7 +4489,6 @@ i(19060),	-- Warsong Gulch Enriched Ration
 i(19061),	-- Warsong Gulch Iron Ration
 i(19062),	-- Warsong Gulch Field Ration
 i(19064),	-- Shackle Key
-i(19065),	-- Emerald Circle
 i(19066),	-- Warsong Gulch Runecloth Bandage
 i(19067),	-- Warsong Gulch Mageweave Bandage
 i(19068),	-- Warsong Gulch Silk Bandage
@@ -6637,10 +6636,8 @@ i(215163),	-- Recipe: Mildly-Irradiated Rejuvenation Potion
 i(215235),	-- 2hander Animation as 1hander test copy
 i(215257),	-- Scroll of Comprehension
 i(215365),	-- Invoker's Mantle
-i(215366),	-- Invoker's Cord
 i(215367),	-- Pattern: Faintly Glowing Leather
 i(215368),	-- Pattern: Hyperconductive Arcano-Filament
-i(215369),	-- Pattern: Invoker's Cord
 i(215370),	-- Pattern: Invoker's Mantle
 i(215383),	-- Plans: Reflective Truesilver Braincage
 i(215384),	-- Plans: Low-Background Truesilver Plates

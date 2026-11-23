@@ -1507,6 +1507,10 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUSKWOOD, {
 					215,	-- Defias Night Runner
 				},
 			}),
+			i(215369, {	-- Pattern: Invoker's Cord (RECIPE!)
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 531,	-- Skeletal Fiend
+			}),
 		}),
 	},
 });

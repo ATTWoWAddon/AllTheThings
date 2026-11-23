@@ -217,6 +217,7 @@ i(273993, 1292962);	-- Handguards of Conviction
 i(7092, 8780);		-- Hands of Darkness
 i(4346, 3844);		-- Heavy Woolen Cloak
 i(4355, 3862);		-- Icy Cloak
+i(215369, 435841);	-- Invoker's Cord
 i(10314, 12075);	-- Lavender Mageweave Shirt
 i(273992, 1292961);	-- Leggings of Conviction
 i(253665, 1257013);	-- Linen Reagent Bag

@@ -722,6 +722,16 @@ maproot(MAP.KALIMDOR, MAP.FELWOOD, {
 				coord = { 60.2, 5.9, MAP.FELWOOD },
 				lvl = 52,
 			}),
+			q(7741, {	-- Praise from the Emerald Circle
+				sourceQuest = 5128,	-- Words of the High Chief
+				qg = 10920,	-- Kelek Skykeeper
+				coord = { 51.0, 81.8, MAP.FELWOOD },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				lvl = 52,
+				groups = {
+					i(19065),	-- Emerald Circle
+				},
+			}),
 			q(4442, {	-- Purified!
 				sourceQuest = 4441,	-- Felbound Ancients
 				qg = 9116,	-- Eridan Bluewind <Emerald Circle>

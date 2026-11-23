@@ -4310,6 +4310,9 @@ q(81944,{c={2},coords={
 qo(4,{providers={{"i",220169}},questID=81790})}})}}),
 q(5085,{coords={
 [1448]={{60.2,5.9}}},lvl=52,providers={{"o",176091}},qis={12813},sourceQuests={5084}}),
+q(7741,{awp=16001,coords={
+[1448]={{51,81.8}}},lvl=52,qgs={10920},sourceQuests={5128},g={
+i(19065,{b=1,f=52})}}),
 q(4442,{coords={
 [1448]={{51.2,81.6}}},lvl=49,qgs={9116},r=2,sourceQuests={4441},g={
 i(11445,{description="You need to save this flute for the 'Ancient Spirit' escort quest, then you can safely discard it.",spellID=15033})}}),
@@ -14860,7 +14863,8 @@ s(157265,3360,{b=1,crs={412},f=1,lvl=25}),
 s(156170,899,{coords={
 [1431]={{18.8,27.8},{28.8,29.6}}},crs={217},f=20,lvl=14}),
 s(156179,920,{coords={
-[1431]={{23.6,71.6},{49.8,77.8}}},crs={215,909},f=23})})}}),
+[1431]={{23.6,71.6},{49.8,77.8}}},crs={215,909},f=23}),
+r(435841,{awp=16001,crs={531},itemID=215369,learnedAt=170,requireSkill=197,skillID=2948})})}}),
 m(1423,{icon=236760,lore="Eastern Plaguelands is heavily-ravaged from the Scourge. The Argent Dawn has made some progress after The Lich King's defeat, but the zone is still full of Undead. Players explore Eastern Plaguelands primarily through escorting a Worgen merchant, Fiona, and her band of merry travelers she picks up along the way. The Plaguelands are the site for some of the most gripping storylines, including the Battle for Darrowshire and the fate of the Stratholme residents.",g={
 h(-12,{
 ach(771,{

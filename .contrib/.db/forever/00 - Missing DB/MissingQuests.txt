@@ -218,7 +218,6 @@ q(7681),	-- Hunter test quest	 CLASSIC:Hunter test quest	 TBC:Hunter test quest	
 q(7682),	-- Hunter test quest2	 CLASSIC:Hunter test quest2	 TBC:Hunter test quest2	 WOTLK:Hunter test quest2	 CATA:	 MOP:
 q(7702),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7704),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(7741),	-- Praise from the Emerald Circle <NYI> <TXT>	 CLASSIC:Praise from the Emerald Circle <NYI> <TXT>	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7781),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7782),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(7783),	-- 	 CLASSIC:	 TBC:	 WOTLK:	 CATA:	 MOP:
