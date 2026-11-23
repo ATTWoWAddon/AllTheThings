@@ -9304,7 +9304,6 @@ i(274461),	-- Monster - Glaive, Night Elf Huntress
 i(274463),	-- Tattered Note
 i(274466),	-- Monster - Polearm, 2H NightElf
 i(274480),	-- Monster - Staff, Druid of the Talon
-i(274490),	-- Centaur Hoofwarmers
 i(274501),	-- Monster - Sword, Golden Long
 i(274559),	-- Level 23 Cloth Gear
 i(274560),	-- Hyjal Summit Trash Weapon

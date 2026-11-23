@@ -115,6 +115,7 @@ i(252798, 1255109);	-- Brawler's Leather Hood
 i(252820, 1255087);	-- Brawler's Leather Legguards
 i(252792, 1255115);	-- Brawler's Leather Pants
 i(252805, 1255102);	-- Brawler's Leather Tunic
+i(274491, 1294289);	-- Centaur Hoofwarmers
 i(276937, 1301430);	-- Cloudy Gustwoven Belt
 i(276939, 1301432);	-- Cloudy Gustwoven Boots
 i(276935, 1301428);	-- Cloudy Gustwoven Bracers

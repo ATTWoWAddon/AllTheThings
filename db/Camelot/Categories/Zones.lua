@@ -3105,7 +3105,7 @@ n(253139,{awp=16001,coords={
 [1443]={{66.2,79.4}}},g={
 r(1248460,{b=1,cost={{"i",254432,60}},itemID=249486,learnedAt=140,requireSkill=333,skillID=2940}),
 r(1248498,{b=1,cost={{"i",254432,60}},itemID=249489,learnedAt=205,requireSkill=333,skillID=2940}),
-r(1294289,{b=1,cost={{"i",254432,60}},itemID=274491}),
+r(1294289,{b=1,cost={{"i",254432,60}},itemID=274491,learnedAt=170,requireSkill=165,skillID=2945}),
 r(1255074,{b=1,cost={{"i",254432,60}},itemID=252833,learnedAt=185,requireSkill=165,skillID=2945}),
 r(1257412,{b=1,cost={{"i",254432,60}},itemID=253974,learnedAt=125,requireSkill=197,skillID=2948}),
 r(12063,{b=1,cost={{"i",254432,60}},itemID=254682,learnedAt=200,requireSkill=197,skillID=2948}),
@@ -3121,7 +3121,7 @@ n(253140,{awp=16001,coords={
 [1443]={{35.6,92}}},g={
 r(1248460,{b=1,cost={{"i",254432,15}},itemID=249486,learnedAt=140,requireSkill=333,skillID=2940}),
 r(1248498,{b=1,cost={{"i",254432,15}},itemID=249489,learnedAt=205,requireSkill=333,skillID=2940}),
-r(1294289,{b=1,cost={{"i",254432,15}},itemID=274491}),
+r(1294289,{b=1,cost={{"i",254432,15}},itemID=274491,learnedAt=170,requireSkill=165,skillID=2945}),
 r(1255074,{b=1,cost={{"i",254432,15}},itemID=252833,learnedAt=185,requireSkill=165,skillID=2945}),
 r(1257412,{b=1,cost={{"i",254432,15}},itemID=253974,learnedAt=125,requireSkill=197,skillID=2948}),
 r(12063,{b=1,cost={{"i",254432,15}},itemID=254682,learnedAt=200,requireSkill=197,skillID=2948}),

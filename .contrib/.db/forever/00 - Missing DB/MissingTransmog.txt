@@ -7076,7 +7076,6 @@ s(308891)/i(274466),	-- Monster - Polearm, 2H NightElf
 s(308892)/i(274480),	-- Monster - Staff, Druid of the Talon
 s(308894)/i(274484),	--
 s(308895)/i(274485),	--
-s(308896)/i(274490),	-- Centaur Hoofwarmers
 s(308897)/i(274501),	-- Monster - Sword, Golden Long
 s(308903)/i(274560),	-- Hyjal Summit Trash Weapon
 s(308912)/i(274606),	--

@@ -599,6 +599,7 @@ root(ROOTS.Craftables, sharedData({ timeline = { TIMELINE.ADDED_1_60_1 }}, {
 				i(252516),	-- Brawler's Leather Legguards
 				i(252500),	-- Brawler's Leather Pants
 				i(252508),	-- Brawler's Leather Tunic
+				i(274490),	-- Centaur Hoofwarmers
 				i(277001),	-- Cloudy Gustwoven Belt
 				i(277003),	-- Cloudy Gustwoven Boots
 				i(276999),	-- Cloudy Gustwoven Bracers
