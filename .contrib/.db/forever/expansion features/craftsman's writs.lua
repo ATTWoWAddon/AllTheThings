@@ -7,10 +7,12 @@ local CRAFTSMANS_WRITS_HEADER = createHeader({
 	text = {
 		en = "Craftsman's Writs",
 		cn = "工匠文书",
+		tw = "工匠令狀",
 	},
 	description = {
 		en = "Sealed Journeyman's, Expert's and Artisan's Writs drop all over Azeroth and contain a random Craftsman's Writ of that rank. Each writ starts a daily quest to deliver a crafted item to a customer marked on your map, rewarding reputation with the Azeroth Commerce Authority or Durotar Supply and Logistics. You don't need the profession yourself.",
 		cn = "密封的初级工匠文书、密封的高级工匠文书与密封的大师级工匠文书在艾泽拉斯全域掉落，开启后可获得对应品级的随机工匠文书。每份文书会触发一个每日任务，将订单要求的物品交给地图上标记的委托人，获取艾泽拉斯贸易局或杜隆塔尔补给后勤部的声望。你本人不需要拥有对应专业。",
+		tw = "艾澤拉斯各地都會掉落密封的中級令狀、密封的高級令狀和密封的專家級令狀。打開後可隨機獲得一張同級的工匠令狀。每張工匠令狀都會開啟一個每日任務。將所需的製作物品交給地圖上標示的顧客，即可獲得艾澤拉斯貿易協會或杜洛塔物資流通的聲望。你無須學會相應的專業技能。",
 	},
 });
 root(ROOTS.ExpansionFeatures, {

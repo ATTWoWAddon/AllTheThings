@@ -308982,6 +308982,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			fr = "Parchemins",
 			ru = "Свитки",
 			cn = "卷轴",
+			tw = "卷軸",
 		},
 	},
 	[409501] = {
@@ -309038,6 +309039,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Свитки",
 			ko = "두루마리",
 			cn = "卷轴",
+			tw = "卷軸",
 		},
 	},
 	[409717] = {
@@ -309049,6 +309051,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			de = "Schriftrollen",
 			fr = "Parchemins",
 			cn = "卷轴",
+			tw = "卷軸",
 		},
 	},
 	[409731] = {
@@ -309061,6 +309064,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Свитки",
 			ko = "두루마리",
 			cn = "卷轴",
+			tw = "卷軸",
 		},
 	},
 	[409735] = {
@@ -312016,6 +312020,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Свитки",
 			ko = "두루마리",
 			cn = "卷轴",
+			tw = "卷軸",	-- TODO: Verify the zhTW object name in game.
 		},
 	},
 	[423898] = {
@@ -312046,6 +312051,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Свитки",
 			ko = "두루마리",
 			cn = "卷轴",
+			tw = "卷軸",
 		},
 	},
 	[423900] = {
