@@ -32,9 +32,9 @@ local RELOAD_NEEDED = L.WINDOWS_RELOAD_NEEDED;
 
 -- Layout (scroll content coordinates)
 local ROW_HEIGHT, HEADER_HEIGHT, SECTION_GAP = 22, 24, 8;
-local BUTTON_WIDTH, PROGRESS_X, PROGRESS_WIDTH, COMMAND_X, COMMAND_WIDTH = 200, 214, 126, 344, 130;
+local BUTTON_WIDTH, PROGRESS_X, PROGRESS_WIDTH, COMMAND_X, COMMAND_WIDTH = 200, 210, 160, 380, 130;
 local BUTTON_TEXT_PADDING = 8;	-- keeps longer (localized) names inside the button
-local FLAT_X, DYNAMIC_X = 492, 556;	-- column centers
+local FLAT_X, DYNAMIC_X = 530, 594;	-- column centers
 
 -- Window Button Helpers
 local function OnClickForWindowButton(self)
