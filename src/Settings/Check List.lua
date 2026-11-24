@@ -19,7 +19,7 @@ local ipairs, math_ceil, math_floor, math_max
 --	isChanged: function, whether it differs from the default
 --	fixed: function, the group's header leaves it alone while it returns true
 -- A false group or item is skipped.
-local PAGE_WIDTH, ROW_HEIGHT, HEADER_HEIGHT, SECTION_GAP, INDENT, DESCRIPTION_X = 656, 20, 24, 8, 14, 230;
+local PAGE_WIDTH, ROW_HEIGHT, HEADER_HEIGHT, SECTION_GAP, INDENT, DESCRIPTION_X = 656, 20, 21, 8, 14, 230;
 
 local function IsUsable(list, item)
 	return (not list.usable or list.usable()) and (not item.usable or item.usable()) and true or false;
@@ -90,7 +90,7 @@ settings.CreateCheckList = function(page, list)
 		local icon = header:CreateTexture(nil, "ARTWORK");
 		icon:SetSize(14, 14);
 		icon:SetPoint("LEFT", header, "LEFT", 0, 0);
-		local title = header:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+		local title = header:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 		title:SetPoint("LEFT", icon, "RIGHT", 4, 0);
 		title:SetText(group.title);
 		local count = header:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall");

@@ -33,7 +33,7 @@ local ipairs, pairs, type, math_ceil, math_floor, math_max, math_min
 -- Layout
 local COLUMN_WIDTH, SCROLLBAR_WIDTH, ASIDE_X = 366, 28, 384;
 local FULL_WIDTH = 640;	-- without anything beside the sections
-local HEADER_HEIGHT, CHECK_HEIGHT, SECTION_GAP, INDENT = 24, 20, 8, 16;
+local HEADER_HEIGHT, CHECK_HEIGHT, SECTION_GAP, INDENT = 21, 20, 8, 16;
 local SLIDER_HEIGHT, SLIDER_LABEL_HEIGHT, DROPDOWN_HEIGHT = 34, 18, 28;
 local PREVIEW_PADDING, PREVIEW_INDENT = 10, 10;
 local MENU_SIZE, BUTTONS_PER_ROW = 24, 3;
@@ -434,6 +434,7 @@ local PreviewMixin = {
 };
 local function CreatePreview(page, title, UpdatePreview)
 	local label = page:CreateHeaderLabel(title);
+	label:SetFontObject(GameFontNormal);
 	label:SetPoint("TOPLEFT", page.separator, "BOTTOMLEFT", ASIDE_X, -8);
 
 	local preview = CreateFrame("Frame", nil, page, BackdropTemplateMixin and "BackdropTemplate");
@@ -495,6 +496,7 @@ local function CreateColumn(page, left, right, top)
 end
 local function CreateSectionHeader(content, title, y)
 	local header = content:CreateHeaderLabel(title);
+	header:SetFontObject(GameFontNormal);
 	header:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y);
 	local line = content:CreateTexture(nil, "ARTWORK");
 	line:SetColorTexture(1, 1, 1, 0.2);

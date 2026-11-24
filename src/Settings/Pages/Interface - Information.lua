@@ -1965,7 +1965,7 @@ local TypeTooltips = {
 	visualID = L.INFORMATION_VISUAL_ID_TOOLTIP,
 };
 
-local ROW_HEIGHT, HEADER_HEIGHT, SECTION_GAP = 20, 24, 6;
+local ROW_HEIGHT, HEADER_HEIGHT, SECTION_GAP = 20, 21, 6;
 local COLUMNS, COLUMN_X, COLUMN_WIDTH, CONTENT_WIDTH = 3, 20, 190, 596;
 local RefreshInformationCheckBoxes;
 
@@ -2108,7 +2108,7 @@ local function GetHeader(group)
 	icon:SetPoint("LEFT", header, "LEFT", 0, 0);
 	header.Icon = icon;
 
-	local title = header:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+	local title = header:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 	title:SetPoint("LEFT", icon, "RIGHT", 4, 0);
 	title:SetText(group.title);
 	header.Title = title;

@@ -32,12 +32,16 @@ local Groups = {
 		-- Campsites and Decor were added during The War Within
 		GameBuildVersion >= 110100 and { "CAMPSITES", "Campsites", icon = "Expansion_TWW", iconBuild = 110000 },
 		GameBuildVersion >= 110207 and { "DECOR", "Decor", icon = "Expansion_TWW", iconBuild = 110000 },
+		-- Flight Paths are account-wide since The War Within
+		settings.ForceAccountWide.FlightPaths and { "FLIGHT_PATHS", "FlightPaths" },
+		GameBuildVersion >= 100000 and { "MOUNTMODS", "MountMods" },	-- Dragonflight+
+		GameBuildVersion >= 90000 and { "RUNEFORGELEGENDARIES", "RuneforgeLegendaries" },	-- Shadowlands+
 	} },
 	{ title = L.GENERAL_THINGS_LABEL, isGeneral = true, things = {
 		{ "ACHIEVEMENTS", "Achievements", icon = "Expansion_WOTLK", iconBuild = 30000, unofficial = not HasNativeCollections },
 		{ "CHARACTERUNLOCKS", "CharacterUnlocks" },
 		{ "EXPLORATION", "Exploration", wip = app.IsRetail or app.IsForever },
-		{ "FLIGHT_PATHS", "FlightPaths" },
+		not settings.ForceAccountWide.FlightPaths and { "FLIGHT_PATHS", "FlightPaths" },
 		{ "QUESTS", "Quests", extras = {
 			{ "QUESTS_LOCKED", "QuestsLocked" },
 			{ "QUESTS_HIDDEN_TRACKER", "QuestsHidden" },
@@ -50,17 +54,13 @@ local Groups = {
 		{ "TITLES", "Titles" },
 		-- Profession Nodes were added during Dragonflight
 		GameBuildVersion >= 100000 and { "PROFESSION_NODES", "ProfessionNodes", icon = "Expansion_DF", iconBuild = 100000 },
-	} },
-	GameBuildVersion >= 60000 and { title = L.EXPANSION_THINGS_LABEL, things = {
-		{ "FOLLOWERS", "Followers" },	-- Warlords+
+		GameBuildVersion >= 60000 and { "FOLLOWERS", "Followers" },	-- Warlords+
 		GameBuildVersion >= 80200 and { "AZERITE_ESSENCES", "AzeriteEssences" },	-- BFA 8.2+
 		GameBuildVersion >= 90000 and { "SOULBINDCONDUITS", "Conduits" },	-- Shadowlands+
-		GameBuildVersion >= 90000 and { "RUNEFORGELEGENDARIES", "RuneforgeLegendaries" },	-- Shadowlands+
-		GameBuildVersion >= 100000 and { "MOUNTMODS", "MountMods" },	-- Dragonflight+
-	} } or false,
+	} },
 };
 
-local ACCOUNT_X, TRACK_X, ROW_HEIGHT, LABEL_WIDTH, EXTRA_GAP = 8, 28, 20, 220, 8;
+local ACCOUNT_X, TRACK_X, ROW_HEIGHT, LABEL_WIDTH, EXTRA_GAP = 8, 28, 19, 220, 8;
 local content = settings.CreatePageColumn(child, 0, 656);
 
 -- The checkboxes of a row follow each other, however long their labels are

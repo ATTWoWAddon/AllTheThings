@@ -31,7 +31,7 @@ local DYNAMIC_TOOLTIP = L.WINDOWS_DYNAMIC_TOOLTIP;
 local RELOAD_NEEDED = L.WINDOWS_RELOAD_NEEDED;
 
 -- Layout (scroll content coordinates)
-local ROW_HEIGHT, HEADER_HEIGHT, SECTION_GAP = 22, 24, 8;
+local ROW_HEIGHT, HEADER_HEIGHT, SECTION_GAP = 22, 21, 8;
 local BUTTON_WIDTH, PROGRESS_X, PROGRESS_WIDTH, COMMAND_X, COMMAND_WIDTH = 200, 210, 160, 380, 130;
 local BUTTON_TEXT_PADDING = 8;	-- keeps longer (localized) names inside the button
 local FLAT_X, DYNAMIC_X = 530, 594;	-- column centers
@@ -224,7 +224,7 @@ local function GetHeader(index)
 	local header = Headers[index];
 	if header then return header; end
 	header = {};
-	header.Title = content:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+	header.Title = content:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 	header.Title:SetJustifyH("LEFT");
 	header.FlatLabel = content:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
 	header.DynamicLabel = content:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
