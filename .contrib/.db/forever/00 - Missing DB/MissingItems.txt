@@ -9538,7 +9538,6 @@ i(277196),	-- Field Accounts of Horde Razings
 i(277197),	-- Cycles of Morality
 i(277198),	-- Gatehouse Shipment
 i(277199),	-- Pouch of Smoldering Incense
-i(277202),	-- Artifact Seeker's Pendant
 i(277211),	-- Dudd's Thinkin' Cap
 i(277212),	-- Soulwoven Epaulets
 i(277215),	-- Plain Handwraps \\ Nimble Gloves
@@ -9803,8 +9802,6 @@ i(281628),	-- Blade of Bandarion
 i(281629),	-- Patrol Orders
 i(281630),	-- Scarlet Keyring
 i(281631),	-- Collector's Edition Tabard
-i(281636),	-- Museum Keeper's Chain
-i(281637),	-- Antique Bulwark
 i(281657),	-- Corrupted Riverglades Pendant
 i(281675),	-- Lakeshire Firefighter's Headband
 i(281680),	-- Customer Service Care Package

@@ -1104,7 +1104,6 @@ q(84375),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(84377),	-- 	 CLASSIC:End of the Dark Horde	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(84383),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(84384),	-- 	 CLASSIC:Demonic Deceptions	 TBC:	 WOTLK:	 CATA:	 MOP:
-q(84394),	-- CLASSIC:Greater Friend of the Library	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(84405),	-- CLASSIC:Lost Heirloom	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(84406),	-- CLASSIC:Relic of Light	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(84407),	-- CLASSIC:The Prize Within	 TBC:	 WOTLK:	 CATA:	 MOP:

@@ -95,7 +95,7 @@ root(ROOTS.ExpansionFeatures, {
 					i(277204),	-- Erudite's Amulet
 				},
 			}),
-			q(79536, {	-- Greater Friend of the Library (1/2)
+			q(79536, {	-- Greater Friend of the Library (1/3)
 				sourceQuests = allBookSourceQuests,
 				sourceQuestNumRequired = 20,
 				lvl = 20,
@@ -104,7 +104,7 @@ root(ROOTS.ExpansionFeatures, {
 					i(281635),	-- Philanthropist's Ring
 				},
 			}),
-			q(82208, {	-- Greater Friend of the Library (2/2)
+			q(82208, {	-- Greater Friend of the Library (2/3)
 				sourceQuests = allBookSourceQuests,
 				sourceQuestNumRequired = 25,
 				lvl = 30,
@@ -112,6 +112,16 @@ root(ROOTS.ExpansionFeatures, {
 					i(277254),	-- Truthseeker's Bow
 					i(277258),	-- Crest of Elucidation
 					i(277260),	-- Researcher's Night Light
+				},
+			}),
+			q(84394, {	-- Greater Friend of the Library (3/3)
+				sourceQuests = allBookSourceQuests,
+				sourceQuestNumRequired = 35,
+				lvl = 50,
+				groups = {
+					i(281637),	-- Antique Bulwark
+					i(277202),	-- Artifact Seeker's Pendant
+					i(281636),	-- Museum Keeper's Chain
 				},
 			}),
 			q(81955, {	-- A Mind of Metal
