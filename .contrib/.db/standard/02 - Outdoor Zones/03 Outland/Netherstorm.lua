@@ -2076,13 +2076,15 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					coord = { 33.2, 64.1, NETHERSTORM },
 					-- #if BEFORE WRATH
 					sym = {
-						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },	-- Brutal Gladiator's Set
 						-- #if ANYCLASSIC
 						-- For classic they added every season's gear to him... oh lord.
-						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
-						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
+						-- Oldest season first: merged headers are filtered by the phase of the first season they come from.
 						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },	-- Gladiator's Set
+						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },	-- Merciless Gladiator's Set
+						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },	-- Vengeful Gladiator's Set
+						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },	-- Brutal Gladiator's Set
 						-- #else
+						{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },	-- Brutal Gladiator's Set
 						{ "pop" },
 						-- #endif
 					},
