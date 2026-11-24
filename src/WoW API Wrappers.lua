@@ -1,8 +1,8 @@
 local app = select(2, ...);
 app.GameBuildVersion = select(4, GetBuildInfo());
-app.IsForever = app.GameBuildVersion >= 16001 and app.GameBuildVersion < 20000;
-app.IsRetail = app.GameBuildVersion >= 110000 or app.IsForever;
-app.IsClassic = not app.IsRetail;
+app.IsForever = WOW_PROJECT_ID == WOW_PROJECT_CAMELOT;
+app.IsRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE or WOW_PROJECT_ID == WOW_PROJECT_WOWLABS;
+app.IsClassic = not (app.IsRetail or app.IsForever);
 
 app.EmptyFunction = function() end;
 app.EmptyTable = setmetatable({}, { __newindex = app.EmptyFunction });

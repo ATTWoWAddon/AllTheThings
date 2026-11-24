@@ -940,7 +940,7 @@ sliderPercentagePrecision:SetHeight(20)
 sliderPercentagePrecision:SetPoint("LEFT", sliderMainListScale, 0, 0)
 sliderPercentagePrecision:SetPoint("TOP", checkboxShowPercentageCount, "BOTTOM", 0, -24)
 
-if app.IsRetail and app.GameBuildVersion > 70000 then	-- CRIEVE NOTE: Classic Dynamic Categories don't support this just yet.
+if app.IsRetail then	-- CRIEVE NOTE: Classic Dynamic Categories don't support this just yet.
 -- Dynamic Category Toggles
 local textDynamicCategories = child:CreateTextLabel("|cffFFFFFF"..L.DYNAMIC_CATEGORY_LABEL)
 textDynamicCategories:SetPoint("LEFT", checkboxShowPercentageCount, "LEFT", 4, 0)

@@ -899,7 +899,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 		local metSkill = true;
 		local requireSkill = questRef.requireSkill;
 		if requireSkill then
-			if app.IsRetail then
+			if app.IsRetail or app.IsForever then
 				-- Retail uses Professions table (professionID -> boolean known)
 				metSkill = app.CurrentCharacter.Professions and app.CurrentCharacter.Professions[requireSkill];
 			else

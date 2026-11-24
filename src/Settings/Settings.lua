@@ -18,7 +18,7 @@ settings:Hide();
 
 -- Define some Common UI Templates
 settings.UITemplates = {
-	Checkbox = app.IsRetail and "UICheckButtonTemplate" or "UICheckButtonTemplate",
+	Checkbox = "UICheckButtonTemplate",
 	Slider = "MinimalSliderTemplate",
 }
 

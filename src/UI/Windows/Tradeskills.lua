@@ -1,7 +1,7 @@
 -- App locals
 local _, app = ...;
 local L = app.L;
-if app.IsRetail then return; end
+if app.IsRetail or app.IsForever then return; end
 
 -- Global locals
 local ipairs, pairs, tinsert
@@ -488,7 +488,7 @@ app:CreateWindow("Tradeskills", {
 			self:UpdateFrameVisibility();
 			if app.Settings:GetTooltipSetting("Auto:ProfessionList") and app.IsClassic then
 				self:SetVisible(true);
-			elseif ProfessionsFrameTabSideBar and app.IsRetail then
+			elseif ProfessionsFrameTabSideBar and (app.IsRetail or app.IsForever) then
 				ProfessionsFrameTabSideBar:ClearAllPoints()
 				ProfessionsFrameTabSideBar:SetPoint("TOPLEFT", ProfessionsFrame, "TOPRIGHT")
 				ProfessionsFrameTabSideBar:SetPoint("BOTTOMLEFT", ProfessionsFrame, "BOTTOMRIGHT")

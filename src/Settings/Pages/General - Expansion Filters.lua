@@ -2,7 +2,7 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Only load for Retail
-if not (app.IsRetail and app.GameBuildVersion > 70000) then return end
+if not app.IsRetail then return end
 
 -- Get Current Expansion Number by in-game API.
 -- This returns 0 on initial load of the game client prior to the player entering the world

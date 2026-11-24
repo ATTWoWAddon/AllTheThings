@@ -1397,7 +1397,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	end
 end);
 
-if app.IsRetail then
+if app.IsRetail or app.IsForever then
 	local function CheckForUnknownSourceID(link)
 		local sourceID = GetSourceID(link)
 		if not sourceID then

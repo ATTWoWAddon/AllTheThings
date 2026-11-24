@@ -4,8 +4,8 @@ local L, GameTooltip = app.L, GameTooltip;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 
 -- World Map Button
-local XShift = app.IsRetail and -1 or 0
-local YShift = app.IsRetail and -65 or -32
+local XShift = (app.IsRetail or app.IsForever) and -1 or 0
+local YShift = (app.IsRetail or app.IsForever) and -65 or -32
 local WorldMapButton;
 local function CreateWorldMapButton()
 	-- wonder if there's other special world map button addons we need to worry about... thanks Blizzard for no common API for a feature you added

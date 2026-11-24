@@ -104,7 +104,7 @@ local rootGroups, mapGroups = {}, {};
 -- TODO -- For now these have to be different. I don't know if __CreateObject works for all Classic scenarios due to explicit key checks
 -- but CloneClassInstance doesn't properly clone the data in a way that cleanly represents the desired Minilist data
 -- Hopefully can reconcile this more after Phase 1 of window consolidation
-local DataCloner = app.IsRetail and app.__CreateObject or app.CloneClassInstance
+local DataCloner = (app.IsRetail or app.IsForever) and app.__CreateObject or app.CloneClassInstance
 local RetailMapDataStyleMetatable = {
 	__mode = "kv",
 	__index = function(cachedMapData, mapID)

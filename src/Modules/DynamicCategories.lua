@@ -23,7 +23,7 @@ end
 
 
 -- General Dynamic Categories (Retail only -- Classic uses Dynamic Window injection where certain Windows are directly added & loaded immediately)
-if app.IsRetail and app.GameBuildVersion > 70000 then
+if app.IsRetail then
 	app.AddEventHandler("OnLoad", function()
 	-- CRIEVE NOTE: This needs to be versioned at the very least before it can be enabled in classic land
 	-- Create Dynamic Groups Button
@@ -249,7 +249,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 end
 
 -- Current Season M+ Dynamic Category (Retail only -- Classic has no M+ (yet))
-if app.IsRetail and app.GameBuildVersion > 70000 then
+if app.IsRetail then
 	-- Search Info
 	local SearchInfo = {
 		field = "InRetailSeason",

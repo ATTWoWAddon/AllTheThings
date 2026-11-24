@@ -648,7 +648,7 @@ local function ProcessForUsefulFor(t, reference, tooltipInfo)
 	local specializationSpell = skillDB.SpecializationSpells[skillID];
 	local baseSkillID = skillDB.SpellToSkill[specializationSpell or 0] or skillDB.Conversion[skillID] or skillID;
 	local rankSkillID = skillID;
-	if app.IsRetail then
+	if app.IsRetail or app.IsForever then
 		-- Retail skill levels belong to a particular expansion, not the base profession.
 		local professionInfo = GetProfessionInfoByRecipeID(recipeID);
 		if professionInfo and professionInfo.professionID and professionInfo.professionID > 0 then
@@ -669,7 +669,7 @@ local function ProcessForUsefulFor(t, reference, tooltipInfo)
 			and (not classes or app.contains(classes, character.classID))
 			and (not races or app.contains(races, character.raceID)) then
 			local rank;
-			if app.IsRetail then
+			if app.IsRetail or app.IsForever then
 				local professions = character.Professions;
 				if professions and professions[baseSkillID] and (not specializationSpell or professions[skillID]) then
 					rank = character.ProfessionRanks and character.ProfessionRanks[rankSkillID];
@@ -1274,7 +1274,7 @@ local InformationTypes = {
 
 	-- Regular fields (sorted by priority for clarity of how it will appear in the tooltip)
 	CreateInformationType("awp", { text = L.ADDED_WITH_PATCH, isRecursive = true, priority = 3,
-		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)
+		Process = (app.IsRetail or app.IsForever) and ProcessInformationType or function(t, reference, tooltipInfo)
 			local awp = t.GetValue(t, reference);
 			if awp then
 				if awp > app.GameBuildVersion then
@@ -1287,7 +1287,7 @@ local InformationTypes = {
 	}),
 	CreateInformationType("rwp", { text = L.REMOVED_WITH_PATCH, isRecursive = true, priority = 3,
 		-- CRIEVE NOTE: Recursive is actually not true, some items get new sources later. The distinction for pre-Cata being non-recursive might be necessary, but since we're overriding the process function it should be fine this way.
-		Process = app.IsRetail and ProcessInformationType or function(t, reference, tooltipInfo)
+		Process = (app.IsRetail or app.IsForever) and ProcessInformationType or function(t, reference, tooltipInfo)
 			local rwp = t.GetValue(t, reference);
 			if rwp then
 				if app.GameBuildVersion < rwp then

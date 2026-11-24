@@ -323,7 +323,7 @@ RawCharacterFilters.Bound = nil
 -- RequireSkill
 local Professions, ActiveSkills
 DefineToggleFilter("RequireSkill", CharacterFilters,
-app.IsRetail and function(item)
+(app.IsRetail or app.IsForever) and function(item)
 	local requireSkill = item.requireSkill;
 	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or FilterBind(item)) then
 		return Professions[requireSkill];
@@ -449,7 +449,7 @@ api.Set.Trackable = function(active)
 end
 
 -- Expansion Filters (Retail Only)
-if app.IsRetail and app.GameBuildVersion > 70000 then
+if app.IsRetail then
 	-- Cache for expansion filter settings (indexed by expansion ID for fast lookup)
 	local ExpansionFilters = {}
 

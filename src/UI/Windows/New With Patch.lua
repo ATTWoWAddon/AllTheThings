@@ -26,7 +26,7 @@ app:CreateWindow("New With Patch", {
 			back = 1,
 			indent = 0,
 			g = { },
-			OnUpdate = app.IsRetail and function(t)
+			OnUpdate = (app.IsRetail or app.IsForever) and function(t)
 				local g = t.g;
 				if #g < 1 then
 					local results = app:BuildSearchResponseRetailStyle(SearchInfo.field, SearchInfo.value, SearchInfo.drops, SearchInfo.searchcriteria)

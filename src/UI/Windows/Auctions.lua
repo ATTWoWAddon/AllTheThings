@@ -614,7 +614,7 @@ do	-- Auction Item Type
 		return c
 	end
 end
-if app.IsRetail then
+if app.IsRetail or app.IsForever then
 	app.AddEventHandler("OnStartup", function()
 		-- Retail now uses a Tab system which tries to share with other addons, so we don't allow auto-show here anymore
 		app.Settings:SetTooltipSetting("Auto:AuctionList", false)
@@ -700,13 +700,13 @@ app:CreateWindow("Auctions", {
 				self:SetWidth(width);
 				if app.Settings:GetTooltipSetting("Auto:AuctionList") and app.IsClassic then
 					self:Show();
-				elseif AuctionHouseFrameTabSideBar and app.IsRetail then
+				elseif AuctionHouseFrameTabSideBar and (app.IsRetail or app.IsForever) then
 					AuctionHouseFrameTabSideBar:ClearAllPoints()
 					AuctionHouseFrameTabSideBar:SetPoint("TOPLEFT", AuctionHouseFrame, "TOPRIGHT")
 					AuctionHouseFrameTabSideBar:SetPoint("BOTTOMLEFT", AuctionHouseFrame, "BOTTOMRIGHT")
 				end
 
-				if app.IsRetail and not app.Settings:GetTooltipSetting("Show:AuctionTab") then
+				if (app.IsRetail or app.IsForever) and not app.Settings:GetTooltipSetting("Show:AuctionTab") then
 					-- The player turned the Auction Module tab off: hide it (and the module) completely
 					self:Hide()
 					if app.AuctionHouseTab then
@@ -716,7 +716,7 @@ app:CreateWindow("Auctions", {
 					if AuctionHouseFrameTabSideBar and AuctionHouseFrameTabSideBar.selTab == 1 then
 						AuctionHouseFrameTabSideBar.selTab = 0
 					end
-				elseif app.IsRetail then
+				elseif app.IsRetail or app.IsForever then
 					self:SetResizable(false)
 					self:SetWidth(350)
 					self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that

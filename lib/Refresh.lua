@@ -2,7 +2,7 @@
 local _, app = ...;
 
 local OneTimeFixFunctions = {}
-if app.IsRetail and app.GameBuildVersion > 70000 then
+if app.IsRetail then
 
 --- @type function,function,function
 local select, ipairs, pairs
