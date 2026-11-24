@@ -13,6 +13,7 @@
 	<Script file="Pages/Interface.lua"/>
 	<Script file="Pages/Interface - Tooltips.lua"/>
 	<Script file="Pages/Interface - Accessibility.lua"/>
+	<Script file="Pages/Interface - Appearance.lua"/>
 	<Script file="Pages/Interface - Fillers.lua"/>
 	<Script file="Pages/Interface - Information.lua"/>
 	<Script file="Pages/Features.lua"/>

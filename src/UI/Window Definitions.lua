@@ -389,24 +389,166 @@ local function ApplyWindowColor(window)
 		end
 	end
 end
-local function ToggleHideBorders()
-	local hideBorders = app.Settings:GetTooltipSetting("Window:HideBorders")
-	for suffix, window in pairs(app.Windows) do
-		window:SetContainerPoints(hideBorders)
-		window:SetCloseButtonPoints(hideBorders)
-		window:SetScrollBarPoints(hideBorders)
-		window:SetGripPoints(hideBorders)
-	end
-	ApplyWindowColor()
+
+-- Window Style Management (see the Appearance settings)
+local WindowStyle = {
+	outline = "",
+	scale = 1,
+	spacing = 4,
+	scrollBar = true,
+};
+local SQUARE_TEXTURE = "Interface\\Buttons\\WHITE8X8";
+local Backdrops = {
+	default = {
+		bgFile = 137056,
+		edgeFile = 137057,
+		tile = true, tileSize = 16, edgeSize = 16,
+		insets = { left = 4, right = 4, top = 4, bottom = 4 }
+	},
+	noborders = {
+		bgFile = 137056,
+		tile = true, tileSize = 16,
+		insets = { left = 0, right = 0, top = 0, bottom = 0 }
+	},
+	-- Square borders by their thickness
+	square = setmetatable({}, { __index = function(t, size)
+		local backdrop = {
+			bgFile = SQUARE_TEXTURE,
+			edgeFile = SQUARE_TEXTURE,
+			tile = false, edgeSize = size,
+			insets = { left = size, right = size, top = size, bottom = size }
+		};
+		t[size] = backdrop;
+		return backdrop;
+	end }),
+}
+local function GetWindowBackdrop()
+	if WindowStyle.hideBorders then return Backdrops.noborders; end
+	return WindowStyle.inset and Backdrops.square[WindowStyle.inset] or Backdrops.default;
 end
+app.GetWindowBackdrop = GetWindowBackdrop;
+-- The fonts of the rows are copies of the game's fonts, unless nothing is customized
+local RowFonts = {};
+local function UpdateRowFont(name, font)
+	local path, size, flags = _G[name]:GetFont();
+	font:CopyFontObject(_G[name]);
+	size = size * WindowStyle.scale;
+	if WindowStyle.outline ~= "" then flags = WindowStyle.outline; end
+	-- Not every font file can be used
+	if WindowStyle.font and pcall(font.SetFont, font, WindowStyle.font, size, flags or "") and font:GetFont() == WindowStyle.font then return; end
+	font:SetFont(path, size, flags or "");
+end
+local function GetRowFont(name)
+	if not WindowStyle.customFont then return name; end
+	local font = RowFonts[name];
+	if not font then
+		font = CreateFont("ATTRowFont" .. name);
+		RowFonts[name] = font;
+		UpdateRowFont(name, font);
+	end
+	return font;
+end
+app.GetRowFont = GetRowFont;
+local function UpdateWindowStyle()
+	local settings = app.Settings;
+	local fontName = settings:GetTooltipSetting("Row:Font") or "";
+	WindowStyle.font = fontName ~= "" and settings.GetFontPath(fontName) or nil;
+	WindowStyle.outline = settings:GetTooltipSetting("Row:FontOutline") or "";
+	WindowStyle.scale = tonumber(settings:GetTooltipSetting("Row:FontScale")) or 1;
+	WindowStyle.spacing = tonumber(settings:GetTooltipSetting("Row:Spacing")) or 4;
+	WindowStyle.customFont = WindowStyle.font or WindowStyle.outline ~= "" or WindowStyle.scale ~= 1;
+	WindowStyle.scrollBar = settings:GetTooltipSetting("Window:ShowScrollBar") and true or false;
+	WindowStyle.hideBorders = settings:GetTooltipSetting("Window:HideBorders");
+	-- The space the border takes up, the rounded one has its own
+	WindowStyle.inset = WindowStyle.hideBorders and 0
+		or settings:GetTooltipSetting("Window:BorderStyle") == "square" and (tonumber(settings:GetTooltipSetting("Window:BorderSize")) or 1) or nil;
+	WindowStyle.titleColor = settings:Get("Window:TitleColor");
+	WindowStyle.highlightColor = settings:Get("Window:HighlightColor");
+	if WindowStyle.customFont then
+		for name,font in pairs(RowFonts) do UpdateRowFont(name, font); end
+	end
+end
+-- Without the scroll bar, only the first row leaves room for the close button
+local CLOSE_BUTTON_ROOM = 18;
+local function ApplyRowStyle(row)
+	local font = GetRowFont(row.lastFont or "GameFontNormal");
+	row.Label:SetFontObject(font);
+	row.Summary:SetFontObject(font);
+	local rowHeight = select(2, row.Label:GetFont()) + WindowStyle.spacing;
+	row:SetHeight(rowHeight);
+
+	-- The icons are as high as the text
+	local lineHeight = row.Label:GetLineHeight();
+	local pad = (rowHeight - lineHeight) / 2;
+	row.Texture:SetPoint("BOTTOM", row, "BOTTOM", 0, pad);
+	row.Texture:SetPoint("TOP", row, "TOP", 0, -pad);
+	row.Texture:SetWidth(lineHeight);
+	row.Texture.context = nil;
+	row.Texture.Background.atlas = nil;
+	row.Texture.Background:SetWidth(rowHeight);
+	row.Texture.Border:SetWidth(rowHeight);
+	row.Indicator:SetPoint("RIGHT", row.Texture, "LEFT", -pad, 0);
+	row.Indicator:SetPoint("BOTTOM", row, "BOTTOM", 0, pad);
+	row.Indicator:SetPoint("TOP", row, "TOP", 0, -pad);
+	row.Indicator:SetWidth(lineHeight);
+
+	local color = WindowStyle.highlightColor;
+	local highlight = row:GetHighlightTexture();
+	if color and highlight then
+		-- The game's highlight is yellow, so it needs to lose its color to get another one
+		local r, g, b, a = tonumber(color.r) or 1, tonumber(color.g) or 1, tonumber(color.b) or 1, tonumber(color.a) or 1;
+		highlight:SetDesaturated(r < 1 or g < 1 or b < 1);
+		highlight:SetVertexColor(r, g, b, a);
+	end
+
+	local room = WindowStyle.scrollBar and 0 or CLOSE_BUTTON_ROOM;
+	if row.index == 0 then
+		row:SetPoint("TOPRIGHT", -room, 0);
+		color = WindowStyle.titleColor;
+		if color then
+			row.TitleBackground:SetColorTexture(tonumber(color.r) or 0, tonumber(color.g) or 0, tonumber(color.b) or 0, tonumber(color.a) or 0);
+		end
+	elseif row.index == 1 then
+		row:SetPoint("TOPRIGHT", row.aboveRow, "BOTTOMRIGHT", room, 0);
+	end
+end
+local function ApplyWindowStyle(window)
+	window:SetContainerPoints(WindowStyle.hideBorders)
+	window:SetCloseButtonPoints(WindowStyle.hideBorders)
+	window:SetScrollBarPoints(WindowStyle.hideBorders)
+	window:SetGripPoints(WindowStyle.hideBorders)
+	-- Rows are created when they're first indexed, so only go through the existing ones
+	local rows = window.Container.rows;
+	for i=1,#rows do ApplyRowStyle(rows[i]); end
+end
+local function ApplyStyleToAllWindows()
+	UpdateWindowStyle();
+	for suffix, window in pairs(app.Windows) do
+		ApplyWindowStyle(window);
+	end
+	ApplyWindowColor();
+	for suffix, window in pairs(app.Windows) do
+		if window:IsShown() then window:Refresh(); end
+	end
+end
+app.ApplyStyleToAllWindows = ApplyStyleToAllWindows;
 local OnSetHooks = {
 	General = {
 		["Window:BackgroundColor"] = ApplyWindowColor,
 		["Window:BorderColor"] = ApplyWindowColor,
+		["Window:TitleColor"] = ApplyStyleToAllWindows,
+		["Window:HighlightColor"] = ApplyStyleToAllWindows,
 	},
 	Tooltips = {
 		["Window:UseClassForBorder"] = ApplyWindowColor,
-		["Window:HideBorders"] = ToggleHideBorders,
+		["Window:HideBorders"] = ApplyStyleToAllWindows,
+		["Window:BorderStyle"] = ApplyStyleToAllWindows,
+		["Window:BorderSize"] = ApplyStyleToAllWindows,
+		["Window:ShowScrollBar"] = ApplyStyleToAllWindows,
+		["Row:Font"] = ApplyStyleToAllWindows,
+		["Row:FontOutline"] = ApplyStyleToAllWindows,
+		["Row:FontScale"] = ApplyStyleToAllWindows,
+		["Row:Spacing"] = ApplyStyleToAllWindows,
 	}
 }
 app.AddEventHandler("Settings.OnSet", function(context, setting, value)
@@ -754,9 +896,10 @@ local function SetRowData(self, row, data)
 
 		local font = data.font or "GameFontNormal";
 		if font ~= row.lastFont then
-			row.Label:SetFontObject(font);
-			row.Summary:SetFontObject(font);
-			row:SetHeight(select(2, row.Label:GetFont()) + 4);
+			local fontObject = GetRowFont(font);
+			row.Label:SetFontObject(fontObject);
+			row.Summary:SetFontObject(fontObject);
+			row:SetHeight(select(2, row.Label:GetFont()) + WindowStyle.spacing);
 			row.lastFont = font;
 		end
 
@@ -1430,11 +1573,15 @@ local function CreateRow(container, rows, i)
 		-- This means relative to the parent.
 		row:SetPoint("TOPLEFT");
 		row:SetPoint("TOPRIGHT");
+		row.TitleBackground = row:CreateTexture(nil, "BACKGROUND", nil, -1);
+		row.TitleBackground:SetAllPoints();
+		row.TitleBackground:SetColorTexture(0, 0, 0, 0);
 	else
 		-- This means relative to the row above this one.
 		local aboveRow = rows[row.index];
 		row:SetPoint("TOPLEFT", aboveRow, "BOTTOMLEFT");
 		row:SetPoint("TOPRIGHT", aboveRow, "BOTTOMRIGHT");
+		row.aboveRow = aboveRow;
 	end
 
 	-- Setup highlighting and event handling
@@ -1452,10 +1599,6 @@ local function CreateRow(container, rows, i)
 	row.Label:SetJustifyH("LEFT");
 	row.Label:SetPoint("BOTTOM");
 	row.Label:SetPoint("TOP");
-	row:SetHeight(select(2, row.Label:GetFont()) + 4);
-	local rowHeight = row:GetHeight();
-	local lineHeight = row.Label:GetLineHeight()
-	local pad = (rowHeight - lineHeight) / 2
 
 	-- Summary is the completion summary information. (percentage text)
 	row.Summary = row:CreateFontString(nil, "ARTWORK", "GameFontNormal");
@@ -1475,26 +1618,20 @@ local function CreateRow(container, rows, i)
 	---@class ATTRowTextureClass: Texture
 	row.Texture = row:CreateTexture(nil, "ARTWORK");
 	row.Texture:SetPoint("LEFT", row, "LEFT");
-	row.Texture:SetPoint("BOTTOM", row, "BOTTOM", 0, pad);
-	row.Texture:SetPoint("TOP", row, "TOP", 0, -pad);
-	row.Texture:SetWidth(lineHeight);
 	row.Texture.Background = row:CreateTexture(nil, "BACKGROUND");
 	row.Texture.Background:SetPoint("LEFT", row.Texture);
 	row.Texture.Background:SetPoint("BOTTOM");
 	row.Texture.Background:SetPoint("TOP");
-	row.Texture.Background:SetWidth(rowHeight);
 	row.Texture.Border = row:CreateTexture(nil, "BORDER");
 	row.Texture.Border:SetPoint("LEFT", row.Texture);
 	row.Texture.Border:SetPoint("BOTTOM");
 	row.Texture.Border:SetPoint("TOP");
-	row.Texture.Border:SetWidth(rowHeight);
 
 	-- Indicator is used by the Instance Saves functionality.
 	row.Indicator = row:CreateTexture(nil, "ARTWORK");
-	row.Indicator:SetPoint("RIGHT", row.Texture, "LEFT", -pad, 0);
-	row.Indicator:SetPoint("BOTTOM", row, "BOTTOM", 0, pad);
-	row.Indicator:SetPoint("TOP", row, "TOP", 0, -pad);
-	row.Indicator:SetWidth(lineHeight);
+
+	-- The sizes depend on the style of the rows
+	ApplyRowStyle(row);
 
 	-- The Label should be sandwiched between the summary and the texture
 	row.Label:SetPoint("RIGHT", row.Summary, "LEFT", 0, 0);
@@ -1508,19 +1645,6 @@ end
 
 -- Window Creation
 local AllWindowSettings, AllSettingsApplied;
-local Backdrops = {
-	default = {
-		bgFile = 137056,
-		edgeFile = 137057,
-		tile = true, tileSize = 16, edgeSize = 16,
-		insets = { left = 4, right = 4, top = 4, bottom = 4 }
-	},
-	noborders = {
-		bgFile = 137056,
-		tile = true, tileSize = 16,
-		insets = { left = 0, right = 0, top = 0, bottom = 0 }
-	},
-}
 local DefaultWindowSettings = {
 	backdrop = Backdrops.default,
 	resizable = true,
@@ -1926,11 +2050,8 @@ local FieldDefaults = {
 		local oldRecordSettings = self.RecordSettings
 		self.RecordSettings = app.EmptyFunction
 
-		local hideBorders = appsettings:GetTooltipSetting("Window:HideBorders")
-		self:SetContainerPoints(hideBorders)
-		self:SetCloseButtonPoints(hideBorders)
-		self:SetScrollBarPoints(hideBorders)
-		self:SetGripPoints(hideBorders)
+		UpdateWindowStyle()
+		ApplyWindowStyle(self)
 		self:SetBackgroundColor()
 
 		self.RecordSettings = oldRecordSettings
@@ -2101,7 +2222,7 @@ local FieldDefaults = {
 		if not rowData then return; end
 		local height = self:GetHeight();
 		if height > 80 then
-			self.ScrollBar:Show();
+			self.ScrollBar:SetShown(WindowStyle.scrollBar);
 			self.CloseButton:Show();
 		elseif height > 40 then
 			self.ScrollBar:Hide();
@@ -2231,22 +2352,22 @@ local FieldDefaults = {
 	SetContainerPoints = function(self, hideBorders)
 		local container = self.Container
 		local scrollbar = self.ScrollBar
-		if hideBorders then
-			container:SetPoint("TOPLEFT")
-			container:SetPoint("BOTTOM")
-			self:SetBackdrop(Backdrops.noborders)
+		local inset = hideBorders and 0 or WindowStyle.inset or 5
+		container:SetPoint("TOPLEFT", self, "TOPLEFT", inset, -inset)
+		container:SetPoint("BOTTOM", self, "BOTTOM", 0, inset)
+		self:SetBackdrop(GetWindowBackdrop())
+		if WindowStyle.scrollBar then
+			container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0)
 		else
-			container:SetPoint("TOPLEFT", self, "TOPLEFT", 5, -5)
-			container:SetPoint("BOTTOM", self, "BOTTOM", 0, 5)
-			self:SetBackdrop(Backdrops.default)
+			container:SetPoint("RIGHT", self, "RIGHT", -inset, 0)
 		end
-		container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0)
 		container:Show()
 	end,
 	SetCloseButtonPoints = function(self, hideBorders)
 		local closeButton = self.CloseButton
-		if hideBorders then
-			closeButton:SetPoint("TOPRIGHT", self, "TOPRIGHT", 1, 1)
+		local inset = hideBorders and 0 or WindowStyle.inset
+		if inset then
+			closeButton:SetPoint("TOPRIGHT", self, "TOPRIGHT", 1 - inset, 1 - inset)
 		else
 			closeButton:SetPoint("TOPRIGHT", self, "TOPRIGHT", -2, -2)
 		end
@@ -2254,8 +2375,9 @@ local FieldDefaults = {
 	SetScrollBarPoints = function(self, hideBorders)
 		local scrollbar = self.ScrollBar
 		local closeButton = self.CloseButton
-		if hideBorders then
-			scrollbar:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", 0, 32)
+		local inset = hideBorders and 0 or WindowStyle.inset
+		if inset then
+			scrollbar:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", -inset, 32 + inset)
 		else
 			scrollbar:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", -4, 36)
 		end
@@ -2263,8 +2385,11 @@ local FieldDefaults = {
 	end,
 	SetGripPoints = function(self, hideBorders)
 		local grip = self.Grip
-		if hideBorders then
-			grip:SetPoint("BOTTOMRIGHT")
+		local inset = hideBorders and 0 or WindowStyle.inset
+		-- It would cover the last row without the scroll bar
+		grip:SetShown(WindowStyle.scrollBar)
+		if inset then
+			grip:SetPoint("BOTTOMRIGHT", -inset, inset)
 		else
 			grip:SetPoint("BOTTOMRIGHT", -5, 5)
 		end

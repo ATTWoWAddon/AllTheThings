@@ -49,13 +49,11 @@ end
 
 -- Generates a Color Scale between Red and Green with the Blue Completed color for 100%
 local red, green, h = RGBToHSV(1,0,0), RGBToHSV(0,1,0);
-local ProgressColors = setmetatable({
-	[1] = app.Colors.Completed,
-}, {
+local ProgressColors = setmetatable({}, {
 	__index = function(t, p)
 		p = tonumber(p);
-		-- anything over 100% will just be 100% color
-		if p > 1 then return t[1]; end
+		-- anything from 100% on uses the Completed color, which isn't cached since players can change it
+		if p >= 1 then return app.Colors.Completed; end
 		-- anything somehow under 0 will just be 0
 		if p < 0 then return t[0]; end
 		if abs(red.h - green.h) > 180 then

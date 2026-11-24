@@ -2,8 +2,8 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Global locals
-local ipairs, pairs, type, math_max
-	= ipairs, pairs, type, math.max;
+local ipairs, pairs, type, math_max, math_min
+	= ipairs, pairs, type, math.max, math.min;
 
 -- Builds a settings page from a list of sections, with a live preview or notes beside them.
 -- Each section is { title = "", options = { ... } } and each option is one of:
@@ -35,6 +35,7 @@ local FULL_WIDTH = 640;	-- without anything beside the sections
 local HEADER_HEIGHT, CHECK_HEIGHT, SECTION_GAP, INDENT = 24, 20, 8, 16;
 local SLIDER_HEIGHT, SLIDER_LABEL_HEIGHT, DROPDOWN_HEIGHT = 34, 18, 28;
 local PREVIEW_PADDING, PREVIEW_INDENT = 10, 10;
+local MENU_SIZE = 24;
 local DISABLED_ALPHA = 0.55;	-- still readable on the dark background
 
 local function IsUsable(option)
@@ -272,16 +273,38 @@ local Builders = {
 		local function GetChoices()
 			return type(option.choices) == "function" and option.choices() or option.choices;
 		end
-		local function InitializeMenu()
-			for _,choice in ipairs(GetChoices()) do
+		local function AddChoices(choices, first, last, level)
+			for i=first,last do
+				local choice = choices[i];
 				local info = UIDropDownMenu_CreateInfo();
 				info.text = choice.text;
 				info.checked = GetOption(option) == choice.value;
 				info.func = function()
 					SetOption(option, choice.value);
 					dropdown:OnRefresh();
+					CloseDropDownMenus();
 				end
-				UIDropDownMenu_AddButton(info);
+				UIDropDownMenu_AddButton(info, level);
+			end
+		end
+		local function InitializeMenu(_, level, menuList)
+			local choices = GetChoices();
+			level = level or 1;
+			if level > 1 then
+				AddChoices(choices, menuList, math_min(menuList + MENU_SIZE - 1, #choices), level);
+			elseif #choices <= MENU_SIZE then
+				AddChoices(choices, 1, #choices, level);
+			else
+				-- Long lists wouldn't fit on the screen, so they're split up
+				for first=1,#choices,MENU_SIZE do
+					local last = math_min(first + MENU_SIZE - 1, #choices);
+					local info = UIDropDownMenu_CreateInfo();
+					info.text = choices[first].text .. " - " .. choices[last].text;
+					info.hasArrow = true;
+					info.notCheckable = true;
+					info.menuList = first;
+					UIDropDownMenu_AddButton(info, level);
+				end
 			end
 		end
 		local initialized;
@@ -345,6 +368,8 @@ local PreviewMixin = {
 		local line = GetPreviewLine(self, self.count);
 		local x = PREVIEW_PADDING + (options.indent or 0) * PREVIEW_INDENT;
 
+		line.Left:SetFontObject(self.lineFont or "GameFontHighlightSmall");
+		line.Right:SetFontObject(self.lineFont or "GameFontHighlightSmall");
 		line.Right:ClearAllPoints();
 		line.Right:SetPoint("TOPRIGHT", self, "TOPRIGHT", -PREVIEW_PADDING, self.y);
 		line.Right:SetText(right or "");
@@ -372,7 +397,7 @@ local PreviewMixin = {
 		line.Left:SetText(left);
 		line.Left:Show();
 
-		self.y = self.y - math_max(14, line.Left:GetStringHeight() + 3);
+		self.y = self.y - math_max(14, line.Left:GetStringHeight() + (self.lineSpacing or 3));
 	end,
 	End = function(self)
 		for i=self.count+1,#self.Lines do

@@ -68,6 +68,8 @@ settings.GetWindowColors = function()
 	return rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd
 end
 
+settings.ShowColorPicker = ShowColorPicker;
+
 -- Settings: Accessibility Page
 local child = settings:CreateOptionsPage(L.ACCESSIBILITY_PAGE, L.INTERFACE_PAGE)
 
@@ -92,30 +94,6 @@ local function CreateTextColorOption(text, key)
 		end,
 	};
 end
--- A color of the ATT windows
-local function CreateWindowColorOption(text, tooltip, key, usable)
-	local function GetDefault() return settings.GetSettingDefault(key); end
-	return { type = "color", text = text, tooltip = tooltip, usable = usable,
-		get = function()
-			local color = settings:Get(key);
-			return color.r, color.g, color.b;
-		end,
-		OnClick = function()
-			ShowColorPicker(function(color) settings:Set(key, color); end, settings:Get(key));
-		end,
-		isChanged = function()
-			local color, default = settings:Get(key), GetDefault();
-			for component,value in pairs(default) do
-				if (tonumber(color[component]) or 0) ~= value then return true; end
-			end
-		end,
-		reset = function()
-			local default = GetDefault();
-			settings:Set(key, { r = default.r, g = default.g, b = default.b, a = default.a });
-			app.CallbackEvent("OnRedrawWindows")
-		end,
-	};
-end
 
 settings.CreateOptionSections(child, {
 	{ title = L.COLORS_ICONS, options = {
@@ -123,16 +101,8 @@ settings.CreateOptionSections(child, {
 		CreateTextColorOption(L.BREADCRUMBS, "Breadcrumb"),
 		CreateTextColorOption(L.LOCKED_QUESTS, "Locked"),
 		CreateTextColorOption(MOUNTS, "Mount"),
-	} },
-	{ title = L.WINDOW_COLORS, options = {
-		CreateWindowColorOption(L.BACKGROUND, L.BACKGROUND_TOOLTIP, "Window:BackgroundColor"),
-		CreateWindowColorOption(L.BORDER, L.BORDER_TOOLTIP, "Window:BorderColor", function()
-			return not (settings:GetTooltipSetting("Window:UseClassForBorder") or settings:GetTooltipSetting("Window:HideBorders"));
-		end),
-		{ type = "check", key = "Window:UseClassForBorder", text = L.CLASS_BORDER, tooltip = L.CLASS_BORDER_TOOLTIP,
-			usable = function() return not settings:GetTooltipSetting("Window:HideBorders"); end,
-		},
-		{ type = "check", key = "Window:HideBorders", text = L.HIDE_BORDERS, tooltip = L.HIDE_BORDERS_TOOLTIP },
+		CreateTextColorOption(L.SETTINGS_ACCOUNT_WIDE, "Account"),
+		CreateTextColorOption(L.APPEARANCE_COMPLETED, "Completed"),
 	} },
 },
 -- Preview: a fixed sample of a list in the chosen colors.
@@ -141,6 +111,7 @@ settings.CreateOptionSections(child, {
 	preview:SetBackdropColor(rBg, gBg, bBg, aBg);
 	preview:SetBackdropBorderColor(rBd, gBd, bBd, settings:GetTooltipSetting("Window:HideBorders") and 0 or aBd);
 	preview:AddLine(L.PREVIEW_ZONE, app.Modules.Color.GetProgressColorText(60, 100));
+	preview:AddLine(L.PREVIEW_CREATURE, app.Modules.Color.GetProgressColorText(3, 3), { indent = 1 });
 	preview:AddLine(Colorize(L.PREVIEW_QUEST, app.Colors.Breadcrumb), L.BREADCRUMBS, { indent = 1 });
 	preview:AddLine(Colorize(L.PREVIEW_QUEST, app.Colors.Locked), L.LOCKED_QUESTS, { indent = 1 });
 	preview:AddLine(Colorize(L.PREVIEW_REWARD:format(1), app.Colors.Mount), MOUNTS, { indent = 1 });
