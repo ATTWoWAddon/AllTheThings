@@ -389,6 +389,41 @@ app.CreateExploration = app.CreateClass(CLASSNAME, KEY, {
 	end,
 	OnTooltip = app.EmptyFunction,
 });
+-- Returns the name of the exploration area whose known position is closest to the given coordinate on the given map.
+-- Maps without exploration data return nothing.
+local ExplorationPositionsByMapID
+app.GetNearestExplorationName = function(mapID, x, y)
+	if not ExplorationPositionsByMapID then
+		ExplorationPositionsByMapID = {}
+		for areaID,coords in pairs(ExplorationAreaPositionDB) do
+			for areaMapID,coordsForMap in pairs(coords) do
+				local positions = ExplorationPositionsByMapID[areaMapID]
+				if not positions then
+					positions = {}
+					ExplorationPositionsByMapID[areaMapID] = positions
+				end
+				for i=1,#coordsForMap do
+					local coord = coordsForMap[i]
+					positions[#positions + 1] = { areaID, coord[1], coord[2] }
+				end
+			end
+		end
+	end
+	local positions = ExplorationPositionsByMapID[mapID]
+	if not positions then return end
+
+	local bestAreaID, bestDistance
+	for i=1,#positions do
+		local position = positions[i]
+		-- zone maps are 3:2, so a percent of width is 1.5 times as long as a percent of height
+		local dx, dy = (position[2] - x) * 1.5, position[3] - y
+		local distance = dx * dx + dy * dy
+		if not bestDistance or distance < bestDistance then
+			bestAreaID, bestDistance = position[1], distance
+		end
+	end
+	return bestAreaID and C_Map_GetAreaInfo(bestAreaID)
+end
 local function CacheAndUpdateExploration(areas)
 	local changes = {};
 	if app.SetBatchCachedAndTrackChanges(CACHE, areas, changes, 1) then

@@ -988,9 +988,16 @@ local InformationTypes = {
 			if coords then
 				local coordList = {};
 				local currentMapID = app.CurrentMapID;
+				local isExploration = reference.explorationID;
+				local function GetCoordText(mapID, coord)
+					local str = GetCoordString(coord[1], coord[2]);
+					-- an exploration area doesn't need its own name repeated
+					local area = not isExploration and app.GetNearestExplorationName(mapID, coord[1], coord[2]);
+					return area and (str .. " (" .. area .. ")") or str;
+				end
 				if coords[currentMapID] then
 					for i,coord in ipairs(coords[currentMapID]) do
-						coordList[#coordList+1] = { right = GetCoordString(coord[1], coord[2]) }
+						coordList[#coordList+1] = { right = GetCoordText(currentMapID, coord) }
 					end
 				end
 				local showMapID = app.Settings:GetTooltipSetting("mapID");
@@ -999,7 +1006,7 @@ local InformationTypes = {
 						for i,coord in ipairs(coordsForMap) do
 							local str = app.GetMapName(mapID);
 							if showMapID then str = str .. " (" .. mapID .. ")"; end
-							coordList[#coordList+1] = { right = str .. ": " .. GetCoordString(coord[1], coord[2]) }
+							coordList[#coordList+1] = { right = str .. ": " .. GetCoordText(mapID, coord) }
 						end
 					end
 				end
