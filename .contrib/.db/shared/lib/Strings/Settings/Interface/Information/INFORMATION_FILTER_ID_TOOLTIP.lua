@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		-- TODO: cn = "",
-		-- TODO: tw = "",
+		tw = "此項目在 ATT 篩選功能中所屬的類型。",
 	},
 })

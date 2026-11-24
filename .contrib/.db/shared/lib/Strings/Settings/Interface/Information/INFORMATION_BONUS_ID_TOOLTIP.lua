@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		-- TODO: cn = "",
-		-- TODO: tw = "",
+		tw = "套用於此物品版本的額外屬性 ID。",
 	},
 })

@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		-- TODO: cn = "",
-		-- TODO: tw = "",
+		tw = "ATT 標頭的 ID。",
 	},
 })

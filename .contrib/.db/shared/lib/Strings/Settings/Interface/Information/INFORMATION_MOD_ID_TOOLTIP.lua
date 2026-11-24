@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		-- TODO: cn = "",
-		-- TODO: tw = "",
+		tw = "此物品版本的修飾參數，例如難度。",
 	},
 })

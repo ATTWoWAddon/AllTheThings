@@ -13,6 +13,6 @@ createLocalizationString({
 		-- TODO: ru = "",
 		-- TODO: ko = "",
 		-- TODO: cn = "",
-		-- TODO: tw = "",
+		tw = "啟用或停用此群組中列出的所有選項。\n\n灰色勾號表示只有部分選項已啟用。",
 	},
 })
