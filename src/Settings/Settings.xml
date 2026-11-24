@@ -1,11 +1,13 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
 	<Script file="Settings.lua"/>
+	<Script file="Option Sections.lua"/>
 	<Script file="Pages/About.lua"/>
 	<Script file="Pages/General.lua"/>
 	<Script file="Pages/General - Filters.lua"/>
 	<Script file="Pages/General - Expansion Filters.lua"/>
 	<Script file="Pages/General - Unobtainables.lua"/>
 	<Script file="Pages/Interface.lua"/>
+	<Script file="Pages/Interface - Tooltips.lua"/>
 	<Script file="Pages/Interface - Accessibility.lua"/>
 	<Script file="Pages/Interface - Fillers.lua"/>
 	<Script file="Pages/Interface - Information.lua"/>
