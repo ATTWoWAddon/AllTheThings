@@ -112,7 +112,7 @@ app.GetLinkReference = function(link)
 end
 
 -- Define Chat Commands handling
-app.ChatCommands = { Help = {}, List = {}, Slash = {} }
+app.ChatCommands = { Help = {}, List = {}, Slash = {}, Windows = {} }
 local function ChatCommand_Add(cmd, func, help)
 	cmd = cmd and cmd:lower()
 	if not cmd then return end

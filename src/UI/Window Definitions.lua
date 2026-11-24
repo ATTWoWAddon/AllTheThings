@@ -2456,6 +2456,11 @@ local function SetupCommandsForDefinition(definition)
 	definition.BuiltCommands = true
 
 	local suffix = definition.Suffix
+	-- remember which commands belong to windows, since a definition is gone once its window was built
+	if definition.Commands or definition.RootCommands then
+		local windows = app.ChatCommands.Windows
+		windows[#windows + 1] = definition
+	end
 	-- direct /[command] accessibility
 	if definition.Commands then
 		app.AddSlashCommands(definition.Commands, function(cmd, params)

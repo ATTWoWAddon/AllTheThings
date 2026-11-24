@@ -2,7 +2,7 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Global locals
-local ipairs = ipairs;
+local ipairs, math, table = ipairs, math, table;
 
 -- Settings: Commands Page
 local child = settings:CreateOptionsPage(L.COMMANDS_PAGE, L.FEATURES_PAGE)
@@ -139,7 +139,7 @@ local function BuildCommands()
 
 	-- The windows, with their direct commands
 	local windows, isWindowCommand = {}, {}
-	for suffix,definition in pairs(app.WindowDefinitions) do
+	for _,definition in ipairs(app.ChatCommands.Windows) do
 		local names = {}
 		for _,command in ipairs(definition.RootCommands or app.EmptyTable) do
 			command = command:lower()
@@ -152,7 +152,7 @@ local function BuildCommands()
 		if #names > 0 then
 			windows[#windows + 1] = {
 				command = names[1], text = table.concat(names, ", "),
-				description = definition.HelpText or L.COMMANDS_TOGGLES:format(definition.Title or definition.SettingsName or suffix),
+				description = definition.HelpText or L.COMMANDS_TOGGLES:format(definition.Title or definition.SettingsName or definition.Suffix),
 				usage = definition.UsageText,
 			}
 		end
