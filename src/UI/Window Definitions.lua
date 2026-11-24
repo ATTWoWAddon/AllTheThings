@@ -2859,6 +2859,8 @@ local function BuildWindow(suffix)
 	---@class ATTRowContainer: Frame
 	local container = CreateFrame("Frame", nil, window);
 	window.Container = container;
+	-- The title background is a part of the first row, and goes behind the close button
+	closeButton:SetFrameLevel(container:GetFrameLevel() + 10);
 	container.rows = setmetatable({}, {
 		__index = function(rows, i)
 			return CreateRow(container, rows, i);

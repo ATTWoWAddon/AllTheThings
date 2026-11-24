@@ -61,7 +61,7 @@ local Presets = {
 	},
 	{ title = L.APPEARANCE_PRESET_MINIMAL, tooltip = L.APPEARANCE_PRESET_MINIMAL_TOOLTIP,
 		["Window:HideBorders"] = true, ["Window:ShowScrollBar"] = false,
-		["Window:BackgroundColor"] = Color(0, 0, 0, 0.5),
+		["Window:BackgroundColor"] = Color(0, 0, 0, 0.8),
 	},
 	{ title = L.APPEARANCE_PRESET_MODERN, tooltip = L.APPEARANCE_PRESET_MODERN_TOOLTIP,
 		["Window:BorderStyle"] = "square", ["Row:Spacing"] = 6,
