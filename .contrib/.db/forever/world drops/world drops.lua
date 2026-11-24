@@ -4193,7 +4193,7 @@ root(ROOTS.WorldDrops, {
 				115,	-- Harvest Reaper
 				114,	-- Harvest Watcher
 				1033,	-- Monstrous Ooze
-				271749	-- Oil Slime
+				271749,	-- Oil Slime
 				480,	-- Rusty Harvest Golem
 				14433,	-- Sludginn
 				271750,	-- Tar Ooze
