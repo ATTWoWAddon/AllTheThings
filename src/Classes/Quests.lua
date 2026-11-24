@@ -308,14 +308,11 @@ end
 -- Quest Links
 local GetQuestLink = GetQuestLink;
 local PlainQuestLinkFormat = "[[%d] %s (%d)]"
-local CustomQuestLinkFormat = "|cffffff00|Hquest:%d:%d|h[%s]|h|r [quest:%d]"
 local function GetQuestLinkForObject(t)
 	local questID = t.questID;
 	if questID then
 		return GetQuestLink(questID)
-			or (Questie and PlainQuestLinkFormat:format(app.Level, t.name or t.hash,questID))
-			-- technically the second number value is some other value to make the link actually usable
-			or CustomQuestLinkFormat:format(questID,app.Level,t.name or t.hash,questID)
+			or PlainQuestLinkFormat:format(app.Level, t.name or t.hash,questID)
 	end
 end
 
