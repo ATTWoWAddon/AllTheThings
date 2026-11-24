@@ -306,27 +306,17 @@ local function GetQuestLogText(questID)
 end
 
 -- Quest Links
-local GetQuestLinkForObject
-do
 local GetQuestLink = GetQuestLink;
-if app.IsClassic or app.IsForever then
--- Classic servers reject hand-built quest links (the sent text comes out garbled and unlinked),
--- so quests outside the quest log are inserted as plain text instead
-local PlainQuestLinkFormat = "[%s] [quest:%d]"
-GetQuestLinkForObject = function(t)
-	local questID = t.questID;
-	if questID then return GetQuestLink(questID)
-		or PlainQuestLinkFormat:format(t.name or t.hash,questID) end
-end
-else
+local PlainQuestLinkFormat = "[[%d] %s (%d)]"
 local CustomQuestLinkFormat = "|cffffff00|Hquest:%d:%d|h[%s]|h|r [quest:%d]"
-GetQuestLinkForObject = function(t)
+local function GetQuestLinkForObject(t)
 	local questID = t.questID;
-	if questID then return GetQuestLink(questID)
-		-- technically the second number value is some other value to make the link actually usable
-		or CustomQuestLinkFormat:format(questID,app.Level,t.name or t.hash,questID) end
-end
-end
+	if questID then
+		return GetQuestLink(questID)
+			or (Questie and PlainQuestLinkFormat:format(app.Level, t.name or t.hash,questID))
+			-- technically the second number value is some other value to make the link actually usable
+			or CustomQuestLinkFormat:format(questID,app.Level,t.name or t.hash,questID)
+	end
 end
 
 -- Quest Completion Lib
