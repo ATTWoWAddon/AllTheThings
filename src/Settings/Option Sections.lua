@@ -419,6 +419,14 @@ local function CreatePreview(page, title, UpdatePreview)
 	page:HookScript("OnShow", Refresh);
 end
 
+-- Hides the scrollbar of a scroll frame while everything fits
+settings.HideUnneededScrollBar = function(scroller, scrollBar)
+	local function UpdateScrollBar()
+		scrollBar:SetShown(scroller:GetVerticalScrollRange() > 1);
+	end
+	scroller:HookScript("OnScrollRangeChanged", UpdateScrollBar);
+	scroller:HookScript("OnShow", UpdateScrollBar);
+end
 -- Creates a scrollable column on the page, whose scrollbar hides while everything fits
 local function CreateColumn(page, left, right, top)
 	local content = page:CreateScrollFrame();
@@ -430,11 +438,7 @@ local function CreateColumn(page, left, right, top)
 		scrollBar:ClearAllPoints();
 		scrollBar:SetPoint("TOPRIGHT", scroller, "TOPRIGHT", -4, -18);
 		scrollBar:SetPoint("BOTTOMRIGHT", scroller, "BOTTOMRIGHT", -4, 18);
-		local function UpdateScrollBar()
-			scrollBar:SetShown(scroller:GetVerticalScrollRange() > 1);
-		end
-		scroller:HookScript("OnScrollRangeChanged", UpdateScrollBar);
-		scroller:HookScript("OnShow", UpdateScrollBar);
+		settings.HideUnneededScrollBar(scroller, scrollBar);
 	end
 	content.SectionWidth = right - left - SCROLLBAR_WIDTH;
 	content:SetWidth(content.SectionWidth);

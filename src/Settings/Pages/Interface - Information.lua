@@ -1973,6 +1973,8 @@ local RefreshInformationCheckBoxes;
 local SearchText = "";
 local searchBox = child:CreateTextbox({ name = "InformationSearch", template = "SearchBoxTemplate", width = 220 });
 searchBox:SetTextInsets(16, 20, 0, 0);
+-- It only filters this page, unlike the search of the settings window
+if searchBox.Instructions then searchBox.Instructions:SetText(FILTER or "Filter"); end
 searchBox:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 10, -8);
 searchBox:HookScript("OnTextChanged", function(self)
 	local text = (self:GetText() or ""):lower():match("^%s*(.-)%s*$");
@@ -2015,6 +2017,7 @@ if scrollBar then
 	scrollBar:ClearAllPoints();
 	scrollBar:SetPoint("TOPRIGHT", scroller, "TOPRIGHT", -10, -18);
 	scrollBar:SetPoint("BOTTOMRIGHT", scroller, "BOTTOMRIGHT", -10, 18);
+	settings.HideUnneededScrollBar(scroller, scrollBar);
 end
 local noMatches = content:CreateFontString(nil, "ARTWORK", "GameFontDisable");
 noMatches:SetPoint("TOPLEFT", content, "TOPLEFT", 8, -8);

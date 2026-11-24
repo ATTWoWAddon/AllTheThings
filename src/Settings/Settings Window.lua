@@ -257,6 +257,11 @@ resultsScroller:SetPoint("BOTTOMRIGHT", resultsPage, "BOTTOMRIGHT", -30, 0);
 local resultsContent = CreateFrame("Frame", nil, resultsScroller);
 resultsContent:SetSize(PAGE_WIDTH - 40, 1);
 resultsScroller:SetScrollChild(resultsContent);
+resultsPage:SetScript("OnShow", function(self)
+	self:SetScript("OnShow", nil);
+	local scrollBar = resultsScroller.ScrollBar or _G["ATTSettingsWindowResultsScrollBar"];
+	if scrollBar then settings.HideUnneededScrollBar(resultsScroller, scrollBar); end
+end);
 
 local function OpenResult(result)
 	ShowPage(result.page);
