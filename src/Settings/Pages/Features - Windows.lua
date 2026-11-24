@@ -38,7 +38,7 @@ local FLAT_X, DYNAMIC_X = 492, 556;	-- column centers
 
 -- Window Button Helpers
 local function OnClickForWindowButton(self)
-	HideUIPanel(SettingsPanel or InterfaceOptionsFrame);
+	HideUIPanel(SettingsPanel);
 	app:GetWindow(self.Suffix):Show();
 end
 local function UpdateButtonText(self, window)
