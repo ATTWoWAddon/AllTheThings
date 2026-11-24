@@ -406,6 +406,34 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.SILVERMOON_CITY, {
 				}),
 			}),
 		}),
+		-- #if AFTER 12.1.7
+		n(266188, {	-- Estelia Archtender <Aqir Researcher>
+			coord = { 39.3, 80.3, MAP.MIDNIGHT.SILVERMOON_CITY },
+			timeline = { ADDED_12_1_5 },
+			groups = {
+				filter(BATTLE_PETS, {
+					i(276927, { cost = { { "c", VOIDLIGHT_MARL, 3000 } } }),	-- Aqir Razorwing (PET!)
+					i(274923, { cost = { { "c", VOIDLIGHT_MARL, 1500 } } }),	-- Aqir Scuttler (PET!)
+					i(274927, { cost = { { "c", VOIDLIGHT_MARL, 1500 } } }),	-- Aqir Wingreaver (PET!)
+				}),
+				n(DECOR, {
+					i(280050, { cost = { { "c", VOIDLIGHT_MARL, 1500 } } }),	-- Aqir Hunter's Trophy (DECOR!)
+					i(275873, { cost = { { "c", VOIDLIGHT_MARL,  350 } } }),	-- Dormant Brood Egg (DECOR!)
+					i(275879, { cost = { { "c", VOIDLIGHT_MARL,  350 } } }),	-- Dormant Brood Egg Cluster (DECOR!)
+					i(275871, { cost = { { "c", VOIDLIGHT_MARL,  500 } } }),	-- Dormant Clutch of Brood Eggs (DECOR!)
+					i(275869, { cost = { { "c", VOIDLIGHT_MARL,  350 } } }),	-- Nourished Brood Eggs (DECOR!)
+					i(275867, { cost = { { "c", VOIDLIGHT_MARL,  350 } } }),	-- Nourished Brood Egg Cluster (DECOR!)
+					i(275865, { cost = { { "c", VOIDLIGHT_MARL,  500 } } }),	-- Nourished Clutch of Brood Eggs (DECOR!)
+				}),
+				filter(MOUNTS, {
+					i(276926, { cost = { { "c", VOIDLIGHT_MARL, 3500 } } }),	-- Corrupted Swarmer (MOUNT!)
+				}),
+				filter(TOYS, {
+					i(275039, { cost = { { "c", VOIDLIGHT_MARL, 3500 } } }),	-- Curse of the Aqir (TOY!)
+				}),
+			},
+		}),
+		-- #endif
 		n(258550, {	-- Farstrider Aerieminder
 			coord = { 24.8, 69.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 			groups = {

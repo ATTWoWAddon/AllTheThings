@@ -162420,6 +162420,24 @@ heir(93844,{cost={{"i",79131,1}},f=28,rwp=120001,sourceID=48994,u=2}),
 heir(93854,{cost={{"i",42947,1}},f=28,rwp=120001,sourceID=49004,u=2}),
 heir(93857,{cost={{"i",42944,1}},f=20,rwp=120001,sourceID=49007,u=2}),
 heir(93855,{cost={{"i",42946,1}},f=32,rwp=120001,sourceID=49005,u=2})})}}),
+n(266188,{awp=120105,coords={
+[2393]={{39.3,80.3}}},g={
+flt(101,{
+p(5100,{cost={{"c",3316,3000}},itemID=276927,npcID=268483,spellID=1301393}),
+p(5066,{cost={{"c",3316,1500}},itemID=274923,npcID=265740,spellID=1295644}),
+p(5068,{cost={{"c",3316,1500}},itemID=274927,npcID=265755,spellID=1295663})}),
+h(-679,{
+de(27216,{cost={{"c",3316,1500}},itemID=280050,spellID=1307620}),
+de(25305,{cost={{"c",3316,350}},itemID=275873,spellID=1298042}),
+de(25306,{cost={{"c",3316,350}},itemID=275879,spellID=1298048}),
+de(25304,{cost={{"c",3316,500}},itemID=275871,spellID=1298040}),
+de(25303,{cost={{"c",3316,350}},itemID=275869,spellID=1298038}),
+de(25302,{cost={{"c",3316,350}},itemID=275867,spellID=1298036}),
+de(25301,{cost={{"c",3316,500}},itemID=275865,spellID=1298034})}),
+flt(100,{
+mnt(1301331,{cost={{"c",3316,3500}},itemID=276926})}),
+flt(102,{
+toy(275039,{cost={{"c",3316,3500}}})})}}),
 n(258550,{coords={
 [2393]={{24.8,69.4}}},g={
 i(265674,{b=1,description="If you feed a nearby Mischevious Chick, you'll get a reward.",f=55,spellID=1269922})}}),

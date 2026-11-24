@@ -3969,13 +3969,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			},
 			crs = {
 				1031,	-- Crimson Ooze
-				573,		-- Foe Reaper 4000
+				573,	-- Foe Reaper 4000
 				1731,	-- Goblin Craftsman
 				36,		-- Harvest Golem
-				115,		-- Harvest Reaper
-				114,		-- Harvest Watcher
+				115,	-- Harvest Reaper
+				114,	-- Harvest Watcher
 				1033,	-- Monstrous Ooze
-				480,		-- Rusty Harvest Golem
+				480,	-- Rusty Harvest Golem
 				3286,	-- Venture Co. Overseer
 				11684,	-- Warsong Shredder
 				-- #if BEFORE 4.0.3
