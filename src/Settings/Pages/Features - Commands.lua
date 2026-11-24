@@ -131,7 +131,7 @@ local function BuildCommands()
 		y = y - settings.CreatePageSectionHeader(content, title, y)
 		for _,entry in ipairs(entries) do
 			CommandOptions[#CommandOptions + 1] = {
-				frame = CreateCommandRow(entry), page = child, text = entry.text:gsub("\n", ", "), tooltip = entry.description,
+				frame = CreateCommandRow(entry), page = child, text = entry.text, tooltip = entry.description,
 			}
 		end
 		y = y - 8
@@ -151,7 +151,7 @@ local function BuildCommands()
 		end
 		if #names > 0 then
 			windows[#windows + 1] = {
-				command = names[1], text = table.concat(names, "\n"),
+				command = names[1], text = table.concat(names, ", "),
 				description = definition.HelpText or L.COMMANDS_TOGGLES:format(definition.Title or definition.SettingsName or suffix),
 				usage = definition.UsageText,
 			}
@@ -164,7 +164,7 @@ local function BuildCommands()
 			local help = app.ChatCommands.Help[command]
 			local entry = help and entryByHelp[help]
 			if entry then
-				entry.text = entry.text .. "\n/att " .. command
+				entry.text = entry.text .. ", /att " .. command
 			else
 				entry = { command = "/att " .. command, text = "/att " .. command }
 				if help then
@@ -179,7 +179,7 @@ local function BuildCommands()
 		end
 	end
 	AddSection(L.CHAT_COMMANDS_LABEL, {
-		{ command = "/att", text = "/att\n/allthethings", description = L.COMMANDS_MAIN_LIST },
+		{ command = "/att", text = "/att, /allthethings", description = L.COMMANDS_MAIN_LIST },
 		{ command = "/att item:", text = "/att [" .. L.ITEM .. "]", description = L.COMMANDS_LINK },
 		{ command = "/rl", text = "/rl", description = RELOADUI or "Reload UI" },
 	})
