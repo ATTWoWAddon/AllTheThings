@@ -504,6 +504,12 @@ local function ApplyRowStyle(row)
 	local room = WindowStyle.scrollBar and 0 or CLOSE_BUTTON_ROOM;
 	if row.index == 0 then
 		row:SetPoint("TOPRIGHT", -room, 0);
+		-- The title background also goes behind the close button
+		local container = row:GetParent();
+		row.TitleBackground:ClearAllPoints();
+		row.TitleBackground:SetPoint("TOPLEFT", row);
+		row.TitleBackground:SetPoint("BOTTOM", row);
+		row.TitleBackground:SetPoint("RIGHT", container:GetParent(), "RIGHT", -(WindowStyle.inset or 5), 0);
 		color = WindowStyle.titleColor;
 		if color then
 			row.TitleBackground:SetColorTexture(tonumber(color.r) or 0, tonumber(color.g) or 0, tonumber(color.b) or 0, tonumber(color.a) or 0);
@@ -1574,7 +1580,6 @@ local function CreateRow(container, rows, i)
 		row:SetPoint("TOPLEFT");
 		row:SetPoint("TOPRIGHT");
 		row.TitleBackground = row:CreateTexture(nil, "BACKGROUND", nil, -1);
-		row.TitleBackground:SetAllPoints();
 		row.TitleBackground:SetColorTexture(0, 0, 0, 0);
 	else
 		-- This means relative to the row above this one.

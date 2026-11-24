@@ -242,6 +242,11 @@ local Builders = {
 		local border = button:CreateTexture(nil, "BACKGROUND");
 		border:SetAllPoints();
 		border:SetColorTexture(0.6, 0.6, 0.6, 1);
+		-- What can be seen through a color with opacity
+		local back = button:CreateTexture(nil, "BORDER");
+		back:SetPoint("TOPLEFT", button, "TOPLEFT", 1, -1);
+		back:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -1, 1);
+		back:SetColorTexture(0, 0, 0, 1);
 		local swatch = button:CreateTexture(nil, "ARTWORK");
 		swatch:SetPoint("TOPLEFT", button, "TOPLEFT", 1, -1);
 		swatch:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -1, 1);
