@@ -68,9 +68,10 @@ local function CreateItem(u, isPart)
 	};
 end
 
--- Only the newest expansion starts expanded
+-- The newest expansion is at the top, and the only one which starts expanded
 local list = {};
-for expansionID,ids in ipairs(PhasesByExpansion) do
+for expansionID=#PhasesByExpansion,1,-1 do
+	local ids = PhasesByExpansion[expansionID];
 	if ids then
 		local expansion = app.CreateExpansion(expansionID);
 		local items = {};
@@ -78,8 +79,7 @@ for expansionID,ids in ipairs(PhasesByExpansion) do
 			local item = CreateItem(u < 0 and -u or u, u < 0);
 			if item then items[#items + 1] = item; end
 		end
-		if #list > 0 then list[#list].collapsed = true; end
-		list[#list + 1] = { title = "|T" .. expansion.icon .. ":0|t " .. expansion.text, items = items };
+		list[#list + 1] = { title = "|T" .. expansion.icon .. ":0|t " .. expansion.text, items = items, collapsed = #list > 0 };
 	end
 end
 settings.CreateCheckList(child, {
