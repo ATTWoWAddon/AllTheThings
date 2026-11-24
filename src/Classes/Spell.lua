@@ -180,8 +180,11 @@ do
 
 	-- Spell Rank Handling
 	local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
+	-- The rank the database assigns to each ranked spell (e.g. First Aid (Journeyman) is rank 2)
+	local SpellRankByID = {};
 	local function CacheRankForSpell(spellID, rank)
 		if rank then
+			SpellRankByID[spellID] = rank;
 			local spellName = SpellIDToSpellName[spellID] or _GetSpellName(spellID);
 			if not IsRetrieving(spellName) then
 				if not SpellNameToSpellID[spellName] then
@@ -200,12 +203,14 @@ do
 			GetSpellName(spellID);
 		end
 	end
+	-- Classic flavours and Forever teach professions and other spells in ranks
+	local UsesSpellRanks = app.IsClassic or app.IsForever
 	app.AddEventHandler("OnRefreshCollections", function()
 		local state
 		local saved, none = {}, {}
 		local IsAccountCached = app.IsAccountCached
 		for id,g in pairs(app.GetRawFieldContainer(KEY)) do
-			if app.IsClassic then
+			if UsesSpellRanks then
 				-- Cache Spell Names
 				for i=1,#g do
 					CacheRankForSpell(id, g[i].rank)
@@ -243,15 +248,16 @@ do
 					local spellName, _, _, _, _, _, spellID = GetSpellInfo(spellIndex, BOOKTYPE_SPELL);
 					if spellName then
 						saved[spellID] = true
-						currentSpellRank = GetSpellRank(spellID);
+						-- The spellbook only lists the highest known rank of a profession spell, so prefer the database's rank over counting
+						currentSpellRank = GetSpellRank(spellID) or SpellRankByID[spellID];
 						if not currentSpellRank then
 							if lastSpellName == spellName then
 								currentSpellRank = lastSpellRank + 1;
 							else
-								lastSpellName = spellName;
 								currentSpellRank = 1;
 							end
 						end
+						lastSpellName, lastSpellRank = spellName, currentSpellRank;
 						SpellNameToSpellID[spellName] = spellID;
 						local rankedSpell = RankedSpellNames[spellName];
 						rankedSpell[currentSpellRank] = spellID;
@@ -261,13 +267,15 @@ do
 					end
 				end
 			end
+		end
 
+		if UsesSpellRanks then
 			-- If we know a higher rank of the spell, then flag all lower ranks of the spell as collected.
 			-- Spells already cached for the character count too: pet spells are only detected while the pet is out.
 			local IsCached = app.IsCached
 			for spellName,rankedSpell in pairs(RankedSpellNames) do
 				--print("Max Rank", spellName, rankedSpell.max);
-				for i=rankedSpell.max,1,-1 do
+				for i=rankedSpell.max or 0,1,-1 do
 					local id = rankedSpell[i];
 					if id then
 						if saved[id] or IsCached(CACHE, id) then
