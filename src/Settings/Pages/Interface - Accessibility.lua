@@ -123,13 +123,6 @@ settings.CreateOptionSections(child, {
 		CreateTextColorOption(L.BREADCRUMBS, "Breadcrumb"),
 		CreateTextColorOption(L.LOCKED_QUESTS, "Locked"),
 		CreateTextColorOption(MOUNTS, "Mount"),
-		{ type = "button", text = DEFAULT, tooltip = L.RESET_TOOLTIP,
-			OnClick = function()
-				wipe(app.Colors);
-				app.CallbackEvent("OnRedrawWindows")
-				settings:Refresh();
-			end,
-		},
 	} },
 	{ title = L.WINDOW_COLORS, options = {
 		CreateWindowColorOption(L.BACKGROUND, L.BACKGROUND_TOOLTIP, "Window:BackgroundColor"),

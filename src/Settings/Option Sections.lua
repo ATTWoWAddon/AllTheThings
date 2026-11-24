@@ -11,7 +11,6 @@ local ipairs, pairs, type, math_max
 --	{ type = "slider", key = "", text = nil or "", tooltip = "", min = 0, max = 1, step = 1, format = "%.0f" }
 --	{ type = "dropdown", key = "", text = "", choices = { { value = "", text = "" }, ... }, width = 90 }
 --	{ type = "color", text = "", tooltip = "", get = function() return r, g, b, a end, OnClick = function() end }
---	{ type = "button", text = "", tooltip = "", OnClick = function() end }
 -- Options can also have:
 --	indent: number of indentation steps
 --	requires: tooltip settings which must all be enabled for the option to be usable
@@ -217,11 +216,6 @@ local Builders = {
 		content:RegisterObject(button);
 		settings.RegisterOption({ frame = button, text = option.text, tooltip = option.tooltip, IsChanged = function() return IsChanged(option); end });
 		return 22;
-	end,
-	button = function(content, option, x, y)
-		local button = content:CreateButton({ text = option.text, tooltip = option.tooltip }, { OnClick = option.OnClick });
-		button:SetPoint("TOPLEFT", content, "TOPLEFT", x, y - 4);
-		return 32;
 	end,
 	dropdown = function(content, option, x, y)
 		local label = content:CreateTextLabel(option.text);
