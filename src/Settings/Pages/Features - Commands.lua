@@ -87,7 +87,7 @@ y = y - rows * ROW_HEIGHT - 12
 -- The commands which are registered, so new ones show up by themselves. Any time before the page
 -- is shown or searched is too early, since every module adds its own.
 local OpenChat = ChatFrameUtil and ChatFrameUtil.OpenChat or ChatFrame_OpenChat
-local ROW_GAP, DESCRIPTION_X = 6, 250
+local ROW_GAP, DESCRIPTION_X = 1, 300
 local function CreateCommandRow(entry)
 	local row = CreateFrame("Button", nil, content)
 	row:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y)
