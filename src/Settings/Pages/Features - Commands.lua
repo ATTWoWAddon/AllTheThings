@@ -125,13 +125,13 @@ local CommandOptions
 local function BuildCommands()
 	if CommandOptions then return end
 	CommandOptions = {}
-	local function AddSection(title, entries)
+	local function AddSection(title, entries, keepOrder)
 		if #entries == 0 then return end
-		table.sort(entries, function(a, b) return a.text < b.text end)
+		if not keepOrder then table.sort(entries, function(a, b) return a.text < b.text end) end
 		y = y - settings.CreatePageSectionHeader(content, title, y)
 		for _,entry in ipairs(entries) do
 			CommandOptions[#CommandOptions + 1] = {
-				frame = CreateCommandRow(entry), page = child, text = entry.text, tooltip = entry.description,
+				frame = CreateCommandRow(entry), page = child, text = entry.text:gsub("\n", " "), tooltip = entry.description,
 			}
 		end
 		y = y - 8
@@ -140,18 +140,25 @@ local function BuildCommands()
 	-- The windows, with their direct commands
 	local windows, isWindowCommand = {}, {}
 	for _,definition in ipairs(app.ChatCommands.Windows) do
-		local names = {}
+		local names, directNames = {}, {}
 		for _,command in ipairs(definition.RootCommands or app.EmptyTable) do
 			command = command:lower()
 			isWindowCommand[command] = true
 			names[#names + 1] = "/att " .. command
 		end
 		for _,command in ipairs(definition.Commands or app.EmptyTable) do
-			names[#names + 1] = "/" .. command:lower()
+			directNames[#directNames + 1] = "/" .. command:lower()
 		end
-		if #names > 0 then
+		local text, directText = table.concat(names, ", "), table.concat(directNames, ", ")
+		if text ~= "" and directText ~= "" then
+			-- Long lines would be cut after the slash of a command
+			text = text .. (#text + #directText > 44 and ",\n" or ", ") .. directText
+		else
+			text = text .. directText
+		end
+		if text ~= "" then
 			windows[#windows + 1] = {
-				command = names[1], text = table.concat(names, ", "),
+				command = names[1] or directNames[1], text = text,
 				description = definition.HelpText or L.COMMANDS_TOGGLES:format(definition.Title or definition.SettingsName or definition.Suffix),
 				usage = definition.UsageText,
 			}
@@ -182,7 +189,7 @@ local function BuildCommands()
 		{ command = "/att", text = "/att, /allthethings", description = L.COMMANDS_MAIN_LIST },
 		{ command = "/att item:", text = "/att [" .. L.ITEM .. "]", description = L.COMMANDS_LINK },
 		{ command = "/rl", text = "/rl", description = RELOADUI or "Reload UI" },
-	})
+	}, true)
 	AddSection(L.WINDOWS_PAGE, windows)
 	AddSection(L.COMMANDS_OTHER, others)
 	content:SetHeight(-y)
