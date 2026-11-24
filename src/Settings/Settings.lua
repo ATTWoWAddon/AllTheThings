@@ -1184,7 +1184,8 @@ settings.SetValue = function(self, container, setting, value)
 end
 settings.SetTooltipSetting = function(self, setting, value)
 	RawSettings.Tooltips[setting] = value;
-	app.HandleEvent("Settings.OnSet","Tooltips",setting,value)
+	-- Clearing a setting (nil) makes its default apply again
+	app.HandleEvent("Settings.OnSet","Tooltips",setting,RawSettings.Tooltips[setting])
 	-- app.HandleEvent("Settings.OnSet.Tooltips."..setting,value)
 	app.WipeSearchCache();
 	self:Refresh();

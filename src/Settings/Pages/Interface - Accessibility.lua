@@ -151,4 +151,10 @@ settings.CreateOptionSections(child, {
 	preview:AddLine(Colorize(L.PREVIEW_QUEST, app.Colors.Breadcrumb), L.BREADCRUMBS, { indent = 1 });
 	preview:AddLine(Colorize(L.PREVIEW_QUEST, app.Colors.Locked), L.LOCKED_QUESTS, { indent = 1 });
 	preview:AddLine(Colorize(L.PREVIEW_REWARD:format(1), app.Colors.Mount), MOUNTS, { indent = 1 });
+	-- These only have a color while more colors are shown
+	local className, _, classID = UnitClass("player");
+	local _, factionName = UnitFactionGroup("player");
+	preview:AddLine(app.TryColorizeName({ classID = classID }, L.PREVIEW_REWARD:format(2)), className, { indent = 1 });
+	preview:AddLine(app.TryColorizeName({ r = app.FactionID }, L.PREVIEW_REWARD:format(3)), factionName, { indent = 1 });
+	preview:AddLine(app.TryColorizeName({ accountWide = true }, L.PREVIEW_REWARD:format(4)), L.SETTINGS_ACCOUNT_WIDE, { indent = 1 });
 end });
