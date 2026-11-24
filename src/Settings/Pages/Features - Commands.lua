@@ -30,7 +30,7 @@ if app.GameBuildVersion >= 70000 then
 end
 local stringsTwo = {
 	{ title = L.HEADER, command = "header" },
-	{ title = L.HEIRLOOM, command = "heirloomid" },
+	{ minBuild = 30000, title = L.HEIRLOOM, command = "heirloomid" },
 	{ minBuild = 70000, title = L.ILLUSION, command = "illusion" },
 	{ title = L.ITEM, command = "item" },
 	{ title = L.MAP, command = "map" },
@@ -63,7 +63,8 @@ end
 -- Commands which view any Thing
 y = y - settings.CreatePageSectionHeader(content, L.COMMANDS_HEADER_LABEL, y)
 AddText(L.COMMANDS_PART_1)
-AddText(L.COMMANDS_PART_2)
+-- The example was added during Warlords
+if app.GameBuildVersion >= 60000 then AddText(L.COMMANDS_PART_2) end
 local ROW_HEIGHT, COLUMN_WIDTH, COMMAND_X = 16, 312, 140
 local function AddColumn(commands, x)
 	local count = 0
@@ -85,5 +86,10 @@ y = y - rows * ROW_HEIGHT - 12
 
 -- The other commands
 y = y - settings.CreatePageSectionHeader(content, L.CHAT_COMMANDS_LABEL, y)
-AddText(L.CHAT_COMMANDS_TEXT)
+local chatCommands = L.CHAT_COMMANDS_TEXT
+if app.GameBuildVersion < 70000 then
+	-- World Quests were added during Legion
+	chatCommands = chatCommands:gsub("|R/att ?wq.-\n\n", "")
+end
+AddText(chatCommands)
 content:SetHeight(-y)
