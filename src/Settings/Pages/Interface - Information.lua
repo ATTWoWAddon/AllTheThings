@@ -2,8 +2,8 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Global locals
-local pairs, ipairs, tonumber, math_floor, math_min, select, type, tostring, tinsert, tremove, RETRIEVING_DATA
-	= pairs, ipairs, tonumber, math.floor, math.min, select, type, tostring, tinsert, tremove, RETRIEVING_DATA;
+local pairs, ipairs, tonumber, next, math_ceil, math_floor, math_min, select, type, tostring, tinsert, tremove, RETRIEVING_DATA
+	= pairs, ipairs, tonumber, next, math.ceil, math.floor, math.min, select, type, tostring, tinsert, tremove, RETRIEVING_DATA;
 local Colorize = app.Modules.Color.Colorize;
 local GetCoordString = app.Modules.Color.GetCoordString;
 local GetPatchString = app.Modules.Color.GetPatchString;
@@ -279,6 +279,7 @@ local knownBy = {};
 ---@field informationTypeID string # Registered information type identifier.
 ---@field text? string # Localized label for the information type.
 ---@field priority? number # Display sort order.
+---@field SettingsGroup? string # Key of the group on the Information settings page.
 
 --- Saved character identity with faction grouping and account-ignore state.
 ---@class ATTTooltipCharacter: ATTCharacterIdentity
@@ -1810,6 +1811,7 @@ app.Settings.CreateInformationType("UniqueInformationTypeName", {
 	ForceActive = true,	-- false default
 	ShouldDisplayInExternalTooltips = false, -- true default
 	IsStandaloneProperty = false, -- true default
+	SettingsGroup = "Details", -- group on the Information page (Locations, Requirements, Availability, Details, IDs, Debug); picked from the ID by default
 	Process = function(t, reference, tooltipInfo)
 	end,
 })
@@ -1882,14 +1884,6 @@ app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference
 	-- app.PrintDebug("PITFET.Done",#tooltipInfo)
 end
 
-local function OnClickForInformationCheckBox(self)
-	settings:SetTooltipSetting(self.informationTypeID, self:GetChecked())
-	RefreshActiveInformationTypes()
-	settings:Refresh()
-end
-local function OnRefreshForInformationCheckBox(self)
-	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
-end
 --- Applies an All, Default, or None preset to the visible Information options.
 --- Refreshes the active tooltip information and settings controls.
 ---@param value boolean|nil # true enables all; false disables all; nil clears overrides to restore ATT defaults.
@@ -1925,57 +1919,268 @@ local buttonNone = child:CreateButton(
 		SetInformationTypes(false)
 	end,
 })
-buttonNone:SetPoint("BOTTOMRIGHT", child, "BOTTOMRIGHT", -8, 10)
+-- Settings: Information Page layout
+-- One scrollable list of every Information Type with a checkbox, in collapsible groups with a search box.
+local Groups = {
+	{ key = "Locations", title = L.INFORMATION_GROUP_LOCATIONS },
+	{ key = "Requirements", title = L.INFORMATION_GROUP_REQUIREMENTS },
+	{ key = "Availability", title = L.AVAILABILITY },
+	{ key = "Details", title = L.INFORMATION_GROUP_DETAILS },
+	{ key = "IDs", title = L.INFORMATION_GROUP_IDS, collapsed = true },
+	{ key = "Other", title = OTHER or "Other" },
+	{ key = "Debug", title = "Debug" },
+};
+local KnownGroups = {};
+for _,group in ipairs(Groups) do KnownGroups[group.key] = group; end
+-- Types without an entry here (or their own SettingsGroup) go to IDs when their key ends with "ID", otherwise to Other.
+local GroupByType = {};
+for groupKey,types in pairs({
+	Locations = { "coords", "crs", "maps", "parent", "playerCoord", "providers", "qgs", "qis" },
+	Requirements = { "attunement", "b", "c", "Cost", "lvl", "petBattleLvl", "r", "requireEvent", "requireSkill", "SpecializationRequirements" },
+	Availability = { "awp", "locks", "nextEvent", "phase", "Repeatables", "rwp", "u" },
+	Details = { "__type", "Alive", "ArtifactRelicCompletion", "description", "iLvl", "Layer", "lore", "Objectives", "Owned Pets", "pb", "pvp", "SocialProgress", "Spawned", "sr" },
+	IDs = { "e", "guid", "iconPath", "itemString", "spellName" },
+	Debug = { "bonuses", "ExclusionFilters", "ExclusionFiltersRow", "hash", "LinkSourceID", "modItemID", "rawfields", "rawfields-row" },
+}) do
+	for _,key in ipairs(types) do GroupByType[key] = groupKey; end
+end
+local function GetGroupKey(informationType)
+	local key = informationType.informationTypeID;
+	local groupKey = informationType.SettingsGroup or GroupByType[key];
+	if groupKey and KnownGroups[groupKey] then return groupKey; end
+	return tostring(key):match("ID$") and "IDs" or "Other";
+end
+-- Explanations for the types whose name doesn't say what they show
+local TypeTooltips = {
+	bonusID = L.INFORMATION_BONUS_ID_TOOLTIP,
+	displayID = L.INFORMATION_DISPLAY_ID_TOOLTIP,
+	filterID = L.INFORMATION_FILTER_ID_TOOLTIP,
+	guid = L.INFORMATION_GUID_TOOLTIP,
+	headerID = L.INFORMATION_HEADER_ID_TOOLTIP,
+	itemString = L.INFORMATION_ITEM_STRING_TOOLTIP,
+	modID = L.INFORMATION_MOD_ID_TOOLTIP,
+	parent = L.INFORMATION_PARENT_TOOLTIP,
+	sourceID = L.INFORMATION_SOURCE_ID_TOOLTIP,
+	spellName = L.INFORMATION_SPELL_NAME_TOOLTIP,
+	visualID = L.INFORMATION_VISUAL_ID_TOOLTIP,
+};
+
+local ROW_HEIGHT, HEADER_HEIGHT, SECTION_GAP = 20, 24, 6;
+local COLUMNS, COLUMN_X, COLUMN_WIDTH, CONTENT_WIDTH = 3, 20, 190, 596;
+local RefreshInformationCheckBoxes;
+
+-- Search box
+local SearchText = "";
+local searchBox = child:CreateTextbox({ name = "InformationSearch", template = "SearchBoxTemplate", width = 220 });
+searchBox:SetTextInsets(16, 20, 0, 0);
+searchBox:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 10, -8);
+searchBox:HookScript("OnTextChanged", function(self)
+	local text = (self:GetText() or ""):lower():match("^%s*(.-)%s*$");
+	if text ~= SearchText then
+		SearchText = text;
+		RefreshInformationCheckBoxes();
+	end
+end);
+
+-- All, Default and None
+buttonNone:SetPoint("TOPRIGHT", child.separator, "BOTTOMRIGHT", -8, -6)
 buttonDefault:SetPoint("RIGHT", buttonNone, "LEFT", -8, 0)
 buttonAll:SetPoint("RIGHT", buttonDefault, "LEFT", -8, 0)
 
-local function RefreshInformationCheckBoxes()
-	for _,filter in pairs(InformationCheckBoxes) do
-		filter:Hide();
+-- Scrollable content (the Classic clients need their own scrollbar template, see the Windows page)
+local scrollTemplate = app.IsClassic and "UIPanelScrollFrameTemplate" or "ScrollFrameTemplate";
+local scrollName = settings:GetName() .. "-InformationScroll";
+local scroller = CreateFrame("ScrollFrame", scrollName, child, scrollTemplate);
+local content = CreateFrame("Frame", nil, scroller);
+content:SetSize(CONTENT_WIDTH, 1);
+scroller:SetScrollChild(content);
+scroller:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 0, -36);
+scroller:SetPoint("BOTTOMRIGHT", child, "BOTTOMRIGHT", -4, 6);
+local scrollBar = scroller.ScrollBar or _G[scrollName .. "ScrollBar"];
+if scrollBar then
+	scrollBar:ClearAllPoints();
+	scrollBar:SetPoint("TOPRIGHT", scroller, "TOPRIGHT", -10, -18);
+	scrollBar:SetPoint("BOTTOMRIGHT", scroller, "BOTTOMRIGHT", -10, 18);
+end
+local noMatches = content:CreateFontString(nil, "ARTWORK", "GameFontDisable");
+noMatches:SetPoint("TOPLEFT", content, "TOPLEFT", 8, -8);
+noMatches:SetText(L.INFORMATION_NO_MATCHES);
+noMatches:Hide();
+
+-- Sets the given types all at once
+local function SetInformationTypesEnabled(types, enabled)
+	for _,informationType in ipairs(types) do
+		settings:SetTooltipSetting(informationType.informationTypeID, enabled);
 	end
-	local last
-	local totalTypes = #SortedInformationTypesByName;
-	local perRow, offset, scale = 24, 250, 0.8;
-	if totalTypes > 72 then
-		scale = 0.75;
-		perRow = 26;
+	RefreshActiveInformationTypes();
+	settings:Refresh();
+	RefreshInformationCheckBoxes();
+end
+
+-- Checkboxes
+local function OnClickForInformationCheckBox(self)
+	settings:SetTooltipSetting(self.informationType.informationTypeID, self:GetChecked() and true or false);
+	RefreshActiveInformationTypes();
+	settings:Refresh();
+	RefreshInformationCheckBoxes();
+end
+local function OnTooltipForInformationCheckBox(self, tooltipInfo)
+	local informationType = self.informationType;
+	tooltipInfo[#tooltipInfo+1] = { left = informationType.text };
+	local tooltip = TypeTooltips[informationType.informationTypeID];
+	if tooltip then
+		tooltipInfo[#tooltipInfo+1] = { left = tooltip, wrap = true, r = 1, g = 1, b = 1 };
 	end
-	local split1 = perRow
-	local split2 = perRow * 2;
-	local split3 = perRow * 3;
-	for idNo,informationType in ipairs(SortedInformationTypesByName) do
-		local key = informationType.informationTypeID;
-		local filter = InformationCheckBoxes[key];
-		if not filter then
-			filter = child:CreateCheckBox(informationType.text, OnRefreshForInformationCheckBox, OnClickForInformationCheckBox)
-			filter.informationTypeID = key;
-			InformationCheckBoxes[key] = filter;
-		end
-		filter:ClearAllPoints();
-		filter:SetScale(scale);
-		filter:SetChecked(settings:GetTooltipSetting(key));
-		filter:Show();
-		-- Column 1
-		if idNo == 1 then
-			filter:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 0, 0)
-		-- Column 2
-		elseif idNo > split1 then
-			filter:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", offset, 0)
-			split1 = 999
-		-- Column 3
-		elseif idNo > split2 then
-			filter:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", offset * 2, 0)
-			split2 = 999
-		-- Column 4
-		elseif idNo > split3 then
-			filter:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", offset * 3, 0)
-			split3 = 999
-		else
-			filter:AlignBelow(last)
-		end
-		last = filter
+	if informationType.IsStandaloneProperty and not informationType.ShouldDisplayInExternalTooltips then
+		tooltipInfo[#tooltipInfo+1] = { left = L.INFORMATION_ATT_WINDOWS_ONLY, wrap = true, r = 0.6, g = 0.6, b = 0.6 };
 	end
 end
+local function GetCheckBox(informationType)
+	local key = informationType.informationTypeID;
+	local cb = InformationCheckBoxes[key];
+	if not cb then
+		cb = CreateFrame("CheckButton", nil, content, settings.UITemplates.Checkbox);
+		cb:SetSize(22, 22);
+		cb:SetScript("OnClick", OnClickForInformationCheckBox);
+		cb.OnTooltip = OnTooltipForInformationCheckBox;
+		cb:SetATTTooltip();
+		-- Cut the label off with "..." when it doesn't fit (the tooltip shows the full name)
+		local label = cb:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+		label:SetPoint("LEFT", cb, "RIGHT", 2, 0);
+		label:SetWidth(COLUMN_WIDTH - 28);
+		label:SetJustifyH("LEFT");
+		label:SetWordWrap(false);
+		cb:SetHitRectInsets(0, 28 - COLUMN_WIDTH, 0, 0);
+		cb.Label = label;
+		InformationCheckBoxes[key] = cb;
+	end
+	cb.informationType = informationType;
+	cb.Label:SetText(informationType.text);
+	return cb;
+end
+
+-- Group headers
+local function OnClickForHeader(self)
+	-- Searching shows every match, so there's nothing to collapse
+	if SearchText ~= "" then return; end
+	self.group.collapsed = not self.group.collapsed;
+	RefreshInformationCheckBoxes();
+end
+local function OnClickForHeaderCheckBox(self)
+	-- Checks everything listed in the group unless all of it already is
+	SetInformationTypesEnabled(self.types, not self.allEnabled);
+end
+local Headers = {};
+local function GetHeader(group)
+	local header = Headers[group.key];
+	if header then return header; end
+	header = CreateFrame("Button", nil, content);
+	header.group = group;
+	header:SetSize(CONTENT_WIDTH - 56, HEADER_HEIGHT - 4);
+	header:SetScript("OnClick", OnClickForHeader);
+
+	local checkbox = CreateFrame("CheckButton", nil, content, settings.UITemplates.Checkbox);
+	checkbox:SetSize(22, 22);
+	checkbox:SetHitRectInsets(0, 0, 0, 0);
+	checkbox:SetScript("OnClick", OnClickForHeaderCheckBox);
+	checkbox:SetATTTooltip(L.INFORMATION_GROUP_TOGGLE_TOOLTIP);
+	header.CheckBox = checkbox;
+
+	local icon = header:CreateTexture(nil, "ARTWORK");
+	icon:SetSize(14, 14);
+	icon:SetPoint("LEFT", header, "LEFT", 0, 0);
+	header.Icon = icon;
+
+	local title = header:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+	title:SetPoint("LEFT", icon, "RIGHT", 4, 0);
+	title:SetText(group.title);
+	header.Title = title;
+
+	local count = header:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall");
+	count:SetPoint("RIGHT", header, "RIGHT", 0, 0);
+	header.Count = count;
+
+	local line = header:CreateTexture(nil, "ARTWORK");
+	line:SetColorTexture(1, 1, 1, 0.2);
+	line:SetHeight(1);
+	line:SetPoint("BOTTOMLEFT", header, "BOTTOMLEFT", -26, -1);
+	line:SetPoint("BOTTOMRIGHT", header, "BOTTOMRIGHT", 0, -1);
+
+	Headers[group.key] = header;
+	return header;
+end
+
+RefreshInformationCheckBoxes = function()
+	if not child:IsVisible() then return; end
+	for _,cb in pairs(InformationCheckBoxes) do cb:Hide(); end
+	for _,header in pairs(Headers) do
+		header:Hide();
+		header.CheckBox:Hide();
+	end
+
+	local grouped, searching = {}, SearchText ~= "";
+	for _,informationType in ipairs(SortedInformationTypesByName) do
+		if not searching or informationType.textLower:find(SearchText, 1, true) then
+			local key = GetGroupKey(informationType);
+			local types = grouped[key];
+			if not types then
+				types = {};
+				grouped[key] = types;
+			end
+			types[#types + 1] = informationType;
+		end
+	end
+
+	local y = -4;
+	for _,group in ipairs(Groups) do
+		local types = grouped[group.key];
+		if types then
+			local expanded = searching or not group.collapsed;
+			local enabled = 0;
+			for _,informationType in ipairs(types) do
+				if settings:GetTooltipSetting(informationType.informationTypeID) then enabled = enabled + 1; end
+			end
+
+			local header = GetHeader(group);
+			header:ClearAllPoints();
+			header:SetPoint("TOPLEFT", content, "TOPLEFT", 30, y);
+			header.Icon:SetTexture(expanded and "Interface\\Buttons\\UI-MinusButton-Up" or "Interface\\Buttons\\UI-PlusButton-Up");
+			header.Count:SetText(enabled .. " / " .. #types);
+			header:Show();
+
+			local checkbox = header.CheckBox;
+			checkbox.types = types;
+			checkbox.allEnabled = enabled == #types;
+			checkbox:ClearAllPoints();
+			checkbox:SetPoint("TOPLEFT", content, "TOPLEFT", 4, y + 1);
+			checkbox:SetChecked(enabled > 0);
+			-- A gray check means only some of the group is enabled
+			local checked = checkbox:GetCheckedTexture();
+			if checked then checked:SetDesaturated(not checkbox.allEnabled); end
+			checkbox:Show();
+			y = y - HEADER_HEIGHT;
+
+			if expanded then
+				-- Fill each column from top to bottom
+				local rows = math_ceil(#types / COLUMNS);
+				for i,informationType in ipairs(types) do
+					local column = math_floor((i - 1) / rows);
+					local cb = GetCheckBox(informationType);
+					cb:ClearAllPoints();
+					cb:SetPoint("TOPLEFT", content, "TOPLEFT", COLUMN_X + column * COLUMN_WIDTH, y - ((i - 1) % rows) * ROW_HEIGHT);
+					cb:SetChecked(settings:GetTooltipSetting(informationType.informationTypeID) and true or false);
+					cb:Show();
+				end
+				y = y - rows * ROW_HEIGHT;
+			end
+			y = y - SECTION_GAP;
+		end
+	end
+	noMatches:SetShown(next(grouped) == nil);
+	content:SetHeight(-y + 4);
+end
+child.OnRefresh = RefreshInformationCheckBoxes;
+child:HookScript("OnShow", RefreshInformationCheckBoxes);
 
 local function SetupInformationTypes()
 	if not InformationTypesInitialized then return; end
