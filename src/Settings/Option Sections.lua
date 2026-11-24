@@ -402,7 +402,7 @@ local PreviewMixin = {
 		line.Left:SetText(left);
 		line.Left:Show();
 
-		self.y = self.y - math_max(14, line.Left:GetStringHeight() + (self.lineSpacing or 3));
+		self.y = self.y - math_max(self.lineSpacing and 1 or 14, line.Left:GetStringHeight() + (self.lineSpacing or 3));
 	end,
 	End = function(self)
 		for i=self.count+1,#self.Lines do
