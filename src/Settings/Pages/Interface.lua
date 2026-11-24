@@ -12,27 +12,27 @@ settings.CreateOptionSections(child, {
 	{ title = L.WINDOWS_PAGE, options = {
 		{ type = "slider", name = "ATTsliderMainListScale", key = "MainListScale", text = L.MAIN_LIST_SLIDER_LABEL, tooltip = L.MAIN_LIST_SCALE_TOOLTIP, min = 0.1, max = 4, step = 0.1, format = "%.2f" },
 		{ type = "slider", name = "ATTsliderMiniListScale", key = "MiniListScale", text = L.MINI_LIST_SLIDER_LABEL, tooltip = L.MINI_LIST_SCALE_TOOLTIP, min = 0.1, max = 4, step = 0.1, format = "%.2f" },
-		{ type = "slider", name = "ATTsliderInactiveWindowAlpha", key = "InactiveWindowAlpha", text = L.INACTIVE_WINDOW_ALPHA_LABEL, tooltip = L.INACTIVE_WINDOW_ALPHA_TOOLTIP, min = 0.1, max = 1, step = 0.05, format = "%.2f" },
+		{ type = "slider", name = "ATTsliderInactiveWindowAlpha", key = "InactiveWindowAlpha", advanced = true, text = L.INACTIVE_WINDOW_ALPHA_LABEL, tooltip = L.INACTIVE_WINDOW_ALPHA_TOOLTIP, min = 0.1, max = 1, step = 0.05, format = "%.2f" },
 	} },
 	{ title = L.INTERFACE_GROUP_ROWS, options = {
-		{ type = "check", key = "Adjust:RowIndents", text = L.ADJUST_ROW_INDENTS_CHECKBOX, tooltip = L.ADJUST_ROW_INDENTS_TOOLTIP },
+		{ type = "check", key = "Adjust:RowIndents", advanced = true, text = L.ADJUST_ROW_INDENTS_CHECKBOX, tooltip = L.ADJUST_ROW_INDENTS_TOOLTIP },
 		{ type = "check", key = "IconPortraits", text = L.SHOW_ICON_PORTRAIT_CHECKBOX, tooltip = L.SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP, OnChanged = RedrawWindows },
-		{ type = "check", key = "IconPortraitsForQuests", text = L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX, tooltip = L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP, indent = 1, requires = { "IconPortraits" }, OnChanged = RedrawWindows },
+		{ type = "check", key = "IconPortraitsForQuests", advanced = true, text = L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX, tooltip = L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP, indent = 1, requires = { "IconPortraits" }, OnChanged = RedrawWindows },
 		{ type = "check", key = "Models", text = L.SHOW_MODELS_CHECKBOX, tooltip = L.SHOW_MODELS_CHECKBOX_TOOLTIP },
 	} },
 	{ title = L.INTERFACE_GROUP_PROGRESS, options = {
-		{ type = "check", key = "Show:Remaining", text = L.SHOW_REMAINING_CHECKBOX, tooltip = L.SHOW_REMAINING_CHECKBOX_TOOLTIP },
+		{ type = "check", key = "Show:Remaining", advanced = true, text = L.SHOW_REMAINING_CHECKBOX, tooltip = L.SHOW_REMAINING_CHECKBOX_TOOLTIP },
 		{ type = "check", key = "Show:Percentage", text = L.PERCENTAGES_CHECKBOX, tooltip = L.PERCENTAGES_CHECKBOX_TOOLTIP },
-		{ type = "slider", name = "ATTsliderPercentagePrecision", key = "Precision", text = L.PRECISION_SLIDER, tooltip = L.PRECISION_SLIDER_TOOLTIP, min = 0, max = 8, step = 1, format = "%.0f", indent = 1, requires = { "Show:Percentage" } },
+		{ type = "slider", name = "ATTsliderPercentagePrecision", key = "Precision", advanced = true, text = L.PRECISION_SLIDER, tooltip = L.PRECISION_SLIDER_TOOLTIP, min = 0, max = 8, step = 1, format = "%.0f", indent = 1, requires = { "Show:Percentage" } },
 	} },
 	{ title = L.INTERFACE_GROUP_EXPANDING, options = {
 		{ type = "check", key = "Expand:MiniList", text = L.EXPAND_MINILIST_CHECKBOX, tooltip = L.EXPAND_MINILIST_CHECKBOX_TOOLTIP },
 		{ type = "check", key = "Expand:Difficulty", text = L.EXPAND_DIFFICULTY_CHECKBOX, tooltip = L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP },
-		{ type = "check", key = "WorldQuestsList:Currencies", text = L.FILL_DYNAMIC_QUESTS_CHECKBOX, tooltip = L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP },
-		{ type = "check", key = "QuestChain:Nested", text = L.NESTED_QUEST_CHAIN_CHECKBOX, tooltip = L.NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP },
-		{ type = "check", key = "Sort:Progress", text = L.SORT_BY_PROGRESS_CHECKBOX, tooltip = L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP },
+		{ type = "check", key = "WorldQuestsList:Currencies", advanced = true, text = L.FILL_DYNAMIC_QUESTS_CHECKBOX, tooltip = L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP },
+		{ type = "check", key = "QuestChain:Nested", advanced = true, text = L.NESTED_QUEST_CHAIN_CHECKBOX, tooltip = L.NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP },
+		{ type = "check", key = "Sort:Progress", advanced = true, text = L.SORT_BY_PROGRESS_CHECKBOX, tooltip = L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP },
 		-- CRIEVE NOTE: Classic Dynamic Categories don't support this just yet.
-		app.IsRetail and app.GameBuildVersion > 70000 and { type = "dropdown", key = "Dynamic:Style", text = L.DYNAMIC_CATEGORY_LABEL,
+		app.IsRetail and app.GameBuildVersion > 70000 and { type = "dropdown", key = "Dynamic:Style", advanced = true, text = L.DYNAMIC_CATEGORY_LABEL,
 			tooltip = L.DYNAMIC_CATEGORY_SIMPLE .. ": " .. L.DYNAMIC_CATEGORY_SIMPLE_TOOLTIP .. "\n\n" .. L.DYNAMIC_CATEGORY_NESTED .. ": " .. L.DYNAMIC_CATEGORY_NESTED_TOOLTIP .. L.DYNAMIC_CATEGORY_TOOLTIP_NOTE,
 			choices = {
 				{ value = 1, text = L.DYNAMIC_CATEGORY_SIMPLE },

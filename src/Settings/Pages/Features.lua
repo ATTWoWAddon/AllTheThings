@@ -64,7 +64,7 @@ settings.CreateOptionSections(child, {
 	{ title = L.MODULES_LABEL, options = {
 		{ type = "check", key = "Skip:Cutscenes", text = L.SKIP_CUTSCENES_CHECKBOX, tooltip = L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP, OnRefresh = UpdateCutsceneSkipper },
 		{ type = "check", key = "Skip:Cutscenes:SeenOnly", text = L.SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX, tooltip = L.SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX_TOOLTIP, indent = 1, requires = { "Skip:Cutscenes" } },
-		HasTimerunning and { type = "check", key = "Filter:MiniList:Timerunning", text = L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX, tooltip = L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP,
+		HasTimerunning and { type = "check", key = "Filter:MiniList:Timerunning", advanced = true, text = L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX, tooltip = L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP,
 			usable = function() return app.Modules.Events.IsTimerunningActive; end,
 			OnChanged = function()
 				AddTimerunningToCurrentInstance()

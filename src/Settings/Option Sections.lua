@@ -22,6 +22,7 @@ local ipairs, pairs, type, math_max
 --	isChanged / reset: for options which have their own defaults
 --	OnChanged: called after the option changed
 --	OnRefresh: called whenever the option refreshes (checks and dropdowns), with the option's frame
+--	advanced: only shown in the Advanced view, or while it's changed from the default
 --	wip: marks a check as being worked on
 --	search: text which the settings search uses for a slider without a text
 -- Options with a tooltip setting show a dot while they differ from the default, which resets them.
@@ -101,6 +102,42 @@ local function ResetOption(option)
 	settings:SetTooltipSetting(option.key, nil);
 	if option.OnChanged then option.OnChanged(); end
 end
+-- The names of the options by their tooltip setting, to explain what a grayed-out option needs
+local OptionNames = {};
+local function GetOptionName(key)
+	return OptionNames[key] or key;
+end
+local function AddUnusableReason(option, tooltipInfo)
+	if IsUsable(option) then return; end
+	local missing = {};
+	if option.requires then
+		for _,key in ipairs(option.requires) do
+			if not settings:GetTooltipSetting(key) then missing[#missing + 1] = GetOptionName(key); end
+		end
+	end
+	local reason;
+	if #missing > 0 then
+		reason = L.SETTINGS_NEEDS:format(app.TableConcat(missing, nil, nil, ", "));
+	elseif option.requiresAny and not (option.usable and not option.usable()) then
+		for _,key in ipairs(option.requiresAny) do missing[#missing + 1] = GetOptionName(key); end
+		reason = L.SETTINGS_NEEDS_ANY:format(app.TableConcat(missing, nil, nil, ", "));
+	elseif app.MODE_DEBUG then
+		reason = L.SETTINGS_NOT_IN_DEBUG;
+	end
+	if reason then
+		tooltipInfo[#tooltipInfo + 1] = { left = reason, wrap = true, r = 1, g = 0.4, b = 0.4 };
+	end
+end
+-- Gives a button the option's tooltip, which also explains why it's grayed out
+local function SetOptionTooltip(button, option)
+	button:SetMotionScriptsWhileDisabled(true);
+	button.OnTooltip = function(self, tooltipInfo)
+		if not option.tooltip then tooltipInfo[#tooltipInfo + 1] = { left = option.text }; end
+		AddUnusableReason(option, tooltipInfo);
+	end
+	button:SetATTTooltip(option.tooltip);
+end
+
 -- Shows a dot in front of an option which differs from its default, which resets it when clicked
 local function CreateChangedMarker(content, option, x, y, height)
 	local marker = CreateFrame("Button", nil, content);
@@ -115,13 +152,13 @@ local function CreateChangedMarker(content, option, x, y, height)
 	marker:Hide();
 	content:RegisterObject(marker);
 end
-local function CreateSectionReset(content, section, y)
+local function CreateSectionReset(content, section)
 	local button = CreateFrame("Button", nil, content);
 	local text = button:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
 	text:SetText(RESET or "Reset");
 	text:SetPoint("RIGHT", button, "RIGHT", 0, 0);
 	button:SetSize(text:GetStringWidth() + 4, 16);
-	button:SetPoint("TOPRIGHT", content, "TOPLEFT", content.SectionWidth, y - 1);
+	button:SetPoint("TOPRIGHT", content, "TOPLEFT", content.SectionWidth, -1);
 	button:SetATTTooltip(L.SETTINGS_RESET_SECTION);
 	button:SetScript("OnClick", function()
 		for _,option in ipairs(section.options) do
@@ -152,6 +189,8 @@ settings.StyleCheckBox = function(cb, maxWidth)
 	text:SetJustifyH("LEFT");
 	if text:GetUnboundedStringWidth() > maxWidth then text:SetWidth(maxWidth); end
 	cb:SetHitRectInsets(0, -text:GetWidth(), 0, 0);
+	-- Grayed-out options still explain what they do
+	cb:SetMotionScriptsWhileDisabled(true);
 end
 
 -- Option builders. Each one returns the height it used.
@@ -170,10 +209,11 @@ local Builders = {
 		end);
 		settings.StyleCheckBox(cb, content.SectionWidth - x - 26);
 		cb:SetPoint("TOPLEFT", content, "TOPLEFT", x, y);
-		if option.tooltip then cb:SetATTTooltip(option.tooltip); end
+		SetOptionTooltip(cb, option);
 		if option.wip then cb:MarkAsWIP(); end
 		cb.SettingsOption.tooltip = option.tooltip;
 		cb.SettingsOption.IsChanged = function() return IsChanged(option); end
+		cb.SettingsOption.advanced = option.advanced;
 		return CHECK_HEIGHT;
 	end,
 	slider = function(content, option, x, y)
@@ -187,6 +227,7 @@ local Builders = {
 			OnRefresh = function(self) SetUsable(self, IsUsable(option)); end,
 			OnValueChanged = option.OnChanged,
 		});
+		slider.SettingsOption.advanced = option.advanced;
 		local labelHeight = option.text and SLIDER_LABEL_HEIGHT or 0;
 		slider:SetSize(200, 20);
 		slider:SetPoint("TOPLEFT", content, "TOPLEFT", x + 4, y - labelHeight);
@@ -207,14 +248,14 @@ local Builders = {
 		text:SetText(option.text);
 		button:SetHitRectInsets(0, -text:GetStringWidth() - 6, 0, 0);
 		button:SetScript("OnClick", option.OnClick);
-		if option.tooltip then button:SetATTTooltip(option.tooltip); end
+		SetOptionTooltip(button, option);
 		button.OnRefresh = function(self)
 			local r, g, b, a = option.get();
 			swatch:SetColorTexture(r or 0, g or 0, b or 0, a or 1);
 			SetUsable(self, IsUsable(option));
 		end
 		content:RegisterObject(button);
-		settings.RegisterOption({ frame = button, text = option.text, tooltip = option.tooltip, IsChanged = function() return IsChanged(option); end });
+		settings.RegisterOption({ frame = button, text = option.text, advanced = option.advanced, tooltip = option.tooltip, IsChanged = function() return IsChanged(option); end });
 		return 22;
 	end,
 	dropdown = function(content, option, x, y)
@@ -269,7 +310,7 @@ local Builders = {
 			dropdown:SetATTTooltip(option.tooltip);
 		end
 		content:RegisterObject(dropdown);
-		settings.RegisterOption({ frame = dropdown, text = option.text, tooltip = option.tooltip, IsChanged = function() return IsChanged(option); end });
+		settings.RegisterOption({ frame = dropdown, text = option.text, advanced = option.advanced, tooltip = option.tooltip, IsChanged = function() return IsChanged(option); end });
 		return DROPDOWN_HEIGHT;
 	end,
 };
@@ -431,24 +472,73 @@ end
 ---@param aside? table # Shown beside the sections: { preview = title, Update = function(preview) } to add lines with preview:AddLine(left, right, options), or { notes = { { title = "", text = "" }, ... } }.
 settings.CreateOptionSections = function(page, sections, aside)
 	local content = CreateColumn(page, 0, aside and COLUMN_WIDTH or FULL_WIDTH + 16);
-	local y = -4;
+	local contentName, holderCount = content:GetName(), 0;
+	-- Everything is in a frame of its own, so the layout can move and hide it
+	local function CreateHolder()
+		holderCount = holderCount + 1;
+		local holder = CreateFrame("Frame", contentName .. "-" .. holderCount, content);
+		holder:SetWidth(content.SectionWidth);
+		holder.SectionWidth = content.SectionWidth;
+		settings.MakePanel(holder, content);
+		return holder;
+	end
+	local headers, holders = {}, {};
 	for _,section in ipairs(sections) do
 		if section then
-			CreateSectionReset(content, section, y);
-			y = y - CreateSectionHeader(content, section.title, y);
+			local header = CreateHolder();
+			header:SetHeight(CreateSectionHeader(header, section.title, 0));
+			CreateSectionReset(header, section);
+			headers[section] = header;
 			for _,option in ipairs(section.options) do
 				if option then
+					local key = option.key;
+					if key and not OptionNames[key] then OptionNames[key] = option.text or option.search; end
+					local holder = CreateHolder();
 					local x = 8 + (option.indent or 0) * INDENT;
-					local height = Builders[option.type](content, option, x, y);
-					if option.reset or option.setting or (option.key and not option.get) then CreateChangedMarker(content, option, x, y, option.type == "check" and 22 or height); end
-					y = y - height;
+					local height = Builders[option.type](holder, option, x, 0);
+					if option.reset or option.setting or (key and not option.get) then CreateChangedMarker(holder, option, x, 0, option.type == "check" and 22 or height); end
+					holder:SetHeight(height);
+					holders[option] = holder;
 				end
 			end
-			y = y - SECTION_GAP;
 		end
 	end
-	-- The last section needs no gap below it
-	content:SetHeight(-y - SECTION_GAP);
+	local function Layout()
+		local advanced = settings:GetTooltipSetting("Settings:Advanced");
+		local y = -4;
+		for _,section in ipairs(sections) do
+			if section then
+				local header, headerY = headers[section], y;
+				local any = false;
+				y = y - header:GetHeight();
+				for _,option in ipairs(section.options) do
+					if option then
+						local holder = holders[option];
+						local shown = advanced or not option.advanced or IsChanged(option);
+						holder:SetShown(shown and true or false);
+						if shown then
+							any = true;
+							holder:ClearAllPoints();
+							holder:SetPoint("TOPLEFT", content, "TOPLEFT", 0, y);
+							y = y - holder:GetHeight();
+						end
+					end
+				end
+				header:SetShown(any);
+				if any then
+					header:ClearAllPoints();
+					header:SetPoint("TOPLEFT", content, "TOPLEFT", 0, headerY);
+					y = y - SECTION_GAP;
+				else
+					y = headerY;
+				end
+			end
+		end
+		-- The last section needs no gap below it
+		content:SetHeight(-y - SECTION_GAP);
+	end
+	content.OnRefresh = Layout;
+	page:HookScript("OnShow", Layout);
 	if aside then
 		if aside.preview then CreatePreview(page, aside.preview, aside.Update); end
 		if aside.notes then CreateNotes(page, aside.notes); end

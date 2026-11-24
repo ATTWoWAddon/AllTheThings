@@ -357,6 +357,7 @@ local FilterSettingsBase = {
 };
 local TooltipSettingsBase = {
 	__index = {
+		["Settings:Advanced"] = true,
 		["Adjust:RowIndents"] = true,
 		["Auto:AuctionList"] = true,
 		["Auto:ProfessionList"] = true,
@@ -1566,9 +1567,9 @@ ATTSettingsPanelMixin = {
 Mixin(ATTSettingsPanelMixin, ATTSettingsObjectMixin);
 Mixin(settings, ATTSettingsPanelMixin);
 -- Lets a frame which isn't a page have settings objects
-settings.MakePanel = function(frame)
+settings.MakePanel = function(frame, parent)
 	Mixin(frame, ATTSettingsPanelMixin);
-	settings:RegisterObject(frame);
+	(parent or settings):RegisterObject(frame);
 end
 
 -- Some common helpers for instantiation of Settings objects

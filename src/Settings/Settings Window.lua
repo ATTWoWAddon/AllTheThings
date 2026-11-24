@@ -22,6 +22,13 @@ local Sections = {
 	{ title = L.SETTINGS_SECTION_HELP, pages = { L.COMMANDS_PAGE, appName } },
 	{ title = OTHER or "Other", pages = {} },
 };
+-- Pages which the sidebar only lists in the Advanced view
+local AdvancedPages = {
+	[L.FILLERS_LABEL] = true,
+	[L.INFORMATION_PAGE] = true,
+	[L.REPORTING_LABEL] = true,
+};
+local function ShowsAdvanced() return settings:GetTooltipSetting("Settings:Advanced"); end
 local SectionByPage = {};
 for _,section in ipairs(Sections) do
 	for _,text in ipairs(section.pages) do SectionByPage[text] = section; end
@@ -45,6 +52,13 @@ window:SetFrameStrata("HIGH");
 window:SetToplevel(true);
 window:EnableMouse(true);
 window:SetMovable(true);
+window:SetResizable(true);	-- only its height
+if window.SetResizeBounds then
+	window:SetResizeBounds(window:GetWidth(), window:GetHeight(), window:GetWidth(), 1000);
+else
+	window:SetMinResize(window:GetWidth(), window:GetHeight());
+	window:SetMaxResize(window:GetWidth(), 1000);
+end
 window:SetClampedToScreen(true);
 window:RegisterForDrag("LeftButton");
 window:SetScript("OnDragStart", window.StartMoving);
@@ -98,9 +112,20 @@ checkboxSkipAutoRefresh:SetHitRectInsets(0, -checkboxSkipAutoRefresh.Text:GetUnb
 
 -- Pages are parented to this frame
 local host = CreateFrame("Frame", nil, window);
-host:SetSize(PAGE_WIDTH, PAGE_HEIGHT);
+host:SetWidth(PAGE_WIDTH);
 host:SetPoint("TOPRIGHT", window, "TOPRIGHT", -PADDING, -TITLE_HEIGHT - PADDING);
+host:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -PADDING, PADDING);
 settings.PageHost = host;
+
+local grip = CreateFrame("Button", nil, window);
+grip:SetSize(16, 16);
+grip:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -2, 2);
+grip:SetFrameLevel(window:GetFrameLevel() + 20);
+grip:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up");
+grip:SetHighlightTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Highlight");
+grip:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Down");
+grip:SetScript("OnMouseDown", function() window:StartSizing("BOTTOM"); end);
+grip:SetScript("OnMouseUp", function() window:StopMovingOrSizing(); end);
 
 local sidebar = CreateFrame("Frame", nil, window);
 sidebar:SetPoint("TOPLEFT", window, "TOPLEFT", PADDING, -TITLE_HEIGHT - PADDING);
@@ -200,6 +225,7 @@ end);
 local function HighlightOption(frame)
 	-- Scroll to the option first
 	local parent = frame:GetParent();
+	while parent and not parent.ScrollContainer do parent = parent:GetParent(); end
 	local scroller = parent and parent.ScrollContainer;
 	if scroller and frame:GetTop() and parent:GetTop() then
 		local offset = parent:GetTop() - frame:GetTop() - 60;
@@ -232,6 +258,21 @@ local resultsContent = CreateFrame("Frame", nil, resultsScroller);
 resultsContent:SetSize(PAGE_WIDTH - 40, 1);
 resultsScroller:SetScrollChild(resultsContent);
 
+local function OpenResult(result)
+	ShowPage(result.page);
+	local option = result.option;
+	if not option then return; end
+	-- The Basic view may hide it
+	if option.advanced and not ShowsAdvanced() then settings:SetTooltipSetting("Settings:Advanced", true); end
+	if option.Open then option.Open(); end
+	-- The page has to be laid out before it can scroll to the option
+	local frame = option.frame;
+	if frame then
+		C_Timer.After(0.1, function()
+			if frame:IsVisible() then HighlightOption(frame); end
+		end);
+	end
+end
 local ResultRows = {};
 local function GetResultRow(index)
 	local row = ResultRows[index];
@@ -247,19 +288,13 @@ local function GetResultRow(index)
 	row.Page = row:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall");
 	row.Page:SetPoint("RIGHT", row, "RIGHT", -8, 0);
 	row.Text:SetPoint("RIGHT", row.Page, "LEFT", -8, 0);
+	row:SetATTTooltip(L.SETTINGS_RESULT_TOOLTIP);
 	row:SetScript("OnClick", function(self)
-		local result = self.result;
-		ShowPage(result.page);
-		local option = result.option;
-		if option then
-			if option.Open then option.Open(); end
-			-- The page has to be laid out before it can scroll to the option
-			local frame = option.frame;
-			if frame then
-				C_Timer.After(0.05, function()
-					if frame:IsVisible() then HighlightOption(frame); end
-				end);
-			end
+		if IsShiftKeyDown() then
+			-- A command which other players can use to open the same option
+			app:ShowPopupDialogWithEditBox(L.CLIPBOARDCOPYPASTE, "/att settings " .. self.result.text, nil, 10);
+		else
+			OpenResult(self.result);
 		end
 	end);
 	ResultRows[index] = row;
@@ -290,6 +325,7 @@ searchBox:SetHeight(20);
 searchBox:SetPoint("TOPLEFT", sidebar, "TOPLEFT", 6, 0);
 searchBox:SetPoint("TOPRIGHT", sidebar, "TOPRIGHT", -4, 0);
 RefreshResults = function()
+	if not window:IsShown() then return; end	-- The settings may not be loaded yet
 	local query = (searchBox:GetText() or ""):lower():match("^%s*(.-)%s*$");
 	if query ~= "" then
 		ShowResults(SEARCH or "Search", Search(query));
@@ -341,13 +377,30 @@ changedRow:SetScript("OnClick", function()
 	RefreshResults();
 end);
 
+-- Basic and Advanced view
+settings.MakePanel(sidebar);
+sidebar.GetName = function() return "ATTSettingsWindow-Sidebar"; end
+local checkboxAdvanced = sidebar:CreateCheckBox(L.SETTINGS_ADVANCED, function(self)
+	self:SetChecked(ShowsAdvanced() and true or false);
+	if window:IsShown() then RefreshSidebar(); end
+end, function(self)
+	settings:SetTooltipSetting("Settings:Advanced", self:GetChecked() and true or false);
+end);
+checkboxAdvanced:SetATTTooltip(L.SETTINGS_ADVANCED_TOOLTIP);
+checkboxAdvanced:SetScale(1);
+checkboxAdvanced:SetSize(20, 20);
+checkboxAdvanced.Text:SetScale(1);
+checkboxAdvanced.Text:SetFontObject(GameFontHighlightSmall);
+checkboxAdvanced:SetPoint("BOTTOMLEFT", changedRow, "TOPLEFT", 4, 2);
+
 RefreshSidebar = function()
+	local advanced = ShowsAdvanced();
 	local y, rowIndex, searching = -28, 0, resultsPage:IsShown();
 	for sectionIndex,section in ipairs(Sections) do
 		local pages = {};
 		for _,text in ipairs(section.pages) do
 			local page = PagesByText[text];
-			if page then pages[#pages + 1] = page; end
+			if page and (advanced or not AdvancedPages[text] or page == CurrentPage) then pages[#pages + 1] = page; end
 		end
 		-- Followed by the pages below them, e.g. the Phases of each expansion
 		for _,page in ipairs(Pages) do
@@ -424,7 +477,19 @@ settings.Open = function(self, text)
 			return;
 		end
 	end
-	searchBox:SetText(text);
+	-- A single option with that name opens directly
+	local exact, count = nil, 0;
+	for _,result in ipairs(Search(query)) do
+		if not result.isPage and result.text:lower() == query then
+			exact = result;
+			count = count + 1;
+		end
+	end
+	if count == 1 then
+		OpenResult(exact);
+	else
+		searchBox:SetText(text);
+	end
 end
 
 -- /att settings [page or search]
