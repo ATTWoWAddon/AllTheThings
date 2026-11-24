@@ -106,8 +106,22 @@ local checkboxAutomaticallySkipCutscenes = child:CreateCheckBox(L.SKIP_CUTSCENES
 function(self)
 	local checked = settings:GetTooltipSetting("Skip:Cutscenes")
 	self:SetChecked(checked)
-	self:SetScript("OnEvent", function(self, ...)
-		-- print(self, "OnEvent", ...)
+	self:SetScript("OnEvent", function(self, event, movieID)
+		-- print(self, "OnEvent", event, movieID)
+		if settings:GetTooltipSetting("Skip:Cutscenes:SeenOnly") then
+			-- Only movies report an ID, so in-engine cinematics always play in this mode.
+			if event ~= "PLAY_MOVIE" or not movieID then return end
+			local seen = ATTAccountWideData.SeenMovies
+			if not seen then
+				seen = {}
+				ATTAccountWideData.SeenMovies = seen
+			end
+			-- First viewing on this account: remember it and let it play.
+			if not seen[movieID] then
+				seen[movieID] = true
+				return
+			end
+		end
 		MovieFrame:Hide()
 		CinematicFrame_CancelCinematic()
 		app.print(RENOWN_LEVEL_UP_SKIP_BUTTON,CINEMATICS)
@@ -119,6 +133,24 @@ function(self)
 end)
 checkboxAutomaticallySkipCutscenes:SetATTTooltip(L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP)
 checkboxAutomaticallySkipCutscenes:SetPoint("TOPLEFT", headerModules, "BOTTOMLEFT", -2, 0)
+
+-- Note: rawget avoids the Localization table's MISSING LOCALE fallback until these strings are exported
+local checkboxSkipSeenCutscenesOnly = child:CreateCheckBox(rawget(L, "SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX") or "Only Skip Movies You've Seen",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Skip:Cutscenes:SeenOnly"))
+	if not settings:GetTooltipSetting("Skip:Cutscenes") then
+		self:Disable()
+		self:SetAlpha(0.4)
+	else
+		self:Enable()
+		self:SetAlpha(1)
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Skip:Cutscenes:SeenOnly", self:GetChecked())
+end)
+checkboxSkipSeenCutscenesOnly:SetATTTooltip(rawget(L, "SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX_TOOLTIP") or "Enable this option to let each movie play the first time this account sees it, and only skip it after that.\n\nIn-engine cinematics don't have an ID the game shares with addons, so they always play while this is enabled.")
+checkboxSkipSeenCutscenesOnly:AlignBelow(checkboxAutomaticallySkipCutscenes, 1)
 
 local checkboxFilterMiniListTimerunning;
 if app.IsRetail and app.GameBuildVersion > 70000 then
@@ -145,7 +177,7 @@ if app.IsRetail and app.GameBuildVersion > 70000 then
 		app.HandleEvent("OnRecalculate_NewSettings")
 	end)
 	checkboxFilterMiniListTimerunning:SetATTTooltip(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP)
-	checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallySkipCutscenes, 1)
+	checkboxFilterMiniListTimerunning:AlignBelow(checkboxSkipSeenCutscenesOnly)
 end
 
 if app.IsClassic then
@@ -160,7 +192,7 @@ if app.IsClassic then
 	if checkboxFilterMiniListTimerunning then
 		checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxFilterMiniListTimerunning, -1)
 	else
-		checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxAutomaticallySkipCutscenes)
+		checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxSkipSeenCutscenesOnly, -1)
 	end
 
 	local OpenAuctionListAutomatically = child:CreateCheckBox(L.AUTO_AUCTION_LIST_CHECKBOX,
@@ -193,6 +225,6 @@ else
 	if checkboxFilterMiniListTimerunning then
 		checkboxShowAuctionTab:AlignBelow(checkboxFilterMiniListTimerunning, -1)
 	else
-		checkboxShowAuctionTab:AlignBelow(checkboxAutomaticallySkipCutscenes)
+		checkboxShowAuctionTab:AlignBelow(checkboxSkipSeenCutscenesOnly, -1)
 	end
 end

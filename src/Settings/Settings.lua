@@ -406,6 +406,7 @@ local TooltipSettingsBase = {
 		["Show:TooltipHelp"] = true,
 		["UseMoreColors"] = true,
 		["Skip:Cutscenes"] = false,
+		["Skip:Cutscenes:SeenOnly"] = false,
 		["SourceLocations"] = true,
 		["SourceLocations:Completed"] = true,
 		["SourceLocations:Creatures"] = true,
