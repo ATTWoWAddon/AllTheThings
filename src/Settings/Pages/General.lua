@@ -100,14 +100,14 @@ end
 -- Creates a Checkbox to use for toggling 'Account-Wide' tracking of a specified Thing
 local function CreateAccountWideCheckbox(thing, x, y)
 	local key = thing[2];
-	local tooltip = L["ACCOUNT_WIDE_"..thing[1].."_TOOLTIP"]
 	local trackingOption = "Thing:"..key
 	local accountWideOption = "AccountWide:"..key
 	local cb;
 	if settings.ForceAccountWide[key] then
-		-- It can't be turned off
+		-- It can't be turned off (and has no tooltip string)
 		cb = content:CreateCheckBox("")
 	else
+		local tooltip = L["ACCOUNT_WIDE_"..thing[1].."_TOOLTIP"]
 		cb = content:CreateCheckBox("",
 			function(self)
 				self:SetChecked(app.MODE_DEBUG_OR_ACCOUNT or settings:Get(accountWideOption))
