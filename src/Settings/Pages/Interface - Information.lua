@@ -1982,6 +1982,20 @@ searchBox:HookScript("OnTextChanged", function(self)
 	end
 end);
 
+-- Let the settings search find the Information Types
+settings.AddOptionProvider(function(add)
+	for _,informationType in ipairs(SortedInformationTypesByName) do
+		local key = informationType.informationTypeID;
+		add({
+			page = child,
+			text = informationType.text,
+			tooltip = TypeTooltips[key],
+			IsChanged = function() return settings.IsTooltipSettingChanged(key); end,
+			Open = function() searchBox:SetText(informationType.text); end,
+		});
+	end
+end);
+
 -- All, Default and None
 buttonNone:SetPoint("TOPRIGHT", child.separator, "BOTTOMRIGHT", -8, -6)
 buttonDefault:SetPoint("RIGHT", buttonNone, "LEFT", -8, 0)

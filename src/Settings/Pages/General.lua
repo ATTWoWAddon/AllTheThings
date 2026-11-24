@@ -42,6 +42,8 @@ child.CreateTrackingCheckbox = function(frame, localeKey, thing, officiallySuppo
 			settings:UpdateMode(1)
 		end
 	)
+	cb.SettingsOption.tooltip = tooltip
+	cb.SettingsOption.IsChanged = function() return settings.IsSettingChanged(trackingOption) end
 	cb:SetATTTooltip(tooltip)
 	return cb
 end

@@ -43,13 +43,13 @@ local sections = {
 	} },
 	{ title = L.TOOLTIPS_GROUP_CONTENTS, options = {
 		{ type = "check", key = "SummarizeThings", text = L.SUMMARIZE_CHECKBOX, tooltip = L.SUMMARIZE_CHECKBOX_TOOLTIP, requires = ENABLED },
-		{ type = "slider", name = "ATTSummarizeThingsSlider", key = "ContainsCount", tooltip = L.CONTAINS_SLIDER_TOOLTIP, min = 1, max = 40, step = 1, format = "%.0f", indent = 1, requires = SUMMARIZE },
+		{ type = "slider", name = "ATTSummarizeThingsSlider", key = "ContainsCount", search = L.SUMMARIZE_CHECKBOX, tooltip = L.CONTAINS_SLIDER_TOOLTIP, min = 1, max = 40, step = 1, format = "%.0f", indent = 1, requires = SUMMARIZE },
 		-- CRIEVE NOTE: This feature is kinda neat, but really only makes sense for Classic.
 		app.IsClassic and { type = "check", key = "Show:CraftedItems", text = L.SHOW_CRAFTED_ITEMS_CHECKBOX, tooltip = L.SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP, indent = 1, requires = SUMMARIZE },
 		app.IsClassic and { type = "check", key = "Show:Recipes", text = L.SHOW_RECIPES_CHECKBOX, tooltip = L.SHOW_RECIPES_CHECKBOX_TOOLTIP, indent = 1, requires = SUMMARIZE },
 		app.IsClassic and { type = "check", key = "Show:OnlyShowNonTrivialRecipes", text = L.SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX, tooltip = L.SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX_TOOLTIP, indent = 2, requires = { "Enabled", "SummarizeThings", "Show:Recipes" } },
 		{ type = "check", key = "SourceLocations", text = L.SOURCE_LOCATIONS_CHECKBOX, tooltip = L.SOURCE_LOCATIONS_CHECKBOX_TOOLTIP, requires = ENABLED },
-		{ type = "slider", name = "ATTsliderSourceLocations", key = "Locations", tooltip = L.LOCATIONS_SLIDER_TOOLTIP, min = 1, max = 40, step = 1, format = "%.0f", indent = 1, requires = SOURCES },
+		{ type = "slider", name = "ATTsliderSourceLocations", key = "Locations", search = L.SOURCE_LOCATIONS_CHECKBOX, tooltip = L.LOCATIONS_SLIDER_TOOLTIP, min = 1, max = 40, step = 1, format = "%.0f", indent = 1, requires = SOURCES },
 		{ type = "check", key = "SourceLocations:Completed", text = L.COMPLETED_SOURCES_CHECKBOX, tooltip = L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP, indent = 1, requires = SOURCES },
 		{ type = "check", key = "SourceLocations:Creatures", text = L.FOR_CREATURES_CHECKBOX, tooltip = L.FOR_CREATURES_CHECKBOX_TOOLTIP, indent = 1, requires = SOURCES },
 		{ type = "check", key = "SourceLocations:Things", text = L.FOR_THINGS_CHECKBOX, tooltip = L.FOR_THINGS_CHECKBOX_TOOLTIP, indent = 1, requires = SOURCES },

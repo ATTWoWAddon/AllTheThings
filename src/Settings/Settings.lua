@@ -1135,6 +1135,13 @@ end
 settings.GetTooltipSetting = function(self, setting)
 	return RawSettings.Tooltips[setting];
 end
+-- Whether a setting differs from ATT's default. Unset and disabled are the same.
+settings.IsTooltipSettingChanged = function(setting)
+	return (RawSettings.Tooltips[setting] or false) ~= (TooltipSettingsBase.__index[setting] or false);
+end
+settings.IsSettingChanged = function(setting)
+	return (RawSettings.General[setting] or false) ~= (GeneralSettingsBase.__index[setting] or false);
+end
 local ModifierFuncs = {
 	["Shift"] = IsShiftKeyDown,
 	["Ctrl"] = IsControlKeyDown,
@@ -1349,6 +1356,9 @@ ATTSettingsPanelMixin = {
 		cb.Text:SetWordWrap(false)
 		cb:SetHitRectInsets(0,0 - cb.Text:GetUnboundedStringWidth(),0,0);
 		cb:SetScale(0.8);
+		-- Pages can add more to this, e.g. IsChanged
+		cb.SettingsOption = { frame = cb, text = text };
+		settings.RegisterOption(cb.SettingsOption);
 		return cb
 	end,
 	CreateTextbox = function(self, opts, functions)
@@ -1538,6 +1548,13 @@ ATTSettingsPanelMixin = {
 		slider.__OnValueChanged = setup.OnValueChanged
 		settings.Helpers.Slider.SetScript_OnValueChanged(slider)
 		slider.OnRefresh = settings.Helpers.Slider.OnRefresh
+		slider.SettingsOption = {
+			frame = slider,
+			text = setup.TEXT or setup.SEARCH,
+			tooltip = setup.TOOLTIP,
+			IsChanged = function() return settings.IsTooltipSettingChanged(setup.SETTING) end,
+		};
+		settings.RegisterOption(slider.SettingsOption);
 		return slider
 	end,
 };
@@ -1575,41 +1592,17 @@ settings.Helpers = {
 	},
 }
 
-local OptionsPages, AddOnCategoryID, RootCategoryID = {}, appName, nil;
-local openToCategory = Settings and Settings.OpenToCategory or InterfaceOptionsFrame_OpenToCategory;
-settings.Open = function(self)
-	if InCombatLockdown() then return end
-	openToCategory(RootCategoryID or AddOnCategoryID)
-end
 settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory)
-	--- Settings page frame registered as an options category or subcategory.
+	--- Settings page frame shown in the ATT settings window.
 	---@class ATTSubCategoryFrame: Frame
 	---@field CreateCheckBox fun(self: any, locale: string, OnRefresh: function, OnClick: function) # Creates a labeled settings checkbox with refresh and click handlers.
 	---@field CreateHeaderLabel fun(self: any, locale: string) # Creates and registers a left-aligned settings section heading.
-	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, InterfaceOptionsFramePanelContainer);
+	local subcategory = CreateFrame("Frame", settings:GetName() .. "-" .. text, settings.PageHost);
 	Mixin(subcategory, ATTSettingsPanelMixin);
 	self:RegisterObject(subcategory);
 	subcategory:SetAllPoints();
 
-	if Settings and Settings.RegisterCanvasLayoutCategory then
-		local category;
-		if text == appName then
-			category = Settings.RegisterCanvasLayoutCategory(subcategory, text)
-			Settings.RegisterAddOnCategory(category);
-			AddOnCategoryID = category.ID;
-		else
-			parentCategory = OptionsPages[parentCategory or appName];
-			category = Settings.RegisterCanvasLayoutSubcategory(parentCategory.category, subcategory, text)
-			if isRootCategory then RootCategoryID = category.ID; end
-		end
-		subcategory:Hide();
-		subcategory.category = category;
-	else
-		subcategory.name = text;
-		if text ~= appName then subcategory.parent = parentCategory or appName; end
-		InterfaceOptions_AddCategory(subcategory);
-	end
-	OptionsPages[text] = subcategory;
+	settings.RegisterPage(subcategory, text, parentCategory, isRootCategory);
 
 	-- Common Header
 	local logo = subcategory:CreateTexture(nil, "ARTWORK");

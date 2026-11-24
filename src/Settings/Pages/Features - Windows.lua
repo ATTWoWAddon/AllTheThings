@@ -38,7 +38,6 @@ local FLAT_X, DYNAMIC_X = 492, 556;	-- column centers
 
 -- Window Button Helpers
 local function OnClickForWindowButton(self)
-	HideUIPanel(SettingsPanel);
 	app:GetWindow(self.Suffix):Show();
 end
 local function UpdateButtonText(self, window)
@@ -370,3 +369,12 @@ child.OnRefresh = function(self)
 	if self:IsVisible() then RefreshWindowManager(); end
 end
 child:HookScript("OnShow", RefreshWindowManager);
+
+-- Let the settings search find the windows
+settings.AddOptionProvider(function(add)
+	for suffix,definition in pairs(app.WindowDefinitions) do
+		if not definition.HideFromSettings then
+			add({ page = child, text = definition.Title or definition.SettingsName or suffix });
+		end
+	end
+end);

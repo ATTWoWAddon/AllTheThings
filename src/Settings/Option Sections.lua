@@ -1,5 +1,5 @@
 local _, app = ...;
-local settings = app.Settings;
+local L, settings = app.L, app.Settings;
 
 -- Global locals
 local ipairs, pairs, type, math_max
@@ -19,6 +19,8 @@ local ipairs, pairs, type, math_max
 --	OnChanged: called after the option changed
 --	OnRefresh: called whenever the option refreshes (checks and dropdowns), with the option's frame
 --	wip: marks a check as being worked on
+--	search: text which the settings search uses for a slider without a text
+-- Options with a tooltip setting show a dot while they differ from the default, which resets them.
 -- The choices of a dropdown can also be a function which returns them.
 -- A false option or section is skipped, so they can be written as 'condition and { ... } or false'.
 
@@ -66,6 +68,54 @@ local function SetOption(option, value)
 	if option.OnChanged then option.OnChanged(); end
 end
 
+local function IsChanged(option)
+	return option.key and not option.get and settings.IsTooltipSettingChanged(option.key);
+end
+local function ResetOption(option)
+	-- nil removes the override, so the profile uses ATT's default again
+	settings:SetTooltipSetting(option.key, nil);
+	if option.OnChanged then option.OnChanged(); end
+end
+-- Shows a dot in front of an option which differs from its default, which resets it when clicked
+local function CreateChangedMarker(content, option, x, y, height)
+	local marker = CreateFrame("Button", nil, content);
+	marker:SetSize(12, 12);
+	marker:SetPoint("TOPRIGHT", content, "TOPLEFT", x + 2, y - (height - 12) / 2);
+	local texture = marker:CreateTexture(nil, "ARTWORK");
+	texture:SetAllPoints();
+	texture:SetTexture("Interface\\COMMON\\Indicator-Yellow");
+	marker:SetScript("OnClick", function() ResetOption(option); end);
+	marker:SetATTTooltip(L.SETTINGS_RESET_OPTION);
+	marker.OnRefresh = function(self) self:SetShown(IsChanged(option) and true or false); end
+	marker:Hide();
+	content:RegisterObject(marker);
+end
+local function CreateSectionReset(content, section, y)
+	local button = CreateFrame("Button", nil, content);
+	local text = button:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+	text:SetText(RESET or "Reset");
+	text:SetPoint("RIGHT", button, "RIGHT", 0, 0);
+	button:SetSize(text:GetStringWidth() + 4, 16);
+	button:SetPoint("TOPRIGHT", content, "TOPLEFT", content.SectionWidth, y - 1);
+	button:SetATTTooltip(L.SETTINGS_RESET_SECTION);
+	button:SetScript("OnClick", function()
+		for _,option in ipairs(section.options) do
+			if option and IsChanged(option) then ResetOption(option); end
+		end
+	end);
+	button.OnRefresh = function(self)
+		for _,option in ipairs(section.options) do
+			if option and IsChanged(option) then
+				self:Show();
+				return;
+			end
+		end
+		self:Hide();
+	end
+	button:Hide();
+	content:RegisterObject(button);
+end
+
 -- Option builders. Each one returns the height it used.
 local Builders = {
 	check = function(content, option, x, y)
@@ -93,11 +143,14 @@ local Builders = {
 		cb:SetHitRectInsets(0, -text:GetWidth(), 0, 0);
 		if option.tooltip then cb:SetATTTooltip(option.tooltip); end
 		if option.wip then cb:MarkAsWIP(); end
+		cb.SettingsOption.tooltip = option.tooltip;
+		cb.SettingsOption.IsChanged = function() return IsChanged(option); end
 		return CHECK_HEIGHT;
 	end,
 	slider = function(content, option, x, y)
 		local slider = content:CreateSlider(option.name, {
 			TEXT = option.text,
+			SEARCH = option.search,
 			TOOLTIP = option.tooltip,
 			SETTING = option.key,
 			FORMAT = option.format,
@@ -162,6 +215,7 @@ local Builders = {
 			dropdown:SetATTTooltip(option.tooltip);
 		end
 		content:RegisterObject(dropdown);
+		settings.RegisterOption({ frame = dropdown, text = option.text, tooltip = option.tooltip, IsChanged = function() return IsChanged(option); end });
 		return DROPDOWN_HEIGHT;
 	end,
 };
@@ -324,10 +378,14 @@ settings.CreateOptionSections = function(page, sections, aside)
 	local y = -4;
 	for _,section in ipairs(sections) do
 		if section then
+			CreateSectionReset(content, section, y);
 			y = y - CreateSectionHeader(content, section.title, y);
 			for _,option in ipairs(section.options) do
 				if option then
-					y = y - Builders[option.type](content, option, 8 + (option.indent or 0) * INDENT, y);
+					local x = 8 + (option.indent or 0) * INDENT;
+					local height = Builders[option.type](content, option, x, y);
+					if option.key and not option.get then CreateChangedMarker(content, option, x, y, option.type == "check" and 22 or height); end
+					y = y - height;
 				end
 			end
 			y = y - SECTION_GAP;
