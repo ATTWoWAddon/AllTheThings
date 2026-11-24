@@ -311,8 +311,11 @@ local PlainQuestLinkFormat = "[[%d] %s (%d)]"
 local function GetQuestLinkForObject(t)
 	local questID = t.questID;
 	if questID then
-		return GetQuestLink(questID)
-			or PlainQuestLinkFormat:format(app.Level, t.name or t.hash,questID)
+		if app.IsForever then
+			return ("|cffffff00|Hquest:%d:0|h[%s]|h|r"):format(questID, t.name or t.hash)
+		else
+			return GetQuestLink(questID) or PlainQuestLinkFormat:format(app.Level, t.name or t.hash, questID)
+		end
 	end
 end
 
