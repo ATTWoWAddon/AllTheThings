@@ -458,9 +458,8 @@ local function CreateNotes(page, notes)
 	for _,note in ipairs(notes) do
 		y = y - CreateSectionHeader(content, note.title, y);
 		local text = content:CreateTextLabel(note.text);
-		text:SetFontObject(GameFontNormalSmall);
 		text:SetWidth(content.SectionWidth - 8);
-		text:SetSpacing(2);
+		text:SetSpacing(4);
 		text:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y);
 		y = y - text:GetStringHeight() - SECTION_GAP;
 	end
