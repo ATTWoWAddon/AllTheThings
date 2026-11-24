@@ -413,9 +413,9 @@ local Backdrops = {
 	-- Square borders by their thickness
 	square = setmetatable({}, { __index = function(t, size)
 		local backdrop = {
-			bgFile = SQUARE_TEXTURE,
+			bgFile = 137056,
 			edgeFile = SQUARE_TEXTURE,
-			tile = false, edgeSize = size,
+			tile = true, tileSize = 16, edgeSize = size,
 			insets = { left = size, right = size, top = size, bottom = size }
 		};
 		t[size] = backdrop;
@@ -469,7 +469,7 @@ local function UpdateWindowStyle()
 	end
 end
 -- Without the scroll bar, only the first row leaves room for the close button
-local CLOSE_BUTTON_ROOM = 18;
+local CLOSE_BUTTON_ROOM = 16;
 local function ApplyRowStyle(row)
 	local font = GetRowFont(row.lastFont or "GameFontNormal");
 	row.Label:SetFontObject(font);
@@ -2359,7 +2359,7 @@ local FieldDefaults = {
 		if WindowStyle.scrollBar then
 			container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0)
 		else
-			container:SetPoint("RIGHT", self, "RIGHT", -inset, 0)
+			container:SetPoint("RIGHT", self, "RIGHT", -inset - 3, 0)
 		end
 		container:Show()
 	end,
