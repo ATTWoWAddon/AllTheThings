@@ -171,7 +171,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 					}),
 					objective(3, {	-- 0/1 Freya's Sigil
 						provider = { "i", 272028 },	-- Freya's Sigil
-						-- TODO: Dropped by Nanaya in the Shaper's Terrace; Wowhead doesn't list the NPC yet.
+						cr = 261809,	-- Nanaya
 					}),
 					i(271994),	-- Undermine Satchel
 				},
