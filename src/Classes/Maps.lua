@@ -48,6 +48,36 @@ app.GetPlayerPosition = function()
 end
 
 -- Current Map Detection
+-- Returns the mapID ATT uses for the instance the player is in, if any.
+local function GetCurrentInstanceMapID()
+	local instanceName, instanceType, _, _, _, _, _, instanceID = GetInstanceInfo();
+	if not instanceType or instanceType == "none" then return end
+
+	-- Instances without a mapID of their own get a custom one in their maps (see the zoneText runners in Cache.lua).
+	local function GetMapIDForGroup(group)
+		return group.mapID or (group.maps and group.maps[#group.maps]);
+	end
+
+	-- ATT keys instances by journal ID, which often differs from the game's instance ID (Dire Maul: 230 vs 429) or
+	-- belongs to another instance (the game's 230 is Blackrock Depths), so match the name first.
+	local instances = instanceName and app.GetRawFieldContainer("instanceID");
+	if instances then
+		for _,groups in pairs(instances) do
+			for _,group in ipairs(groups) do
+				if group.name == instanceName then
+					local mapID = GetMapIDForGroup(group);
+					if mapID then return mapID; end
+				end
+			end
+		end
+	end
+	if instanceID then
+		for _,group in ipairs(app.SearchForField("instanceID", instanceID) or app.EmptyTable) do
+			local mapID = GetMapIDForGroup(group);
+			if mapID then return mapID; end
+		end
+	end
+end
 local CurrentMapID;
 local function CalculateCurrentMapID()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
@@ -128,6 +158,10 @@ local function CalculateCurrentMapID()
 				end
 			end
 			if remap.isContinent then
+				-- Some instances in WoW Forever only report their continent (e.g. The Shaper's Terrace).
+				local instanceMapID = GetCurrentInstanceMapID();
+				if instanceMapID then return instanceMapID; end
+
 				-- Attempt to find the closest map.
 				local position = C_Map_GetPlayerMapPosition(originalMapID, "player");
 				if position then
@@ -156,22 +190,8 @@ local function CalculateCurrentMapID()
 		end
 	else
 		-- No map for the player (e.g. dungeons in WoW Forever): use the instance's mapID when we know the instance.
-		local instanceName, instanceType, _, _, _, _, _, instanceID = GetInstanceInfo();
-		if instanceID and instanceType and instanceType ~= "none" then
-			for _,group in ipairs(app.SearchForField("instanceID", instanceID) or app.EmptyTable) do
-				if group.mapID then return group.mapID; end
-			end
-			-- ATT keys instances by journal ID, which often differs from the game's instance ID (Dire Maul: 230 vs 429),
-			-- so fall back to matching the instance name.
-			local instances = instanceName and app.GetRawFieldContainer("instanceID");
-			if instances then
-				for _,groups in pairs(instances) do
-					for _,group in ipairs(groups) do
-						if group.mapID and group.name == instanceName then return group.mapID; end
-					end
-				end
-			end
-		end
+		local instanceMapID = GetCurrentInstanceMapID();
+		if instanceMapID then return instanceMapID; end
 		local zoneTexts,substitutions = {}, nil;
 		local name = GetRealZoneText();
 		if name and name:len() > 0 then
