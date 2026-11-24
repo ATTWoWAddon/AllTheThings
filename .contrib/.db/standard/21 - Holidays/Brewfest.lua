@@ -1654,7 +1654,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					-- #if ANYCLASSIC
 					-- #if AFTER WRATH
 					OnUpdate = [[function(t)
-						if not (_.IsQuestFlaggedCompleted(t.questID) or _.IsQuestFlaggedCompleted(t.altQuests[1])) then
+						if not _.IsQuestFlaggedCompleted(t.questID) then
 							if ATTAccountWideData.Achievements[2796] then
 								t.collected = 2;
 								t.OnUpdate = nil;
@@ -1700,7 +1700,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					-- #if ANYCLASSIC
 					-- #if AFTER WRATH
 					OnUpdate = [[function(t)
-						if not (_.IsQuestFlaggedCompleted(t.questID) or _.IsQuestFlaggedCompleted(t.altQuests[1])) then
+						if not _.IsQuestFlaggedCompleted(t.questID) then
 							if ATTAccountWideData.Achievements[2796] then
 								t.collected = 2;
 								t.OnUpdate = nil;
