@@ -83,7 +83,8 @@ local function CreateTextColorOption(text, key)
 				app.Colors[key] = RGBToHex(color.r, color.g, color.b);
 			end, app.Colors[key]);
 		end,
-		isChanged = function() return rawget(app.Colors, key) ~= nil; end,
+		-- Opening the color picker can store the default itself, which is no change
+		isChanged = function() return app.Colors[key]:lower() ~= app.DefaultColors[key]:lower(); end,
 		reset = function()
 			app.Colors[key] = nil;
 			app.CallbackEvent("OnRedrawWindows")
