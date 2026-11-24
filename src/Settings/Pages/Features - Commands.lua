@@ -1,55 +1,11 @@
 local _, app = ...;
 local L, settings = app.L, app.Settings;
 
+-- Global locals
+local ipairs = ipairs;
+
 -- Settings: Commands Page
 local child = settings:CreateOptionsPage(L.COMMANDS_PAGE, L.FEATURES_PAGE)
-
--- CONTENT
-local headerCommands = child:CreateHeaderLabel(L.COMMANDS_HEADER_LABEL)
-if child.separator then
-	headerCommands:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
-else
-	headerCommands:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-end
-
-local textCommands1 = child:CreateTextLabel(L.COMMANDS_PART_1)
-textCommands1:SetPoint("TOPLEFT", headerCommands, "BOTTOMLEFT", 0, -8)
-textCommands1:SetPoint("RIGHT", child, -10, 0)
-local textCommands2 = child:CreateTextLabel(L.COMMANDS_PART_2)
-textCommands2:SetPoint("TOPLEFT", textCommands1, "BOTTOMLEFT", 0, -4)
-textCommands1:SetPoint("RIGHT", child, -10, 0)
-
-local columnOne, columnTwo, columnThree, columnFour
-
-local function createColumn(stringTable, color, columnNo)
-	local string = child:CreateFontString("ARTWORK", nil, "GameFontNormal")
-	string:SetJustifyH("LEFT")
-	-- string:SetScale(1)
-	string:SetSpacing(8)
-	if columnNo == 1 then
-		string:SetPoint("TOPLEFT", textCommands2, "BOTTOMLEFT", 0, -20)
-	elseif columnNo == 2 then
-		string:SetPoint("TOPLEFT", columnOne, "TOPRIGHT", 12, 0)
-	elseif columnNo == 3 then
-		string:SetPoint("TOPLEFT", columnTwo, "TOPRIGHT", 30, 0)
-	elseif columnNo == 4 then
-		string:SetPoint("TOPLEFT", columnThree, "TOPRIGHT", 12, 0)
-	end
-
-	local stringText = color
-	for _, text in ipairs(stringTable) do
-		if not text.minBuild or app.GameBuildVersion >= text.minBuild then
-			if columnNo == 1 or columnNo == 3 then
-				stringText = stringText .. text.title .. "\n"
-			else
-				stringText = stringText .. "/att " .. text.command .. ":ID\n"
-			end
-		end
-	end
-	string:SetText(stringText)
-
-	return string
-end
 
 local stringsOne = {
 	{ title = L.ACHIEVEMENT, command = "achievement" },
@@ -91,7 +47,43 @@ local stringsTwo = {
 	{ title = L.TOY_ITEM, command = "toy" },
 }
 
-columnOne = createColumn(stringsOne, "|cffFFFFFF", 1)
-columnTwo = createColumn(stringsOne, "|cff00FF98", 2)
-columnThree = createColumn(stringsTwo, "|cffFFFFFF", 3)
-columnFour = createColumn(stringsTwo, "|cff00FF98", 4)
+
+local content = settings.CreatePageColumn(child, 0, 656)
+local y = -4
+local function AddText(text)
+	local label = content:CreateTextLabel(text)
+	label:SetFontObject(GameFontNormalSmall)
+	label:SetWidth(content.SectionWidth - 16)
+	label:SetWordWrap(true)
+	label:SetSpacing(2)
+	label:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y - 2)
+	y = y - label:GetStringHeight() - 8
+end
+
+-- Commands which view any Thing
+y = y - settings.CreatePageSectionHeader(content, L.COMMANDS_HEADER_LABEL, y)
+AddText(L.COMMANDS_PART_1)
+AddText(L.COMMANDS_PART_2)
+local ROW_HEIGHT, COLUMN_WIDTH, COMMAND_X = 16, 312, 140
+local function AddColumn(commands, x)
+	local count = 0
+	for _,command in ipairs(commands) do
+		if not command.minBuild or app.GameBuildVersion >= command.minBuild then
+			local title = content:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+			title:SetPoint("TOPLEFT", content, "TOPLEFT", x, y - count * ROW_HEIGHT)
+			title:SetText(command.title)
+			local text = content:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+			text:SetPoint("TOPLEFT", content, "TOPLEFT", x + COMMAND_X, y - count * ROW_HEIGHT)
+			text:SetText("|cff00FF98/att " .. command.command .. ":ID|r")
+			count = count + 1
+		end
+	end
+	return count
+end
+local rows = math.max(AddColumn(stringsOne, 8), AddColumn(stringsTwo, 8 + COLUMN_WIDTH))
+y = y - rows * ROW_HEIGHT - 12
+
+-- The other commands
+y = y - settings.CreatePageSectionHeader(content, L.CHAT_COMMANDS_LABEL, y)
+AddText(L.CHAT_COMMANDS_TEXT)
+content:SetHeight(-y)

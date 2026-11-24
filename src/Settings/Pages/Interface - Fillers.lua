@@ -8,17 +8,11 @@ if not Fill then return end
 local ipairs,rawget
 	= ipairs,rawget
 
--- Settings: Interface Page
+-- Settings: Fillers Page
+-- A table with a row for every Filler, and a column for every place it can be used in.
 local child = settings:CreateOptionsPage(L.FILLERS_LABEL, L.INTERFACE_PAGE)
 
-local headerLbl = child:CreateHeaderLabel(L.FILLERS_LABEL)
-if child.separator then
-	headerLbl:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
-else
-	headerLbl:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-end
-local explanationLbl = child:CreateTextLabel(L.FILLERS_EXPLANATION)
-explanationLbl:SetPoint("TOPLEFT", headerLbl, "BOTTOMLEFT", 0, -4)
+local NAME_X, NAME_WIDTH, COLUMN_WIDTH, ROW_HEIGHT = 8, 220, 110, 24;
 
 app.AddEventHandler("Fill.DefinedSettings", function(fillSettings)
 
@@ -71,79 +65,86 @@ app.AddEventHandler("Fill.DefinedSettings", function(fillSettings)
 
 	child:OnRefresh()
 
-	local prev, curr
-	local rowfirst = explanationLbl
-	local colwidth = 85
-	local checkboxshift = colwidth - 16
-	local rowpad = -10
+	local content = settings.CreatePageColumn(child, 0, 656)
+	local explanation = content:CreateTextLabel(L.FILLERS_EXPLANATION)
+	explanation:SetWidth(content.SectionWidth - 8)
+	explanation:SetWordWrap(true)
+	explanation:SetPoint("TOPLEFT", content, "TOPLEFT", 8, -6)
+	local y = -6 - explanation:GetStringHeight() - 16
+
+	local rowCount = 0
 	for r,rowval in ipairs(fillSettings.Row) do
 		if rowval == "[]" then
+			-- Column headers
+			local x = NAME_X + NAME_WIDTH
 			for c,colval in ipairs(fillSettings.Col) do
-				colval = rawget(L, colval) or colval
-				curr = child:CreateTextLabel(colval)
-				curr:SetWidth(colwidth)
-				if prev then
-					curr:AlignAfter(prev)
+				local label = content:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+				label:SetText(rawget(L, colval) or colval)
+				if colval == NAME then
+					label:SetPoint("TOPLEFT", content, "TOPLEFT", NAME_X, y)
 				else
-					curr:AlignBelow(rowfirst, 0, rowpad)
-					rowfirst = curr
+					label:SetPoint("TOP", content, "TOPLEFT", x + COLUMN_WIDTH / 2, y)
+					x = x + COLUMN_WIDTH
 				end
-				prev = curr
 			end
-			local separator = child:CreateTexture(nil, "ARTWORK");
-			separator:SetPoint("TOP", rowfirst, "BOTTOM", 0, -2);
-			separator:SetPoint("LEFT", rowfirst, "LEFT", -2, 0);
-			separator:SetPoint("RIGHT", curr, "RIGHT", -2, 0);
-			separator:SetColorTexture(1, 1, 1, 0.4);
-			separator:SetHeight(1);
+			y = y - 18
+			local separator = content:CreateTexture(nil, "ARTWORK")
+			separator:SetPoint("TOPLEFT", content, "TOPLEFT", NAME_X, y)
+			separator:SetPoint("RIGHT", content, "LEFT", content.SectionWidth, 0)
+			separator:SetColorTexture(1, 1, 1, 0.2)
+			separator:SetHeight(1)
+			y = y - 4
 		else
+			rowCount = rowCount + 1
+			if rowCount % 2 == 0 then
+				local stripe = content:CreateTexture(nil, "BACKGROUND")
+				stripe:SetColorTexture(1, 1, 1, 0.04)
+				stripe:SetPoint("TOPLEFT", content, "TOPLEFT", NAME_X - 4, y)
+				stripe:SetSize(content.SectionWidth - NAME_X + 4, ROW_HEIGHT)
+			end
+			local tooltip = fillSettings.Tooltips[rowval]
+			local name = rawget(L, rowval) or rowval
+			local x = NAME_X + NAME_WIDTH
 			for c,colval in ipairs(fillSettings.Col) do
 				if colval == NAME then
 					local icon = fillSettings.Icons[rowval]
-					local lblText = rawget(L, rowval) or rowval
-					if icon then
-						curr = child:CreateTextLabel(lblText.." |T"..icon..":0|t")
-					else
-						curr = child:CreateTextLabel(lblText)
-					end
-					curr:SetWidth(colwidth)
+					local label = content:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+					label:SetJustifyH("LEFT")
+					label:SetWidth(NAME_WIDTH - 8)
+					label:SetWordWrap(false)
+					label:SetText(icon and (name .. " |T" .. icon .. ":0|t") or name)
+					label:SetPoint("TOPLEFT", content, "TOPLEFT", NAME_X, y - 6)
 				else
 					local settingkey = colval..":"..rowval
-					local ignored = fillSettings.ScopesIgnored[colval][rowval]
-					curr = child:CreateCheckBox("",
-						function(self)
-							if ignored then
-								self:Disable()
-								self:SetAlpha(0.6)
-							else
-								self:SetChecked(settings:GetValue(fillSettings.Container, settingkey))
-							end
-						end,
-						function(self)
+					if fillSettings.ScopesIgnored[colval][rowval] then
+						-- It can't be used there
+						local label = content:CreateFontString(nil, "ARTWORK", "GameFontDisable")
+						label:SetText("-")
+						label:SetPoint("TOP", content, "TOPLEFT", x + COLUMN_WIDTH / 2, y - 6)
+					else
+						local cb = content:CreateCheckBox("", function(self)
+							self:SetChecked(settings:GetValue(fillSettings.Container, settingkey))
+						end, function(self)
 							settings:SetValue(fillSettings.Container, settingkey, self:GetChecked())
 						end)
-					local tooltip = fillSettings.Tooltips[rowval]
-					if tooltip then
-						curr:SetATTTooltip(tooltip)
+						settings.StyleCheckBox(cb, 0)
+						cb:SetPoint("TOP", content, "TOPLEFT", x + COLUMN_WIDTH / 2, y - 1)
+						if tooltip then cb:SetATTTooltip(tooltip) end
+						local option = cb.SettingsOption
+						option.text = name .. " (" .. (rawget(L, colval) or colval) .. ")"
+						option.tooltip = tooltip
+						option.IsChanged = function()
+							return (settings:GetValue(fillSettings.Container, settingkey) or false) ~= DefaultValues[settingkey]
+						end
 					end
+					x = x + COLUMN_WIDTH
 				end
-				if prev then
-					if c > 2 then
-						curr:AlignAfter(prev, checkboxshift)
-					else
-						curr:AlignAfter(prev, 4)
-					end
-				else
-					curr:AlignBelow(rowfirst, 0, rowpad)
-					rowfirst = curr
-				end
-				prev = curr
 			end
+			y = y - ROW_HEIGHT
 		end
-		prev = nil
 	end
 
-	local checkboxSimpleZoneDrops = child:CreateCheckBox(L.SIMPLE_ZONE_DROPS_CHECKBOX,
+	local checkboxSimpleZoneDrops = content:CreateCheckBox(L.SIMPLE_ZONE_DROPS_CHECKBOX,
 		function(self)
 			self:SetChecked(settings:GetTooltipSetting("Fill:SimpleZoneDrops"))
 		end,
@@ -152,6 +153,10 @@ app.AddEventHandler("Fill.DefinedSettings", function(fillSettings)
 			-- tooltips cache their filled content
 			app.WipeSearchCache()
 		end)
+	settings.StyleCheckBox(checkboxSimpleZoneDrops, 500)
 	checkboxSimpleZoneDrops:SetATTTooltip(L.SIMPLE_ZONE_DROPS_CHECKBOX_TOOLTIP)
-	checkboxSimpleZoneDrops:AlignBelow(rowfirst, 0, -20)
+	checkboxSimpleZoneDrops.SettingsOption.tooltip = L.SIMPLE_ZONE_DROPS_CHECKBOX_TOOLTIP
+	checkboxSimpleZoneDrops.SettingsOption.IsChanged = function() return settings.IsTooltipSettingChanged("Fill:SimpleZoneDrops") end
+	checkboxSimpleZoneDrops:SetPoint("TOPLEFT", content, "TOPLEFT", NAME_X - 4, y - 12)
+	content:SetHeight(-y + 44)
 end)

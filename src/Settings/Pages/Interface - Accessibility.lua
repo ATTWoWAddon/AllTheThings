@@ -26,6 +26,7 @@ local function ShowColorPicker(callback, color)
 		end
 		callback({r = newR, g = newG, b = newB, a = newA});
 		app.CallbackEvent("OnRedrawWindows")
+		settings:Refresh();
 	end
 	picker.func, picker.opacityFunc, picker.cancelFunc, picker.swatchFunc
 		= OnColorChanged, OnColorChanged, OnColorChanged, OnColorChanged
@@ -70,157 +71,83 @@ end
 -- Settings: Accessibility Page
 local child = settings:CreateOptionsPage(L.ACCESSIBILITY_PAGE, L.INTERFACE_PAGE)
 
--- Column 1
-local headerColors = child:CreateHeaderLabel(L.COLORS_ICONS)
-if child.separator then
-	headerColors:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
-else
-	headerColors:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
+-- A color which is used for the text of some Things
+local function CreateTextColorOption(text, key)
+	return { type = "color", text = text,
+		get = function()
+			local _, red, green, blue = HexToARGB(app.Colors[key]);
+			return red, green, blue;
+		end,
+		OnClick = function()
+			ShowColorPicker(function(color)
+				app.Colors[key] = RGBToHex(color.r, color.g, color.b);
+			end, app.Colors[key]);
+		end,
+		isChanged = function() return rawget(app.Colors, key) ~= nil; end,
+		reset = function()
+			app.Colors[key] = nil;
+			app.CallbackEvent("OnRedrawWindows")
+			settings:Refresh();
+		end,
+	};
+end
+-- A color of the ATT windows
+local function CreateWindowColorOption(text, tooltip, key, usable)
+	local function GetDefault() return settings.GetSettingDefault(key); end
+	return { type = "color", text = text, tooltip = tooltip, usable = usable,
+		get = function()
+			local color = settings:Get(key);
+			return color.r, color.g, color.b;
+		end,
+		OnClick = function()
+			ShowColorPicker(function(color) settings:Set(key, color); end, settings:Get(key));
+		end,
+		isChanged = function()
+			local color, default = settings:Get(key), GetDefault();
+			for component,value in pairs(default) do
+				if (tonumber(color[component]) or 0) ~= value then return true; end
+			end
+		end,
+		reset = function()
+			local default = GetDefault();
+			settings:Set(key, { r = default.r, g = default.g, b = default.b, a = default.a });
+			app.CallbackEvent("OnRedrawWindows")
+		end,
+	};
 end
 
-local textHeader = child:CreateTextLabel(Colorize(L.ACCESSIBILITY_EXPLAIN, app.Colors.White))
-textHeader:SetPoint("TOPLEFT", headerColors, "BOTTOMLEFT", 0, -4)
-
-local checkboxUseMoreColors = child:CreateCheckBox(L.MORE_COLORS_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("UseMoreColors"))
-end,
-function(self)
-	settings:SetTooltipSetting("UseMoreColors", self:GetChecked())
-end)
-checkboxUseMoreColors:SetATTTooltip(L.MORE_COLORS_CHECKBOX_TOOLTIP)
-checkboxUseMoreColors:SetPoint("TOPLEFT", textHeader, "BOTTOMLEFT", 0, -5)
-
-local buttonDefault = child:CreateButton(
-{ text = DEFAULT, tooltip = L.RESET_TOOLTIP, },
-{
-	OnClick = function(self)
-		wipe(app.Colors);
-		app.CallbackEvent("OnRedrawWindows")
-	end,
-})
-buttonDefault:SetPoint("TOPLEFT", checkboxUseMoreColors.Text, "TOPRIGHT", 10, 5)
-
-local textBreadcrumbs = child:CreateTextLabel(Colorize(L.BREADCRUMBS, app.Colors.White))
-textBreadcrumbs:SetPoint("TOPLEFT", checkboxUseMoreColors, "BOTTOMLEFT", 0, -6)
-
-local function SetBreadcrumbColor(color)
-	app.Colors.Breadcrumb = RGBToHex(color.r, color.g, color.b);
-end
-local buttonBreadcrumbColor = child:CreateButton(
-{ text = COLOR, },
-{
-	OnClick = function(self)
-		ShowColorPicker(SetBreadcrumbColor, app.Colors.Breadcrumb);
-	end,
-})
-buttonBreadcrumbColor:SetPoint("TOPLEFT", textBreadcrumbs, "BOTTOMLEFT", 0, -5)
-
---
-
-local textLocked = child:CreateTextLabel(Colorize(L.LOCKED_QUESTS, app.Colors.White))
-textLocked:SetPoint("TOPLEFT", buttonBreadcrumbColor, "BOTTOMLEFT", 0, -10)
-
-local function SetLockedColor(color)
-	app.Colors.Locked = RGBToHex(color.r, color.g, color.b);
-end
-local buttonLockedColor = child:CreateButton(
-{ text = COLOR, },
-{
-	OnClick = function(self)
-		ShowColorPicker(SetLockedColor, app.Colors.Locked)
-	end,
-})
-buttonLockedColor:SetPoint("TOPLEFT", textLocked, "BOTTOMLEFT", 0, -5)
-
---
-
-local textMount = child:CreateTextLabel(Colorize(MOUNTS, app.Colors.White))
-textMount:SetPoint("TOPLEFT", buttonLockedColor, "BOTTOMLEFT", 0, -10)
-
-local function SetMountColor(color)
-	app.Colors.Mount = RGBToHex(color.r, color.g, color.b)
-end
-local buttonMountColor = child:CreateButton(
-{ text = COLOR, },
-{
-	OnClick = function(self)
-		ShowColorPicker(SetMountColor, app.Colors.Mount);
-	end,
-})
-buttonMountColor:SetPoint("TOPLEFT", textMount, "BOTTOMLEFT", 0, -5)
-
-
-local headerWindowColors = child:CreateHeaderLabel(L.WINDOW_COLORS)
-headerWindowColors:SetPoint("LEFT", headerColors, 0, 0)
-headerWindowColors:SetPoint("TOP", buttonMountColor, "BOTTOM", 0, -20)
-
--- Color Picker
-local function SetWindowBackgroundColor(color)
-	settings:Set("Window:BackgroundColor", color);
-end
-local buttonBackgroundColor = child:CreateButton(
-{ text = L.BACKGROUND, tooltip = L.BACKGROUND_TOOLTIP, },
-{
-	OnClick = function(self)
-		ShowColorPicker(SetWindowBackgroundColor, settings:Get("Window:BackgroundColor"));
-	end,
-})
-buttonBackgroundColor:SetPoint("TOPLEFT", headerWindowColors, "BOTTOMLEFT", 0, -5)
-
-
-local function SetWindowBorderColor(color)
-	settings:Set("Window:BorderColor", color);
-end
-local buttonBorderColor = child:CreateButton(
-{ text = L.BORDER, tooltip = L.BORDER_TOOLTIP, },
-{
-	OnClick = function(self)
-		ShowColorPicker(SetWindowBorderColor, settings:Get("Window:BorderColor"));
-	end,
-})
-buttonBorderColor:AlignAfter(buttonBackgroundColor, 5)
-buttonBorderColor.OnRefresh = function(self)
-	if settings:GetTooltipSetting("Window:UseClassForBorder") or settings:GetTooltipSetting("Window:HideBorders") then
-		self:Disable()
-	else
-		self:Enable()
-	end
-end
-
-local buttonResetColor = child:CreateButton(
-{ text = RESET, tooltip = L.RESET_TOOLTIP, },
-{
-	OnClick = function(self)
-		settings:Set("Window:BackgroundColor", {r = 0, g = 0, b = 0, a = 1})
-		settings:Set("Window:BorderColor", {r = 1, g = 1, b = 1, a = 1})
-	end,
-})
-buttonResetColor:AlignAfter(buttonBorderColor, 5)
-
-local checkboxUseClassColorForBorder = child:CreateCheckBox(L.CLASS_BORDER,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Window:UseClassForBorder"))
-	if settings:GetTooltipSetting("Window:HideBorders") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Window:UseClassForBorder", self:GetChecked())
-end)
-checkboxUseClassColorForBorder:SetATTTooltip(L.CLASS_BORDER_TOOLTIP)
-checkboxUseClassColorForBorder:AlignBelow(buttonBackgroundColor, nil, 0)
-
-local checkboxHideWindowBorders = child:CreateCheckBox(L.HIDE_BORDERS,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Window:HideBorders"))
-end,
-function(self)
-	settings:SetTooltipSetting("Window:HideBorders", self:GetChecked())
-end)
-checkboxHideWindowBorders:SetATTTooltip(L.HIDE_BORDERS_TOOLTIP)
-checkboxHideWindowBorders:AlignBelow(checkboxUseClassColorForBorder)
+settings.CreateOptionSections(child, {
+	{ title = L.COLORS_ICONS, options = {
+		{ type = "check", key = "UseMoreColors", text = L.MORE_COLORS_CHECKBOX, tooltip = L.MORE_COLORS_CHECKBOX_TOOLTIP },
+		CreateTextColorOption(L.BREADCRUMBS, "Breadcrumb"),
+		CreateTextColorOption(L.LOCKED_QUESTS, "Locked"),
+		CreateTextColorOption(MOUNTS, "Mount"),
+		{ type = "button", text = DEFAULT, tooltip = L.RESET_TOOLTIP,
+			OnClick = function()
+				wipe(app.Colors);
+				app.CallbackEvent("OnRedrawWindows")
+				settings:Refresh();
+			end,
+		},
+	} },
+	{ title = L.WINDOW_COLORS, options = {
+		CreateWindowColorOption(L.BACKGROUND, L.BACKGROUND_TOOLTIP, "Window:BackgroundColor"),
+		CreateWindowColorOption(L.BORDER, L.BORDER_TOOLTIP, "Window:BorderColor", function()
+			return not (settings:GetTooltipSetting("Window:UseClassForBorder") or settings:GetTooltipSetting("Window:HideBorders"));
+		end),
+		{ type = "check", key = "Window:UseClassForBorder", text = L.CLASS_BORDER, tooltip = L.CLASS_BORDER_TOOLTIP,
+			usable = function() return not settings:GetTooltipSetting("Window:HideBorders"); end,
+		},
+		{ type = "check", key = "Window:HideBorders", text = L.HIDE_BORDERS, tooltip = L.HIDE_BORDERS_TOOLTIP },
+	} },
+},
+-- Preview: a fixed sample of a list in the chosen colors.
+{ preview = L.PREVIEW_LABEL, Update = function(preview)
+	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors();
+	preview:SetBackdropColor(rBg, gBg, bBg, aBg);
+	preview:SetBackdropBorderColor(rBd, gBd, bBd, settings:GetTooltipSetting("Window:HideBorders") and 0 or aBd);
+	preview:AddLine(L.PREVIEW_ZONE, app.Modules.Color.GetProgressColorText(60, 100));
+	preview:AddLine(Colorize(L.PREVIEW_QUEST, app.Colors.Breadcrumb), L.BREADCRUMBS, { indent = 1 });
+	preview:AddLine(Colorize(L.PREVIEW_QUEST, app.Colors.Locked), L.LOCKED_QUESTS, { indent = 1 });
+	preview:AddLine(Colorize(L.PREVIEW_REWARD:format(1), app.Colors.Mount), MOUNTS, { indent = 1 });
+end });

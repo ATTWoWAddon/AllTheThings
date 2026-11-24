@@ -98,6 +98,5 @@ settings.CreateOptionSections(child, {
 		{ title = L.ICON_LEGEND_STATUS_LABEL, text = L.ICON_LEGEND_STATUS_TEXT },
 		{ title = L.ICON_LEGEND_MISC_LABEL, text = L.ICON_LEGEND_MISC_TEXT },
 		{ title = L.KEYBINDINGS, text = app.Modules.Color.Colorize(L.KEYBINDINGS_TEXT, app.Colors.White) },
-		{ title = L.CHAT_COMMANDS_LABEL, text = L.CHAT_COMMANDS_TEXT },
 	},
 });

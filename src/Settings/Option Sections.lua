@@ -10,6 +10,8 @@ local ipairs, pairs, type, math_max
 --	{ type = "check", key = "", text = "", tooltip = "" }
 --	{ type = "slider", key = "", text = nil or "", tooltip = "", min = 0, max = 1, step = 1, format = "%.0f" }
 --	{ type = "dropdown", key = "", text = "", choices = { { value = "", text = "" }, ... }, width = 90 }
+--	{ type = "color", text = "", tooltip = "", get = function() return r, g, b, a end, OnClick = function() end }
+--	{ type = "button", text = "", tooltip = "", OnClick = function() end }
 -- Options can also have:
 --	indent: number of indentation steps
 --	requires: tooltip settings which must all be enabled for the option to be usable
@@ -18,6 +20,7 @@ local ipairs, pairs, type, math_max
 --	setting: a general setting, used instead of the tooltip setting 'key' (not for sliders)
 --	inverse: the general setting is disabled while the check is enabled
 --	get / set: used instead of the tooltip setting 'key' (not for sliders)
+--	isChanged / reset: for options which have their own defaults
 --	OnChanged: called after the option changed
 --	OnRefresh: called whenever the option refreshes (checks and dropdowns), with the option's frame
 --	wip: marks a check as being worked on
@@ -80,10 +83,15 @@ local function SetOption(option, value)
 end
 
 local function IsChanged(option)
+	if option.isChanged then return option.isChanged(); end
 	if option.setting then return settings.IsSettingChanged(option.setting); end
 	return option.key and not option.get and settings.IsTooltipSettingChanged(option.key);
 end
 local function ResetOption(option)
+	if option.reset then
+		option.reset();
+		return;
+	end
 	if option.setting then
 		local default = settings.GetSettingDefault(option.setting) or false;
 		if option.inverse then default = not default; end
@@ -184,6 +192,36 @@ local Builders = {
 		slider:SetSize(200, 20);
 		slider:SetPoint("TOPLEFT", content, "TOPLEFT", x + 4, y - labelHeight);
 		return SLIDER_HEIGHT + labelHeight;
+	end,
+	color = function(content, option, x, y)
+		local button = CreateFrame("Button", nil, content);
+		button:SetSize(22, 16);
+		button:SetPoint("TOPLEFT", content, "TOPLEFT", x + 2, y - 3);
+		local border = button:CreateTexture(nil, "BACKGROUND");
+		border:SetAllPoints();
+		border:SetColorTexture(0.6, 0.6, 0.6, 1);
+		local swatch = button:CreateTexture(nil, "ARTWORK");
+		swatch:SetPoint("TOPLEFT", button, "TOPLEFT", 1, -1);
+		swatch:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -1, 1);
+		local text = button:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
+		text:SetPoint("LEFT", button, "RIGHT", 6, 0);
+		text:SetText(option.text);
+		button:SetHitRectInsets(0, -text:GetStringWidth() - 6, 0, 0);
+		button:SetScript("OnClick", option.OnClick);
+		if option.tooltip then button:SetATTTooltip(option.tooltip); end
+		button.OnRefresh = function(self)
+			local r, g, b, a = option.get();
+			swatch:SetColorTexture(r or 0, g or 0, b or 0, a or 1);
+			SetUsable(self, IsUsable(option));
+		end
+		content:RegisterObject(button);
+		settings.RegisterOption({ frame = button, text = option.text, tooltip = option.tooltip, IsChanged = function() return IsChanged(option); end });
+		return 22;
+	end,
+	button = function(content, option, x, y)
+		local button = content:CreateButton({ text = option.text, tooltip = option.tooltip }, { OnClick = option.OnClick });
+		button:SetPoint("TOPLEFT", content, "TOPLEFT", x, y - 4);
+		return 32;
 	end,
 	dropdown = function(content, option, x, y)
 		local label = content:CreateTextLabel(option.text);
@@ -408,7 +446,7 @@ settings.CreateOptionSections = function(page, sections, aside)
 				if option then
 					local x = 8 + (option.indent or 0) * INDENT;
 					local height = Builders[option.type](content, option, x, y);
-					if option.setting or (option.key and not option.get) then CreateChangedMarker(content, option, x, y, option.type == "check" and 22 or height); end
+					if option.reset or option.setting or (option.key and not option.get) then CreateChangedMarker(content, option, x, y, option.type == "check" and 22 or height); end
 					y = y - height;
 				end
 			end
