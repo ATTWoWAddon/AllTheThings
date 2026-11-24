@@ -78,7 +78,7 @@ local Presets = {
 local function CopyColor(color) return Color(color.r, color.g, color.b, color.a); end
 local function IsSameColor(color, other)
 	for _,component in ipairs({ "r", "g", "b", "a" }) do
-		if math.abs((tonumber(color[component]) or 0) - (tonumber(other[component]) or 0)) > 0.005 then return false; end
+		if math.abs((tonumber(color[component]) or 0) - (tonumber(other[component]) or 0)) > 0.01 then return false; end
 	end
 	return true;
 end

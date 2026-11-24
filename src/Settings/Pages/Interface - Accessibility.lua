@@ -73,6 +73,10 @@ settings.ShowColorPicker = ShowColorPicker;
 -- Settings: Accessibility Page
 local child = settings:CreateOptionsPage(L.ACCESSIBILITY_PAGE, L.INTERFACE_PAGE)
 
+-- Opening the color picker can store the default itself, or a value which was rounded a bit, which is no change
+local function IsDifferent(value, default)
+	return math.abs((tonumber(value) or 0) - (tonumber(default) or 0)) > 0.01;
+end
 -- A color which is used for the text of some Things
 local function CreateTextColorOption(text, key)
 	return { type = "color", text = text,
@@ -85,8 +89,11 @@ local function CreateTextColorOption(text, key)
 				app.Colors[key] = RGBToHex(color.r, color.g, color.b);
 			end, app.Colors[key]);
 		end,
-		-- Opening the color picker can store the default itself, which is no change
-		isChanged = function() return app.Colors[key]:lower() ~= app.DefaultColors[key]:lower(); end,
+		isChanged = function()
+			local _, red, green, blue = HexToARGB(app.Colors[key]);
+			local _, defaultRed, defaultGreen, defaultBlue = HexToARGB(app.DefaultColors[key]);
+			return IsDifferent(red, defaultRed) or IsDifferent(green, defaultGreen) or IsDifferent(blue, defaultBlue);
+		end,
 		reset = function()
 			app.Colors[key] = nil;
 			app.CallbackEvent("OnRedrawWindows")
@@ -108,7 +115,7 @@ settings.CreateColorOption = function(text, tooltip, key, usable)
 		isChanged = function()
 			local color, default = settings:Get(key), GetDefault();
 			for component,value in pairs(default) do
-				if (tonumber(color[component]) or 0) ~= value then return true; end
+				if IsDifferent(color[component], value) then return true; end
 			end
 		end,
 		reset = function()
@@ -136,6 +143,7 @@ settings.CreateOptionSections(child, {
 -- Preview: a fixed sample of a list in the chosen colors.
 { preview = L.PREVIEW_LABEL, Update = function(preview)
 	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = settings.GetWindowColors();
+	preview:SetBackdrop(app.GetWindowBackdrop());
 	preview:SetBackdropColor(rBg, gBg, bBg, aBg);
 	preview:SetBackdropBorderColor(rBd, gBd, bBd, settings:GetTooltipSetting("Window:HideBorders") and 0 or aBd);
 	preview:AddLine(L.PREVIEW_ZONE, app.Modules.Color.GetProgressColorText(60, 100));
