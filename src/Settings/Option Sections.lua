@@ -35,6 +35,7 @@ local FULL_WIDTH = 640;	-- without anything beside the sections
 local HEADER_HEIGHT, CHECK_HEIGHT, SECTION_GAP, INDENT = 24, 20, 8, 16;
 local SLIDER_HEIGHT, SLIDER_LABEL_HEIGHT, DROPDOWN_HEIGHT = 34, 18, 28;
 local PREVIEW_PADDING, PREVIEW_INDENT = 10, 10;
+local DISABLED_ALPHA = 0.55;	-- still readable on the dark background
 
 local function IsUsable(option)
 	if option.usable and not option.usable() then return false; end
@@ -57,7 +58,7 @@ local function SetUsable(object, usable)
 		object:SetAlpha(1);
 	else
 		object:Disable();
-		object:SetAlpha(0.4);
+		object:SetAlpha(DISABLED_ALPHA);
 	end
 end
 settings.SetUsable = SetUsable;
@@ -300,8 +301,8 @@ local Builders = {
 				label:SetAlpha(1);
 			else
 				UIDropDownMenu_DisableDropDown(self);
-				self:SetAlpha(0.4);
-				label:SetAlpha(0.4);
+				self:SetAlpha(DISABLED_ALPHA);
+				label:SetAlpha(DISABLED_ALPHA);
 			end
 			if option.OnRefresh then option.OnRefresh(self); end
 		end
