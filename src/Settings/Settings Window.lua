@@ -13,8 +13,8 @@ local ROW_HEIGHT, SECTION_HEIGHT, MAX_RESULTS = 18, 20, 100;
 -- The sidebar's sections. Pages are listed by the text they were created with, and
 -- pages which aren't listed here (e.g. from extensions) go to the last section.
 local Sections = {
-	{ title = L.SETTINGS_SECTION_COLLECT, pages = { L.GENERAL_PAGE } },
-	{ title = L.SETTINGS_SECTION_SHOW, pages = { L.FILTERS_PAGE, L.EXPANSION_FILTERS_PAGE, L.UNOBTAINABLES_PAGE, L.PHASES_PAGE } },
+	{ title = L.SETTINGS_SECTION_COLLECT, pages = { L.SETTINGS_START_PAGE, L.GENERAL_PAGE } },
+	{ title = L.SETTINGS_SECTION_SHOW, pages = { L.GENERAL_CONTENT, L.FILTERS_PAGE, L.EXPANSION_FILTERS_PAGE, L.UNOBTAINABLES_PAGE, L.PHASES_PAGE } },
 	{ title = L.SETTINGS_SECTION_LISTS, pages = { L.INTERFACE_PAGE, L.WINDOWS_PAGE, L.FILLERS_LABEL, L.ACCESSIBILITY_PAGE, L.FEATURES_PAGE } },
 	{ title = L.TOOLTIP_LABEL, pages = { L.TOOLTIP_LABEL, L.INFORMATION_PAGE } },
 	{ title = L.SETTINGS_SECTION_ALERTS, pages = { L.AUDIO_PAGE, L.REPORTING_LABEL } },
@@ -25,6 +25,16 @@ local Sections = {
 local SectionByPage = {};
 for _,section in ipairs(Sections) do
 	for _,text in ipairs(section.pages) do SectionByPage[text] = section; end
+end
+
+-- Options register themselves with the page they're on. Pages which create their options on
+-- demand add a provider, which is asked for its options whenever something is searched.
+local Options, Providers = {}, {};
+settings.RegisterOption = function(option)
+	Options[#Options + 1] = option;
+end
+settings.AddOptionProvider = function(provider)
+	Providers[#Providers + 1] = provider;
 end
 
 -- Window
@@ -45,7 +55,17 @@ window:SetBackdrop({
 	tile = true, tileSize = 16, edgeSize = 16,
 	insets = { left = 4, right = 4, top = 4, bottom = 4 },
 });
-window:SetBackdropColor(0, 0, 0, 0.92);
+window:SetBackdropColor(0, 0, 0, 1);
+-- The tooltip background is see-through, so cover it
+local background = window:CreateTexture(nil, "BACKGROUND", nil, 1);
+background:SetPoint("TOPLEFT", window, "TOPLEFT", 4, -4);
+background:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 4);
+background:SetColorTexture(0.04, 0.04, 0.05, 0.97);
+local titleBar = window:CreateTexture(nil, "BACKGROUND", nil, 2);
+titleBar:SetPoint("TOPLEFT", window, "TOPLEFT", 4, -4);
+titleBar:SetPoint("TOPRIGHT", window, "TOPRIGHT", -4, -4);
+titleBar:SetHeight(TITLE_HEIGHT);
+titleBar:SetColorTexture(1, 1, 1, 0.06);
 window:SetBackdropBorderColor(0.6, 0.6, 0.6, 1);
 window:Hide();
 tinsert(UISpecialFrames, "ATTSettingsWindow");	-- closes with Escape
@@ -54,8 +74,27 @@ local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
 closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -2, -2);
 closeButton:SetScript("OnClick", function() window:Hide(); end);
 local titleText = window:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-titleText:SetPoint("TOP", window, "TOP", 0, -10);
-titleText:SetText(SETTINGS or "Settings");
+titleText:SetPoint("LEFT", titleBar, "LEFT", 8, 0);
+titleText:SetText(L.TITLE .. "  " .. (app.Version or ""));
+settings.MakePanel(window);
+local checkboxSkipAutoRefresh = window:CreateCheckBox(L.SKIP_AUTO_REFRESH,
+function(self)
+	self:SetChecked(settings:Get("Skip:AutoRefresh"))
+end,
+function(self)
+	local skipRefresh = self:GetChecked();
+	settings:Set("Skip:AutoRefresh", skipRefresh)
+	if not skipRefresh and settings.NeedsRefresh then settings:UpdateMode("FORCE"); end
+end)
+checkboxSkipAutoRefresh:SetATTTooltip(L.SKIP_AUTO_REFRESH_TOOLTIP);
+checkboxSkipAutoRefresh:SetScale(1);
+checkboxSkipAutoRefresh:SetSize(20, 20);
+checkboxSkipAutoRefresh.Text:SetScale(1);
+checkboxSkipAutoRefresh.Text:SetFontObject(GameFontNormalSmall);
+checkboxSkipAutoRefresh.Text:ClearAllPoints()
+checkboxSkipAutoRefresh.Text:SetPoint("RIGHT", titleBar, "RIGHT", -34, 0)
+checkboxSkipAutoRefresh:SetPoint("RIGHT", checkboxSkipAutoRefresh.Text, "LEFT", -2, 0)
+checkboxSkipAutoRefresh:SetHitRectInsets(0, -checkboxSkipAutoRefresh.Text:GetUnboundedStringWidth(), 0, 0);
 
 -- Pages are parented to this frame
 local host = CreateFrame("Frame", nil, window);
@@ -103,15 +142,6 @@ local function GetSection(page)
 end
 
 -- Search
--- Options register themselves with the page they're on. Pages which create their options on
--- demand add a provider, which is asked for its options whenever something is searched.
-local Options, Providers = {}, {};
-settings.RegisterOption = function(option)
-	Options[#Options + 1] = option;
-end
-settings.AddOptionProvider = function(provider)
-	Providers[#Providers + 1] = provider;
-end
 local function GetOptionPage(option)
 	local frame = option.page or option.frame;
 	while frame do

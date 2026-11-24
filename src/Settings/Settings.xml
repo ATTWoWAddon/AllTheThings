@@ -3,7 +3,9 @@
 	<Script file="Settings Window.lua"/>
 	<Script file="Option Sections.lua"/>
 	<Script file="Pages/About.lua"/>
+	<Script file="Pages/Start.lua"/>
 	<Script file="Pages/General.lua"/>
+	<Script file="Pages/General - Content.lua"/>
 	<Script file="Pages/General - Filters.lua"/>
 	<Script file="Pages/General - Expansion Filters.lua"/>
 	<Script file="Pages/General - Unobtainables.lua"/>

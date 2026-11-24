@@ -1139,6 +1139,9 @@ end
 settings.IsTooltipSettingChanged = function(setting)
 	return (RawSettings.Tooltips[setting] or false) ~= (TooltipSettingsBase.__index[setting] or false);
 end
+settings.GetSettingDefault = function(setting)
+	return GeneralSettingsBase.__index[setting];
+end
 settings.IsSettingChanged = function(setting)
 	return (RawSettings.General[setting] or false) ~= (GeneralSettingsBase.__index[setting] or false);
 end
@@ -1561,6 +1564,11 @@ ATTSettingsPanelMixin = {
 -- All Object mixins apply to the Panels as well
 Mixin(ATTSettingsPanelMixin, ATTSettingsObjectMixin);
 Mixin(settings, ATTSettingsPanelMixin);
+-- Lets a frame which isn't a page have settings objects
+settings.MakePanel = function(frame)
+	Mixin(frame, ATTSettingsPanelMixin);
+	settings:RegisterObject(frame);
+end
 
 -- Some common helpers for instantiation of Settings objects
 settings.Helpers = {
@@ -1611,13 +1619,9 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 	logo:SetSize(36, 36);
 	logo:Show();
 
-	local title = subcategory:CreateHeaderLabel(L.TITLE);
+	local title = subcategory:CreateHeaderLabel(text == appName and L.SETTINGS_ABOUT or text);
 	title:SetPoint("TOPLEFT", logo, "TOPRIGHT", 4, -4);
 	title:SetScale(1.5);
-
-	local version = subcategory:CreateHeaderLabel(app.Version);
-	version:SetPoint("TOPRIGHT", subcategory, "TOPRIGHT", -4, 0);
-	version:SetJustifyH("RIGHT");
 
 	local separator = subcategory:CreateTexture(nil, "ARTWORK");
 	separator:SetPoint("LEFT", subcategory, "LEFT", 4, 0);
@@ -1627,20 +1631,6 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 	separator:SetHeight(2);
 	subcategory.separator = separator;
 
-	local checkboxSkipAutoRefresh = subcategory:CreateCheckBox(L.SKIP_AUTO_REFRESH,
-	function(self)
-		self:SetChecked(settings:Get("Skip:AutoRefresh"))
-	end,
-	function(self)
-		local skipRefresh = self:GetChecked();
-		settings:Set("Skip:AutoRefresh", skipRefresh)
-		if not skipRefresh and settings.NeedsRefresh then settings:UpdateMode("FORCE"); end
-	end)
-	checkboxSkipAutoRefresh:SetATTTooltip(L.SKIP_AUTO_REFRESH_TOOLTIP);
-	checkboxSkipAutoRefresh.Text:ClearAllPoints()
-	checkboxSkipAutoRefresh.Text:SetPoint("BOTTOMRIGHT", separator, "TOPRIGHT", 0, 8)
-	checkboxSkipAutoRefresh:ClearAllPoints()
-	checkboxSkipAutoRefresh:SetPoint("RIGHT", checkboxSkipAutoRefresh.Text, "LEFT", 0, 0)
 	return subcategory;
 end
 

@@ -15,6 +15,8 @@ local ipairs, pairs, type, math_max
 --	requires: tooltip settings which must all be enabled for the option to be usable
 --	requiresAny: tooltip settings of which at least one must be enabled
 --	usable: function which must return true for the option to be usable
+--	setting: a general setting, used instead of the tooltip setting 'key' (not for sliders)
+--	inverse: the general setting is disabled while the check is enabled
 --	get / set: used instead of the tooltip setting 'key' (not for sliders)
 --	OnChanged: called after the option changed
 --	OnRefresh: called whenever the option refreshes (checks and dropdowns), with the option's frame
@@ -55,13 +57,22 @@ local function SetUsable(object, usable)
 		object:SetAlpha(0.4);
 	end
 end
+settings.SetUsable = SetUsable;
 local function GetOption(option)
 	if option.get then return option.get(); end
+	if option.setting then
+		local value = settings:Get(option.setting);
+		if option.inverse then return not value; end
+		return value;
+	end
 	return settings:GetTooltipSetting(option.key);
 end
 local function SetOption(option, value)
 	if option.set then
 		option.set(value);
+	elseif option.setting then
+		if option.inverse then value = not value; end
+		settings:Set(option.setting, value);
 	else
 		settings:SetTooltipSetting(option.key, value);
 	end
@@ -69,9 +80,16 @@ local function SetOption(option, value)
 end
 
 local function IsChanged(option)
+	if option.setting then return settings.IsSettingChanged(option.setting); end
 	return option.key and not option.get and settings.IsTooltipSettingChanged(option.key);
 end
 local function ResetOption(option)
+	if option.setting then
+		local default = settings.GetSettingDefault(option.setting) or false;
+		if option.inverse then default = not default; end
+		SetOption(option, default);
+		return;
+	end
 	-- nil removes the override, so the profile uses ATT's default again
 	settings:SetTooltipSetting(option.key, nil);
 	if option.OnChanged then option.OnChanged(); end
@@ -116,6 +134,19 @@ local function CreateSectionReset(content, section, y)
 	content:RegisterObject(button);
 end
 
+-- Gives a checkbox the size and font every option uses
+settings.StyleCheckBox = function(cb, maxWidth)
+	cb:SetScale(1);
+	cb:SetSize(22, 22);
+	-- Cut the label off with "..." when it doesn't fit
+	local text = cb.Text;
+	text:SetScale(1);
+	text:SetFontObject(GameFontNormalSmall);
+	text:SetJustifyH("LEFT");
+	if text:GetUnboundedStringWidth() > maxWidth then text:SetWidth(maxWidth); end
+	cb:SetHitRectInsets(0, -text:GetWidth(), 0, 0);
+end
+
 -- Option builders. Each one returns the height it used.
 local Builders = {
 	check = function(content, option, x, y)
@@ -130,17 +161,8 @@ local Builders = {
 			-- The option may not have accepted the change
 			self:SetChecked(GetOption(option) and true or false);
 		end);
-		cb:SetScale(1);
-		cb:SetSize(22, 22);
+		settings.StyleCheckBox(cb, content.SectionWidth - x - 26);
 		cb:SetPoint("TOPLEFT", content, "TOPLEFT", x, y);
-		-- Cut the label off with "..." when it doesn't fit
-		local text = cb.Text;
-		text:SetScale(1);
-		text:SetFontObject(GameFontNormalSmall);
-		text:SetJustifyH("LEFT");
-		local maxWidth = content.SectionWidth - x - 26;
-		if text:GetUnboundedStringWidth() > maxWidth then text:SetWidth(maxWidth); end
-		cb:SetHitRectInsets(0, -text:GetWidth(), 0, 0);
 		if option.tooltip then cb:SetATTTooltip(option.tooltip); end
 		if option.wip then cb:MarkAsWIP(); end
 		cb.SettingsOption.tooltip = option.tooltip;
@@ -353,8 +375,10 @@ local function CreateSectionHeader(content, title, y)
 	line:SetHeight(1);
 	line:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y - HEADER_HEIGHT + 5);
 	line:SetPoint("RIGHT", content, "LEFT", content.SectionWidth, 0);
-	return HEADER_HEIGHT;
+	return HEADER_HEIGHT, header;
 end
+settings.CreatePageColumn = CreateColumn;
+settings.CreatePageSectionHeader = CreateSectionHeader;
 local function CreateNotes(page, notes)
 	local content = CreateColumn(page, ASIDE_X - 8, FULL_WIDTH + 16);
 	local y = -4;
@@ -384,7 +408,7 @@ settings.CreateOptionSections = function(page, sections, aside)
 				if option then
 					local x = 8 + (option.indent or 0) * INDENT;
 					local height = Builders[option.type](content, option, x, y);
-					if option.key and not option.get then CreateChangedMarker(content, option, x, y, option.type == "check" and 22 or height); end
+					if option.setting or (option.key and not option.get) then CreateChangedMarker(content, option, x, y, option.type == "check" and 22 or height); end
 					y = y - height;
 				end
 			end
