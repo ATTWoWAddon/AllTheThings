@@ -34,35 +34,43 @@ root(ROOTS.WorldEvents, {
 				ach(63658),	-- No Hives Left Standing
 			}),
 			n(EVENT_COMPLETION, {
-				i(277283, {	-- Aqir Research Satchel
-					n(ARMOR, {
-						filter(CLOTH, {
-							i(277885),	-- Veilweaver Trousers
-							i(277895),	-- Veilweaver's Shadowgown
+				weeklyReward(97456, {	-- Obtained Aqir Research Satchel
+					providers = {
+						{ "n", 261514 },	-- General Zulkix
+						{ "n", 263573 },	-- Hivekeeper Quelthax
+					},
+					groups = {
+						i(277283, {	-- Aqir Research Satchel
+							n(ARMOR, {
+								filter(CLOTH, {
+									i(277885),	-- Veilweaver Trousers
+									i(277895),	-- Veilweaver's Shadowgown
+								}),
+								filter(LEATHER, {
+									i(277888),	-- Veil of the Feral Rite
+									i(277890),	-- Wildwarden's Guise
+								}),
+								filter(MAIL, {
+									i(277896),	-- Bloodtide Hauberk
+									i(277891),	-- Leviathan Bracerbands
+								}),
+								filter(PLATE, {
+									i(277898),	-- Duskhallow Vanguard Greaves
+									i(284219),	-- Granite Ritual Cuirass
+								}),
+							}),
+							n(WEAPONS, {
+								i(277883),	-- Duskmantle Spiteglass
+								i(277893),	-- Emberveil Ritual Knife
+								i(277889),	-- Fanged Riftrazor
+								i(277899),	-- Fangwarden's Shardspine Bow
+								i(277882),	-- Feral Gloombranch
+								i(277880),	-- Runic Moonbrand
+								i(277876),	-- Sacrosanct Thirstspire
+								i(277879),	-- Whisperthorn Ritual Knife
+							}),
 						}),
-						filter(LEATHER, {
-							i(277888),	-- Veil of the Feral Rite
-							i(277890),	-- Wildwarden's Guise
-						}),
-						filter(MAIL, {
-							i(277896),	-- Bloodtide Hauberk
-							i(277891),	-- Leviathan Bracerbands
-						}),
-						filter(PLATE, {
-							i(277898),	-- Duskhallow Vanguard Greaves
-							i(284219),	-- Granite Ritual Cuirass
-						}),
-					}),
-					n(WEAPONS, {
-						i(277883),	-- Duskmantle Spiteglass
-						i(277893),	-- Emberveil Ritual Knife
-						i(277889),	-- Fanged Riftrazor
-						i(277899),	-- Fangwarden's Shardspine Bow
-						i(277882),	-- Feral Gloombranch
-						i(277880),	-- Runic Moonbrand
-						i(277876),	-- Sacrosanct Thirstspire
-						i(277879),	-- Whisperthorn Ritual Knife
-					}),
+					},
 				}),
 				i(286563),	-- Aqir Research Token
 			}),
@@ -198,14 +206,10 @@ root(ROOTS.WorldEvents, {
 });
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
-	timeline = { ADDED_12_1_5 },
-	groups = {
-		header(HEADERS.Faction, FACTION_AQIR_RESEARCH_ENCLAVE, {
-			hqt(97456, name(HEADERS.Item, 277283, { isWeekly = true } )),	-- Obtained Aqir Research Satchel
-			hqt(99246, name(HEADERS.Item, 286563, { isWeekly = true } )),	-- First Weekly Warband Aqir Token
-			hqt(99251, name(HEADERS.Item, 286563, { isWeekly = true } )),	-- Second Weekly Warband Aqir Token
-			q(96495),	-- Related to Aqir Invasion Assaults
-			q(97316),	-- Related to Aqir Invasion Assaults
-		}),
-	},
+	header(HEADERS.Faction, FACTION_AQIR_RESEARCH_ENCLAVE, with({ timeline = { ADDED_12_1_5 }},{
+		hqt(99246, name(HEADERS.Item, 286563, { isWeekly = true } )),	-- First Weekly Warband Aqir Token
+		hqt(99251, name(HEADERS.Item, 286563, { isWeekly = true } )),	-- Second Weekly Warband Aqir Token
+		q(96495),	-- Related to Aqir Invasion Assaults
+		q(97316),	-- Related to Aqir Invasion Assaults
+	})),
 }));

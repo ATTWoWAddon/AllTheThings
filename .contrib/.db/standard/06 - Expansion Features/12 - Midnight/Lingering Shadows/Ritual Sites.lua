@@ -297,6 +297,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 					}),
 					header(HEADERS.Achievement, 63182, {	-- Advanced Ritual Site Studies
 						timeline = { ADDED_12_0_7 },
+						maps = {
+							BROKEN_THRONE,
+							DAGGERSPINE_POINT,
+						},
 						groups = {
 							q(96728, {	-- Ritual Site Studies: Week 1 of 3
 								qgs = {
@@ -464,8 +468,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 		groups = {
 			n(QUESTS, {
 				-- Daggerspine Point
-				q(95823),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end first time (of day or week)
-				q(95824),	-- after looting chest (Lady Selen'vjar Ritual Chest) in the end second time (of day or week)
+				q(95823, name(HEADERS.Item, 273855, {isWeekly=true})),	-- Ritual Tablet
+				q(95824, name(HEADERS.Item, 273856, {isWeekly=true})),	-- Ritual Tablet Fragment
 				q(96146),	-- Dark Obelisk @ 66.3, 38.9, DAGGERSPINE_POINT
 				q(96147),	-- Dark Obelisk @ 64.7, 50.0, DAGGERSPINE_POINT
 				q(96148),	-- Dark Obelisk @ 61.9, 62.1, DAGGERSPINE_POINT
