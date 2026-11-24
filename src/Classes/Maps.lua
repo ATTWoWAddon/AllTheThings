@@ -156,10 +156,20 @@ local function CalculateCurrentMapID()
 		end
 	else
 		-- No map for the player (e.g. dungeons in WoW Forever): use the instance's mapID when we know the instance.
-		local _, instanceType, _, _, _, _, _, instanceID = GetInstanceInfo();
+		local instanceName, instanceType, _, _, _, _, _, instanceID = GetInstanceInfo();
 		if instanceID and instanceType and instanceType ~= "none" then
 			for _,group in ipairs(app.SearchForField("instanceID", instanceID) or app.EmptyTable) do
 				if group.mapID then return group.mapID; end
+			end
+			-- ATT keys instances by journal ID, which often differs from the game's instance ID (Dire Maul: 230 vs 429),
+			-- so fall back to matching the instance name.
+			local instances = instanceName and app.GetRawFieldContainer("instanceID");
+			if instances then
+				for _,groups in pairs(instances) do
+					for _,group in ipairs(groups) do
+						if group.mapID and group.name == instanceName then return group.mapID; end
+					end
+				end
 			end
 		end
 		local zoneTexts,substitutions = {}, nil;
