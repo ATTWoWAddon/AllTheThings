@@ -1,23 +1,12 @@
 local _, app = ...;
 local L, settings = app.L, app.Settings;
 
--- Settings: General Page
-local child = settings:CreateOptionsPage(L.FILTERS_PAGE, L.GENERAL_PAGE)
+-- Global locals
+local ipairs, pairs, wipe
+	= ipairs, pairs, wipe;
 
--- Top 1
-local headerWeaponsAndArmor = child:CreateHeaderLabel(L.ITEM_FILTER_LABEL)
-if child.separator then
-	headerWeaponsAndArmor:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
-else
-	headerWeaponsAndArmor:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-end
-headerWeaponsAndArmor.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:SetAlpha(0.4)
-	else
-		self:SetAlpha(1)
-	end
-end
+-- Settings: Filters Page
+local child = settings:CreateOptionsPage(L.FILTERS_PAGE, L.GENERAL_PAGE)
 
 local AllFilters = {}
 local ProfileFilters
@@ -37,30 +26,6 @@ app.AddEventHandler("Settings.OnApplyProfile", function()
 	settings:Set("Profile:Filters", ProfileFilters)
 	app.HandleEvent("Settings.UpdateFilters")
 end)
-
--- Stuff to automatically generate the armor & weapon checkboxes
-local last = headerWeaponsAndArmor
-local itemFilterNames = L.FILTER_ID_TYPES
-local ItemFilterOnClick = function(self)
-	local checked = self:GetChecked()
-	settings:SetFilter(self.filterID, checked)
-	ProfileFilters[self.filterID] = checked
-end
-local ItemFilterOnRefresh = function(self)
-	if settings:GetDefaultFilter(self.filterID) then
-		self.Text:SetTextColor(0.6, 0.7, 1);
-	else
-		self.Text:SetTextColor(1, 1, 1);
-	end
-	self:SetChecked(settings:GetFilter(self.filterID))
-	if app.MODE_DEBUG or settings:Get("Profile:DefaultFilters") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end
 
 app.EquipmentFilters = {
 	[21] = true,  -- 1H Axes
@@ -114,117 +79,60 @@ if app.GameBuildVersion >= 70000 then
 	app.EquipmentFilters[11] = true; -- Artifacts
 end
 
-for i, filterID in ipairs({
-	21, 22, 23, 24, 25, 26, -- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords
-	20, 34, 29, 28, 35,     -- Daggers, Fist Weapons, Polearms, Staves, Warglaives
-	32, 33, 31, 27,         -- Bows, Crossbows, Guns, Wands
-	8, 1,                   -- Shields, Off-hands
-	11,                     -- Artifacts (TODO: move to separate Thing instead of Filter Type)
-	57                      -- Profession Equipment
-}) do
-	local name = itemFilterNames[filterID];
-	if name and (filterID ~= 11 or app.GameBuildVersion >= 70000) then
-		local filter = child:CreateCheckBox(name, ItemFilterOnRefresh, ItemFilterOnClick)
-		-- Start
-		if filterID == 21 then
-			filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", -2, -6)
-		-- Spacing
-		elseif filterID == 20 or filterID == 32 or filterID == 8 or filterID == 11 or filterID == 57 then
-			filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
-		else
-			filter:AlignBelow(last)
+-- Filters are decided by Debug Mode, or by the class while its defaults are used
+local function IsUsable()
+	return not (app.MODE_DEBUG or settings:Get("Profile:DefaultFilters"));
+end
+local itemFilterNames = L.FILTER_ID_TYPES
+local function CreateItems(filterIDs)
+	local items = {};
+	for _,filterID in ipairs(filterIDs) do
+		local name = itemFilterNames[filterID];
+		if name and (filterID ~= 11 or app.GameBuildVersion >= 70000) then
+			items[#items + 1] = {
+				text = name,
+				tooltip = L.FILTER_ID..": "..filterID,
+				get = function() return settings:GetFilter(filterID); end,
+				set = function(checked)
+					settings:SetFilter(filterID, checked);
+					ProfileFilters[filterID] = checked;
+				end,
+				isDefault = function() return settings:GetDefaultFilter(filterID); end,
+				isChanged = function()
+					return IsUsable() and (settings:GetFilter(filterID) or false) ~= (settings:GetDefaultFilter(filterID) or false);
+				end,
+			};
 		end
-		filter.filterID = filterID
-		filter:SetATTTooltip(L.FILTER_ID..": "..filterID)
-		last = filter
 	end
+	return items;
 end
 
-for i, filterID in ipairs({
-	4, 5, 6, 7,		     -- Cloth, Leather, Mail, Plate
-	40, 41, 42, 44, 46, -- Head, Shoulder, Chest, Hands, Legs
-	3, 43, 45, 47,      -- Back, Wrist, Waist, Feet
-	10, 9, 2,           -- Shirt, Tabard, Cosmetic
-	51, 52, 53,         -- Neck, Finger, Trinket
-}) do
-	local name = itemFilterNames[filterID];
-	if name then
-		local filter = child:CreateCheckBox(name, ItemFilterOnRefresh, ItemFilterOnClick)
-		-- Start
-		if filterID == 4 then
-			filter:SetPoint("TOPLEFT", headerWeaponsAndArmor, "BOTTOMLEFT", 350, -6)
-		-- Spacing
-		elseif filterID == 40 or filterID == 3 or filterID == 10 or filterID == 51 then
-			filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -4)
-		else
-			filter:AlignBelow(last)
-		end
-		filter.filterID = filterID
-		filter:SetATTTooltip(L.FILTER_ID..": "..filterID)
-		last = filter
-	end
-end
+settings.CreateCheckList(child, {
+	top = 34,
+	columns = 3,
+	usable = IsUsable,
+	groups = {
+		{ title = L.FILTERS_GROUP_WEAPONS, items = CreateItems({
+			21, 22, 23, 24, 25, 26,	-- 1H Axes, 2H Axes, 1H Maces, 2H Maces, 1H Swords, 2H Swords
+			20, 34, 29, 28, 35,		-- Daggers, Fist Weapons, Polearms, Staves, Warglaives
+			32, 33, 31, 27,			-- Bows, Crossbows, Guns, Wands
+		}) },
+		{ title = L.FILTERS_GROUP_OFFHANDS, items = CreateItems({ 8, 1 }) },	-- Shields, Off-hands
+		{ title = L.FILTERS_GROUP_ARMOR_TYPES, items = CreateItems({ 4, 5, 6, 7 }) },	-- Cloth, Leather, Mail, Plate
+		{ title = L.FILTERS_GROUP_ARMOR_SLOTS, items = CreateItems({
+			40, 41, 42, 44, 46,	-- Head, Shoulder, Chest, Hands, Legs
+			3, 43, 45, 47,		-- Back, Wrist, Waist, Feet
+		}) },
+		{ title = L.FILTERS_GROUP_COSMETICS, items = CreateItems({ 10, 9, 2 }) },	-- Shirt, Tabard, Cosmetic
+		{ title = L.FILTERS_GROUP_JEWELRY, items = CreateItems({ 51, 52, 53 }) },	-- Neck, Finger, Trinket
+		{ title = OTHER or "Other", items = CreateItems({
+			11,	-- Artifacts (TODO: move to separate Thing instead of Filter Type)
+			57,	-- Profession Equipment
+		}) },
+	},
+});
 
--- The three buttons
-local buttonClassDefaults = child:CreateButton(
-{ text = L.CLASS_DEFAULTS_BUTTON, tooltip = L.CLASS_DEFAULTS_BUTTON_TOOLTIP, },
-{
-	OnClick = function(self)
-		wipe(ProfileFilters)
-		settings:ResetFilters()
-		settings:UpdateMode(1)
-	end,
-})
-buttonClassDefaults:SetPoint("LEFT", headerWeaponsAndArmor, 0, 0)
-buttonClassDefaults:SetPoint("BOTTOM", child, "BOTTOM", 0, 10)
-buttonClassDefaults.OnRefresh = function(self)
-	if app.MODE_DEBUG or settings:Get("Profile:DefaultFilters") then
-		self:Disable()
-	else
-		self:Enable()
-	end
-end
-
-local buttonAll = child:CreateButton(
-{ text = L.ALL_BUTTON, tooltip = L.ALL_BUTTON_TOOLTIP, },
-{
-	OnClick = function(self)
-		for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
-			settings:SetFilter(filterID, true)
-			ProfileFilters[filterID] = true
-		end
-		settings:UpdateMode(1)
-	end,
-})
-buttonAll:AlignAfter(buttonClassDefaults, 8)
-buttonAll.OnRefresh = function(self)
-	if app.MODE_DEBUG or settings:Get("Profile:DefaultFilters") then
-		self:Disable()
-	else
-		self:Enable()
-	end
-end
-
-local buttonNone = child:CreateButton(
-{ text = L.UNCHECK_ALL_BUTTON, tooltip = L.UNCHECK_ALL_BUTTON_TOOLTIP, },
-{
-	OnClick = function(self)
-		for filterID in pairs(app.EquipmentFilters) do
-			settings:SetFilter(filterID, false)
-			ProfileFilters[filterID] = false
-		end
-		settings:UpdateMode(1)
-	end,
-})
-buttonNone:AlignAfter(buttonAll, 8)
-buttonNone.OnRefresh = function(self)
-	if app.MODE_DEBUG or settings:Get("Profile:DefaultFilters") then
-		self:Disable()
-	else
-		self:Enable()
-	end
-end
-
+-- The class defaults and the three buttons
 local checkboxDefaultFilters = child:CreateCheckBox(L.FILTERS_DEFAULT,
 function(self)
 	if app.MODE_DEBUG then
@@ -242,5 +150,36 @@ function(self)
 	app.HandleEvent("Settings.UpdateFilters")
 	settings:UpdateMode(1)
 end)
+settings.StyleCheckBox(checkboxDefaultFilters, 280)
 checkboxDefaultFilters:SetATTTooltip(L.FILTERS_DEFAULT_TOOLTIP)
-checkboxDefaultFilters:AlignAfter(buttonNone, 8)
+checkboxDefaultFilters:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 4, -8)
+
+local function CreateFilterButton(text, tooltip, OnClick)
+	local button = child:CreateButton({ text = text, tooltip = tooltip, }, { OnClick = OnClick })
+	button.OnRefresh = function(self)
+		self:SetEnabled(IsUsable() and true or false)
+	end
+	return button
+end
+local buttonNone = CreateFilterButton(L.UNCHECK_ALL_BUTTON, L.UNCHECK_ALL_BUTTON_TOOLTIP, function()
+	for filterID in pairs(app.EquipmentFilters) do
+		settings:SetFilter(filterID, false)
+		ProfileFilters[filterID] = false
+	end
+	settings:UpdateMode(1)
+end)
+buttonNone:SetPoint("TOPRIGHT", child.separator, "BOTTOMRIGHT", -8, -8)
+local buttonAll = CreateFilterButton(L.ALL_BUTTON, L.ALL_BUTTON_TOOLTIP, function()
+	for filterID = 1, 113 do	-- 113 = Bags, highest filterID in our Settings
+		settings:SetFilter(filterID, true)
+		ProfileFilters[filterID] = true
+	end
+	settings:UpdateMode(1)
+end)
+buttonAll:SetPoint("RIGHT", buttonNone, "LEFT", -8, 0)
+local buttonClassDefaults = CreateFilterButton(L.CLASS_DEFAULTS_BUTTON, L.CLASS_DEFAULTS_BUTTON_TOOLTIP, function()
+	wipe(ProfileFilters)
+	settings:ResetFilters()
+	settings:UpdateMode(1)
+end)
+buttonClassDefaults:SetPoint("RIGHT", buttonAll, "LEFT", -8, 0)

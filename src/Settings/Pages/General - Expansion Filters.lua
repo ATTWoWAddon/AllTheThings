@@ -4,6 +4,9 @@ local L, settings = app.L, app.Settings;
 -- Only load for Retail
 if not (app.IsRetail and app.GameBuildVersion > 70000) then return end
 
+-- Global locals
+local ipairs = ipairs;
+
 -- Get Current Expansion Number by in-game API.
 -- This returns 0 on initial load of the game client prior to the player entering the world
 -- local CURRENT_EXPANSION = GetServerExpansionLevel() + 1
@@ -13,135 +16,64 @@ local CURRENT_EXPANSION = 12
 -- Settings: Expansion Filters Page
 local child = settings:CreateOptionsPage(L.EXPANSION_FILTERS_PAGE, L.GENERAL_PAGE)
 
--- Header
-local headerExpansions = child:CreateHeaderLabel(L.EXPANSION_FILTER_LABEL)
-if child.separator then
-	headerExpansions:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
-else
-	headerExpansions:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-end
-
-local textExpansionsExplain = child:CreateTextLabel(L.EXPANSION_EXPLAIN_LABEL.."\n\n"..L.EXPANSION_FILTER_ENABLE_TOOLTIP)
-textExpansionsExplain:SetPoint("TOPLEFT", headerExpansions, "BOTTOMLEFT", 0, -4)
-
--- Expansion data structure
-local expansions = {
-	{ key = "ExpansionFilter:Classic" },
-	{ key = "ExpansionFilter:TBC" },
-	{ key = "ExpansionFilter:Wrath" },
-	{ key = "ExpansionFilter:Cata" },
-	{ key = "ExpansionFilter:MoP" },
-	{ key = "ExpansionFilter:WoD" },
-	{ key = "ExpansionFilter:Legion" },
-	{ key = "ExpansionFilter:BfA" },
-	{ key = "ExpansionFilter:SL" },
-	{ key = "ExpansionFilter:DF" },
-	{ key = "ExpansionFilter:TWW" },
-	{ key = "ExpansionFilter:MID" },
-	{ key = "ExpansionFilter:TLT" },
+local ExpansionSettings = {
+	"ExpansionFilter:Classic",
+	"ExpansionFilter:TBC",
+	"ExpansionFilter:Wrath",
+	"ExpansionFilter:Cata",
+	"ExpansionFilter:MoP",
+	"ExpansionFilter:WoD",
+	"ExpansionFilter:Legion",
+	"ExpansionFilter:BfA",
+	"ExpansionFilter:SL",
+	"ExpansionFilter:DF",
+	"ExpansionFilter:TWW",
+	"ExpansionFilter:MID",
+	"ExpansionFilter:TLT",
 }
-for i = 1,CURRENT_EXPANSION do
-	expansions[i].info = app.CreateExpansion(i)
-end
+local function IsUsable() return not app.MODE_DEBUG; end
 
--- Create checkboxes for each expansion
-local lastCheckbox = textExpansionsExplain
-local expansion, expansionName
-for i = 1,CURRENT_EXPANSION do
-	expansion = expansions[i]
-	expansionName = expansion.info.name
-	local checkbox = child:CreateCheckBox(
-		"|T" .. expansion.info.icon .. ":0|t |c" .. app.DefaultColors.Insane .. expansionName .. "|r",
-		function(self)
-			-- OnRefresh
-			self:SetChecked(settings:Get(self.expansionKey))
-			if app.MODE_DEBUG then
-				self:Disable()
-				self:SetAlpha(0.4)
-			else
-				self:Enable()
-				self:SetAlpha(1)
-			end
+local items = {};
+for i=1,CURRENT_EXPANSION do
+	local key, expansion = ExpansionSettings[i], app.CreateExpansion(i);
+	items[i] = {
+		text = "|T" .. expansion.icon .. ":0|t |c" .. app.DefaultColors.Insane .. expansion.name .. "|r",
+		tooltip = L.EXPANSION_FILTER_TOOLTIP:format(expansion.name),
+		get = function() return settings:Get(key); end,
+		set = function(checked)
+			settings:Set(key, checked);
+			settings:UpdateMode(1);
 		end,
-		function(self)
-			-- OnClick
-			settings:Set(self.expansionKey, self:GetChecked())
-			settings:UpdateMode(1)
-		end
-	)
-	checkbox.expansionKey = expansion.key
-
-	if i == 1 then
-		checkbox:SetPoint("TOPLEFT", lastCheckbox, "BOTTOMLEFT", 0, -10)
-	else
-		checkbox:SetPoint("TOPLEFT", lastCheckbox, "BOTTOMLEFT", 0, -4)
-	end
-
-	-- Set tooltip
-	checkbox:SetATTTooltip(string.format(L.EXPANSION_FILTER_TOOLTIP, expansionName))
-
-	lastCheckbox = checkbox
+		isChanged = function() return settings.IsSettingChanged(key); end,
+	};
 end
+settings.CreateCheckList(child, {
+	top = 34,
+	columns = 2,
+	usable = IsUsable,
+	text = L.EXPANSION_EXPLAIN_LABEL.."\n\n"..L.EXPANSION_FILTER_ENABLE_TOOLTIP,
+	groups = { { title = L.EXPANSION_FILTER_LABEL, items = items } },
+});
 
 -- Control buttons
-local buttonEnableAll = child:CreateButton(
-	{ text = L.EXPANSION_ENABLE_ALL, tooltip = L.EXPANSION_ENABLE_ALL_TOOLTIP },
-	{
-		OnClick = function(self)
-			for i=1,#expansions do
-				settings:Set(expansions[i].key, true)
+local last;
+local function CreateExpansionButton(text, tooltip, IsEnabled)
+	local button = child:CreateButton({ text = text, tooltip = tooltip }, {
+		OnClick = function()
+			for i,key in ipairs(ExpansionSettings) do
+				settings:Set(key, IsEnabled(i))
 			end
 			settings:UpdateMode(1)
 		end,
-	}
-)
-buttonEnableAll:SetPoint("LEFT", headerExpansions, 0, 0)
-buttonEnableAll:SetPoint("BOTTOM", child, "BOTTOM", 0, 10)
-buttonEnableAll.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:Disable()
+	})
+	button.OnRefresh = function(self) self:SetEnabled(IsUsable()) end
+	if last then
+		button:SetPoint("LEFT", last, "RIGHT", 8, 0)
 	else
-		self:Enable()
+		button:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 4, -8)
 	end
+	last = button
 end
-
-local buttonDisableAll = child:CreateButton(
-	{ text = L.EXPANSION_DISABLE_ALL, tooltip = L.EXPANSION_DISABLE_ALL_TOOLTIP },
-	{
-		OnClick = function(self)
-			for i=1,#expansions do
-				settings:Set(expansions[i].key, false)
-			end
-			settings:UpdateMode(1)
-		end,
-	}
-)
-buttonDisableAll:AlignAfter(buttonEnableAll, 8)
-buttonDisableAll.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:Disable()
-	else
-		self:Enable()
-	end
-end
-
-local buttonCurrentOnly = child:CreateButton(
-	{ text = L.EXPANSION_CURRENT_ONLY, tooltip = L.EXPANSION_CURRENT_ONLY_TOOLTIP },
-	{
-		OnClick = function(self)
-			local currentExpansion = CURRENT_EXPANSION
-			for i=1,#expansions do
-				settings:Set(expansions[i].key, i == currentExpansion)
-			end
-			settings:UpdateMode(1)
-		end,
-	}
-)
-buttonCurrentOnly:AlignAfter(buttonDisableAll, 8)
-buttonCurrentOnly.OnRefresh = function(self)
-	if app.MODE_DEBUG then
-		self:Disable()
-	else
-		self:Enable()
-	end
-end
+CreateExpansionButton(L.EXPANSION_ENABLE_ALL, L.EXPANSION_ENABLE_ALL_TOOLTIP, function() return true end)
+CreateExpansionButton(L.EXPANSION_DISABLE_ALL, L.EXPANSION_DISABLE_ALL_TOOLTIP, function() return false end)
+CreateExpansionButton(L.EXPANSION_CURRENT_ONLY, L.EXPANSION_CURRENT_ONLY_TOOLTIP, function(i) return i == CURRENT_EXPANSION end)

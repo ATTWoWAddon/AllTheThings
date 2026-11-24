@@ -347,10 +347,10 @@ local function CreatePreview(page, title, UpdatePreview)
 end
 
 -- Creates a scrollable column on the page, whose scrollbar hides while everything fits
-local function CreateColumn(page, left, right)
+local function CreateColumn(page, left, right, top)
 	local content = page:CreateScrollFrame();
 	local scroller = content.ScrollContainer;
-	scroller:SetPoint("TOPLEFT", page.separator, "BOTTOMLEFT", left, -4);
+	scroller:SetPoint("TOPLEFT", page.separator, "BOTTOMLEFT", left, -4 - (top or 0));
 	scroller:SetPoint("BOTTOMRIGHT", page, "BOTTOMLEFT", right, 6);
 	local scrollBar = scroller.ScrollBar or _G[scroller:GetName() .. "ScrollBar"];
 	if scrollBar then

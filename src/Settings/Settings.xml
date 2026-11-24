@@ -2,6 +2,7 @@
 	<Script file="Settings.lua"/>
 	<Script file="Settings Window.lua"/>
 	<Script file="Option Sections.lua"/>
+	<Script file="Check List.lua"/>
 	<Script file="Pages/About.lua"/>
 	<Script file="Pages/Start.lua"/>
 	<Script file="Pages/General.lua"/>
