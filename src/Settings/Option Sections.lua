@@ -2,29 +2,35 @@ local _, app = ...;
 local settings = app.Settings;
 
 -- Global locals
-local ipairs, pairs, math_max
-	= ipairs, pairs, math.max;
+local ipairs, pairs, type, math_max
+	= ipairs, pairs, type, math.max;
 
--- Builds a settings page from a list of sections, with a live preview beside them.
+-- Builds a settings page from a list of sections, with a live preview or notes beside them.
 -- Each section is { title = "", options = { ... } } and each option is one of:
 --	{ type = "check", key = "", text = "", tooltip = "" }
 --	{ type = "slider", key = "", text = nil or "", tooltip = "", min = 0, max = 1, step = 1, format = "%.0f" }
---	{ type = "dropdown", key = "", text = "", choices = { { value = "", text = "" }, ... } }
+--	{ type = "dropdown", key = "", text = "", choices = { { value = "", text = "" }, ... }, width = 90 }
 -- Options can also have:
 --	indent: number of indentation steps
 --	requires: tooltip settings which must all be enabled for the option to be usable
 --	requiresAny: tooltip settings of which at least one must be enabled
---	get / set: used instead of the tooltip setting 'key'
+--	usable: function which must return true for the option to be usable
+--	get / set: used instead of the tooltip setting 'key' (not for sliders)
 --	OnChanged: called after the option changed
+--	OnRefresh: called whenever the option refreshes (checks and dropdowns), with the option's frame
+--	wip: marks a check as being worked on
+-- The choices of a dropdown can also be a function which returns them.
 -- A false option or section is skipped, so they can be written as 'condition and { ... } or false'.
 
 -- Layout
-local COLUMN_WIDTH, CONTENT_WIDTH, PREVIEW_X = 366, 338, 384;
+local COLUMN_WIDTH, SCROLLBAR_WIDTH, ASIDE_X = 366, 28, 384;
+local FULL_WIDTH = 640;	-- without anything beside the sections
 local HEADER_HEIGHT, CHECK_HEIGHT, SECTION_GAP, INDENT = 24, 20, 8, 16;
 local SLIDER_HEIGHT, SLIDER_LABEL_HEIGHT, DROPDOWN_HEIGHT = 34, 18, 28;
 local PREVIEW_PADDING, PREVIEW_INDENT = 10, 10;
 
 local function IsUsable(option)
+	if option.usable and not option.usable() then return false; end
 	if option.requires then
 		for _,key in ipairs(option.requires) do
 			if not settings:GetTooltipSetting(key) then return false; end
@@ -67,9 +73,12 @@ local Builders = {
 		function(self)
 			self:SetChecked(GetOption(option) and true or false);
 			SetUsable(self, IsUsable(option));
+			if option.OnRefresh then option.OnRefresh(self); end
 		end,
 		function(self)
 			SetOption(option, self:GetChecked() and true or false);
+			-- The option may not have accepted the change
+			self:SetChecked(GetOption(option) and true or false);
 		end);
 		cb:SetScale(1);
 		cb:SetSize(22, 22);
@@ -79,10 +88,11 @@ local Builders = {
 		text:SetScale(1);
 		text:SetFontObject(GameFontNormalSmall);
 		text:SetJustifyH("LEFT");
-		local maxWidth = CONTENT_WIDTH - x - 26;
+		local maxWidth = content.SectionWidth - x - 26;
 		if text:GetUnboundedStringWidth() > maxWidth then text:SetWidth(maxWidth); end
 		cb:SetHitRectInsets(0, -text:GetWidth(), 0, 0);
 		if option.tooltip then cb:SetATTTooltip(option.tooltip); end
+		if option.wip then cb:MarkAsWIP(); end
 		return CHECK_HEIGHT;
 	end,
 	slider = function(content, option, x, y)
@@ -93,6 +103,7 @@ local Builders = {
 			FORMAT = option.format,
 			MIN = option.min, MAX = option.max, STEP = option.step,
 			OnRefresh = function(self) SetUsable(self, IsUsable(option)); end,
+			OnValueChanged = option.OnChanged,
 		});
 		local labelHeight = option.text and SLIDER_LABEL_HEIGHT or 0;
 		slider:SetSize(200, 20);
@@ -108,13 +119,19 @@ local Builders = {
 
 		local dropdown = CreateFrame("Frame", content:GetName() .. "-DD-" .. option.key:gsub("%W", ""), content, "UIDropDownMenuTemplate");
 		dropdown:SetPoint("LEFT", label, "RIGHT", -8, -2);
-		UIDropDownMenu_SetWidth(dropdown, 90);
+		UIDropDownMenu_SetWidth(dropdown, option.width or 90);
+		local function GetChoices()
+			return type(option.choices) == "function" and option.choices() or option.choices;
+		end
 		local function InitializeMenu()
-			for _,choice in ipairs(option.choices) do
+			for _,choice in ipairs(GetChoices()) do
 				local info = UIDropDownMenu_CreateInfo();
 				info.text = choice.text;
 				info.checked = GetOption(option) == choice.value;
-				info.func = function() SetOption(option, choice.value); end
+				info.func = function()
+					SetOption(option, choice.value);
+					dropdown:OnRefresh();
+				end
 				UIDropDownMenu_AddButton(info);
 			end
 		end
@@ -126,7 +143,7 @@ local Builders = {
 				UIDropDownMenu_Initialize(self, InitializeMenu);
 			end
 			local value = GetOption(option);
-			for _,choice in ipairs(option.choices) do
+			for _,choice in ipairs(GetChoices()) do
 				if choice.value == value then UIDropDownMenu_SetText(self, choice.text); end
 			end
 			if IsUsable(option) then
@@ -138,6 +155,7 @@ local Builders = {
 				self:SetAlpha(0.4);
 				label:SetAlpha(0.4);
 			end
+			if option.OnRefresh then option.OnRefresh(self); end
 		end
 		if option.tooltip then
 			dropdown:EnableMouse(true);
@@ -218,10 +236,10 @@ local PreviewMixin = {
 };
 local function CreatePreview(page, title, UpdatePreview)
 	local label = page:CreateHeaderLabel(title);
-	label:SetPoint("TOPLEFT", page.separator, "BOTTOMLEFT", PREVIEW_X, -8);
+	label:SetPoint("TOPLEFT", page.separator, "BOTTOMLEFT", ASIDE_X, -8);
 
 	local preview = CreateFrame("Frame", nil, page, BackdropTemplateMixin and "BackdropTemplate");
-	preview:SetPoint("TOPLEFT", page.separator, "BOTTOMLEFT", PREVIEW_X, -30);
+	preview:SetPoint("TOPLEFT", page.separator, "BOTTOMLEFT", ASIDE_X, -30);
 	preview:SetPoint("RIGHT", page, "RIGHT", -10, 0);
 	preview:SetHeight(40);
 	preview:SetBackdrop({
@@ -252,40 +270,61 @@ local function CreatePreview(page, title, UpdatePreview)
 	page:HookScript("OnShow", Refresh);
 end
 
----@param page table # Settings page which receives the sections.
----@param sections table # Section and option definitions, see above.
----@param previewTitle string # Title shown above the preview.
----@param UpdatePreview function # Adds the preview's lines with preview:AddLine(left, right, options).
-settings.CreateOptionSections = function(page, sections, previewTitle, UpdatePreview)
+-- Creates a scrollable column on the page, whose scrollbar hides while everything fits
+local function CreateColumn(page, left, right)
 	local content = page:CreateScrollFrame();
 	local scroller = content.ScrollContainer;
-	scroller:SetPoint("TOPLEFT", page.separator, "BOTTOMLEFT", 0, -4);
-	scroller:SetPoint("BOTTOMRIGHT", page, "BOTTOMLEFT", COLUMN_WIDTH, 6);
+	scroller:SetPoint("TOPLEFT", page.separator, "BOTTOMLEFT", left, -4);
+	scroller:SetPoint("BOTTOMRIGHT", page, "BOTTOMLEFT", right, 6);
 	local scrollBar = scroller.ScrollBar or _G[scroller:GetName() .. "ScrollBar"];
 	if scrollBar then
 		scrollBar:ClearAllPoints();
 		scrollBar:SetPoint("TOPRIGHT", scroller, "TOPRIGHT", -4, -18);
 		scrollBar:SetPoint("BOTTOMRIGHT", scroller, "BOTTOMRIGHT", -4, 18);
-		-- Hide the scrollbar while everything fits
 		local function UpdateScrollBar()
 			scrollBar:SetShown(scroller:GetVerticalScrollRange() > 1);
 		end
 		scroller:HookScript("OnScrollRangeChanged", UpdateScrollBar);
 		scroller:HookScript("OnShow", UpdateScrollBar);
 	end
-	content:SetWidth(CONTENT_WIDTH);
+	content.SectionWidth = right - left - SCROLLBAR_WIDTH;
+	content:SetWidth(content.SectionWidth);
+	return content;
+end
+local function CreateSectionHeader(content, title, y)
+	local header = content:CreateHeaderLabel(title);
+	header:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y);
+	local line = content:CreateTexture(nil, "ARTWORK");
+	line:SetColorTexture(1, 1, 1, 0.2);
+	line:SetHeight(1);
+	line:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y - HEADER_HEIGHT + 5);
+	line:SetPoint("RIGHT", content, "LEFT", content.SectionWidth, 0);
+	return HEADER_HEIGHT;
+end
+local function CreateNotes(page, notes)
+	local content = CreateColumn(page, ASIDE_X - 8, FULL_WIDTH + 16);
+	local y = -4;
+	for _,note in ipairs(notes) do
+		y = y - CreateSectionHeader(content, note.title, y);
+		local text = content:CreateTextLabel(note.text);
+		text:SetFontObject(GameFontNormalSmall);
+		text:SetWidth(content.SectionWidth - 8);
+		text:SetSpacing(2);
+		text:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y);
+		y = y - text:GetStringHeight() - SECTION_GAP;
+	end
+	content:SetHeight(-y);
+end
 
+---@param page table # Settings page which receives the sections.
+---@param sections table # Section and option definitions, see above.
+---@param aside? table # Shown beside the sections: { preview = title, Update = function(preview) } to add lines with preview:AddLine(left, right, options), or { notes = { { title = "", text = "" }, ... } }.
+settings.CreateOptionSections = function(page, sections, aside)
+	local content = CreateColumn(page, 0, aside and COLUMN_WIDTH or FULL_WIDTH + 16);
 	local y = -4;
 	for _,section in ipairs(sections) do
 		if section then
-			local header = content:CreateHeaderLabel(section.title);
-			header:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y);
-			local line = content:CreateTexture(nil, "ARTWORK");
-			line:SetColorTexture(1, 1, 1, 0.2);
-			line:SetHeight(1);
-			line:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y - HEADER_HEIGHT + 5);
-			line:SetPoint("RIGHT", content, "LEFT", CONTENT_WIDTH, 0);
-			y = y - HEADER_HEIGHT;
+			y = y - CreateSectionHeader(content, section.title, y);
 			for _,option in ipairs(section.options) do
 				if option then
 					y = y - Builders[option.type](content, option, 8 + (option.indent or 0) * INDENT, y);
@@ -296,5 +335,8 @@ settings.CreateOptionSections = function(page, sections, previewTitle, UpdatePre
 	end
 	-- The last section needs no gap below it
 	content:SetHeight(-y - SECTION_GAP);
-	CreatePreview(page, previewTitle, UpdatePreview);
+	if aside then
+		if aside.preview then CreatePreview(page, aside.preview, aside.Update); end
+		if aside.notes then CreateNotes(page, aside.notes); end
+	end
 end

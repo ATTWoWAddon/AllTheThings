@@ -42,9 +42,9 @@ settings.CreateOptionSections(child, {
 			set = function(value) settings:Set("Dynamic:Style", value); end,
 		},
 	} },
-}, L.PREVIEW_LABEL,
+},
 -- Preview: a fixed sample of a list.
-function(preview)
+{ preview = L.PREVIEW_LABEL, Update = function(preview)
 	local function Get(key) return settings:GetTooltipSetting(key); end
 	local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 	-- Indents grow with the depth of the rows above when they aren't adjusted
@@ -69,4 +69,4 @@ function(preview)
 	if expandAll and not expandDifficulty then
 		preview:AddLine(L.PREVIEW_REWARD:format(3), missing, { indent = base + 2, icon = "Interface\\Icons\\INV_Misc_Bag_10" });
 	end
-end);
+end });

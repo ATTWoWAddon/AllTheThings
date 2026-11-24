@@ -97,7 +97,7 @@ local function AddTooltipHelp(preview)
 	preview:AddLine(L.OTHER_ROW_INSTRUCTIONS, nil, WRAPPED);
 	preview:AddLine(L.INFORMATION_ATT_WINDOWS_ONLY, nil, GRAY);
 end
-settings.CreateOptionSections(child, sections, L.PREVIEW_LABEL, function(preview)
+settings.CreateOptionSections(child, sections, { preview = L.PREVIEW_LABEL, Update = function(preview)
 	local function Get(key) return settings:GetTooltipSetting(key); end
 	local function IsOn(key) return Get("Enabled") and Get(key); end
 
@@ -162,4 +162,4 @@ settings.CreateOptionSections(child, sections, L.PREVIEW_LABEL, function(preview
 	if Get("KnownBy") then AddCharacters(preview, L.KNOWN_BY); end
 	if Get("UsefulFor") then AddCharacters(preview, L.USEFUL_FOR); end
 	AddTooltipHelp(preview);
-end);
+end });

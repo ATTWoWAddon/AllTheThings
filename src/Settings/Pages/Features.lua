@@ -4,226 +4,100 @@ local L, settings = app.L, app.Settings;
 -- Settings: Features Page
 local child = settings:CreateOptionsPage(L.FEATURES_PAGE, appName)
 
--- Column 1
-local headerChatCommands = child:CreateHeaderLabel(L.CHAT_COMMANDS_LABEL)
-if child.separator then
-	headerChatCommands:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
-else
-	headerChatCommands:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-end
-
-local textChatCommands = child:CreateTextLabel(L.CHAT_COMMANDS_TEXT)
-textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -4)
-textChatCommands:SetWidth(320)
-
-local headerKeybindings = child:CreateHeaderLabel(L.KEYBINDINGS)
-headerKeybindings:SetPoint("TOPLEFT", textChatCommands, "BOTTOMLEFT", 0, -15)
-
-local textKeybindings = child:CreateTextLabel(app.Modules.Color.Colorize(L.KEYBINDINGS_TEXT, app.Colors.White))
-textKeybindings:SetPoint("TOPLEFT", headerKeybindings, "BOTTOMLEFT", 0, -4)
-textKeybindings:SetWidth(320)
-
--- Column 2
-local headerIconLegendStatus = child:CreateHeaderLabel(L.ICON_LEGEND_STATUS_LABEL)
-headerIconLegendStatus:SetPoint("TOPLEFT", headerChatCommands, 320, 0)
-
-local textIconLegendStatus = child:CreateTextLabel(L.ICON_LEGEND_STATUS_TEXT)
-textIconLegendStatus:SetPoint("TOPLEFT", headerIconLegendStatus, "BOTTOMLEFT", 0, -4)
-textIconLegendStatus:SetWidth(320)
-
-local headerIconLegendMisc = child:CreateHeaderLabel(L.ICON_LEGEND_MISC_LABEL)
-headerIconLegendMisc:SetPoint("TOPLEFT", textIconLegendStatus, "BOTTOMLEFT", 0, -15)
-
-local textIconLegendMisc = child:CreateTextLabel(L.ICON_LEGEND_MISC_TEXT)
-textIconLegendMisc:SetPoint("TOPLEFT", headerIconLegendMisc, "BOTTOMLEFT", 0, -4)
-textIconLegendMisc:SetWidth(320)
-
-local headerMinimapButton = child:CreateHeaderLabel(L.MINIMAP_LABEL)
-headerMinimapButton:SetPoint("TOPLEFT", textIconLegendMisc, "BOTTOMLEFT", 0, -15)
-
-
-local checkboxShowMinimapButton = child:CreateCheckBox(L.MINIMAP_BUTTON_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("MinimapButton"))
-end,
-function(self)
-	settings:SetTooltipSetting("MinimapButton", self:GetChecked())
+local function UpdateMinimapButton()
 	app.SetMinimapButtonSettings(
 		settings:GetTooltipSetting("MinimapButton"),
 		settings:GetTooltipSetting("MinimapSize"));
-end)
-checkboxShowMinimapButton:SetATTTooltip(L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP)
-checkboxShowMinimapButton:SetPoint("TOPLEFT", headerMinimapButton, "BOTTOMLEFT", -2, 0)
+end
 
-local sliderMinimapButtonSize = child:CreateSlider("ATTsliderMinimapButtonSize", {
-	TEXT=L.MINIMAP_SLIDER,
-	TOOLTIP=L.MINIMAP_SLIDER_TOOLTIP,
-	MIN=18, MAX=48, STEP=1,
-	SETTING="MinimapSize",
-	FORMAT="%.0f",
-	OnRefresh=function(self)
-		if not settings:GetTooltipSetting("MinimapButton") then
-			self:Disable()
-			self:SetAlpha(0.4)
-		else
-			self:Enable()
-			self:SetAlpha(1)
+-- Cutscenes
+local cutsceneSkipper = CreateFrame("Frame");
+cutsceneSkipper:SetScript("OnEvent", function(self, event, movieID)
+	-- print(self, "OnEvent", event, movieID)
+	if settings:GetTooltipSetting("Skip:Cutscenes:SeenOnly") then
+		-- Only movies report an ID, so in-engine cinematics always play in this mode.
+		if event ~= "PLAY_MOVIE" or not movieID then return end
+		local seen = ATTAccountWideData.SeenMovies
+		if not seen then
+			seen = {}
+			ATTAccountWideData.SeenMovies = seen
 		end
-	end,
-	OnValueChanged=function(self)
-		app.SetMinimapButtonSettings(settings:GetTooltipSetting("MinimapButton"),settings:GetTooltipSetting("MinimapSize"));
-	end,
-})
-sliderMinimapButtonSize:SetWidth(200)
-sliderMinimapButtonSize:SetHeight(20)
-sliderMinimapButtonSize:SetPoint("TOPLEFT", checkboxShowMinimapButton, "BOTTOMLEFT", 5, -12)
-
-local checkboxShowWorldMapButton = child:CreateCheckBox(L.WORLDMAP_BUTTON_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("WorldMapButton"))
-end,
-function(self)
-	settings:SetTooltipSetting("WorldMapButton", self:GetChecked())
+		-- First viewing on this account: remember it and let it play.
+		if not seen[movieID] then
+			seen[movieID] = true
+			return
+		end
+	end
+	MovieFrame:Hide()
+	CinematicFrame_CancelCinematic()
+	app.print(RENOWN_LEVEL_UP_SKIP_BUTTON,CINEMATICS)
 end)
-checkboxShowWorldMapButton:SetATTTooltip(L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP)
-checkboxShowWorldMapButton:SetPoint("TOP", sliderMinimapButtonSize, "BOTTOM", 0, -8)
-checkboxShowWorldMapButton:SetPoint("LEFT", checkboxShowMinimapButton, "LEFT", 0, 0)
-
-local headerModules = child:CreateHeaderLabel(L.MODULES_LABEL)
-headerModules:SetPoint("TOP", checkboxShowWorldMapButton, "BOTTOM", 0, -10)
-headerModules:SetPoint("LEFT", headerMinimapButton, "LEFT", 0, 0)
-
-local ChangeSkipCutsceneState = function(self, checked)
-	if checked then
-		self:RegisterEvent("PLAY_MOVIE")
-		self:RegisterEvent("CINEMATIC_START")
+local function UpdateCutsceneSkipper()
+	if settings:GetTooltipSetting("Skip:Cutscenes") then
+		cutsceneSkipper:RegisterEvent("PLAY_MOVIE")
+		cutsceneSkipper:RegisterEvent("CINEMATIC_START")
 	else
-		self:UnregisterEvent("PLAY_MOVIE")
-		self:UnregisterEvent("CINEMATIC_START")
+		cutsceneSkipper:UnregisterEvent("PLAY_MOVIE")
+		cutsceneSkipper:UnregisterEvent("CINEMATIC_START")
 	end
 end
-local checkboxAutomaticallySkipCutscenes = child:CreateCheckBox(L.SKIP_CUTSCENES_CHECKBOX,
-function(self)
-	local checked = settings:GetTooltipSetting("Skip:Cutscenes")
-	self:SetChecked(checked)
-	self:SetScript("OnEvent", function(self, event, movieID)
-		-- print(self, "OnEvent", event, movieID)
-		if settings:GetTooltipSetting("Skip:Cutscenes:SeenOnly") then
-			-- Only movies report an ID, so in-engine cinematics always play in this mode.
-			if event ~= "PLAY_MOVIE" or not movieID then return end
-			local seen = ATTAccountWideData.SeenMovies
-			if not seen then
-				seen = {}
-				ATTAccountWideData.SeenMovies = seen
-			end
-			-- First viewing on this account: remember it and let it play.
-			if not seen[movieID] then
-				seen[movieID] = true
-				return
-			end
-		end
-		MovieFrame:Hide()
-		CinematicFrame_CancelCinematic()
-		app.print(RENOWN_LEVEL_UP_SKIP_BUTTON,CINEMATICS)
-	end)
-	ChangeSkipCutsceneState(self, checked)
-end,
-function(self)
-	settings:SetTooltipSetting("Skip:Cutscenes", self:GetChecked())
-end)
-checkboxAutomaticallySkipCutscenes:SetATTTooltip(L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP)
-checkboxAutomaticallySkipCutscenes:SetPoint("TOPLEFT", headerModules, "BOTTOMLEFT", -2, 0)
 
-local checkboxSkipSeenCutscenesOnly = child:CreateCheckBox(L.SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Skip:Cutscenes:SeenOnly"))
-	if not settings:GetTooltipSetting("Skip:Cutscenes") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
-	end
-end,
-function(self)
-	settings:SetTooltipSetting("Skip:Cutscenes:SeenOnly", self:GetChecked())
-end)
-checkboxSkipSeenCutscenesOnly:SetATTTooltip(L.SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX_TOOLTIP)
-checkboxSkipSeenCutscenesOnly:AlignBelow(checkboxAutomaticallySkipCutscenes, 1)
-
-local checkboxFilterMiniListTimerunning;
-if app.IsRetail and app.GameBuildVersion > 70000 then
-	-- TODO: revise with Legion Remix so that Minilist can grab/assign extra filters without needing to be loaded immediately
-	-- in case someone isn't even using it
-	local function AddTimerunningToCurrentInstance()
-		local active = settings:GetTooltipSetting("Filter:MiniList:Timerunning")
-		local minilist = app:GetWindow("MiniList", true)
-		if minilist then minilist.Filters = active and { Timerunning = true } or nil end
-	end
+-- Timerunning
+local HasTimerunning = app.IsRetail and app.GameBuildVersion > 70000;
+-- TODO: revise with Legion Remix so that Minilist can grab/assign extra filters without needing to be loaded immediately
+-- in case someone isn't even using it
+local function AddTimerunningToCurrentInstance()
+	local active = settings:GetTooltipSetting("Filter:MiniList:Timerunning")
+	local minilist = app:GetWindow("MiniList", true)
+	if minilist then minilist.Filters = active and { Timerunning = true } or nil end
+end
+if HasTimerunning then
 	app.AddEventHandler("OnLoad", AddTimerunningToCurrentInstance)
-	checkboxFilterMiniListTimerunning = child:CreateCheckBox(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX,
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Filter:MiniList:Timerunning"))
-		self:SetAlpha(app.Modules.Events.IsTimerunningActive and 1 or 0.4)
-	end,
-	function(self)
-		-- No Timerunning Active, don't modify settings
-		if not app.Modules.Events.IsTimerunningActive then self:SetChecked(false) return end
-		settings:SetTooltipSetting("Filter:MiniList:Timerunning", self:GetChecked())
-		AddTimerunningToCurrentInstance()
-		app.LocationTrigger(true)
-		-- changing this now needs to update Costs again since they now depend on this Filter
-		app.HandleEvent("OnRecalculate_NewSettings")
-	end)
-	checkboxFilterMiniListTimerunning:SetATTTooltip(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP)
-	checkboxFilterMiniListTimerunning:AlignBelow(checkboxSkipSeenCutscenesOnly)
 end
 
-if app.IsClassic then
-	local checkboxAutomaticallyOpenProfessionList = child:CreateCheckBox(L.AUTO_PROF_LIST_CHECKBOX,
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Auto:ProfessionList"))
-	end,
-	function(self)
-		settings:SetTooltipSetting("Auto:ProfessionList", self:GetChecked())
-	end)
-	checkboxAutomaticallyOpenProfessionList:SetATTTooltip(L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP)
-	if checkboxFilterMiniListTimerunning then
-		checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxFilterMiniListTimerunning, -1)
-	else
-		checkboxAutomaticallyOpenProfessionList:AlignBelow(checkboxSkipSeenCutscenesOnly, -1)
-	end
-
-	local OpenAuctionListAutomatically = child:CreateCheckBox(L.AUTO_AUCTION_LIST_CHECKBOX,
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Auto:AuctionList"));
-	end,
-	function(self)
-		local checked = self:GetChecked();
-		settings:SetTooltipSetting("Auto:AuctionList", checked);
-		if checked then
-			local window = app:GetWindow("Auctions");
-			if window then window:UpdatePosition(); end
-		end
-	end);
-	OpenAuctionListAutomatically:SetATTTooltip(L.AUTO_AUCTION_LIST_CHECKBOX_TOOLTIP);
-	OpenAuctionListAutomatically:AlignBelow(checkboxAutomaticallyOpenProfessionList)
-else
-	-- Retail and Forever show the Auction Module as a tab on the Auction House, which this hides completely.
-	-- Note: rawget avoids the Localization table's MISSING LOCALE fallback (Forever doesn't export these strings yet)
-	local checkboxShowAuctionTab = child:CreateCheckBox(rawget(L, "AUCTION_TAB_CHECKBOX") or "Show the Auction House Module Tab",
-	function(self)
-		self:SetChecked(settings:GetTooltipSetting("Show:AuctionTab"));
-	end,
-	function(self)
-		settings:SetTooltipSetting("Show:AuctionTab", self:GetChecked());
-		local window = app:GetWindow("Auctions", true);
-		if window and window.UpdatePosition then window:UpdatePosition(); end
-	end);
-	checkboxShowAuctionTab:SetATTTooltip(rawget(L, "AUCTION_TAB_CHECKBOX_TOOLTIP") or "Enable this option if you want to see the Auction House Module provided with ATT.");
-	if checkboxFilterMiniListTimerunning then
-		checkboxShowAuctionTab:AlignBelow(checkboxFilterMiniListTimerunning, -1)
-	else
-		checkboxShowAuctionTab:AlignBelow(checkboxSkipSeenCutscenesOnly, -1)
-	end
-end
+settings.CreateOptionSections(child, {
+	{ title = L.MINIMAP_LABEL, options = {
+		{ type = "check", key = "MinimapButton", text = L.MINIMAP_BUTTON_CHECKBOX, tooltip = L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP, OnChanged = UpdateMinimapButton },
+		{ type = "slider", name = "ATTsliderMinimapButtonSize", key = "MinimapSize", text = L.MINIMAP_SLIDER, tooltip = L.MINIMAP_SLIDER_TOOLTIP, min = 18, max = 48, step = 1, format = "%.0f", indent = 1, requires = { "MinimapButton" }, OnChanged = UpdateMinimapButton },
+		{ type = "check", key = "WorldMapButton", text = L.WORLDMAP_BUTTON_CHECKBOX, tooltip = L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP },
+	} },
+	{ title = L.MODULES_LABEL, options = {
+		{ type = "check", key = "Skip:Cutscenes", text = L.SKIP_CUTSCENES_CHECKBOX, tooltip = L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP, OnRefresh = UpdateCutsceneSkipper },
+		{ type = "check", key = "Skip:Cutscenes:SeenOnly", text = L.SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX, tooltip = L.SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX_TOOLTIP, indent = 1, requires = { "Skip:Cutscenes" } },
+		HasTimerunning and { type = "check", key = "Filter:MiniList:Timerunning", text = L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX, tooltip = L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP,
+			usable = function() return app.Modules.Events.IsTimerunningActive; end,
+			OnChanged = function()
+				AddTimerunningToCurrentInstance()
+				app.LocationTrigger(true)
+				-- changing this now needs to update Costs again since they now depend on this Filter
+				app.HandleEvent("OnRecalculate_NewSettings")
+			end,
+		},
+		app.IsClassic and { type = "check", key = "Auto:ProfessionList", text = L.AUTO_PROF_LIST_CHECKBOX, tooltip = L.AUTO_PROF_LIST_CHECKBOX_TOOLTIP },
+		app.IsClassic and { type = "check", key = "Auto:AuctionList", text = L.AUTO_AUCTION_LIST_CHECKBOX, tooltip = L.AUTO_AUCTION_LIST_CHECKBOX_TOOLTIP,
+			OnChanged = function()
+				if settings:GetTooltipSetting("Auto:AuctionList") then
+					local window = app:GetWindow("Auctions");
+					if window then window:UpdatePosition(); end
+				end
+			end,
+		},
+		-- Retail and Forever show the Auction Module as a tab on the Auction House, which this hides completely.
+		-- Note: rawget avoids the Localization table's MISSING LOCALE fallback (Forever doesn't export these strings yet)
+		not app.IsClassic and { type = "check", key = "Show:AuctionTab",
+			text = rawget(L, "AUCTION_TAB_CHECKBOX") or "Show the Auction House Module Tab",
+			tooltip = rawget(L, "AUCTION_TAB_CHECKBOX_TOOLTIP") or "Enable this option if you want to see the Auction House Module provided with ATT.",
+			OnChanged = function()
+				local window = app:GetWindow("Auctions", true);
+				if window and window.UpdatePosition then window:UpdatePosition(); end
+			end,
+		},
+	} },
+}, {
+	notes = {
+		{ title = L.ICON_LEGEND_STATUS_LABEL, text = L.ICON_LEGEND_STATUS_TEXT },
+		{ title = L.ICON_LEGEND_MISC_LABEL, text = L.ICON_LEGEND_MISC_TEXT },
+		{ title = L.KEYBINDINGS, text = app.Modules.Color.Colorize(L.KEYBINDINGS_TEXT, app.Colors.White) },
+		{ title = L.CHAT_COMMANDS_LABEL, text = L.CHAT_COMMANDS_TEXT },
+	},
+});

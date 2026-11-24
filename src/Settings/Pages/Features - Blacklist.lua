@@ -7,19 +7,11 @@ if not (today.monthDay == 1 and today.month == 4) then return; end
 
 -- Blacklist
 local child = settings:CreateOptionsPage(L.BLACKLIST_PAGE, L.FEATURES_PAGE)
-local headerBlacklist = child:CreateHeaderLabel("Blacklist")
-if child.separator then
-	headerBlacklist:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
-else
-	headerBlacklist:SetPoint("TOPLEFT", child, "TOPLEFT", 8, -8);
-end
-
-local blacklistCheckbox = child:CreateCheckBox(L.BLACKLIST_CHECKBOX,
-function(self)
-	self:SetChecked(false);
-end,
-function(self)
-	app.print(L.BLACKLIST_JUST_KIDDING);
-end)
-blacklistCheckbox:SetATTTooltip(L.BLACKLIST_CHECKBOX_TOOLTIP)
-blacklistCheckbox:SetPoint("TOPLEFT", headerBlacklist, "BOTTOMLEFT", 4, 0)
+settings.CreateOptionSections(child, {
+	{ title = L.BLACKLIST_PAGE, options = {
+		{ type = "check", text = L.BLACKLIST_CHECKBOX, tooltip = L.BLACKLIST_CHECKBOX_TOOLTIP,
+			get = app.ReturnFalse,
+			set = function() app.print(L.BLACKLIST_JUST_KIDDING); end,
+		},
+	} },
+});
