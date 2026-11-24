@@ -3228,7 +3228,7 @@ un = function(u, t) t --[[@as ATTObject]].u = u; return t; end						-- Mark an o
 ---@param t? ATTObject|ATTObjectArray # Daily reward metadata or child reward objects.
 ---@return ATTHeaderObject # Daily reward header associated with the supplied quest lockout.
 dailyReward = function(questID, t)								-- A daily group based on questID with specific rewards (typically an HQT trigger with lockout-based loot/rewards)
-	local t = n(DAILY, t)
+	local t = n(DAILY, togroups(t))
 	t.questID = questID
 	t.isDaily = true
 	return t
@@ -3238,7 +3238,7 @@ end
 ---@param t? ATTObject|ATTObjectArray # Weekly reward metadata or child reward objects.
 ---@return ATTHeaderObject # Weekly reward header associated with the supplied quest lockout.
 weeklyReward = function(questID, t)								-- A weekly group based on questID with specific rewards (typically an HQT trigger with lockout-based loot/rewards)
-	local t = n(WEEKLY, t)
+	local t = n(WEEKLY, togroups(t))
 	t.questID = questID
 	t.isWeekly = true
 	return t
