@@ -4097,6 +4097,10 @@ local phases = {
 		state = 2,
 	},
 } L.PHASES = phases
+-- Automatic Types
+L.QUEST_NAMES = {
+	[95600] = "Opened the Old Chest",
+}
 -- Supported Locales
 local simplifiedLocale = GetLocale():sub(1,2)
 if simplifiedLocale == "de" then

@@ -1786,3 +1786,14 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 		}),
 	},
 });
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.CLASSIC, {
+	m(MAP.KALIMDOR, {
+		m(MAP.FERALAS, {
+			q(95600, {	-- completed when opening the Old Chest after The Old Key (95599)
+				name = "Opened the Old Chest",
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+		}),
+	}),
+}));
