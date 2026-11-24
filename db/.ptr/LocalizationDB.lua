@@ -560,7 +560,25 @@ L.INCLUDE_ORIGINAL_CHECKBOX = "Original Source"
 L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip."
 L.INCOMPLETE = "|T" .. _.asset("incomplete") .. ":0|t |c" .. _.DefaultColors.Completed .. "Incomplete|r"
 L.INCOMPLETE_ICON = "|T" .. _.asset("incomplete") .. ":0|t"
+L.INFORMATION_ATT_WINDOWS_ONLY = "Only shown in the tooltips of ATT windows."
+L.INFORMATION_BONUS_ID_TOOLTIP = "The ID of a bonus applied to this version of the item."
+L.INFORMATION_DISPLAY_ID_TOOLTIP = "The ID of the model used to display a creature."
+L.INFORMATION_FILTER_ID_TOOLTIP = "The kind of Thing this is, as used by ATT's filters."
+L.INFORMATION_GROUP_DETAILS = "Details"
+L.INFORMATION_GROUP_IDS = "IDs & Technical"
+L.INFORMATION_GROUP_LOCATIONS = "Locations & Sources"
+L.INFORMATION_GROUP_REQUIREMENTS = "Requirements"
+L.INFORMATION_GROUP_TOGGLE_TOOLTIP = "Enable or disable everything listed in this group.\n\nA gray check means only some of it is enabled."
+L.INFORMATION_GUID_TOOLTIP = "The game's unique identifier for this specific object."
+L.INFORMATION_HEADER_ID_TOOLTIP = "The ID of an ATT header."
+L.INFORMATION_ITEM_STRING_TOOLTIP = "The raw text the game uses to describe this exact version of the item."
+L.INFORMATION_MOD_ID_TOOLTIP = "The modifier of this version of the item, such as its difficulty."
+L.INFORMATION_NO_MATCHES = "No matches."
 L.INFORMATION_PAGE = "Information"
+L.INFORMATION_PARENT_TOOLTIP = "Where this Thing is listed in ATT."
+L.INFORMATION_SOURCE_ID_TOOLTIP = "The ID of the appearance source, which is specific to this version of the item."
+L.INFORMATION_SPELL_NAME_TOOLTIP = "Shows the name of the spell next to its Spell ID."
+L.INFORMATION_VISUAL_ID_TOOLTIP = "The ID of the appearance, which items with the same look share."
 L.INSTANCE = INSTANCE
 L.INSTANCE_DESC = "Click this button to select a random instance based on what you're missing."
 L.INSTANCE_ID = "Instance ID"
@@ -1037,6 +1055,8 @@ L.SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!"
 L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by " .. SHIFT_KEY_TEXT .. " clicking on an ATT window."
 L.SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes"
 L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf."
+L.SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX = "Only Skip Movies You've Seen"
+L.SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX_TOOLTIP = "Enable this option to let each movie play the first time this account sees it, and only skip it after that.\n\nIn-engine cinematics don't have an ID the game shares with addons, so they always play while this is enabled."
 L.SOCIAL_PROGRESS = "Social Progress"
 L.SORT_BY_PROGRESS_CHECKBOX = "Sort By Progress"
 L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation (" .. SHIFT_KEY_TEXT .. " Right Click) to sort by the total progress of each group (instead of by Name)"
@@ -1193,7 +1213,15 @@ L.WEST = "West"
 L.WHITE_GRAY_TRANSMOG = "White/Gray Transmog"
 L.WHITE_GRAY_TRANSMOG_TOOLTIP = "Lists white and gray appearance sources ATT treats as collectible for your game version and tracking settings."
 L.WINDOW_COLORS = "Window Colors"
+L.WINDOWS_DYNAMIC_LABEL = "In Main List"
+L.WINDOWS_DYNAMIC_TOOLTIP = "Show this window as a category in the Main List.\n\nTakes effect after a UI reload."
+L.WINDOWS_FLAT_LABEL = "Flat"
+L.WINDOWS_FLAT_TOOLTIP = "Show this window as one flat list instead of grouped by category.\n\nApplies right away."
+L.WINDOWS_GROUP_MAIN_LISTS = "Main Lists"
+L.WINDOWS_GROUP_PROGRESS = "Quests & Progress"
+L.WINDOWS_GROUP_TOOLS = "Tools"
 L.WINDOWS_PAGE = "Windows"
+L.WINDOWS_RELOAD_NEEDED = "Main List changes take effect after a UI reload."
 L.WITH_WRAPPING_CHECKBOX = "Allow Wrapping"
 L.WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations."
 L.WORLD_QUESTS = TRACKER_HEADER_WORLD_QUESTS
@@ -3067,7 +3095,6 @@ _.Modules.Events.SetEventInformation(242, {
 	_.Modules.Events.CreateSchedule({hour=10,minute=0,month=11,monthDay=16,weekday=3,year=2027},{hour=10,minute=0,month=12,monthDay=7,weekday=3,year=2027})
 })
 _.Modules.Events.SetEventInformation(133900, {
-	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=15,weekday=1,year=2026},{hour=23,month=11,monthDay=15,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=22,weekday=1,year=2026},{hour=23,month=11,monthDay=22,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=29,weekday=1,year=2026},{hour=23,month=11,monthDay=29,weekday=1,year=2026}),
 	_.Modules.Events.CreateSchedule({hour=21,month=12,monthDay=6,weekday=1,year=2026},{hour=23,month=12,monthDay=6,weekday=1,year=2026}),
@@ -3119,7 +3146,8 @@ _.Modules.Events.SetEventInformation(133900, {
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=24,weekday=1,year=2027},{hour=23,month=10,monthDay=24,weekday=1,year=2027}),
 	_.Modules.Events.CreateSchedule({hour=21,month=10,monthDay=31,weekday=1,year=2027},{hour=23,month=10,monthDay=31,weekday=1,year=2027}),
 	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=7,weekday=1,year=2027},{hour=23,month=11,monthDay=7,weekday=1,year=2027}),
-	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=14,weekday=1,year=2027},{hour=23,month=11,monthDay=14,weekday=1,year=2027})
+	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=14,weekday=1,year=2027},{hour=23,month=11,monthDay=14,weekday=1,year=2027}),
+	_.Modules.Events.CreateSchedule({hour=21,month=11,monthDay=21,weekday=1,year=2027},{hour=23,month=11,monthDay=21,weekday=1,year=2027})
 })
 _.Modules.Events.SetEventInformation(133899, {
 	_.Modules.Events.CreateSchedule({hour=0,minute=0,month=9,monthDay=23,weekday=3,year=2025},{hour=23,minute=59,month=3,monthDay=19,weekday=5,year=2026}),
@@ -99716,6 +99744,8 @@ L.OBJECT_DEBUGGER_NAME = "名稱"
 L.OBJECT_ID = "物件 ID"
 L.OBJECT_TYPE = "物件類型"
 L.OBJECTIVES = "目標"
+L.OBJECTIVES_CHECKBOX = "任務目標"
+L.OBJECTIVES_CHECKBOX_TOOLTIP = "啟用此選項可逐一追蹤你目前進行中的任務目標。只要任務仍在任務日誌中，每個目標都會各自計為一個收集項目，完成後會標記為已收集。你也必須啟用任務追蹤。\n\n進行中的任務會在工具提示的「需求」下列出各個目標，顯示任務日誌中的進度文字（例如「已消滅 4/10 隻狗頭人歹徒」），並在已完成的目標旁顯示勾號。遊戲尚未提供任務日誌文字時，目標會顯示「資料讀取中」。"
 L.ONLY_OBTAINABLE_CHECKBOX = "僅顯示可取得項目"
 L.ONLY_OBTAINABLE_CHECKBOX_TOOLTIP = "若只想查看可取得的共享外觀，請啟用此選項。"
 L.ONLY_RELEVANT_CHECKBOX = "僅相關"
@@ -99798,6 +99828,7 @@ L.QUEST_ID = "任務 ID"
 L.QUEST_ITEMS = "任務物品"
 L.QUEST_LOOP = "可能剛剛從無限源任務循環中爆發出來。"
 L.QUEST_MAY_BE_REMOVED = "擷取任務資訊失敗。這個任務可能已從遊戲中移除。"
+L.QUEST_MOBS = "任務生物"
 L.QUEST_OBJECTIVE_INVALID = "無效的任務目標"
 L.QUEST_ONCE_PER_ACCOUNT = "帳號一次性任務"
 L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "任務 '%s' %s 將阻止收藏無關緊要的任務 '%s' %s"
@@ -99973,6 +100004,8 @@ L.SHOW_RECIPES_CHECKBOX_TOOLTIP = "如果您想在指標提示中看到任何角
 L.SHOW_REMAINING_CHECKBOX = "顯示剩餘事物"
 L.SHOW_REMAINING_CHECKBOX_TOOLTIP = "如果你想查看剩餘事物數量而不是總進度，請啟用此選項。"
 L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP = "如果想在遊戲中顯示需要天空騎術的內容，請啟用此選項。"
+L.SIMPLE_ZONE_DROPS_CHECKBOX = "簡化地區掉落"
+L.SIMPLE_ZONE_DROPS_CHECKBOX_TOOLTIP = "啟用此選項後，會在生物的工具提示中直接列出地區掉落物品，省略「地區掉落」標題。"
 L.SKIP_AUTO_REFRESH = "不自動刷新！"
 L.SKIP_AUTO_REFRESH_TOOLTIP = "預設情況下(未勾選)，任何可能影響可見資料的設定變化都會導致自動刷新。\n\n通過啟用該選項設定的變化將不會生效，直到玩家 " .. SHIFT_KEY_TEXT .. "點擊 ATT 視窗執行全部刷新。"
 L.SKIP_CUTSCENES_CHECKBOX = "自動跳過過場動畫"

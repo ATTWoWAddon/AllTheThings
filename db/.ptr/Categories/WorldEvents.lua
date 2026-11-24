@@ -1831,6 +1831,7 @@ crit(116853,{achID=63659,id=3,u=2})}}),
 ach(63658,{u=2,g={
 crit(116681,{achID=63659,id=2,u=2})}})}}),
 h(-29,{u=2,g={
+h(-768,{isWeekly=1,providers={{"n",261514},{"n",263573}},questID=97456,u=2,g={
 i(277283,{f=55,u=2,g={
 h(-88,{u=2,g={
 flt(4,{u=2,g={
@@ -1853,7 +1854,7 @@ s(310177,277899,{f=32,u=2}),
 s(310165,277882,{f=28,u=2}),
 s(310163,277880,{f=21,u=2}),
 s(310161,277876,{f=29,u=2}),
-s(310162,277879,{f=20,spellID=1296874,u=2})}})}}),
+s(310162,277879,{f=20,spellID=1296874,u=2})}})}})}}),
 i(286563,{f=55,u=2})}}),
 ah(2838,{icon=463478,lore="Bound by oath to Silvermoon, these paladins dedicate their studies towards the Aqir threat, seeking to understand the enemy's nature so their city may never be caught unprepared.",type="fa",u=2,g={
 faction(2838,{u=2}),

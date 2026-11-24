@@ -9599,7 +9599,7 @@ i(48857,{spellID=67733})}}),
 q(14372,{awp=40003,coords={
 [66]={{57.5,47.7}}},isBreadcrumb=1,lvl=10,nextQuests={14373,14374},qgs={36034},r=2,sourceQuests={14327}}),
 q(1435,{coords={
-[66]={{52.2,53.4}}},cost={{"i",6436,1}},crs={4663,4664,4665,4666},qgs={4498},qis={6435},r=1,rwp=40003,sourceQuests={1433},u=2}),
+[66]={{52.2,53.4}}},crs={4663,4664,4665,4666},qgs={4498},qis={6435,6436},r=1,rwp=40003,sourceQuests={1433},u=2}),
 q(1480,{crs={4663,4664,4665,4666,4667,4668,4705,13019},qss={20310},r=1,rwp=40003,u=2}),
 q(1481,{coords={
 [66]={{52.2,53.4}}},crs={4674},qgs={4498},qis={6441},r=1,rwp=40003,sourceQuests={1480},u=2}),
@@ -10539,6 +10539,8 @@ h(-58,{
 n(3881,{coords={
 [1]={{50.8,42.8}}},r=1,g={
 r(6413,{itemID=5483,requireSkill=185,skillID=2548})}}),
+n(3159,{coords={
+[461]={{43.2,65.8}}},r=1,sym={{"select","itemID",1194,2479,2130,2139,2134,2480,2132,2131}}}),
 n(113615,{awp=70003,coords={
 [1]={{55.4,11.2}},
 [463]={{57.4,62.2}}},description="Only available with the quests |cFFFFD700The Legion Returns|r or |cFFFFD700To Be Prepared|r. Permanently available on the Echo Isles.",r=1,g={
@@ -10546,6 +10548,10 @@ s(51820,97901,{f=2,loc=47}),
 toy(97919,{b=1}),
 toy(97942,{b=1}),
 toy(98552,{b=1})}}),
+n(10369,{coords={
+[1]={{56.4,73.2}}},r=1,sym={{"select","itemID",2492,2488,2506,2507,2491,2494,2490,2489,2495,2493}}}),
+n(3163,{coords={
+[1]={{52,40.4}}},r=1,sym={{"select","itemID",2492,2488,2491,2494,2490,2489,2495,2493}}}),
 n(5942,{coords={
 [1]={{57.4,77}}},r=1,g={
 r(7827,{itemID=6368,requireSkill=185,skillID=2548}),
@@ -18600,6 +18606,10 @@ n(8125,{coords={
 r(22480,{itemID=18046,requireSkill=185,skillID=2548,u=2})}}),
 n(69979,{u=2}),
 n(32362,{u=2}),
+n(25178,{awp=20003,coords={
+[71]={{51.4,27}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
+n(25177,{awp=20003,coords={
+[71]={{51.4,27}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(8137,{coords={
 [71]={{66.6,22.1}}},rwp=40003,u=2,g={
 r(18240,{itemID=13942,requireSkill=185,skillID=2548,u=2}),
@@ -27667,23 +27677,10 @@ q(705,{coords={
 [15]={{42.39,52.93}}},cost={{"i",4611,9}},maps={224},qgs={2817},rwp=40003,u=2,g={
 s(1610,4086,{b=1,f=31,u=2}),
 s(2016,5248,{b=1,f=27,u=2})}}),
-q(2418,{coords={
-[15]={{42.39,52.93}}},crs={4844,4845,4846,4847,4848,4849,7030,7091,7290},maps={230},qgs={2817},qis={8009,8052},rwp=40003,u=2,g={
-s(3337,9522,{b=1,f=8,u=2}),
-s(3919,10358,{b=1,f=6,loc=43,u=2}),
-s(3920,10359,{b=1,f=4,loc=47,u=2})}}),
 q(723,{coords={
 [15]={{37.94,10.53}}},qgs={2909},qis={4635},r=2,rwp=40003,sourceQuests={722},u=2}),
 q(724,{coords={
 [15]={{53.4,43.2}}},qgs={2910},qis={4635},r=2,rwp=40003,sourceQuests={723},u=2}),
-q(1360,{coords={
-[87]={{74.2,9.4}}},maps={48},qgs={6294},qis={8027},r=2,rwp=40003,u=2,g={
-o(124389,{coords={
-[48]={{35.2,97.4}}}})}}),
-q(2342,{coords={
-[90]={{62.3,48.6}}},maps={48},qgs={5651},qis={8026},r=1,rwp=40003,u=2,g={
-o(124388,{coords={
-[48]={{33.9,93}}}})}}),
 q(1420,{coords={
 [15]={{6.5,47.2}}},maps={51},qgs={5394},qis={6167},r=1,rwp=40003,sourceQuests={1418},u=2}),
 q(27794,{awp=40003,coords={
@@ -27722,11 +27719,6 @@ i(4645,{coords={
 [15]={{81.4,50.6}}},crs={2759},u=2})}}),
 q(27766,{awp=40003,coords={
 [15]={{66.4,55.5}}},crs={2725},lvl=15,qgs={46654},qis={62390},sourceQuests={27764}}),
-q(709,{coords={
-[15]={{51.4,76.9}}},qgs={2785},qis={4631},rwp=40003,u=2,g={
-s(1844,4746,{b=1,f=4,loc=42,u=2}),
-o(126260,{coords={
-[15]={{39.3,18.8}}}})}}),
 q(716,{coords={
 [15]={{25.8,44.4}}},cost={{"i",2868,1}},qgs={2920},rwp=40003,sourceQuests={712},u=2,g={
 s(1953,4979,{b=1,f=4,loc=43,u=2})}}),
@@ -27890,9 +27882,6 @@ q(27789,{awp=40003,coords={
 s(31724,63182,{b=1,f=8}),
 s(31723,63181,{b=1,f=5,loc=41}),
 s(31722,63180,{b=1,f=31})}}),
-q(2202,{coords={
-[15]={{2.6,46}}},maps={230},qgs={6868},qis={8047},r=1,rwp=40003,sourceQuests={2258},u=2,g={
-o(126049)}}),
 q(9439,{awp=20001,coords={
 [15]={{5.8,48}}},qgs={17097},qis={23658,23660},r=1,rwp=40003,u=2,g={
 o(181627,{coords={
@@ -32134,11 +32123,11 @@ i(56147,{b=1,f=113}),
 s(567,2055,{awp=100107,f=23})}})}}),
 h(-58,{
 n(190,{coords={
-[425]={{31.3,50.6}}},sym={{"select","symselector",24,14},{"pop"}}}),
+[425]={{31.3,50.6}}},r=2,sym={{"select","symselector",24,14},{"pop"}}}),
 n(1213,{coords={
-[425]={{31.7,50.7}}},sym={{"select","symselector",41},{"pop"},{"select","itemID",2129,17184}}}),
+[425]={{31.7,50.7}}},r=2,sym={{"select","symselector",41},{"pop"},{"select","itemID",2129,17184}}}),
 n(78,{coords={
-[425]={{30.1,52.4}}},sym={{"select","itemID",1194,2479,2130,2139,2134,2480,2131,2132}}})}),
+[425]={{30.1,52.4}}},r=2,sym={{"select","itemID",1194,2479,2130,2139,2134,2480,2131,2132}}})}),
 h(-63,{
 s(567,2055,{f=23,rwp=40003,u=2})})}}),
 h(-12,{
@@ -35608,9 +35597,6 @@ crit(38405,{achID=4899,id=1,r=2})}}),
 q(27025,{awp=40003,coords={
 [48]={{82.7,63.4}}},lvl=5,qgs={44859},qis={60737},r=2,g={
 o(205089)}}),
-q(17,{coords={
-[48]={{37.07,49.38}}},maps={15,230},qgs={1470},qis={8047},r=2,rwp=40003,sourceQuests={2500},u=2,g={
-o(126049)}}),
 q(271,{coords={
 [48]={{81.8,64.2}}},crs={1225},description="This quest gets marked as completed when you complete the quest 'Vyrin's Revenge (1/2)' (27036).",qgs={1156},qis={2713},r=2,rwp=40003,sourceQuests={258},u=2}),
 q(531,{coords={
@@ -38335,7 +38321,7 @@ s(32300,64608,{b=1,f=7,loc=44}),
 o(205545,{coords={
 [51]={{78.6,22.5}}}})}}),
 q(1418,{coords={
-[70]={{47.7,55.2}}},isBreadcrumb=1,nextQuests={1420},qgs={1442},r=1,rwp=40003,u=2}),
+[51]={{47.7,55.2}}},isBreadcrumb=1,nextQuests={1420},qgs={1442},r=1,rwp=40003,u=2}),
 q(27906,{awp=40003,coords={
 [51]={{49.3,55.3}}},isBreadcrumb=1,lvl=15,nextQuests={27907,27908},qgs={7623},r=1,sourceQuests={27857}}),
 q(1392,{crs={5477},qss={6196},rwp=40003,u=2}),
@@ -38356,7 +38342,7 @@ o(30855,{coords={
 o(30856,{coords={
 [51]={{65.5,55.5}}},u=2})}}),
 q(1424,{coords={
-[51]={{64.2,20.8}}},qgs={1443},qis={6175},r=1,rwp=40003,u=2,g={
+[51]={{47.9,55}}},qgs={1443},qis={6175},r=1,rwp=40003,u=2,g={
 o(30854,{coords={
 [51]={{65.5,55.5}}},u=2}),
 o(30855,{coords={
@@ -38412,7 +38398,7 @@ n(46623,{coords={
 q(27663,{awp=40003,coords={
 [51]={{74.2,12.1}}},crs={45825},lvl=15,qgs={46182},qis={62043},sourceQuests={27587}}),
 q(1429,{coords={
-[51]={{64.2,20.8}}},maps={26},qgs={1443},qis={6193},r=1,rwp=40003,sourceQuests={1424},u=2}),
+[51]={{47.9,55}}},maps={26},qgs={1443},qis={6193},r=1,rwp=40003,sourceQuests={1424},u=2}),
 q(28569,{awp=40003,coords={
 [36]={{71.8,68}}},isBreadcrumb=1,lvl=15,nextQuests={27587},qgs={9177},r=2}),
 q(28570,{awp=40003,coords={
@@ -44900,6 +44886,10 @@ i(27854,{f=55,lvl=10,spellID=27094})}}),
 n(19196,{coords={
 [111]={{67.2,67.6}}},minReputation={1011,0},g={
 i(25720,{f=200,isLimited=1,requireSkill=165,rwp=30200,u=2})}}),
+n(27721,{coords={
+[111]={{36.2,46.2}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
+n(27722,{coords={
+[111]={{57.2,73.8}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(19213,{coords={
 [111]={{66.2,68.8}}},minReputation={1011,0},g={
 r(26747,{itemID=21892,requireSkill=197,skillID=2539}),
@@ -45289,6 +45279,8 @@ n(19045,{coords={
 [111]={{58,15.2}}},minReputation={1011,0},g={
 i(27858,{f=55,lvl=23,spellID=27094}),
 i(29452,{f=55,lvl=27,spellID=35270})}}),
+n(27668,{coords={
+[111]={{73.4,56.2}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(27666,{coords={
 [111]={{48.8,41.8}}},sym={{"sub","common_vendor",25950}}}),
 n(19321,{coords={
@@ -46254,6 +46246,8 @@ r(28543,{isLimited=1,itemID=22900,requireSkill=171,skillID=2484}),
 r(28557,{isLimited=1,itemID=22909,requireSkill=171,skillID=2484}),
 r(28562,{isLimited=1,itemID=22911,requireSkill=171,skillID=2484}),
 r(28555,{isLimited=1,itemID=22907,requireSkill=171,skillID=2484})}}),
+n(25179,{coords={
+[105]={{52.8,41.8}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(23428,{awp=20100,coords={
 [105]={{28,58.6}}},g={
 i(33934,{b=1,f=55,lvl=23,minReputation={1038,0},spellID=28495}),
@@ -46269,6 +46263,8 @@ s(15063,32645,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=33,lvl=27,minReputatio
 s(15131,32828,{b=1,cost={{"i",32569,10}},f=9,minReputation={1038,42000}}),
 s(15064,32647,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=5,loc=43,lvl=27,minReputation={1038,42000}}),
 s(15065,32648,{b=1,cost={{"i",32569,100},{"i",32572,4}},f=7,loc=47,lvl=27,minReputation={1038,42000}})}}),
+n(19857,{coords={
+[105]={{52.8,42}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(22266,{awp=20100,coords={
 [105]={{27.8,58.2}}},minReputation={1038,0},g={
 i(32686,{f=55,lvl=26,spellID=40768}),
@@ -48732,6 +48728,10 @@ r(225551,{b=1,itemID=141059,lvl=10,requireSkill=773,skillID=2508}),
 cs(210873,{b=1,c={7},itemID=136938,lvl=41}),
 toy(136937,{b=1,c={7},lvl=11}),
 toy(138490,{b=1,c={7},lvl=11})}}),
+n(18898,{coords={
+[107]={{65.8,59.8}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
+n(25176,{coords={
+[107]={{66.2,59.6}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(19015,{coords={
 [107]={{55.2,37},{57,40}}},description="This vendor pats around Garadar.",minReputation={941,0},r=1,g={
 r(26750,{isLimited=1,itemID=21894,requireSkill=197,skillID=2539}),
@@ -49896,6 +49896,8 @@ n(33919,{awp=30100,coords={
 [109]={{33,64}}},rwp=40003,u=2}),
 n(32354,{awp=30002,coords={
 [109]={{33,64}}},rwp=40003,u=2}),
+n(24392,{coords={
+[109]={{33,64}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"merge"},{"pop"}},u=2}),
 n(58152,{awp=40300,coords={
 [109]={{33,64.2}}},description="Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",pvp=1,g={
 s(39478,77900,{b=1,c={5},f=4,loc=40,lvl=25,pvp=1,r=1}),
@@ -49999,6 +50001,8 @@ s(39314,77736,{b=1,c={11},f=5,loc=47,lvl=25,pvp=1,r=1}),
 s(39331,77753,{b=1,c={11},f=5,loc=43,lvl=25,pvp=1,r=1}),
 s(39366,77788,{b=1,c={5,8,9},f=4,loc=43,lvl=25,pvp=1,r=1}),
 s(39400,77822,{b=1,c={4},f=5,loc=43,lvl=25,pvp=1,r=1})}}),
+n(20278,{coords={
+[109]={{33,64.2}}},rwp=30002,sym={{"sub","pvp_gear_base",2,-247,-296},{"sub","pvp_gear_base",2,-248,-296},{"sub","pvp_gear_base",2,-249,-296},{"merge"},{"pop"}},u=2}),
 n(20112,{coords={
 [109]={{34.6,37.8}}},sym={{"select","itemID",30754,30749,30750,30752,30755,30751,30753}},g={
 s(13891,30755,{f=34,isLimited=1,lvl=25}),

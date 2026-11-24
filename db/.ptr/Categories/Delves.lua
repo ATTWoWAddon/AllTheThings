@@ -3178,7 +3178,7 @@ q(93784,{isWeekly=1,lvl=80,qss={262586}}),
 q(93453,{coords={
 [2393]={{52.7,77.6}}},lvl=78,providers={{"n",254616}},qss={258738},g={
 cq(93866,{b=1,itemID=262966,rwp=120100,spellID=1269622,u=2})}})}),
-h(-55,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},g={
+h(-55,{
 o(609862,{awp=120100,coords={
 [2393]={{52.6,77.3}}},lore="Died in Lordaeron or Undercity.",maps={18},g={
 ach(61456,{description="Acquisition of the Gravestone is locked behind a Hidden Achievement that will not show in your Achievement UI.\n\nYou need to go to the present phase of Lordearon and kill your character while within the confines of the City.\n\nDo a force refresh after killing your character. If this entry disappears, go back to Silvermoon City and apply the Gravestone."})}}),
@@ -3193,7 +3193,7 @@ n(256593,{coords={
 [2528]={{43.23,46.23},{53.35,37.61},{65.58,38.55}},
 [2535]={{40.57,57.84},{43.12,65.28},{44.41,46.27},{57.38,83.09}},
 [2545]={{23.03,15.09},{24.13,88.14},{64.7,63.5}},
-[2547]={{30,22},{46.6,84.29},{81.36,39.86}}}})}}),
+[2547]={{30,22},{46.6,84.29},{81.36,39.86}}}})}),
 h(-56,{maps={2502,2503,2505,2506,2510,2525,2528,2535,2545,2547,2633,2635},g={
 o(584752,{description="Contains Chunk of Companion Experience tokens.",g={
 i(254756,{b=1,f=55,spellID=1258625}),
