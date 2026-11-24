@@ -524,8 +524,10 @@ end
 ---@param page table # Settings page which receives the sections.
 ---@param sections table # Section and option definitions, see above.
 ---@param aside? table # Shown beside the sections: { preview = title, Update = function(preview) } to add lines with preview:AddLine(left, right, options), or { notes = { { title = "", text = "" }, ... } }.
-settings.CreateOptionSections = function(page, sections, aside)
-	local content = CreateColumn(page, 0, aside and COLUMN_WIDTH or FULL_WIDTH + 16);
+---@param column? table # Where the sections are when they share the page with something else: { left = 0, right = 0, top = 0 }.
+settings.CreateOptionSections = function(page, sections, aside, column)
+	local content = column and CreateColumn(page, column.left, column.right, column.top)
+		or CreateColumn(page, 0, aside and COLUMN_WIDTH or FULL_WIDTH + 16);
 	local contentName, holderCount = content:GetName(), 0;
 	-- Everything is in a frame of its own, so the layout can move and hide it
 	local function CreateHolder()

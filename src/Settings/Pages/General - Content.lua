@@ -1,8 +1,8 @@
 local _, app = ...;
 local L, settings = app.L, app.Settings;
 
--- Settings: General Content Page
-local child = settings:CreateOptionsPage(L.GENERAL_CONTENT, L.GENERAL_PAGE)
+-- Settings: General Page (the content which is shown, beside the Things)
+local child, column = settings.GeneralPage, settings.GeneralContentColumn;
 
 local GameBuildVersion, INSANE = app.GameBuildVersion, "|c" .. app.DefaultColors.Insane;
 local function NotDebug() return not app.MODE_DEBUG; end
@@ -50,4 +50,4 @@ settings.CreateOptionSections(child, {
 		GameBuildVersion > 50000 and GameBuildVersion <= 70000 and { type = "check", setting = "Hide:ChallengeMaster", inverse = true, text = Icon("Interface\\Icons\\achievement_challengemode_platinum") .. L.SHOW_CHALLENGE_MASTER_CHECKBOX, tooltip = L.SHOW_CHALLENGE_MASTER_CHECKBOX_TOOLTIP, usable = NotDebug, OnChanged = UpdateMode },
 		GameBuildVersion >= 100000 and { type = "check", setting = "Show:Skyriding", text = Icon("Interface\\Icons\\ability_dragonriding_dragonridinggliding01") .. INSANE .. L.SHOW_SKYRIDING_CHECKBOX, tooltip = L.SHOW_SKYRIDING_CHECKBOX_TOOLTIP, usable = NotDebug, OnChanged = UpdateMode },
 	} },
-});
+}, nil, column);

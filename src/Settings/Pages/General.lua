@@ -61,7 +61,11 @@ local Groups = {
 };
 
 local ACCOUNT_X, TRACK_X, ROW_HEIGHT, LABEL_WIDTH, EXTRA_GAP = 8, 28, 19, 220, 8;
-local content = settings.CreatePageColumn(child, 0, 656);
+-- The modes are at the top, above the Things and the content (see General - Content.lua)
+local COLUMN_TOP, COLUMN_X, PAGE_WIDTH = 46, 384, 656;
+local content = settings.CreatePageColumn(child, 0, COLUMN_X, COLUMN_TOP);
+settings.GeneralPage = child;
+settings.GeneralContentColumn = { left = COLUMN_X, right = PAGE_WIDTH, top = COLUMN_TOP };
 
 -- The checkboxes of a row follow each other, however long their labels are
 local function AlignAfter(cb, previous)
@@ -178,26 +182,26 @@ end
 local function DimInDebugMode(self)
 	self:SetAlpha(app.MODE_DEBUG and 0.4 or 1);
 end
-local y = -4;
 
 -- The current mode, and the modes which can be combined with what's tracked
-local height, header = settings.CreatePageSectionHeader(content, "", y);
+local header = child:CreateHeaderLabel("");
+header:SetFontObject(GameFontNormal);
+header:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 header.OnRefresh = function(self)
 	self:SetText(settings:GetModeString() .. " (" .. settings:GetShortModeString() .. ")");
 end
-y = y - height;
 local previousMode;
 for _,mode in ipairs(settings.Modes) do
-	local cb = settings.CreateModeCheckBox(content, mode);
+	local cb = settings.CreateModeCheckBox(child, mode);
 	if previousMode then
 		AlignAfter(cb, previousMode);
 	else
-		cb:SetPoint("TOPLEFT", content, "TOPLEFT", ACCOUNT_X, y);
+		cb:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", ACCOUNT_X, -24);
 	end
 	previousMode = cb;
 end
-y = y - ROW_HEIGHT - 8;
 
+local y = -4;
 for _,group in ipairs(Groups) do
 	if group then
 		local height, header = settings.CreatePageSectionHeader(content, group.title, y);
