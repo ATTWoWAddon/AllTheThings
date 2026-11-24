@@ -16,14 +16,14 @@ end
 
 settings.CreateOptionSections(child, {
 	{ title = L.CELEBRATIONS_LABEL, options = {
-		{ type = "dropdown", key = "Channel", text = L.AUDIO_CHANNEL, width = 120, choices = {
+		{ type = "dropdown", key = "Channel", text = L.AUDIO_CHANNEL, width = 200, labelWidth = 110, choices = {
 			{ value = "Master", text = L.CHANNEL_MASTER },
 			{ value = "Music", text = L.CHANNEL_MUSIC },
 			{ value = "SFX", text = L.CHANNEL_SFX },
 			{ value = "Ambience", text = L.CHANNEL_AMBIENCE },
 			{ value = "Dialog", text = L.CHANNEL_DIALOG },
 		} },
-		{ type = "dropdown", key = "Soundpack", text = L.SOUNDPACK, width = 270, choices = GetSoundpacks,
+		{ type = "dropdown", key = "Soundpack", text = L.SOUNDPACK, width = 200, labelWidth = 110, choices = GetSoundpacks,
 			get = function() return app.Audio:GetActiveSoundPack().name; end,
 			set = function(name)
 				app.Audio:ActivateSoundPack(name);

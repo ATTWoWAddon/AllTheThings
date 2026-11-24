@@ -9,7 +9,7 @@ local ipairs, pairs, type, math_max
 -- Each section is { title = "", options = { ... } } and each option is one of:
 --	{ type = "check", key = "", text = "", tooltip = "" }
 --	{ type = "slider", key = "", text = nil or "", tooltip = "", min = 0, max = 1, step = 1, format = "%.0f" }
---	{ type = "dropdown", key = "", text = "", choices = { { value = "", text = "" }, ... }, width = 90 }
+--	{ type = "dropdown", key = "", text = "", choices = { { value = "", text = "" }, ... }, width = 90, labelWidth = nil }
 --	{ type = "color", text = "", tooltip = "", get = function() return r, g, b, a end, OnClick = function() end }
 -- Options can also have:
 --	indent: number of indentation steps
@@ -261,7 +261,7 @@ local Builders = {
 	dropdown = function(content, option, x, y)
 		local label = content:CreateTextLabel(option.text);
 		label:SetFontObject(GameFontNormalSmall);
-		label:SetWidth(0);
+		label:SetWidth(option.labelWidth or 0);
 		label:SetWordWrap(false);
 		label:SetPoint("TOPLEFT", content, "TOPLEFT", x + 4, y - 8);
 
