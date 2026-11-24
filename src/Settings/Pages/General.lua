@@ -14,26 +14,27 @@ local HasNativeCollections = app.IsForever or GameBuildVersion >= 30000;	-- Fore
 
 -- Each Thing has the prefix of its locale strings, and the name its settings use. Extras are shown beside it.
 --	unofficial: ATT is faking support for it
+--	icon / iconBuild: the expansion which introduced it, for those which don't have it in their locale string
 --	extras: { locale, thing } also tracked with it, 'parent' is the Thing which must be tracked as well
 local Groups = {
 	{ title = L.ACCOUNT_THINGS_LABEL, things = {
 		{ "APPEARANCES", "Transmog", unofficial = GameBuildVersion < 40000 and not app.IsForever, isTransmog = true },
 		-- Heirlooms aren't in the game until late Wrath Classic.
-		C_Heirloom and GameBuildVersion >= 30000 and { "HEIRLOOMS", "Heirlooms", extras = {
+		C_Heirloom and GameBuildVersion >= 30000 and { "HEIRLOOMS", "Heirlooms", icon = "Expansion_WOTLK", iconBuild = 30000, extras = {
 			-- Heirloom Upgrades added with WOD
-			GameBuildVersion >= 60000 and { "HEIRLOOMS_UPGRADES", "HeirloomUpgrades", parent = "Heirlooms" },
+			GameBuildVersion >= 60000 and { "HEIRLOOMS_UPGRADES", "HeirloomUpgrades", icon = "Expansion_WOD", iconBuild = 60000, parent = "Heirlooms" },
 		} } or false,
 		-- Illusions were added with the Transmog API during Legion
-		C_TransmogCollection and GameBuildVersion >= 70000 and { "ILLUSIONS", "Illusions" } or false,
+		C_TransmogCollection and GameBuildVersion >= 70000 and { "ILLUSIONS", "Illusions", icon = "Expansion_LEGION", iconBuild = 70000 } or false,
 		{ "MOUNTS", "Mounts", unofficial = not HasNativeCollections },
 		{ "BATTLE_PETS", "BattlePets", unofficial = not HasNativeCollections },
 		{ "TOYS", "Toys", unofficial = not HasNativeCollections },
 		-- Campsites and Decor were added during The War Within
-		GameBuildVersion >= 110100 and { "CAMPSITES", "Campsites" },
-		GameBuildVersion >= 110207 and { "DECOR", "Decor" },
+		GameBuildVersion >= 110100 and { "CAMPSITES", "Campsites", icon = "Expansion_TWW", iconBuild = 110000 },
+		GameBuildVersion >= 110207 and { "DECOR", "Decor", icon = "Expansion_TWW", iconBuild = 110000 },
 	} },
 	{ title = L.GENERAL_THINGS_LABEL, isGeneral = true, things = {
-		{ "ACHIEVEMENTS", "Achievements", unofficial = not HasNativeCollections },
+		{ "ACHIEVEMENTS", "Achievements", icon = "Expansion_WOTLK", iconBuild = 30000, unofficial = not HasNativeCollections },
 		{ "CHARACTERUNLOCKS", "CharacterUnlocks" },
 		{ "EXPLORATION", "Exploration", wip = app.IsRetail or app.IsForever },
 		{ "FLIGHT_PATHS", "FlightPaths" },
@@ -43,12 +44,12 @@ local Groups = {
 			(app.IsClassic or app.IsForever) and { "OBJECTIVES", "QuestObjectives", parent = "Quests" },
 		} },
 		{ "RECIPES", "Recipes", extras = {
-			GameBuildVersion >= 100000 and { "FIRST_CRAFTS", "FirstCrafts" },
+			GameBuildVersion >= 100000 and { "FIRST_CRAFTS", "FirstCrafts", icon = "Expansion_DF", iconBuild = 100000 },
 		} },
 		{ "REPUTATIONS", "Reputations" },
 		{ "TITLES", "Titles" },
 		-- Profession Nodes were added during Dragonflight
-		GameBuildVersion >= 100000 and { "PROFESSION_NODES", "ProfessionNodes" },
+		GameBuildVersion >= 100000 and { "PROFESSION_NODES", "ProfessionNodes", icon = "Expansion_DF", iconBuild = 100000 },
 	} },
 	GameBuildVersion >= 60000 and { title = L.EXPANSION_THINGS_LABEL, things = {
 		{ "FOLLOWERS", "Followers" },	-- Warlords+
@@ -59,11 +60,16 @@ local Groups = {
 	} } or false,
 };
 
-local TRACK_X, ACCOUNT_X, EXTRA_X, EXTRA_WIDTH, EXTRAS_PER_ROW, ROW_HEIGHT = 8, 250, 350, 135, 2, 20;
+local ACCOUNT_X, TRACK_X, ROW_HEIGHT, LABEL_WIDTH, EXTRA_GAP = 8, 28, 20, 220, 8;
 local content = settings.CreatePageColumn(child, 0, 656);
 
+-- The checkboxes of a row follow each other, however long their labels are
+local function AlignAfter(cb, previous)
+	cb:SetPoint("TOP", previous, "TOP", 0, 0);
+	cb:SetPoint("LEFT", previous.Text, "RIGHT", EXTRA_GAP, 0);
+end
 -- Creates a Checkbox used to designate tracking the specified Thing
-local function CreateTrackingCheckbox(thing, x, y, width)
+local function CreateTrackingCheckbox(thing)
 	local localeKey, key = thing[1], thing[2];
 	local name = L[localeKey.."_CHECKBOX"]
 	local tooltip = L[localeKey.."_CHECKBOX_TOOLTIP"]
@@ -72,6 +78,10 @@ local function CreateTrackingCheckbox(thing, x, y, width)
 	end
 	if settings.RequiredForInsaneMode[key] then
 		name = "|c" .. app.DefaultColors.Insane .. name;
+	end
+	-- The expansion it was introduced with
+	if thing.icon and GameBuildVersion >= thing.iconBuild then
+		name = "|T" .. app.asset(thing.icon) .. ":0|t " .. name;
 	end
 	if settings.ForceAccountWide[key] then
 		tooltip = tooltip .. "\n\n" .. L.ACC_WIDE_DEFAULT;
@@ -88,8 +98,7 @@ local function CreateTrackingCheckbox(thing, x, y, width)
 			settings:UpdateMode(1)
 		end
 	)
-	settings.StyleCheckBox(cb, width);
-	cb:SetPoint("TOPLEFT", content, "TOPLEFT", x, y);
+	settings.StyleCheckBox(cb, LABEL_WIDTH);
 	cb:SetATTTooltip(tooltip)
 	cb.SettingsOption.tooltip = tooltip
 	cb.SettingsOption.IsChanged = function() return settings.IsSettingChanged(trackingOption) end
@@ -131,7 +140,7 @@ local function CreateAccountWideCheckbox(thing, x, y)
 end
 
 -- Appearances can be tracked by their Sources, or only for the main armor of the class
-local function CreateTransmogExtras(y)
+local function CreateTransmogExtras(previous)
 	local checkboxSources = content:CreateCheckBox(L.COMPLETIONIST_MODE,
 	function(self)
 		self:SetChecked(settings:Get("Completionist"))
@@ -140,10 +149,10 @@ local function CreateTransmogExtras(y)
 	function(self)
 		settings:SetCompletionistMode(self:GetChecked())
 	end)
-	settings.StyleCheckBox(checkboxSources, EXTRA_WIDTH - 28);
+	settings.StyleCheckBox(checkboxSources, LABEL_WIDTH);
 	checkboxSources:SetATTTooltip(L.COMPLETIONIST_MODE_TOOLTIP)
 	checkboxSources.SettingsOption.tooltip = L.COMPLETIONIST_MODE_TOOLTIP;
-	checkboxSources:SetPoint("TOPLEFT", content, "TOPLEFT", EXTRA_X, y);
+	AlignAfter(checkboxSources, previous);
 
 	local checkboxMainOnlyMode = content:CreateCheckBox(L.MAIN_ONLY,
 	function(self)
@@ -160,22 +169,36 @@ local function CreateTransmogExtras(y)
 	function(self)
 		settings:SetMainOnlyMode(self:GetChecked())
 	end)
-	settings.StyleCheckBox(checkboxMainOnlyMode, EXTRA_WIDTH - 28);
+	settings.StyleCheckBox(checkboxMainOnlyMode, LABEL_WIDTH);
 	checkboxMainOnlyMode:SetATTTooltip(L.MAIN_ONLY_TOOLTIP)
 	checkboxMainOnlyMode.SettingsOption.tooltip = L.MAIN_ONLY_TOOLTIP;
-	checkboxMainOnlyMode:SetPoint("TOPLEFT", content, "TOPLEFT", EXTRA_X + EXTRA_WIDTH, y);
+	AlignAfter(checkboxMainOnlyMode, checkboxSources);
 end
 
-local function CreateColumnLabel(text, point, x, y)
-	local label = content:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall");
-	label:SetPoint(point, content, "TOPLEFT", x, y);
-	label:SetText(text);
-end
 local function DimInDebugMode(self)
 	self:SetAlpha(app.MODE_DEBUG and 0.4 or 1);
 end
 local y = -4;
-for groupIndex,group in ipairs(Groups) do
+
+-- The current mode, and the modes which can be combined with what's tracked
+local height, header = settings.CreatePageSectionHeader(content, "", y);
+header.OnRefresh = function(self)
+	self:SetText(settings:GetModeString() .. " (" .. settings:GetShortModeString() .. ")");
+end
+y = y - height;
+local previousMode;
+for _,mode in ipairs(settings.Modes) do
+	local cb = settings.CreateModeCheckBox(content, mode);
+	if previousMode then
+		AlignAfter(cb, previousMode);
+	else
+		cb:SetPoint("TOPLEFT", content, "TOPLEFT", ACCOUNT_X, y);
+	end
+	previousMode = cb;
+end
+y = y - ROW_HEIGHT - 8;
+
+for _,group in ipairs(Groups) do
 	if group then
 		local height, header = settings.CreatePageSectionHeader(content, group.title, y);
 		header.OnRefresh = DimInDebugMode;
@@ -194,27 +217,23 @@ for groupIndex,group in ipairs(Groups) do
 				end
 			end
 		end
-		if groupIndex == 1 then
-			CreateColumnLabel(L.SETTINGS_ACCOUNT_WIDE, "TOP", ACCOUNT_X + 11, y - 4);
-			CreateColumnLabel(L.SETTINGS_ALSO_TRACK, "TOPLEFT", EXTRA_X + 4, y - 4);
-		end
 		y = y - height;
 		for _,thing in ipairs(group.things) do
 			if thing then
-				CreateTrackingCheckbox(thing, TRACK_X, y, ACCOUNT_X - TRACK_X - 60);
 				CreateAccountWideCheckbox(thing, ACCOUNT_X, y);
-				local count = 0;
-				if thing.isTransmog then CreateTransmogExtras(y); end
+				local cb = CreateTrackingCheckbox(thing);
+				cb:SetPoint("TOPLEFT", content, "TOPLEFT", TRACK_X, y);
+				if thing.isTransmog then CreateTransmogExtras(cb); end
 				if thing.extras then
 					for _,extra in ipairs(thing.extras) do
 						if extra then
-							local column, row = count % EXTRAS_PER_ROW, math.floor(count / EXTRAS_PER_ROW);
-							CreateTrackingCheckbox(extra, EXTRA_X + column * EXTRA_WIDTH, y - row * ROW_HEIGHT, EXTRA_WIDTH - 28);
-							count = count + 1;
+							local extraCheckbox = CreateTrackingCheckbox(extra);
+							AlignAfter(extraCheckbox, cb);
+							cb = extraCheckbox;
 						end
 					end
 				end
-				y = y - math.max(1, math.ceil(count / EXTRAS_PER_ROW)) * ROW_HEIGHT;
+				y = y - ROW_HEIGHT;
 			end
 		end
 		y = y - 8;

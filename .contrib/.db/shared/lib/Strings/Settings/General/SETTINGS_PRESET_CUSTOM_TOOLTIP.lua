@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Also Track",
-	constant = "SETTINGS_ALSO_TRACK",
+	readable = "Click to choose what to track.",
+	constant = "SETTINGS_PRESET_CUSTOM_TOOLTIP",
 	export = true,
 	text = {
-		en = "Also Track",
+		en = "Click to choose what to track.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

@@ -85,6 +85,8 @@ local Presets = {
 		-- CRIEVE NOTE: For now, until Blizzard adds an exploration API that doesn't suck
 		other = { ["Thing:Exploration"] = app.GameBuildVersion < 100000 and not app.IsForever },
 	},
+	-- Not a preset, but shows when none of the ones above are what's tracked
+	{ title = L.SETTINGS_PRESET_CUSTOM, text = L.SETTINGS_PRESET_CUSTOM_TEXT, isCustom = true },
 	{ title = L.TITLE_ACCOUNT, text = L.PRESET_ACCOUNT, accountMode = true, filters = "all",
 		on = {
 			"AccountWide:Achievements", "AccountWide:CharacterUnlocks", "AccountWide:Quests", "AccountWide:Recipes",
@@ -163,7 +165,15 @@ local function ApplyPreset(preset)
 	settings:UpdateMode(1);
 end
 -- Whether everything a preset decides is currently set that way (not counting the item filters)
-local function IsPresetActive(preset)
+local IsPresetActive;
+IsPresetActive = function(preset)
+	if preset.isCustom then
+		-- The presets before it decide what's tracked, the ones after it can be combined with them
+		for _,other in ipairs(Presets) do
+			if other == preset then return true; end
+			if IsPresetActive(other) then return false; end
+		end
+	end
 	if preset.accountMode ~= nil and (settings:Get("AccountMode") or false) ~= preset.accountMode then return false; end
 	if preset.on then
 		for _,key in ipairs(preset.on) do
@@ -203,7 +213,7 @@ buttonRestore.OnRefresh = function(self) self:SetShown(HasStoredSettings()); end
 buttonRestore:Hide()
 
 -- Preset cards
-local CARD_WIDTH, CARD_HEIGHT, CARD_GAP, CARDS_PER_ROW, CARDS_Y = 322, 78, 8, 2, -74;
+local CARD_WIDTH, CARD_HEIGHT, CARD_GAP, CARDS_PER_ROW, CARDS_Y = 212, 96, 8, 3, -74;
 local function CreateCard(preset, index)
 	local card = CreateFrame("Button", nil, child, BackdropTemplateMixin and "BackdropTemplate");
 	card:SetSize(CARD_WIDTH, CARD_HEIGHT);
@@ -238,48 +248,78 @@ local function CreateCard(preset, index)
 			card:SetBackdropBorderColor(hovered and 1 or 0.4, hovered and 0.82 or 0.4, hovered and 0 or 0.4, 1);
 		end
 	end
-	card:SetATTTooltip(L.PRESET_TOOLTIP);
+	card:SetATTTooltip(preset.isCustom and L.SETTINGS_PRESET_CUSTOM_TOOLTIP or L.PRESET_TOOLTIP);
 	card:HookScript("OnEnter", function() UpdateColors(true); end);
 	card:HookScript("OnLeave", function() UpdateColors(false); end);
-	card:SetScript("OnClick", function() ApplyPreset(preset); end);
+	card:SetScript("OnClick", function()
+		if preset.isCustom then
+			settings:Open(L.GENERAL_PAGE);
+		else
+			ApplyPreset(preset);
+		end
+	end);
 	card.OnRefresh = function(self) UpdateColors(self:IsMouseOver()); end
 	child:RegisterObject(card);
 	settings.RegisterOption({ frame = card, text = preset.title, tooltip = preset.text });
 end
 for index,preset in ipairs(Presets) do CreateCard(preset, index); end
 
--- Modes
-local function CreateModeCheckBox(text, tooltip, x, y, OnRefresh, OnClick)
-	local cb = child:CreateCheckBox(text, OnRefresh, OnClick);
+-- Modes, which are on the General page as well
+local englishFaction = UnitFactionGroup("player")
+settings.Modes = {
+	{ text = L.DEBUG_MODE, tooltip = L.DEBUG_MODE_TOOLTIP,
+		OnRefresh = function(self)
+			self:SetChecked(app.MODE_DEBUG)
+		end,
+		OnClick = function(self)
+			settings:SetDebugMode(self:GetChecked())
+		end,
+	},
+	{ text = L.ACCOUNT_MODE, tooltip = L.ACCOUNT_MODE_TOOLTIP, texture = "TrackAccountWide",
+		OnRefresh = function(self)
+			self:SetChecked(app.MODE_ACCOUNT)
+			settings.SetUsable(self, not app.MODE_DEBUG)
+		end,
+		OnClick = function(self)
+			settings:SetAccountMode(self:GetChecked())
+		end,
+	},
+	{ text = "|c" .. (app.DefaultColors[englishFaction] or app.DefaultColors.Default) .. L.FACTION_MODE, tooltip = L.FACTION_MODE_TOOLTIP,
+		OnRefresh = function(self)
+			self:SetChecked(settings:Get("FactionMode"))
+			settings.SetUsable(self, app.MODE_ACCOUNT and not app.MODE_DEBUG)
+		end,
+		OnClick = function(self)
+			settings:SetFactionMode(self:GetChecked())
+		end,
+	},
+	{ text = L.LOOT_MODE, tooltip = L.LOOT_MODE_TOOLTIP,
+		OnRefresh = function(self)
+			self:SetChecked(settings:Get("LootMode"))
+			settings.SetUsable(self, not app.MODE_DEBUG)
+		end,
+		OnClick = function(self)
+			settings:SetLootMode(self:GetChecked())
+		end,
+	},
+};
+settings.CreateModeCheckBox = function(panel, mode)
+	local cb = panel:CreateCheckBox(mode.text, mode.OnRefresh, mode.OnClick);
 	settings.StyleCheckBox(cb, 280);
-	cb:SetATTTooltip(tooltip);
-	cb.SettingsOption.tooltip = tooltip;
-	cb:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", x, y);
+	cb:SetATTTooltip(mode.tooltip);
+	cb.SettingsOption.tooltip = mode.tooltip;
+	if mode.texture then cb:SetCheckedTexture(app.asset(mode.texture)); end
 	return cb;
 end
 local modesY = CARDS_Y - math.ceil(#Presets / CARDS_PER_ROW) * (CARD_HEIGHT + CARD_GAP) - 10;
-CreateModeCheckBox(L.DEBUG_MODE, L.DEBUG_MODE_TOOLTIP, 4, modesY, function(self)
-	self:SetChecked(app.MODE_DEBUG)
-end, function(self)
-	settings:SetDebugMode(self:GetChecked())
-end)
-local checkboxAccountMode = CreateModeCheckBox(L.ACCOUNT_MODE, L.ACCOUNT_MODE_TOOLTIP, 4, modesY - 22, function(self)
-	self:SetChecked(app.MODE_ACCOUNT)
-	settings.SetUsable(self, not app.MODE_DEBUG)
-end, function(self)
-	settings:SetAccountMode(self:GetChecked())
-end)
-checkboxAccountMode:SetCheckedTexture(app.asset("TrackAccountWide"))
-local englishFaction = UnitFactionGroup("player")
-CreateModeCheckBox("|c" .. (app.DefaultColors[englishFaction] or app.DefaultColors.Default) .. L.FACTION_MODE, L.FACTION_MODE_TOOLTIP, 20, modesY - 44, function(self)
-	self:SetChecked(settings:Get("FactionMode"))
-	settings.SetUsable(self, app.MODE_ACCOUNT and not app.MODE_DEBUG)
-end, function(self)
-	settings:SetFactionMode(self:GetChecked())
-end)
-CreateModeCheckBox(L.LOOT_MODE, L.LOOT_MODE_TOOLTIP, 4 + CARD_WIDTH + CARD_GAP, modesY, function(self)
-	self:SetChecked(settings:Get("LootMode"))
-	settings.SetUsable(self, not app.MODE_DEBUG)
-end, function(self)
-	settings:SetLootMode(self:GetChecked())
-end)
+local previousMode;
+for _,mode in ipairs(settings.Modes) do
+	local cb = settings.CreateModeCheckBox(child, mode);
+	if previousMode then
+		cb:SetPoint("TOP", previousMode, "TOP", 0, 0);
+		cb:SetPoint("LEFT", previousMode.Text, "RIGHT", 8, 0);
+	else
+		cb:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 4, modesY);
+	end
+	previousMode = cb;
+end
