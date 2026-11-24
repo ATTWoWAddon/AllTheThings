@@ -1599,6 +1599,20 @@ maproot(KALIMDOR, DUROTAR, {
 					2493,	-- Wooden Mallet
 				}},
 			}),
+			n(3163, {	-- Uhgar <Weaponsmith>
+				coord = { 52.0, 40.4, DUROTAR },
+				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2492,	-- Cudgel
+					2488,	-- Gladius
+					2491,	-- Large Axe
+					2494,	-- Stiletto
+					2490,	-- Tomahawk
+					2489,	-- Two-Handed Sword
+					2495,	-- Walking Stick
+					2493,	-- Wooden Mallet
+				}},
+			}),
 			n(5942, {	-- Zansoa <Fishing Supplies>
 				coords = {
 					{ 56.0, 73.4, DUROTAR },
