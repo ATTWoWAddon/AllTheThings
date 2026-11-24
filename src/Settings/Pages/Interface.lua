@@ -32,14 +32,12 @@ settings.CreateOptionSections(child, {
 		{ type = "check", key = "QuestChain:Nested", advanced = true, text = L.NESTED_QUEST_CHAIN_CHECKBOX, tooltip = L.NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP },
 		{ type = "check", key = "Sort:Progress", advanced = true, text = L.SORT_BY_PROGRESS_CHECKBOX, tooltip = L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP },
 		-- CRIEVE NOTE: Classic Dynamic Categories don't support this just yet.
-		app.IsRetail and app.GameBuildVersion > 70000 and { type = "dropdown", key = "Dynamic:Style", advanced = true, text = L.DYNAMIC_CATEGORY_LABEL,
+		app.IsRetail and app.GameBuildVersion > 70000 and { type = "dropdown", setting = "Dynamic:Style", advanced = true, text = L.DYNAMIC_CATEGORY_LABEL,
 			tooltip = L.DYNAMIC_CATEGORY_SIMPLE .. ": " .. L.DYNAMIC_CATEGORY_SIMPLE_TOOLTIP .. "\n\n" .. L.DYNAMIC_CATEGORY_NESTED .. ": " .. L.DYNAMIC_CATEGORY_NESTED_TOOLTIP .. L.DYNAMIC_CATEGORY_TOOLTIP_NOTE,
 			choices = {
 				{ value = 1, text = L.DYNAMIC_CATEGORY_SIMPLE },
 				{ value = 2, text = L.DYNAMIC_CATEGORY_NESTED },
 			},
-			get = function() return settings:Get("Dynamic:Style"); end,
-			set = function(value) settings:Set("Dynamic:Style", value); end,
 		},
 	} },
 },
