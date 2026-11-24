@@ -8,8 +8,11 @@ local ipairs = ipairs;
 local child = settings:CreateOptionsPage(appName)
 
 local ACTIVE_CONTRIBUTORS = {
+	"Adavak",
+	"Alderwhim",
 	"AlexSoft",
 	"Braghe",
+	"Chrales",
 	"Danny Donkey",
 	"Darkal",
 	"DeadSerious",
@@ -18,8 +21,13 @@ local ACTIVE_CONTRIBUTORS = {
 	"Gold",
 	"Jenstonedart",
 	"Jezartroz",
+	"Kalle",
+	"LoukkyWang",
+	"milotic",
 	"Molkree",
 	"Myrhial",
+	"NameXFace",
+	"NORPG",
 	"Pr3vention",
 	"Runawaynow",
 	"Sanctuari",
