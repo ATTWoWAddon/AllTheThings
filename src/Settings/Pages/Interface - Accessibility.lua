@@ -94,6 +94,30 @@ local function CreateTextColorOption(text, key)
 		end,
 	};
 end
+-- A color which is stored in a general setting
+settings.CreateColorOption = function(text, tooltip, key, usable)
+	local function GetDefault() return settings.GetSettingDefault(key); end
+	return { type = "color", text = text, tooltip = tooltip, usable = usable,
+		get = function()
+			local color = settings:Get(key);
+			return color.r, color.g, color.b, color.a;
+		end,
+		OnClick = function()
+			ShowColorPicker(function(color) settings:Set(key, color); end, settings:Get(key));
+		end,
+		isChanged = function()
+			local color, default = settings:Get(key), GetDefault();
+			for component,value in pairs(default) do
+				if (tonumber(color[component]) or 0) ~= value then return true; end
+			end
+		end,
+		reset = function()
+			local default = GetDefault();
+			settings:Set(key, { r = default.r, g = default.g, b = default.b, a = default.a });
+			app.CallbackEvent("OnRedrawWindows")
+		end,
+	};
+end
 
 settings.CreateOptionSections(child, {
 	{ title = L.COLORS_ICONS, options = {
@@ -102,6 +126,10 @@ settings.CreateOptionSections(child, {
 		CreateTextColorOption(L.LOCKED_QUESTS, "Locked"),
 		CreateTextColorOption(MOUNTS, "Mount"),
 		CreateTextColorOption(L.SETTINGS_ACCOUNT_WIDE, "Account"),
+	} },
+	{ title = L.APPEARANCE_GROUP_PROGRESS, options = {
+		settings.CreateColorOption(L.APPEARANCE_PROGRESS_LOW, L.APPEARANCE_PROGRESS_TOOLTIP, "Progress:LowColor"),
+		settings.CreateColorOption(L.APPEARANCE_PROGRESS_HIGH, L.APPEARANCE_PROGRESS_TOOLTIP, "Progress:HighColor"),
 		CreateTextColorOption(L.APPEARANCE_COMPLETED, "Completed"),
 	} },
 },
@@ -111,6 +139,8 @@ settings.CreateOptionSections(child, {
 	preview:SetBackdropColor(rBg, gBg, bBg, aBg);
 	preview:SetBackdropBorderColor(rBd, gBd, bBd, settings:GetTooltipSetting("Window:HideBorders") and 0 or aBd);
 	preview:AddLine(L.PREVIEW_ZONE, app.Modules.Color.GetProgressColorText(60, 100));
+	preview:AddLine(L.PREVIEW_CREATURE, app.Modules.Color.GetProgressColorText(0, 3), { indent = 1 });
+	preview:AddLine(L.PREVIEW_CREATURE, app.Modules.Color.GetProgressColorText(1, 3), { indent = 1 });
 	preview:AddLine(L.PREVIEW_CREATURE, app.Modules.Color.GetProgressColorText(3, 3), { indent = 1 });
 	preview:AddLine(Colorize(L.PREVIEW_QUEST, app.Colors.Breadcrumb), L.BREADCRUMBS, { indent = 1 });
 	preview:AddLine(Colorize(L.PREVIEW_QUEST, app.Colors.Locked), L.LOCKED_QUESTS, { indent = 1 });

@@ -47,8 +47,8 @@ local function ColorizeRGB(str, r, g, b)
 	return "|c"..RGBToHex(r, g, b)..str.."|r";
 end
 
--- Generates a Color Scale between Red and Green with the Blue Completed color for 100%
-local red, green, h = RGBToHSV(1,0,0), RGBToHSV(0,1,0);
+-- Generates a Color Scale between Red and Green (or the player's colors) with the Blue Completed color for 100%
+local red, green, h = RGBToHSV(1,0,0), RGBToHSV(0,1,0), nil;
 local ProgressColors = setmetatable({}, {
 	__index = function(t, p)
 		p = tonumber(p);
@@ -78,6 +78,13 @@ local ProgressColors = setmetatable({}, {
 local function GetProgressColor(percent)
 	return ProgressColors[percent];
 end
+local function UpdateProgressColors()
+	local low, high = app.Settings:Get("Progress:LowColor"), app.Settings:Get("Progress:HighColor");
+	red = RGBToHSV(tonumber(low.r) or 1, tonumber(low.g) or 0, tonumber(low.b) or 0);
+	green = RGBToHSV(tonumber(high.r) or 0, tonumber(high.g) or 1, tonumber(high.b) or 0);
+	wipe(ProgressColors);
+end
+app.AddEventHandler("Settings.OnApplyProfile", UpdateProgressColors);
 
 -- Progress Text Helpers
 local function GetProgressTextDefault(progress, total)
@@ -149,6 +156,9 @@ app.AddEventHandler("Settings.OnSet", function(container, key, value)
 			func(value)
 			app.CallbackEvent("OnRedrawWindows")
 		end
+	elseif container == "General" and (key == "Progress:LowColor" or key == "Progress:HighColor") then
+		UpdateProgressColors();
+		app.CallbackEvent("OnRedrawWindows")
 	end
 end)
 

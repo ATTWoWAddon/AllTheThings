@@ -2,8 +2,8 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Global locals
-local ipairs, pairs, tonumber
-	= ipairs, pairs, tonumber;
+local ipairs, next, pairs, tonumber, type
+	= ipairs, next, pairs, tonumber, type;
 
 -- Settings: Appearance Page
 -- What the ATT windows look like.
@@ -44,37 +44,112 @@ app.AddEventHandler("OnReady", function()
 	if settings:GetTooltipSetting("Row:Font") ~= "" then app.ApplyStyleToAllWindows(); end
 end)
 
--- A color of the ATT windows
-local function CreateWindowColorOption(text, tooltip, key, usable)
-	local function GetDefault() return settings.GetSettingDefault(key); end
-	return { type = "color", text = text, tooltip = tooltip, usable = usable,
-		get = function()
-			local color = settings:Get(key);
-			return color.r, color.g, color.b, color.a;
-		end,
-		OnClick = function()
-			settings.ShowColorPicker(function(color) settings:Set(key, color); end, settings:Get(key));
-		end,
-		isChanged = function()
-			local color, default = settings:Get(key), GetDefault();
-			for component,value in pairs(default) do
-				if (tonumber(color[component]) or 0) ~= value then return true; end
-			end
-		end,
-		reset = function()
-			local default = GetDefault();
-			settings:Set(key, { r = default.r, g = default.g, b = default.b, a = default.a });
-			app.CallbackEvent("OnRedrawWindows")
-		end,
-	};
-end
-
 local function HasBorders() return not settings:GetTooltipSetting("Window:HideBorders"); end
 local function HasSquareBorders()
 	return HasBorders() and settings:GetTooltipSetting("Window:BorderStyle") == "square";
 end
 
+-- Presets only change the options which make up the look, everything they don't mention goes back to its default
+local TooltipKeys = { "Window:BorderStyle", "Window:BorderSize", "Window:HideBorders", "Window:UseClassForBorder", "Window:ShowScrollBar", "Row:Font", "Row:FontOutline", "Row:FontScale", "Row:Spacing" };
+local ColorKeys = { "Window:BackgroundColor", "Window:BorderColor", "Window:TitleColor", "Window:HighlightColor" };
+local function Color(r, g, b, a) return { r = r, g = g, b = b, a = a }; end
+local Presets = {
+	{ title = DEFAULT, tooltip = L.APPEARANCE_PRESET_DEFAULT_TOOLTIP },
+	{ title = L.APPEARANCE_PRESET_COMPACT, tooltip = L.APPEARANCE_PRESET_COMPACT_TOOLTIP,
+		["Window:BorderStyle"] = "square", ["Row:FontScale"] = 0.85, ["Row:Spacing"] = 1,
+		["Window:BorderColor"] = Color(0.35, 0.35, 0.35, 1),
+	},
+	{ title = L.APPEARANCE_PRESET_MINIMAL, tooltip = L.APPEARANCE_PRESET_MINIMAL_TOOLTIP,
+		["Window:HideBorders"] = true, ["Window:ShowScrollBar"] = false,
+		["Window:BackgroundColor"] = Color(0, 0, 0, 0.5),
+	},
+	{ title = L.APPEARANCE_PRESET_MODERN, tooltip = L.APPEARANCE_PRESET_MODERN_TOOLTIP,
+		["Window:BorderStyle"] = "square", ["Row:Spacing"] = 6,
+		["Window:BackgroundColor"] = Color(0.2, 0.2, 0.24, 1), ["Window:BorderColor"] = Color(0, 0, 0, 1),
+		["Window:TitleColor"] = Color(0.16, 0.18, 0.25, 1), ["Window:HighlightColor"] = Color(0.4, 0.7, 1, 1),
+	},
+	{ title = L.APPEARANCE_PRESET_CLASS, tooltip = L.APPEARANCE_PRESET_CLASS_TOOLTIP,
+		["Window:BorderStyle"] = "square", ["Window:BorderSize"] = 2, ["Window:UseClassForBorder"] = true,
+	},
+	{ title = L.APPEARANCE_PRESET_LARGE, tooltip = L.APPEARANCE_PRESET_LARGE_TOOLTIP,
+		["Row:FontScale"] = 1.35, ["Row:Spacing"] = 6,
+	},
+};
+local function CopyColor(color) return Color(color.r, color.g, color.b, color.a); end
+local function IsSameColor(color, other)
+	for _,component in ipairs({ "r", "g", "b", "a" }) do
+		if math.abs((tonumber(color[component]) or 0) - (tonumber(other[component]) or 0)) > 0.005 then return false; end
+	end
+	return true;
+end
+local function IsSameTooltipSetting(key, value)
+	local current = settings:GetTooltipSetting(key) or false;
+	if type(current) == "number" and type(value) == "number" then return math.abs(current - value) < 0.005; end
+	return current == (value or false);
+end
+local function GetTooltipValue(preset, key)
+	if preset[key] ~= nil then return preset[key]; end
+	return settings.GetTooltipSettingDefault(key);
+end
+local function IsPresetActive(preset)
+	for _,key in ipairs(TooltipKeys) do
+		if not IsSameTooltipSetting(key, GetTooltipValue(preset, key)) then return false; end
+	end
+	for _,key in ipairs(ColorKeys) do
+		if not IsSameColor(settings:Get(key), preset[key] or settings.GetSettingDefault(key)) then return false; end
+	end
+	return true;
+end
+local function ApplyLook(look)
+	for _,key in ipairs(TooltipKeys) do
+		-- nil makes the default apply
+		if not IsSameTooltipSetting(key, GetTooltipValue(look, key)) then settings:SetTooltipSetting(key, look[key]); end
+	end
+	for _,key in ipairs(ColorKeys) do
+		local color = look[key] or settings.GetSettingDefault(key);
+		if not IsSameColor(settings:Get(key), color) then settings:Set(key, CopyColor(color)); end
+	end
+end
+local function HasStoredLook() return next(settings:Get("AppearanceRestore")) ~= nil; end
+local function ApplyPreset(preset)
+	-- Store the player's own look, unless it's only one of the presets
+	local isPreset;
+	for _,other in ipairs(Presets) do
+		if IsPresetActive(other) then isPreset = true; end
+	end
+	if not isPreset then
+		local stored = {};
+		for _,key in ipairs(TooltipKeys) do
+			local value = settings:GetTooltipSetting(key);
+			if value == nil then value = false; end
+			stored[key] = value;
+		end
+		for _,key in ipairs(ColorKeys) do stored[key] = CopyColor(settings:Get(key)); end
+		settings:Set("AppearanceRestore", stored);
+	end
+	ApplyLook(preset);
+end
+local PresetButtons = {};
+for _,preset in ipairs(Presets) do
+	PresetButtons[#PresetButtons + 1] = {
+		text = preset.title, tooltip = preset.tooltip,
+		OnClick = function() ApplyPreset(preset); end,
+		isActive = function() return IsPresetActive(preset); end,
+	};
+end
+PresetButtons[#PresetButtons + 1] = {
+	text = L.PRESET_RESTORE, tooltip = L.APPEARANCE_PRESET_RESTORE_TOOLTIP,
+	OnClick = function()
+		ApplyLook(settings:Get("AppearanceRestore"));
+		settings:Set("AppearanceRestore", {});
+	end,
+	usable = HasStoredLook,
+};
+
 settings.CreateOptionSections(child, {
+	{ title = L.APPEARANCE_GROUP_PRESETS, options = {
+		{ type = "buttons", buttons = PresetButtons },
+	} },
 	{ title = L.WINDOWS_PAGE, options = {
 		{ type = "dropdown", key = "Window:BorderStyle", text = L.APPEARANCE_BORDER_STYLE, tooltip = L.APPEARANCE_BORDER_STYLE_TOOLTIP, width = 160, labelWidth = 80, usable = HasBorders, choices = {
 			{ value = "rounded", text = L.APPEARANCE_BORDER_ROUNDED },
@@ -86,12 +161,12 @@ settings.CreateOptionSections(child, {
 		{ type = "check", key = "Window:ShowScrollBar", text = L.APPEARANCE_SCROLL_BAR, tooltip = L.APPEARANCE_SCROLL_BAR_TOOLTIP },
 	} },
 	{ title = L.WINDOW_COLORS, options = {
-		CreateWindowColorOption(L.BACKGROUND, L.BACKGROUND_TOOLTIP, "Window:BackgroundColor"),
-		CreateWindowColorOption(L.BORDER, L.BORDER_TOOLTIP, "Window:BorderColor", function()
+		settings.CreateColorOption(L.BACKGROUND, L.BACKGROUND_TOOLTIP, "Window:BackgroundColor"),
+		settings.CreateColorOption(L.BORDER, L.BORDER_TOOLTIP, "Window:BorderColor", function()
 			return HasBorders() and not settings:GetTooltipSetting("Window:UseClassForBorder");
 		end),
-		CreateWindowColorOption(L.APPEARANCE_TITLE_COLOR, L.APPEARANCE_TITLE_COLOR_TOOLTIP, "Window:TitleColor"),
-		CreateWindowColorOption(L.APPEARANCE_HIGHLIGHT_COLOR, L.APPEARANCE_HIGHLIGHT_COLOR_TOOLTIP, "Window:HighlightColor"),
+		settings.CreateColorOption(L.APPEARANCE_TITLE_COLOR, L.APPEARANCE_TITLE_COLOR_TOOLTIP, "Window:TitleColor"),
+		settings.CreateColorOption(L.APPEARANCE_HIGHLIGHT_COLOR, L.APPEARANCE_HIGHLIGHT_COLOR_TOOLTIP, "Window:HighlightColor"),
 	} },
 	{ title = L.APPEARANCE_GROUP_TEXT, options = {
 		{ type = "dropdown", key = "Row:Font", text = L.APPEARANCE_FONT, tooltip = L.APPEARANCE_FONT_TOOLTIP, width = 160, labelWidth = 80, choices = GetFontChoices },

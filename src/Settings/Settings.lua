@@ -337,6 +337,9 @@ local GeneralSettingsBase = {
 		["Window:TitleColor"] = { r = 0, g = 0, b = 0, a = 0 },
 		["Window:HighlightColor"] = { r = 1, g = 1, b = 1, a = 1 },
 		["PresetRestore"] = {},
+		["AppearanceRestore"] = {},
+		["Progress:LowColor"] = { r = 1, g = 0, b = 0 },
+		["Progress:HighColor"] = { r = 0, g = 1, b = 0 },
 		-- Expansion Filters (disabled by default)
 		["ExpansionFilter:Enabled"] = false,
 		["ExpansionFilter:Classic"] = true,
@@ -1148,6 +1151,9 @@ end
 -- Whether a setting differs from ATT's default. Unset and disabled are the same.
 settings.IsTooltipSettingChanged = function(setting)
 	return (RawSettings.Tooltips[setting] or false) ~= (TooltipSettingsBase.__index[setting] or false);
+end
+settings.GetTooltipSettingDefault = function(setting)
+	return TooltipSettingsBase.__index[setting];
 end
 settings.GetSettingDefault = function(setting)
 	return GeneralSettingsBase.__index[setting];

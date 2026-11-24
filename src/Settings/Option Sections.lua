@@ -2,8 +2,8 @@ local _, app = ...;
 local L, settings = app.L, app.Settings;
 
 -- Global locals
-local ipairs, pairs, type, math_max, math_min
-	= ipairs, pairs, type, math.max, math.min;
+local ipairs, pairs, type, math_ceil, math_floor, math_max, math_min
+	= ipairs, pairs, type, math.ceil, math.floor, math.max, math.min;
 
 -- Builds a settings page from a list of sections, with a live preview or notes beside them.
 -- Each section is { title = "", options = { ... } } and each option is one of:
@@ -11,6 +11,7 @@ local ipairs, pairs, type, math_max, math_min
 --	{ type = "slider", key = "", text = nil or "", tooltip = "", min = 0, max = 1, step = 1, format = "%.0f" }
 --	{ type = "dropdown", key = "", text = "", choices = { { value = "", text = "" }, ... }, width = 90, labelWidth = nil }
 --	{ type = "color", text = "", tooltip = "", get = function() return r, g, b, a end, OnClick = function() end }
+--	{ type = "buttons", buttons = { { text = "", tooltip = "", OnClick = function() end, isActive = nil or function() end, usable = nil or function() end }, ... } }
 -- Options can also have:
 --	indent: number of indentation steps
 --	requires: tooltip settings which must all be enabled for the option to be usable
@@ -35,7 +36,7 @@ local FULL_WIDTH = 640;	-- without anything beside the sections
 local HEADER_HEIGHT, CHECK_HEIGHT, SECTION_GAP, INDENT = 24, 20, 8, 16;
 local SLIDER_HEIGHT, SLIDER_LABEL_HEIGHT, DROPDOWN_HEIGHT = 34, 18, 28;
 local PREVIEW_PADDING, PREVIEW_INDENT = 10, 10;
-local MENU_SIZE = 24;
+local MENU_SIZE, BUTTONS_PER_ROW = 24, 3;
 local DISABLED_ALPHA = 0.55;	-- still readable on the dark background
 
 local function IsUsable(option)
@@ -264,6 +265,23 @@ local Builders = {
 		content:RegisterObject(button);
 		settings.RegisterOption({ frame = button, text = option.text, advanced = option.advanced, tooltip = option.tooltip, IsChanged = function() return IsChanged(option); end });
 		return 22;
+	end,
+	buttons = function(content, option, x, y)
+		local width = (content.SectionWidth - x) / BUTTONS_PER_ROW;
+		for i,info in ipairs(option.buttons) do
+			local button = content:CreateButton({ text = info.text, tooltip = info.tooltip, width = width - 4 }, { OnClick = info.OnClick });
+			button:SetPoint("TOPLEFT", content, "TOPLEFT", x + ((i - 1) % BUTTONS_PER_ROW) * width, y - math_floor((i - 1) / BUTTONS_PER_ROW) * 26);
+			button:SetMotionScriptsWhileDisabled(true);
+			button.OnRefresh = function(self)
+				self:SetEnabled(not info.usable or info.usable() and true or false);
+				if info.isActive and info.isActive() then
+					self:LockHighlight();
+				else
+					self:UnlockHighlight();
+				end
+			end
+		end
+		return math_ceil(#option.buttons / BUTTONS_PER_ROW) * 26;
 	end,
 	dropdown = function(content, option, x, y)
 		local label = content:CreateTextLabel(option.text);
