@@ -14,6 +14,7 @@ local GetRealmName = GetRealmName;
 local GetNormalizedRealmName = GetNormalizedRealmName;
 
 -- WoW API Cache
+local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemCount = app.WOWAPI.GetItemCount;
 local GetProfessionInfoByRecipeID = app.WOWAPI.GetProfessionInfoByRecipeID;
@@ -837,6 +838,76 @@ end
 settings.AppendInformationTextEntry = AppendInformationTextEntry;
 local AccountWideIcon = app.GameBuildVersion >= 110005 and "|T6124644:0:0:0:0:64:64:4:60:4:60|t " or "|T413589:0:0:0:0:64:64:4:60:4:60|t "
 
+-- Appends the coordinates to the tooltip, with the ones on the current map listed first.
+-- Returns true if any were appended. The icon, if any, is shown in front of every line.
+local function AppendCoordinates(tooltipInfo, label, maxcoords, sources, icon, isExploration)
+	local here, elsewhere, found = {}, {}, {};
+	local currentMapID = app.CurrentMapID;
+	local showMapID = app.Settings:GetTooltipSetting("mapID");
+	for _,coords in ipairs(sources) do
+		for mapID,coordsForMap in pairs(coords) do
+			for _,coord in ipairs(coordsForMap) do
+				local str = GetCoordString(coord[1], coord[2]);
+				local hash = mapID .. ":" .. str;
+				if not found[hash] then
+					found[hash] = true;
+					-- an exploration area doesn't need its own name repeated
+					local area = not isExploration and app.GetNearestExplorationName(mapID, coord[1], coord[2]);
+					if area then str = str .. " (" .. area .. ")"; end
+					if mapID == currentMapID then
+						here[#here+1] = str;
+					else
+						local mapName = app.GetMapName(mapID);
+						if showMapID then mapName = mapName .. " (" .. mapID .. ")"; end
+						elsewhere[#elsewhere+1] = mapName .. ": " .. str;
+					end
+				end
+			end
+		end
+	end
+	for _,str in ipairs(elsewhere) do
+		here[#here+1] = str;
+	end
+
+	-- Force white string entries.
+	local count = #here;
+	for i=1,math_min(maxcoords, count) do
+		tooltipInfo[#tooltipInfo+1] = {
+			left = i == 1 and label or nil,
+			right = icon and ("|T" .. icon .. ":0|t " .. here[i]) or here[i],
+			r = 1, g = 1, b = 1
+		}
+	end
+	local remainingCoords = count - maxcoords;
+	if remainingCoords > 0 then
+		tooltipInfo[#tooltipInfo+1] = {
+			right = (L.AND_MORE):format(remainingCoords),
+			r = 1, g = 1, b = 1
+		}
+	end
+	return count > 0;
+end
+-- Returns the closest coordinates on each place the item is sourced (e.g. the object a book is looted from).
+-- This matches what plotting waypoints does for quests started by an item.
+local function GetItemSourceCoords(itemID, reference)
+	local sources = {};
+	for _,o in ipairs(app.SearchForObject("itemID", itemID, "field", true)) do
+		local source = o;
+		while source do
+			local coords = source.coords;
+			if coords then
+				-- ignore the quest's own coordinates
+				if coords ~= reference.coords then
+					sources[#sources+1] = coords;
+				end
+				break;
+			end
+			source = source.sourceParent or source.parent;
+		end
+	end
+	return sources;
+end
+
 -- All of the Default Information Types.
 local InformationTypes = {
 	-- Progress Fields (top most)
@@ -958,13 +1029,28 @@ local InformationTypes = {
 	-- Quest Fields
 	CreateInformationType("qgs", { text = L.QUEST_GIVERS, priority = 2.05, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
+			local label = L.QUEST_GIVER;
+
+			-- Quests started by an item show the item as the giver first; their quest givers are where they get turned in.
+			local qss = reference.qss;
+			if qss then
+				for _,itemID in ipairs(qss) do
+					tooltipInfo[#tooltipInfo+1] = {
+						left = label,
+						right = ConversionMethods.qs(itemID, reference),
+					}
+					label = nil;
+				end
+			end
+
 			local qgs = reference.qgs;
 			if qgs then
-				for i,creatureID in ipairs(qgs) do
+				for _,creatureID in ipairs(qgs) do
 					tooltipInfo[#tooltipInfo+1] = {
-						left = (i == 1 and L.QUEST_GIVER),
+						left = label,
 						right = ConversionMethods.creatureName(creatureID, reference),
 					}
+					label = nil;
 				end
 			end
 		end,
@@ -984,54 +1070,21 @@ local InformationTypes = {
 	}),
 	CreateInformationType("coords", { text = L.COORDINATES, priority = 2.1, maxcoords = 10, ShouldDisplayInExternalTooltips = false,
 		Process = function(t, reference, tooltipInfo)
+			local label = t.text;
+
+			-- Quests started by an item show where that item is obtained first, marked with the item's icon.
+			local qss = reference.qss;
+			if qss then
+				for _,itemID in ipairs(qss) do
+					if AppendCoordinates(tooltipInfo, label, t.maxcoords, GetItemSourceCoords(itemID, reference), GetItemIcon(itemID)) then
+						label = nil;
+					end
+				end
+			end
+
 			local coords = reference.coords;
 			if coords then
-				local coordList = {};
-				local currentMapID = app.CurrentMapID;
-				local isExploration = reference.explorationID;
-				local function GetCoordText(mapID, coord)
-					local str = GetCoordString(coord[1], coord[2]);
-					-- an exploration area doesn't need its own name repeated
-					local area = not isExploration and app.GetNearestExplorationName(mapID, coord[1], coord[2]);
-					return area and (str .. " (" .. area .. ")") or str;
-				end
-				if coords[currentMapID] then
-					for i,coord in ipairs(coords[currentMapID]) do
-						coordList[#coordList+1] = { right = GetCoordText(currentMapID, coord) }
-					end
-				end
-				local showMapID = app.Settings:GetTooltipSetting("mapID");
-				for mapID,coordsForMap in pairs(coords) do
-					if mapID ~= currentMapID then
-						for i,coord in ipairs(coordsForMap) do
-							local str = app.GetMapName(mapID);
-							if showMapID then str = str .. " (" .. mapID .. ")"; end
-							coordList[#coordList+1] = { right = str .. ": " .. GetCoordText(mapID, coord) }
-						end
-					end
-				end
-
-				local count = #coordList;
-				if count > 0 then
-					coordList[1].left = t.text;
-
-					-- Force white string entries.
-					for i=1,math_min(t.maxcoords, count) do
-						local coord = coordList[i];
-						coord.r = 1;
-						coord.g = 1;
-						coord.b = 1;
-						tooltipInfo[#tooltipInfo+1] = coord
-					end
-
-					local remainingCoords = count - t.maxcoords;
-					if remainingCoords > 0 then
-						tooltipInfo[#tooltipInfo+1] = {
-							right = (L.AND_MORE):format(remainingCoords),
-							r = 1, g = 1, b = 1
-						}
-					end
-				end
+				AppendCoordinates(tooltipInfo, label, t.maxcoords, { coords }, nil, reference.explorationID);
 			end
 		end,
 	}),
@@ -1402,24 +1455,6 @@ local InformationTypes = {
 					if limit <= 0 then
 						tooltipInfo[#tooltipInfo+1] = {
 							right =  LFG_LIST_AND_MORE:format(#providers - limit),
-						}
-						break
-					end
-				end
-				return
-			end
-			local qss = reference.qss
-			if qss then
-				local limit = t.limit
-				for i,qs in ipairs(qss) do
-					tooltipInfo[#tooltipInfo+1] = {
-						left = (i == 1 and L.PROVIDERS),
-						right = ConversionMethods.qs(qs, reference),
-					}
-					limit = limit - 1
-					if limit <= 0 then
-						tooltipInfo[#tooltipInfo+1] = {
-							right =  LFG_LIST_AND_MORE:format(#qss - limit),
 						}
 						break
 					end
