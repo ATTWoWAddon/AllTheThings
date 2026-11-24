@@ -20,7 +20,6 @@ local CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST = createHeader({
 
 root("NeverImplemented", n(CRIEVES_I_AM_TOO_LAZY_FOR_THIS_LIST, {
 	q(63769),	-- Holiday Reset Yearly Quest
-	q(55296),	-- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
 
 	q(8226, {	-- Rare Fish - Pale Ghoulfish
 		-- qg = 15079,	-- Fishbot 5000
