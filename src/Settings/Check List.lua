@@ -2,8 +2,8 @@ local _, app = ...;
 local settings = app.Settings;
 
 -- Global locals
-local ipairs, math_ceil, math_floor
-	= ipairs, math.ceil, math.floor;
+local ipairs, math_ceil, math_floor, math_max
+	= ipairs, math.ceil, math.floor, math.max;
 
 -- Builds a page with a list of checkboxes in collapsible groups. Each group's header can toggle everything in it.
 --	list.text: shown above the groups
@@ -60,10 +60,13 @@ settings.CreateCheckList = function(page, list)
 		if item.description then
 			local description = cb:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall");
 			description:SetJustifyH("LEFT");
-			description:SetWordWrap(false);
-			description:SetText((item.description:gsub("\n.*", "")));
-			description:SetPoint("LEFT", cb, "LEFT", DESCRIPTION_X - indent, 0);
+			description:SetJustifyV("TOP");
+			description:SetWordWrap(true);
+			description:SetMaxLines(2);	-- the tooltip has the rest
 			description:SetWidth(width - DESCRIPTION_X - 16);
+			description:SetText((item.description:gsub("\n.*", "")));
+			description:SetPoint("TOPLEFT", cb, "TOPLEFT", DESCRIPTION_X - indent, -5);
+			item.descriptionText = description;
 		end
 		local option = cb.SettingsOption;
 		option.tooltip = item.tooltip;
@@ -171,13 +174,18 @@ settings.CreateCheckList = function(page, list)
 					if item then items[#items + 1] = item; end
 				end
 				local rows = math_ceil(#items / columns);
+				local height, rowY = 0, 0;
 				for i,item in ipairs(items) do
 					local column = math_floor((i - 1) / rows);
+					if (i - 1) % rows == 0 then rowY = 0; end
 					item.frame:ClearAllPoints();
-					item.frame:SetPoint("TOPLEFT", content, "TOPLEFT", 12 + column * columnWidth + item.indentation, y - ((i - 1) % rows) * ROW_HEIGHT);
+					item.frame:SetPoint("TOPLEFT", content, "TOPLEFT", 12 + column * columnWidth + item.indentation, y - rowY);
 					item.frame:SetShown(expanded);
+					-- A description can take a second line
+					rowY = rowY + (item.descriptionText and math_max(ROW_HEIGHT, item.descriptionText:GetStringHeight() + 8) or ROW_HEIGHT);
+					height = math_max(height, rowY);
 				end
-				if expanded then y = y - rows * ROW_HEIGHT; end
+				if expanded then y = y - height; end
 				y = y - SECTION_GAP;
 			end
 		end

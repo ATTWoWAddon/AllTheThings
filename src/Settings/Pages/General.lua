@@ -59,7 +59,7 @@ local Groups = {
 	} } or false,
 };
 
-local TRACK_X, ACCOUNT_X, EXTRA_X, EXTRA_WIDTH, ROW_HEIGHT = 8, 250, 350, 250, 22;
+local TRACK_X, ACCOUNT_X, EXTRA_X, EXTRA_WIDTH, EXTRAS_PER_ROW, ROW_HEIGHT = 8, 250, 350, 135, 2, 20;
 local content = settings.CreatePageColumn(child, 0, 656);
 
 -- Creates a Checkbox used to designate tracking the specified Thing
@@ -140,7 +140,7 @@ local function CreateTransmogExtras(y)
 	function(self)
 		settings:SetCompletionistMode(self:GetChecked())
 	end)
-	settings.StyleCheckBox(checkboxSources, EXTRA_WIDTH);
+	settings.StyleCheckBox(checkboxSources, EXTRA_WIDTH - 28);
 	checkboxSources:SetATTTooltip(L.COMPLETIONIST_MODE_TOOLTIP)
 	checkboxSources.SettingsOption.tooltip = L.COMPLETIONIST_MODE_TOOLTIP;
 	checkboxSources:SetPoint("TOPLEFT", content, "TOPLEFT", EXTRA_X, y);
@@ -160,11 +160,10 @@ local function CreateTransmogExtras(y)
 	function(self)
 		settings:SetMainOnlyMode(self:GetChecked())
 	end)
-	settings.StyleCheckBox(checkboxMainOnlyMode, EXTRA_WIDTH);
+	settings.StyleCheckBox(checkboxMainOnlyMode, EXTRA_WIDTH - 28);
 	checkboxMainOnlyMode:SetATTTooltip(L.MAIN_ONLY_TOOLTIP)
 	checkboxMainOnlyMode.SettingsOption.tooltip = L.MAIN_ONLY_TOOLTIP;
-	checkboxMainOnlyMode:SetPoint("TOPLEFT", content, "TOPLEFT", EXTRA_X, y - ROW_HEIGHT);
-	return 2;
+	checkboxMainOnlyMode:SetPoint("TOPLEFT", content, "TOPLEFT", EXTRA_X + EXTRA_WIDTH, y);
 end
 
 local function CreateColumnLabel(text, point, x, y)
@@ -204,17 +203,18 @@ for groupIndex,group in ipairs(Groups) do
 			if thing then
 				CreateTrackingCheckbox(thing, TRACK_X, y, ACCOUNT_X - TRACK_X - 60);
 				CreateAccountWideCheckbox(thing, ACCOUNT_X, y);
-				local rows = 0;
-				if thing.isTransmog then rows = CreateTransmogExtras(y); end
+				local count = 0;
+				if thing.isTransmog then CreateTransmogExtras(y); end
 				if thing.extras then
 					for _,extra in ipairs(thing.extras) do
 						if extra then
-							CreateTrackingCheckbox(extra, EXTRA_X, y - rows * ROW_HEIGHT, EXTRA_WIDTH);
-							rows = rows + 1;
+							local column, row = count % EXTRAS_PER_ROW, math.floor(count / EXTRAS_PER_ROW);
+							CreateTrackingCheckbox(extra, EXTRA_X + column * EXTRA_WIDTH, y - row * ROW_HEIGHT, EXTRA_WIDTH - 28);
+							count = count + 1;
 						end
 					end
 				end
-				y = y - (rows > 1 and rows or 1) * ROW_HEIGHT;
+				y = y - math.max(1, math.ceil(count / EXTRAS_PER_ROW)) * ROW_HEIGHT;
 			end
 		end
 		y = y - 8;
