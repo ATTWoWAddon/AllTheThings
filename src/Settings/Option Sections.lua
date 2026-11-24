@@ -266,7 +266,7 @@ local Builders = {
 		label:SetWordWrap(false);
 		label:SetPoint("TOPLEFT", content, "TOPLEFT", x + 4, y - 8);
 
-		local dropdown = CreateFrame("Frame", content:GetName() .. "-DD-" .. option.key:gsub("%W", ""), content, "UIDropDownMenuTemplate");
+		local dropdown = CreateFrame("Frame", content:GetName() .. "-DD-" .. (option.key or option.setting):gsub("%W", ""), content, "UIDropDownMenuTemplate");
 		dropdown:SetPoint("LEFT", label, "RIGHT", -8, -2);
 		UIDropDownMenu_SetWidth(dropdown, option.width or 90);
 		local function GetChoices()
