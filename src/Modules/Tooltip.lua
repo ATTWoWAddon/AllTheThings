@@ -625,7 +625,9 @@ local HookableTooltips = {
 	-- Titan Panel
 	TitanPanelTooltip = 1,
 	-- World Quest Tracker
-	WorldQuestTrackerGameTooltipItemTooltipTooltip = 1
+	WorldQuestTrackerGameTooltipItemTooltipTooltip = 1,
+	-- EQ Objective Tracker
+	EQOTTooltip = 1,
 
 };
 
