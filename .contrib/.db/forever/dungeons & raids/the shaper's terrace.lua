@@ -6,7 +6,7 @@ instanceroot(3001, {	-- The Shaper's Terrace
 	--lore = "",
 	icon = 409547,
 	zoneTextAreaID = 16667,	-- The Shaper's Terrace
-	--coord = { , MAP.UNGORO_CRATER },	-- The Shaper's Terrace (area 16985); entrance location unknown.
+	coord = { 48.2, 6.0, MAP.UNGORO_CRATER },
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	lvl = 58,
 	groups = {
