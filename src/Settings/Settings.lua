@@ -360,6 +360,7 @@ local TooltipSettingsBase = {
 		["Adjust:RowIndents"] = true,
 		["Auto:AuctionList"] = true,
 		["Auto:ProfessionList"] = true,
+		["Show:AuctionTab"] = true,
 		["Celebrate"] = true,
 		["Channel"] = "Master",
 		["Cost"] = true,

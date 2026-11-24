@@ -706,7 +706,17 @@ app:CreateWindow("Auctions", {
 					AuctionHouseFrameTabSideBar:SetPoint("BOTTOMLEFT", AuctionHouseFrame, "BOTTOMRIGHT")
 				end
 
-				if app.IsRetail then
+				if app.IsRetail and not app.Settings:GetTooltipSetting("Show:AuctionTab") then
+					-- The player turned the Auction Module tab off: hide it (and the module) completely
+					self:Hide()
+					if app.AuctionHouseTab then
+						app.AuctionHouseTab:SetChecked(false)
+						app.AuctionHouseTab:Hide()
+					end
+					if AuctionHouseFrameTabSideBar and AuctionHouseFrameTabSideBar.selTab == 1 then
+						AuctionHouseFrameTabSideBar.selTab = 0
+					end
+				elseif app.IsRetail then
 					self:SetResizable(false)
 					self:SetWidth(350)
 					self.CloseButton:Disable()	-- Hiding would be better, but it reasserts itself too often for that
@@ -726,6 +736,7 @@ app:CreateWindow("Auctions", {
 						app.AuctionHouseTab:SetPoint("TOPLEFT", AuctionHouseFrameTabSideBar, "TOPRIGHT", -2, -52)
 						AuctionHouseFrameTabSideBar.Tabs[#AuctionHouseFrameTabSideBar.Tabs + 1] = app.AuctionHouseTab
 					end
+					app.AuctionHouseTab:Show()
 
 					local function toggleAHTab()
 						local newState = not self:IsShown()

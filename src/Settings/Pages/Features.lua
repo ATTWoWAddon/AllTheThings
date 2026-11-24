@@ -177,4 +177,22 @@ if app.IsClassic then
 	end);
 	OpenAuctionListAutomatically:SetATTTooltip(L.AUTO_AUCTION_LIST_CHECKBOX_TOOLTIP);
 	OpenAuctionListAutomatically:AlignBelow(checkboxAutomaticallyOpenProfessionList)
+else
+	-- Retail and Forever show the Auction Module as a tab on the Auction House, which this hides completely.
+	-- Note: rawget avoids the Localization table's MISSING LOCALE fallback (Forever doesn't export these strings yet)
+	local checkboxShowAuctionTab = child:CreateCheckBox(rawget(L, "AUCTION_TAB_CHECKBOX") or "Show the Auction House Module Tab",
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Show:AuctionTab"));
+	end,
+	function(self)
+		settings:SetTooltipSetting("Show:AuctionTab", self:GetChecked());
+		local window = app:GetWindow("Auctions", true);
+		if window and window.UpdatePosition then window:UpdatePosition(); end
+	end);
+	checkboxShowAuctionTab:SetATTTooltip(rawget(L, "AUCTION_TAB_CHECKBOX_TOOLTIP") or "Enable this option if you want to see the Auction House Module provided with ATT.");
+	if checkboxFilterMiniListTimerunning then
+		checkboxShowAuctionTab:AlignBelow(checkboxFilterMiniListTimerunning, -1)
+	else
+		checkboxShowAuctionTab:AlignBelow(checkboxAutomaticallySkipCutscenes)
+	end
 end
