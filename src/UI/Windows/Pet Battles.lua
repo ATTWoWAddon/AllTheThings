@@ -2,8 +2,8 @@
 local _, app = ...;
 local L = app.L;
 
--- Pet battle gameplay began in Mists; Forever provides its own backport.
-if app.GameBuildVersion < 50004 and not app.IsForever then return; end
+-- Pet battle gameplay began in Mists; Forever has nothing that requires pet battling.
+if app.GameBuildVersion < 50004 or app.IsForever then return; end
 
 -- Global locals
 local ipairs, tinsert
