@@ -134,8 +134,7 @@ end)
 checkboxAutomaticallySkipCutscenes:SetATTTooltip(L.SKIP_CUTSCENES_CHECKBOX_TOOLTIP)
 checkboxAutomaticallySkipCutscenes:SetPoint("TOPLEFT", headerModules, "BOTTOMLEFT", -2, 0)
 
--- Note: rawget avoids the Localization table's MISSING LOCALE fallback until these strings are exported
-local checkboxSkipSeenCutscenesOnly = child:CreateCheckBox(rawget(L, "SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX") or "Only Skip Movies You've Seen",
+local checkboxSkipSeenCutscenesOnly = child:CreateCheckBox(L.SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Skip:Cutscenes:SeenOnly"))
 	if not settings:GetTooltipSetting("Skip:Cutscenes") then
@@ -149,7 +148,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("Skip:Cutscenes:SeenOnly", self:GetChecked())
 end)
-checkboxSkipSeenCutscenesOnly:SetATTTooltip(rawget(L, "SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX_TOOLTIP") or "Enable this option to let each movie play the first time this account sees it, and only skip it after that.\n\nIn-engine cinematics don't have an ID the game shares with addons, so they always play while this is enabled.")
+checkboxSkipSeenCutscenesOnly:SetATTTooltip(L.SKIP_SEEN_CUTSCENES_ONLY_CHECKBOX_TOOLTIP)
 checkboxSkipSeenCutscenesOnly:AlignBelow(checkboxAutomaticallySkipCutscenes, 1)
 
 local checkboxFilterMiniListTimerunning;

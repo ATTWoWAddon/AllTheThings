@@ -10,11 +10,11 @@ local child = settings:CreateOptionsPage(L.WINDOWS_PAGE, L.FEATURES_PAGE)
 -- (one of the keys below) and may set SettingsOrder to come before the alphabetical rest.
 -- Windows without a known SettingsGroup go into "Other".
 local Groups = {
-	{ key = "Main", title = "Main Lists" },
+	{ key = "Main", title = L.WINDOWS_GROUP_MAIN_LISTS },
 	{ key = "Collections", title = COLLECTIONS or "Collections" },
 	{ key = "Professions", title = TRADE_SKILLS or "Professions" },
-	{ key = "Progress", title = "Quests & Progress" },
-	{ key = "Tools", title = "Tools" },
+	{ key = "Progress", title = L.WINDOWS_GROUP_PROGRESS },
+	{ key = "Tools", title = L.WINDOWS_GROUP_TOOLS },
 	{ key = "Other", title = OTHER or "Other" },
 };
 local KnownGroups = {};
@@ -24,11 +24,11 @@ local function GetGroupKey(window)
 	return key and KnownGroups[key] and key or "Other";
 end
 
-local FLAT_LABEL = "Flat";
-local FLAT_TOOLTIP = "Show this window as one flat list instead of grouped by category.\n\nApplies right away.";
-local DYNAMIC_LABEL = "In Main List";
-local DYNAMIC_TOOLTIP = "Show this window as a category in the Main List.\n\nTakes effect after a UI reload.";
-local RELOAD_NEEDED = "Main List changes take effect after a UI reload.";
+local FLAT_LABEL = L.WINDOWS_FLAT_LABEL;
+local FLAT_TOOLTIP = L.WINDOWS_FLAT_TOOLTIP;
+local DYNAMIC_LABEL = L.WINDOWS_DYNAMIC_LABEL;
+local DYNAMIC_TOOLTIP = L.WINDOWS_DYNAMIC_TOOLTIP;
+local RELOAD_NEEDED = L.WINDOWS_RELOAD_NEEDED;
 
 -- Layout (scroll content coordinates)
 local ROW_HEIGHT, HEADER_HEIGHT, SECTION_GAP = 22, 24, 8;
