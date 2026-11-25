@@ -15,15 +15,20 @@ local function GetSoundpacks()
 end
 
 -- Each type of sound can be turned off, and has a button to play each of its sounds
-local TEST_X, TEST_BUTTON_WIDTH, MAX_TEST_BUTTONS = 190, 28, 14;
+local TEST_X, TEST_BUTTON_WIDTH, MAX_TEST_BUTTONS = 190, 28, 13;
 local SoundRows = {};
+-- The position 0 is the one of the random button
+local function CreateTestButton(row, position, text)
+	local button = CreateFrame("Button", nil, row:GetParent(), "UIPanelButtonTemplate");
+	button:SetSize(TEST_BUTTON_WIDTH - 2, 19);
+	button:SetPoint("LEFT", row, "LEFT", TEST_X + position * TEST_BUTTON_WIDTH, 0);
+	button:SetText(text);
+	return button;
+end
 local function GetTestButton(row, index)
 	local button = row.TestButtons[index];
 	if button then return button; end
-	button = CreateFrame("Button", nil, row:GetParent(), "UIPanelButtonTemplate");
-	button:SetSize(TEST_BUTTON_WIDTH - 2, 19);
-	button:SetPoint("LEFT", row, "LEFT", TEST_X + (index - 1) * TEST_BUTTON_WIDTH, 0);
-	button:SetText(index);
+	button = CreateTestButton(row, index, index);
 	button:SetScript("OnClick", function(self) app.Audio:TestSound(self.sound); end);
 	button.OnTooltip = function(self, tooltipInfo)
 		-- Only the name of a file is of interest
@@ -38,8 +43,16 @@ local function RefreshTests(row, soundType)
 	if not row.TestButtons then
 		row.TestButtons = {};
 		row.TestNote = row:GetParent():CreateFontString(nil, "ARTWORK", "GameFontDisableSmall");
+		row.RandomButton = CreateTestButton(row, 0, "?");
+		row.RandomButton:SetATTTooltip(L.AUDIO_RANDOM_TOOLTIP);
+		row.RandomButton:SetScript("OnClick", function()
+			-- This also includes the sounds which don't have a button
+			local allSounds = app.Audio:GetActiveSounds(soundType);
+			if #allSounds > 0 then app.Audio:TestSound(allSounds[math.random(1, #allSounds)]); end
+		end);
 	end
 	local sounds, sources = app.Audio:GetActiveSounds(soundType);
+	row.RandomButton:SetShown(#sounds > 1);
 	local count = math.min(#sounds, MAX_TEST_BUTTONS);
 	for i=1,count do
 		local button = GetTestButton(row, i);
@@ -48,7 +61,7 @@ local function RefreshTests(row, soundType)
 	end
 	for i=count+1,#row.TestButtons do row.TestButtons[i]:Hide(); end
 	row.TestNote:ClearAllPoints();
-	row.TestNote:SetPoint("LEFT", row, "LEFT", TEST_X + 4 + count * TEST_BUTTON_WIDTH, 0);
+	row.TestNote:SetPoint("LEFT", row, "LEFT", TEST_X + 4 + (count + 1) * TEST_BUTTON_WIDTH, 0);
 	row.TestNote:SetText(count == 0 and NONE or #sounds > count and ("+" .. (#sounds - count)) or "");
 end
 local function CreateSoundOption(soundType, text)
