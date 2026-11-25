@@ -1475,6 +1475,7 @@ inst(228,{mapID=242,g={
 hqt(83946,{an="n:9056",isDaily=1}),
 hqt(83945,{an="n:9016",isDaily=1}),
 hqt(83943,{an="n:9033",isDaily=1}),
+hqt(83942,{an="n:8983",isDaily=1}),
 hqt(83940,{an="n:9017",isDaily=1}),
 hqt(83938,{an="n:9938",isDaily=1}),
 hqt(83937,{an="n:9019",isDaily=1})}}),
