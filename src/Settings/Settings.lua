@@ -430,6 +430,7 @@ local TooltipSettingsBase = {
 		["Warn:Removed"] = true,
 		["Currencies"] = true,
 		["QuestChain:Nested"] = true,
+		["Popout:AvailableFrom"] = true,
 		["WorldQuestsList:Currencies"] = true,
 		["SocialProgress"] = true,
 

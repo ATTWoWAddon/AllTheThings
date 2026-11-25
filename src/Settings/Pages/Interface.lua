@@ -30,6 +30,7 @@ settings.CreateOptionSections(child, {
 		{ type = "check", key = "Expand:Difficulty", text = L.EXPAND_DIFFICULTY_CHECKBOX, tooltip = L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP },
 		{ type = "check", key = "WorldQuestsList:Currencies", advanced = true, text = L.FILL_DYNAMIC_QUESTS_CHECKBOX, tooltip = L.FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP },
 		{ type = "check", key = "QuestChain:Nested", advanced = true, text = L.NESTED_QUEST_CHAIN_CHECKBOX, tooltip = L.NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP },
+		{ type = "check", key = "Popout:AvailableFrom", advanced = true, text = L.POPOUT_AVAILABLE_FROM_CHECKBOX, tooltip = L.POPOUT_AVAILABLE_FROM_CHECKBOX_TOOLTIP },
 		{ type = "check", key = "Sort:Progress", advanced = true, text = L.SORT_BY_PROGRESS_CHECKBOX, tooltip = L.SORT_BY_PROGRESS_CHECKBOX_TOOLTIP },
 		-- CRIEVE NOTE: Classic Dynamic Categories don't support this just yet.
 		app.IsRetail and app.GameBuildVersion > 70000 and { type = "dropdown", setting = "Dynamic:Style", advanced = true, text = L.DYNAMIC_CATEGORY_LABEL,
