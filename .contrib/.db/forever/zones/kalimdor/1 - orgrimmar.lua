@@ -354,6 +354,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 				qg = 3365,	-- Karolek <Expert Leatherworker>
 				coord = { 62.8, 44.6, MAP.ORGRIMMAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = HORDE_ONLY,
 				cost = {
 					{ "i", 4234, 30 },	-- Heavy Leather
 					{ "i", 3860, 12 },	-- Mithril Bar

@@ -425,6 +425,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				qg = 10276,	-- Rotgath Stonebeard <Expert Blacksmith>
 				coord = { 51.2, 42.4, MAP.IRONFORGE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				cost = {
 					{ "i", 3860, 25 },	-- Mithril Bar
 					{ "i", 4234, 15 },	-- Heavy Leather

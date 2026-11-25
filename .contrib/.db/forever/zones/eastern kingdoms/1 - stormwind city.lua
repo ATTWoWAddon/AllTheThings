@@ -1657,6 +1657,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				qg = 17804,	-- Squire Rowe
 				coord = { 70.2, 85.2, MAP.STORMWIND_CITY },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 50,
 				groups = {
 					objective(1),	-- 0/1 Reginald's March
