@@ -101,6 +101,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 							hqt(83994, name(HEADERS.NPC, 10437)),	-- Nerub'enkan
 							hqt(83995, name(HEADERS.NPC, 10438)),	-- Maleki the Pallid
 							hqt(83996, name(HEADERS.NPC, 10436)),	-- Baroness Anastari
+							hqt(83997, name(HEADERS.NPC, 10439)),	-- Ramstein the Gorger
 						}),
 					}),
 					inst(237, {	-- The Temple of Atal'hakkar

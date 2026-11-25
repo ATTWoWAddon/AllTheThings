@@ -1483,7 +1483,8 @@ inst(236,{mapID=317,maps={318},g={
 hqt(83993,{an="n:10435",isDaily=1}),
 hqt(83994,{an="n:10437",isDaily=1}),
 hqt(83995,{an="n:10438",isDaily=1}),
-hqt(83996,{an="n:10436",isDaily=1})}}),
+hqt(83996,{an="n:10436",isDaily=1}),
+hqt(83997,{an="n:10439",isDaily=1})}}),
 inst(237,{mapID=220,g={
 hqt(96185,{an="n:8580",isDaily=1}),
 hqt(96186,{an="n:5710",isDaily=1}),
