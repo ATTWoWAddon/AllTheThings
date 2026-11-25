@@ -1036,6 +1036,7 @@ maproot(MAP.KALIMDOR, MAP.MOUNT_HYJAL, {
 				qg = 244517,	-- Sefira Everbright
 				coord = { 15.6, 54.6, MAP.MOUNT_HYJAL },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 54,
 				groups = {
 					objective(1),	-- 0/1 Speak with the worker

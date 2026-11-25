@@ -892,6 +892,7 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				qg = 8396,	-- Sentinel Dalia Sunblade
 				coord = { 39.6, 88.9, MAP.DARNASSUS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 45,
 			}),
 			q(88807, {	-- Slay the Spitelash

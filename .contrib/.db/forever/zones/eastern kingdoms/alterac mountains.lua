@@ -198,6 +198,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ALTERAC_MOUNTAINS, {
 				coord = { 11.6, 57.8, MAP.ALTERAC_MOUNTAINS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				cost = {{ "i", 14047, 60 }},	-- Runecloth
+				races = ALLIANCE_ONLY,
 				lvl = 50,
 			}),
 			q(99192, {	-- A Donation of Silk

@@ -335,6 +335,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BLASTED_LANDS, {
 				qg = 7826,	-- Ambassador Ardalan
 				coord = { 67.4, 19.2, MAP.BLASTED_LANDS },
 				timeline = { TIMELINE.ADDED_1_60_1 },
+				races = ALLIANCE_ONLY,
 				lvl = 55,
 			}),
 			q(96797, {	-- The Orphan
