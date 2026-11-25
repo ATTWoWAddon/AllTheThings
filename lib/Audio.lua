@@ -3,11 +3,32 @@ local _, app = ...;
 local api = {};
 app.Audio = api;
 
-local type, time, math_random, PlaySound, PlaySoundFile
-	= type, time, math.random, PlaySound, PlaySoundFile
+local ipairs, pairs, pcall, type, time, math_random, PlaySound, PlaySoundFile
+	= ipairs, pairs, pcall, type, time, math.random, PlaySound, PlaySoundFile
+
+local DefaultSoundPack;
 
 -- Sound Pack Management
-local EventHandlers, SoundPacks, CurrentSoundPack = {}, {}, nil;
+-- Several Sound Packs can be enabled at once, their sounds are combined for each type.
+-- CurrentSoundPack is the one which was activated last, OverrideSoundPack replaces all of them for now.
+local EventHandlers, SoundPacks, CurrentSoundPack, OverrideSoundPack = {}, {}, nil, nil;
+local function SendEvent(event, soundPack)
+	for i,handler in ipairs(EventHandlers) do
+		pcall(handler, event, soundPack);
+	end
+end
+-- The names of the enabled Sound Packs, including the ones which aren't available at the moment
+local function GetEnabledNames()
+	local saved = AllTheThingsSavedVariables;
+	local names = saved.EnabledSoundPacks;
+	if not names then
+		-- There could only be one before
+		names = { [saved.CurrentSoundPack or "Default"] = true };
+		saved.EnabledSoundPacks = names;
+	end
+	return names;
+end
+-- Activates only the given Sound Pack
 function api:ActivateSoundPack(name, noerror)
 	local t = type(name);
 	if t == "string" then
@@ -27,11 +48,34 @@ function api:ActivateSoundPack(name, noerror)
 	else
 		error("SoundPack '" .. tostring(name) .. "' is invalid!");
 	end
+	OverrideSoundPack = nil;
 	AllTheThingsSavedVariables.CurrentSoundPack = CurrentSoundPack.name;
-	for i,handler in ipairs(EventHandlers) do
-		pcall(handler, "Activated", CurrentSoundPack);
-	end
+	AllTheThingsSavedVariables.EnabledSoundPacks = { [CurrentSoundPack.name] = true };
+	SendEvent("Activated", CurrentSoundPack);
 	return CurrentSoundPack;
+end
+function api:IsSoundPackEnabled(name)
+	if OverrideSoundPack then return OverrideSoundPack.name == name; end
+	return GetEnabledNames()[name] or false;
+end
+-- Enables or disables a Sound Pack without changing the other ones
+function api:SetSoundPackEnabled(name, enabled)
+	local soundPack = SoundPacks[name];
+	if not soundPack then
+		error("SoundPack '" .. tostring(name) .. "' not found. Use AllTheThings.Audio:CreateSoundPack first!");
+	end
+	local names = GetEnabledNames();
+	OverrideSoundPack = nil;
+	names[name] = enabled and true or nil;
+	-- There is always at least one
+	if next(names) == nil then names.Default = true; end
+	if enabled then
+		CurrentSoundPack = soundPack;
+	elseif CurrentSoundPack == soundPack then
+		CurrentSoundPack = api:GetEnabledSoundPacks()[1];
+	end
+	AllTheThingsSavedVariables.CurrentSoundPack = CurrentSoundPack.name;
+	SendEvent("Activated", CurrentSoundPack);
 end
 function api:CreateSoundPack(name, sounds)
 	if not name or type(name) ~= "string" then
@@ -44,13 +88,12 @@ function api:CreateSoundPack(name, sounds)
 		error("Sound Pack '" .. name .. "' is already in use by another sound pack.");
 	end
 	sounds.name = name;
-	for i,handler in ipairs(EventHandlers) do
-		pcall(handler, "Created", sounds);
-	end
+	SendEvent("Created", sounds);
 	return sounds;
 end
+-- Returns the Sound Pack which was activated last. Use GetEnabledSoundPacks for all of them.
 function api:GetActiveSoundPack()
-	return CurrentSoundPack;
+	return OverrideSoundPack or CurrentSoundPack;
 end
 function api:GetAllSoundPacks()
 	return SoundPacks;
@@ -65,9 +108,10 @@ function api:RegisterForSoundPackEvents(handler)
 	EventHandlers[#EventHandlers+1] = handler
 end
 function api:ReloadSoundPack()
-	api:ActivateSoundPack(AllTheThingsSavedVariables.CurrentSoundPack or "Default", true);
+	CurrentSoundPack = SoundPacks[AllTheThingsSavedVariables.CurrentSoundPack or "Default"] or CurrentSoundPack;
+	SendEvent("Activated", api:GetActiveSoundPack());
 end
-local DefaultSoundPack = api:CreateSoundPack("Default", {
+DefaultSoundPack = api:CreateSoundPack("Default", {
 	COMPLETE = {
 		app.asset("complete1.ogg"),
 	},
@@ -102,40 +146,54 @@ api:CreateSoundPack("Default (With Report Sounds)", {
 	},
 });
 
--- Returns the Sound Pack which was chosen for the type (or nil), if it's still available
-function api:GetSoundPackForType(soundType)
-	local names = AllTheThingsSavedVariables and AllTheThingsSavedVariables.SoundPackByType;
-	return names and SoundPacks[names[soundType]];
+-- Returns the enabled Sound Packs which are available, sorted by their name
+function api:GetEnabledSoundPacks()
+	if OverrideSoundPack then return { OverrideSoundPack }; end
+	local soundPacks = {};
+	for name in pairs(GetEnabledNames()) do
+		soundPacks[#soundPacks + 1] = SoundPacks[name];
+	end
+	if #soundPacks == 0 then return { DefaultSoundPack }; end
+	table.sort(soundPacks, function(a, b) return a.name < b.name; end);
+	return soundPacks;
 end
--- Returns whether the type has been turned off
+-- Returns the sounds of a type from all enabled Sound Packs, and the Sound Pack of each of them.
+-- The default ones are used when none of the Sound Packs has the type.
+function api:GetActiveSounds(soundType)
+	local sounds, sources, found = {}, {}, false;
+	for _,soundPack in ipairs(api:GetEnabledSoundPacks()) do
+		local packSounds = soundPack[soundType];
+		if packSounds then
+			found = true;
+			for _,sound in ipairs(packSounds) do
+				sounds[#sounds + 1] = sound;
+				sources[#sources + 1] = soundPack;
+			end
+		end
+	end
+	if not found then
+		for _,sound in ipairs(DefaultSoundPack[soundType] or app.EmptyTable) do
+			sounds[#sounds + 1] = sound;
+			sources[#sources + 1] = DefaultSoundPack;
+		end
+	end
+	return sounds, sources;
+end
+-- Types of sounds can be turned off
 function api:IsSoundTypeMuted(soundType)
-	local names = AllTheThingsSavedVariables and AllTheThingsSavedVariables.SoundPackByType;
-	return names and names[soundType] == false or false;
+	local muted = AllTheThingsSavedVariables and AllTheThingsSavedVariables.MutedSoundTypes;
+	return muted and muted[soundType] or false;
 end
--- Chooses a Sound Pack for a type of sounds by its name, the active Sound Pack again with nil, or none with false
-function api:SetSoundPackForType(soundType, name)
+function api:SetSoundTypeMuted(soundType, isMuted)
 	if not DefaultSoundPack[soundType] then
 		error("Sound type '" .. tostring(soundType) .. "' is not valid");
 	end
-	if name and not SoundPacks[name] then
-		error("SoundPack '" .. tostring(name) .. "' not found. Use AllTheThings.Audio:CreateSoundPack first!");
+	local muted = AllTheThingsSavedVariables.MutedSoundTypes;
+	if not muted then
+		muted = {};
+		AllTheThingsSavedVariables.MutedSoundTypes = muted;
 	end
-	local names = AllTheThingsSavedVariables.SoundPackByType;
-	if not names then
-		names = {};
-		AllTheThingsSavedVariables.SoundPackByType = names;
-	end
-	names[soundType] = name;
-	for i,handler in ipairs(EventHandlers) do
-		pcall(handler, "Activated", CurrentSoundPack);
-	end
-end
--- Returns the sounds which are used for the type, and whether they're the default ones because the Sound Pack has none
-function api:GetActiveSounds(soundType)
-	if api:IsSoundTypeMuted(soundType) then return app.EmptyTable, false; end
-	local sounds = (api:GetSoundPackForType(soundType) or CurrentSoundPack)[soundType];
-	if sounds then return sounds, false; end
-	return DefaultSoundPack[soundType] or {}, true;
+	muted[soundType] = isMuted and true or nil;
 end
 -- Plays a sound to test it, regardless of the settings, and stops the one which was tested before
 local testHandle;
@@ -157,7 +215,7 @@ local function PlayAudio(soundType, setting)
 		-- Don't spam the users. It's nice sometimes, but let's put a delay of at least 1 second on there.
 		local now = time();
 		if SoundDelays[soundType] < now then
-			local targetAudio = api:GetActiveSounds(soundType);
+			local targetAudio = not api:IsSoundTypeMuted(soundType) and api:GetActiveSounds(soundType);
 			if targetAudio then
 				local audioCount = #targetAudio;
 				if audioCount > 0 then
@@ -277,5 +335,7 @@ end
 
 app.AddEventHandler("OnReady", function()
 	-- Prepare the Sound Pack!
-	api:ActivateSoundPack(StartupSpecialSoundPack or AllTheThingsSavedVariables.CurrentSoundPack or "Default", true);
+	AllTheThingsSavedVariables.SoundPackByType = nil;	-- was only used while testing
+	OverrideSoundPack = StartupSpecialSoundPack;
+	api:ReloadSoundPack();
 end);

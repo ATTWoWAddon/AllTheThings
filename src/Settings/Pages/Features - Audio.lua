@@ -14,68 +14,62 @@ local function GetSoundpacks()
 	return choices;
 end
 
--- The soundpack of each type of sound, with a button to play each of its sounds
-local TEST_BUTTON_WIDTH, MAX_TEST_BUTTONS = 28, 11;
-local SoundDropdowns = {};
-local function GetTestButton(dropdown, index)
-	local button = dropdown.TestButtons[index];
+-- Each type of sound can be turned off, and has a button to play each of its sounds
+local TEST_X, TEST_BUTTON_WIDTH, MAX_TEST_BUTTONS = 190, 28, 14;
+local SoundRows = {};
+local function GetTestButton(row, index)
+	local button = row.TestButtons[index];
 	if button then return button; end
-	button = CreateFrame("Button", nil, dropdown:GetParent(), "UIPanelButtonTemplate");
-	button:SetSize(TEST_BUTTON_WIDTH - 2, 20);
-	button:SetPoint("LEFT", dropdown, "RIGHT", -8 + (index - 1) * TEST_BUTTON_WIDTH, 2);
+	button = CreateFrame("Button", nil, row:GetParent(), "UIPanelButtonTemplate");
+	button:SetSize(TEST_BUTTON_WIDTH - 2, 19);
+	button:SetPoint("LEFT", row, "LEFT", TEST_X + (index - 1) * TEST_BUTTON_WIDTH, 0);
 	button:SetText(index);
 	button:SetScript("OnClick", function(self) app.Audio:TestSound(self.sound); end);
 	button.OnTooltip = function(self, tooltipInfo)
 		-- Only the name of a file is of interest
 		tooltipInfo[#tooltipInfo + 1] = { left = tostring(self.sound):match("[^/\\]+$") };
+		tooltipInfo[#tooltipInfo + 1] = { left = self.soundPack.name, r = 1, g = 1, b = 1 };
 	end
 	button:SetATTTooltip();
-	dropdown.TestButtons[index] = button;
+	row.TestButtons[index] = button;
 	return button;
 end
-local function RefreshTests(dropdown, soundType)
-	if not dropdown.TestButtons then
-		dropdown.TestButtons = {};
-		dropdown.TestNote = dropdown:GetParent():CreateFontString(nil, "ARTWORK", "GameFontDisableSmall");
+local function RefreshTests(row, soundType)
+	if not row.TestButtons then
+		row.TestButtons = {};
+		row.TestNote = row:GetParent():CreateFontString(nil, "ARTWORK", "GameFontDisableSmall");
 	end
-	local sounds, isDefault = app.Audio:GetActiveSounds(soundType);
+	local sounds, sources = app.Audio:GetActiveSounds(soundType);
 	local count = math.min(#sounds, MAX_TEST_BUTTONS);
 	for i=1,count do
-		local button = GetTestButton(dropdown, i);
-		button.sound = sounds[i];
+		local button = GetTestButton(row, i);
+		button.sound, button.soundPack = sounds[i], sources[i];
 		button:Show();
 	end
-	for i=count+1,#dropdown.TestButtons do dropdown.TestButtons[i]:Hide(); end
-	dropdown.TestNote:ClearAllPoints();
-	dropdown.TestNote:SetPoint("LEFT", dropdown, "RIGHT", -4 + count * TEST_BUTTON_WIDTH, 2);
-	dropdown.TestNote:SetText(count == 0 and NONE or isDefault and DEFAULT or "");
-end
-local function GetSoundpacksForType()
-	local choices = GetSoundpacks();
-	table.insert(choices, 1, { value = "", text = L.AUDIO_SAME_SOUNDPACK });
-	table.insert(choices, 2, { value = false, text = NONE });
-	return choices;
+	for i=count+1,#row.TestButtons do row.TestButtons[i]:Hide(); end
+	row.TestNote:ClearAllPoints();
+	row.TestNote:SetPoint("LEFT", row, "LEFT", TEST_X + 4 + count * TEST_BUTTON_WIDTH, 0);
+	row.TestNote:SetText(count == 0 and NONE or #sounds > count and ("+" .. (#sounds - count)) or "");
 end
 local function CreateSoundOption(soundType, text)
-	local function SetSoundPack(name)
-		if name == "" then name = nil; end
-		app.Audio:SetSoundPackForType(soundType, name);
+	local function SetEnabled(enabled)
+		app.Audio:SetSoundTypeMuted(soundType, not enabled);
 		settings:Refresh();
 	end
-	return { type = "dropdown", key = "Sound:" .. soundType, text = text, tooltip = L.AUDIO_SOUND_TOOLTIP, width = 150, labelWidth = 110, choices = GetSoundpacksForType,
-		get = function()
-			if app.Audio:IsSoundTypeMuted(soundType) then return false; end
-			local soundPack = app.Audio:GetSoundPackForType(soundType);
-			return soundPack and soundPack.name or "";
-		end,
-		set = SetSoundPack,
-		isChanged = function() return app.Audio:IsSoundTypeMuted(soundType) or app.Audio:GetSoundPackForType(soundType) ~= nil; end,
-		reset = function() SetSoundPack(""); end,
+	return { type = "check", text = text, tooltip = L.AUDIO_SOUND_TOOLTIP,
+		get = function() return not app.Audio:IsSoundTypeMuted(soundType); end,
+		set = SetEnabled,
+		isChanged = function() return app.Audio:IsSoundTypeMuted(soundType); end,
+		reset = function() SetEnabled(true); end,
 		OnRefresh = function(self)
-			SoundDropdowns[soundType] = self;
+			SoundRows[soundType] = self;
 			RefreshTests(self, soundType);
 		end,
 	};
+end
+local function GetSoundpackText()
+	local soundPacks = app.Audio:GetEnabledSoundPacks();
+	return #soundPacks == 1 and soundPacks[1].name or L.AUDIO_SOUNDPACK_COUNT:format(#soundPacks);
 end
 
 settings.CreateOptionSections(child, {
@@ -87,12 +81,16 @@ settings.CreateOptionSections(child, {
 			{ value = "Ambience", text = L.CHANNEL_AMBIENCE },
 			{ value = "Dialog", text = L.CHANNEL_DIALOG },
 		} },
-		{ type = "dropdown", key = "Soundpack", text = L.SOUNDPACK, width = 200, labelWidth = 110, choices = GetSoundpacks,
-			get = function() return app.Audio:GetActiveSoundPack().name; end,
-			set = function(name)
-				app.Audio:ActivateSoundPack(name);
-				app.Audio:PlayFanfare();
+		{ type = "dropdown", key = "Soundpack", text = L.SOUNDPACK, tooltip = L.AUDIO_SOUNDPACK_TOOLTIP, width = 200, labelWidth = 110, choices = GetSoundpacks,
+			multi = true,
+			isSelected = function(name) return app.Audio:IsSoundPackEnabled(name); end,
+			toggle = function(name)
+				local enabled = not app.Audio:IsSoundPackEnabled(name);
+				app.Audio:SetSoundPackEnabled(name, enabled);
+				if enabled then app.Audio:PlayFanfare(); end
 			end,
+			get = GetSoundpackText,
+			getText = GetSoundpackText,
 			OnRefresh = function(self) soundpackDropdown = self; end,
 		},
 		{ type = "check", key = "Celebrate", text = L.CELEBRATE_COLLECTED_CHECKBOX, tooltip = L.CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP },
@@ -114,5 +112,5 @@ settings.CreateOptionSections(child, {
 -- Sound packs can be registered or activated by other addons at any time
 app.Audio:RegisterForSoundPackEvents(function()
 	if soundpackDropdown then soundpackDropdown:OnRefresh(); end
-	for _,dropdown in pairs(SoundDropdowns) do dropdown:OnRefresh(); end
+	for soundType,row in pairs(SoundRows) do RefreshTests(row, soundType); end
 end)

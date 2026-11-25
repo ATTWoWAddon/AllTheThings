@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Same as Soundpack",
-	constant = "AUDIO_SAME_SOUNDPACK",
+	readable = "%d Soundpacks",
+	constant = "AUDIO_SOUNDPACK_COUNT",
 	export = true,
 	text = {
-		en = "Same as Soundpack",
+		en = "%d Soundpacks",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "The soundpack which is used for this type of sound. Click the buttons to hear its sounds.",
+	readable = "Whether this type of sound is played. Click the buttons to hear its sounds.",
 	constant = "AUDIO_SOUND_TOOLTIP",
 	export = true,
 	text = {
-		en = "The soundpack which is used for this type of sound. Click the buttons to hear its sounds.",
+		en = "Whether this type of sound is played. Click the buttons to hear its sounds.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

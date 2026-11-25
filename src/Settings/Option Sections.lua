@@ -10,6 +10,7 @@ local ipairs, pairs, type, math_ceil, math_floor, math_max, math_min
 --	{ type = "check", key = "", text = "", tooltip = "" }
 --	{ type = "slider", key = "", text = nil or "", tooltip = "", min = 0, max = 1, step = 1, format = "%.0f" }
 --	{ type = "dropdown", key = "", text = "", choices = { { value = "", text = "" }, ... }, width = 90, labelWidth = nil }
+--		or with several choices: multi = true, isSelected = function(value) end, toggle = function(value) end, getText = function() end
 --	{ type = "color", text = "", tooltip = "", get = function() return r, g, b, a end, OnClick = function() end }
 --	{ type = "buttons", buttons = { { text = "", tooltip = "", OnClick = function() end, isActive = nil or function() end, usable = nil or function() end }, ... } }
 -- Options can also have:
@@ -301,8 +302,19 @@ local Builders = {
 				local choice = choices[i];
 				local info = UIDropDownMenu_CreateInfo();
 				info.text = choice.text;
-				info.checked = GetOption(option) == choice.value;
+				if option.multi then
+					info.isNotRadio = true;
+					info.keepShownOnClick = true;
+					info.checked = function() return option.isSelected(choice.value); end
+				else
+					info.checked = GetOption(option) == choice.value;
+				end
 				info.func = function()
+					if option.multi then
+						option.toggle(choice.value);
+						dropdown:OnRefresh();
+						return;
+					end
 					SetOption(option, choice.value);
 					dropdown:OnRefresh();
 					CloseDropDownMenus();
@@ -337,9 +349,13 @@ local Builders = {
 				initialized = true;
 				UIDropDownMenu_Initialize(self, InitializeMenu);
 			end
-			local value = GetOption(option);
-			for _,choice in ipairs(GetChoices()) do
-				if choice.value == value then UIDropDownMenu_SetText(self, choice.text); end
+			if option.multi then
+				UIDropDownMenu_SetText(self, option.getText());
+			else
+				local value = GetOption(option);
+				for _,choice in ipairs(GetChoices()) do
+					if choice.value == value then UIDropDownMenu_SetText(self, choice.text); end
+				end
 			end
 			if IsUsable(option) then
 				UIDropDownMenu_EnableDropDown(self);
