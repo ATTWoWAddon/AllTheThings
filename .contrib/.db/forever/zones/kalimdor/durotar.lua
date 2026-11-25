@@ -1858,6 +1858,16 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					{ "pop" },
 				},
 			}),
+			n(3165, {	-- Ghrawt <Bowyer>
+				coord = { 52.0, 41.1, MAP.DUROTAR },
+				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2506,	-- Hornwood Recurve Bow
+					2507,	-- Laminated Recurve Bow
+					11362,	-- Medium Quiver
+					5439,	-- Small Quiver
+				}},
+			}),
 			n(3881, {	-- Grimtak
 				coord = { 51.2, 42.6, MAP.DUROTAR },
 				races = HORDE_ONLY,

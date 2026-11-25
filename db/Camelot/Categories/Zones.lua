@@ -3247,6 +3247,8 @@ i(4881,{b=1})}})}),
 h(-58,{
 n(3166,{coords={
 [1411]={{53,40.8}}},r=1,sym={{"select","symselector",81,73},{"pop"}}}),
+n(3165,{coords={
+[1411]={{52,41.1}}},r=1,sym={{"select","itemID",2506,2507,11362,5439}}}),
 n(3881,{coords={
 [1411]={{51.2,42.6}}},r=1,sym={{"select","symselector",3,80},{"pop"}},g={
 r(6413,{itemID=5483,learnedAt=20,requireSkill=185,skillID=2939})}}),

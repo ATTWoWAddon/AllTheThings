@@ -3483,6 +3483,14 @@ maproot(KALIMDOR, DUROTAR, {
 			}),
 		}),
 		n(VENDORS, {
+			n(3165, {	-- Ghrawt <Bowyer>
+				coord = { 52.0, 41.1, DUROTAR },
+				races = HORDE_ONLY,
+				sym = {{ "select", "itemID",
+					2506,	-- Hornwood Recurve Bow
+					2507,	-- Laminated Recurve Bow
+				}},
+			}),
 			n(3881, {	-- Grimtak
 				coords = {
 					-- #if AFTER CATA
