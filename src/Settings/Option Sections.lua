@@ -12,6 +12,7 @@ local ipairs, pairs, type, math_ceil, math_floor, math_max, math_min
 --	{ type = "dropdown", key = "", text = "", choices = { { value = "", text = "" }, ... }, width = 90, labelWidth = nil }
 --	{ type = "color", text = "", tooltip = "", get = function() return r, g, b, a end, OnClick = function() end }
 --	{ type = "buttons", buttons = { { text = "", tooltip = "", OnClick = function() end, isActive = nil or function() end, usable = nil or function() end }, ... } }
+--	{ type = "custom", Create = function(content, x, y) return height end }
 -- Options can also have:
 --	indent: number of indentation steps
 --	requires: tooltip settings which must all be enabled for the option to be usable
@@ -265,6 +266,9 @@ local Builders = {
 		content:RegisterObject(button);
 		settings.RegisterOption({ frame = button, text = option.text, advanced = option.advanced, tooltip = option.tooltip, IsChanged = function() return IsChanged(option); end });
 		return 22;
+	end,
+	custom = function(content, option, x, y)
+		return option.Create(content, x, y);
 	end,
 	buttons = function(content, option, x, y)
 		local width = (content.SectionWidth - x) / BUTTONS_PER_ROW;

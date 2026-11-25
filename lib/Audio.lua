@@ -102,6 +102,22 @@ api:CreateSoundPack("Default (With Report Sounds)", {
 	},
 });
 
+-- The types of sounds which a Sound Pack can have
+api.SoundTypes = { "COMPLETE", "FANFARE", "MOUNTFANFARE", "REMOVE", "RAREFIND", "REPORT", "DEATH" };
+-- Returns the sounds which are used for the type by the active Sound Pack, and whether they're the default ones
+function api:GetActiveSounds(soundType)
+	local sounds = CurrentSoundPack[soundType];
+	if sounds then return sounds, CurrentSoundPack == DefaultSoundPack; end
+	return DefaultSoundPack[soundType] or {}, true;
+end
+-- Plays a sound to test it, regardless of the settings, and stops the one which was tested before
+local testHandle;
+function api:TestSound(sound)
+	if testHandle and StopSound then StopSound(testHandle); end
+	local _, handle = (type(sound) == "string" and PlaySoundFile or PlaySound)(sound, app.Settings:GetTooltipSetting("Channel"));
+	testHandle = handle;
+end
+
 -- Play Audio API
 local SoundDelays = setmetatable({}, {
 	__index = function(t, key)
