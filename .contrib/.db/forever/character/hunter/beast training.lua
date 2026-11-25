@@ -169,6 +169,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			lvl = 56,
 			crs = {
 				9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)
+				249225,	-- Ghostfang Alpha (Wolf, 56-57, Mount Hyjal)
 			},
 		},
 
@@ -704,6 +705,7 @@ root(ROOTS.Character, { cl(HUNTER, { prof(261, {	-- Beast Training
 			lvl = 56,
 			crs = {
 				9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)
+				249225,	-- Ghostfang Alpha (Wolf, 56-57, Mount Hyjal)
 			},
 		},
 
