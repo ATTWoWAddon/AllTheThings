@@ -12,9 +12,9 @@ ach(116)}),
 prof(171,{awp=11507,g={
 h(-45,{phase=1612,requireSkill=171,g={
 q(90560,{r=1,requireSkill=171,g={
-r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171})}}),
+r(1231583,{b=1,itemID=241651,learnedAt=250,q=2,requireSkill=171})}}),
 q(90567,{r=2,requireSkill=171,g={
-r(1231583,{b=1,itemID=241651,learnedAt=270,q=2,requireSkill=171})}})}})}}),
+r(1231583,{b=1,itemID=241651,learnedAt=250,q=2,requireSkill=171})}})}})}}),
 prof(261,{c={3},description="Lets the Hunter train their pet with various abilities that they have learned.\n\nGets replaced by the Pet Talent Trees in Wrath.",lvl=10,g={
 r(24493,{lvl=20,rank=1}),
 r(24497,{lvl=30,rank=2}),
@@ -128,7 +128,7 @@ r(23636,{learnedAt=300,phase=1609,requireSkill=9788}),
 r(16742,{learnedAt=300,phase=1609,requireSkill=9788}),
 r(16728,{learnedAt=300,requireSkill=9788,rwp=11503,u=2}),
 r(16729,{learnedAt=300,requireSkill=9788}),
-r(461739,{awp=11503,learnedAt=320,phase=1608,requireSkill=9788}),
+r(461739,{awp=11503,learnedAt=300,phase=1608,requireSkill=9788}),
 r(16724,{learnedAt=300,requireSkill=9788})}}),
 cat(219,{requireSkill=164,g={
 r(16660,{awp=11503,learnedAt=290,requireSkill=9788}),
@@ -138,18 +138,18 @@ r(20874,{learnedAt=295,requireSkill=9788})}}),
 cat(221,{requireSkill=164,g={
 r(23637,{learnedAt=300,phase=1609,requireSkill=9788}),
 r(16655,{learnedAt=290,requireSkill=9788,rwp=11503,u=2}),
-r(461651,{learnedAt=310,phase=1608,requireSkill=9788,rwp=11503,u=2}),
+r(461651,{learnedAt=290,phase=1608,requireSkill=9788,rwp=11503,u=2}),
 r(16661,{learnedAt=295,requireSkill=9788,rwp=11503,u=2}),
 r(16741,{learnedAt=300,requireSkill=9788}),
-r(461737,{awp=11503,learnedAt=315,phase=1608,requireSkill=9788}),
+r(461737,{awp=11503,learnedAt=295,phase=1608,requireSkill=9788}),
 r(9954,{learnedAt=225,requireSkill=9788})}}),
 cat(220,{requireSkill=164,g={
 r(15296,{learnedAt=285,requireSkill=9788,rwp=11503,u=2}),
 r(16667,{learnedAt=285,requireSkill=9788}),
 r(16745,{learnedAt=300,phase=1609,requireSkill=9788}),
-r(461735,{awp=11503,learnedAt=320,phase=1608,requireSkill=9788}),
+r(461735,{awp=11503,learnedAt=300,phase=1608,requireSkill=9788}),
 r(16746,{learnedAt=300,requireSkill=9788}),
-r(461667,{awp=11503,learnedAt=305,phase=1608,requireSkill=9788}),
+r(461667,{awp=11503,learnedAt=285,phase=1608,requireSkill=9788}),
 r(9974,{learnedAt=245,requireSkill=9788}),
 r(16650,{learnedAt=270,requireSkill=9788})}}),
 cat(223,{requireSkill=164,g={
@@ -170,20 +170,20 @@ r(23653,{learnedAt=300,phase=1609,requireSkill=17041,rwp=11500,u=2})}}),
 prof(17040,{description="These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",sourceQuests={84496},g={
 r(23650,{learnedAt=300,phase=1609,requireSkill=17040}),
 r(16973,{learnedAt=280,requireSkill=17040,rwp=11503,u=2}),
-r(461733,{awp=11503,learnedAt=305,phase=1608,requireSkill=17040}),
+r(461733,{awp=11503,learnedAt=280,phase=1608,requireSkill=17040}),
 r(16988,{learnedAt=300,requireSkill=17040}),
 r(16993,{learnedAt=300,requireSkill=17040}),
 r(27830,{learnedAt=300,phase=1610,requireSkill=17040}),
 r(16983,{learnedAt=285,requireSkill=17040,rwp=11503,u=2}),
-r(461647,{awp=11503,learnedAt=320,phase=1608,requireSkill=17040}),
-r(461718,{awp=11503,learnedAt=310,phase=1608,requireSkill=17040})}}),
+r(461647,{awp=11503,learnedAt=300,phase=1608,requireSkill=17040}),
+r(461718,{awp=11503,learnedAt=285,phase=1608,requireSkill=17040})}}),
 prof(17039,{description="These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",sourceQuests={5307},g={
 r(16990,{learnedAt=300,requireSkill=17039}),
 r(23652,{learnedAt=300,phase=1609,requireSkill=17039}),
 r(16978,{learnedAt=280,requireSkill=17039}),
 r(16985,{learnedAt=290,requireSkill=17039,rwp=11503,u=2}),
 r(20890,{learnedAt=300,requireSkill=17039}),
-r(461714,{learnedAt=315,phase=1608,requireSkill=17039,rwp=11503,u=2}),
+r(461714,{learnedAt=290,phase=1608,requireSkill=17039,rwp=11503,u=2}),
 r(16992,{learnedAt=300,requireSkill=17039}),
 r(27832,{learnedAt=300,phase=1610,requireSkill=17039})}}),
 cat(227,{description="These can be crafted by any Weaponsmith.",requireSkill=164,g={
@@ -195,7 +195,7 @@ r(16986,{requireSkill=9787,u=1}),
 r(15292,{learnedAt=265,requireSkill=9787}),
 r(15294,{learnedAt=275,requireSkill=9787}),
 r(16987,{requireSkill=9787,u=1}),
-r(461716,{awp=11503,learnedAt=320,phase=1608,requireSkill=9787}),
+r(461716,{awp=11503,learnedAt=300,phase=1608,requireSkill=9787}),
 r(16995,{learnedAt=300,requireSkill=9787,rwp=11503,u=2}),
 r(10007,{learnedAt=245,requireSkill=9787}),
 r(10003,{learnedAt=235,requireSkill=9787}),
@@ -242,13 +242,13 @@ prof(10656,{description="These items can only be crafted by Leatherworkers who h
 cat(252,{requireSkill=165,g={
 r(19094,{learnedAt=300,requireSkill=10656,rwp=11503,u=2}),
 r(19089,{learnedAt=295,requireSkill=10656}),
-r(461659,{awp=11503,learnedAt=320,phase=1608,requireSkill=10656})}}),
+r(461659,{awp=11503,learnedAt=300,phase=1608,requireSkill=10656})}}),
 cat(253,{requireSkill=165,g={
 r(19085,{learnedAt=290,requireSkill=10656,rwp=11503,u=2}),
 r(19077,{learnedAt=285,requireSkill=10656}),
 r(10650,{learnedAt=255,requireSkill=10656}),
 r(24703,{learnedAt=300,phase=1609,requireSkill=10656}),
-r(461655,{awp=11503,learnedAt=310,phase=1608,requireSkill=10656}),
+r(461655,{awp=11503,learnedAt=290,phase=1608,requireSkill=10656}),
 r(19050,{learnedAt=260,requireSkill=10656}),
 r(19054,{learnedAt=300,requireSkill=10656})}}),
 cat(255,{requireSkill=165,g={
@@ -258,12 +258,12 @@ r(24655,{learnedAt=280,requireSkill=10656})}}),
 cat(257,{requireSkill=165,g={
 r(19107,{learnedAt=300,requireSkill=10656,rwp=11503,u=2}),
 r(24654,{learnedAt=300,requireSkill=10656}),
-r(461657,{awp=11503,learnedAt=320,phase=1608,requireSkill=10656}),
+r(461657,{awp=11503,learnedAt=300,phase=1608,requireSkill=10656}),
 r(19060,{learnedAt=270,requireSkill=10656})}}),
 cat(258,{requireSkill=165,g={
 r(20855,{learnedAt=300,requireSkill=10656})}}),
 cat(259,{requireSkill=165,g={
-r(461653,{awp=11503,learnedAt=320,phase=1608,requireSkill=10656}),
+r(461653,{awp=11503,learnedAt=300,phase=1608,requireSkill=10656}),
 r(22926,{learnedAt=300,phase=1608,requireSkill=10656,rwp=11503,u=2})}})}}),
 prof(10658,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",sourceQuests={5144,5146},g={
 cat(251,{requireSkill=165,g={
@@ -271,12 +271,12 @@ r(10632,{learnedAt=250,requireSkill=10658}),
 r(20854,{learnedAt=300,requireSkill=10658})}}),
 cat(252,{requireSkill=165,g={
 r(19061,{learnedAt=270,requireSkill=10658}),
-r(461663,{learnedAt=320,phase=1608,requireSkill=10658}),
+r(461663,{learnedAt=300,phase=1608,requireSkill=10658}),
 r(19090,{awp=11101,learnedAt=295,requireSkill=10658}),
 r(19101,{learnedAt=300,requireSkill=10658,rwp=11503,u=2})}}),
 cat(253,{requireSkill=165,g={
 r(19095,{learnedAt=300,requireSkill=10658}),
-r(461661,{awp=11503,learnedAt=305,phase=1608,requireSkill=10658}),
+r(461661,{awp=11503,learnedAt=285,phase=1608,requireSkill=10658}),
 r(19079,{awp=11101,learnedAt=285,requireSkill=10658}),
 r(19076,{learnedAt=285,requireSkill=10658,rwp=11503,u=2})}}),
 cat(255,{requireSkill=165,g={
@@ -286,11 +286,11 @@ cat(256,{requireSkill=165,g={
 r(23710,{learnedAt=300,phase=1609,requireSkill=10658})}}),
 cat(257,{requireSkill=165,g={
 r(19078,{learnedAt=285,requireSkill=10658}),
-r(461665,{awp=11503,learnedAt=290,phase=1608,requireSkill=10658}),
+r(461665,{awp=11503,learnedAt=270,phase=1608,requireSkill=10658}),
 r(19067,{learnedAt=275,requireSkill=10658}),
 r(19059,{learnedAt=270,requireSkill=10658,rwp=11503,u=2})}}),
 cat(259,{requireSkill=165,g={
-r(461690,{awp=11503,learnedAt=320,phase=1608,requireSkill=10658}),
+r(461690,{awp=11503,learnedAt=300,phase=1608,requireSkill=10658}),
 r(22928,{learnedAt=300,phase=1608,requireSkill=10658,rwp=11503,u=2})}})}}),
 prof(10660,{description="These items can only be crafted by Leatherworkers who have completed the associated quest.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Leatherworkers and complete the opposing specialization(s).",sourceQuests={5143,5148},g={
 cat(251,{requireSkill=165,g={
@@ -372,8 +372,8 @@ h(-823,{coords={
 [1457]={{38.7,85.2}}},OnTooltip=_.OnTooltipDB.SpellCooldownRemaining_18560,requireSkill=197,sym={{"select","itemID",14342}}}),
 q(90116,{awp=11507,coords={
 [1423]={{94.6,83.6}}},phase=1612,qgs={240631},requireSkill=197,g={
-r(1227723,{b=1,itemID=239149,learnedAt=260,q=3,requireSkill=197})}}),
+r(1227723,{b=1,itemID=239149,learnedAt=250,q=3,requireSkill=197})}}),
 q(90120,{awp=11507,coords={
 [1423]={{94.6,83.6}}},phase=1612,qgs={240631},requireSkill=197,g={
-r(1227724,{b=1,itemID=239150,learnedAt=300,q=4,requireSkill=197})}})})}})
+r(1227724,{b=1,itemID=239150,learnedAt=290,q=4,requireSkill=197})}})})}})
 end)

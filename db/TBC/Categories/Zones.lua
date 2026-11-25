@@ -7626,7 +7626,7 @@ r(12718,{learnedAt=205,requireSkill=20222}),
 r(12908,{learnedAt=240,requireSkill=20222}),
 r(12717,{learnedAt=205,requireSkill=20222}),
 r(12716,{learnedAt=225,requireSkill=20222}),
-r(8895,{learnedAt=225,requireSkill=20222}),
+r(8895,{learnedAt=130,requireSkill=20222}),
 r(12715,{learnedAt=205,requireSkill=20222}),
 r(12758,{learnedAt=245,requireSkill=20222}),
 r(12760,{learnedAt=205,requireSkill=20222}),
@@ -10189,7 +10189,7 @@ q(5677,{altQuests={5676,5678},c={5},coords={
 [1455]={{26.4,7.6}}},lvl=20,qgs={11406},races={1},rwp=30002,g={
 r(13896,{rank=1})}}),
 q(3449,{coords={
-[1455]={{31.2,4.6}}},lvl=45,maps={1447},qgs={8507},r=2,rwp=40003,sourceQuests={3448,3451},g={
+[1455]={{31.2,4.6}}},lvl=45,maps={1447},qgs={8507},r=2,rwp=40003,sourceQuests={3448},g={
 qo(1,{coords={
 [1447]={{36,53}}},providers={{"i",10445},{"i",10563},{"o",149481}}}),
 qo(2,{coords={
@@ -11852,7 +11852,7 @@ n(1257,{coords={
 [1453]={{55.6,65.8}}},r=2}),
 n(340,{coords={
 [1453]={{74.6,36.8}}},r=2,g={
-r(2795,{itemID=2889,learnedAt=25,q=1,requireSkill=185}),
+r(2795,{itemID=2889,learnedAt=10,q=1,requireSkill=185}),
 r(3371,{itemID=3679,learnedAt=60,q=1,requireSkill=185}),
 r(2545,{itemID=2698,learnedAt=85,q=1,requireSkill=185}),
 r(3373,{itemID=3681,learnedAt=120,q=1,requireSkill=185}),
@@ -13698,7 +13698,7 @@ q(384,{coords={
 qo(1,{crs={1125,1126,1127,1689},providers={{"i",2886}},requireSkill=185}),
 qo(2,{crs={1247},providers={{"i",2894}},requireSkill=185}),
 i(2888,{f=55,q=1,requireSkill=185}),
-r(2795,{itemID=2889,learnedAt=25,q=1,requireSkill=185})}}),
+r(2795,{itemID=2889,learnedAt=10,q=1,requireSkill=185})}}),
 q(310,{coords={
 [1426]={{30.2,45.6}}},lvl=2,qgs={1375},qis={2548},r=2,rwp=40003,g={
 q(308,{coords={
@@ -21285,7 +21285,7 @@ s(145087,35345,{b=1,c={8},f=4,loc=44,lvl=70,minReputation={935,21000},phase=18,q
 r(27926,{b=1,itemID=22537,learnedAt=370,minReputation={935,21000},q=1,requireSkill=333}),
 r(34010,{b=1,itemID=28281,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333}),
 i(29191,{b=1,lvl=70,minReputation={935,21000},q=2,rwp=50004}),
-r(17632,{b=1,itemID=13517,learnedAt=300,minReputation={935,21000},q=1,requireSkill=171}),
+r(17632,{b=1,itemID=13517,learnedAt=350,minReputation={935,21000},q=1,requireSkill=171}),
 r(28566,{b=1,itemID=22915,learnedAt=350,minReputation={935,21000},q=2,requireSkill=171}),(_.OnInitDB.GenerateCompareOtherKey_185692)(
 i(30634,{b=1,minReputation={935,21000},OnTooltip=_.OnTooltipDB.ShowHonoredKeyComparison,q=1,rwp=40200})),
 i(29179,{b=1,f=53,lvl=70,minReputation={935,21000},q=3}),
@@ -24629,7 +24629,7 @@ n(18991,{coords={
 [1944]={{26.2,62}}},r=1,g={
 r(27033,{awp=20005,itemID=21993,learnedAt=360,q=1,requireSkill=129,rwp=30100}),
 r(27032,{awp=20005,itemID=21992,learnedAt=330,q=1,requireSkill=129,rwp=30100}),
-r(27028,{awp=20005,itemID=22012,q=1,requireSkill=129,rwp=30100})}}),
+r(27028,{awp=20005,itemID=22012,learnedAt=300,q=1,requireSkill=129,rwp=30100})}}),
 n(18267,{coords={
 [1944]={{55.9,39.2}}},pvp=1,r=1,g={
 i(27832,{b=1,cost={{"i",24581,15}},f=52,lvl=60,pvp=1,q=3}),
@@ -24642,14 +24642,14 @@ n(18754,{coords={
 [1944]={{56.2,38.6}}},r=1}),
 n(18988,{coords={
 [1944]={{56.8,37.4}}},r=1,g={
-r(33359,{itemID=27736,q=1,rank=5,requireSkill=185,rwp=30100})}}),
+r(33359,{itemID=27736,learnedAt=300,q=1,rank=5,requireSkill=185,rwp=30100})}}),
 n(18771,{coords={
 [1944]={{54,64}}},r=2}),
 n(18990,{coords={
 [1944]={{22.4,39.4}}},r=2,g={
 r(27033,{awp=20005,itemID=21993,learnedAt=360,q=1,requireSkill=129,rwp=30100}),
 r(27032,{awp=20005,itemID=21992,learnedAt=330,q=1,requireSkill=129,rwp=30100}),
-r(27028,{awp=20005,itemID=22012,q=1,requireSkill=129,rwp=30100})}}),
+r(27028,{awp=20005,itemID=22012,learnedAt=300,q=1,requireSkill=129,rwp=30100})}}),
 n(16585,{coords={
 [1944]={{54.6,41}}},r=1,g={
 r(33284,{itemID=27688,learnedAt=300,q=1,requireSkill=185})}}),
@@ -24674,7 +24674,7 @@ i(30746,{f=113,isLimited=1,q=2}),
 i(30745,{f=113,isLimited=1,q=2})}}),
 n(18987,{coords={
 [1944]={{54,63.6}}},r=2,g={
-r(33359,{itemID=27736,q=1,rank=5,requireSkill=185,rwp=30100})}}),
+r(33359,{itemID=27736,learnedAt=300,q=1,rank=5,requireSkill=185,rwp=30100})}}),
 n(18772,{coords={
 [1944]={{54.6,63.6}}},r=2}),
 n(18773,{coords={
@@ -28682,7 +28682,7 @@ p(167,{b=1,cost={{"i",24245,30}},itemID=34478,minReputation={970,42000},petTypeI
 r(28554,{b=1,cost={{"i",24245,30}},itemID=22906,learnedAt=335,minReputation={970,42000},q=2,requireSkill=171})}}),
 n(18993,{coords={
 [1946]={{78.5,63}}},g={
-r(33359,{itemID=27736,q=1,rank=5,requireSkill=185,rwp=30100})}}),
+r(33359,{itemID=27736,learnedAt=300,q=1,rank=5,requireSkill=185,rwp=30100})}}),
 n(18017,{coords={
 [1946]={{32.4,51.8}}},r=1,g={
 r(28549,{isLimited=1,itemID=22902,learnedAt=320,q=1,requireSkill=171}),

@@ -670,6 +670,151 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.MID, {
 			n(PVP_ELITE, bubbleDownSelf({ bonusID = 7532 }, {
 				timeline = { REMOVED_12_2_0 },
 				groups = {
+					n(CLASSES, {
+						cl(DEATHKNIGHT, {
+							i(270773),	-- Venomous Gladiator's Chestguard
+							i(270775),	-- Venomous Gladiator's Plate Warboots
+							i(270777),	-- Venomous Gladiator's Plate Gauntlets
+							i(270779),	-- Venomous Gladiator's Plate Helm
+							i(270781),	-- Venomous Gladiator's Plate Legguards
+							i(270783),	-- Venomous Gladiator's Plate Shoulders
+							i(270785),	-- Venomous Gladiator's Plate Girdle
+							i(270787),	-- Venomous Gladiator's Plate Wristguards
+							i(270563),	-- Venomous Gladiator's Cloak
+						}),
+						cl(DEMONHUNTER, {
+							i(270661),	-- Venomous Gladiator's Leather Vest
+							i(270663),	-- Venomous Gladiator's Leather Boots
+							i(270665),	-- Venomous Gladiator's Leather Gloves
+							i(270667),	-- Venomous Gladiator's Leather Helm
+							i(270669),	-- Venomous Gladiator's Leather Breeches
+							i(270671),	-- Venomous Gladiator's Leather Spaulders
+							i(270673),	-- Venomous Gladiator's Leather Belt
+							i(270675),	-- Venomous Gladiator's Leather Wristwraps
+							i(270566),	-- Venomous Gladiator's Cloak
+						}),
+						cl(DRUID, {
+							i(270677),	-- Venomous Gladiator's Leather Vest
+							i(270679),	-- Venomous Gladiator's Leather Boots
+							i(270681),	-- Venomous Gladiator's Leather Gloves
+							i(270683),	-- Venomous Gladiator's Leather Helm
+							i(270685),	-- Venomous Gladiator's Leather Breeches
+							i(270687),	-- Venomous Gladiator's Leather Spaulders
+							i(270689),	-- Venomous Gladiator's Leather Belt
+							i(270691),	-- Venomous Gladiator's Leather Wristwraps
+							i(270569),	-- Venomous Gladiator's Cloak
+						}),
+						cl(EVOKER, {
+							i(270725),	-- Venomous Gladiator's Armored Scales
+							i(270727),	-- Venomous Gladiator's Chain Sabatons
+							i(270729),	-- Venomous Gladiator's Chain Gauntlets
+							i(270731),	-- Venomous Gladiator's Chain Helm
+							i(270733),	-- Venomous Gladiator's Chain Leggings
+							i(270735),	-- Venomous Gladiator's Chain Monnion
+							i(270737),	-- Venomous Gladiator's Chain Belt
+							i(270739),	-- Venomous Gladiator's Chain Wristguards
+							i(270572),	-- Venomous Gladiator's Cloak
+						}),
+						cl(HUNTER, {
+							i(270741),	-- Venomous Gladiator's Chain Vest
+							i(270743),	-- Venomous Gladiator's Chain Sabatons
+							i(270745),	-- Venomous Gladiator's Chain Gauntlets
+							i(270747),	-- Venomous Gladiator's Chain Helm
+							i(270749),	-- Venomous Gladiator's Chain Leggings
+							i(270751),	-- Venomous Gladiator's Chain Monnion
+							i(270753),	-- Venomous Gladiator's Chain Belt
+							i(270755),	-- Venomous Gladiator's Chain Wristguards
+							i(270578),	-- Venomous Gladiator's Cloak
+						}),
+						cl(MAGE, {
+							i(270613),	-- Venomous Gladiator's Silk Robe
+							i(270615),	-- Venomous Gladiator's Silk Slippers
+							i(270617),	-- Venomous Gladiator's Silk Gloves
+							i(270619),	-- Venomous Gladiator's Silk Hat
+							i(270621),	-- Venomous Gladiator's Silk Leggings
+							i(270623),	-- Venomous Gladiator's Silk Mantle
+							i(270625),	-- Venomous Gladiator's Silk Cord
+							i(270627),	-- Venomous Gladiator's Silk Wristwraps
+							i(270581),	-- Venomous Gladiator's Cloak
+						}),
+						cl(MONK, {
+							i(270693),	-- Venomous Gladiator's Leather Vest
+							i(270695),	-- Venomous Gladiator's Leather Boots
+							i(270697),	-- Venomous Gladiator's Leather Gloves
+							i(270699),	-- Venomous Gladiator's Leather Helm
+							i(270701),	-- Venomous Gladiator's Leather Breeches
+							i(270703),	-- Venomous Gladiator's Leather Spaulders
+							i(270705),	-- Venomous Gladiator's Leather Belt
+							i(270707),	-- Venomous Gladiator's Leather Wristwraps
+							i(270584),	-- Venomous Gladiator's Cloak
+						}),
+						cl(PALADIN, {
+							i(270789),	-- Venomous Gladiator's Chestguard
+							i(270791),	-- Venomous Gladiator's Plate Warboots
+							i(270793),	-- Venomous Gladiator's Plate Gauntlets
+							i(270795),	-- Venomous Gladiator's Plate Helm
+							i(270797),	-- Venomous Gladiator's Plate Legguards
+							i(270799),	-- Venomous Gladiator's Plate Shoulders
+							i(270801),	-- Venomous Gladiator's Plate Girdle
+							i(270803),	-- Venomous Gladiator's Plate Wristguards
+							i(270590),	-- Venomous Gladiator's Cloak
+						}),
+						cl(PRIEST, {
+							i(270629),	-- Venomous Gladiator's Silk Robe
+							i(270631),	-- Venomous Gladiator's Silk Slippers
+							i(270633),	-- Venomous Gladiator's Silk Gloves
+							i(270635),	-- Venomous Gladiator's Silk Hood
+							i(270637),	-- Venomous Gladiator's Silk Leggings
+							i(270639),	-- Venomous Gladiator's Silk Mantle
+							i(270641),	-- Venomous Gladiator's Silk Cord
+							i(270643),	-- Venomous Gladiator's Silk Wristwraps
+							i(270593),	-- Venomous Gladiator's Cloak
+						}),
+						cl(ROGUE, {
+							i(270709),	-- Venomous Gladiator's Leather Vest
+							i(270711),	-- Venomous Gladiator's Leather Boots
+							i(270713),	-- Venomous Gladiator's Leather Gloves
+							i(270715),	-- Venomous Gladiator's Leather Helm
+							i(270717),	-- Venomous Gladiator's Leather Breeches
+							i(270719),	-- Venomous Gladiator's Leather Spaulders
+							i(270721),	-- Venomous Gladiator's Leather Belt
+							i(270723),	-- Venomous Gladiator's Leather Wristwraps
+							i(270596),	-- Venomous Gladiator's Cloak
+						}),
+						cl(SHAMAN, {
+							i(270757),	-- Venomous Gladiator's Chain Vest
+							i(270759),	-- Venomous Gladiator's Chain Sabatons
+							i(270761),	-- Venomous Gladiator's Chain Gauntlets
+							i(270763),	-- Venomous Gladiator's Chain Helm
+							i(270765),	-- Venomous Gladiator's Chain Leggings
+							i(270767),	-- Venomous Gladiator's Chain Monnion
+							i(270769),	-- Venomous Gladiator's Chain Belt
+							i(270771),	-- Venomous Gladiator's Chain Wristguards
+							i(270599),	-- Venomous Gladiator's Cloak
+						}),
+						cl(WARLOCK, {
+							i(270645),	-- Venomous Gladiator's Silk Raiment
+							i(270647),	-- Venomous Gladiator's Silk Slippers
+							i(270649),	-- Venomous Gladiator's Silk Gloves
+							i(270651),	-- Venomous Gladiator's Silk Hood
+							i(270653),	-- Venomous Gladiator's Silk Leggings
+							i(270655),	-- Venomous Gladiator's Silk Mantle
+							i(270657),	-- Venomous Gladiator's Silk Cord
+							i(270659),	-- Venomous Gladiator's Silk Wristwraps
+							i(270607),	-- Venomous Gladiator's Cloak
+						}),
+						cl(WARRIOR, {
+							i(270805),	-- Venomous Gladiator's Chestguard
+							i(270807),	-- Venomous Gladiator's Plate Warboots
+							i(270809),	-- Venomous Gladiator's Plate Gauntlets
+							i(270811),	-- Venomous Gladiator's Plate Helm
+							i(270813),	-- Venomous Gladiator's Plate Legguards
+							i(270815),	-- Venomous Gladiator's Plate Shoulders
+							i(270817),	-- Venomous Gladiator's Plate Girdle
+							i(270819),	-- Venomous Gladiator's Plate Wristguards
+							i(270610),	-- Venomous Gladiator's Cloak
+						}),
+					}),
 					n(255844, {	-- Soryn <Elite Conquest Quartermaster>
 						coord = { 34.0, 80.7, MAP.MIDNIGHT.SILVERMOON_CITY },
 						groups = appendGroups(sharedData({

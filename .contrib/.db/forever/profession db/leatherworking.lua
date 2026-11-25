@@ -210,6 +210,7 @@ i(252852, 1255055);	-- Mender's Leather Shoulder
 i(252876, 1255031);	-- Mender's Leather Waistguard
 i(252925, 1254982);	-- Mender's Mail Belt
 i(252907, 1255000);	-- Mender's Mail Bracers
+i(252921, 1254986);	-- Mender's Mail Gauntlets
 i(252913, 1254994);	-- Mender's Mail Sabatons
 i(252903, 1255004);	-- Mender's Mail Shoulder
 i(252764, 1255143);	-- Moonglow Boots
@@ -227,6 +228,7 @@ i(7363, 9148);		-- Pilferer's Gloves
 i(252826, 1255081);	-- Prowler's Leather Belt
 i(252860, 1255047);	-- Prowler's Leather Boots
 i(252853, 1255054);	-- Prowler's Leather Bracers
+i(252867, 1255040);	-- Prowler's Leather Gauntlets
 i(252836, 1255071);	-- Prowler's Leather Gloves
 i(252848, 1255059);	-- Prowler's Leather Shoulder
 i(252872, 1255035);	-- Prowler's Leather Waistguard
@@ -246,22 +248,26 @@ i(252830, 1255077);	-- Skirmisher's Leather Belt
 i(252840, 1255067);	-- Skirmisher's Leather Gloves
 i(252924, 1254983);	-- Skirmisher's Mail Belt
 i(252906, 1255001);	-- Skirmisher's Mail Bracers
+i(252920, 1254987);	-- Skirmisher's Mail Gauntlets
 i(252912, 1254995);	-- Skirmisher's Mail Sabatons
 i(252902, 1255005);	-- Skirmisher's Mail Shoulder
 i(252827, 1255080);	-- Skulker's Leather Belt
 i(252861, 1255046);	-- Skulker's Leather Boots
 i(252854, 1255053);	-- Skulker's Leather Bracers
+i(252868, 1255039);	-- Skulker's Leather Gauntlets
 i(252837, 1255070);	-- Skulker's Leather Gloves
 i(252849, 1255058);	-- Skulker's Leather Shoulder
 i(252873, 1255034);	-- Skulker's Leather Waistguard
 i(252831, 1255076);	-- Skycaller's Leather Belt
 i(252863, 1255044);	-- Skycaller's Leather Boots
 i(252856, 1255051);	-- Skycaller's Leather Bracers
+i(252870, 1255037);	-- Skycaller's Leather Gauntlets
 i(252841, 1255066);	-- Skycaller's Leather Gloves
 i(252851, 1255056);	-- Skycaller's Leather Shoulder
 i(252875, 1255032);	-- Skycaller's Leather Waistguard
 i(252923, 1254984);	-- Skycaller's Mail Belt
 i(252905, 1255002);	-- Skycaller's Mail Bracers
+i(252919, 1254988);	-- Skycaller's Mail Gauntlets
 i(252911, 1254996);	-- Skycaller's Mail Sabatons
 i(252901, 1255006);	-- Skycaller's Mail Shoulder
 i(274006, 1292975);	-- Spiritcaller Epaulets
@@ -276,6 +282,7 @@ i(252828, 1255079);	-- Stalker's Leather Belt
 i(252838, 1255069);	-- Stalker's Leather Gloves
 i(252922, 1254985);	-- Stalker's Mail Belt
 i(252904, 1255003);	-- Stalker's Mail Bracers
+i(252918, 1254989);	-- Stalker's Mail Gauntlets
 i(252910, 1254997);	-- Stalker's Mail Sabatons
 i(252900, 1255007);	-- Stalker's Mail Shoulder
 i(252775, 1255132);	-- Stormrider's Leather Armor
@@ -321,6 +328,7 @@ i(8385, 10509);		-- Turtle Scale Gloves
 i(252829, 1255078);	-- Warden's Leather Belt
 i(252862, 1255045);	-- Warden's Leather Boots
 i(252855, 1255052);	-- Warden's Leather Bracers
+i(252869, 1255038);	-- Warden's Leather Gauntlets
 i(252839, 1255068);	-- Warden's Leather Gloves
 i(252850, 1255057);	-- Warden's Leather Shoulder
 i(252874, 1255033);	-- Warden's Leather Waistguard
@@ -414,35 +422,19 @@ i(19204, 23629);	-- Heavy Timbermaw Boots
 r(1254969),	-- Blue Dragonscale Helm
 r(1254990),	-- Charged Scorpid Shoulder
 r(1255015),	-- Dawn Armor
-r(1254986),	-- Mender's Mail Gauntlets
 r(1306527),	-- Outlaw's Collar
 i(252938),	-- Pattern: Blue Dragonscale Helm
 i(252917),	-- Pattern: Charged Scorpid Shoulder
 i(252892),	-- Pattern: Dawn Armor
-i(252921),	-- Pattern: Mender's Mail Gauntlets
 i(279302),	-- Pattern: Outlaw's Collar
-i(252867),	-- Pattern: Prowler's Leather Gauntlets
-i(252920),	-- Pattern: Skirmisher's Mail Gauntlets
-i(252868),	-- Pattern: Skulker's Leather Gauntlets
-i(252870),	-- Pattern: Skycaller's Leather Gauntlets
-i(252919),	-- Pattern: Skycaller's Mail Gauntlets
-i(252918),	-- Pattern: Stalker's Mail Gauntlets
 i(252929),	-- Pattern: Supple Scorpid Belt
 i(252882),	-- Pattern: Tooled Leather Crown
 i(252887),	-- Pattern: Tooled Leather Epaulets
-i(252869),	-- Pattern: Warden's Leather Gauntlets
 i(252884),	-- Pattern: Wicked Leather Shoulder
 i(279307),	-- Pattern: Wild Leather Armor Kit
-r(1255040),	-- Prowler's Leather Gauntlets
-r(1254987),	-- Skirmisher's Mail Gauntlets
-r(1255039),	-- Skulker's Leather Gauntlets
-r(1255037),	-- Skycaller's Leather Gauntlets
-r(1254988),	-- Skycaller's Mail Gauntlets
-r(1254989),	-- Stalker's Mail Gauntlets
 r(1254978),	-- Supple Scorpid Belt
 r(1255025),	-- Tooled Leather Crown
 r(1255020),	-- Tooled Leather Epaulets
-r(1255038),	-- Warden's Leather Gauntlets
 r(1255023),	-- Wicked Leather Shoulder
 r(1306532),	-- Wild Leather Armor Kit
 --cenario rep

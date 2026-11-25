@@ -6079,7 +6079,7 @@ r(12718,{learnedAt=205,requireSkill=20222}),
 r(12908,{learnedAt=240,requireSkill=20222}),
 r(12717,{learnedAt=205,requireSkill=20222}),
 r(12716,{learnedAt=225,requireSkill=20222}),
-r(8895,{learnedAt=225,requireSkill=20222}),
+r(8895,{learnedAt=130,requireSkill=20222}),
 r(12715,{learnedAt=205,requireSkill=20222}),
 r(12758,{learnedAt=245,requireSkill=20222}),
 r(12760,{learnedAt=205,requireSkill=20222}),
@@ -8685,7 +8685,7 @@ q(5677,{altQuests={5676,5678},c={5},coords={
 [1455]={{26.4,7.6}}},lvl=20,qgs={11406},races={1},rwp=30002,g={
 r(13896,{rank=1})}}),
 q(3449,{coords={
-[1455]={{31.2,4.6}}},lvl=45,maps={1447},qgs={8507},r=2,rwp=40003,sourceQuests={3448,3451},g={
+[1455]={{31.2,4.6}}},lvl=45,maps={1447},qgs={8507},r=2,rwp=40003,sourceQuests={3448},g={
 qo(1,{coords={
 [1447]={{36,53}}},providers={{"i",10445},{"i",10563},{"o",149481}}}),
 qo(2,{coords={

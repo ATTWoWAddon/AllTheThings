@@ -113,6 +113,7 @@ i(276972, 1301465);	-- Azure Stormsewn Handwraps
 i(276974, 1301468);	-- Azure Stormsewn Leggings
 i(276975, 1301469);	-- Azure Stormsewn Shoes
 i(276970, 1301463);	-- Azure Stormsewn Vest
+i(254102, 1257476);	-- Black Gloves
 i(254028, 1257439);	-- Black Handwraps
 i(254114, 1257482);	-- Black Sandals
 i(5775, 6695);		-- Black Silk Pack
@@ -161,6 +162,7 @@ i(14506, 18451);	-- Felcloth Robe
 i(14508, 18453);	-- Felcloth Shoulders
 i(21722, 26403);	-- Festival Dress
 i(21723, 26407);	-- Festival Suit
+i(254100, 1257475);	-- Fiery Gloves
 i(254026, 1257438);	-- Fiery Handwraps
 i(254112, 1257481);	-- Fiery Sandals
 i(254086, 1257468);	-- Fiery Waistcord
@@ -192,6 +194,7 @@ i(14474, 18411);	-- Frostweave Gloves
 i(14489, 18424);	-- Frostweave Pants
 i(14467, 18404);	-- Frostweave Robe
 i(14466, 18403);	-- Frostweave Tunic
+i(254098, 1257474);	-- Frothing Gloves
 i(254024, 1257437);	-- Frothing Handwraps
 i(254110, 1257480);	-- Frothing Sandals
 i(254084, 1257467);	-- Frothing Waistcord
@@ -199,10 +202,12 @@ i(14473, 18410);	-- Ghostweave Belt
 i(14477, 18413);	-- Ghostweave Gloves
 i(14495, 18441);	-- Ghostweave Pants
 i(14480, 18416);	-- Ghostweave Vest
+i(254096, 1257473);	-- Gilded Gloves
 i(254108, 1257479);	-- Gilded Sandals
 i(254082, 1257466);	-- Gilded Waistcord
 i(273989, 1292958);	-- Gloves of Conviction
 i(14511, 18454);	-- Gloves of Spell Mastery
+i(254104, 1257477);	-- Golden Gloves
 i(254030, 1257440);	-- Golden Handwraps
 i(254116, 1257483);	-- Golden Sandals
 i(254090, 1257470);	-- Golden Waistcord
@@ -263,6 +268,7 @@ i(253914, 1257382);	-- Pristine Gloves
 i(253962, 1257406);	-- Pristine Gown
 i(253988, 1257419);	-- Pristine Leggings
 i(253926, 1257388);	-- Pristine Sash
+i(254106, 1257478);	-- Radiant Gloves
 i(254032, 1257441);	-- Radiant Handwraps
 i(254118, 1257484);	-- Radiant Sandals
 i(254092, 1257471);	-- Radiant Waistcord
@@ -380,27 +386,15 @@ i(19218, 23663);	-- Mantle of the Timbermaw
 --- UNSURE ---
 --[[
 -- unknown
-r(1257476),	-- Black Gloves
 r(1306545),	-- Felblood Soul Bag
-r(1257475),	-- Fiery Gloves
-r(1257474),	-- Frothing Gloves
 r(1257490),	-- Ghostweave Boots
 r(1257493),	-- Ghostweave Hood
 r(1257489),	-- Ghostweave Mantle
-r(1257473),	-- Gilded Gloves
-r(1257477),	-- Golden Gloves
-i(254102),	-- Pattern: Black Gloves
 i(279320),	-- Pattern: Felblood Soul Bag
-i(254100),	-- Pattern: Fiery Gloves
-i(254098),	-- Pattern: Frothing Gloves
 i(254130),	-- Pattern: Ghostweave Boots
 i(254136),	-- Pattern: Ghostweave Hood
 i(254128),	-- Pattern: Ghostweave Mantle
-i(254096),	-- Pattern: Gilded Gloves
-i(254104),	-- Pattern: Golden Gloves
-i(254106),	-- Pattern: Radiant Gloves
 i(254683),	-- Pattern: Stormcloth Vest
-r(1257478),	-- Radiant Gloves
 i(10324, 12090);	-- Stormcloth Boots
 i(10304, 12063);	-- Stormcloth Gloves
 i(10319, 12083);	-- Stormcloth Headband

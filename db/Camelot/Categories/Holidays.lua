@@ -301,7 +301,7 @@ i(17726,{b=1,e=14,g={
 r(21931,{e=14,itemID=17725,learnedAt=190,requireSkill=333,skillID=2940}),
 r(21943,{e=14,itemID=17722,learnedAt=165,requireSkill=165,skillID=2945}),
 r(21945,{e=14,itemID=17724,learnedAt=155,requireSkill=197,skillID=2948}),
-r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
+r(21913,{e=14,itemID=17706,learnedAt=165,requireSkill=164,skillID=2938}),
 r(21923,{e=14,itemID=17709,learnedAt=190,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720,learnedAt=190,requireSkill=202,skillID=2941})}})}}),
 q(6984,{coords={
@@ -310,7 +310,7 @@ i(17726,{b=1,e=14,g={
 r(21931,{e=14,itemID=17725,learnedAt=190,requireSkill=333,skillID=2940}),
 r(21943,{e=14,itemID=17722,learnedAt=165,requireSkill=165,skillID=2945}),
 r(21945,{e=14,itemID=17724,learnedAt=155,requireSkill=197,skillID=2948}),
-r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
+r(21913,{e=14,itemID=17706,learnedAt=165,requireSkill=164,skillID=2938}),
 r(21923,{e=14,itemID=17709,learnedAt=190,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720,learnedAt=190,requireSkill=202,skillID=2941})}})}}),
 q(8769,{coords={
@@ -319,7 +319,7 @@ q(8769,{coords={
 r(21931,{e=14,itemID=17725,learnedAt=190,requireSkill=333,skillID=2940}),
 r(21943,{e=14,itemID=17722,learnedAt=165,requireSkill=165,skillID=2945}),
 r(21945,{e=14,itemID=17724,learnedAt=155,requireSkill=197,skillID=2948}),
-r(21913,{e=14,itemID=17706,learnedAt=190,requireSkill=164,skillID=2938}),
+r(21913,{e=14,itemID=17706,learnedAt=165,requireSkill=164,skillID=2938}),
 r(21923,{e=14,itemID=17709,learnedAt=190,requireSkill=171,skillID=2937}),
 r(21940,{e=14,itemID=17720,learnedAt=190,requireSkill=202,skillID=2941}),
 i(21325,{b=1,e=14,f=55,spellID=26067}),
@@ -936,8 +936,8 @@ i(21640,{b=1,e=18})}}),
 q(8878,{coords={
 [1450]={{53.8,35.3}}},cost={{"i",21100,5}},e=18,lvl=50,qgs={15909},repeatable=1,g={
 i(21640,{b=1,e=18}),
-r(26403,{b=1,e=18,itemID=21722,learnedAt=250,requireSkill=197,skillID=2948}),
-r(26407,{b=1,e=18,itemID=21723,learnedAt=250,requireSkill=197,skillID=2948})}}),
+r(26403,{b=1,e=18,itemID=21722,learnedAt=205,requireSkill=197,skillID=2948}),
+r(26407,{b=1,e=18,itemID=21723,learnedAt=205,requireSkill=197,skillID=2948})}}),
 q(8877,{coords={
 [1450]={{53.8,35.3}}},cost={{"i",21100,5}},e=18,lvl=45,qgs={15909},repeatable=1,g={
 i(21640,{b=1,e=18}),

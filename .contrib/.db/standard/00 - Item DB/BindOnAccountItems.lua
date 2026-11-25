@@ -1284,3 +1284,7 @@ i(265543)	-- Tempered Amani Spearhead
 i(265560)	-- Toughened Amani Leather Wrap
 
 -- #ENDIF
+
+-- #if AFTER 13.0
+i(270909)	-- Slumbering Coil Curio (EXPECTED)
+-- #endif

@@ -34860,7 +34860,6 @@ s(305214)/i(270545),	--
 s(305215)/i(270546),	--
 s(305216)/i(270547),	--
 s(305217)/i(270548),	--
-s(305225)/i(270563),	-- Venomous Gladiator's Cloak
 s(305226)/i(270563),	-- Venomous Gladiator's Cloak
 s(305227)/i(270563),	-- Venomous Gladiator's Cloak
 s(305229)/i(270564),	-- Venomous Gladiator's Drape
@@ -34869,7 +34868,6 @@ s(305231)/i(270564),	-- Venomous Gladiator's Drape
 s(305233)/i(270565),	-- Venomous Gladiator's Shawl
 s(305234)/i(270565),	-- Venomous Gladiator's Shawl
 s(305235)/i(270565),	-- Venomous Gladiator's Shawl
-s(305237)/i(270566),	-- Venomous Gladiator's Cloak
 s(305238)/i(270566),	-- Venomous Gladiator's Cloak
 s(305239)/i(270566),	-- Venomous Gladiator's Cloak
 s(305241)/i(270567),	-- Venomous Gladiator's Drape
@@ -34878,7 +34876,6 @@ s(305243)/i(270567),	-- Venomous Gladiator's Drape
 s(305245)/i(270568),	-- Venomous Gladiator's Shawl
 s(305246)/i(270568),	-- Venomous Gladiator's Shawl
 s(305247)/i(270568),	-- Venomous Gladiator's Shawl
-s(305249)/i(270569),	-- Venomous Gladiator's Cloak
 s(305250)/i(270569),	-- Venomous Gladiator's Cloak
 s(305251)/i(270569),	-- Venomous Gladiator's Cloak
 s(305253)/i(270570),	-- Venomous Gladiator's Drape
@@ -34887,7 +34884,6 @@ s(305255)/i(270570),	-- Venomous Gladiator's Drape
 s(305257)/i(270571),	-- Venomous Gladiator's Shawl
 s(305258)/i(270571),	-- Venomous Gladiator's Shawl
 s(305259)/i(270571),	-- Venomous Gladiator's Shawl
-s(305261)/i(270572),	-- Venomous Gladiator's Cloak
 s(305262)/i(270572),	-- Venomous Gladiator's Cloak
 s(305263)/i(270572),	-- Venomous Gladiator's Cloak
 s(305265)/i(270573),	-- Venomous Gladiator's Drape
@@ -34896,7 +34892,6 @@ s(305267)/i(270573),	-- Venomous Gladiator's Drape
 s(305269)/i(270574),	-- Venomous Gladiator's Shawl
 s(305270)/i(270574),	-- Venomous Gladiator's Shawl
 s(305271)/i(270574),	-- Venomous Gladiator's Shawl
-s(305273)/i(270578),	-- Venomous Gladiator's Cloak
 s(305274)/i(270578),	-- Venomous Gladiator's Cloak
 s(305275)/i(270578),	-- Venomous Gladiator's Cloak
 s(305277)/i(270579),	-- Venomous Gladiator's Drape
@@ -34905,7 +34900,6 @@ s(305279)/i(270579),	-- Venomous Gladiator's Drape
 s(305281)/i(270580),	-- Venomous Gladiator's Shawl
 s(305282)/i(270580),	-- Venomous Gladiator's Shawl
 s(305283)/i(270580),	-- Venomous Gladiator's Shawl
-s(305285)/i(270581),	-- Venomous Gladiator's Cloak
 s(305286)/i(270581),	-- Venomous Gladiator's Cloak
 s(305287)/i(270581),	-- Venomous Gladiator's Cloak
 s(305289)/i(270582),	-- Venomous Gladiator's Drape
@@ -34914,7 +34908,6 @@ s(305291)/i(270582),	-- Venomous Gladiator's Drape
 s(305293)/i(270583),	-- Venomous Gladiator's Shawl
 s(305294)/i(270583),	-- Venomous Gladiator's Shawl
 s(305295)/i(270583),	-- Venomous Gladiator's Shawl
-s(305297)/i(270584),	-- Venomous Gladiator's Cloak
 s(305298)/i(270584),	-- Venomous Gladiator's Cloak
 s(305299)/i(270584),	-- Venomous Gladiator's Cloak
 s(305301)/i(270585),	-- Venomous Gladiator's Drape
@@ -34923,7 +34916,6 @@ s(305303)/i(270585),	-- Venomous Gladiator's Drape
 s(305305)/i(270586),	-- Venomous Gladiator's Shawl
 s(305306)/i(270586),	-- Venomous Gladiator's Shawl
 s(305307)/i(270586),	-- Venomous Gladiator's Shawl
-s(305309)/i(270590),	-- Venomous Gladiator's Cloak
 s(305310)/i(270590),	-- Venomous Gladiator's Cloak
 s(305311)/i(270590),	-- Venomous Gladiator's Cloak
 s(305313)/i(270591),	-- Venomous Gladiator's Drape
@@ -34932,7 +34924,6 @@ s(305315)/i(270591),	-- Venomous Gladiator's Drape
 s(305317)/i(270592),	-- Venomous Gladiator's Shawl
 s(305318)/i(270592),	-- Venomous Gladiator's Shawl
 s(305319)/i(270592),	-- Venomous Gladiator's Shawl
-s(305321)/i(270593),	-- Venomous Gladiator's Cloak
 s(305322)/i(270593),	-- Venomous Gladiator's Cloak
 s(305323)/i(270593),	-- Venomous Gladiator's Cloak
 s(305325)/i(270594),	-- Venomous Gladiator's Drape
@@ -34941,7 +34932,6 @@ s(305327)/i(270594),	-- Venomous Gladiator's Drape
 s(305329)/i(270595),	-- Venomous Gladiator's Shawl
 s(305330)/i(270595),	-- Venomous Gladiator's Shawl
 s(305331)/i(270595),	-- Venomous Gladiator's Shawl
-s(305333)/i(270596),	-- Venomous Gladiator's Cloak
 s(305334)/i(270596),	-- Venomous Gladiator's Cloak
 s(305335)/i(270596),	-- Venomous Gladiator's Cloak
 s(305337)/i(270597),	-- Venomous Gladiator's Drape
@@ -34950,7 +34940,6 @@ s(305339)/i(270597),	-- Venomous Gladiator's Drape
 s(305341)/i(270598),	-- Venomous Gladiator's Shawl
 s(305342)/i(270598),	-- Venomous Gladiator's Shawl
 s(305343)/i(270598),	-- Venomous Gladiator's Shawl
-s(305345)/i(270599),	-- Venomous Gladiator's Cloak
 s(305346)/i(270599),	-- Venomous Gladiator's Cloak
 s(305347)/i(270599),	-- Venomous Gladiator's Cloak
 s(305349)/i(270600),	-- Venomous Gladiator's Drape
@@ -34959,7 +34948,6 @@ s(305351)/i(270600),	-- Venomous Gladiator's Drape
 s(305353)/i(270601),	-- Venomous Gladiator's Shawl
 s(305354)/i(270601),	-- Venomous Gladiator's Shawl
 s(305355)/i(270601),	-- Venomous Gladiator's Shawl
-s(305357)/i(270607),	-- Venomous Gladiator's Cloak
 s(305358)/i(270607),	-- Venomous Gladiator's Cloak
 s(305359)/i(270607),	-- Venomous Gladiator's Cloak
 s(305361)/i(270608),	-- Venomous Gladiator's Drape
@@ -34968,7 +34956,6 @@ s(305363)/i(270608),	-- Venomous Gladiator's Drape
 s(305365)/i(270609),	-- Venomous Gladiator's Shawl
 s(305366)/i(270609),	-- Venomous Gladiator's Shawl
 s(305367)/i(270609),	-- Venomous Gladiator's Shawl
-s(305369)/i(270610),	-- Venomous Gladiator's Cloak
 s(305370)/i(270610),	-- Venomous Gladiator's Cloak
 s(305371)/i(270610),	-- Venomous Gladiator's Cloak
 s(305373)/i(270611),	-- Venomous Gladiator's Drape
@@ -34977,505 +34964,401 @@ s(305375)/i(270611),	-- Venomous Gladiator's Drape
 s(305377)/i(270612),	-- Venomous Gladiator's Shawl
 s(305378)/i(270612),	-- Venomous Gladiator's Shawl
 s(305379)/i(270612),	-- Venomous Gladiator's Shawl
-s(305381)/i(270613),	-- Venomous Gladiator's Silk Robe
 s(305382)/i(270613),	-- Venomous Gladiator's Silk Robe
 s(305383)/i(270613),	-- Venomous Gladiator's Silk Robe
 s(305385)/i(270614),	-- Venomous Gladiator's Silk Gown
 s(305386)/i(270614),	-- Venomous Gladiator's Silk Gown
 s(305387)/i(270614),	-- Venomous Gladiator's Silk Gown
-s(305389)/i(270615),	-- Venomous Gladiator's Silk Slippers
 s(305390)/i(270615),	-- Venomous Gladiator's Silk Slippers
 s(305391)/i(270615),	-- Venomous Gladiator's Silk Slippers
 s(305393)/i(270616),	-- Venomous Gladiator's Silk Treads
 s(305394)/i(270616),	-- Venomous Gladiator's Silk Treads
 s(305395)/i(270616),	-- Venomous Gladiator's Silk Treads
-s(305397)/i(270617),	-- Venomous Gladiator's Silk Gloves
 s(305398)/i(270617),	-- Venomous Gladiator's Silk Gloves
 s(305399)/i(270617),	-- Venomous Gladiator's Silk Gloves
 s(305401)/i(270618),	-- Venomous Gladiator's Silk Handwraps
 s(305402)/i(270618),	-- Venomous Gladiator's Silk Handwraps
 s(305403)/i(270618),	-- Venomous Gladiator's Silk Handwraps
-s(305405)/i(270619),	-- Venomous Gladiator's Silk Hat
 s(305409)/i(270620),	-- Venomous Gladiator's Silk Cap
-s(305413)/i(270621),	-- Venomous Gladiator's Silk Leggings
 s(305414)/i(270621),	-- Venomous Gladiator's Silk Leggings
 s(305415)/i(270621),	-- Venomous Gladiator's Silk Leggings
 s(305417)/i(270622),	-- Venomous Gladiator's Silk Trousers
 s(305418)/i(270622),	-- Venomous Gladiator's Silk Trousers
 s(305419)/i(270622),	-- Venomous Gladiator's Silk Trousers
-s(305421)/i(270623),	-- Venomous Gladiator's Silk Mantle
 s(305425)/i(270624),	-- Venomous Gladiator's Silk Amice
-s(305429)/i(270625),	-- Venomous Gladiator's Silk Cord
 s(305430)/i(270625),	-- Venomous Gladiator's Silk Cord
 s(305431)/i(270625),	-- Venomous Gladiator's Silk Cord
 s(305433)/i(270626),	-- Venomous Gladiator's Silk Belt
 s(305434)/i(270626),	-- Venomous Gladiator's Silk Belt
 s(305435)/i(270626),	-- Venomous Gladiator's Silk Belt
-s(305437)/i(270627),	-- Venomous Gladiator's Silk Wristwraps
 s(305438)/i(270627),	-- Venomous Gladiator's Silk Wristwraps
 s(305439)/i(270627),	-- Venomous Gladiator's Silk Wristwraps
 s(305441)/i(270628),	-- Venomous Gladiator's Silk Armbands
 s(305442)/i(270628),	-- Venomous Gladiator's Silk Armbands
 s(305443)/i(270628),	-- Venomous Gladiator's Silk Armbands
-s(305445)/i(270629),	-- Venomous Gladiator's Silk Robe
 s(305446)/i(270629),	-- Venomous Gladiator's Silk Robe
 s(305447)/i(270629),	-- Venomous Gladiator's Silk Robe
 s(305449)/i(270630),	-- Venomous Gladiator's Silk Vestments
 s(305450)/i(270630),	-- Venomous Gladiator's Silk Vestments
 s(305451)/i(270630),	-- Venomous Gladiator's Silk Vestments
-s(305453)/i(270631),	-- Venomous Gladiator's Silk Slippers
 s(305454)/i(270631),	-- Venomous Gladiator's Silk Slippers
 s(305455)/i(270631),	-- Venomous Gladiator's Silk Slippers
 s(305457)/i(270632),	-- Venomous Gladiator's Silk Treads
 s(305458)/i(270632),	-- Venomous Gladiator's Silk Treads
 s(305459)/i(270632),	-- Venomous Gladiator's Silk Treads
-s(305461)/i(270633),	-- Venomous Gladiator's Silk Gloves
 s(305462)/i(270633),	-- Venomous Gladiator's Silk Gloves
 s(305463)/i(270633),	-- Venomous Gladiator's Silk Gloves
 s(305465)/i(270634),	-- Venomous Gladiator's Silk Handwraps
 s(305466)/i(270634),	-- Venomous Gladiator's Silk Handwraps
 s(305467)/i(270634),	-- Venomous Gladiator's Silk Handwraps
-s(305469)/i(270635),	-- Venomous Gladiator's Silk Hood
 s(305473)/i(270636),	-- Venomous Gladiator's Silk Guise
-s(305477)/i(270637),	-- Venomous Gladiator's Silk Leggings
 s(305478)/i(270637),	-- Venomous Gladiator's Silk Leggings
 s(305479)/i(270637),	-- Venomous Gladiator's Silk Leggings
 s(305481)/i(270638),	-- Venomous Gladiator's Silk Trousers
 s(305482)/i(270638),	-- Venomous Gladiator's Silk Trousers
 s(305483)/i(270638),	-- Venomous Gladiator's Silk Trousers
-s(305485)/i(270639),	-- Venomous Gladiator's Silk Mantle
 s(305489)/i(270640),	-- Venomous Gladiator's Silk Amice
-s(305493)/i(270641),	-- Venomous Gladiator's Silk Cord
 s(305494)/i(270641),	-- Venomous Gladiator's Silk Cord
 s(305495)/i(270641),	-- Venomous Gladiator's Silk Cord
 s(305497)/i(270642),	-- Venomous Gladiator's Silk Belt
 s(305498)/i(270642),	-- Venomous Gladiator's Silk Belt
 s(305499)/i(270642),	-- Venomous Gladiator's Silk Belt
-s(305501)/i(270643),	-- Venomous Gladiator's Silk Wristwraps
 s(305502)/i(270643),	-- Venomous Gladiator's Silk Wristwraps
 s(305503)/i(270643),	-- Venomous Gladiator's Silk Wristwraps
 s(305505)/i(270644),	-- Venomous Gladiator's Silk Armbands
 s(305506)/i(270644),	-- Venomous Gladiator's Silk Armbands
 s(305507)/i(270644),	-- Venomous Gladiator's Silk Armbands
-s(305509)/i(270645),	-- Venomous Gladiator's Silk Raiment
 s(305510)/i(270645),	-- Venomous Gladiator's Silk Raiment
 s(305511)/i(270645),	-- Venomous Gladiator's Silk Raiment
 s(305513)/i(270646),	-- Venomous Gladiator's Silk Vestments
 s(305514)/i(270646),	-- Venomous Gladiator's Silk Vestments
 s(305515)/i(270646),	-- Venomous Gladiator's Silk Vestments
-s(305517)/i(270647),	-- Venomous Gladiator's Silk Slippers
 s(305518)/i(270647),	-- Venomous Gladiator's Silk Slippers
 s(305519)/i(270647),	-- Venomous Gladiator's Silk Slippers
 s(305521)/i(270648),	-- Venomous Gladiator's Silk Treads
 s(305522)/i(270648),	-- Venomous Gladiator's Silk Treads
 s(305523)/i(270648),	-- Venomous Gladiator's Silk Treads
-s(305525)/i(270649),	-- Venomous Gladiator's Silk Gloves
 s(305526)/i(270649),	-- Venomous Gladiator's Silk Gloves
 s(305527)/i(270649),	-- Venomous Gladiator's Silk Gloves
 s(305529)/i(270650),	-- Venomous Gladiator's Silk Handwraps
 s(305530)/i(270650),	-- Venomous Gladiator's Silk Handwraps
 s(305531)/i(270650),	-- Venomous Gladiator's Silk Handwraps
-s(305533)/i(270651),	-- Venomous Gladiator's Silk Hood
 s(305537)/i(270652),	-- Venomous Gladiator's Silk Guise
-s(305541)/i(270653),	-- Venomous Gladiator's Silk Leggings
 s(305542)/i(270653),	-- Venomous Gladiator's Silk Leggings
 s(305543)/i(270653),	-- Venomous Gladiator's Silk Leggings
 s(305545)/i(270654),	-- Venomous Gladiator's Silk Trousers
 s(305546)/i(270654),	-- Venomous Gladiator's Silk Trousers
 s(305547)/i(270654),	-- Venomous Gladiator's Silk Trousers
-s(305549)/i(270655),	-- Venomous Gladiator's Silk Mantle
 s(305553)/i(270656),	-- Venomous Gladiator's Silk Amice
-s(305557)/i(270657),	-- Venomous Gladiator's Silk Cord
 s(305558)/i(270657),	-- Venomous Gladiator's Silk Cord
 s(305559)/i(270657),	-- Venomous Gladiator's Silk Cord
 s(305561)/i(270658),	-- Venomous Gladiator's Silk Belt
 s(305562)/i(270658),	-- Venomous Gladiator's Silk Belt
 s(305563)/i(270658),	-- Venomous Gladiator's Silk Belt
-s(305565)/i(270659),	-- Venomous Gladiator's Silk Wristwraps
 s(305566)/i(270659),	-- Venomous Gladiator's Silk Wristwraps
 s(305567)/i(270659),	-- Venomous Gladiator's Silk Wristwraps
 s(305569)/i(270660),	-- Venomous Gladiator's Silk Armbands
 s(305570)/i(270660),	-- Venomous Gladiator's Silk Armbands
 s(305571)/i(270660),	-- Venomous Gladiator's Silk Armbands
-s(305573)/i(270661),	-- Venomous Gladiator's Leather Vest
 s(305574)/i(270661),	-- Venomous Gladiator's Leather Vest
 s(305575)/i(270661),	-- Venomous Gladiator's Leather Vest
 s(305577)/i(270662),	-- Venomous Gladiator's Leather Jerkin
 s(305578)/i(270662),	-- Venomous Gladiator's Leather Jerkin
 s(305579)/i(270662),	-- Venomous Gladiator's Leather Jerkin
-s(305581)/i(270663),	-- Venomous Gladiator's Leather Boots
 s(305585)/i(270664),	-- Venomous Gladiator's Leather Treads
-s(305589)/i(270665),	-- Venomous Gladiator's Leather Gloves
 s(305590)/i(270665),	-- Venomous Gladiator's Leather Gloves
 s(305591)/i(270665),	-- Venomous Gladiator's Leather Gloves
 s(305593)/i(270666),	-- Venomous Gladiator's Leather Grips
 s(305594)/i(270666),	-- Venomous Gladiator's Leather Grips
 s(305595)/i(270666),	-- Venomous Gladiator's Leather Grips
-s(305597)/i(270667),	-- Venomous Gladiator's Leather Helm
 s(305598)/i(270667),	-- Venomous Gladiator's Leather Helm
 s(305599)/i(270667),	-- Venomous Gladiator's Leather Helm
 s(305601)/i(270668),	-- Venomous Gladiator's Leather Mask
 s(305602)/i(270668),	-- Venomous Gladiator's Leather Mask
 s(305603)/i(270668),	-- Venomous Gladiator's Leather Mask
-s(305605)/i(270669),	-- Venomous Gladiator's Leather Breeches
 s(305606)/i(270669),	-- Venomous Gladiator's Leather Breeches
 s(305607)/i(270669),	-- Venomous Gladiator's Leather Breeches
 s(305609)/i(270670),	-- Venomous Gladiator's Leather Legwraps
 s(305610)/i(270670),	-- Venomous Gladiator's Leather Legwraps
 s(305611)/i(270670),	-- Venomous Gladiator's Leather Legwraps
-s(305613)/i(270671),	-- Venomous Gladiator's Leather Spaulders
 s(305617)/i(270672),	-- Venomous Gladiator's Leather Shoulderpads
-s(305621)/i(270673),	-- Venomous Gladiator's Leather Belt
 s(305625)/i(270674),	-- Venomous Gladiator's Leather Strap
-s(305629)/i(270675),	-- Venomous Gladiator's Leather Wristwraps
 s(305630)/i(270675),	-- Venomous Gladiator's Leather Wristwraps
 s(305631)/i(270675),	-- Venomous Gladiator's Leather Wristwraps
 s(305633)/i(270676),	-- Venomous Gladiator's Leather Wristguards
 s(305634)/i(270676),	-- Venomous Gladiator's Leather Wristguards
 s(305635)/i(270676),	-- Venomous Gladiator's Leather Wristguards
-s(305637)/i(270677),	-- Venomous Gladiator's Leather Vest
 s(305638)/i(270677),	-- Venomous Gladiator's Leather Vest
 s(305639)/i(270677),	-- Venomous Gladiator's Leather Vest
 s(305641)/i(270678),	-- Venomous Gladiator's Leather Vestments
 s(305642)/i(270678),	-- Venomous Gladiator's Leather Vestments
 s(305643)/i(270678),	-- Venomous Gladiator's Leather Vestments
-s(305645)/i(270679),	-- Venomous Gladiator's Leather Boots
 s(305646)/i(270679),	-- Venomous Gladiator's Leather Boots
 s(305647)/i(270679),	-- Venomous Gladiator's Leather Boots
 s(305649)/i(270680),	-- Venomous Gladiator's Leather Treads
 s(305650)/i(270680),	-- Venomous Gladiator's Leather Treads
 s(305651)/i(270680),	-- Venomous Gladiator's Leather Treads
-s(305653)/i(270681),	-- Venomous Gladiator's Leather Gloves
 s(305654)/i(270681),	-- Venomous Gladiator's Leather Gloves
 s(305655)/i(270681),	-- Venomous Gladiator's Leather Gloves
 s(305657)/i(270682),	-- Venomous Gladiator's Leather Grips
 s(305658)/i(270682),	-- Venomous Gladiator's Leather Grips
 s(305659)/i(270682),	-- Venomous Gladiator's Leather Grips
-s(305661)/i(270683),	-- Venomous Gladiator's Leather Helm
 s(305665)/i(270684),	-- Venomous Gladiator's Leather Mask
-s(305669)/i(270685),	-- Venomous Gladiator's Leather Breeches
 s(305670)/i(270685),	-- Venomous Gladiator's Leather Breeches
 s(305671)/i(270685),	-- Venomous Gladiator's Leather Breeches
 s(305673)/i(270686),	-- Venomous Gladiator's Leather Legwraps
 s(305674)/i(270686),	-- Venomous Gladiator's Leather Legwraps
 s(305675)/i(270686),	-- Venomous Gladiator's Leather Legwraps
-s(305677)/i(270687),	-- Venomous Gladiator's Leather Spaulders
 s(305681)/i(270688),	-- Venomous Gladiator's Leather Shoulderpads
-s(305685)/i(270689),	-- Venomous Gladiator's Leather Belt
 s(305686)/i(270689),	-- Venomous Gladiator's Leather Belt
 s(305687)/i(270689),	-- Venomous Gladiator's Leather Belt
 s(305689)/i(270690),	-- Venomous Gladiator's Leather Strap
 s(305690)/i(270690),	-- Venomous Gladiator's Leather Strap
 s(305691)/i(270690),	-- Venomous Gladiator's Leather Strap
-s(305693)/i(270691),	-- Venomous Gladiator's Leather Wristwraps
 s(305694)/i(270691),	-- Venomous Gladiator's Leather Wristwraps
 s(305695)/i(270691),	-- Venomous Gladiator's Leather Wristwraps
 s(305697)/i(270692),	-- Venomous Gladiator's Leather Wristguards
 s(305698)/i(270692),	-- Venomous Gladiator's Leather Wristguards
 s(305699)/i(270692),	-- Venomous Gladiator's Leather Wristguards
-s(305701)/i(270693),	-- Venomous Gladiator's Leather Vest
 s(305702)/i(270693),	-- Venomous Gladiator's Leather Vest
 s(305703)/i(270693),	-- Venomous Gladiator's Leather Vest
 s(305705)/i(270694),	-- Venomous Gladiator's Leather Jerkin
 s(305706)/i(270694),	-- Venomous Gladiator's Leather Jerkin
 s(305707)/i(270694),	-- Venomous Gladiator's Leather Jerkin
-s(305709)/i(270695),	-- Venomous Gladiator's Leather Boots
 s(305710)/i(270695),	-- Venomous Gladiator's Leather Boots
 s(305711)/i(270695),	-- Venomous Gladiator's Leather Boots
 s(305713)/i(270696),	-- Venomous Gladiator's Leather Treads
 s(305714)/i(270696),	-- Venomous Gladiator's Leather Treads
 s(305715)/i(270696),	-- Venomous Gladiator's Leather Treads
-s(305717)/i(270697),	-- Venomous Gladiator's Leather Gloves
 s(305718)/i(270697),	-- Venomous Gladiator's Leather Gloves
 s(305719)/i(270697),	-- Venomous Gladiator's Leather Gloves
 s(305721)/i(270698),	-- Venomous Gladiator's Leather Grips
 s(305722)/i(270698),	-- Venomous Gladiator's Leather Grips
 s(305723)/i(270698),	-- Venomous Gladiator's Leather Grips
-s(305725)/i(270699),	-- Venomous Gladiator's Leather Helm
 s(305729)/i(270700),	-- Venomous Gladiator's Leather Mask
-s(305733)/i(270701),	-- Venomous Gladiator's Leather Breeches
 s(305734)/i(270701),	-- Venomous Gladiator's Leather Breeches
 s(305735)/i(270701),	-- Venomous Gladiator's Leather Breeches
 s(305737)/i(270702),	-- Venomous Gladiator's Leather Legwraps
 s(305738)/i(270702),	-- Venomous Gladiator's Leather Legwraps
 s(305739)/i(270702),	-- Venomous Gladiator's Leather Legwraps
-s(305741)/i(270703),	-- Venomous Gladiator's Leather Spaulders
 s(305745)/i(270704),	-- Venomous Gladiator's Leather Shoulderpads
-s(305749)/i(270705),	-- Venomous Gladiator's Leather Belt
 s(305750)/i(270705),	-- Venomous Gladiator's Leather Belt
 s(305751)/i(270705),	-- Venomous Gladiator's Leather Belt
 s(305753)/i(270706),	-- Venomous Gladiator's Leather Strap
 s(305754)/i(270706),	-- Venomous Gladiator's Leather Strap
 s(305755)/i(270706),	-- Venomous Gladiator's Leather Strap
-s(305757)/i(270707),	-- Venomous Gladiator's Leather Wristwraps
 s(305758)/i(270707),	-- Venomous Gladiator's Leather Wristwraps
 s(305759)/i(270707),	-- Venomous Gladiator's Leather Wristwraps
 s(305761)/i(270708),	-- Venomous Gladiator's Leather Wristguards
 s(305762)/i(270708),	-- Venomous Gladiator's Leather Wristguards
 s(305763)/i(270708),	-- Venomous Gladiator's Leather Wristguards
-s(305765)/i(270709),	-- Venomous Gladiator's Leather Vest
 s(305766)/i(270709),	-- Venomous Gladiator's Leather Vest
 s(305767)/i(270709),	-- Venomous Gladiator's Leather Vest
 s(305769)/i(270710),	-- Venomous Gladiator's Leather Jerkin
 s(305770)/i(270710),	-- Venomous Gladiator's Leather Jerkin
 s(305771)/i(270710),	-- Venomous Gladiator's Leather Jerkin
-s(305773)/i(270711),	-- Venomous Gladiator's Leather Boots
 s(305774)/i(270711),	-- Venomous Gladiator's Leather Boots
 s(305775)/i(270711),	-- Venomous Gladiator's Leather Boots
 s(305777)/i(270712),	-- Venomous Gladiator's Leather Treads
 s(305778)/i(270712),	-- Venomous Gladiator's Leather Treads
 s(305779)/i(270712),	-- Venomous Gladiator's Leather Treads
-s(305781)/i(270713),	-- Venomous Gladiator's Leather Gloves
 s(305785)/i(270714),	-- Venomous Gladiator's Leather Grips
-s(305789)/i(270715),	-- Venomous Gladiator's Leather Helm
 s(305793)/i(270716),	-- Venomous Gladiator's Leather Mask
-s(305797)/i(270717),	-- Venomous Gladiator's Leather Breeches
 s(305798)/i(270717),	-- Venomous Gladiator's Leather Breeches
 s(305799)/i(270717),	-- Venomous Gladiator's Leather Breeches
 s(305801)/i(270718),	-- Venomous Gladiator's Leather Legwraps
 s(305802)/i(270718),	-- Venomous Gladiator's Leather Legwraps
 s(305803)/i(270718),	-- Venomous Gladiator's Leather Legwraps
-s(305805)/i(270719),	-- Venomous Gladiator's Leather Spaulders
 s(305809)/i(270720),	-- Venomous Gladiator's Leather Shoulderpads
-s(305813)/i(270721),	-- Venomous Gladiator's Leather Belt
 s(305817)/i(270722),	-- Venomous Gladiator's Leather Strap
-s(305821)/i(270723),	-- Venomous Gladiator's Leather Wristwraps
 s(305822)/i(270723),	-- Venomous Gladiator's Leather Wristwraps
 s(305823)/i(270723),	-- Venomous Gladiator's Leather Wristwraps
 s(305825)/i(270724),	-- Venomous Gladiator's Leather Wristguards
 s(305826)/i(270724),	-- Venomous Gladiator's Leather Wristguards
 s(305827)/i(270724),	-- Venomous Gladiator's Leather Wristguards
-s(305829)/i(270725),	-- Venomous Gladiator's Armored Scales
 s(305833)/i(270726),	-- Venomous Gladiator's Scaleguard
-s(305837)/i(270727),	-- Venomous Gladiator's Chain Sabatons
 s(305838)/i(270727),	-- Venomous Gladiator's Chain Sabatons
 s(305839)/i(270727),	-- Venomous Gladiator's Chain Sabatons
 s(305841)/i(270728),	-- Venomous Gladiator's Chain Boots
 s(305842)/i(270728),	-- Venomous Gladiator's Chain Boots
 s(305843)/i(270728),	-- Venomous Gladiator's Chain Boots
-s(305845)/i(270729),	-- Venomous Gladiator's Chain Gauntlets
 s(305846)/i(270729),	-- Venomous Gladiator's Chain Gauntlets
 s(305847)/i(270729),	-- Venomous Gladiator's Chain Gauntlets
 s(305849)/i(270730),	-- Venomous Gladiator's Chain Handguards
 s(305850)/i(270730),	-- Venomous Gladiator's Chain Handguards
 s(305851)/i(270730),	-- Venomous Gladiator's Chain Handguards
-s(305853)/i(270731),	-- Venomous Gladiator's Chain Helm
 s(305857)/i(270732),	-- Venomous Gladiator's Chain Faceguard
-s(305861)/i(270733),	-- Venomous Gladiator's Chain Leggings
 s(305862)/i(270733),	-- Venomous Gladiator's Chain Leggings
 s(305863)/i(270733),	-- Venomous Gladiator's Chain Leggings
 s(305865)/i(270734),	-- Venomous Gladiator's Chain Breeches
 s(305866)/i(270734),	-- Venomous Gladiator's Chain Breeches
 s(305867)/i(270734),	-- Venomous Gladiator's Chain Breeches
-s(305869)/i(270735),	-- Venomous Gladiator's Chain Monnion
 s(305873)/i(270736),	-- Venomous Gladiator's Chain Shoulderguard
-s(305877)/i(270737),	-- Venomous Gladiator's Chain Belt
 s(305878)/i(270737),	-- Venomous Gladiator's Chain Belt
 s(305879)/i(270737),	-- Venomous Gladiator's Chain Belt
 s(305881)/i(270738),	-- Venomous Gladiator's Chain Girdle
 s(305882)/i(270738),	-- Venomous Gladiator's Chain Girdle
 s(305883)/i(270738),	-- Venomous Gladiator's Chain Girdle
-s(305885)/i(270739),	-- Venomous Gladiator's Chain Wristguards
 s(305886)/i(270739),	-- Venomous Gladiator's Chain Wristguards
 s(305887)/i(270739),	-- Venomous Gladiator's Chain Wristguards
 s(305889)/i(270740),	-- Venomous Gladiator's Chain Bracers
 s(305890)/i(270740),	-- Venomous Gladiator's Chain Bracers
 s(305891)/i(270740),	-- Venomous Gladiator's Chain Bracers
-s(305893)/i(270741),	-- Venomous Gladiator's Chain Vest
 s(305894)/i(270741),	-- Venomous Gladiator's Chain Vest
 s(305895)/i(270741),	-- Venomous Gladiator's Chain Vest
 s(305897)/i(270742),	-- Venomous Gladiator's Chain Tunic
 s(305898)/i(270742),	-- Venomous Gladiator's Chain Tunic
 s(305899)/i(270742),	-- Venomous Gladiator's Chain Tunic
-s(305901)/i(270743),	-- Venomous Gladiator's Chain Sabatons
 s(305902)/i(270743),	-- Venomous Gladiator's Chain Sabatons
 s(305903)/i(270743),	-- Venomous Gladiator's Chain Sabatons
 s(305905)/i(270744),	-- Venomous Gladiator's Chain Boots
 s(305906)/i(270744),	-- Venomous Gladiator's Chain Boots
 s(305907)/i(270744),	-- Venomous Gladiator's Chain Boots
-s(305909)/i(270745),	-- Venomous Gladiator's Chain Gauntlets
 s(305910)/i(270745),	-- Venomous Gladiator's Chain Gauntlets
 s(305911)/i(270745),	-- Venomous Gladiator's Chain Gauntlets
 s(305913)/i(270746),	-- Venomous Gladiator's Chain Handguards
 s(305914)/i(270746),	-- Venomous Gladiator's Chain Handguards
 s(305915)/i(270746),	-- Venomous Gladiator's Chain Handguards
-s(305917)/i(270747),	-- Venomous Gladiator's Chain Helm
 s(305921)/i(270748),	-- Venomous Gladiator's Chain Faceguard
-s(305925)/i(270749),	-- Venomous Gladiator's Chain Leggings
 s(305926)/i(270749),	-- Venomous Gladiator's Chain Leggings
 s(305927)/i(270749),	-- Venomous Gladiator's Chain Leggings
 s(305929)/i(270750),	-- Venomous Gladiator's Chain Breeches
 s(305930)/i(270750),	-- Venomous Gladiator's Chain Breeches
 s(305931)/i(270750),	-- Venomous Gladiator's Chain Breeches
-s(305933)/i(270751),	-- Venomous Gladiator's Chain Monnion
 s(305937)/i(270752),	-- Venomous Gladiator's Chain Shoulderguard
-s(305941)/i(270753),	-- Venomous Gladiator's Chain Belt
 s(305942)/i(270753),	-- Venomous Gladiator's Chain Belt
 s(305943)/i(270753),	-- Venomous Gladiator's Chain Belt
 s(305945)/i(270754),	-- Venomous Gladiator's Chain Girdle
 s(305946)/i(270754),	-- Venomous Gladiator's Chain Girdle
 s(305947)/i(270754),	-- Venomous Gladiator's Chain Girdle
-s(305949)/i(270755),	-- Venomous Gladiator's Chain Wristguards
 s(305950)/i(270755),	-- Venomous Gladiator's Chain Wristguards
 s(305951)/i(270755),	-- Venomous Gladiator's Chain Wristguards
 s(305953)/i(270756),	-- Venomous Gladiator's Chain Bracers
 s(305954)/i(270756),	-- Venomous Gladiator's Chain Bracers
 s(305955)/i(270756),	-- Venomous Gladiator's Chain Bracers
-s(305957)/i(270757),	-- Venomous Gladiator's Chain Vest
 s(305958)/i(270757),	-- Venomous Gladiator's Chain Vest
 s(305959)/i(270757),	-- Venomous Gladiator's Chain Vest
 s(305961)/i(270758),	-- Venomous Gladiator's Chain Tunic
 s(305962)/i(270758),	-- Venomous Gladiator's Chain Tunic
 s(305963)/i(270758),	-- Venomous Gladiator's Chain Tunic
-s(305965)/i(270759),	-- Venomous Gladiator's Chain Sabatons
 s(305966)/i(270759),	-- Venomous Gladiator's Chain Sabatons
 s(305967)/i(270759),	-- Venomous Gladiator's Chain Sabatons
 s(305969)/i(270760),	-- Venomous Gladiator's Chain Boots
 s(305970)/i(270760),	-- Venomous Gladiator's Chain Boots
 s(305971)/i(270760),	-- Venomous Gladiator's Chain Boots
-s(305973)/i(270761),	-- Venomous Gladiator's Chain Gauntlets
 s(305974)/i(270761),	-- Venomous Gladiator's Chain Gauntlets
 s(305975)/i(270761),	-- Venomous Gladiator's Chain Gauntlets
 s(305977)/i(270762),	-- Venomous Gladiator's Chain Handguards
 s(305978)/i(270762),	-- Venomous Gladiator's Chain Handguards
 s(305979)/i(270762),	-- Venomous Gladiator's Chain Handguards
-s(305981)/i(270763),	-- Venomous Gladiator's Chain Helm
 s(305985)/i(270764),	-- Venomous Gladiator's Chain Faceguard
-s(305989)/i(270765),	-- Venomous Gladiator's Chain Leggings
 s(305990)/i(270765),	-- Venomous Gladiator's Chain Leggings
 s(305991)/i(270765),	-- Venomous Gladiator's Chain Leggings
 s(305993)/i(270766),	-- Venomous Gladiator's Chain Breeches
 s(305994)/i(270766),	-- Venomous Gladiator's Chain Breeches
 s(305995)/i(270766),	-- Venomous Gladiator's Chain Breeches
-s(305997)/i(270767),	-- Venomous Gladiator's Chain Monnion
 s(306001)/i(270768),	-- Venomous Gladiator's Chain Shoulderguard
-s(306005)/i(270769),	-- Venomous Gladiator's Chain Belt
 s(306006)/i(270769),	-- Venomous Gladiator's Chain Belt
 s(306007)/i(270769),	-- Venomous Gladiator's Chain Belt
 s(306009)/i(270770),	-- Venomous Gladiator's Chain Girdle
 s(306010)/i(270770),	-- Venomous Gladiator's Chain Girdle
 s(306011)/i(270770),	-- Venomous Gladiator's Chain Girdle
-s(306013)/i(270771),	-- Venomous Gladiator's Chain Wristguards
 s(306014)/i(270771),	-- Venomous Gladiator's Chain Wristguards
 s(306015)/i(270771),	-- Venomous Gladiator's Chain Wristguards
 s(306017)/i(270772),	-- Venomous Gladiator's Chain Bracers
 s(306018)/i(270772),	-- Venomous Gladiator's Chain Bracers
 s(306019)/i(270772),	-- Venomous Gladiator's Chain Bracers
-s(306021)/i(270773),	-- Venomous Gladiator's Chestguard
 s(306022)/i(270773),	-- Venomous Gladiator's Chestguard
 s(306023)/i(270773),	-- Venomous Gladiator's Chestguard
 s(306025)/i(270774),	-- Venomous Gladiator's Chestplate
 s(306026)/i(270774),	-- Venomous Gladiator's Chestplate
 s(306027)/i(270774),	-- Venomous Gladiator's Chestplate
-s(306029)/i(270775),	-- Venomous Gladiator's Plate Warboots
 s(306030)/i(270775),	-- Venomous Gladiator's Plate Warboots
 s(306031)/i(270775),	-- Venomous Gladiator's Plate Warboots
 s(306033)/i(270776),	-- Venomous Gladiator's Plate Stompers
 s(306034)/i(270776),	-- Venomous Gladiator's Plate Stompers
 s(306035)/i(270776),	-- Venomous Gladiator's Plate Stompers
-s(306037)/i(270777),	-- Venomous Gladiator's Plate Gauntlets
 s(306038)/i(270777),	-- Venomous Gladiator's Plate Gauntlets
 s(306039)/i(270777),	-- Venomous Gladiator's Plate Gauntlets
 s(306041)/i(270778),	-- Venomous Gladiator's Plate Handguards
 s(306042)/i(270778),	-- Venomous Gladiator's Plate Handguards
 s(306043)/i(270778),	-- Venomous Gladiator's Plate Handguards
-s(306045)/i(270779),	-- Venomous Gladiator's Plate Helm
 s(306049)/i(270780),	-- Venomous Gladiator's Plate Helmet
-s(306053)/i(270781),	-- Venomous Gladiator's Plate Legguards
 s(306054)/i(270781),	-- Venomous Gladiator's Plate Legguards
 s(306055)/i(270781),	-- Venomous Gladiator's Plate Legguards
 s(306057)/i(270782),	-- Venomous Gladiator's Plate Wargreaves
 s(306058)/i(270782),	-- Venomous Gladiator's Plate Wargreaves
 s(306059)/i(270782),	-- Venomous Gladiator's Plate Wargreaves
-s(306061)/i(270783),	-- Venomous Gladiator's Plate Shoulders
 s(306065)/i(270784),	-- Venomous Gladiator's Plate Pauldrons
-s(306069)/i(270785),	-- Venomous Gladiator's Plate Girdle
 s(306070)/i(270785),	-- Venomous Gladiator's Plate Girdle
 s(306071)/i(270785),	-- Venomous Gladiator's Plate Girdle
 s(306073)/i(270786),	-- Venomous Gladiator's Plate Greatbelt
 s(306074)/i(270786),	-- Venomous Gladiator's Plate Greatbelt
 s(306075)/i(270786),	-- Venomous Gladiator's Plate Greatbelt
-s(306077)/i(270787),	-- Venomous Gladiator's Plate Wristguards
 s(306078)/i(270787),	-- Venomous Gladiator's Plate Wristguards
 s(306079)/i(270787),	-- Venomous Gladiator's Plate Wristguards
 s(306081)/i(270788),	-- Venomous Gladiator's Plate Vambraces
 s(306082)/i(270788),	-- Venomous Gladiator's Plate Vambraces
 s(306083)/i(270788),	-- Venomous Gladiator's Plate Vambraces
-s(306085)/i(270789),	-- Venomous Gladiator's Chestguard
 s(306086)/i(270789),	-- Venomous Gladiator's Chestguard
 s(306087)/i(270789),	-- Venomous Gladiator's Chestguard
 s(306089)/i(270790),	-- Venomous Gladiator's Chestplate
 s(306090)/i(270790),	-- Venomous Gladiator's Chestplate
 s(306091)/i(270790),	-- Venomous Gladiator's Chestplate
-s(306093)/i(270791),	-- Venomous Gladiator's Plate Warboots
 s(306094)/i(270791),	-- Venomous Gladiator's Plate Warboots
 s(306095)/i(270791),	-- Venomous Gladiator's Plate Warboots
 s(306097)/i(270792),	-- Venomous Gladiator's Plate Stompers
 s(306098)/i(270792),	-- Venomous Gladiator's Plate Stompers
 s(306099)/i(270792),	-- Venomous Gladiator's Plate Stompers
-s(306101)/i(270793),	-- Venomous Gladiator's Plate Gauntlets
 s(306102)/i(270793),	-- Venomous Gladiator's Plate Gauntlets
 s(306103)/i(270793),	-- Venomous Gladiator's Plate Gauntlets
 s(306105)/i(270794),	-- Venomous Gladiator's Plate Handguards
 s(306106)/i(270794),	-- Venomous Gladiator's Plate Handguards
 s(306107)/i(270794),	-- Venomous Gladiator's Plate Handguards
-s(306109)/i(270795),	-- Venomous Gladiator's Plate Helm
 s(306113)/i(270796),	-- Venomous Gladiator's Plate Helmet
-s(306117)/i(270797),	-- Venomous Gladiator's Plate Legguards
 s(306118)/i(270797),	-- Venomous Gladiator's Plate Legguards
 s(306119)/i(270797),	-- Venomous Gladiator's Plate Legguards
 s(306121)/i(270798),	-- Venomous Gladiator's Plate Tasses
 s(306122)/i(270798),	-- Venomous Gladiator's Plate Tasses
 s(306123)/i(270798),	-- Venomous Gladiator's Plate Tasses
-s(306125)/i(270799),	-- Venomous Gladiator's Plate Shoulders
 s(306129)/i(270800),	-- Venomous Gladiator's Plate Pauldrons
-s(306133)/i(270801),	-- Venomous Gladiator's Plate Girdle
 s(306134)/i(270801),	-- Venomous Gladiator's Plate Girdle
 s(306135)/i(270801),	-- Venomous Gladiator's Plate Girdle
 s(306137)/i(270802),	-- Venomous Gladiator's Plate Greatbelt
 s(306138)/i(270802),	-- Venomous Gladiator's Plate Greatbelt
 s(306139)/i(270802),	-- Venomous Gladiator's Plate Greatbelt
-s(306141)/i(270803),	-- Venomous Gladiator's Plate Wristguards
 s(306142)/i(270803),	-- Venomous Gladiator's Plate Wristguards
 s(306143)/i(270803),	-- Venomous Gladiator's Plate Wristguards
 s(306145)/i(270804),	-- Venomous Gladiator's Plate Vambraces
 s(306146)/i(270804),	-- Venomous Gladiator's Plate Vambraces
 s(306147)/i(270804),	-- Venomous Gladiator's Plate Vambraces
-s(306149)/i(270805),	-- Venomous Gladiator's Chestguard
 s(306150)/i(270805),	-- Venomous Gladiator's Chestguard
 s(306151)/i(270805),	-- Venomous Gladiator's Chestguard
 s(306153)/i(270806),	-- Venomous Gladiator's Chestplate
 s(306154)/i(270806),	-- Venomous Gladiator's Chestplate
 s(306155)/i(270806),	-- Venomous Gladiator's Chestplate
-s(306157)/i(270807),	-- Venomous Gladiator's Plate Warboots
 s(306158)/i(270807),	-- Venomous Gladiator's Plate Warboots
 s(306159)/i(270807),	-- Venomous Gladiator's Plate Warboots
 s(306161)/i(270808),	-- Venomous Gladiator's Plate Stompers
 s(306162)/i(270808),	-- Venomous Gladiator's Plate Stompers
 s(306163)/i(270808),	-- Venomous Gladiator's Plate Stompers
-s(306165)/i(270809),	-- Venomous Gladiator's Plate Gauntlets
 s(306166)/i(270809),	-- Venomous Gladiator's Plate Gauntlets
 s(306167)/i(270809),	-- Venomous Gladiator's Plate Gauntlets
 s(306169)/i(270810),	-- Venomous Gladiator's Plate Handguards
 s(306170)/i(270810),	-- Venomous Gladiator's Plate Handguards
 s(306171)/i(270810),	-- Venomous Gladiator's Plate Handguards
-s(306173)/i(270811),	-- Venomous Gladiator's Plate Helm
 s(306177)/i(270812),	-- Venomous Gladiator's Plate Helmet
-s(306181)/i(270813),	-- Venomous Gladiator's Plate Legguards
 s(306182)/i(270813),	-- Venomous Gladiator's Plate Legguards
 s(306183)/i(270813),	-- Venomous Gladiator's Plate Legguards
 s(306185)/i(270814),	-- Venomous Gladiator's Plate Wargreaves
 s(306186)/i(270814),	-- Venomous Gladiator's Plate Wargreaves
 s(306187)/i(270814),	-- Venomous Gladiator's Plate Wargreaves
-s(306189)/i(270815),	-- Venomous Gladiator's Plate Shoulders
 s(306193)/i(270816),	-- Venomous Gladiator's Plate Pauldrons
-s(306197)/i(270817),	-- Venomous Gladiator's Plate Girdle
 s(306198)/i(270817),	-- Venomous Gladiator's Plate Girdle
 s(306199)/i(270817),	-- Venomous Gladiator's Plate Girdle
 s(306201)/i(270818),	-- Venomous Gladiator's Plate Greatbelt
 s(306202)/i(270818),	-- Venomous Gladiator's Plate Greatbelt
 s(306203)/i(270818),	-- Venomous Gladiator's Plate Greatbelt
-s(306205)/i(270819),	-- Venomous Gladiator's Plate Wristguards
 s(306206)/i(270819),	-- Venomous Gladiator's Plate Wristguards
 s(306207)/i(270819),	-- Venomous Gladiator's Plate Wristguards
 s(306209)/i(270820),	-- Venomous Gladiator's Plate Vambraces

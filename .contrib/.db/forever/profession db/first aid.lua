@@ -24,6 +24,7 @@ i(0, 10846);		-- First Aid (Artisan)
 i(0, 1230117);		-- First Aid Kit
 --- ITEM ---
 i(16084, 7924);		-- First Aid (Expert)
+i(255731, 1259345);	-- Powerful Poultice
 i(6454, 7935);		-- Strong Anti-Venom
 i(273105, 1262996);	-- Toxin Study
 i(16112, 7929);		-- Heavy Silk Bandage
@@ -40,7 +41,5 @@ i(273118, 1263001);	-- Plague Doctor's Laboratory
 i(19442, 23787);	-- Powerful Anti-Venom
 --- UNKNOWN ---
 --[[
-i(255731),	-- Manual: Powerful Poultice
-r(1259345),	-- Powerful Poultice
 --- UNRELEASED CONTENT ---
 --]]

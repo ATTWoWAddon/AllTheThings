@@ -80,6 +80,7 @@ i(0, 1230643);		-- Enchanted Lute
 --- ITEM ---
 i(273103, 1263056);	-- Arcane Salvager
 i(249537, 1248650);	-- Brilliant Wand
+i(249521, 1249114);	-- Dormant Heart of the Mountain
 i(249507, 1249064);	-- Dreamstaff
 i(6349, 7793);		-- Enchant 2H Weapon - Lesser Intellect
 i(11038, 13380);	-- Enchant 2H Weapon - Lesser Spirit
@@ -159,6 +160,7 @@ i(249480, 1248760);	-- Enchant Weapon - Recovery
 i(249481, 1248805);	-- Enchant Weapon - Revelation
 i(16250, 20031);	-- Enchant Weapon - Superior Striking
 i(16248, 20033);	-- Enchant Weapon - Unholy Weapon
+i(249519, 1249107);	-- Frozen Heart of the Mountain
 i(249482, 1248703);	-- Glimmering Staff
 i(16223, 20029);	-- Icy Chill
 i(249529, 1249128);	-- Idol of the Dream
@@ -168,6 +170,7 @@ i(249530, 1249152);	-- Libram of Holy Alacrity
 i(249494, 1249006);	-- Libram of Invocation
 i(20752, 25125);	-- Minor Mana Oil
 i(20758, 25124);	-- Minor Wizard Oil
+i(249520, 1249112);	-- Molten Heart of the Mountain
 i(249476, 1248752);	-- Mystic Mushroom
 i(249484, 1248745);	-- Orb of Mystic Insight
 i(249485, 1248748);	-- Orb of Souls
@@ -227,9 +230,6 @@ i(273609),	-- Enchant Weapon - Grand Sorcerer
 i(273614),	-- Enchant Bracer - Agility
 r(1248515),	-- Greater Eternal Wand
 i(249522),	-- Formula: Greater Eternal Wand
-r(1249107),	-- Frozen Heart of the Mountain
-r(1249112),	-- Molten Heart of the Mountain
-r(1249114),	-- Dormant Heart of the Mountain
 -- new raid?
 r(1306520),	-- Torch of Light
 r(1306521),	-- Steadfast Libram

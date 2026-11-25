@@ -791,12 +791,31 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(97115),	-- First Preference Killing of the week
 
 			-- 12.1
-			--q(98507),	-- prey completion, nightmare, 1st of week, eversong woods
-			--q(98508),	-- prey completion, nightmare, 1st of week, coiled isle
-			q(98504, { timeline = { ADDED_12_1_0 } }),	-- Completed together with 98548 (2nd per week renown) on turn-in of Prey: Kadani the Claw (Nightmare), weekly assumed
 			q(97809, { timeline = { ADDED_12_1_0 } }),	-- Related to killing Ral'kala
 			q(97810, { timeline = { ADDED_12_1_0 } }),	-- Related to killing Ral'kala
 		})),
+		-- Prey Completion Reward HQTs (Season 2)
+		-- Theory: each one tracks the gear slot looted from the Preyhunter chest; 12 HQTs for 12 gear groups.
+		-- Reported on various preys, zones, classes and difficulties. Weekly is assumed. Uncomment them one by one as their slot is confirmed.
+		--n(QUESTS, sharedData({
+		--	isWeekly = true,
+		--	timeline = { ADDED_12_1_0 },
+		--},{
+		--	-- 8 armor slots
+		--	q(98502),
+		--	q(98503),
+		--	q(98504),	-- also with 98548 on Prey: Kadani the Claw (Nightmare), and on Janoa the Fang
+		--	q(98505),	-- between two Preyhunter's Champion Chests
+		--	q(98506),
+		--	q(98507),
+		--	q(98508),
+		--	q(98509),
+		--	-- back, neck, ring and weapon
+		--	q(97761),	-- a ring (Preyhunter's Signet) was looted right after it
+		--	q(97763),
+		--	q(97764),
+		--	q(97765),
+		--})),
 		-- One-Time
 		n(QUESTS, {
 			--whatever that rng things are happen
@@ -810,10 +829,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(91415),	-- After choosing a Preference Killing
 			q(98337, { timeline = { ADDED_12_1_0 } }),	-- First Prey completed in MID:S2
 			q(98456, name(HEADERS.Item, 274422, { timeline = { ADDED_12_1_0 } })),	-- Appears to be looting a specific Ossified relic object @ 58.4, 48.9 on Coiled Isle
-			-- Renown levels, per character when unlocked?
-			-- q(98507, name(HEADERS.Faction, 2808, {isWeekly=true})),	-- ?? Renown 2, weekly assumed. possibly daily?
-			-- q(98508, name(HEADERS.Faction, 2808, {isWeekly=true})),	-- ?? Renown 3, weekly assumed. possibly daily?
-			-- q(98509, name(HEADERS.Faction, 2808, {isWeekly=true})),	-- ?? Renown 4, weekly assumed. possibly daily?
 		}),
 	}),
 }))
