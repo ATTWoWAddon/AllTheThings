@@ -939,7 +939,6 @@ q(83941),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83942),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83943),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83944),	-- TBC:	 WOTLK:	 CATA:	 MOP:
-q(83945),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83946),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83947),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83948),	-- TBC:	 WOTLK:	 CATA:	 MOP:

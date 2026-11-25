@@ -1472,6 +1472,7 @@ hqt(96195,{an="n:247209",isDaily=1}),
 hqt(96194,{an="n:247207",isDaily=1}),
 hqt(96197,{an="n:247234",isDaily=1})}),
 inst(228,{mapID=242,g={
+hqt(83945,{an="n:9016",isDaily=1}),
 hqt(83938,{an="n:9938",isDaily=1}),
 hqt(83937,{an="n:9019",isDaily=1})}}),
 inst(229,{mapID=250,g={

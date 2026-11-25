@@ -77,6 +77,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 						groups = sharedData({
 							isDaily = true,
 						},{
+							hqt(83945, name(HEADERS.NPC, 9016)),	-- Bael'Gar
 							hqt(83938, name(HEADERS.NPC, 9938)),	-- Magmus
 							hqt(83937, name(HEADERS.NPC, 9019)),	-- Emperor Dagran Thaurissan
 						}),
