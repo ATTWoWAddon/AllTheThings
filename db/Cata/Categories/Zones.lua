@@ -20202,7 +20202,7 @@ q(3450,{coords={
 q(5677,{altQuests={5676,5678},c={5},coords={
 [1455]={{26.4,7.6}}},lvl=20,qgs={11406},races={1},rwp=30002,u=2}),
 q(3449,{coords={
-[1455]={{31.2,4.6}}},lvl=45,maps={1447},qgs={8507},r=2,rwp=40003,sourceQuests={3448,3451},u=2,g={
+[1455]={{31.2,4.6}}},lvl=45,maps={1447},qgs={8507},r=2,rwp=40003,sourceQuests={3448},u=2,g={
 qo(1,{coords={
 [1447]={{36,53}}},providers={{"i",10445},{"i",10563},{"o",149481}},u=2}),
 qo(2,{coords={
@@ -23680,7 +23680,7 @@ n(1257,{coords={
 [1453]={{62.8,75}}},r=2}),
 n(340,{coords={
 [1453]={{76.4,53}}},r=2,g={
-r(2795,{itemID=2889,learnedAt=25,q=1,requireSkill=185}),
+r(2795,{itemID=2889,learnedAt=10,q=1,requireSkill=185}),
 r(3371,{itemID=3679,learnedAt=60,q=1,requireSkill=185}),
 r(2545,{b=1,itemID=2698,learnedAt=85,q=1,requireSkill=185}),
 r(3373,{itemID=3681,learnedAt=120,q=1,requireSkill=185}),
@@ -23692,7 +23692,7 @@ r(3372,{itemID=3680,learnedAt=90,q=1,requireSkill=185}),
 r(2547,{itemID=2699,learnedAt=100,q=1,requireSkill=185}),
 r(2549,{itemID=2701,learnedAt=100,q=1,requireSkill=185}),
 r(2548,{itemID=2700,learnedAt=110,q=1,requireSkill=185}),
-r(2543,{b=1,itemID=728,learnedAt=75,q=1,requireSkill=185})}}),
+r(2543,{b=1,itemID=728,learnedAt=50,q=1,requireSkill=185})}}),
 n(34084,{coords={
 [1453]={{74.8,67.3}}},phase=33,r=2,rwp=40003,u=2}),
 n(34083,{coords={
@@ -27530,7 +27530,7 @@ q(384,{coords={
 qo(1,{crs={1125},providers={{"i",60496}}}),
 qo(2,{crs={1247},providers={{"i",2894}}}),
 i(2888,{f=55,q=1}),
-r(2795,{itemID=2889,learnedAt=25,q=1,requireSkill=185})}}),
+r(2795,{itemID=2889,learnedAt=10,q=1,requireSkill=185})}}),
 q(310,{coords={
 [1426]={{30.2,45.6}}},lvl=2,qgs={1375},qis={2548},r=2,rwp=40003,u=2,g={
 q(308,{coords={
@@ -41405,7 +41405,7 @@ q(36,{coords={
 [1436]={{60,19.4}}},lvl=9,qgs={238},qis={2832},r=2,rwp=40003,u=2}),
 q(38,{coords={
 [1436]={{56.4,30.6}}},cost={{"i",732,3},{"i",731,3},{"i",730,3},{"i",729,3}},lvl=9,qgs={235},r=2,rwp=40003,sourceQuests={36},sym={{"select","itemID",733}},u=2,g={
-r(2543,{b=1,itemID=728,learnedAt=75,q=1,requireSkill=185,u=2}),
+r(2543,{b=1,itemID=728,learnedAt=50,q=1,requireSkill=185,u=2}),
 s(117354,1479,{b=1,f=4,loc=44,q=1,u=2}),
 s(117819,2225,{b=1,f=20,q=1,u=2})}}),
 q(26241,{awp=40003,coords={
@@ -41494,7 +41494,7 @@ s(117182,1190,{awp=100107,coords={
 i(1189,{awp=100107,crs={125},f=52,lvl=15,q=2,rwp=40003,u=2}),
 r(6686,{crs={590},itemID=5771,learnedAt=70,q=1,requireSkill=197}),
 r(2545,{b=1,description="Has a chance to drop from any creature in Westfall.\nRecommended farming spot: Murlocs in the north area.",itemID=2698,learnedAt=85,q=1,requireSkill=185}),
-r(2543,{b=1,description="Has a chance to drop from any creature in Westfall.\nRecommended: farm the Riverpaw Gnolls.",itemID=728,learnedAt=75,q=1,requireSkill=185}),
+r(2543,{b=1,description="Has a chance to drop from any creature in Westfall.\nRecommended: farm the Riverpaw Gnolls.",itemID=728,learnedAt=50,q=1,requireSkill=185}),
 s(200758,821,{crs={123},f=5,loc=42,lvl=8,q=2}),
 s(117290,1391,{crs={453},f=28,lvl=13,q=2}),
 s(117028,832,{awp=100107,coords={
@@ -42451,7 +42451,7 @@ s(145087,35345,{b=1,c={8},f=4,loc=44,lvl=70,minReputation={935,21000},phase=18,q
 r(27926,{b=1,itemID=22537,learnedAt=370,minReputation={935,21000},q=1,requireSkill=333}),
 r(34010,{b=1,itemID=28281,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333}),
 i(29191,{b=1,lvl=70,minReputation={935,21000},q=2,rwp=50004}),
-r(17632,{b=1,itemID=13517,learnedAt=300,minReputation={935,21000},q=1,requireSkill=171}),
+r(17632,{b=1,itemID=13517,learnedAt=350,minReputation={935,21000},q=1,requireSkill=171}),
 r(28566,{b=1,itemID=22915,learnedAt=350,minReputation={935,21000},q=2,requireSkill=171}),(_.OnInitDB.GenerateCompareOtherKey_185692)(
 i(30634,{minReputation={935,21000},OnTooltip=_.OnTooltipDB.ShowHonoredKeyComparison,rwp=40200,u=2})),
 i(29179,{b=1,f=53,lvl=70,minReputation={935,21000},q=3}),
@@ -43377,7 +43377,7 @@ n(27666,{coords={
 [1955]={{48.8,41.8}}},phase=21,sym={{"sub","common_vendor",25950}}}),
 n(19321,{coords={
 [1955]={{48,26.6}}},g={
-r(28944,{b=1,itemID=23149,learnedAt=325,minReputation={932,3000},q=2,requireSkill=755}),
+r(28944,{b=1,itemID=23149,learnedAt=305,minReputation={932,3000},q=2,requireSkill=755}),
 r(37882,{b=1,itemID=30842,learnedAt=350,minReputation={932,3000},q=1,requireSkill=197}),
 r(29614,{b=1,itemID=23601,learnedAt=350,minReputation={932,3000},q=1,requireSkill=164}),
 s(139475,29129,{b=1,f=4,loc=42,lvl=70,minReputation={932,9000},q=3}),
@@ -44524,8 +44524,8 @@ i(32670,{awp=20100,crs={19973,20557,22175,22181,22195,22242,22275,22281,22291,23
 r(39467,{awp=20100,crs={22275,22281,23061,23261,23281,23282,23332,23333,23353,23354,23355,23390,23391},itemID=31874,learnedAt=325,phase=1801,q=2,requireSkill=755}),
 r(31056,{b=1,crs={19984},itemID=24161,learnedAt=360,q=3,requireSkill=755}),
 r(28948,{awp=20100,crs={22275,22281,23061,23261,23281,23282,23332,23333,23353,23354,23355,23390,23391},itemID=31870,learnedAt=325,phase=1801,q=2,requireSkill=755}),
-r(28933,{awp=20100,itemID=31871,learnedAt=325,phase=1801,q=2,requireSkill=755}),
-r(28933,{awp=20100,itemID=31872,learnedAt=325,phase=1801,q=2,requireSkill=755}),
+r(28933,{awp=20100,itemID=31871,learnedAt=315,phase=1801,q=2,requireSkill=755}),
+r(28933,{awp=20100,itemID=31872,learnedAt=315,phase=1801,q=2,requireSkill=755}),
 r(39466,{awp=20100,crs={22275,22281,23061,23261,23281,23282,23332,23333,23353,23354,23355,23390,23391},itemID=31873,learnedAt=325,phase=1801,q=2,requireSkill=755}),
 i(32664,{awp=20100,cost={{"i",32569,50},{"i",32678,1}},f=52,lvl=70,phase=1801,q=3}),
 o(184595,{coords={
@@ -46039,7 +46039,7 @@ r(28910,{awp=20005,itemID=23135,learnedAt=300,q=1,requireSkill=755,rwp=30002,u=2
 r(28917,{awp=20005,itemID=23141,learnedAt=305,q=1,requireSkill=755,rwp=30002,u=2}),
 r(28916,{awp=20005,itemID=23140,learnedAt=300,q=1,requireSkill=755,rwp=30002,u=2}),
 r(28948,{awp=20005,itemID=23151,learnedAt=325,q=2,requireSkill=755,rwp=30002,u=2}),
-r(28944,{awp=20005,itemID=28291,learnedAt=325,q=2,requireSkill=755,rwp=30002,u=2}),
+r(28944,{awp=20005,itemID=28291,learnedAt=305,q=2,requireSkill=755,rwp=30002,u=2}),
 r(28950,{awp=20005,itemID=23152,learnedAt=300,q=1,requireSkill=755,rwp=30002,u=2}),
 r(28936,{awp=20005,itemID=23147,learnedAt=325,q=2,requireSkill=755,rwp=30002,u=2}),
 r(28953,{awp=20005,itemID=23153,learnedAt=305,q=2,requireSkill=755,rwp=30002,u=2}),
@@ -46202,7 +46202,7 @@ r(28910,{awp=20005,itemID=23135,learnedAt=300,q=1,requireSkill=755,rwp=30002,u=2
 r(28917,{awp=20005,itemID=23141,learnedAt=305,q=1,requireSkill=755,rwp=30002,u=2}),
 r(28916,{awp=20005,itemID=23140,learnedAt=300,q=1,requireSkill=755,rwp=30002,u=2}),
 r(28948,{awp=20005,itemID=23151,learnedAt=325,q=2,requireSkill=755,rwp=30002,u=2}),
-r(28944,{awp=20005,itemID=28291,learnedAt=325,q=2,requireSkill=755,rwp=30002,u=2}),
+r(28944,{awp=20005,itemID=28291,learnedAt=305,q=2,requireSkill=755,rwp=30002,u=2}),
 r(28950,{awp=20005,itemID=23152,learnedAt=300,q=1,requireSkill=755,rwp=30002,u=2}),
 r(28936,{awp=20005,itemID=23147,learnedAt=325,q=2,requireSkill=755,rwp=30002,u=2}),
 r(28953,{awp=20005,itemID=23153,learnedAt=305,q=2,requireSkill=755,rwp=30002,u=2}),
@@ -47733,7 +47733,7 @@ r(36954,{learnedAt=350,requireSkill=20222})}}),
 n(20242,{coords={
 [1953]={{43.6,34.4}}},g={
 r(28912,{b=1,itemID=23136,learnedAt=305,minReputation={933,3000},q=2,requireSkill=755}),
-r(28933,{b=1,itemID=23146,learnedAt=325,minReputation={933,3000},q=2,requireSkill=755}),
+r(28933,{b=1,itemID=23146,learnedAt=315,minReputation={933,3000},q=2,requireSkill=755}),
 r(32490,{b=1,itemID=25732,learnedAt=340,minReputation={933,3000},q=3,requireSkill=165}),
 r(34590,{b=1,itemID=23134,learnedAt=305,minReputation={933,9000},q=2,requireSkill=755}),
 r(28953,{b=1,itemID=23155,learnedAt=305,minReputation={933,9000},q=2,requireSkill=755}),
@@ -49402,7 +49402,7 @@ i(25744,{coords={
 [1952]={{39.3,9.7},{44.6,34.3},{62.4,49}}},crs={18461,18463,21854},q=1}),
 i(25802,{coords={
 [1952]={{44.6,34.3},{52.3,78.5},{54.8,59.8}}},crs={18466,18467},q=1}),
-r(45117,{awp=20300,b=1,crs={22143,22144,22148,23022},itemID=34491,learnedAt=350,q=2,requireSkill=165}),
+r(45117,{awp=20300,b=1,crs={22143,22144,22148,23022},itemID=34491,learnedAt=360,q=2,requireSkill=165}),
 i(34255,{crs={24920},phase=2105,q=1}),
 r(20033,{crs={16810},itemID=16248,learnedAt=295,q=2,requireSkill=333}),
 i(32388,{awp=20100,crs={21644,21649,21650,21911,23066,23067,23068},q=1}),
@@ -52201,7 +52201,7 @@ s(175186,44176,{b=1,f=7,loc=45,lvl=80,minReputation={1090,21000},q=3}),
 s(175187,44179,{b=1,f=5,loc=46,lvl=80,minReputation={1090,21000},q=3}),
 s(175185,44174,{b=1,f=28,lvl=80,minReputation={1090,21000},q=3}),
 s(175190,44182,{b=1,f=6,loc=47,lvl=80,minReputation={1090,42000},q=4}),
-r(53946,{b=1,itemID=41718,learnedAt=450,minReputation={1090,42000},q=3,requireSkill=755}),
+r(53946,{b=1,itemID=41718,learnedAt=390,minReputation={1090,42000},q=3,requireSkill=755}),
 s(201843,44183,{b=1,f=7,loc=44,lvl=80,minReputation={1090,42000},q=4}),
 s(175189,44181,{b=1,f=5,loc=45,lvl=80,minReputation={1090,42000},q=4}),
 r(56011,{b=1,itemID=42188,learnedAt=430,minReputation={1090,42000},q=1,requireSkill=197}),
@@ -60455,8 +60455,8 @@ i(44068,{b=1,lvl=80,pvp=1,q=3}),
 r(55393,{b=1,itemID=41742,learnedAt=420,pvp=1,q=3,requireSkill=755}),
 r(55387,{b=1,itemID=41743,learnedAt=420,pvp=1,q=3,requireSkill=755}),
 r(55388,{b=1,itemID=41744,learnedAt=420,pvp=1,q=3,requireSkill=755}),
-r(53981,{awp=30003,b=1,itemID=41732,learnedAt=450,pvp=1,q=3,requireSkill=755,rwp=40003,u=2}),
-r(53981,{b=1,itemID=41733,learnedAt=450,pvp=1,q=3,requireSkill=755}),
+r(53981,{awp=30003,b=1,itemID=41732,learnedAt=390,pvp=1,q=3,requireSkill=755,rwp=40003,u=2}),
+r(53981,{b=1,itemID=41733,learnedAt=390,pvp=1,q=3,requireSkill=755}),
 r(53968,{b=1,itemID=41740,learnedAt=390,pvp=1,q=3,requireSkill=755}),
 r(53960,{b=1,itemID=41727,learnedAt=390,pvp=1,q=3,requireSkill=755}),
 r(54012,{awp=30003,b=1,itemID=41736,learnedAt=390,pvp=1,q=3,requireSkill=755,rwp=40003,u=2}),
@@ -60585,8 +60585,8 @@ n(30489,{coords={
 r(55393,{b=1,itemID=41742,learnedAt=420,pvp=1,q=3,requireSkill=755}),
 r(55387,{b=1,itemID=41743,learnedAt=420,pvp=1,q=3,requireSkill=755}),
 r(55388,{b=1,itemID=41744,learnedAt=420,pvp=1,q=3,requireSkill=755}),
-r(53981,{awp=30003,b=1,itemID=41732,learnedAt=450,pvp=1,q=3,requireSkill=755,rwp=40003,u=2}),
-r(53981,{b=1,itemID=41733,learnedAt=450,pvp=1,q=3,requireSkill=755}),
+r(53981,{awp=30003,b=1,itemID=41732,learnedAt=390,pvp=1,q=3,requireSkill=755,rwp=40003,u=2}),
+r(53981,{b=1,itemID=41733,learnedAt=390,pvp=1,q=3,requireSkill=755}),
 r(53968,{b=1,itemID=41740,learnedAt=390,pvp=1,q=3,requireSkill=755}),
 r(53960,{b=1,itemID=41727,learnedAt=390,pvp=1,q=3,requireSkill=755}),
 r(54012,{awp=30003,b=1,itemID=41736,learnedAt=390,pvp=1,q=3,requireSkill=755,rwp=40003,u=2}),
@@ -60625,8 +60625,8 @@ i(44068,{b=1,lvl=80,pvp=1,q=3}),
 r(55393,{b=1,itemID=41742,learnedAt=420,pvp=1,q=3,requireSkill=755}),
 r(55387,{b=1,itemID=41743,learnedAt=420,pvp=1,q=3,requireSkill=755}),
 r(55388,{b=1,itemID=41744,learnedAt=420,pvp=1,q=3,requireSkill=755}),
-r(53981,{awp=30003,b=1,itemID=41732,learnedAt=450,pvp=1,q=3,requireSkill=755,rwp=40003,u=2}),
-r(53981,{b=1,itemID=41733,learnedAt=450,pvp=1,q=3,requireSkill=755}),
+r(53981,{awp=30003,b=1,itemID=41732,learnedAt=390,pvp=1,q=3,requireSkill=755,rwp=40003,u=2}),
+r(53981,{b=1,itemID=41733,learnedAt=390,pvp=1,q=3,requireSkill=755}),
 r(53968,{b=1,itemID=41740,learnedAt=390,pvp=1,q=3,requireSkill=755}),
 r(53960,{b=1,itemID=41727,learnedAt=390,pvp=1,q=3,requireSkill=755}),
 r(54012,{awp=30003,b=1,itemID=41736,learnedAt=390,pvp=1,q=3,requireSkill=755,rwp=40003,u=2}),

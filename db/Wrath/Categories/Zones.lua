@@ -10976,7 +10976,7 @@ q(3450,{coords={
 q(5677,{altQuests={5676,5678},c={5},coords={
 [1455]={{26.4,7.6}}},lvl=20,qgs={11406},races={1},rwp=30002,u=2}),
 q(3449,{coords={
-[1455]={{31.2,4.6}}},lvl=45,maps={1447},qgs={8507},r=2,rwp=40003,sourceQuests={3448,3451},g={
+[1455]={{31.2,4.6}}},lvl=45,maps={1447},qgs={8507},r=2,rwp=40003,sourceQuests={3448},g={
 qo(1,{coords={
 [1447]={{36,53}}},providers={{"i",10445},{"i",10563},{"o",149481}}}),
 qo(2,{coords={
@@ -12857,7 +12857,7 @@ n(1257,{coords={
 [1453]={{62.8,75}}},r=2}),
 n(340,{coords={
 [1453]={{76.4,53}}},r=2,g={
-r(2795,{itemID=2889,learnedAt=25,q=1,requireSkill=185}),
+r(2795,{itemID=2889,learnedAt=10,q=1,requireSkill=185}),
 r(3371,{itemID=3679,learnedAt=60,q=1,requireSkill=185}),
 r(2545,{itemID=2698,learnedAt=85,q=1,requireSkill=185}),
 r(3373,{itemID=3681,learnedAt=120,q=1,requireSkill=185}),
@@ -12869,7 +12869,7 @@ r(3372,{itemID=3680,learnedAt=90,q=1,requireSkill=185}),
 r(2547,{itemID=2699,learnedAt=100,q=1,requireSkill=185}),
 r(2549,{itemID=2701,learnedAt=100,q=1,requireSkill=185}),
 r(2548,{itemID=2700,learnedAt=110,q=1,requireSkill=185}),
-r(2543,{itemID=728,learnedAt=75,q=1,requireSkill=185})}}),
+r(2543,{itemID=728,learnedAt=50,q=1,requireSkill=185})}}),
 n(34084,{coords={
 [1453]={{74.8,67.3}}},phase=33,r=2,rwp=40003,sym={{"sub","pvp_gear_base",3,-253,-295},{"merge"},{"pop"}}}),
 n(34083,{coords={
@@ -14769,7 +14769,7 @@ q(384,{coords={
 qo(1,{crs={1125,1126,1127,1689},providers={{"i",2886}},requireSkill=185}),
 qo(2,{crs={1247},providers={{"i",2894}},requireSkill=185}),
 i(2888,{f=55,q=1,requireSkill=185}),
-r(2795,{itemID=2889,learnedAt=25,q=1,requireSkill=185})}}),
+r(2795,{itemID=2889,learnedAt=10,q=1,requireSkill=185})}}),
 q(310,{coords={
 [1426]={{30.2,45.6}}},lvl=2,qgs={1375},qis={2548},r=2,rwp=40003,g={
 q(308,{coords={
@@ -21887,7 +21887,7 @@ q(36,{coords={
 [1436]={{60,19.4}}},lvl=9,qgs={238},qis={2832},r=2,rwp=40003}),
 q(38,{coords={
 [1436]={{56.4,30.6}}},cost={{"i",732,3},{"i",731,3},{"i",730,3},{"i",729,3}},lvl=9,qgs={235},r=2,rwp=40003,sourceQuests={36},sym={{"select","itemID",733}},g={
-r(2543,{itemID=728,learnedAt=75,q=1,requireSkill=185}),
+r(2543,{itemID=728,learnedAt=50,q=1,requireSkill=185}),
 s(117354,1479,{b=1,f=4,loc=44,q=1}),
 s(117819,2225,{b=1,f=20,q=1})}})}),
 h(-46,{
@@ -22680,7 +22680,7 @@ s(145087,35345,{b=1,c={8},f=4,loc=44,lvl=70,minReputation={935,21000},phase=18,q
 r(27926,{b=1,itemID=22537,learnedAt=370,minReputation={935,21000},q=1,requireSkill=333}),
 r(34010,{b=1,itemID=28281,learnedAt=350,minReputation={935,21000},q=2,requireSkill=333}),
 i(29191,{b=1,lvl=70,minReputation={935,21000},q=2,rwp=50004}),
-r(17632,{b=1,itemID=13517,learnedAt=300,minReputation={935,21000},q=1,requireSkill=171}),
+r(17632,{b=1,itemID=13517,learnedAt=350,minReputation={935,21000},q=1,requireSkill=171}),
 r(28566,{b=1,itemID=22915,learnedAt=350,minReputation={935,21000},q=2,requireSkill=171}),(_.OnInitDB.GenerateCompareOtherKey_185692)(
 i(30634,{b=1,minReputation={935,21000},OnTooltip=_.OnTooltipDB.ShowHonoredKeyComparison,q=1,rwp=40200})),
 i(29179,{b=1,f=53,lvl=70,minReputation={935,21000},q=3}),
@@ -29556,7 +29556,7 @@ i(25744,{coords={
 [1952]={{39.3,9.7},{44.6,34.3},{62.4,49}}},crs={18461,18463,21854},q=1}),
 i(25802,{coords={
 [1952]={{44.6,34.3},{52.3,78.5},{54.8,59.8}}},crs={18466,18467},q=1}),
-r(45117,{awp=20300,b=1,crs={22143,22144,22148,23022},itemID=34491,learnedAt=350,q=2,requireSkill=165}),
+r(45117,{awp=20300,b=1,crs={22143,22144,22148,23022},itemID=34491,learnedAt=360,q=2,requireSkill=165}),
 i(34255,{crs={24920},phase=2105,q=1}),
 r(20033,{crs={16810},itemID=16248,learnedAt=295,q=2,requireSkill=333}),
 i(32388,{awp=20100,crs={21644,21649,21650,21911,23066,23067,23068},q=1}),
