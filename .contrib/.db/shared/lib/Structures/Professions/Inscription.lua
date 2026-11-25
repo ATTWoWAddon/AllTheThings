@@ -9,16 +9,16 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ ti
 		r(1261587),	-- Kharanos Bookcase
 		r(1269495),	-- Thunder Bluff Totem
 		r(1261644),	-- Wooden Ironforge Table
-		r(1268662),	-- Black Dye Pigment
-		r(1268984),	-- Blue Dye Pigment
-		r(1267108),	-- Brown Dye Pigment
-		r(1268985),	-- Green Dye Pigment
-		r(1268993),	-- Orange Dye Pigment
-		r(1269057),	-- Purple Dye Pigment
-		r(1268998),	-- Red Dye Pigment
-		r(1268999),	-- Teal Dye Pigment
-		r(1268770),	-- White Dye Pigment
-		r(1268989),	-- Yellow Dye Pigment
+		r(1268662, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Black Dye Pigment
+		r(1268984, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Blue Dye Pigment
+		r(1267108, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Brown Dye Pigment
+		r(1268985, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Green Dye Pigment
+		r(1268993, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Orange Dye Pigment
+		r(1269057, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Purple Dye Pigment
+		r(1268998, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Red Dye Pigment
+		r(1268999, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Teal Dye Pigment
+		r(1268770, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- White Dye Pigment
+		r(1268989, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Yellow Dye Pigment
 	})),
 }));
 TBC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_3_0_2 } },FILTERFUNC_recipeID, {
