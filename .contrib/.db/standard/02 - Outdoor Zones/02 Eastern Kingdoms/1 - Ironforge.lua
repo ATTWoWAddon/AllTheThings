@@ -431,10 +431,7 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				-- #endif
 			}),
 			q(3449, {	-- Arcane Runes
-				sourceQuests = {
-					3448,	-- Passing the Burden
-					3451,	-- Signal for Pickup (1/2)
-				},
+				sourceQuest = 3448,	-- Passing the Burden
 				qg = 8507,	-- Tymor
 				coord = { 31.2, 4.6, IRONFORGE },
 				timeline = { REMOVED_4_0_3 },

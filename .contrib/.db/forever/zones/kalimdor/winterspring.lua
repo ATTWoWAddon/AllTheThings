@@ -896,6 +896,9 @@ maproot(MAP.KALIMDOR, MAP.WINTERSPRING, {
 					i(285284, {	-- Balanced Knives
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
+					i(284262, {	-- Howling Hide
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
 				},
 			}),
 			n(10200, {	-- Rak'shiri

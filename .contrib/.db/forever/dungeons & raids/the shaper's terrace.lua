@@ -6,7 +6,7 @@ instanceroot(3001, {	-- The Shaper's Terrace
 	--lore = "",
 	icon = 409547,
 	zoneTextAreaID = 16667,	-- The Shaper's Terrace
-	--coord = { , MAP.UNGORO_CRATER },	-- The Shaper's Terrace (area 16985); entrance location unknown.
+	coord = { 48.2, 6.0, MAP.UNGORO_CRATER },
 	timeline = { TIMELINE.ADDED_1_60_1 },
 	lvl = 58,
 	groups = {
@@ -116,45 +116,129 @@ instanceroot(3001, {	-- The Shaper's Terrace
 				},
 			}),
 		}),
+		n(ZONE_DROPS, {
+			i(287038, {	-- Naturopathy Footpads
+				crs = {
+					253214,	-- Ravasaur Hunter
+					261786,	-- Ironhide Ravasaur
+					261898,	-- Ravasaur Juvenile
+				},
+			}),
+			i(287041, {	-- Time-Forgotten Bindings
+				crs = {
+					253214,	-- Ravasaur Hunter
+					261786,	-- Ironhide Ravasaur
+					262684,	-- Seeping Slime
+					262685,	-- Ravasaur Trapper
+				},
+			}),
+			i(287043, {	-- Predaceous Band
+				crs = {
+					253214,	-- Ravasaur Hunter
+					262689,	-- Ravasaur Juvenile
+				},
+			}),
+			i(287045, {	-- Ancient Mattock
+				crs = {
+					253214,	-- Ravasaur Hunter
+					261786,	-- Ironhide Ravasaur
+					261934,	-- Ravasaur Stalker
+					262300,	-- Eastgrotto Dweller
+					262689,	-- Ravasaur Juvenile
+				},
+			}),
+		}),
 		e(3498, {	-- Titanosaur
 			creatureID = 253201,	-- Titanosaur
+			groups = {
+				i(280009),	-- Titanosaur Scale Pendant
+				i(280010),	-- Gargantuan Wristguards
+				i(280011),	-- Deeproar Cord
+			},
 		}),
 		e(3499, {	-- Ravasaur Hunters
 			crs = {
 				253214,	-- Ravasaur Hunter
 				262688,	-- Ravasaur Hunter
+				261811,	-- Tor'Rel
+			},
+			groups = {
+				i(280012),	-- Talon of Tor'Rel
+				i(280013),	-- Frostfang Mail Vest
+				i(280014),	-- Raptorscale Bulwark
 			},
 		}),
 		e(3500, {	-- Thunderhoof
 			creatureID = 261812,	-- Thunderhoof
+			groups = {
+				i(280018),	-- Hammer of Thundering Hooves
+				i(280019),	-- Dinofrill Casque
+				i(280020),	-- Deep Jungle Rifle
+			},
 		}),
 		e(3501, {	-- Venomridge
 			creatureID = 261813,	-- Venomridge
+			groups = {
+				i(280015),	-- Venomvessel Ring
+				i(280016),	-- Spiderchitin Wrap
+				i(280017),	-- Octoclaw Chain Boots
+			},
 		}),
 		e(3507, {	-- Direhorn Matriarch
 			creatureID = 262127,	-- Direhorn Matriarch
 			groups = {
+				i(280045),	-- Regal Direhorn Drape
+				i(280022),	-- Scaleguard Scimitar
+				i(280021),	-- Tooth of the Matriarch
 				i(285951),	-- Direhorn Matriarch's Heart
 			},
 		}),
 		e(3503, {	-- Cinder
 			creatureID = 261974,	-- Cinder
+			groups = {
+				i(280028),	-- Heartflame Gauntlets
+				i(280029),	-- Cinderedge Crescent
+			},
 		}),
-		-- TODO: King Op's creatureID isn't on Wowhead yet; encounters without one crash the addon, so it stays commented out.
-		--e(3504),	-- King Op
+		e(3504, {	-- King Op
+			creatureID = 261993,	-- King Op
+			groups = {
+				i(280026),	-- Albinofur Grips
+				i(280027),	-- Crownroar Chestplate
+			},
+		}),
 		e(3597, {	-- Snowtalon
 			creatureID = 262297,	-- Snowtalon
+			groups = {
+				i(280026),	-- Albinofur Grips
+				i(280027),	-- Crownroar Chestplate
+			},
 		}),
 		e(3505, {	-- Bolt
 			creatureID = 262081,	-- Bolt
+			groups = {
+				i(280031),	-- Sparklance Wand
+				i(280032),	-- Bolt's Charged Eyeball
+			},
 		}),
 		e(3600, {	-- Vitrix
 			creatureID = 272561,	-- Vitrix
+			groups = {
+				i(280026),	-- Albinofur Grips
+				i(280027),	-- Crownroar Chestplate
+				i(280028),	-- Heartflame Gauntlets
+				i(280029),	-- Cinderedge Crescent
+				i(280031),	-- Sparklance Wand
+				i(280032),	-- Bolt's Charged Eyeball
+			},
 		}),
 		e(3502, {	-- Nanaya
 			creatureID = 261809,	-- Nanaya
 			groups = {
 				i(273116),	-- Blueprint: Arcane Forge (RECIPE!)
+				i(280025),	-- Leggings of Curation
+				i(280024),	-- Legplates of Reinforced Crystal
+				i(280023),	-- Nanaya's Control Spire
 				i(273128),	-- Maker's Spark
 				i(285952),	-- Stone Heart of the Watcher
 			},
