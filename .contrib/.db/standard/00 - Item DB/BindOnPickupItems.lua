@@ -12,3 +12,6 @@ i(205188)	-- Barter Boulder
 
 -- MID
 i(279345)	-- Venom-Drenched Sack
+-- #if BEFORE 13.0
+i(270909)	-- Slumbering Coil Curio
+-- #endif
