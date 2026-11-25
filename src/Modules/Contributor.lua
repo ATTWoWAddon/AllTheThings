@@ -4265,6 +4265,7 @@ app.ChatCommands.Add("contribute", function(args)
 	Contribute(not app.Contributor and 1)
 	return true
 end, {
+	Category = "Maintenance",
 	"Usage : /att contribute"
 })
 -- Allows a user to use /att debug-contrib to see more prints for contribute situations
@@ -4274,6 +4275,7 @@ app.ChatCommands.Add("contribute-debug", function(args)
 	app.print("Showing",DebugPrinting and "debug" or "basic","ATT contribution information.")
 	return true
 end, {
+	Category = "Debugging",
 	"Usage : /att contribute-debug"
 })
 app.AddEventHandler("OnStartup", function()

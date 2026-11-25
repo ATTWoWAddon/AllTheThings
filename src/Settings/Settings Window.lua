@@ -503,6 +503,7 @@ local function OpenFromCommand(args)
 	return true;
 end
 app.ChatCommands.Add("settings", OpenFromCommand, {
+	Category = "Usability",
 	"Usage : /att settings [page or search]",
 	"Opens the ATT settings, on the given page or searching for the given text",
 });

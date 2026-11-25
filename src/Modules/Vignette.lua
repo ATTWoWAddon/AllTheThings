@@ -467,6 +467,7 @@ app.ChatCommands.Add("reset-vignettes", function(args)
 	app.print("Vignette Caches reset!")
 	return true
 end, {
+	Category = "Maintenance",
 	"Usage : /att reset-vignettes",
 	"Allows resetting the Vignette cache such that Vignettes can be reported again in chat",
 })

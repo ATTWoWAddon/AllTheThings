@@ -1579,6 +1579,7 @@ app:RegisterFuncEvent("PLAYER_LOGIN", function(addonName)
 			app.print("Cleaned up",backups,"character backups!")
 			return true
 		end, {
+			Category = "Maintenance",
 			"Usage : /att remove-deleted-character-backups",
 			"Allows permanently removing all deleted character backup data",
 			"-- ATT removes and cleans out character-specific cached data which is stored by a character with the same Name-Realm as the logged-in character but a different character GUID. If you find yourself creating and deleting a lot of repeated characters, this will clean up those characters' data backups",

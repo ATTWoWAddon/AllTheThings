@@ -971,7 +971,7 @@ app.ChatCommands.Add("filter-order", function(args)
 		Report("All", ordered)
 	end)
 	return true
-end, { "Usage : /att filter-order" })
+end, { Category = "Debugging", "Usage : /att filter-order" })
 
 app.ChatCommands.Add("key-report", function(args)
 	local list = CollectNodes(GetRoot().g, {})
@@ -980,7 +980,7 @@ app.ChatCommands.Add("key-report", function(args)
 		KeyReport(list, k)
 	end
 	return true
-end, { "Usage : /att filter-order" })
+end, { Category = "Debugging", "Usage : /att key-report" })
 
 
 --]]--

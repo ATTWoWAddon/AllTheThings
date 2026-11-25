@@ -92,6 +92,7 @@ app.ChatCommands.Add("check-fps", function()
 		app.print("Found Missing Flight Masters:", app:Linkify(text, app.Colors.ChatLinkError, "dialog:" .. popupID));
 	end
 end, {
+	Category = "Debugging",
 	"Usage : /att check-fps",
 	"Allows scanning all sourced FPs to find Flight Masters which have no NPC linked to them.",
 });

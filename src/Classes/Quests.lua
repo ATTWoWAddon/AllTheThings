@@ -414,6 +414,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		end
 		return true
 	end, {
+		Category = "Maintenance",
 		"Usage : /att ignore-quest-print questID1 [questID2] [questID3] ...",
 		"Example : /att ignore-quest-print 12345",
 		"          Will ignore Quest 12345 flagging from being reported in chat"
@@ -436,6 +437,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		end
 		return true
 	end, {
+		Category = "Maintenance",
 		"Usage : /att allow-quest-print questID1 [questID2] [questID3] ...",
 		"Example : /att allow-quest-print 12345",
 		"          Will allow Quest 12345 flagging to be reported in chat"

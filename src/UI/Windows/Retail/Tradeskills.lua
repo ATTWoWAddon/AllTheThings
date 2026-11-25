@@ -307,6 +307,7 @@ app:CreateWindow("Tradeskills", {
 			HarvestRecipes()
 			return true
 		end, {
+			Category = "Maintenance",
 			"Usage : /att harvest-reagents",
 			L.TRADESKILLS_HARVEST_REAGENTS_DESC,
 		})

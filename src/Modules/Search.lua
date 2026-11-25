@@ -633,6 +633,7 @@ app.ChatCommands.Add({"search","?"}, function(args)
 
 	return true
 end, {
+	Category = "Usability",
 	"Usage : /att [search|?] [link]",
 	"Allows performing a search against ATT data and navigating to the found result(s)",
 })

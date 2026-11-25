@@ -260,6 +260,7 @@ app.ChatCommands.Add("calendar-cache", function(args)
 	GetEventCache()
 	app.print("Re-cached Calendar data!")
 	end, {
+		Category = "Maintenance",
 		"Usage : /att calendar-cache",
 		"Provides a quick way to reset ATT's cache of the user's calendar data for determining in-game event schedules and visibility",
 	})

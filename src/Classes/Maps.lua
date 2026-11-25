@@ -494,6 +494,7 @@ app.ChatCommands.Add("collect-exploration", function(args)
 	app:StartATTCoroutine("FullMapExploration", args[1] and CacheExplorationForAllMaps or CacheExplorationForAllKnownExploration)
 	return true
 end, {
+	Category = "Maintenance",
 	"Usage : /att collect-exploration [robust]",
 	"This allows a user to fully-scan the entire known set of Zones to harvest current Exploration data.",
 	"NOTE: This operation (when providing the 'robust' parameter) should only be needed once per Character as Exploration is otherwise updated when new areas are explored.",
@@ -778,6 +779,7 @@ app.ChatCommands.Add("realtime-exploration-check", function(args)
 	app.print("Enabled: realtime-exploration-check")
 	return true
 end, {
+	Category = "Debugging",
 	"Usage : /att realtime-exploration-check",
 	"This enables ATT to perform real-time Exploration checks when the Player visits new sub-zones of maps. This cannot be turned off except by reloading the UI.",
 	"NOTE: This is not intended to be used except by Contribs in order to do fine-tuned testing of Exploration data",
@@ -1051,6 +1053,7 @@ end
 -- Allows a user to use /att harvest-exploration
 -- to force a full scan of all known ATT maps to harvest exploration data
 app.ChatCommands.Add("harvest-exploration", app.HarvestExploration, {
+	Category = "Maintenance",
 	"Usage : /att harvest-exploration",
 	"This allows fully-scanning the entire known set of Zones to harvest current Exploration data based on what the current character has Explored, and capture all the possible coordinates which 'should' unlock the specified Exploration Areas.",
 	"NOTE: This operation is only expected to be used by Development in order to update Exploration in the addon!",
@@ -1092,6 +1095,7 @@ app.ChatCommands.Add("harvest-map", function(args)
 	app:CreateMiniListForGroup(tempGroup, true)
 	PrintReportedAreaSummary()
 end, {
+	Category = "Maintenance",
 	"Usage : /att harvest-map mapID [granularity] [simplify]",
 })
 

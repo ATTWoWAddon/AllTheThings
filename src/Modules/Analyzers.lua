@@ -49,6 +49,7 @@ end
 app.ChatCommands.Add("analyze-symlinks", function(args)
 	api.CheckSymlinks()
 end, {
+	Category = "Debugging",
 	"Usage : /att analyze-symlinks",
 	"Opens an ATT window with every symlink in ATT to check for symlinks which fail to retrieve expected data",
 })
@@ -56,6 +57,7 @@ end, {
 app.ChatCommands.Add("analyze-runners", function(args)
 	api.CheckRunners()
 end, {
+	Category = "Debugging",
 	"Usage : /att analyze-runners",
 	"Prints stats for every ATT Runner",
 })

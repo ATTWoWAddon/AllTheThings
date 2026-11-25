@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Other Commands",
-	constant = "COMMANDS_OTHER",
+	readable = "Maintenance",
+	constant = "COMMANDS_MAINTENANCE",
 	export = true,
 	text = {
-		en = "Other Commands",
+		en = "Maintenance",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

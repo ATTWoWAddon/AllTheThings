@@ -88,8 +88,19 @@ y = y - rows * ROW_HEIGHT - 12
 -- is shown or searched is too early, since every module adds its own.
 local OpenChat = ChatFrameUtil and ChatFrameUtil.OpenChat or ChatFrame_OpenChat
 local ROW_GAP, DESCRIPTION_X = 1, 300
-local function CreateCommandRow(entry)
-	local row = CreateFrame("Button", nil, content)
+-- The technical categories are in a frame of their own, which is only shown in the Advanced view
+local advanced = CreateFrame("Frame", nil, content)
+advanced:SetPoint("TOPLEFT", content, "TOPLEFT", 0, 0)
+advanced:SetSize(1, 1)
+advanced.SectionWidth = content.SectionWidth
+settings.MakePanel(advanced, content)
+local CommandCategories = {
+	{ key = "Usability", title = L.COMMANDS_USABILITY },
+	{ key = "Maintenance", title = L.COMMANDS_MAINTENANCE, advanced = true },
+	{ key = "Debugging", title = L.COMMANDS_DEBUGGING, advanced = true },
+}
+local function CreateCommandRow(panel, entry)
+	local row = CreateFrame("Button", nil, panel)
 	row:SetPoint("TOPLEFT", content, "TOPLEFT", 8, y)
 	row:SetWidth(content.SectionWidth - 16)
 	local highlight = row:CreateTexture(nil, "HIGHLIGHT")
@@ -121,17 +132,18 @@ local function CreateCommandRow(entry)
 	y = y - row:GetHeight() - ROW_GAP
 	return row
 end
-local CommandOptions
+local CommandOptions, basicHeight
 local function BuildCommands()
 	if CommandOptions then return end
 	CommandOptions = {}
-	local function AddSection(title, entries, keepOrder)
+	local function AddSection(title, entries, keepOrder, isAdvanced)
 		if #entries == 0 then return end
+		local panel = isAdvanced and advanced or content
 		if not keepOrder then table.sort(entries, function(a, b) return a.text < b.text end) end
-		y = y - settings.CreatePageSectionHeader(content, title, y)
+		y = y - settings.CreatePageSectionHeader(panel, title, y)
 		for _,entry in ipairs(entries) do
 			CommandOptions[#CommandOptions + 1] = {
-				frame = CreateCommandRow(entry), page = child, text = entry.text:gsub("\n", " "), tooltip = entry.description,
+				frame = CreateCommandRow(panel, entry), page = child, text = entry.text:gsub("\n", " "), tooltip = entry.description, advanced = isAdvanced,
 			}
 		end
 		y = y - 8
@@ -165,7 +177,8 @@ local function BuildCommands()
 		end
 	end
 	-- Everything else. Aliases share their help.
-	local others, entryByHelp = {}, {}
+	local entriesByCategory, entryByHelp = {}, {}
+	for _,category in ipairs(CommandCategories) do entriesByCategory[category.key] = {} end
 	for _,command in ipairs(app.ChatCommands.List) do
 		if not isWindowCommand[command] and app.ChatCommands[command] then
 			local help = app.ChatCommands.Help[command]
@@ -181,7 +194,8 @@ local function BuildCommands()
 				else
 					entry.description = "|cff808080" .. L.COMMANDS_NO_HELP .. "|r"
 				end
-				others[#others + 1] = entry
+				local entries = help and entriesByCategory[help.Category] or entriesByCategory.Maintenance
+				entries[#entries + 1] = entry
 			end
 		end
 	end
@@ -190,12 +204,25 @@ local function BuildCommands()
 		{ command = "/att item:", text = "/att [" .. L.ITEM .. "]", description = L.COMMANDS_LINK },
 		{ command = "/rl", text = "/rl", description = RELOADUI or "Reload UI" },
 	}, true)
+	for _,category in ipairs(CommandCategories) do
+		if not category.advanced then AddSection(category.title, entriesByCategory[category.key]) end
+	end
 	AddSection(L.WINDOWS_PAGE, windows)
-	AddSection(L.COMMANDS_OTHER, others)
-	content:SetHeight(-y)
+	basicHeight = -y
+	for _,category in ipairs(CommandCategories) do
+		if category.advanced then AddSection(category.title, entriesByCategory[category.key], nil, true) end
+	end
+end
+local function UpdateCommands()
+	if not child:IsVisible() then return end
+	BuildCommands()
+	local showAdvanced = settings:GetTooltipSetting("Settings:Advanced") and true or false
+	advanced:SetShown(showAdvanced)
+	content:SetHeight(showAdvanced and -y or basicHeight)
 end
 content:SetHeight(-y)
-child:HookScript("OnShow", BuildCommands)
+child:HookScript("OnShow", UpdateCommands)
+child.OnRefresh = UpdateCommands
 settings.AddOptionProvider(function(add)
 	BuildCommands()
 	for _,option in ipairs(CommandOptions) do add(option) end

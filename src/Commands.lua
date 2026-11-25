@@ -136,6 +136,8 @@ end
 -- cmd : The lowercase string to trigger the command handler
 -- func : The function which is run with provided 'args' from chat input when 'cmd' is used
 -- info : (optional, WIP) An Info table which defines helpful information about using the command
+--	info.Category : The group it's listed in on the Commands settings page: "Usability", "Maintenance" or "Debugging".
+--		Only "Usability" is shown without Advanced Options. Defaults to "Maintenance"
 app.ChatCommands.Add = function(cmd, func, help)
 	if not cmd or cmd == "" then error("Must supply an Add Chat Command name") end
 	if type(func) ~= "function" then error("Attempted to add a non-function handler for a Chat Command: "..cmd) end
@@ -197,6 +199,7 @@ app.ChatCommands.Add("report-reset", function(args)
 	app.HandleEvent("OnReportReset")
 	return true
 end, {
+	Category = "Maintenance",
 	"Usage : /att report-reset",
 	"Allows resetting the tracking of displayed Dialog reports such that duplicate reports can be repeated in the same game session.",
 })
@@ -207,6 +210,7 @@ app.ChatCommands.Add("debug-print", function(args)
 	app.print("Debug Printing:",app.Debugging and "ACTIVE" or "OFF")
 	return true
 end, {
+	Category = "Debugging",
 	"Usage : /att debug-print",
 	"Allows toggling debug printing within ATT",
 })
@@ -219,6 +223,7 @@ app.ChatCommands.Add("debug-events", function(args)
 	app.print("Debug Printing:",app.Debugging and "ACTIVE" or "OFF")
 	return true
 end, {
+	Category = "Debugging",
 	"Usage : /att debug-events",
 	"Allows toggling the debug printing and monitoring of all game events that ATT handles.",
 })
@@ -231,6 +236,7 @@ app.ChatCommands.Add("use-progressive-loading", function(args)
 	app.print("/rl ->",RELOADUI)
 	return true
 end, {
+	Category = "Maintenance",
 	"Usage : /att use-progressive-loading",
 	"Allows changing some load behavior of ATT to spread out the load sequence across many more game frames, potentially allowing successful loading in some game environments or locations where tighter addon restrictions may temporarily exist.",
 })
@@ -264,6 +270,7 @@ app.ChatCommands.Add({"t", "target"}, function(args)
 
 	return true
 end, {
+	Category = "Usability",
 	"Usage : /att [t|target]",
 	"Allows opening a popout window for your targeted NPC",
 })
