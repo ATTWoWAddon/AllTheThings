@@ -1223,7 +1223,8 @@ do
 	local function GetReferencesForGroup(group)
 		local objects = { group }
 		local key = group.key
-		if key and group[key] then
+		-- Headers (e.g. 'Weapons') share their ID with many unrelated headers, so only Things use their other Sources
+		if key and app.ThingKeys[key] and group[key] then
 			app.ArrayAppend(objects, GetRawField(key, group[key]))
 		end
 		-- Items may be keyed by modItemID while their Sources are cached by itemID
@@ -1245,7 +1246,7 @@ do
 						end
 					end
 				end
-				o, depth = o.parent, depth + 1
+				o, depth = o.sourceParent or o.parent, depth + 1
 			end
 		end
 		return refs
