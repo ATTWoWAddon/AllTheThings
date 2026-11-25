@@ -1473,6 +1473,7 @@ hqt(96194,{an="n:247207",isDaily=1}),
 hqt(96197,{an="n:247234",isDaily=1})}),
 inst(228,{mapID=242,g={
 hqt(83945,{an="n:9016",isDaily=1}),
+hqt(83940,{an="n:9017",isDaily=1}),
 hqt(83938,{an="n:9938",isDaily=1}),
 hqt(83937,{an="n:9019",isDaily=1})}}),
 inst(229,{mapID=250,g={
@@ -1484,6 +1485,7 @@ inst(236,{mapID=317,maps={318},g={
 hqt(83984,{an="n:11058",isDaily=1}),
 hqt(83985,{an="n:10516",isDaily=1}),
 hqt(83987,{an="n:10808",isDaily=1}),
+hqt(83988,{an="n:11032",isDaily=1}),
 hqt(83993,{an="n:10435",isDaily=1}),
 hqt(83994,{an="n:10437",isDaily=1}),
 hqt(83995,{an="n:10438",isDaily=1}),

@@ -78,6 +78,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 							isDaily = true,
 						},{
 							hqt(83945, name(HEADERS.NPC, 9016)),	-- Bael'Gar
+							hqt(83940, name(HEADERS.NPC, 9017)),	-- Lord Incendius
 							hqt(83938, name(HEADERS.NPC, 9938)),	-- Magmus
 							hqt(83937, name(HEADERS.NPC, 9019)),	-- Emperor Dagran Thaurissan
 						}),
@@ -101,6 +102,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 							hqt(83984, name(HEADERS.NPC, 11058)),	-- Ezra Grimm
 							hqt(83985, name(HEADERS.NPC, 10516)),	-- The Unforgiven
 							hqt(83987, name(HEADERS.NPC, 10808)),	-- Timmy the Cruel
+							hqt(83988, name(HEADERS.NPC, 11032)),	-- Malor the Zealous
 							hqt(83993, name(HEADERS.NPC, 10435)),	-- Magistrate Barthilas
 							hqt(83994, name(HEADERS.NPC, 10437)),	-- Nerub'enkan
 							hqt(83995, name(HEADERS.NPC, 10438)),	-- Maleki the Pallid
