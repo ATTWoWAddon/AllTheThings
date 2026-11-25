@@ -273,7 +273,6 @@ root(ROOTS.NeverImplemented, n(DECOR, {
 			i(264683),	-- Cuddly Sanguine Grrgle (DECOR!)
 			i(264689),	-- Cuddly Sapphire Grrgle (DECOR!)
 			i(264680),	-- Cuddly Sea Green Grrgle (DECOR!)
-			i(263241),	-- Cuddly Seafoam Grrgle (DECOR!)
 			i(265547),	-- Cuddly Spectral Grrgle (DECOR!)
 			i(265392),	-- Cuddly Sunset Grrgle (DECOR!)
 			i(263239),	-- Cuddly Tan Grrgle (DECOR!)

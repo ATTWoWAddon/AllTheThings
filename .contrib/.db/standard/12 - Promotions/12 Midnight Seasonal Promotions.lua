@@ -245,6 +245,10 @@ root(ROOTS.Promotions, {
 				i(285216),	-- Shifty Chest (DECOR!)
 				i(284220),	-- Shifty Chest (TOY!)
 			}));
+			i(263241, {	-- Cuddly Seafoam Grrgle (DECOR!)
+				description = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between December 1st, 10:00 a.m. & December 29th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				timeline = { ADDED_12_1_7, "removed 12.1.7.99999" },
+			}),
 			-- Season 3
 
 		--	i(500001, {	-- The PVE/PVP Banner temporary item	-- TEMPLATE
