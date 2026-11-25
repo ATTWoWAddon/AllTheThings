@@ -123,6 +123,7 @@ i(276956, 1301449);	-- Azure Skyforged Legguards
 i(276985, 1301535);	-- Azure Skyforged Pauldrons
 i(276953, 1301446);	-- Azure Skyforged Wristguards
 i(251470, 1252367);	-- Bagh Nakh
+i(7981, 9818);		-- Barbaric Iron Boots
 i(7979, 9813);		-- Barbaric Iron Breastplate
 i(7982, 9820);		-- Barbaric Iron Gloves
 i(7980, 9814);		-- Barbaric Iron Helm
@@ -163,6 +164,7 @@ i(3867, 3495);		-- Golden Iron Destroyer
 i(3875, 3515);		-- Golden Scale Boots
 i(6047, 3503);		-- Golden Scale Coif
 i(3873, 3511);		-- Golden Scale Cuirass
+i(9367, 11643);		-- Golden Scale Gauntlets
 i(3872, 3507);		-- Golden Scale Leggings
 i(3871, 3505);		-- Golden Scale Shoulders
 i(275598, 1297138);	-- Goregasher Grips
@@ -182,6 +184,7 @@ i(274017, 1292986);	-- Handguards of Glory
 i(251390, 1252287);	-- Hard Gold Gauntlet
 i(12162, 3492);		-- Hardened Iron Shortsword
 i(7990, 9970);		-- Heavy Mithril Helm
+i(7975, 9933);		-- Heavy Mithril Pants
 i(12823, 16971);	-- Huge Thorium Battleaxe
 i(12688, 16647);	-- Imperial Plate Belt
 i(12700, 16657);	-- Imperial Plate Boots
@@ -197,6 +200,7 @@ i(251458, 1252355);	-- Iron Morningstar
 i(6044, 7221);		-- Iron Shield Spike
 i(6735, 8367);		-- Ironforge Breastplate
 i(3866, 3493);		-- Jade Serpentblade
+i(251407, 1252304);	-- Justicar's Gloves
 i(251432, 1252329);	-- Justicar's Pauldrons
 i(251417, 1252314);	-- Justicar's Sabatons
 i(251427, 1252324);	-- Justicar's Waistguard
@@ -224,14 +228,18 @@ i(7976, 9939);		-- Mithril Shield Spike
 i(7989, 9964);		-- Mithril Spurs
 i(251460, 1252357);	-- Mithril Warhammer
 i(12163, 3496);		-- Moonsteel Broadsword
+i(251403, 1252300);	-- Officer's Gloves
 i(251428, 1252325);	-- Officer's Pauldrons
 i(251413, 1252310);	-- Officer's Sabatons
 i(251423, 1252320);	-- Officer's Waistguard
 i(251433, 1252330);	-- Officer's Wristguards
+i(7984, 9950);		-- Ornate Mithril Gloves
+i(7983, 9945);		-- Ornate Mithril Pants
 i(7985, 9952);		-- Ornate Mithril Shoulders
 i(12819, 16969);	-- Ornate Thorium Handaxe
 i(274018, 1292987);	-- Pauldrons of Glory
 i(3874, 3513);		-- Polished Steel Boots
+i(251406, 1252303);	-- Prefect's Gloves
 i(251431, 1252328);	-- Prefect's Pauldrons
 i(251416, 1252313);	-- Prefect's Sabatons
 i(251426, 1252323);	-- Prefect's Waistguard
@@ -257,6 +265,7 @@ i(12719, 16732);	-- Runic Plate Leggings
 i(12706, 16664);	-- Runic Plate Shoulders
 i(274019, 1292988);	-- Sabatons of Glory
 i(12261, 15973);	-- Searing Golden Blade
+i(251404, 1252301);	-- Sentinel's Gloves
 i(251429, 1252326);	-- Sentinel's Pauldrons
 i(251414, 1252311);	-- Sentinel's Sabatons
 i(251424, 1252321);	-- Sentinel's Waistguard
@@ -290,6 +299,7 @@ i(251380, 1252277);	-- Veteran's Silvered Chain Helm
 i(251375, 1252272);	-- Veteran's Silvered Chain Leggings
 i(251370, 1252267);	-- Veteran's Silvered Chain Shirt
 i(12828, 16984);	-- Volcanic Hammer
+i(251405, 1252302);	-- Warder's Gloves
 i(251430, 1252327);	-- Warder's Pauldrons
 i(251415, 1252312);	-- Warder's Sabatons
 i(251425, 1252322);	-- Warder's Waistguard
@@ -375,27 +385,12 @@ r(251419, 1252316),	-- Sentinel's Gauntlet
 r(251420, 1252317),	-- Warder's Gauntlet
 r(251421, 1252318),	-- Prefect's Gauntlet
 r(251422, 1252319),	-- Justicar's Gauntlet
-i(9367, 11643);		-- Golden Scale Gauntlets
-i(7984, 9950);		-- Ornate Mithril Gloves
-i(7975, 9933);		-- Heavy Mithril Pants
-i(7983, 9945);		-- Ornate Mithril Pants
-i(7981, 9818);		-- Barbaric Iron Boots
 r(1252347),	-- Champion's Legplates
 i(251450),	-- Plans: Champion's Legplates
 r(1252342),	-- Blessed Plate Helm
 i(251445),	-- Plans: Blessed Plate Helm
 r(1252343),	-- Blessed Plate Chest
 i(251446),	-- Plans: Blessed Plate Chest
-r(1252300),	-- Officer's Gloves
-r(1252301),	-- Sentinel's Gloves
-r(1252302),	-- Warder's Gloves
-r(1252303),	-- Prefect's Gloves
-r(1252304),	-- Justicar's Gloves
-i(251403),	-- Plans: Officer's Gloves
-i(251404),	-- Plans: Sentinel's Gloves
-i(251405),	-- Plans: Warder's Gloves
-i(251406),	-- Plans: Prefect's Gloves
-i(251407),	-- Plans: Justicar's Gloves
 -- new raid?
 r(1306535),	-- Greenhammer
 i(279310),	-- Plans: Greenhammer

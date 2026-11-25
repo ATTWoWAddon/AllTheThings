@@ -535,7 +535,7 @@ q(5662,{altQuests={5658,5660,5661,5663},c={5},coords={
 r(2652,{rank=1})}}),
 q(2753,{coords={
 [1454]={{79.4,22.4}}},cost={{"i",3842,2},{"i",3835,4},{"i",3836,4}},learnedAt=140,lvl=32,qgs={7790},r=1,requireSkill=164,sourceQuests={2752},g={
-r(9818,{description="This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",itemID=7981,requireSkill=164})}}),
+r(9818,{description="This recipe can be sold on the Neutral Auction House to Alliance Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Horde Blacksmiths, this recipe is not soulbound and can be mailed to Horde alts.",itemID=7981,learnedAt=155,requireSkill=164,skillID=2938})}}),
 q(91548,{awp=16001,coords={
 [1454]={{48.2,45.6}}},lvl=44,qgs={3326},qis={246778},r=1,sourceQuests={91547},g={
 qo(1,{providers={{"i",246780}}}),
@@ -1686,7 +1686,7 @@ s(160217,11120,{b=1,f=23}),
 s(317949,287075,{b=1,f=36})}}),
 q(86927,{awp=16001,coords={
 [1447]={{57.7,21}}},lvl=47,providers={{"o",506307}},qis={235472},sourceQuests={86926},g={
-r(1244421,{b=1,itemID=236754})}}),
+r(1244421,{b=1,itemID=236754,learnedAt=250,requireSkill=171,skillID=2937})}}),
 q(88857,{awp=16001,coords={
 [1447]={{20.5,60}}},lvl=45,qgs={222478},r=2}),
 q(90789,{awp=16001,c={8},coords={
@@ -1770,7 +1770,7 @@ qo(1,{providers={{"i",235645}}})}}),
 q(86812,{awp=16001,coords={
 [1447]={{41.6,19.6}}},lvl=47,qgs={235906},qis={235509},sourceQuests={86927},g={
 qo(1),
-r(1259345,{itemID=255731})}}),
+r(1259345,{itemID=255731,learnedAt=280,requireSkill=129,skillID=2942})}}),
 q(9362,{c={8},coords={
 [1447]={{29.6,40.6}}},lvl=60,qgs={8379},g={
 qo(1,{coords={
@@ -5186,11 +5186,11 @@ qo(1,{providers={{"i",274396}}})}}),
 q(92433,{awp=16001,coords={
 [2482]={{15.6,50.2}}},lvl=54,qgs={249968},r=2,sym={{"select","itemID",250071}},g={
 qo(1,{providers={{"i",250065}}}),
-r(1250148,{b=1,itemID=250179,requireSkill=185})}}),
+r(1250148,{b=1,itemID=250179,learnedAt=275,requireSkill=185,skillID=2939})}}),
 q(97119,{awp=16001,coords={
 [2482]={{13,52.8}}},lvl=54,qgs={244512},r=1,sym={{"select","itemID",250071}},g={
 qo(1,{providers={{"i",250065}}}),
-r(1250148,{b=1,itemID=250179,requireSkill=185})}}),
+r(1250148,{b=1,itemID=250179,learnedAt=275,requireSkill=185,skillID=2939})}}),
 q(92111,{awp=16001,coords={
 [2482]={{20.6,71.6}}},lvl=54,qgs={256978}}),
 q(94479,{awp=16001,coords={
@@ -10991,7 +10991,7 @@ q(1248,{coords={
 [1453]={{66,74.1}}},lvl=28,qgs={482},r=2,sourceQuests={1247}}),
 q(2758,{coords={
 [1453]={{63,36.4}}},cost={{"i",6040,6}},learnedAt=210,lvl=40,qgs={7798},r=2,requireSkill=164,g={
-r(11643,{description="This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",itemID=9367,requireSkill=164})}}),
+r(11643,{description="This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",itemID=9367,learnedAt=180,requireSkill=164,skillID=2938})}}),
 q(543,{coords={
 [1453]={{76.9,47.8}}},lvl=30,maps={1416},qgs={2285},r=2,g={
 qo(1,{coords={
@@ -18134,7 +18134,7 @@ q(209,{coords={
 qo(1,{crs={667,669,670,672,696,780,781,782,783,784,1059},providers={{"i",1524}}})}}),
 q(2761,{coords={
 [1434]={{50.6,20.4}}},cost={{"i",3860,40},{"i",3575,40}},learnedAt=210,lvl=40,qgs={7802},requireSkill=164,sourceQuests={2760},g={
-r(9945,{b=1,itemID=7983,requireSkill=164})}}),
+r(9945,{b=1,itemID=7983,learnedAt=195,requireSkill=164,skillID=2938})}}),
 q(577,{coords={
 [1434]={{28.2,77.6}}},lvl=31,qgs={2495},g={
 qo(1,{crs={1152},providers={{"i",4104}}})}}),
@@ -18237,7 +18237,7 @@ q(588,{coords={
 [1434]={{32.2,27.7}}},lvl=30,providers={{"o",2076}},r=1,sourceQuests={585,586}}),
 q(2762,{coords={
 [1434]={{50.6,20.4}}},cost={{"i",6037,5},{"i",3860,40}},learnedAt=210,lvl=40,qgs={7802},requireSkill=164,sourceQuests={2760},g={
-r(9950,{b=1,itemID=7984,requireSkill=164})}}),
+r(9950,{b=1,itemID=7984,learnedAt=195,requireSkill=164,skillID=2938})}}),
 q(338,{coords={
 [1434]={{35.7,10.5}}},cost={{"i",2759,1},{"i",2758,1},{"i",2757,1},{"i",2756,1}},lvl=30,qgs={716},sourceQuests={583},sym={{"select","itemID",3928,8173}},g={
 s(157672,4116,{f=25,rwp=10200,u=2}),
@@ -18473,7 +18473,7 @@ n(2832,{coords={
 i(4595,{f=55,spellID=11009})}}),
 n(2626,{coords={
 [1434]={{27.4,77.1}}},g={
-r(7732,{itemID=16083,lvl=20,rank=3,requireSkill=356})}}),
+r(7732,{itemID=16083,learnedAt=125,lvl=20,rank=3,requireSkill=356,skillID=2943})}}),
 n(2849,{coords={
 [1434]={{28.2,77.6}}},sym={{"select","symselector",64,67,69,71},{"pop"},{"select","itemID",7341,7340,7339,7338,7342,7337}}}),
 n(2699,{coords={

@@ -360,6 +360,7 @@ for spellID,learnedAt in pairs({
 	[1252308] = 150,	-- Prefect's Belt
 	[1252306] = 150,	-- Sentinel's Belt
 	[1252307] = 150,	-- Warder's Belt
+	[9818] = 155,	-- Barbaric Iron Boots
 	[15972] = 155,	-- Glinting Steel Dagger
 	[3508] = 155,	-- Green Iron Hauberk
 	[3496] = 155,	-- Moonsteel Broadsword
@@ -398,11 +399,12 @@ for spellID,learnedAt in pairs({
 	[14380] = 175,	-- Truesilver Rod
 	[19668] = 175,	-- Truesilver Skeleton Key
 	[1252317] = 175,	-- Warder's Gauntlet
-	[9818] = 180,	-- Barbaric Iron Boots
+	[11643] = 180,	-- Golden Scale Gauntlets
 	[9928] = 180,	-- Heavy Mithril Gauntlet
 	[9926] = 180,	-- Heavy Mithril Shoulder
 	[1252356] = 180,	-- Mithril Shortsword
 	[9993] = 185,	-- Heavy Mithril Axe
+	[9933] = 185,	-- Heavy Mithril Pants
 	[9931] = 185,	-- Mithril Plate Pants
 	[9937] = 190,	-- Mithril Plate Bracers
 	[9939] = 190,	-- Mithril Shield Spike
@@ -412,6 +414,7 @@ for spellID,learnedAt in pairs({
 	[1317963] = 195,	-- Mithril Blacksmith Hammer
 	[1252358] = 195,	-- Mithril Claws
 	[1252359] = 195,	-- Mithril Claymore
+	[9950] = 195,	-- Ornate Mithril Gloves
 	[9945] = 195,	-- Ornate Mithril Pants
 	[1252289] = 195,	-- Shining Mithril Breastplate
 	[1252290] = 195,	-- Shining Mithril Pauldrons
@@ -433,11 +436,9 @@ for spellID,learnedAt in pairs({
 	[9787] = 200,	-- Weaponsmith
 	[9997] = 200,	-- Wicked Mithril Blade
 	[10001] = 205,	-- Big Black Mace
-	[11643] = 205,	-- Golden Scale Gauntlets
 	[9959] = 205,	-- Heavy Mithril Breastplate
 	[9961] = 205,	-- Mithril Coif
 	[9968] = 210,	-- Heavy Mithril Boots
-	[9933] = 210,	-- Heavy Mithril Pants
 	[1252329] = 210,	-- Justicar's Pauldrons
 	[9966] = 210,	-- Mithril Plate Shoulders
 	[9964] = 210,	-- Mithril Spurs
@@ -450,7 +451,6 @@ for spellID,learnedAt in pairs({
 	[10005] = 215,	-- Dazzling Mithril Rapier
 	[1252292] = 215,	-- Shining Mithril Helm
 	[9970] = 220,	-- Heavy Mithril Helm
-	[9950] = 220,	-- Ornate Mithril Gloves
 	[10009] = 220,	-- Runed Mithril Hammer
 	[1252294] = 220,	-- Shining Mithril Gauntlet
 	[1252293] = 220,	-- Shining Mithril Pants
@@ -2373,8 +2373,8 @@ for spellID,learnedAt in pairs({
 	[18629] = 260,	-- Runecloth Bandage
 	[1259349] = 265,	-- Surgical Tourniquet
 	[1244436] = 275,	-- Major Healing Potion
+	[1259345] = 280,	-- Powerful Poultice
 	[18630] = 290,	-- Heavy Runecloth Bandage
-	[1259345] = 295,	-- Powerful Poultice
 	[1263001] = 300,	-- Plague Doctor's Laboratory
 	[23787] = 300,	-- Powerful Anti-Venom
 }) do recipeDB[spellID].learnedAt = learnedAt; end

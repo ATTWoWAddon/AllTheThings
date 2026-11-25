@@ -25,6 +25,7 @@ i(5483, 6413);		-- Scorpid Surprise
 i(2889, 2795);		-- Beer Basted Boar Ribs
 i(249879, 1249957);	-- Peace Tea
 i(263511, 1270633);	-- Skywall Souffle
+i(250179, 1250148);	-- Steaming Stag Steak
 i(250187, 1250156);	-- Tasty Raptor Bites
 i(249885, 1249963);	-- Venomous Smoothie
 i(17201, 21144);	-- Egg Nog
@@ -148,8 +149,6 @@ r(1250152),	-- Prehistoric Pulled Raptor
 i(250183),	-- Recipe: Prehistoric Pulled Raptor
 r(1250143),	-- Soaring Pamplona
 i(250174),	-- Recipe: Soaring Pamplona
-r(1250148),	-- Steaming Stag Steak
-i(250179),	-- Recipe: Steaming Stag Steak
 r(1225763),	-- Grand Lobster Banquet
 i(238650),	-- Recipe: Grand Lobster Banquet
 i(250399),	-- TODO: Item name not known yet.

@@ -53,6 +53,7 @@ i(0, 11452);		-- Restorative Potion
 --- ITEM ---
 i(250995, 1251749);	-- Caustic Smog Potion
 i(250996, 1251750);	-- Disorienting Smog Potion
+i(236754, 1244421);	-- Distilled Firewater
 i(250997, 1251751);	-- Dragonfire Potion
 i(3832, 3453);		-- Draught of Detect Lesser Invisibility
 i(9297, 11468);		-- Draught of Dream Vision
@@ -180,8 +181,6 @@ i(13517),	-- Recipe: Alchemists' Stone
 r(24266),	-- Gurubashi Mojo Madness
 r(1250775),	-- Revealing Draught
 i(250362),	-- TODO: Item name not known yet.
-r(1244421),	-- Distilled Firewater
-i(236754),	-- Recipe: Distilled Firewater
 r(1317279),	-- Transmute: Legionite
 i(284871),	-- Recipe: Transmute Legionite
 -- New Raid??
