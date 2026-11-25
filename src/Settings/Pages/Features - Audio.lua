@@ -14,55 +14,51 @@ local function GetSoundpacks()
 	return choices;
 end
 
--- Each type of sound can be turned off, and has a button to play each of its sounds
-local TEST_X, TEST_BUTTON_WIDTH, MAX_TEST_BUTTONS = 190, 28, 13;
+-- Each type of sound can be turned off, and has a button which plays its sounds one after another
+local TEST_X, TEST_WIDTH = 190, 90;
 local SoundRows = {};
--- The position 0 is the one of the random button
-local function CreateTestButton(row, position, text)
-	local button = CreateFrame("Button", nil, row:GetParent(), "UIPanelButtonTemplate");
-	button:SetSize(TEST_BUTTON_WIDTH - 2, 19);
-	button:SetPoint("LEFT", row, "LEFT", TEST_X + position * TEST_BUTTON_WIDTH, 0);
-	button:SetText(text);
-	return button;
-end
-local function GetTestButton(row, index)
-	local button = row.TestButtons[index];
-	if button then return button; end
-	button = CreateTestButton(row, index, index);
-	button:SetScript("OnClick", function(self) app.Audio:TestSound(self.sound); end);
-	button.OnTooltip = function(self, tooltipInfo)
-		-- Only the name of a file is of interest
-		tooltipInfo[#tooltipInfo + 1] = { left = tostring(self.sound):match("[^/\\]+$") };
-		tooltipInfo[#tooltipInfo + 1] = { left = self.soundPack.name, r = 1, g = 1, b = 1 };
+local function UpdateTestText(row, soundType)
+	local sounds, sources = app.Audio:GetActiveSounds(soundType);
+	-- Start over with other soundpacks
+	local key = "";
+	for i,soundPack in ipairs(sources) do key = key .. soundPack.name .. tostring(sounds[i]); end
+	if row.testKey ~= key then
+		row.testKey = key;
+		row.testIndex = 0;
 	end
-	button:SetATTTooltip();
-	row.TestButtons[index] = button;
-	return button;
+	row.TestButton:SetShown(#sounds > 0);
+	row.TestText:ClearAllPoints();
+	if #sounds == 0 then
+		row.TestText:SetPoint("LEFT", row, "LEFT", TEST_X + 4, 0);
+		row.TestText:SetText(NONE);
+		return;
+	end
+	row.TestText:SetPoint("LEFT", row.TestButton, "RIGHT", 8, 0);
+	local index = row.testIndex;
+	local text = index .. " / " .. #sounds;
+	if index > 0 then
+		-- Only the name of a file is of interest
+		text = text .. "   |cffFFFFFF" .. tostring(sounds[index]):match("[^/\\]+$") .. "|r   " .. sources[index].name;
+	end
+	row.TestText:SetText(text);
 end
 local function RefreshTests(row, soundType)
-	if not row.TestButtons then
-		row.TestButtons = {};
-		row.TestNote = row:GetParent():CreateFontString(nil, "ARTWORK", "GameFontDisableSmall");
-		row.RandomButton = CreateTestButton(row, 0, "?");
-		row.RandomButton:SetATTTooltip(L.AUDIO_RANDOM_TOOLTIP);
-		row.RandomButton:SetScript("OnClick", function()
-			-- This also includes the sounds which don't have a button
-			local allSounds = app.Audio:GetActiveSounds(soundType);
-			if #allSounds > 0 then app.Audio:TestSound(allSounds[math.random(1, #allSounds)]); end
+	if not row.TestButton then
+		local button = CreateFrame("Button", nil, row:GetParent(), "UIPanelButtonTemplate");
+		button:SetSize(TEST_WIDTH, 19);
+		button:SetPoint("LEFT", row, "LEFT", TEST_X, 0);
+		button:SetText(L.AUDIO_PLAY_NEXT);
+		button:SetScript("OnClick", function()
+			local sounds = app.Audio:GetActiveSounds(soundType);
+			if #sounds == 0 then return; end
+			row.testIndex = row.testIndex % #sounds + 1;
+			app.Audio:TestSound(sounds[row.testIndex]);
+			UpdateTestText(row, soundType);
 		end);
+		row.TestButton = button;
+		row.TestText = row:GetParent():CreateFontString(nil, "ARTWORK", "GameFontDisableSmall");
 	end
-	local sounds, sources = app.Audio:GetActiveSounds(soundType);
-	row.RandomButton:SetShown(#sounds > 1);
-	local count = math.min(#sounds, MAX_TEST_BUTTONS);
-	for i=1,count do
-		local button = GetTestButton(row, i);
-		button.sound, button.soundPack = sounds[i], sources[i];
-		button:Show();
-	end
-	for i=count+1,#row.TestButtons do row.TestButtons[i]:Hide(); end
-	row.TestNote:ClearAllPoints();
-	row.TestNote:SetPoint("LEFT", row, "LEFT", TEST_X + 4 + (count + 1) * TEST_BUTTON_WIDTH, 0);
-	row.TestNote:SetText(count == 0 and NONE or #sounds > count and ("+" .. (#sounds - count)) or "");
+	UpdateTestText(row, soundType);
 end
 local function CreateSoundOption(soundType, text)
 	local function SetEnabled(enabled)

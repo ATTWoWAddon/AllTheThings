@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Whether this type of sound is played. Click the buttons to hear its sounds.",
+	readable = "Whether this type of sound is played. Click Play Next to hear its sounds one after another.",
 	constant = "AUDIO_SOUND_TOOLTIP",
 	export = true,
 	text = {
-		en = "Whether this type of sound is played. Click the buttons to hear its sounds.",
+		en = "Whether this type of sound is played. Click Play Next to hear its sounds one after another.",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",

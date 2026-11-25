@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Play a random one of these sounds.",
-	constant = "AUDIO_RANDOM_TOOLTIP",
+	readable = "Play Next",
+	constant = "AUDIO_PLAY_NEXT",
 	export = true,
 	text = {
-		en = "Play a random one of these sounds.",
+		en = "Play Next",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",
