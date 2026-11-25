@@ -104,6 +104,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 							hqt(83985, name(HEADERS.NPC, 10516)),	-- The Unforgiven
 							hqt(83987, name(HEADERS.NPC, 10808)),	-- Timmy the Cruel
 							hqt(83988, name(HEADERS.NPC, 11032)),	-- Malor the Zealous
+							hqt(83990, name(HEADERS.NPC, 10997)),	-- Cannon Master Willey
 							hqt(83993, name(HEADERS.NPC, 10435)),	-- Magistrate Barthilas
 							hqt(83994, name(HEADERS.NPC, 10437)),	-- Nerub'enkan
 							hqt(83995, name(HEADERS.NPC, 10438)),	-- Maleki the Pallid
