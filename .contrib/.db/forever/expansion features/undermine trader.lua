@@ -97,6 +97,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 						groups = sharedData({
 							isDaily = true,
 						},{
+							hqt(83984, name(HEADERS.NPC, 11058)),	-- Ezra Grimm
 							hqt(83985, name(HEADERS.NPC, 10516)),	-- The Unforgiven
 							hqt(83993, name(HEADERS.NPC, 10435)),	-- Magistrate Barthilas
 							hqt(83994, name(HEADERS.NPC, 10437)),	-- Nerub'enkan
