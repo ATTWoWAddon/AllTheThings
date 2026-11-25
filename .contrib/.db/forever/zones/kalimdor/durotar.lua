@@ -580,11 +580,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(97281, {	-- A Simmering Storm
 				qs = 277661,	-- Dull Storm Orb (QS!)
-				coord = { 51.5, 21.6, MAP.DUROTAR },
-				crs = {
-					3118,	-- Dustwind Storm Witch
-					276194,	-- Dustwind Eggtender
-				},
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 7,
@@ -2001,10 +1996,13 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				cr = 3192,	-- Lieutenant Benedict
 				coord = { 59.6, 58.2, MAP.DUROTAR },
 			}),
-			i(275722, {	-- Ukor's Lost Pack (QS!)
-				coord = { 49.5, 56.4, MAP.DUROTAR },
+			i(277661, {	-- Dull Storm Orb (QS!)
+				coord = { 51.5, 21.6, MAP.DUROTAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				cr = 266851,	-- Ukorsbane
+				crs = {
+					3118,	-- Dustwind Storm Witch
+					276194,	-- Dustwind Eggtender
+				},
 			}),
 			i(275724, {	-- Hexed Pendant
 				description = "You can continue to Disenchant these to level your enchanting well beyond skill level 40.",
@@ -2024,6 +2022,11 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					3127,	-- Venomtail Scorpid
 				},
 				description = "Only drops from scorpids in Durotar, excluding Echo Isles and Valley of Trials.",
+			}),
+			i(275722, {	-- Ukor's Lost Pack (QS!)
+				coord = { 49.5, 56.4, MAP.DUROTAR },
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				cr = 266851,	-- Ukorsbane
 			}),
 		}),
 	},
