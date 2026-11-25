@@ -82,6 +82,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 							hqt(83944, name(HEADERS.NPC, 9537)),	-- Hurley Blackbreath
 							hqt(83943, name(HEADERS.NPC, 9033)),	-- General Angerforge
 							hqt(83942, name(HEADERS.NPC, 8983)),	-- Golem Lord Argelmach
+							hqt(83941, name(HEADERS.NPC, 9502)),	-- Phalanx
 							hqt(83940, name(HEADERS.NPC, 9017)),	-- Lord Incendius
 							hqt(83938, name(HEADERS.NPC, 9938)),	-- Magmus
 							hqt(83937, name(HEADERS.NPC, 9019)),	-- Emperor Dagran Thaurissan
