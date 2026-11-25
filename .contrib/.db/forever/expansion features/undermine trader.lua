@@ -98,6 +98,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 							isDaily = true,
 						},{
 							hqt(83993, name(HEADERS.NPC, 10435)),	-- Magistrate Barthilas
+							hqt(83994, name(HEADERS.NPC, 10437)),	-- Nerub'enkan
 						}),
 					}),
 					inst(237, {	-- The Temple of Atal'hakkar
