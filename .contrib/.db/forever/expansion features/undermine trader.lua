@@ -98,6 +98,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 							hqt(83949, name(HEADERS.NPC, 9237)),	-- War Master Voone
 							hqt(83950, name(HEADERS.NPC, 10596)),	-- Mother Smolderweb
 							hqt(83952, name(HEADERS.NPC, 10268)),	-- Gizrul the Slavener
+							hqt(83953, name(HEADERS.NPC, 10220)),	-- Halycon
 							hqt(83954, name(HEADERS.NPC, 9568)),	-- Overlord Wyrmthalak
 						}),
 					}),
