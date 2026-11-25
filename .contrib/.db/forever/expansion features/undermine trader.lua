@@ -77,6 +77,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 						groups = sharedData({
 							isDaily = true,
 						},{
+							hqt(83946, name(HEADERS.NPC, 9056)),	-- Fineous Darkvire
 							hqt(83945, name(HEADERS.NPC, 9016)),	-- Bael'Gar
 							hqt(83940, name(HEADERS.NPC, 9017)),	-- Lord Incendius
 							hqt(83938, name(HEADERS.NPC, 9938)),	-- Magmus
