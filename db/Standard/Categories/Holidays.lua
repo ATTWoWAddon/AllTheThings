@@ -17304,7 +17304,7 @@ ach(40870,{e=242,g={
 title(571,{e=242})}})}}),
 h(-45,{e=242,g={
 q(84143,{coords={
-[71]={{63,50.2}}},e=242,lvl=10,qgs={226683}}),
+[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232405}}),
 q(84144,{coords={
 [71]={{63.2,52.4}}},e=242,lvl=10,qgs={226684},sourceQuests={84143},g={
 o(456767,{coords={
@@ -17522,7 +17522,7 @@ o(469985,{coords={
 [170]={{55.4,10.7}}},description="In the mountains of Hrothgar's Landing in Icecrown, contains the secret ingredient fish and must be visited for quest completion, even if you grab the fish elsewhere.",e=242}),
 crit(70460,{achID=40872,e=242,id=3})}}),
 q(85475,{coords={
-[71]={{63,50.2}}},e=242,lvl=10,qgs={232406,232408,232410},sourceQuests={85195}}),
+[71]={{63,50.2}}},e=242,lvl=10,qgs={232405,232406,232408,232410},sourceQuests={85195}}),
 q(85476,{coords={
 [71]={{63.2,52.4}}},description="Find clues in the Ruins of Uldum, by a rock to the east of Dunemaul Compound, to the left of Zul'Farakk's entrance, then talk to Yennu in the Gadgetzan inn.",e=242,lvl=10,qgs={226684},qis={231808,231819,231820},sourceQuests={85475},g={
 o(476815,{coords={
@@ -17589,7 +17589,7 @@ o(467075,{coords={
 i(229199,{e=242})}}),
 crit(70452,{achID=40871,e=242,id=1})}}),
 q(83832,{coords={
-[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232404,232407},sourceQuests={83831}}),
+[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232404,232405,232407},sourceQuests={83831}}),
 q(83825,{coords={
 [71]={{63.1,52}}},e=242,lvl=10,qgs={231433},sourceQuests={83832},g={
 i(226241,{b=1,e=242,questID=83824,spellID=458507}),
@@ -17631,7 +17631,7 @@ i(228755,{e=242})}}),
 p(4614,{b=1,e=242,itemID=228740,npcID=229779,spellID=462942}),
 crit(69853,{achID=40871,e=242,id=3})}}),
 q(84435,{coords={
-[71]={{63,50.2}}},description="Speak to Lashk by the story time stage, locate Nola's Last Wish south of Tortaka Refuge in Vol'Dun, then used it to summon and speak to Scrollsage Nola's spirit at the underwater Tortollan wedding west of Atal'Dazar.",e=242,lvl=10,qgs={226683,232406,232407},qis={228302},sourceQuests={83831},g={
+[71]={{63,50.2}}},description="Speak to Lashk by the story time stage, locate Nola's Last Wish south of Tortaka Refuge in Vol'Dun, then used it to summon and speak to Scrollsage Nola's spirit at the underwater Tortollan wedding west of Atal'Dazar.",e=242,lvl=10,qgs={226683,232405,232406,232407},qis={228302},sourceQuests={83831},g={
 n(229102,{coords={
 [71]={{63.9,53.5}}},description="Near the story time stage.",e=242}),
 o(463104,{coords={
@@ -17641,7 +17641,7 @@ n(229103,{coords={
 [862]={{24.4,44.4}}},description="Use Nola's Last Wish to summon and speak to at the underwater Tortollan wedding west of Atal'Dazar.",e=242}),
 crit(69852,{achID=40871,e=242,id=5})}}),
 q(84932,{coords={
-[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232406,232408},sourceQuests={83831}}),
+[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232405,232406,232408},sourceQuests={83831}}),
 q(84933,{coords={
 [15]={{33.1,53}},
 [36]={{61.4,28.7}},
@@ -17650,7 +17650,7 @@ q(84933,{coords={
 [241]={{38.3,49.1}}},description="Summon Voidfire with the provided whistle then talk to him in the following locations:\nNear the Ruins of Thaurissan in the Burning Steppes (61.4, 28.7)\nNear the Scar of the Worldbreaker in the Badlands (33.1, 53.0)\nNear the Twilight Breach north of Victor's Point in the Twilight Highlands (38.3, 49.1)\nIn the Quel'Dormir Gardens by the Ruins of Vash'jir in the Shimmering Expanse (38.8, 66.9)",e=242,lvl=10,qgs={231029},qis={231292},sourceQuests={84932},g={
 crit(70454,{achID=40871,e=242,id=6})}}),
 q(84923,{coords={
-[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232407,232408},sourceQuests={83831}}),
+[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232405,232407,232408},sourceQuests={83831}}),
 q(84924,{coords={
 [71]={{64.2,51.3}}},description="Interact with four feathers hidden around Spires of Arak, Shattrath, Nagrand and Frostfire Ridge in Draenor.",e=242,lvl=10,qgs={228273},qis={229958},sourceQuests={84923},g={
 o(469568,{coords={
@@ -17667,7 +17667,7 @@ o(469574,{coords={
 i(229411,{e=242,spellID=462610})}}),
 crit(70455,{achID=40871,e=242,id=7})}}),
 q(84506,{coords={
-[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232407,232408},sourceQuests={83831}}),
+[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232405,232407,232408},sourceQuests={83831}}),
 q(84469,{coords={
 [71]={{62.2,49.7}}},description="Interact with the Jumping Spider in the Bamboo Wilds in Jade Forest and the Summit Kid atop Neverest Pinnacl in Kun'Lai Summit.",e=242,lvl=10,qgs={228276},qis={228328},sourceQuests={84506},g={
 o(464213,{coords={
@@ -17676,7 +17676,7 @@ o(464218,{coords={
 [379]={{44.4,52.5}}},description="Atop Neverest Pinnacle in Kun'Lai Summit.",e=242}),
 crit(69851,{achID=40871,e=242,id=8})}}),
 q(85477,{coords={
-[71]={{63,50.2}}},description="Open the Lost & Found box nest to Alyx then return the items to visitors around the anniversary grounds.",e=242,lvl=10,qgs={226683,232408},qis={231810},sourceQuests={83831},g={
+[71]={{63,50.2}}},description="Open the Lost & Found box nest to Alyx then return the items to visitors around the anniversary grounds.",e=242,lvl=10,qgs={226683,232405,232408},qis={231810},sourceQuests={83831},g={
 o(477139,{coords={
 [71]={{63,50.2}}},e=242,g={
 i(231761,{description="Return this to Mankrik, found by Bartender Bob's stall to the right of the Story Time stage.",e=242}),
@@ -17696,7 +17696,7 @@ n(228262,{coords={
 [71]={{63.1,52}}},e=242,providers={{"i",231765}}}),
 crit(70453,{achID=40871,e=242,id=4})}}),
 q(84985,{coords={
-[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232408,232410},sourceQuests={83831}}),
+[71]={{63,50.2}}},e=242,lvl=10,qgs={226683,232405,232408,232410},sourceQuests={83831}}),
 q(84912,{coords={
 [1565]={{41.5,44.8}}},description="Collect the Mask of the Trickster and the Play Script from on and behind the stage, and the Prop Sword and Conductor's Baton from near the venue entrance.",e=242,lvl=10,qgs={171743},sourceQuests={84985},g={
 i(229387,{e=242,spellID=462610}),

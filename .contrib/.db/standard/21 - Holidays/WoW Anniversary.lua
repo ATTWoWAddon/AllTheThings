@@ -2657,7 +2657,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					n(QUESTS, {
 						-- Tutorial Questline
 						q(84143, {	-- Lost and Busy
-							qg = 226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+							qgs = {
+								226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+								232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
+							},
 							coord = { 63.0, 50.2, TANARIS },
 						}),
 						q(84144, {	-- Tat Big Meanie
@@ -3094,6 +3097,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						q(85475, {	-- Secret in the Sands
 							sourceQuest = 85195,	-- Pirate Gastronomy
 							qgs = {
+								232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
 								232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 								232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 								232410,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Chief Temporary Agent of Timelines and Services>
@@ -3249,6 +3253,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							qgs = {
 								226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 								232404,	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
+								232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
 								232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 							},
 							coord = { 63.0, 50.2, TANARIS },
@@ -3347,6 +3352,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							sourceQuest = 83831,	-- Guest Relations Intro HQT
 							qgs = {
 								226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+								232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
 								232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 								232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 							},
@@ -3373,6 +3379,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							sourceQuest = 83831,	-- Guest Relations Intro HQT
 							qgs = {
 								226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+								232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
 								232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 								232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 							},
@@ -3396,6 +3403,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							sourceQuest = 83831,	-- Guest Relations Intro HQT
 							qgs = {
 								226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+								232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
 								232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 								232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 							},
@@ -3435,6 +3443,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							sourceQuest = 83831,	-- Guest Relations Intro HQT
 							qgs = {
 								226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+								232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
 								232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 								232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 							},
@@ -3463,6 +3472,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							sourceQuest = 83831,	-- Guest Relations Intro HQT
 							qgs = {
 								226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+								232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
 								232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 							},
 							coord = { 63.0, 50.2, TANARIS },
@@ -3507,6 +3517,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							sourceQuest = 83831,	-- Guest Relations Intro HQT
 							qgs = {
 								226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
+								232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
 								232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 								232410,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Chief Temporary Agent of Timelines and Services>
 							},
