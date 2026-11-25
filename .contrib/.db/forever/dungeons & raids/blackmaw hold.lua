@@ -97,6 +97,18 @@ instanceroot(2974, {	-- Blackmaw Hold
 					i(260215),	-- Wild Malleus
 				},
 			}),
+			q(92067, {	-- Feeding Time!
+				qg = 249717,	-- Flesh-Eating Lasher
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				repeatable = true,
+				lvl = 45,
+				groups = {
+					objective(1, {	-- 0/1 Fel-Tainted Flesh
+						provider = { "i", 249695 },	-- Fel-Tainted Flesh
+					}),
+					i(249900),	-- Regurgitated Seed Pod
+				},
+			}),
 			q(92344, {	-- Get to the Roots of It
 				sourceQuest = 92345,	-- Beneath Nordrassil
 				qg = 4217,	-- Mathrengyl Bearwalker
@@ -140,11 +152,24 @@ instanceroot(2974, {	-- Blackmaw Hold
 			}),
 		}),
 		n(ZONE_DROPS, {
+			i(249695),	-- Fel-Tainted Flesh
 			i(252893, {	-- Pattern: Timbermaw Tunic (RECIPE!)
 				cr = 258516,	-- Blackmaw Druid
 			}),
 			i(251453, {	-- Plans: Breastplate of Salvation (RECIPE!)
 				cr = 247248,	-- Legashi Summoner
+			}),
+			i(287036, {	-- Satyr's Touch
+				maps = { MAP.AZSHARA },
+				crs = {
+					247235,	-- Legashi Subjugator
+					247248,	-- Legashi Summoner
+					255247,	-- Swarming Imp
+					255347,	-- Legashi Slayer
+					258668,	-- Legashi Ritualist
+					268864,	-- Legashi Plaguebringer
+					272307,	-- Legashi Satyr
+				},
 			}),
 		}),
 		e(3315, {	-- Withermaw

@@ -7770,7 +7770,6 @@ i(249524),	-- Formula: Enchant Bracer - Superior Agility
 i(249692),	-- Head of Varrox Bleakhoof
 i(249693),	-- Totem of Ursol
 i(249694),	-- Totem of Ursoc
-i(249695),	-- Fel-Tainted Flesh
 i(249696),	-- Tusks of the Unbroken
 i(249697),	-- Claws of the Great Bear
 i(249698),	-- Feathered Charm Necklace
@@ -7784,7 +7783,6 @@ i(249802),	-- Grainy Fruit Pulp
 i(249803),	-- Tangy Fruit Pulp
 i(249883),	-- Recipe: Sunny Tea
 i(249884),	-- Recipe: Sage's Tea
-i(249900),	-- Regurgitated Seed Pod
 i(250101),	-- Summit Guardian Polearm
 i(250174),	-- Recipe: Soaring Pamplona
 i(250175),	-- Recipe: Bat Hachee

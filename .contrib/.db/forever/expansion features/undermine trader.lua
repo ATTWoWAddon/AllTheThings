@@ -59,6 +59,19 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 					add(results, "");
 				end]],
 				groups = {
+					inst(2974, {	-- Blackmaw Hold
+						groups = sharedData({
+							isDaily = true,
+						},{
+							hqt(96193, name(HEADERS.NPC, 247195)),	-- Withermaw
+							hqt(96192, name(HEADERS.NPC, 247206)),	-- Impaan the Imprisoner
+							hqt(96191, name(HEADERS.NPC, 247198)),	-- Bonesnout the Unbroken
+							hqt(96196, name(HEADERS.NPC, 247231)),	-- Unbound Spirit
+							hqt(96195, name(HEADERS.NPC, 247209)),	-- Elder Shaman Bloodmane
+							hqt(96194, name(HEADERS.NPC, 247207)),	-- Blackmaw Behemoth
+							hqt(96197, name(HEADERS.NPC, 247234)),	-- Varrox Bleakhoof
+						}),
+					}),
 					inst(228, {	-- Blackrock Depths
 						mapID = MAP.BLACKROCK_DEPTHS,
 						groups = sharedData({

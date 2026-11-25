@@ -1463,6 +1463,14 @@ i(211779,{b=1,c={8}})}})}}))),
 h(-825,{
 h(-824,{
 cu(3469,{maps={220,242,250},OnTooltip=function(t,tooltipInfo)if not IsShiftKeyDown()then	tooltipInfo[#tooltipInfo+1]={left="Hold Shift to see the daily boss kills that award this currency.",r=0.6,g=0.8,b=1,wrap=true}return end	local results=t.g if not results then return end	tooltipInfo[#tooltipInfo+1]={left=" "}local function hasQuest(g)for i=1,#g do	local o=g[i] if o.questID or(o.g and hasQuest(o.g))then return true end	end	return false end	local function allSaved(g)for i=1,#g do	local o=g[i] if o.questID then	if not o.saved then return false end	elseif o.g and not o.itemID and not allSaved(o.g)then	return false end	end	return true end	local function add(g,indent)for i=1,#g do	local o=g[i] if o.questID then	tooltipInfo[#tooltipInfo+1]={left=indent..(o.text or o.name or("Quest #"..o.questID)),right=_.GetCompletionIcon(o.saved)}elseif o.g and not o.itemID and hasQuest(o.g)then	if allSaved(o.g)then	tooltipInfo[#tooltipInfo+1]={left=indent..(o.text or o.name or UNKNOWN),right=(COMPLETE or "Complete").." ".._.GetCompletionIcon(true)}else	tooltipInfo[#tooltipInfo+1]={left=indent..(o.text or o.name or UNKNOWN)}add(o.g,indent.."  ")end	end	end	end	add(results,"")end,g={
+inst(2974,{
+hqt(96193,{an="n:247195",isDaily=1}),
+hqt(96192,{an="n:247206",isDaily=1}),
+hqt(96191,{an="n:247198",isDaily=1}),
+hqt(96196,{an="n:247231",isDaily=1}),
+hqt(96195,{an="n:247209",isDaily=1}),
+hqt(96194,{an="n:247207",isDaily=1}),
+hqt(96197,{an="n:247234",isDaily=1})}),
 inst(228,{mapID=242,g={
 hqt(83938,{an="n:9938",isDaily=1}),
 hqt(83937,{an="n:9019",isDaily=1})}}),
