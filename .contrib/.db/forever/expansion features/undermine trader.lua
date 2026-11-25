@@ -92,6 +92,14 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 							hqt(83954, name(HEADERS.NPC, 9568)),	-- Overlord Wyrmthalak
 						}),
 					}),
+					inst(236, {	-- Stratholme
+						mapID = MAP.STRATHOLME,
+						groups = sharedData({
+							isDaily = true,
+						},{
+							hqt(83993, name(HEADERS.NPC, 10435)),	-- Magistrate Barthilas
+						}),
+					}),
 					inst(237, {	-- The Temple of Atal'hakkar
 						mapID = MAP.SUNKEN_TEMPLE,
 						groups = sharedData({

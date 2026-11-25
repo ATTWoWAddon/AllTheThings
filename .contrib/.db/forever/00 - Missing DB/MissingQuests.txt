@@ -986,7 +986,6 @@ q(83988),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83990),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83991),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83992),	-- TBC:	 WOTLK:	 CATA:	 MOP:
-q(83993),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83994),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83995),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83996),	-- TBC:	 WOTLK:	 CATA:	 MOP:
