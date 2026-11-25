@@ -297,14 +297,16 @@ function app.ClearSounds(tableName)
 end
 
 -- Note that any enabled sound table will completely replace the Default sounds for that table
+-- The numbers are sounds of the game, which older clients don't have. Those use the Default sounds instead.
+local HasModernSounds, HasPandariaSounds = app.GameBuildVersion >= 110000, app.GameBuildVersion >= 50000;	-- Forever is neither
 local AprilFoolsSoundPack = api:CreateSoundPack("April Fools Sounds", {
-	COMPLETE = {
+	COMPLETE = HasModernSounds and {
 		49371,
 		49372,
-	},
-	DEATH = {
+	} or nil,
+	DEATH = HasPandariaSounds and {
 		20278,
-	},
+	} or nil,
 	FANFARE = {
 		app.asset("ffdamnson.ogg"),
 		app.asset("ffanime.ogg"),
@@ -313,18 +315,18 @@ local AprilFoolsSoundPack = api:CreateSoundPack("April Fools Sounds", {
 		app.asset("ffwow.ogg"),
 		app.asset("ffnice.ogg"),
 	},
-	MOUNTFANFARE = {
+	MOUNTFANFARE = HasModernSounds and {
 		108419,
-	},
-	RAREFIND = {
+	} or nil,
+	RAREFIND = HasModernSounds and {
 		256849,
-	},
-	REMOVE = {
+	} or nil,
+	REMOVE = HasPandariaSounds and {
 		24272,
-	},
-	REPORT = {
+	} or nil,
+	REPORT = HasModernSounds and {
 		161694,
-	},
+	} or nil,
 });
 
 local StartupSpecialSoundPack
