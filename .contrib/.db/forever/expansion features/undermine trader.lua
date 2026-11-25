@@ -79,6 +79,7 @@ root(ROOTS.ExpansionFeatures, n(UNDERMINE_TRADER, {
 						},{
 							hqt(83946, name(HEADERS.NPC, 9056)),	-- Fineous Darkvire
 							hqt(83945, name(HEADERS.NPC, 9016)),	-- Bael'Gar
+							hqt(83944, name(HEADERS.NPC, 9537)),	-- Hurley Blackbreath
 							hqt(83943, name(HEADERS.NPC, 9033)),	-- General Angerforge
 							hqt(83942, name(HEADERS.NPC, 8983)),	-- Golem Lord Argelmach
 							hqt(83940, name(HEADERS.NPC, 9017)),	-- Lord Incendius
