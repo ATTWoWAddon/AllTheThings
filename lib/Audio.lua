@@ -102,12 +102,33 @@ api:CreateSoundPack("Default (With Report Sounds)", {
 	},
 });
 
--- The types of sounds which a Sound Pack can have
-api.SoundTypes = { "COMPLETE", "FANFARE", "MOUNTFANFARE", "REMOVE", "RAREFIND", "REPORT", "DEATH" };
--- Returns the sounds which are used for the type by the active Sound Pack, and whether they're the default ones
+-- Returns the Sound Pack which was chosen for the type (or nil), if it's still available
+function api:GetSoundPackForType(soundType)
+	local names = AllTheThingsSavedVariables and AllTheThingsSavedVariables.SoundPackByType;
+	return names and SoundPacks[names[soundType]];
+end
+-- Chooses a Sound Pack for a type of sounds by its name, or the active Sound Pack again with nil
+function api:SetSoundPackForType(soundType, name)
+	if not DefaultSoundPack[soundType] then
+		error("Sound type '" .. tostring(soundType) .. "' is not valid");
+	end
+	if name and not SoundPacks[name] then
+		error("SoundPack '" .. tostring(name) .. "' not found. Use AllTheThings.Audio:CreateSoundPack first!");
+	end
+	local names = AllTheThingsSavedVariables.SoundPackByType;
+	if not names then
+		names = {};
+		AllTheThingsSavedVariables.SoundPackByType = names;
+	end
+	names[soundType] = name;
+	for i,handler in ipairs(EventHandlers) do
+		pcall(handler, "Activated", CurrentSoundPack);
+	end
+end
+-- Returns the sounds which are used for the type, and whether they're the default ones because the Sound Pack has none
 function api:GetActiveSounds(soundType)
-	local sounds = CurrentSoundPack[soundType];
-	if sounds then return sounds, CurrentSoundPack == DefaultSoundPack; end
+	local sounds = (api:GetSoundPackForType(soundType) or CurrentSoundPack)[soundType];
+	if sounds then return sounds, false; end
 	return DefaultSoundPack[soundType] or {}, true;
 end
 -- Plays a sound to test it, regardless of the settings, and stops the one which was tested before
@@ -130,7 +151,7 @@ local function PlayAudio(soundType, setting)
 		-- Don't spam the users. It's nice sometimes, but let's put a delay of at least 1 second on there.
 		local now = time();
 		if SoundDelays[soundType] < now then
-			local targetAudio = CurrentSoundPack[soundType] or DefaultSoundPack[soundType];
+			local targetAudio = api:GetActiveSounds(soundType);
 			if targetAudio then
 				local audioCount = #targetAudio;
 				if audioCount > 0 then

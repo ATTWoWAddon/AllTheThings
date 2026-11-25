@@ -1,9 +1,9 @@
 createLocalizationString({
-	readable = "Test Sounds",
+	readable = "Sounds",
 	constant = "AUDIO_TEST_LABEL",
 	export = true,
 	text = {
-		en = "Test Sounds",
+		en = "Sounds",
 		-- TODO: de = "",
 		-- TODO: es = "",
 		-- TODO: mx = "",
