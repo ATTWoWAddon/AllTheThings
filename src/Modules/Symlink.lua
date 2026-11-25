@@ -1253,15 +1253,20 @@ do
 	end
 	api.GetReferencesForGroup = GetReferencesForGroup
 
+	-- The header is only hidden by its setting, so popouts which are already open follow it as well
+	local function UpdateReferencesHeader(data)
+		data.visible = app.Settings:GetTooltipSetting("Popout:AvailableFrom") and true or false
+		return true
+	end
+
 	-- Popout: add a header listing the groups which select this Thing's (or its header's) symselector
 	app.AddEventHandler("OnNewPopoutGroup", function(group)
-		if not app.Settings:GetTooltipSetting("Popout:AvailableFrom") then return end
 		local refs = GetReferencesForGroup(group)
 		if not refs then return end
 		local header = app.CreateRawText(app.L.SYMSELECTOR_REFERENCES or "Also Available From", {
 			description = app.L.SYMSELECTOR_REFERENCES_DESC,
 			icon = 133784,
-			OnUpdate = app.AlwaysShowUpdate,
+			OnUpdate = UpdateReferencesHeader,
 			OnClick = app.UI.OnClick.IgnoreRightClick,
 			sourceIgnored = true,
 			skipFull = true,
@@ -1281,6 +1286,7 @@ do
 				clone.parent = header
 				-- without contents the row would be hidden as empty
 				clone.OnUpdate = app.AlwaysShowUpdate
+				clone.visible = true
 				header.g[#header.g + 1] = clone
 			end
 		end
