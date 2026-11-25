@@ -85,9 +85,7 @@ settings.CreateOptionSections(child, {
 			multi = true,
 			isSelected = function(name) return app.Audio:IsSoundPackEnabled(name); end,
 			toggle = function(name)
-				local enabled = not app.Audio:IsSoundPackEnabled(name);
-				app.Audio:SetSoundPackEnabled(name, enabled);
-				if enabled then app.Audio:PlayFanfare(); end
+				app.Audio:SetSoundPackEnabled(name, not app.Audio:IsSoundPackEnabled(name));
 			end,
 			get = GetSoundpackText,
 			getText = GetSoundpackText,
