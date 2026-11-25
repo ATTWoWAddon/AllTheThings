@@ -934,7 +934,6 @@ q(83936),	-- 	 CLASSIC:Dalton's Quest	 TBC:	 WOTLK:	 CATA:	 MOP:
 q(83937),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83938),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83939),	-- TBC:	 WOTLK:	 CATA:	 MOP:
-q(83948),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83951),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83953),	-- TBC:	 WOTLK:	 CATA:	 MOP:
 q(83955),	-- TBC:	 WOTLK:	 CATA:	 MOP:
