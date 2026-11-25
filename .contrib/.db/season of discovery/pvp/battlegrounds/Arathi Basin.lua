@@ -84,15 +84,10 @@ battleground(ARATHI_BASIN, {
 			q(8374, {	-- Claiming Arathi Basin [Level 20]
 				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
-					8384,	-- Claiming Arathi Basin [Level 20]
-					8391,	-- Claiming Arathi Basin [Level 30]
 					8393,	-- Claiming Arathi Basin [Level 30]
-					8392,	-- Claiming Arathi Basin [Level 40]
 					8394,	-- Claiming Arathi Basin [Level 40]
 					8395,	-- Claiming Arathi Basin [Level 50]
-					8397,	-- Claiming Arathi Basin [Level 50]
 					8396,	-- Claiming Arathi Basin [Level 60]
-					8398,	-- Claiming Arathi Basin [Level 60]
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = {
@@ -108,18 +103,6 @@ battleground(ARATHI_BASIN, {
 				lvl = { 20, 29 },
 			}),
 			q(8384, {	-- Claiming Arathi Basin [Level 20]
-				altQuests = {
-					8374,	-- Claiming Arathi Basin [Level 20]
-					8384,	-- Claiming Arathi Basin [Level 20]
-					8391,	-- Claiming Arathi Basin [Level 30]
-					8393,	-- Claiming Arathi Basin [Level 30]
-					8392,	-- Claiming Arathi Basin [Level 40]
-					8394,	-- Claiming Arathi Basin [Level 40]
-					8395,	-- Claiming Arathi Basin [Level 50]
-					8397,	-- Claiming Arathi Basin [Level 50]
-					8396,	-- Claiming Arathi Basin [Level 60]
-					8398,	-- Claiming Arathi Basin [Level 60]
-				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = {
 					{ 39.4, 82.2, ALTERAC_MOUNTAINS },
@@ -131,21 +114,10 @@ battleground(ARATHI_BASIN, {
 				},
 				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
+				repeatable = true,
 				lvl = { 20, 29 },
 			}),
 			q(8391, {	-- Claiming Arathi Basin [Level 30]
-				altQuests = {
-					8374,	-- Claiming Arathi Basin [Level 20]
-					8384,	-- Claiming Arathi Basin [Level 20]
-					8391,	-- Claiming Arathi Basin [Level 30]
-					8393,	-- Claiming Arathi Basin [Level 30]
-					8392,	-- Claiming Arathi Basin [Level 40]
-					8394,	-- Claiming Arathi Basin [Level 40]
-					8395,	-- Claiming Arathi Basin [Level 50]
-					8397,	-- Claiming Arathi Basin [Level 50]
-					8396,	-- Claiming Arathi Basin [Level 60]
-					8398,	-- Claiming Arathi Basin [Level 60]
-				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = {
 					{ 39.4, 82.2, ALTERAC_MOUNTAINS },
@@ -157,20 +129,16 @@ battleground(ARATHI_BASIN, {
 				},
 				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
+				repeatable = true,
 				lvl = { 30, 39 },
 			}),
 			q(8393, {	-- Claiming Arathi Basin [Level 30]
 				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
-					8384,	-- Claiming Arathi Basin [Level 20]
-					8391,	-- Claiming Arathi Basin [Level 30]
 					8393,	-- Claiming Arathi Basin [Level 30]
-					8392,	-- Claiming Arathi Basin [Level 40]
 					8394,	-- Claiming Arathi Basin [Level 40]
 					8395,	-- Claiming Arathi Basin [Level 50]
-					8397,	-- Claiming Arathi Basin [Level 50]
 					8396,	-- Claiming Arathi Basin [Level 60]
-					8398,	-- Claiming Arathi Basin [Level 60]
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = {
@@ -186,18 +154,6 @@ battleground(ARATHI_BASIN, {
 				lvl = { 30, 39 },
 			}),
 			q(8392, {	-- Claiming Arathi Basin [Level 40]
-				altQuests = {
-					8374,	-- Claiming Arathi Basin [Level 20]
-					8384,	-- Claiming Arathi Basin [Level 20]
-					8391,	-- Claiming Arathi Basin [Level 30]
-					8393,	-- Claiming Arathi Basin [Level 30]
-					8392,	-- Claiming Arathi Basin [Level 40]
-					8394,	-- Claiming Arathi Basin [Level 40]
-					8395,	-- Claiming Arathi Basin [Level 50]
-					8397,	-- Claiming Arathi Basin [Level 50]
-					8396,	-- Claiming Arathi Basin [Level 60]
-					8398,	-- Claiming Arathi Basin [Level 60]
-				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = {
 					{ 39.4, 82.2, ALTERAC_MOUNTAINS },
@@ -209,20 +165,16 @@ battleground(ARATHI_BASIN, {
 				},
 				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
+				repeatable = true,
 				lvl = { 40, 49 },
 			}),
 			q(8394, {	-- Claiming Arathi Basin [Level 40]
 				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
-					8384,	-- Claiming Arathi Basin [Level 20]
-					8391,	-- Claiming Arathi Basin [Level 30]
 					8393,	-- Claiming Arathi Basin [Level 30]
-					8392,	-- Claiming Arathi Basin [Level 40]
 					8394,	-- Claiming Arathi Basin [Level 40]
 					8395,	-- Claiming Arathi Basin [Level 50]
-					8397,	-- Claiming Arathi Basin [Level 50]
 					8396,	-- Claiming Arathi Basin [Level 60]
-					8398,	-- Claiming Arathi Basin [Level 60]
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = {
@@ -240,15 +192,10 @@ battleground(ARATHI_BASIN, {
 			q(8395, {	-- Claiming Arathi Basin [Level 50]
 				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
-					8384,	-- Claiming Arathi Basin [Level 20]
-					8391,	-- Claiming Arathi Basin [Level 30]
 					8393,	-- Claiming Arathi Basin [Level 30]
-					8392,	-- Claiming Arathi Basin [Level 40]
 					8394,	-- Claiming Arathi Basin [Level 40]
 					8395,	-- Claiming Arathi Basin [Level 50]
-					8397,	-- Claiming Arathi Basin [Level 50]
 					8396,	-- Claiming Arathi Basin [Level 60]
-					8398,	-- Claiming Arathi Basin [Level 60]
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = {
@@ -264,18 +211,6 @@ battleground(ARATHI_BASIN, {
 				lvl = { 50, 59 },
 			}),
 			q(8397, {	-- Claiming Arathi Basin [Level 50]
-				altQuests = {
-					8374,	-- Claiming Arathi Basin [Level 20]
-					8384,	-- Claiming Arathi Basin [Level 20]
-					8391,	-- Claiming Arathi Basin [Level 30]
-					8393,	-- Claiming Arathi Basin [Level 30]
-					8392,	-- Claiming Arathi Basin [Level 40]
-					8394,	-- Claiming Arathi Basin [Level 40]
-					8395,	-- Claiming Arathi Basin [Level 50]
-					8397,	-- Claiming Arathi Basin [Level 50]
-					8396,	-- Claiming Arathi Basin [Level 60]
-					8398,	-- Claiming Arathi Basin [Level 60]
-				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = {
 					{ 39.4, 82.2, ALTERAC_MOUNTAINS },
@@ -287,20 +222,16 @@ battleground(ARATHI_BASIN, {
 				},
 				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
+				repeatable = true,
 				lvl = { 50, 59 },
 			}),
 			q(8396, {	-- Claiming Arathi Basin [Level 60]
 				altQuests = {
 					8374,	-- Claiming Arathi Basin [Level 20]
-					8384,	-- Claiming Arathi Basin [Level 20]
-					8391,	-- Claiming Arathi Basin [Level 30]
 					8393,	-- Claiming Arathi Basin [Level 30]
-					8392,	-- Claiming Arathi Basin [Level 40]
 					8394,	-- Claiming Arathi Basin [Level 40]
 					8395,	-- Claiming Arathi Basin [Level 50]
-					8397,	-- Claiming Arathi Basin [Level 50]
 					8396,	-- Claiming Arathi Basin [Level 60]
-					8398,	-- Claiming Arathi Basin [Level 60]
 				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = {
@@ -316,18 +247,6 @@ battleground(ARATHI_BASIN, {
 				lvl = { 60, 69 },
 			}),
 			q(8398, {	-- Claiming Arathi Basin [Level 60]
-				altQuests = {
-					8374,	-- Claiming Arathi Basin [Level 20]
-					8384,	-- Claiming Arathi Basin [Level 20]
-					8391,	-- Claiming Arathi Basin [Level 30]
-					8393,	-- Claiming Arathi Basin [Level 30]
-					8392,	-- Claiming Arathi Basin [Level 40]
-					8394,	-- Claiming Arathi Basin [Level 40]
-					8395,	-- Claiming Arathi Basin [Level 50]
-					8397,	-- Claiming Arathi Basin [Level 50]
-					8396,	-- Claiming Arathi Basin [Level 60]
-					8398,	-- Claiming Arathi Basin [Level 60]
-				},
 				qg = 15351,	-- Alliance Brigadier General
 				coords = {
 					{ 39.4, 82.2, ALTERAC_MOUNTAINS },
@@ -339,20 +258,16 @@ battleground(ARATHI_BASIN, {
 				},
 				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 				races = ALLIANCE_ONLY,
+				repeatable = true,
 				lvl = { 60, 69 },
 			}),
 			q(8370, {	-- Conquering Arathi Basin [Level 20]
 				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
-					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
-					8440,	-- Conquering Arathi Basin [Level 30]
 					8437,	-- Conquering Arathi Basin [Level 40]
-					8441,	-- Conquering Arathi Basin [Level 40]
 					8438,	-- Conquering Arathi Basin [Level 50]
-					8442,	-- Conquering Arathi Basin [Level 50]
 					8439,	-- Conquering Arathi Basin [Level 60]
-					8443,	-- Conquering Arathi Basin [Level 60]
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = {
@@ -368,18 +283,6 @@ battleground(ARATHI_BASIN, {
 				lvl = { 20, 29 },
 			}),
 			q(8390, {	-- Conquering Arathi Basin [Level 20]
-				altQuests = {
-					8370,	-- Conquering Arathi Basin [Level 20]
-					8390,	-- Conquering Arathi Basin [Level 20]
-					8436,	-- Conquering Arathi Basin [Level 30]
-					8440,	-- Conquering Arathi Basin [Level 30]
-					8437,	-- Conquering Arathi Basin [Level 40]
-					8441,	-- Conquering Arathi Basin [Level 40]
-					8438,	-- Conquering Arathi Basin [Level 50]
-					8442,	-- Conquering Arathi Basin [Level 50]
-					8439,	-- Conquering Arathi Basin [Level 60]
-					8443,	-- Conquering Arathi Basin [Level 60]
-				},
 				qg = 15350,	-- Horde Warbringer
 				coords = {
 					{ 63.0, 59.8, ALTERAC_MOUNTAINS },
@@ -391,20 +294,16 @@ battleground(ARATHI_BASIN, {
 				},
 				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
+				repeatable = true,
 				lvl = { 20, 29 },
 			}),
 			q(8436, {	-- Conquering Arathi Basin [Level 30]
 				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
-					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
-					8440,	-- Conquering Arathi Basin [Level 30]
 					8437,	-- Conquering Arathi Basin [Level 40]
-					8441,	-- Conquering Arathi Basin [Level 40]
 					8438,	-- Conquering Arathi Basin [Level 50]
-					8442,	-- Conquering Arathi Basin [Level 50]
 					8439,	-- Conquering Arathi Basin [Level 60]
-					8443,	-- Conquering Arathi Basin [Level 60]
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = {
@@ -420,18 +319,6 @@ battleground(ARATHI_BASIN, {
 				lvl = { 30, 39 },
 			}),
 			q(8440, {	-- Conquering Arathi Basin [Level 30]
-				altQuests = {
-					8370,	-- Conquering Arathi Basin [Level 20]
-					8390,	-- Conquering Arathi Basin [Level 20]
-					8436,	-- Conquering Arathi Basin [Level 30]
-					8440,	-- Conquering Arathi Basin [Level 30]
-					8437,	-- Conquering Arathi Basin [Level 40]
-					8441,	-- Conquering Arathi Basin [Level 40]
-					8438,	-- Conquering Arathi Basin [Level 50]
-					8442,	-- Conquering Arathi Basin [Level 50]
-					8439,	-- Conquering Arathi Basin [Level 60]
-					8443,	-- Conquering Arathi Basin [Level 60]
-				},
 				qg = 15350,	-- Horde Warbringer
 				coords = {
 					{ 63.0, 59.8, ALTERAC_MOUNTAINS },
@@ -443,20 +330,16 @@ battleground(ARATHI_BASIN, {
 				},
 				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
+				repeatable = true,
 				lvl = { 30, 39 },
 			}),
 			q(8437, {	-- Conquering Arathi Basin [Level 40]
 				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
-					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
-					8440,	-- Conquering Arathi Basin [Level 30]
 					8437,	-- Conquering Arathi Basin [Level 40]
-					8441,	-- Conquering Arathi Basin [Level 40]
 					8438,	-- Conquering Arathi Basin [Level 50]
-					8442,	-- Conquering Arathi Basin [Level 50]
 					8439,	-- Conquering Arathi Basin [Level 60]
-					8443,	-- Conquering Arathi Basin [Level 60]
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = {
@@ -472,18 +355,6 @@ battleground(ARATHI_BASIN, {
 				lvl = { 40, 49 },
 			}),
 			q(8441, {	-- Conquering Arathi Basin [Level 40]
-				altQuests = {
-					8370,	-- Conquering Arathi Basin [Level 20]
-					8390,	-- Conquering Arathi Basin [Level 20]
-					8436,	-- Conquering Arathi Basin [Level 30]
-					8440,	-- Conquering Arathi Basin [Level 30]
-					8437,	-- Conquering Arathi Basin [Level 40]
-					8441,	-- Conquering Arathi Basin [Level 40]
-					8438,	-- Conquering Arathi Basin [Level 50]
-					8442,	-- Conquering Arathi Basin [Level 50]
-					8439,	-- Conquering Arathi Basin [Level 60]
-					8443,	-- Conquering Arathi Basin [Level 60]
-				},
 				qg = 15350,	-- Horde Warbringer
 				coords = {
 					{ 63.0, 59.8, ALTERAC_MOUNTAINS },
@@ -495,20 +366,16 @@ battleground(ARATHI_BASIN, {
 				},
 				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
+				repeatable = true,
 				lvl = { 40, 49 },
 			}),
 			q(8438, {	-- Conquering Arathi Basin [Level 50]
 				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
-					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
-					8440,	-- Conquering Arathi Basin [Level 30]
 					8437,	-- Conquering Arathi Basin [Level 40]
-					8441,	-- Conquering Arathi Basin [Level 40]
 					8438,	-- Conquering Arathi Basin [Level 50]
-					8442,	-- Conquering Arathi Basin [Level 50]
 					8439,	-- Conquering Arathi Basin [Level 60]
-					8443,	-- Conquering Arathi Basin [Level 60]
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = {
@@ -524,18 +391,6 @@ battleground(ARATHI_BASIN, {
 				lvl = { 50, 59 },
 			}),
 			q(8442, {	-- Conquering Arathi Basin [Level 50]
-				altQuests = {
-					8370,	-- Conquering Arathi Basin [Level 20]
-					8390,	-- Conquering Arathi Basin [Level 20]
-					8436,	-- Conquering Arathi Basin [Level 30]
-					8440,	-- Conquering Arathi Basin [Level 30]
-					8437,	-- Conquering Arathi Basin [Level 40]
-					8441,	-- Conquering Arathi Basin [Level 40]
-					8438,	-- Conquering Arathi Basin [Level 50]
-					8442,	-- Conquering Arathi Basin [Level 50]
-					8439,	-- Conquering Arathi Basin [Level 60]
-					8443,	-- Conquering Arathi Basin [Level 60]
-				},
 				qg = 15350,	-- Horde Warbringer
 				coords = {
 					{ 63.0, 59.8, ALTERAC_MOUNTAINS },
@@ -547,20 +402,16 @@ battleground(ARATHI_BASIN, {
 				},
 				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
+				repeatable = true,
 				lvl = { 50, 59 },
 			}),
 			q(8439, {	-- Conquering Arathi Basin [Level 60]
 				altQuests = {
 					8370,	-- Conquering Arathi Basin [Level 20]
-					8390,	-- Conquering Arathi Basin [Level 20]
 					8436,	-- Conquering Arathi Basin [Level 30]
-					8440,	-- Conquering Arathi Basin [Level 30]
 					8437,	-- Conquering Arathi Basin [Level 40]
-					8441,	-- Conquering Arathi Basin [Level 40]
 					8438,	-- Conquering Arathi Basin [Level 50]
-					8442,	-- Conquering Arathi Basin [Level 50]
 					8439,	-- Conquering Arathi Basin [Level 60]
-					8443,	-- Conquering Arathi Basin [Level 60]
 				},
 				qg = 15350,	-- Horde Warbringer
 				coords = {
@@ -576,18 +427,6 @@ battleground(ARATHI_BASIN, {
 				lvl = { 60, 69 },
 			}),
 			q(8443, {	-- Conquering Arathi Basin [Level 60]
-				altQuests = {
-					8370,	-- Conquering Arathi Basin [Level 20]
-					8390,	-- Conquering Arathi Basin [Level 20]
-					8436,	-- Conquering Arathi Basin [Level 30]
-					8440,	-- Conquering Arathi Basin [Level 30]
-					8437,	-- Conquering Arathi Basin [Level 40]
-					8441,	-- Conquering Arathi Basin [Level 40]
-					8438,	-- Conquering Arathi Basin [Level 50]
-					8442,	-- Conquering Arathi Basin [Level 50]
-					8439,	-- Conquering Arathi Basin [Level 60]
-					8443,	-- Conquering Arathi Basin [Level 60]
-				},
 				qg = 15350,	-- Horde Warbringer
 				coords = {
 					{ 63.0, 59.8, ALTERAC_MOUNTAINS },
@@ -599,6 +438,7 @@ battleground(ARATHI_BASIN, {
 				},
 				cost = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
 				races = HORDE_ONLY,
+				repeatable = true,
 				lvl = { 60, 69 },
 			}),
 			q(8115, {	-- Control Five Bases (Alliance)
