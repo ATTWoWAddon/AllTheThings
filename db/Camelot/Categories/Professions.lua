@@ -449,7 +449,7 @@ r(20222,{learnedAt=200,requireSkill=20222}),
 h(-88,{requireSkill=20222,g={
 r(12718,{learnedAt=205,requireSkill=20222,skillID=2941}),
 r(12717,{learnedAt=205,requireSkill=20222,skillID=2941}),
-r(8895,{learnedAt=225,requireSkill=20222,skillID=2941}),
+r(8895,{learnedAt=130,requireSkill=20222,skillID=2941}),
 r(12758,{learnedAt=245,requireSkill=20222,skillID=2941})}}),
 flt(50,{requireSkill=20222,g={
 r(12760,{learnedAt=205,requireSkill=20222,skillID=2941}),

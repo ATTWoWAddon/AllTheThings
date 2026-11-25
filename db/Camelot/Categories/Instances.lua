@@ -1075,8 +1075,8 @@ h(-58,{
 n(9499,{
 i(11325,{f=55,spellID=14814})})}),
 h(-56,{
-r(15293,{b=1,description="|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",itemID=11614,learnedAt=270,providers={{"o",173232}},requireSkill=164,skillID=2938}),
-r(15295,{b=1,description="|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room. They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room. When you come across the first split into two rooms you will enter the room on the left. They will be located on the seat behind the bench which is located next to the 3 red jugs.",itemID=11615,learnedAt=280,providers={{"o",173232}},requireSkill=164,skillID=2938}),
+r(15293,{b=1,description="|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables. It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it. This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room. When you walk into the room it will be in the back left corner where in between barrels. There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r. Once you enter the room you will continue straight until you see the ramp. Instead of going down the ramp you will jump off the ledge to the right of the ramp. After landing on the ground you will see the plans located here.",itemID=11614,learnedAt=245,providers={{"o",173232}},requireSkill=164,skillID=2938}),
+r(15295,{b=1,description="|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room. They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room. When you come across the first split into two rooms you will enter the room on the left. They will be located on the seat behind the bench which is located next to the 3 red jugs.",itemID=11615,learnedAt=255,providers={{"o",173232}},requireSkill=164,skillID=2938}),
 r(22704,{description="On the floor next to Golem Lord Argelmach.",itemID=18235,learnedAt=300,providers={{"o",179552}},requireSkill=202,skillID=2941})}),
 h(-63,{
 i(11468),
@@ -1085,7 +1085,7 @@ i(11129),
 i(11269,{crs={8905,8906,8907,8908}}),
 r(19107,{crs={8903},itemID=15781,learnedAt=290,requireSkill=10656,skillID=2945}),
 r(19094,{crs={8898},itemID=15770,learnedAt=270,requireSkill=10656,skillID=2945}),
-r(15294,{crs={9554,10043},itemID=11611,learnedAt=275,requireSkill=9787,skillID=2938}),
+r(15294,{crs={9554,10043},itemID=11611,learnedAt=250,requireSkill=9787,skillID=2938}),
 r(1252364,{awp=16001,b=1,crs={8893},itemID=251467,learnedAt=260,requireSkill=164,skillID=2938}),
 r(19799,{crs={8920},itemID=16049,learnedAt=285,requireSkill=202,skillID=2941}),
 r(19796,{crs={8897},itemID=16048,learnedAt=275,requireSkill=202,skillID=2941}),
@@ -1142,7 +1142,7 @@ i(22257,{b=1,f=52,lvl=52,spellID=1300755}),
 s(164873,22266,{b=1,f=20,lvl=52}),
 s(164877,22271,{b=1,f=5,loc=46,lvl=52})}),
 n(9028,{
-r(15292,{itemID=11610,learnedAt=265,requireSkill=9787,skillID=2938}),
+r(15292,{itemID=11610,learnedAt=240,requireSkill=9787,skillID=2938}),
 s(160311,11722,{f=6,loc=41}),
 s(160309,11702,{f=21,spellID=1300763}),
 s(160310,11703,{f=7,loc=45}),
@@ -1249,7 +1249,7 @@ s(163421,18044,{f=23}),
 s(160317,11735,{f=5,loc=40})}}),
 e(9543,{description="Speak to him to start the encounter.",npcID=9543,g={
 i(11313),
-r(15296,{itemID=11612,learnedAt=285,requireSkill=9788,skillID=2938}),
+r(15296,{itemID=11612,learnedAt=260,requireSkill=9788,skillID=2938}),
 i(2663,{f=113,spellID=14828}),
 i(2662,{f=113,spellID=29415}),
 i(11742,{f=113})}}),
@@ -1388,7 +1388,7 @@ q(97883,{awp=16001,coords={
 [1453]={{78.4,70.6}}},lvl=60,qgs={332},qis={278836},r=2}),
 q(5124,{coords={
 [1452]={{61,38.8}}},cost={{"i",7910,4},{"i",7078,2},{"i",12655,6},{"i",12812,1}},lvl=55,qgs={10637},requireSkill=9788,sourceQuests={5103},g={
-r(16655,{b=1,itemID=12699,learnedAt=290,requireSkill=9788,skillID=2938}),
+r(16655,{b=1,itemID=12699,learnedAt=265,requireSkill=9788,skillID=2938}),
 s(160593,12631,{f=7,loc=44,lvl=53,requireSkill=9788,spellID=7721})}}),
 q(4974,{coords={
 [1454]={{32,37.8}}},lvl=55,qgs={4949},r=1,sourceQuests={4941},g={
@@ -1467,7 +1467,7 @@ q(5127,{coords={
 [1452]={{63.8,73.8}}},learnedAt=275,lvl=55,qgs={10918},requireSkill=9788,sourceQuests={5126},sym={{"select","itemID",9224}},g={
 qo(1,{cost={{"i",12848,1}},crs={10899},providers={{"i",12847}},requireSkill=9788}),
 qo(2,{providers={{"i",12806}},requireSkill=9788}),
-r(16667,{b=1,itemID=12696,learnedAt=285,requireSkill=9788,skillID=2938}),
+r(16667,{b=1,itemID=12696,learnedAt=260,requireSkill=9788,skillID=2938}),
 i(12849,{b=1,requireSkill=9788})}}),
 q(4788,{coords={
 [1446]={{66.8,24}}},lvl=40,qgs={10460},sourceQuests={5065},g={
@@ -1699,7 +1699,7 @@ n(10899,{
 i(18779,{lvl=50,spellID=23231}),
 i(12848,{b=1,description="Found on the rack behind Anvilcrack in Upper Blackrock Spire.",providers={{"o",175970}},spellID=17048}),
 r(16990,{itemID=12834,learnedAt=300,requireSkill=17039,skillID=2938}),
-r(16746,{itemID=12728,learnedAt=300,requireSkill=10658,skillID=2945}),
+r(16746,{itemID=12728,learnedAt=295,requireSkill=10658,skillID=2945}),
 r(16993,{itemID=12837,learnedAt=300,requireSkill=17040,skillID=2938}),
 s(163423,18048,{f=23}),
 s(160992,13502,{f=7,loc=45}),
@@ -2446,7 +2446,7 @@ r(3971,{b=1,itemID=7742,learnedAt=200,requireSkill=202,skillID=2941}),
 r(9269,{b=1,itemID=7560,learnedAt=125,requireSkill=202,skillID=2941}),
 r(9273,{b=1,itemID=7561,learnedAt=165,requireSkill=202,skillID=2941}),
 r(3968,{itemID=4416,learnedAt=195,requireSkill=202,skillID=2941}),
-r(8895,{itemID=7192,learnedAt=225,requireSkill=20222,skillID=2941}),
+r(8895,{itemID=7192,learnedAt=130,requireSkill=20222,skillID=2941}),
 r(3972,{itemID=4417,learnedAt=200,requireSkill=202,skillID=2941}),
 r(3928,{itemID=4408,learnedAt=75,requireSkill=202,skillID=2941}),
 r(3954,{itemID=4412,learnedAt=145,requireSkill=202,skillID=2941}),
@@ -3217,7 +3217,7 @@ s(159003,7718,{f=6,loc=41}),
 s(159996,10330,{f=6,loc=46}),
 crit(116060,{achID=62032,awp=16001,id=7})}),
 n(6575,{
-r(1259349,{awp=16001,itemID=255730,learnedAt=280,requireSkill=129,skillID=2942}),
+r(1259349,{awp=16001,itemID=255730,learnedAt=265,requireSkill=129,skillID=2942}),
 s(165204,23192,{b=1,f=9})})}}),
 h(-364,{attunement={{"i",7146}},lvl=37,g={
 n(4542,{
@@ -3597,7 +3597,7 @@ n(3864,{
 s(158426,6341,{f=1}),
 i(932,{f=113})}),
 n(3886,{
-r(1263031,{awp=16001,itemID=273096,learnedAt=140,requireSkill=165,skillID=2945}),
+r(1263031,{awp=16001,itemID=273096,learnedAt=125,requireSkill=165,skillID=2945}),
 s(156251,1292,{f=21}),
 s(158619,6633,{f=25}),
 s(158376,6226,{f=4,loc=42})}),
@@ -3618,7 +3618,7 @@ s(158621,6642,{b=1,f=6,loc=42,lvl=22})}})}),
 n(4279,{
 s(158412,6318,{f=28}),
 s(158413,6319,{f=5,loc=45,spellID=1292149}),
-s(308574,273645,{awp=16001,b=1,f=4,loc=40,lvl=21,spellID=1292268})}),
+s(308574,273645,{awp=16001,b=1,f=2,loc=40,lvl=21,spellID=1292268})}),
 n(4274,{
 s(157191,3230,{f=5,loc=43}),
 s(158425,6340,{f=3}),
@@ -3804,7 +3804,7 @@ i(13351),
 s(309685,276419,{awp=16001,b=1,f=23,lvl=55}),
 s(309670,276404,{awp=16001,b=1,f=23,lvl=55}),
 s(309669,276403,{awp=16001,b=1,f=24,lvl=55}),
-r(16983,{description="You must be a Blacksmith in order to loot this from the Plans on the floor.",itemID=12827,learnedAt=285,requireSkill=17040,skillID=2938})}}),
+r(16983,{description="You must be a Blacksmith in order to loot this from the Plans on the floor.",itemID=12827,learnedAt=260,requireSkill=17040,skillID=2938})}}),
 e(446,{npcID=10997,g={
 r(16995,{itemID=12839,learnedAt=300,requireSkill=9787,skillID=2938}),
 s(164929,22406,{b=1,f=28,lvl=56}),
@@ -3880,7 +3880,7 @@ i(13350),
 s(309688,276434,{awp=16001,b=1,f=6,loc=40,lvl=55}),
 s(309694,276456,{awp=16001,b=1,f=8,lvl=55}),
 s(309693,276455,{awp=16001,b=1,f=5,loc=44,lvl=55}),
-r(16985,{description="You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",itemID=12830,learnedAt=290,requireSkill=17039,skillID=2938})}}),
+r(16985,{description="You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",itemID=12830,learnedAt=265,requireSkill=17039,skillID=2938})}}),
 e(451,{npcID=10436,g={
 s(161006,13534,{f=27}),
 s(163659,18729,{f=32}),
@@ -4160,7 +4160,8 @@ s(308913,274607,{b=1,f=6,loc=41,lvl=36})}),
 n(264172,{description="This is a rare spawn that is not always present.",g={
 s(317390,286662,{b=1,f=4,loc=44,lvl=35}),
 s(317389,286658,{b=1,f=6,loc=45,lvl=35})}})}}),
-inst(3001,{awp=16001,icon=409547,lvl=58,zoneTextAreaID=16667,g={
+inst(3001,{awp=16001,coords={
+[1449]={{48.2,6}}},icon=409547,lvl=58,zoneTextAreaID=16667,g={
 h(-45,{
 q(95928,{awp=16001,coords={
 [1412]={{34.8,22}}},lvl=55,qgs={263445},r=1,g={
@@ -4202,18 +4203,56 @@ qo(1,{providers={{"i",271771}}}),
 s(311451,279908,{b=1,f=21}),
 s(311449,279910,{b=1,f=29}),
 s(311453,279912,{b=1,f=1})}})}),
-e(3498,{npcID=253201}),
-e(3499,{crs={253214,262688}}),
-e(3500,{npcID=261812}),
-e(3501,{npcID=261813}),
+h(-63,{
+s(317879,287038,{crs={253214,261786,261898},f=4,loc=47,lvl=54}),
+s(317872,287041,{crs={253214,261786,262684,262685},f=6,loc=43,lvl=55}),
+i(287043,{crs={253214,262689},f=52,lvl=55,spellID=1308520}),
+s(317885,287045,{crs={253214,261786,261934,262300,262689},f=21,lvl=56,spellID=1325180})}),
+e(3498,{npcID=253201,g={
+i(280009,{b=1,f=51,lvl=58}),
+s(311365,280010,{b=1,f=7,loc=43,lvl=58}),
+s(311366,280011,{b=1,f=4,loc=45,lvl=58})}}),
+e(3499,{crs={253214,261811,262688},g={
+s(311367,280012,{b=1,f=25,lvl=58}),
+s(311368,280013,{b=1,f=6,loc=42,lvl=58}),
+s(311369,280014,{b=1,f=8,lvl=58})}}),
+e(3500,{npcID=261812,g={
+s(311373,280018,{b=1,f=24,lvl=58}),
+s(311374,280019,{b=1,f=6,loc=40,lvl=58}),
+s(311375,280020,{b=1,f=31,lvl=58})}}),
+e(3501,{npcID=261813,g={
+i(280015,{b=1,f=52,lvl=58}),
+s(311371,280016,{b=1,f=5,loc=42,lvl=58,spellID=1320726}),
+s(311372,280017,{b=1,f=6,loc=47,lvl=58})}}),
 e(3507,{npcID=262127,g={
+s(311394,280045,{b=1,f=3,lvl=58}),
+s(311377,280022,{b=1,f=25,lvl=58}),
+s(311376,280021,{b=1,f=20,lvl=58}),
 i(285951)}}),
-e(3503,{npcID=261974}),
-e(3597,{npcID=262297}),
-e(3505,{npcID=262081}),
-e(3600,{npcID=272561}),
+e(3503,{npcID=261974,g={
+s(311383,280028,{b=1,f=7,loc=44,lvl=58}),
+s(311384,280029,{b=1,f=21,lvl=58})}}),
+e(3504,{npcID=261993,g={
+s(311381,280026,{b=1,f=6,loc=44,lvl=58}),
+s(311382,280027,{b=1,f=7,loc=42,lvl=58})}}),
+e(3597,{npcID=262297,g={
+s(311381,280026,{b=1,f=6,loc=44,lvl=58}),
+s(311382,280027,{b=1,f=7,loc=42,lvl=58})}}),
+e(3505,{npcID=262081,g={
+s(311386,280031,{b=1,f=27,lvl=58}),
+i(280032,{b=1,f=53,lvl=58,spellID=1311505})}}),
+e(3600,{npcID=272561,g={
+s(311381,280026,{b=1,f=6,loc=44,lvl=58}),
+s(311382,280027,{b=1,f=7,loc=42,lvl=58}),
+s(311383,280028,{b=1,f=7,loc=44,lvl=58}),
+s(311384,280029,{b=1,f=21,lvl=58}),
+s(311386,280031,{b=1,f=27,lvl=58}),
+i(280032,{b=1,f=53,lvl=58,spellID=1311505})}}),
 e(3502,{npcID=261809,g={
 r(1263082,{itemID=273116,learnedAt=300,requireSkill=333,skillID=2940}),
+s(311380,280025,{b=1,f=4,loc=46,lvl=58}),
+s(311379,280024,{b=1,f=7,loc=46,lvl=58}),
+s(311378,280023,{b=1,f=28,lvl=58}),
 i(273128),
 i(285952),
 crit(116056,{achID=62033,awp=16001,id=17})}})}}),

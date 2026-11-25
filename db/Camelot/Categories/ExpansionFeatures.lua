@@ -1501,7 +1501,7 @@ q(96088,{coords={
 [1434]={{28.4,75.8}}},lvl=60,qgs={227853},g={
 qo(1,{crs={5709},providers={{"i",272026}}}),
 qo(2,{crs={247234},providers={{"i",272027}}}),
-qo(3,{providers={{"i",272028}}}),
+qo(3,{crs={261809},providers={{"i",272028}}}),
 i(271994,{b=1})}}),
 q(83934,{coords={
 [1434]={{28.5,75.8}}},description="Only a Tarnished Undermine Real looted while you have this quest counts; Reals you already own do not.",lvl=55,qgs={227853}})}),
