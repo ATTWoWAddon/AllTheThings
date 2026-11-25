@@ -311,7 +311,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Reach exalted reputation with the Warsong Outriders or Silverwing Sentinels.","Master of Warsong Gulch","Earn 1 Legacy Point.",62048,-1,-1,0,15598,0,0,134349824,6,236396,0,221571,0,0,0,0
 "Reach exalted reputation with the Darkspear Raiders or Theramore Expeditionary Force.","Master of Darkspear Islands","Earn 1 Legacy Point.",62049,-1,-1,0,15598,0,0,134349824,8,441150,0,230736,0,0,0,0
 "Complete the zone map for all existing zones in Eastern Kingdoms and Kalimdor on a single character.","Explore Azeroth",,62053,-1,-1,0,15607,0,0,0,1,237388,0,223475,0,0,0,0
-"Complete the questline beginning with An Earnest Proposition, and ending with Saving the Best for Last.","Lord Valthalak Laid to Rest","Earn 1 Legacy Point.",62054,-1,-1,0,15596,0,0,134349824,3,1002601,0,221563,0,0,0,0
+"Complete the questline beginning with An Earnest Proposition, and ending with Saving the Best for Last.","Lord Valthalak Laid to Rest","Earn 1 Legacy Point.",62054,-1,-1,0,15596,0,0,134349824,3,1002601,0,238156,0,0,0,0
 "Complete the maps of Eastern Kingdoms on a single character:","Explore Eastern Kingdoms",,62353,-1,-1,0,15607,0,0,0,66,236759,0,223429,0,0,0,0
 "Explore Riverglades, revealing the covered areas of the world map.","Explore Riverglades",,62354,-1,-1,0,14777,0,0,0,15,1032150,0,232119,0,0,0,0
 "Complete the maps of Kalimdor on a single character:","Explore Kalimdor",,62355,-1,-1,0,15607,0,0,0,67,236807,0,223453,0,0,0,0
@@ -378,7 +378,7 @@ Description_lang,Title_lang,Reward_lang,ID,Instance_ID,Faction,Supercedes,Catego
 "Reach 150 skill in Tailoring for the first time.","Journeyman Tailor","Earn 1 Legacy Point.",64011,-1,-1,0,15592,0,0,268567552,2,136249,0,234120,0,0,0,0
 "Reach 225 skill in Tailoring for the first time.","Expert Tailor","Earn 1 Legacy Point.",64012,-1,-1,0,15592,0,0,268567552,3,136249,0,234122,0,0,0,0
 "Reach 300 skill in Tailoring for the first time.","Artisan Tailor","Earn 1 Legacy Point.",64013,-1,-1,0,15592,0,0,268567552,5,136249,0,234124,0,0,0,0
-"Complete the questline beginning with An Earnest Proposition, and ending with Saving the Best for Last.","Lord Valthalak Laid to Rest","Earn 1 Legacy Point.",64014,-1,-1,0,15596,0,0,268567552,1,1002601,0,234126,0,0,0,0
+"Complete the questline beginning with An Earnest Proposition, and ending with Saving the Best for Last.","Lord Valthalak Laid to Rest","Earn 1 Legacy Point.",64014,-1,-1,0,15596,0,0,268567552,1,1002601,0,238175,0,0,0,0
 "Have a character with the Explore Azeroth achievement.",Explorer,"Earn 1 Legacy Point.",64015,-1,-1,0,15596,0,0,268567552,4,237387,0,234128,0,0,0,0
 "Complete the following dungeons.","Novice Spelunker","Earn 1 Legacy Point.",64016,-1,-1,0,15593,0,0,268567552,2,4504543,0,234130,0,0,0,0
 "Complete the following dungeons.","Experienced Spelunker","Earn 1 Legacy Point.",64017,-1,-1,0,15593,0,0,268567552,3,236695,0,234137,0,0,0,0
