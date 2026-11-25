@@ -107,7 +107,12 @@ function api:GetSoundPackForType(soundType)
 	local names = AllTheThingsSavedVariables and AllTheThingsSavedVariables.SoundPackByType;
 	return names and SoundPacks[names[soundType]];
 end
--- Chooses a Sound Pack for a type of sounds by its name, or the active Sound Pack again with nil
+-- Returns whether the type has been turned off
+function api:IsSoundTypeMuted(soundType)
+	local names = AllTheThingsSavedVariables and AllTheThingsSavedVariables.SoundPackByType;
+	return names and names[soundType] == false or false;
+end
+-- Chooses a Sound Pack for a type of sounds by its name, the active Sound Pack again with nil, or none with false
 function api:SetSoundPackForType(soundType, name)
 	if not DefaultSoundPack[soundType] then
 		error("Sound type '" .. tostring(soundType) .. "' is not valid");
@@ -127,6 +132,7 @@ function api:SetSoundPackForType(soundType, name)
 end
 -- Returns the sounds which are used for the type, and whether they're the default ones because the Sound Pack has none
 function api:GetActiveSounds(soundType)
+	if api:IsSoundTypeMuted(soundType) then return app.EmptyTable, false; end
 	local sounds = (api:GetSoundPackForType(soundType) or CurrentSoundPack)[soundType];
 	if sounds then return sounds, false; end
 	return DefaultSoundPack[soundType] or {}, true;
@@ -177,7 +183,7 @@ function api:PlayFanfare()
 	PlayAudio("FANFARE", "Celebrate");
 end
 function api:PlayMountFanfare()
-	if not PlayAudio("MOUNTFANFARE", "Celebrate") then
+	if not PlayAudio("MOUNTFANFARE", "Celebrate") and not api:IsSoundTypeMuted("MOUNTFANFARE") then
 		PlayAudio("FANFARE", "Celebrate")
 	end
 end

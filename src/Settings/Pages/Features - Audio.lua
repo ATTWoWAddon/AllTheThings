@@ -53,20 +53,23 @@ end
 local function GetSoundpacksForType()
 	local choices = GetSoundpacks();
 	table.insert(choices, 1, { value = "", text = L.AUDIO_SAME_SOUNDPACK });
+	table.insert(choices, 2, { value = false, text = NONE });
 	return choices;
 end
 local function CreateSoundOption(soundType, text)
 	local function SetSoundPack(name)
-		app.Audio:SetSoundPackForType(soundType, name ~= "" and name or nil);
+		if name == "" then name = nil; end
+		app.Audio:SetSoundPackForType(soundType, name);
 		settings:Refresh();
 	end
 	return { type = "dropdown", key = "Sound:" .. soundType, text = text, tooltip = L.AUDIO_SOUND_TOOLTIP, width = 150, labelWidth = 110, choices = GetSoundpacksForType,
 		get = function()
+			if app.Audio:IsSoundTypeMuted(soundType) then return false; end
 			local soundPack = app.Audio:GetSoundPackForType(soundType);
 			return soundPack and soundPack.name or "";
 		end,
 		set = SetSoundPack,
-		isChanged = function() return app.Audio:GetSoundPackForType(soundType) ~= nil; end,
+		isChanged = function() return app.Audio:IsSoundTypeMuted(soundType) or app.Audio:GetSoundPackForType(soundType) ~= nil; end,
 		reset = function() SetSoundPack(""); end,
 		OnRefresh = function(self)
 			SoundDropdowns[soundType] = self;
