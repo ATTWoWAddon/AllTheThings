@@ -1181,11 +1181,11 @@ i(277714, 5122);	-- Spectral Bear Cub
 i(284176, 5172);	-- Tallstrider Hatchling
 i(280699, 5152);	-- Undercity Cockroach
 i(280456, 5136);	-- Weevil K. Neevil
+i(249898, 5202);	-- Wilted Lashling Bud
 i(281167, 5160);	-- Zergling
 i(249897, 0);	-- Flowery Lashling Bud [TODO: Find the speciesID]
 i(249895, 0);	-- Frosty Lashling Bud [TODO: Find the speciesID]
 i(249896, 0);	-- Viridian Lashling Bud [TODO: Find the speciesID]
-i(249898, 0);	-- Wilted Lashling Bud [TODO: Find the speciesID]
 -- #if FOREVER
 i(11903, 5006);		-- Corrupted Kitten
 i(13342, 0);		-- Pet Fish [TODO: Find the speciesID]

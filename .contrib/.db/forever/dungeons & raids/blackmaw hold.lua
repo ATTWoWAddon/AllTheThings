@@ -106,7 +106,9 @@ instanceroot(2974, {	-- Blackmaw Hold
 					objective(1, {	-- 0/1 Fel-Tainted Flesh
 						provider = { "i", 249695 },	-- Fel-Tainted Flesh
 					}),
-					i(249900),	-- Regurgitated Seed Pod
+					i(249900, {	-- Regurgitated Seed Pod
+						i(249898),	-- Wilted Lashling Bud (PET!)
+					}),
 				},
 			}),
 			q(92344, {	-- Get to the Roots of It

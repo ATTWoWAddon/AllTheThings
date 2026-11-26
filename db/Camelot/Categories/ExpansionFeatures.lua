@@ -23,7 +23,7 @@ p(87,{itemID=11474,npcID=9662,spellID=15067}),
 p(57,{itemID=268503,npcID=7547,spellID=10696}),
 p(1563,{itemID=268502,npcID=7546,spellID=10699}),
 i(249896,{b=1,spellID=1250014}),
-i(249898,{b=1,spellID=1250016})}),
+p(5202,{b=1,itemID=249898,npcID=249702,spellID=1250016})}),
 flt(9,{
 s(165302,23705,{b=1,f=9})}),
 flt(102,{
