@@ -60,6 +60,27 @@ local SILVER_HAKKARI_BIJOU = 203772;
 local YELLOW_HAKKARI_BIJOU = 203773;
 local ZANDALAR_BARGAINING_TOKEN = 203914;
 
+------ Encounter Constants ------
+local VENOXIS = 175;
+local MANDOKIR = 176;
+local KILNARA = 181;
+local ZANZIL = 184;
+local JINDO = 185;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[VENOXIS] = { 52155 },	-- High Priest Venoxis
+	[MANDOKIR] = { 52151 },	-- Bloodlord Mandokir
+	[KILNARA] = { 52059 },	-- High Priestess Kilnara
+	[ZANZIL] = { 52053 },	-- Zanzil
+	[JINDO] = { 52148 },	-- Jin'do the Godbreaker
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty
+
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_RISE_OF_THE_ZANDALARI, inst(76, {	-- Zul'Gurub
 		mapID = ZULGURUB,
@@ -67,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 		_drop = { "isRaid" },	-- prevent merging isRaid from Classic version
 		timeline = { ADDED_4_1_0 },
 		groups = {
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 				header(HEADERS.Achievement, 17366, {	-- Relics of a Fallen Empire
 					description = "To unlock the Zul'Gurub content of patch 10.0.7:\n\n1. Kill any two bosses to spawn Jin'do the Godbreaker. Cache of Madness does not count.\n\n2. Head to the Altar of the Light, and enter the ground floor using either side entrance.\n\n3. Look for a gong by the southern entrance. On the ground in front of it lies a Shattered Hakkari Bijou. Loot it.\n\n4. Go upstairs towards Jin'do the Godbreaker, and kill at least one Gurubashi Spirit Warrior on your way. (You will need it for the encounter!)\n\n5. Pull Jin'do the Godbreaker and burst him down until Phase 2 begins. (This phase begins even if you oneshot him.)\n\n6. Walk back downstairs and inside the ground floor where you found the Shattered Hakkari Bijou, and a Fragmented Hakkari Bijou lays in its place. Loot it.\n\n7. Finish the boss encounter above by pulling a Gurubashi Spirit up to Hakkari's Chains, and wait until they break the chain protection with their ability 'Body Slam'. Then you can 'kill' the chains, and kill Jin'do.\n\n8. Combine the Shattered Hakkari Bijou with the Fragmented Hakkari Bijou, and accept the quest 'Restored Hakkari Bijou'.\n\n9. Travel to Dazar'alor in Zandalar. |CFFFF0000Beware Alliance players, this is a Horde city!|r You can get here using the ship service from Echo Isles in Durotar. From the Port of Zuldazar, fly eastwards to the south-facing building entrances. Above the transmogrifier shop is the Yojamba Exchange, where you can turn in the quest at Rin'wosho the Trader.\n\n10. Zul'Gurub is now unlocked for your account, and the vendor Rin'Wosho with his wares can now be found at the beginning of the dungeon.\n\n11. Protip: Start the Gurubashi Tribute farm as early as possible as it is a decent source for coins. See the header for Brazier of Madness for more information.",
 					timeline = { ADDED_10_0_7 },
@@ -159,7 +180,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 								i(203845),	-- Ancient Pattern: Junglefury Gauntlets (RECIPE!)
 								i(203846),	-- Ancient Pattern: Junglefury Leggings (RECIPE!)
 								i(203851),	-- Ancient Pattern: Ritualistic Legwarmers (RECIPE!)
-								i(203835),	-- Ancient Plans: Fiery Bengeance (RECIPE!)
+								i(203835),	-- Ancient Plans: Fiery Vengeance (RECIPE!)
 								i(203825),	-- Ancient Plans: Gurubashi Carver (RECIPE!)
 								i(203828),	-- Ancient Plans: Gurubashi Grinder (RECIPE!)
 								i(203824),	-- Ancient Plans: Gurubashi Headplate (RECIPE!)
@@ -298,15 +319,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						n(TREASURES, {
 							o(387496, {	-- Brazier of Madness
 								description = "Can be looted near the Cache of Madness event, to the left of the altar at 61.2, 45.6.",
-								groups = {
-									i(203757),	-- Brazier of Madness (TOY!)
-								},
+								groups = { i(203757) },	-- Brazier of Madness (TOY!)
 							}),
 							o(386669, {	-- Fragmented Hakkari Bijou
 								description = "The first Bijou named 'Fragmented Hakkari Bijou' is near the gong in the middle of the pyramid at roughly 48.6, 42.3.",
-								groups = {
-									i(203736),	-- Fragmented Hakkari Bijou
-								},
+								groups = { i(203736) },	-- Fragmented Hakkari Bijou
 							}),
 							i(203737, {	-- Restored Hakkari Bijou
 								cost = {
@@ -316,16 +333,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							}),
 							o(386668, {	-- Shattered Hakkari Bijou
 								description = "The second Bijou named 'Shattered Hakkari Bijou' is at the same spot, but during phase 2 of the Jin'do Boss Encounter. In the middle of the pyramid at roughly 48.6, 42.3 ",
-								groups = {
-									i(203735),	-- Shattered Hakkari Bijou
-								},
+								groups = { i(203735) },	-- Shattered Hakkari Bijou
 							}),
 							o(180368, {	-- Tablet of Madness
 								description = "Can be looted near the Cache of Madness event, above the altar at 61.2, 45.6.\nAlchemists with 300 classic skill can interact with the Tablet of Madness to learn the recipe.",
 								requireSkill = ALCHEMY,
-								groups = {
-									recipe(24266),	-- Gurubashi Mojo Madness
-								},
+								groups = { recipe(24266) },	-- Gurubashi Mojo Madness
 							}),
 						}),
 						n(VENDORS, {
@@ -637,12 +650,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 						races = ALLIANCE_ONLY,
 						groups = {
-							i(69262, {	-- Black Ice
-								timeline = { REMOVED_7_0_3 },
-							}),
-							i(133997, {	-- Black Ice (TOY!)
-								timeline = { ADDED_7_0_3 },
-							}),
+							i(69262, { timeline = { REMOVED_7_0_3 } }),	-- Black Ice
+							i(133997, { timeline = { ADDED_7_0_3 } }),	-- Black Ice (TOY!)
 							i(69863),	-- Golden Necklace
 							i(69865),	-- Gem-Studded Bracelets
 							i(69864),	-- Tarnished Crown
@@ -659,12 +668,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 						races = HORDE_ONLY,
 						groups = {
-							i(69262, {	-- Black Ice
-								timeline = { REMOVED_7_0_3 },
-							}),
-							i(133997, {	-- Black Ice (TOY!)
-								timeline = { ADDED_7_0_3 },
-							}),
+							i(69262, { timeline = { REMOVED_7_0_3 } }),	-- Black Ice
+							i(133997, { timeline = { ADDED_7_0_3 } }),	-- Black Ice (TOY!)
 							i(69863),	-- Golden Necklace
 							i(69865),	-- Gem-Studded Bracelets
 							i(69864),	-- Tarnished Crown
@@ -676,9 +681,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							26362,	-- Be Raptor [Horde]
 						},
 						qg = 52877,	-- Lashtail Hatchling
-						groups = {
-							i(69251),	-- Lashtail Hatchling (PET!)
-						},
+						groups = { i(69251) },	-- Lashtail Hatchling (PET!)
 					}),
 					q(29154, {	-- Booty Bay's Interests
 						qg = 53151,	-- Overseer Blingbang
@@ -712,15 +715,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				n(ZONE_DROPS, {
 					i(69802),	-- Band of the Gurubashi Berserker
 					i(69803),	-- Gurubashi Punisher
-					i(69800),	-- Spiritguard Drape
 					i(69796),	-- Spiritcaller Cloak
+					i(69800),	-- Spiritguard Drape
 				}),
 				n(52442, {	-- Florawing Hive Queen (unique mob)
 					questID = 53809,	-- KillID
 					isDaily = true,
-					groups = {
-						i(69817),	-- Hive Queen's Honeycomb
-					},
+					groups = { i(69817) },	-- Hive Queen's Honeycomb
 				}),
 				n(52440, {	-- Gub (unique mob)
 					i(69823),	-- Gub's Catch
@@ -729,31 +730,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(70719),	-- Water-Filled Gills
 				}),
 				n(52414),	-- Tor-Tun (unique mob)
-				e(175, {	-- High Priest Venoxis
-					crs = { 52155 },	-- High Priest Venoxis
-					groups = {
-						ach(5743),	-- It's Not Easy Being Green
-						i(69600),	-- Belt of Slithering Serpents
-						i(69603),	-- Breastplate of Serenity
-						i(69604),	-- Coils of Hate
-						i(69601),	-- Serpentine Leggings
-						i(69602),	-- Signet of Venoxis
-					},
+				BossOnly(VENOXIS, {
+					ach(5743),	-- It's Not Easy Being Green
+					i(69600),	-- Belt of Slithering Serpents
+					i(69603),	-- Breastplate of Serenity
+					i(69604),	-- Coils of Hate
+					i(69601),	-- Serpentine Leggings
+					i(69602),	-- Signet of Venoxis
 				}),
 				n(52422, {	-- Kaulema (unique mob)
 					i(69818),	-- Giant Sack
 				}),
-				e(176, {	-- Bloodlord Mandokir
-					crs = { 52151 },	-- Bloodlord Mandokir
-					groups = {
-						ach(5762),	-- Ohganot So Fast!
-						i(68823),	-- Armored Razzashi Raptor (MOUNT!)
-						i(69605),	-- Amulet of the Watcher
-						i(69609),	-- Bloodlord's Protector
-						i(69608),	-- Deathcharged Wristguards
-						i(69606),	-- Hakkari Loa Drape
-						i(69607),	-- Touch of Discord
-					},
+				BossOnly(MANDOKIR, {
+					ach(5762),	-- Ohganot So Fast!
+					i(69605),	-- Amulet of the Watcher
+					i(68823),	-- Armored Razzashi Raptor (MOUNT!)
+					i(69609),	-- Bloodlord's Protector
+					i(69608),	-- Deathcharged Wristguards
+					i(69606),	-- Hakkari Loa Drape
+					i(69607),	-- Touch of Discord
 				}),
 				n(52405, {	-- Mor'Lek (unique mob)
 					i(69818),	-- Giant Sack
@@ -811,54 +806,43 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				n(52392, {	-- Gurubashi Master Chef (unique mob)
 					i(69822),	-- Master Chef's Groceries
 				}),
-				e(181, {	-- High Priestess Kilnara
-					crs = { 52059 },	-- High Priestess Kilnara
-					groups = {
-						ach(5765),	-- Here, Kitty Kitty...
-						i(68824),	-- Swift Zulian Panther (MOUNT!)
-						i(69610),	-- Arlokk's Signet
-						i(69612),	-- Claw-Fringe Mantle
-						i(69613),	-- Leggings of the Pride
-						i(69614),	-- Roaring Mask of Bethekk
-						i(69611),	-- Sash of Anguish
-						n(53088, {	-- Temple Rat
-							description = "Loot the rats and throw them to the awake Pride of Bethekk during the boss fight for the achievement 'Here, Kitty Kitty...'. Only one rat per cat counts.\n\nThe Temple Rat in the room adjacent to the boss room can be looted through the wall when it wanders close enough.",
-						}),
-					},
+				BossOnly(KILNARA, {
+					ach(5765),	-- Here, Kitty Kitty...
+					i(69610),	-- Arlokk's Signet
+					i(69612),	-- Claw-Fringe Mantle
+					i(69613),	-- Leggings of the Pride
+					i(69614),	-- Roaring Mask of Bethekk
+					i(69611),	-- Sash of Anguish
+					i(68824),	-- Swift Zulian Panther (MOUNT!)
+					n(53088, {	-- Temple Rat
+						description = "Loot the rats and throw them to the awake Pride of Bethekk during the boss fight for the achievement 'Here, Kitty Kitty...'. Only one rat per cat counts.\n\nThe Temple Rat in the room adjacent to the boss room can be looted through the wall when it wanders close enough.",
+					}),
 				}),
-				e(184, {	-- Zanzil
-					crs = { 52053 },	-- Zanzil
-					groups = {
-						i(69619),	-- Bone Plate Handguards
-						i(69617),	-- Plumed Medicine Helm
-						i(69616),	-- Spiritbinder Spaulders
-						i(69615),	-- Zombie Walker Legguards
-						i(69618),	-- Zulian Slicer
-					},
+				BossOnly(ZANZIL, {
+					i(69619),	-- Bone Plate Handguards
+					i(69617),	-- Plumed Medicine Helm
+					i(69616),	-- Spiritbinder Spaulders
+					i(69615),	-- Zombie Walker Legguards
+					i(69618),	-- Zulian Slicer
 				}),
-				e(185, {	-- Jin'do the Godbreaker
-					crs = { 52148 },	-- Jin'do the Godbreaker
-					groups = {
-						ach(5768),	-- Heroic: Zul'Gurub
-						ach(5770),	-- Heroic: Zul'Gurub Guild Run
-						ach(5759),	-- Spirit Twister
-						i(69628),	-- Jeklik's Smasher
-						i(69626),	-- Jin'do's Verdict
-						i(69624),	-- Legacy of Arlokk
-						i(69625),	-- Mandokir's Tribute
-						i(69629),	-- Shield of the Blood God
-						i(69622),	-- The Hexxer's Mask
-						i(69620),	-- Twinblade of the Hakkari
-						i(69621),	-- Twinblade of the Hakkari
-						i(69623),	-- Vestments of the Soulflayer
-						i(69627),	-- Zulian Ward
-						h(i(122215, {	-- Music Roll: Zul'Gurub Voodoo
-							timeline = { ADDED_6_1_0 },
-						})),
-						n(52167, {	-- Gurubashi Spirit Warrior
-							description = "|CFFFF0000At least one MUST be killed prior to Jin'do the Godbreaker encounter Phase 2 start, otherwise fight will be impossible.|r\n\nIn Phase 2 their spirits will spawn and they must be pulled up to Hakkar's chains in order to break them with their ability 'Body Slam'.",
-						}),
-					},
+				BossOnly(JINDO, {
+					ach(5768),	-- Heroic: Zul'Gurub
+					ach(5770),	-- Heroic: Zul'Gurub Guild Run
+					ach(5759),	-- Spirit Twister
+					i(69628),	-- Jeklik's Smasher
+					i(69626),	-- Jin'do's Verdict
+					i(69624),	-- Legacy of Arlokk
+					i(69625),	-- Mandokir's Tribute
+					h(i(122215, { timeline = { ADDED_6_1_0 } })),	-- Music Roll: Zul'Gurub Voodoo
+					i(69629),	-- Shield of the Blood God
+					i(69622),	-- The Hexxer's Mask
+					i(69620),	-- Twinblade of the Hakkari
+					i(69621),	-- Twinblade of the Hakkari
+					i(69623),	-- Vestments of the Soulflayer
+					i(69627),	-- Zulian Ward
+					n(52167, {	-- Gurubashi Spirit Warrior
+						description = "|CFFFF0000At least one MUST be killed prior to Jin'do the Godbreaker encounter Phase 2 start, otherwise fight will be impossible.|r\n\nIn Phase 2 their spirits will spawn and they must be pulled up to Hakkar's chains in order to break them with their ability 'Body Slam'.",
+					}),
 				}),
 			}),
 		},
