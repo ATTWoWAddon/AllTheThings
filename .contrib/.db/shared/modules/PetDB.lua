@@ -4552,7 +4552,6 @@ i(129108, 1751);	-- Son of Goredome
 i(253699, 4903);	-- Starshard Whelpling
 i(239699, 4801);	-- Tidbit
 --- NYI ---
-i(252199, 4899);	-- Festive Eve
 i(252137, 4895);	-- Lil' Chompers
 i(252193, 4896);	-- Slippery Saul
 
@@ -4749,6 +4748,7 @@ i(284179, 5173);	-- Eyestalker
 -- PATCH 12.1.7 --
 ------------------
 i(277270, 5114);	-- Bewitching Familiar
+i(252199, 4899);	-- Festive Eve
 i(284094, 5170);	-- Hex-Cursed Manifestation
 i(283378, 5169);	-- Inquisitor's Messenger
 i(283375, 5168);	-- Slayer's Faithful Tracker
