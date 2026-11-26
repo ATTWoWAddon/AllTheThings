@@ -436,7 +436,9 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				--}, {
 				--})),
 				filter(MISC, {
-					i(268585),	-- Pup Treat
+					o(641546, {	-- Pup Treat
+						i(268585),	-- Pup Treat
+					}),
 				}),
 			},
 		}),

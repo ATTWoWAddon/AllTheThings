@@ -401,7 +401,7 @@ InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, Instanc
 -- Boss drops from the event difficulty (the vendor copies carry the 11.0.7 removal)
 local SYM_ALL_BRD_DROPS = {SymSelector.select("WOW_ANNIVERSARY_20_BRD"),{"pop"},
 {"where","difficultyID",DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC},{"pop"},{"not","headerID",ZONE_DROPS},
-{"extract","itemID"},{"exclude","itemID",224278}}	-- Timewarped Ironforge Blueprints (QI!)
+{"extract","itemID"}}
 
 local function RelicCofferKeyPurchase(itemID)
 	local item = i(itemID, {
@@ -2418,6 +2418,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							},
 							timeline = { REMOVED_11_0_7 },
 							isWeekly = true,
+							qi = 224278,	-- Timewarped Ironforge Blueprints (QI!)
 							groups = { i(232471, { sym = SYM_ALL_BRD_DROPS }) },	-- Cache of Dark Iron Treasures
 						}),
 						q(84735, {	-- Truth of the Dark Irons
@@ -2602,7 +2603,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							i(231403),	-- Kindling Stave
 							i(231402),	-- Searingscale Leggings
 						}),
-						Boss(DAGRAN, { i(224278) }),	-- Timewarped Ironforge Blueprints (QI!)
+						Boss(DAGRAN),
 					}),
 					Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 						CommonBossDrops({

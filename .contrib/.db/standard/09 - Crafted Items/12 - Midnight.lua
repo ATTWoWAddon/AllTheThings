@@ -2168,6 +2168,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.MID, timelineSelf({ timeline = { ADDE
 			i(244618, {requireSkill = ENGINEERING}),	-- Tinker's Handguard
 		}),
 		filter(REAGENTS, {
+			i(273068, { timeline = ADDED_12_1_0 }),	-- Adorned Fang+
+			i(273069, { timeline = ADDED_12_1_0 }),	-- Adorned Fang++
 			i(244603),	-- Blessed Pango Charm+
 			i(244604),	-- Blessed Pango Charm++
 			i(244674),	-- Devouring Banding+

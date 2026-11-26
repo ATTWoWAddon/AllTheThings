@@ -100,6 +100,7 @@ maproot(ZANDALAR, NAZMIR, {
 					coords = {
 						{ 28.0, 81.8, NAZMIR },
 						{ 25.1, 78.0, NAZMIR },
+						{ 46.8, 73.9, NAZMIR },
 					},
 				}),
 				o(279325, {	-- Treasure Chest

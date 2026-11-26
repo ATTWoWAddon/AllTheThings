@@ -388,7 +388,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				groups = { i(232877) },	-- Timely Goodie Bag
 			}),
 			q(82817, {	-- Disturbance Detected: Blackrock Depths
-				qgs = { 234556 },	-- Grannadormu
+				qg = 234556,	-- Grannadormu
 				coords = {
 					{ 52.8, 82.8, ORGRIMMAR },
 					{ 56.0, 18.4, STORMWIND_CITY },

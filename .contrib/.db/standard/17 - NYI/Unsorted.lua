@@ -358,12 +358,6 @@ root(ROOTS.Unsorted, {
 			i(274765),	-- Fleeting Alluring Nostrum
 			i(274677),	-- Sky Blue Riverside Room Plans
 			i(274678),	-- Verdant Riverside Room Plans
-			n(PROFESSIONS, {
-				prof(LEATHERWORKING, {
-					i(273068),	-- Adorned Fang+
-					i(273069),	-- Adorned Fang++
-				}),
-			}),
 
 			--[[ If Darkal Needs
 			n(CLASS, {

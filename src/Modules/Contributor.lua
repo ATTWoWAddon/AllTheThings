@@ -3627,6 +3627,7 @@ MobileDB.GameObject = {
 	[639875] = true,	-- Feather of Jan'alai (q:94870)
 	[639625] = true,	-- Tortollan Scroll Case (q:95453)
 	[641533] = true,	-- Corrupted Lantern (q:92320)
+	[641546] = true,	-- Pup Treat
 	[642076] = true,	-- Challenger's Cache [Alter of Fangs]
 	[642080] = true,	-- Challenger's Cache [Ruby Life Pools]
 	[642083] = true,	-- Challenger's Cache [King's Rest]

@@ -338,9 +338,14 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 			-- Objects
 				o(354853, {	-- Sprouting Growth
 					coords = {
-						{ 45.0, 35.5, MALDRAXXUS },
+						{ 40.4, 31.8, MALDRAXXUS },
+						{ 40.9, 25.7, MALDRAXXUS },
+						{ 41.6, 38.4, MALDRAXXUS },
+						{ 44.4, 22.9, MALDRAXXUS },
+						{ 45.0, 35.4, MALDRAXXUS },
 						{ 46.8, 31.7, MALDRAXXUS },
-						{ 40.3, 31.7, MALDRAXXUS },
+						{ 47.7, 36.0, MALDRAXXUS },
+						{ 47.9, 29.5, MALDRAXXUS },
 					},
 					questID = 61089,
 					isDaily = true,
@@ -365,12 +370,15 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 				o(352596, {	-- Sprouting Growth
 					coords = {
 						{ 34.8, 55.0, MALDRAXXUS },
-						{ 36.5, 49.9, MALDRAXXUS },
-						{ 38.6, 47.0, MALDRAXXUS },
-						{ 39.7, 51.9, MALDRAXXUS },
-						{ 40.0, 43.9, MALDRAXXUS },
-						{ 40.9, 47.1, MALDRAXXUS },
+						{ 36.4, 45.3, MALDRAXXUS },
+						{ 36.4, 49.8, MALDRAXXUS },
 						{ 36.7, 42.5, MALDRAXXUS },
+						{ 37.4, 55.8, MALDRAXXUS },
+						{ 38.7, 47.0, MALDRAXXUS },
+						{ 39.7, 51.8, MALDRAXXUS },
+						{ 40.0, 44.0, MALDRAXXUS },
+						{ 40.8, 47.1, MALDRAXXUS },
+						{ 40.8, 54.7, MALDRAXXUS },
 					},
 					questID = 60556,
 					isDaily = true,

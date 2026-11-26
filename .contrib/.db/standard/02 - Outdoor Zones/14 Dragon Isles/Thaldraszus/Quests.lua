@@ -1156,7 +1156,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 					q(76423, {	-- No Limits
 						qgs = {
 							208035,	-- Chromie
-							208086,	-- Chromie
+							206086,	-- Chromie
 						},
 						coords = {
 							{ 60.9, 40.0, VALDRAKKEN },
