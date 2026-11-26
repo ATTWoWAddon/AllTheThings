@@ -1135,6 +1135,18 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					}),
 				},
 			}),
+			n(3014, {	-- Nida Winterhoof <Herbalism Supplies>
+				coord = { 49.2, 39.6, THUNDER_BLUFF },
+				races = HORDE_ONLY,
+				groups = {
+					i(3422),	-- Beautiful Wildflowers
+					i(3420),	-- Black Rose
+					i(3424),	-- Bouquet Of Black Roses
+					i(3423),	-- Bouquet Of White Roses
+					i(3419),	-- Red Rose
+					i(3421),	-- Simple Wildflowers
+				},
+			}),
 			n(8398, {	-- Ohanko <Two Handed Weapon Merchant>
 				coord = { 53.6, 56.8, THUNDER_BLUFF },
 				races = HORDE_ONLY,
