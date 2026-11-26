@@ -672,6 +672,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qi = 4649,	-- Bonegrip's Note
 				coord = { 50.8, 5.6, MAP.IRONFORGE },
 				maps = { MAP.ALTERAC_MOUNTAINS, MAP.DUSTWALLOW_MARSH, MAP.STRANGLETHORN_VALE },
+				races = ALLIANCE_ONLY,
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Star of Xil'yeh
@@ -698,6 +699,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.BADLANDS, {
 				qi = 4650,	-- Bel'dugur's Note
 				coord = { 53.7, 54.5, MAP.UNDERCITY },
 				maps = { MAP.ALTERAC_MOUNTAINS, MAP.DUSTWALLOW_MARSH, MAP.STRANGLETHORN_VALE },
+				races = HORDE_ONLY,
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Star of Xil'yeh
