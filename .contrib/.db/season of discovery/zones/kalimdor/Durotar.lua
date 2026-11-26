@@ -727,10 +727,8 @@ maproot(KALIMDOR, DUROTAR, {
 			}),
 			q(832, {	-- Burning Shadows
 				provider = { "i", 4903 },	-- Eye of Burning Shadow
-				coord = { 51.78, 9.56, DUROTAR },
 				maps = { ORGRIMMAR },
 				races = HORDE_ONLY,
-				cr = 3204,	-- Gazz'uz
 				lvl = 4,
 			}),
 			q(791, {	-- Carry Your Weight
@@ -1687,6 +1685,10 @@ maproot(KALIMDOR, DUROTAR, {
 					3100,	-- Elder Mottled Boar
 					3225,	-- Corrupted Mottled Boar
 				},
+			})),
+			applyclassicphase(SOD_PHASE_ONE, i(4903, {	-- Eye of Burning Shadow
+				coord = { 51.78, 9.56, MAP.DUROTAR },
+				cr = 3204,	-- Gazz'uz
 			})),
 			applyclassicphase(SOD_PHASE_ONE, i(207733, {	-- Kul Tiran Skull
 				coord = { 57.6, 55.4, DUROTAR },
