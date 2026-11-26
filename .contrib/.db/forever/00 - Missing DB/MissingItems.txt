@@ -6436,7 +6436,6 @@ i(210968),	-- Reliquary Key
 i(210979),	-- Rune of Shadowstep
 i(210980),	-- Rune of Metamorphosis
 i(211205),	-- Rune of Cobra Slayer
-i(211247),	-- Pattern: Phoenix Bindings
 i(211301),	-- Rune of Expose Weakness
 i(211315),	-- Waylaid Supplies: Light Leather
 i(211316),	-- Waylaid Supplies: Peacebloom

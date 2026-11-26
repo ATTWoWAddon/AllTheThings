@@ -2768,6 +2768,7 @@ s(156925,2620,{coords={
 [1443]={{48.2,75.8},{52.2,83.6},{53.2,71}}},crs={4684},f=4,loc=40}),
 r(1248497,{awp=16001,b=1,crs={4681},itemID=249488,learnedAt=190,requireSkill=333,skillID=2940}),
 r(1257433,{awp=16001,crs={4719},itemID=254016,learnedAt=150,requireSkill=197,skillID=2948}),
+r(428424,{awp=16001,b=1,crs={4663},itemID=211247,learnedAt=125,requireSkill=197,skillID=2948}),
 r(12062,{awp=16001,crs={4658},itemID=254681,learnedAt=185,requireSkill=197,skillID=2948}),
 r(1252284,{awp=16001,b=1,crs={4711},itemID=251387,learnedAt=160,requireSkill=164,skillID=2938}),
 r(1252289,{awp=16001,b=1,crs={11559,253272},itemID=251392,learnedAt=195,requireSkill=164,skillID=2938}),

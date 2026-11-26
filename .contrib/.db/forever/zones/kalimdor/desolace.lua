@@ -1757,6 +1757,10 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				cr = 4719,	-- Slitherblade Sea Witch
 				timeline = { TIMELINE.ADDED_1_60_1 },
 			}),
+			i(211247, {	-- Pattern: Phoenix Bindings (RECIPE!)
+				cr = 4663,	-- Burning Blade Augur
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(254681, {	-- Pattern: Stormcloth Pants (RECIPE!)
 				cr = 4658,	-- Maraudine Stormer
 				timeline = { TIMELINE.ADDED_1_60_1 },

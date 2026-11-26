@@ -259,6 +259,7 @@ i(253922, 1257386);	-- Pearly Gloves
 i(253970, 1257410);	-- Pearly Gown
 i(253996, 1257423);	-- Pearly Leggings
 i(253934, 1257392);	-- Pearly Sash
+i(211247, 428424);	-- Phoenix Bindings
 i(4348, 3868);		-- Phoenix Gloves
 i(4349, 3851);		-- Phoenix Pants
 i(10317, 12080);	-- Pink Mageweave Shirt
