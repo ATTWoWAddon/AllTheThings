@@ -282,6 +282,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93738,	-- The Broken Construct
 				qg = 251968,	-- Ayessa Dawnsinger
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 4,
 				sym = {{ "select", "itemID", 250339 }},	-- Minor Mageblood Elixir
@@ -293,6 +294,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92700,	-- The Grand Skyseer
 				qg = 251968,	-- Ayessa Dawnsinger
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 7,
 			}),
@@ -300,6 +302,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92699,	-- The Supreme Magister
 				qg = 252475,	-- Elaadrin Evengale
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 7,
 				groups = {
@@ -313,6 +316,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93926,	-- The Western Watch
 				qg = 252155,	-- Peacekeeper Vaaniel
 				coord = { 42.4, 62.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				groups = {
 					o(617704, {	-- Bloody Note
@@ -337,6 +341,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuestNumRequired = 1,
 				qg = 251991,	-- Taleen Shimmerthread
 				coord = { 44.8, 44.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				groups = {
 					o(617839, {	-- Hippogryph Down
@@ -348,6 +353,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92596,	-- The High Order
 				qg = 251903,	-- Rathiril Sunlance
 				coord = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 				sym = {{ "select", "itemID", 2454 }},	-- Elixir of Minor Strength
@@ -362,11 +368,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				altQuests = { 94484 },	-- Unnerving Silence
 				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 			}),
 			q(92485, {	-- A Student of Nature
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
+				u = SKYBORNE_UNLOCKED,
 				qi = 282420,	-- Folder Parchment (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { DRUID },
@@ -377,6 +385,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				sourceQuest = 92461,	-- Harmony in Balance
 				classes = { MAGE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 2,
 				groups = { i(282416), },	-- Glowing Recall Crystal
@@ -384,12 +393,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92471, {	-- Aetheen of the Gales
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 			}),
 			q(92473, {	-- Aggressive Encroachment
 				sourceQuest = 92471,	-- Aetheen of the Gales
 				qg = 257551,	-- Valreaa Valewind
 				coord = { 42.4, 25.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 3,
 				groups = {
 					objective(1, {	-- 0/6 Scrawny Ursera Claw
@@ -406,6 +417,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92464,	-- Elemental Unrest
 				qg = 249363,	-- Yala Windwatcher
 				coord = { 47.3, 21.9, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 2,
 				groups = {
 					objective(1, {	-- 0/7 Al'Aketh Convert
@@ -419,6 +431,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94896, {	-- Aid For The Refugees
 				qg = 259012,	-- Ealaane Nimbuswalker
 				coord = { 65.8, 74.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 				groups = {
 					objective(1, {	-- 0/8 Abandoned Belongings
@@ -433,11 +446,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(98512, {	-- Al'Aketh Assassins
 				qg = 273017,	-- Fendaal Windstone
 				coord = { 56.8, 61.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 			}),
 			q(92544, {	-- Al'Aketh Thugs
 				qg = 252095,	-- Hanaa Nightwind
 				coord = { 38.2, 30.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 2,
 				groups = {
 					objective(1, {	-- 0/6 Al'Aketh Brute slain
@@ -456,6 +471,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92529,	-- Falaath Village
 				qg = 257065,	-- Missionary Jasaan
 				coord = { 46.8, 56.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				groups = {
 					i(257332),	-- Stained Ritual Dagger
@@ -466,6 +482,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92483, {	-- At Home in the Shadows
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
+				u = SKYBORNE_UNLOCKED,
 				qi = 282422,	-- Simple Note (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { ROGUE },
@@ -475,6 +492,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92840,	-- Catching Wind
 				qg = 252475,	-- Elaadrin Evengale
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 6,
 				groups = {
@@ -498,12 +516,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93746,	-- A Firm Response
 				qg = 251968,	-- Ayessa Dawnsinger
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 6,
 			}),
 			q(92679, {	-- Blood Tithe
 				qg = 252448,	-- Alvarion Windfield
 				coord = { 62.0, 73.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				groups = {
 					objective(1, {	-- 0/1 Find Aamelia Windfield
@@ -520,6 +540,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93791,	-- Speak with Belann
 				qg = 256507,	-- Belann Windwood <Staff Merchant>
 				coord = { 62.8, 77.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				classes = { MAGE },
 				lvl = 10,
@@ -532,6 +553,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93320,	-- Tower Defense
 				qg = 252378,	-- Yorana Windyreed
 				coord = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/1 Commander Belguilos slain
@@ -547,6 +569,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93948,	-- Deliver the Signet
 				qg = 252383,	-- Valennia Stormfist
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/8 Enchanted Skyhopper Exterminated
@@ -565,6 +588,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 				qg = 251374,	-- Windshaper Boro <Shaman Trainer>
 				coord = { 42.8, 23.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				classes = { SHAMAN },
 				lvl = 3,
@@ -574,6 +598,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 251374,	-- Windshaper Boro
 				coord = { 42.8, 23.6, MAP.ZEPHRAS_ISLE },
 				classes = { SHAMAN },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 3,
 			}),
@@ -582,6 +607,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 251166,	-- Minor Manifestation of Earth
 				coord = { 49.6, 24.0, MAP.ZEPHRAS_ISLE },
 				classes = { SHAMAN },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 3,
 				groups = {
@@ -592,6 +618,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 252382,	-- Sessaria Skystride
 				coord = { 58.2, 78.4, MAP.ZEPHRAS_ISLE },
 				classes = { SHAMAN },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_HORDE },
 				lvl = 10,
 			}),
@@ -600,6 +627,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 268592,	-- Olariaan Swiftburn
 				coord = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				classes = { SHAMAN },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_HORDE },
 				lvl = 10,
 			}),
@@ -608,12 +636,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 268592,	-- Olariaan Swiftburn
 				coord = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				classes = { SHAMAN },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_HORDE },
 				lvl = 10,
 			}),
 			q(97257, {	-- Call of Fire
 				sourceQuest = 97245,	-- Call of Fire
 				qg = 268592,	-- Olariaan Swiftburn
+				u = SKYBORNE_UNLOCKED,
 				qi = 277329,	-- Torch of Eternal Flame (PQI!)
 				coord = { 51.2, 86.0, MAP.ZEPHRAS_ISLE },
 				classes = { SHAMAN },
@@ -636,6 +666,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = ALCHEMY,
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1230564 },
 				groups = { recipe(1230564), },
@@ -653,6 +684,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = BLACKSMITHING,
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1230171 },
 				groups = { recipe(1230171), },
@@ -669,6 +701,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 			}),
 			q(98284, {	-- Camping 101: Enchanting
@@ -685,6 +718,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = ENCHANTING,
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1230643 },
@@ -704,6 +738,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = ENCHANTING,
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1230643 },
@@ -723,6 +758,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = ENGINEERING,
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1230656 },
 				groups = { recipe(1230656), },
@@ -740,6 +776,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = FIRST_AID,
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1230117 },
 				groups = { recipe(1230117), },
@@ -757,6 +794,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = FISHING,
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1229745 },
 				groups = { recipe(1229745), },
@@ -774,6 +812,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = HERBALISM,
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1229705 },
 				groups = { recipe(1229705), },
@@ -791,6 +830,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = LEATHERWORKING,
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1229432 },
 				groups = { recipe(1229432), },
@@ -808,6 +848,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = MINING,
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1230161 },
 				groups = { recipe(1230161), },
@@ -825,6 +866,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = SKINNING,
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1229517 },
 				groups = { recipe(1229517), },
@@ -843,6 +885,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = TAILORING,
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1229504 },
@@ -864,6 +907,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
 				requireSkill = TAILORING,
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 				lockCriteria = { 1, "spellID", 1263425 },
@@ -875,6 +919,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 99260,	-- Fillion's Mission
 				qg = 252475,	-- Elaadrin Evengale
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 5,
 				qi = 254584,	-- Index Esoteria (PQI!)
@@ -890,6 +935,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92460, {	-- Coming of Age
 				qg = 251362,	-- Ailee Farheart
 				coord = { 42.8, 23.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				groups = {
 					i(264908),	-- Ancient Heirloom
 				},
@@ -898,6 +944,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93958,	-- The Inner Sanctum
 				qg = 252383,	-- Valennia Stormfist
 				coord = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 7,
 				groups = {
@@ -914,6 +961,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					253590,	-- Valennia Stormfist
 				},
 				coord = { 65.2, 50.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 7,
 				groups = {
@@ -926,6 +974,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(93317, {	-- Crab Season
 				qg = 257006,	-- Nyalah Brightfire
 				coord = { 60.6, 72.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/6 Windsong Crawler Meat
@@ -941,6 +990,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92693,	-- Standing Our Ground
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				groups = {
 					i(263312),	-- Planting Shovel
@@ -953,6 +1003,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 
 				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 				qi = 263491,	-- Shadowsong Family Signet (QI!)
 				groups = {
@@ -966,6 +1017,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 94568,	-- The Cult's True Plans
 				qg = 252476,	-- Talaanis Shadowsong
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 				groups = {
 					i(257344),	-- Skywatcher's Vestments
@@ -977,6 +1029,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93320,	-- Tower Defense
 				qg = 252378,	-- Yorana Windyreed
 				coord = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 				groups = {
 					objective(1, {	-- 0/4 Al'Aketh Healer slain
@@ -993,12 +1046,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 2,
 				isBreadcrumb = true,
 			}),
 			q(97029, {	-- Eluvi'ana
 				qg = 259012,	-- Ealaane Nimbuswalker <Ban'aethal Refugee>
 				coord = { 65.8, 74.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				groups = {
 					objective(1, {	-- 0/1 Ancient Skyborne Blade
@@ -1010,6 +1065,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92484, {	-- Embracing the Elements
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
+				u = SKYBORNE_UNLOCKED,
 				qi = 282418,	-- Humming Recall Crystal (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { SHAMAN },
@@ -1021,6 +1077,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 1748,	-- Highlord Bolvar Fordragon
 				coord = { 80.1, 38.4, MAP.STORMWIND_CITY },
 				maps = { MAP.IRONFORGE, MAP.DARNASSUS },
+				u = SKYBORNE_UNLOCKED,
 				races = SKYBORNE_ALLIANCE,
 				lvl = 7,
 				groups = {
@@ -1051,6 +1108,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 95350,	-- Welcome to Azeroth
 				qg = 4949,	-- Thrall <Warchief>
 				coord = { 32.0, 37.8, MAP.ORGRIMMAR },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_HORDE },
 				lvl = 7,
 				qi = 285357,	-- Advisor Nazgrel's Instructions (QI!)
@@ -1062,11 +1120,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93036,	-- Infiltrating the Cult
 				qg = 251904,	-- Sania Silverstream
 				coord = { 44.8, 45.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 			}),
 			q(92474, {	-- Falling With Style
 				qg = 263113,	-- Myriaal Mistwake
 				coord = { 43.6, 24.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				lvl = 2,
 			}),
@@ -1074,6 +1134,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 94484,	-- Unnerving Silence
 				qg = 257944,	-- Elegael Thornpaw
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 				qi = 265140,	-- Pristine Shriekling Feather (QI!)
 			}),
@@ -1081,6 +1142,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92850,	-- The Missing Scholar
 				qg = 253285,	-- Fillion Flamebreeze
 				coord = { 66.2, 79.9, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 5,
 			}),
@@ -1088,6 +1150,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92679,	-- Blood Tithe
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				qi = 253666,	-- Flutterfly Swatter (PQI!)
 				sym = {{ "select", "itemID", 2455 }},	-- Minor Mana Potion
@@ -1107,6 +1170,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92471,	-- Aetheen of the Gales
 				qg = 251366,	-- Aetheen of the Gales
 				coord = { 42.8, 23.7, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 2,
 				groups = {
 					objective(1, {	-- 0/8 Ursera Scavenger slain
@@ -1129,6 +1193,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93159,	-- The Strange Hermit
 				qg = 251684,	-- Strange Hermit
 				coord = { 54.0, 39.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 				groups = {
 					i(263309),	-- Freedom Walker's
@@ -1140,6 +1205,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92460,	-- Coming of Age
 				qg = 251361,	-- Rorian the Dayseeker
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				groups = {
 					objective(1, {	-- 0/8 Juvenile Vuldren
 						provider = { "n", 250873 },	-- Juvenile Vuldren
@@ -1152,6 +1218,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251363,	-- Dalia the Collector
 				coord = { 43.4, 24.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 2,
 				sym = {{ "select", "itemID", 255663 }},	-- Windstone
 				groups = {
@@ -1173,6 +1240,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92528,	-- Among the Faithful
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				qi = 252661,	-- Commander Cyclas's Head (QI!)
 				groups = {
@@ -1189,10 +1257,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuestNumRequired = 1,
 				qg = 251906,	-- Teeri Wellwind
 				coord = { 44.4, 45.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 			}),
 			q(94901, {	-- Hopping Helpers
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet (collect Gustjumper frogs).
+				u = SKYBORNE_UNLOCKED,
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 8,
 			}),
@@ -1200,6 +1270,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92834,	-- Avenged Tenfold
 				qg = 252475,	-- Elaadrin Evengale
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 6,
 			}),
@@ -1207,6 +1278,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93746,	-- A Firm Response
 				qg = 251968,	-- Ayessa Dawnsinger
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 6,
 			}),
@@ -1214,6 +1286,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92460,	-- Coming of Age
 				qg = 251368,	-- Elatrell Featherlight
 				coord = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				groups = {
 					objective(1, {	-- 0/8 Pesky Cirrusfly
 						provider = { "n", 251169 },	-- Pesky Cirrusfly
@@ -1224,11 +1297,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92517,	-- The Criminal Element
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 			}),
 			q(97205, {	-- Learning to Ride
 				qg = 265756,	-- Genn Fairweather
 				coord = { 53.8, 81.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				lvl = 40,
 				timeline = { TIMELINE.ADDED_1_60_1 },
@@ -1237,6 +1312,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92679,	-- Blood Tithe
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				sym = {{ "select", "itemID", 252032 }},	-- Red Delicious Stormapple
 				groups = {
@@ -1260,12 +1336,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 					253844,	-- Valennia Stormfist
 				},
 				coord = { 61.2, 71.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 7,
 			}),
 			q(94411, {	-- Meddlesome Mages
 				sourceQuest = 92595,	-- The Windshapers
 				qg = 251902,	-- Illaya Amberwind
 				coord = { 43.6, 44.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 4,
 				groups = {
@@ -1277,6 +1355,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 94484,	-- Unnerving Silence
 				qg = 254151,	-- Vayn Moongaze
 				coord = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 				qi = 258771,	-- Al'Alketh Cultist's Ear (QI!)
 				groups = {
@@ -1289,6 +1368,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93165,	-- Mercy Falls on Deaf Ears
 				qg = 254151,	-- Vayn Moongaze
 				coord = { 63.8, 36.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				repeatable = true,
 				lvl = 8,
 				qi = 258771,	-- Al'Alketh Cultist's Ear (QI!)
@@ -1297,6 +1377,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92679,	-- Blood Tithe
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				sym = {{ "select", "itemID", 252032 }},	-- Red Delicious Stormapple
 				groups = {
@@ -1318,6 +1399,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuestNumRequired = 1,
 				qg = 251906,	-- Teeri Wellwind
 				coord = { 44.4, 45.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				qi = 257945,	-- Pilfered Windstone (QI!)
 			}),
@@ -1325,12 +1407,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92640,	-- Desperate Times
 				qg = 252383,	-- Valennia Stormfist
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 7,
 			}),
 			q(92597, {	-- Reading the Leylines
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251371,	-- Falorne Fallwind <High Order>
 				coord = { 43.3, 24.9, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_ALLIANCE },
 				lvl = 2,
 			}),
@@ -1342,6 +1426,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuestNumRequired = 1,
 				qg = 251905,	-- Zerril Softbreeze
 				coord = { 43.8, 43.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				groups = {
 					i(263511),	-- Recipe: Skywall Souffle
@@ -1352,6 +1437,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92465,	-- Agitators
 				qg = 249363,	-- Yala Windwatcher
 				coord = { 47.2, 21.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 3,
 				groups = {
 					i(257277),	-- Windblown Short Cloak
@@ -1365,6 +1451,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 				qg = 252378,	-- Yorana Windyreed
 				coord = { 69.6, 67.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 				groups = {
 					i(257345),	-- Honed Greathammer
@@ -1381,9 +1468,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qs = 265476,	-- Ripped Missive (QS!)
 				cr = 253622,	-- Commander Haalien
 				coord = { 65.4, 36.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 9,
 			}),
 			q(93791, {	-- Speak with Belann
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				qg = 252373,	-- Anathamaas Aetherwind
 				coord = { 65.8, 80.4, MAP.ZEPHRAS_ISLE },
@@ -1394,6 +1483,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92685,	-- The Hills Have Eyes
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				sym = {{ "select", "itemID", 252032 }},	-- Red Delicious Stormapple
 				groups = {
@@ -1411,6 +1501,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92528,	-- Among the Faithful
 				qg = 252172,	-- Danarii Bellowveil
 				coord = { 45.2, 45.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				groups = {
 					o(576179, {	-- Supply Cache
@@ -1423,6 +1514,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 69.8, 61.6, MAP.ZEPHRAS_ISLE },
 				sourceQuest = 92840,	-- Catching Wind
 				classes = { DRUID },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				lvl = 10,
 				groups = {
@@ -1435,6 +1527,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(99203, {	-- Swift as the Wind
 				qg = 265756,	-- Genn Fairweather
 				coord = { 53.8, 81.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = { SKYBORNE_HORDE },
 				lvl = 60,
@@ -1446,12 +1539,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 254084,	-- Elayaa Easewind
 				coord = { 45.2, 44.2, MAP.ZEPHRAS_ISLE },
 				classes = { HUNTER },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				lvl = 10,
 			}),
 			q(94013, {	-- Taming the Beast
 				sourceQuest = 94979,	-- Taming the Beast
 				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
+				u = SKYBORNE_UNLOCKED,
 				qi = 264163,	-- Taming Rod (PQI!)
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
@@ -1460,6 +1555,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(94978, {	-- Taming the Beast
 				qg = 252389,	-- Quel'ana Quickgale
+				u = SKYBORNE_UNLOCKED,
 				qi = 267272,	-- Taming Rod (PQI!)
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				classes = { HUNTER },
@@ -1469,6 +1565,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(94979, {	-- Taming the Beast
 				sourceQuest = 94978,	-- Taming the Beast
 				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
+				u = SKYBORNE_UNLOCKED,
 				qi = 267298,	-- Taming Rod (PQI!)
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
@@ -1479,6 +1576,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 94484,	-- Unnerving Silence
 				qg = 257944,	-- Elegael Thornpaw
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 				groups = {
 					o(619450, {	-- Lady's Tear Moss
@@ -1498,12 +1596,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 				qg = 251366,	-- Aetheen of the Gales <Elder of Zephras Isle>
 				coord = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				isBreadcrumb = true,
 			}),
 			q(94414, {	-- The Anchors of Zephras
 				qg = 257554,	-- Halaan Hawk-Eye
 				coord = { 43.8, 24.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 2,
 			}),
 			q(93161, {	-- The Ancient Hilt
@@ -1514,6 +1614,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(93735, {	-- The Broken Construct
 				sourceQuest = 92700,	-- The Grand Skyseer
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				qg = 251968,	-- Ayessa Dawnsinger
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
@@ -1523,6 +1624,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93735,	-- The Broken Construct
 				qg = 256083,	-- Riaani Nightwind
 				coord = { 59.0, 73.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 4,
 			}),
@@ -1530,6 +1632,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93737,	-- The Broken Construct
 				qg = 256083,	-- Riaani Nightwind
 				coord = { 59.0, 73.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 4,
 			}),
@@ -1537,6 +1640,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92462,	-- Infestation Investigation
 				qg = 251368,	-- Elatrell Featherlight
 				coord = { 43.4, 24.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 2,
 				groups = {
 					objective(1, {	-- 0/1 Cirrusfly Queen slain
@@ -1555,6 +1659,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				groups = {
 					objective(1, {	-- 0/10 Highlands Bandit slain
@@ -1574,18 +1679,21 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92644,	-- Unfortunate News
 				qg = 252476,	-- Talaanis Shadowsong
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 			}),
 			q(95349, {	-- The Earthen Ring
 				sourceQuest = 93090,	-- What Comes Next
 				qg = 251968,	-- Ayessa Dawnsinger
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 7,
 			}),
 			q(94897, {	-- The Fate of a Loved One
 				qg = 259012,	-- Ealaane Nimbuswalker
 				coord = { 65.8, 74.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 				groups = {
 					objective(1, {	-- 0/1 Heirloom
@@ -1599,6 +1707,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 94490,	-- Ripped Missive
 				qg = 257944,	-- Elegael Thornpaw
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 				qi = 265782,	-- Mysterious Orders (PQI!)
 			}),
@@ -1606,6 +1715,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92646,	-- Confront Lorthuna
 				qg = 251968,	-- Ayessa Dawnsinger
 				coord = { 59.0, 79.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 7,
 			}),
@@ -1613,6 +1723,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93835,	-- Confront Lorthuna
 				qg = 252475,	-- Elaadrin Evengale
 				coord = { 66.6, 79.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 7,
 			}),
@@ -1620,6 +1731,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93159,	-- The Strange Hermit
 				qg = 251684,	-- Strange Hermit
 				coord = { 54.0, 39.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 				groups = {
 					o(613238, {	-- Zephyrseed Cone
@@ -1630,11 +1742,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92598, {	-- The Gift of Skysight
 				qg = 251487,	-- Ventaari Brightwish
 				coord = { 42.6, 24.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_HORDE },
 				lvl = 2,
 			}),
 			q(92700, {	-- The Grand Skyseer
 				sourceQuest = 92579,	-- To Valanaar
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				qg = 252383,	-- Valennia Stormfist
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
@@ -1652,12 +1766,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 				qg = 263664,	-- Raan Wildwind <Adventurer>
 				coord = { 41.6, 44.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 			}),
 			q(94006, {	-- The Great Ursera Spirit
 				qg = 252359,	-- Lotheluum Starbreeze
 				coord = { 64.0, 75.0, MAP.ZEPHRAS_ISLE },
 				classes = { DRUID },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				lvl = 10,
 			}),
@@ -1665,12 +1781,14 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92880,	-- Return to Valanaar
 				qg = 252383,	-- Valennia Stormfist
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 			}),
 			q(92596, {	-- The High Order
 				sourceQuest = 92472,	-- The Next Step
 				qg = 251903,	-- Rathiril Sunlance
 				coord = { 45.0, 46.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
@@ -1682,6 +1800,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 				qg = 252800,	-- Aamelia Windfield
 				coord = { 46.6, 81.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 				sym = {{ "select", "itemID", 252032 }},	-- Red Delicious Stormapple
 				groups = {
@@ -1696,22 +1815,26 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92947,	-- Making Our Move
 				qg = 253576,	-- Hyusaa Quickbreeze
 				coord = { 63.8, 50.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 7,
 			}),
 			q(94946, {	-- The Magical City of Dalaran
 				sourceQuest = 93089,	-- What Comes Next
 				qg = 252475,	-- Elaadrin Evengale
 				coord = { 66.6, 79.9, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 7,
 			}),
 			q(93174, {	-- The Malfunctioning Construct
 				-- TODO: Wowhead doesn't list the quest giver yet. Speak with Riaani Nightwind in Valanaar, then the Strange Hermit in Shadowgale Forest.
+				u = SKYBORNE_UNLOCKED,
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 8,
 			}),
 			q(92727, {	-- The Missing Scholar
 				sourceQuest = 92699,	-- The Supreme Magister
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				qg = 253204,	-- Dondallion Whisperwind
 				coord = { 66.2, 79.8, MAP.ZEPHRAS_ISLE },
@@ -1721,6 +1844,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92727,	-- The Missing Scholar
 				provider = { "o", 581822 },	-- Bloodstained Satchel
 				coord = { 53.3, 72.1, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 				groups = {
@@ -1738,6 +1862,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92849,	-- The Missing Scholar
 				qg = 253284,	-- Fillion Flamebreeze
 				coord = { 52.0, 69.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 				groups = {
@@ -1752,6 +1877,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92470,	-- Foul Matriarch
 				qg = 251366,	-- Aetheen of the Gales
 				coord = { 42.6, 23.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 3,
 			}),
 			q(92515, {	-- The Problem With Prideclaws
@@ -1762,6 +1888,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuestNumRequired = 1,
 				qg = 251993,	-- Indari Sunseam
 				coord = { 44.6, 44.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				qi = 252670,	-- Prideclaw Pelt (QI!)
 				groups = {
@@ -1772,6 +1899,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				qg = 252377,	-- Seena Skybreaker
 				coord = { 59.8, 72.8, MAP.ZEPHRAS_ISLE },
 				classes = { WARRIOR },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				lvl = 10,
 				qi = 263993,	-- Skybreaker Bulwark (QI!)
@@ -1782,10 +1910,12 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(93159, {	-- The Strange Hermit
 				qg = 251684,	-- Strange Hermit
 				coord = { 54.0, 39.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 			}),
 			q(92699, {	-- The Supreme Magister
 				sourceQuest = 92701,	-- To Valanaar
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				qg = 252383,	-- Valennia Stormfist
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
@@ -1799,6 +1929,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 				qi = 265475,	-- Commander Haalien's Severed Head (QI!)
 			}),
@@ -1806,11 +1937,13 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92881,	-- The High Elder's Request
 				qg = 252476,	-- Talaanis Shadowsong
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 			}),
 			q(92532, {	-- The Warrior's Path
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
+				u = SKYBORNE_UNLOCKED,
 				qi = 282419,	-- Crumpled Note (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { WARRIOR },
@@ -1819,6 +1952,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			q(92482, {	-- The Way of the Hunter
 				sourceQuest = 92461,	-- Harmony in Balance
 				qg = 251361,	-- Rorian the Dayseeker
+				u = SKYBORNE_UNLOCKED,
 				qi = 282421,	-- Scribbled Note (PQI!)
 				coord = { 42.1, 23.5, MAP.ZEPHRAS_ISLE },
 				classes = { HUNTER },
@@ -1828,9 +1962,11 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92528,	-- Among the Faithful
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 			}),
 			q(92595, {	-- The Windshapers
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				qg = 251902,	-- Illaya Amberwind
 				coord = { 43.6, 44.8, MAP.ZEPHRAS_ISLE },
@@ -1844,6 +1980,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				},
 				qg = 257944,	-- Elegael Thornpaw <Nightclaw Druid>
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 			}),
 			q(92579, {	-- To Valanaar
@@ -1851,6 +1988,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 
 				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 6,
 				qi = 253152,	-- Aonda's Written Report (QI!)
@@ -1865,6 +2003,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 
 				qg = 251523,	-- Constable Aonda <Peacekeeper>
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 6,
 				qi = 253152,	-- Aonda's Written Report (QI!)
@@ -1883,6 +2022,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuestNumRequired = 1,
 				qg = 252383,	-- Valennia Stormfist
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 				groups = {
 					i(263338),	-- Defender's Bracers
@@ -1894,6 +2034,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 94013,	-- Taming the Beast
 				qg = 252389,	-- Quel'ana Quickgale <Hunter Trainer>
 				coord = { 59.6, 72.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_ALLIANCE, SKYBORNE_HORDE },
 				classes = { HUNTER },
 				lvl = 10,
@@ -1902,6 +2043,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92643,	-- The Turncoat
 				qg = 253372,	-- Dead Cultist
 				coord = { 56.0, 58.8, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 6,
 				qi = 273852,	-- Glowing Crystal (PQI!)
 				groups = {
@@ -1914,17 +2056,20 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				altQuests = { 94493 },	-- A Sacrifice in Vain
 				qg = 252359,	-- Lotheluum Starbreeze <Druid Trainer>
 				coord = { 64.0, 75.0, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 			}),
 			q(94487, {	-- Unwanted and Unworthy
 				sourceQuest = 94484,	-- Unnerving Silence
 				qg = 257944,	-- Elegael Thornpaw
 				coord = { 61.6, 39.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 8,
 				qi = 265141,	-- Bloody Heirloom (QI!)
 			}),
 			q(93736, {	-- Unwelcome Spirits
 				sourceQuest = 92700,	-- The Grand Skyseer
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				qg = 254344,	-- Endaria Mistgaze
 				coord = { 58.2, 78.2, MAP.ZEPHRAS_ISLE },
@@ -1932,6 +2077,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(92741, {	-- Unwelcome Visitors
 				sourceQuest = 92699,	-- The Supreme Magister
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				qg = 253004,	-- Iaadaria Bitterwind
 				coord = { 66.2, 79.6, MAP.ZEPHRAS_ISLE },
@@ -1951,6 +2097,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 			}),
 			q(94902, {	-- Valanaar Vintages
 				-- TODO: Wowhead doesn't list the quest giver or objectives yet (collect grapes).
+				u = SKYBORNE_UNLOCKED,
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				lvl = 8,
 			}),
@@ -1962,6 +2109,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuestNumRequired = 1,
 				provider = { "o", 610954 },	-- Bounty Available: Vulgara the Insatiable!
 				coord = { 43.4, 45.9, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 4,
 				qi = 257942,	-- Vulgara's Head (QI!)
 				groups = {
@@ -1973,6 +2121,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				--sourceQuest = 94946,	-- The Magical City of Dalaran
 				qg = 259084,	-- Denaaris Stargale
 				coord = { 12.3, 56.4, MAP.ALTERAC_MOUNTAINS },
+				u = SKYBORNE_UNLOCKED,
 				races = SKYBORNE_ALLIANCE,
 				lvl = 7,
 			}),
@@ -1980,23 +2129,27 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 95349,	-- The Earthen Ring
 				qg = 259119,	-- Alaana Stormwalker
 				coord = { 33.4, 22.4, MAP.MULGORE },
+				u = SKYBORNE_UNLOCKED,
 				races = { SKYBORNE_HORDE },
 				lvl = 7,
 			}),
 			q(93461, {	-- Welcome to Shen'dar Village (A)
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 4,
 			}),
 			q(92514, {	-- Welcome to Shen'dar Village (H)
 				qg = 251523,	-- Constable Aonda
 				coord = { 45.6, 45.4, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 4,
 			}),
 			q(92454, {	-- Welcome!
 				-- TODO: Wowhead doesn't list the quest giver yet. Bring the voucher to Dalia Windbreeze.
+				u = SKYBORNE_UNLOCKED,
 				qi = 251900,	-- Thendal Grove Gift Voucher (PQI!)
 				timeline = { TIMELINE.CREATED_1_60_1 },
 				groups = {
@@ -2009,6 +2162,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 94369,	-- The Fate of Zephras
 				qg = 252476,	-- Talaanis Shadowsong
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = ALLIANCE_ONLY,
 				lvl = 7,
 			}),
@@ -2016,6 +2170,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 93836,	-- The Fate of Zephras
 				qg = 252476,	-- Talaanis Shadowsong
 				coord = { 66.2, 76.6, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				races = HORDE_ONLY,
 				lvl = 7,
 			}),
@@ -2023,6 +2178,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				sourceQuest = 92679,	-- Blood Tithe
 				qg = 250929,	-- Malfunctioning Cyclone Construct
 				coord = { 48.6, 78.2, MAP.ZEPHRAS_ISLE },
+				u = SKYBORNE_UNLOCKED,
 				lvl = 5,
 			}),
 		}),

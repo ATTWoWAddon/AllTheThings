@@ -4071,6 +4071,7 @@ _.PhaseConstants = {
 	NEVER_IMPLEMENTED = 1,
 	REAL_MONEY = 3,
 	REMOVED_FROM_GAME = 2,
+	SKYBORNE_UNLOCKED = 650,
 	TRADING_POST = 7,
 	UNLEARNABLE = 5,
 }
@@ -4113,6 +4114,11 @@ local phases = {
 		minimumBuildVersion = 11301,
 		buildVersion = 11303,
 		state = 2,
+	},
+	[650] = {
+		name = "Skyborne Unlocked",
+		description = "|cFFAAFFAAThis requires the Skyborne race, which is unlocked by a purchase.|r",
+		state = 3,
 	},
 } L.PHASES = phases
 -- Automatic Types

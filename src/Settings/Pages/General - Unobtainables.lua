@@ -63,6 +63,10 @@ if app.IsClassic or app.GameBuildVersion < 20000 then
 		3,	-- Real Money
 		4	-- PvP Elite / Gladiator
 	};
+	if app.IsForever then
+		tinsert(AvailabilityConditions, 0);	-- Blank Space
+		tinsert(AvailabilityConditions, 650);	-- Skyborne Unlocked
+	end
 end
 
 local yoffset = -4;

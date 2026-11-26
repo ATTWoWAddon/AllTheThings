@@ -485,6 +485,26 @@ local UnobtainableSettingsBase = {
 };
 settings.__UnobtainableSettingsBase = UnobtainableSettingsBase;
 
+-- Forever: the Skyborne race is a paid unlock. Its content is shown by default,
+-- unless ATT knows this account's characters and none of them is Skyborne.
+if app.IsForever then
+	local SKYBORNE_UNLOCKED = 650;
+	UnobtainableSettingsBase.__index[SKYBORNE_UNLOCKED] = true;
+	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData, characterData)
+		local any = false;
+		for guid,character in pairs(characterData or app.EmptyTable) do
+			any = true;
+			local raceID = character.raceID;
+			if raceID == 95 or raceID == 96 then	-- Skyborne (Alliance / Horde)
+				return;
+			end
+		end
+		if any then
+			UnobtainableSettingsBase.__index[SKYBORNE_UNLOCKED] = false;
+		end
+	end);
+end
+
 -- Check for Season of Discovery
 local season = C_Seasons and C_Seasons.GetActiveSeason() or 0;
 if season > 0 then

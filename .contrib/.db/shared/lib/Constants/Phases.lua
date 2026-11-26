@@ -3661,4 +3661,19 @@ FOREVER_PHASE_TWO = createClassicPhase({
 		tw = "《魔獸世界：永恆》Beta測試內容2，開放至30級。",
 	},
 });
+-- #if FOREVER
+SKYBORNE_UNLOCKED = createPhase({
+	readable = "Skyborne Unlocked",
+	constant = "SKYBORNE_UNLOCKED",
+	export = true,
+	phaseID = 650,
+	state = 3,
+	text = {
+		en = "Skyborne Unlocked",
+	},
+	description = {
+		en = "This requires the Skyborne race, which is unlocked by a purchase.",
+	},
+});
+-- #endif
 -- Done defining Phases for Forever
