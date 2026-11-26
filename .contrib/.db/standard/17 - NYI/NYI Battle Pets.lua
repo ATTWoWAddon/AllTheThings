@@ -1624,9 +1624,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 		-- 11.2.5
 		expansion(EXPANSION.TWW, patch(2,5), {
 			-- With SpeciesID Attached
-			i(252199, {	-- Festive Eve
-				displayID = 137218,
-			}),
 			i(252137, {	-- Lil' Chompers
 				displayID = 137193,
 			}),

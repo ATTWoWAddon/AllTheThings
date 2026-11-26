@@ -942,19 +942,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(249763),	-- Ensemble: Void-Touched Winter Collection
 				q(92098),	-- Ensemble: Void-Touched Winter Collection
 
-				------ The Seafarer's Winter Set ------
-				i(249745),	-- Ensemble: The Seafarer's Winter Collection
-				q(92096),	-- Ensemble: The Seafarer's Winter Collection
-				i(249740),	-- Seafarer's Winter Belt
-				i(249742),	-- Seafarer's Winter Boots
-				i(249744),	-- Seafarer's Winter Cloak
-				i(249743),	-- Seafarer's Winter Gloves
-				i(249737),	-- Seafarer's Winter Hood
-				i(249741),	-- Seafarer's Winter Leggings
-				i(249738),	-- Seafarer's Winter Pauldrons
-				i(249862),	-- Seafarer's Winter Spaulders
-				i(249739),	-- Seafarer's Winter Tunic
-
 				------ Unused duplicated Ensembles ------
 				i(241600),	-- Ensemble: Chains of the Chosen Dead
 				i(241602),	-- Ensemble: Chains of the Chosen Dead

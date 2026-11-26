@@ -69,15 +69,6 @@ root(ROOTS.Unsorted, {
 			i(283993),	-- Cherry Lollibop
 			i(283994),	-- Spearmint Lollibop
 			i(283995),	-- Lemon Lollibop
-			i(284008),	-- Ice-Walker's Belt
-			i(284009),	-- Ice-Walker's Helm
-			i(284010),	-- Ice-Walker's Pauldrons
-			i(284011),	-- Ice-Walker's Hauberk
-			i(284012),	-- Ice-Walker's Leggings
-			i(284013),	-- Ice-Walker's Boots
-			i(284014),	-- Ice-Walker's Gloves
-			i(284015),	-- Ice-Walker's Cloak
-			i(284016),	-- Ensemble: Ice-Walker's Guise of the Wight
 			i(284017),	-- Embered Belt
 			i(284018),	-- Embered Helm
 			i(284019),	-- Embered Pauldrons

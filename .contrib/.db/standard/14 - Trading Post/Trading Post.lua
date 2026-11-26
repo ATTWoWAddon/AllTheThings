@@ -2911,7 +2911,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(125, i(250310)),	-- Theif's Notched Blade
 			}),
 		}),
-		Month(NOVEMBER, { "added 12.1.5.70688", "removed 12.1.5.99999" }, {	-- TODO: Timeline out correctly
+		Month(NOVEMBER, { "added 12.1.5.70688", REMOVED_12_1_7 }, {
 			n(FILLED_TRAVELERS_LOG, {
 				i(282649),	-- Hot Motocross Bunmover 4600 (MOUNT!)
 			}),
@@ -2963,6 +2963,17 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(95, i(248926)),	-- Stale Thirteen Grain Loaf
 				traderstender(40, i(283472)),	-- Steel-Plated Cushion Boots
 				traderstender(50, i(273133)),	-- Stylish Crimson Top Hat
+			}),
+		}),
+		Month(DECEMBER, { ADDED_12_1_7, "removed 12.1.7.99999" }, {	-- TODO: Timeline out correctly
+			-- TODO: Filled Traveler's Log reward
+			filter(BATTLE_PETS, {
+				traderstender(250, i(229366)),	-- Brrrgl (PET!)
+				traderstender(250, i(252199)),	-- Festive Eve (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(700, iensemble(284016)),	-- Ensemble: Ice-Walker's Guise of the Wight
+				traderstender(600, iensemble(249745)),	-- Ensemble: The Seafarer's Winter Collection
 			}),
 		}),
 	}),
