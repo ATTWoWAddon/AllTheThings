@@ -42,16 +42,16 @@ APPRENTICE_JOURNEYMAN_ALCHEMY = {
 		r(3170),	-- Weak Troll's Blood Elixir / Weak Troll's Blood Potion
 	}),
 	n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
-		r(1269228, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Black Dye Pigment
-		r(1269226, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Blue Dye Pigment
-		r(1269235, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Brown Dye Pigment
-		r(1269230, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Green Dye Pigment
-		r(1269233, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Orange Dye Pigment
-		r(1269231, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Purple Dye Pigment
-		r(1269229, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Red Dye Pigment
-		r(1269232, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Teal Dye Pigment
-		r(1269227, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- White Dye Pigment
-		r(1269234, { timeline = { ADDED_11_2_7, REMOVED_12_1_0 } }),	-- Yellow Dye Pigment
+		r(1269228, { timeline = { REMOVED_12_1_0 } }),	-- Black Dye Pigment
+		r(1269226, { timeline = { REMOVED_12_1_0 } }),	-- Blue Dye Pigment
+		r(1269235, { timeline = { REMOVED_12_1_0 } }),	-- Brown Dye Pigment
+		r(1269230, { timeline = { REMOVED_12_1_0 } }),	-- Green Dye Pigment
+		r(1269233, { timeline = { REMOVED_12_1_0 } }),	-- Orange Dye Pigment
+		r(1269231, { timeline = { REMOVED_12_1_0 } }),	-- Purple Dye Pigment
+		r(1269229, { timeline = { REMOVED_12_1_0 } }),	-- Red Dye Pigment
+		r(1269232, { timeline = { REMOVED_12_1_0 } }),	-- Teal Dye Pigment
+		r(1269227, { timeline = { REMOVED_12_1_0 } }),	-- White Dye Pigment
+		r(1269234, { timeline = { REMOVED_12_1_0 } }),	-- Yellow Dye Pigment
 	})),
 	filter(REAGENTS, {
 		r(7836),	-- Blackmouth Oil
