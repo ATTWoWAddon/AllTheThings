@@ -15,6 +15,8 @@ maproot(EASTERN_KINGDOMS, 1186, {	-- Blackrock Depths: Shadowforge City
 				groups = {
 					i(245291, {	-- Replica Dark Iron Mole Machine (DECOR!)
 						cost = 25000000,	-- 2500g
+						description = "This is only available in the Dark Iron Dwarf starter zone, NOT the instance.\nUse the Mole Machine on any Dark Iron Dwarf to purchase this."
+						races = { DARKIRON },
 						timeline = { ADDED_11_2_7 },
 					}),
 				},

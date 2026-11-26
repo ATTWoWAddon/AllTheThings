@@ -358,6 +358,22 @@ AddSlashCommands({"att","allthethings","attc"}, function(cmd)
 			app.ToggleMiniListForCurrentZone(tonumber(cmd:sub(7)))
 			return true
 		end
+
+		-- Match decor specifically
+		-- This takes both decor links (from the Decor Catalog; itemstring-ish)
+		-- and "decor:xyz"
+		local decorId = cmd:match("|hhousingdecor:(%d+)|h")
+		local decorEntry = false
+		if decorId then
+			decorEntry = C_HousingCatalog.GetCatalogEntryInfoByRecordID(Enum.HousingCatalogEntryType.Decor, tonumber(decorId), true)
+		elseif cmd:sub(1,6) == "decor:" then
+			decorEntry = C_HousingCatalog.GetCatalogEntryInfoByRecordID(Enum.HousingCatalogEntryType.Decor, tonumber(cmd:sub(7)), true)
+		end
+
+		if decorEntry and decorEntry.itemID then
+			cmd = "i:" .. tonumber(decorEntry.itemID)
+		end
+
 		-- Search for the Link in the database
 		if app.CreatePopoutForSearch(cmd) then
 			return true
