@@ -660,10 +660,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			}),
 			q(832, {	-- Burning Shadows
 				qs = 4903,	-- Eye of Burning Shadow (QS!)
-				coord = { 51.78, 9.56, MAP.DUROTAR },
 				maps = { MAP.ORGRIMMAR },
 				races = HORDE_ONLY,
-				cr = 3204,	-- Gazz'uz
 				lvl = 4,
 			}),
 			q(97899, {	-- Camping 101: Alchemy [Durotar]
@@ -1993,8 +1991,8 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 		}),
 		n(ZONE_DROPS, {
 			i(4882, {	-- Benedict's Key
-				cr = 3192,	-- Lieutenant Benedict
 				coord = { 59.6, 58.2, MAP.DUROTAR },
+				cr = 3192,	-- Lieutenant Benedict
 			}),
 			i(277661, {	-- Dull Storm Orb (QS!)
 				coord = { 51.5, 21.6, MAP.DUROTAR },
@@ -2003,6 +2001,10 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					3118,	-- Dustwind Storm Witch
 					276194,	-- Dustwind Eggtender
 				},
+			}),
+			i(4903, {	-- Eye of Burning Shadow
+				coord = { 51.78, 9.56, MAP.DUROTAR },
+				cr = 3204,	-- Gazz'uz
 			}),
 			i(275724, {	-- Hexed Pendant
 				description = "You can continue to Disenchant these to level your enchanting well beyond skill level 40.",

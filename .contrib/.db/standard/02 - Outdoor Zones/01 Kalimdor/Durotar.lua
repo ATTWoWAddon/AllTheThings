@@ -2005,11 +2005,9 @@ maproot(KALIMDOR, DUROTAR, {
 			}),
 			q(832, {	-- Burning Shadows
 				provider = { "i", 4903 },	-- Eye of Burning Shadow
-				coord = { 51.78, 9.56, DUROTAR },
 				timeline = { REMOVED_4_0_3 },
 				maps = { ORGRIMMAR },
 				races = HORDE_ONLY,
-				cr = 3204,	-- Gazz'uz
 				lvl = 4,
 			}),
 			q(791, {	-- Carry Your Weight
@@ -3620,9 +3618,14 @@ maproot(KALIMDOR, DUROTAR, {
 		}),
 		n(ZONE_DROPS, {
 			i(4882, {	-- Benedict's Key
-				cr = 3192,	-- Lieutenant Benedict
 				coord = { 59.6, 58.2, DUROTAR },
+				cr = 3192,	-- Lieutenant Benedict
 				timeline = { DELETED_4_0_3 },
+			}),
+			i(4903, {	-- Eye of Burning Shadow
+				coord = { 51.78, 9.56, MAP.DUROTAR },
+				cr = 3204,	-- Gazz'uz
+				timeline = { REMOVED_4_0_3 },
 			}),
 			i(5466, {	-- Scorpid Stinger
 				maps = { DUROTAR },
