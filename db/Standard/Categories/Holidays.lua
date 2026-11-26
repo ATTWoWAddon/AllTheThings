@@ -16836,7 +16836,7 @@ q(57298,{coords={
 [75]={{53.5,54.7}}},e=242,lvl=30,qgs={157113},rwp=90001,sourceQuests={57249},u=2}),
 q(57300,{awp=110002,coords={
 [71]={{62.3,51.8}}},e=242,isWeekly=1,lvl=10,pvp=1,qgs={223882},g={
-i(233014,{awp=110005,b=1,e=242,f=55,lvl=80,pvp=1,sym={{"select","symselector",68},{"pop"},{"where","headerID",-58},{"extract","itemID"}}})}})}}),
+i(233014,{awp=110005,b=1,e=242,f=55,lvl=80,pvp=1,sym={{"select","symselector",68},{"pop"},{"where","difficultyID",116},{"pop"},{"not","headerID",-63},{"extract","itemID"},{"exclude","itemID",224278}}})}})}}),
 h(-58,{e=242,g={
 n(158061,{coords={
 [75]={{50.7,41.1}}},e=242,g={
@@ -16885,7 +16885,7 @@ i(171177,{b=1,e=242,u=2})}})}}),
 h(-45,{e=242,g={
 q(60215,{coords={
 [71]={{62.3,51.8}}},e=242,isWeekly=1,lvl=30,qgs={223882},g={
-i(233014,{awp=110005,b=1,e=242,f=55,lvl=80,sym={{"select","symselector",68},{"pop"},{"where","headerID",-58},{"extract","itemID"}}})}})}}),
+i(233014,{awp=110005,b=1,e=242,f=55,lvl=80,sym={{"select","symselector",68},{"pop"},{"where","difficultyID",116},{"pop"},{"not","headerID",-63},{"extract","itemID"},{"exclude","itemID",224278}}})}})}}),
 h(-58,{e=242,g={
 n(158061,{coords={
 [75]={{50.7,41.1}}},e=242,g={
@@ -17029,7 +17029,7 @@ h(-45,{e=242,g={
 q(82817,{coords={
 [84]={{56,18.4}},
 [85]={{52.8,82.8}}},e=242,isWeekly=1,lvl=30,qgs={234556},rwp=110007,u=2,g={
-i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",68},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+i(232471,{b=1,e=242,lvl=80,sym={{"select","symselector",68},{"pop"},{"where","difficultyID",116},{"pop"},{"not","headerID",-63},{"extract","itemID"},{"exclude","itemID",224278}},u=2})}}),
 q(84735,{coords={
 [71]={{63,49.7}}},e=242,lvl=30,qgs={229494},rwp=110007,u=2}),
 hqt(84743,{coords={
@@ -17138,11 +17138,11 @@ s(229527,231428,{b=1,e=242,f=23,lvl=22,u=2}),
 s(229522,231422,{b=1,e=242,f=5,loc=46,lvl=22,u=2}),
 s(229538,231441,{b=1,e=242,f=5,loc=43,lvl=22,u=2}),
 n(223881,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",68},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",68},{"pop"},{"where","difficultyID",116},{"pop"},{"not","headerID",-63},{"extract","itemID"},{"exclude","itemID",224278}},u=2}),
 n(233209,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",68},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",68},{"pop"},{"where","difficultyID",116},{"pop"},{"not","headerID",-63},{"extract","itemID"},{"exclude","itemID",224278}},u=2}),
 n(224322,{coords={
-[71]={{63,49.8}}},e=242,sym={{"select","symselector",68},{"pop"},{"where","headerID",-58},{"extract","itemID"}},u=2})}}),
+[71]={{63,49.8}}},e=242,sym={{"select","symselector",68},{"pop"},{"where","difficultyID",116},{"pop"},{"not","headerID",-63},{"extract","itemID"},{"exclude","itemID",224278}},u=2})}}),
 d(116,{difficulties={17,14,15},e=242,g={
 h(-63,{e=242,g={
 s(229587,231501,{e=242,f=4,loc=43,lvl=80}),
@@ -17809,7 +17809,7 @@ q(82783,{coords={
 [71]={{62.6,50}}},e=242,isWeekly=1,lvl=10,maps={2354},qgs={226368},g={
 ach(40977,{e=242,g={
 crit(70589,{achID=40976,e=242,id=8})}}),
-i(233014,{b=1,e=242,f=55,lvl=80,sym={{"select","symselector",68},{"pop"},{"where","headerID",-58},{"extract","itemID"}}}),
+i(233014,{b=1,e=242,f=55,lvl=80,sym={{"select","symselector",68},{"pop"},{"where","difficultyID",116},{"pop"},{"not","headerID",-63},{"extract","itemID"},{"exclude","itemID",224278}}}),
 cu(1166,{e=242})}})}}),
 h(-56,{e=242,g={
 o(455795,{coords={

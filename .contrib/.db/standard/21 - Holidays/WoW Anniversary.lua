@@ -398,8 +398,10 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 -- Common Symlink Drops
+-- Boss drops from the event difficulty (the vendor copies carry the 11.0.7 removal)
 local SYM_ALL_BRD_DROPS = {SymSelector.select("WOW_ANNIVERSARY_20_BRD"),{"pop"},
-{"where","headerID",VENDORS},{"extract","itemID"}}
+{"where","difficultyID",DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC},{"pop"},{"not","headerID",ZONE_DROPS},
+{"extract","itemID"},{"exclude","itemID",224278}}	-- Timewarped Ironforge Blueprints (QI!)
 
 local function RelicCofferKeyPurchase(itemID)
 	local item = i(itemID, {
