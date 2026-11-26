@@ -151,6 +151,12 @@ instanceroot(2974, {	-- Blackmaw Hold
 				},
 			}),
 		}),
+		n(RARES, {
+			n(269104, {	-- Moontouched Wanderer
+				i(280080),	-- Claymore of Two Moons
+				i(280079),	-- Lunarlight Robe
+			}),
+		}),
 		n(ZONE_DROPS, {
 			i(249695),	-- Fel-Tainted Flesh
 			i(252893, {	-- Pattern: Timbermaw Tunic (RECIPE!)
