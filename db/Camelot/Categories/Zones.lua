@@ -2434,9 +2434,11 @@ qo(1,{providers={{"n",11561}}})}}),
 q(1052,{coords={
 [1443]={{66.5,7.9}}},lvl=34,maps={1424},qgs={1182},qis={5539},r=2,sourceQuests={261}}),
 q(92812,{awp=16001,coords={
-[1443]={{35.6,92}}},qgs={253140}}),
+[1443]={{35.6,92}}},qgs={253140},repeatable=1,g={
+qo(1,{providers={{"i",254432}}})}}),
 q(92811,{awp=16001,coords={
-[1443]={{66.2,79.4}}},qgs={253139},r=2}),
+[1443]={{66.2,79.4}}},qgs={253139},r=2,g={
+qo(1,{providers={{"i",254432}}})}}),
 q(5421,{coords={
 [1443]={{22.4,73}}},cost={{"i",13545,5}},description="You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.\n\nConsideration: You can make 55s for every 5 Shellfish you turn in and sell the fish on the AH. Up to you if your time is worth more or not. On densely populated servers, probably not a good idea.",lvl=25,qgs={11317},r=1,repeatable=1,g={
 qo(1,{providers={{"i",13545},{"o",176582}}}),

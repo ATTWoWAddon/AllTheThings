@@ -540,14 +540,23 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 253140,	-- Molkar <Gelkis Clan Quartermaster>
 				coord = { 35.6, 92.0, MAP.DESOLACE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				-- TODO: Wowhead doesn't list this quest's objectives yet.
+				repeatable = true,
+				groups = {
+					objective(1, {	-- 0/5 Carved Centaur Totem
+						provider = { "i", 254432 },	-- Carved Centaur Totem
+					}),
+				},
 			}),
 			q(92811, {	-- Economic Warfare (Magram)
 				qg = 253139,	-- Gorhak <Magram Clan Quartermaster>
 				coord = { 66.2, 79.4, MAP.DESOLACE },
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
-				-- TODO: Wowhead doesn't list this quest's objectives yet.
+				groups = {
+					objective(1, {	-- 0/5 Carved Centaur Totem
+						provider = { "i", 254432 },	-- Carved Centaur Totem
+					}),
+				},
 			}),
 			q(5421, {	-- Fish in a Bucket
 				description =
