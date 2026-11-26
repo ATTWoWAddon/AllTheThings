@@ -1524,6 +1524,11 @@ maproot(MAP.KALIMDOR, MAP.FERALAS, {
 					{ 78.6, 63.8, MAP.FERALAS },
 					{ 76.8, 65.4, MAP.FERALAS },
 				},
+				groups = {
+					i(284859, {	-- Silithid Sinew Crossbow
+						timeline = { TIMELINE.ADDED_1_60_1 },
+					}),
+				},
 			}),
 			n(11498, {	-- Skarr the Broken [CATA+] / Skarr the Unbreakable
 				description = "Spawns in the Dire Maul Arena.",
