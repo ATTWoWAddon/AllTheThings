@@ -1282,6 +1282,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 			q(96028, {	-- Magic Over Might
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Bal'mog in Bolder'ok.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1307,6 +1308,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			}),
 			q(96027, {	-- Might Over Magic
 				-- TODO: Wowhead doesn't list the quest giver yet. Turned in to Bal'mog in Bolder'ok.
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 38,
 				groups = {
@@ -1955,7 +1957,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.RIVERGLADES, {
 			q(95181, {	-- Twilight Scouting Report
 				-- TODO: Wowhead doesn't list the quest giver yet.
 				qi = 268516,	-- Twilight Scouting Report (PQI!)
-				timeline = { TIMELINE.ADDED_1_60_1 },
+				timeline = { TIMELINE.CREATED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 36,
 			}),
