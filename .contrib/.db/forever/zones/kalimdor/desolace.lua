@@ -713,6 +713,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
+				timeline = { TIMELINE.REMOVED_1_60_1 },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Maraudine Key Fragment
@@ -730,6 +731,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
+				timeline = { TIMELINE.REMOVED_1_60_1 },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Maraudine Key Fragment
@@ -766,6 +768,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5397,	-- Uthek the Wise
 				coord = { 36.2, 79.2, MAP.DESOLACE },
 				minReputation = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },
+				timeline = { TIMELINE.REMOVED_1_60_1 },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Khan Jehn's Head
@@ -818,6 +821,7 @@ maproot(MAP.KALIMDOR, MAP.DESOLACE, {
 				qg = 5398,	-- Warug
 				coord = { 74.8, 68.0, MAP.DESOLACE },
 				minReputation = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },
+				timeline = { TIMELINE.REMOVED_1_60_1 },
 				lvl = 30,
 				groups = {
 					objective(1, {	-- 0/1 Khan Shaka's Head
