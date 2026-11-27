@@ -33,6 +33,8 @@ local function IsAvailable(ref)
 	return not GetRelativeRawWithField(ref, "_nosearch") and (not ref.questID or app.IsQuestAvailable(ref))
 end
 local CostLinkedFillOptions = {Fillers={}}
+-- Hashes of Things currently being cloned & filled by CheckCollectible (prevents cost/reward cycles from recursing)
+local CheckCollectibleFillChain = {}
 
 local Depth = 0
 local CostDebugIDs = {
@@ -123,12 +125,21 @@ local function CheckCollectible(ref, costid)
 	end
 	-- NPC/Sym are Filler checks
 	if not ref.__FillGroups then
+		-- don't clone & fill the same Thing again while it is already being checked further up this chain
+		local refHash = ref.hash
+		if refHash then
+			if CheckCollectibleFillChain[refHash] then return end
+			CheckCollectibleFillChain[refHash] = true
+		end
 		local clone = CreateObject(ref, true)
 		FillGroups(clone, CostLinkedFillOptions)
+		local collectible
 		if clone.g then
 			-- PrintDebug(costid, "Check filled cost",RefSearch)
-			return CheckCollectible(clone, costid)
+			collectible = CheckCollectible(clone, costid)
 		end
+		if refHash then CheckCollectibleFillChain[refHash] = nil end
+		return collectible
 	end
 end
 app.CheckCollectible = CheckCollectible;

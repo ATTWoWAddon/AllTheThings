@@ -493,6 +493,16 @@ local function SkipFillingGroup(group, FillData)
 	local groupHash, included = group.hash, FillData.Included;
 	if included[groupHash] then return true; end
 
+	-- do not fill a group nested inside a copy of itself (i.e. cost/reward cycles like
+	-- Restored Artifact -> Crate -> Fragments -> Pristine Item -> Quest -> Restored Artifact)
+	if groupHash then
+		local parent = rawget(group, "parent");
+		while parent do
+			if parent.hash == groupHash then return true; end
+			parent = rawget(parent, "parent");
+		end
+	end
+
 	-- do not fill 'saved' groups in ATT tooltips
 	-- or groups directly under saved groups unless in Debug mode
 	if not app.MODE_DEBUG then
