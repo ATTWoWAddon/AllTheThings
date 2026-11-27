@@ -2,6 +2,25 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local NETHEKURSE = 566;
+local OMROGG = 568;
+local KARGATH = 569;
+local PORUNG = 728;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[NETHEKURSE] = { 16807 },	-- Grand Warlock Nethekurse
+	[OMROGG] = { 16809 },	-- Warbringer O'mrogg
+	[KARGATH] = { 16808 },	-- Warchief Kargath Bladefist
+	[PORUNG] = { 20923 },	-- Blood Guard Porung
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(259, {	-- The Shattered Halls
 		lore = "For years, this gargantuan fortress was thought to be abandoned, but it's now inhabited by marauding bands of red, furious fel orcs. The presence of this new, savage breed presents something of a mystery, though what is far more disconcerting is that the numbers of these fel orcs seem to be... growing.",
@@ -390,85 +409,143 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 			}),
-			n(ZONE_DROPS, {
-				i(22554, {	-- Formula: Enchant 2H Weapon - Savagery (RECIPE!)
-					cr = 17465,	-- Shattered Hand Centurion
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(22554, {	-- Formula: Enchant 2H Weapon - Savagery (RECIPE!)
+						cr = 17465,	-- Shattered Hand Centurion
+					}),
+				}),
+				BossOnly(NETHEKURSE, {
+					i(23726, {	-- Fel Ember (QI!)
+						description = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
+						cost = { { "i", 23735, 1 } },	-- 1x Grand Warlock's Amulet
+					}),
+					--
+					i(27517),	-- Bands of Nethekurse
+					i(27519),	-- Cloak of Malice
+					i(27529),	-- Figurine of the Colossus
+					i(23735),	-- Grand Warlock's Amulet
+					i(27520),	-- Greathelm of the Unbreakable
+					i(27534),	-- Hortus' Seal of Brilliance
+					i(27518, { timeline = { REMOVED_5_0_4 } }),	-- Ivory Idol of the Moongoddess
+					i(24312),	-- Pattern: Spellstrike Hood (RECIPE!)
+					i(27521),	-- Telaari Hunting Girdle
+				}),
+				BossOnly(OMROGG, {
+					i(72597, { timeline = { ADDED_4_3_0 } }),	-- O'mrogg's Warcloth (QI!)
+					i(30829),	-- Tear of the Earthmother (QI!)
+					--
+					i(29254),	-- Boots of the Righteous Path
+					i(27524),	-- Firemaul of Destruction
+					i(29263),	-- Forestheart Bracers
+					i(27525),	-- Jeweled Boots of Sanctification
+					i(27868),	-- Runesong Dagger
+					i(27526),	-- Skyfire Hawk-Bow
+					i(27522),	-- World's End Bracers
+				}),
+				BossOnly(KARGATH, {
+					i(23723),	-- Warchief Kargath's Fist (QI!)
+					--
+					ach(657),	-- The Shattered Halls
+					i(29255),	-- Bands of Rarefied Magic
+					i(27533),	-- Demonblood Eviscerator
+					i(27528),	-- Gauntlets of Desolation
+					i(27535),	-- Gauntlets of the Righteous
+					i(27537),	-- Gloves of Oblivion
+					i(27527),	-- Greaves of the Shatterer
+					i(27538),	-- Lightsworn Hammer
+					i(27540),	-- Nexus Torch
+					i(29348),	-- The Bladefist
+					i(27802),	-- Tidefury Shoulderguards
+					i(27531),	-- Wastewalker Gloves
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(566, {	-- Grand Warlock Nethekurse
-					creatureID = 16807,
-					groups = {
-						i(27517),	-- Bands of Nethekurse
-						i(27519),	-- Cloak of Malice
-						i(23726, {	-- Fel Ember
-							description = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
-							cost = { { "i", 23735, 1 } },	-- Grand Warlock's Amulet
-						}),
-						i(23735),	-- Grand Warlock's Amulet
-						i(27520),	-- Greathelm of the Unbreakable
-						i(24312),	-- Pattern: Spellstrike Hood (RECIPE!)
-						i(27521),	-- Telaari Hunting Girdle
-						-- #if BEFORE MOP
-						i(27518, {	-- Ivory Idol of the Moongoddess
-							timeline = { REMOVED_5_0_4 },
-						}),
-						-- #endif
-						-- #if AFTER 7.3.5
-						i(27529),	-- Figurine of the Colossus
-						i(27534),	-- Hortus' Seal of Brilliance (7.3.5 - Moved from Warchief Kargath Bladefist)
-						-- #endif
-					},
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(70, 70, 30) }).AddGroups({
+				CommonBossDrops({
+					i(30547),	-- Luminous Fire Opal
+					i(30548),	-- Polished Chrysoprase
+					i(30546),	-- Sovereign Tanzanite
 				}),
-				e(568, {	-- Warbringer O'mrogg
-					creatureID = 16809,
-					groups = {
-						i(27524),	-- Firemaul of Destruction
-						i(27868),	-- Runesong Dagger
-						i(27526),	-- Skyfire Hawk-Bow
-						-- #if AFTER 7.3.5
-						i(29263),	-- Forestheart Bracers (7.3.5 - Moved from Warchief Kargath Bladefist)
-						i(27522),	-- World's End Bracers (7.3.5 - Moved from Keli'dan the Breaker in The Blood Furnace!)
-						i(29254),	-- Boots of the Righteous Path (7.3.5 - Moved from Warchief Kargath Bladefist)
-						-- #endif
-						i(27525),	-- Jeweled Boots of Sanctification
-						-- #if BEFORE 7.3.5
-						i(27802),	-- Tidefury Shoulderguards  (7.3.5 - Moved to Warchief Kargath Bladefist)
-						-- #endif
-						i(72597, {	-- O'mrogg's Warcloth
-							timeline = { ADDED_4_3_0 },
-						}),
-						i(30829),	-- Tear of the Earthmother
-					},
+				BossOnly(NETHEKURSE, {
+					i(25462, { timeline = { REMOVED_7_1_0 } }),	-- Tome of Dusk
 				}),
-				e(569, {	-- Warchief Kargath Bladefist
-					creatureID = 16808,
-					groups = {
-						ach(657),	-- The Shattered Halls
-						i(27533),	-- Demonblood Eviscerator
-						i(27538),	-- Lightsworn Hammer
-						i(27540),	-- Nexus Torch
-						i(27528),	-- Gauntlets of Desolation
-						i(27535),	-- Gauntlets of the Righteous
-						i(27537),	-- Gloves of Oblivion
-						i(27531),	-- Wastewalker Gloves
-						i(27527),	-- Greaves of the Shatterer
-						i(23723),	-- Warchief Kargath's Fist
-						-- #if BEFORE 7.3.5
-						i(27474),	-- Beast Lord Handguards  (7.3.5 - Moved to Blood Guard Porung)
-						i(27529),	-- Figurine of the Colossus
-						i(27536),	-- Hallowed Handwraps  (7.3.5 - Moved to Blood Guard Porung)
-						i(27534),	-- Hortus' Seal of Brilliance (7.3.5 - Moved to Grand Warlock Nethekurse)
-						-- #endif
-						-- #if AFTER 7.3.5
-						i(29255),	-- Bands of Rarefied Magic
-						i(29348),	-- The Bladefist
-						i(27802),	-- Tidefury Shoulderguards  (7.3.5 - Moved from Warbringer O'mrogg)
-						-- #endif
-					},
+				BossOnly(PORUNG, {
+					i(27474),	-- Beast Lord Handguards
+					i(30708),	-- Belt of Flowing Thought
+					i(30710),	-- Blood Guard's Necklace of Ferocity
+					i(27536),	-- Hallowed Handwraps
+					i(30707),	-- Nimble-Foot Treads
+					i(30709),	-- Pantaloons of Flaming Wrath
+					i(30705),	-- Spaulders of Slaughter
+				}),
+				BossOnly(OMROGG),
+				BossOnly(KARGATH, {
+					ach(678),	-- Heroic: The Shattered Halls
+					ach(5078, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Shattered Halls Guild Run
+					i(33815),	-- Bladefist's Seal
+					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
+				}),
+				n(17301, {	-- Shattered Hand Executioner
+					i(31716),	-- Unused Axe of the Executioner
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(22554, {	-- Formula: Enchant 2H Weapon - Savagery (RECIPE!)
+						cr = 17465,	-- Shattered Hand Centurion
+					}),
+				}),
+				BossOnly(NETHEKURSE, {
+					i(23726, {	-- Fel Ember (QI!)
+						description = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
+						cost = { { "i", 23735, 1 } },	-- Grand Warlock's Amulet
+					}),
+					--
+					i(27517),	-- Bands of Nethekurse
+					i(27519),	-- Cloak of Malice
+					i(23735),	-- Grand Warlock's Amulet
+					i(27520),	-- Greathelm of the Unbreakable
+					i(27518, { timeline = { REMOVED_5_0_4 } }),	-- Ivory Idol of the Moongoddess
+					i(24312),	-- Pattern: Spellstrike Hood (RECIPE!)
+					i(27521),	-- Telaari Hunting Girdle
+				}),
+				BossOnly(OMROGG, {
+					i(72597, { timeline = { ADDED_4_3_0 } }),	-- O'mrogg's Warcloth (QI!)
+					i(30829),	-- Tear of the Earthmother (QI!)
+					--
+					i(27524),	-- Firemaul of Destruction
+					i(27525),	-- Jeweled Boots of Sanctification
+					i(27868),	-- Runesong Dagger
+					i(27526),	-- Skyfire Hawk-Bow
+					i(27802),	-- Tidefury Shoulderguards
+				}),
+				BossOnly(KARGATH, {
+					i(23723),	-- Warchief Kargath's Fist (QI!)
+					--
+					i(27474),	-- Beast Lord Handguards
+					i(27533),	-- Demonblood Eviscerator
+					i(27529),	-- Figurine of the Colossus
+					i(27528),	-- Gauntlets of Desolation
+					i(27535),	-- Gauntlets of the Righteous
+					i(27537),	-- Gloves of Oblivion
+					i(27527),	-- Greaves of the Shatterer
+					i(27536),	-- Hallowed Handwraps
+					i(27534),	-- Hortus' Seal of Brilliance
+					i(27538),	-- Lightsworn Hammer
+					i(27540),	-- Nexus Torch
+					i(27531),	-- Wastewalker Gloves
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossOnly(KARGATH, {
+					ach(657),	-- The Shattered Halls
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				description = "You need to have 2 keys to the instance in order to access this mode.",
 				aqd = {
@@ -489,123 +566,41 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 				-- #endif
 				lvl = lvlsquish(70, 70, 30),
-				groups = {
-					n(COMMON_BOSS_DROPS, {
-						crs = {
-							16807,	-- Grand Warlock Nethekurse
-							20923,	-- Blood Guard Porung
-							16809,	-- Warbringer O'mrogg
-							16808,	-- Warchief Kargath Bladefist
-						},
-						groups = {
-							-- #if BEFORE CATA
-							BADGE_OF_JUSTICE(1),
-							-- #endif
-							i(30547),	-- Luminous Fire Opal
-							i(30548),	-- Polished Chrysoprase
-							i(30546),	-- Sovereign Tanzanite
-						},
-					}),
-					e(566, {	-- Grand Warlock Nethekurse
-						creatureID = 16807,
-						groups = {
-							i(27517),	-- Bands of Nethekurse
-							i(27519),	-- Cloak of Malice
-							i(23726, {	-- Fel Ember
-								description = "Use the Amulet that he drops on the brazier near his throne to gather the ember.",
-								cost = { { "i", 23735, 1 } },	-- Grand Warlock's Amulet
-							}),
-							i(23735),	-- Grand Warlock's Amulet
-							i(27520),	-- Greathelm of the Unbreakable
-							i(24312),	-- Pattern: Spellstrike Hood (RECIPE!)
-							i(27521),	-- Telaari Hunting Girdle
-							i(25462, {	-- Tome of Dusk
-								timeline = { REMOVED_7_1_0 },
-							}),
-							-- #if BEFORE MOP
-							i(27518, {	-- Ivory Idol of the Moongoddess
-								timeline = { REMOVED_5_0_4 },
-							}),
-							-- #endif
-							-- #if AFTER 7.3.5
-							i(27529),	-- Figurine of the Colossus
-							i(27534),	-- Hortus' Seal of Brilliance (7.3.5 - Moved from Warchief Kargath Bladefist)
-							-- #endif
-						},
-					}),
-					e(728, {	-- Blood Guard Porung
-						creatureID = 20923,
-						groups = {
-							i(30710),	-- Blood Guard's Necklace of Ferocity
-							i(30705),	-- Spaulders of Slaughter
-							-- #if AFTER 7.3.5
-							i(27474),	-- Beast Lord Handguards  (7.3.5 - Moved from Warchief Kargath Bladefist)
-							i(27536),	-- Hallowed Handwraps  (7.3.5 - Moved from Warchief Kargath Bladefist)
-							-- #endif
-							i(30708),	-- Belt of Flowing Thought
-							i(30709),	-- Pantaloons of Flaming Wrath
-							i(30707),	-- Nimble-Foot Treads
-						},
-					}),
-					e(568, {	-- Warbringer O'mrogg
-						creatureID = 16809,
-						groups = {
-							i(27524),	-- Firemaul of Destruction
-							i(27868),	-- Runesong Dagger
-							i(27526),	-- Skyfire Hawk-Bow
-							-- #if AFTER 7.3.5
-							i(29263),	-- Forestheart Bracers (7.3.5 - Moved from Warchief Kargath Bladefist)
-							i(27522),	-- World's End Bracers (7.3.5 - Moved from Keli'dan the Breaker in The Blood Furnace!)
-							i(29254),	-- Boots of the Righteous Path (7.3.5 - Moved from Warchief Kargath Bladefist)
-							-- #endif
-							i(27525),	-- Jeweled Boots of Sanctification
-							-- #if BEFORE 7.3.5
-							i(27802),	-- Tidefury Shoulderguards  (7.3.5 - Moved to Warchief Kargath Bladefist)
-							-- #endif
-							i(72597, {	-- O'mrogg's Warcloth
-								timeline = { ADDED_4_3_0 },
-							}),
-							i(30829),	-- Tear of the Earthmother
-						},
-					}),
-					e(569, {	-- Warchief Kargath Bladefist
-						creatureID = 16808,
-						groups = {
-							ach(678),	-- Heroic: The Shattered Halls
-							ach(5078, {	-- Heroic: The Shattered Halls Guild Run
-								timeline = { ADDED_4_0_3 },
-							}),
-							i(27533),	-- Demonblood Eviscerator
-							i(27538),	-- Lightsworn Hammer
-							i(29348),	-- The Bladefist
-							i(27540),	-- Nexus Torch
-							i(29255),	-- Bands of Rarefied Magic
-							i(27528),	-- Gauntlets of Desolation
-							i(27535),	-- Gauntlets of the Righteous
-							i(27537),	-- Gloves of Oblivion
-							i(27531),	-- Wastewalker Gloves
-							i(27527),	-- Greaves of the Shatterer
-							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
-							i(33815),	-- Bladefist's Seal
-							i(23723),	-- Warchief Kargath's Fist
-							-- #if BEFORE 7.3.5
-							i(27474),	-- Beast Lord Handguards  (7.3.5 - Moved to Blood Guard Porung)
-							i(29254),	-- Boots of the Righteous Path (7.3.5 - Moved to Warbringer O'mrogg)
-							i(27529),	-- Figurine of the Colossus
-							i(29263),	-- Forestheart Bracers (7.3.5 - Moved to Warbringer O'mrogg)
-							i(27536),	-- Hallowed Handwraps  (7.3.5 - Moved to Blood Guard Porung)
-							i(27534),	-- Hortus' Seal of Brilliance (7.3.5 - Moved to Grand Warlock Nethekurse)
-							-- #endif
-							-- #if AFTER 7.3.5
-							i(27802),	-- Tidefury Shoulderguards  (7.3.5 - Moved from Warbringer O'mrogg)
-							-- #endif
-						},
-					}),
-					n(17301, {	-- Shattered Hand Executioner
-						i(31716),	-- Unused Axe of the Executioner
-					}),
-				},
+			}).AddGroups({
+				CommonBossDrops({
+					-- #if BEFORE CATA
+					BADGE_OF_JUSTICE(1),
+					-- #endif
+					i(30547),	-- Luminous Fire Opal
+					i(30548),	-- Polished Chrysoprase
+					i(30546),	-- Sovereign Tanzanite
+				}),
+				BossOnly(NETHEKURSE, {
+					i(25462, { timeline = { REMOVED_7_1_0 } }),	-- Tome of Dusk
+				}),
+				BossOnly(PORUNG, {
+					i(30708),	-- Belt of Flowing Thought
+					i(30710),	-- Blood Guard's Necklace of Ferocity
+					i(30707),	-- Nimble-Foot Treads
+					i(30709),	-- Pantaloons of Flaming Wrath
+					i(30705),	-- Spaulders of Slaughter
+				}),
+				BossOnly(OMROGG),
+				BossOnly(KARGATH, {
+					ach(678),	-- Heroic: The Shattered Halls
+					ach(5078, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Shattered Halls Guild Run
+					i(29255),	-- Bands of Rarefied Magic
+					i(33815),	-- Bladefist's Seal
+					i(29254),	-- Boots of the Righteous Path
+					i(29263),	-- Forestheart Bracers
+					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
+					i(29348),	-- The Bladefist
+				}),
+				n(17301, {	-- Shattered Hand Executioner
+					i(31716),	-- Unused Axe of the Executioner
+				}),
 			}),
+			-- #endif
 		},
 	}),
 })));
