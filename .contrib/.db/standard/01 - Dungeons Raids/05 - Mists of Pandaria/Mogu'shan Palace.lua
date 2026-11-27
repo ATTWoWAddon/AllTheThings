@@ -2,6 +2,27 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local TRIAL_OF_THE_KING = 708;
+local GEKKAN = 690;
+local XIN = 698;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[TRIAL_OF_THE_KING] = {
+		61445,	-- Haiyan the Unstoppable
+		61442,	-- Kuai the Brute
+		61444,	-- Ming the Cunning
+	},
+	[GEKKAN] = { 61243 },	-- Gekkan
+	[XIN] = { 61398 },	-- Xin the Weaponmaster
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(321, {	-- Mogu'shan Palace
 		coord = { 80.5, 33.0, VALE_OF_ETERNAL_BLOSSOMS },
@@ -96,353 +117,118 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					cost = { { "i", 87806, 1 } },	-- 1x Ancient Mogu Key
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-				e(698, {	-- Xin the Weaponmaster
-					crs = { 61398 },	-- Xin the Weaponmaster
-					groups = {
-						ach(6755),	-- Mogu'shan Palace
-					},
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				BossOnly(TRIAL_OF_THE_KING, {
+					i(144145, { timeline = { ADDED_7_1_5 } }),	-- Conflagrating Gloves
+					i(144020, { timeline = { ADDED_7_1_5 } }),	-- Crest of the Clan Lords
+					i(144143, { timeline = { ADDED_7_1_5 } }),	-- Hurricane Belt
+					i(144021, { timeline = { ADDED_7_1_5 } }),	-- Meteoric Greathelm
+					i(144144, { timeline = { ADDED_7_1_5 } }),	-- Whirling Dervish Choker
+				}),
+				BossOnly(GEKKAN, {
+					i(144148, { timeline = { ADDED_7_1_5 } }),	-- Claws of Gekkan
+					i(144147, { timeline = { ADDED_7_1_5 } }),	-- Cloak of Cleansing Flames
+					i(143992, { timeline = { ADDED_7_1_5 } }),	-- Glintrok Sollerets
+					i(144149, { timeline = { ADDED_7_1_5 } }),	-- Hexxer's Lethargic Gloves
+					i(144146, { timeline = { ADDED_7_1_5 } }),	-- Iron Protector Talisman
+				}),
+				BossOnly(XIN, {
+					ach(6755),	-- Mogu'shan Palace
+					i(144151, { timeline = { ADDED_7_1_5 } }),	-- Axebreaker Gauntlets
+					i(144152, { timeline = { ADDED_7_1_5 } }),	-- Blade Trap Signet
+					i(143993, { timeline = { ADDED_7_1_5 } }),	-- Boots of Plummeting Death
+					i(144154, { timeline = { ADDED_7_1_5 } }),	-- Firescribe Dagger
+					i(144150, { timeline = { ADDED_7_1_5 } }),	-- Ghostheart
+					i(144153, { timeline = { ADDED_7_1_5 } }),	-- Groundshaker Bracer
+					i(143956, { timeline = { ADDED_7_1_5 } }),	-- Mind's Eye Breastplate
+					i(144155, { timeline = { ADDED_7_1_5 } }),	-- Mindcapture Pendant
+					i(144214, { timeline = { ADDED_7_1_5 } }),	-- Mogu'Dar, Blade of the Thousand Slaves
+					i(143995, { timeline = { ADDED_7_1_5 } }),	-- Regal Silk Shoulderpads
+					i(143994, { timeline = { ADDED_7_1_5 } }),	-- Soulbinder Treads
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(708, {	-- Trial of the King
-					crs = {
-						61445,	-- Haiyan the Unstoppable
-						61442,	-- Kuai the Brute
-						61444,	-- Ming the Cunning
-					},
-					groups = {
-						-- Available
-						i(144020, {	-- Crest of the Clan Lords
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144021, {	-- Meteoric Greathelm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144144, {	-- Whirling Dervish Choker
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144145, {	-- Conflagrating Gloves
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144143, {	-- Hurricane Belt
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(85175, {	-- Crest of the Clan Lords
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85179, {	-- Meteoric Greathelm
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85177, {	-- Whirling Dervish Choker
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85178, {	-- Conflagrating Gloves
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85176, {	-- Hurricane Belt
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossOnly(TRIAL_OF_THE_KING, {
+					i(85178, { timeline = { REMOVED_7_1_5 } }),	-- Conflagrating Gloves
+					i(85175, { timeline = { REMOVED_7_1_5 } }),	-- Crest of the Clan Lords
+					i(85176, { timeline = { REMOVED_7_1_5 } }),	-- Hurricane Belt
+					i(85179, { timeline = { REMOVED_7_1_5 } }),	-- Meteoric Greathelm
+					i(85177, { timeline = { REMOVED_7_1_5 } }),	-- Whirling Dervish Choker
 				}),
-				e(690, {	-- Gekkan
-					crs = { 61243 },	-- Gekkan
-					groups = {
-						-- Available
-						i(144148, {	-- Claws of Gekkan
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144147, {	-- Cloak of Cleansing Flames
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144149, {	-- Hexxer's Lethargic Gloves
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143992, {	-- Glintrok Sollerets
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144146, {	-- Iron Protector Talisman
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(85183, {	-- Claws of Gekkan
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85182, {	-- Cloak of Cleansing Flames
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85184, {	-- Hexxer's Lethargic Gloves
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85180, {	-- Glintrok Sollerets
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85181, {	-- Iron Protector Talisman
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(GEKKAN, {
+					i(85183, { timeline = { REMOVED_7_1_5 } }),	-- Claws of Gekkan
+					i(85182, { timeline = { REMOVED_7_1_5 } }),	-- Cloak of Cleansing Flames
+					i(85180, { timeline = { REMOVED_7_1_5 } }),	-- Glintrok Sollerets
+					i(85184, { timeline = { REMOVED_7_1_5 } }),	-- Hexxer's Lethargic Gloves
+					i(85181, { timeline = { REMOVED_7_1_5 } }),	-- Iron Protector Talisman
 				}),
-				e(698, {	-- Xin the Weaponmaster
-					crs = { 61398 },	-- Xin the Weaponmaster
-					groups = {
-						-- Available
-						i(144214, {	-- Mogu'Dar, Blade of the Thousand Slaves
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144154, {	-- Firescribe Dagger
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144150, {	-- Ghostheart
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144155, {	-- Mindcapture Pendant
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143995, {	-- Regal Silk Shoulderpads
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143956, {	-- Mind's Eye Breastplate
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144153, {	-- Groundshaker Bracer
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144151, {	-- Axebreaker Gauntlets
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143993, {	-- Boots of Plummeting Death
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143994, {	-- Soulbinder Treads
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144152, {	-- Blade Trap Signet
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(85190, {	-- Firescribe Dagger
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85185, {	-- Ghostheart
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85191, {	-- Mindcapture Pendant
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85194, {	-- Regal Silk Shoulderpads
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85193, {	-- Mind's Eye Breastplate
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85189, {	-- Groundshaker Bracer
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85186, {	-- Axebreaker Gauntlets
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85187, {	-- Boots of Plummeting Death
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85192, {	-- Soulbinder Treads
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(85188, {	-- Blade Trap Signet
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(XIN, {
+					i(85186, { timeline = { REMOVED_7_1_5 } }),	-- Axebreaker Gauntlets
+					i(85188, { timeline = { REMOVED_7_1_5 } }),	-- Blade Trap Signet
+					i(85187, { timeline = { REMOVED_7_1_5 } }),	-- Boots of Plummeting Death
+					i(85190, { timeline = { REMOVED_7_1_5 } }),	-- Firescribe Dagger
+					i(85185, { timeline = { REMOVED_7_1_5 } }),	-- Ghostheart
+					i(85189, { timeline = { REMOVED_7_1_5 } }),	-- Groundshaker Bracer
+					i(85193, { timeline = { REMOVED_7_1_5 } }),	-- Mind's Eye Breastplate
+					i(85191, { timeline = { REMOVED_7_1_5 } }),	-- Mindcapture Pendant
+					i(85194, { timeline = { REMOVED_7_1_5 } }),	-- Regal Silk Shoulderpads
+					i(85192, { timeline = { REMOVED_7_1_5 } }),	-- Soulbinder Treads
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 				n(ACHIEVEMENTS, {
 					ach(6713),	-- Quarrelsome Quilen Quintet
 				}),
-				e(708, {	-- Trial of the King
-					crs = {
-						61445,	-- Haiyan the Unstoppable
-						61442,	-- Kuai the Brute
-						61444,	-- Ming the Cunning
-					},
-					groups = {
-						-- Available
-						i(144020, {	-- Crest of the Clan Lords
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144021, {	-- Meteoric Greathelm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144144, {	-- Whirling Dervish Choker
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144145, {	-- Conflagrating Gloves
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144143, {	-- Hurricane Belt
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81237, {	-- Crest of the Clan Lords
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81241, {	-- Meteoric Greathelm
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81239, {	-- Whirling Dervish Choker
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81240, {	-- Conflagrating Gloves
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81238, {	-- Hurricane Belt
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(TRIAL_OF_THE_KING, {
+					i(81240, { timeline = { REMOVED_7_1_5 } }),	-- Conflagrating Gloves
+					i(81237, { timeline = { REMOVED_7_1_5 } }),	-- Crest of the Clan Lords
+					i(81238, { timeline = { REMOVED_7_1_5 } }),	-- Hurricane Belt
+					i(81241, { timeline = { REMOVED_7_1_5 } }),	-- Meteoric Greathelm
+					i(81239, { timeline = { REMOVED_7_1_5 } }),	-- Whirling Dervish Choker
 				}),
-				e(690, {	-- Gekkan
-					crs = { 61243 },	-- Gekkan
-					groups = {
-						-- Available
-						ach(6478),	-- Glintrok N' Roll
-						i(144148, {	-- Claws of Gekkan
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144147, {	-- Cloak of Cleansing Flames
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144149, {	-- Hexxer's Lethargic Gloves
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143992, {	-- Glintrok Sollerets
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144146, {	-- Iron Protector Talisman
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81245, {	-- Claws of Gekkan
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81244, {	-- Cloak of Cleansing Flames
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81246, {	-- Hexxer's Lethargic Gloves
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81242, {	-- Glintrok Sollerets
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81243, {	-- Iron Protector Talisman
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(GEKKAN, {
+					ach(6478),	-- Glintrok N' Roll
+					i(81245, { timeline = { REMOVED_7_1_5 } }),	-- Claws of Gekkan
+					i(81244, { timeline = { REMOVED_7_1_5 } }),	-- Cloak of Cleansing Flames
+					i(81242, { timeline = { REMOVED_7_1_5 } }),	-- Glintrok Sollerets
+					i(81246, { timeline = { REMOVED_7_1_5 } }),	-- Hexxer's Lethargic Gloves
+					i(81243, { timeline = { REMOVED_7_1_5 } }),	-- Iron Protector Talisman
 				}),
-				e(698, {	-- Xin the Weaponmaster
-					crs = { 61398 },	-- Xin the Weaponmaster
-					groups = {
-						-- Available
-						ach(6756),	-- Heroic: Mogu'shan Palace
-						ach(6766),	-- Heroic: Mogu'shan Palace Guild Run
-						ach(6736, {	-- What Does This Button Do?
-							description = "At 66% health the button on southeast side becomes interactable, and at 33% health the button on the northwest side becomes interactable. Interact with the second button within 5 seconds after interacting with the first, and pull the boss to either of the laser beams.\n\nWarning: Addons might interfere with the recognition of the achievement objective.",
-						}),
-						i(144214, {	-- Mogu'Dar, Blade of the Thousand Slaves
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144154, {	-- Firescribe Dagger
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144150, {	-- Ghostheart
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144155, {	-- Mindcapture Pendant
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143995, {	-- Regal Silk Shoulderpads
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143956, {	-- Mind's Eye Breastplate
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144153, {	-- Groundshaker Bracer
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144151, {	-- Axebreaker Gauntlets
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143993, {	-- Boots of Plummeting Death
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143994, {	-- Soulbinder Treads
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144152, {	-- Blade Trap Signet
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(87542, {	-- Mogu'Dar, Blade of the Thousand Slaves
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81253, {	-- Firescribe Dagger
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81247, {	-- Ghostheart
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81254, {	-- Mindcapture Pendant
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81257, {	-- Regal Silk Shoulderpads
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81256, {	-- Mind's Eye Breastplate
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81252, {	-- Groundshaker Bracer
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81248, {	-- Axebreaker Gauntlets
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81249, {	-- Boots of Plummeting Death
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81255, {	-- Soulbinder Treads
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81251, {	-- Blade Trap Signet
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(XIN, {
+					ach(6756),	-- Heroic: Mogu'shan Palace
+					ach(6766),	-- Heroic: Mogu'shan Palace Guild Run
+					ach(6736, {	-- What Does This Button Do?
+						description = "At 66% health the button on southeast side becomes interactable, and at 33% health the button on the northwest side becomes interactable. Interact with the second button within 5 seconds after interacting with the first, and pull the boss to either of the laser beams.\n\nWarning: Addons might interfere with the recognition of the achievement objective.",
+					}),
+					i(81248, { timeline = { REMOVED_7_1_5 } }),	-- Axebreaker Gauntlets
+					i(81251, { timeline = { REMOVED_7_1_5 } }),	-- Blade Trap Signet
+					i(81249, { timeline = { REMOVED_7_1_5 } }),	-- Boots of Plummeting Death
+					i(81253, { timeline = { REMOVED_7_1_5 } }),	-- Firescribe Dagger
+					i(81247, { timeline = { REMOVED_7_1_5 } }),	-- Ghostheart
+					i(81252, { timeline = { REMOVED_7_1_5 } }),	-- Groundshaker Bracer
+					i(81256, { timeline = { REMOVED_7_1_5 } }),	-- Mind's Eye Breastplate
+					i(81254, { timeline = { REMOVED_7_1_5 } }),	-- Mindcapture Pendant
+					i(87542, { timeline = { REMOVED_7_1_5 } }),	-- Mogu'Dar, Blade of the Thousand Slaves
+					i(81257, { timeline = { REMOVED_7_1_5 } }),	-- Regal Silk Shoulderpads
+					i(81255, { timeline = { REMOVED_7_1_5 } }),	-- Soulbinder Treads
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
-				timeline = { REMOVED_6_0_2 },
-				groups = {
-					challengemaster(ach(8433, {	-- Challenge Master: Mogu'shan Palace
-						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
-						groups = {
-							title(242),	-- Mogu-Slayer <Name>
-						},
-					})),
-					ach(6892),	-- Mogu'shan Palace Challenger
-					ach(6899),	-- Mogu'shan Palace: Bronze
-					ach(6900),	-- Mogu'shan Palace: Silver
-					ach(6901, {	-- Mogu'shan Palace: Gold
-						spell(131222),	-- Path of the Mogu King
-					}),
-					-- #if ANYCLASSIC
-					ach(61969, {	-- Mogu'shan Palace: Platinum
-						i(265417),	-- Platinum Battle Horn
-					}),
-					-- #endif
-				},
+			Difficulty(DIFFICULTY.DUNGEON.CHALLENGE_MODE, { timeline = { REMOVED_6_0_2 } }).AddGroups({
+				challengemaster(ach(8433, {	-- Challenge Master: Mogu'shan Palace
+					timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+					groups = { title(242) },	-- Mogu-Slayer <Name>
+				})),
+				ach(6892),	-- Mogu'shan Palace Challenger
+				ach(6899),	-- Mogu'shan Palace: Bronze
+				ach(6900),	-- Mogu'shan Palace: Silver
+				ach(6901, {	-- Mogu'shan Palace: Gold
+					spell(131222),	-- Path of the Mogu King
+				}),
+				-- #if ANYCLASSIC
+				ach(61969, {	-- Mogu'shan Palace: Platinum
+					i(265417),	-- Platinum Battle Horn
+				}),
+				-- #endif
 			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
@@ -457,10 +243,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 						-- #if BEFORE 5.5.3
 						{	-- Season 1 Drops
+							i(86748),	-- Cape of Three Lanterns
 							i(86789),	-- Elegion, the Fanged Crescent
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86886)),	-- Loshan, Terror Incarnate (Terrace)
 							i(89952),	-- Pheromone-Coated Choker
-							i(86748),	-- Cape of Three Lanterns
 							i(86790),	-- Vial of Dragon's Blood
 						},
 						-- #elseif BEFORE 5.5.4
