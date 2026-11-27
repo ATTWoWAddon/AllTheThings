@@ -1250,4 +1250,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83968, {	-- Completed when killing Illyanna Ravenoak
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
+	q(83969, {	-- Completed when killing Immol'thar
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+	q(83970, {	-- Completed when killing Prince Tortheldrin
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 });

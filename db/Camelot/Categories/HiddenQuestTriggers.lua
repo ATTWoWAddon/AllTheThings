@@ -11,6 +11,8 @@ hqt(3911,{awp=16001,description="Unused duplicate of 'The Last Element' (7201) w
 hqt(83965,{awp=16001}),
 hqt(83966,{awp=16001}),
 hqt(83968,{awp=16001}),
+hqt(83969,{awp=16001}),
+hqt(83970,{awp=16001}),
 hqt(7069),
 hqt(3366),
 hqt(94776,{awp=16001,c={5},description="Gets marked as completed alongside the Human Priest quest 'Divine Grace' from Priestess Josetta in Elwynn Forest (94774).",races={1}}),
