@@ -1240,3 +1240,8 @@ instanceroot(230, {	-- Dire Maul
 		}),
 	},
 });
+root(ROOTS.HiddenQuestTriggers, {
+	q(83965, {	-- Completed when killing Tendris Warpwood
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+});
