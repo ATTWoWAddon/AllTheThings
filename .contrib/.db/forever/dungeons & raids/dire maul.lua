@@ -1244,4 +1244,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83965, {	-- Completed when killing Tendris Warpwood
 		timeline = { TIMELINE.ADDED_1_60_1 },
 	}),
+	q(83966, {	-- Completed when killing Magister Kalendris
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+	q(83968, {	-- Completed when killing Illyanna Ravenoak
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 });
