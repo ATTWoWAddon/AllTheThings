@@ -543,7 +543,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.PILGRIMS_BOUNTY, n(PILGRIMS_BOUNTY_HEADER
 				}),
 				q(14037, {	-- Spice Bread Stuffing (Horde)
 					qg = 34677,	-- Miles Standish
-					coord = { 64.2, 10.3, UNDERCITY },
+					coords = {
+						{ 61.4, 67.4, TIRISFAL_GLADES },
+						{ 64.2, 10.3, UNDERCITY },
+					},
 					races = HORDE_ONLY,
 					isYearly = true,
 					groups = {
