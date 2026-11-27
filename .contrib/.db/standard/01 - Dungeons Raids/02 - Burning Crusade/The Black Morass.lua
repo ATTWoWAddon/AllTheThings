@@ -2,6 +2,23 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local DEJA = 552;
+local TEMPORUS = 553;
+local AEONUS = 554;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[DEJA] = { 17879 },	-- Chrono Lord Deja
+	[TEMPORUS] = { 17880 },	-- Temporus
+	[AEONUS] = { 17881 },	-- Aeonus
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(255, {	-- The Black Morass
 		lore = "The Black Morass (also known as Opening of the Dark Portal) is one of the timeways accessible in the Caverns of Time. In this wing, a group of players must defend the last Guardian Medivh, in a swamp known as The Black Morass. The Guardian Medivh, possessed by Sargeras, attempts to open the Dark Portal to Draenor, while wave upon wave of dragonkin of the Infinite Dragonflight attempt to defeat Medivh in order to alter time and halt the invasion of Azeroth from Draenor.",
@@ -25,10 +42,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					lvl = lvlsquish(66, 66, 25),
 					-- #if BEFORE 4.3.0.14732
 					groups = {
+						i(29323),	-- Andormu's Tear
 						i(29320),	-- Band of the Guardian
 						i(29322),	-- Keeper's Ring of Piety
 						i(29321),	-- Time-Bending Gem
-						i(29323),	-- Andormu's Tear
 					},
 					-- #endif
 				}),
@@ -39,11 +56,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					timeline = { REMOVED_7_1_0 },
 					maps = { SHATTRATH_CITY },
 					lvl = lvlsquish(69, 69, 30),
-					groups = {
-						i(24490, {	-- The Master's Key
-							timeline = { ADDED_2_0_3, DELETED_4_2_0 },
-						}),
-					},
+					groups = { i(24490, { timeline = { ADDED_2_0_3, DELETED_4_2_0 } }) },	-- The Master's Key
 				}),
 				q(10296, {	-- The Black Morass
 					-- #if BEFORE 4.3.0.14732
@@ -72,102 +85,137 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						objective(1, {	-- The Dark Portal Opened
 							provider = { "i", 24289 },	-- Chrono-beacon
 						}),
-						i(29320, {	-- Band of the Guardian
-							timeline = { ADDED_4_3_0 },
-						}),
-						i(29322, {	-- Keeper's Ring of Piety
-							timeline = { ADDED_4_3_0 },
-						}),
-						i(29321, {	-- Time-Bending Gem
-							timeline = { ADDED_4_3_0 },
-						}),
-						i(29323, {	-- Andormu's Tear
-							timeline = { ADDED_4_3_0 },
-						}),
+						i(29323, { timeline = { ADDED_4_3_0 } }),	-- Andormu's Tear
+						i(29320, { timeline = { ADDED_4_3_0 } }),	-- Band of the Guardian
+						i(29322, { timeline = { ADDED_4_3_0 } }),	-- Keeper's Ring of Piety
+						i(29321, { timeline = { ADDED_4_3_0 } }),	-- Time-Bending Gem
 					},
 				}),
 			}),
-			n(ZONE_DROPS, {
-				i(31753, {	-- Essence of Infinity
-					crs = {
-						21104,	-- Rift Keeper
-						17839,	-- Rift Lord
-					},
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(31753, {	-- Essence of Infinity
+						crs = {
+							21104,	-- Rift Keeper
+							17839,	-- Rift Lord
+						},
+					}),
+					i(25730, {	-- Pattern: Stylin' Jungle Hat (RECIPE!)
+						crs = {
+							21104,	-- Rift Keeper
+							17839,	-- Rift Lord
+						},
+					}),
 				}),
-				i(25730, {	-- Pattern: Stylin' Jungle Hat (RECIPE!)
-					crs = {
-						21104,	-- Rift Keeper
-						17839,	-- Rift Lord
-					},
+				BossOnly(DEJA, {
+					i(27988),	-- Burnoose of Shifting Ages
+					i(27977),	-- Legplates of the Bold
+					i(27994),	-- Mantle of Three Terrors
+					i(27993),	-- Mask of Inner Fire
+					i(27987),	-- Melmorta's Twilight Longbow
+					i(27873),	-- Moonglade Pants
+					i(29675, { timeline = { REMOVED_5_0_4 } }),	-- Pattern: Arcane Armor Kit (RECIPE!)
+					i(27996),	-- Ring of Spiritual Precision
+					i(27995),	-- Sun-Gilded Shouldercaps
 				}),
-			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(552, {	-- Chrono Lord Deja
-					creatureID = 17879,
-					groups = {
-						i(27987),	-- Melmorta's Twilight Longbow
-						i(27993),	-- Mask of Inner Fire
-						i(27994),	-- Mantle of Three Terrors
-						i(27995),	-- Sun-Gilded Shouldercaps
-						i(27988),	-- Burnoose of Shifting Ages
-						-- #if AFTER 7.3.5
-						i(27977),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
-						i(27873),	-- Moonglade Pants (7.3.5	-- Moved from Aeonus)
-						-- #endif
-						i(27996),	-- Ring of Spiritual Precision
-						i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
-							timeline = { REMOVED_5_0_4 },
-						}),
-					},
+				BossOnly(TEMPORUS, {
+					i(28033),	-- Epoch-Mender
+					i(27509),	-- Handgrips of Assassination
+					i(28034),	-- Hourglass of the Unraveller
+					i(28185),	-- Khadgar's Kilt of Abjuration
+					i(28186),	-- Laughing Skull Battle-Harness
+					i(28184),	-- Millennium Blade
+					i(29356),	-- Quantum Blade
+					i(28187),	-- Star-Heart Lamp
 				}),
-				e(553, {	-- Temporus
-					creatureID = 17880,
-					groups = {
-						i(28033),	-- Epoch-Mender
-						i(28184),	-- Millennium Blade
-						-- #if AFTER 7.3.5
-						i(29356),	-- Quantum Blade (7.3.5 - Moved from Aeonus)
-						-- #endif
-						i(28187),	-- Star-Heart Lamp
-						i(28186),	-- Laughing Skull Battle-Harness
-						-- #if AFTER 7.3.5
-						i(27509),	-- Handgrips of Assassination (7.3.5 - Moved from Aeonus)
-						-- #endif
-						i(28185),	-- Khadgar's Kilt of Abjuration
-						i(28034),	-- Hourglass of the Unraveller
-					},
-				}),
-				e(554, {	-- Aeonus
-					creatureID = 17881,
-					groups = {
-						ach(655),	-- Opening of the Dark Portal
-						i(28188),	-- Bloodfire Greatstaff
-						i(28189),	-- Latro's Shifting Sword
-						i(28206),	-- Cowl of the Guiltless
-						i(28192),	-- Helm of Desolation
-						i(28193),	-- Mana-Etched Crown
-						i(28207),	-- Pauldrons of the Crimson Flight
-						-- #if BEFORE 7.3.5
-						i(27509),	-- Handgrips of Assassination (7.3.5 - Moved to Temporus)
-						-- #endif
-						i(28194),	-- Primal Surge Bracers
-						-- #if AFTER 7.3.5
-						i(29247),	-- Girdle of the Deathdealer
-						i(29253),	-- Girdle of Valorous Deeds
-						i(30531),	-- Breeches of the Occultist
-						-- #endif
-						-- #if BEFORE 7.3.5
-						i(27977),	-- Legplates of the Bold (7.3.5 - Moved to Chrono Lord Deja)
-						-- #endif
-						i(27839),	-- Legplates of the Righteous
-						-- #if BEFORE 7.3.5
-						i(27873),	-- Moonglade Pants (7.3.5 - Moved to Chrono Lord Deja)
-						-- #endif
-						i(28190),	-- Scarab of the Infinite Cycle
-					},
+				BossOnly(AEONUS, {
+					ach(655),	-- Opening of the Dark Portal
+					i(28188),	-- Bloodfire Greatstaff
+					i(30531),	-- Breeches of the Occultist
+					i(28206),	-- Cowl of the Guiltless
+					i(29247),	-- Girdle of the Deathdealer
+					i(29253),	-- Girdle of Valorous Deeds
+					i(28192),	-- Helm of Desolation
+					i(28189),	-- Latro's Shifting Sword
+					i(27839),	-- Legplates of the Righteous
+					i(28193),	-- Mana-Etched Crown
+					i(28207),	-- Pauldrons of the Crimson Flight
+					i(28194),	-- Primal Surge Bracers
+					i(28190),	-- Scarab of the Infinite Cycle
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(70, 70, 30) }).AddGroups({
+				CommonBossDrops({
+					i(30558),	-- Glimmering Fire Opal
+					i(30556),	-- Glinting Fire Opal
+					i(30555),	-- Glowing Tanzanite
+				}),
+				BossOnly(DEJA),
+				BossOnly(TEMPORUS),
+				BossOnly(AEONUS, {
+					ach(676),	-- Heroic: Opening of the Dark Portal
+					ach(5076, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Opening of the Dark Portal Guild Run
+					i(33858),	-- Aeonus' Hourglass
+					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(31753, {	-- Essence of Infinity
+						crs = {
+							21104,	-- Rift Keeper
+							17839,	-- Rift Lord
+						},
+					}),
+					i(25730, {	-- Pattern: Stylin' Jungle Hat (RECIPE!)
+						crs = {
+							21104,	-- Rift Keeper
+							17839,	-- Rift Lord
+						},
+					}),
+				}),
+				BossOnly(DEJA, {
+					i(27988),	-- Burnoose of Shifting Ages
+					i(27994),	-- Mantle of Three Terrors
+					i(27993),	-- Mask of Inner Fire
+					i(27987),	-- Melmorta's Twilight Longbow
+					i(29675, { timeline = { REMOVED_5_0_4 } }),	-- Pattern: Arcane Armor Kit (RECIPE!)
+					i(27996),	-- Ring of Spiritual Precision
+					i(27995),	-- Sun-Gilded Shouldercaps
+				}),
+				BossOnly(TEMPORUS, {
+					i(28033),	-- Epoch-Mender
+					i(28034),	-- Hourglass of the Unraveller
+					i(28185),	-- Khadgar's Kilt of Abjuration
+					i(28186),	-- Laughing Skull Battle-Harness
+					i(28184),	-- Millennium Blade
+					i(28187),	-- Star-Heart Lamp
+				}),
+				BossOnly(AEONUS, {
+					i(28188),	-- Bloodfire Greatstaff
+					i(28206),	-- Cowl of the Guiltless
+					i(27509),	-- Handgrips of Assassination
+					i(28192),	-- Helm of Desolation
+					i(28189),	-- Latro's Shifting Sword
+					i(27977),	-- Legplates of the Bold
+					i(27839),	-- Legplates of the Righteous
+					i(28193),	-- Mana-Etched Crown
+					i(27873),	-- Moonglade Pants
+					i(28207),	-- Pauldrons of the Crimson Flight
+					i(28194),	-- Primal Surge Bracers
+					i(28190),	-- Scarab of the Infinite Cycle
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossOnly(AEONUS, {
+					ach(655),	-- Opening of the Dark Portal
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				description = "You need to have a key to the instance and the quest \"The Black Morass\" in order to access this mode.",
 				attunement = {
@@ -179,94 +227,29 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				sourceQuest = 10296,	-- The Black Morass
 				-- #endif
 				lvl = lvlsquish(70, 70, 30),
-				groups = {
-					n(COMMON_BOSS_DROPS, {
-						crs = {
-							17879,	-- Chrono Lord Deja
-							17880,	-- Temporus
-							17881,	-- Aeonus
-						},
-						groups = {
-							-- #if BEFORE CATA
-							applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
-							-- #endif
-							i(30558),	-- Glimmering Fire Opal
-							i(30556),	-- Glinting Fire Opal
-							i(30555),	-- Glowing Tanzanite
-						},
-					}),
-					e(552, {	-- Chrono Lord Deja
-						creatureID = 17879,
-						groups = {
-							i(27987),	-- Melmorta's Twilight Longbow
-							i(27993),	-- Mask of Inner Fire
-							i(27994),	-- Mantle of Three Terrors
-							i(27995),	-- Sun-Gilded Shouldercaps
-							i(27988),	-- Burnoose of Shifting Ages
-							-- #if AFTER 7.3.5
-							i(27977),	-- Legplates of the Bold (7.3.5 - Moved from Aeonus)
-							i(27873),	-- Moonglade Pants (7.3.5	-- Moved from Aeonus)
-							-- #endif
-							i(27996),	-- Ring of Spiritual Precision
-							i(29675, {	-- Pattern: Arcane Armor Kit (RECIPE!)
-								timeline = { REMOVED_5_0_4 },
-							}),
-						},
-					}),
-					e(553, {	-- Temporus
-						creatureID = 17880,
-						groups = {
-							i(28033),	-- Epoch-Mender
-							i(28184),	-- Millennium Blade
-							-- #if AFTER 7.3.5
-							i(29356),	-- Quantum Blade (7.3.5 - Moved from Aeonus)
-							-- #endif
-							i(28187),	-- Star-Heart Lamp
-							i(28186),	-- Laughing Skull Battle-Harness
-							-- #if AFTER 7.3.5
-							i(27509),	-- Handgrips of Assassination (7.3.5 - Moved from Aeonus)
-							-- #endif
-							i(28185),	-- Khadgar's Kilt of Abjuration
-							i(28034),	-- Hourglass of the Unraveller
-						},
-					}),
-					e(554, {	-- Aeonus
-						creatureID = 17881,
-						groups = {
-							ach(676),	-- Heroic: Opening of the Dark Portal
-							ach(5076, {	-- Heroic: Opening of the Dark Portal Guild Run
-								timeline = { ADDED_4_0_3 },
-							}),
-							i(28188),	-- Bloodfire Greatstaff
-							i(28189),	-- Latro's Shifting Sword
-							-- #if BEFORE 7.3.5
-							i(29356),	-- Quantum Blade (7.3.5 - Moved to Temporus)
-							-- #endif
-							i(28206),	-- Cowl of the Guiltless
-							i(28192),	-- Helm of Desolation
-							i(28193),	-- Mana-Etched Crown
-							i(28207),	-- Pauldrons of the Crimson Flight
-							-- #if BEFORE 7.3.5
-							i(27509),	-- Handgrips of Assassination (7.3.5 - Moved to Temporus)
-							-- #endif
-							i(28194),	-- Primal Surge Bracers
-							i(29247),	-- Girdle of the Deathdealer
-							i(29253),	-- Girdle of Valorous Deeds
-							i(30531),	-- Breeches of the Occultist
-							-- #if BEFORE 7.3.5
-							i(27977),	-- Legplates of the Bold (7.3.5 - Moved to Chrono Lord Deja)
-							-- #endif
-							i(27839),	-- Legplates of the Righteous
-							-- #if BEFORE 7.3.5
-							i(27873),	-- Moonglade Pants (7.3.5 - Moved to Chrono Lord Deja)
-							-- #endif
-							i(28190),	-- Scarab of the Infinite Cycle
-							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
-							i(33858),	-- Aeonus' Hourglass
-						},
-					}),
-				},
+			}).AddGroups({
+				CommonBossDrops({
+					-- #if BEFORE CATA
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
+					-- #endif
+					i(30558),	-- Glimmering Fire Opal
+					i(30556),	-- Glinting Fire Opal
+					i(30555),	-- Glowing Tanzanite
+				}),
+				BossOnly(DEJA),
+				BossOnly(TEMPORUS),
+				BossOnly(AEONUS, {
+					ach(676),	-- Heroic: Opening of the Dark Portal
+					ach(5076, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Opening of the Dark Portal Guild Run
+					i(33858),	-- Aeonus' Hourglass
+					i(30531),	-- Breeches of the Occultist
+					i(29247),	-- Girdle of the Deathdealer
+					i(29253),	-- Girdle of Valorous Deeds
+					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
+					i(29356),	-- Quantum Blade
+				}),
 			}),
+			-- #endif
 		},
 	}),
 })));
