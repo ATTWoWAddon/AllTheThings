@@ -2,16 +2,30 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local GU_CLOUDSTRIKE = 673;
+local SNOWDRIFT = 657;
+local SHA_OF_VIOLENCE = 685;
+local TARAN_ZHU = 686;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[GU_CLOUDSTRIKE] = { 56747 },	-- Gu Cloudstrike
+	[SNOWDRIFT] = { 56541 },	-- Master Snowdrift
+	[SHA_OF_VIOLENCE] = { 56719 },	-- Sha of Violence
+	[TARAN_ZHU] = { 56884 },	-- Taran Zhu
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(312, {	-- Shado-Pan Monastery
 		coord = { 36.8 ,47.7, KUN_LAI_SUMMIT},
 		timeline = { ADDED_5_0_4 },
-		maps = {
-			SHADOPAN_MONASTERY,
-			SHADOPAN_MONASTERY_CLOUDSTRIKE_DOJO,
-			SHADOPAN_MONASTERY_SEALED_CHAMBERS,
-			SHADOPAN_MONASTERY_SNOWDRIFT_DOJO,
-		},
+		maps = { SHADOPAN_MONASTERY, SHADOPAN_MONASTERY_CLOUDSTRIKE_DOJO, SHADOPAN_MONASTERY_SEALED_CHAMBERS, SHADOPAN_MONASTERY_SNOWDRIFT_DOJO },
 		groups = {
 			n(QUESTS, {
 				q(31030, {	-- Into the Monastery
@@ -62,392 +76,130 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
 				-- #if AFTER MOP
 				n(56747, {	-- Gu Cloudstrike
 					description = "Do not attack the Azure Serpent until Gu Cloudstrike made immune of all damage, otherwise Gu might remain immune for the following ten minutes!",
 				}),
 				-- #endif
-				e(686, {	-- Taran Zhu
-					crs = { 56884 },	-- Taran Zhu
-					groups = {
-						ach(6469),	-- Shado-Pan Monastery
-					},
+				BossOnly(GU_CLOUDSTRIKE, {
+					i(143961, { timeline = { ADDED_7_1_5 } }),	-- Azure Serpent Chestguard
+					i(144127, { timeline = { ADDED_7_1_5 } }),	-- Cloudstrike Pendant
+					i(143978, { timeline = { ADDED_7_1_5 } }),	-- Leggings of the Charging Soul
+					i(144096, { timeline = { ADDED_7_1_5 } }),	-- Sparkbreath Girdle
+					i(144126, { timeline = { ADDED_7_1_5 } }),	-- Star Summoner Bracers
+				}),
+				BossOnly(SNOWDRIFT, {
+					i(144129, { timeline = { ADDED_7_1_5 } }),	-- Eye of the Tornado
+					i(144106, { timeline = { ADDED_7_1_5 } }),	-- Gauntlets of Resolute Fury
+					i(144128, { timeline = { ADDED_7_1_5 } }),	-- Heart of Fire
+					i(144097, { timeline = { ADDED_7_1_5 } }),	-- Quivering Heart Girdle
+					i(144110, { timeline = { ADDED_7_1_5 } }),	-- Snowdrift's Bladed Staff
+				}),
+				BossOnly(SHA_OF_VIOLENCE, {
+					i(144131, { timeline = { ADDED_7_1_5 } }),	-- Bladed Smoke Bracers
+					i(144099, { timeline = { ADDED_7_1_5 } }),	-- Crescent of Ichor
+					i(144107, { timeline = { ADDED_7_1_5 } }),	-- Gloves of Enraged Slaughter
+					i(144130, { timeline = { ADDED_7_1_5 } }),	-- Necklace of Disorientation
+					i(143985, { timeline = { ADDED_7_1_5 } }),	-- Spike-Soled Stompers
+				}),
+				BossOnly(TARAN_ZHU, {
+					ach(6469),	-- Shado-Pan Monastery
+					i(143986, { timeline = { ADDED_7_1_5 } }),	-- Blastwalker Footguards
+					i(143979, { timeline = { ADDED_7_1_5 } }),	-- Darkbinder Leggings
+					i(143962, { timeline = { ADDED_7_1_5 } }),	-- Hateshatter Chestplate
+					i(144215, { timeline = { ADDED_7_1_5 } }),	-- Ka'eng, Breath of the Shadow
+					i(144108, { timeline = { ADDED_7_1_5 } }),	-- Mindbender Plate Gloves
+					i(144133, { timeline = { ADDED_7_1_5 } }),	-- Ring of Malice
+					i(143990, { timeline = { ADDED_7_1_5 } }),	-- Robes of Fevered Dreams
+					i(144132, { timeline = { ADDED_7_1_5 } }),	-- Seal of Hateful Meditation
+					i(143981, { timeline = { ADDED_7_1_5 } }),	-- Shadowspine Shoulderguards
+					i(144103, { timeline = { ADDED_7_1_5 } }),	-- Shield of Blind Hate
+					i(144109, { timeline = { ADDED_7_1_5 } }),	-- Warmace of Taran Zhu
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(673, {	-- Gu Cloudstrike
-					crs = { 56747 },	-- Gu Cloudstrike
-					groups = {
-						-- Available
-						i(144127, {	-- Cloudstrike Pendant
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143961, {	-- Azure Serpent Chestguard
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144126, {	-- Star Summoner Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144096, {	-- Sparkbreath Girdle
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143978, {	-- Leggings of the Charging Soul
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80909, {	-- Azure Serpent Chestguard
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80908, {	-- Sparkbreath Girdle
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80910, {	-- Leggings of the Charging Soul
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossOnly(GU_CLOUDSTRIKE, {
+					i(80909, { timeline = { REMOVED_7_1_5 } }),	-- Azure Serpent Chestguard
+					i(80910, { timeline = { REMOVED_7_1_5 } }),	-- Leggings of the Charging Soul
+					i(80908, { timeline = { REMOVED_7_1_5 } }),	-- Sparkbreath Girdle
 				}),
-				e(657, {	-- Master Snowdrift
-					crs = { 56541 },	-- Master Snowdrift
-					groups = {
-						-- Available
-						i(144110, {	-- Snowdrift's Bladed Staff
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144106, {	-- Gauntlets of Resolute Fury
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144097, {	-- Quivering Heart Girdle
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144129, {	-- Eye of the Tornado
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144128, {	-- Heart of Fire
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80937, {	-- Snowdrift's Bladed Staff
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80912, {	-- Gauntlets of Resolute Fury
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80911, {	-- Quivering Heart Girdle
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(SNOWDRIFT, {
+					i(80912, { timeline = { REMOVED_7_1_5 } }),	-- Gauntlets of Resolute Fury
+					i(80911, { timeline = { REMOVED_7_1_5 } }),	-- Quivering Heart Girdle
+					i(80937, { timeline = { REMOVED_7_1_5 } }),	-- Snowdrift's Bladed Staff
 				}),
-				e(685, {	-- Sha of Violence
-					crs = { 56719 },	-- Sha of Violence
-					groups = {
-						-- Available
-						i(144099, {	-- Crescent of Ichor
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144130, {	-- Necklace of Disorientation
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144131, {	-- Bladed Smoke Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144107, {	-- Gloves of Enraged Slaughter
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143985, {	-- Spike-Soled Stompers
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80883, {	-- Crescent of Ichor
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80913, {	-- Gloves of Enraged Slaughter
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80915, {	-- Spike-Soled Stompers
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(SHA_OF_VIOLENCE, {
+					i(80883, { timeline = { REMOVED_7_1_5 } }),	-- Crescent of Ichor
+					i(80913, { timeline = { REMOVED_7_1_5 } }),	-- Gloves of Enraged Slaughter
+					i(80915, { timeline = { REMOVED_7_1_5 } }),	-- Spike-Soled Stompers
 				}),
-				e(686, {	-- Taran Zhu
-					crs = { 56884 },	-- Taran Zhu
-					groups = {
-						-- Available
-						i(144215, {	-- Ka'eng, Breath of the Shadow
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144109, {	-- Warmace of Taran Zhu
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144103, {	-- Shield of Blind Hate
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143981, {	-- Shadowspine Shoulderguards
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143962, {	-- Hateshatter Chestplate
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143990, {	-- Robes of Fevered Dreams
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144108, {	-- Mindbender Plate Gloves
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143979, {	-- Darkbinder Leggings
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143986, {	-- Blastwalker Footguards
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144133, {	-- Ring of Malice
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144132, {	-- Seal of Hateful Meditation
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80936, {	-- Warmace of Taran Zhu
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80935, {	-- Shield of Blind Hate
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80916, {	-- Shadowspine Shoulderguards
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80918, {	-- Mindbinder Plate Gloves
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80919, {	-- Darkbinder Leggings
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80917, {	-- Blastwalker Footguards
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(TARAN_ZHU, {
+					i(80917, { timeline = { REMOVED_7_1_5 } }),	-- Blastwalker Footguards
+					i(80919, { timeline = { REMOVED_7_1_5 } }),	-- Darkbinder Leggings
+					i(80918, { timeline = { REMOVED_7_1_5 } }),	-- Mindbinder Plate Gloves
+					i(80916, { timeline = { REMOVED_7_1_5 } }),	-- Shadowspine Shoulderguards
+					i(80935, { timeline = { REMOVED_7_1_5 } }),	-- Shield of Blind Hate
+					i(80936, { timeline = { REMOVED_7_1_5 } }),	-- Warmace of Taran Zhu
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				e(673, {	-- Gu Cloudstrike
-					crs = { 56747 },	-- Gu Cloudstrike
-					groups = {
-						-- Available
-						i(144127, {	-- Cloudstrike Pendant
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143961, {	-- Azure Serpent Chestguard
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144126, {	-- Star Summoner Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144096, {	-- Sparkbreath Girdle
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143978, {	-- Leggings of the Charging Soul
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81180, {	-- Cloudstrike Pendant
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81110, {	-- Azure Serpent Chestguard
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81179, {	-- Star Summoner Bracers
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81086, {	-- Sparkbreath Girdle
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81092, {	-- Leggings of the Charging Soul
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
+				BossOnly(GU_CLOUDSTRIKE, {
+					i(81110, { timeline = { REMOVED_7_1_5 } }),	-- Azure Serpent Chestguard
+					i(81180, { timeline = { REMOVED_7_1_5 } }),	-- Cloudstrike Pendant
+					i(81092, { timeline = { REMOVED_7_1_5 } }),	-- Leggings of the Charging Soul
+					i(81086, { timeline = { REMOVED_7_1_5 } }),	-- Sparkbreath Girdle
+					i(81179, { timeline = { REMOVED_7_1_5 } }),	-- Star Summoner Bracers
 				}),
-				e(657, {	-- Master Snowdrift
-					crs = { 56541 },	-- Master Snowdrift
-					groups = {
-						-- Available
-						ach(6477),	-- Respect
-						i(144110, {	-- Snowdrift's Bladed Staff
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144106, {	-- Gauntlets of Resolute Fury
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144097, {	-- Quivering Heart Girdle
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144129, {	-- Eye of the Tornado
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144128, {	-- Heart of Fire
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81108, {	-- Snowdrift's Bladed Staff
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81101, {	-- Gauntlets of Resolute Fury
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81087, {	-- Quivering Heart Girdle
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81182, {	-- Eye of the Tornado
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81181, {	-- Heart of Fire
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(SNOWDRIFT, {
+					ach(6477),	-- Respect
+					i(81182, { timeline = { REMOVED_7_1_5 } }),	-- Eye of the Tornado
+					i(81101, { timeline = { REMOVED_7_1_5 } }),	-- Gauntlets of Resolute Fury
+					i(81181, { timeline = { REMOVED_7_1_5 } }),	-- Heart of Fire
+					i(81087, { timeline = { REMOVED_7_1_5 } }),	-- Quivering Heart Girdle
+					i(81108, { timeline = { REMOVED_7_1_5 } }),	-- Snowdrift's Bladed Staff
 				}),
-				e(685, {	-- Sha of Violence
-					crs = { 56719 },	-- Sha of Violence
-					groups = {
-						-- Available
-						ach(6472),	-- The Obvious Solution
-						i(144099, {	-- Crescent of Ichor
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144130, {	-- Necklace of Disorientation
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144131, {	-- Bladed Smoke Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144107, {	-- Gloves of Enraged Slaughter
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143985, {	-- Spike-Soled Stompers
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81089, {	-- Crescent of Ichor
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81184, {	-- Necklace of Disorientation
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81185, {	-- Bladed Smoke Bracers
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81102, {	-- Gloves of Enraged Slaughter
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81113, {	-- Spike-Soled Stompers
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(SHA_OF_VIOLENCE, {
+					ach(6472),	-- The Obvious Solution
+					i(81185, { timeline = { REMOVED_7_1_5 } }),	-- Bladed Smoke Bracers
+					i(81089, { timeline = { REMOVED_7_1_5 } }),	-- Crescent of Ichor
+					i(81102, { timeline = { REMOVED_7_1_5 } }),	-- Gloves of Enraged Slaughter
+					i(81184, { timeline = { REMOVED_7_1_5 } }),	-- Necklace of Disorientation
+					i(81113, { timeline = { REMOVED_7_1_5 } }),	-- Spike-Soled Stompers
 				}),
-				e(686, {	-- Taran Zhu
-					crs = { 56884 },	-- Taran Zhu
-					groups = {
-						-- Available
-						ach(6471),	-- Hate Leads to Suffering
-						ach(6470),	-- Heroic: Shado-Pan Monastery
-						ach(6767),	-- Heroic: Shado-Pan Monastery Guild Run
-						i(144215, {	-- Ka'eng, Breath of the Shadow
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144109, {	-- Warmace of Taran Zhu
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144103, {	-- Shield of Blind Hate
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143981, {	-- Shadowspine Shoulderguards
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143962, {	-- Hateshatter Chestplate
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143990, {	-- Robes of Fevered Dreams
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144108, {	-- Mindbender Plate Gloves
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143979, {	-- Darkbinder Leggings
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143986, {	-- Blastwalker Footguards
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144133, {	-- Ring of Malice
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144132, {	-- Seal of Hateful Meditation
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(87543, {	-- Ka'eng, Breath of the Shadow
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81107, {	-- Warmace of Taran Zhu
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81096, {	-- Shield of Blind Hate
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81099, {	-- Shadowspine Shoulderguards
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81187, {	-- Hateshatter Chestplate
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81188, {	-- Robes of Fevered Dreams
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81103, {	-- Mindbender Plate Gloves
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81093, {	-- Darkbinder Leggings
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81114, {	-- Blastwalker Footguards
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81189, {	-- Ring of Malice
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81186, {	-- Seal of Hateful Meditation
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(TARAN_ZHU, {
+					ach(6471),	-- Hate Leads to Suffering
+					ach(6470),	-- Heroic: Shado-Pan Monastery
+					ach(6767),	-- Heroic: Shado-Pan Monastery Guild Run
+					i(81114, { timeline = { REMOVED_7_1_5 } }),	-- Blastwalker Footguards
+					i(81093, { timeline = { REMOVED_7_1_5 } }),	-- Darkbinder Leggings
+					i(81187, { timeline = { REMOVED_7_1_5 } }),	-- Hateshatter Chestplate
+					i(87543, { timeline = { REMOVED_7_1_5 } }),	-- Ka'eng, Breath of the Shadow
+					i(81103, { timeline = { REMOVED_7_1_5 } }),	-- Mindbender Plate Gloves
+					i(81189, { timeline = { REMOVED_7_1_5 } }),	-- Ring of Malice
+					i(81188, { timeline = { REMOVED_7_1_5 } }),	-- Robes of Fevered Dreams
+					i(81186, { timeline = { REMOVED_7_1_5 } }),	-- Seal of Hateful Meditation
+					i(81099, { timeline = { REMOVED_7_1_5 } }),	-- Shadowspine Shoulderguards
+					i(81096, { timeline = { REMOVED_7_1_5 } }),	-- Shield of Blind Hate
+					i(81107, { timeline = { REMOVED_7_1_5 } }),	-- Warmace of Taran Zhu
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
-				timeline = { REMOVED_6_0_2 },
-				groups = {
-					challengemaster(ach(8432, {	-- Challenge Master: Shado-Pan Monastery
-						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
-						groups = {
-							title(246),	-- Purified Defender <Name>
-						},
-					})),
-					ach(6893),	-- Shado-Pan Monastery Challenger
-					ach(6902),	-- Shado-Pan Monastery: Bronze
-					ach(6903),	-- Shado-Pan Monastery: Silver
-					ach(6904, {	-- Shado-Pan Monastery: Gold
-						spell(131206),	-- Path of the Shado-Pan
-					}),
-					-- #if ANYCLASSIC
-					ach(61970, {	-- Shado-Pan Monastery: Platinum
-						i(265419),	-- Platinum Potion of Invisibility
-					}),
-					-- #endif
-				},
+			Difficulty(DIFFICULTY.DUNGEON.CHALLENGE_MODE, { timeline = { REMOVED_6_0_2 } }).AddGroups({
+				challengemaster(ach(8432, {	-- Challenge Master: Shado-Pan Monastery
+					timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+					groups = { title(246) },	-- Purified Defender <Name>
+				})),
+				ach(6893),	-- Shado-Pan Monastery Challenger
+				ach(6902),	-- Shado-Pan Monastery: Bronze
+				ach(6903),	-- Shado-Pan Monastery: Silver
+				ach(6904, {	-- Shado-Pan Monastery: Gold
+					spell(131206),	-- Path of the Shado-Pan
+				}),
+				-- #if ANYCLASSIC
+				ach(61970, {	-- Shado-Pan Monastery: Platinum
+					i(265419),	-- Platinum Potion of Invisibility
+				}),
+				-- #endif
 			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
@@ -462,10 +214,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 						-- #if BEFORE 5.5.3
 						{	-- Season 1 Drops
+							i(86739),	-- Beads of the Mogu'shi
 							i(86805),	-- Qin-xi's Polarizing Seal
 							i(86777),	-- Screaming Tiger, Qiang's Unbreakable Polearm
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86905)),	-- Shin'ka, Execution of Dominion (Terrace)
-							i(86739),	-- Beads of the Mogu'shi
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86813)),	-- Vizier's Ruby Signet (HoF)
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86873)),	-- Watersoul Signet (Terrace)
 						},
