@@ -66,6 +66,7 @@ root(ROOTS.ExpansionFeatures, {
 			]]--
 			filter(TABARDS, {
 				i(23705),	-- Tabard of Flame
+				i(23709),	-- Tabard of Frost
 			}),
 			filter(TOYS, {
 				i(23716),	-- Carved Ogre Idol
