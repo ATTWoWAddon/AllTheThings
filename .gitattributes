@@ -176,6 +176,8 @@ MiniJSON.cs text eol=crlf
 
 # Contributor tools
 /.contrib/.tools/Lua/*.js text eol=lf
+/.contrib/.tools/Lua/tests/*.cjs text eol=lf
+/.contrib/.tools/Lua/tests/native-objectdb.cs.txt text eol=lf
 /.contrib/.db/shared/objects/ObjectDB/manifest.json text eol=lf
 /.contrib/.tools/Localization/*.py text eol=lf
 /.contrib/.tools/Localization/requirements.txt text eol=lf
