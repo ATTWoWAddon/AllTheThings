@@ -2,6 +2,23 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local MAKER = 555;
+local BROGGOK = 556;
+local KELIDAN = 557;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[MAKER] = { 17381 },	-- The Maker
+	[BROGGOK] = { 17380 },	-- Broggok
+	[KELIDAN] = { 17377 },	-- Keli'dan the Breaker
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(256, {	-- The Blood Furnace
 		lore = "The Blood Furnace is the second wing of the Hellfire Citadel. The instance takes place above Hellfire Ramparts, inside of the tower that overlooks the ramparts itself. The pit lord Magtheridon is entrapped by the fel orcs' sorcery at the base of the tower and they're using his blood to manufacture a new Fel Horde, infused with his demonic energy.",
@@ -163,97 +180,119 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 			}),
-			n(ZONE_DROPS, {
-				i(23894),	-- Fel Orc Blood Vial
-			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(555, {	-- The Maker
-					creatureID = 17381,
-					groups = {
-						i(24384),	-- Diamond-Core Sledgemace
-						-- #if AFTER 7.3.5
-						i(27488),	-- Mage-Collar of the Firestorm
-						-- #endif
-						i(24385),	-- Pendant of Battle-Lust
-						-- #if AFTER 7.3.5
-						i(27485),	-- Embroidered Cape of Mysteries
-						i(27483),	-- Moon-Touched Bands
-						-- #endif
-						i(24387),	-- Ironblade Gauntlets
-						i(24388),	-- Girdle of the Gale Storm
-						-- #if AFTER 7.3.5
-						i(27487),	-- Bloodlord Legplates
-						-- #endif
-						-- #if BEFORE MOP
-						i(24386, {	-- Libram of Saints Departed
-							timeline = { REMOVED_5_0_4 },
-						}),
-						-- #endif
-						i(73200, {	-- Fel Infusion Rod
-							timeline = { ADDED_4_3_0 },
-						}),
-					},
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(23894),	-- Fel Orc Blood Vial
 				}),
-				e(556, {	-- Broggok
-					creatureID = 17380,
-					groups = {
-						i(141063,{	-- Technique: Grimoire of the Observer (RECIPE!)
-							timeline = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
-						}),
-						-- #if AFTER 7.3.5
-						i(27490),	-- Firebrand Battleaxe
-						-- #endif
-						i(24389),	-- Legion Blunderbuss
-						i(24392),	-- Arcing Bracers
-						-- #if AFTER 7.3.5
-						i(27494),	-- Emerald Eye Bracer (7.3.5 - Moved from Keli'dan the Breaker)
-						i(27489),	-- Virtue Bearer's Vambraces
-						-- #endif
-						i(24393),	-- Bloody Surgeon's Mitts
-						i(24391),	-- Kilt of the Night Strider
-						-- #if AFTER 7.3.5
-						i(27492),	-- Moonchild Leggings
-						i(27848),	-- Embroidered Spellpyre Boots
-						i(27491),	-- Signet of Repose
-						-- #endif
-						i(24390),	-- Auslese's Light Channeler
-					},
+				BossOnly(MAKER, {
+					i(73200, { timeline = { ADDED_4_3_0 } }),	-- Fel Infusion Rod (QI!)
+					--
+					i(27487),	-- Bloodlord Legplates
+					i(24384),	-- Diamond-Core Sledgemace
+					i(27485),	-- Embroidered Cape of Mysteries
+					i(24388),	-- Girdle of the Gale Storm
+					i(24387),	-- Ironblade Gauntlets
+					i(27488),	-- Mage-Collar of the Firestorm
+					i(27483),	-- Moon-Touched Bands
+					i(24385),	-- Pendant of Battle-Lust
 				}),
-				e(557, {	-- Keli'dan the Breaker
-					creatureID = 17377,
-					groups = {
-						ach(648),	-- The Blood Furnace
-						i(24394),	-- Warsong Howling Axe
-						-- #if AFTER 7.3.5
-						i(27512),	-- The Willbreaker
-						i(27507),	-- Adamantine Repeater
-						i(27505),	-- Ruby Helm of the Just
-						i(27495),	-- Soldier's Dog Tags
-						i(29347),	-- Talisman of the Breaker
-						i(32080),	-- Mantle of Shadowy Embrace
-						-- #endif
-						i(24398),	-- Mantle of the Dusk-Dweller
-						i(24397),	-- Raiments of Divine Authority
-						-- #if AFTER 7.3.5
-						i(27506),	-- Robe of Effervescent Light
-						-- #endif
-						i(24396),	-- Vest of Vengeance
-						-- #if AFTER 7.3.5
-						i(28264),	-- Wastewalker Tunic
-						i(27497),	-- Doomplate Gauntlets
-						-- #endif
-						i(24395),	-- Mindfire Waistband
-						-- #if AFTER 7.3.5
-						i(27514),	-- Leggings of the Unrepentant
-						i(27788),	-- Bloodsworn Warboots
-						i(29239),	-- Eaglecrest Warboots
-						i(29245),	-- Wave-Crest Striders
-						i(28121),	-- Icon of Unyielding Courage
-						-- #endif
-					},
+				BossOnly(BROGGOK, {
+					i(24392),	-- Arcing Bracers
+					i(24390),	-- Auslese's Light Channeler
+					i(24393),	-- Bloody Surgeon's Mitts
+					i(27848),	-- Embroidered Spellpyre Boots
+					i(27494),	-- Emerald Eye Bracer
+					i(27490),	-- Firebrand Battleaxe
+					i(24391),	-- Kilt of the Night Strider
+					i(24389),	-- Legion Blunderbuss
+					i(27492),	-- Moonchild Leggings
+					i(27491),	-- Signet of Repose
+					i(141063, { timeline = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 } }),	-- Technique: Grimoire of the Observer (RECIPE!)
+					i(27489),	-- Virtue Bearer's Vambraces
+				}),
+				BossOnly(KELIDAN, {
+					ach(648),	-- The Blood Furnace
+					i(27507),	-- Adamantine Repeater
+					i(27788),	-- Bloodsworn Warboots
+					i(27497),	-- Doomplate Gauntlets
+					i(29239),	-- Eaglecrest Warboots
+					i(28121),	-- Icon of Unyielding Courage
+					i(27514),	-- Leggings of the Unrepentant
+					i(32080),	-- Mantle of Shadowy Embrace
+					i(24398),	-- Mantle of the Dusk-Dweller
+					i(24395),	-- Mindfire Waistband
+					i(24397),	-- Raiments of Divine Authority
+					i(27506),	-- Robe of Effervescent Light
+					i(27505),	-- Ruby Helm of the Just
+					i(27495),	-- Soldier's Dog Tags
+					i(29347),	-- Talisman of the Breaker
+					i(27512),	-- The Willbreaker
+					i(24396),	-- Vest of Vengeance
+					i(24394),	-- Warsong Howling Axe
+					i(28264),	-- Wastewalker Tunic
+					i(29245),	-- Wave-Crest Striders
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossOnly(MAKER, {
+					i(24386, { timeline = { REMOVED_5_0_4 } }),	-- Libram of Saints Departed
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(70, 70, 30) }).AddGroups({
+				CommonBossDrops({
+					i(30601),	-- Beaming Fire Opal
+					i(30600),	-- Fluorescent Tanzanite
+					i(30602),	-- Jagged Chrysoprase
+				}),
+				BossOnly(MAKER, {
+					i(27484, { timeline = { REMOVED_5_0_4 } }),	-- Libram of Avengement
+				}),
+				BossOnly(BROGGOK),
+				BossOnly(KELIDAN, {
+					ach(668),	-- Heroic: The Blood Furnace
+					ach(5068, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Blood Furnace Guild Run
+					i(33814),	-- Keli'dan's Feathered Stave
+					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(23894),	-- Fel Orc Blood Vial
+				}),
+				BossOnly(MAKER, {
+					i(73200, { timeline = { ADDED_4_3_0 } }),	-- Fel Infusion Rod (QI!)
+				}),
+				BossOnly(BROGGOK, {
+					i(141063, { timeline = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 } }),	-- Technique: Grimoire of the Observer (RECIPE!)
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossOnly(MAKER, {
+					i(24384),	-- Diamond-Core Sledgemace
+					i(24388),	-- Girdle of the Gale Storm
+					i(24387),	-- Ironblade Gauntlets
+					i(24386, { timeline = { REMOVED_5_0_4 } }),	-- Libram of Saints Departed
+					i(24385),	-- Pendant of Battle-Lust
+				}),
+				BossOnly(BROGGOK, {
+					i(24392),	-- Arcing Bracers
+					i(24390),	-- Auslese's Light Channeler
+					i(24393),	-- Bloody Surgeon's Mitts
+					i(24391),	-- Kilt of the Night Strider
+					i(24389),	-- Legion Blunderbuss
+				}),
+				BossOnly(KELIDAN, {
+					ach(648),	-- The Blood Furnace
+					i(24398),	-- Mantle of the Dusk-Dweller
+					i(24395),	-- Mindfire Waistband
+					i(24397),	-- Raiments of Divine Authority
+					i(24396),	-- Vest of Vengeance
+					i(24394),	-- Warsong Howling Axe
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				description = "You need to have a key to the instance in order to access this mode.",
 				aqd = {
@@ -274,120 +313,53 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 				-- #endif
 				lvl = lvlsquish(70, 70, 30),
-				groups = {
-					n(COMMON_BOSS_DROPS, {
-						crs = {
-							17381,	-- The Maker
-							17380,	-- Broggok
-							17377,	-- Keli'dan the Breaker
-						},
-						groups = {
-							-- #if BEFORE CATA
-							applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
-							-- #endif
-							i(30601),	-- Beaming Fire Opal
-							i(30600),	-- Fluorescent Tanzanite
-							i(30602),	-- Jagged Chrysoprase
-						},
-					}),
-					e(555, {	-- The Maker
-						creatureID = 17381,
-						groups = {
-							-- #if AFTER 7.3.5
-							i(24384),	-- Diamond-Core Sledgemace
-							-- #endif
-							i(27488),	-- Mage-Collar of the Firestorm
-							-- #if AFTER 7.3.5
-							i(24385),	-- Pendant of Battle-Lust
-							-- #endif
-							i(27485),	-- Embroidered Cape of Mysteries
-							i(27483),	-- Moon-Touched Bands
-							-- #if AFTER 7.3.5
-							i(24387),	-- Ironblade Gauntlets
-							i(24388),	-- Girdle of the Gale Storm
-							-- #endif
-							i(27487),	-- Bloodlord Legplates
-							-- #if BEFORE MOP
-							i(27484, {	-- Libram of Avengement
-								timeline = { REMOVED_5_0_4 },
-							}),
-							-- #endif
-							i(73200, {	-- Fel Infusion Rod
-								timeline = { ADDED_4_3_0 },
-							}),
-						},
-					}),
-					e(556, {	-- Broggok
-						creatureID = 17380,
-						groups = {
-							i(141063,{	-- Technique: Grimoire of the Observer (RECIPE!)
-								timeline = { ADDED_7_0_3_LAUNCH, REMOVED_10_1_5 },
-							}),
-							i(27490),	-- Firebrand Battleaxe
-							-- #if AFTER 7.3.5
-							i(24389),	-- Legion Blunderbuss
-							i(24392),	-- Arcing Bracers
-							-- #endif
-							-- #if AFTER 7.3.5
-							i(27494),	-- Emerald Eye Bracer (7.3.5 - Moved from Keli'dan the Breaker)
-							-- #endif
-							i(27489),	-- Virtue Bearer's Vambraces
-							-- #if AFTER 7.3.5
-							i(24393),	-- Bloody Surgeon's Mitts
-							i(24391),	-- Kilt of the Night Strider
-							-- #endif
-							i(27492),	-- Moonchild Leggings
-							i(27848),	-- Embroidered Spellpyre Boots
-							i(27491),	-- Signet of Repose
-							-- #if AFTER 7.3.5
-							i(24390),	-- Auslese's Light Channeler
-							-- #endif
-						},
-					}),
-					e(557, {	-- Keli'dan the Breaker
-						creatureID = 17377,
-						groups = {
-							ach(668),	-- Heroic: The Blood Furnace
-							ach(5068, {	-- Heroic: The Blood Furnace Guild Run
-								timeline = { ADDED_4_0_3 },
-							}),
-							-- #if AFTER 7.3.5
-							i(24394),	-- Warsong Howling Axe
-							-- #endif
-							i(27512),	-- The Willbreaker
-							i(27507),	-- Adamantine Repeater
-							i(27505),	-- Ruby Helm of the Just
-							i(27495),	-- Soldier's Dog Tags
-							i(29347),	-- Talisman of the Breaker
-							i(32080),	-- Mantle of Shadowy Embrace
-							-- #if AFTER 7.3.5
-							i(24398),	-- Mantle of the Dusk-Dweller
-							i(24397),	-- Raiments of Divine Authority
-							-- #endif
-							i(27506),	-- Robe of Effervescent Light
-							-- #if AFTER 7.3.5
-							i(24396),	-- Vest of Vengeance
-							-- #endif
-							i(28264),	-- Wastewalker Tunic
-							i(27497),	-- Doomplate Gauntlets
-							-- #if AFTER 7.3.5
-							i(24395),	-- Mindfire Waistband
-							-- #endif
-							i(27514),	-- Leggings of the Unrepentant
-							i(27788),	-- Bloodsworn Warboots
-							i(29239),	-- Eaglecrest Warboots
-							i(29245),	-- Wave-Crest Striders
-							i(28121),	-- Icon of Unyielding Courage
-							-- #if BEFORE 7.3.5
-							i(27522),	-- World's End Bracers (7.3.5 - Moved to Warbringer O'mrogg in Shattered Halls!)
-							i(27494),	-- Emerald Eye Bracer (7.3.5 - Moved to Broggok)
-							-- #endif
-							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
-							i(33814),	-- Keli'dan's Feathered Stave
-						},
-					}),
-				},
+			}).AddGroups({
+				CommonBossDrops({
+					-- #if BEFORE CATA
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
+					-- #endif
+					i(30601),	-- Beaming Fire Opal
+					i(30600),	-- Fluorescent Tanzanite
+					i(30602),	-- Jagged Chrysoprase
+				}),
+				BossOnly(MAKER, {
+					i(27487),	-- Bloodlord Legplates
+					i(27485),	-- Embroidered Cape of Mysteries
+					i(27484, { timeline = { REMOVED_5_0_4 } }),	-- Libram of Avengement
+					i(27488),	-- Mage-Collar of the Firestorm
+					i(27483),	-- Moon-Touched Bands
+				}),
+				BossOnly(BROGGOK, {
+					i(27848),	-- Embroidered Spellpyre Boots
+					i(27490),	-- Firebrand Battleaxe
+					i(27492),	-- Moonchild Leggings
+					i(27491),	-- Signet of Repose
+					i(27489),	-- Virtue Bearer's Vambraces
+				}),
+				BossOnly(KELIDAN, {
+					ach(668),	-- Heroic: The Blood Furnace
+					ach(5068, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Blood Furnace Guild Run
+					i(27507),	-- Adamantine Repeater
+					i(27788),	-- Bloodsworn Warboots
+					i(27497),	-- Doomplate Gauntlets
+					i(29239),	-- Eaglecrest Warboots
+					i(27494),	-- Emerald Eye Bracer
+					i(28121),	-- Icon of Unyielding Courage
+					i(33814),	-- Keli'dan's Feathered Stave
+					i(27514),	-- Leggings of the Unrepentant
+					i(32080),	-- Mantle of Shadowy Embrace
+					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
+					i(27506),	-- Robe of Effervescent Light
+					i(27505),	-- Ruby Helm of the Just
+					i(27495),	-- Soldier's Dog Tags
+					i(29347),	-- Talisman of the Breaker
+					i(27512),	-- The Willbreaker
+					i(28264),	-- Wastewalker Tunic
+					i(29245),	-- Wave-Crest Striders
+					i(27522),	-- World's End Bracers
+				}),
 			}),
+			-- #endif
 		},
 	}),
 })));
