@@ -62,6 +62,8 @@ namespace ATT
 
 		static void Main(string[] args)
 		{
+			ToolJson.WriteLicenseNotice();
+
 			// DB name for filtering DB comparisons
 			string dbFilter = "itemDB";
 

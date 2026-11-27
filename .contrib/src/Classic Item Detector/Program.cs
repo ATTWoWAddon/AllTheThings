@@ -18,6 +18,8 @@ namespace Classic_Item_Detector
 		static HttpClient client = new HttpClient();
 		static void Main(string[] args)
 		{
+			ToolJson.WriteLicenseNotice();
+
 			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
 
 			Parse();

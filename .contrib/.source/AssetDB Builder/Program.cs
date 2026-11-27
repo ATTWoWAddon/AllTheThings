@@ -2,6 +2,8 @@
 using System.Text;
 using ATT;
 
+ToolJson.WriteLicenseNotice();
+
 var databaseFolder = "../.db/standard/00 - DB/AssetDB";
 Directory.CreateDirectory(databaseFolder);
 foreach (var file in Directory.GetFiles("../.raw/AssetDB"))

@@ -29,7 +29,7 @@ namespace ATT
 		const string API_CALL_SEARCH = "/data/wow/search/{0}?namespace=static-us&locale=en_US&_page={1}&_pageSize=1000";
 
 		static string API_KEY = null;
-		static HttpClient Client = InitClient();
+		static HttpClient Client;
 		static ConcurrentQueue<string> DataResults { get; } = new ConcurrentQueue<string>();
 		static ConcurrentQueue<Tuple<int, string>> APIRequests { get; } = new ConcurrentQueue<Tuple<int, string>>();
 		static ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>> APIResults { get; } = new ConcurrentQueue<Tuple<int, Task<HttpResponseMessage>>>();
@@ -82,6 +82,9 @@ namespace ATT
 
 		static void Main(string[] args)
 		{
+			ToolJson.WriteLicenseNotice();
+			Client = InitClient();
+
 			// can tell harvester to only parse existing data for a certain date
 			string parseOnlyDate = args.FirstOrDefault(a => a.StartsWith("parse="))?.Substring(6);
 

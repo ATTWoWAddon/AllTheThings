@@ -1,5 +1,6 @@
 <Project>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)MiniJSON.cs" Link="MiniJSON\MiniJSON.cs" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MiniJSON-LICENSE.txt" LogicalName="MiniJSON-LICENSE.txt" />
   </ItemGroup>
 </Project>

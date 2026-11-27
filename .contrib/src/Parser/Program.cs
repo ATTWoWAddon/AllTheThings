@@ -236,6 +236,8 @@ namespace ATT
 
 		static int Main(string[] args)
 		{
+			ToolJson.WriteLicenseNotice();
+
 			// Setup tracing to the console.
 			Tracer.OnWrite += Console.Write;
 			AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(UnhandledExceptionHandler);
