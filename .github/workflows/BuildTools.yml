@@ -8,14 +8,20 @@ on:
       - '**'
     paths:
       - '.contrib/src/Parser/**'
+      - '.contrib/src/MiniJSON/**'
+      - '.contrib/src/Shared/ToolJson.props'
       - '**/*.cs'
       - '**/*.csproj'
+      - '.github/scripts/Check-MiniJsonNotice.ps1'
       - '.github/workflows/BuildTools.yml'
   pull_request:
     paths:
       - '.contrib/src/Parser/**'
+      - '.contrib/src/MiniJSON/**'
+      - '.contrib/src/Shared/ToolJson.props'
       - '**/*.cs'
       - '**/*.csproj'
+      - '.github/scripts/Check-MiniJsonNotice.ps1'
       - '.github/workflows/BuildTools.yml'
   workflow_dispatch:
 
@@ -86,6 +92,11 @@ jobs:
             }
           }
           if ($buildExitCode -ne 0) { exit $buildExitCode }
+
+      - name: Show Parser MiniJSON notice
+        run: |
+          $parser = Join-Path $env:RUNNER_TEMP 'parser/Parser.exe'
+          & .github/scripts/Check-MiniJsonNotice.ps1 -Tool Parser -ToolPath $parser
 
       - name: Run Parser tests
         run: |
@@ -250,4 +261,29 @@ jobs:
           $failures = @($results.Values | Where-Object { $_ -ne 0 })
           if ($failures.Count -gt 0) {
             throw "$($failures.Count) of $($projects.Count) C# project builds failed."
+          }
+
+      - name: Show MiniJSON notices for the other tools
+        if: ${{ !cancelled() }}
+        run: |
+          $buildOutput = Join-Path $env:RUNNER_TEMP 'csharp-projects'
+          $targets = [ordered]@{
+            'Blizzard API Harvester' = 'Blizzard_API_Harvester/Blizzard API Harvester.exe'
+            'Classic Item Detector' = 'Classic_Item_Detector/Classic Item Detector.exe'
+            'Item DB Compare Tool' = 'Item_DB_Compare_Tool/Item DB Compare Tool.exe'
+            'AssetDB Builder' = 'AssetDB_Builder/AssetDB Builder.exe'
+            'Database' = 'Database/Database.dll'
+          }
+          $failedTools = @()
+          foreach ($target in $targets.GetEnumerator()) {
+            try {
+              $toolPath = Join-Path $buildOutput $target.Value
+              & .github/scripts/Check-MiniJsonNotice.ps1 -Tool $target.Key -ToolPath $toolPath
+            } catch {
+              Write-Host "::error::$($target.Key) notice check failed. $($_.Exception.Message)"
+              $failedTools += $target.Key
+            }
+          }
+          if ($failedTools.Count) {
+            throw "MiniJSON notice checks failed for $($failedTools -join ', ')."
           }

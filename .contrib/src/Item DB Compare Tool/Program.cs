@@ -62,6 +62,8 @@ namespace ATT
 
 		static void Main(string[] args)
 		{
+			ToolJson.WriteLicenseNotice();
+
 			// DB name for filtering DB comparisons
 			string dbFilter = "itemDB";
 
@@ -95,7 +97,7 @@ namespace ATT
 			// check each file path, and either set or compare against existing data
 			foreach (string fileName in compareDBs)
 			{
-				var dbParsed = MiniJSON.Json.Deserialize(File.ReadAllText(fileName)) as Dictionary<string, object>;
+				var dbParsed = ToolJson.Data.Deserialize(File.ReadAllText(fileName)) as Dictionary<string, object>;
 
 				// set the compare type based on the type of the first DB
 				if (compareType == null && dbParsed != null && dbParsed.Keys.Count == 1)
@@ -143,8 +145,8 @@ namespace ATT
 						string missFile = fileName.Replace(DBSuffix, MissSuffix + DBSuffix);
 						List<Dictionary<string, object>> diffObjs = ConvertDBtoList(diffMiss.Item1, objectKey);
 						List<Dictionary<string, object>> missObjs = ConvertDBtoList(diffMiss.Item2, objectKey);
-						File.WriteAllText(diffFile, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, diffObjs } }));
-						File.WriteAllText(missFile, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, missObjs } }));
+						File.WriteAllText(diffFile, ToolJson.Data.Serialize(new Dictionary<string, object>() { { compareType, diffObjs } }));
+						File.WriteAllText(missFile, ToolJson.Data.Serialize(new Dictionary<string, object>() { { compareType, missObjs } }));
 					}
 					catch (Exception ex)
 					{
@@ -156,7 +158,7 @@ namespace ATT
 
 			// save the cumulative set of things
 			List<Dictionary<string, object>> fullObjs = ConvertDBtoList(source, objectKey);
-			File.WriteAllText(dbFilter + FullSuffix + DBSuffix, MiniJSON.Json.Serialize(new Dictionary<string, object>() { { compareType, fullObjs } }));
+			File.WriteAllText(dbFilter + FullSuffix + DBSuffix, ToolJson.Data.Serialize(new Dictionary<string, object>() { { compareType, fullObjs } }));
 
 			// report all the per-ID/per-DB differences
 			Console.WriteLine();
@@ -415,7 +417,7 @@ namespace ATT
 							{
 								if (comma)
 									addedKeysLine.Append(", ");
-								addedKeysLine.Append(key + " = " + MiniJSON.Json.Serialize(compareObj[key]));
+								addedKeysLine.Append(key + " = " + ToolJson.Data.Serialize(compareObj[key]));
 								comma = true;
 							}
 							CaptureIDDifference(id, compareDBName, "- ADDED: " + addedKeysLine.ToString());
@@ -427,7 +429,7 @@ namespace ATT
 							&& compareObj.TryGetValue(key, out object compareValue)
 							&& !CompareValues(sourceValue, compareValue))
 						{
-							CaptureIDDifference(id, compareDBName, "- CHANGE: " + key + ": " + MiniJSON.Json.Serialize(sourceValue) + " --> " + MiniJSON.Json.Serialize(compareValue));
+							CaptureIDDifference(id, compareDBName, "- CHANGE: " + key + ": " + ToolJson.Data.Serialize(sourceValue) + " --> " + ToolJson.Data.Serialize(compareValue));
 
 							DiffObjectKey(diffDB, id, compareObj, key);
 							DiffObjectKey(sourceDB, id, compareObj, key);
@@ -559,7 +561,7 @@ namespace ATT
 
 						oldList.Sort();
 						newList.Sort();
-						return MiniJSON.Json.Serialize(oldList) == MiniJSON.Json.Serialize(newList);
+						return ToolJson.Data.Serialize(oldList) == ToolJson.Data.Serialize(newList);
 					}
 					return false;
 				}
@@ -586,11 +588,11 @@ namespace ATT
 				// Default, not sure how to parse this so assume difference
 				// don't need to spam this...
 				//Console.WriteLine("NOT SURE HOW TO PARSE THIS:");
-				//Console.Write(MiniJSON.Json.Serialize(oldValue));
+				//Console.Write(ToolJson.Data.Serialize(oldValue));
 				//Console.Write(" (");
 				//Console.Write(oldType);
 				//Console.WriteLine(") OLD");
-				//Console.Write(MiniJSON.Json.Serialize(newValue));
+				//Console.Write(ToolJson.Data.Serialize(newValue));
 				//Console.Write(" (");
 				//Console.Write(newType);
 				//Console.WriteLine(") NEW");
@@ -611,7 +613,7 @@ namespace ATT
 				List<object> serialized = new List<object>();
 				foreach (object oldObj in list)
 				{
-					serialized.Add(MiniJSON.Json.Serialize(oldObj));
+					serialized.Add(ToolJson.Data.Serialize(oldObj));
 				}
 				return serialized;
 			}

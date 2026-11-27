@@ -1695,7 +1695,7 @@ namespace ATT
 		}
 
 		/// <summary>
-		/// Convert the object to JSON using Mini JSON.
+		/// Convert the object to JSON for Parser diagnostics.
 		/// </summary>
 		/// <param name="obj">The object.</param>
 		/// <returns>The JSON string.</returns>
@@ -1707,9 +1707,9 @@ namespace ATT
 			}
 			else if (obj is IExportableField export)
 			{
-				return MiniJSON.Json.Serialize(export.AsExportType());
+				return ToolJson.Data.SerializeForParser(export.AsExportType());
 			}
-			return MiniJSON.Json.Serialize(obj);
+			return ToolJson.Data.SerializeForParser(obj);
 		}
 
 		/// <summary>
@@ -1719,7 +1719,7 @@ namespace ATT
 		/// <returns>The object.</returns>
 		public static object ToObject(string jsonString)
 		{
-			return MiniJSON.Json.Deserialize(jsonString);
+			return ToolJson.Data.Deserialize(jsonString);
 		}
 		#endregion
 		#region Lua Conversion
@@ -4114,7 +4114,7 @@ namespace ATT
 							}
 							else
 							{
-								Trace.WriteLine(MiniJSON.Json.Serialize(objectData));
+								Trace.WriteLine(ToolJson.Data.SerializeForParser(objectData));
 								Trace.WriteLine("Uhhh, you missing an english locale here");
 								Framework.WaitForUser();
 								foreach (var localeKey in supportedLocales)

@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using ATT;
 
 namespace Classic_Item_Detector
 {
@@ -17,6 +18,8 @@ namespace Classic_Item_Detector
 		static HttpClient client = new HttpClient();
 		static void Main(string[] args)
 		{
+			ToolJson.WriteLicenseNotice();
+
 			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12;
 
 			Parse();
@@ -288,7 +291,7 @@ namespace Classic_Item_Detector
 			if (File.Exists("RAW_classicItemDB.json"))
 			{
 				//rawData = JsonConvert.DeserializeObject<Dictionary<int, object>>(File.ReadAllText("RAW_classicItemDB.json"));
-				if (MiniJSON.Json.Deserialize(File.ReadAllText("RAW_classicItemDB.json")) is Dictionary<string, object> rawDataFormat)
+				if (ToolJson.Data.Deserialize(File.ReadAllText("RAW_classicItemDB.json")) is Dictionary<string, object> rawDataFormat)
 				{
 					foreach (var pair in rawDataFormat)
 					{
@@ -308,7 +311,7 @@ namespace Classic_Item_Detector
 			var retailItemData = new Dictionary<int, object>();
 			if (File.Exists("itemDB.json"))
 			{
-				if (MiniJSON.Json.Deserialize(File.ReadAllText("itemDB.json")) is Dictionary<string, object> rawDataFormat
+				if (ToolJson.Data.Deserialize(File.ReadAllText("itemDB.json")) is Dictionary<string, object> rawDataFormat
 					&& rawDataFormat.TryGetValue("items", out object listRef) && listRef is List<object> retailItems)
 				{
 					foreach (var o in retailItems)
@@ -332,7 +335,7 @@ namespace Classic_Item_Detector
 			foreach (var fileInfo in rawDataDirectory.EnumerateFiles("*.raw"))
 			{
 				var contents = File.ReadAllText(fileInfo.FullName);
-				if (MiniJSON.Json.Deserialize(contents) is Dictionary<string, object> dict)
+				if (ToolJson.Data.Deserialize(contents) is Dictionary<string, object> dict)
 				{
 					if (dict.TryGetValue("id", out object idRef))
 					{
@@ -341,13 +344,13 @@ namespace Classic_Item_Detector
 				}
 			}
 			Console.WriteLine("Done parsing the raw data.");
-			File.WriteAllText("RAW_classicItemDB.json", MiniJSON.Json.Serialize(rawClassicData));
+			File.WriteAllText("RAW_classicItemDB.json", ToolJson.Data.Serialize(rawClassicData));
 			Console.WriteLine("Done exporting the raw data.");
 
 			// Convert the data into a more meaningful format structure.
 			var keys = rawClassicData.Keys.ToList();
 			keys.Sort();
-			File.WriteAllText("classicItemIDs.json", MiniJSON.Json.Serialize(keys));
+			File.WriteAllText("classicItemIDs.json", ToolJson.Data.Serialize(keys));
 			Console.WriteLine("Done exporting the data.");
 			var itemData = new Dictionary<int, Dictionary<string, object>>();
 			foreach (var itemID in keys)
@@ -542,7 +545,7 @@ namespace Classic_Item_Detector
 					if (retailData.TryGetValue("spellID", out r)) data["spellID"] = r;
 				}
 			}
-			File.WriteAllText("classicItemDB.json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", itemData.Values.ToList() } }));
+			File.WriteAllText("classicItemDB.json", ToolJson.Data.Serialize(new Dictionary<string, object> { { "items", itemData.Values.ToList() } }));
 		}
 	}
 }

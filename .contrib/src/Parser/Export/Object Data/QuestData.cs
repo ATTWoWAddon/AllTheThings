@@ -25,7 +25,7 @@ namespace ATT
 				if (fields.Contains("creatureID"))
 				{
 					Framework.Log("FOUND A creatureID THAT WOULD ELEVATE THE QUEST TO AN NPC");
-					Framework.Log(MiniJSON.Json.Serialize(data));
+					Framework.Log(ToolJson.Data.SerializeForParser(data));
 					Console.ReadLine();
 				}
 				base.Build(builder, data, fields);

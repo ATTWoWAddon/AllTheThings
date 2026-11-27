@@ -90,7 +90,7 @@ namespace ATT.FieldTypes
 			}
 			catch
 			{
-				throw new InvalidDataException($"Failed to create Timeline object from provided data: {MiniJSON.Json.Serialize(value)}");
+				throw new InvalidDataException($"Failed to create Timeline object from provided data: {ToolJson.Data.SerializeForParser(value)}");
 			}
 
 			if (!data.TryGetValue(Field, out object rawobj))

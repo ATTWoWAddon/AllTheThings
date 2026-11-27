@@ -314,7 +314,7 @@ namespace ATT
 								{
 									if (timeline.Count > 1)
 									{
-										var timelineStr = MiniJSON.Json.Serialize(timeline);
+										var timelineStr = ToolJson.Data.SerializeForParser(timeline);
 										builder.Append(", {").Append(timelineStr.Substring(1, timelineStr.Length - 2)).Append("}");
 									}
 									else builder.Append(", \"").Append(timeline[0]).Append("\"");

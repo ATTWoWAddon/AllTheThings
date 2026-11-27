@@ -65,7 +65,7 @@ namespace ATT
 											{
 												EMPTY_HEADER_WHITELIST[readable] = true;
 												Trace.WriteLine($"EMPTY HEADER {readable ?? "UNKNOWN"}");
-												Trace.WriteLine($"  {MiniJSON.Json.Serialize(element)}");
+												Trace.WriteLine($"  {ToolJson.Data.SerializeForParser(element)}");
 												Console.ReadLine();
 											}
 											g.RemoveAt(i);
