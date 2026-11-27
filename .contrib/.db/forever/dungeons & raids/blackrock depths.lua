@@ -206,6 +206,7 @@ instanceroot(228, {	-- Blackrock Depths
 					}),
 				},
 			}),
+			--[[Commented out until confirmed: Lokhtos Darkbargainer isn't in Blackrock Depths yet
 			q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain
 				qg = 12944,	-- Lokhtos Darkbargainer
 				maxReputation = { FACTION_THORIUM_BROTHERHOOD, EXALTED },
@@ -241,6 +242,7 @@ instanceroot(228, {	-- Blackrock Depths
 				repeatable = true,
 				lvl = 60,
 			}),
+			--]]
 			q(97197, {	-- Fragment of the Firelands
 				qg = 259119,	-- Alaana Stormwalker
 				coord = { 33.4, 22.4, MAP.MULGORE },

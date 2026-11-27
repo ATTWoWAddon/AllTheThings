@@ -928,11 +928,6 @@ qo(1,{providers={{"n",7047}}}),
 qo(2,{providers={{"n",7040}}}),
 qo(3,{providers={{"n",7044}}}),
 qo(4,{providers={{"n",7041}}})}}),
-q(6646,{cost={{"i",11382,1}},lvl=60,maxReputation={59,42000},qgs={12944},repeatable=1}),
-q(6645,{cost={{"i",17012,2}},lvl=60,maxReputation={59,42000},qgs={12944},repeatable=1}),
-q(6642,{cost={{"i",11370,10}},lvl=60,maxReputation={59,42000},qgs={12944},repeatable=1}),
-q(6643,{cost={{"i",17010,1}},lvl=60,maxReputation={59,42000},qgs={12944},repeatable=1}),
-q(6644,{cost={{"i",17011,1}},lvl=60,maxReputation={59,42000},qgs={12944},repeatable=1}),
 q(97197,{awp=16001,coords={
 [1412]={{33.4,22.4}}},lvl=46,qgs={259119},r=1,g={
 qo(1,{providers={{"i",277129}}})}}),
