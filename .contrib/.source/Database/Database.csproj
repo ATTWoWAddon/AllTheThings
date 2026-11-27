@@ -22,4 +22,5 @@
     <PackageReference Include="KeraLua" Version="[1.4.11]" />
     <PackageReference Include="NLua" Version="[1.7.9]" />
   </ItemGroup>
+  <Import Project="..\..\src\MiniJSON\MiniJSON.props" />
 </Project>

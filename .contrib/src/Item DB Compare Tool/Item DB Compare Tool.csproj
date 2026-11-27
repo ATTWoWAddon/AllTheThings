@@ -19,4 +19,5 @@
     <DefineConstants>TRACE</DefineConstants>
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
+  <Import Project="..\MiniJSON\MiniJSON.props" />
 </Project>

@@ -22,4 +22,5 @@
   <ItemGroup>
     <Reference Include="System.Net.Http" />
   </ItemGroup>
+  <Import Project="..\MiniJSON\MiniJSON.props" />
 </Project>

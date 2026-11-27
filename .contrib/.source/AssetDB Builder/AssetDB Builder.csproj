@@ -14,4 +14,5 @@
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
     <ApplicationIcon>..\..\assets\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <Import Project="..\..\src\MiniJSON\MiniJSON.props" />
 </Project>
