@@ -3699,21 +3699,9 @@ namespace ATT
 
 				CurrentParseStage = ParseStage.ExportAutoSources;
 
-				// sometimes we can parse with this config set and all ObjectDB will be re-generated based on cumulative object information in Retail
 				if (Config["DoConsolidateObjectDB"] && !PreProcessorTags.Contains("ANYCLASSIC"))
-				{
-					ObjectHarvester.ExportObjectsToFilePath(ObjectDB, "../.db/shared/objects/ObjectDB.lua",
-(
-	"-----------------------------------------------------\r\n" +
-	"--   O B J E C T   D A T A B A S E   M O D U L E   --\r\n" +
-	"-----------------------------------------------------"
-));
-				}
-				else
-				{
-					// Attempt to find some dirty objects and write them to a dynamic file.
-					ObjectHarvester.ExportDirtyObjectsToFilePath($"../.db/shared/objects/Dynamic/DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
-				}
+					Console.WriteLine("ObjectDB consolidation is disabled. Harvested fields will be exported to Dynamic for manual review.");
+				ObjectHarvester.ExportDirtyObjectsToFilePath($"../.db/shared/objects/Dynamic/DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
 
 				// DEBUGGING: Output Parsed Data
 				ExportDebugOutputDBs(addonRootFolder);

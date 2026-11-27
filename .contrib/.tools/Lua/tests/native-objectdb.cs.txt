@@ -1,0 +1,21 @@
+using System;
+using System.IO;
+using System.Linq;
+using ATT;
+
+internal static class NativeObjectDBTests
+{
+    public static int Main(string[] args)
+    {
+        try
+        {
+            if (args[0] == "store")
+                Console.WriteLine(MiniJSON.Json.Serialize(new ObjectDBStore(args[1]).Files.Select(Path.GetFileName).ToList()));
+            else if (args[0] == "scan")
+                Console.WriteLine(MiniJSON.Json.Serialize(ObjectDBStore.ParseEntries(File.ReadAllText(args[1])).Keys.ToList()));
+            else throw new Exception("Unknown test command");
+            return 0;
+        }
+        catch (Exception error) { Console.Error.WriteLine(error.GetBaseException().Message); return 1; }
+    }
+}

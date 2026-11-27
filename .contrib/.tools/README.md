@@ -39,7 +39,7 @@ node .contrib/.tools/Lua/normalize.js "path/to/data-file.lua"
 For example:
 
 ```sh
-node .contrib/.tools/Lua/normalize.js ".contrib/Parser/DATAS/00 - DB/ObjectDB.lua"
+node .contrib/.tools/Lua/normalize.js ".contrib/.db/shared/objects/ObjectDB/ObjectDB_181000_181999.lua"
 ```
 
 ### Example
@@ -99,3 +99,7 @@ git diff --check
 ```
 
 If the result is not expected, restore it with your normal Git workflow before making additional edits.
+
+## Maintain the canonical ObjectDB
+
+Find the Lua file for an object ID, edit a record, or add a range using the [ObjectDB maintenance guide](Lua/ObjectDB.md).

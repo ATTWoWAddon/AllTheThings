@@ -317,7 +317,7 @@ tab_width = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[/{.contrib/.tools/README.md,.contrib/.tools/TOOLS_ROADMAP.md}]
+[/{.contrib/.tools/README.md,.contrib/.tools/TOOLS_ROADMAP.md,.contrib/.tools/Lua/ObjectDB.md}]
 charset = utf-8
 end_of_line = lf
 indent_style = space
@@ -557,7 +557,7 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 # Preserve generated shared Lua outputs.
-[/.contrib/.db/shared/{constants/headerIDs.lua,objects/ObjectDB.lua}]
+[/.contrib/.db/shared/constants/headerIDs.lua]
 charset = utf-8-bom
 end_of_line = crlf
 indent_style = tab
@@ -571,6 +571,26 @@ insert_final_newline = true
 charset = utf-8
 end_of_line = lf
 indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Canonical ObjectDB manifest
+[/.contrib/.db/shared/objects/ObjectDB/manifest.json]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+tab_width = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# ObjectDB reader tests and native fixture
+[/.contrib/.tools/Lua/tests/{*.cjs,native-objectdb.cs.txt}]
+charset = utf-8
+end_of_line = lf
+indent_style = space
 indent_size = 4
 tab_width = 4
 trim_trailing_whitespace = true

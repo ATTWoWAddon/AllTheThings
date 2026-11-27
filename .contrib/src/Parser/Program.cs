@@ -467,14 +467,30 @@ namespace ATT
 				string sharedRootFolder = Framework.Config["shared-data"] ?? "../.db/shared";
 				if (Directory.Exists(sharedRootFolder))
 				{
-					var sharedFiles = Directory.GetFiles(sharedRootFolder, "*.lua", SearchOption.AllDirectories).ToList();
+					string objectStore = Path.GetFullPath(Path.Combine(sharedRootFolder, "objects", "ObjectDB"));
+					string objectSlot = Path.Combine(sharedRootFolder, "objects", "ObjectDB.lua");
+					bool hasStore = Directory.Exists(objectStore);
+					if (hasStore && File.Exists(objectSlot)) throw new InvalidDataException("Legacy ObjectDB.lua must not coexist with the canonical ObjectDB store.");
+					if (!hasStore && string.Equals(Path.GetFullPath(sharedRootFolder), Path.GetFullPath("../.db/shared"), StringComparison.OrdinalIgnoreCase)) throw new DirectoryNotFoundException("Canonical ObjectDB store is missing: " + objectStore);
+					var store = hasStore ? new ObjectDBStore(objectStore) : null;
+					var sharedFiles = Directory.GetFiles(sharedRootFolder, "*.lua", SearchOption.AllDirectories)
+						.Where(file => !Path.GetFullPath(file).StartsWith(objectStore + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase)).ToList();
+					if (hasStore) sharedFiles.Add(objectSlot);
 					sharedFiles.Sort(StringComparer.InvariantCulture);
 					try
 					{
 						foreach (var fileName in sharedFiles)
 						{
 							if (Errored) break;
-							ParseLUAFile(lua, fileName);
+							if (hasStore && Path.GetFullPath(fileName) == Path.GetFullPath(objectSlot))
+							{
+								foreach (var shard in store.Files)
+								{
+									if (Errored) break;
+									ParseLUAFile(lua, shard);
+								}
+							}
+							else ParseLUAFile(lua, fileName);
 						}
 					}
 					catch (Exception e)
