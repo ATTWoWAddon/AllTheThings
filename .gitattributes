@@ -248,3 +248,8 @@ MiniJSON.cs text eol=crlf
 
 /.contrib/generator-tests/*.py text eol=lf
 /.contrib/generator-tests/requirements.txt text eol=lf
+
+/.contrib/file-hygiene/*.py text eol=lf
+/.contrib/file-hygiene/requirements.txt text eol=lf
+/.contrib/file-hygiene/*.md text eol=lf
+/.contrib/file-hygiene/audit-before.txt text eol=lf

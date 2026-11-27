@@ -589,3 +589,30 @@ indent_size = 4
 tab_width = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+[/.contrib/file-hygiene/{*.py,requirements.txt}]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[/.contrib/file-hygiene/{README.md,windows-validation.md}]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = false
+insert_final_newline = true
+
+[/.contrib/file-hygiene/audit-before.txt]
+charset = utf-8
+end_of_line = lf
+indent_style = unset
+indent_size = unset
+tab_width = unset
+trim_trailing_whitespace = true
+insert_final_newline = true
