@@ -50,7 +50,18 @@ namespace ATT
 					if (!isSeasonOfDiscovery) builder.AppendLine("-- #endif");
 					var outputFolder = isSeasonOfDiscovery ? seasonOfDiscoveryFolder : databaseFolder;
 					Directory.CreateDirectory(outputFolder);
-					File.WriteAllText(Path.Combine(outputFolder, $"{dbFileName}.lua"), builder.ToString(), Encoding.UTF8);
+					var outputNewLine = ATT.TextFile.Lf;
+					if ((isSeasonOfDiscovery && dbFileName == "01 - Classic SOD") ||
+						(!isSeasonOfDiscovery && (dbFileName == "01 - Classic Era" ||
+							dbFileName == "02 - TBC" ||
+							dbFileName == "03 - Wrath" ||
+							dbFileName == "04 - Cataclysm" ||
+							dbFileName == "05 - Mists of Pandaria" ||
+							dbFileName == "09 - Shadowlands")))
+					{
+						outputNewLine = ATT.TextFile.CrLf;
+					}
+					ATT.TextFile.WriteAllText(Path.Combine(outputFolder, $"{dbFileName}.lua"), builder.ToString(), outputNewLine, ATT.TextFile.Utf8NoBom);
 				}
 			}
 

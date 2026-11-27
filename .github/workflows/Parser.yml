@@ -9,10 +9,14 @@ on: # Controls automatic and manual workflow triggers
     paths: # Require at least one matching changed file; not evaluated for tag pushes
       - '.contrib/.db/**' # Trigger on database source or configuration changes in any subdirectory
       - '.github/workflows/Parser.yml' # Trigger on changes to this workflow
+      - '.contrib/src/Parser/**' # Trigger on Parser source changes
+      - '.contrib/src/TextFile.cs' # Trigger on shared generated-text formatting changes
   pull_request: # Trigger on opened, synchronize, or reopened events for any target branch
     paths: # Require at least one matching file changed in the pull request
       - '.contrib/.db/**' # Trigger on database source or configuration changes in any subdirectory
       - '.github/workflows/Parser.yml' # Trigger on changes to this workflow
+      - '.contrib/src/Parser/**' # Trigger on Parser source changes
+      - '.contrib/src/TextFile.cs' # Trigger on shared generated-text formatting changes
   workflow_dispatch: # Run manually: Actions -> Parser -> Run workflow -> select a branch -> Run workflow (requires write access and this file on the default branch; no path filters)
 
 permissions:
@@ -28,6 +32,68 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - name: Set up stable .NET 10 SDK
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: '10.x'
+          dotnet-quality: 'ga'
+
+      - name: Build Parser from source
+        shell: pwsh
+        working-directory: ${{ github.workspace }}
+        run: |
+          $PSNativeCommandUseErrorActionPreference = $false
+          $repoRoot = (Get-Location).Path
+          $globalJsonPath = Join-Path $repoRoot 'global.json'
+          $originalGlobalJsonExisted = Test-Path -LiteralPath $globalJsonPath -PathType Leaf
+          $originalGlobalJsonBytes = $null
+          if ($originalGlobalJsonExisted) {
+            $originalGlobalJsonBytes = [System.IO.File]::ReadAllBytes($globalJsonPath)
+          }
+          $outputPath = (Join-Path $env:RUNNER_TEMP 'parser') + [System.IO.Path]::DirectorySeparatorChar
+          $intermediatePath = (Join-Path $env:RUNNER_TEMP 'parser-obj') + [System.IO.Path]::DirectorySeparatorChar
+          $buildExitCode = $null
+          $repoLocationPushed = $false
+          try {
+            Push-Location -LiteralPath $repoRoot
+            $repoLocationPushed = $true
+            # .NET SDK 10.0.100 is the minimum; latestMinor selects the highest stable .NET 10 SDK.
+            $globalJson = '{"sdk":{"version":"10.0.100","rollForward":"latestMinor","allowPrerelease":false}}'
+            [System.IO.File]::WriteAllText(
+              $globalJsonPath,
+              $globalJson + [Environment]::NewLine,
+              [System.Text.UTF8Encoding]::new($false)
+            )
+            $dotnetVersion = (& dotnet --version 2>&1 | Out-String).Trim()
+            if ($LASTEXITCODE -ne 0 -or $dotnetVersion -notmatch '^10\.\d+\.\d+$') {
+              throw "Expected a stable .NET SDK 10.x; got '$dotnetVersion'."
+            }
+            Write-Host "Using .NET SDK $dotnetVersion"
+            dotnet build '.contrib/src/Parser/Parser.csproj' --configuration Release -p:Platform=x64 -p:OutputType=Exe --output $outputPath --nologo "-p:BaseIntermediateOutputPath=$intermediatePath" "-p:IntermediateOutputPath=$intermediatePath"
+            $buildExitCode = $LASTEXITCODE
+          }
+          finally {
+            try {
+              if ($repoLocationPushed) {
+                Pop-Location
+              }
+            }
+            finally {
+              if ($originalGlobalJsonExisted) {
+                [System.IO.File]::WriteAllBytes($globalJsonPath, $originalGlobalJsonBytes)
+              }
+              elseif (Test-Path -LiteralPath $globalJsonPath) {
+                Remove-Item -LiteralPath $globalJsonPath -Force
+              }
+            }
+          }
+          if ($buildExitCode -ne 0) { exit $buildExitCode }
+          $parserPath = Join-Path $outputPath 'Parser.exe'
+          if (-not (Test-Path -LiteralPath $parserPath -PathType Leaf)) {
+            throw "The newly built Parser was not found: $parserPath"
+          }
+          "ATT_PARSER=$parserPath" >> $env:GITHUB_ENV
+
       - name: Check changed paths
         id: changes
         uses: dorny/paths-filter@v4
@@ -38,6 +104,8 @@ jobs:
               - '.contrib/.db/**'
               - '!.contrib/.db/forever/**'
               - '.github/workflows/Parser.yml'
+              - '.contrib/src/Parser/**'
+              - '.contrib/src/TextFile.cs'
 
       - parallel:
         - name: Database Parser for Retail
@@ -47,7 +115,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config"
 
         - name: Database Parser for Classic Era
           id: Parse-ClassicEra
@@ -56,7 +124,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/01 - Classic Era.config"
 
         - name: Database Parser for Season of Discovery
           id: Parse-ClassicSoD
@@ -65,7 +133,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/season of discovery/.config/season of discovery.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/season of discovery/.config/season of discovery.config"
 
         - name: Database Parser for The Burning Crusade
           id: Parse-TBC
@@ -74,7 +142,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/02 - TBC.config"
 
         - name: Database Parser for Wrath of the Lich King
           id: Parse-WOTLK
@@ -83,7 +151,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/03 - Wrath.config"
 
         - name: Database Parser for Cataclysm
           id: Parse-CATA
@@ -92,7 +160,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/04 - Cataclysm.config"
 
         - name: Database Parser for Mists of Pandaria
           id: Parse-MOP
@@ -101,7 +169,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/standard/.config/classic/05 - Mists of Pandaria.config"
 
         - name: Database Parser for Forever
           id: Parse-FOREVER
@@ -109,7 +177,7 @@ jobs:
           continue-on-error: true
           shell: cmd
           run: |
-            "Parser.exe" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
+            "%ATT_PARSER%" auto baseconfig="../.db/standard/.config/retail/retail.config" config="../.db/forever/.config/forever.config"
 
       - name: Full Success Check
         shell: pwsh
