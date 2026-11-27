@@ -850,3 +850,9 @@ instanceroot(246, {	-- Scholomance
 		}),
 	},
 });
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(83976, {	-- Completed when killing Ras Frostwhisper
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
+});
