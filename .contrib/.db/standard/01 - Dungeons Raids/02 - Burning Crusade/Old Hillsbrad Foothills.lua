@@ -2,6 +2,23 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local DRAKE = 538;
+local SKARLOC = 539;
+local EPOCH_HUNTER = 540;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[DRAKE] = { 17848 },	-- Lieutenant Drake
+	[SKARLOC] = { 17862 },	-- Captain Skarloc
+	[EPOCH_HUNTER] = { 18096 },	-- Epoch Hunter
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 local THOMAS_YANCE_GROUPS = {
 	i(25725),	-- Pattern: Riding Crop (RECIPE!)
 	i(23321),	-- Recruit's Robe
@@ -32,9 +49,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					timeline = { ADDED_4_3_0 },
 					lvl = lvlsquish(64, 64, 15),
 					groups = {
-						i(29317),	-- Tempest's Touch
 						i(29318),	-- Southshore Sneakers
 						i(29319),	-- Tarren Mill Defender's Cinch
+						i(29317),	-- Tempest's Touch
 						i(29316),	-- Warchief's Mantle
 					},
 				}),
@@ -117,9 +134,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					timeline = { REMOVED_4_3_0 },
 					lvl = lvlsquish(66, 66, 15),
 					groups = {
-						i(29317),	-- Tempest's Touch
 						i(29318),	-- Southshore Sneakers
 						i(29319),	-- Tarren Mill Defender's Cinch
+						i(29317),	-- Tempest's Touch
 						i(29316),	-- Warchief's Mantle
 					},
 				}),
@@ -147,114 +164,156 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				n(18672, THOMAS_YANCE_GROUPS),	-- Thomas Yance
 			}),
-			n(ZONE_DROPS, {
-				i(25729, {	-- Pattern: Stylin' Adventure Hat (RECIPE!)
-					crs = {
-						-- #if AFTER 2.4.3
-						28132,	-- Don Carlos
-						-- #endif
-						17820,	-- Durnholde Rifleman
-					},
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(30457),	-- Gilneas Sparkled Water
+					i(25729, {	-- Pattern: Stylin' Adventure Hat (RECIPE!)
+						crs = {
+							-- #if AFTER 2.4.3
+							28132,	-- Don Carlos
+							-- #endif
+							17820,	-- Durnholde Rifleman
+						},
+					}),
+					i(30610),	-- Smoked Black Bear Meat
+					i(30458),	-- Stromgarde Muenster
 				}),
-				i(30457),	-- Gilneas Sparkled Water
-				i(30610),	-- Smoked Black Bear Meat
-				i(30458),	-- Stromgarde Muenster
+				n(28132, {	-- Don Carlos
+					description = "This is a neutral Elite Creature that wanders the road.",
+					timeline = { ADDED_2_4_3 },
+					groups = { i(38329) },	-- Don Carlos' Hat
+				}),
+				BossOnly(DRAKE, {
+					i(28212),	-- Aran's Sorcerous Slacks
+					i(28210),	-- Bloodskull Destroyer
+					i(27423),	-- Cloak of Impulsiveness
+					i(28214),	-- Grips of the Lunar Eclipse
+					i(27436),	-- Iron Band of the Unbreakable
+					i(28211),	-- Lieutenant's Signet of Lordaeron
+					i(28213),	-- Lordaeron Medical Guide
+					i(28215),	-- Mok'Nathal Mask of Battle
+					i(27417),	-- Ravenwing Pauldrons
+					i(27418),	-- Stormreaver Shadow-Kilt
+					i(27420),	-- Uther's Ceremonial Warboots
+				}),
+				BossOnly(SKARLOC, {
+					i(27424),	-- Amani Venom-Axe
+					i(28221),	-- Boots of the Watchful Heart
+					i(28216),	-- Dathrohan's Ceremonial Hammer
+					i(27427),	-- Durotan's Battle Harness
+					i(28219),	-- Emerald-Scale Greaves
+					i(28220),	-- Moon-Crown Antlers
+					i(27426),	-- Northshire Battlemace
+					i(28218),	-- Pontiff's Pantaloons of Prophecy
+					i(22927),	-- Recipe: Ironshield Potion (RECIPE!)
+					i(27430),	-- Scaled Greaves of Patience
+					i(27428),	-- Stormfront Gauntlets
+					i(28217),	-- Tarren Mill Vitality Locket
+				}),
+				BossOnly(EPOCH_HUNTER, {
+					ach(652),	-- The Escape From Durnholde
+					i(28223),	-- Arcanist's Stone
+					i(27432),	-- Broxigar's Ring of Valor
+					i(29250),	-- Cord of Sanctification
+					i(24173),	-- Design: Circlet of Arcane Might (RECIPE!)
+					i(27440),	-- Diamond Prism of Recurrence
+					i(28225),	-- Doomplate Warhelm
+					i(27911),	-- Epoch's Whispering Cinch
+					i(30536),	-- Greaves of the Martyr
+					i(28401),	-- Hauberk of Desolation
+					i(28191),	-- Mana-Etched Vestments
+					i(27434),	-- Mantle of Perenolde
+					i(28233),	-- Necklace of Resplendent Hope
+					i(29246),	-- Nightfall Wristguards
+					i(27433),	-- Pauldrons of Sufferance
+					i(28222),	-- Reaver of the Infinites
+					i(27904),	-- Resounding Ring of Glory
+					i(28227),	-- Sparking Arcanite Ring
+					i(27431),	-- Time-Shifted Dagger
+					i(28226),	-- Timeslicer
+					i(28224),	-- Wastewalker Helm
+					i(28344),	-- Wyrmfury Pauldrons
+					i(30534),	-- Wyrmscale Greaves
+				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(70, 70, 30) }).AddGroups({
+				CommonBossDrops({
+					i(30589),	-- Dazzling Chrysoprase
+					i(30591),	-- Empowered Fire Opal
+					i(30590),	-- Enduring Chrysoprase
+				}),
 				n(28132, {	-- Don Carlos
 					description = "This is a neutral Elite Creature that wanders the road.",
 					timeline = { ADDED_2_4_3 },
 					groups = {
-						i(38329),	-- Don Carlos' Hat
+						applyclassicphase(LEGION_PHASE_ONE, i(134019, { timeline = { ADDED_7_0_3 } })),	-- Don Carlos' Famous Hat (TOY!)
+						i(38506, { timeline = { REMOVED_7_0_3 } }),	-- Don Carlos' Famous Hat
 					},
 				}),
-				e(538, {	-- Lieutenant Drake
-					creatureID = 17848,
-					groups = {
-						-- #if AFTER 7.3.5
-						i(28210),	-- Bloodskull Destroyer
-						i(28213),	-- Lordaeron Medical Guide
-						i(28215),	-- Mok'Nathal Mask of Battle
-						-- #endif
-						i(27417),	-- Ravenwing Pauldrons
-						i(27423),	-- Cloak of Impulsiveness
-						-- #if AFTER 7.3.5
-						i(28214),	-- Grips of the Lunar Eclipse
-						i(28212),	-- Aran's Sorcerous Slacks
-						-- #endif
-						i(27418),	-- Stormreaver Shadow-Kilt
-						i(27420),	-- Uther's Ceremonial Warboots
-						i(27436),	-- Iron Band of the Unbreakable
-						-- #if AFTER 7.3.5
-						i(28211),	-- Lieutenant's Signet of Lordaeron
-						-- #endif
-					},
-				}),
-				e(539, {	-- Captain Skarloc
-					creatureID = 17862,
-					groups = {
-						i(27424),	-- Amani Venom-Axe
-						-- #if AFTER 7.3.5
-						i(28216),	-- Dathrohan's Ceremonial Hammer
-						-- #endif
-						i(27426),	-- Northshire Battlemace
-						-- #if AFTER 7.3.5
-						i(28220),	-- Moon-Crown Antlers
-						i(28217),	-- Tarren Mill Vitality Locket
-						-- #endif
-						i(27427),	-- Durotan's Battle Harness
-						i(27428),	-- Stormfront Gauntlets
-						-- #if AFTER 7.3.5
-						i(28219),	-- Emerald-Scale Greaves
-						i(28218),	-- Pontiff's Pantaloons of Prophecy
-						-- #endif
-						i(27430),	-- Scaled Greaves of Patience
-						-- #if AFTER 7.3.5
-						i(28221),	-- Boots of the Watchful Heart
-						-- #endif
-						i(22927),	-- Recipe: Ironshield Potion (RECIPE!)
-					},
-				}),
-				e(540, {	-- Epoch Hunter
-					creatureID = 18096,
-					groups = {
-						ach(652),	-- The Escape From Durnholde
-						-- #if AFTER 7.3.5
-						i(28222),	-- Reaver of the Infinites
-						-- #endif
-						i(27431),	-- Time-Shifted Dagger
-						-- #if AFTER 7.3.5
-						i(28226),	-- Timeslicer
-						i(28225),	-- Doomplate Warhelm
-						i(28224),	-- Wastewalker Helm
-						-- #endif
-						i(27440),	-- Diamond Prism of Recurrence
-						-- #if AFTER 7.3.5
-						i(28233),	-- Necklace of Resplendent Hope
-						-- #endif
-						i(27434),	-- Mantle of Perenolde
-						i(27433),	-- Pauldrons of Sufferance
-						-- #if AFTER 7.3.5
-						i(28344),	-- Wyrmfury Pauldrons
-						i(28401),	-- Hauberk of Desolation
-						i(28191),	-- Mana-Etched Vestments
-						i(29246),	-- Nightfall Wristguards
-						i(29250),	-- Cord of Sanctification
-						i(27911),	-- Epoch's Whispering Cinch
-						i(30536),	-- Greaves of the Martyr
-						i(30534),	-- Wyrmscale Greaves
-						-- #endif
-						i(27432),	-- Broxigar's Ring of Valor
-						-- #if AFTER 7.3.5
-						i(27904),	-- Resounding Ring of Glory
-						i(28227),	-- Sparking Arcanite Ring
-						i(28223),	-- Arcanist's Stone
-						-- #endif
-						i(24173),	-- Design: Circlet of Arcane Might (RECIPE!)
-					},
+				BossOnly(DRAKE),
+				BossOnly(SKARLOC),
+				BossOnly(EPOCH_HUNTER, {
+					ach(673),	-- Heroic: The Escape From Durnholde
+					ach(5073, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Escape From Durnholde Guild Run
+					i(33847),	-- Epoch Hunter's Head
+					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				n(ZONE_DROPS, {
+					i(30457),	-- Gilneas Sparkled Water
+					i(25729, {	-- Pattern: Stylin' Adventure Hat (RECIPE!)
+						crs = {
+							-- #if AFTER 2.4.3
+							28132,	-- Don Carlos
+							-- #endif
+							17820,	-- Durnholde Rifleman
+						},
+					}),
+					i(30610),	-- Smoked Black Bear Meat
+					i(30458),	-- Stromgarde Muenster
+				}),
+				n(28132, {	-- Don Carlos
+					description = "This is a neutral Elite Creature that wanders the road.",
+					timeline = { ADDED_2_4_3 },
+					groups = { i(38329) },	-- Don Carlos' Hat
+				}),
+				BossOnly(SKARLOC, {
+					i(22927),	-- Recipe: Ironshield Potion (RECIPE!)
+				}),
+				BossOnly(EPOCH_HUNTER, {
+					i(24173),	-- Design: Circlet of Arcane Might (RECIPE!)
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossOnly(DRAKE, {
+					i(27423),	-- Cloak of Impulsiveness
+					i(27436),	-- Iron Band of the Unbreakable
+					i(27417),	-- Ravenwing Pauldrons
+					i(27418),	-- Stormreaver Shadow-Kilt
+					i(27420),	-- Uther's Ceremonial Warboots
+				}),
+				BossOnly(SKARLOC, {
+					i(27424),	-- Amani Venom-Axe
+					i(27427),	-- Durotan's Battle Harness
+					i(27426),	-- Northshire Battlemace
+					i(27430),	-- Scaled Greaves of Patience
+					i(27428),	-- Stormfront Gauntlets
+				}),
+				BossOnly(EPOCH_HUNTER, {
+					ach(652),	-- The Escape From Durnholde
+					i(27432),	-- Broxigar's Ring of Valor
+					i(27440),	-- Diamond Prism of Recurrence
+					i(27434),	-- Mantle of Perenolde
+					i(27433),	-- Pauldrons of Sufferance
+					i(27431),	-- Time-Shifted Dagger
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				description = "You need to have a key to the instance in order to access this mode.",
 				attunement = {
@@ -265,123 +324,63 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 				-- #endif
 				lvl = lvlsquish(70, 70, 30),
-				groups = {
-					n(COMMON_BOSS_DROPS, {
-						crs = {
-							17848,	-- Lieutenant Drake
-							17862,	-- Captain Skarloc
-							18096,	-- Epoch Hunter
-						},
-						groups = {
-							-- #if BEFORE CATA
-							applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
-							-- #endif
-							i(30589),	-- Dazzling Chrysoprase
-							i(30591),	-- Empowered Fire Opal
-							i(30590),	-- Enduring Chrysoprase
-						},
-					}),
-					n(28132, {	-- Don Carlos
-						description = "This is a neutral Elite Creature that wanders the road.",
-						timeline = { ADDED_2_4_3 },
-						groups = {
-							applyclassicphase(LEGION_PHASE_ONE, i(134019, {	-- Don Carlos' Famous Hat (TOY!)
-								timeline = { ADDED_7_0_3 },
-							})),
-							i(38506, {	-- Don Carlos' Famous Hat
-								timeline = { REMOVED_7_0_3 },
-							}),
-							i(38329),	-- Don Carlos' Hat
-						},
-					}),
-					e(538, {	-- Lieutenant Drake
-						creatureID = 17848,
-						groups = {
-							i(28210),	-- Bloodskull Destroyer
-							i(28213),	-- Lordaeron Medical Guide
-							i(28215),	-- Mok'Nathal Mask of Battle
-							-- #if AFTER 7.3.5
-							i(27417),	-- Ravenwing Pauldrons
-							i(27423),	-- Cloak of Impulsiveness
-							-- #endif
-							i(28214),	-- Grips of the Lunar Eclipse
-							i(28212),	-- Aran's Sorcerous Slacks
-							-- #if AFTER 7.3.5
-							i(27418),	-- Stormreaver Shadow-Kilt
-							i(27420),	-- Uther's Ceremonial Warboots
-							i(27436),	-- Iron Band of the Unbreakable
-							-- #endif
-							i(28211),	-- Lieutenant's Signet of Lordaeron
-						},
-					}),
-					e(539, {	-- Captain Skarloc
-						creatureID = 17862,
-						groups = {
-							-- #if AFTER 7.3.5
-							i(27424),	-- Amani Venom-Axe
-							-- #endif
-							i(28216),	-- Dathrohan's Ceremonial Hammer
-							-- #if AFTER 7.3.5
-							i(27426),	-- Northshire Battlemace
-							-- #endif
-							i(28220),	-- Moon-Crown Antlers
-							i(28217),	-- Tarren Mill Vitality Locket
-							-- #if AFTER 7.3.5
-							i(27427),	-- Durotan's Battle Harness
-							i(27428),	-- Stormfront Gauntlets
-							-- #endif
-							i(28219),	-- Emerald-Scale Greaves
-							i(28218),	-- Pontiff's Pantaloons of Prophecy
-							-- #if AFTER 7.3.5
-							i(27430),	-- Scaled Greaves of Patience
-							-- #endif
-							i(28221),	-- Boots of the Watchful Heart
-							i(22927),	-- Recipe: Ironshield Potion (RECIPE!)
-						},
-					}),
-					e(540, {	-- Epoch Hunter
-						creatureID = 18096,
-						groups = {
-							ach(673),	-- Heroic: The Escape From Durnholde
-							ach(5073, {	-- Heroic: The Escape From Durnholde Guild Run
-								timeline = { ADDED_4_0_3 },
-							}),
-							i(28222),	-- Reaver of the Infinites
-							-- #if AFTER 7.3.5
-							i(27431),	-- Time-Shifted Dagger
-							-- #endif
-							i(28226),	-- Timeslicer
-							i(28225),	-- Doomplate Warhelm
-							i(28224),	-- Wastewalker Helm
-							-- #if AFTER 7.3.5
-							i(27440),	-- Diamond Prism of Recurrence
-							-- #endif
-							i(28233),	-- Necklace of Resplendent Hope
-							-- #if AFTER 7.3.5
-							i(27434),	-- Mantle of Perenolde
-							i(27433),	-- Pauldrons of Sufferance
-							-- #endif
-							i(28344),	-- Wyrmfury Pauldrons
-							i(28401),	-- Hauberk of Desolation
-							i(28191),	-- Mana-Etched Vestments
-							i(29246),	-- Nightfall Wristguards
-							i(29250),	-- Cord of Sanctification
-							i(27911),	-- Epoch's Whispering Cinch
-							i(30536),	-- Greaves of the Martyr
-							i(30534),	-- Wyrmscale Greaves
-							-- #if AFTER 7.3.5
-							i(27432),	-- Broxigar's Ring of Valor
-							-- #endif
-							i(27904),	-- Resounding Ring of Glory
-							i(28227),	-- Sparking Arcanite Ring
-							i(28223),	-- Arcanist's Stone
-							i(24173),	-- Design: Circlet of Arcane Might (RECIPE!)
-							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
-							i(33847),	-- Epoch Hunter's Head
-						},
-					}),
-				},
+			}).AddGroups({
+				CommonBossDrops({
+					-- #if BEFORE CATA
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
+					-- #endif
+					i(30589),	-- Dazzling Chrysoprase
+					i(30591),	-- Empowered Fire Opal
+					i(30590),	-- Enduring Chrysoprase
+				}),
+				n(28132, {	-- Don Carlos
+					description = "This is a neutral Elite Creature that wanders the road.",
+					timeline = { ADDED_2_4_3 },
+					groups = {
+						applyclassicphase(LEGION_PHASE_ONE, i(134019, { timeline = { ADDED_7_0_3 } })),	-- Don Carlos' Famous Hat (TOY!)
+						i(38506, { timeline = { REMOVED_7_0_3 } }),	-- Don Carlos' Famous Hat
+					},
+				}),
+				BossOnly(DRAKE, {
+					i(28212),	-- Aran's Sorcerous Slacks
+					i(28210),	-- Bloodskull Destroyer
+					i(28214),	-- Grips of the Lunar Eclipse
+					i(28211),	-- Lieutenant's Signet of Lordaeron
+					i(28213),	-- Lordaeron Medical Guide
+					i(28215),	-- Mok'Nathal Mask of Battle
+				}),
+				BossOnly(SKARLOC, {
+					i(28221),	-- Boots of the Watchful Heart
+					i(28216),	-- Dathrohan's Ceremonial Hammer
+					i(28219),	-- Emerald-Scale Greaves
+					i(28220),	-- Moon-Crown Antlers
+					i(28218),	-- Pontiff's Pantaloons of Prophecy
+					i(28217),	-- Tarren Mill Vitality Locket
+				}),
+				BossOnly(EPOCH_HUNTER, {
+					ach(673),	-- Heroic: The Escape From Durnholde
+					ach(5073, { timeline = { ADDED_4_0_3 } }),	-- Heroic: The Escape From Durnholde Guild Run
+					i(28223),	-- Arcanist's Stone
+					i(29250),	-- Cord of Sanctification
+					i(28225),	-- Doomplate Warhelm
+					i(33847),	-- Epoch Hunter's Head
+					i(27911),	-- Epoch's Whispering Cinch
+					i(30536),	-- Greaves of the Martyr
+					i(28401),	-- Hauberk of Desolation
+					i(28191),	-- Mana-Etched Vestments
+					i(28233),	-- Necklace of Resplendent Hope
+					i(29246),	-- Nightfall Wristguards
+					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
+					i(28222),	-- Reaver of the Infinites
+					i(27904),	-- Resounding Ring of Glory
+					i(28227),	-- Sparking Arcanite Ring
+					i(28226),	-- Timeslicer
+					i(28224),	-- Wastewalker Helm
+					i(28344),	-- Wyrmfury Pauldrons
+					i(30534),	-- Wyrmscale Greaves
+				}),
 			}),
+			-- #endif
 		},
 	}),
 })));
