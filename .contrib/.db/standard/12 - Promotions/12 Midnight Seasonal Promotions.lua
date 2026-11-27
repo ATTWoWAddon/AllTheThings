@@ -232,8 +232,8 @@ root(ROOTS.Promotions, {
 				timeline = { ADDED_12_1_5, "removed 12.1.5.70688" },
 			}),
 			i(252715, {	-- Deep Winter Toque (COSMETIC!)
-				description = "Available with any purchase from the Blizzard Gear Store between Nov. 16, 2026 (12pm ET) and Nov. 23, 2026 (12pm ET). The code will be emailed and can be redeemed on Battle.net or the launcher.",
-				timeline = { ADDED_12_1_5, "removed 12.1.5.99999" },
+				description = "Available with any purchase from the Blizzard Gear Store between Nov. 16, 2026 (12pm ET) and Nov. 23, 2026 (12pm ET). Then separately available from Nov. 27, 2026 (12pm ET) through Dec. 1, 2026 (12pm ET) in the Black Friday promotion. The code will be emailed and can be redeemed on Battle.net or the launcher.",
+				timeline = { ADDED_12_1_5, REMOVED_12_1_7 },
 				u = REAL_MONEY,
 			}),
 			n(DUNGEONS_AND_DRAGONS, sharedDataSelf({
