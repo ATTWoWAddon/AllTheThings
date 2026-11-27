@@ -317,7 +317,7 @@ tab_width = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[/{.contrib/.tools/README.md,.contrib/.tools/TOOLS_ROADMAP.md}]
+[/{.contrib/.tools/README.md,.contrib/.tools/TOOLS_ROADMAP.md,.contrib/.tools/Lua/ObjectDB.md}]
 charset = utf-8
 end_of_line = lf
 indent_style = space
