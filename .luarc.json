@@ -20,7 +20,7 @@
 		".contrib/.db/forever/.config/exports/ItemDB.lua",
 		".contrib/.db/standard/00 - Item DB",
 		".contrib/.db/standard/00 - DB/AssetDB",
-		".contrib/.db/shared/objects/ObjectDB.lua",
+		".contrib/.db/shared/objects/ObjectDB",
 		".contrib/.db/standard/00 - DB/ReagentsDB.Retail.lua",
 		"Debugging/"
 	],
