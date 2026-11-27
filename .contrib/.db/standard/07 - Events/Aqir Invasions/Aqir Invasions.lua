@@ -24,7 +24,7 @@ root(ROOTS.WorldEvents, {
 	n(AQIR_INVASIONS, {
 		description = "As Kith'ix stirred, Aqir swarms that had slumbered beneath Quel'Thalas for millennia following the defeat of Azj'Aqir in the Aqir and Troll War awakened and began to swarm the surface, attacking both the Kingdom of Quel'Thalas and the Amani Empire.",
 		timeline = { ADDED_12_1_5, REMOVED_12_1_7 },
-		maps = { MAP.MIDNIGHT.EVERSONG_WOODS, MAP.MIDNIGHT.ZULAMAN },
+		maps = { MAP.MIDNIGHT.EVERSONG_WOODS, MAP.MIDNIGHT.SILVERMOON_CITY, MAP.MIDNIGHT.ZULAMAN },
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(63659, {	-- Bane of the Swarm (Automated)
