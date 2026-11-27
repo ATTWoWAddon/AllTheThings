@@ -572,6 +572,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 			}),
 		}),
 		inst_tw(63, {	-- Deadmines
+			n(ZONE_DROPS, {
+				i(10402),	-- Blackened Defias Boots
+			}),
 			e(2613, {	-- Rhahk'Zor
 				crs = { 644 },
 				groups = {
