@@ -2,15 +2,30 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local PAVALAK = 692;
+local JINBAK = 693;
+local NERONOK = 727;
+local VOJAK = 738;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[PAVALAK] = { 61485 },	-- General Pa'valak
+	[JINBAK] = { 61567 },	-- Vizier Jin'bak
+	[NERONOK] = { 62205 },	-- Wing Leader Ner'onok
+	[VOJAK] = { 61634 },	-- Commander Vo'jak
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(324, {	-- Siege of Niuzao Temple
 		coord = { 35.0, 82.0, TOWNLONG_STEPPES },
 		timeline = { ADDED_5_0_4 },
-		maps = {
-			SIEGE_OF_NIUZAO_TEMPLE,
-			SIEGE_OF_NIUZAO_TEMPLE_THE_HOLLOWED_OUT_TREE,
-			SIEGE_OF_NIUZAO_TEMPLE_UPPER_TREE_RING,
-		},
+		maps = { SIEGE_OF_NIUZAO_TEMPLE, SIEGE_OF_NIUZAO_TEMPLE_THE_HOLLOWED_OUT_TREE, SIEGE_OF_NIUZAO_TEMPLE_UPPER_TREE_RING },
 		groups = {
 			n(QUESTS, {
 				q(31365, {	-- Somewhere Inside
@@ -37,426 +52,142 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-				e(727, {	-- Wing Leader Ner'onok
-					crs = { 62205 },	-- Wing Leader Ner'onok
-					groups = {
-						ach(10011, { timeline = { ADDED_6_2_0 } }),	-- Siege of Niuzao Temple
-					},
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				BossOnly(JINBAK, {
+					i(144162, { timeline = { ADDED_7_1_5 } }),	-- Engraved Amber Pendant
+					i(144156, { timeline = { ADDED_7_1_5 } }),	-- Flashfrozen Resin Globule
+					i(144163, { timeline = { ADDED_7_1_5 } }),	-- Girdle of Soothing Detonation
+					i(144022, { timeline = { ADDED_7_1_5 } }),	-- Hood of Viridian Residue
+					i(143996, { timeline = { ADDED_7_1_5 } }),	-- Sap-Encrusted Legplates
+				}),
+				BossOnly(VOJAK, {
+					i(144166, { timeline = { ADDED_7_1_5 } }),	-- Archer's Precision Grips
+					i(144165, { timeline = { ADDED_7_1_5 } }),	-- Bombardment Bracers
+					i(143963, { timeline = { ADDED_7_1_5 } }),	-- Chestwrap of Arcing Flame
+					i(144164, { timeline = { ADDED_7_1_5 } }),	-- Siege-Captain's Scimitar
+					i(144023, { timeline = { ADDED_7_1_5 } }),	-- Sightfinder Helm
+				}),
+				BossOnly(PAVALAK, {
+					i(144170, { timeline = { ADDED_7_1_5 } }),	-- Aerial Bombardment Cloak
+					i(144169, { timeline = { ADDED_7_1_5 } }),	-- Breezebinder Handwraps
+					i(144168, { timeline = { ADDED_7_1_5 } }),	-- Siegeworn Bracers
+					i(144167, { timeline = { ADDED_7_1_5 } }),	-- Tempestuous Longbow
+					i(144157, { timeline = { ADDED_7_1_5 } }),	-- Vial of Ichorous Blood
+				}),
+				BossOnly(NERONOK, {
+					ach(10011, { timeline = { ADDED_6_2_0 } }),	-- Siege of Niuzao Temple
+					i(144000, { timeline = { ADDED_7_1_5 } }),	-- Airbender Sandals
+					i(143997, { timeline = { ADDED_7_1_5 } }),	-- Anchoring Sabatons
+					i(144173, { timeline = { ADDED_7_1_5 } }),	-- Belt of Totemic Binding
+					i(144025, { timeline = { ADDED_7_1_5 } }),	-- Breezeswept Hood
+					i(143964, { timeline = { ADDED_7_1_5 } }),	-- Galedodger Chestguard
+					i(144172, { timeline = { ADDED_7_1_5 } }),	-- Gustwalker Staff
+					i(144171, { timeline = { ADDED_7_1_5 } }),	-- Ner'onok's Razor Katar
+					i(143998, { timeline = { ADDED_7_1_5 } }),	-- Spaulders of Immovable Stone
+					i(144219, { timeline = { ADDED_7_1_5 } }),	-- Tolakesh, Horn of the Black Ox
+					i(143999, { timeline = { ADDED_7_1_5 } }),	-- Whisperwind Spaulders
+					i(144024, { timeline = { ADDED_7_1_5 } }),	-- Windblast Helm
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				timeline = { ADDED_5_4_0 },
-				groups = {
-					e(693, {	-- Vizier Jin'bak
-						crs = { 61567 },	-- Vizier Jin'bak
-						groups = {
-							-- Available
-							i(144022, {	-- Hood of Viridian Residue
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144162, {	-- Engraved Amber Pendant
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144163, {	-- Girdle of Soothing Detonation
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(143996, {	-- Sap-Encrusted Legplates
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144156, {	-- Flashfrozen Resin Globule
-								timeline = { ADDED_7_1_5 },
-							}),
-
-							-- Removed
-							i(100952, {	-- Hood of Viridian Residue
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100950, {	-- Engraved Amber Pendant
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100953, {	-- Girdle of Soothing Detonation
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100954, {	-- Sap-Encrusted Legplates
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100951, {	-- Flashfrozen Resin Globule
-								timeline = { REMOVED_7_1_5 },
-							}),
-						},
-					}),
-					e(738, {	-- Commander Vo'jak
-						crs = { 61634 },	-- Commander Vo'jak
-						groups = {
-							-- Available
-							i(144164, {	-- Siege-Captain's Scimitar
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144023, {	-- Sightfinder Helm
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(143963, {	-- Chestwrap of Arcing Flame
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144165, {	-- Bombardment Bracers
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144166, {	-- Archer's Precision Grips
-								timeline = { ADDED_7_1_5 },
-							}),
-
-							-- Removed
-							i(100955, {	-- Siege-Captain's Scimitar
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100959, {	-- Sightfinder Helm
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100957, {	-- Chestwrap of Arcing Flame
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100956, {	-- Bombardment Bracers
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100958, {	-- Archer's Precision Grips
-								timeline = { REMOVED_7_1_5 },
-							}),
-						},
-					}),
-					e(692, {	-- General Pa'valak
-						crs = { 61485 },	-- General Pa'valak
-						groups = {
-							-- Available
-							i(144167, {	-- Tempestuous Longbow
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144170, {	-- Aerial Bombardment Cloak
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144168, {	-- Siegeworn Bracers
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144169, {	-- Breezebinder Handwraps
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144157, {	-- Vial of Ichorous Blood
-								timeline = { ADDED_7_1_5 },
-							}),
-
-							-- Removed
-							i(100960, {	-- Tempestuous Longbow
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100961, {	-- Aerial Bombardment Cloak
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100964, {	-- Siegeworn Bracers
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100962, {	-- Breezebinder Handwraps
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100963, {	-- Vial of Ichorous Blood
-								timeline = { REMOVED_7_1_5 },
-							}),
-						},
-					}),
-					e(727, {	-- Wing Leader Ner'onok
-						crs = { 62205 },	-- Wing Leader Ner'onok
-						groups = {
-							-- Available
-							i(144219, {	-- Tolakesh, Horn of the Black Ox
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144172, {	-- Gustwalker Staff
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144171, {	-- Ner'onok's Razor Katar
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144025, {	-- Breezeswept Hood
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144024, {	-- Windblast Helm
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(143998, {	-- Spaulders of Immovable Stone
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(143999, {	-- Whisperwind Spaulders
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(143964, {	-- Galedodger Chestguard
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144173, {	-- Belt of Totemic Binding
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(144000, {	-- Airbender Sandals
-								timeline = { ADDED_7_1_5 },
-							}),
-							i(143997, {	-- Anchoring Sabatons
-								timeline = { ADDED_7_1_5 },
-							}),
-
-							-- Removed
-							i(100966, {	-- Tolakesh, Horn of the Black Ox
-								-- #if BEFORE WOD
-								-- CRIEVE NOTE: This may be available in MOP Classic, keep an eye on it.
-								isBounty = true,
-								-- #endif
-								timeline = { CREATED_5_4_0 },
-							}),
-							i(100973, {	-- Gustwalker Staff
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100965, {	-- Ner'onok's Razor Katar
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100971, {	-- Breezeswept Hood
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100967, {	-- Windblast Helm
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100970, {	-- Spaulders of Immovable Stone
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100972, {	-- Whisperwind Spaulders
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100968, {	-- Galedodger Chestguard
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100974, {	-- Belt of Totemic Binding
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100975, {	-- Airbender Sandals
-								timeline = { REMOVED_7_1_5 },
-							}),
-							i(100969, {	-- Anchoring Sabatons
-								timeline = { REMOVED_7_1_5 },
-							}),
-						},
-					}),
-				},
-			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
-				e(693, {	-- Vizier Jin'bak
-					crs = { 61567 },	-- Vizier Jin'bak
-					groups = {
-						-- Available
-						i(144022, {	-- Hood of Viridian Residue
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144162, {	-- Engraved Amber Pendant
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144163, {	-- Girdle of Soothing Detonation
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143996, {	-- Sap-Encrusted Legplates
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144156, {	-- Flashfrozen Resin Globule
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81262, {	-- Hood of Viridian Residue
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81271, {	-- Engraved Amber Pendant
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81272, {	-- Girdle of Soothing Detonation
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81270, {	-- Sap-Encrusted Legplates
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81263, {	-- Flashfrozen Resin Globule
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL, { timeline = { ADDED_5_4_0 } }).AddGroups({
+				BossOnly(JINBAK, {
+					i(100950, { timeline = { REMOVED_7_1_5 } }),	-- Engraved Amber Pendant
+					i(100951, { timeline = { REMOVED_7_1_5 } }),	-- Flashfrozen Resin Globule
+					i(100953, { timeline = { REMOVED_7_1_5 } }),	-- Girdle of Soothing Detonation
+					i(100952, { timeline = { REMOVED_7_1_5 } }),	-- Hood of Viridian Residue
+					i(100954, { timeline = { REMOVED_7_1_5 } }),	-- Sap-Encrusted Legplates
 				}),
-				e(738, {	-- Commander Vo'jak
-					crs = { 61634 },	-- Commander Vo'jak
-					groups = {
-						-- Available
-						ach(6688),	-- Where's My Air Support?
-						i(144164, {	-- Siege-Captain's Scimitar
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144023, {	-- Sightfinder Helm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143963, {	-- Chestwrap of Arcing Flame
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144165, {	-- Bombardment Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144166, {	-- Archer's Precision Grips
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81273, {	-- Siege-Captain's Scimitar
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81274, {	-- Sightfinder Helm
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81275, {	-- Chestwrap of Arcing Flame
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81276, {	-- Bombardment Bracers
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81277, {	-- Archer's Precision Grips
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(VOJAK, {
+					i(100958, { timeline = { REMOVED_7_1_5 } }),	-- Archer's Precision Grips
+					i(100956, { timeline = { REMOVED_7_1_5 } }),	-- Bombardment Bracers
+					i(100957, { timeline = { REMOVED_7_1_5 } }),	-- Chestwrap of Arcing Flame
+					i(100955, { timeline = { REMOVED_7_1_5 } }),	-- Siege-Captain's Scimitar
+					i(100959, { timeline = { REMOVED_7_1_5 } }),	-- Sightfinder Helm
 				}),
-				e(692, {	-- General Pa'valak
-					crs = { 61485 },	-- General Pa'valak
-					groups = {
-						ach(6485),	-- Return to Sender
-						i(144167, {	-- Tempestuous Longbow
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144170, {	-- Aerial Bombardment Cloak
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144168, {	-- Siegeworn Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144169, {	-- Breezebinder Handwraps
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144157, {	-- Vial of Ichorous Blood
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81279, {	-- Tempestuous Longbow
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81282, {	-- Aerial Bombardment Cloak
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81280, {	-- Siegeworn Bracers
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81281, {	-- Breezebinder Handwraps
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81264, {	-- Vial of Ichorous Blood
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(PAVALAK, {
+					i(100961, { timeline = { REMOVED_7_1_5 } }),	-- Aerial Bombardment Cloak
+					i(100962, { timeline = { REMOVED_7_1_5 } }),	-- Breezebinder Handwraps
+					i(100964, { timeline = { REMOVED_7_1_5 } }),	-- Siegeworn Bracers
+					i(100960, { timeline = { REMOVED_7_1_5 } }),	-- Tempestuous Longbow
+					i(100963, { timeline = { REMOVED_7_1_5 } }),	-- Vial of Ichorous Blood
 				}),
-				e(727, {	-- Wing Leader Ner'onok
-					crs = { 62205 },	-- Wing Leader Ner'onok
-					groups = {
-						-- Available
-						ach(6763),	-- Heroic: Siege of Niuzao Temple
-						ach(6772),	-- Heroic: Siege of Niuzao Temple Guild Run
-						ach(6822),	-- Run with the Wind
-						i(144219, {	-- Tolakesh, Horn of the Black Ox
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144172, {	-- Gustwalker Staff
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144171, {	-- Ner'onok's Razor Katar
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144025, {	-- Breezeswept Hood
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144024, {	-- Windblast Helm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143998, {	-- Spaulders of Immovable Stone
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143999, {	-- Whisperwind Spaulders
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143964, {	-- Galedodger Chestguard
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144173, {	-- Belt of Totemic Binding
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144000, {	-- Airbender Sandals
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143997, {	-- Anchoring Sabatons
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(87547, {	-- Tolakesh, Horn of the Black Ox
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81288, {	-- Gustwalker Staff
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81286, {	-- Ner'onok's Razor Katar
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81289, {	-- Breezeswept Hood
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81283, {	-- Windblast Helm
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81287, {	-- Spaulders of Immovable Stone
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81291, {	-- Whisperwind Spaulders
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81285, {	-- Galedodger Chestguard
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81290, {	-- Belt of Totemic Binding
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81292, {	-- Airbender Sandals
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81284, {	-- Anchoring Sabatons
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(NERONOK, {
+					i(100975, { timeline = { REMOVED_7_1_5 } }),	-- Airbender Sandals
+					i(100969, { timeline = { REMOVED_7_1_5 } }),	-- Anchoring Sabatons
+					i(100974, { timeline = { REMOVED_7_1_5 } }),	-- Belt of Totemic Binding
+					i(100971, { timeline = { REMOVED_7_1_5 } }),	-- Breezeswept Hood
+					i(100968, { timeline = { REMOVED_7_1_5 } }),	-- Galedodger Chestguard
+					i(100973, { timeline = { REMOVED_7_1_5 } }),	-- Gustwalker Staff
+					i(100965, { timeline = { REMOVED_7_1_5 } }),	-- Ner'onok's Razor Katar
+					i(100970, { timeline = { REMOVED_7_1_5 } }),	-- Spaulders of Immovable Stone
+					i(100966, {	-- Tolakesh, Horn of the Black Ox
+						-- #if BEFORE WOD
+						-- CRIEVE NOTE: This may be available in MOP Classic, keep an eye on it.
+						isBounty = true,
+						-- #endif
+						timeline = { CREATED_5_4_0 },
+					}),
+					i(100972, { timeline = { REMOVED_7_1_5 } }),	-- Whisperwind Spaulders
+					i(100967, { timeline = { REMOVED_7_1_5 } }),	-- Windblast Helm
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
-				timeline = { REMOVED_6_0_2 },
-				groups = {
-					challengemaster(ach(8439, {	-- Challenge Master: Siege of Niuzao Temple
-						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
-						groups = {
-							title(247),	-- Siegebreaker <Name>
-						},
-					})),
-					ach(6898),	-- Siege of Niuzao Temple Challenger
-					ach(6917),	-- Siege of Niuzao Temple: Bronze
-					ach(6918),	-- Siege of Niuzao Temple: Silver
-					ach(6919, {	-- Siege of Niuzao Temple: Gold
-						spell(131228),	-- Path of the Black Ox
-					}),
-					-- #if ANYCLASSIC
-					ach(61975, {	-- Siege of Niuzao Temple: Platinum
-						i(265414),	-- Platinum Amber
-					}),
-					-- #endif
-				},
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
+				BossOnly(JINBAK, {
+					i(81271, { timeline = { REMOVED_7_1_5 } }),	-- Engraved Amber Pendant
+					i(81263, { timeline = { REMOVED_7_1_5 } }),	-- Flashfrozen Resin Globule
+					i(81272, { timeline = { REMOVED_7_1_5 } }),	-- Girdle of Soothing Detonation
+					i(81262, { timeline = { REMOVED_7_1_5 } }),	-- Hood of Viridian Residue
+					i(81270, { timeline = { REMOVED_7_1_5 } }),	-- Sap-Encrusted Legplates
+				}),
+				BossOnly(VOJAK, {
+					ach(6688),	-- Where's My Air Support?
+					i(81277, { timeline = { REMOVED_7_1_5 } }),	-- Archer's Precision Grips
+					i(81276, { timeline = { REMOVED_7_1_5 } }),	-- Bombardment Bracers
+					i(81275, { timeline = { REMOVED_7_1_5 } }),	-- Chestwrap of Arcing Flame
+					i(81273, { timeline = { REMOVED_7_1_5 } }),	-- Siege-Captain's Scimitar
+					i(81274, { timeline = { REMOVED_7_1_5 } }),	-- Sightfinder Helm
+				}),
+				BossOnly(PAVALAK, {
+					ach(6485),	-- Return to Sender
+					i(81282, { timeline = { REMOVED_7_1_5 } }),	-- Aerial Bombardment Cloak
+					i(81281, { timeline = { REMOVED_7_1_5 } }),	-- Breezebinder Handwraps
+					i(81280, { timeline = { REMOVED_7_1_5 } }),	-- Siegeworn Bracers
+					i(81279, { timeline = { REMOVED_7_1_5 } }),	-- Tempestuous Longbow
+					i(81264, { timeline = { REMOVED_7_1_5 } }),	-- Vial of Ichorous Blood
+				}),
+				BossOnly(NERONOK, {
+					ach(6763),	-- Heroic: Siege of Niuzao Temple
+					ach(6772),	-- Heroic: Siege of Niuzao Temple Guild Run
+					ach(6822),	-- Run with the Wind
+					i(81292, { timeline = { REMOVED_7_1_5 } }),	-- Airbender Sandals
+					i(81284, { timeline = { REMOVED_7_1_5 } }),	-- Anchoring Sabatons
+					i(81290, { timeline = { REMOVED_7_1_5 } }),	-- Belt of Totemic Binding
+					i(81289, { timeline = { REMOVED_7_1_5 } }),	-- Breezeswept Hood
+					i(81285, { timeline = { REMOVED_7_1_5 } }),	-- Galedodger Chestguard
+					i(81288, { timeline = { REMOVED_7_1_5 } }),	-- Gustwalker Staff
+					i(81286, { timeline = { REMOVED_7_1_5 } }),	-- Ner'onok's Razor Katar
+					i(81287, { timeline = { REMOVED_7_1_5 } }),	-- Spaulders of Immovable Stone
+					i(87547, { timeline = { REMOVED_7_1_5 } }),	-- Tolakesh, Horn of the Black Ox
+					i(81291, { timeline = { REMOVED_7_1_5 } }),	-- Whisperwind Spaulders
+					i(81283, { timeline = { REMOVED_7_1_5 } }),	-- Windblast Helm
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.CHALLENGE_MODE, { timeline = { REMOVED_6_0_2 } }).AddGroups({
+				challengemaster(ach(8439, {	-- Challenge Master: Siege of Niuzao Temple
+					timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+					groups = { title(247) },	-- Siegebreaker <Name>
+				})),
+				ach(6898),	-- Siege of Niuzao Temple Challenger
+				ach(6917),	-- Siege of Niuzao Temple: Bronze
+				ach(6918),	-- Siege of Niuzao Temple: Silver
+				ach(6919, {	-- Siege of Niuzao Temple: Gold
+					spell(131228),	-- Path of the Black Ox
+				}),
+				-- #if ANYCLASSIC
+				ach(61975, {	-- Siege of Niuzao Temple: Platinum
+					i(265414),	-- Platinum Amber
+				}),
+				-- #endif
 			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
@@ -471,11 +202,11 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 						-- #if BEFORE 5.5.3
 						{	-- Season 1 Drops
-							i(86806),	-- Tihan, Scepter of the Sleeping Emperor
-							i(86783),	-- Zian's Choker of Coalesced Shadow
 							i(89972),	-- Band of Bursting Novas
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86830)),	-- Ring of the Shattered Shell
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86890)),	-- Terror in the Mists (Terrace)
+							i(86806),	-- Tihan, Scepter of the Sleeping Emperor
+							i(86783),	-- Zian's Choker of Coalesced Shadow
 						},
 						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
