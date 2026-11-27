@@ -36,8 +36,11 @@ instanceroot(228, {	-- Blackrock Depths
 	groups = {
 		n(FACTIONS, {
 			faction(FACTION_THORIUM_BROTHERHOOD, {	-- Thorium Brotherhood
+				description = "Honored is the highest you can currently reach with the Thorium Brotherhood.",
 				icon = 133235,
 				maps = { MAP.SEARING_GORGE },
+				minReputation = { FACTION_THORIUM_BROTHERHOOD, HONORED },
+				maxReputation = { FACTION_THORIUM_BROTHERHOOD, HONORED },
 				OnTooltip = [[_.OnTooltipDB.ThoriumBrotherhood]],
 			}),
 		}),

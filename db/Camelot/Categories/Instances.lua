@@ -882,7 +882,7 @@ s(311413,280073,{b=1,f=7,loc=42,lvl=56})}})}}),
 inst(228,{coords={
 [35]={{39.06,18.12}}},description="The best route for a full clear is to enter Shadowforge City first time through the Dark Iron Highway. The Detention Block can be cleared whenever.",icon=136326,lore="Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",lvl=42,mapID=242,zoneTextAreaID=1584,g={
 h(-31,{
-faction(59,{icon=133235,maps={1427},OnTooltip=_.OnTooltipDB.ThoriumBrotherhood})}),
+faction(59,{description="Honored is the highest you can currently reach with the Thorium Brotherhood.",icon=133235,maps={1427},maxReputation={59,9000},minReputation={59,9000},OnTooltip=_.OnTooltipDB.ThoriumBrotherhood})}),
 h(-45,{
 q(4264,{description="After completing the Abandoned Hope quest, kill trash until this item drops for you. If your group has not yet killed the Dark Keeper, they have a fairly high chance to drop this item as well.",lvl=50,qss={11446},r=2,sourceQuests={4242}}),
 q(4282,{lvl=50,qgs={9023},r=2,sourceQuests={4264},g={
