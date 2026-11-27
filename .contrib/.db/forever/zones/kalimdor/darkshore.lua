@@ -909,6 +909,14 @@ maproot(MAP.KALIMDOR, MAP.DARKSHORE, {
 					i(15397),	-- Oakthrush Staff
 				},
 			}),
+			q(6072, {	-- The Hunter's Path [Darkshore]
+				qg = 3693,	-- Terenthis
+				coord = { 39.2, 43.4, MAP.DARKSHORE },
+				races = { NIGHTELF },
+				classes = { HUNTER },
+				isBreadcrumb = true,
+				lvl = 10,
+			}),
 			q(944, {	-- The Master's Glaive
 				sourceQuest = 948,	-- Onu
 				providers = {

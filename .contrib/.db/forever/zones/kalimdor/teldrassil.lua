@@ -1502,14 +1502,6 @@ maproot(MAP.KALIMDOR, MAP.TELDRASSIL, {
 				isBreadcrumb = true,
 				lvl = 10,
 			}),
-			q(6072, {	-- The Hunter's Path [Teldrassil]
-				qg = 3596,	-- Ayanna Everstride <Hunter Trainer>
-				coord = { 58.66, 40.45, MAP.TELDRASSIL },
-				races = { NIGHTELF },
-				classes = { HUNTER },
-				isBreadcrumb = true,
-				lvl = 10,
-			}),
 			q(99046, {	-- The Lost Runner
 				qg = 2081,	-- Sentinel Kyra Starsong
 				coord = { 56.0, 59.4, MAP.TELDRASSIL },
