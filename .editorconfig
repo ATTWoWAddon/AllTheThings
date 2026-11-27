@@ -575,3 +575,7 @@ indent_size = 4
 tab_width = 4
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+# Raw Wago CSV fields include meaningful spaces in multiline localized text.
+[.contrib/.db/standard/.config/.wago/**.csv]
+trim_trailing_whitespace = false
