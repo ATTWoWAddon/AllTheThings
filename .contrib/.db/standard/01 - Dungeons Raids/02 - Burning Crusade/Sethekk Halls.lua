@@ -2,6 +2,23 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local SYTH = 541;
+local ANZU = 542;
+local IKISS = 543;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[SYTH] = { 18472 },	-- Darkweaver Syth
+	[ANZU] = { 23035 },	-- Anzu
+	[IKISS] = { 18473 },	-- Talon King Ikiss
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty, CommonBossDrops =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops
+
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
 	inst(252, {	-- Sethekk Halls
 		lore = "Sethekk Halls is populated by renegade arakkoa and led by the insane Talon King Ikiss. The Sethekk are renegades who broke away from Skettis at the insistence of Ikiss and Darkweaver Syth, and believe themselves to be the true servants of the mysterious master of all arakkoa. When Auchindoun exploded due to the summoning of Murmur in the Shadow Labyrinth, Ikiss and Syth led their followers to Auchindoun, believing this to be a sign of their master's return. There they remain, still searching for the master in the temple's ruins.",
@@ -65,9 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					classes = { DRUID },
 					repeatable = true,
 					lvl = lvlsquish(70, 70, 30),
-					groups = {
-						i(32449),	-- Essence-Infused Moonstone
-					},
+					groups = { i(32449) },	-- Essence-Infused Moonstone
 				})),
 				q(29607, {	-- Eyes of Desire
 					description = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
@@ -149,84 +164,157 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				})),
 			}),
-			n(COMMON_BOSS_DROPS, {
-				i(28558, {	-- Spirit Shard
-					description = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
-					timeline = { REMOVED_8_0_1 },
+			-- #if AFTER 7.3.5
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				CommonBossDrops({
+					i(28558, {	-- Spirit Shard
+						description = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+						timeline = { REMOVED_8_0_1 },
+					}),
+					currency(1704, {	-- Spirit Shard
+						timeline = { ADDED_8_0_1 },
+						description =	-- From 9.1.5 (specific patch unconfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
+							-- #if AFTER 9.1.5
+							"Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+							-- #else
+							"Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+							-- #endif
+					}),
 				}),
-				currency(1704, {	-- Spirit Shard
-					timeline = { ADDED_8_0_1 },
-					description =	-- From 9.1.5 (specific patch unconfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
-						-- #if AFTER 9.1.5
-						"Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
-						-- #else
-						"Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
-						-- #endif
+				n(ZONE_DROPS, {
+					i(25731, {	-- Pattern: Stylin' Crimson Hat (RECIPE!)
+						cr = 18322,	-- Sethekk Ravenguard
+					}),
 				}),
-			}),
-			n(ZONE_DROPS, {
-				i(29669, {	-- Pattern: Shadow Armor Kit (RECIPE!)
-					timeline = { REMOVED_5_0_4 },
-					cr = 18320,	-- Time-Lost Shadowmage
+				BossOnly(SYTH, {
+					i(27633),	-- Terokk's Mask (QI!)
+					--
+					i(27918),	-- Bands of Syth
+					i(24160),	-- Design: Khorium Inferno Band (RECIPE!)
+					i(27917, { timeline = { REMOVED_5_0_4 } }),	-- Libram of the Eternal Rest
+					i(27919),	-- Light-Woven Slippers
+					i(27914),	-- Moonstrider Boots
+					i(27916, { timeline = { REMOVED_5_0_4 } }),	-- Sethekk Feather-Darts
+					i(27915),	-- Sky-Hunter Swift Boots
 				}),
-				i(25731, {	-- Pattern: Stylin' Crimson Hat (RECIPE!)
-					cr = 18322,	-- Sethekk Ravenguard
-				}),
-			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(541, {	-- Darkweaver Syth
-					creatureID = 18472,
-					groups = {
-						i(24160),	-- Design: Khorium Inferno Band (RECIPE!)
-						i(27918),	-- Bands of Syth
-						i(27919),	-- Light-Woven Slippers
-						i(27914),	-- Moonstrider Boots
-						i(27915),	-- Sky-Hunter Swift Boots
-						-- #if BEFORE MOP
-						i(27916, {	-- Sethekk Feather-Darts
-							timeline = { REMOVED_5_0_4 },
-						}),
-						i(27917, {	-- Libram of the Eternal Rest
-							timeline = { REMOVED_5_0_4 },
-						}),
-						-- #endif
-						i(27633),	-- Terokk's Mask
-					},
-				}),
-				e(543, {	-- Talon King Ikiss
-					creatureID = 18473,
-					groups = {
-						ach(653),	-- Sethekk Halls
-						i(27986),	-- Crow Wing Reaper
-						-- #if AFTER 7.3.5
-						i(29355),	-- Terokk's Shadowstaff (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(27980),	-- Terokk's Nightmace
-						i(27776),	-- Shoulderpads of Assassination
-						-- #if AFTER 7.3.5
-						i(32073),	-- Spaulders of Dementia (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(27946),	-- Avian Cloak of Feathers
-						i(27981),	-- Sethekk Oracle Cloak
-						-- #if AFTER 7.3.5
-						i(29249),	-- Bands of the Benevolent (7.3.5 - Used to be only Heroic Mode)
-						i(29259),	-- Bracers of the Hunt (7.3.5 - Used to be only Heroic Mode)
-						-- #endif
-						i(27985),	-- Deathforge Girdle
-						i(27875),	-- Hallowed Trousers
-						i(27838),	-- Incanter's Trousers
-						i(27948),	-- Trousers of Oblivion
-						i(27925),	-- Ravenclaw Band
-						i(27936),	-- Greaves of Desolation (7.3.5 - Added to Anzu on Heroic Mode)
-						i(27632),	-- Terokk's Quill
-						i(27991, {	-- Shadow Labyrinth Key
-							description = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
-							timeline = { REMOVED_4_0_3 },
-						}),
-					},
+				BossOnly(IKISS, {
+					i(27632),	-- Terokk's Quill (QI!)
+					--
+					ach(653),	-- Sethekk Halls
+					i(27946),	-- Avian Cloak of Feathers
+					i(29249),	-- Bands of the Benevolent
+					i(29259),	-- Bracers of the Hunt
+					i(27986),	-- Crow Wing Reaper
+					i(27985),	-- Deathforge Girdle
+					i(27936),	-- Greaves of Desolation
+					i(27875),	-- Hallowed Trousers
+					i(27838),	-- Incanter's Trousers
+					i(27925),	-- Ravenclaw Band
+					i(27981),	-- Sethekk Oracle Cloak
+					i(27991, {	-- Shadow Labyrinth Key
+						description = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
+						timeline = { REMOVED_4_0_3 },
+					}),
+					i(27776),	-- Shoulderpads of Assassination
+					i(32073),	-- Spaulders of Dementia
+					i(27980),	-- Terokk's Nightmace
+					i(29355),	-- Terokk's Shadowstaff
+					i(27948),	-- Trousers of Oblivion
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				n(ZONE_DROPS, {
+					i(29669, {	-- Pattern: Shadow Armor Kit (RECIPE!)
+						timeline = { REMOVED_5_0_4 },
+						cr = 18320,	-- Time-Lost Shadowmage
+					}),
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, { lvl = lvlsquish(70, 70, 30) }).AddGroups({
+				CommonBossDrops({
+					i(30553),	-- Glinting Tanzanite
+					i(30554),	-- Stalwart Fire Opal
+					i(30552),	-- Timeless Tanzanite
+				}),
+				BossOnly(SYTH, {
+					i(25461, { timeline = { REMOVED_7_1_0 } }),	-- Book of Forgotten Names
+				}),
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, BossOnly(ANZU, {
+					ach(883, {	-- Reins of the Raven Lord
+						provider = { "i", 32768 },	-- Reins of the Raven Lord
+						filterID = MOUNTS,
+					}),
+					i(32779),	-- Band of Frigid Elements
+					i(32769),	-- Belt of the Raven Lord
+					i(32778),	-- Boots of Righteous Fortitude
+					i(27936),	-- Greaves of Desolation
+					i(32768),	-- Raven Lord (MOUNT!)
+					i(32781),	-- Talon of Anzu
+					i(32780),	-- The Boomstick
+				})),
+				BossOnly(IKISS, {
+					ach(674),	-- Heroic: Sethekk Halls
+					ach(5074, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Sethekk Halls Guild Run
+					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
+					i(33834),	-- The Headfeathers of Ikiss
+				}),
+			}),
+			-- #else
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				CommonBossDrops({
+					i(28558, {	-- Spirit Shard
+						description = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+						timeline = { REMOVED_8_0_1 },
+					}),
+				}),
+				n(ZONE_DROPS, {
+					i(25731, {	-- Pattern: Stylin' Crimson Hat (RECIPE!)
+						cr = 18322,	-- Sethekk Ravenguard
+					}),
+				}),
+				BossOnly(SYTH, {
+					i(27633),	-- Terokk's Mask (QI!)
+					--
+					i(27918),	-- Bands of Syth
+					i(24160),	-- Design: Khorium Inferno Band (RECIPE!)
+					i(27917, { timeline = { REMOVED_5_0_4 } }),	-- Libram of the Eternal Rest
+					i(27919),	-- Light-Woven Slippers
+					i(27914),	-- Moonstrider Boots
+					i(27916, { timeline = { REMOVED_5_0_4 } }),	-- Sethekk Feather-Darts
+					i(27915),	-- Sky-Hunter Swift Boots
+				}),
+				BossOnly(IKISS, {
+					i(27632),	-- Terokk's Quill (QI!)
+					--
+					i(27946),	-- Avian Cloak of Feathers
+					i(27986),	-- Crow Wing Reaper
+					i(27985),	-- Deathforge Girdle
+					i(27936),	-- Greaves of Desolation
+					i(27875),	-- Hallowed Trousers
+					i(27838),	-- Incanter's Trousers
+					i(27925),	-- Ravenclaw Band
+					i(27981),	-- Sethekk Oracle Cloak
+					i(27991, {	-- Shadow Labyrinth Key
+						description = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
+						timeline = { REMOVED_4_0_3 },
+					}),
+					i(27776),	-- Shoulderpads of Assassination
+					i(27980),	-- Terokk's Nightmace
+					i(27948),	-- Trousers of Oblivion
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				n(ZONE_DROPS, {
+					i(29669, {	-- Pattern: Shadow Armor Kit (RECIPE!)
+						timeline = { REMOVED_5_0_4 },
+						cr = 18320,	-- Time-Lost Shadowmage
+					}),
+				}),
+				BossOnly(IKISS, {
+					ach(653),	-- Sethekk Halls
+				}),
+			}),
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC, {
 				-- #if BEFORE 4.2.0
 				description = "You need to have a key to the instance in order to access this mode.",
 				attunement = {
@@ -237,101 +325,51 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 				-- #endif
 				lvl = lvlsquish(70, 70, 30),
-				groups = {
-					n(COMMON_BOSS_DROPS, {
-						crs = {
-							18472,	-- Darkweaver Syth
-							23035,	-- Anzu
-							18473,	-- Talon King Ikiss
-						},
-						groups = {
-							-- #if BEFORE CATA
-							applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
-							-- #endif
-							i(30552),	-- Timeless Tanzanite
-							i(30553),	-- Glinting Tanzanite
-							i(30554),	-- Stalwart Fire Opal
-						},
-					}),
-					e(541, {	-- Darkweaver Syth
-						creatureID = 18472,
-						groups = {
-							i(24160),	-- Design: Khorium Inferno Band (RECIPE!)
-							i(27918),	-- Bands of Syth
-							i(27919),	-- Light-Woven Slippers
-							i(27914),	-- Moonstrider Boots
-							i(27915),	-- Sky-Hunter Swift Boots
-							-- #if BEFORE MOP
-							i(27916, {	-- Sethekk Feather-Darts
-								timeline = { REMOVED_5_0_4 },
-							}),
-							i(27917, {	-- Libram of the Eternal Rest
-								timeline = { REMOVED_5_0_4 },
-							}),
-							-- #endif
-							i(25461, {	-- Book of Forgotten Names
-								timeline = { REMOVED_7_1_0 },
-							}),
-							i(27633),	-- Terokk's Mask
-						},
-					}),
-					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, e(542, {	-- Anzu
-						-- #if BEFORE 4.0.1
-						description = "This special encounter can be started by a Druid that has completed the 'Vanquish the Raven God' quest chain. It's the same quest chain that grants them Swift Flight Form, so if you see a speedy flappy boi out in the world and they join your dungeon group, you're pretty much guaranteed to have a shot at this... unless they forget the quest item (in the keyring) used to summon him. :)\n\nDruids: You can right click this boss to see the quest chain you need to finish.",
-						sourceQuest = 11001,	-- Vanquish the Raven God
-						timeline = { ADDED_2_1_0 },
-						cost = { { "i", 32449, 1 } },	-- Essence-Infused Moonstone
-						-- #endif
-						creatureID = 23035,
-						groups = {
-							ach(883, {	-- Reins of the Raven Lord
-								provider = { "i", 32768 },	-- Reins of the Raven Lord
-								filterID = MOUNTS,
-							}),
-							i(32768),	-- Raven Lord (MOUNT!)
-							i(32781),	-- Talon of Anzu
-							i(32780),	-- The Boomstick
-							i(32769),	-- Belt of the Raven Lord
-							-- #if AFTER 7.3.5
-							i(27936),	-- Greaves of Desolation  (7.3.5 - Used to be only Normal Mode from Talon King Ikiss)
-							-- #endif
-							i(32778),	-- Boots of Righteous Fortitude
-							i(32779),	-- Band of Frigid Elements
-						},
-					})),
-					e(543, {	-- Talon King Ikiss
-						creatureID = 18473,
-						groups = {
-							ach(674),	-- Heroic: Sethekk Halls
-							ach(5074, {	-- Heroic: Sethekk Halls Guild Run
-								timeline = { ADDED_4_0_3 },
-							}),
-							i(27986),	-- Crow Wing Reaper
-							i(29355),	-- Terokk's Shadowstaff
-							i(27980),	-- Terokk's Nightmace
-							i(27776),	-- Shoulderpads of Assassination
-							i(32073),	-- Spaulders of Dementia
-							i(27946),	-- Avian Cloak of Feathers
-							i(27981),	-- Sethekk Oracle Cloak
-							i(29249),	-- Bands of the Benevolent
-							i(29259),	-- Bracers of the Hunt
-							i(27985),	-- Deathforge Girdle
-							i(27936),	-- Greaves of Desolation (7.3.5 - Added to Anzu, but also still drops on Heroic)
-							i(27875),	-- Hallowed Trousers
-							i(27838),	-- Incanter's Trousers
-							i(27948),	-- Trousers of Oblivion
-							i(27925),	-- Ravenclaw Band
-							applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
-							i(27632),	-- Terokk's Quill
-							i(33834),	-- The Headfeathers of Ikiss
-							i(27991, {	-- Shadow Labyrinth Key
-								description = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
-								timeline = { REMOVED_4_0_3 },
-							}),
-						},
-					}),
-				},
+			}).AddGroups({
+				CommonBossDrops({
+					-- #if BEFORE CATA
+					applyclassicphase(TBC_PHASE_FOUR, BADGE_OF_JUSTICE(1)),
+					-- #endif
+					i(30553),	-- Glinting Tanzanite
+					i(30554),	-- Stalwart Fire Opal
+					i(30552),	-- Timeless Tanzanite
+				}),
+				BossOnly(SYTH, {
+					i(25461, { timeline = { REMOVED_7_1_0 } }),	-- Book of Forgotten Names
+				}),
+				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, e(542, {	-- Anzu
+					-- #if BEFORE 4.0.1
+					description = "This special encounter can be started by a Druid that has completed the 'Vanquish the Raven God' quest chain. It's the same quest chain that grants them Swift Flight Form, so if you see a speedy flappy boi out in the world and they join your dungeon group, you're pretty much guaranteed to have a shot at this... unless they forget the quest item (in the keyring) used to summon him. :)\n\nDruids: You can right click this boss to see the quest chain you need to finish.",
+					sourceQuest = 11001,	-- Vanquish the Raven God
+					timeline = { ADDED_2_1_0 },
+					cost = { { "i", 32449, 1 } },	-- Essence-Infused Moonstone
+					-- #endif
+					creatureID = 23035,
+					groups = {
+						ach(883, {	-- Reins of the Raven Lord
+							provider = { "i", 32768 },	-- Reins of the Raven Lord
+							filterID = MOUNTS,
+						}),
+						i(32779),	-- Band of Frigid Elements
+						i(32769),	-- Belt of the Raven Lord
+						i(32778),	-- Boots of Righteous Fortitude
+						i(32768),	-- Raven Lord (MOUNT!)
+						i(32781),	-- Talon of Anzu
+						i(32780),	-- The Boomstick
+					},
+				})),
+				BossOnly(IKISS, {
+					ach(674),	-- Heroic: Sethekk Halls
+					ach(5074, { timeline = { ADDED_4_0_3 } }),	-- Heroic: Sethekk Halls Guild Run
+					i(29249),	-- Bands of the Benevolent
+					i(29259),	-- Bracers of the Hunt
+					applyclassicphase(TBC_PHASE_ONE, i(23572)),	-- Primal Nether
+					i(32073),	-- Spaulders of Dementia
+					i(29355),	-- Terokk's Shadowstaff
+					i(33834),	-- The Headfeathers of Ikiss
+				}),
 			}),
+			-- #endif
 		},
 	}),
 })));
