@@ -1237,6 +1237,18 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ARATHI_HIGHLANDS, {
 			n(2604, {	-- Molok the Crusher
 				coord = { 54.6, 79.0, MAP.ARATHI_HIGHLANDS },
 			}),
+			n(217836, {	-- Needletooth
+				coords = {
+					{ 67.4, 67.6, MAP.ARATHI_HIGHLANDS },
+					{ 67.6, 65.6, MAP.ARATHI_HIGHLANDS },
+					{ 68.0, 63.4, MAP.ARATHI_HIGHLANDS },
+					{ 69.2, 64.6, MAP.ARATHI_HIGHLANDS },
+				},
+				timeline = { TIMELINE.ADDED_1_60_1 },
+				groups = {
+					i(282703),	-- Needletooth's Needletooth
+				},
+			}),
 			n(2606, {	-- Nimar the Slayer <Warband Leader>
 				coords = {
 					{ 66.0, 60.2, MAP.ARATHI_HIGHLANDS },
