@@ -254,9 +254,13 @@ root(ROOTS.Promotions, {
 				u = REMOVED_FROM_GAME,	-- 11th December 2024
 			}),
 			i(229368, {	-- Gill'el (PET!)
+				-- #if AFTER 11.0.5
+				-- #if BEFORE 12.0.0
 				description = "Available with the purchase of a Murloc Thrall plushie from the Blizzard Gear Store. The code will be emailed and can be redeemed on Battle.net or the launcher.",
+				-- #endif
+				-- #endif
 				timeline = { ADDED_11_0_5 },
-				u = REAL_MONEY,
+				u = REMOVED_FROM_GAME,	-- The last report was on Sep 4, 2025.
 			}),
 			i(232301, {	-- Tempered Banner of the Algari (TOY!)
 				description = "Break the Meta: TWW Season 1\n\nInstead of teams fighting to beat their opponent's time, Break the Meta is focused on teams pushing keys as high as they can with Season 1's off-meta specs and classes.\n\nRegister for the event on |cFFFFFFFFraider.io/events/break-the-meta-the-war-within-season-1/register|r and complete at least 2 BTM-Eligible timed keystones at |cFFFFFFFFlevel +5|r or higher during the Competition Period, and the Tempered Banner of the Algari will be automatically added to your collection in-game after the conclusion of the event.\n\nThe Event starts on December 10th for US, December 11th for EU & December 12th for KR/TW & lasts for 1 week.",
