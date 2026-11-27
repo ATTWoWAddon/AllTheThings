@@ -2,16 +2,28 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local OOK_OOK = 668;
+local HOPTALLUS = 669;
+local YAN_ZHU = 670;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[OOK_OOK] = { 56637 },	-- Ook-Ook
+	[HOPTALLUS] = { 56717 },	-- Hoptallus
+	[YAN_ZHU] = { 59479 },	-- Yan-Zhu the Uncasked
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(302, {	-- Stormstout Brewery
 		coord = { 36.0, 69.0, VALLEY_OF_THE_FOUR_WINDS },
 		timeline = { ADDED_5_0_4 },
-		maps = {
-			STORMSTOUT_BREWERY_GRAIN_CELLAR,
-			STORMSTOUT_BREWERY_STORMSTOUT_BREWHALL,
-			STORMSTOUT_BREWERY_THE_GREAT_WHEEL,
-			STORMSTOUT_BREWERY_THE_TASTING_ROOM,
-		},
+		maps = { STORMSTOUT_BREWERY_GRAIN_CELLAR, STORMSTOUT_BREWERY_STORMSTOUT_BREWHALL, STORMSTOUT_BREWERY_THE_GREAT_WHEEL, STORMSTOUT_BREWERY_THE_TASTING_ROOM },
 		groups = {
 			n(ACHIEVEMENTS, {
 				ach(6400, {	-- How Did He Get Up There?
@@ -22,9 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						{ "n", 59824 },	-- Golden Hopling
 						{ "i", 80313 },	-- Ling-Ting's Favorite Tea
 					},
-					groups = {
-						i(86562),	-- Hopling (PET!)
-					},
+					groups = { i(86562) },	-- Hopling (PET!)
 				}),
 			}),
 			n(QUESTS, {
@@ -83,313 +93,107 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(88492),	-- Wicked Wikket
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-				e(670, {	-- Yan-Zhu the Uncasked
-					crs = { 59479 },	-- Yan-Zhu the Uncasked
-					groups = {
-						ach(6457),	-- Stormstout Brewery
-					},
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				BossOnly(OOK_OOK, {
+					i(143989, { timeline = { ADDED_7_1_5 } }),	-- Barreldodger Boots
+					i(144087, { timeline = { ADDED_7_1_5 } }),	-- Bracers of Displaced Air
+					i(144119, { timeline = { ADDED_7_1_5 } }),	-- Empty Fruit Barrel
+					i(143957, { timeline = { ADDED_7_1_5 } }),	-- Nimbletoe Chestguard
+					i(144084, { timeline = { ADDED_7_1_5 } }),	-- Ook's Hozen Slicer
+				}),
+				BossOnly(HOPTALLUS, {
+					i(144120, { timeline = { ADDED_7_1_5 } }),	-- Belt of Brazen Inebriation
+					i(144092, { timeline = { ADDED_7_1_5 } }),	-- Bottle of Potent Potables
+					i(144088, { timeline = { ADDED_7_1_5 } }),	-- Bubble-Breaker Bracers
+					i(144121, { timeline = { ADDED_7_1_5 } }),	-- Cloak of Hidden Flasks
+					i(143975, { timeline = { ADDED_7_1_5 } }),	-- Hopping Mad Leggings
+				}),
+				BossOnly(YAN_ZHU, {
+					ach(6457),	-- Stormstout Brewery
+					i(144125, { timeline = { ADDED_7_1_5 } }),	-- Alemental Seal
+					i(144122, { timeline = { ADDED_7_1_5 } }),	-- Carbonic Carbuncle
+					i(144082, { timeline = { ADDED_7_1_5 } }),	-- Fermenting Belt
+					i(143969, { timeline = { ADDED_7_1_5 } }),	-- Fizzy Spaulders
+					i(144085, { timeline = { ADDED_7_1_5 } }),	-- Gao's Keg Tapper
+					i(87545, { timeline = { ADDED_7_1_5 } }),	-- Inelava, Spirit of Inebriation
+					i(144123, { timeline = { ADDED_7_1_5 } }),	-- Lime-Rimmed Signet
+					i(143976, { timeline = { ADDED_7_1_5 } }),	-- Sudsy Legplates
+					i(143958, { timeline = { ADDED_7_1_5 } }),	-- Uncasked Chestguard
+					i(144124, { timeline = { ADDED_7_1_5 } }),	-- Wort Stirring Rod
+					i(144089, { timeline = { ADDED_7_1_5 } }),	-- Yan-Zhu's Pressure Valve
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(668, {	-- Ook-Ook
-					crs = { 56637 },	-- Ook-Ook
-					groups = {
-						-- Available
-						i(144084, {	-- Ook's Hozen Slicer
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143957, {	-- Nimbletoe Chestguard
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144087, {	-- Bracers of Displaced Air
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143989, {	-- Barreldodger Boots
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144119, {	-- Empty Fruit Barrel
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80892, {	-- Ook's Hozen Slicer
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80896, {	-- Nimbletoe Chestguard
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80897, {	-- Bracers of Displaced Air
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossOnly(OOK_OOK, {
+					i(80897, { timeline = { REMOVED_7_1_5 } }),	-- Bracers of Displaced Air
+					i(80896, { timeline = { REMOVED_7_1_5 } }),	-- Nimbletoe Chestguard
+					i(80892, { timeline = { REMOVED_7_1_5 } }),	-- Ook's Hozen Slicer
 				}),
-				e(669, {	-- Hoptallus
-					crs = { 56717 },	-- Hoptallus
-					groups = {
-						-- Available
-						i(144092, {	-- Bottle of Potent Potables
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144121, {	-- Cloak of Hidden Flasks
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144088, {	-- Bubble-Breaker Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144120, {	-- Belt of Brazen Inebriation
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143975, {	-- Hopping Mad Leggings
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80893, {	-- Bottle of Potent Potables
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80899, {	-- Bubble-Breaker Bracers
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80898, {	-- Hopping Mad Leggings
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(HOPTALLUS, {
+					i(80893, { timeline = { REMOVED_7_1_5 } }),	-- Bottle of Potent Potables
+					i(80899, { timeline = { REMOVED_7_1_5 } }),	-- Bubble-Breaker Bracers
+					i(80898, { timeline = { REMOVED_7_1_5 } }),	-- Hopping Mad Leggings
 				}),
-				e(670, {	-- Yan-Zhu the Uncasked
-					crs = { 59479 },	-- Yan-Zhu the Uncasked
-					groups = {
-						-- Available
-						i(87545, {	-- Inelava, Spirit of Inebriation [Confirmed by Carbion to drop in Normal]
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144085, {	-- Gao's Keg Tapper
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144124, {	-- Wort Stirring Rod
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144089, {	-- Yan-Zhu's Pressure Valve
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143969, {	-- Fizzy Spaulders
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143958, {	-- Uncasked Chestguard
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144082, {	-- Fermenting Belt
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143976, {	-- Sudsy Legplates
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144125, {	-- Alemental Seal
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144123, {	-- Lime-Rimmed Signet
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144122, {	-- Carbonic Carbuncle
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80894, {	-- Gao's Keg Tapper
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80895, {	-- Yan-Zhu's Pressure Valve
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80900, {	-- Fizzy Spaulders
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80902, {	-- Uncasked Chestguard
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80903, {	-- Fermenting Belt
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80901, {	-- Sudsy Legplates
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(YAN_ZHU, {
+					i(80903, { timeline = { REMOVED_7_1_5 } }),	-- Fermenting Belt
+					i(80900, { timeline = { REMOVED_7_1_5 } }),	-- Fizzy Spaulders
+					i(80894, { timeline = { REMOVED_7_1_5 } }),	-- Gao's Keg Tapper
+					i(80901, { timeline = { REMOVED_7_1_5 } }),	-- Sudsy Legplates
+					i(80902, { timeline = { REMOVED_7_1_5 } }),	-- Uncasked Chestguard
+					i(80895, { timeline = { REMOVED_7_1_5 } }),	-- Yan-Zhu's Pressure Valve
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 				n(ACHIEVEMENTS, {
 					ach(6420),	-- Hopocalypse Now!
 				}),
-				e(668, {	-- Ook-Ook
-					crs = { 56637 },	-- Ook-Ook
-					groups = {
-						-- Available
-						ach(6089),	-- Keep Rollin' Rollin' Rollin'
-						i(144084, {	-- Ook's Hozen Slicer
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143957, {	-- Nimbletoe Chestguard
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144087, {	-- Bracers of Displaced Air
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143989, {	-- Barreldodger Boots
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144119, {	-- Empty Fruit Barrel
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81061, {	-- Ook's Hozen Slicer
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81080, {	-- Nimbletoe Chestguard
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81064, {	-- Bracers of Displaced Air
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81134, {	-- Barreldodger Boots
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81133, {	-- Empty Fruit Barrel
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(OOK_OOK, {
+					ach(6089),	-- Keep Rollin' Rollin' Rollin'
+					i(81134, { timeline = { REMOVED_7_1_5 } }),	-- Barreldodger Boots
+					i(81064, { timeline = { REMOVED_7_1_5 } }),	-- Bracers of Displaced Air
+					i(81133, { timeline = { REMOVED_7_1_5 } }),	-- Empty Fruit Barrel
+					i(81080, { timeline = { REMOVED_7_1_5 } }),	-- Nimbletoe Chestguard
+					i(81061, { timeline = { REMOVED_7_1_5 } }),	-- Ook's Hozen Slicer
 				}),
-				e(669, {	-- Hoptallus
-					crs = { 56717 },	-- Hoptallus
-					groups = {
-						-- Available
-						i(144092, {	-- Bottle of Potent Potables
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144121, {	-- Cloak of Hidden Flasks
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144088, {	-- Bubble-Breaker Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144120, {	-- Belt of Brazen Inebriation
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143975, {	-- Hopping Mad Leggings
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81076, {	-- Bottle of Potent Potables
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81136, {	-- Cloak of Hidden Flasks
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81065, {	-- Bubble-Breaker Bracers
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81135, {	-- Belt of Brazen Inebriation
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81077, {	-- Hopping Mad Leggings
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(HOPTALLUS, {
+					i(81135, { timeline = { REMOVED_7_1_5 } }),	-- Belt of Brazen Inebriation
+					i(81076, { timeline = { REMOVED_7_1_5 } }),	-- Bottle of Potent Potables
+					i(81065, { timeline = { REMOVED_7_1_5 } }),	-- Bubble-Breaker Bracers
+					i(81136, { timeline = { REMOVED_7_1_5 } }),	-- Cloak of Hidden Flasks
+					i(81077, { timeline = { REMOVED_7_1_5 } }),	-- Hopping Mad Leggings
 				}),
-				e(670, {	-- Yan-Zhu the Uncasked
-					crs = { 59479 },	-- Yan-Zhu the Uncasked
-					groups = {
-						-- Available
-						ach(6456),	-- Heroic: Stormstout Brewery
-						ach(6666),	-- Heroic: Stormstout Brewery Guild Run
-						i(87545),	-- Inelava, Spirit of Inebriation [Confirmed by Discord Member on May 4th, 2020 (a screenshot was provided)]
-						i(144085, {	-- Gao's Keg Tapper
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144124, {	-- Wort Stirring Rod
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144089, {	-- Yan-Zhu's Pressure Valve
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143969, {	-- Fizzy Spaulders
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143958, {	-- Uncasked Chestguard
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144082, {	-- Fermenting Belt
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143976, {	-- Sudsy Legplates
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144125, {	-- Alemental Seal
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144123, {	-- Lime-Rimmed Signet
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144122, {	-- Carbonic Carbuncle
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81062, {	-- Gao's Keg Tapper
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81140, {	-- Wort Stirring Rod
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81066, {	-- Yan-Zhu's Pressure Valve
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81068, {	-- Fizzy Spaulders
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81081, {	-- Uncasked Chestguard
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81059, {	-- Fermenting Belt
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81078, {	-- Sudsy Legplates
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81141, {	-- Alemental Seal
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81139, {	-- Lime-Rimmed Signet
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81138, {	-- Carbonic Carbuncle
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(YAN_ZHU, {
+					ach(6456),	-- Heroic: Stormstout Brewery
+					ach(6666),	-- Heroic: Stormstout Brewery Guild Run
+					i(81141, { timeline = { REMOVED_7_1_5 } }),	-- Alemental Seal
+					i(81138, { timeline = { REMOVED_7_1_5 } }),	-- Carbonic Carbuncle
+					i(81059, { timeline = { REMOVED_7_1_5 } }),	-- Fermenting Belt
+					i(81068, { timeline = { REMOVED_7_1_5 } }),	-- Fizzy Spaulders
+					i(81062, { timeline = { REMOVED_7_1_5 } }),	-- Gao's Keg Tapper
+					i(87545, { timeline = { REMOVED_7_1_5 } }),	-- Inelava, Spirit of Inebriation
+					i(81139, { timeline = { REMOVED_7_1_5 } }),	-- Lime-Rimmed Signet
+					i(81078, { timeline = { REMOVED_7_1_5 } }),	-- Sudsy Legplates
+					i(81081, { timeline = { REMOVED_7_1_5 } }),	-- Uncasked Chestguard
+					i(81140, { timeline = { REMOVED_7_1_5 } }),	-- Wort Stirring Rod
+					i(81066, { timeline = { REMOVED_7_1_5 } }),	-- Yan-Zhu's Pressure Valve
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
-				timeline = { REMOVED_6_0_2 },
-				groups = {
-					challengemaster(ach(8431, {	-- Challenge Master: Stormstout Brewery
-						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
-						groups = {
-							title(248),	-- Stormbrewer <Name>
-						},
-					})),
-					ach(6888),	-- Stormstout Brewery Challenger
-					ach(6889),	-- Stormstout Brewery: Bronze
-					ach(6890),	-- Stormstout Brewery: Silver
-					ach(6891, {	-- Stormstout Brewery: Gold
-						spell(131205),	-- Path of the Stout Brew
-					}),
-					-- #if ANYCLASSIC
-					ach(61968, {	-- Stormstout Brewery: Platinum
-						i(265780),	-- Platinum "Little Ale"
-					}),
-					-- #endif
-				},
+			Difficulty(DIFFICULTY.DUNGEON.CHALLENGE_MODE, { timeline = { REMOVED_6_0_2 } }).AddGroups({
+				challengemaster(ach(8431, {	-- Challenge Master: Stormstout Brewery
+					timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+					groups = { title(248) },	-- Stormbrewer <Name>
+				})),
+				ach(6888),	-- Stormstout Brewery Challenger
+				ach(6889),	-- Stormstout Brewery: Bronze
+				ach(6890),	-- Stormstout Brewery: Silver
+				ach(6891, {	-- Stormstout Brewery: Gold
+					spell(131205),	-- Path of the Stout Brew
+				}),
+				-- #if ANYCLASSIC
+				ach(61968, {	-- Stormstout Brewery: Platinum
+					i(265780),	-- Platinum "Little Ale"
+				}),
+				-- #endif
 			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
