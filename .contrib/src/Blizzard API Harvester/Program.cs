@@ -1,4 +1,3 @@
-using MiniJSON;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -197,7 +196,7 @@ namespace ATT
 		private static void UnHandledExceptionCapture(object sender, UnhandledExceptionEventArgs e)
 		{
 			Console.WriteLine($"Exception!");
-			Console.WriteLine(MiniJSON.Json.Serialize(e.ExceptionObject));
+			Console.WriteLine(ToolJson.Data.Serialize(e.ExceptionObject));
 		}
 
 		private static void DetermineAvailableIDs()
@@ -239,7 +238,7 @@ namespace ATT
 				if (response.IsSuccessStatusCode)
 				{
 					string respStr = response.Content.ReadAsStringAsync().Result;
-					var objData = MiniJSON.Json.Deserialize(respStr) as Dictionary<string, object>;
+					var objData = ToolJson.Data.Deserialize(respStr) as Dictionary<string, object>;
 					objData.TryGetValue("resultCountCapped", out moreItems);
 					page++;
 					if (objData.TryGetValue("results", out List<object> results))
@@ -433,7 +432,7 @@ namespace ATT
 
 		private static void QueueAPIData(string data)
 		{
-			IDictionary<string, object> json = (IDictionary<string, object>)MiniJSON.Json.Deserialize(data ?? "{}");
+			IDictionary<string, object> json = (IDictionary<string, object>)ToolJson.Data.Deserialize(data ?? "{}");
 			// don't bother saving empty data
 			if (json == null)
 				return;
@@ -448,7 +447,7 @@ namespace ATT
 			if (json.Count == 0)
 				return;
 
-			DataResults.Enqueue(MiniJSON.Json.Serialize(json));
+			DataResults.Enqueue(ToolJson.Data.Serialize(json));
 		}
 
 		private static bool CleanJsonObject(object data)
@@ -577,7 +576,7 @@ namespace ATT
 			long minIdFound = expectedMax;
 			foreach (string data in individualDatas)
 			{
-				if (MiniJSON.Json.Deserialize(data) is IDictionary<string, object> json)
+				if (ToolJson.Data.Deserialize(data) is IDictionary<string, object> json)
 				{
 					if (json.TryGetValue("id", out object idObj) && idObj is long id)
 					{
@@ -1349,7 +1348,7 @@ namespace ATT
 			{
 				if (!(classes is IEnumerable<object> classesSet))
 				{
-					Console.WriteLine($"Bad 'classes': {MiniJSON.Json.Serialize(classes)}");
+					Console.WriteLine($"Bad 'classes': {ToolJson.Data.Serialize(classes)}");
 				}
 				else
 				{
@@ -1359,7 +1358,7 @@ namespace ATT
 						if (entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
 					}
 					list.Sort();
-					//Console.WriteLine($"'classes':{MiniJSON.Json.Serialize(list)}");
+					//Console.WriteLine($"'classes':{ToolJson.Data.Serialize(list)}");
 					dict["classes"] = list;
 				}
 			}
@@ -1534,7 +1533,7 @@ namespace ATT
 			{
 				if (ParseDatas.TryDequeue(out string contents))
 				{
-					if (MiniJSON.Json.Deserialize(contents) is Dictionary<string, object> rawData)
+					if (ToolJson.Data.Deserialize(contents) is Dictionary<string, object> rawData)
 					{
 						if (NonEmptyRawData(rawData))
 						{
@@ -1573,9 +1572,9 @@ namespace ATT
 			}
 
 			if (ProcessObjects[ObjType.item])
-				File.WriteAllText(".\\DBs\\" + "itemDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }));
+				File.WriteAllText(".\\DBs\\" + "itemDB-" + DateStamp + ".json", ToolJson.Data.Serialize(new Dictionary<string, object> { { "items", dataItems.Values.ToList() } }));
 			if (ProcessObjects[ObjType.quest])
-				File.WriteAllText(".\\DBs\\" + "questDB-" + DateStamp + ".json", MiniJSON.Json.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }));
+				File.WriteAllText(".\\DBs\\" + "questDB-" + DateStamp + ".json", ToolJson.Data.Serialize(new Dictionary<string, object> { { "quests", dataQuests.Values.ToList() } }));
 
 			Console.WriteLine("Done exporting the data.");
 			WaitForParsingData = false;
@@ -1626,7 +1625,7 @@ namespace ATT
 
 					// Return the response body (JSON string)
 					var tokenJson = response.Content.ReadAsStringAsync().GetAwaiter().GetResult();
-					var tokenData = (Dictionary<string, object>)Json.Deserialize(tokenJson);
+					var tokenData = (Dictionary<string, object>)ToolJson.Data.Deserialize(tokenJson);
 					if (tokenData.TryGetValue("access_token", out string access_token))
 					{
 						return access_token;

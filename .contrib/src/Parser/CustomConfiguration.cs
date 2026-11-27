@@ -34,7 +34,7 @@ namespace ATT
 			try
 			{
 				string configText = File.ReadAllText(filepath, Encoding.UTF8);
-				object jsonObj = MiniJSON.Json.Deserialize(configText);
+				object jsonObj = ToolJson.Data.Deserialize(configText);
 				if (jsonObj == null)
 				{
 					Framework.LogError($"Config File is not proper JSON! {filepath}");
@@ -61,7 +61,7 @@ namespace ATT
 			try
 			{
 				string configText = File.ReadAllText(filepath, Encoding.UTF8);
-				object jsonObj = MiniJSON.Json.Deserialize(configText);
+				object jsonObj = ToolJson.Data.Deserialize(configText);
 				if (jsonObj is null)
 				{
 					Framework.LogWarn($"Config File is not proper JSON!", filepath);

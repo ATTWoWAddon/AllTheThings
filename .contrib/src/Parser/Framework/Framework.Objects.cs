@@ -1566,7 +1566,7 @@ namespace ATT
 				// Do not include "Custom" NPC IDs. We use these for headers and most of these are going to be purged.
 				if (npcID < 1)
 				{
-					Trace.WriteLine($"INVALID NPC ID {npcID} ({MiniJSON.Json.Serialize(data)})");
+					Trace.WriteLine($"INVALID NPC ID {npcID} ({ToolJson.Data.SerializeForParser(data)})");
 					Console.ReadLine();
 					return;
 				}
@@ -2364,7 +2364,7 @@ namespace ATT
 				}
 				else
 				{
-					LogError($"Invalid format for '_drop': {MiniJSON.Json.Serialize(drops)}", data);
+					LogError($"Invalid format for '_drop': {ToolJson.Data.SerializeForParser(drops)}", data);
 				}
 			}
 
@@ -2387,7 +2387,7 @@ namespace ATT
 				}
 				else
 				{
-					LogError($"Invalid format for '_wipe': {MiniJSON.Json.Serialize(wipes)}", data);
+					LogError($"Invalid format for '_wipe': {ToolJson.Data.SerializeForParser(wipes)}", data);
 				}
 			}
 

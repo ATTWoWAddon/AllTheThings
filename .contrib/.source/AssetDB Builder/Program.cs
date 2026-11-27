@@ -1,5 +1,6 @@
 // DBContext / AssetDB
 using System.Text;
+using ATT;
 
 var databaseFolder = "../.db/standard/00 - DB/AssetDB";
 Directory.CreateDirectory(databaseFolder);
@@ -10,7 +11,7 @@ foreach (var file in Directory.GetFiles("../.raw/AssetDB"))
 		Console.WriteLine(file);
 		Dictionary<long, bool> AssetDB = new();
 		var dbFileName = Path.GetFileNameWithoutExtension(file);
-		var o = MiniJSON.Json.Deserialize(File.ReadAllText(file));
+		var o = ToolJson.Data.Deserialize(File.ReadAllText(file));
 		if (o is Dictionary<string, object> db)
 		{
 			foreach (var keyValuePair in db)

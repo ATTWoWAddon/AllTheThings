@@ -104,7 +104,7 @@ $groups = @{
 		)
 		Required = @(
 			'.contrib/src/Parser/Program.cs',
-			'.contrib/src/Parser/MiniJSON.cs',
+			'.contrib/src/MiniJSON/MiniJSON.cs',
 			'.contrib/.source/ATT Sync Tool/MainForm.Designer.cs'
 		)
 		Minimum = 3

@@ -241,7 +241,7 @@ namespace ATT
 				//byte[] data = resp.Content.ReadAsByteArrayAsync().GetAwaiter().GetResult();
 				//return Encoding.UTF8.GetString(data);
 
-				return MiniJSON.Json.Deserialize(Encoding.UTF8.GetString(client.GetByteArrayAsync(url).GetAwaiter().GetResult())) as IDictionary<string, object>;
+				return ToolJson.Data.Deserialize(Encoding.UTF8.GetString(client.GetByteArrayAsync(url).GetAwaiter().GetResult())) as IDictionary<string, object>;
 			}
 			catch (Exception e)
 			{

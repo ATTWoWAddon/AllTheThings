@@ -36,7 +36,7 @@ namespace ATT
 			}
 			catch
 			{
-				throw new InvalidDataException("Invalid 'Version': " + MiniJSON.Json.Serialize(arr));
+				throw new InvalidDataException("Invalid 'Version': " + ToolJson.Data.SerializeForParser(arr));
 			}
 		}
 

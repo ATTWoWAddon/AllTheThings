@@ -3429,7 +3429,7 @@ namespace ATT
 										IncorporateDataField(data, "_maps", maps);
 										/*
 										Trace.WriteLine("ADDED MAP DATA TO ACHIEVEMENT:");
-										Trace.WriteLine(MiniJSON.Json.Serialize(data));
+										Trace.WriteLine(ToolJson.Data.SerializeForParser(data));
 										Console.ReadLine();
 										*/
 									}
@@ -3437,9 +3437,9 @@ namespace ATT
 									else
 									{
 										Trace.WriteLine("FAILED TO FIND MAP DATA TO ACHIEVEMENT:");
-										Trace.WriteLine(MiniJSON.Json.Serialize(data));
-										Trace.WriteLine(MiniJSON.Json.Serialize(existingModifierTree));
-										Trace.WriteLine(MiniJSON.Json.Serialize(associations));
+										Trace.WriteLine(ToolJson.Data.SerializeForParser(data));
+										Trace.WriteLine(ToolJson.Data.SerializeForParser(existingModifierTree));
+										Trace.WriteLine(ToolJson.Data.SerializeForParser(associations));
 										Console.ReadLine();
 									}
 									*/
@@ -3448,8 +3448,8 @@ namespace ATT
 								else
 								{
 									Trace.WriteLine("FAILED TO FIND AREA DATA TO ACHIEVEMENT:");
-									Trace.WriteLine(MiniJSON.Json.Serialize(data));
-									Trace.WriteLine(MiniJSON.Json.Serialize(existingModifierTree));
+									Trace.WriteLine(ToolJson.Data.SerializeForParser(data));
+									Trace.WriteLine(ToolJson.Data.SerializeForParser(existingModifierTree));
 									Console.ReadLine();
 								}
 								*/

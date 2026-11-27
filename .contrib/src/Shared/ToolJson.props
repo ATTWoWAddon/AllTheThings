@@ -1,0 +1,8 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)..\MiniJSON\MiniJSON.props" />
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)..\Json\JsonData.cs" Link="Shared\JsonData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\MiniJSON\MiniJsonBackend.cs" Link="Shared\MiniJsonBackend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ToolJson.cs" Link="Shared\ToolJson.cs" />
+  </ItemGroup>
+</Project>
