@@ -1,6 +1,7 @@
 import requests
 import csv
 from collections import defaultdict
+from io import StringIO
 
 def write_log_header(output_file, build, map_count, children_count, total_count):
     # Description
@@ -165,10 +166,15 @@ def exploration_mapping(build):
     total_count = map_count + children_count
 
     # Write output with header
-    with open("ExplorationMapping.txt", "w", encoding="utf-8") as output_file:
+    with StringIO() as output_file:
         write_log_header(output_file, build, map_count, children_count, total_count)
         for _, _, line in all_lines:
             output_file.write(line + "\n")
+        text = output_file.getvalue().replace("\r\n", "\n").replace("\r", "\n")
+    if text and not text.endswith("\n"):
+        text += "\n"
+    with open("ExplorationMapping.txt", "w", encoding="utf-8", newline="") as output_file:
+        output_file.write(text)
 
     print(f"ExplorationMapping.txt created successfully.")
 
