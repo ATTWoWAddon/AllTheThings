@@ -715,26 +715,20 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 				},
 			}),
 			q(90813, {	-- Pay Dirt! [A]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qs = 243203,	-- Humongous Crystal [A] (QS!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = ALLIANCE_ONLY,
 				lvl = 50,
 				groups = {
-					objective(1, {	-- 0/1 Humongous Crystal
-						provider = { "i", 243203 },	-- Humongous Crystal
-					}),
 					i(243299),	-- Big Bag o' Gold
 				},
 			}),
 			q(91607, {	-- Pay Dirt! [H]
-				-- TODO: Wowhead doesn't list the quest giver yet.
+				qs = 246888,	-- Humongous Crystal [H] (QS!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
 				races = HORDE_ONLY,
 				lvl = 50,
 				groups = {
-					objective(1, {	-- 0/1 Humongous Crystal
-						provider = { "i", 246888 },	-- Humongous Crystal
-					}),
 					i(243299),	-- Big Bag o' Gold
 				},
 			}),
@@ -1398,6 +1392,24 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			i(16219, {	-- Formula: Enchant Gloves - Greater Agility
 				cr = 6201,	-- Legashi Rogue
 			}),
+			i(243203, {	-- Humongous Crystal [A] (QS!)
+				crs = {
+					6146,	-- Cliff Breaker
+					6147,	-- Cliff Thunderer
+					6148,	-- Cliff Walker
+				},
+				races = ALLIANCE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
+			i(246888, {	-- Humongous Crystal [H] (QS!)
+				crs = {
+					6146,	-- Cliff Breaker
+					6147,	-- Cliff Thunderer
+					6148,	-- Cliff Walker
+				},
+				races = HORDE_ONLY,
+				timeline = { TIMELINE.ADDED_1_60_1 },
+			}),
 			i(15763, {	-- Pattern: Blue Dragonscale Shoulders (RECIPE!)
 				cr = 6146,	-- Cliff Breaker
 				coords = {
@@ -1480,4 +1492,9 @@ maproot(MAP.KALIMDOR, MAP.AZSHARA, {
 			}),
 		}),
 	},
+});
+root(ROOTS.HiddenQuestTriggers, {
+	q(90817, {	-- Completed together with Pay Dirt! [A] (90813)
+		timeline = { TIMELINE.ADDED_1_60_1 },
+	}),
 });

@@ -7700,7 +7700,6 @@ i(242363),	-- Who, What, Where, When, and Die! Five Keys to a Good Inquisition
 i(242710),	-- Monster Weapon [DNT]
 i(243065),	-- Broken Wand
 i(243177),	-- Ingenious Toy
-i(243203),	-- Humongous Crystal
 i(243266),	-- Fel-Tainted Giblets
 i(243299),	-- Big Bag o' Gold
 i(245675),	-- Gordok Inner Door Key
@@ -7717,7 +7716,6 @@ i(246770),	-- Sin'dorei Tome of Summoning
 i(246778),	-- Sin'dorei Tome of Summoning
 i(246780),	-- Heart of Vek'zol
 i(246885),	-- Soft Cow Doll
-i(246888),	-- Humongous Crystal
 i(246938),	-- Tear of Mennar
 i(247000),	-- Fel-Tainted Rock
 i(247001),	-- Fel-Tainted Branch

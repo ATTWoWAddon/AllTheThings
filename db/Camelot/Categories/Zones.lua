@@ -1658,11 +1658,9 @@ q(8255,{c={5},coords={
 [1447]={{42.2,42.6}}},lvl=50,qgs={8405},sourceQuests={8254},g={
 qo(2,{crs={36156},providers={{"i",49204}}}),
 qo(1,{crs={8761},providers={{"i",20027}}})}}),
-q(90813,{awp=16001,lvl=50,r=2,g={
-qo(1,{providers={{"i",243203}}}),
+q(90813,{awp=16001,lvl=50,qss={243203},r=2,g={
 i(243299,{b=1})}}),
-q(91607,{awp=16001,lvl=50,r=1,g={
-qo(1,{providers={{"i",246888}}}),
+q(91607,{awp=16001,lvl=50,qss={246888},r=1,g={
 i(243299,{b=1})}}),
 q(86813,{awp=16001,coords={
 [1447]={{41.6,19.6}}},lvl=47,qgs={235906},qis={235510},sourceQuests={86812},g={
@@ -1851,6 +1849,8 @@ r(12617,{b=1,itemID=10607,learnedAt=230,requireSkill=202,skillID=2941})}})}),
 h(-63,{
 r(1248528,{awp=16001,b=1,crs={6196},itemID=249516,learnedAt=250,requireSkill=333,skillID=2940}),
 r(20012,{crs={6201},itemID=16219,learnedAt=270,requireSkill=333,skillID=2940}),
+i(243203,{awp=16001,b=1,crs={6146,6147,6148},lvl=50,r=2}),
+i(246888,{awp=16001,b=1,crs={6146,6147,6148},lvl=50,r=1}),
 r(19089,{coords={
 [1447]={{50.4,80.2},{64.6,87.2},{70.4,17.6},{80.6,18.6}}},crs={6146},itemID=15763,learnedAt=270,requireSkill=10656,skillID=2945}),
 r(1255021,{awp=16001,crs={7885},itemID=252886,learnedAt=270,requireSkill=165,skillID=2945}),
