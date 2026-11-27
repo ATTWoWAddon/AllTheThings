@@ -1118,10 +1118,10 @@ local InformationTypes = {
 	CreateInformationType("description", { text = L.DESCRIPTIONS, priority = 2.5,
 		Process = function(t, reference, tooltipInfo)
 			local description = (app.ActiveRowReference or reference).description
-			local sharedDescription = GetRelativeValue(reference, "sharedDescription")
+			local sharedDescription = (not app.GetRelativeField(reference, "sourceIgnored", true) and GetRelativeValue(reference, "sharedDescription"))
 				-- duplicated search results lose their parent references in order to prevent issues in filtering/tooltips
 				-- so also check the active row reference for accuracy if the tooltip is in context of a row
-				or GetRelativeValue(app.ActiveRowReference, "sharedDescription")
+				or (not app.GetRelativeField(app.ActiveRowReference, "sourceIgnored", true) and GetRelativeValue(app.ActiveRowReference, "sharedDescription"))
 			if description then
 				if sharedDescription then
 					tooltipInfo[#tooltipInfo+1] = {
