@@ -2,14 +2,30 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+------ Encounter Constants ------
+local KIPTILAK = 655;
+local GADOK = 675;
+local RIMOK = 676;
+local RAIGONN = 649;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[KIPTILAK] = { 56906 },	-- Saboteur Kip'tilak
+	[GADOK] = { 56589 },	-- Striker Ga'dok
+	[RIMOK] = { 56636 },	-- Commander Ri'mok
+	[RAIGONN] = { 56877 },	-- Raigonn
+};
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS)
+local BossOnly, Difficulty =
+InstanceHelper.BossOnly, InstanceHelper.Difficulty
+
 root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 	applyclassicphase(MOP_PHASE_ONE, inst(303, {	-- Gate of the Setting Sun
 		coord = { 15.8, 74.8, VALE_OF_ETERNAL_BLOSSOMS },
 		timeline = { ADDED_5_0_4 },
-		maps = {
-			GATE_OF_THE_SETTING_SUN,
-			GATE_OF_THE_SETTING_SUN_GATE_WATCH_TOWER,
-		},
+		maps = { GATE_OF_THE_SETTING_SUN, GATE_OF_THE_SETTING_SUN_GATE_WATCH_TOWER },
 		groups = {
 			n(QUESTS, {
 				q(31363, {	-- Lighting the Way
@@ -37,392 +53,127 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
-				e(649, {	-- Raigonn
-					crs = { 56877 },	-- Raigonn
-					groups = {
-						-- Available
-						ach(10010, {	-- Gate of the Setting Sun
-							timeline = { ADDED_6_2_0 },
-						}),
-						ach(6945),	-- Mantid Swarm
-					},
+			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC).AddGroups({
+				BossOnly(KIPTILAK, {
+					i(144018, { timeline = { ADDED_7_1_5 } }),	-- Fallout-Filtering Hood
+					i(144134, { timeline = { ADDED_7_1_5 } }),	-- Grenadier's Belt
+					i(144102, { timeline = { ADDED_7_1_5 } }),	-- Pendant of Precise Timing
+					i(144135, { timeline = { ADDED_7_1_5 } }),	-- Pulled Grenade Pin
+					i(144100, { timeline = { ADDED_7_1_5 } }),	-- Saboteur's Stabilizing Bracers
+				}),
+				BossOnly(GADOK, {
+					i(143980, { timeline = { ADDED_7_1_5 } }),	-- Acid-Scarred Spaulders
+					i(143983, { timeline = { ADDED_7_1_5 } }),	-- Airstream Treads
+					i(144137, { timeline = { ADDED_7_1_5 } }),	-- Bomber's Precision Gloves
+					i(144095, { timeline = { ADDED_7_1_5 } }),	-- Impaler's Girdle
+					i(144136, { timeline = { ADDED_7_1_5 } }),	-- Vision of the Predator
+				}),
+				BossOnly(RIMOK, {
+					i(143982, { timeline = { ADDED_7_1_5 } }),	-- Leggings of the Frenzy
+					i(144098, { timeline = { ADDED_7_1_5 } }),	-- Mantid Trochanter
+					i(144138, { timeline = { ADDED_7_1_5 } }),	-- Ri'mok's Shattered Scale
+					i(144019, { timeline = { ADDED_7_1_5 } }),	-- Swarmcall Helm
+					i(144139, { timeline = { ADDED_7_1_5 } }),	-- Viscous Ring
+				}),
+				BossOnly(RAIGONN, {
+					ach(10010, { timeline = { ADDED_6_2_0 } }),	-- Gate of the Setting Sun
+					ach(6945),	-- Mantid Swarm
+					i(144101, { timeline = { ADDED_7_1_5 } }),	-- Carapace Breaker
+					i(144141, { timeline = { ADDED_7_1_5 } }),	-- Drape of the Screeching Swarm
+					i(144142, { timeline = { ADDED_7_1_5 } }),	-- Frenzyswarm Bracers
+					i(144105, { timeline = { ADDED_7_1_5 } }),	-- Hive Protector's Gauntlets
+					i(144140, { timeline = { ADDED_7_1_5 } }),	-- Impervious Carapace
+					i(144218, { timeline = { ADDED_7_1_5 } }),	-- Klatith, Fangs of the Swarm
+					i(144104, { timeline = { ADDED_7_1_5 } }),	-- Shield of the Protectorate
+					i(143991, { timeline = { ADDED_7_1_5 } }),	-- Shoulders of Engulfing Winds
+					i(143955, { timeline = { ADDED_7_1_5 } }),	-- Swarmbringer Chestguards
+					i(143984, { timeline = { ADDED_7_1_5 } }),	-- Treads of Fixation
+					i(143977, { timeline = { ADDED_7_1_5 } }),	-- Wall-Breaker Legguards
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				e(655, {	-- Saboteur Kip'tilak
-					crs = { 56906 },	-- Saboteur Kip'tilak
-					groups = {
-						-- Available
-						i(144018, {	-- Fallout-Filtering Hood
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144102, {	-- Pendant of Precise Timing
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144134, {	-- Grenadier's Belt
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144100, {	-- Saboteur's Stabilizing Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144135, {	-- Pulled Grenade Pin
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80920, {	-- Fallout Filter
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80934, {	-- Pendant of Precise Timing
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80921, {	-- Saboteur's Stabilizing Bracers
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+			Difficulty(DIFFICULTY.DUNGEON.NORMAL).AddGroups({
+				BossOnly(KIPTILAK, {
+					i(80920, { timeline = { REMOVED_7_1_5 } }),	-- Fallout Filter
+					i(80934, { timeline = { REMOVED_7_1_5 } }),	-- Pendant of Precise Timing
+					i(80921, { timeline = { REMOVED_7_1_5 } }),	-- Saboteur's Stabilizing Bracers
 				}),
-				e(675, {	-- Striker Ga'dok
-					crs = { 56589 },	-- Striker Ga'dok
-					groups = {
-						-- Available
-						i(143980, {	-- Acid-Scarred Spaulders
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144137, {	-- Bomber's Precision Gloves
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144095, {	-- Impaler's Girdle
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143983, {	-- Airstream Treads
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144136, {	-- Vision of the Predator
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80924, {	-- Acid-Scarred Spaulders
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80923, {	-- Impaler's Girdle
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80922, {	-- Airstream Treads
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(GADOK, {
+					i(80924, { timeline = { REMOVED_7_1_5 } }),	-- Acid-Scarred Spaulders
+					i(80922, { timeline = { REMOVED_7_1_5 } }),	-- Airstream Treads
+					i(80923, { timeline = { REMOVED_7_1_5 } }),	-- Impaler's Girdle
 				}),
-				e(676, {	-- Commander Ri'mok
-					crs = { 56636 },	-- Commander Ri'mok
-					groups = {
-						-- Available
-						i(144098, {	-- Mantid Trochanter
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144019, {	-- Swarmcall Helm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144138, {	-- Ri'mok's Shattered Scale
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143982, {	-- Leggings of the Frenzy
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144139, {	-- Viscous Ring
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80933, {	-- Mantid Trochanter
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80925, {	-- Swarmcall Helm
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80926, {	-- Leggings of the Frenzy
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(RIMOK, {
+					i(80926, { timeline = { REMOVED_7_1_5 } }),	-- Leggings of the Frenzy
+					i(80933, { timeline = { REMOVED_7_1_5 } }),	-- Mantid Trochanter
+					i(80925, { timeline = { REMOVED_7_1_5 } }),	-- Swarmcall Helm
 				}),
-				e(649, {	-- Raigonn
-					crs = { 56877 },	-- Raigonn
-					groups = {
-						-- Available
-						i(144218, {	-- Klatith, Fangs of the Swarm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144101, {	-- Carapace Breaker
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144140, {	-- Impervious Carapace
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144104, {	-- Shield of the Protectorate
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144141, {	-- Drape of the Screeching Swarm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143991, {	-- Shoulders of Engulfing Winds
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143955, {	-- Swarmbringer Chestguards
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144142, {	-- Frenzyswarm Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144105, {	-- Hive Protector's Gauntlets
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143977, {	-- Wall-Breaker Legguards
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143984, {	-- Treads of Fixation
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(80932, {	-- Carapace Breaker
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80931, {	-- Shield of the Protectorate
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80930, {	-- Swarmbringer Chestguards
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80927, {	-- Hive Protector's Gauntlets
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80929, {	-- Wall-Breaker Legguards
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(80928, {	-- Treads of Fixation
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(RAIGONN, {
+					i(80932, { timeline = { REMOVED_7_1_5 } }),	-- Carapace Breaker
+					i(80927, { timeline = { REMOVED_7_1_5 } }),	-- Hive Protector's Gauntlets
+					i(80931, { timeline = { REMOVED_7_1_5 } }),	-- Shield of the Protectorate
+					i(80930, { timeline = { REMOVED_7_1_5 } }),	-- Swarmbringer Chestguards
+					i(80928, { timeline = { REMOVED_7_1_5 } }),	-- Treads of Fixation
+					i(80929, { timeline = { REMOVED_7_1_5 } }),	-- Wall-Breaker Legguards
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 				n(ACHIEVEMENTS, {
 					ach(6476),	-- Conscriptinator
 				}),
-				e(655, {	-- Saboteur Kip'tilak
-					crs = { 56906 },	-- Saboteur Kip'tilak
-					groups = {
-						-- Available
-						ach(6479),	-- Bomberman
-						i(144018, {	-- Fallout-Filtering Hood
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144102, {	-- Pendant of Precise Timing
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144134, {	-- Grenadier's Belt
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144100, {	-- Saboteur's Stabilizing Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144135, {	-- Pulled Grenade Pin
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81104, {	-- Fallout-Filtering Hood
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81095, {	-- Pendant of Precise Timing
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81190, {	-- Grenadier's Belt
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81090, {	-- Saboteur's Stabilizing Bracers
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81191, {	-- Pulled Grenade Pin
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(KIPTILAK, {
+					ach(6479),	-- Bomberman
+					i(81104, { timeline = { REMOVED_7_1_5 } }),	-- Fallout-Filtering Hood
+					i(81190, { timeline = { REMOVED_7_1_5 } }),	-- Grenadier's Belt
+					i(81095, { timeline = { REMOVED_7_1_5 } }),	-- Pendant of Precise Timing
+					i(81191, { timeline = { REMOVED_7_1_5 } }),	-- Pulled Grenade Pin
+					i(81090, { timeline = { REMOVED_7_1_5 } }),	-- Saboteur's Stabilizing Bracers
 				}),
-				e(675, {	-- Striker Ga'dok
-					crs = { 56589 },	-- Striker Ga'dok
-					groups = {
-						-- Available
-						i(143980, {	-- Acid-Scarred Spaulders
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144137, {	-- Bomber's Precision Gloves
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144095, {	-- Impaler's Girdle
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143983, {	-- Airstream Treads
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144136, {	-- Vision of the Predator
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81098, {	-- Acid-Scarred Spaulders
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81229, {	-- Bomber's Precision Gloves
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81085, {	-- Impaler's Girdle
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81111, {	-- Airstream Treads
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81192, {	-- Vision of the Predator
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(GADOK, {
+					i(81098, { timeline = { REMOVED_7_1_5 } }),	-- Acid-Scarred Spaulders
+					i(81111, { timeline = { REMOVED_7_1_5 } }),	-- Airstream Treads
+					i(81229, { timeline = { REMOVED_7_1_5 } }),	-- Bomber's Precision Gloves
+					i(81085, { timeline = { REMOVED_7_1_5 } }),	-- Impaler's Girdle
+					i(81192, { timeline = { REMOVED_7_1_5 } }),	-- Vision of the Predator
 				}),
-				e(676, {	-- Commander Ri'mok
-					crs = { 56636 },	-- Commander Ri'mok
-					groups = {
-						-- Available
-						i(144098, {	-- Mantid Trochanter
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144019, {	-- Swarmcall Helm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144138, {	-- Ri'mok's Shattered Scale
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143982, {	-- Leggings of the Frenzy
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144139, {	-- Viscous Ring
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(81088, {	-- Mantid Trochanter
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81105, {	-- Swarmcall Helm
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81230, {	-- Ri'mok's Shattered Scale
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81106, {	-- Leggings of the Frenzy
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81232, {	-- Viscous Ring
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(RIMOK, {
+					i(81106, { timeline = { REMOVED_7_1_5 } }),	-- Leggings of the Frenzy
+					i(81088, { timeline = { REMOVED_7_1_5 } }),	-- Mantid Trochanter
+					i(81230, { timeline = { REMOVED_7_1_5 } }),	-- Ri'mok's Shattered Scale
+					i(81105, { timeline = { REMOVED_7_1_5 } }),	-- Swarmcall Helm
+					i(81232, { timeline = { REMOVED_7_1_5 } }),	-- Viscous Ring
 				}),
-				e(649, {	-- Raigonn
-					crs = { 56877 },	-- Raigonn
-					groups = {
-						-- Available
-						ach(6759),	-- Heroic: Gate of the Setting Sun
-						ach(6768),	-- Heroic: Gate of the Setting Sun Guild Run
-						i(144218, {	-- Klatith, Fangs of the Swarm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144101, {	-- Carapace Breaker
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144140, {	-- Impervious Carapace
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144104, {	-- Shield of the Protectorate
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144141, {	-- Drape of the Screeching Swarm
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143991, {	-- Shoulders of Engulfing Winds
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143955, {	-- Swarmbringer Chestguards
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144142, {	-- Frenzyswarm Bracers
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(144105, {	-- Hive Protector's Gauntlets
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143977, {	-- Wall-Breaker Legguards
-							timeline = { ADDED_7_1_5 },
-						}),
-						i(143984, {	-- Treads of Fixation
-							timeline = { ADDED_7_1_5 },
-						}),
-
-						-- Removed
-						i(87546, {	-- Klatith, Fangs of the Swarm
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81094, {	-- Carapace Breaker
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81233, {	-- Impervious Carapace
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81097, {	-- Shield of the Protectorate
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81234, {	-- Drape of the Screeching Swarm
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81235, {	-- Shoulders of Engulfing Winds
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81109, {	-- Swarmbringer Chestguards
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81236, {	-- Frenzyswarm Bracers
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81100, {	-- Hive Protector's Gauntlets
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81091, {	-- Wall-Breaker Legguards
-							timeline = { REMOVED_7_1_5 },
-						}),
-						i(81112, {	-- Treads of Fixation
-							timeline = { REMOVED_7_1_5 },
-						}),
-					},
+				BossOnly(RAIGONN, {
+					ach(6759),	-- Heroic: Gate of the Setting Sun
+					ach(6768),	-- Heroic: Gate of the Setting Sun Guild Run
+					i(81094, { timeline = { REMOVED_7_1_5 } }),	-- Carapace Breaker
+					i(81234, { timeline = { REMOVED_7_1_5 } }),	-- Drape of the Screeching Swarm
+					i(81236, { timeline = { REMOVED_7_1_5 } }),	-- Frenzyswarm Bracers
+					i(81100, { timeline = { REMOVED_7_1_5 } }),	-- Hive Protector's Gauntlets
+					i(81233, { timeline = { REMOVED_7_1_5 } }),	-- Impervious Carapace
+					i(87546, { timeline = { REMOVED_7_1_5 } }),	-- Klatith, Fangs of the Swarm
+					i(81097, { timeline = { REMOVED_7_1_5 } }),	-- Shield of the Protectorate
+					i(81235, { timeline = { REMOVED_7_1_5 } }),	-- Shoulders of Engulfing Winds
+					i(81109, { timeline = { REMOVED_7_1_5 } }),	-- Swarmbringer Chestguards
+					i(81112, { timeline = { REMOVED_7_1_5 } }),	-- Treads of Fixation
+					i(81091, { timeline = { REMOVED_7_1_5 } }),	-- Wall-Breaker Legguards
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, {
-				timeline = { REMOVED_6_0_2 },
-				groups = {
-					challengemaster(ach(8434, {	-- Challenge Master: Gate of the Setting Sun
-						timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
-						groups = {
-							title(241),	-- <Name>, Defender of the Wall
-						},
-					})),
-					ach(6894),	-- Gate of the Setting Sun Challenger
-					ach(6905),	-- Gate of the Setting Sun: Bronze
-					ach(6906),	-- Gate of the Setting Sun: Silver
-					ach(6907, {	-- Gate of the Setting Sun: Gold
-						spell(131225),	-- Path of the Setting Sun
-					}),
-					-- #if ANYCLASSIC
-					ach(61971, {	-- Gate of the Setting Sun: Platinum
-						i(265418),	-- Platinum Rod of Ambershaping
-					}),
-					-- #endif
-				},
+			Difficulty(DIFFICULTY.DUNGEON.CHALLENGE_MODE, { timeline = { REMOVED_6_0_2 } }).AddGroups({
+				challengemaster(ach(8434, {	-- Challenge Master: Gate of the Setting Sun
+					timeline = { ADDED_5_4_0, REMOVED_6_0_2 },
+					groups = { title(241) },	-- <Name>, Defender of the Wall
+				})),
+				ach(6894),	-- Gate of the Setting Sun Challenger
+				ach(6905),	-- Gate of the Setting Sun: Bronze
+				ach(6906),	-- Gate of the Setting Sun: Silver
+				ach(6907, {	-- Gate of the Setting Sun: Gold
+					spell(131225),	-- Path of the Setting Sun
+				}),
+				-- #if ANYCLASSIC
+				ach(61971, {	-- Gate of the Setting Sun: Platinum
+					i(265418),	-- Platinum Rod of Ambershaping
+				}),
+				-- #endif
 			}),
 			-- #if ANYCLASSIC
 			applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_MSV, n(CELESTIAL_DUNGEON_DIFFICULTY, {
@@ -437,12 +188,12 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						},
 						-- #if BEFORE 5.5.3
 						{	-- Season 1 Drops
-							i(86799),	-- Starshatter
-							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86889)),	-- Taoren, the Soul Burner (Terrace)
 							i(86764),	-- Eye of the Ancient Spirit
 							i(89971),	-- Mindshard Drape
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_HOF, i(86851)),	-- Painful Thorned Ring (HoF)
 							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86885)),	-- Spirits of the Sun (Terrace)
+							i(86799),	-- Starshatter
+							applyclassicphase(MOP_PHASE_ONE_CELESTIAL_DUNGEONS_TOES, i(86889)),	-- Taoren, the Soul Burner (Terrace)
 						},
 						-- #elseif BEFORE 5.5.4
 						applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING_CELESTIAL_DUNGEONS, {	-- Season 2 Drops
