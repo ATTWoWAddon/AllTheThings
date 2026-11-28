@@ -62,14 +62,14 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		timeline = { ADDED_1_14_3, REMOVED_1_15_0 },	-- NOTE: You could only acquire this during Season of Mastery, but it didn't appear on your account until Wrath Classic.
 		OnUpdate = [[function(t)
 			if t.collectible and _.Level >= 60 then
-				local i, spellID = 1, select(10, UnitBuff("player", 1));
-				while spellID do
-					if spellID == 364001 then
+				local i, aura = 1, _.WOWAPI.GetBuffDataByIndex("player", 1);
+				while aura and aura.spellId do
+					if aura.spellId == 364001 then
 						t:SetAchievementCollected(t.achievementID, true);
 						return false;
 					end
 					i = i + 1;
-					spellID = select(10, UnitBuff("player", i));
+					aura = _.WOWAPI.GetBuffDataByIndex("player", i);
 				end;
 				t:SetAchievementCollected(t.achievementID, false);
 			end

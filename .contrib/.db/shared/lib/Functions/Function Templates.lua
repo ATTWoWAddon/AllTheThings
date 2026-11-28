@@ -29,7 +29,8 @@ FUNCTION_TEMPLATES = {
 				t.ShouldExcludeFromTooltipHelper = function(t)
 					local target = UnitExists("mouseover") and "mouseover" or "target";
 					for i=1,10,1 do
-						local id = select(10, UnitBuff(target,i));
+						local aura = _.WOWAPI.GetBuffDataByIndex(target, i);
+						local id = aura and aura.spellId;
 						if id then
 							if buffs[id] then return false; end
 						else
@@ -96,17 +97,12 @@ FUNCTION_TEMPLATES = {
 		ExportDB.OnTooltipDB[OnTooltipName] = [[~function(t,tooltipInfo)
 			local s = ]]..spellID..[[
 			if not (_.CurrentCharacter.Spells[s] or _.IsSpellKnownHelper(s)) then return end
-			local start, duration
-			if C_Spell and C_Spell.GetSpellCooldown then
-				local info = C_Spell.GetSpellCooldown(s)
-				if info then start, duration = info.startTime, info.duration end
-			else
-				start, duration = GetSpellCooldown(s)
-			end
+			local start, duration = _.WOWAPI.GetSpellCooldown(s)
+			if _.WOWAPI.issecretvalue(start) or _.WOWAPI.issecretvalue(duration) then return end
 			local n = _.WOWAPI.GetSpellName(s) or RETRIEVING_DATA
 			local remaining = (start and start > 0 and duration) and (start + duration - GetTime()) or 0
 			if remaining > 0 then
-				tooltipInfo[#tooltipInfo+1] = { left = n, right = SecondsToTime(remaining), r = 1, g = 0.5, b = 0.5 }
+				tooltipInfo[#tooltipInfo+1] = { left = n, right = _.WOWAPI.SecondsToTime(remaining), r = 1, g = 0.5, b = 0.5 }
 			else
 				tooltipInfo[#tooltipInfo+1] = { left = n, right = "Ready", r = 0.5, g = 1, b = 0.5 }
 			end
