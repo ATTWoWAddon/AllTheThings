@@ -17,7 +17,7 @@ maproot(BROKEN_ISLES, AZSUNA, {
 				i(133036),	-- Ravenous Seed
 				i(133035),	-- Myzrael Shard
 				i(133034),	-- Were-Yeti Paw
-				i(133033),	-- Sorceror's Ember
+				i(133033),	-- Sorcerer's Ember
 				i(133032),	-- Fel-Fire Demon Claw
 				i(133031),	-- Rare White Tiger Heart
 				i(133030),	-- 'Procured' Kirin Tor Wand Tip
@@ -219,7 +219,7 @@ maproot(BROKEN_ISLES, AZSUNA, {
 			provider = { "n", 102988 },	-- Archmage Khadgar
 			coord = { 49.7, 26.8, AZSUNA },
 			groups = {
-				i(121435),	-- Leywalker Robes
+				i(121435),	-- Leywalker Robe
 				i(121418),	-- Ruin-Stalker Vest
 				i(121417),	-- Seaspray Vest
 				i(121416),	-- Nar'thalas Chestplate
@@ -306,7 +306,7 @@ maproot(BROKEN_ISLES, AZSUNA, {
 				i(133012),	-- Senegos' Resolve
 				i(133011),	-- Leyhollow Frost
 				i(133010),	-- Azure Flame
-				i(133009),	-- Corrupted Ley Crystal
+				i(133009),	-- Corrupted Ley-Crystal
 				i(133008),	-- Azurewing Blood
 				i(133007),	-- Everlasting Construct Core
 				i(133006),	-- Blessed Llothien Stone

@@ -11,7 +11,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			lvl = 110,
 			groups = {
 				n(RELICS, {
-					un(REMOVED_FROM_GAME, i(156805)),	-- Bloodtotem Band
+					un(REMOVED_FROM_GAME, i(156805)),	-- Bloodtotem Brand
 					un(REMOVED_FROM_GAME, i(156804)),	-- Bloody Kvaldir Pennant
 					un(REMOVED_FROM_GAME, i(156821)),	-- Darkened Brulstone
 					un(REMOVED_FROM_GAME, i(156810)),	-- Felskorn Mania

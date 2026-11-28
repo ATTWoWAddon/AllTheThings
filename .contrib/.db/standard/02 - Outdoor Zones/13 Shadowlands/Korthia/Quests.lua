@@ -1047,7 +1047,7 @@ maproot(SHADOWLANDS, KORTHIA, {
 					{ 61.6, 21.8, KORTHIA },
 				},
 				groups = {
-					i(185636),	-- The Archivist's Codex
+					i(185636),	-- The Archivists' Codex
 					i(185916),	-- Codex of Memories (QI!)
 				},
 			}),
@@ -1121,7 +1121,7 @@ maproot(SHADOWLANDS, KORTHIA, {
 			}),
 			q(63921, {	-- Ring of Self Reflection
 				sourceQuests = { 64511 },	-- Missing Relics
-				provider = { "i", 187119 },	-- Ring of Self Reflection
+				provider = { "i", 187119 },	-- Ring of Self-Reflection
 				coord = { 43.8, 76.9, KORTHIA },
 				groups = {
 					i(187140),	-- Ring of Duplicity (TOY!)
@@ -1676,7 +1676,7 @@ maproot(SHADOWLANDS, KORTHIA, {
 				provider = { "n", 178808 },	-- Baroness Draka
 				coord = { 60.7, 27.9, KORTHIA },
 			}),
-			q(64040, {	-- Once More, With Healing
+			q(64040, {	-- Once More, with Healing
 				sourceQuests = { 64556 },	-- In Need of Assistance
 				provider = { "n", 179194 },	-- Kleia
 				coord = { 61.6, 24.1, KORTHIA },

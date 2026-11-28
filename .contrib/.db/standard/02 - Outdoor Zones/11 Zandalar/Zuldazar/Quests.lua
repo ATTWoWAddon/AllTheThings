@@ -149,7 +149,7 @@ maproot(ZANDALAR, ZULDAZAR, {
 					coord = { 51.56, 58.06, ZULDAZAR },
 					races = HORDE_ONLY,
 					groups = {
-						i(163604, {	-- Net-O-Matic 5000
+						i(163604, {	-- Net-o-Matic 5000
 							filterID = CONSUMABLES,
 						}),
 					},

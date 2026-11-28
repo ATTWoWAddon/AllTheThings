@@ -138,7 +138,7 @@ i(118661, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Xelganak's Stinger [Ste
 i(120172, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Vileclaw's Claw [Steamwheedle Preservation]
 i(117492, FACTION_ARAKKOA_OUTCASTS);					-- Relic of Rukhmar [Arakkoa Outcasts]
 -- Timewalking Vendor Commendations
-i(167924, FACTION_ARAKKOA_OUTCASTS);					-- Commendation of the Arakkoa Outcast
+i(167924, FACTION_ARAKKOA_OUTCASTS);					-- Commendation of the Arakkoa Outcasts
 i(167926, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Commendation of the Steamwheedle Preservation Society
 i(167925, FACTION_ORDER_OF_THE_AWAKENED);				-- Commendation of the Order of the Awakened
 i(167927, FACTION_THE_SABERSTALKERS);					-- Commendation of the Saberstalkers

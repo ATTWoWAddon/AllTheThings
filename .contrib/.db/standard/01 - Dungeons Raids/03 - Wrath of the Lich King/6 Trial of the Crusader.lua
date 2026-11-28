@@ -1394,8 +1394,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						h(i(47856)),	-- Scepter of Imprisoned Souls
 						a(i(47607)),	-- Collar of Ceaseless Torment
 						h(i(47849)),	-- Collar of Unending Torment
-						h(i(47857)),	-- Pauldrons of the Glacial Winds
-						a(i(47613)),	-- Shoulderpads of the Glacial Winds
+						h(i(47857)),	-- Pauldrons of the Glacial Wilds
+						a(i(47613)),	-- Shoulderpads of the Glacial Wilds
 						h(i(47860)),	-- Pauldrons of the Spirit Walker
 						a(i(47616)),	-- Shoulderguards of the Spirit Walker
 						a(i(47610)),	-- Armbands of the Northern Stalker
@@ -1614,8 +1614,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						h(i(47995)),	-- Scepter of Imprisoned Souls
 						a(i(47915)),	-- Collar of Ceaseless Torment
 						h(i(47988)),	-- Collar of Unending Torment
-						h(i(47996)),	-- Pauldrons of the Glacial Winds
-						a(i(47923)),	-- Shoulderpads of the Glacial Winds
+						h(i(47996)),	-- Pauldrons of the Glacial Wilds
+						a(i(47923)),	-- Shoulderpads of the Glacial Wilds
 						h(i(47999)),	-- Pauldrons of the Spirit Walker
 						a(i(47926)),	-- Shoulderguards of the Spirit Walker
 						a(i(47916)),	-- Armbands of the Northern Stalker
@@ -1853,7 +1853,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							h(ig(48669)),	-- Cloak of the Triumphant Combatant
 							h(ig(48670)),	-- Cloak of the Unflinching Guardian
 							a(ig(48675)),	-- Cloak of the Unmoving Guardian
-							a(ig(48674)),	-- Cloak of the Victorous Combatant
+							a(ig(48674)),	-- Cloak of the Victorious Combatant
 							a(ig(48671)),	-- Drape of Bitter Incantation
 							h(ig(48666)),	-- Drape of the Sunreavers
 							a(ig(48672)),	-- Shawl of Fervent Crusader

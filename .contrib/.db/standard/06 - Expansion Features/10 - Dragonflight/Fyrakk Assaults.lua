@@ -212,7 +212,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					i(205258),	-- Everburning Shadowflame
 					i(200453),	-- Iskaara Tuskarr Insignia [Rare]
 					i(200454),	-- Maruuk Centaur Insignia [Rare]
-					i(204076, {	-- Drake's Shadowflame Crest Fragments
+					i(204076, {	-- Drake's Shadowflame Crest Fragment
 						timeline = { REMOVED_10_2_0 },
 					}),
 					n(BACK, {

@@ -342,7 +342,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 				qg = 56204,	-- Pang Thunderfoot
 				coord = { 83.7, 21.1, VALLEY_OF_THE_FOUR_WINDS },
 				groups = {
-					i(81769),	-- Silkmaster's Satin Leggings
+					i(81769),	-- Silkmasters' Satin Leggings
 					i(81770),	-- Sunsoaked Legguards
 					i(81771),	-- Huangtze Scale Leggings
 					i(81772),	-- Paoquan Burnished Legplates
@@ -445,7 +445,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 				qg = 56133,	-- Chen Stormstout
 				coord = { 83.6, 21.5, VALLEY_OF_THE_FOUR_WINDS },
 				groups = {
-					i(81742),	-- Silkmaster's Satin Hood
+					i(81742),	-- Silkmasters' Satin Hood
 					i(81743),	-- Sunsoaked Helm
 					i(81744),	-- Huangtze Scale Helm
 					i(81745),	-- Paoquan Burnished Headcover
@@ -499,7 +499,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 				qg = 56720,	-- Loon Mai
 				coord = { 19.5, 56.9, VALLEY_OF_THE_FOUR_WINDS },
 				groups = {
-					i(88027),	-- Silkmaster's Satin Pauldrons
+					i(88027),	-- Silkmasters' Satin Pauldrons
 					i(88026),	-- Sunsoaked Pauldron
 					i(88025),	-- Huangtze Scale Pauldrons
 					i(88024),	-- Paoquan Burnished Pauldrons
@@ -707,7 +707,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 					o(209921, {	-- Muddy Water
 						i(76356),	-- Stoppered Vial of Muddy Water (QI!)
 					}),
-					i(81778),	-- Silkmaster's Satin Treads
+					i(81778),	-- Silkmasters' Satin Treads
 					i(81779),	-- Sunsoaked Footguards
 					i(81780),	-- Huangtze Scale Sabatons
 					i(81781),	-- Paoquan Burnished Greaves
@@ -794,7 +794,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 				qg = 57408,	-- Mina Mudclaw
 				coord = { 41.3, 38.2, VALLEY_OF_THE_FOUR_WINDS },
 				groups = {
-					i(81751),	-- Silkmaster's Satin Mantle
+					i(81751),	-- Silkmasters' Satin Mantle
 					i(81752),	-- Sunsoaked Spaulder
 					i(81753),	-- Huangtze Scale Spaulders
 					i(81754),	-- Paoquan Burnished Spaulders
@@ -809,7 +809,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 				qg = 56802,	-- Zhang Yue
 				coord = { 59.8, 27.8, VALLEY_OF_THE_FOUR_WINDS },
 				groups = {
-					i(81805),	-- Silkmaster's Satin Cuffs
+					i(81805),	-- Silkmasters' Satin Cuffs
 					i(81806),	-- Sunsoaked Bindings
 					i(81807),	-- Huangtze Scale Armbands
 					i(81808),	-- Paoquan Burnished Bracers
@@ -885,7 +885,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 					o(209892, {	-- Stolen Watermelon
 						i(76298),	-- Stolen Watermelon (QI!)
 					}),
-					i(81796),	-- Silkmaster's Satin Gloves
+					i(81796),	-- Silkmasters' Satin Gloves
 					i(81797),	-- Sunsoaked Gloves
 					i(81798),	-- Huangtze Scale Gauntlets
 					i(81799),	-- Paoquan Burnished Gloves
@@ -1020,7 +1020,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 					i(88016),	-- Paoquan Burnished Cap
 					i(88015),	-- Huangtze Scale Headguard
 					i(88014),	-- Sunsoaked Cap
-					i(88013),	-- Silkmaster's Satin Cap
+					i(88013),	-- Silkmasters' Satin Cap
 					i(88012),	-- Gilded Fan Silk Cap
 					i(88011),	-- Wild Plains Headguard
 					i(88010),	-- Plainshawk Cap
@@ -1040,7 +1040,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 				coord = { 52.7, 63.0, VALLEY_OF_THE_FOUR_WINDS },
 				groups = {
 					i(77034),	-- Malted Cave Barley (QI!)
-					i(81787),	-- Silkmaster's Satin Cord
+					i(81787),	-- Silkmasters' Satin Cord
 					i(81788),	-- Sunsoaked Belt
 					i(81789),	-- Huangtze Scale Waistguard
 					i(81790),	-- Paoquan Burnished Clasp
@@ -1137,7 +1137,7 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 				qg = 56714,	-- Master Bruised Paw (18.3,31.2)
 				coord = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
 				groups = {
-					i(81760),	-- Silkmaster's Satin Robe
+					i(81760),	-- Silkmasters' Satin Robe
 					i(81761),	-- Sunsoaked Breastplate
 					i(81762),	-- Huangtze Scale Armor
 					i(81763),	-- Paoquan Burnished Chestguard
@@ -2124,8 +2124,8 @@ maproot(PANDARIA, VALLEY_OF_THE_FOUR_WINDS, {
 						moh(1, i(84362)),	-- Dreadful Gladiator's Drape of Prowess
 					}),
 					n(WRIST, {
-						moh(1, i(84471)),	-- Dreadful  Gladiator's Armbands of Meditation
-						moh(1, i(84470)),	-- Dreadful  Gladiator's Armbands of Prowess
+						moh(1, i(84471)),	-- Dreadful Gladiator's Armbands of Meditation
+						moh(1, i(84470)),	-- Dreadful Gladiator's Armbands of Prowess
 						moh(1, i(84439)),	-- Dreadful Gladiator's Armplates of Alacrity
 						moh(1, i(84438)),	-- Dreadful Gladiator's Armplates of Proficiency
 						moh(1, i(84461)),	-- Dreadful Gladiator's Armwraps of Accuracy

@@ -1041,7 +1041,7 @@ local SCHOLOMANCE_LEGACY_DATA = {
 			i(207060, {	-- Skeletal Knight's Buckler
 				timeline = { ADDED_10_1_5 },
 			}),
-			i(207059, {	-- Skeletal Knights Blade
+			i(207059, {	-- Skeletal Knight's Blade
 				timeline = { ADDED_10_1_5 },
 			}),
 			applyclassicphase(PHASE_FIVE, i(23201, {	-- Libram of Divinity

@@ -111,7 +111,7 @@ root(ROOTS.Unsorted, {
 			i(205801),	-- Handguards of the Onyx Crucible
 			i(238534),	-- Vial of Harandar Oddities
 			i(255702),	-- [PH] Snake Corpse
-			i(260238),	-- Pus-filled Murloc Eye
+			i(260238),	-- Pus-Filled Murloc Eye
 			i(260242),	-- Femur of Ba'tik
 			i(260243),	-- Vileroot
 			i(260426),	-- Bloodied Whetstone
@@ -159,7 +159,7 @@ root(ROOTS.Unsorted, {
 			i(274457),	-- Emperor Crab
 			i(274458),	-- Kun-Lai Runt
 			i(274459),	-- Squirky
-			i(274465),	-- Aggitated Crate of Zandalari Fury
+			i(274465),	-- Agitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
 			i(274680),	-- Loa-Blessed Orb
 			i(274767),	-- Seaside Lounge Chair
@@ -313,7 +313,7 @@ root(ROOTS.Unsorted, {
 			i(279090),	-- [ph] Ensemble: SpiceWitch Hallow Attire
 			i(279137),	-- [ph] SpiceWitch Shoulders 02 - Green
 			i(279139),	-- [ph] SpiceWitch Shoulders 02 - Hallow
-			i(279147),	-- Unrecognizable bone
+			i(279147),	-- Unrecognizable Bone
 			i(279151),	-- [ph] SpiceWitch Head 02 - Green
 			i(279155),	-- [ph] SpiceWitch Head 02 - Green (Hair Vis)
 			i(279159),	-- [ph] SpiceWitch Head 02 - Hallow
@@ -2570,7 +2570,7 @@ root(ROOTS.Unsorted, {
 			i(169342),	-- Relinquished Azerite Chestpiece
 			i(169343),	-- Relinquished Azerite Chestpiece
 			i(169386),	-- Elune's Favor
-			i(169446),	-- Water Filled Bladder
+			i(169446),	-- Water-Filled Bladder
 			i(169447),	-- Air Filled Bladder \\ Air Filled Bladder - NYI
 			i(169590),	-- Burgeoning Battlefield Furor \\ Azeroth's Undying Gift
 			i(169615),	-- Small Skull

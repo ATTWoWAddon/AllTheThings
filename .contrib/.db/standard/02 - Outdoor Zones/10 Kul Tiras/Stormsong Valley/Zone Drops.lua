@@ -25,7 +25,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 					130039,	-- Brinebrawn Cannoneer
 					135585,	-- Drowned Ascendant
 					131404,	-- Foreman Scripps
-					138170,	-- Irontide  Cutthroat
+					138170,	-- Irontide Cutthroat
 					138167,	-- Irontide Trickshot
 					131646,	-- Panicked Tunneler
 					130531,	-- Shipwright Turncoat

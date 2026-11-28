@@ -369,7 +369,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					ach(13724),	-- A Smack of Jellyfish
 				}),
 				BossOnly(COURT, {
-					ach(13633),	-- If It Please the Court
+					ach(13633),	-- If It Pleases the Court
 				}),
 				BossOnly(ZAQUL, {
 					ach(13716),	-- Lactose Intolerant

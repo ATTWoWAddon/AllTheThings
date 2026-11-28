@@ -94,7 +94,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 			q(92062, {	-- Tending the Roots
 				coord = { 35.9, 24.6, MAP.MIDNIGHT.HARANDAR },
 			}),
-			q(91802, {	-- The Best Bites are Bog Bugs
+			q(91802, {	-- The Best Bites Are Bog Bugs
 				coord = { 43.2, 61.3, MAP.MIDNIGHT.HARANDAR },
 				qi = 260453,	-- Leech Tick (QI!)
 			}),

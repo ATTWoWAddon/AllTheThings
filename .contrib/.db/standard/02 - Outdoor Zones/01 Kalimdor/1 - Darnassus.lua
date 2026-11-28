@@ -499,7 +499,7 @@ maproot(KALIMDOR, DARNASSUS, {
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
-					i(6973),	-- Fire hardened Leggings
+					i(6973),	-- Fire Hardened Leggings
 				},
 			}),
 			q(1582, {	-- Moonglow Vest

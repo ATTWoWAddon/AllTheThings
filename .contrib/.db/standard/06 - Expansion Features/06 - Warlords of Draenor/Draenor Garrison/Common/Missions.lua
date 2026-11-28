@@ -290,7 +290,7 @@ root(ROOTS.ExpansionFeatures,
 							i(114075, {	-- Turbulent Spaulders
 								-- description = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								groups = {
-									i(114456),	-- Firelash Mantle
+									i(114456),	-- Fireflash Mantle
 									i(114457),	-- Spireflame Spaulders
 									i(114458),	-- Spaulders of Elemental Torment
 									i(114459),	-- Shoulderguard of Vaulted Skies
@@ -299,7 +299,7 @@ root(ROOTS.ExpansionFeatures,
 							i(114070, {	-- Turbulent Robes
 								-- description = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								groups = {
-									i(114439),	-- Firelash Robes
+									i(114439),	-- Fireflash Robes
 									i(114436),	-- Spireflame Chestguard
 									i(114437),	-- Chestguard of Elemental Torment
 									i(114438),	-- Breastplate of Vaulted Skies
@@ -308,7 +308,7 @@ root(ROOTS.ExpansionFeatures,
 							i(114069, {	-- Turbulent Bracers
 								-- description = "You must have level 100 active followers that are upgraded to 615 iLvl in order to get missions that reward Turbulent tokens.",
 								groups = {
-									i(114432),	-- Firelash Bracers
+									i(114432),	-- Fireflash Bracers
 									i(114433),	-- Spireflame Bracers
 									i(114434),	-- Bracers of Elemental Torment
 									i(114435),	-- Bracers of Vaulted Skies

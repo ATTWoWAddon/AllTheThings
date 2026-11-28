@@ -603,7 +603,7 @@ maproot(DRAENOR, STORMSHIELD, {
 					coord = { 50.7, 61.5, STORMSHIELD },
 					sym = {{"select","itemID",
 						116768,	-- Mosshide Riverwallow (MOUNT!)
-						119821,	-- Contact: Dawnseeker Rukaryx
+						119821,	-- Contract: Dawnseeker Rukaryx
 					}},
 					groups = {
 						i(115376, {	-- Crystal-Leaf Legguards
@@ -660,7 +660,7 @@ maproot(DRAENOR, STORMSHIELD, {
 					coord = { 50.0, 61.2, STORMSHIELD },
 					sym = {{"select","itemID",
 						116768,	-- Mosshide Riverwallow (MOUNT!)
-						119821,	-- Contact: Dawnseeker Rukaryx
+						119821,	-- Contract: Dawnseeker Rukaryx
 					}},
 					groups = {
 						i(116955, {	-- Crystal-Leaf Helm
@@ -717,7 +717,7 @@ maproot(DRAENOR, STORMSHIELD, {
 					coord = { 50.0, 61.6, STORMSHIELD },
 					sym = {{"select","itemID",
 						116768,	-- Mosshide Riverwallow (MOUNT!)
-						119821,	-- Contact: Dawnseeker Rukaryx
+						119821,	-- Contract: Dawnseeker Rukaryx
 					}},
 					groups = {
 						i(116967, {	-- Crystal-Leaf Bracers
@@ -774,7 +774,7 @@ maproot(DRAENOR, STORMSHIELD, {
 					coord = { 48.5, 62.3, STORMSHIELD },
 					sym = {{"select","itemID",
 						116768,	-- Mosshide Riverwallow (MOUNT!)
-						119821,	-- Contact: Dawnseeker Rukaryx
+						119821,	-- Contract: Dawnseeker Rukaryx
 					}},
 					groups = {
 						i(116945, {	-- Crystal-Leaf Gloves
@@ -831,7 +831,7 @@ maproot(DRAENOR, STORMSHIELD, {
 					coord = { 49.4, 61.3, STORMSHIELD },
 					sym = {{"select","itemID",
 						116768,	-- Mosshide Riverwallow (MOUNT!)
-						119821,	-- Contact: Dawnseeker Rukaryx
+						119821,	-- Contract: Dawnseeker Rukaryx
 					}},
 					groups = {
 						i(116976, {	-- Crystal Reinforced Doomcloak

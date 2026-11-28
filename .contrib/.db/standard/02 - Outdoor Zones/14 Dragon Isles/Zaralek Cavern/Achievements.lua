@@ -21,7 +21,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 					_quests = { 75834 },	-- Delver Mardei
 				}),
 				crit(59353, {	-- Do you Even Train?
-					_quests = { 75835 },	-- Do you Even Train?
+					_quests = { 75835 },	-- Do You Even Train?
 				}),
 			})),
 			ach(18100, {	-- Cavern Clawbbering
@@ -424,7 +424,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 					coord = { 32.15, 51.11, ZARALEK_CAVERN },
 				}),
 				crit(60002, {	-- Scuttering Bettle
-					crs = { 205213 },	-- Scuttering Bettle
+					crs = { 205213 },	-- Scuttering Beetle
 					coord = { 50.03, 64.69, ZARALEK_CAVERN },
 				}),
 			}),

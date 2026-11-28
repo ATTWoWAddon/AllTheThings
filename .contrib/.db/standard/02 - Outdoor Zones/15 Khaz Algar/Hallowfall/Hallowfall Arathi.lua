@@ -1366,7 +1366,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 					n(WORLD_QUESTS, sharedData({
 						isWorldQuest = true,
 					}, {
-						q(76586, {	-- Spreading The Light
+						q(76586, {	-- Spreading the Light
 							coord = { 55.3, 14.5, HALLOWFALL },
 							groups = {
 								container(226264, {	-- Radiant Cache

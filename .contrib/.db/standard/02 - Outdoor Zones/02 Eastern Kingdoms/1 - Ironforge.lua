@@ -875,7 +875,7 @@ maproot(EASTERN_KINGDOMS, IRONFORGE, {
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
-					i(6974),	-- Fire hardened Gauntlets
+					i(6974),	-- Fire Hardened Gauntlets
 				},
 			}),
 			applyclassicphase(CATA_PHASE_ONE, q(29347, {	-- Live Bait

@@ -688,7 +688,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.WRATH, run(MarkOfWHOOOWHATNow, {
 			}),
 			n(PVP_GLADIATOR, {
 				n(WEAPONS, {
-					moh(80, iensemble(146645, {	-- Arsenal: Deadly Gladiator's Weapon
+					moh(80, iensemble(146645, {	-- Arsenal: Deadly Gladiator's Weapons
 						timeline = { ADDED_7_2_0 },
 					})),
 					moh(2, i(42564)),	-- Deadly Gladiator's Barrier

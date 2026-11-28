@@ -815,7 +815,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(203810, {timeline = { ADDED_10_0_7 }}),	-- Gurubashi Carver
 			i(203806, {timeline = { ADDED_10_0_7 }}),	-- Gurubashi Crusher
 			i(203809, {timeline = { ADDED_10_0_7 }}),	-- Gurubashi Grinder
-			i(203797, {timeline = { ADDED_10_0_7 }}),	-- Gurubashi HexXxer
+			i(203797, {timeline = { ADDED_10_0_7 }}),	-- Gurubashi Hexxer
 			i(203812, {timeline = { ADDED_10_0_7 }}),	-- Gurubashi Poker
 			i(203801, {timeline = { ADDED_10_0_7 }}),	-- Gurubashi Slicer
 			-- #if AFTER TBC
@@ -4581,7 +4581,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(29159),	-- Glowing Thorium Band
 			i(20955),	-- Golden Dragon Ring
 			i(29157),	-- Golden Ring of Power
-			i(21932),	-- Heavy Cooper Ring
+			i(21932),	-- Heavy Copper Ring
 			i(30420),	-- Heavy Jade Ring
 			i(20826),	-- Heavy Silver Ring
 			i(20821),	-- Inlaid Malachite Ring
@@ -6549,7 +6549,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(8928),	-- Instant Poison VI
 		i(5237),	-- Mind-Numbing Poison
 		i(6951),	-- Mind-Numbing Poison II
-		i(9186),	-- Mind-Numbing Poison III
+		i(9186),	-- Mind-numbing Poison III
 		i(10918),	-- Wound Poison
 		i(10920),	-- Wound Poison II
 		i(10921),	-- Wound Poison III
@@ -6845,7 +6845,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(10027),	-- Black Mageweave Shoulders
 			i(9998),	-- Black Mageweave Vest
 			i(4336),	-- Black Swashbuckler's Shirt
-			i(203796, {timeline = { ADDED_10_0_7 }}),	-- Bloodlords Embrace
+			i(203796, {timeline = { ADDED_10_0_7 }}),	-- Bloodlord's Embrace
 			applyclassicphase(PHASE_FOUR, i(19684, {timeline = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodvine Boots
 			applyclassicphase(PHASE_FOUR, i(19683, {timeline = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodvine Leggings
 			applyclassicphase(PHASE_FOUR, i(19682, {timeline = { REMOVED_4_0_3, ADDED_10_0_7 }})),	-- Bloodvine Vest

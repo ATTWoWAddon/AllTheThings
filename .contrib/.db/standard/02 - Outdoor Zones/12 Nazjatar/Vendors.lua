@@ -636,7 +636,7 @@ maproot(NAZJATAR, {
 				races = HORDE_ONLY,
 				groups = {
 					i(168309),	-- Armwrap of Ocean Magic
-					i(168308),	-- Most Magnificient Small Shell of Shimmering
+					i(168308),	-- Most Magnificent Small Shell of Shimmering
 					i(168307),	-- Necklace of Most Beautiful Shells
 					i(168320),	-- Shiniest Roundiest Pearl of Goodness
 				},

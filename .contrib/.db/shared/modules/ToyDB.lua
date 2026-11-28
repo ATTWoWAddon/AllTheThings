@@ -244,7 +244,7 @@ i(40727);	-- Gnomish Gravity Well
 i(64358);	-- Highborne Soul Mirror
 i(64383);	-- Kaldorei Wind Chimes
 i(63269);	-- Loaded Gnomish Dice
-i(60854);	-- Loot-a-Rang
+i(60854);	-- Loot-A-Rang
 i(46709);	-- MiniZep Controller
 i(64881);	-- Pendant of the Scarab Storm
 i(64482);	-- Puzzle Box of Yogg-Saron
@@ -1164,7 +1164,7 @@ i(194056);	-- Duck-Stuffed Duck Lovie
 i(192443);	-- Element-Infused Rocket Helmet
 i(198206);	-- Environmental Emulator
 i(200116);	-- Everlasting Horn of Lavaswimming
-i(198728);	-- Explorer's League Banner
+i(198728);	-- Explorers' League Banner
 i(191937);	-- Falling Star Catcher
 i(191925);	-- Falling Star Flinger
 i(199894);	-- Fisherman's Folly Rack
@@ -1372,7 +1372,7 @@ i(210455);	-- Draenic Hologem
 i(217725);	-- Essence of Yu'lon
 i(217726);	-- Fortitude of Niuzao
 i(217723);	-- Fury of Xuen
-i(217724);	-- Kindness of Chi-ji
+i(217724);	-- Kindness of Chi-Ji
 i(223146);	-- Satchel of Stormborn Seeds
 i(220692);	-- X-treme Water Blaster Display
 
@@ -1463,12 +1463,12 @@ i(234950);	-- Atomic Regoblinator
 i(235670);	-- Bilgewater Cartel Banner
 i(235671);	-- Blackwater Cartel Banner
 i(230850);	-- Delve-O-Bot 7001
-i(235050);	-- Desk-In-A-Box
+i(235050);	-- Desk-in-a-Box
 i(226373);	-- Everlasting Noggenfogger Elixir
 i(236687);	-- Explosive Hearthstone
 i(230727);	-- Explosive Victory
 i(235220);	-- Fireworks Hat
-i(233202);	-- G.O.L.E.M Jr.
+i(233202);	-- G.O.L.E.M, Jr.
 i(236769);	-- Gallagio Pipeline Rerouter
 i(237345);	-- Limited Edition Rocket Bobber
 i(237347);	-- Organically-Sourced Wellington Bobber
@@ -1663,7 +1663,7 @@ i(280823);	-- Feathers of Akil'zon
 i(281136);	-- Hiveborne Hearthstone
 i(286643);	-- Kinduru's Spiriting Quill
 i(284159);	-- Libram of the Matriarch
-i(280820);	-- Loa Blessed Victory
+i(280820);	-- Loa-Blessed Victory
 i(280822);	-- Nalorakk's Strength Charm
 i(284572);	-- Rexxar's Companion Transformation
 i(280825);	-- Rite of Jan'alai's Flame

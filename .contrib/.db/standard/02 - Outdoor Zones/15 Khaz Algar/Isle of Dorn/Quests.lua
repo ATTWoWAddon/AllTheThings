@@ -1015,7 +1015,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 					i(223456),	-- Algari Cinch
 					i(223464),	-- Algari Heavy Gauntlets
 					i(223441),	-- Algari Scouting Boots
-					i(223424),	-- Algari-Weave Cord
+					i(223424),	-- Algari-weave Cord
 				},
 			}),
 		}),

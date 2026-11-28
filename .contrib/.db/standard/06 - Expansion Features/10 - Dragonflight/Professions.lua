@@ -37,7 +37,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				provider = { "n", 192498 },	-- Haephesta
 				coord = { 57.9, 68.2, THE_WAKING_SHORES },
 				groups = {
-					i(198790),	-- I.O.U
+					i(198790),	-- I.O.U.
 					i(195357),	-- Artisan's Consortium Invoice
 				},
 			}),

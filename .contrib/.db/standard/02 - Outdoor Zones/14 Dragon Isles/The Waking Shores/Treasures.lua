@@ -296,7 +296,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				coord = { 58.2, 68.3, THE_WAKING_SHORES },
 				description = "Underneath the tail of the dragon statue.",
 				groups = {
-					i(198543),	-- Tail Fragment
+					i(198543),	-- Tail Fragments
 				},
 			}),
 			o(380840, {	-- Torn Riding Pack

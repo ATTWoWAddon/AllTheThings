@@ -185,7 +185,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 						coord = { 64.1, 59.4, ZERETH_MORTIS },
 					}),
 					crit(52612, {	-- Anima-charged Yolk
-						provider = { "i", 187890 },	-- Anima-charged Yolk
+						provider = { "i", 187890 },	-- Anima-Charged Yolk
 					}),
 					crit(52613, {	-- Unstable Agitant
 						provider = { "i", 187889 },	-- Unstable Agitant

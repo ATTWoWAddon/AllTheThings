@@ -97,7 +97,7 @@ maproot(KHAZ_ALGAR, AZJ_KAHET, {
 			q(79116, {	-- Spider Optics
 				coord = { 69.4, 76.6, AZJ_KAHET },
 			}),
-			q(79960, {	-- Taking It To Go
+			q(79960, {	-- Taking it To Go
 				coord = { 75.0, 77.4, AZJ_KAHET },
 				groups = {
 					i(216664),	-- Threading Lure (QI!)

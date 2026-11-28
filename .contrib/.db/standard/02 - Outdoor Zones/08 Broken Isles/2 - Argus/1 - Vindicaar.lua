@@ -54,7 +54,7 @@ maproot(BROKEN_ISLES, ARGUS, THE_VINDICAAR_ANTORAN_WASTES_UPPER, {
 							153152,	-- Unsullied Mail Boots
 							153155,	-- Unsullied Plate Helmet
 							153153,	-- Unsullied Plate Pauldrons
-							153143,	-- Unsullied Plate Breasplate
+							153143,	-- Unsullied Plate Breastplate
 							153150,	-- Unsullied Plate Vambraces
 							153157,	-- Unsullied Plate Gauntlets
 							153140,	-- Unsullied Plate Waistplate
@@ -113,7 +113,7 @@ maproot(BROKEN_ISLES, ARGUS, THE_VINDICAAR_ANTORAN_WASTES_UPPER, {
 							153152,	-- Unsullied Mail Boots
 							153155,	-- Unsullied Plate Helmet
 							153153,	-- Unsullied Plate Pauldrons
-							153143,	-- Unsullied Plate Breasplate
+							153143,	-- Unsullied Plate Breastplate
 							153150,	-- Unsullied Plate Vambraces
 							153157,	-- Unsullied Plate Gauntlets
 							153140,	-- Unsullied Plate Waistplate

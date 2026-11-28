@@ -1089,13 +1089,13 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					}),
 				},
 			}),
-			q(65735, {	-- Wanted: Custos
+			q(65735, {	-- WANTED: Custos
 				sourceQuests = { 64958 },	-- The Forces Gather
 				provider = { "o", 375972 },	-- Wanted: Custos
 				coord = { 35.3, 65.4, ZERETH_MORTIS },
 				_drop = { "g" },	-- Anima Trash
 			}),
-			q(65748, {	-- You Supply The Effort
+			q(65748, {	-- You Supply the Effort
 				sourceQuests = { 64958 },	-- The Forces Gather
 				provider = { "n", 185713 },	-- Hadja
 				coord = { 35.2, 65.7, ZERETH_MORTIS },
@@ -1170,7 +1170,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				provider = { "n", 184434 },	-- Mai Ber
 				coord = { 58.4, 49.7, ZERETH_MORTIS },
 			}),
-			q(65226, {	-- Fleet-footed and Fastidious
+			q(65226, {	-- Fleet-Footed and Fastidious
 				sourceQuests = { 64230 },	-- Cyphers of the First Ones
 				provider = { "n", 177958 },	-- Firim
 				coord = { 34.2, 48.7, ZERETH_MORTIS },
@@ -1249,7 +1249,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					i(189449),	-- Jiro Scan (QI!)
 				},
 			}),
-			q(65072, {	-- Not Safe For Work
+			q(65072, {	-- Not Safe for Work
 				sourceQuests = { 64230 },	-- Cyphers of the First Ones
 				provider = { "n", 180630 },	-- Elder Amir
 				coord = { 61.4, 51.5, ZERETH_MORTIS },

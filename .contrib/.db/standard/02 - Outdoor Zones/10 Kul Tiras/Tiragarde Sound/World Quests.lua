@@ -224,7 +224,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 			q(52119, {	-- Goblin Azerite Extraction
 				races = HORDE_ONLY,
 			}),
-			q(51318, {	-- Go For the Boat
+			q(51318, {	-- Go for the Boat
 				races = ALLIANCE_ONLY,
 			}),
 			q(52757),	-- Grimestone Crimes
@@ -340,7 +340,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 				},
 			}),
 			q(51656),	-- Saurolisk Tamer Mugg
-			q(52780),	-- Siege of Boralus: Breaking The Alliance
+			q(52780),	-- Siege of Boralus: Breaking the Alliance
 			q(52763),	-- Siege of Boralus: Breaking Their Ranks
 			q(51626),	-- Shell Game
 			q(51892),	-- Shiverscale the Toxic

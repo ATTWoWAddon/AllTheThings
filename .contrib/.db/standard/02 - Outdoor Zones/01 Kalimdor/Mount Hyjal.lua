@@ -2172,7 +2172,7 @@ maproot(KALIMDOR, MOUNT_HYJAL, {
 					},
 					{	-- Revered
 						i(62378),	-- Acorn of the Daughter Tree
-						i(62381),	-- Aessina- Blessed Gloves
+						i(62381),	-- Aessina-Blessed Gloves
 						i(62380),	-- Wilderness Legguards
 						i(62382),	-- Waywatcher's Boots
 						i(62367, {	-- Arcanum of Hyjal

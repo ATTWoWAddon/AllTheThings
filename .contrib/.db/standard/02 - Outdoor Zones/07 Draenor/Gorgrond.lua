@@ -2317,14 +2317,14 @@ maproot(DRAENOR, GORGROND, {
 			}),
 			q(35808, {	-- Trophy of Glory: Erosian (A)
 				sourceQuest = 35063,	-- We Need an Outpost
-				provider = { "i", 113445 },	-- Crystalized Steam
+				provider = { "i", 113445 },	-- Crystallized Steam
 				coord = { 51.8, 41.6, GORGROND },
 				races = ALLIANCE_ONLY,
 				cr = 81540,	-- Erosian the Violent
 			}),
 			q(35807, {	-- Trophy of Glory: Erosian (H)
 				sourceQuest = 35151,	-- Your Base, Your Choice
-				provider = { "i", 113444 },	-- Crystalized Steam
+				provider = { "i", 113444 },	-- Crystallized Steam
 				coord = { 51.8, 41.6, GORGROND },
 				races = HORDE_ONLY,
 				cr = 81540,	-- Erosian the Violent

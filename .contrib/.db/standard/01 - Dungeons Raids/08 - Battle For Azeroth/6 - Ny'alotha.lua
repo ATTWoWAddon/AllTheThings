@@ -97,7 +97,7 @@ local EncounterToLoot = {
 		i(174106),	-- Qwor N'lyeth
 		i(174530),	-- Ring of Collective Consciousness
 		i(172192),	-- The All-Seeing Eye
-		i(174122),	-- Void-drenched Wristwraps
+		i(174122),	-- Void-Drenched Wristwraps
 	};
 	[SHADHAR] = {
 		i(174177),	-- Bracers of Phantom Pains
@@ -424,7 +424,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				BossOnly(NZOTH, {
-					ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
+					ach(14068, {	-- Ahead of the Curve: N'Zoth the Corruptor
 						timeline = { REMOVED_9_0_1 },
 					}),
 					i(174863, {	-- Spawn of Vexiona (QS!)
@@ -506,7 +506,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					ach(14054),	-- Mythic: Carapace of N'Zoth
 				}),
 				Boss(NZOTH, {
-					ach(14069, {	-- Cutting Edge: N'Zoth, the Corruptor
+					ach(14069, {	-- Cutting Edge: N'Zoth the Corruptor
 						timeline = { REMOVED_9_0_1 },
 					}),
 					ach(14071, {	-- Hall of Fame: N'Zoth the Corruptor (Alliance)
@@ -519,7 +519,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						timeline = { REMOVED_9_0_1 },
 						groups = { title(416) },	-- <Name>, Famed Slayer of N'Zoth
 					}),
-					ach(14055, {	-- Mythic: N'Zoth, the Corruptor
+					ach(14055, {	-- Mythic: N'Zoth the Corruptor
 						title(417),	-- the Uncorrupted
 					}),
 					ach(14040),	-- Mythic: N'Zoth the Corruptor Guild Run

@@ -143,7 +143,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(178875),	-- Corpsehound Whistle
 			i(175839),	-- Corrupted Anima
 			i(167209),	-- Crude Map
-			i(173267),	-- Crystalized Gormgris
+			i(173267),	-- Crystallized Gormgris
 			i(180446),	-- Curiously Corrosive Concoction
 			i(180626),	-- Cypher of Melody
 			i(175012),	-- Dancing Cricket

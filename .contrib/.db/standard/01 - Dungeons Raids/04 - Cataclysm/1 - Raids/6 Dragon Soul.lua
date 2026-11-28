@@ -224,7 +224,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71809),	-- Shadow Spinel
 						},
 					}),
-					i(78891, {	-- Elementium-coated Geode
+					i(78891, {	-- Elementium-Coated Geode
 						cost = { { "c", 615, 1 } },	-- Essence of Corrupted Deathwing
 					}),
 				}),
@@ -372,7 +372,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78428),	-- Girdle of the Grotesque
 							i(78424),	-- Runescriven Demon Collar
 							i(78423),	-- Treads of Dormant Dreams
-							i(78427),	-- Ring of the Raven
+							i(78427),	-- Ring of the Riven
 							i(78421),	-- Signet of Grasping Mouths
 						})),
 					}),

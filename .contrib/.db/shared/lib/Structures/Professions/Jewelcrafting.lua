@@ -1609,7 +1609,7 @@ DF_JEWELCRAFTING = applyclassicphase(DF_PHASE_ONE, bubbleDownFiltered({ timeline
 		r(374530),	-- Bold-Print Bifocals
 		r(374537),	-- Chromatic Focus
 		r(374531),	-- Left-Handed Magnifying Glass
-		r(374532),	-- Sundered Onyx Loupes
+		r(374532),	-- Sundered Onyx Loupe
 	}),
 	filter(REAGENTS, {
 		r(374477),	-- Draconic Vial

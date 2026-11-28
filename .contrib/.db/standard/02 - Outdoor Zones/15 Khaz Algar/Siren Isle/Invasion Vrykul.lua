@@ -45,7 +45,7 @@ maproot(KHAZ_ALGAR, SIREN_ISLE, {
 					coord = { 69.4, 42.8, SIREN_ISLE },
 					isWeekly = true,
 				}),
-				q(84680, {	-- Rock 'n' Stone Revival
+				q(84680, {	-- Rock 'n Stone Revival
 					sourceQuests = { 84725 },	-- The Circlet Calls
 					provider = { "n", 228096 },	-- Dawn
 					coords = {

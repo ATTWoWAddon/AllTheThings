@@ -144,7 +144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						i(198719, {	-- Plans: Sturdy Expedition Shovel (RECIPE!)
 							cost = { { "c", DRAGON_SUPPLIES, 15 } },
 						}),
-						i(191294, {	-- Small Expedition Shover
+						i(191294, {	-- Small Expedition Shovel
 							cost = { { "c", DRAGON_SUPPLIES, 15 } },
 						}),
 					}, {	-- RENOWN 6 --
@@ -478,7 +478,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					199875,	-- Renowned Expeditioner's Drape
 					199876,	-- Renowned Expeditioner's Shawl
 					------ RENOWN 5 ------
-					191294,	-- Small Expedition Shover
+					191294,	-- Small Expedition Shovel
 					------ RENOWN 7 ------
 					198083,	-- Expedition Supply Kit (CI!)
 					------ RENOWN 12 ------

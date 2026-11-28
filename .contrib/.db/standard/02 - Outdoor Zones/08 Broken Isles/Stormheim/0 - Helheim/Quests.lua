@@ -90,7 +90,7 @@ maproot(BROKEN_ISLES, STORMHEIM, HELHEIM, {
 				i(132828),	-- Helhound Core
 				i(132829),	-- Silver of Heost
 				i(132825),	-- Val'kyra Boon
-				i(132834),	-- Wailing Wings
+				i(132834),	-- Wailing Winds
 				i(132831),	-- Worthy Soul
 			},
 		}),

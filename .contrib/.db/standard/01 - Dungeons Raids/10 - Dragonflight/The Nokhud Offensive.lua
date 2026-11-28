@@ -62,7 +62,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					coord = { 22.3, 51.0, OHNAHRAN_PLAINS },
 					groups = {
 						i(197666),	-- Maruuk Ring of Bravery
-						i(197665),	-- Ohn'Ahra's Gratitude
+						i(197665),	-- Ohn'ahra's Gratitude
 					},
 				}),
 			}),
@@ -78,7 +78,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(212757, {	-- Granyth's Enduring Scale
 							timeline = { ADDED_10_2_6 },
 						}),
-						i(193695),	-- Quarry Slayer Glaive
+						i(193695),	-- Quarryslayer Glaive
 						i(193693),	-- Shikaar Ranger Bracers
 						i(193692),	-- Stoneroot Headdress
 					},

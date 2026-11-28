@@ -38,7 +38,7 @@ maproot(KUL_TIRAS, MECHAGON, {
 				isDaily = true,
 				groups = { i(168243) },	-- Runestone Fragments (QI!)
 			}),
-			q(56373, {	-- A Gulper Ate The Rolly
+			q(56373, {	-- A Gulper Ate the Rolly
 				provider = { "n", 151462 },	-- Danielle Anglers
 				coord = { 37.0, 47.1, MECHAGON },
 				isDaily = true,

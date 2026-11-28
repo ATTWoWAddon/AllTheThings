@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(144218, { timeline = { ADDED_7_1_5 } }),	-- Klatith, Fangs of the Swarm
 					i(144104, { timeline = { ADDED_7_1_5 } }),	-- Shield of the Protectorate
 					i(143991, { timeline = { ADDED_7_1_5 } }),	-- Shoulders of Engulfing Winds
-					i(143955, { timeline = { ADDED_7_1_5 } }),	-- Swarmbringer Chestguards
+					i(143955, { timeline = { ADDED_7_1_5 } }),	-- Swarmbringer Chestguard
 					i(143984, { timeline = { ADDED_7_1_5 } }),	-- Treads of Fixation
 					i(143977, { timeline = { ADDED_7_1_5 } }),	-- Wall-Breaker Legguards
 				}),

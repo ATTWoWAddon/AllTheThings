@@ -948,7 +948,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		})),
 		category(106, {	-- Tarot Cards
 			sp(111830, {	-- Darkmoon Card of Mists
-				i(79299),	-- Ace of Crane
+				i(79299),	-- Ace of Cranes
 				i(79300),	-- Two of Cranes
 				i(79301),	-- Three of Cranes
 				i(79302),	-- Four of Cranes

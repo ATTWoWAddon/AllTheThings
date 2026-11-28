@@ -241,7 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						}),
 						i(38218),	-- Executioner's Band
 						i(38219),	-- Ring of Decimation
-						i(38220),	-- Signet of Swift Judgement
+						i(38220),	-- Signet of Swift Judgment
 					},
 				}),
 				q(11252, {	-- Into Utgarde!
@@ -257,7 +257,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						}),
 						i(38218),	-- Executioner's Band
 						i(38219),	-- Ring of Decimation
-						i(38220),	-- Signet of Swift Judgement
+						i(38220),	-- Signet of Swift Judgment
 					},
 				}),
 				q(29763, {	-- Stealing Their Thunder
@@ -273,7 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						}),
 						i(38218),	-- Executioner's Band
 						i(38219),	-- Ring of Decimation
-						i(38220),	-- Signet of Swift Judgement
+						i(38220),	-- Signet of Swift Judgment
 					},
 				}),
 			}),

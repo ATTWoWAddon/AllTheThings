@@ -26,7 +26,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 			q(65117, {	-- Bad Samples
 				coord = { 44.1, 30.8, ZERETH_MORTIS },
 			}),
-			q(65230, {	-- Bot-Any
+			q(65230, {	-- Bot-any
 				coord = { 47.4, 80.3, ZERETH_MORTIS },
 			}),
 			q(64974, {	-- Clean Up, Automa Aisle
@@ -66,7 +66,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					i(188522),	-- Ancient Archive (QI!)
 				},
 			}),
-			q(65115, {	-- Researching The Solution
+			q(65115, {	-- Researching the Solution
 				coord = { 44.6, 30.9, ZERETH_MORTIS },
 				groups = {
 					i(188118),	-- Enigmatic Scrolls (QI!)

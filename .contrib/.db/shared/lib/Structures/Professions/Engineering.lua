@@ -455,7 +455,7 @@ WRATH_ENGINEERING = applyclassicphase(WRATH_PHASE_ONE, bubbleDownFiltered({ time
 		r(60874),	-- Nesingwary 4000
 	}),
 	n(WEAPON_ENCHANTMENTS, {
-		r(61471),	-- Diamond-Cut Refractor Scope
+		r(61471),	-- Diamond-cut Refractor Scope
 		r(56478),	-- Heartseeker Scope
 		r(56470),	-- Sun Scope
 	}),
@@ -1039,7 +1039,7 @@ TWW_ENGINEERING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_
 		r(1259724),	-- Schmancy Goblin String Lights
 	})),
 	filter(PROFESSION_EQUIPMENT, {
-		r(447332),	-- Bismuth Fueled Samophlange
+		r(447332),	-- Bismuth-Fueled Samophlange
 	}),
 	n(WEAPONS, {
 		r(447379),	-- 4UT0-41M3R
@@ -1065,7 +1065,7 @@ MID_ENGINEERING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILT
 		r(1229938),	-- Evercore Greaseplates
 		r(1229864),	-- Evercore Reconissance
 		r(1229863),	-- Evercore Shade
-		r(1229936),	-- Evercore Stichwraps
+		r(1229936),	-- Evercore Stitchwraps
 		r(1229935),	-- Evercore Swiftfeet
 		r(1229937),	-- Evercore Turbochains
 		r(1229865),	-- Evercore Vision Guard

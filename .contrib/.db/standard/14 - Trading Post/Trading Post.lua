@@ -391,9 +391,9 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(100, iensemble(190577)),	-- Ensemble: Wanderer's Azure Trappings
 				traderstender(100, iensemble(190850)),	-- Ensemble: Wanderer's Crimson Trappings
 				traderstender(750, i(189898)),	-- Fury of the Firelord
-				traderstender(50, i(190871)),	-- Grunts Buckler
+				traderstender(50, i(190871)),	-- Grunt's Buckler
 				traderstender(400, i(97213)),	-- Hood of Hungering Darkness
-				traderstender(100, i(208040)),	-- Queens Conservatory Ball Gloves
+				traderstender(100, i(208040)),	-- Queen's Conservatory Ball Gloves
 				traderstender(400, i(190910)),	-- Ruby Felfire Bulwark
 				traderstender(400, i(190909)),	-- Ruby Felfire Splitblade
 				traderstender(200, i(190143)),	-- Shard of Frozen Secrets
@@ -417,14 +417,14 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(650, iensemble(190799)),	-- Ensemble: Swashbuckling Buccaneer's Slops
 				traderstender(100, iensemble(206321)),	-- Ensemble: Vagabond's Sunny Threads
 				traderstender(100, iensemble(206332)),	-- Ensemble: Wanderer's Sunny Trappings
-				traderstender(50, i(190698)),	-- Gently Used Cleaver
+				traderstender(50, i(190698)),	-- Gently-Used Cleaver
 				traderstender(50, i(190699)),	-- Gorian Mining Pick
 				traderstender(500, i(210265)),	-- High Scholar's Grand Staff
 				traderstender(500, i(208423)),	-- Homebrewer's Sampling Crest
-				traderstender(175, i(190144)),	-- Irontide Raiders Bicorne
+				traderstender(175, i(190144)),	-- Irontide Raider's Bicorne
 				traderstender(450, iensemble(208176)),	-- Plate of the Light Avenger
 				traderstender(500, iensemble(208178)),	-- Secrets of the Unnamed Cult
-				traderstender(450, iensemble(208400)),	-- Silk of the Unnamed Cult
+				traderstender(450, iensemble(208400)),	-- Silks of the Unnamed Cult
 				traderstender(750, i(190155)),	-- Trusty Treasure Trove
 				traderstender(100, i(189895)),	-- Watchman's Flare
 				traderstender(150, i(208147)),	-- Yellow Tweed Cap
@@ -486,16 +486,16 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(425, i(45063)),	-- Foam Toy Rack (TOY!)
 			}),
 			filter(COSMETIC, {
-				traderstender(75, i(190832)),	-- Acolyte’s Etched Warhammer
-				traderstender(100, iensemble(206331)),	-- Ensemble: Vagabond’s Sepia Threads
-				traderstender(100, iensemble(206342)),	-- Ensemble: Wanderer’s Sepia Trappings
+				traderstender(75, i(190832)),	-- Acolyte's Etched Warhammer
+				traderstender(100, iensemble(206331)),	-- Ensemble: Vagabond's Sepia Threads
+				traderstender(100, iensemble(206342)),	-- Ensemble: Wanderer's Sepia Trappings
 				traderstender(400, i(190217)),	-- Fang of the Mountain
 				traderstender(75, i(190065)),	-- Gnomish Liquid Transfer Apparatus
 				traderstender(500, iensemble(208673)),	-- Instruments of the Alluring Call
 				traderstender(450, iensemble(208672)),	-- Jewels of the Alluring Call
-				traderstender(50, i(190833)),	-- Krokul Guisame
+				traderstender(50, i(190833)),	-- Krokul Guisarme
 				traderstender(500, i(190147)),	-- Longbow of the Twisted Grove
-				traderstender(225, i(190824)),	-- Loyal Blademaster’s Greatsword
+				traderstender(225, i(190824)),	-- Loyal Blademaster's Greatsword
 				traderstender(200, i(208786)),	-- Luxurious Niffen Hat
 				traderstender(150, i(190843)),	-- Maw of Rage
 				traderstender(150, i(190813)),	-- Mechanized Skullcrusher
@@ -503,12 +503,12 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(450, iensemble(208669)),	-- Possessed Watcher Guise
 				traderstender(50, i(190831)),	-- Razor-Edged Kukri
 				traderstender(400, i(190910)),	-- Ruby Felfire Bulwark
-				traderstender(500, iensemble(208675)),	-- Savage Champion’s Aggression
-				traderstender(450, iensemble(208674)),	-- Savage Champion’s Trophies
+				traderstender(500, iensemble(208675)),	-- Savage Champion's Aggression
+				traderstender(450, iensemble(208674)),	-- Savage Champion's Trophies
 				traderstender(50, i(190829)),	-- Shawl of Flowing Magic
 				traderstender(175, i(190557)),	-- Sinister Fel Staff
 				traderstender(650, i(190220)),	-- Standard of the Guardian
-				traderstender(50, i(190806)),	-- Tidecaller’s Cinch
+				traderstender(50, i(190806)),	-- Tidecaller's Cinch
 			}),
 		}),
 		Month(DECEMBER, { ADDED_10_2_0, REMOVED_10_2_0}, {
@@ -523,35 +523,35 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(600, i(210919)),	-- Crimson Glimmerfur (MOUNT!)
 			}),
 			filter(COSMETIC, {
-				traderstender(400, iensemble(211257)),	-- Arsenal: Stormriders Stormhammers
-				traderstender(500, iensemble(208700)),	-- Battle Magisters Enchantments
-				traderstender(450, iensemble(208699)),	-- Battle Magisters Regalia
-				traderstender(200, i(210869)),	-- Blademasters Azure Stones
-				traderstender(225, i(211268)),	-- Blademasters Thundering Greatsword
+				traderstender(400, iensemble(211257)),	-- Arsenal: Stormrider's Stormhammers
+				traderstender(500, iensemble(208700)),	-- Battle Magister's Enchantments
+				traderstender(450, iensemble(208699)),	-- Battle Magister's Regalia
+				traderstender(200, i(210869)),	-- Blademaster's Azure Stones
+				traderstender(225, i(211268)),	-- Blademaster's Thundering Greatsword
 				traderstender(600, i(210843)),	-- Candied Blade
 				traderstender(50, i(190430)),	-- Chipped Gladius
 				traderstender(100, i(211267)),	-- Classic Snowy Tabard
 				traderstender(50, i(190203)),	-- Craftsman Timber Mallet
-				traderstender(50, i(211070)),	-- Crimson Treads of the Kaluak
+				traderstender(50, i(211070)),	-- Crimson Treads of the Kalu'ak
 				traderstender(100, i(208039)),	-- Ember Court Soiree Gloves
-				traderstender(550, iensemble(210883)),	-- Ensemble: Scarlet Zealots Trappings
+				traderstender(550, iensemble(210883)),	-- Ensemble: Scarlet Zealot's Trappings
 				traderstender(100, iensemble(190851)),	-- Ensemble: Vagabond's Crimson Threads
 				traderstender(100, iensemble(190922)),	-- Ensemble: Vagabond's Snowy Threads
 				traderstender(100, iensemble(190850)),	-- Ensemble: Wanderer's Crimson Trappings
 				traderstender(100, iensemble(190921)),	-- Ensemble: Wanderer's Snowy Trappings
-				traderstender(225, i(211130)),	-- Errant Crusaders Helm
+				traderstender(225, i(211130)),	-- Errant Crusader's Helm
 				traderstender(100, i(190886)),	-- Fine White Evening Gloves
 				traderstender(200, i(190874)),	-- Glittering Fel Gavel
-				traderstender(450, iensemble(208727)),	-- Hornstrider Hunters Camouflage
-				traderstender(500, iensemble(208728)),	-- Hornstrider Hunters Preference
+				traderstender(450, iensemble(208727)),	-- Hornstrider Hunter's Camouflage
+				traderstender(500, iensemble(208728)),	-- Hornstrider Hunter's Preference
 				traderstender(450, iensemble(208729)),	-- Imminence of Krag'wa's Executor
-				traderstender(200, i(190685)),	-- Lost Crusaders Azure Battleaxe
+				traderstender(200, i(190685)),	-- Lost Crusader's Azure Battleaxe
 				traderstender(450, iensemble(208725)),	-- Scales of the Silver Hoarder
 				traderstender(750, iensemble(208730)),	-- Tools of Krag'wa's Executor
-				traderstender(100, i(210844)),	-- Traders Crimson Sarong
-				traderstender(100, i(210846)),	-- Traders Lively Sarong
+				traderstender(100, i(210844)),	-- Trader's Crimson Sarong
+				traderstender(100, i(210846)),	-- Trader's Lively Sarong
 				traderstender(500, iensemble(208726)),	-- Treasure of the Silver Hoarder
-				traderstender(200, i(211258)),	-- Wildhammer Scouts Headgear
+				traderstender(200, i(211258)),	-- Wildhammer Scout's Headgear
 			}),
 		}),
 	}),
@@ -712,7 +712,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(100, i(212787)),	-- Gloves of the Violet Gala
 				traderstender(150, i(212788)),	-- Gossamer Emerald Gown
 				traderstender(225, i(212785)),	-- Helm of the Stout
-				traderstender(175, i(190144)),	-- Irontide Raiders Bicorne
+				traderstender(175, i(190144)),	-- Irontide Raider's Bicorne
 				traderstender(150, i(190075)),	-- Mantle of the Scholarly Raven
 				traderstender(150, i(212708)),	-- Spring Reveler's Dandelion Attire
 				traderstender(50, i(212709)),	-- Spring Reveler's Dandelion Belt
@@ -823,7 +823,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(800, i(223285)),	-- Underlight Corrupted Behemoth (MOUNT!)
 			}),
 			filter(COSMETIC, {
-				traderstender(80, i(223185)),	-- Blade Of The Riptide
+				traderstender(80, i(223185)),	-- Blade of the Riptide
 				traderstender(100, i(223170)),	-- Classic Deep Tabard
 				traderstender(60, i(223233)),	-- Copper Diver's Belt
 				traderstender(220, i(223230)),	-- Copper Diver's Bonnet
@@ -835,11 +835,11 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(160, i(223252)),	-- Copper Diver's Tank
 				traderstender(10, i(223257)),	-- Copper Diver's Wrist Seal
 				traderstender(300, i(223166)),	-- Deepsea Treasure Pack
-				traderstender(75, i(212624)),	-- Duelers Deep Shoulder Cape
+				traderstender(75, i(212624)),	-- Dueler's Deep Shoulder Cape
 				traderstender(800, iensemble(223244)),	-- Ensemble: Deepest Depths Diver Suit
 				traderstender(100, iensemble(206327)),	-- Ensemble: Vagabond's Deep Threads
 				traderstender(100, iensemble(206338)),	-- Ensemble: Wanderer's Deep Trappings
-				traderstender(225, i(211130)),	-- Errant Crusaders Helm
+				traderstender(225, i(211130)),	-- Errant Crusader's Helm
 				traderstender(80, i(223188)),	-- Riptide Basher
 				traderstender(80, i(223187)),	-- Riptide Bulwark
 				traderstender(125, i(223179)),	-- Riptide Dagger
@@ -847,10 +847,10 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(125, i(223189)),	-- Riptide Slicer
 				traderstender(200, i(223184)),	-- Riptide Staff
 				traderstender(180, i(213161)),	-- Titan Thunderbow
-				traderstender(100, i(210853)),	-- Traders Deep Sarong
-				traderstender(100, i(223191)),	-- Trident Of The Riptide
-				traderstender(225, i(223165)),	-- Vengeful Crusaders Helm
-				traderstender(125, i(223190)),	-- Wand Of The Riptide
+				traderstender(100, i(210853)),	-- Trader's Deep Sarong
+				traderstender(100, i(223191)),	-- Trident of the Riptide
+				traderstender(225, i(223165)),	-- Vengeful Crusader's Helm
+				traderstender(125, i(223190)),	-- Wand of the Riptide
 			}),
 		}),
 		Month(AUGUST, { "added 11.0.0.55846", "removed 11.0.2.56421" }, {
@@ -888,7 +888,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(100, iensemble(190577)),	-- Ensemble: Wanderer's Azure Trappings
 				traderstender(100, iensemble(190850)),	-- Ensemble: Wanderer's Crimson Trappings
 				traderstender(50, i(190871)),	-- Grunt's Buckler
-				traderstender(100, i(210999)),	-- Ruby-Faced Mobile Timepiece
+				traderstender(100, i(210999)),	-- Ruby Faced Mobile Timepiece
 				traderstender(180, i(223415)),	-- Sapphire Axe of Asymmetry
 				traderstender(130, i(223423)),	-- Sapphire Bladed Blunderbuss
 				traderstender(100, i(211001)),	-- Sapphire Faced Mobile Timepiece
@@ -1009,12 +1009,12 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(250, i(190693)),	-- Ancestral Stonehoof Totem
 				traderstender(100, i(229426)),	-- Ancient Amani Longbow
 				traderstender(500, iensemble(208177)),	-- Armaments of the Light Avenger
-				traderstender(400, iensemble(211257)),	-- Arsenal: Stormriders Stormhammers
+				traderstender(400, iensemble(211257)),	-- Arsenal: Stormrider's Stormhammers
 				traderstender(500, iensemble(208664)),	-- Ashamane's Blessings of Rebirth
 				traderstender(450, iensemble(208663)),	-- Ashamane's Vestment of Rebirth
-				traderstender(500, iensemble(208700)),	-- Battle Magisters Enchantments
-				traderstender(450, iensemble(208699)),	-- Battle Magisters Regalia
-				traderstender(100, i(226388)),	-- Battle-tested Obsidian Warhammer
+				traderstender(500, iensemble(208700)),	-- Battle Magister's Enchantments
+				traderstender(450, iensemble(208699)),	-- Battle Magister's Regalia
+				traderstender(100, i(226388)),	-- Battle-Tested Obsidian Warhammer
 				traderstender(500, iensemble(208179)),	-- Blood Onyx Blades
 				traderstender(450, iensemble(208405)),	-- Blood Onyx Uniform
 				traderstender(100, i(229425)),	-- Bronzebeard Battle Mace
@@ -1030,8 +1030,8 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(275, i(213106)),	-- Gladiator's Battered Greatsword
 				traderstender(850, iensemble(208412)),	-- High Scholar's Arcana
 				traderstender(500, i(210265)),	-- High Scholar's Grand Staff
-				traderstender(450, iensemble(208727)),	-- Hornstrider Hunters Camouflage
-				traderstender(500, iensemble(208728)),	-- Hornstrider Hunters Preference
+				traderstender(450, iensemble(208727)),	-- Hornstrider Hunter's Camouflage
+				traderstender(500, iensemble(208728)),	-- Hornstrider Hunter's Preference
 				traderstender(450, iensemble(208729)),	-- Imminence of Krag'wa's Executor
 				traderstender(500, iensemble(208673)),	-- Instruments of the Alluring Call
 				traderstender(450, iensemble(208672)),	-- Jewels of the Alluring Call
@@ -1044,11 +1044,11 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(75, i(230048)),	-- Prowler's Crimson Shoulder Cape
 				traderstender(75, i(230052)),	-- Prowler's Sunny Shoulder Cape
 				traderstender(75, i(230049)),	-- Prowler's Violet Shoulder Cape
-				traderstender(500, iensemble(208675)),	-- Savage Champion’s Aggression
-				traderstender(450, iensemble(208674)),	-- Savage Champion’s Trophies
+				traderstender(500, iensemble(208675)),	-- Savage Champion's Aggression
+				traderstender(450, iensemble(208674)),	-- Savage Champion's Trophies
 				traderstender(450, iensemble(208725)),	-- Scales of the Silver Hoarder
 				traderstender(500, iensemble(208178)),	-- Secrets of the Unnamed Cult
-				traderstender(450, iensemble(208400)),	-- Silk of the Unnamed Cult
+				traderstender(450, iensemble(208400)),	-- Silks of the Unnamed Cult
 				traderstender(650, i(190220)),	-- Standard of the Guardian
 				traderstender(750, iensemble(208730)),	-- Tools of Krag'wa's Executor
 				traderstender(500, iensemble(208726)),	-- Treasure of the Silver Hoarder
@@ -1251,7 +1251,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 							traderstender(75, i(190869)),	-- Emberstone Dress
 							traderstender(350, iensemble(189938)),	-- Ensemble: Fel-Automaton Exoplate
 							traderstender(350, iensemble(200884)),	-- Ensemble: Glorious Dragonrider's Mail
-							traderstender(350, iensemble(210883)),	-- Ensemble: Scarlet Zealots Trappings
+							traderstender(350, iensemble(210883)),	-- Ensemble: Scarlet Zealot's Trappings
 							traderstender(350, iensemble(190799)),	-- Ensemble: Swashbuckling Buccaneer's Slops
 							traderstender(350, iensemble(200915)),	-- Ensemble: Sylvan Stalker's Leathers
 							traderstender(40, i(190097)),	-- Fabulously Flashy Finery
@@ -1261,7 +1261,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 							traderstender(100, i(97213)),	-- Hood of Hungering Darkness
 							traderstender(200, i(189897)),	-- Infiltrator's Bandolier
 							traderstender(40, i(190434)),	-- Iridescent Warcloak
-							traderstender(100, i(190144)),	-- Irontide Raiders Bicorne
+							traderstender(100, i(190144)),	-- Irontide Raider's Bicorne
 							traderstender(100, i(190215)),	-- Lost Crown of the Arcane
 							traderstender(200, i(190599)),	-- Operative's Bandolier
 							traderstender(100, i(190898)),	-- Red Pith Helmet
@@ -1269,7 +1269,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 							traderstender(70, i(190801)),	-- Shadowy Mail Tabard
 							traderstender(40, i(190829)),	-- Shawl of Flowing Magic
 							traderstender(40, i(190433)),	-- Shifty Merchant's Tunic
-							traderstender(40, i(190806)),	-- Tidecaller’s Cinch
+							traderstender(40, i(190806)),	-- Tidecaller's Cinch
 							traderstender(100, i(208147)),	-- Yellow Tweed Cap
 						}),
 					},
@@ -1278,7 +1278,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 					coord = { 47.79, 52.55, DORNOGAL },
 					groups = {
 						filter(COSMETIC, {
-							traderstender(50, i(190832)),	-- Acolyte’s Etched Warhammer
+							traderstender(50, i(190832)),	-- Acolyte's Etched Warhammer
 							traderstender(225, i(190562)),	-- Aldori War Mace
 							traderstender(200, i(190146)),	-- Antoran Felspire
 							traderstender(100, i(207957)),	-- Aquamarine Felfire Bulwark
@@ -1296,13 +1296,13 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 							traderstender(200, i(190690)),	-- Flame-Forged Fel Fang
 							traderstender(75, i(189896)),	-- Forsaken Cresset
 							traderstender(200, i(202248)),	-- Frozen Shadow
-							traderstender(40, i(190698)),	-- Gently Used Cleaver
+							traderstender(40, i(190698)),	-- Gently-Used Cleaver
 							traderstender(200, i(190145)),	-- Gilded Drakkonid Morningstar
 							traderstender(50, i(190065)),	-- Gnomish Liquid Transfer Apparatus
 							traderstender(40, i(190204)),	-- Huntsman's Recurve Bow
 							traderstender(75, i(190153)),	-- Libram of Righteous Light
 							traderstender(125, i(190147)),	-- Longbow of the Twisted Grove
-							traderstender(100, i(190685)),	-- Lost Crusaders Azure Battleaxe
+							traderstender(100, i(190685)),	-- Lost Crusader's Azure Battleaxe
 							traderstender(100, i(190814)),	-- Mephistroth's Razor
 							traderstender(40, i(190546)),	-- Polished Shortsword
 							traderstender(100, i(190443)),	-- Pustulent Demonheart Fetish
@@ -1642,7 +1642,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(80, i(245956)),	-- Bronzebeard's Crystal Ward
 				traderstender(150, i(246798)),	-- Bronzebeard's Mighty Crossbow
 				traderstender(200, i(245948)),	-- Bronzebeard's Portable Forge
-				traderstender(100, iensemble(242485)),	-- Ensemble: Aquatic Sweatsuit\
+				traderstender(100, iensemble(242485)),	-- Ensemble: Aquatic Sweatsuit
 				traderstender(575, iensemble(248299)),	-- Ensemble: Bronzebeard's Ceremonial Collection
 				traderstender(750, iensemble(226017)),	-- Ensemble: Plunderlord's Radiant Finery
 				traderstender(100, iensemble(230181)),	-- Ensemble: Prowler's Aquatic Headgear
@@ -1658,7 +1658,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 				traderstender(80, i(245957)),	-- The Speaker's Crystal Ward
 				traderstender(150, i(246799)),	-- The Speaker's Mighty Crossbow
 				traderstender(200, i(245949)),	-- The Speaker's Portable Forge
-				traderstender(200, i(211258)),	-- Wildhammer Scouts Headgear
+				traderstender(200, i(211258)),	-- Wildhammer Scout's Headgear
 			}),
 		}),
 		Month(OCTOBER, { "added 11.2.0.63305", "removed 11.2.5.64154" }, {
@@ -1950,15 +1950,15 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 							traderstender(175, i(212369)),	-- Battlefield Lover's Bow
 							traderstender(30, i(221810)),	-- Churning Sands Gloves
 							traderstender(30, i(221809)),	-- Churning Sands Treads
-							traderstender(30, i(223233)),	-- Copper Divers Belt
-							traderstender(100, i(223230)),	-- Copper Divers Bonnet
-							traderstender(30, i(223235)),	-- Copper Divers Boots
-							traderstender(40, i(223232)),	-- Copper Divers Corselet
-							traderstender(30, i(223236)),	-- Copper Divers Gloves
-							traderstender(40, i(223234)),	-- Copper Divers Greaves
-							traderstender(60, i(223231)),	-- Copper Divers Pauldrons
-							traderstender(100, i(223252)),	-- Copper Divers Tank
-							traderstender(10, i(223257)),	-- Copper Divers Wrist Seal
+							traderstender(30, i(223233)),	-- Copper Diver's Belt
+							traderstender(100, i(223230)),	-- Copper Diver's Bonnet
+							traderstender(30, i(223235)),	-- Copper Diver's Boots
+							traderstender(40, i(223232)),	-- Copper Diver's Corselet
+							traderstender(30, i(223236)),	-- Copper Diver's Gloves
+							traderstender(40, i(223234)),	-- Copper Diver's Greaves
+							traderstender(60, i(223231)),	-- Copper Diver's Pauldrons
+							traderstender(100, i(223252)),	-- Copper Diver's Tank
+							traderstender(10, i(223257)),	-- Copper Diver's Wrist Seal
 							traderstender(175, i(229807)),	-- Crown of the Icy Blue Rose
 							traderstender(175, i(212545)),	-- Crown of the White Rose
 							traderstender(300, i(223166)),	-- Deepsea Treasure Pack
@@ -1995,7 +1995,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 							traderstender(100, i(190075)),	-- Mantle of the Scholarly Raven
 							traderstender(50, i(190892)),	-- Orange-Sleeved Shirt
 							traderstender(40, i(190428)),	-- Regal Warcloak
-							traderstender(60, i(210999)),	-- Ruby-Faced Mobile Timepiece
+							traderstender(60, i(210999)),	-- Ruby Faced Mobile Timepiece
 							traderstender(60, i(211001)),	-- Sapphire- aced Mobile Timepiece
 							traderstender(40, i(211068)),	-- Sepia Treads of the Kalu'ak
 							traderstender(40, i(190201)),	-- Sin'dorei Assassin's Shroud
@@ -2021,7 +2021,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 							traderstender(20, i(221527)),	-- Tropical Sunrise Wristwraps
 							traderstender(30, i(226367)),	-- Ugly Black Boots
 							traderstender(30, i(226368)),	-- Ugly White Boots
-							traderstender(100, i(223165)),	-- Vengeful Crusaders Helm
+							traderstender(100, i(223165)),	-- Vengeful Crusader's Helm
 							traderstender(225, i(212612)),	-- Wings of the Amethyst Monarch
 							traderstender(225, i(231017)),	-- Wings of the Onyx Monarch
 							traderstender(225, i(230940)),	-- Wings of the Sapphire Monarch
@@ -2048,7 +2048,7 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 							traderstender(60, i(226388)),	-- Battle-Tested Obsidian Warhammer
 							traderstender(60, i(226387)),	-- Battle-Tested Warhammer
 							traderstender(100, i(212576)),	-- Blackrock Executioner
-							traderstender(60, i(223185)),	-- Blade Of The Riptide
+							traderstender(60, i(223185)),	-- Blade of the Riptide
 							traderstender(60, i(229425)),	-- Bronzebeard Battle Mace
 							traderstender(175, i(190080)),	-- Catastrophe's Edge
 							traderstender(100, i(212789)),	-- Champion's Jade Cleaver
@@ -2130,12 +2130,12 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 							traderstender(60, i(223434)),	-- The Sapphire Thalassian Tome
 							traderstender(150, i(211072)),	-- Time Marshal's Carbine
 							traderstender(100, i(213161)),	-- Titan Thunderbow
-							traderstender(75, i(223191)),	-- Trident Of The Riptide
+							traderstender(75, i(223191)),	-- Trident of the Riptide
 							traderstender(200, i(212378)),	-- Twilight Witch's Gothic Scepter
 							traderstender(250, i(212380)),	-- Twilight Witch's Gothic Stave
 							traderstender(150, i(190219)),	-- Virulent Gavel
 							traderstender(40, i(226384)),	-- Wand of the Bright Shadow
-							traderstender(75, i(223190)),	-- Wand Of The Riptide
+							traderstender(75, i(223190)),	-- Wand of the Riptide
 							traderstender(150, i(190873)),	-- Warhammer of Hubris
 							traderstender(150, i(220357)),	-- Water Blaster B.L.
 							traderstender(150, i(211158)),	-- Witch Doctor's Fetish Guard
@@ -2770,8 +2770,8 @@ root(ROOTS.TradingPost, bubbleDown({ u = TRADING_POST }, {
 						traderstender(60, i(223231)),	-- Copper Diver's Pauldrons
 						traderstender(100, i(223252)),	-- Copper Diver's Tank
 						traderstender(10, i(223257)),	-- Copper Diver's Wrist Seal
-						traderstender(30, i(223235)),	-- Copper Divers Boots
-						traderstender(30, i(223236)),	-- Copper Divers Gloves
+						traderstender(30, i(223235)),	-- Copper Diver's Boots
+						traderstender(30, i(223236)),	-- Copper Diver's Gloves
 						traderstender(100, i(190899)),	-- Crimson Bicorne
 						traderstender(150, i(223166)),	-- Deepsea Treasure Pack
 						traderstender(100, i(189882)),	-- Dread Admiral's Bicorne

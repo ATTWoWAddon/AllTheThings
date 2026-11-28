@@ -688,7 +688,7 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- Find the hottest area of Fire Plume Ridge
 						providers = {
-							{ "i",  12472 },	-- Krackle's Thermometer
+							{ "i",  12472 },	-- Krakle's Thermometer
 							{ "o", 148503 },	-- Fire Plume Ridge Hot Spot
 						},
 						coord = { 48.4, 43.3, UNGORO_CRATER },
@@ -703,7 +703,7 @@ maproot(KALIMDOR, UNGORO_CRATER, {
 				groups = {
 					objective(1, {	-- Find the hottest area of Fire Plume Ridge
 						providers = {
-							{ "i",  12472 },	-- Krackle's Thermometer
+							{ "i",  12472 },	-- Krakle's Thermometer
 							{ "o", 148503 },	-- Fire Plume Ridge Hot Spot
 						},
 						coord = { 49.0, 45.0, UNGORO_CRATER },

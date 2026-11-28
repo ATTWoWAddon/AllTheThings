@@ -373,12 +373,12 @@ maproot(EASTERN_KINGDOMS, RUINS_OF_GILNEAS, {
 					groups = {
 						i(211873),	-- Gilnean Prowler (MOUNT!)
 						-- Ensemble: Gilnean Noble's Suit
-						i(211791),	-- Gilnean Nobles Buckle
-						i(211795),	-- Gilnean Nobles Mantle
-						i(211790),	-- Gilnean Nobles Shoes
-						i(211793),	-- Gilnean Nobles Top Hat
-						i(211794),	-- Gilnean Nobles Trousers
-						i(211792),	-- Gilnean Nobles Vest
+						i(211791),	-- Gilnean Noble's Buckle
+						i(211795),	-- Gilnean Noble's Mantle
+						i(211790),	-- Gilnean Noble's Shoes
+						i(211793),	-- Gilnean Noble's Top Hat
+						i(211794),	-- Gilnean Noble's Trousers
+						i(211792),	-- Gilnean Noble's Vest
 					},
 				}),
 				q(79137, {	-- The Wall between Us

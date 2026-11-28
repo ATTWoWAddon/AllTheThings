@@ -190,7 +190,7 @@ maproot(KUL_TIRAS, timelineSelf({ timeline = { ADDED_8_0_1 } }, {
 						cost = { { "c", 1710, 75 } },	-- 75x Seafarer's Dubloons
 						sym = {{"sub","common_island_expedition_salvage",BATTLE_PETS,MISC},{"fill"}},
 					}),
-					i(173995, {	-- Venture Co 'Salvage'
+					i(173995, {	-- Venture Co. 'Salvage'
 						cost = { { "c", 1710, 50 } },	-- 50x Seafarer's Dubloons
 						sym = {{"sub","common_island_expedition_salvage",MISC},{"fill"}},
 					}),

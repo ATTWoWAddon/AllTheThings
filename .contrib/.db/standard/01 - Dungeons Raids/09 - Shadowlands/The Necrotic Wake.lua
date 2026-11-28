@@ -118,7 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(182201),	-- Unleashed Frenzy
 						i(181383),	-- Unrelenting Cold
 						-- Items
-						i(178777),	-- Dark Frost Helmet
+						i(178777),	-- Darkfrost Helmet
 						i(178778),	-- Lichbone Legguards
 						i(178782),	-- Necropolis Lord's Shackles
 						i(178780),	-- Rimebinder's Runeblade

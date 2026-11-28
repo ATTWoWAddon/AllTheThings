@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					applyclassicphase(CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT, i(69877, {	-- Belt of a Thousand Gaping Mouths
 						timeline = { ADDED_4_1_0 },
 					})),
-					i(67240, {	-- Belt of A Thousand Mouths
+					i(67240, {	-- Belt of a Thousand Mouths
 						timeline = { REMOVED_4_1_0 },
 						-- #if ANYCLASSIC
 						OnUpdate = CATA_CLASSIC_WORLD_BOSS_ONUPDATE,

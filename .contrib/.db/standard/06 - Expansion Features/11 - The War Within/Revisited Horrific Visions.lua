@@ -71,7 +71,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 					}},
 					groups = { i(174463) },	-- Reek (PET!)
 				}),
-				ach(41859),	-- Thanks For The Mementos
+				ach(41859),	-- Thanks for the Mementos
 				ach(41929, {	-- Through the Depths of Visions
 					-- Meta Achievement
 					sym = {{"meta_achievement",
@@ -233,7 +233,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				maps = { RE_HORRIFIC_ORGRIMMAR, RE_HORRIFIC_STORMWIND },
 				groups = {
 					currency(3149),	-- Displaced Corrupted Mementos
-					i(239106, {	-- Shadow Infused Onyx
+					i(239106, {	-- Shadow-Infused Onyx
 						description = "Chance to drop from any Horrific Vision reward chest with an active Mask.",
 					}),
 					n(ARMOR, {
@@ -598,13 +598,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 				n(238138, {	-- Torie
 					coord = { 34.4, 68.4, DORNOGAL },
 					groups = {
-						i(238666, {	-- Ashjra'kamas, The Corrupted
+						i(238666, {	-- Ashjra'kamas, the Corrupted
 							cost = { { "c", DISPLACED_CORRUPTED_MEMENTOS, 1000 } },
 						}),
-						i(238667, {	-- Ashjra'kamas, The Purified
+						i(238667, {	-- Ashjra'kamas, the Purified
 							cost = { { "c", DISPLACED_CORRUPTED_MEMENTOS, 1500 } },
 						}),
-						i(238668, {	-- Ashjra'kamas, The Celestial
+						i(238668, {	-- Ashjra'kamas, the Celestial
 							cost = { { "c", DISPLACED_CORRUPTED_MEMENTOS, 2000 } },
 						}),
 						i(174361, {	-- Black Dragonscale Backpack

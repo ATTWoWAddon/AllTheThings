@@ -849,27 +849,27 @@ battleground(1478, {	-- Ashran
 					un(REMOVED_FROM_GAME, i(127366)),	-- Wild Gladiator's Tabard
 					-- Fist Weapons
 					un(REMOVED_FROM_GAME, i(115948)),	-- Primal Gladiator's Ripper
-					un(REMOVED_FROM_GAME, i(115949)),	-- Primal  Gladiator's Render
+					un(REMOVED_FROM_GAME, i(115949)),	-- Primal Gladiator's Render
 					un(REMOVED_FROM_GAME, i(125762)),	-- Wild Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(125763)),	-- Wild Gladiator's Render
 					un(REMOVED_FROM_GAME, i(126876)),	-- Warmongering Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(126877)),	-- Warmongering Gladiator's Render
 					-- 2 Hand Mace
-					un(REMOVED_FROM_GAME, i(115818)),	-- Primal  Gladiator's Bonegrinder
+					un(REMOVED_FROM_GAME, i(115818)),	-- Primal Gladiator's Bonegrinder
 					un(REMOVED_FROM_GAME, i(125632)),	-- Wild Gladiator's Bonegrinder
-					un(REMOVED_FROM_GAME, i(126746)),	-- Warmongering  Gladiator's Bonegrinder
+					un(REMOVED_FROM_GAME, i(126746)),	-- Warmongering Gladiator's Bonegrinder
 					-- Crossbow
 					un(REMOVED_FROM_GAME, i(115836)),	-- Primal Gladiator's Heavy Crossbow
-					un(REMOVED_FROM_GAME, i(125650)),	-- Wild Gladiator's  Heavy Crossbow
-					un(REMOVED_FROM_GAME, i(126764)),	-- Warmongering Gladiator's  Heavy Crossbow
+					un(REMOVED_FROM_GAME, i(125650)),	-- Wild Gladiator's Heavy Crossbow
+					un(REMOVED_FROM_GAME, i(126764)),	-- Warmongering Gladiator's Heavy Crossbow
 					-- 2 Hand Axes
 					un(REMOVED_FROM_GAME, i(115817)),	-- Primal Gladiator's Decapitator
 					un(REMOVED_FROM_GAME, i(125631)),	-- Wild Gladiator's  Decapi
 					un(REMOVED_FROM_GAME, i(126745)),	-- Warmongering Gladiator's  Decapi
 					-- 2 Hand Swords
-					un(REMOVED_FROM_GAME, i(115819)),	-- Primal Gladiator's  Greatsword
-					un(REMOVED_FROM_GAME, i(125633)),	-- Wild Gladiator's  Greatsword
-					un(REMOVED_FROM_GAME, i(126747)),	-- Warmongering Gladiator's  Greatsword
+					un(REMOVED_FROM_GAME, i(115819)),	-- Primal Gladiator's Greatsword
+					un(REMOVED_FROM_GAME, i(125633)),	-- Wild Gladiator's Greatsword
+					un(REMOVED_FROM_GAME, i(126747)),	-- Warmongering Gladiator's Greatsword
 					-- 1 Hand Axes
 					un(REMOVED_FROM_GAME, i(115820)),	-- Primal Gladiator's Cleaver
 					un(REMOVED_FROM_GAME, i(115952)),	-- Primal Gladiator's Hacker
@@ -897,7 +897,7 @@ battleground(1478, {	-- Ashran
 					un(REMOVED_FROM_GAME, i(125646)),	-- Wild Gladiator's Spellblade
 					un(REMOVED_FROM_GAME, i(125761)),	-- Wild Gladiator's Shanker
 					un(REMOVED_FROM_GAME, i(126760)),	-- Warmongering Gladiator's Spellblade
-					un(REMOVED_FROM_GAME, i(126875)),	-- Warmongering Gladiator's SHanker
+					un(REMOVED_FROM_GAME, i(126875)),	-- Warmongering Gladiator's Shanker
 					-- Offhand
 					un(REMOVED_FROM_GAME, i(115830)),	-- Primal Gladiator's Endgame
 					un(REMOVED_FROM_GAME, i(115834)),	-- Primal Gladiator's Reprieve
@@ -1010,7 +1010,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115890)),	-- Primal Gladiator's Copperskin Spaulders
 							un(REMOVED_FROM_GAME, i(115891)),	-- Primal Gladiator's Copperskin Tunic
 							un(REMOVED_FROM_GAME, i(115967)),	-- Primal Gladiator's Copperskin Waistband
-							un(REMOVED_FROM_GAME, i(115881)),	-- Primal Gladiator's Ironskin boosts
+							un(REMOVED_FROM_GAME, i(115881)),	-- Primal Gladiator's Ironskin Boots
 							un(REMOVED_FROM_GAME, i(115882)),	-- Primal Gladiator's Ironskin Gloves
 							un(REMOVED_FROM_GAME, i(115883)),	-- Primal Gladiator's Ironskin Helm
 							un(REMOVED_FROM_GAME, i(115884)),	-- Primal Gladiator's Ironskin Legguards
@@ -1023,8 +1023,8 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115898)),	-- Primal Gladiator's Ornamented Clasp
 							un(REMOVED_FROM_GAME, i(115902)),	-- Primal Gladiator's Ornamented Gloves
 							un(REMOVED_FROM_GAME, i(115899)),	-- Primal Gladiator's Ornamented Greaves
-							un(REMOVED_FROM_GAME, i(115903)),	-- Primal Gladiator's Ornamented headcover
-							un(REMOVED_FROM_GAME, i(115904)),	-- Primal Gladiator's Ornamented legPlates
+							un(REMOVED_FROM_GAME, i(115903)),	-- Primal Gladiator's Ornamented Headcover
+							un(REMOVED_FROM_GAME, i(115904)),	-- Primal Gladiator's Ornamented Legplates
 							un(REMOVED_FROM_GAME, i(115905)),	-- Primal Gladiator's Ornamented Spaulders
 							un(REMOVED_FROM_GAME, i(115892)),	-- Primal Gladiator's Scaled Chestpiece
 							un(REMOVED_FROM_GAME, i(115897)),	-- Primal Gladiator's Scaled Clasp
@@ -1039,9 +1039,9 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115911)),	-- Primal Gladiator's Mooncloth Gloves
 							un(REMOVED_FROM_GAME, i(115912)),	-- Primal Gladiator's Mooncloth Hood
 							un(REMOVED_FROM_GAME, i(115913)),	-- Primal Gladiator's Mooncloth Leggings
-							un(REMOVED_FROM_GAME, i(115915)),	-- Primal Gladiator's Mooncloth manthle
+							un(REMOVED_FROM_GAME, i(115915)),	-- Primal Gladiator's Mooncloth Mantle
 							un(REMOVED_FROM_GAME, i(115914)),	-- Primal Gladiator's Mooncloth Robe
-							un(REMOVED_FROM_GAME, i(115829)),	-- Primal Gladiator's Mooncloth trads
+							un(REMOVED_FROM_GAME, i(115829)),	-- Primal Gladiator's Mooncloth Treads
 							un(REMOVED_FROM_GAME, i(115969)),	-- Primal Gladiator's Satin Cord
 							un(REMOVED_FROM_GAME, i(115916)),	-- Primal Gladiator's Satin Gloves
 							un(REMOVED_FROM_GAME, i(115917)),	-- Primal Gladiator's Satin Hood
@@ -1051,7 +1051,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115968)),	-- Primal Gladiator's Satin Treads
 						}),
 						cl(ROGUE, {
-							un(REMOVED_FROM_GAME, i(115922)),	-- Primal Gladiator's Leather boosts
+							un(REMOVED_FROM_GAME, i(115922)),	-- Primal Gladiator's Leather Boots
 							un(REMOVED_FROM_GAME, i(115924)),	-- Primal Gladiator's Leather Gloves
 							un(REMOVED_FROM_GAME, i(115925)),	-- Primal Gladiator's Leather Helm
 							un(REMOVED_FROM_GAME, i(115926)),	-- Primal Gladiator's Leather Legguards
@@ -1075,7 +1075,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115940)),	-- Primal Gladiator's Linked Spaulders
 							un(REMOVED_FROM_GAME, i(115867)),	-- Primal Gladiator's Linked Waistband
 							un(REMOVED_FROM_GAME, i(115931)),	-- Primal Gladiator's Ringmail Armor
-							un(REMOVED_FROM_GAME, i(115929)),	-- Primal Gladiator's Ringmail Foodguards
+							un(REMOVED_FROM_GAME, i(115929)),	-- Primal Gladiator's Ringmail Footguards
 							un(REMOVED_FROM_GAME, i(115932)),	-- Primal Gladiator's Ringmail Gauntlets
 							un(REMOVED_FROM_GAME, i(115933)),	-- Primal Gladiator's Ringmail Helm
 							un(REMOVED_FROM_GAME, i(115934)),	-- Primal Gladiator's Ringmail Leggings
@@ -1179,7 +1179,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(125715)),	-- Wild Gladiator's Ornamented Chestguard
 							un(REMOVED_FROM_GAME, i(125716)),	-- Wild Gladiator's Ornamented Gloves
 							un(REMOVED_FROM_GAME, i(125717)),	-- Wild Gladiator's Ornamented Headcover
-							un(REMOVED_FROM_GAME, i(125718)),	-- Wild Gladiator's Ornamented LegPlates
+							un(REMOVED_FROM_GAME, i(125718)),	-- Wild Gladiator's Ornamented Legplates
 							un(REMOVED_FROM_GAME, i(125719)),	-- Wild Gladiator's Ornamented Spaulders
 						}),
 						cl(PRIEST, {
@@ -1300,7 +1300,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(126805)),	-- Warmongering Gladiator's Silk Trousers
 						}),
 						cl(MONK, {
-							un(REMOVED_FROM_GAME, i(126809)),	-- Warmongering Gladiator's Ironskin boosts
+							un(REMOVED_FROM_GAME, i(126809)),	-- Warmongering Gladiator's Ironskin Boots
 							un(REMOVED_FROM_GAME, i(126810)),	-- Warmongering Gladiator's Ironskin Gloves
 							un(REMOVED_FROM_GAME, i(126811)),	-- Warmongering Gladiator's Ironskin Helm
 							un(REMOVED_FROM_GAME, i(126812)),	-- Warmongering Gladiator's Ironskin Legguards
@@ -1321,7 +1321,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(126829)),	-- Warmongering Gladiator's Ornamented Chestguard
 							un(REMOVED_FROM_GAME, i(126830)),	-- Warmongering Gladiator's Ornamented Gloves
 							un(REMOVED_FROM_GAME, i(126831)),	-- Warmongering Gladiator's Ornamented Headcover
-							un(REMOVED_FROM_GAME, i(126832)),	-- Warmongering Gladiator's Ornamented LegPlates
+							un(REMOVED_FROM_GAME, i(126832)),	-- Warmongering Gladiator's Ornamented Legplates
 							un(REMOVED_FROM_GAME, i(126833)),	-- Warmongering Gladiator's Ornamented Spaulders
 							un(REMOVED_FROM_GAME, i(126820)),	-- Warmongering Gladiator's Scaled Chestpiece
 							un(REMOVED_FROM_GAME, i(126821)),	-- Warmongering Gladiator's Scaled Gauntlets
@@ -1418,27 +1418,27 @@ battleground(1478, {	-- Ashran
 					un(REMOVED_FROM_GAME, i(127365)),	-- Wild Gladiator's Tabard
 					-- Fist Weapons
 					un(REMOVED_FROM_GAME, i(115948)),	-- Primal Gladiator's Ripper
-					un(REMOVED_FROM_GAME, i(115949)),	-- Primal  Gladiator's Render
+					un(REMOVED_FROM_GAME, i(115949)),	-- Primal Gladiator's Render
 					un(REMOVED_FROM_GAME, i(125762)),	-- Wild Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(125763)),	-- Wild Gladiator's Render
 					un(REMOVED_FROM_GAME, i(126876)),	-- Warmongering Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(126877)),	-- Warmongering Gladiator's Render
 					-- 2 Hand Mace
-					un(REMOVED_FROM_GAME, i(115818)),	-- Primal  Gladiator's Bonegrinder
+					un(REMOVED_FROM_GAME, i(115818)),	-- Primal Gladiator's Bonegrinder
 					un(REMOVED_FROM_GAME, i(125632)),	-- Wild Gladiator's Bonegrinder
-					un(REMOVED_FROM_GAME, i(126746)),	-- Warmongering  Gladiator's Bonegrinder
+					un(REMOVED_FROM_GAME, i(126746)),	-- Warmongering Gladiator's Bonegrinder
 					-- Crossbow
 					un(REMOVED_FROM_GAME, i(115836)),	-- Primal Gladiator's Heavy Crossbow
-					un(REMOVED_FROM_GAME, i(125650)),	-- Wild Gladiator's  Heavy Crossbow
-					un(REMOVED_FROM_GAME, i(126764)),	-- Warmongering Gladiator's  Heavy Crossbow
+					un(REMOVED_FROM_GAME, i(125650)),	-- Wild Gladiator's Heavy Crossbow
+					un(REMOVED_FROM_GAME, i(126764)),	-- Warmongering Gladiator's Heavy Crossbow
 					-- 2 Hand Axes
 					un(REMOVED_FROM_GAME, i(115817)),	-- Primal Gladiator's Decapitator
 					un(REMOVED_FROM_GAME, i(125631)),	-- Wild Gladiator's  Decapi
 					un(REMOVED_FROM_GAME, i(126745)),	-- Warmongering Gladiator's  Decapi
 					-- 2 Hand Swords
-					un(REMOVED_FROM_GAME, i(115819)),	-- Primal Gladiator's  Greatsword
-					un(REMOVED_FROM_GAME, i(125633)),	-- Wild Gladiator's  Greatsword
-					un(REMOVED_FROM_GAME, i(126747)),	-- Warmongering Gladiator's  Greatsword
+					un(REMOVED_FROM_GAME, i(115819)),	-- Primal Gladiator's Greatsword
+					un(REMOVED_FROM_GAME, i(125633)),	-- Wild Gladiator's Greatsword
+					un(REMOVED_FROM_GAME, i(126747)),	-- Warmongering Gladiator's Greatsword
 					-- 1 Hand Axes
 					un(REMOVED_FROM_GAME, i(115820)),	-- Primal Gladiator's Cleaver
 					un(REMOVED_FROM_GAME, i(115952)),	-- Primal Gladiator's Hacker
@@ -1466,7 +1466,7 @@ battleground(1478, {	-- Ashran
 					un(REMOVED_FROM_GAME, i(125646)),	-- Wild Gladiator's Spellblade
 					un(REMOVED_FROM_GAME, i(125761)),	-- Wild Gladiator's Shanker
 					un(REMOVED_FROM_GAME, i(126760)),	-- Warmongering Gladiator's Spellblade
-					un(REMOVED_FROM_GAME, i(126875)),	-- Warmongering Gladiator's SHanker
+					un(REMOVED_FROM_GAME, i(126875)),	-- Warmongering Gladiator's Shanker
 					-- Offhand
 					un(REMOVED_FROM_GAME, i(115830)),	-- Primal Gladiator's Endgame
 					un(REMOVED_FROM_GAME, i(115834)),	-- Primal Gladiator's Reprieve
@@ -1558,7 +1558,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115871)),	-- Primal Gladiator's Chain Gauntlets
 							un(REMOVED_FROM_GAME, i(115872)),	-- Primal Gladiator's Chain Helm
 							un(REMOVED_FROM_GAME, i(115873)),	-- Primal Gladiator's Chain Leggings
-							un(REMOVED_FROM_GAME, i(115866)),	-- Primal Gladiator's Chain links
+							un(REMOVED_FROM_GAME, i(115866)),	-- Primal Gladiator's Chain Links
 							un(REMOVED_FROM_GAME, i(115868)),	-- Primal Gladiator's Chain Sabatons
 							un(REMOVED_FROM_GAME, i(115874)),	-- Primal Gladiator's Chain Spaulders
 						}),
@@ -1579,7 +1579,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115890)),	-- Primal Gladiator's Copperskin Spaulders
 							un(REMOVED_FROM_GAME, i(115891)),	-- Primal Gladiator's Copperskin Tunic
 							un(REMOVED_FROM_GAME, i(115967)),	-- Primal Gladiator's Copperskin Waistband
-							un(REMOVED_FROM_GAME, i(115881)),	-- Primal Gladiator's Ironskin boosts
+							un(REMOVED_FROM_GAME, i(115881)),	-- Primal Gladiator's Ironskin Boots
 							un(REMOVED_FROM_GAME, i(115882)),	-- Primal Gladiator's Ironskin Gloves
 							un(REMOVED_FROM_GAME, i(115883)),	-- Primal Gladiator's Ironskin Helm
 							un(REMOVED_FROM_GAME, i(115884)),	-- Primal Gladiator's Ironskin Legguards
@@ -1592,8 +1592,8 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115898)),	-- Primal Gladiator's Ornamented Clasp
 							un(REMOVED_FROM_GAME, i(115902)),	-- Primal Gladiator's Ornamented Gloves
 							un(REMOVED_FROM_GAME, i(115899)),	-- Primal Gladiator's Ornamented Greaves
-							un(REMOVED_FROM_GAME, i(115903)),	-- Primal Gladiator's Ornamented headcover
-							un(REMOVED_FROM_GAME, i(115904)),	-- Primal Gladiator's Ornamented legPlates
+							un(REMOVED_FROM_GAME, i(115903)),	-- Primal Gladiator's Ornamented Headcover
+							un(REMOVED_FROM_GAME, i(115904)),	-- Primal Gladiator's Ornamented Legplates
 							un(REMOVED_FROM_GAME, i(115905)),	-- Primal Gladiator's Ornamented Spaulders
 							un(REMOVED_FROM_GAME, i(115892)),	-- Primal Gladiator's Scaled Chestpiece
 							un(REMOVED_FROM_GAME, i(115897)),	-- Primal Gladiator's Scaled Clasp
@@ -1608,9 +1608,9 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115911)),	-- Primal Gladiator's Mooncloth Gloves
 							un(REMOVED_FROM_GAME, i(115912)),	-- Primal Gladiator's Mooncloth Hood
 							un(REMOVED_FROM_GAME, i(115913)),	-- Primal Gladiator's Mooncloth Leggings
-							un(REMOVED_FROM_GAME, i(115915)),	-- Primal Gladiator's Mooncloth manthle
+							un(REMOVED_FROM_GAME, i(115915)),	-- Primal Gladiator's Mooncloth Mantle
 							un(REMOVED_FROM_GAME, i(115914)),	-- Primal Gladiator's Mooncloth Robe
-							un(REMOVED_FROM_GAME, i(115829)),	-- Primal Gladiator's Mooncloth trads
+							un(REMOVED_FROM_GAME, i(115829)),	-- Primal Gladiator's Mooncloth Treads
 							un(REMOVED_FROM_GAME, i(115969)),	-- Primal Gladiator's Satin Cord
 							un(REMOVED_FROM_GAME, i(115916)),	-- Primal Gladiator's Satin Gloves
 							un(REMOVED_FROM_GAME, i(115917)),	-- Primal Gladiator's Satin Hood
@@ -1620,7 +1620,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115968)),	-- Primal Gladiator's Satin Treads
 						}),
 						cl(ROGUE, {
-							un(REMOVED_FROM_GAME, i(115922)),	-- Primal Gladiator's Leather boosts
+							un(REMOVED_FROM_GAME, i(115922)),	-- Primal Gladiator's Leather Boots
 							un(REMOVED_FROM_GAME, i(115924)),	-- Primal Gladiator's Leather Gloves
 							un(REMOVED_FROM_GAME, i(115925)),	-- Primal Gladiator's Leather Helm
 							un(REMOVED_FROM_GAME, i(115926)),	-- Primal Gladiator's Leather Legguards
@@ -1644,7 +1644,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(115940)),	-- Primal Gladiator's Linked Spaulders
 							un(REMOVED_FROM_GAME, i(115867)),	-- Primal Gladiator's Linked Waistband
 							un(REMOVED_FROM_GAME, i(115931)),	-- Primal Gladiator's Ringmail Armor
-							un(REMOVED_FROM_GAME, i(115929)),	-- Primal Gladiator's Ringmail Foodguards
+							un(REMOVED_FROM_GAME, i(115929)),	-- Primal Gladiator's Ringmail Footguards
 							un(REMOVED_FROM_GAME, i(115932)),	-- Primal Gladiator's Ringmail Gauntlets
 							un(REMOVED_FROM_GAME, i(115933)),	-- Primal Gladiator's Ringmail Helm
 							un(REMOVED_FROM_GAME, i(115934)),	-- Primal Gladiator's Ringmail Leggings
@@ -1748,7 +1748,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(125715)),	-- Wild Gladiator's Ornamented Chestguard
 							un(REMOVED_FROM_GAME, i(125716)),	-- Wild Gladiator's Ornamented Gloves
 							un(REMOVED_FROM_GAME, i(125717)),	-- Wild Gladiator's Ornamented Headcover
-							un(REMOVED_FROM_GAME, i(125718)),	-- Wild Gladiator's Ornamented LegPlates
+							un(REMOVED_FROM_GAME, i(125718)),	-- Wild Gladiator's Ornamented Legplates
 							un(REMOVED_FROM_GAME, i(125719)),	-- Wild Gladiator's Ornamented Spaulders
 						}),
 						cl(PRIEST, {
@@ -1869,7 +1869,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(126805)),	-- Warmongering Gladiator's Silk Trousers
 						}),
 						cl(MONK, {
-							un(REMOVED_FROM_GAME, i(126809)),	-- Warmongering Gladiator's Ironskin boosts
+							un(REMOVED_FROM_GAME, i(126809)),	-- Warmongering Gladiator's Ironskin Boots
 							un(REMOVED_FROM_GAME, i(126810)),	-- Warmongering Gladiator's Ironskin Gloves
 							un(REMOVED_FROM_GAME, i(126811)),	-- Warmongering Gladiator's Ironskin Helm
 							un(REMOVED_FROM_GAME, i(126812)),	-- Warmongering Gladiator's Ironskin Legguards
@@ -1890,7 +1890,7 @@ battleground(1478, {	-- Ashran
 							un(REMOVED_FROM_GAME, i(126829)),	-- Warmongering Gladiator's Ornamented Chestguard
 							un(REMOVED_FROM_GAME, i(126830)),	-- Warmongering Gladiator's Ornamented Gloves
 							un(REMOVED_FROM_GAME, i(126831)),	-- Warmongering Gladiator's Ornamented Headcover
-							un(REMOVED_FROM_GAME, i(126832)),	-- Warmongering Gladiator's Ornamented LegPlates
+							un(REMOVED_FROM_GAME, i(126832)),	-- Warmongering Gladiator's Ornamented Legplates
 							un(REMOVED_FROM_GAME, i(126833)),	-- Warmongering Gladiator's Ornamented Spaulders
 							un(REMOVED_FROM_GAME, i(126820)),	-- Warmongering Gladiator's Scaled Chestpiece
 							un(REMOVED_FROM_GAME, i(126821)),	-- Warmongering Gladiator's Scaled Gauntlets
@@ -2037,7 +2037,7 @@ battleground(1478, {	-- Ashran
 			i(114843),	-- Handbook: Pick Pocket [Rogue]
 			i(114849),	-- Manual Of Heroic Leap [Warrior]
 			i(118425),	-- Nesingwary's Lost Horn
-			i(118426),	-- Scroll of Invoke Yu'Lon, the Jade Serpent
+			i(118426),	-- Scroll of Invoke Yu'lon, the Jade Serpent
 			i(116411),	-- Scroll of Protection
 			i(119183),	-- Scroll of Risky Recall
 			i(116410),	-- Scroll of Speed

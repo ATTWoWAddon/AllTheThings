@@ -716,7 +716,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.HARANDAR, {
 				{ 44.2, 44.0, MAP.MIDNIGHT.HARANDAR },
 				{ 46.2, 47.8, MAP.MIDNIGHT.HARANDAR },
 			},
-			groups = { i(260531) },	-- Crystalized Resin Fragment
+			groups = { i(260531) },	-- Crystallized Resin Fragment
 		}),
 		--o(613829, {	-- A Frayed Scroll
 		--	coord = { 47.6, 47.3, MAP.MIDNIGHT.HARANDAR },

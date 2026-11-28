@@ -146,7 +146,7 @@ maproot(NAZJATAR, {
 			}),
 			q(56156, {	-- A Tempered Blade
 				description = "Must complete this quest for the rest of the zone to become available.",
-				sourceQuest = 55363,	-- Rescue the Farseer
+				sourceQuest = 55363,	-- Rescue The Farseer
 				provider = { "n", 154248 },	-- Bladesman Inowari
 				coord = { 39.4, 53.4, NAZJATAR },
 				races = ALLIANCE_ONLY,
@@ -298,7 +298,7 @@ maproot(NAZJATAR, {
 				provider = { "n", 154002 },	-- Atolia Seapearl
 				coord = { 51.0, 65.5, NAZJATAR },
 				races = HORDE_ONLY,
-				groups = { currency(1721) },	-- Prismatic Manapearls
+				groups = { currency(1721) },	-- Prismatic Manapearl
 			}),
 			q(55597, {	-- Bound by Honor
 				sourceQuest = 55593,	-- Insight into Our Enemies
@@ -1915,7 +1915,7 @@ maproot(NAZJATAR, {
 					169485,	-- Benthic Gauntlets
 				}},
 				groups = {
-					currency(1721),	-- Prismatic Manapearls
+					currency(1721),	-- Prismatic Manapearl
 				},
 			}),
 			q(55385, {	-- Scouting the Pens
@@ -2504,7 +2504,7 @@ maproot(NAZJATAR, {
 				isDaily = true,
 				groups = { i(168260) },	-- Void Cache Key (QI!)
 			}),
-			q(55777, {	-- Wanted: Braxicus
+			q(55777, {	-- WANTED: Braxicus
 				description = "Requires |cFFFFD700Hunter Akana|r as your friend.",
 				provider = { "o", 326140 },	-- Bounty Board
 				coord = { 39.1, 54.1, NAZJATAR },
@@ -2520,7 +2520,7 @@ maproot(NAZJATAR, {
 				isDaily = true,
 				groups = { i(168317) },	-- Commander Sarj'eth's Head (QI!)
 			}),
-			q(56223, {	-- Wanted: Commander Sarj'eth (H)
+			q(56223, {	-- WANTED: Commander Sarj'eth (H)
 				provider = { "o", 327585 },	-- Bounty Board
 				coord = { 47.9, 61.3, NAZJATAR },
 				races = HORDE_ONLY,
@@ -2586,7 +2586,7 @@ maproot(NAZJATAR, {
 				isDaily = true,
 				groups = { i(168319) },	-- Lady Narjiss' Head (QI!)
 			}),
-			q(56225, {	-- Wanted: Lady Narjiss (H)
+			q(56225, {	-- WANTED: Lady Narjiss (H)
 				description = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 				provider = { "o", 327585 },	-- Bounty Board
 				coord = { 47.9, 61.3, NAZJATAR },
@@ -2731,7 +2731,7 @@ maproot(NAZJATAR, {
 				provider = { "i", 168155 },	-- Chum
 				_drop = { "g" },
 				groups = {
-					currency(1721),	-- Prismatic Manapearls
+					currency(1721),	-- Prismatic Manapearl
 					i(168159),	-- Chum (QI!)
 					i(168155),	-- Chum (QI!)
 					i(168157),	-- Shimmering Eel Skin (QI!)
@@ -2829,7 +2829,7 @@ maproot(NAZJATAR, {
 				sourceQuest = 55500,	-- Save a Friend
 				provider = { "n", 151310 },	-- Kelfin Scout (Poen Gillbrac)
 				races = HORDE_ONLY,
-				groups = { i(169915) },	-- Poen's Stashed Supplies,
+				groups = { i(169915) },	-- Poen's Stashed Supplies
 			}),
 		}),
 	},

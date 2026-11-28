@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						-- #if BEFORE 11.2.0
 						i(234507),	-- Electrician's Siphoning Filter
 						-- #endif
-						i(234493),	-- Geezle's Coercive Volt-ohmmeter
+						i(234493),	-- Geezle's Coercive Volt-Ohmmeter
 						i(232545),	-- Gigazap's Zap-Cap
 						i(234504),	-- Jumpstarter's Scaffold-Scrapers
 						i(234501),	-- Portable Power Generator

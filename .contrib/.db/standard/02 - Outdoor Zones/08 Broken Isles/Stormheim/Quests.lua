@@ -565,7 +565,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 				i(134555),	-- Runesworn Grips
 				i(134556),	-- Stormborn Gloves
 				i(134557),	-- Dreadsworn Gauntlets
-				i(134558),	-- Runespeaker's Robe
+				i(134558),	-- Runespeaker's Robes
 				i(134559),	-- Runesworn Chestguard
 				i(134560),	-- Stormborn Tunic
 				i(134561),	-- Dreadsworn Chestguard

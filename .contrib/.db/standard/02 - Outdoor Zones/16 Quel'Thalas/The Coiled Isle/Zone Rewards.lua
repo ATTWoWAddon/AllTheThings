@@ -72,7 +72,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 			}),
 			filter(TRINKET_F, {
 				i(274494),	-- Chiral Marrowgrafter
-				i(274493),	-- Effigy of Ula'Tek's Faithful
+				i(274493),	-- Effigy of Ula'tek's Faithful
 				i(280047),	-- Feathered Bell
 				i(280091),	-- Latent Purifier
 				i(274496),	-- Ophidian Bone Whistle

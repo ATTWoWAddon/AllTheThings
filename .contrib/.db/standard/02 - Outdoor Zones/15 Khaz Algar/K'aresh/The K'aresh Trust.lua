@@ -101,7 +101,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 						provider = { "n", 243291 },	-- Xy'dax
 						coord = { 46.9, 36.8, KARESH_TAZAVESH },
 					}),
-					q(90773, {	-- Meat my Business
+					q(90773, {	-- Meat My Business
 						sourceQuests = { 90747 },	-- The Wrong Bluecephalus
 						provider = { "n", 243926 },	-- Chef Xy'Zin
 						coord = { 48.3, 41.5, KARESH_TAZAVESH },
@@ -115,7 +115,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 						},
 					}),
 					q(90770, {	-- The Grift
-						sourceQuests = { 90773 },	-- Meat my Business
+						sourceQuests = { 90773 },	-- Meat My Business
 						provider = { "n", 243915 },	-- Griftah
 						coord = { 48.7, 41.5, KARESH_TAZAVESH },
 						groups = {

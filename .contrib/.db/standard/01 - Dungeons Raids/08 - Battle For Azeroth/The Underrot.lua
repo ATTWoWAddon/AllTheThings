@@ -88,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						ach(12500),	-- Underrot
 						i(159655),	-- Vile Exsanguinator
 						i(159446),	-- Greathelm of the Putrid Path
-						i(159381),	-- Visage of Bloody  Horrors
+						i(159381),	-- Visage of Bloody Horrors
 						i(159385),	-- Amalgamated Abomination Spaulders
 						i(159267),	-- Pauldrons of Vile Corruption
 						i(159323),	-- Shoulders of the Sanguine Monstrosity
@@ -156,7 +156,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							ach(12501),	-- Heroic: Underrot
 							i(159655),	-- Vile Exsanguinator
 							i(159446),	-- Greathelm of the Putrid Path
-							i(159381),	-- Visage of Bloody  Horrors
+							i(159381),	-- Visage of Bloody Horrors
 							i(159385),	-- Amalgamated Abomination Spaulders
 							i(159267),	-- Pauldrons of Vile Corruption
 							i(159323),	-- Shoulders of the Sanguine Monstrosity
@@ -231,7 +231,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(160829),	-- Underrot Crawg (MOUNT!)
 							i(159655),	-- Vile Exsanguinator
 							i(159446),	-- Greathelm of the Putrid Path
-							i(159381),	-- Visage of Bloody  Horrors
+							i(159381),	-- Visage of Bloody Horrors
 							i(159385),	-- Amalgamated Abomination Spaulders
 							i(159267),	-- Pauldrons of Vile Corruption
 							i(159323),	-- Shoulders of the Sanguine Monstrosity

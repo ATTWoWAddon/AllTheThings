@@ -6,7 +6,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 	timeline = { ADDED_9_0_2_LAUNCH },
 	groups = {
 		n(ACHIEVEMENTS, {
-			ach(14744, {	-- Better to be Lucky than Dead
+			ach(14744, {	-- Better to Be Lucky Than Dead
 				crit(49841, {	-- Adjutant Dekaris
 					_npcs = { 157964 },
 				}),

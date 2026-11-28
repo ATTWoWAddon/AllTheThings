@@ -642,7 +642,7 @@ maproot(KALIMDOR, ULDUM, {
 					ach(5317),	-- Help the Bombardier! I'm the Bombardier!
 					i(65870),	-- Confiscated Dog Tags
 					i(65869),	-- Powderburned Spaulders
-					i(65868),	-- Canopic CHestplate
+					i(65868),	-- Canopic Chestplate
 				},
 			}),
 			q(28736, {	-- Fire From the Sky (Daily)

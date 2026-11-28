@@ -2810,7 +2810,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						21810,	-- Wyrmcult Hewer
 					},
 				}),
-				applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32660, {	-- Crystal Forged Sword
+				applyclassicphase(TBC_PHASE_TWO_OGRILA, i(32660, {	-- Crystalforged Sword
 					timeline = { ADDED_2_1_0 },
 					cost = {
 						{ "i", 32674, 1 },	-- Depleted Sword

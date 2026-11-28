@@ -22,7 +22,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 			ach(17402, {	-- Dragon Glyphs: Stormsunder Mountain
 				coord = { 77.4, 55.1, THE_FORBIDDEN_REACH },
 			}),
-			ach(17404, {	-- Dragon Glyphs: Talonlord's Perch
+			ach(17404, {	-- Dragon Glyphs: Talonlords' Perch
 				coord = { 59.0, 65.2, THE_FORBIDDEN_REACH },
 			}),
 			ach(17399, {	-- Dragon Glyphs: Talon's Watch

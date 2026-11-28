@@ -738,7 +738,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					races = ALLIANCE_ONLY,
 					groups = {
 						i(42791),	-- Ring of Order
-						i(42804),	-- spiked Iceclimber's Boots
+						i(42804),	-- Spiked Iceclimber's Boots
 						i(42816),	-- Cuffs of Invention
 						i(42834),	-- Mantle of Long Winter
 					},
@@ -1840,7 +1840,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						29792,	-- Frostfeather Screecher
 					},
 				}),
-				i(42780),	-- Relics of Ulduar
+				i(42780),	-- Relic of Ulduar
 				i(49050, {	-- Schematic: Jeeves (RECIPE!)
 					crs = { 29724 },	-- Library Guardian
 				}),

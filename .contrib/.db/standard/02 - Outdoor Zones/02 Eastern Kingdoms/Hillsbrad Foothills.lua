@@ -2495,7 +2495,7 @@ Click Leave vehicle and repeat steps 3-8"]],
 						cr = 2421,	-- Muckrake
 					}),
 					objective(3, {	-- 0/1 Glommus's Head
-						provider = { "i", 3552 },	-- Glommus's Head
+						provider = { "i", 3552 },	-- Glommus' Head
 						coord = { 39.4, 41.8, ALTERAC_MOUNTAINS },
 						cr = 2422,	-- Glommus
 					}),

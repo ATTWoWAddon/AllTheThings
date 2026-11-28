@@ -961,7 +961,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						emof(60, i(50984)),	-- Gloves of Ambivalence
 						emof(60, i(50983)),	-- Gloves of False Gestures
 						emof(60, i(50981)),	-- Gloves of the Great Horned Owl
-						emof(60, i(50355)),	-- Herkumi War Token
+						emof(60, i(50355)),	-- Herkuml War Token
 						emof(30, i(50454, {	-- Idol of the Black Willow
 							timeline = { REMOVED_5_0_4 },
 						})),

@@ -19,7 +19,7 @@ maproot(KHAZ_ALGAR, SIREN_ISLE, {
 				provider = { "i", 233495 },	-- Inky Snapdragon Treat
 			})),
 			q(86376, name(HEADERS.Item, 233497, {	-- Kaja'Cola-braised Snapdragon Treat
-				provider = { "i", 233497 },	-- Kaja'Cola-braised Snapdragon Treat
+				provider = { "i", 233497 },	-- Kaja'Cola-Braised Snapdragon Treat
 			})),
 			q(86374, name(HEADERS.Item, 233494, {	-- Muddy Snapdragon Treat
 				provider = { "i", 233494 },	-- Muddy Snapdragon Treat
@@ -41,7 +41,7 @@ maproot(KHAZ_ALGAR, SIREN_ISLE, {
 			sym = {{"select","itemID",
 				233500,	-- Crimson Snapdragon Treat
 				233495,	-- Inky Snapdragon Treat
-				233497,	-- Kaja'Cola-braised Snapdragon Treat
+				233497,	-- Kaja'Cola-Braised Snapdragon Treat
 				233494,	-- Muddy Snapdragon Treat
 				233499,	-- Royal Snapdragon Treat
 				233501,	-- Sandy Snapdragon Treat

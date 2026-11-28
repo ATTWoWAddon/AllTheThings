@@ -563,7 +563,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 				provider = { "n", 175998 },	-- Elspeth Larink
 				coord = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 			}),
-			q(60110, {	-- Never Had A Friend Like Me
+			q(60110, {	-- Never Had a Friend Like Me
 				sourceQuests = { 60049 },	-- At Your Service
 				provider = { "n", 161906 },	-- Emeni <The Slaughter Daughter>
 				coord = { 38.3, 36.7, SEAT_OF_THE_PRIMUS },
@@ -997,7 +997,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 				provider = { "n", 161461 },	-- The Accuser
 				coord = { 72.0, 41.2, REVENDRETH },
 			}),
-			q(60111, {	-- Forging a Friendship
+			q(60111, {	-- Forging A Friendship
 				sourceQuests = { 62406 },	-- Staff of the Primus
 				provider = { "n", 161905 },	-- Bonesmith Heirmir
 				coord = { 42.8, 32.2, SEAT_OF_THE_PRIMUS },

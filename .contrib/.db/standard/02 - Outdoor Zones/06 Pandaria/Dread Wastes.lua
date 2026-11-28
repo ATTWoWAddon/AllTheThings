@@ -691,7 +691,7 @@ maproot(PANDARIA, DREAD_WASTES, {
 					i(88139),	-- Sapfly Wristwraps
 					i(88138),	-- Withered Wood Wristwraps
 					i(88137),	-- Lucidity Wristwraps
-					i(88136),	-- Deadspinner Wristwraps
+					i(88136),	-- Dreadspinner Wristwraps
 					i(88135),	-- Ghost Fox Wristwraps
 					i(88134),	-- Wind-Reaver Wristwraps
 					i(88133),	-- Bladesworn Wristwraps

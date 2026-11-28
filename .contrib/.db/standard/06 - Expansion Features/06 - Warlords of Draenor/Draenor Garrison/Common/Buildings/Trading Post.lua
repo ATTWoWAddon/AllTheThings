@@ -216,7 +216,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 										{ "g", 50000000 },	-- 5,000g
 									},
 								}),
-								i(119138),	-- Laughing Skull Orc Tabard
+								i(119138),	-- Laughing Skull Orcs Tabard
 							},
 						}),
 					}),

@@ -463,7 +463,7 @@ maproot(KALIMDOR, {
 							qg = 155496,	-- Wrathion
 							coord = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							timeline = { ADDED_8_3_0 },
-							groups = { currency(1719) },	-- Corrupted Memento
+							groups = { currency(1719) },	-- Corrupted Mementos
 						}),
 						q(56167, {	-- Investigating the Highlands
 							description = "Your Heart of Azeroth needs to be 60 to start the questline.",
@@ -1467,21 +1467,21 @@ maproot(KALIMDOR, {
 				n(131837, {	-- Zannok Hidepiercer <Leatherworking Supplies>
 					coord = { 81.2, 18.4, SILITHUS },
 					sym = {{"select", "itemID",
-						137884,	-- Pattern Dreadleather Bindings
-						137890,	-- Pattern Dreadleather Footpads
-						137889,	-- Pattern Dreadleather Gloves
-						137891,	-- Pattern Dreadleather Jerkin
-						137888,	-- Pattern Dreadleather Mask
-						137887,	-- Pattern Dreadleather Pants
-						137886,	-- Pattern Dreadleather Shoulderguard
-						142407,	-- Pattern Drums Of The Mountain
-						137916,	-- Pattern Gravenscale Armbands
-						137921,	-- Pattern Gravenscale Grips
-						137923,	-- Pattern Gravenscale Hauberk
-						137919,	-- Pattern Gravenscale Leggings
-						137918,	-- Pattern Gravenscale Spaulders
-						137922,	-- Pattern Gravenscale Treads
-						137920,	-- Pattern Gravenscale Warhelm
+						137884,	-- Pattern: Dreadleather Bindings
+						137890,	-- Pattern: Dreadleather Footpads
+						137889,	-- Pattern: Dreadleather Gloves
+						137891,	-- Pattern: Dreadleather Jerkin
+						137888,	-- Pattern: Dreadleather Mask
+						137887,	-- Pattern: Dreadleather Pants
+						137886,	-- Pattern: Dreadleather Shoulderguard
+						142407,	-- Pattern: Drums of the Mountain
+						137916,	-- Pattern: Gravenscale Armbands
+						137921,	-- Pattern: Gravenscale Grips
+						137923,	-- Pattern: Gravenscale Hauberk
+						137919,	-- Pattern: Gravenscale Leggings
+						137918,	-- Pattern: Gravenscale Spaulders
+						137922,	-- Pattern: Gravenscale Treads
+						137920,	-- Pattern: Gravenscale Warhelm
 					}},
 				}),
 			}),

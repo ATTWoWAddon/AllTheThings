@@ -174,7 +174,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 									i(184212),	-- Intimidator Trainer's Cuffs
 									i(184214),	-- Chained Manacles
 									i(184215),	-- Depraved Houndmaster's Grips
-									i(184216),	-- Stoneborn Bodyguard's Shoulderplate
+									i(184216),	-- Stoneborn Bodyguard's Shoulderplates
 								},
 							}),
 							n(159155, {	-- High Inquisitor Dacian

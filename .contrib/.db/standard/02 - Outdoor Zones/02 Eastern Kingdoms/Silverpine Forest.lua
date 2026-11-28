@@ -1449,7 +1449,7 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 					i(4437, {	-- Channeler's Staff
 						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					}),
-					i(4436, {	-- Jewel-encrusted Sash
+					i(4436, {	-- Jewel-Encrusted Sash
 						timeline = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					}),
 				},
@@ -1647,7 +1647,7 @@ maproot(EASTERN_KINGDOMS, SILVERPINE_FOREST, {
 				races = HORDE_ONLY,
 				sym = {{"select","itemID",
 					16059,	-- Common Brown Shirt
-					3428,	-- Common Grey Shirt
+					3428,	-- Common Gray Shirt
 					16060,	-- Common White Shirt
 				}},
 				groups = {

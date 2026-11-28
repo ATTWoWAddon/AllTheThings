@@ -1247,7 +1247,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						}, {	-- Friendly
 						}, {	-- Honored
 							i(93244),	-- Band of the Shieldwall
-							i(93246),	-- Circle of the shieldwall
+							i(93246),	-- Circle of the Shieldwall
 							i(93245),	-- Loop of the Shieldwall
 							i(93247),	-- Seal of the Shieldwall
 							i(93243),	-- Signet of the Shieldwall

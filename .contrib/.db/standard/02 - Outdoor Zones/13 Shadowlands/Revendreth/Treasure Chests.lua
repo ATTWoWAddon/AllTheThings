@@ -363,7 +363,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 			o_repeated({
 			-- Rewards
 				i(182687),	-- Biggun Wollopper
-				i(182712, {	-- Dredger's Short-Sleeved Doublet
+				i(182712, {	-- Dredger's Short Sleeved Doublet
 					customCollect = "SL_COV_VEN",
 				}),
 			-- Objects

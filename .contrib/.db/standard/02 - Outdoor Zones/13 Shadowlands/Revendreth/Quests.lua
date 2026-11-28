@@ -1223,7 +1223,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 				provider = { "i", 173710 },	-- Petrified Stonefiend
 			}),
 			q(58073, {	-- Favor: Portrait of the Sire
-				provider = { "i", 173711 },	-- Portrait of the Sire
+				provider = { "i", 173711 },	-- Portrait of The Sire
 			}),
 			q(58079, {	-- Favor: Pristine Dredbat Fang
 				provider = { "i", 173719 },	-- Pristine Dredbat Fang

@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					},
 					groups = {
 						-- Legendaries
-						i(183231),	-- Memory of a Cat-eye Curio
+						i(183231),	-- Memory of a Cat-Eye Curio
 						-- Conduits
 						i(183483),	-- Carnivorous Instinct
 						i(182610),	-- Ferocious Appetite
@@ -125,7 +125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(180108),	-- Abyssal Disharmony Breeches
 						i(180119),	-- Boon of the Archon
 						i(180099),	-- Breastplate of Brutal Dissonance
-						i(180096),	-- Devos' Cacophonous Poleaxe
+						i(180096),	-- Devos's Cacophonous Poleaxe
 						i(180123),	-- Drape of Twisted Loyalties
 						i(180114),	-- Fallen Paragon's Armguards
 						i(183054),	-- Mysterious Soul Mirror

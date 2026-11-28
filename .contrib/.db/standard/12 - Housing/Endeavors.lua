@@ -350,7 +350,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				},
 			}),
 			filter(MISC, {
-				i(81054),	-- Kafa'Kota Berry
+				i(81054),	-- Kafa'kota Berry
 				i(242693),	-- Kafaccino
 				i(253750),	-- Luckydo
 			}),

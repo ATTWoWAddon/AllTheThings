@@ -29,7 +29,7 @@ root(ROOTS.Zones, {
 			i(158127),	-- Razorbone Spear
 			i(158120),	-- Salt Coast Headcracker
 			i(158117),	-- Salt Coast Knuckles
-			i(158134),	-- Salt Coast Piercers
+			i(158134),	-- Salt Coast Piercer
 			i(158122),	-- Spirit Bog Scepter
 			i(158108, {	-- Whisperfen Chopper
 				races = HORDE_ONLY,

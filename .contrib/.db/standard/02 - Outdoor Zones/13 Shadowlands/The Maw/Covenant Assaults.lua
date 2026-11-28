@@ -60,7 +60,7 @@ maproot(SHADOWLANDS, THE_MAW, {
 						15044,	-- Krrprripripkraak's Heroes
 					}},
 				}),
-				ach(15036, {	-- Rooting Out The Evil
+				ach(15036, {	-- Rooting Out the Evil
 					crit(52031, {	-- Clean Out the Crucible
 						sourceQuests = { 63968 },	-- Clean Out the Crucible
 					}),

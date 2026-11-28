@@ -1606,7 +1606,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						i(38712),	-- Headbinder's Crown
 						i(39045),	-- Legguards of Refuted Feudalism
 						i(39077),	-- Skull-Reshaper's Helm
-						i(38749),	-- Thane Reaper's Signet
+						i(38749),	-- Thane-Reaper's Signet
 						i(39016),	-- Tunic of the Rectified Thane
 					},
 				}),

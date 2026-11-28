@@ -141,7 +141,7 @@ local ZoneDropLoot = {
 	i(119346),	-- Kyu-Sy's Tarflame Doomcloak
 	i(119344),	-- Magic-Breaker Cape
 	i(119345),	-- Milenah's Intricate Cloak
-	i(119337),	-- Ripswallow Plate Belts
+	i(119337),	-- Ripswallow Plate Belt
 };
 
 ------ Boss Functions ------

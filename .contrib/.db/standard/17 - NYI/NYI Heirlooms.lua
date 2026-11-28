@@ -8,7 +8,7 @@ root(ROOTS.NeverImplemented, n(HEIRLOOMS, {
 		expansion(EXPANSION.CATA, patch(0,3), {
 			i(62035),	-- Antique Myrmidon's Signet
 			i(62036),	-- Ornate Band of Accuria
-			i(62037),	-- Gleaming seal of the archmagus
+			i(62037),	-- Gleaming Seal of the Archmagus
 		}),
 
 		-- 4.1.0

@@ -104,7 +104,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, {
 						provider = { "i", 208092 },	-- Torch of Pyrreth
 					}),
 					crit(60756, {	-- Idol of Ohn'ara
-						provider = { "i", 207730 },	-- Idol of Ohn'ara
+						provider = { "i", 207730 },	-- Idol of Ohn'ahra
 					}),
 					--
 					i(208149),	-- Brown Tweed Cap (COSMETIC!)

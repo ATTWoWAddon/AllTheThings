@@ -132,7 +132,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137339),	-- Quivering Blightshard Husk
 				})),
 				cr(91004, e(1665, {	-- Ularogg Cragshaper
-					i(134164),	-- Bitestone Wristwraps
+					i(134164),	-- Bitestone Wristwrap
 					i(137341),	-- Cragshaper's Fitted Hood
 					i(134443),	-- Gravelworn Handguards
 					i(134530),	-- Loop of Vitriolic Intent
@@ -201,7 +201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(137339),	-- Quivering Blightshard Husk
 					})),
 					cr(91004, e(1665, {	-- Ularogg Cragshaper
-						i(134164),	-- Bitestone Wristwraps
+						i(134164),	-- Bitestone Wristwrap
 						i(137341),	-- Cragshaper's Fitted Hood
 						i(134443),	-- Gravelworn Handguards
 						i(134530),	-- Loop of Vitriolic Intent
@@ -264,7 +264,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(137339),	-- Quivering Blightshard Husk
 					})),
 					cr(91004, e(1665, {	-- Ularogg Cragshaper
-						i(134164),	-- Bitestone Wristwraps
+						i(134164),	-- Bitestone Wristwrap
 						i(137341),	-- Cragshaper's Fitted Hood
 						i(134443),	-- Gravelworn Handguards
 						i(134530),	-- Loop of Vitriolic Intent

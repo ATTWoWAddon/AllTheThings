@@ -18,7 +18,7 @@ root(ROOTS.HiddenCurrencyTriggers, {
 			currency(2856),	-- 10.2.7 Timewalking Season - Artifact - Cloak - Haste
 			currency(2857),	-- 10.2.7 Timewalking Season - Artifact - Cloak - Leech
 			currency(2858),	-- 10.2.7 Timewalking Season - Artifact - Cloak - Mastery
-			currency(2859),	-- 10.2.7 Timewalking Season - Artifact - Cloak- Speed
+			currency(2859),	-- 10.2.7 Timewalking Season - Artifact - Cloak - Speed
 			currency(2860),	-- 10.2.7 Timewalking Season - Artifact - Cloak - Versatility
 			currency(2861),	-- 10.2.7 Timewalking Season - Artifact - Head - Aberration
 			currency(2862),	-- 10.2.7 Timewalking Season - Artifact - Head - Beast
@@ -52,7 +52,7 @@ root(ROOTS.HiddenCurrencyTriggers, {
 			currency(3009),	-- Bonus Valorstones
 			currency(3013),	-- Jewelcrafting Concentration
 			currency(3022),	-- Renown - Season 1 Delves
-			currency(3023),	-- 11.0 Professions - Personal Tracker - SI Spark Drops (Hidden)
+			currency(3023),	-- 11.0 Professions - Personal Tracker - S1 Spark Drops (Hidden)
 			currency(3024),	-- Cosmetic
 			currency(3025),	-- Cosmetic
 			currency(3026),	-- Cosmetic
@@ -89,7 +89,7 @@ root(ROOTS.HiddenCurrencyTriggers, {
 			currency(3071),	-- 11.0 Professions - Fishing - Algari Weaverthread - Skill
 			currency(3072),	-- Everburning Ignition Refund
 			currency(3073),	-- 11.0 Professions - Tracker - Insc Book - Tailoring Knowledge
-			currency(3074),	-- 11.0 Professions - Tracker - Insc Book- Skinning Knowledge
+			currency(3074),	-- 11.0 Professions - Tracker - Insc Book - Skinning Knowledge
 			currency(3075),	-- 11.0 Professions - Tracker - Insc Book - Mining Knowledge
 			currency(3076),	-- 11.0 Professions - Tracker - Insc Book - Leatherworking Know.
 			currency(3077),	-- 11.0 Professions - Tracker - Insc Book - Jewelcrafting Knowledge

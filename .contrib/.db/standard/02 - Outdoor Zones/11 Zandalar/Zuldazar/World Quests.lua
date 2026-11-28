@@ -307,7 +307,7 @@ maproot(ZANDALAR, ZULDAZAR, {
 				races = ALLIANCE_ONLY,
 				lvl = 45,
 			}),
-			a(q(54498, {	-- Stack on the Tank
+			a(q(54498, {	-- Stack On The Tank
 				a(ach(13440)),	-- Pushing the Payload (A)
 			})),
 			q(53165, {	-- Stopping Antiquities Theft

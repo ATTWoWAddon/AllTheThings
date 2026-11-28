@@ -4732,7 +4732,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				},
 				groups = {
 					i(16059),	-- Common Brown Shirt
-					i(3428),	-- Common Grey Shirt
+					i(3428),	-- Common Gray Shirt
 					i(16060),	-- Common White Shirt
 					-- #if AFTER 10.0.5
 					-- Now any class and race can buy this
@@ -5976,7 +5976,7 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(3426),	-- Bold Yellow Shirt
-					i(3428),	-- Common Grey Shirt
+					i(3428),	-- Common Gray Shirt
 					i(3427),	-- Stylish Black Shirt
 					i(13896),	-- Dark Green Wedding Hanbok
 					i(13898),	-- Royal Dangui

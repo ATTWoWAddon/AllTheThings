@@ -170,7 +170,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						groups = {
 							i(56126),	-- Azureborne Cloak
 							i(56125),	-- Crimsonborne Bracers
-							i(56124),	-- Earthshaper Pauldrons
+							i(56124),	-- Earthshape Pauldrons
 							i(56123),	-- Red Scale Boots
 							i(56127),	-- Windwalker Blade
 						},

@@ -142,7 +142,7 @@ maproot(SHADOWLANDS, KORTHIA, {
 				coord = { 43.8, 76.9, KORTHIA },
 				cost = { { "i", 187613, 1 } },	-- Key of the Inner Chambers
 				groups = {
-					i(187119),	-- Ring of Self Reflection
+					i(187119),	-- Ring of Self-Reflection
 				},
 			}),
 			o(369340, {	-- Korthian Relic Box

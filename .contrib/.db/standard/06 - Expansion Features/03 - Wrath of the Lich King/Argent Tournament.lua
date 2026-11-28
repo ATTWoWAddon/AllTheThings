@@ -4473,7 +4473,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						champP3(40, i(122363, {	-- Burnished Warden Staff
 							timeline = { ADDED_6_1_0 },
 						})),
-						champP3(25, i(122356, {	-- Champion Herod's Shoulders
+						champP3(25, i(122356, {	-- Champion Herod's Shoulder
 							timeline = { ADDED_6_1_0 },
 						})),
 						champP3(25, i(122379, {	-- Champion's Deathdealer Breastplate

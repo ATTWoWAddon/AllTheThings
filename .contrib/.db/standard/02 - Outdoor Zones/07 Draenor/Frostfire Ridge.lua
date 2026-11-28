@@ -869,7 +869,7 @@ maproot(DRAENOR, FROSTFIRE_RIDGE, {
 				coord = { 70.7, 78.5, 527 },
 				races = HORDE_ONLY,
 				groups = {
-					i(106170),	-- Frostwolf Ringmail Gauntlet
+					i(106170),	-- Frostwolf Ringmail Gauntlets
 					i(106138),	-- Frostwolf Scout's Gloves
 					i(106148),	-- Frostwolf Stalwart Gauntlets
 					i(106159),	-- Frostwolf Wind-Talker Gloves

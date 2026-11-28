@@ -816,7 +816,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					groups = {
 						ach(5369),	-- It's Frost Damage
 						i(65168),	-- Rockslicer
-						i(65170),	-- Smite's Reaper
+						i(65170),	-- Smite's Reaver
 						i(65169),	-- Lavishly Jeweled Ring
 					},
 				}),

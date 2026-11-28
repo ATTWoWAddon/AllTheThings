@@ -27,7 +27,7 @@ i(16967,{collectible=false})	-- Feralas Ahi
 i(23553,{collectible=false})	-- Living Branch
 i(49201,{collectible=false})	-- Dingy Wizard Hat (assumed since no retro-credit)
 i(167547,{collectible=false})	-- Deep Diving Helmet
-i(29570);	-- A Gnmome Effigy
+i(29570);	-- A Gnome Effigy
 i(44435);	-- Windle's Lighter
 i(102144);	-- Kor'kron Cage Key
 i(118067);	-- Old Chain Link
@@ -36,7 +36,7 @@ i(180786);	-- Empty Binding
 i(30744);	-- Draenic Leather Pack
 -- MoP
 i(81205);	-- Funereal Ashes
-i(83157);	-- Shattered Bone fRagment
+i(83157);	-- Shattered Bone Fragment
 i(82328);	-- Shiny Carapace
 -- Legion
 i(138293);	-- Explorer's Pack
@@ -99,7 +99,7 @@ i(33928);	-- Hollowed Bone Decanter
 i(101436);	-- Icemother Milk
 i(169943);	-- Little Princess Cap
 i(138883);	-- Meryl's Conjured Refreshment
-i(169944);	-- Miniscule Fez
+i(169944);	-- Minuscule Fez
 i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
@@ -113,7 +113,7 @@ i(119216);	-- Super Sticky Glitter Bomb
 i(169860);	-- Tiny Dapper Hat
 i(168003);	-- Unstable Manapearl
 i(85266);	-- Winter Blossom Tree
-i(128851);	-- Roasted juicycrunch carrots
+i(128851);	-- Roasted Juicycrunch Carrots
 i(141005);	-- Vial of Hippogryph Pheromones
 -- "Mount Equipment"
 i(141593);	-- Dro's Key
@@ -194,7 +194,7 @@ i(8927);	-- Instant Poison V
 i(8928);	-- Instant Poison VI
 i(5237);	-- Mind-Numbing Poison
 i(6951);	-- Mind-Numbing Poison II
-i(9186);	-- Mind-Numbing Poison III
+i(9186);	-- Mind-numbing Poison III
 i(10918);	-- Wound Poison
 i(10920);	-- Wound Poison II
 i(10921);	-- Wound Poison III
@@ -1280,7 +1280,7 @@ i(180515);	-- Weird Egg
 i(178131);	-- Whetstone Talon File
 i(184149);	-- Widowbloom-Infused Fragrance
 i(181490);	-- Wild Godrune
-i(180697);	-- Wing Commanders Insignia
+i(180697);	-- Wing Commander's Insignia
 i(182711);	-- Winner Caller's Warbler
 i(176885);	-- Wisp of Extinction
 i(178135);	-- Wisp of Life
@@ -2463,7 +2463,7 @@ i(234720);	-- Memoric Residue
 i(226377);	-- Mining Journal - Page 1
 i(234750);	-- Myrmidon's Osminium Bracer
 i(234751);	-- Pearl-Adorned Tailband
-i(232636);	-- Rum-Soaked Hankerchief
+i(232636);	-- Rum-Soaked Handkerchief
 i(232633);	-- Shiny Seaside Clam
 i(232632);	-- Spiral Mollusk Shell
 i(234719);	-- Storm-Etched Vambrace
@@ -2483,7 +2483,7 @@ i(233030);	-- Charged Cables
 i(234203);	-- Clay-Speckled Metal Slug
 i(237335);	-- Collectible Pineappletini Mug
 i(233029);	-- Cracked Core
-i(236636);	-- Cracked Crysoberyl
+i(236636);	-- Cracked Chrysoberyl
 i(236640);	-- Cracked Earthen Singing Bowl
 i(236955);	-- Crimson Valorstone
 i(235038);	-- Crumpled Schematic
@@ -2772,7 +2772,7 @@ i(260279);	-- Lightbloomin' Onion
 i(260675);	-- Luminous Seeds
 i(260651);	-- Lustrous Wildlife Pelt
 i(260256);	-- Luxurious Omelette
-i(260621);	-- Magic Infused Bark
+i(260621);	-- Magic-Infused Bark
 i(264987);	-- Magister's Mead
 i(260255);	-- Managi Roll
 i(260693);	-- Mossy Lump of Dirt
@@ -2863,7 +2863,7 @@ i(260614);	-- Unrecognizable Organ
 i(260676);	-- Unremarkable Crystal
 i(260649);	-- Vibrant Vortex
 i(260686);	-- Vibrant Wings
-i(244038);	-- Vinetwinted Crate
+i(244038);	-- Vinetwined Crate
 i(260615);	-- Void Dust Residue
 i(260677);	-- Void Flakes
 i(260293);	-- Void Port
@@ -2872,7 +2872,7 @@ i(260297);	-- Voidfarer's Respite
 i(260294);	-- Voidwyrm Absinthe
 i(250865);	-- Warm Brown Ale
 i(265046);	-- Warped Summoning Sigil
-i(260645);	-- Water Filled Organ
+i(260645);	-- Water-Filled Organ
 i(265061);	-- Whispering Rift Residue
 i(238491);	-- Whispering Rock
 i(264982);	-- Wine Not

@@ -34,7 +34,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 	-- Crafting
 	i(191529),	-- Illustrious Insight
 	i(191526),	-- Lesser Illustrious Insight
-	i(204462, {timeline = {ADDED_10_1_0}}),	-- Dracothyst Shards
+	i(204462, {timeline = {ADDED_10_1_0}}),	-- Dracothyst Shard
 	n(DECOR, {
 		timeline = { ADDED_11_2_7 },
 		groups = {
@@ -756,7 +756,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 		i(197795),	-- Hoard of Draconic Delicacies
 		i(197777),	-- Hopefully Healthy
 		i(197765),	-- Impossibly Sharp Cutting Knife
-		i(197760),	-- Mackerel Snackeral
+		i(197760),	-- Mackerel Snackerel
 		i(194902, {	-- Ooey-Gooey Chocolate
 			i(194903),	-- Pocket Chocolate
 		}),
@@ -2317,8 +2317,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 			i(211537, {timeline = {ADDED_10_2_6_SEASON_FOUR}}),	-- Draconic Combatant's Jeweled Amulet
 			i(193001),	-- Elemental Lariat
 			i(193005),	-- Idol of the Dreamer
-			i(193006),	-- Idol of the Earth Warder
-			i(193003),	-- Idol of the Lifebinder
+			i(193006),	-- Idol of the Earth-Warder
+			i(193003),	-- Idol of the Life-Binder
 			i(193004),	-- Idol of the Spell-Weaver
 			i(204095, {timeline = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Amulet
 			i(204094, {timeline = {ADDED_10_1_0}}),	-- Obsidian Combatant's Jeweled Signet
@@ -3173,7 +3173,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, timelineSelf({ timeline = { ADDED
 			i(193222),	-- Lustrous Scaled Hide+
 			i(193223),	-- Lustrous Scaled Hide++
 			i(193224),	-- Lustrous Scaled Hide+++
-			i(205413, {timeline = {ADDED_10_1_0}}),	-- Obisidian Cobraskin
+			i(205413, {timeline = {ADDED_10_1_0}}),	-- Obsidian Cobraskin
 			i(193255),	-- Pristine Vorquin Horn
 			i(203417, {timeline = {ADDED_10_0_7}}),	-- Razor-Sharp Animal Bone
 			i(193208),	-- Resilient Leather+

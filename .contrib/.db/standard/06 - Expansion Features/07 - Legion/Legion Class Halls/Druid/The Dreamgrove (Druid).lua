@@ -237,7 +237,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							artifact(62),	-- Restoration Druid Hidden Artifact Appearance
 						}),
 						i(129362),	-- Broot (PET!)
-						i(140397),	-- G'hanir's Blossom
+						i(140397),	-- G'Hanir's Blossom
 						i(140741),	-- Nightmare Lasher (PET!)
 						i(140400),	-- Perfect Dreamgrove Blossom
 					},

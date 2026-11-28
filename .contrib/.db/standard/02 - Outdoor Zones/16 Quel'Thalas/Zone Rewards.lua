@@ -10,7 +10,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 				i(257022),	-- Deepvine Shroud
 				i(259359),	-- Rootspeaker's Mantle
 				i(259360),	-- Steelbark Cloak*
-				i(257021),	-- Verdant Tracker's Covert
+				i(257021),	-- Verdant Tracker's Cover
 			}),
 			filter(CLOTH, {
 				i(256976),	-- Deepvine Ankleguards

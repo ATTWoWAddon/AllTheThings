@@ -20,7 +20,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					coord = { 51.90, 72.39, THE_WAKING_SHORES },
 					timeline = { ADDED_10_0_7 },
 				})),
-				q(70636, {	-- Ancient Protodragons
+				q(70636, {	-- Ancient Proto-Dragons
 					coord = { 35.1, 81.6, THE_WAKING_SHORES },
 				}),
 				q(66902, {	-- Bee-Gone
@@ -95,7 +95,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 						i(191857),	-- Warmwater Riverfish (QI!)
 					},
 				}),
-				pvp(q(72008, {	-- Overcoming a Mountain: Krolkoth
+				pvp(q(72008, {	-- Overcoming A Mountain: Krolkoth
 					coord = { 43.2, 58.0, THE_WAKING_SHORES },
 				})),
 				q(70012, {	-- Protect the Nets!

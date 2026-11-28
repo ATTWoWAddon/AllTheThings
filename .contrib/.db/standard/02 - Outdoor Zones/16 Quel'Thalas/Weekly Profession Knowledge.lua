@@ -13,7 +13,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 				i(259188),	-- Lightbloomed Spore Sample
 				-- Blacksmithing
 				i(259191),	-- Infused Quenching Oil
-				i(259190),	-- Thalassian Whestone
+				i(259190),	-- Thalassian Whetstone
 				-- Enchanting
 				i(259193),	-- Lost Thalassian Vellum
 				i(259192),	-- Voidstorm Ashes

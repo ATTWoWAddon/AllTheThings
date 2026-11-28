@@ -768,7 +768,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 						provider = { "n", 192820 },	-- Toddy Whiskers
 						coord = { 55.1, 56.2, THALDRASZUS },
 						groups = {
-							i(192768),	-- Titan Disk
+							i(192768),	-- Titan Disc
 						},
 					}),
 					q(66547, {	-- It Belongs in a Museum... Eventually

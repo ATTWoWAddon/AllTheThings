@@ -209,7 +209,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}),
 					}, bubbleDownClassicRep(FACTION_THE_ANGLERS, {
 						{		-- Neutral
-							i(168416, {	-- Angler's Water Striders
+							i(168416, {	-- Anglers' Water Striders
 								timeline = { ADDED_8_2_0 },
 							}),
 						}, {	-- Friendly
@@ -232,7 +232,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								cost = 12750000,	-- 1,275g
 							}),
 						}, {	-- Exalted
-							i(89401),	-- Angler's Tabard
+							i(89401),	-- Anglers Tabard
 							i(81354, {	-- Azure Water Strider (MOUNT!)
 								cost = 9500000,	-- 950g
 							}),

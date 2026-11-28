@@ -185,7 +185,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							i(274494),	-- Chiral Marrowgrafter
 							i(251789),	-- Consecrated Chalice
 							i(251790),	-- Desecrated Chalice
-							i(274493),	-- Effigy of Ula'Tek's Faithful
+							i(274493),	-- Effigy of Ula'tek's Faithful
 							i(251786),	-- Ever-Collapsing Void Fissure
 							i(251792),	-- Glorious Crusader's Keepsake
 							i(264694),	-- Ultradon Cuirass
@@ -244,8 +244,8 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						i(272271),	-- Spiritbound Focus
 						i(272277),	-- Spirit-Reaver
 						i(272283),	-- Swordsman's Emanation
-						i(272267),	-- Uncoffined Labrys
-						i(272273),	-- Unshrined Ceremonial Scepter
+						i(272267),	-- Unconfined Labrys
+						i(272273),	-- Enshrined Ceremonial Scepter
 					},
 				}),
 			})),

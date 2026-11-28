@@ -170,16 +170,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 				}, {
 					i(97725),	-- Insubordination Helm
 					i(97734),	-- Insubordination Helm
-					i(97660),	-- Malcontent's Cowl,
-					i(97745),	-- Malcontent's Cowl,
+					i(97660),	-- Malcontent's Cowl
+					i(97745),	-- Malcontent's Cowl
 					i(97659),	-- Tallgrass Guerilla's Cap
 					i(97658),	-- Dissident's Crown
-					i(97692),	-- Crimson Schism Headpiece,
-					i(97750),	-- Crimson Schism Headpiece,
-					i(97757),	-- Crimson Schism Headpiece,
-					i(97656),	-- Secessionist's Helm,
-					i(97776),	-- Secessionist's Helm,
-					i(97785),	-- Secessionist's Helm,
+					i(97692),	-- Crimson Schism Headpiece
+					i(97750),	-- Crimson Schism Headpiece
+					i(97757),	-- Crimson Schism Headpiece
+					i(97656),	-- Secessionist's Helm
+					i(97776),	-- Secessionist's Helm
+					i(97785),	-- Secessionist's Helm
 					i(97657),	-- Reformationist's Crown
 					i(97655),	-- Disowner's Cap
 					i(97625),	-- Unbending Spirit Coif
@@ -204,8 +204,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({
 					i(97752),	-- Crimson Schism Pauldrons
 					i(97759),	-- Crimson Schism Pauldrons
 					i(97676),	-- Secessionist's Spaulders
-					i(97781),	-- Secessionist's Spaulders,
-					i(97787),	-- Secessionist's Spaulders,
+					i(97781),	-- Secessionist's Spaulders
+					i(97787),	-- Secessionist's Spaulders
 					i(97674),	-- Reformationist's Mantle
 					i(97675),	-- Disowner's Spaulders
 					i(97630),	-- Unbending Spirit Pauldrons

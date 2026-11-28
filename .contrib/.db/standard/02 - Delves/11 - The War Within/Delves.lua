@@ -1344,7 +1344,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 						i(235493),	-- Ignited Flare Jar
 						i(235491),	-- Immolation Warning
 						i(235487),	-- Interest Compounder
-						i(235495),	-- Missile Guided Throat Slitter
+						i(235495),	-- Missile-Guided Throat Slitter
 						i(235485),	-- Oil Gouger
 						i(235492),	-- Oscillating Scrapcleaver
 						i(235484),	-- Razor-sharp Desk Fan
@@ -1674,11 +1674,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 			i(222923),	-- Expeditionary Spoils (Tier 2)
 			i(225178),	-- Expeditionary Spoils (Tier 3)
 			i(226107),	-- Homebrewed Blink Vial
-			i(248954, { timeline={ ADDED_11_2_0 } }),	-- Nether-warped Seedlings
+			i(248954, { timeline={ ADDED_11_2_0 } }),	-- Nether-Warped Seedling
 			i(222916),	-- Player Experience (Tier 1-2)
 			i(222917),	-- Player Experience (Tier 3)
 			i(225249),	-- Rattling Bag'o'gold
-			i(248755, { timeline={ ADDED_11_2_0 } }),	-- Star-in-a-jar
+			i(248755, { timeline={ ADDED_11_2_0 } }),	-- Star-in-a-Jar
 			i(226109),	-- Squirming Swarm Sac
 			i(222927),	-- Weathered Coin Coffer
 			--
@@ -2265,7 +2265,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 				i(249032),	-- Dulux Bluesberry Blast
 				i(249030),	-- Omega Oyster Outbreak
 				i(249031),	-- Supreme Mangoro Madness
-				i(249029),	-- Ultimate Orange O-pocalypse
+				i(249029),	-- Ultimate Orange O-Pocalypse
 			},
 		}),
 		o(455914, {	-- Mislaid Curiosity
@@ -2548,7 +2548,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 						iensemble(237954, {	-- Arsenal: Undermine Weaponry
 							cost = { { "c", RESONANCE_CRYSTALS, 4000 } },
 						}),
-						iensemble(234385, {	-- Ensemble: Aegis Of Hidden Stars
+						iensemble(234385, {	-- Ensemble: Aegis of Hidden Stars
 							cost = { { "c", RESONANCE_CRYSTALS, 4000 } },
 						}),
 						iensemble(237945, {	-- Ensemble: Blastborne Loadout
@@ -2557,7 +2557,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 						iensemble(248788, {	-- Ensemble: Bundle of Ethereal Cloaks
 							cost = { { "c", RESONANCE_CRYSTALS, 4000 } },
 						}),
-						iensemble(234384, {	-- Ensemble: Chains Of The Stygian Sea
+						iensemble(234384, {	-- Ensemble: Chains of the Stygian Sea
 							cost = { { "c", RESONANCE_CRYSTALS, 4000 } },
 						}),
 						iensemble(237944, {	-- Ensemble: Junkreaver's Plates
@@ -2998,7 +2998,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 						cost = { { "c", UNDERCOIN, 5000 } },
 						timeline = { ADDED_11_2_0 },
 					}),
-					iensemble(234385, {	-- Ensemble: Aegis Of Hidden Stars
+					iensemble(234385, {	-- Ensemble: Aegis of Hidden Stars
 						cost = { { "c", UNDERCOIN, 5000 } },
 						timeline = { ADDED_11_1_0_SEASONSTART },
 					}),
@@ -3010,7 +3010,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, timelineSelf({ timeline = { ADDED_11
 						cost = { { "c", UNDERCOIN, 2000 } },
 						timeline = { ADDED_11_2_0 },
 					}),
-					iensemble(234384, {	-- Ensemble: Chains Of The Stygian Sea
+					iensemble(234384, {	-- Ensemble: Chains of the Stygian Sea
 						cost = { { "c", UNDERCOIN, 5000 } },
 						timeline = { ADDED_11_1_0_SEASONSTART },
 					}),

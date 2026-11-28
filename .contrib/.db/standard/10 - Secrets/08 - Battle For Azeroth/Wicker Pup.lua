@@ -16,7 +16,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
 				groups = {
 					i(163497, {	-- Wicker Pup (PET!)
 						cost = {
-							{ "i", 163789, 1 },	-- Bundle of Wicker Stick
+							{ "i", 163789, 1 },	-- Bundle of Wicker Sticks
 							{ "i", 163791, 1 },	-- Miniature Stag Skull
 							{ "i", 163790, 1 },	-- Spooky Incantation
 							{ "i", 163796, 1 },	-- Wolf Pup Spine
@@ -49,7 +49,7 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, {
 				modelScale = 1.5,
 				questID = 53471,
 				coord = { 18.50, 51.30, DRUSTVAR },
-				groups = { i(163789) },	-- Bundle of Wicker Stick
+				groups = { i(163789) },	-- Bundle of Wicker Sticks
 			}),
 		},
 	}),

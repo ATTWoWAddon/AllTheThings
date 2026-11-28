@@ -1617,7 +1617,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(115940)),	-- Primal Gladiator's Linked Spaulders
 					un(REMOVED_FROM_GAME, i(115867)),	-- Primal Gladiator's Linked Waistband
 					un(REMOVED_FROM_GAME, i(115931)),	-- Primal Gladiator's Ringmail Armor
-					un(REMOVED_FROM_GAME, i(115929)),	-- Primal Gladiator's Ringmail Foodguards
+					un(REMOVED_FROM_GAME, i(115929)),	-- Primal Gladiator's Ringmail Footguards
 					un(REMOVED_FROM_GAME, i(115932)),	-- Primal Gladiator's Ringmail Gauntlets
 					un(REMOVED_FROM_GAME, i(115933)),	-- Primal Gladiator's Ringmail Helm
 					un(REMOVED_FROM_GAME, i(115934)),	-- Primal Gladiator's Ringmail Leggings
@@ -5117,7 +5117,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(126838)),	-- Warmongering Gladiator's Pike
 					un(REMOVED_FROM_GAME, i(126790)),	-- Warmongering Gladiator's Rifle
 					un(REMOVED_FROM_GAME, i(126760)),	-- Warmongering Gladiator's Spellblade
-					un(REMOVED_FROM_GAME, i(126875)),	-- Warmongering Gladiator's SHanker
+					un(REMOVED_FROM_GAME, i(126875)),	-- Warmongering Gladiator's Shanker
 					un(REMOVED_FROM_GAME, i(126758)),	-- Warmongering Gladiator's Endgame
 					un(REMOVED_FROM_GAME, i(126762)),	-- Warmongering Gladiator's Reprieve
 					un(REMOVED_FROM_GAME, i(126750)),	-- Warmongering Gladiator's Quickblade
@@ -5207,7 +5207,7 @@ root(ROOTS.PVP, {
 					un(REMOVED_FROM_GAME, i(126829)),	-- Warmongering Gladiator's Ornamented Chestguard
 					un(REMOVED_FROM_GAME, i(126830)),	-- Warmongering Gladiator's Ornamented Gloves
 					un(REMOVED_FROM_GAME, i(126831)),	-- Warmongering Gladiator's Ornamented Headcover
-					un(REMOVED_FROM_GAME, i(126832)),	-- Warmongering Gladiator's Ornamented LegPlates
+					un(REMOVED_FROM_GAME, i(126832)),	-- Warmongering Gladiator's Ornamented Legplates
 					un(REMOVED_FROM_GAME, i(126833)),	-- Warmongering Gladiator's Ornamented Spaulders
 					un(REMOVED_FROM_GAME, i(126820)),	-- Warmongering Gladiator's Scaled Chestpiece
 					un(REMOVED_FROM_GAME, i(126821)),	-- Warmongering Gladiator's Scaled Gauntlets

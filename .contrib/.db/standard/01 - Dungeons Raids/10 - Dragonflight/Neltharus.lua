@@ -18,7 +18,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					},
 					coord = { 25.1, 56.2, THE_WAKING_SHORES },
 					groups = {
-						i(193776),	-- Dragonkin Chestguard
+						i(193776),	-- Dragonkiln Chestguard
 						i(193777),	-- Helm of Hardened Gold
 						i(193787),	-- Mammoth-Trainer's Cape
 						i(193788),	-- Molten Magma Mantle

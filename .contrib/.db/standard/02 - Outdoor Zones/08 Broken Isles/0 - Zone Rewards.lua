@@ -66,8 +66,8 @@ maproot(BROKEN_ISLES, {
 		i(140020),	-- Vambraces of the Ebon Tide
 		i(139998),	-- Construct Plate Grips
 		i(121756),	-- Shieldguard Girdle
-		i(140009),	-- Felsword Legplates
-		i(140017),	-- Boots of the Felsword
+		i(140009),	-- Felsworn Legplates
+		i(140017),	-- Boots of the Felsworn
 		i(134334, {	-- Disgraced Court Cloak
 			bonusID = 1812,
 		}),

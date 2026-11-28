@@ -244,7 +244,7 @@ maproot(KHAZ_ALGAR, THE_RINGING_DEEPS, {
 				}, {	-- RENOWN 6 --
 					q(82369, {	-- A Shining Bundle of Goods
 						timeline = { ADDED_11_0_2, REMOVED_12_0_1_LAUNCH },
-						groups = { i(226148), },	-- Wax-sealed Weathered Crests
+						groups = { i(226148), },	-- Wax-Sealed Weathered Crests
 					}),
 					q(85538),	-- Shinies
 				}, {	-- RENOWN 7 --

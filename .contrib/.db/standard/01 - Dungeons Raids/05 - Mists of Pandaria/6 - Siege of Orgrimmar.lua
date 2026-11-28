@@ -337,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						qg = 63996,	-- Elder Liao
 						coord = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 					}),
-					cost = { { "c", 738, 50 } },	-- Lesser Charms of Good Fortune
+					cost = { { "c", 738, 50 } },	-- Lesser Charm of Good Fortune
 					repeatable = true,
 					groups = {
 						currency(776),	-- Warforged Seal
@@ -1731,7 +1731,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							i(112719),	-- Shoulderpads of Pulsing Protection
 							i(112704),	-- Arcsmasher Bracers
 							i(112712),	-- Dagryn's Fuselight Bracers
-							i(112716),	-- Scalebone Bracers
+							i(112716),	-- Scalebane Bracers
 							i(112727),	-- Smoldering Drakescale Bracers
 							i(112726),	-- Grips of Tidal Force
 							i(112707),	-- Korgra's Venom-Soaked Gauntlets
@@ -1800,7 +1800,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							ig(99680),	-- Gauntlets of the Cursed Vanquisher
 							i(112785),	-- Gar'tok, Strength of the Faithful
 							i(112787),	-- Arcweaver Spell Sword
-							i(112780),	-- Naz'grim's Gutripper
+							i(112780),	-- Nazgrim's Gutripper
 							i(112781),	-- Bulwark of the Fallen General
 							i(112789),	-- Crown of Tragic Truth
 							i(112783),	-- Shoulderguards of the Righteous Stand
@@ -3605,7 +3605,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112719),	-- Shoulderpads of Pulsing Protection
 						i(112704),	-- Arcsmasher Bracers
 						i(112712),	-- Dagryn's Fuselight Bracers
-						i(112716),	-- Scalebone Bracers
+						i(112716),	-- Scalebane Bracers
 						i(112727),	-- Smoldering Drakescale Bracers
 						i(112726),	-- Grips of Tidal Force
 						i(112707),	-- Korgra's Venom-Soaked Gauntlets
@@ -3679,7 +3679,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						ig(99682),	-- Gauntlets of the Cursed Vanquisher
 						i(112785),	-- Gar'tok, Strength of the Faithful
 						i(112787),	-- Arcweaver Spell Sword
-						i(112780),	-- Naz'grim's Gutripper
+						i(112780),	-- Nazgrim's Gutripper
 						i(112781),	-- Bulwark of the Fallen General
 						i(112789),	-- Crown of Tragic Truth
 						i(112783),	-- Shoulderguards of the Righteous Stand
@@ -4640,7 +4640,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112719),	-- Shoulderpads of Pulsing Protection
 						i(112704),	-- Arcsmasher Bracers
 						i(112712),	-- Dagryn's Fuselight Bracers
-						i(112716),	-- Scalebone Bracers
+						i(112716),	-- Scalebane Bracers
 						i(112727),	-- Smoldering Drakescale Bracers
 						i(112726),	-- Grips of Tidal Force
 						i(112707),	-- Korgra's Venom-Soaked Gauntlets
@@ -4717,7 +4717,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						ig(99720),	-- Gauntlets of the Cursed Vanquisher
 						i(112785),	-- Gar'tok, Strength of the Faithful
 						i(112787),	-- Arcweaver Spell Sword
-						i(112780),	-- Naz'grim's Gutripper
+						i(112780),	-- Nazgrim's Gutripper
 						i(112781),	-- Bulwark of the Fallen General
 						i(112789),	-- Crown of Tragic Truth
 						i(112783),	-- Shoulderguards of the Righteous Stand

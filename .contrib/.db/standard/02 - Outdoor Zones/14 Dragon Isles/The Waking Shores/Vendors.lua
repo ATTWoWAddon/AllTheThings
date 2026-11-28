@@ -37,9 +37,9 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					i(200265),	-- Lucky Dragon's Claw
 					i(200268),	-- Crumbling Elemental Stone
 					i(203652),	-- Griftah's All-Purpose Embellishing Powder
-					i(200269),	-- Taliman of the Dragon Hoard
+					i(200269),	-- Talisman of the Dragon Hoard
 					i(200271),	-- Infallible Hornswog Ward
-					i(27940),	-- Marveous Madstone of Immortality
+					i(27940),	-- Marvelous Madstone of Immortality
 					i(202046),	-- Lucky Tortollan Charm
 					i(199177),	-- Ash Feather Amulet
 					i(74918),	-- Problem Solving Pendant
@@ -96,7 +96,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				groups = {
 					i(194884),	-- Annoy-o-Tron Gang
 					i(193499),	-- Blacktalon Wingpack
-					i(194679),	-- BOOM-O-MATIC 90000
+					i(194679),	-- BOOM-O-MATIC 9000
 					i(199326, {	-- Chip (PET!)
 						cost = {
 							{ "i", 198357, 1 },	-- 1x Rock of Aegis

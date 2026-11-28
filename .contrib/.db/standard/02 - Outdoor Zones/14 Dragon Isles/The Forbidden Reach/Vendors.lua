@@ -246,7 +246,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 					i(193850, {	-- Buckie (PET!)
 						cost = { { "c", ELEMENTAL_OVERFLOW, 25000 } },
 					}),
-					i(203220, {	-- Iskaaran Surplus Bag
+					i(203220, {	-- Iskaara Surplus Bag
 						cost = { { "i", 202854, 1 } },	-- 1x Wondrous Fish
 						groups = { i(200453) },	-- Iskaara Tuskarr Insignia [Rare]
 					}),

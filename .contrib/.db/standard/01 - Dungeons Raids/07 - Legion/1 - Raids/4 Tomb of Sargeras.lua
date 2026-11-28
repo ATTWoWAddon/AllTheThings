@@ -123,7 +123,7 @@ local EncounterToLoot = {
 		i(147089),	-- Ferocity of the Devout
 		i(147033),	-- Lunar-Wrath Headgear
 		i(147054),	-- Mantle of Waning Radiance
-		i(147031),	-- Moonfire Strangers
+		i(147031),	-- Moonfire Stranglers
 		i(147105),	-- Moontalon's Feather
 		i(147078),	-- Mote of Astral Suffusion
 		i(146997),	-- Shoulderpads of Whispering Twilight

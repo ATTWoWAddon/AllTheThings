@@ -565,7 +565,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 						i(116387),	-- Axe of the Stone Geyser
 						i(116386),	-- Earthbound Shield
 						i(116035),	-- Rockbreaker Warcap
-						i(116044),	-- Erupting Mantle-
+						i(116044),	-- Erupting Mantle
 						i(116218),	-- Chestguard of Allegorical Shadows
 						i(116243),	-- Chestplate of Runed Earth
 						i(116008),	-- Robes of Living Earth

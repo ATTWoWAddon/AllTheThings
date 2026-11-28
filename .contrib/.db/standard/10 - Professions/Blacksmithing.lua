@@ -1495,7 +1495,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ requireSkill = BLAC
 			}),
 			q(93530, {	-- MID Weekly Blacksmithing Knowledgepoint #2
 				name = "MID Weekly Blacksmithing Treasure #2",
-				provider = { "i", 259190 },	-- Thalassian Whestone
+				provider = { "i", 259190 },	-- Thalassian Whetstone
 			}),
 		})),
 	}),

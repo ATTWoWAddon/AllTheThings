@@ -1348,7 +1348,7 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 					isDaily = true,
 					coord = { 41.0, 16.0, BROKEN_SHORE },
 				}),
-				n(119629, {	-- Lord Hel'Nurath
+				n(119629, {	-- Lord Hel'nurath
 					questID = 46304,	-- Rare Elite 15
 					isDaily = true,
 					coord = { 45.0, 51.3, BROKEN_SHORE },
@@ -1468,7 +1468,7 @@ maproot(BROKEN_ISLES, BROKEN_SHORE, {
 							i(146780),	-- Mail
 							i(146764),	-- Plate
 						}),
-						i(147837, {	-- Relinquished Relics
+						i(147837, {	-- Relinquished Relic
 							i(140086),	-- Intact Infernal Palm (Fel)
 						}),
 					},

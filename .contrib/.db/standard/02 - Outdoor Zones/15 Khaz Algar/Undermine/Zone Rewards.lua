@@ -24,7 +24,7 @@ maproot(KHAZ_ALGAR, UNDERMINE, {
 			filter(FINGER_F, {
 				i(233485),	-- Lucky-Streak Band
 				i(233483),	-- Lucky-Streak Ring
-				i(233484),	-- Lucky-Streak	Signet
+				i(233484),	-- Lucky-Streak Signet
 			}),
 			filter(LEATHER, {
 				i(233464),	-- Rebel Spike Bindings

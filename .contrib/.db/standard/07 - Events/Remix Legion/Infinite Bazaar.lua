@@ -690,7 +690,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						iensemble(241438),	-- Ensemble: Moonfall Robes
 						iensemble(241384),	-- Ensemble: Regalia of the Hrydshal Runespeaker
 						iensemble(241440),	-- Ensemble: Vestments of the Manasinged
-						iensemble(241382),	-- Ensemble: Wine-dark Royal Robes
+						iensemble(241382),	-- Ensemble: Wine-Dark Royal Robes
 						------ Locked behind: Legionfall ------
 						iensemble(241364),	-- Ensemble: Riven Priesthood Regalia
 						iensemble(241444),	-- Ensemble: Vileweave Vestments

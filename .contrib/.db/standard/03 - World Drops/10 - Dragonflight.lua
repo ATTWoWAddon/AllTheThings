@@ -116,7 +116,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.DF, {
 		})),
 		prof(TAILORING, sharedData({ requireSkill = TAILORING, },{
 			i(198978),	-- Stupidly Effective Stitchery
-			i(198977),	-- Ohn'ahran Weave
+			i(198977),	-- Ohn'arhan Weave
 		})),
 	}),
 	filter(REAGENTS, {
@@ -198,7 +198,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.DF, {
 	n(WEAPONS, {symselector=SymSelector.DRAGONFLIGHT_WORLDDROP_WEAPONS}),
 	n(WEAPONS, {
 		i(199020),	-- Drake Racing Starter Pistol
-		i(199027),	-- Drake Slayer's Greatsword
+		i(199027),	-- Drakeslayer's Greatsword
 		i(199032),	-- Drakescale Shield
 		i(199039),	-- Drakewatcher's Beacon
 		i(199033),	-- Drakewatcher's Scriptures
@@ -212,7 +212,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.DF, {
 		i(199035),	-- Isle Trapper's Crook
 		i(199022),	-- Isle Trapper's Dagger
 		i(199023),	-- Isle Trapper's Sword
-		i(199038),	-- Rune Carving Knife
+		i(199038),	-- Runecarving Knife
 		i(199046),	-- Shorebreaker's Greataxe
 		i(199037),	-- Shorebreaker's Poleaxe
 		i(199021),	-- Shorebreaker's Sword

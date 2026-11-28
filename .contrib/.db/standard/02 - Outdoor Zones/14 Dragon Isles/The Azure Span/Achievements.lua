@@ -35,7 +35,7 @@ maproot(DRAGON_ISLES, THE_AZURE_SPAN, {
 			ach(16474, {	-- Do You Wanna Build a Snowman?
 				coord = { 50.7, 55.4, THE_AZURE_SPAN },
 			}),
-			ach(16065, {	-- Dragon Glyphs: Azure Archive
+			ach(16065, {	-- Dragon Glyphs: Azure Archives
 				coord = { 39.4, 63.4, THE_AZURE_SPAN },
 			}),
 			ach(16068, {	-- Dragon Glyphs: Brackenhide Hollow

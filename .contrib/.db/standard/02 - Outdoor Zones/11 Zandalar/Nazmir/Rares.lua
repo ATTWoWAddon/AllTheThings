@@ -213,7 +213,7 @@ maproot(ZANDALAR, NAZMIR, {
 					crit(41479, {	-- Mala'kili and Rohnkor
 						achievementID = 12942,	-- Adventurer of Nazmir
 					}),
-					i(163703, {	-- Crawag Gnawed Femur
+					i(163703, {	-- Crawg Gnawed Femur
 						crs = { 128930 },	-- Rohnkor
 					}),
 				},

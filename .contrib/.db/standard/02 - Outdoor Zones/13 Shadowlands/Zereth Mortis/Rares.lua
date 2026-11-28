@@ -313,7 +313,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				questID = 65240,
 				groups = {
 					i(189944),	-- Immovable Stance of the Vombata
-					i(189962),	-- Sorrano's Gleaming Pauldrons
+					i(189962),	-- Sorranos' Gleaming Pauldrons
 					i(189911),	-- Sublime Fur Mantle
 					i(190582),	-- Symbol of the Vombata
 					i(187826),	-- Formula: Cosmic Protoweave (RECIPE!)
@@ -326,7 +326,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 				groups = {
 					i(189954),	-- Lustrous Sentinel's Sabatons
 					i(190003),	-- Skyward Savior's Talon
-					i(189915),	-- Tahkwitz' Cloth Ribbon
+					i(189915),	-- Tahkwitz's Cloth Ribbon
 					i(189933),	-- Vigilant Raptora's Crest
 					i(187832),	-- Schematic: Pure-Air Sail Extensions (RECIPE!)
 				},
@@ -361,7 +361,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					i(189959),	-- Legs of Graceful Landing
 					i(190597),	-- Symbol of the Lupine
 					i(189997),	-- The Lupine Prime's Might
-					i(189900),	-- Vexis' Gentle Heartcloth
+					i(189900),	-- Vexis's Gentle Heartcloth
 					i(190048),	-- Vexis' Wisest Fang
 				},
 			}),

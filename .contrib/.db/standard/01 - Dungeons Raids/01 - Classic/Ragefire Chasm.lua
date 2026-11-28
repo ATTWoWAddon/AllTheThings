@@ -293,7 +293,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(66031),	-- Hide Vest of the Shaman
 						i(66022),	-- Ragefire Leggings
 						i(49541),	-- Robes of the Doomed Ritual
-						i(131613, {	-- Scaled Vest of the Shaman
+						i(131613, {	-- Scale Vest of the Shaman
 							timeline = { CREATED_7_0_3 },
 						}),
 						i(66040),	-- Searing Belt

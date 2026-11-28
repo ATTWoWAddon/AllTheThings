@@ -935,7 +935,7 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					{ "pop" },
 					{ "select", "itemID",
 						16059,	-- Common Brown Shirt
-						3428,	-- Common Grey Shirt
+						3428,	-- Common Gray Shirt
 						16060,	-- Common White Shirt
 					},
 				},

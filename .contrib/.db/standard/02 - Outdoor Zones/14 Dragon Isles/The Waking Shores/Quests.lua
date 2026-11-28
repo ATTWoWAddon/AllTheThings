@@ -160,7 +160,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					provider = { "n", 186640 },	-- Wrathion
 					coord = { 66.4, 35.0, THE_WAKING_SHORES },
 					groups = {
-						i(194389),	-- Brush Clearing Axe
+						i(194389),	-- Brush-Clearing Axe
 						i(194392),	-- Expedition Defender's Blade
 						i(194378),	-- Explorer's Belt Knife
 						i(194374),	-- Explorers' League Rifle
@@ -1001,7 +1001,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 							},
 							groups = { i(198668) },	-- Blooming Shallowlily (QI!)
 						}),
-						i(198673),	-- Empty Life Pool Vial
+						i(198673),	-- Empty Life Pools Vial
 						i(200109),	-- Medicative Potion (QI!)
 						o(380576, {	-- Milky Snapflower
 							coords = {
@@ -1130,7 +1130,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				}),
 				q(70175, {	-- Broken Banding
 					sourceQuests = { 70231 },	-- Dialogue with Emilia Bellocq
-					provider = { "i", 198475 },	-- Broken Bankding
+					provider = { "i", 198475 },	-- Broken Banding
 					coord = { 81.0, 30.4, THE_WAKING_SHORES },
 				}),
 				q(70236, {	-- Dislodged Dragoneye
@@ -1145,7 +1145,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				}),
 				q(70207, {	-- Tail Fragment
 					sourceQuests = { 70231 },	-- Dialogue with Emilia Bellocq
-					provider = { "i", 198543 },	-- Tail Fragment
+					provider = { "i", 198543 },	-- Tail Fragments
 					coord = { 58.2, 68.3, THE_WAKING_SHORES },
 				}),
 			}),

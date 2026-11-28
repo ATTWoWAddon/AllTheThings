@@ -1145,7 +1145,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 				}),
 				q(70805, {	-- Precious Stone Fragment
 					sourceQuests = { 70231 },	-- Dialogue with Emilia Bellocq
-					provider = { "i", 199893 },	-- Precious Stone Fragment
+					provider = { "i", 199893 },	-- Precious Stone Fragments
 					coord = { 57.1, 64.6, THALDRASZUS },
 				}),
 			}),

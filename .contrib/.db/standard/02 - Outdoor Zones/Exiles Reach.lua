@@ -1238,7 +1238,7 @@ maproot(EXILES_REACH, bubbleDownSelf({
 				timeline = { REMOVED_11_0_2 },
 				races = ALLIANCE_ONLY,
 				groups = {
-					i(178941),	-- Alliance Dog Tags,
+					i(178941),	-- Alliance Dog Tags
 				}
 			}),
 			q(59641, {	-- The Nation of Kul Tiras

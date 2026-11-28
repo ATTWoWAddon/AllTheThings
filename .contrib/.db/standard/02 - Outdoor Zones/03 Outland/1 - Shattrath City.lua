@@ -2704,7 +2704,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						2030,	-- Gnarled Staff
 						928,	-- Long Staff
 						854,	-- Quarter Staff
-						12252,	-- Staff Of Protection
+						12252,	-- Staff of Protection
 						2495,	-- Walking Stick
 						2535,	-- War Staff
 					}},

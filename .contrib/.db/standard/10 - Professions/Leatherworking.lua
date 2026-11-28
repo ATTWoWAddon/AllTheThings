@@ -1342,7 +1342,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ requireSkill = LEA
 			}),
 			q(66384, {	-- DF Weekly Leatherworking Knowledgepoint #1
 				name = "DF Leatherworking Treasure #1",
-				provider = { "i", 193910 },	-- Molten Dragon Scales
+				provider = { "i", 193910 },	-- Molted Dragon Scales
 			}),
 			q(66385, {	-- DF Weekly Leatherworking Knowledgepoint #2
 				name = "DF Leatherworking Treasure #2",

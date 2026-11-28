@@ -241,7 +241,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					i(138171),	-- Inquisitor's Talisman
 					i(138161),	-- Mo'arg Clan Token
 					iensemble(139170),	-- Ensemble: Fel-Infused Cloth Armor
-					iensemble(139169),	-- Ensemble: Felshroud Lather Armor
+					iensemble(139169),	-- Ensemble: Felshroud Leather Armor
 					iensemble(139168),	-- Ensemble: Fel-Chain Mail Armor
 					iensemble(139167),	-- Ensemble: Felforged Plate Armor
 				},

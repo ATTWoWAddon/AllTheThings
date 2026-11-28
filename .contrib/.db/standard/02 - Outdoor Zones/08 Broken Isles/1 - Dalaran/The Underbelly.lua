@@ -155,7 +155,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, LEGION_THE_UNDERBELLY, {
 					i(136904, {	-- Sewer-Pipe Jelly  (PET!)
 						cost = { { "c", SIGHTLESS_EYE, 250 } },
 					}),
-					i(139412, {	-- Young Mutant War Turtles
+					i(139412, {	-- Young Mutant Warturtles
 						cost = { { "c", SIGHTLESS_EYE, 1500 } },
 						groups = { pet(1912) },	-- Young Mutant Warturtle (PET!)
 					}),

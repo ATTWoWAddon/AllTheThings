@@ -92,7 +92,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 			}),
 			n(QUESTS, {
 				q(66133, {	-- Keys of Loyalty
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					coord = { 27.9, 58.8, THE_WAKING_SHORES },
 					isWorldQuest = true,
 					isWeekly = true,
@@ -101,7 +101,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(66805, {	-- Keys of Loyalty
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					coord = { 27.9, 58.8, THE_WAKING_SHORES },
 					isWorldQuest = true,
 					isWeekly = true,
@@ -188,7 +188,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 						i(194963),	-- Plans: Black Dragon Seared Alloy (RECIPE!)
 					},
 				}),
-				q(66419, {	-- Allegiance To One
+				q(66419, {	-- Allegiance to One
 					coord = { 25.0, 56.2, THE_WAKING_SHORES },
 					isWorldQuest = true,
 					isWeekly = true,
@@ -199,17 +199,17 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					isWeekly = true,
 				}),
 				q(70847, {	-- Ancient Obsidian Charm
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "i", 199915 },	-- Ancient Obsidian Charm
 					isWeekly = true,
 				}),
 				q(66321, {	-- Bar Their Efforts
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 191193 },	-- Exadria
 					isWeekly = true,
 				}),
 				q(66856, {	-- Becca Black and the Seven Gnomes
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 191014 },	-- Becca Black
 					coord = { 26.5, 62.5, THE_WAKING_SHORES },
 					isDaily = true,
@@ -220,7 +220,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(69926, {	-- Becca Black and the Seven Gnomes
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 191014 },	-- Becca Black
 					coord = { 26.4, 62.3, THE_WAKING_SHORES },
 					isWeekly = true,
@@ -231,7 +231,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(65842, {	-- Disarming Behavior
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 190899 },	-- Talonstalker Kavia
 					coord = { 26.6, 62.5, THE_WAKING_SHORES },
 					isDaily = true,
@@ -240,7 +240,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(67051, {	-- Dragon Eyes
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 191193 },	-- Exadria
 					coord = { 27.6, 56.3, THE_WAKING_SHORES },
 					isWeekly = true,
@@ -251,7 +251,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(67099, {	-- Dragon Eyes
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 191193 },	-- Exadria
 					coord = { 27.6, 56.3, THE_WAKING_SHORES },
 					isWeekly = true,
@@ -262,13 +262,13 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(66103, {	-- Eager to Please
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 190899 },	-- Talonstalker Kavia
 					coord = { 26.6, 62.4, THE_WAKING_SHORES },
 					isWeekly = true,
 				}),
 				q(66308, {	-- Feeding the Fire
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 188179 },	-- Stoker Volrax
 					coord = { 24.8,60.3, THE_WAKING_SHORES },
 					isWeekly = true,
@@ -277,17 +277,17 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(69983, {	-- Flamecarved Bone
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "i", 198071 },	-- Flamecarved Bone
 					isWeekly = true,
 				}),
 				q(70848, {	-- Forgotten Dragon Crest
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "i", 199831 },	-- Forgotten Dragon Crest
 					isDaily = true,
 				}),
 				q(69984, {	-- Gold-Banded Dragon Tooth
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "i", 198072 },	-- Gold-Banded Dragon Tooth
 					isWeekly = true,
 				}),
@@ -298,13 +298,13 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					isDaily = true,
 				}),
 				q(72447, {	-- Greatest of Threats
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 191193 },	-- Exadria
 					coord = { 27.6, 56.3, THE_WAKING_SHORES },
 					isWeekly = true,
 				}),
 				q(66449, {	-- Hands-Off Operation
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 191193 },	-- Exadria
 					coord = { 27.6, 56.3, THE_WAKING_SHORES },
 					isWeekly = true,
@@ -313,7 +313,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(66445, {	-- Honor Our Fallen
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 191193 },	-- Exadria
 					coord = { 27.6, 56.3, THE_WAKING_SHORES },
 					isWeekly = true,
@@ -324,17 +324,17 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(66882, {	-- Lost Battlepack
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "i", 193600 },	-- Lost Battlepack
 					isDaily = true,
 				}),
 				q(66633, {	-- Make a Statement
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 190899 },	-- Talonstalker Kavia
 					coord = { 26.6, 62.4, THE_WAKING_SHORES },
 					isWeekly = true,
 					groups = {
-						i(193915),	-- Flag of the Black Dragon Flight
+						i(193915),	-- Flag of the Black Dragonflight
 					},
 				}),
 				q(65840, {	-- Same as the Old Boss
@@ -367,19 +367,19 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(72448, {	-- Securing Our Legacy
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 190899 },	-- Talonstalker Kavia
 					coord = { 26.6, 62.4, THE_WAKING_SHORES },
 					isWeekly = true,
 				}),
 				q(69918, {	-- Shaking Our Foundations
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 190899 },	-- Talonstalker Kavia
 					coord = { 26.6, 62.4, THE_WAKING_SHORES },
 					isWeekly = true,
 				}),
 				q(66326, {	-- The Tools of One's Trade
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 188179 },	-- Stoker Volrax
 					coord = { 24.8,60.3, THE_WAKING_SHORES },
 					isWeekly = true,
@@ -391,7 +391,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(72456, {	-- Tomes Of Trust
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 188344 },	-- Chydrass
 					coord = { 25.0, 56.1, THE_WAKING_SHORES },
 					-- TODO: Possibly this requires HQT 64277 to unlock rather than the quest above
@@ -400,7 +400,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 					},
 				}),
 				q(67142, {	-- Wyrm Food
-					sourceQuest = 66419,	-- Allegiance To One
+					sourceQuest = 66419,	-- Allegiance to One
 					provider = { "n", 196518 },	-- Voraxian
 					coord = { 27.6,56.7, THE_WAKING_SHORES },
 					isWeekly = true,
@@ -440,22 +440,22 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				}),
 				n(HIDDEN_QUESTS, {
 					q(66362, { name = "First Daily Completion: 'Unlocking our Past' (Igys the Believer)",
-						sourceQuest = 66419,	-- Allegiance To One
+						sourceQuest = 66419,	-- Allegiance to One
 						isDaily = true,
 						cr = 187275,	-- Igys the Believer
 					}),
 					q(66359, { name = "First Daily Completion: 'Unlocking our Past' (Forgemaster Bazentus)",
-						sourceQuest = 66419,	-- Allegiance To One
+						sourceQuest = 66419,	-- Allegiance to One
 						isDaily = true,
 						cr = 187272,	-- Forgemaster Bazentus
 					}),
 					q(66360, { name = "First Daily Completion: 'Unlocking our Past' (Sabellian)",
-						sourceQuest = 66419,	-- Allegiance To One
+						sourceQuest = 66419,	-- Allegiance to One
 						isDaily = true,
 						cr = 187447,	-- Sabellian
 					}),
 					q(66361, { name = "First Daily Completion: 'Unlocking our Past' (Wrathion)",
-						sourceQuest = 66419,	-- Allegiance To One
+						sourceQuest = 66419,	-- Allegiance to One
 						isDaily = true,
 						cr = 187284,	-- Wrathion
 					}),
@@ -956,7 +956,7 @@ maproot(DRAGON_ISLES, THE_WAKING_SHORES, {
 				i(194483, {	-- Plans: Obsidian Seared Slicer (RECIPE!)
 					description = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
-				i(201991, {	-- Sargh's Signet
+				i(201991, {	-- Sargha's Signet
 					description = "Drops from mobs around the Obsidian Citadel or Djaradin Caches.",
 				}),
 				i(200857),	-- Talisman of Sargha (TOY!)

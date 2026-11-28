@@ -25,7 +25,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					200491,	-- Nokhud Champion's Helm
 					200490,	-- Nokhud Reaver's Helm
 					200492,	-- Nokhud Warlord's Helm
-					200486,	-- Ohn'ir Dayligt Visor
+					200486,	-- Ohn'ir Daylight Visor
 					200484,	-- Ohn'ir Dawnlight Hat
 					200485,	-- Ohn'ir Dusklight Cap
 					200481,	-- Ohn'ir Midnight Helm

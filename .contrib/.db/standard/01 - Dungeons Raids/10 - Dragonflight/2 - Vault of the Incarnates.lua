@@ -61,7 +61,7 @@ local EncounterToLoot = {
 		i(195498),	-- Gaze of the Living Quarry
 		i(195497),	-- Quake-Detecting Seismostaff
 		i(194303),	-- Rumbling Ruby
-		i(195502, {	-- Terros' Captive Core
+		i(195502, {	-- Terros's Captive Core
 			sourceID = 181161,
 			collectible = false,
 		}),

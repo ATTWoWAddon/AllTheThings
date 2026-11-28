@@ -952,7 +952,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			},
 			groups = {
 				i(62791, {	-- Blood Shrimp
-					provider = { "i", 65513 },	-- Crate of tasty Meat
+					provider = { "i", 65513 },	-- Crate of Tasty Meat
 				}),
 				i(52338),	-- Darkfathom Pearl
 				i(52339),	-- Flawless Pearl
@@ -970,7 +970,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				43981,	-- Jadecrest Basilisk
 				43181,	-- Shalehide Basilisk
 			},
-			provider = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of Tasty Meat
 		}),
 		-- i(62791),	-- Blood Shrimp > Properly sourced under Clams listed above.
 		i(62784, {	-- Crocolisk Tail
@@ -986,7 +986,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				51675,	-- Oasis Crocolisk
 				45321,	-- Riverbed Crocolisk
 			},
-			provider = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of Tasty Meat
 		}),
 		i(62785, {	-- Delicate Wing
 			coords = {
@@ -1005,7 +1005,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				46162,	-- Tawny Owl
 				46158,	-- Untamed Gryphon
 			},
-			provider = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of Tasty Meat
 		}),
 		i(62782, {	-- Dragon Flank
 			coords = {
@@ -1022,7 +1022,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				43971,	-- Stonescale Drake
 				45748,	-- Twilight Wyrmkiller
 			},
-			provider = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of Tasty Meat
 		}),
 		i(62781, {	-- Giant Turtle Tongue
 			coords = {
@@ -1037,7 +1037,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				40802,	-- Softshell Sea Turtle
 				40223,	-- Speckled Sea Turtle
 			},
-			provider = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of Tasty Meat
 		}),
 		i(62779, {	-- Monstrous Claw
 			coord = { 44.5,	57.0, VASHJIR_ABYSSAL_DEPTHS },	-- Underlight Canyon
@@ -1055,12 +1055,12 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				VASHJIR_KELPTHAR_FOREST,
 				VASHJIR_SHIMMERING_EXPANSE,
 			},
-			provider = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of Tasty Meat
 		}),
 		i(62780, {	-- Snake Eye
 			coord = { 57.2,	37.6, VASHJIR_KELPTHAR_FOREST },	-- Gorrok's Lament
 			cr = 39948,	-- Brinescale Serpent
-			provider = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of Tasty Meat
 		}),
 		i(62778, {	-- Toughened Flesh
 			coords = {
@@ -1073,7 +1073,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 				46153,	-- Highland Worg
 			},
 			description = "Can drop from all Cataclysm red meat animals.",
-			provider = { "i", 65513 },	-- Crate of tasty Meat
+			provider = { "i", 65513 },	-- Crate of Tasty Meat
 		}),
 		-- __________________________________
 		--

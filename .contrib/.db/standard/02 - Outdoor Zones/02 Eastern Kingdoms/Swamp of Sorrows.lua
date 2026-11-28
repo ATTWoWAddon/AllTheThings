@@ -1335,7 +1335,7 @@ maproot(EASTERN_KINGDOMS, SWAMP_OF_SORROWS, {
 					objective(1, {	-- 0/6 Stonard Ogre slain
 						provider = { "n", 46765 },	-- Stonard Ogre
 					}),
-					i(64594),	-- Ogre Trapper
+					i(64594),	-- Ogre Tapper
 					i(64620),	-- Bloodmire Crossbow
 					i(64613),	-- Ogre Mage Staff
 					i(64604),	-- Sword of Marshtide Watch

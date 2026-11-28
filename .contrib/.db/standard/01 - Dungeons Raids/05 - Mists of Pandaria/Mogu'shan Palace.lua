@@ -127,7 +127,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				}),
 				BossOnly(GEKKAN, {
 					i(144148, { timeline = { ADDED_7_1_5 } }),	-- Claws of Gekkan
-					i(144147, { timeline = { ADDED_7_1_5 } }),	-- Cloak of Cleansing Flames
+					i(144147, { timeline = { ADDED_7_1_5 } }),	-- Cloak of Cleansing Flame
 					i(143992, { timeline = { ADDED_7_1_5 } }),	-- Glintrok Sollerets
 					i(144149, { timeline = { ADDED_7_1_5 } }),	-- Hexxer's Lethargic Gloves
 					i(144146, { timeline = { ADDED_7_1_5 } }),	-- Iron Protector Talisman
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(143993, { timeline = { ADDED_7_1_5 } }),	-- Boots of Plummeting Death
 					i(144154, { timeline = { ADDED_7_1_5 } }),	-- Firescribe Dagger
 					i(144150, { timeline = { ADDED_7_1_5 } }),	-- Ghostheart
-					i(144153, { timeline = { ADDED_7_1_5 } }),	-- Groundshaker Bracer
+					i(144153, { timeline = { ADDED_7_1_5 } }),	-- Groundshaker Bracers
 					i(143956, { timeline = { ADDED_7_1_5 } }),	-- Mind's Eye Breastplate
 					i(144155, { timeline = { ADDED_7_1_5 } }),	-- Mindcapture Pendant
 					i(144214, { timeline = { ADDED_7_1_5 } }),	-- Mogu'Dar, Blade of the Thousand Slaves

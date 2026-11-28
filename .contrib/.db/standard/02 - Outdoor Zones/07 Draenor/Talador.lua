@@ -2127,7 +2127,7 @@ maproot(DRAENOR, TALADOR, {
 				isDaily = true,
 				coord = { 47.6, 39.0, TALADOR },
 				lvl = 100,
-				groups = { i(119402) },	-- Gurg'tol's Imp Imperator
+				groups = { i(119402) },	-- Gug'tol's Imp Imperator
 			}),
 			n(83008, {	-- Haakun the All-Consuming
 				questID = 37312,
@@ -2279,7 +2279,7 @@ maproot(DRAENOR, TALADOR, {
 					{ 46.8, 31.0, TALADOR },
 				},
 				lvl = 100,
-				groups = { i(119350) },	-- Sargerei Councillor's Drape
+				groups = { i(119350) },	-- Sargerei Councilor's Drape
 			}),
 			n(82930, {	-- Shadowflame Terrorwalker
 				questID = 37347,

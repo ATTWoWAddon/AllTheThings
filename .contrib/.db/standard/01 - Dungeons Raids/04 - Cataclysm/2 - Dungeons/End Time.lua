@@ -114,7 +114,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						54691,	-- Time-Twisted Sorceress
 					},
 				}),
-				i(76156, {	-- Bindings of The End Times
+				i(76156, {	-- Bindings of the End Times
 					crs = {
 						54920,	-- Infinite Suppressor
 						54923,	-- Infinite Warden
@@ -147,14 +147,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(72806),	-- Echoing Headguard
 						i(72800),	-- Gauntlets of Temporal Interference
 						i(72803),	-- Girdle of Lost Heroes
-						i(72805),	-- Gloves of The Hollow
+						i(72805),	-- Gloves of the Hollow
 						i(72802),	-- Time Traveler's Leggings
 						i(157606, { timeline = { ADDED_7_3_5 } }),	-- Time-Dessicated Girdle
 						i(72807),	-- Waistguard of Lost Time
 					},
 				}),
 				BossOnly(BAINE, {
-					i(72814),	-- Axe of The Tauren Chieftain
+					i(72814),	-- Axe of the Tauren Chieftains
 					i(72815),	-- Bloodhoof Legguards
 				}),
 				BossOnly(JAINA, {

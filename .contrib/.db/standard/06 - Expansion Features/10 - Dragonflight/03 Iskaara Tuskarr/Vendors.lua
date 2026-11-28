@@ -739,9 +739,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				coord = { 12.7, 50.3, THE_AZURE_SPAN },
 				sym = { { "select", "itemID",
 					------ RENOWN 26 ------
-					199855,	-- Burgandy Fisherman's Pack
-					199863,	-- Burgandy Tuskarr Backpack
-					199859,	-- Burgandy Tuskarr Trader's Pack
+					199855,	-- Burgundy Fisherman's Pack
+					199863,	-- Burgundy Tuskarr Backpack
+					199859,	-- Burgundy Tuskarr Trader's Pack
 					199854,	-- Dark Fisherman's Pack
 					199862,	-- Dark Tuskarr Backpack
 					199858,	-- Dark Tuskarr Trader's Pack

@@ -439,7 +439,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 						filter(PLATE, {
 							i(224860),	-- Boots of Avoidance
 							i(224856),	-- Mugthol's Helm
-							i(234862, {	-- Ogre Captains Armor
+							i(234862, {	-- Ogre Captain's Armor
 								modID = 22,
 								cost = { { "c", TIMEWARPED_BADGE, 100 } },
 							}),
@@ -661,7 +661,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				groups = {
 					i(18353),	-- Stoneflower Staff
 					i(18352),	-- Petrified Bark Shield
-					i(18393),	-- Warpwood Bindings
+					i(18393),	-- Warpwood Binding
 					i(18390),	-- Tanglemoss Leggings
 				},
 			}),
@@ -1045,7 +1045,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 						description = "This bag contains an item from Black Temple or an item from the WoW's 15th Birthday Event Bosses Archimonde, Kael'Thas or Lady Vashj.\nThe droprate for the mounts seems rather high (5-10%).",
 						sym = {{"select","itemID",
 							97554,	-- Dripping Strider Egg
-							122112,	-- Hyjal Whisp
+							122112,	-- Hyjal Wisp
 							122110,	-- Sultry Grimoire
 							97555,	-- Tiny Fel Engine Key
 						}},
@@ -1197,7 +1197,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 							i(129836, {	-- Mask of the Deceiver
 								cost = {{"c", TIMEWARPED_BADGE, 25}},
 							}),
-							i(129841, {	-- Trousers of the Scryer's Retainer
+							i(129841, {	-- Trousers of the Scryers' Retainer
 								cost = {{"c", TIMEWARPED_BADGE, 25}},
 							}),
 						}),
@@ -2307,7 +2307,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(171527, {	-- Band of the Traitor King
 								races = HORDE_ONLY,
 							}),
-							i(171543, {	-- Band of Deplorable violence
+							i(171543, {	-- Band of Deplorable Violence
 								races = ALLIANCE_ONLY,
 							}),
 							i(171548, {	-- Belt of Deathly Dominion
@@ -2631,7 +2631,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(129871, {	-- Boots of Captain Ellis
 								cost = {{"c", TIMEWARPED_BADGE, 25}},
 							}),
-							i(129881, {	-- Cat Burglar's Gripes
+							i(129881, {	-- Cat Burglar's Grips
 								cost = {{"c", TIMEWARPED_BADGE, 25}},
 							}),
 							i(129891, {	-- Shadow Seeker's Tunic
@@ -2801,7 +2801,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 						}),
 					})),
 					filter(MISC, {
-						i(46007, {	-- Bag of Fishing Treasure
+						i(46007, {	-- Bag of Fishing Treasures
 							cost = {{"c", TIMEWARPED_BADGE, 150}},
 						}),
 						i(129955, {	-- Commendation of the Alliance Vanguard
@@ -3418,7 +3418,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 					i(188417),	-- Egg Sac Robes
 					i(188415),	-- Essence of Gossamer
 					i(188418),	-- Grotto Mist Gloves
-					i(188416),	-- Hollowed Mandibles Legplates
+					i(188416),	-- Hollowed Mandible Legplates
 					i(188405),	-- Life-Staff of the Web Lair
 					i(188427),	-- Skittering Gauntlets
 					i(188407),	-- Spinneret Epaulets
@@ -3445,7 +3445,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 				i(127538),	-- Wand of Sseratus
 				i(127548),	-- Helm of Cheated Fate
 				i(127539),	-- Snake Den Spaulders
-				i(127528),	-- Embroidered Gown of Zul'drak
+				i(127528),	-- Embroidered Gown of Zul'Drak
 				i(127540),	-- Slad'ran Coiled Cord
 				i(127529),	-- Cannibal's Legguards
 				i(127541),	-- Slithering Slippers
@@ -4013,7 +4013,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 							i(133541, {	-- Fire of the Deep
 								cost = { { "c", TIMEWARPED_BADGE, 50 } },
 							}),
-							i(133537, {	-- Kiroptric Sigil
+							i(133537, {	-- Kiroptyric Sigil
 								cost = { { "c", TIMEWARPED_BADGE, 50 } },
 							}),
 							i(133539, {	-- Reflection of the Light
@@ -4129,7 +4129,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						ig(133150, {	-- Commendation of the Dragonmaw Clan
 							cost = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
-						ig(133159, {	-- Commendation of the Earthen Ring
+						ig(133159, {	-- Commendation of The Earthen Ring
 							cost = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						ig(133152, {	-- Commendation of the Guardians of Hyjal
@@ -4141,7 +4141,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						ig(133151, {	-- Commendation of the Wildhammer Clan
 							cost = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
-						ig(133160, {	-- Commendation of Therazanae
+						ig(133160, {	-- Commendation of Therazane
 							cost = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 					}),
@@ -4270,15 +4270,15 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 						i(171796, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Robes of the Cleansing Flame
 						i(171801, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Vestment of the Cleansing Flame
-						i(171777, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Flamewakers Tunic
+						i(171777, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Flamewaker's Tunic
 						i(171813, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Hauberk
 						i(171806, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Balespider's Robes
 						i(171811, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Firehawk Robes
 						i(171818, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Tunic
 						i(171823, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Cuirass
-						i(171746, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Rainment
+						i(171746, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Raiment
 						i(171751, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Tunic
-						i(171756, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave vestment
+						i(171756, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Vestment
 						i(171768, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Dark Phoenix Tunic
 						i(171737, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Chestguard
 						i(171738, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Breastplate
@@ -4314,17 +4314,17 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(171734, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Legguards
 						i(171741, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Greaves
 						i(171759, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Legguards of the Molten Giant
-						i(171810, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- FireHawk Leggings
-						i(171805, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Balespiders Leggings
+						i(171810, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Firehawk Leggings
+						i(171805, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Balespider's Leggings
 						i(171800, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Leggings of the Cleansing Flame
 						i(171795, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Legwraps of the Cleansing Flame
 						i(171781, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Legplates
 						i(171826, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Legguards
 						i(171821, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Legwraps
 						i(171816, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Kilt
-						i(171775, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Flamewakers Legguards
+						i(171775, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Flamewaker's Legguards
 						i(171745, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Legguards
-						i(171750, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave legwraps
+						i(171750, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Legwraps
 						i(171755, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Obsidian Arborweave Leggings
 						i(171771, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Dark Phoenix Legguards
 						i(171764, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Legguards
@@ -4352,7 +4352,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(152977),	-- Surger (PET!)
 						i(171793, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Handwraps of the Cleansing Flame
 						i(171798, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Gloves of the Cleansing Flame
-						i(171803, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Balespiders Handwraps
+						i(171803, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Balespider's Handwraps
 						i(171808, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Firehawk Gloves
 						i(171735, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Handguards
 						i(171739, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Elementium Deathplate Gauntlets
@@ -4361,7 +4361,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 						i(171784, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Gauntlets of the Molten Giant
 						i(171760, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Handguards of the Molten Giant
 						i(171789, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Immolation Gloves
-						i(171773, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Flamewakers Gloves
+						i(171773, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Flamewaker's Gloves
 						i(171814, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Gloves
 						i(171819, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Handwraps
 						i(171824, { timeline = { CREATED_8_2_5, ADDED_10_2_5 }}),	-- Erupting Volcanic Grips
@@ -4527,7 +4527,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					i(133393),	-- Echoing Headguard
 					i(133422),	-- Breastplate of Despair
 					i(133388),	-- Breastplate of Sorrow
-					i(133424),	-- Bindings of the End Time
+					i(133424),	-- Bindings of the End Times
 					i(133414),	-- Archivist's Gloves
 					i(133387),	-- Gauntlets of Temporal Interference
 					i(133392),	-- Gloves of the Hollow
@@ -4542,7 +4542,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				},
 			}),
 			cr(54431, e(340, {	-- Echo of Baine
-				i(133401),	-- Axe of The Tauren Chieftain
+				i(133401),	-- Axe of the Tauren Chieftains
 				i(133402),	-- Bloodhoof Legguards
 			})),
 			cr(54445, e(285, {	-- Echo of Jaina
@@ -4624,7 +4624,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 			e(117, {	-- General Husam
 				crs = { 44577 },	-- General Husam
 				groups = {
-					i(133257),	-- Saliza's Spear
+					i(133257),	-- Seliza's Spear
 					i(133373),	-- Necklace of Rumbling Earth
 					i(133254),	-- Kaleki Cloak
 					i(133258),	-- Ionic Gloves
@@ -6937,7 +6937,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 				groups = {
 					n(ARMOR, {
 						filter(BACK_F, {
-							i(243569, {	-- Bloodstained Shawl of Atal'Gurub
+							i(243569, {	-- Bloodstained Shawl of Tal'Gurub
 								cost = { { "c", TIMEWARPED_BADGE, 25 } },
 							}),
 							i(243567, {	-- Cloak of the Tideguard
@@ -7216,7 +7216,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_BATTLE_
 					i(239069),	-- Soulspun Casque
 					i(239070),	-- Mantle of Fastidious Machinations
 					i(239072),	-- Loa Betrayer's Vestments
-					i(239068),	-- Spymaster's  Wrap
+					i(239068),	-- Spymaster's Wrap
 				},
 			}),
 		}),
@@ -7744,7 +7744,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 						i(254759, {	-- Commendation of the Undying Army
 							cost = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
-						i(254758, {	-- Commendation of the Wild Hunt
+						i(254758, {	-- Commendation of The Wild Hunt
 							cost = { { "c", TIMEWARPED_BADGE, 50 } },
 						}),
 						i(254761, {	-- Commendation of Ve'nari
@@ -7858,7 +7858,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 			e(2406, {	-- Halkias
 				crs = { 165408 },	-- Halkias
 				sym = {{"select", "itemID",
-					178818,	-- Halkias' Towering Pillars
+					178818,	-- Halkias's Towering Pillars
 					178830,	-- Shardskin Sabatons
 					178827,	-- Sin Stained
 					178817,	-- Hood of Refracted Shadows
@@ -7904,7 +7904,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 				crs = { 164255 },	-- Globgrog
 				sym = {{"select", "itemID",
 					178762,	-- Blightborne Chain Legguards
-					178760,	-- Disgested Interrogator's Gaze
+					178760,	-- Digested Interrogator's Gaze
 					178773,	-- Plague Handler's Greathelm
 					178770,	-- Slimy Consumptive Organ
 					178756,	-- Stradama's Misplaced Slippers
@@ -8044,7 +8044,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 					180108,	-- Abyssal Disharmony Breeches
 					180119,	-- Boon of the Archon
 					180099,	-- Breastplate of Brutal Dissonance
-					180096,	-- Devos' Cacophonous Poleaxe
+					180096,	-- Devos's Cacophonous Poleaxe
 					180123,	-- Drape of Twisted Loyalties
 					180114,	-- Fallen Paragon's Armguards
 					183054,	-- Mysterious Soul Mirror
@@ -8095,7 +8095,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_SHADOWL
 			e(2396, {	-- Nalthor the Rimebinder
 				crs = { 162693 },	-- Nalthor the Rimebinder
 				sym = {{"select", "itemID",
-					178777,	-- Dark Frost Helmet
+					178777,	-- Darkfrost Helmet
 					178778,	-- Lichbone Legguards
 					178782,	-- Necropolis Lord's Shackles
 					178780,	-- Rimebinder's Runeblade
@@ -8360,7 +8360,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 						193715,	-- Boots of Explosive Growth
 						193713,	-- Experimental Safety Gloves
 						193714,	-- Frenzyroot Cuffs
-						193717,	-- Mystakra's Harvester
+						193717,	-- Mystakria's Harvester
 						193712,	-- Potion-Stained Cloak
 					}},
 				}),
@@ -8399,7 +8399,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 					186125,	-- Tricktotem
 				},
 				sym = {{"select", "itemID",
-					193674,	-- Ancestral Stone Shaper
+					193674,	-- Ancestral Stoneshaper
 					193671,	-- Bloodied Wedding Ring
 					193672,	-- Frenzying Signoll Flare
 					193675,	-- Poached Kalu'ak Spear
@@ -8409,7 +8409,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 			e(2473, {	-- Treemouth
 				crs = { 186120 },	-- Treemouth
 				sym = {{"select", "itemID",
-					193654,	-- Ancient Rot Walkers
+					193654,	-- Ancient Rotwalkers
 					193657,	-- Binders of the Moldering
 					193658,	-- Crushing Bough of Deterioration
 					193653,	-- Mask of Imperishable Leaves
@@ -8433,7 +8433,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 				sym = {{"select", "itemID",
 					197396,	-- Renewed Proto-Drake: Skyterror Pattern (MM!)
 					197598,	-- Windborne Velocidrake: Gray Hair (MM!)
-					193661,	-- Blight Weaver's Clutches
+					193661,	-- Blightweaver's Clutches
 					193665,	-- Decatriarch's Bone Pestle
 					193663,	-- Decay Mother's Wrathful Gaze
 					193662,	-- Densified Ooze Tassets
@@ -8545,7 +8545,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 					193759,	-- Egg Tender's Leggings
 					193757,	-- Ruby Whelp Shell
 					193728,	-- Scaleguard's Stalwart Greatboots
-					193758,	-- Subjugator's Chilling Grip
+					193758,	-- Subjugator's Chilling Grips
 				}},
 			}),
 			e(2485, {	-- Kokia Blazehoof
@@ -8598,7 +8598,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 				sym = {{"select", "itemID",
 					193629,	-- Cloak of Lost Devotion
 					193632,	-- Fear Striker Tz'onna
-					193631,	-- Horizon Splitter,
+					193631,	-- Horizon Splitter
 					212685,	-- Tome of Unstable Power
 					193630,	-- Twenty-Two-League Striders
 				}},
@@ -8623,7 +8623,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_DRAGONF
 					193641,	-- Headwrap of the Abandoned
 					193642,	-- Mantle of Yearned Freedom
 					193646,	-- Refraction's Edge
-					193643,	-- Stasis Freed Leggings
+					193643,	-- Stasis-Freed Leggings
 					212684,	-- Umbrelskul's Fractured Heart
 				}},
 			}),

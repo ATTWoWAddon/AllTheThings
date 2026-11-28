@@ -98,7 +98,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, {
 							i(225218),	-- Echoing Fragment: Hallowfall (CI!)
 						},
 					}),
-					q(82164, {	-- Worldsoul Memory: Reign of The Old Gods
+					q(82164, {	-- Worldsoul Memory: Reign of the Old Gods
 						coord = { 60.7, 67.5, HALLOWFALL },
 						repeatable = true,
 						groups = {
