@@ -62,7 +62,7 @@ maproot(DRAGON_ISLES, THALDRASZUS, {
 				coord = { 57.1, 64.6, THALDRASZUS },
 				description = "Underneath the right foot of the titan statue.",
 				groups = {
-					i(199893),	-- Precious Stone Fragment
+					i(199893),	-- Precious Stone Fragments
 				},
 			}),
 			o(381107, {	-- Sand Pile

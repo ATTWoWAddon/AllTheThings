@@ -484,7 +484,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 			})),
 			n(VENDORS, {
 				n(177958, {	-- Firim
-					i(187908, {	-- Firim's Spare Forge-tap
+					i(187908, {	-- Firim's Spare Forge-Tap
 						description = "This item is only available after completing the Daily Quest: Materials of Creation (64717) or Hallow Efforts (64579).",
 						groups = {
 							i(187527),	-- Aeon Matrix
@@ -542,10 +542,10 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 								description = "Very specific positioning. Face towards the center of the orb.",
 								coord = { 32.65, 40.76, ZERETH_MORTIS },
 							}),
-							i(187728, {	-- Ephemera Strand
+							i(187728, {	-- Ephemera Strands
 								groups = {
 									i(187787, {	-- Ephemera Orb
-										i(187890),	-- Anima-charged Yolk
+										i(187890),	-- Anima-Charged Yolk
 										i(187735),	-- Geordy (PET!)
 										i(188231),	-- Provis Cache Key
 										i(187866),	-- Accelerating Tendons

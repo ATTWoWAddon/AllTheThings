@@ -70,7 +70,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.ZULAMAN, {
 				coord = { 49.4, 51.4, MAP.MIDNIGHT.ZULAMAN },
 				qi = 257241,	-- Lumpy Fish Guts (QI!)
 			}),
-			q(91798, {	-- Fish Of The Day
+			q(91798, {	-- Fish of the Day
 				coord = { 40.2, 77.1, MAP.MIDNIGHT.ZULAMAN },
 				qi = 252003,	-- Slippery Snapper (QI!)
 			}),

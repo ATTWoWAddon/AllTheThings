@@ -478,7 +478,7 @@ maproot(PANDARIA, VALE_OF_ETERNAL_BLOSSOMS, {
 					REMOVED_5_2_0,
 					-- #endif
 				},
-				cost = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+				cost = {{ "c", 738, 50 }},	-- Lesser Charm of Good Fortune
 				isWeekly = true,
 				groups = {
 					currency(697),	-- Elder Charm of Good Fortune
@@ -540,7 +540,7 @@ maproot(PANDARIA, VALE_OF_ETERNAL_BLOSSOMS, {
 					coord = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
 				timeline = { ADDED_5_2_0, REMOVED_5_4_0 },
-				cost = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+				cost = {{ "c", 738, 50 }},	-- Lesser Charm of Good Fortune
 				isWeekly = true,
 				groups = {
 					currency(752),	-- Mogu Rune of Fate
@@ -558,7 +558,7 @@ maproot(PANDARIA, VALE_OF_ETERNAL_BLOSSOMS, {
 					coord = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
 				},
 				timeline = { ADDED_5_5_3 },
-				cost = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+				cost = {{ "c", 738, 50 }},	-- Lesser Charm of Good Fortune
 				isWeekly = true,
 				groups = {
 					currency(752),	-- Mogu Rune of Fate

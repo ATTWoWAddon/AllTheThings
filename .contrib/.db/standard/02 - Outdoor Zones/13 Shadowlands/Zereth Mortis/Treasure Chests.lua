@@ -663,7 +663,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 					{ 50.8, 4.7, ZERETH_MORTIS },
 				},
 				groups = {
-					i(189983),	-- Gormit Soul
+					i(189983),	-- Gromit Soul
 				},
 			}),
 			o(375366, {	-- Tarachnid Eggs

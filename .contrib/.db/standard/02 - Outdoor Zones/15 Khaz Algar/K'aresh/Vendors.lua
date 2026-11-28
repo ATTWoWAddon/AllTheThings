@@ -39,7 +39,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 		n(241588, {	-- Hashim
 			coord = { 50.3, 36.6, KARESH },
 			groups = {
-				i(238039),	-- Chronomatic Fiber
+				i(238039),	-- Chronomantic Fiber
 				i(238041),	-- Dexterous Fiber
 				i(238037),	-- Energizing Fiber
 				i(238040),	-- Precise Fiber

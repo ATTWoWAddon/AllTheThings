@@ -931,7 +931,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ requireSkill = ENGINE
 				coord = { 56.0, 44.9, THE_WAKING_SHORES },
 				groups = {
 					i(201014),	-- Boomthyr Rocket
-					i(198816),	-- Aerospace Grace Draconium
+					i(198816),	-- Aerospace Grade Draconium
 					i(198815),	-- Ash
 					i(198814),	-- Boom Fumes
 					i(198817),	-- Durable Crystal

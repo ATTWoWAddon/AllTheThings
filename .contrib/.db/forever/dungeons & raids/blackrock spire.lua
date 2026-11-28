@@ -632,7 +632,7 @@ instanceroot(229, {	-- Blackrock Spire
 				requireSkill = ARMORSMITH,
 				learnedAt = 275,
 				lvl = 55,
-				sym = {{ "select", "itemID", 9224 }},	-- Potion of Demonslaying
+				sym = {{ "select", "itemID", 9224 }},	-- Potion of Demon Slaying
 				groups = {
 					objective(1, {	-- 0/1 Soul Stained Pike
 						provider = { "i", 12847 },	-- Soul Stained Pike

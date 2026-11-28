@@ -207,7 +207,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 					i(175384),	-- Glass Shard (QI!)
 				},
 			}),
-			q(59808, {	-- Muck it Up
+			q(59808, {	-- Muck It Up
 				n(166292, {	-- Bog Beast
 					questID = 59823,
 					description = "Only available when the |cFFFFD700Muck It Up|r world quest is active. Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",

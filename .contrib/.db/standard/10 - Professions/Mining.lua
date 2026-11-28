@@ -1472,7 +1472,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ requireSkill = MINING }, {
 			}),
 			q(83049, {	-- TWW Weekly Mining Knowledgepoint #6
 				name = "TWW Weekly Mining Knowledgepoint #6",
-				provider = { "i", 224584 },	-- Erosion Polished Slate
+				provider = { "i", 224584 },	-- Erosion-Polished Slate
 			}),
 		})),
 	}),

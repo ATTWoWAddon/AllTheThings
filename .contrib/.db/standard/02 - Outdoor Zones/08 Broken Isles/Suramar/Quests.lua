@@ -838,9 +838,9 @@ maproot(BROKEN_ISLES, SURAMAR, {
 			groups = {
 				i(140040),	-- Comet Dust
 				i(143749),	-- Corrupted Nightborne Matrix
-				i(140078),	-- Crystalized Leypetal
+				i(140078),	-- Crystallized Leypetal
 				i(140076),	-- Felborne Energist's Gem
-				i(140071),	-- first Page of the Book of Shadows
+				i(140071),	-- First Page of the Book of Shadows
 				i(140077),	-- Goldleaf Arcwine Phial
 				i(140072),	-- Headpiece of the Elunian Cycle
 				i(140073),	-- Khadgar's Pocket Warmer
@@ -2054,7 +2054,7 @@ maproot(BROKEN_ISLES, SURAMAR, {
 			coord = { 58.2, 53.0, SURAMAR },
 		}),
 		q(41467, {	-- The Only Choice We Can Make
-			sourceQuest = 41464,	-- Not here, Not Now, Not Ever
+			sourceQuest = 41464,	-- Not Here, Not Now, Not Ever
 			provider = { "n", 106696 },	-- Kalendros Irongrove
 			coord = { 19.5, 22.3, SURAMAR },
 			groups = {

@@ -1102,7 +1102,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 										i(181336),	-- Talking Frog in a Jar (QI!)
 									},
 								}),
-								q(61406, {	-- Ember Court: Mushroom Surprise
+								q(61406, {	-- Ember Court: Mushroom Surprise!
 									description = "Available after purchasing Staff: Waiters.",
 									provider = { "n", 168429 },	-- Melody Madcap
 									coord = { 40.2, 41.2, MALDRAXXUS },

@@ -1905,7 +1905,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					groups = {
 						i(43899),	-- Sapph's Cleaver
 						i(43897),	-- Frost Climber's Hatchet
-						i(43898),	-- Ice Quick Edge
+						i(43898),	-- Icy Quick Edge
 						i(43875),	-- Axe of the Cunning
 					},
 				}),
@@ -2083,7 +2083,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					groups = {
 						i(44745),	-- Blade of the Empty Void
 						i(44746),	-- Knife of the Tarnished Soul
-						i(44747),	-- Hammer of Wrenching Charge
+						i(44747),	-- Hammer of Wrenching Change
 						i(44748),	-- Stave of Youthful Sorrow
 					},
 				}),

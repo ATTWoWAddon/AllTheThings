@@ -137,14 +137,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- Available
 					ach(6427),	-- Mosh Pit
 					i(144182, { timeline = { ADDED_7_1_5 } }),	-- Armsmaster's Sealed Locket
-					i(144006, { timeline = { ADDED_7_1_5 } }),	-- Harlan's Shoulder
+					i(144006, { timeline = { ADDED_7_1_5 } }),	-- Harlan's Shoulders
 					i(144194, { timeline = { ADDED_7_1_5 } }),	-- Lightblade Bracer
 					i(144007, { timeline = { ADDED_7_1_5 } }),	-- Scarlet Sandals
 					i(144193, { timeline = { ADDED_7_1_5 } }),	-- The Gleaming Ravager
 
 					-- Removed
 					i(81568, { timeline = { REMOVED_7_1_5 } }),	-- Armsmaster's Sealed Locket
-					i(81698, { timeline = { REMOVED_7_1_5 } }),	-- Harlan's Shoulder
+					i(81698, { timeline = { REMOVED_7_1_5 } }),	-- Harlan's Shoulders
 					i(81700, { timeline = { REMOVED_7_1_5 } }),	-- Lightblade Bracer
 					i(81699, { timeline = { REMOVED_7_1_5 } }),	-- Scarlet Sandals
 					i(81697, { timeline = { REMOVED_7_1_5 } }),	-- The Gleaming Ravager

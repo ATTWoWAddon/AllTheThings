@@ -313,7 +313,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_
 			}),
 		}),
 		n(WORLD_QUESTS, sharedData({ isWorldQuest = true }, {
-			q(45737, {	-- Ahn'Qiraj: C'thun [A]
+			q(45737, {	-- Ahn'Qiraj: C'Thun [A]
 				coord = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Temple of Ahn'Qiraj
 				maps = {	-- AQ40 Maps
 					319,	-- The Hive Undergrounds
@@ -322,7 +322,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_
 				},
 				races = ALLIANCE_ONLY,
 			}),
-			q(45654, {	-- Ahn'Qiraj: C'thun [H]
+			q(45654, {	-- Ahn'Qiraj: C'Thun [H]
 				coord = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Temple of Ahn'Qiraj
 				maps = {	-- AQ40 Maps
 					319,	-- The Hive Undergrounds

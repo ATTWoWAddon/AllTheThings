@@ -77,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(193641),	-- Headwrap of the Abandoned
 						i(193642),	-- Mantle of Yearned Freedom
 						i(193646),	-- Refraction's Edge
-						i(193643),	-- Stasis Freed Leggings
+						i(193643),	-- Stasis-Freed Leggings
 						i(193639, {	-- Umbrelskul's Fractured Heart
 							timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_6 },
 						}),

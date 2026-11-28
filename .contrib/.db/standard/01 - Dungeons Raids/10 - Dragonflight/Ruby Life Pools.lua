@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						i(193759),	-- Egg Tender's Leggings
 						i(193757),	-- Ruby Whelp Shell
 						i(193728),	-- Scaleguard's Stalwart Greatboots
-						i(193758),	-- Subjugator's Chilling Grip
+						i(193758),	-- Subjugator's Chilling Grips
 					},
 				}),
 				e(2485, {	-- Kokia Blazehoof

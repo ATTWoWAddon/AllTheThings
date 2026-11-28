@@ -265,7 +265,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, {
 						i(128182),	-- Tenacious Dominator's Gorget
 						i(128190),	-- Haunting Nightmare Cloak
 						i(128085),	-- Constructbreaker's Chestguard
-						i(128084),	-- Socrethar's Ceremonial CUffs
+						i(128084),	-- Socrethar's Ceremonial Cuffs
 						i(128035),	-- Crystal-Buckle Belt
 						i(128088),	-- Girdle of Bound Agony
 						i(128145),	-- Howling Soul Gem

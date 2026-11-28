@@ -1847,7 +1847,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				objective(2, {	-- 0/1 Pouch of Raindeer Dust
-					provider = { "i", 21211 },	-- Pouch of Raindeer Dust
+					provider = { "i", 21211 },	-- Pouch of Reindeer Dust
 				}),
 				i(21315, {	-- Smokywood Satchel
 					i(21314),	-- Metzen's Letters and Notes
@@ -1879,7 +1879,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 					},
 				}),
 				objective(2, {	-- 0/1 Pouch of Raindeer Dust
-					provider = { "i", 21211 },	-- Pouch of Raindeer Dust
+					provider = { "i", 21211 },	-- Pouch of Reindeer Dust
 				}),
 				i(21315, {	-- Smokywood Satchel
 					i(21314),	-- Metzen's Letters and Notes

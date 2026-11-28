@@ -866,7 +866,7 @@ maproot(BROKEN_ISLES, VALSHARAH, {
 				}, {
 					-- TODO: Check SQ, also probably can't do after a certain level
 					q(38716),	-- Black Rook Hold
-					q(39029),	-- Defend the Temple
+					q(39029),	-- Defend The Temple
 					q(38842),	-- Faerie Fracas
 					q(43241),	-- Flow of the Nightmare
 					q(39393),	-- Moonclaw Vale

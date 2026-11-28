@@ -303,16 +303,16 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				description = "Rewarded for winning a random battleground in the level 100-109 range before 9.0, or Ashran quests.",
 				timeline = { REMOVED_9_0_1 },
 				groups = {
-					i(135578),	-- Battle Touched Banner
-					i(135568),	-- Battle Touched Blood of the Fallen
-					i(135574),	-- Battle Touched Blossom
-					i(135573),	-- Battle Touched Chain Link
-					i(135565),	-- Battle Touched Elemental Spark
-					i(135571),	-- Battle Touched Ember
-					i(135576),	-- Battle Touched Fetish
-					i(135570),	-- Battle Touched Helfrost
-					i(135569),	-- Battle Touched Infernal Shard
-					i(135572),	-- Battle Touched Martyr Stone
+					i(135578),	-- Battle-Touched Banner
+					i(135568),	-- Battle-Touched Blood of the Fallen
+					i(135574),	-- Battle-Touched Blossom
+					i(135573),	-- Battle-Touched Chain Link
+					i(135565),	-- Battle-Touched Elemental Spark
+					i(135571),	-- Battle-Touched Ember
+					i(135576),	-- Battle-Touched Fetish
+					i(135570),	-- Battle-Touched Helfrost
+					i(135569),	-- Battle-Touched Infernal Shard
+					i(135572),	-- Battle-Touched Martyr Stone
 					i(134696),	-- Cascading Amice*			— 4/27/19
 					i(134694),	-- Cascading Cord*			— 4/26/19
 					i(134697),	-- Cascading Cuffs*			— 4/26/19

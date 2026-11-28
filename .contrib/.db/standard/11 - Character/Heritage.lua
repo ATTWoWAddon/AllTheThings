@@ -802,14 +802,14 @@ root(ROOTS.Character, n(HERITAGE, {
 				lockCriteria = { 1, "achID", 13504 },	-- Heritage of the Kul Tirans
 				groups = {
 					ach(13504),	-- Heritage of the Kul Tirans
-					i(165002),	-- Kul'Tiran Bicorne
-					i(165003),	-- Kul'Tiran Tasseled Pauldron
-					i(165004),	-- Kul'Tiran Longcoat
-					i(165009),	-- Kul'Tiran Bracers
-					i(165005),	-- Kul'Tiran Gloves
-					i(165006),	-- Kul'Tiran Cinch
-					i(165007),	-- Kul'Tiran Britches
-					i(165008),	-- Kul'Tiran Boots
+					i(165002),	-- Kul Tiran Bicorne
+					i(165003),	-- Kul Tiran Tasseled Pauldron
+					i(165004),	-- Kul Tiran Longcoat
+					i(165009),	-- Kul Tiran Bracers
+					i(165005),	-- Kul Tiran Gloves
+					i(165006),	-- Kul Tiran Cinch
+					i(165007),	-- Kul Tiran Britches
+					i(165008),	-- Kul Tiran Boots
 				},
 			}),
 		},

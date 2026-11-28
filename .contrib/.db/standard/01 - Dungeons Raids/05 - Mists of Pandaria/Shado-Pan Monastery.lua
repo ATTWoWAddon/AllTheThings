@@ -109,7 +109,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(143979, { timeline = { ADDED_7_1_5 } }),	-- Darkbinder Leggings
 					i(143962, { timeline = { ADDED_7_1_5 } }),	-- Hateshatter Chestplate
 					i(144215, { timeline = { ADDED_7_1_5 } }),	-- Ka'eng, Breath of the Shadow
-					i(144108, { timeline = { ADDED_7_1_5 } }),	-- Mindbender Plate Gloves
+					i(144108, { timeline = { ADDED_7_1_5 } }),	-- Mindbinder Plate Gloves
 					i(144133, { timeline = { ADDED_7_1_5 } }),	-- Ring of Malice
 					i(143990, { timeline = { ADDED_7_1_5 } }),	-- Robes of Fevered Dreams
 					i(144132, { timeline = { ADDED_7_1_5 } }),	-- Seal of Hateful Meditation
@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(81093, { timeline = { REMOVED_7_1_5 } }),	-- Darkbinder Leggings
 					i(81187, { timeline = { REMOVED_7_1_5 } }),	-- Hateshatter Chestplate
 					i(87543, { timeline = { REMOVED_7_1_5 } }),	-- Ka'eng, Breath of the Shadow
-					i(81103, { timeline = { REMOVED_7_1_5 } }),	-- Mindbender Plate Gloves
+					i(81103, { timeline = { REMOVED_7_1_5 } }),	-- Mindbinder Plate Gloves
 					i(81189, { timeline = { REMOVED_7_1_5 } }),	-- Ring of Malice
 					i(81188, { timeline = { REMOVED_7_1_5 } }),	-- Robes of Fevered Dreams
 					i(81186, { timeline = { REMOVED_7_1_5 } }),	-- Seal of Hateful Meditation

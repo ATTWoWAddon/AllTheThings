@@ -1054,7 +1054,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(29932),	-- Arcane Ringed Tunic
 						i(29939),	-- Flayer-Hide Leggings
-						i(29935),	-- Fore Scarred Breastplate
+						i(29935),	-- Fire Scarred Breastplate
 						i(29946),	-- Invader's Greathelm
 						i(29927),	-- Shadowbrim Travel Hat
 					},
@@ -1082,7 +1082,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(29932),	-- Arcane Ringed Tunic
 						i(29939),	-- Flayer-Hide Leggings
-						i(29935),	-- Fore Scarred Breastplate
+						i(29935),	-- Fire Scarred Breastplate
 						i(29946),	-- Invader's Greathelm
 						i(29927),	-- Shadowbrim Travel Hat
 					},
@@ -2061,7 +2061,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							coord = { 13.6, 39.0, HELLFIRE_PENINSULA },
 							cr = 19305,	-- Goliathon <King of the Colossi>
 						}),
-						i(28075),	-- Destroyer's Mantle
+						i(28075),	-- Destroyers' Mantle
 						i(28069),	-- Golden Cenarion Greaves
 						i(28074),	-- Studded Green Anklewraps
 						i(28070),	-- Verdant Handwraps

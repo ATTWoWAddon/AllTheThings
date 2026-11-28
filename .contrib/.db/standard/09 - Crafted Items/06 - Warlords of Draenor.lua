@@ -169,7 +169,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(244318),	-- Wine Barrel (DECOR!)
 		})),
 		filter(MISC, {
-			i(118700),	-- Secrets of Draenor Alchemy
+			i(118700),	-- Secret of Draenor Alchemy
 		}),
 		filter(REAGENTS, {
 			i(108996),	-- Alchemical Catalyst
@@ -241,7 +241,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114171),	-- Ancestral Talisman
 				i(114163),	-- Barbed Fishing Hook
 				i(114157),	-- Blackrock Razor
-				i(114165),	-- Calcified Eye in a Jar
+				i(114165),	-- Calcified Eye In a Jar
 				i(114167),	-- Ceremonial Tattoo Needles
 				i(114169),	-- Cracked Ivory Idol
 				i(114177),	-- Doomsday Prophecy
@@ -263,7 +263,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114172),	-- Pristine Ancestral Talisman
 				i(114164),	-- Pristine Barbed Fishing Hook
 				i(114158),	-- Pristine Blackrock Razor
-				i(114166),	-- Pristine Calcified Eye In A Jar
+				i(114166),	-- Pristine Calcified Eye In a Jar
 				i(114168),	-- Pristine Ceremonial Tattoo Needles
 				i(114170),	-- Pristine Cracked Ivory Idol
 				i(114178),	-- Pristine Doomsday Prophecy
@@ -304,7 +304,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 				i(114181),	-- Stonemaul Succession Stone
 				i(117384),	-- Warmaul of the Warmaul Chieftain
 				-- Pristines
-				i(114210),	-- Pristine Eye of Har'guun the Blind
+				i(114210),	-- Pristine Eye of Har'gunn the Blind
 				i(114208),	-- Pristine Gladiator's Shield
 				i(114213),	-- Pristine Imperial Decree Stele
 				i(114209),	-- Pristine Mortar and Pestle
@@ -582,11 +582,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(202212, {timeline = {ADDED_10_0_5}}),	-- Impressive Linkgrease Locksprocket
 			i(202214, {timeline = {ADDED_10_0_5}}),	-- Impressive True Iron Trigger
 			i(127738, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Infrablue-Blocker Lenses
-			i(128011, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Linkgrease Locksprocke
+			i(128011, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Linkgrease Locksprocket
 			i(118007),	-- Mecha-Blast Rocket
 			i(202213, {timeline = {ADDED_10_0_5}}),	-- Remarkable Linkgrease Locksprocket
 			i(202215, {timeline = {ADDED_10_0_5}}),	-- Remarkable True Iron Trigger
-			i(119299),	-- Secrets of Draenor Engineering
+			i(119299),	-- Secret of Draenor Engineering
 			i(118006),	-- Shieldtronic Shield
 			i(116149),	-- Snake Firework
 			i(109184),	-- Stealthman 54
@@ -857,7 +857,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(127734, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Savage Taladite Amplifier
 			i(118723),	-- Secret of Draenor Jewelcrafting
 			i(128013, {timeline = {ADDED_6_2_0, REMOVED_10_0_5}}),	-- Taladite Amplifier
-			i(115526),	-- Taladite Recrystalizer
+			i(115526),	-- Taladite Recrystallizer
 			i(115529, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Greater Taladite Amplifier
 			i(122541, {timeline = {ADDED_6_1_0, REMOVED_6_2_0}}),	-- Unstable Powerful Taladite Amplifier
 			i(115527, {timeline = {ADDED_6_0_3_LAUNCH, REMOVED_6_2_0}}),	-- Unstable Taladite Amplifier

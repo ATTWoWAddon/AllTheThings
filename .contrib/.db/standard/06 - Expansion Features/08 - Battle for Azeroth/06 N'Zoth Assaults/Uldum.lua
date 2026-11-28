@@ -1611,7 +1611,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					petbattle(q(58743, {	-- Dune Buggy
 						coord = { 35.5, 31.6, NZOTH_ASSAULT_ULDUM },
 					})),
-					petbattle(q(58744, {	-- I Am the One Who Whispers
+					petbattle(q(58744, {	-- I Am The One Who Whispers
 						coord = { 61.7, 54.4, NZOTH_ASSAULT_ULDUM },
 					})),
 					petbattle(q(58742, {	-- Retinus the Seeker

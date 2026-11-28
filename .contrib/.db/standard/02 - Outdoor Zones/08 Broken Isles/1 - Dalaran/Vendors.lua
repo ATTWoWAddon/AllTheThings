@@ -24,8 +24,8 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			sym = {{"select","itemID",
 				3422,	-- Beautiful Wildflowers
 				3420,	-- Black Rose
-				3424,	-- Bouquet Of Black Roses
-				3423,	-- Bouquet Of White Roses
+				3424,	-- Bouquet of Black Roses
+				3423,	-- Bouquet of White Roses
 				3419,	-- Red Rose
 				3421,	-- Simple Wildflowers
 			}},
@@ -156,7 +156,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(151805),	-- Parsel's Tongue
 						i(137101),	-- Call of the Wild
 						i(141353),	-- Magnetized Blasting Cap Launcher
-						i(144303),	-- MKII  Gyroscopic Stabilizer
+						i(144303),	-- MKII Gyroscopic Stabilizer
 						i(137082),	-- Helbrine, Rope of the Mist Marauder
 						i(137080),	-- Roar of the Seven Lions
 						i(137081),	-- War Belt of the Sentinel Army
@@ -245,7 +245,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(133976),	-- Cinidaria, the Symbiote (Leather classes)
 						i(137079),	-- Gai Plin's Soothing Sash
 						i(138879),	-- Ovyd's Winter Wrap
-						i(137068),	-- Leggings of the Black Flame
+						i(137068),	-- Leggings of The Black Flame
 						i(137028),	-- Ei'thas, Lunar Glides of Eramas
 						i(137027),	-- Firestone Walkers
 						i(137029),	-- Katsuo's Eclipse
@@ -275,7 +275,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(137099),	-- Greenskin's Waterlogged Wristcuffs
 						i(137098),	-- Zoldyck Family Training Shackles
 						i(141321),	-- Shivarran Symmetry
-						i(151818),	-- The Fist of the Dead
+						i(151818),	-- The First of the Dead
 						i(133976),	-- Cinidaria, the Symbiote (Leather classes)
 						i(137069),	-- Will of Valeera
 						i(137030),	-- Duskwalker's Footpads
@@ -299,7 +299,7 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 						i(137076),	-- Obsidian Stone Spaulders
 						i(151812),	-- Pillars of Inmost Light
 						i(144273),	-- Maraad's Dying Breath
-						i(137020),	-- Whisper  of the Nathrezim
+						i(137020),	-- Whisper of the Nathrezim
 						i(137017),	-- Breastplate of the Golden Val'kyr
 						i(151813),	-- Scarlet Inquisitor's Expurgation
 						i(140846),	-- Aegisjalmur, the Armguards of Awe

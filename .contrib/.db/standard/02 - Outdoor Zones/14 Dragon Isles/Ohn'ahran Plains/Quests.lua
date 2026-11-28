@@ -1237,7 +1237,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 						provider = { "n", 201488 },	-- Baine Bloodhoof
 						coord = { 38.1, 34.0, OHNAHRAN_PLAINS },
 						groups = {
-							i(203685),	-- Borrowed Potion of Invisiblity
+							i(203685),	-- Borrowed Potion of Invisibility
 						},
 					}),
 					q(72606, {	-- See Red

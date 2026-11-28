@@ -151,16 +151,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 					i(184635),	-- Adventurer's Mining Cache
 					i(184636),	-- Adventurer's Skinning Cache
 					i(184630),	-- Adventurer's Tailoring Cache
-					i(187573, {	-- Broker's Enchanting Mote of Potentiation
+					i(187573, {	-- Brokers' Enchanting Mote of Potentiation
 						timeline = { ADDED_9_1_0 },
 					}),
-					i(187572, {	-- Broker's Herbalism Mote of Potentiation
+					i(187572, {	-- Brokers' Herbalism Mote of Potentiation
 						timeline = { ADDED_9_1_0 },
 					}),
-					i(187569, {	-- Broker's Tailoring Mote of Potentiation
+					i(187569, {	-- Brokers' Tailoring Mote of Potentiation
 						timeline = { ADDED_9_1_0 },
 					}),
-					i(187574, {	-- Broker's Overflowing Bucket
+					i(187574, {	-- Brokers' Overflowing Bucket
 						timeline = { ADDED_9_1_0 },
 					}),
 					i(184643),	-- Champion's Enchanting Cache
@@ -229,7 +229,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				}),
 				n(COMMON_BOX_DROPS, {	-- Common Box Drops
 					providers = {
-						{"i", 181475},	-- Bounty of the Grovewardens
+						{"i", 181475},	-- Bounty of the Grove Wardens
 						{"i", 181476},	-- Tribute of the Wild Hunt
 						{"i", 181732},	-- Tribute of the Ambitious
 						{"i", 181733},	-- Tribute of the Duty-Bound
@@ -248,7 +248,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 			n(COVENANT_CALLINGS, {
 				n(NIGHT_FAE, {
 					providers = {
-						{"i", 181475},	-- Bounty of the Grovewardens
+						{"i", 181475},	-- Bounty of the Grove Wardens
 						{"i", 181476},	-- Tribute of the Wild Hunt
 					},
 					groups = {

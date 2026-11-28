@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(155866),	-- Soulspun Casque
 						i(158304),	-- Mantle of Fastidious Machinations
 						i(159233),	-- Loa Betrayer's Vestments
-						i(155860),	-- Spymaster's  Wrap
+						i(155860),	-- Spymaster's Wrap
 						i(160212),	-- Shadowshroud Vambraces
 						i(158308),	-- Souldrifting Sabatons
 						i(159610),	-- Vessel of Skittering Shadows
@@ -150,7 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(155866),	-- Soulspun Casque
 							i(158304),	-- Mantle of Fastidious Machinations
 							i(159233),	-- Loa Betrayer's Vestments
-							i(155860),	-- Spymaster's  Wrap
+							i(155860),	-- Spymaster's Wrap
 							i(160212),	-- Shadowshroud Vambraces
 							i(158308),	-- Souldrifting Sabatons
 							i(159610),	-- Vessel of Skittering Shadows
@@ -233,7 +233,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							i(155866),	-- Soulspun Casque
 							i(158304),	-- Mantle of Fastidious Machinations
 							i(159233),	-- Loa Betrayer's Vestments
-							i(155860),	-- Spymaster's  Wrap
+							i(155860),	-- Spymaster's Wrap
 							i(160212),	-- Shadowshroud Vambraces
 							i(158308),	-- Souldrifting Sabatons
 							i(159610),	-- Vessel of Skittering Shadows

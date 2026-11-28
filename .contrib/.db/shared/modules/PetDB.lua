@@ -730,7 +730,7 @@ local CompanionPetSpeciesIDToSpellID = {
 	[2530] = 286514,	-- Mechantula
 	[2531] = 286574,	-- Mechanical Cockroach
 	[2532] = 286576,	-- Leper Rat
-	[2533] = 286582,	-- Alarm-O-Dog
+	[2533] = 286582,	-- Alarm-o-Dog
 	[2534] = 286790,	-- Mini Spider Tank
 	[2535] = 286837,	-- Wicker Wraith
 	[2538] = 287997,	-- Dasher
@@ -3061,7 +3061,7 @@ i(152880, 0);		-- REUSE ME
 -----------------
 -- PATCH 8.1.0 --
 -----------------
-i(165857, 2533);	-- Alarm-O-Dog
+i(165857, 2533);	-- Alarm-o-Dog
 i(166714, 2566);	-- Albatross Hatchling
 i(166491, 2555);	-- Albino Duskwatcher
 i(166486, 2551);	-- Baby Stonehide
@@ -4411,7 +4411,7 @@ i(232842, 4638);	-- Crimson Mechasaur
 i(232858, 4655);	-- Cruncher
 i(232853, 4632);	-- Eepy
 i(232855, 4631);	-- Foreman
-i(232844, 4640);	-- Fuz-Size Flarendo
+i(232844, 4640);	-- Fun-Size Flarendo
 i(232843, 4642);	-- Gorillion
 i(232807, 4664);	-- Iron Chick
 i(232859, 4653);	-- Lab Rat
@@ -4629,7 +4629,7 @@ i(266076, 4881);	-- Nether Siphoner
 i(262392, 4961);	-- Nibblesworth
 i(240840, 4803);	-- Niblet
 i(264892, 4981);	-- Nova
-i(262391, 4958);	-- Ominous Dominus
+i(262391, 4958);	-- Ominous Domanus
 i(250145, 4884);	-- Pangolil
 i(258903, 4927);	-- Percival
 i(260730, 4948);	-- Perturbed Sporebat

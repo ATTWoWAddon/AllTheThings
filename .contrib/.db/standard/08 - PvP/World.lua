@@ -60,7 +60,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			}),
 			n(BOUNTY, {
 				i(163825),	-- Plundered Supplies
-				i(170539, {	-- Plunderer Supplies
+				i(170539, {	-- Plundered Supplies
 					timeline = { ADDED_8_2_0 },
 				}),
 			}),
@@ -121,7 +121,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			n(ACHIEVEMENTS, {
 				ach(16599, {	-- A Champion's Pursuit
 					crit(55944, {	-- Krolkoth the Mountain
-						_quests = { 72008 },	-- Overcoming a Mountain: Krolkoth
+						_quests = { 72008 },	-- Overcoming A Mountain: Krolkoth
 					}),
 					crit(55957, {	-- Tarolekk the Stomper
 						_quests = { 72058 },	-- What Hoof We Here: Tarolekk

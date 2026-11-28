@@ -1131,7 +1131,7 @@ maproot(MAP.ZEPHRAS_ISLE, {
 				coord = { 54.0, 39.0, MAP.ZEPHRAS_ISLE },
 				lvl = 8,
 				groups = {
-					i(263309),	-- Freedom Walker's
+					i(263309),	-- Freedom Walkers
 					i(263310),	-- Sorrowsong Gloves
 					i(263311),	-- Scuffed Cuffs
 				},

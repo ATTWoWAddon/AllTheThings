@@ -55,14 +55,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 						i(247492),	-- Fashionable Autumn Cloak
 					}),
 					filter(CLOTH, {
-						i(240718),	-- Wine-dark Royal Cowl
-						i(240719),	-- Wine-dark Royal Epaulets
-						i(240720),	-- Wine-dark Royal Doublet
-						i(240721),	-- Wine-dark Royal Belt
-						i(240722),	-- Wine-dark Royal Trousers
-						i(240723),	-- Wine-dark Royal Boots
-						i(240724),	-- Wine-dark Royal Armbands
-						i(240725),	-- Wine-dark Royal Handwraps
+						i(240718),	-- Wine-Dark Royal Cowl
+						i(240719),	-- Wine-Dark Royal Epaulets
+						i(240720),	-- Wine-Dark Royal Doublet
+						i(240721),	-- Wine-Dark Royal Belt
+						i(240722),	-- Wine-Dark Royal Trousers
+						i(240723),	-- Wine-Dark Royal Boots
+						i(240724),	-- Wine-Dark Royal Armbands
+						i(240725),	-- Wine-Dark Royal Handwraps
 					}),
 					filter(LEATHER, {
 						i(240643),	-- Highmountain Hide Boots

@@ -1975,7 +1975,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					objective(1, {	-- 0/8 Root Sample
 						provider = { "i", 5056 },	-- Root Sample
 					}),
-					i(5341),	-- Spore-Covered Tunic
+					i(5341),	-- Spore-covered Tunic
 				},
 			}),
 			q(894, {	-- Samophlange (1/4)
@@ -3368,7 +3368,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(4820, {	-- Guardian Buckler
 						isLimited = true,
 					}),
-					i(4798, {	-- Heavy Runed CLoak
+					i(4798, {	-- Heavy Runed Cloak
 						isLimited = true,
 					}),
 					i(4816, {	-- Legionnaire's Leggings
@@ -3390,7 +3390,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					{ "pop" },
 					{ "select", "itemID",
 						16059,	-- Common Brown Shirt
-						3428,	-- Common Grey Shirt
+						3428,	-- Common Gray Shirt
 						16060,	-- Common White Shirt
 					},
 				},
@@ -3631,7 +3631,7 @@ maproot(MAP.KALIMDOR, MAP.THE_BARRENS, {
 					i(4797, {	-- Fiery Cloak
 						isLimited = true,
 					}),
-					i(4798, {	-- Heavy Runed CLoak
+					i(4798, {	-- Heavy Runed Cloak
 						isLimited = true,
 					}),
 					i(4778, {	-- Heavy Spiked Mace

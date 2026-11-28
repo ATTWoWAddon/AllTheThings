@@ -134,10 +134,10 @@ instanceroot(232, {	-- Maraudon
 						cost = {
 							{ "i", 17757, 1 },	-- Amulet of Spirits
 							{ "i", 17761, 1 },	-- Gem of the First Khan
-							{ "i", 17762, 1 },	-- Gem of the Second Kahn
-							{ "i", 17763, 1 },	-- Gem of the Third Kahn
-							{ "i", 17764, 1 },	-- Gem of the Fourth Kahn
-							{ "i", 17765, 1 },	-- Gem of the Fifth Kahn
+							{ "i", 17762, 1 },	-- Gem of the Second Khan
+							{ "i", 17763, 1 },	-- Gem of the Third Khan
+							{ "i", 17764, 1 },	-- Gem of the Fourth Khan
+							{ "i", 17765, 1 },	-- Gem of the Fifth Khan
 						},
 					}),
 					i(17757, {	-- Amulet of Spirits

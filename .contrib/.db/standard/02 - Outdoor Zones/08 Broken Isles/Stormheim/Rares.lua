@@ -139,7 +139,7 @@ maproot(BROKEN_ISLES, STORMHEIM, {
 			coord = { 47.1, 57.2, STORMHEIM },
 			races = HORDE_ONLY,
 			groups = {
-				i(129037),	-- THe Houndmaster's Fancy Pants
+				i(129037),	-- The Houndmaster's Fancy Pants
 			},
 		}),
 		n(90139, {	-- Inquisitor Ernstenbok

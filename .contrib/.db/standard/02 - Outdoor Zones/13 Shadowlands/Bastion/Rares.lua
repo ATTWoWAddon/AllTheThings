@@ -141,7 +141,7 @@ maproot(SHADOWLANDS, BASTION, {
 					}),
 					i(183613),	-- Glinting Daybreak Dagger
 					i(183612),	-- Loyal Champion's Hammer
-					i(183609),	-- Re-Powered Goliath Fists
+					i(183609),	-- Re-Powered Golliath Fists
 					i(183607),	-- Uncertain Aspirant's Spear
 					i(183605),	-- Devourer Wrought Warglaive
 					i(183610),	-- Warrior Poet's Poniard

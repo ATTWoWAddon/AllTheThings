@@ -906,7 +906,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 				coord = { 40.3, 81.5, KUN_LAI_SUMMIT },
 				groups = {
 					o_repeated({
-						i(81054),	-- Kafa'Kota Berry
+						i(81054),	-- Kafa'kota Berry
 						o(211454),	-- Kafa'kota Bush
 						o(211480),	-- Kafa'kota Berries
 					}),
@@ -1634,7 +1634,7 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 				groups = {
 					i(82532),	-- Waterfall Cord
 					i(82533),	-- Mushan Hide Belt
-					i(82534),	-- Dreaming SPirit Waistguard
+					i(82534),	-- Dreaming Spirit Waistguard
 					i(82535),	-- Serenity Clasp
 					i(82536),	-- Mindbender Cord
 					i(82537),	-- Silentleaf Belt
@@ -2967,8 +2967,8 @@ maproot(PANDARIA, KUN_LAI_SUMMIT, {
 						moh(1, i(84362)),	-- Dreadful Gladiator's Drape of Prowess
 					}),
 					n(WRIST, {
-						moh(1, i(84471)),	-- Dreadful  Gladiator's Armbands of Meditation
-						moh(1, i(84470)),	-- Dreadful  Gladiator's Armbands of Prowess
+						moh(1, i(84471)),	-- Dreadful Gladiator's Armbands of Meditation
+						moh(1, i(84470)),	-- Dreadful Gladiator's Armbands of Prowess
 						moh(1, i(84439)),	-- Dreadful Gladiator's Armplates of Alacrity
 						moh(1, i(84438)),	-- Dreadful Gladiator's Armplates of Proficiency
 						moh(1, i(84461)),	-- Dreadful Gladiator's Armwraps of Accuracy

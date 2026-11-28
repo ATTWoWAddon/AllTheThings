@@ -49,7 +49,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, MAP.MIDNIGHT.VAUL
 						i(277777),	-- Venom-Cursed Eagle's Grips
 					}),
 					filter(PLATE, {
-						i(277768),	-- Venom-Cursed Bear's Paws
+						i(277768),	-- Venom-Cursed Bear's Jaws
 						i(277766),	-- Venom-Cursed Bear's Pauldrons
 						i(277771),	-- Venom-Cursed Bear's Chestguard
 						i(277765),	-- Venom-Cursed Bear's Warbelt

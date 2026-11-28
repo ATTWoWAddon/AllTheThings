@@ -161,7 +161,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 					coord = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 					isWeekly = true,
 					groups = {
-						i(204305),	-- Neltharion Signed Notes
+						i(204305),	-- Neltharion-Signed Notes
 					},
 				}),
 				q(74984, {	-- Authentic Authorization
@@ -170,7 +170,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 					coord = { 29.2, 52.8, THE_FORBIDDEN_REACH },
 					isWeekly = true,
 					groups = {
-						i(204305),	-- Neltharion Signed Notes
+						i(204305),	-- Neltharion-Signed Notes
 					},
 				}),
 				-- Inside of Az
@@ -463,7 +463,7 @@ maproot(DRAGON_ISLES, THE_FORBIDDEN_REACH, {
 						o(388905, {	-- Neltharion Toolkit
 							questID = 74993,
 							groups = {
-								i(204278),	-- Nelthation's Toolkit
+								i(204278),	-- Neltharion's Toolkit
 							},
 						}),
 						o(386555, {	-- Odd Circular Object

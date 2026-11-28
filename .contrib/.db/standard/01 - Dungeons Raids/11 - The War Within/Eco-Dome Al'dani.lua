@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					i(242495),	-- Incorporeal Warpclaw
 					i(242482),	-- Reinforced Stalkerhide Vest
 					i(242481),	-- Spellstrike Warplance
-					i(242476),	-- Taahbat's Desert Carbine
+					i(242476),	-- Taah'bat's Desert Carbine
 					i(242477),	-- Wasteland Devotee's Wrappings
 				}),
 				BossOnly(SOULSCRIBE, {

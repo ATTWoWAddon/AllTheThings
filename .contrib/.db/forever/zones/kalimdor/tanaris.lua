@@ -161,7 +161,7 @@ maproot(MAP.KALIMDOR, MAP.TANARIS, {
 				coord = { 51.4, 28.7, MAP.TANARIS },
 				cost = {
 					{ "i", 7931, 2 },	-- Mithril Coif
-					{ "i", 7928, 1 },	-- Ornate Mithril Shoulder
+					{ "i", 7928, 1 },	-- Ornate Mithril Shoulders
 				},
 				requireSkill = BLACKSMITHING,
 				learnedAt = 210,

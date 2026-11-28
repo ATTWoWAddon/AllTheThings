@@ -153,7 +153,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 						}),
 						i(211394, {	-- Harvested Dreamseed Cache
 							sym = {
-								{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures,
+								{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures
 								{"pop"},
 								{"exclude","itemID",
 									211417,	-- Dream Wardens Insignia [Epic 1k]

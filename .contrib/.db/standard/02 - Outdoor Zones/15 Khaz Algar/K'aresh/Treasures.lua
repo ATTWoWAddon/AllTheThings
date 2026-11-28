@@ -83,7 +83,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 			o(504172, {	-- Ixthar's Favorite Crystal
 				coord = { 64.1, 44.0, KARESH },
 				questID = 86492,
-				groups = { i(243144) },	-- Reshi Crystal Fragments
+				groups = { i(243144) },	-- Reshii Crystal Fragments
 			}),
 			o(499086, {	-- Lightly-Dented Luggage
 				coords = {	-- Two (maybe more?) possible spawn points
@@ -115,7 +115,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 			o(502485, {	-- Shattered Crystals
 				coord = { 75.1, 55.3, KARESH },
 				questID = 86308,
-				groups = { i(243144) },	-- Reshi Crystal Fragments
+				groups = { i(243144) },	-- Reshii Crystal Fragments
 			}),
 			o(502547, {	-- Skeletal Tail Bones
 				coord = { 77.8, 27.9, KARESH },

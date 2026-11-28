@@ -973,7 +973,7 @@ SL_TAILORING = applyclassicphase(SL_PHASE_ONE, sharedData({ timeline = { ADDED_9
 		r(310901),	-- Shadowlace Trousers
 		r(310897),	-- Shadowlace Tunic
 		r(310876),	-- Shrouded Cloth Belt
-		r(310877),	-- Shrouded Cloth Bracerss
+		r(310877),	-- Shrouded Cloth Bracers
 		r(310871),	-- Shrouded Cloth Cape
 		r(310873),	-- Shrouded Cloth Hood
 		r(310872),	-- Shrouded Cloth Mittens

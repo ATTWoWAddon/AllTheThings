@@ -294,7 +294,7 @@ maproot(KHAZ_ALGAR, DORNOGAL, {
 			groups = {
 				i(247864),	-- Memory of Arthas
 				i(247865),	-- Memory of Garrosh
-				i(247866),	-- Memory of Guldan
+				i(247866),	-- Memory of Gul'dan
 				i(247835),	-- Memory of Illidan
 				i(247869),	-- Memory of Putricide
 				i(247870),	-- Memory of Saurfang

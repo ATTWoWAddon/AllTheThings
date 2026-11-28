@@ -100,7 +100,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 					i(180810),	-- Throwin' Skull (QI!)
 				},
 			}),
-			q(61708, {	-- Drawing Out The Poison
+			q(61708, {	-- Drawing Out the Poison
 				groups = {
 					o(339750, {	-- Golden Egg
 						coord = { 58.8, 26.5, MALDRAXXUS },
@@ -136,7 +136,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 				},
 			}),
 			petbattle(q(61867)),	-- Extra Pieces
-			petbattle(q(61870)),	-- Failed Experiments
+			petbattle(q(61870)),	-- Failed Experiment
 			q(61610, {	-- Fishing: Skeletal Mudskipper
 				requireSkill = FISHING,
 				groups = {
@@ -222,7 +222,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 					i(181719),	-- Monolithic Oxxein Ore (QI!)
 				},
 			}),
-			q(59234),	-- Mixing a Mess
+			q(59234),	-- Mixing A Mess
 			q(58437, {	-- Parts to a Whole
 				groups = {
 					i(174110),	-- Disassembly Flag (QI!)

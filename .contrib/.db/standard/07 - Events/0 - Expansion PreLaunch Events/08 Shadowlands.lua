@@ -590,7 +590,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				groups = {
 					i(183200),	-- Pitch Black Scourgestone
 					i(183678),	-- Keleseth's Influencer
-					i(183661),	-- Drake Stablers Gauntlets
+					i(183661),	-- Drake Stabler's Gauntlets
 					i(183680),	-- Royal Sanguine Cloak
 				},
 			}),
@@ -613,7 +613,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					i(183200),	-- Pitch Black Scourgestone
 					i(183649),	-- Bag of Discarded Entrails
 					i(183651),	-- Chestplate of Septic Sutures
-					i(183650),	-- Miniscule Abomination in a Jar
+					i(183650),	-- Minuscule Abomination in a Jar
 				},
 			}),
 			n(174057, {	-- Scourgelord Tyrannus (14)

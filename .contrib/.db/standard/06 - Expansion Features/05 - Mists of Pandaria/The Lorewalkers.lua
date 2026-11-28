@@ -254,7 +254,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(31096, {	-- What is Worth Fighting For
 					providers = {
-						{ "i", 83774 },	-- What is Worth Fighting For
+						{ "i", 83774 },	-- What Is Worth Fighting For
 						{ "n", 61962 },	-- Lorewalker Cho
 					},
 					coord = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
@@ -324,7 +324,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								cost = 6000000,	-- 600g
 							}),
 							i(87548),	-- Lorewalker's Lodestone
-							i(87549),	-- Lorewalkers Map
+							i(87549),	-- Lorewalker's Map
 							i(89795),	-- Lorewalkers Tabard
 							i(104198, {	-- Mantid Artifact Hunter's Kit
 								cost = { { "i", 87399, 2 } },	-- 2x Restored Artifact

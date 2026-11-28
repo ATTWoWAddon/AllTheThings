@@ -17,7 +17,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			-- #endif
 			timeline = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 		}),
-		i(204075, {	-- Whelping's Shadowflame Crest Fragment
+		i(204075, {	-- Whelpling's Shadowflame Crest Fragment
 			description = "Drops in M+ 0-5",
 			timeline = { ADDED_10_1_0, REMOVED_10_2_0 },
 		}),

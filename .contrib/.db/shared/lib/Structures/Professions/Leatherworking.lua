@@ -597,7 +597,7 @@ CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDownFiltered({ tim
 		r(78416),	-- Darkbrand Belt
 		r(78407),	-- Darkbrand Boots
 		r(78398),	-- Darkbrand Bracers
-		r(78399),	-- Darkbrand Glove
+		r(78399),	-- Darkbrand Gloves
 		r(78424),	-- Darkbrand Helm
 		r(78433),	-- Darkbrand Leggings
 		r(78411),	-- Darkbrand Shoulders
@@ -1513,7 +1513,7 @@ MID_LEATHERWORKING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },F
 		r(1237554),	-- Tinker's Handguard
 	}),
 	filter(MISC, {
-		r(1237547),	-- Void-touched Drums
+		r(1237547),	-- Void-Touched Drums
 	}),
 	filter(REAGENTS, {
 		r(1237573),	-- Infused Scalewoven Hide

@@ -330,7 +330,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 			}),
 		}),
 		cl(SHAMAN, {
-			i(182105),	-- Astral Projection
+			i(182105),	-- Astral Protection
 			i(182128),	-- Call of Flame
 			i(182136),	-- Chilled to the Core
 			i(182110),	-- Crippling Hex

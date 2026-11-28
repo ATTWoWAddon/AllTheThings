@@ -301,8 +301,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 			groups = {
 				r(185935),	-- Silkweave Cinch [Rank 2] (RECIPE!)
 				--
-				r(186799, {u=TRAINING}),	-- Basic Slikweave Robe
-				r(186801, {u=TRAINING}),	-- Embroidered Slikweave Robe
+				r(186799, {u=TRAINING}),	-- Basic Silkweave Robe
+				r(186801, {u=TRAINING}),	-- Embroidered Silkweave Robe
 				i(127359),	-- Basic Silkweave Robe (QI!)
 				i(127360),	-- Embroidered Silkweave Robe (QI!)
 				i(127290),	-- Tanithria's Blue Dye (QI!)
@@ -383,9 +383,9 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ requireSkill = TAILORIN
 			groups = {
 				r(185922),	-- Silkweave Hood [Rank 1] (RECIPE!)
 				--
-				r(187060, {u=TRAINING}),	-- Handcrafted Slikweave Hood
-				r(187058, {u=TRAINING}),	-- Slikweave Hood Lining
-				r(187059, {u=TRAINING}),	-- Slikweave Hood: Outer Layer
+				r(187060, {u=TRAINING}),	-- Handcrafted Silkweave Hood
+				r(187058, {u=TRAINING}),	-- Silkweave Hood Lining
+				r(187059, {u=TRAINING}),	-- Silkweave Hood: Outer Layer
 				i(135538),	-- Bear Fur (QI!)
 				i(127367),	-- Handcrafted Silkweave Hood (QI!)
 				i(127363),	-- Silkweave Hood: Outer Layer (QI!)

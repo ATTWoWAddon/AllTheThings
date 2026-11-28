@@ -61,7 +61,7 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 				q(70649, {	-- Swab Swog
 					coord = { 81.4, 71.1, OHNAHRAN_PLAINS },
 				}),
-				q(71154, {	-- Talon Toss: Shooting 101,
+				q(71154, {	-- Talon Toss: Shooting 101
 					coord = { 60.5, 25.7, OHNAHRAN_PLAINS }
 				}),
 				q(69994, {	-- The Field of Ferocity Redux: Elemental Revenge Round!

@@ -36,7 +36,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.THE_COILED_ISLE, {
 		skyriding(ach(63426, {	-- Skyriding Glyphs: The Wreck of Paku's Talon
 			coord = { 70.3, 48.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 		})),
-		skyriding(ach(63421, {	-- Skyriding Glyphs: The Wreck of Sethralis's Scales
+		skyriding(ach(63421, {	-- Skyriding Glyphs: The Wreck of Sethraliss's Scales
 			coord = { 28.8, 75.2, MAP.MIDNIGHT.THE_COILED_ISLE },
 		})),
 		skyriding(ach(63424, {	-- Skyriding Glyphs: Tokka's Landing

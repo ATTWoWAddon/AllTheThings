@@ -97,7 +97,7 @@ TIER_SEVEN_HEROIC_GROUPS = {
 			cost = { { "i", 40629, 1 }, },	-- Gauntlets of the Lost Protector
 		}),
 		i(40503, {	-- Valorous Cryptstalker Tunic
-			cost = { { "i", 40626, 1 }, },	-- Breastlplate of the Lost Protector
+			cost = { { "i", 40626, 1 }, },	-- Breastplate of the Lost Protector
 		}),
 		i(40506, {	-- Valorous Cryptstalker Legguards
 			cost = { { "i", 40635, 1 }, },	-- Legplates of the Lost Protector

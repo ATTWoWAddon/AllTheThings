@@ -197,7 +197,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					i(175054),	-- Melee Veterans Contract
 					i(175052),	-- Mounted Veterans Contract
 					i(175053),	-- Ranged Veterans Contract
-					i(174891),	-- Veteran Rajani Spakcallers Contract
+					i(174891),	-- Veteran Rajani Sparkcallers Contract
 					i(174890),	-- Veteran Ramkahen Lancers Contract
 					i(175056),	-- Waterborne Veterans Contract
 					i(175062),	-- Malefic Core

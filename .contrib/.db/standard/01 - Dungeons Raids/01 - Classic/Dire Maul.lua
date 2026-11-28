@@ -1681,7 +1681,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						groups = {
 							i(18353),	-- Stoneflower Staff
 							i(18352),	-- Petrified Bark Shield
-							i(18393),	-- Warpwood Bindings
+							i(18393),	-- Warpwood Binding
 							i(18390),	-- Tanglemoss Leggings
 						},
 					}),

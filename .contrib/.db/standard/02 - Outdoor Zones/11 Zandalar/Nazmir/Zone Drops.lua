@@ -46,14 +46,14 @@ maproot(ZANDALAR, NAZMIR, {
 			i(154822),	-- Festerroot Belt
 			i(154817),	-- Festerroot Breeches
 			i(154816),	-- Festerroot Striders
-			i(154828),	-- Zala'mar Helm
-			i(154830),	-- Zala'mar Spaulders
-			i(154831),	-- Zala'mar Chainmail
-			i(154825),	-- Zala'mar Vambraces
-			i(154826),	-- Zala'mar Gauntlets
-			i(154824),	-- Zala'mar Chain
-			i(154829),	-- Zala'mar Legguards
-			i(154827),	-- Zala'mar Greaves
+			i(154828),	-- Zalamar Helm
+			i(154830),	-- Zalamar Spaulders
+			i(154831),	-- Zalamar Chainmail
+			i(154825),	-- Zalamar Vambraces
+			i(154826),	-- Zalamar Gauntlets
+			i(154824),	-- Zalamar Chain
+			i(154829),	-- Zalamar Legguards
+			i(154827),	-- Zalamar Greaves
 			i(154809),	-- Torgashell Helmet
 			i(154811),	-- Torgashell Shoulderguards
 			i(154806),	-- Torgashell Breastplate

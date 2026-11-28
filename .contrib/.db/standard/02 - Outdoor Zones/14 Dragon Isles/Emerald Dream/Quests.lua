@@ -536,7 +536,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 					coord = { 50.8, 61.4, AMIRDRASSIL },
 					races = { NIGHTELF },
 					groups = {
-						iensemble(209604),	-- Ensemble: Raiment of Amirdrassi
+						iensemble(209604),	-- Ensemble: Raiment of Amirdrassil
 					},
 				}),
 				q(77200, {	-- Offerings for the Well

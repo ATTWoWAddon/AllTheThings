@@ -1661,7 +1661,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						i(90597),	-- Delicate Chestguard of the Golden Lotus
 						i(90603),	-- Durable Plate of the Golden Lotus
 						i(90600),	-- Ferocious Plate of the Golden Lotus
-						i(90609),	-- Mending Robe of the Golden Lotus
+						i(90609),	-- Mending Robes of the Golden Lotus
 						i(90599),	-- Warming Chestguard of the Golden Lotus
 					},
 				})),

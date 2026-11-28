@@ -1606,7 +1606,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHA
 						shards(30, i(95864)),	-- Lost Shoulders of Healing
 						shards(30, i(95865)),	-- Lost Shoulders of Fluidity
 						-- Chest
-						shards(50, i(95719)),	-- Robe of Midnight Dawn
+						shards(50, i(95719)),	-- Robe of Midnight Down
 						shards(50, i(95759)),	-- Robes of Mutagenic Blood
 						shards(50, i(95637)),	-- Robes of Static Bursts
 						shards(50, i(95792)),	-- Robes of the Moon Lotus

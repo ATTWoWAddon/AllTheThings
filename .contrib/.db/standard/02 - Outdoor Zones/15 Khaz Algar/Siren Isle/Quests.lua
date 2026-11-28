@@ -229,7 +229,7 @@ maproot(KHAZ_ALGAR, SIREN_ISLE, {
 				i(229365),	-- Raw Singing Citrine
 			},
 		}),
-		q(85654, {	-- Juicing Up And Storming Out
+		q(85654, {	-- Juicing Up and Storming Out
 			sourceQuests = { 85653 },	-- Dipping a Toe
 			provider = { "n", 231997 },	-- Didi the Wrench
 			coord = { 71.3, 45.9, SIREN_ISLE },
@@ -240,7 +240,7 @@ maproot(KHAZ_ALGAR, SIREN_ISLE, {
 			},
 		}),
 		q(85655, {	-- Unleashing Her Power
-			sourceQuests = { 85654 },	-- Juicing Up And Storming Out
+			sourceQuests = { 85654 },	-- Juicing Up and Storming Out
 			provider = { "n", 228074 },	-- Angorla
 			coord = { 71.2, 44.0, SIREN_ISLE },
 			groups = {

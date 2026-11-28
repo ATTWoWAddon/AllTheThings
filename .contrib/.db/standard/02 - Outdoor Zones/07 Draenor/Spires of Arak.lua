@@ -579,7 +579,7 @@ maproot(DRAENOR, SPIRES_OF_ARAK, {
 				sourceQuest = 35339,	-- A Parting Favor
 				qg = 82124,	-- Alice Finn
 				coord = { 37.6, 51.0, SPIRES_OF_ARAK },
-				groups = { i(114958) },	-- Watch Commander Branson's Lape
+				groups = { i(114958) },	-- Watch Commander Branson's Lapel
 			}),
 			q(35245, {	-- A Sentimental Relic
 				sourceQuest = 35013,	-- Lithic's Gift
@@ -1645,7 +1645,7 @@ maproot(DRAENOR, SPIRES_OF_ARAK, {
 			n(79938, {	-- Shadowbark
 				questID = 36478,
 				coord = { 51.8, 35.6, SPIRES_OF_ARAK },
-				groups = { i(118201) },	-- Shadowbark's Skin
+				groups = { i(118201) },	-- Shadowbark's Shin
 			}),
 			n(87027, {	-- Shadow Hulk
 				questID = 37392,

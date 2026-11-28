@@ -820,7 +820,7 @@ maproot(ZANDALAR, NAZMIR, {
 					i(159093),	-- Marrow Drained Bonestaff
 					i(159096),	-- Nagla's Headcracker
 					--
-					a(i(161293)),	-- Thrasneck Greatblade
+					a(i(161293)),	-- Thrashneck Greatblade
 				},
 			}),
 			q(48854, {	-- Offer of Power

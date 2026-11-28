@@ -658,7 +658,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 				provider = { "n", 200055 },	-- Citros
 				coord = { 56.8, 54.1, ZARALEK_CAVERN },
 				groups = {
-					i(205249),	-- Pugent Niffen Incense
+					i(205249),	-- Pungent Niffen Incense
 				},
 			}),
 			------ Imposter Storyline ------
@@ -740,7 +740,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 				provider = { "n", 202600 },	-- Agrul
 				coord = { 46.9, 79.6, ZARALEK_CAVERN },
 				groups = {
-					i(205253),	-- Farmhand's Abudant Harvest
+					i(205253),	-- Farmhand's Abundant Harvest
 				},
 			}),
 			------ Glimmerogg Storyline ------
@@ -846,7 +846,7 @@ maproot(DRAGON_ISLES, ZARALEK_CAVERN, {
 				provider = { "n", 200953 },	-- Earthmender Narvra
 				coord = { 40.1, 68.3, ZARALEK_CAVERN },
 				groups = {
-					i(197855),	-- Explore's Mix
+					i(197855),	-- Explorer's Mix
 				},
 			}),
 			q(73042, {	-- A Tower Yonder

@@ -86,7 +86,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(144218, { timeline = { ADDED_7_1_5 } }),	-- Klatith, Fangs of the Swarm
 					i(144104, { timeline = { ADDED_7_1_5 } }),	-- Shield of the Protectorate
 					i(143991, { timeline = { ADDED_7_1_5 } }),	-- Shoulders of Engulfing Winds
-					i(143955, { timeline = { ADDED_7_1_5 } }),	-- Swarmbringer Chestguards
+					i(143955, { timeline = { ADDED_7_1_5 } }),	-- Swarmbringer Chestguard
 					i(143984, { timeline = { ADDED_7_1_5 } }),	-- Treads of Fixation
 					i(143977, { timeline = { ADDED_7_1_5 } }),	-- Wall-Breaker Legguards
 				}),
@@ -111,7 +111,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(80932, { timeline = { REMOVED_7_1_5 } }),	-- Carapace Breaker
 					i(80927, { timeline = { REMOVED_7_1_5 } }),	-- Hive Protector's Gauntlets
 					i(80931, { timeline = { REMOVED_7_1_5 } }),	-- Shield of the Protectorate
-					i(80930, { timeline = { REMOVED_7_1_5 } }),	-- Swarmbringer Chestguards
+					i(80930, { timeline = { REMOVED_7_1_5 } }),	-- Swarmbringer Chestguard
 					i(80928, { timeline = { REMOVED_7_1_5 } }),	-- Treads of Fixation
 					i(80929, { timeline = { REMOVED_7_1_5 } }),	-- Wall-Breaker Legguards
 				}),
@@ -153,7 +153,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(87546, { timeline = { REMOVED_7_1_5 } }),	-- Klatith, Fangs of the Swarm
 					i(81097, { timeline = { REMOVED_7_1_5 } }),	-- Shield of the Protectorate
 					i(81235, { timeline = { REMOVED_7_1_5 } }),	-- Shoulders of Engulfing Winds
-					i(81109, { timeline = { REMOVED_7_1_5 } }),	-- Swarmbringer Chestguards
+					i(81109, { timeline = { REMOVED_7_1_5 } }),	-- Swarmbringer Chestguard
 					i(81112, { timeline = { REMOVED_7_1_5 } }),	-- Treads of Fixation
 					i(81091, { timeline = { REMOVED_7_1_5 } }),	-- Wall-Breaker Legguards
 				}),

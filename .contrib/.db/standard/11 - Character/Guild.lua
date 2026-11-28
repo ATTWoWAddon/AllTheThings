@@ -630,7 +630,7 @@ root(ROOTS.Character, n(createHeader({
 					-- #endif
 					timeline = { ADDED_6_1_0 },
 				}),
-				i(127011, {	-- Pristine Lightforged Legplates
+				i(127011, {	-- Pristine Lightforge Legplates
 					-- #if AFTER 5.0.4
 					sourceAchievement = 6626,	-- Working Better as a Team
 					-- #endif

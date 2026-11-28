@@ -195,7 +195,7 @@ i(102320);	-- Timeless Plate Bracers
 i(102265);	-- Timeless Plate Gloves
 i(102269);	-- Timeless Plate Belt
 i(102267);	-- Timeless Plate Leggings
-i(102264);	-- Timeless Plate Boot
+i(102264);	-- Timeless Plate Boots
 i(104345);	-- Timeless Lavalliere
 i(102291);	-- Timeless Signet
 i(104347);	-- Timeless Curio
@@ -211,7 +211,7 @@ i(64643);	-- Queen Azshara's Dressing Gown
 i(64644);	-- Headdress of the First Shaman
 i(64885);	-- Scimitar of the Sirocco
 i(64880);	-- Staff of Ammunae
-i(64377);	-- Zin'rokh; Destroyer of Worlds
+i(64377);	-- Zin'rokh, Destroyer of Worlds
 i(64460);	-- Nifflevar Bearded Axe
 i(95391);	-- Mantid Sky Reaver
 i(95392);	-- Sonic Pulse Generator

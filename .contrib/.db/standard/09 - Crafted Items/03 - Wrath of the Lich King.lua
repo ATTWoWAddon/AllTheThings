@@ -532,15 +532,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(38956, {timeline = {ADDED_3_1_0, REMOVED_5_0_4}}),	-- Enchant Cloak - Superior Nature Resistance
 			i(38977, {timeline = {ADDED_3_1_0, REMOVED_5_0_4}}),	-- Enchant Cloak - Superior Shadow Resistance
 			i(39004),	-- Enchant Cloak - Wisdom
-			i(50816, {timeline = {ADDED_3_3_0}}),	-- Enchant Glove - Angler
-			i(38990),	-- Enchant Glove - Armsman
-			i(44458, {timeline = {ADDED_3_1_0}}),	-- Enchant Glove - Crusher
-			i(38979),	-- Enchant Glove - Exceptional Spellpower
-			i(38960),	-- Enchant Glove - Gatherer
-			i(38964),	-- Enchant Glove - Greater Assault
+			i(50816, {timeline = {ADDED_3_3_0}}),	-- Enchant Gloves - Angler
+			i(38990),	-- Enchant Gloves - Armsman
+			i(44458, {timeline = {ADDED_3_1_0}}),	-- Enchant Gloves - Crusher
+			i(38979),	-- Enchant Gloves - Exceptional Spellpower
+			i(38960),	-- Enchant Gloves - Gatherer
+			i(38964),	-- Enchant Gloves - Greater Assault
 			i(38951),	-- Enchant Glove - Haste / WOTLK: Expertise
-			i(38967),	-- Enchant Glove - Major Agility
-			i(38953),	-- Enchant Glove - Precision
+			i(38967),	-- Enchant Gloves - Major Agility
+			i(38953),	-- Enchant Gloves - Precision
 		}),
 		n(DECOR, sharedDataSelf({timeline = { ADDED_11_2_7 }}, {
 			i(257094),	-- Mark of the Mages' Eye (DECOR!)
@@ -570,7 +570,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(44497, {timeline = {ADDED_3_1_0}}),	-- Enchant Weapon - Accuracy
 			i(44493, {timeline = {ADDED_3_1_0}}),	-- Enchant Weapon - Berserking
 			i(43987, {timeline = {ADDED_3_1_0}}),	-- Enchant Weapon - Black Magic
-			i(46026, {timeline = {ADDED_3_1_0}}),	-- Enchant Weapon -  Blade Ward
+			i(46026, {timeline = {ADDED_3_1_0}}),	-- Enchant Weapon - Blade Ward
 			i(46098, {timeline = {ADDED_3_1_0}}),	-- Enchant Weapon - Blood Draining
 			i(38995),	-- Enchant Weapon - Exceptional Agility
 			i(38991),	-- Enchant Weapon - Exceptional Spellpower
@@ -670,7 +670,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			ach(2097, {	-- Get to the Choppa! (Engineering)
 				providers = {
 					{ "i", 44413 },	-- Mekgineer's Chopper
-					{ "i", 41508 },	-- Mechano-hog
+					{ "i", 41508 },	-- Mechano-Hog
 				},
 			}),
 			i(41508),	-- Mechano-Hog (MOUNT!)

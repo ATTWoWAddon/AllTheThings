@@ -1066,7 +1066,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 								i(95722),	-- Grasp of the Ruthless Mother
 								i(95727),	-- Ji-Kun's Rising Winds
 								i(95717),	-- Pinionfeather Greatcloak
-								i(95719),	-- Robe of Midnight Dawn
+								i(95719),	-- Robe of Midnight Down
 								i(95724),	-- Talonrender Chestplate
 							},
 						}),

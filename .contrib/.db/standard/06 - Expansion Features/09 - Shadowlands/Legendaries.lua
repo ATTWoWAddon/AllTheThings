@@ -315,7 +315,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 			}),
 		})),
 		cl(ROGUE, bubbleDownSelf({ classes = { ROGUE } }, {
-			i(183339),	-- Memory of a Concealed Bluderbuss
+			i(183339),	-- Memory of a Concealed Blunderbuss
 			i(183341),	-- Memory of a Guile Charm
 			i(183342),	-- Memory of Akaari's Soul Fragment
 			i(183330),	-- Memory of Bloodfang's Essence

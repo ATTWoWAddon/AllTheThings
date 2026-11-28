@@ -145,7 +145,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							i(210421),	-- Dream Wardens Insignia [Epic 500]
 							i(210872, {	-- Satchel of Dreams
 								sym = {
-									{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures,
+									{"select", "itemID", 211389 },	-- Cache of Overblooming Treasures
 									{"pop"},
 									{"exclude","itemID",
 										211417,	-- Dream Wardens Insignia [Epic 1k]

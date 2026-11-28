@@ -80,7 +80,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(134195),	-- Biornskin Gloves
 					i(134221),	-- Bonespeaker Mantle
 					i(134184),	-- Skoldiir Shoulderguards
-					i(134214),	-- Tideskorn Vests
+					i(134214),	-- Tideskorn Vest
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_MYTHIC).AddGroups({

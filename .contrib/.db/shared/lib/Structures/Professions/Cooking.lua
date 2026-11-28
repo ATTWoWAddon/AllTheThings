@@ -379,9 +379,9 @@ TWW_COOKING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_reci
 	r(445098),	-- Deepfin Patty
 	r(445095),	-- Fiery Fish Sticks
 	r(445101),	-- Fish and Chips
-	r(445089),	-- Flash Fire Fillet
+	r(445089),	-- Flashfire Fillet
 	r(445127),	-- Fresh Fillet
-	r(445096),	-- Ginger Glazed Fillet
+	r(445096),	-- Ginger-Glazed Fillet
 	r(445087),	-- Hallowfall Chili
 	r(462857),	-- Hearty Feast
 	r(445120),	-- Hearty Food
@@ -453,7 +453,7 @@ MID_COOKING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFU
 	r(1226179),	-- Sun-Seared Lumifin
 	r(1226189),	-- Sunwell Delight
 	r(1226174),	-- Tasty Smoked Tetra
-	r(1259655),	-- Thalassian Filet
+	r(1259655),	-- Thalassian Fillet
 	r(1226196),	-- Tranquility Bloom Tea
 	r(1226184),	-- Twilight Angler's Medley
 	r(1226180),	-- Void-Kissed Fish Rolls

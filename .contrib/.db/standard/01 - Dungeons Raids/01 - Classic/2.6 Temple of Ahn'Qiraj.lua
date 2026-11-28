@@ -1115,7 +1115,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						15236,	-- Vekniss Wasp
 					},
 				}),
-				i(21856, {	-- Neretzek, the Blood Drinker
+				i(21856, {	-- Neretzek, The Blood Drinker
 					crs = {
 						15264,	-- Anubisath Sentinel
 						15262,	-- Obsidian Eradicator
@@ -1321,7 +1321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					i(21699),	-- Barrage Shoulders
 					i(21701),	-- Cloak of Concentrated Hatred
 					i(21814),	-- Breastplate of Annihilation
-					i(21708),	-- Beetle Scaled Waistguards
+					i(21708),	-- Beetle Scaled Wristguards
 					i(21698),	-- Leggings of Immersion
 					i(21705),	-- Boots of the Fallen Prophet
 					i(21704),	-- Boots of the Redeemed Prophecy

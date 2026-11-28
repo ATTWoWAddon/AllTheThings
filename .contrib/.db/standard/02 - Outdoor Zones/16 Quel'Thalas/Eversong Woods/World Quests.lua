@@ -9,7 +9,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, MAP.MIDNIGHT.EVERSONG_WOODS, {
 		groups = bubbleDownFiltered({
 			isWorldQuest = true,
 		},FILTERFUNC_questID,{
-			q(92150, {	-- A Breeze through Fairbreeze
+			q(92150, {	-- A Breeze Through Fairbreeze
 				coord = { 46.5, 45.1, MAP.MIDNIGHT.EVERSONG_WOODS },
 			}),
 			q(92143, {	-- Arcane Reallocation

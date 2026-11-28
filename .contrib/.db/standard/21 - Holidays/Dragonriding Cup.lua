@@ -2904,7 +2904,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 						i(211886, {	-- Outlandish Drake Racer's Leggings
 							cost = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 						}),
-						i(211888, {	-- Outlandish  Drake Racer's Scarf
+						i(211888, {	-- Outlandish Drake Racer's Scarf
 							cost = { { "c", RIDERS_OF_AZEROTH_BADGE, 5 } },
 						}),
 						i(211882, {	-- Outlandish Drake Racer's Shoulderpads
@@ -3389,27 +3389,27 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					provider = { "n", 212118 },	-- Bronze Timekeeper
 					coord = { 46.9, 21.9, THE_STORM_PEAKS },
 					groups = {
-						ach(19600),	-- Makers Marathon: Bronze
-						ach(19601),	-- Makers Marathon: Silver
-						ach(19602),	-- Makers Marathon: Gold
+						ach(19600),	-- Makers' Marathon: Bronze
+						ach(19601),	-- Makers' Marathon: Silver
+						ach(19602),	-- Makers' Marathon: Gold
 					},
 				}),
 				dragonridingrace(78390, {	-- Makers Marathon - Advanced
 					provider = { "n", 212118 },	-- Bronze Timekeeper
 					coord = { 46.9, 21.9, THE_STORM_PEAKS },
 					groups = {
-						ach(19603),	-- Makers Marathon Advanced: Bronze
-						ach(19604),	-- Makers Marathon Advanced: Silver
-						ach(19605),	-- Makers Marathon Advanced: Gold
+						ach(19603),	-- Makers' Marathon Advanced: Bronze
+						ach(19604),	-- Makers' Marathon Advanced: Silver
+						ach(19605),	-- Makers' Marathon Advanced: Gold
 					},
 				}),
 				dragonridingrace(78391, {	-- Makers Marathon - Reverse
 					provider = { "n", 212118 },	-- Bronze Timekeeper
 					coord = { 46.9, 21.9, THE_STORM_PEAKS },
 					groups = {
-						ach(19606),	-- Makers Marathon Reverse: Bronze
-						ach(19607),	-- Makers Marathon Reverse: Silver
-						ach(19608),	-- Makers Marathon Reverse: Gold
+						ach(19606),	-- Makers' Marathon Reverse: Bronze
+						ach(19607),	-- Makers' Marathon Reverse: Silver
+						ach(19608),	-- Makers' Marathon Reverse: Gold
 					},
 				}),
 				dragonridingrace(78301, {	-- Scalawag Slither
@@ -3750,7 +3750,7 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					i(211886, {	-- Outlandish Drake Racer's Leggings
 						cost = { { "c", RIDERS_OF_AZEROTH_BADGE, 15 } },
 					}),
-					i(211888, {	-- Outlandish  Drake Racer's Scarf
+					i(211888, {	-- Outlandish Drake Racer's Scarf
 						cost = { { "c", RIDERS_OF_AZEROTH_BADGE, 5 } },
 					}),
 					i(211882, {	-- Outlandish Drake Racer's Shoulderpads

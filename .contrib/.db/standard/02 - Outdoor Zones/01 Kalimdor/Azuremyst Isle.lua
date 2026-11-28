@@ -865,7 +865,7 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9616, {	-- Bandits!
-					provider = { "i", 23910 },	-- Blood Elf Communications
+					provider = { "i", 23910 },	-- Blood Elf Communication
 					races = ALLIANCE_ONLY,
 					lvl = lvlsquish(5, 5, 1),
 					groups = {
@@ -1651,7 +1651,7 @@ maproot(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					groups = {
 						i(23909),	-- Blood Elf Bandit Mask
-						i(23910, {	-- Blood Elf Communications
+						i(23910, {	-- Blood Elf Communication
 							races = ALLIANCE_ONLY,
 						}),
 					},

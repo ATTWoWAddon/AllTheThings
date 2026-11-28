@@ -518,7 +518,7 @@ maproot(KHAZ_ALGAR, KARESH, {
 					qg = 230739,	-- Soul-Scribe
 					coord = { 75.8, 34.3, KARESH },
 					groups = {
-						i(238039),	-- Chronomatic Fiber
+						i(238039),	-- Chronomantic Fiber
 						i(238041),	-- Dexterous Fiber
 						i(238037),	-- Energizing Fiber
 						i(238040),	-- Precise Fiber

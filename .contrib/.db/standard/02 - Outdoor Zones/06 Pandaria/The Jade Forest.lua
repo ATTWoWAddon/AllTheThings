@@ -2212,7 +2212,7 @@ maproot(PANDARIA, {
 						i(80697),	-- Jade Witch Spaulders
 						i(80698),	-- Glass Lake Spaulders
 						i(80699),	-- Silkwood Amice
-						i(80700),	-- Deepwoods Spaulders
+						i(80700),	-- Deepwoods Spaulder
 						i(80701),	-- Fox Grove Spaulders
 						i(80702),	-- Thunderwood Shoulders
 						i(80703),	-- Jade Tiger Shoulders
@@ -2565,7 +2565,7 @@ maproot(PANDARIA, {
 						i(90299),	-- Hide Tunic of Eminent Domain
 						i(90295),	-- Leather Tunic of Eminent Domain
 						i(90300),	-- Ringmail Armor of Eminent Domain
-						i(90298),	-- Stain Robe of Eminent Domain
+						i(90298),	-- Satin Robe of Eminent Domain
 						i(90297),	-- Silk Robe of Eminent Domain
 					},
 				}),
@@ -3482,7 +3482,7 @@ maproot(PANDARIA, {
 						]]--
 						i(90375),	-- Airship Marine's Sharpshooter
 						i(90376),	-- Barricade-Breaker Cudgel
-						i(90382),	-- Captain Roger's Polite Knocking Stick
+						i(90382),	-- Captain Rogers' Polite Knocking Stick
 						i(90331, {	-- Face Smasher Warhammer
 							description = "Unlocks for Horde after completing this alliance quest.",
 						}),
@@ -3591,7 +3591,7 @@ maproot(PANDARIA, {
 							coord = { 46.2, 29.4, THE_JADE_FOREST },
 						}),
 						i(80783),	-- Veridian Cloak
-						i(80784),	-- NectarBreeze Cloak
+						i(80784),	-- Nectarbreeze Cloak
 						i(80785),	-- Mann's Cloak
 						i(80786),	-- Honey-Bear's Cape
 						i(80787),	-- Cloudfall Cloak

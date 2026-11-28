@@ -595,7 +595,7 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 					}),
 				},
 			}),
-			q(76247, {	-- Keep The Home Fires Burning
+			q(76247, {	-- Keep the Home Fires Burning
 				sourceQuests = {
 					78658,	-- The Hallowed Path
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
@@ -835,13 +835,13 @@ maproot(KHAZ_ALGAR, HALLOWFALL, {
 				coord = { 51.1, 46.0, DORNOGAL },
 				isBreadcrumb = true,
 			}),
-			q(79165, {	-- A Moment To Rest
+			q(79165, {	-- A Moment to Rest
 				sourceQuests = { 83497 },	-- A Concerned Friend
 				provider = { "n", 215341 },	-- Great Kyron
 				coord = { 43.2, 52.4, HALLOWFALL },
 			}),
 			q(79166, {	-- Lost Pieces
-				sourceQuests = { 79165 },	-- A Moment To Rest
+				sourceQuests = { 79165 },	-- A Moment to Rest
 				provider = { "n", 218541 },	-- Anduin Wrynn
 				coord = { 40.7, 70.9, HALLOWFALL },
 				groups = {

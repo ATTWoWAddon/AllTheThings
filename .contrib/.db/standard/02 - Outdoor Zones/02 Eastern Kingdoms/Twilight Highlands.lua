@@ -601,7 +601,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 						provider = { "n", 46009 },	-- Fathom-Lord Heth'Jatar
 					}),
 					i(63908),	-- Bracers of the Fallen Fathom-Lord
-					i(63907),	-- Heth'jatari Battlegloves
+					i(63907),	-- Heth'Jatari Battlegloves
 					i(63906),	-- Conch-Sound Waistguard
 				},
 			}),
@@ -2454,7 +2454,7 @@ maproot(EASTERN_KINGDOMS, TWILIGHT_HIGHLANDS, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					a(ach(5320)),	-- King of the Mountain (Alliance)
-					i(63708),	-- Overly Intelligent Robe
+					i(63708),	-- Overly Intelligent Robes
 					i(63707),	-- Shaw's Finest Leggings
 					i(63706),	-- Coulton's Crushers
 					i(63705),	-- Treads of Terror

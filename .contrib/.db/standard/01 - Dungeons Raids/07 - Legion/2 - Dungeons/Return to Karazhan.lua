@@ -224,7 +224,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 					groups = {
 						i(142298),	-- Astonishingly Scarlet Slippers
-						i(142204),	-- Boots of False Promise
+						i(142204),	-- Boots of False Promises
 						i(142300),	-- Greaves of Miraculous Magnificence
 						i(142299),	-- Horkin' Stuff-Lobbers
 						i(142198),	-- Inordinately Wondrous Wristguards
@@ -277,7 +277,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1825, {	-- Maiden of Virtue
 					creatureID = 113971,	-- Maiden of Virtue
 					groups = {
-						i(142138),	-- Confiscated Manacle
+						i(142138),	-- Confiscated Manacles
 						i(142153),	-- Cord of the Penitent
 						i(142170),	-- Drape of Shame
 						i(142158),	-- Faith's Crucible
@@ -463,7 +463,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 					groups = {
 						i(142298),	-- Astonishingly Scarlet Slippers
-						i(142204),	-- Boots of False Promise
+						i(142204),	-- Boots of False Promises
 						i(142300),	-- Greaves of Miraculous Magnificence
 						i(142299),	-- Horkin' Stuff-Lobbers
 						i(142198),	-- Inordinately Wondrous Wristguards
@@ -478,7 +478,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				e(1825, {	-- Maiden of Virtue
 					creatureID = 113971,	-- Maiden of Virtue
 					groups = {
-						i(142138),	-- Confiscated Manacle
+						i(142138),	-- Confiscated Manacles
 						i(142153),	-- Cord of the Penitent
 						i(142170),	-- Drape of Shame
 						i(142158),	-- Faith's Crucible

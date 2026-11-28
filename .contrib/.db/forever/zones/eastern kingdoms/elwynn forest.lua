@@ -200,7 +200,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 						timeline = { TIMELINE.ADDED_1_60_1 },
 						races = ALLIANCE_ONLY,
 						qis = {
-							247857,	-- Nibbled on Book
+							247857,	-- Nibbled-On Book
 						},
 					}),
 					q(91743, {	-- Rascally Rodents
@@ -1999,7 +1999,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.ELWYNN_FOREST, {
 					2491,	-- Large Axe
 					2494,	-- Stiletto
 					2490,	-- Tomahawk
-					2489,	-- Two-Handed Sword
+					2489,	-- Two-handed Sword
 					2495,	-- Walking Stick
 					2493,	-- Wooden Mallet
 				}},

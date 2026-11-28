@@ -118,7 +118,7 @@ maproot(DRAGON_ISLES, EMERALD_DREAM, {
 			ach(19303, {	-- Dragon Glyphs: Wakeful Vista
 				coord = { 61.6, 75.4, EMERALD_DREAM },
 			}),
-			ach(19302, {	-- Dragon Glyphs: Whorlwing basin
+			ach(19302, {	-- Dragon Glyphs: Whorlwing Basin
 				coord = { 31.7, 80.7, EMERALD_DREAM },
 			}),
 			ach(19318, {	-- Dream On

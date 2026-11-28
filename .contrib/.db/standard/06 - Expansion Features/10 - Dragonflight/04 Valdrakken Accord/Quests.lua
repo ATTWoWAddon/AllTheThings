@@ -1160,7 +1160,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 							i(199742),	-- A Mender's Mentality
 							i(199744),	-- Academy Student's Journal
 							i(199741),	-- Compendium of Advanced Spells
-							i(199745),	-- Everflame Night Touch
+							i(199745),	-- Everflame Night Torch
 							i(194320),	-- Reinforced Lavender Bottle
 							i(199743),	-- Runic Symbols and their Meaning
 							i(198388),	-- Swirling Draconian Concoction

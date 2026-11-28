@@ -1692,7 +1692,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				coord = { 51.9, 60.9, DARKMOON_ISLAND },
 				maxReputation = { FACTION_DARKMOON_FAIRE, EXALTED },
 				timeline = { ADDED_4_3_0 },
-				cost = { { "c", 393, 15 } },	-- Fossil Archaeology Fragments
+				cost = { { "c", 393, 15 } },	-- Fossil Archaeology Fragment
 				requireSkill = ARCHAEOLOGY,
 				isMonthly = true,
 				groups = {
@@ -2145,7 +2145,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				coord = { 52.5, 88.7, DARKMOON_ISLAND },
 				timeline = { ADDED_6_2_0 },
 				groups = {
-					i(127148, {	-- Sila's Secret Stash
+					i(127148, {	-- Silas' Secret Stash
 						description = "This item contains 100 Darkmoon Faire Tickets.",
 						groups = {
 							DARKMOON_PRIZE_TICKET,
@@ -3214,7 +3214,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoonprizeticket(160, i(79131, {	-- Burnished Warden Staff
 						timeline = { ADDED_5_0_4, REMOVED_6_1_0 },
 					})),
-					darkmoonprizeticket(110, i(42950, {	-- Champion Herod's Shoulders
+					darkmoonprizeticket(110, i(42950, {	-- Champion Herod's Shoulder
 						timeline = { REMOVED_6_1_0 },
 					})),
 					darkmoonprizeticket(110, i(48677, {	-- Champion's Deathdealer Breastplate
@@ -3307,7 +3307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					darkmoonprizeticket(75, i(122363, {	-- Burnished Warden Staff
 						timeline = { ADDED_6_1_0 },
 					})),
-					darkmoonprizeticket(50, i(122356, {	-- Champion Herod's Shoulders
+					darkmoonprizeticket(50, i(122356, {	-- Champion Herod's Shoulder
 						timeline = { ADDED_6_1_0 },
 					})),
 					darkmoonprizeticket(50, i(122379, {	-- Champion's Deathdealer Breastplate

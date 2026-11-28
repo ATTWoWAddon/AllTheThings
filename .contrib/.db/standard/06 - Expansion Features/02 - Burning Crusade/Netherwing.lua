@@ -305,7 +305,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHA
 					isDaily = true,
 					groups = {
 						objective(1, {	-- 0/30 Netherwing Crystals
-							cost = { { "i", 32427, 30 } },	-- Netherwing Crystals
+							cost = { { "i", 32427, 30 } },	-- Netherwing Crystal
 						}),
 					},
 				}),

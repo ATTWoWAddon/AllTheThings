@@ -351,7 +351,7 @@ maproot(EASTERN_KINGDOMS, ARATHI_HIGHLANDS, {
 					i(59178),	-- Ramshackle Bracers
 					i(59179),	-- Extra Credit Boots
 					i(59180),	-- Lurking Belt
-					i(59181),	-- Belt of Gutted Rain
+					i(59181),	-- Belt of Gutted Ruin
 					i(131467, {	-- Gold Star Boots
 						timeline = { ADDED_7_0_3 },
 					}),

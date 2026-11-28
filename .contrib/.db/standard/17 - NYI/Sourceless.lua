@@ -313,7 +313,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				-- i(161292),	-- Grimestone Spellmaul
 				i(158579),	-- Scalawag's Warglaive
 				i(153400),	-- Scalawag's Bolt-Thrower
-				i(158503),	-- Scalawag's Bolt Thrower
+				i(158503),	-- Scalawag's Bolt-Thrower
 				i(161933),	-- Manual of Reverse Wounding
 				i(158508),	-- Scalawag's Cutlass
 				-- i(161305),	-- Ashvane Captain's Shortsword
@@ -322,7 +322,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(158504),	-- Whaler's Pike
 				i(153401),	-- Whaler's Pike
 				i(158509),	-- Tideshaper Staff
-				i(158506),	-- Scalawags Claymore
+				i(158506),	-- Scalawag's Claymore
 
 				-- Nazmir items = Drustvar quest rewards
 

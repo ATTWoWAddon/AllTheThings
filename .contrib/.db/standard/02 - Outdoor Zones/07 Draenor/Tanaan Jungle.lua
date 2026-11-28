@@ -1085,7 +1085,7 @@ maproot(DRAENOR, TANAAN_JUNGLE, {
 					{ 47.4, 40.6, TANAAN_JUNGLE },
 					{ 46.2, 42.8, TANAAN_JUNGLE },
 				},
-				groups = { i(127299) },	-- Nehtekurse's Robe of Contempt
+				groups = { i(127299) },	-- Nethekurse's Robe of Contempt
 			}),
 			n(93057, {	-- Grannok
 				questID = 38750,

@@ -327,7 +327,7 @@ maproot(DRAGON_ISLES, {
 					-- i(200212),	-- Sand-Encrusted Graves // This item can drop from 70+ different rares, however there is 1 rare with a 75% chance. Listed under the specific rare with a note. --Goldenshacal October 2025
 					i(200859),	-- Seasoned Hunter's Trophy
 					i(198409),	-- Personal Shell (TOY!)
-					i(200563),	-- Primal Ritual-shell
+					i(200563),	-- Primal Ritual Shell
 					i(200195),	-- Thunderscale Legguards
 					i(200880),	-- Wind-Sealed Mana Capsule
 						-- Insignias @ Max Renown
@@ -503,7 +503,7 @@ maproot(DRAGON_ISLES, {
 					i(200292, {	-- Cragforge Pauldrons
 						crs = RARE_GROUP_FIVE,
 					}),
-					i(200446, {	-- Crystalized Sigil
+					i(200446, {	-- Crystallized Sigil
 						crs = RARE_GROUP_SUNDER,
 					}),
 					i(200313, {	-- Earthen Protoscale Drape

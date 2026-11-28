@@ -3062,7 +3062,7 @@ maproot(EASTERN_KINGDOMS, NORTHERN_STRANGLETHORN, {
 				timeline = { REMOVED_4_0_3 },
 				cr = 689,	-- Crystal Spine Basilisk
 			}),
-			i(1677, {	-- Drake-scale Vest
+			i(1677, {	-- Drake-Scale Vest
 				-- #if AFTER 7.3.5
 				description = "Drops from Mosh'Ogg Lords, which have three known spawns. Mosh'Ogg Butcher can spawn in its place.",
 				coords = {

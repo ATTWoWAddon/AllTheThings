@@ -13,9 +13,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 			description = "Can drop randomly from boss and memory events, Recruit drops respect usability but Dalaran Defender drops do not.",
 			maps = { DUSTWALLOW_MARSH, DRAGONBLIGHT, SEARING_GORGE },
 			sym = {	-- Symlink all armor and weapons from the Vendor
-				{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+				{"select","npcID",223710},{"pop"},	-- Remembrancer Amuul
 				{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
-				{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+				{"select","npcID",223710},{"pop"},	-- Remembrancer Amuul
 				{"where","headerID",WEAPONS},
 			},
 			groups = bubbleDownFiltered({
@@ -181,9 +181,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				i(226256, {	-- Token of the Remembrancers
 					description = "Drops once per week per character.",
 					sym = {
-						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+						{"select","npcID",223710},{"pop"},	-- Remembrancer Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
-						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+						{"select","npcID",223710},{"pop"},	-- Remembrancer Amuul
 						{"where","headerID",WEAPONS},
 					},
 				}),
@@ -193,9 +193,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				i(226256, {	-- Token of the Remembrancers
 					description = "Drops once per week per character.",
 					sym = {
-						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+						{"select","npcID",223710},{"pop"},	-- Remembrancer Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
-						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+						{"select","npcID",223710},{"pop"},	-- Remembrancer Amuul
 						{"where","headerID",WEAPONS},
 					},
 				}),
@@ -205,9 +205,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 				i(226256, {	-- Token of the Remembrancers
 					description = "Drops once per week per character.",
 					sym = {
-						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+						{"select","npcID",223710},{"pop"},	-- Remembrancer Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
-						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+						{"select","npcID",223710},{"pop"},	-- Remembrancer Amuul
 						{"where","headerID",WEAPONS},
 					},
 				}),

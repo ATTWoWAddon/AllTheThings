@@ -754,7 +754,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						}),
 						i(35926),	-- Artfully Tooled Leggings
 						i(35928),	-- Cold-Forged Bronze Legplates
-						i(35925),	-- Shimmering Cold Iron Band
+						i(35925),	-- Shimmering Cold-Iron Band
 						i(35927),	-- Songscale Breastplate
 					},
 				}),
@@ -1028,7 +1028,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						i(35926),	-- Artfully Tooled Leggings
 						i(35927),	-- Songscale Breastplate
 						i(35928),	-- Cold-Forged Bronze Legplates
-						i(35925),	-- Shimmering Cold Iron Band
+						i(35925),	-- Shimmering Cold-Iron Band
 					},
 				}),
 				q(11228, {	-- Hell Has Frozen Over...

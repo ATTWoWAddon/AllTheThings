@@ -93,7 +93,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						n(153297, {	-- Ny'alotha Obelisk
 							coord = { 83.7, 27.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 							providers = {
-								{ "i", 175140 },	-- All Seeing Eyes
+								{ "i", 175140 },	-- All-Seeing Eyes
 								{ "i", 168123 },	-- Twitching Eyeball
 							},
 							cost = {
@@ -543,7 +543,7 @@ root(ROOTS.Secrets, header(HEADERS.Achievement, 40967, {	-- Ratts' Revenge
 						{ 47.0, 78.1, 46 },	-- Shelf Pebble
 					},
 				}),
-				i(228953),	-- Rosy Spat
+				i(228953),	-- Rosy Sprat
 			},
 		}),
 	},

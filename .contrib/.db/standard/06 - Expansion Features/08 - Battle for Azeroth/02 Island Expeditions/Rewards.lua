@@ -602,7 +602,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						}),
 					},
 				}),
-				i(173995, {	-- Venture Co 'Salvage'
+				i(173995, {	-- Venture Co. 'Salvage'
 					modID = 14,
 					sym = {{"sub","common_island_expedition_salvage"}},
 					groups = {

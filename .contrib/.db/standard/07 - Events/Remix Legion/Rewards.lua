@@ -161,7 +161,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_LEGION, n(REMIX_LEGION, {
 		}),
 		filter(FINGER_F, {
 			i(246199),	-- Band of Callous Dominance
-			i(246200),	-- Band of Twister Bark
+			i(246200),	-- Band of Twisted Bark
 			i(246202),	-- Grasping Tentacle Loop
 			i(246198),	-- Jeweled Signet of Melandrus
 			i(245998),	-- Ring of Mind Shielding

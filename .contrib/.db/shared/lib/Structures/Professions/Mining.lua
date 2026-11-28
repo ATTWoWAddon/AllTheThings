@@ -176,7 +176,7 @@ SL_MINING = applyclassicphase(SL_PHASE_ONE, bubbleDownFiltered({ timeline = { AD
 DF_MINING = applyclassicphase(DF_PHASE_ONE, bubbleDownFiltered({ timeline = { ADDED_10_0_2_LAUNCH } },FILTERFUNC_recipeID, {
 	r(366260),	-- Mining (Dragon Isles)
 	r(2656),	-- Mining Journal \ Smelting
-	r(396169),	-- Elementally-Charged Stone
+	r(396169),	-- Elementally Charged Stone
 	r(395269),	-- Iridescent Ore
 	r(396162),	-- Khaz'gorite
 	r(384692),	-- Serevite Deposit
@@ -185,7 +185,7 @@ TWW_MINING = bubbleDownFiltered({ timeline = { ADDED_11_0_2 } },FILTERFUNC_recip
 	r(423341),	-- Khaz Algar Mining
 	r(2656),	-- Mining Journal \ Smelting
 	r_withQuest(439705, 80350),	-- Bismuth
-	r(453381),	-- Erosion Polished Slate
+	r(453381),	-- Erosion-Polished Slate
 });
 MID_MINING = bubbleDownFiltered({ timeline = { ADDED_12_0_1_LAUNCH } },FILTERFUNC_recipeID, {
 	r(471013),	-- Midnight Mining

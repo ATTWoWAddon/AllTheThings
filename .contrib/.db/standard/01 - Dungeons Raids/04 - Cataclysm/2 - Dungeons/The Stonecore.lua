@@ -90,7 +90,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(55818),	-- Cowl of the Unseen World
 					i(55815),	-- Darkling Staff
 					i(55813),	-- Elementium Fang
-					i(55812),	-- Helm of Numberless Shadow
+					i(55812),	-- Helm of Numberless Shadows
 					i(55816),	-- Leaden Despair
 					i(55814),	-- Magnetite Mirror
 					i(55820),	-- Prophet Scepter

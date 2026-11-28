@@ -1149,7 +1149,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 					}),
 					r(447324),	-- Bismuth Brainwave Projector
 					r(447326),	-- Bismuth Fisherfriend
-					r(447332),	-- Bismuth Fueled Samophlange
+					r(447332),	-- Bismuth-Fueled Samophlange
 					r(447330),	-- Bismuth Miner's Headgear
 					r(447358),	-- Blame Redirection Device
 					r(447318, {	-- Blasting Bracers
@@ -1484,7 +1484,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 			r_withQuest(435857, 79915),	-- Crystallized Luredrop
 			r_withQuest(435838, 79908),	-- Crystallized Mycobloom
 			r_withQuest(435862, 79922),	-- Crystallized Orbinid
-			r(439871),	-- Green Thumb,
+			r(439871),	-- Green Thumb
 			r_withQuest(435878, 79936),	-- Irradiated Arathor's Spear
 			r_withQuest(435871, 79930),	-- Irradiated Blessing Blossom
 			r_withQuest(435859, 79917),	-- Irradiated Luredrop
@@ -2498,7 +2498,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 			i(224838),	-- Null Sliver
 			i(210939),	-- Null Stone
 			i(224583),	-- Slab of Slate
-			i(224584),	-- Erosion Polished Slate
+			i(224584),	-- Erosion-Polished Slate
 			i(213611),	-- Writhing Sample
 		}),
 		o(413902, {	-- Weeping Ironclaw
@@ -2625,7 +2625,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, {
 			i(222885),	-- Preserving Embroidery Thread+
 			i(222886),	-- Preserving Embroidery Thread++
 			i(222887),	-- Preserving Embroidery Thread+++
-			i(238045),	-- Pure Chronomatic Fiber
+			i(238045),	-- Pure Chronomantic Fiber
 			i(238042),	-- Pure Dexterous Fiber
 			i(238046),	-- Pure Energizing Fiber
 			i(238044),	-- Pure Precise Fiber

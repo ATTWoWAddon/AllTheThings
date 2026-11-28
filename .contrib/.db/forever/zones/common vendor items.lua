@@ -521,7 +521,7 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 			i(3371),	-- Empty Vial
 			i(2321),	-- Fine Thread
 			i(2605),	-- Green Dye
-			i(4340),	-- Grey Dye
+			i(4340),	-- Gray Dye
 			i(8343),	-- Heavy Silken Thread
 			i(4400),	-- Heavy Stock
 			i(2692),	-- Hot Spices

@@ -33,7 +33,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 				}),
 				cl(DEMONHUNTER, {
 					cl(DEMONHUNTER, HAVOC, {
-						i(170941),	-- Illidari Warglaives
+						i(170941),	-- Illidari Warglaive
 						i(170929),	-- Illidari Blindfold
 						i(170928),	-- Illidari Shoulders
 						i(170940),	-- Illidari Drape

@@ -931,7 +931,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					coord = { 19.1, 49.4, ZANGARMARSH },
 					minReputation = { FACTION_SPOREGGAR, FRIENDLY },
 					maxReputation = { FACTION_SPOREGGAR, EXALTED },
-					cost = { { "i", 24449, 6 } },	-- Fertile Spore
+					cost = { { "i", 24449, 6 } },	-- Fertile Spores
 					-- #if NOT ANYCLASSIC
 					lockCriteria = { 1, "factionID", 970.8 },	-- Sporeggar, Exalted
 					-- #endif
@@ -2265,7 +2265,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 					cr = 18340,	-- Steam Pump Overseer
 					description = "Must have accepted or completed |cFFFFD700Balance Must Be Preserved (9720)|r to loot this item.",
 				}),
-				i(24449, {	-- Fertile Spore
+				i(24449, {	-- Fertile Spores
 					crs = {
 						18281,	-- Boglash
 						18129,	-- Greater Sporebat

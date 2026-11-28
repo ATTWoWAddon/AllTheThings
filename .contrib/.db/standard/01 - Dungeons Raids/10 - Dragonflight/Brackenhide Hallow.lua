@@ -35,7 +35,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						186125,	-- Tricktotem
 					},
 					groups = {
-						i(193674),	-- Ancestral Stone Shaper
+						i(193674),	-- Ancestral Stoneshaper
 						i(193671),	-- Bloodied Wedding Ring
 						i(193672),	-- Frenzying Signoll Flare
 						i(193675),	-- Poached Kalu'ak Spear
@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				e(2473, {	-- Treemouth
 					crs = { 186120 },	-- Treemouth
 					groups = {
-						i(193654),	-- Ancient Rot Walkers
+						i(193654),	-- Ancient Rotwalkers
 						i(193657),	-- Binders of the Moldering
 						i(193658),	-- Crushing Bough of Deterioration
 						i(193653),	-- Mask of Imperishable Leaves
@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					crs = { 186121 },	-- Decatriarch Wratheye
 					groups = {
 						ach(16255),	-- Brackenhide Hollow
-						i(193661),	-- Blight Weaver's Clutches
+						i(193661),	-- Blightweaver's Clutches
 						i(193665),	-- Decatriarch's Bone Pestle
 						i(193663),	-- Decay Mother's Wrathful Gaze
 						i(193662),	-- Densified Ooze Tassets

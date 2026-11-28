@@ -112,7 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 					199742,	-- A Mender's Mentality
 					199744,	-- Academy Student's Journal
 					199741,	-- Compendium of Advanced Spells
-					199745,	-- Everflame Night Touch
+					199745,	-- Everflame Night Torch
 					194320,	-- Reinforced Lavender Bottle
 					199743,	-- Runic Symbols and their Meaning
 					198388,	-- Swirling Draconian Concoction
@@ -209,7 +209,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 				coord = { 26.1, 40.1, VALDRAKKEN },
 				sym = {{"select","itemID",
 					------ RENOWN 13 ------
-					199774,	-- Ancient Titan Blunderbus
+					199774,	-- Ancient Titan Blunderbuss
 					199772,	-- Titan Gatekeeper's Shield
 					199776,	-- Titan Watcher's Broadsword
 					199775,	-- Titan Watcher's Gladius
@@ -639,7 +639,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, {
 								{ "i", RAINBOW_PEARL, 2 },
 							},
 						}),
-						i(199745, {	-- Everflame Night Touch
+						i(199745, {	-- Everflame Night Torch
 							cost = {
 								{ "c", DRAGON_SUPPLIES, 600 },
 								{ "i", SEREVITE_ORE, 10 },

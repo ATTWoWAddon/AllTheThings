@@ -10,7 +10,7 @@ maproot(SHADOWLANDS, MALDRAXXUS, {
 				i(180706),	-- Caustic Muck
 				i(180657),	-- Crystallized Ichor
 				i(179613),	-- Extra Sticky Spidey Webs
-				i(181623),	-- Flourescent Slime Sample
+				i(181623),	-- Fluorescent Slime Sample
 				i(177957),	-- Necessary Enhancers
 				i(180771),	-- Potion of Unusual Strength
 				i(180659),	-- Soul Siphoning Shard

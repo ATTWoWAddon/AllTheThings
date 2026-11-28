@@ -1698,7 +1698,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 					89232,	-- Mogu Rune of Paralysis
 					89668,	-- Mountain Stream Ringmail
 					89528,	-- Necklace of Jade Pearls
-					89529,	-- Pendant of Endless Inquisiton
+					89529,	-- Pendant of Endless Inquisition
 					89534,	-- Pressed Flower Cloak
 					89667,	-- Refurbished Zandalari Vestment
 					89535,	-- Ribcracker's Cloak
@@ -1745,8 +1745,8 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 					88742,	-- Sunspeaker's Flared Gloves
 					88743,	-- Ogo's Elder Gloves
 					88744,	-- Fingers of the Loneliest Monk
-					88745,	-- Sentinal Commander's Gauntlets
-					88746,	-- Gloves of the Overwhelming Swrm
+					88745,	-- Sentinel Commander's Gauntlets
+					88746,	-- Gloves of the Overwhelming Swarm
 					88747,	-- Streetfighter's Iron Knuckles
 					88748,	-- Ravenmane's Gloves
 					88749,	-- Gauntlets of Jade Sutras
@@ -1872,7 +1872,7 @@ maproot(PANDARIA, TOWNLONG_STEPPES, {
 						i(89524),	-- Sorcerer-King's Seal
 						i(89525),	-- Thunderstone Ring
 						i(89661),	-- Tough Mushanhide Leggings
-						i(89280),	-- Voice Amplyifying Greathelm
+						i(89280),	-- Voice Amplifying Greathelm
 						i(89657),	-- Wall Breaker Gauntlets
 						i(89338),	-- Yalia's Cowl
 						i(89075),	-- Yi's Cloak of Courage

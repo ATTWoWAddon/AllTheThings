@@ -435,7 +435,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(70297),	-- Ruthless Gladiator's Leather Legguards
 					i(70272),	-- Ruthless Gladiator's Linked Leggings
 					i(70277),	-- Ruthless Gladiator's Mail Leggings
-					i(70306),	-- Ruthless Gladiator's Mooncloth Legging
+					i(70306),	-- Ruthless Gladiator's Mooncloth Leggings
 					i(70356),	-- Ruthless Gladiator's Ornamented Legplates
 					i(70257),	-- Ruthless Gladiator's Plate Legguards
 					i(70267),	-- Ruthless Gladiator's Ringmail Leggings

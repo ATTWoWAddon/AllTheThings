@@ -48,7 +48,7 @@ maproot(SHADOWLANDS, ZERETH_MORTIS, {
 			pet(3209),	-- King Viperid (PET!)
 			pet(3215, {	-- Mawtouched Geomental (PET!)
 				description = "Requires eating a Questionable Mawshroom from Korthia to see.",
-				provider = { "i", 187244 },	-- Questionable Mawshroom
+				provider = { "i", 187244 },	-- Questionable Mawshrooms
 				coords = {
 					{ 61.4, 73.6, ZERETH_MORTIS },
 					{ 61.8, 67.6, ZERETH_MORTIS },

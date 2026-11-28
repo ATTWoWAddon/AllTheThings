@@ -172,7 +172,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(136776),	-- Bjorn's Hunting Strap
 						i(134217),	-- Bonespeaker Gloves
 						i(133765),	-- Cape of Valarjar Courage
-						i(136777),	-- Collar of  Honorable Exultation
+						i(136777),	-- Collar of Honorable Exultation
 						i(133647),	-- Gift of Radiance
 						i(139281),	-- Glory Seeker's Helm
 						i(133610),	-- Leggings of Swirling Runes
@@ -273,7 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(136776),	-- Bjorn's Hunting Strap
 							i(134217),	-- Bonespeaker Gloves
 							i(133765),	-- Cape of Valarjar Courage
-							i(136777),	-- Collar of  Honorable Exultation
+							i(136777),	-- Collar of Honorable Exultation
 							i(133647),	-- Gift of Radiance
 							i(139281),	-- Glory Seeker's Helm
 							i(133610),	-- Leggings of Swirling Runes
@@ -379,7 +379,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(136776),	-- Bjorn's Hunting Strap
 							i(134217),	-- Bonespeaker Gloves
 							i(133765),	-- Cape of Valarjar Courage
-							i(136777),	-- Collar of  Honorable Exultation
+							i(136777),	-- Collar of Honorable Exultation
 							i(133647),	-- Gift of Radiance
 							i(139281),	-- Glory Seeker's Helm
 							i(133610),	-- Leggings of Swirling Runes

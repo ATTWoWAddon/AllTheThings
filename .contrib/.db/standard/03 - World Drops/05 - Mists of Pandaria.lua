@@ -384,7 +384,7 @@ root(ROOTS.WorldDrops, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSION.MOP,
 			i(87497),	-- Core of Decency
 			i(87500),	-- Brooch of Munificent Deeds
 			i(87496),	-- Daelo's Final Words
-			i(87495),	-- Gerps Perfect Arrow
+			i(87495),	-- Gerp's Perfect Arrow
 			i(87499),	-- Grakl's Gleaming Talisman
 			i(87498),	-- Spiritwhisper Conch
 		}),

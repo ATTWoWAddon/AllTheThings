@@ -649,7 +649,7 @@ maproot(THE_MAELSTROM, THE_LOST_ISLES, {
 					i(131844),	-- Fickle Cord
 					i(52921),	-- Ex-Stealer's Gloves
 					i(52966),	-- Fickle Belt
-					i(52938),	-- Jeealousy's Edge
+					i(52938),	-- Jealousy's Edge
 				},
 			}),
 			q(24816, {	-- Who's Top of the Food Chain Now?

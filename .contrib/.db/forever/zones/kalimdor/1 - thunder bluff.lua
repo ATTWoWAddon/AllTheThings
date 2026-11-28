@@ -809,7 +809,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					{ "pop" },
 					{ "select", "itemID",
 						16059,	-- Common Brown Shirt
-						3428,	-- Common Grey Shirt
+						3428,	-- Common Gray Shirt
 						16060,	-- Common White Shirt
 					},
 				},
@@ -860,7 +860,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					2494,	-- Stiletto
 					1196,	-- Tabar
 					2490,	-- Tomahawk
-					2489,	-- Two-Handed Sword
+					2489,	-- Two-handed Sword
 					2495,	-- Walking Stick
 					2493,	-- Wooden Mallet
 				}},
@@ -1050,8 +1050,8 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 				groups = {
 					i(3422),	-- Beautiful Wildflowers
 					i(3420),	-- Black Rose
-					i(3424),	-- Bouquet Of Black Roses
-					i(3423),	-- Bouquet Of White Roses
+					i(3424),	-- Bouquet of Black Roses
+					i(3423),	-- Bouquet of White Roses
 					i(278079, {	-- Bundle of Herbs
 						timeline = { TIMELINE.ADDED_1_60_1 },
 					}),
@@ -1115,7 +1115,7 @@ maproot(MAP.KALIMDOR, MAP.THUNDER_BLUFF, {
 					2321,	-- Fine Thread
 					6256,	-- Fishing Pole
 					2605,	-- Green Dye
-					4340,	-- Grey Dye
+					4340,	-- Gray Dye
 					8343,	-- Heavy Silken Thread
 					4400,	-- Heavy Stock
 					2692,	-- Hot Spices

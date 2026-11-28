@@ -2876,7 +2876,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					groups = {
 						i(43088),	-- Dalaran Apple Bowl
 						i(43086),	-- Fresh Apple Juice
-						i(35948),	-- Savoury Snowplum
+						i(35948),	-- Savory Snowplum
 						i(35949),	-- Tundra Berries
 					},
 				}),
@@ -3091,7 +3091,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 						emoh(40, i(42949)),	-- Polished Spaulders of Valor
 						emoh(40, i(48687)),	-- Preened Ironfeather Breastplate
 						emoh(40, i(42984)),	-- Preened Ironfeather Shoulders
-						i(93846, {			-- Re-engineered Lava Dredger
+						i(93846, {			-- Re-Engineered Lava Dredger
 							timeline = { ADDED_5_2_0, REMOVED_6_1_0 },
 						}),
 						i(93844, {			-- Refinished Warden Staff
@@ -3610,7 +3610,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					description = "Inzi is walking around in the Tavern.",
 					races = ALLIANCE_ONLY,
 					groups = {
-						i(35948),	-- Savoury Snowplum
+						i(35948),	-- Savory Snowplum
 						i(35949),	-- Tundra Berries
 					},
 				}),
@@ -3760,7 +3760,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					coord = { 55.0, 31.1, NORTHREND_DALARAN },
 					groups = {
 						-- Bread:
-						i(33449),	-- Crusty Flat Bread
+						i(33449),	-- Crusty Flatbread
 						i(44610),	-- Fresh Dalaran Bread
 						i(35950),	-- Sweet Potato Bread
 						-- Cheese:
@@ -3897,7 +3897,7 @@ maproot(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 					description = "Mimbihi is walking around in the Tavern.",
 					races = HORDE_ONLY,
 					groups = {
-						i(35948),	-- Savoury Snowplum
+						i(35948),	-- Savory Snowplum
 						i(35949),	-- Tundra Berries
 					},
 				}),

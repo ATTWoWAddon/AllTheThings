@@ -206,7 +206,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		n(P5xx, {
 			i(103975),	-- Elder Charm of Good Fortune
 			i(103976),	-- Mogu Rune of Fate
-			i(101537),	-- Timeless Coins
+			i(101537),	-- Timeless Coin
 			i(82460),	-- Unknown
 			i(82462),	-- Unknown
 			i(82463),	-- Unknown
@@ -383,7 +383,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(159690),	-- Set Keystone Map: Upper Karazhan
 			i(159693),	-- Set Keystone Map: Vault of the Wardens
 			i(158782),	-- Warchief's Prideful
-			i(158922),	-- Zany Zombiefied Raptor
+			i(158922),	-- Zany Zombified Raptor
 			i(159224),	-- Zuldazar Hearthstone
 		}),
 
@@ -1332,7 +1332,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(203730),	-- Rustic Winterpelt Supplies
 			i(204213),	-- Short-Range Teleport
 			i(202075),	-- Temp Currency
-			i(203223),	-- Valdrakken Supply Coffe
+			i(203223),	-- Valdrakken Supply Coffer
 			i(203854),	-- Warblades of the Hakkari, Reborn
 		}),
 
@@ -1878,7 +1878,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(228798),	-- Gob-Glider
 			i(235559),	-- Hidden Trove
 			i(230017),	-- Master Blaster's Insignia
-			i(238207),	-- Nanny's Surge Dividend
+			i(238207),	-- Nanny's Surge Dividends
 			i(231291),	-- Radar
 			i(235627),	-- Scribbles' Favorite Candies
 			i(230990),	-- Set Keystone Map: Operation: Floodgate
@@ -2191,10 +2191,10 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(255678),	-- Huge Bag of Midnight Herbs
 			i(255704),	-- Huge Bag of Midnight Inscription Goods
 			i(255683),	-- Huge Bag of Midnight Jewelcrafting Goods
-			i(255684),	-- Huge Bag of Midnight Leatherworking Good
+			i(255684),	-- Huge Bag of Midnight Leatherworking Goods
 			i(255679),	-- Huge Bag of Midnight Minerals
 			i(255687),	-- Huge Bag of Midnight Optional Goods
-			i(255682),	-- Huge Bag of Midnight Skinss
+			i(255682),	-- Huge Bag of Midnight Skins
 			i(255691),	-- Huge Bag of Midnight Tailoring Goods
 			i(267487),	-- Ignited Torch
 			i(253706),	-- Junk Mail

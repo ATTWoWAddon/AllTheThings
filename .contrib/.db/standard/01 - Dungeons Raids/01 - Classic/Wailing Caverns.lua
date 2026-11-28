@@ -53,10 +53,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(131615, {	-- Cobrahn's Scale Gloves
 								timeline = { ADDED_7_0_3 },
 							}),
-							i(131616, {	-- Pytha's Chain Boots
+							i(131616, {	-- Pythas' Chain Boots
 								timeline = { ADDED_7_0_3 },
 							}),
-							i(66003),	-- Pytha's Vest
+							i(66003),	-- Pythas' Vest
 							i(65937),	-- Serpentis' Gloves
 						},
 					}),

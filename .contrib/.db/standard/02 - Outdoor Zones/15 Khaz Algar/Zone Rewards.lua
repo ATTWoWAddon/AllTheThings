@@ -77,7 +77,7 @@ maproot(KHAZ_ALGAR, {
 				i(225654),	-- Imperfect Ascendancy Serum
 				i(225651),	-- Kaheti Shadeweaver's Emblem
 				i(225649),	-- Quickwick Candlestick
-				i(226521),	-- Reinforced-Wax Plating
+				i(226521),	-- Reinforced Wax Plating
 				i(226539),	-- Scroll of Momentum
 				i(225647),	-- Shining Arathor Insignia
 				i(225638),	-- Spelunker's Waning Candle

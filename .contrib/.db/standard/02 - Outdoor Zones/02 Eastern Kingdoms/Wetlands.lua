@@ -1165,7 +1165,7 @@ maproot(EASTERN_KINGDOMS, WETLANDS, {
 					i(59092),	-- Haunted Pauldrons
 					i(59091),	-- Fitzsimmons' Belt
 					i(59090),	-- Steelbrow's Old Robe
-					i(131446, {	-- Fitzsimmon's Cinch
+					i(131446, {	-- Fitzsimmons' Cinch
 						timeline = { ADDED_7_0_3 },
 					}),
 				},

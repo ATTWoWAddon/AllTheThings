@@ -810,7 +810,7 @@ battleground(ALTERAC_VALLEY, {
 				qg = 15351,	-- Alliance Brigadier General
 				coord = { 79.4, 18.2, STORMWIND_CITY },
 				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
+				cost = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 				races = ALLIANCE_ONLY,
 			}),
 			q(8383, {	-- Remember Alterac Valley!
@@ -819,7 +819,7 @@ battleground(ALTERAC_VALLEY, {
 				coord = { 79.4, 18.2, STORMWIND_CITY },
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
 				timeline = { REMOVED_2_0_1 },
-				cost = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
+				cost = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),

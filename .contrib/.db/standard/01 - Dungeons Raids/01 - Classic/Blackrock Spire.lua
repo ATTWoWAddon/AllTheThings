@@ -1219,7 +1219,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				n(9218, {	-- Spirestone Battle Lord (Rare)
 					coord = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
 					groups = {
-						i(13285),	-- The Blackrock Slicers
+						i(13285),	-- The Blackrock Slicer
 						i(13284),	-- Swiftdart Battleboots
 					},
 				}),
@@ -1459,7 +1459,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			e(394, {	-- Halycon
 				creatureID = 10220,	-- Halycon
 				groups = {
-					i(13212),	-- Halcyon's Spiked Collar
+					i(13212),	-- Halycon's Spiked Collar
 					applyclassicphase(PHASE_FIVE, i(22313)),	-- Ironweave Bracers
 					i(13211),	-- Slashclaw Bracers
 					i(13210),	-- Pads of the Dread Wolf

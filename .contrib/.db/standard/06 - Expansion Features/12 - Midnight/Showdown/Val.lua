@@ -284,7 +284,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, {
 									274833,	-- Icy Spidersilk Mantle
 									274841,	-- Frigid Cavedweller's Shoulderpads
 									274849,	-- Frostscale Spider's Monnion
-									274857,	-- Chitonous Broodmother's Spaulders
+									274857,	-- Chitinous Broodmother's Spaulders
 									274861,	-- Frosty Broodmother's Fang
 								}},
 							}),

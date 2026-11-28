@@ -568,7 +568,7 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 			}),
 			q(298, {	-- Excavation Progress Report
 				qg = 1344,	-- Prospector Ironband
-				qi = 2637,	-- Ironbrand's Progress Report
+				qi = 2637,	-- Ironband's Progress Report
 				coord = { 65.9, 65.6, LOCH_MODAN },
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -1115,7 +1115,7 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 			q(301, {	-- Report to Ironforge
 				sourceQuest = 298,	-- Excavation Progress Report
 				qg = 1105,	-- Jern Hornhelm
-				qi = 2637,	-- Ironbrand's Progress Report
+				qi = 2637,	-- Ironband's Progress Report
 				coord = { 37.2, 47.4, LOCH_MODAN },
 				timeline = { REMOVED_4_0_3 },
 				races = ALLIANCE_ONLY,
@@ -1742,7 +1742,7 @@ maproot(EASTERN_KINGDOMS, LOCH_MODAN, {
 					{ "pop" },
 					{ "select", "itemID",
 						16059,	-- Common Brown Shirt
-						3428,	-- Common Grey Shirt
+						3428,	-- Common Gray Shirt
 						16060,	-- Common White Shirt
 					},
 				},

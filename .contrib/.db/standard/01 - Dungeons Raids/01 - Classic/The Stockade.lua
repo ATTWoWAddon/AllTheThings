@@ -267,7 +267,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						timeline = { ADDED_7_3_0 },
 					}),
 					i(63344),	-- Standard Issue Prisoner Shoes
-					i(132570, {	-- Stolen Guard's Chain Boots
+					i(132570, {	-- Stolen Guards Chain Boots
 						timeline = { ADDED_7_0_3 },
 					}),
 				},

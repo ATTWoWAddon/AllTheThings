@@ -1282,7 +1282,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 						objective(2, {	-- 0/5 Murkblood Raider slain
 							provider = { "n", 18203 },	-- Murkblood Raider
 						}),
-						i(25578),	-- Caustic Feeler
+						i(25578),	-- Caustic Feelers
 						i(25579),	-- Dark Shaman's Cover
 						i(25577),	-- Greenblood Pantaloons
 					},
@@ -2485,7 +2485,7 @@ maproot(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 							i(30443),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
 						}, {	-- Exalted
 							i(29138),	-- Arechron's Gift
-							i(29140),	-- Cloak of the Ancient Spirit
+							i(29140),	-- Cloak of the Ancient Spirits
 							i(29136),	-- Far Seer's Helm
 							i(31774),	-- Kurenai Tabard
 							i(31830),	-- Cobalt Riding Talbuk (A) (MOUNT!)

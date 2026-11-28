@@ -1175,7 +1175,7 @@ maproot(EASTERN_KINGDOMS, SEARING_GORGE, {
 				timeline = { ADDED_4_0_3 },
 				groups = {
 					objective(1, {	-- 0/6 Fire-Gizzard
-						provider = { "i", 62914 },	-- Fire-Bizzard
+						provider = { "i", 62914 },	-- Fire-Gizzard
 						cr = 9318,	-- Incendosaur
 					}),
 					i(63233),	-- Iron Summit Belt

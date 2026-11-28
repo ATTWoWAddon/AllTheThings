@@ -83,7 +83,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, {
 						moh(12, iensemble(211141)),	-- Ensemble: Scalewarden's Cloth Armor
 						moh(12, iensemble(211139)),	-- Ensemble: Scalewarden's Leather Armor
 						moh(12, iensemble(211136)),	-- Ensemble: Scalewarden's Mail Armor
-						moh(12, iensemble(211134)),	-- Ensemble: Scalewarden's Plate Armo
+						moh(12, iensemble(211134)),	-- Ensemble: Scalewarden's Plate Armor
 					}),
 					-- #endif
 				}),

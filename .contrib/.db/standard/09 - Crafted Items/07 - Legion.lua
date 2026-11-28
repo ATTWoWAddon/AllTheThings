@@ -367,10 +367,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 			i(128546),	-- Enchant Cloak - Word of Agility
 			i(128547),	-- Enchant Cloak - Word of Intellect
 			i(128545),	-- Enchant Cloak - Word of Strength
-			i(128558),	-- Enchant Glove - Legion Herbalism
-			i(128559),	-- Enchant Glove - Legion Mining
-			i(128560),	-- Enchant Glove - Legion Skinning
-			i(128561),	-- Enchant Glove - Legion Surveying
+			i(128558),	-- Enchant Gloves - Legion Herbalism
+			i(128559),	-- Enchant Gloves - Legion Mining
+			i(128560),	-- Enchant Gloves - Legion Skinning
+			i(128561),	-- Enchant Gloves - Legion Surveying
 			i(141910),	-- Enchant Neck - Mark of the Ancient Priestess
 			i(128551),	-- Enchant Neck - Mark of the Claw
 			i(144307, {timeline = {ADDED_7_1_5}}),	-- Enchant Neck - Mark of the Deadly

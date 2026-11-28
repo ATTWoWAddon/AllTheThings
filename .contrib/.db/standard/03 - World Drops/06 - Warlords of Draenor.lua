@@ -561,7 +561,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, {
 		filter(FINGER_F, {
 			i(116722),	-- Ancestral Ring
 			i(116695),	-- Coldsinger Ring
-			i(116704),	-- Evermourn Ring
+			i(116704),	-- Evermorn Ring
 			i(118867),	-- Evie's Quartz Loop
 			i(116701),	-- Growthshaper Ring
 			i(118862),	-- Knobbly Ancient's Tendril
@@ -578,12 +578,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, {
 			i(116707),	-- Zangarra Ring
 		}),
 		filter(TRINKET_F, {
-			i(118883),	-- Bronze Elekk Statue
+			i(118883),	-- Bronzed Elekk Statue
 			i(118879),	-- Everblooming Thorny Hibiscus
 			i(118880),	-- Everburning Candle
 			i(118877),	-- Fizzlebang's Folly
 			i(118876),	-- Lucky Double-Sided Coin
-			i(118881),	-- Najheric Bangle
+			i(118881),	-- Bajheric Bangle
 		}),
 	}),
 	n(WEAPONS, {

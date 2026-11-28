@@ -336,7 +336,7 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							provider = { "n", 16346 },	-- Shadowpine Hexxer
 						}),
 						i(23406),	-- Sentry Bracers
-						i(23407),	-- Supple Cotton Bracers
+						i(23407),	-- Supple Cotton Bracer
 						i(23408),	-- Farstrider Bracers
 						i(131249, {	-- Farstrider Cuffs
 							timeline = { ADDED_7_0_3 },
@@ -1130,7 +1130,7 @@ maproot(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						objective(1, {	-- 0/1 Archeologist's Shrunken Head
 							provider = { "i", 30503 },	-- Archeologist's Shrunken Head
 						}),
-						i(30504),	-- Leafblade-dagger
+						i(30504),	-- Leafblade Dagger
 						i(30505),	-- Ghostclaw Tunic
 					},
 				}),

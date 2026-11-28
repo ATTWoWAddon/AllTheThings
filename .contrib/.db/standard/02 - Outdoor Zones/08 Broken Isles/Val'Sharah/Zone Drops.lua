@@ -27,7 +27,7 @@ maproot(BROKEN_ISLES, VALSHARAH, {
 			i(121179, {	-- Mark of Malorne
 				bonusID = 1812,
 			}),
-			i(141291, {	-- Shal'nir Sproutling
+			i(141291, {	-- Shala'nir Sproutling
 				bonusID = 1812,
 			}),
 			i(121193, {	-- Vale Walker's Pendant

@@ -104,7 +104,7 @@ maproot(KUL_TIRAS, STORMSONG_VALLEY, {
 			}),
 			q(50367, {	-- Anger in a Bottle
 				sourceQuests = { 50622 },	-- Deal's Off
-				provider = { "i", 157849 },	-- Foul Smelling Flask
+				provider = { "i", 157849 },	-- Foul-Smelling Flask
 				coord = { 42.8, 69.7, STORMSONG_VALLEY },
 				races = ALLIANCE_ONLY,
 				crs = {

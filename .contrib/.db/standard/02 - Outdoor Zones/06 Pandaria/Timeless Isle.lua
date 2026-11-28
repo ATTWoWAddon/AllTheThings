@@ -201,7 +201,7 @@ maproot(PANDARIA, {
 					},
 					classes_display = { PRIEST },
 				}),
-				i(101895, {	-- Amaranthine Robes
+				i(101895, {	-- Amaranthine Robe
 					description = "Any Priest spec.",
 					cost = {
 						{ "i", 103982, 1 },	-- 1x Burden of Eternity
@@ -266,7 +266,7 @@ maproot(PANDARIA, {
 					},
 					classes_display = { MAGE, WARLOCK },
 				}),
-				i(101904, {	-- Cloudscorcher Robes
+				i(101904, {	-- Cloudscorcher Robe
 					description = "Any Mage/Warlock spec.",
 					cost = {
 						{ "i", 103982, 1 },	-- 1x Burden of Eternity
@@ -2342,8 +2342,8 @@ maproot(PANDARIA, {
 					-- 		i(101904),	-- Cloudscorcher Robes
 					-- 	}
 					-- }),
-					i(101806),	-- Amaranthine Robes
-					i(101815),	-- Cloudscorcher Robes
+					i(101806),	-- Amaranthine Robe
+					i(101815),	-- Cloudscorcher Robe
 				}),
 				i(102321, {	-- Timeless Cloth Bracers
 					-- n(BURDEN_OF_ETERNITY, {
@@ -2738,7 +2738,7 @@ maproot(PANDARIA, {
 					i(101856),	-- Elder Tortoiseshell Legplates
 					i(101823),	-- Everbright Legplates
 				}),
-				i(102264, {	-- Timeless Plate Boot
+				i(102264, {	-- Timeless Plate Boots
 					-- n(BURDEN_OF_ETERNITY, {
 					-- 	cost = { { "i", 103982, 1 } },	-- Burden of Eternity
 					-- 	groups = {

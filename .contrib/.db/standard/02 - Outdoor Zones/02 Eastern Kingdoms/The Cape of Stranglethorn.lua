@@ -1236,7 +1236,7 @@ maproot(EASTERN_KINGDOMS, THE_CAPE_OF_STRANGLETHORN, {
 						provider = { "n", 1493 },	-- Mok'rash the Cleaver
 						coord = { 35.0, 65.4, THE_CAPE_OF_STRANGLETHORN },
 					}),
-					i(61562),	-- Smott's Signet
+					i(61562),	-- Smotts' Signet
 					i(61564),	-- Sea Song Epaulets
 					i(61566),	-- Landlubber Headband
 					i(61568),	-- Sea Legs

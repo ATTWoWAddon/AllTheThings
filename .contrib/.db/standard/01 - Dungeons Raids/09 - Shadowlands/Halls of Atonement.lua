@@ -26,7 +26,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						i(181736),	-- Flame Accretion
 						i(182681),	-- Vengeful Shock
 						-- Items
-						i(178818),	-- Halkias' Towering Pillars
+						i(178818),	-- Halkias's Towering Pillars
 						-- #if BEFORE 11.2.0
 						i(178817),	-- Hood of Refracted Shadows
 						-- #endif

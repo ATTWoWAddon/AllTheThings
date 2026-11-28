@@ -1180,7 +1180,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							i(115331),	-- Grandiose Warmace
 						}),
 						i(114082, {	-- Grandiose Bracers
-							i(114494),	-- Bracers Of Determined Resolve
+							i(114494),	-- Bracers of Determined Resolve
 							i(114493),	-- Bracers of Volatile Ice
 							i(114496),	-- Crazed Bomber's Bracers
 							i(114495),	-- Undying Bracers
@@ -2112,7 +2112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = ALLIANCE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37813, {	-- Death to Amethon!
@@ -2122,7 +2122,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = HORDE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37774, {	-- Death to Gor'thul!
@@ -2132,7 +2132,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = ALLIANCE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37814, {	-- Death to Gor'thul!
@@ -2142,7 +2142,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = HORDE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37778, {	-- Death to Hivelord Ik'rix!
@@ -2152,7 +2152,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = ALLIANCE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37818, {	-- Death to Hivelord Ik'rix!
@@ -2162,7 +2162,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = HORDE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37775, {	-- Death to Nullifier Darkoor!
@@ -2172,7 +2172,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = ALLIANCE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37815, {	-- Death to Nullifier Darkoor!
@@ -2182,7 +2182,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = HORDE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37948, {	-- Death to Nullifier Darkoor!
@@ -2192,7 +2192,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = ALLIANCE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37949, {	-- Death to Nullifier Darkoor!
@@ -2202,7 +2202,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = HORDE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37777, {	-- Death to Tremor!
@@ -2212,7 +2212,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = ALLIANCE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37817, {	-- Death to Tremor!
@@ -2222,7 +2222,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = HORDE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37776, {	-- Death to Undertow!
@@ -2232,7 +2232,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = ALLIANCE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(37816, {	-- Death to Undertow!
@@ -2242,7 +2242,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				races = HORDE_ONLY,
 				isDaily = true,
 				sym = {{"select","itemID",
-					122191,	-- Bloody Sack of Invitations
+					122191,	-- Bloody Stack of Invitations
 				}},
 			}),
 			q(34692, {	-- Delegating on Draenor

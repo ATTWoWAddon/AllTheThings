@@ -162,7 +162,7 @@ maproot(KUL_TIRAS, BORALUS, {
 					coord = { 56.4, 25.8, BORALUS },
 					races = ALLIANCE_ONLY,
 					groups = {
-						i(163604, {	-- Net-O-Matic 5000
+						i(163604, {	-- Net-o-Matic 5000
 							filterID = CONSUMABLES,
 						}),
 					},

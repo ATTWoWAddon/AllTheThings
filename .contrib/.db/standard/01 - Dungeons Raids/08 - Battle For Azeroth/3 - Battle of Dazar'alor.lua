@@ -376,7 +376,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							}),
 							crit(43872, {	-- High Tinker Mekkatorque (H)
 								races = HORDE_ONLY,
-								achievementID = 13291,	-- Victory of Death
+								achievementID = 13291,	-- Victory or Death
 							}),
 							i(165598),	-- Servo-Claw Smasher
 							i(165600),	-- Twin-Pipe Buster Cannon
@@ -403,7 +403,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							}),
 							crit(43873, {	-- Stormwall Blockade (H)
 								races = HORDE_ONLY,
-								achievementID = 13291,	-- Victory of Death
+								achievementID = 13291,	-- Victory or Death
 							}),
 							i(165602),	-- Crash of Tides
 							i(165590),	-- Docksplitter Siege Hook
@@ -429,7 +429,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							}),
 							crit(43874, {	-- Jaina Proudmoore (H)
 								races = HORDE_ONLY,
-								achievementID = 13291,	-- Victory of Death
+								achievementID = 13291,	-- Victory or Death
 							}),
 							i(166518),	-- G.M.O.D. (MOUNT!  Moved from High Tinker Mekkatorque in 2.26.19 hotfix, change to LFR only)
 							i(165604),	-- Daelin Proudmoore's Saber

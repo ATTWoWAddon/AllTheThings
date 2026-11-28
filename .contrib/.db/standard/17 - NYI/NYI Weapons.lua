@@ -2142,8 +2142,8 @@ root(ROOTS.NeverImplemented, {
 		expansion(EXPANSION.CATA, {
 			-- 4.x.x
 			n(P4xx, {
-				i(77559),	-- Replica Grand Marshal's left Hand Blade
-				i(77583),	-- Replica High Warlords Left Claw
+				i(77559),	-- Replica Grand Marshal's Left Hand Blade
+				i(77583),	-- Replica High Warlord's Left Claw
 				i(77588),	-- Replica High Warlord's Quickblade
 				i(77586),	-- Replica High Warlord's Spellblade
 				i(77570),	-- Replica High Warlord's Battle Mace

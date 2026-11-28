@@ -753,7 +753,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 						i(215522),	-- Dagryn's Longbow
 						i(215552),	-- Death Lotus Repeater
 						i(215837),	-- Drakebinder's Spire
-						i(215778),	-- Gar'tok Might of the FaithFul
+						i(215778),	-- Gar'tok, Might of the Faithful
 						i(215973),	-- Greatsword of Fallen Pride
 						i(215796),	-- Halberd of Inner Darkness
 						i(215471),	-- Haromm's Frozen Battleaxe
@@ -779,7 +779,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, {
 						i(215713),	-- Sphere of Immerseus
 						i(215825),	-- Spire of Supremacy
 						i(215833),	-- Pride's Gaze
-						i(215661),	-- Prophecies of Y'shaarj
+						i(215661),	-- Prophecies of Y'Shaarj
 						i(215630),	-- Softfoot's Iron Claw
 						i(216548),	-- Visage of Dread
 						i(215503),	-- Xal'atoh, Malformed Image of Gorehowl

@@ -99,7 +99,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					groups = {
 						ach(16262),	-- Mythic: Halls of Infusion
 						ach(17098),	-- Mythic: Halls of Infusion Guild Run
-						ach(16427),	-- Go With The Flow
+						ach(16427),	-- Go With the Flow
 					},
 				}),
 			}),

@@ -117,7 +117,7 @@ local EncounterToLoot = {
 		i(168986),	-- Mad King's Sporran
 		i(168983),	-- Maniacal Monarch's Girdle
 		i(168982),	-- Regal Mekanospurs
-		i(168988),	-- Royal Attendant's Trouser
+		i(168988),	-- Royal Attendant's Trousers
 	},
 }
 
@@ -313,7 +313,7 @@ if CombineSeasonalLoot then
 						BackwardsHeroTrackItem(i(168986)),	-- Mad King's Sporran
 						i(168983),	-- Maniacal Monarch's Girdle
 						i(168982),	-- Regal Mekanospurs
-						i(168988),	-- Royal Attendant's Trouser
+						i(168988),	-- Royal Attendant's Trousers
 					}
 				))),
 			}),
@@ -388,7 +388,7 @@ if CombineSeasonalLoot then
 						BackwardsHeroTrackItem(i(168986)),	-- Mad King's Sporran
 						i(168983),	-- Maniacal Monarch's Girdle
 						i(168982),	-- Regal Mekanospurs
-						i(168988),	-- Royal Attendant's Trouser
+						i(168988),	-- Royal Attendant's Trousers
 					})
 				)),
 			}),

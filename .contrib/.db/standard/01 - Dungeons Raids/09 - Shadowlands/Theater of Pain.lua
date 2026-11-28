@@ -116,7 +116,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 						-- Items
 						i(178867),	-- Barricade of the Endless Empire
 						i(178868),	-- Deathwalker's Promise
-						i(178804),	-- Fallen Empress' Cord
+						i(178804),	-- Fallen Empress's Cord
 						i(178811),	-- Grim Codex
 						i(178872),	-- Ring of Perpetual Conflict
 						i(178802),	-- Unyielding Combatant's Pauldrons

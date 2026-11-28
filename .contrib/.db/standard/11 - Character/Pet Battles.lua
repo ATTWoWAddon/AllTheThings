@@ -734,20 +734,20 @@ root(ROOTS.Character, petbattle(n(PET_BATTLES, {
 		groups = {
 			n(REWARDS, {
 				i(86143),	-- Battle Pet Bandage
-				i(98715),	-- Marked Flawless Battle Stone
+				i(98715),	-- Marked Flawless Battle-Stone
 				i(POLISHED_PET_CHARM),
-				i(116424),	-- Aquatic Battle Training Stone
-				i(116374),	-- Beast Battle Training Stone
-				i(116418),	-- Critter Battle Training Stone
-				i(116419),	-- Dragonkin Battle Training Stone
-				i(116420),	-- Elemental Battle Training Stone
-				i(127755),	-- Fel-Touched Battle Training Stone
+				i(116424),	-- Aquatic Battle-Training Stone
+				i(116374),	-- Beast Battle-Training Stone
+				i(116418),	-- Critter Battle-Training Stone
+				i(116419),	-- Dragonkin Battle-Training Stone
+				i(116420),	-- Elemental Battle-Training Stone
+				i(127755),	-- Fel-Touched Battle-Training Stone
 				i(116429),	-- Flawless Battle-Training Stone
-				i(116421),	-- Flying Battle Training Stone
-				i(116416),	-- Humanoid Battle Training Stone
-				i(116422),	-- Magic Battle Training Stone
-				i(116417),	-- Mechanical Battle Training Stone
-				i(116423),	-- Undead Battle Training Stone
+				i(116421),	-- Flying Battle-Training Stone
+				i(116416),	-- Humanoid Battle-Training Stone
+				i(116422),	-- Magic Battle-Training Stone
+				i(116417),	-- Mechanical Battle-Training Stone
+				i(116423),	-- Undead Battle-Training Stone
 			}),
 		},
 	}),
@@ -966,7 +966,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 					cost = { { "i", POLISHED_PET_CHARM, 5 } },
 					description = "You can also buy 25 Bandages for 5 Polished Pet Charms from most Battle Pet Vendors.",
 				}),
-				i(116429, {	-- Flawless Battle Training Stone
+				i(116429, {	-- Flawless Battle-Training Stone
 					cost = { { "i", POLISHED_PET_CHARM, 3 } },
 				}),
 				i(98112, {	-- Lesser Pet Treat
@@ -975,22 +975,22 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				i(89906, {	-- Magical Mini-Treat
 					cost = { { "i", POLISHED_PET_CHARM, 5 } },
 				}),
-				i(98715, {	-- Marked Flawless Battle Stone
+				i(98715, {	-- Marked Flawless Battle-Stone
 					cost = { { "i", POLISHED_PET_CHARM, 15 } },
 				}),
 				i(120321, {	-- Mystery Bag
 					cost = { { "i", POLISHED_PET_CHARM, 2 } },
 					groups = {
-						i(116424),	-- Aquatic Battle Training Stone
-						i(116374),	-- Beast Battle Training Stone
-						i(116418),	-- Critter Battle Training Stone
-						i(116419),	-- Dragonkin Battle Training Stone
-						i(116420),	-- Elemental Battle Training Stone
-						i(116421),	-- Flying Battle Training Stone
-						i(116416),	-- Humanoid Battle Training Stone
-						i(116422),	-- Magic Battle Training Stone
-						i(116417),	-- Mechanical Battle Training Stone
-						i(116423),	-- Undead Battle Training Stone
+						i(116424),	-- Aquatic Battle-Training Stone
+						i(116374),	-- Beast Battle-Training Stone
+						i(116418),	-- Critter Battle-Training Stone
+						i(116419),	-- Dragonkin Battle-Training Stone
+						i(116420),	-- Elemental Battle-Training Stone
+						i(116421),	-- Flying Battle-Training Stone
+						i(116416),	-- Humanoid Battle-Training Stone
+						i(116422),	-- Magic Battle-Training Stone
+						i(116417),	-- Mechanical Battle-Training Stone
+						i(116423),	-- Undead Battle-Training Stone
 					},
 				}),
 				i(98114, {	-- Pet Treat
@@ -1009,7 +1009,7 @@ root(ROOTS.Character, n(PET_BATTLES, {
 					cost = { { "i", POLISHED_PET_CHARM, 5 } },
 					description = "You can also buy 25 Bandages for 5 Polished Pet Charms from most Battle Pet Vendors.",
 				}),
-				i(116429, {	-- Flawless Battle Training Stone
+				i(116429, {	-- Flawless Battle-Training Stone
 					cost = { { "i", POLISHED_PET_CHARM, 3 } },
 				}),
 				i(98112, {	-- Lesser Pet Treat
@@ -1018,22 +1018,22 @@ root(ROOTS.Character, n(PET_BATTLES, {
 				i(89906, {	-- Magical Mini-Treat
 					cost = { { "i", POLISHED_PET_CHARM, 5 } },
 				}),
-				i(98715, {	-- Marked Flawless Battle Stone
+				i(98715, {	-- Marked Flawless Battle-Stone
 					cost = { { "i", POLISHED_PET_CHARM, 15 } },
 				}),
 				i(120321, {	-- Mystery Bag
 					cost = { { "i", POLISHED_PET_CHARM, 2 } },
 					groups = {
-						i(116424),	-- Aquatic Battle Training Stone
-						i(116374),	-- Beast Battle Training Stone
-						i(116418),	-- Critter Battle Training Stone
-						i(116419),	-- Dragonkin Battle Training Stone
-						i(116420),	-- Elemental Battle Training Stone
-						i(116421),	-- Flying Battle Training Stone
-						i(116416),	-- Humanoid Battle Training Stone
-						i(116422),	-- Magic Battle Training Stone
-						i(116417),	-- Mechanical Battle Training Stone
-						i(116423),	-- Undead Battle Training Stone
+						i(116424),	-- Aquatic Battle-Training Stone
+						i(116374),	-- Beast Battle-Training Stone
+						i(116418),	-- Critter Battle-Training Stone
+						i(116419),	-- Dragonkin Battle-Training Stone
+						i(116420),	-- Elemental Battle-Training Stone
+						i(116421),	-- Flying Battle-Training Stone
+						i(116416),	-- Humanoid Battle-Training Stone
+						i(116422),	-- Magic Battle-Training Stone
+						i(116417),	-- Mechanical Battle-Training Stone
+						i(116423),	-- Undead Battle-Training Stone
 					},
 				}),
 				i(98114, {	-- Pet Treat

@@ -1209,7 +1209,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					2321,	-- Fine Thread
 					6256,	-- Fishing Pole
 					2605,	-- Green Dye
-					4340,	-- Grey Dye
+					4340,	-- Gray Dye
 					8343,	-- Heavy Silken Thread
 					4400,	-- Heavy Stock
 					2692,	-- Hot Spices
@@ -1585,7 +1585,7 @@ maproot(MAP.KALIMDOR, MAP.ORGRIMMAR, {
 					2321,	-- Fine Thread
 					6256,	-- Fishing Pole
 					2605,	-- Green Dye
-					4340,	-- Grey Dye
+					4340,	-- Gray Dye
 					8343,	-- Heavy Silken Thread
 					4400,	-- Heavy Stock
 					2692,	-- Hot Spices

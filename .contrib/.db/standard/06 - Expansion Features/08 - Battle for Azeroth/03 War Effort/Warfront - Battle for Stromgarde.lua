@@ -706,7 +706,7 @@ root(ROOTS.ExpansionFeatures,
 						q(54545, {	-- Nimar the Slayer (H)
 							races = HORDE_ONLY,
 						}),
-						q(54603, {	-- Overseer krix (A)
+						q(54603, {	-- Overseer Krix (A)
 							races = ALLIANCE_ONLY,
 						}),
 						q(54588, {	-- Overseer Krix (H)

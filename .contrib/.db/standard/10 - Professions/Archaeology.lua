@@ -376,10 +376,10 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 					provider = { "i", 79912 },	-- Thunder King Insignia
 				}),
 				ach(7360, {	-- Collector: Twin Stein Sets of Brewfather Quan Tou Kuo (20)
-					provider = { "i", 79898 },	-- Twin Stein Set,
+					provider = { "i", 79898 },	-- Twin Stein Set
 				}),
 				ach(7340, {	-- Collector: Twin Stein Sets of Brewfather Quan Tou Kuo (5)
-					provider = { "i", 79898 },	-- Twin Stein Set,
+					provider = { "i", 79898 },	-- Twin Stein Set
 				}),
 				ach(7361, {	-- Collector: Walking Canes of Brewfather Ren Yun (20)
 					provider = { "i", 79899 },	-- Walking Cane
@@ -480,7 +480,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 						provider = { "i", 89183 },	-- Pristine Apothecary Tins
 					}),
 					q(31800, {	-- Pristine Carved Bronze Mirror
-						provider = { "i", 89181 },	-- Pristine Carved Brone Mirror
+						provider = { "i", 89181 },	-- Pristine Carved Bronze Mirror
 					}),
 					q(31799, {	-- Pristine Empty Keg
 						provider = { "i", 89180 },	-- Pristine Empty Keg
@@ -606,7 +606,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 						provider = { "i", 114158 },	-- Pristine Blackrock Razor
 					}),
 					q(36754, {	-- Pristine Calcified Eye In A Jar
-						provider = { "i", 114166 },	-- Pristine Calcified Eye In A Jar
+						provider = { "i", 114166 },	-- Pristine Calcified Eye In a Jar
 					}),
 					q(36755, {	-- Pristine Ceremonial Tattoo Needles
 						provider = { "i", 114168 },	-- Pristine Ceremonial Tattoo Needles
@@ -656,7 +656,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ requireSkill = ARCHAE
 				}),
 				n(ARCHAEOLOGY_OGRE, {
 					q(36767, {	-- Pristine Eye of Har'guun
-						provider = { "i", 114210 },	-- Pristine Eye of Har'guun the Blind
+						provider = { "i", 114210 },	-- Pristine Eye of Har'gunn the Blind
 					}),
 					q(36765, {	-- Pristine Gladiator's Shield
 						provider = { "i", 114208 },	-- Pristine Gladiator's Shield

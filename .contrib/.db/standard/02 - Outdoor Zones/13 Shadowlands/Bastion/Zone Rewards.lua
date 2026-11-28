@@ -8,7 +8,7 @@ maproot(SHADOWLANDS, BASTION, {
 		n(ZONE_REWARDS, {
 			description = "These items can drop from repeatable treasure chests and are sometimes awarded from world quests or table missions.",
 			groups = {
-				i(181721),	-- Ascendant Valor Signet
+				i(181721),	-- Ascendent Valor Signet
 				i(181603),	-- Forgehand's Chain
 				i(181591),	-- Forgehand's Chainmail
 				i(181596),	-- Forgehand's Handguards

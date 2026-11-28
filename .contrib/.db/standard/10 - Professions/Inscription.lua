@@ -5380,7 +5380,7 @@ root(ROOTS.Professions, applyclassicphase(WRATH_PHASE_ONE, prof(INSCRIPTION, bub
 					r(383533),	-- Azurescale Sigil
 					r(383536),	-- Bronzescale Sigil
 					r(383512),	-- Bundle O' Cards: Dragon Isles
-					r(383540),	-- Cracking Codex of the Isles
+					r(383540),	-- Crackling Codex of the Isles
 					r(383770),	-- Darkmoon Deck Box: Dance
 					r(383325),	-- Darkmoon Deck Box: Inferno
 					r(383767),	-- Darkmoon Deck Box: Rime

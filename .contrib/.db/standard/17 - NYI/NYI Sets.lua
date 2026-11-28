@@ -195,7 +195,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(32125),	-- Chancellor's Leather Helm
 					i(32126),	-- Chancellor's Leather Spaulders
 					i(32127),	-- Chancellor's Leather Tunic
-					i(32128),	-- Chancellor's Wyrmhide gloves
+					i(32128),	-- Chancellor's Wyrmhide Gloves
 					i(32129),	-- Chancellor's Wyrmhide Helm
 					i(32130),	-- Chancellor's Wyrmhide Legguards
 					i(32131),	-- Chancellor's Wyrmhide Spaulders
@@ -221,7 +221,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(32155),	-- Chancellor's Lamellar Headpiece
 					i(32156),	-- Chancellor's Lamellar Legguards
 					i(32157),	-- Chancellor's Lamellar Spaulders
-					i(32158),	-- Chancellor's OrnamentedChestplate
+					i(32158),	-- Chancellor's Ornamented Chestplate
 					i(32159),	-- Chancellor's Ornamented Handguards
 					i(32160),	-- Chancellor's Ornamented Headguard
 					i(32161),	-- Chancellor's Ornamented Leggings
@@ -1622,11 +1622,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(51706),	-- Lasherweave Mantle
 			}),
 			cl(HUNTER, {
-				i(51707),	-- Ahn'kahar Blood Hunter's Tunic
-				i(51708),	-- Ahn'kahar Blood Hunter's Spaulders
-				i(51709),	-- Ahn'kahar Blood Hunter's Legguards
-				i(51710),	-- Ahn'kahar Blood Hunter's Headpiece
-				i(51711),	-- Ahn'kahar Blood Hunter's Handguards
+				i(51707),	-- Ahn'Kahar Blood Hunter's Tunic
+				i(51708),	-- Ahn'Kahar Blood Hunter's Spaulders
+				i(51709),	-- Ahn'Kahar Blood Hunter's Legguards
+				i(51710),	-- Ahn'Kahar Blood Hunter's Headpiece
+				i(51711),	-- Ahn'Kahar Blood Hunter's Handguards
 			}),
 			cl(MAGE, {
 				i(51712),	-- Bloodmage Shoulderpads
@@ -2949,7 +2949,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				}),
 				cl(HUNTER, {
 					i(140717),	-- Marksman's Recurve Bow
-					i(140691),	-- Packmasters Rifle
+					i(140691),	-- Packmaster's Rifle
 					i(121893),	-- Warscout Band of Onslaught
 					i(121902),	-- Warscout Belt
 					i(123253),	-- Warscout Belt
@@ -3158,7 +3158,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(140702),	-- Whispering Staff of the Void
 				}),
 				cl(ROGUE, {
-					i(140704),	-- Assassins Serrated Dagger
+					i(140704),	-- Assassin's Serrated Dagger
 					i(140703),	-- Duskfall Daggers
 					i(140705),	-- Outlaw's Cutlass
 					i(121993),	-- Skulldugger Band of Onslaught
@@ -3196,7 +3196,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(123334),	-- Skulldugger Waistband
 				}),
 				cl(SHAMAN, {
-					i(140708),	-- Earthmenders Talons
+					i(140708),	-- Earthmender's Talons
 					i(140739),	-- Earthmender's Shield
 					i(140706),	-- Stormshaper's Claws
 					i(140738),	-- Stormshaper's Bulwark
@@ -3678,7 +3678,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				}),
 				cl(HUNTER, {
 					i(150612),	-- Marksman's Recurve Bow
-					i(150586),	-- Packmasters Rifle
+					i(150586),	-- Packmaster's Rifle
 				}),
 				cl(MAGE, {
 					i(150587),	-- Frostcore Staff
@@ -3712,14 +3712,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(157634),	-- Whispering Staff of the Void
 				}),
 				cl(ROGUE, {
-					i(150599),	-- Assassins Serrated Dagger
+					i(150599),	-- Assassin's Serrated Dagger
 					i(150598),	-- Duskfall Daggers
 					i(157635),	-- Duskfall Daggers
 					i(150600),	-- Outlaw's Cutlass
 					i(157637),	-- Swaggering Cutlass
 				}),
 				cl(SHAMAN, {
-					i(150603),	-- Earthmenders Talons
+					i(150603),	-- Earthmender's Talons
 					i(150619),	-- Earthmender's Shield
 					i(157656),	-- Raincaller's Shield
 					i(157640),	-- Raincaller's Talons
@@ -3810,7 +3810,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			-- Class Trial / Boost items are impossible to confirm until classic version of this expansion
 			n(CLASS_TRIAL, {
 				cl(DEMONHUNTER, HAVOC, {
-					i(164760),	-- Illidari Warglaives
+					i(164760),	-- Illidari Warglaive
 					i(164748),	-- Illidari Blindfold
 					i(164758),	-- Illidari Chain
 					i(164746),	-- Illidari Shoulders

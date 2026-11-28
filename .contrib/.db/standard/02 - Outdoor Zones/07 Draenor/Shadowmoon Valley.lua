@@ -982,7 +982,7 @@ maproot(DRAENOR, DRAENOR_SHADOWMOON_VALLEY, {
 					--
 					h(i(106166)),	-- Frostwolf Ringmail Armor
 					h(i(106142)),	-- Frostwolf Scout's Tunic
-					h(i(106147)),	-- Forstwolf Stalwart Chestpiece
+					h(i(106147)),	-- Frostwolf Stalwart Chestpiece
 					h(i(106163)),	-- Frostwolf Wind-Talker Robe
 				},
 			}),

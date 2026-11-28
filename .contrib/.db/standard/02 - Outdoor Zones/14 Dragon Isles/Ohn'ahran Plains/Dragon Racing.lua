@@ -86,18 +86,18 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 						provider = { "n", 191247 },	-- Bronze Timekeeper
 						coord = { 25.7, 55.1, OHNAHRAN_PLAINS },
 						groups = {
-							ach(15775),	-- Emerald Garden Ascent: Bronze
-							ach(15776),	-- Emerald Garden Ascent: Silver
-							ach(15777),	-- Emerald Garden Ascent: Gold
+							ach(15775),	-- Emerald Gardens Ascent: Bronze
+							ach(15776),	-- Emerald Gardens Ascent: Silver
+							ach(15777),	-- Emerald Gardens Ascent: Gold
 						},
 					}),
 					dragonridingrace(66886, {	-- Emerald Garden Ascent - Advanced
 						provider = { "n", 191247 },	-- Bronze Timekeeper
 						coord = { 25.7, 55.1, OHNAHRAN_PLAINS },
 						groups = {
-							ach(15778),	-- Emerald Garden Ascent Advanced: Bronze
-							ach(15779),	-- Emerald Garden Ascent Advanced: Silver
-							ach(15780),	-- Emerald Garden Ascent Advanced: Gold
+							ach(15778),	-- Emerald Gardens Ascent Advanced: Bronze
+							ach(15779),	-- Emerald Gardens Ascent Advanced: Silver
+							ach(15780),	-- Emerald Gardens Ascent Advanced: Gold
 						},
 					}),
 					dragonridingrace(66877, {	-- Fen Flythrough
@@ -400,9 +400,9 @@ maproot(DRAGON_ISLES, OHNAHRAN_PLAINS, {
 							provider = { "n", 191247 },	-- Bronze Timekeeper
 							coord = { 25.7, 55.1, OHNAHRAN_PLAINS },
 							groups = {
-								ach(17153),	-- Emerald Garden Ascent Reverse: Bronze
-								ach(17154),	-- Emerald Garden Ascent Reverse: Silver
-								ach(17155),	-- Emerald Garden Ascent Reverse: Gold
+								ach(17153),	-- Emerald Gardens Ascent Reverse: Bronze
+								ach(17154),	-- Emerald Gardens Ascent Reverse: Silver
+								ach(17155),	-- Emerald Gardens Ascent Reverse: Gold
 							},
 						}),
 						dragonridingrace(72802, {	-- Fen Flythrough - Reverse

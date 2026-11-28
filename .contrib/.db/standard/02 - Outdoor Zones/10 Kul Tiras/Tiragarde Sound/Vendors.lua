@@ -29,7 +29,7 @@ maproot(KUL_TIRAS, TIRAGARDE_SOUND, {
 							161569,	-- Master-At-Arms Wristguards
 							160534,	-- Navy Blue Boat Cloak
 							160540,	-- Proudmoore Admiralty Tabard
-							161573,	-- Proudmoore Marine's Legplate
+							161573,	-- Proudmoore Marine's Legplates
 							163316,	-- Recipe: Battle Potion of Intellect [Rank 3] (RECIPE!)
 							162254,	-- Recipe: Coastal Mana Potion [Rank 3] (RECIPE!)
 							162359,	-- Technique: Contract: Proudmoore Admiralty [Rank 2] (RECIPE!)

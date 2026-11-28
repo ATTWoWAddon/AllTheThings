@@ -269,7 +269,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 							i(223290, {	-- Chiseled Boulder Pauldrons
 								cost = { { "c", RESONANCE_CRYSTALS, 3900 } },
 							}),
-							i(223292, {	-- Gem-Waded Shoulderpads
+							i(223292, {	-- Gem-Wadded Shoulderpads
 								cost = { { "c", RESONANCE_CRYSTALS, 3900 } },
 							}),
 							i(223289, {	-- Mineral-Sparkled Mantle
@@ -315,7 +315,7 @@ maproot(KHAZ_ALGAR, ISLE_OF_DORN, {
 							i(223301, {	-- Chiseled Boulder Crushers
 								cost = { { "c", RESONANCE_CRYSTALS, 2600 } },
 							}),
-							i(223303, {	-- Gem-Waded Footwraps
+							i(223303, {	-- Gem-Wadded Footwraps
 								cost = { { "c", RESONANCE_CRYSTALS, 2600 } },
 							}),
 							i(223300, {	-- Mineral-Sparkled Sandals

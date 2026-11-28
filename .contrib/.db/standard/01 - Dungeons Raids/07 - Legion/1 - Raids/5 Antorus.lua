@@ -66,7 +66,7 @@ local EncounterToLoot = {
 	[FELHOUNDS] = {
 		i(151973),	-- Collar of Null-Flame
 		i(152056),	-- Corrupting Dewclaw
-		i(153544),	-- Eye of F'Harg
+		i(153544),	-- Eye of F'harg
 		i(151974),	-- Eye of Shatug
 		i(152645),	-- Eye of Shatug
 		i(152021),	-- Flamelicked Girdle

@@ -181,7 +181,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, {
 			timeline = { ADDED_7_0_3 },
 		}),
 		ach(10587, {	-- Hot Swapper
-			provider = { "i", 130251 },	-- Jewelcraft
+			provider = { "i", 130251 },	-- JewelCraft
 			timeline = { ADDED_7_0_3 },
 		}),
 		ach(10761, {	-- Resourceful

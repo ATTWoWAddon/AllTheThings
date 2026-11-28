@@ -961,7 +961,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						emof(60, i(50984)),	-- Gloves of Ambivalence
 						emof(60, i(50983)),	-- Gloves of False Gestures
 						emof(60, i(50981)),	-- Gloves of the Great Horned Owl
-						emof(60, i(50355)),	-- Herkumi War Token
+						emof(60, i(50355)),	-- Herkuml War Token
 						emof(30, i(50454, {	-- Idol of the Black Willow
 							timeline = { REMOVED_5_0_4 },
 						})),
@@ -1017,8 +1017,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					sym = {{"select","itemID",
 						3422,	-- Beautiful Wildflowers
 						3420,	-- Black Rose
-						3424,	-- Bouquet Of Black Roses
-						3423,	-- Bouquet Of White Roses
+						3424,	-- Bouquet of Black Roses
+						3423,	-- Bouquet of White Roses
 						30749,	-- Draenic Sparring Blade
 						30750,	-- Draenic Warblade
 						3419,	-- Red Rose

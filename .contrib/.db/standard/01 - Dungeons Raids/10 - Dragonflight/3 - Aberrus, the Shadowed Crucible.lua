@@ -774,7 +774,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR, {timeline = TIMELINE_LFR}).AddGroups({
 				ZoneDrops({
-					i(204075, {	-- Whelping's Shadowflame Crest Fragment
+					i(204075, {	-- Whelpling's Shadowflame Crest Fragment
 						timeline = { REMOVED_10_2_0 },
 						up = IGNORED_VALUE,
 					}),

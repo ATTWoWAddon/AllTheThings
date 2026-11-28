@@ -435,7 +435,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					i(279449, {	-- Hex Troll Mask Fragment
 						i(275937),	-- Hex Lord's Visage (COSMETIC!)
 					}),
-					i(278290, { timeline = { REMOVED_12_2_0 } }),	-- Nebulous Voidcache: The Coiled Alter
+					i(278290, { timeline = { REMOVED_12_2_0 } }),	-- Nebulous Voidcache: The Coiled Altar
 					i(279131),	-- Pillar of the Coiled Isle (DECOR!)
 				}),
 				BossOnly(ULATEK, {
@@ -478,7 +478,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				n(ACHIEVEMENTS, {
-					ach(63670),	-- Comforting Da Spirits
+					ach(63670),	-- Comforting De Spirits
 				}),
 				BossOnly(NEKZALI, {
 					ach(63418),	-- Well, Well, Little Sky

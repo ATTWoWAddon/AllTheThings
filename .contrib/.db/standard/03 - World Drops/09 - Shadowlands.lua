@@ -21,7 +21,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.SL, {
 		i(173204),	-- Lightless Silk
 		i(172055),	-- Phantasmal Haunch
 		i(172054),	-- Raw Seraphic Wing
-		i(179315),	-- Shadowy Shanks
+		i(179315),	-- Shadowy Shank
 		i(173202),	-- Shrouded Cloth
 		i(172053),	-- Tenebrous Ribs
 	}),

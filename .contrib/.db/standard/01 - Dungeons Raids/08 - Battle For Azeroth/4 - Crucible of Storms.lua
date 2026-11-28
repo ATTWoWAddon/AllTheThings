@@ -36,7 +36,7 @@ local EncounterToLoot = {
 		i(167866),	-- Lurker's Insidious Gift
 		i(167835),	-- Malformed Herald's Legwraps
 		i(167834),	-- Stormglide Steps
-		i(167865),	-- Void Stones
+		i(167865),	-- Void Stone
 	};
 };
 

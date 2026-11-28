@@ -1185,7 +1185,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 									cost = 5000000,	-- 500g
 									timeline = { ADDED_7_2_5 },
 								}),
-								i(120432, {	-- Sinister Rogue Mask
+								i(120432, {	-- Sinister Rouge Mask
 									cost = { { "c", COIN_OF_AIR, 25000 } },
 								}),
 								i(151569, {	-- Sneaky Marmot (PET!)

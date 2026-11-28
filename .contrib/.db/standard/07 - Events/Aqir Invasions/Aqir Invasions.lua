@@ -117,7 +117,7 @@ root(ROOTS.WorldEvents, {
 								spell(1320745),	-- Hara'ti Voucher
 								spell(1320747),	-- Silvermoon Court Voucher
 								spell(1320729),	-- Singularity Voucher
-								spell(1320749),	-- Zul'jara's Forces Voucher
+								spell(1320749),	-- Zul'jarra's Forces Voucher
 							}),
 						}),
 					}),

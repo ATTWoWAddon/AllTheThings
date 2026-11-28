@@ -172,7 +172,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 							i(251817),	-- Humble Servant's Tights
 						},
 					}),
-					q(86846, {	-- Resupplying our Suppliers
+					q(86846, {	-- Resupplying Our Suppliers
 						sourceQuest = 86845,	-- The Sunwalker Path
 						qg = 245186,	-- Sunwalker Dezco
 						coord = { 68.9, 37.7, 2372 },	-- Arathi Highlands
@@ -180,7 +180,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 					q(89338, {	-- Gathering Plowshares
 						sourceQuests = {
 							91000,	-- A Humble Servant
-							86846,	-- Resupplying our Suppliers
+							86846,	-- Resupplying Our Suppliers
 						},
 						qg = 247299,	-- Sunwalker Dezco
 						coord = { 68.5, 32.2, 2372 },	-- Arathi Highlands
@@ -323,7 +323,7 @@ maproot(MAP.MIDNIGHT.QUELTHALAS, {
 					q(86829, {	-- A Landmark Moment
 						sourceQuests = {
 							86830,	-- A True Horde of Dark Horde
-							86831,	-- Warriors without a Warlord
+							86831,	-- Warriors Without a Warlord
 						},
 						qg = 242120,	-- Danath Trollbane
 						coord = { 31.6, 37.6, BURNING_STEPPES },

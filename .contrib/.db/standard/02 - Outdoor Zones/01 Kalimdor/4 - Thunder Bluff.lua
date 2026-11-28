@@ -935,7 +935,7 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 					{ "pop" },
 					{ "select", "itemID",
 						16059,	-- Common Brown Shirt
-						3428,	-- Common Grey Shirt
+						3428,	-- Common Gray Shirt
 						16060,	-- Common White Shirt
 					},
 				},
@@ -1141,8 +1141,8 @@ maproot(KALIMDOR, THUNDER_BLUFF, {
 				groups = {
 					i(3422),	-- Beautiful Wildflowers
 					i(3420),	-- Black Rose
-					i(3424),	-- Bouquet Of Black Roses
-					i(3423),	-- Bouquet Of White Roses
+					i(3424),	-- Bouquet of Black Roses
+					i(3423),	-- Bouquet of White Roses
 					i(3419),	-- Red Rose
 					i(3421),	-- Simple Wildflowers
 				},

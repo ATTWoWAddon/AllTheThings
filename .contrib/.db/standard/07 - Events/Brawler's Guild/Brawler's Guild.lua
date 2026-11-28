@@ -288,7 +288,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 					crit(109843, {	-- A Seagull
 						providers = {
 							{ "i", 143794 },	-- Challenge Card: A Seagull
-							{ "n", 117207 },	-- A Seagull
+							{ "n", 117207 },	-- a Seagull
 						},
 					}),
 					crit(109816, {	-- Akama
@@ -1641,7 +1641,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						description = "Available after reaching Rank 8.",
 						-- #endif
 					}),
-					i(167812, {	-- Brawlers Guild Tabard
+					i(167812, {	-- Brawler's Guild Tabard
 						timeline = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					i(92948, {	-- Brawler's Razor Claws (Pre-WoD)
@@ -1800,7 +1800,7 @@ root(ROOTS.WorldEvents, applyclassicphase(MOP_PHASE_LANDFALL, n(BRAWLERS_GUILD, 
 						description = "Available after reaching Rank 8.",
 						-- #endif
 					}),
-					i(167811, {	-- Brawlers Guild Tabard
+					i(167811, {	-- Brawler's Guild Tabard
 						timeline = { ADDED_7_1_5, REMOVED_9_0_2_LAUNCH, ADDED_11_2_7 },
 					}),
 					i(92948, {	-- Brawler's Razor Claws (Pre-WoD)

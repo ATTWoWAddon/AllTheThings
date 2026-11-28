@@ -1415,8 +1415,8 @@ root(ROOTS.PVP, {
 				n(FEET, {
 					i(65610),	-- Vicious Gladiator's Boots of Alacrity
 					i(65609),	-- Vicious Gladiator's Boots of Cruelty
-					i(65602),	-- Vicious Gladiator's Footguard of Alacrity
-					i(65601),	-- Vicious Gladiator's Footguard of Meditation
+					i(65602),	-- Vicious Gladiator's Footguards of Alacrity
+					i(65601),	-- Vicious Gladiator's Footguards of Meditation
 					i(65605),	-- Vicious Gladiator's Greaves of Alacrity
 					i(65606),	-- Vicious Gladiator's Greaves of Meditation
 					i(65611),	-- Vicious Gladiator's Sabatons of Alacrity
@@ -2939,17 +2939,17 @@ root(ROOTS.PVP, {
 					i(73737),	-- Cataclysmic Gladiator's Dragonhide Gloves
 					i(73736),	-- Cataclysmic Gladiator's Dragonhide Helm
 					i(73735),	-- Cataclysmic Gladiator's Dragonhide Legguards
-					i(73734),	-- Cataclysmic Gladiator's Dragonhide Robe
+					i(73734),	-- Cataclysmic Gladiator's Dragonhide Robes
 					i(73733),	-- Cataclysmic Gladiator's Dragonhide Spaulders
 					i(73731),	-- Cataclysmic Gladiator's Kodohide Gloves
 					i(73730),	-- Cataclysmic Gladiator's Kodohide Helm
 					i(73729),	-- Cataclysmic Gladiator's Kodohide Legguards
-					i(73728),	-- Cataclysmic Gladiator's Kodohide Robe
+					i(73728),	-- Cataclysmic Gladiator's Kodohide Robes
 					i(73727),	-- Cataclysmic Gladiator's Kodohide Spaulders
 					i(73725),	-- Cataclysmic Gladiator's Wyrmhide Gloves
 					i(73724),	-- Cataclysmic Gladiator's Wyrmhide Helm
 					i(73723),	-- Cataclysmic Gladiator's Wyrmhide Legguards
-					i(73722),	-- Cataclysmic Gladiator's Wyrmhide Robe
+					i(73722),	-- Cataclysmic Gladiator's Wyrmhide Robes
 					i(73721),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
 				}),
 				cl(HUNTER, {

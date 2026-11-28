@@ -638,7 +638,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.REDRIDGE_MOUNTAINS, {
 			}),
 			q(118, {	-- The Price of Shoes
 				qg = 415,	-- Verner Osgood
-				qi = 1283,	-- Verner's Notes
+				qi = 1283,	-- Verner's Note
 				coord = { 25.9, 47.3, MAP.REDRIDGE_MOUNTAINS },
 				races = ALLIANCE_ONLY,
 				lvl = 14,

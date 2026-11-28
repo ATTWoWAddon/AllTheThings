@@ -47,7 +47,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						134828,	-- Aqualing
 					},
 					groups = {
-						i(159321),	-- Gloves of Corrupted Water
+						i(159321),	-- Gloves of Corrupted Waters
 						i(159366),	-- Water Shapers
 						i(159239),	-- Aqu'sirr's Swirling Sash
 						i(159420),	-- Stormsurger's Sabatons
@@ -110,7 +110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							134056,	-- Aqu'sirr
 						},
 						groups = {
-							i(159321),	-- Gloves of Corrupted Water
+							i(159321),	-- Gloves of Corrupted Waters
 							i(159366),	-- Water Shapers
 							i(159239),	-- Aqu'sirr's Swirling Sash
 							i(159420),	-- Stormsurger's Sabatons
@@ -176,7 +176,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							134056,	-- Aqu'sirr
 						},
 						groups = {
-							i(159321),	-- Gloves of Corrupted Water
+							i(159321),	-- Gloves of Corrupted Waters
 							i(159366),	-- Water Shapers
 							i(159239),	-- Aqu'sirr's Swirling Sash
 							i(159420),	-- Stormsurger's Sabatons

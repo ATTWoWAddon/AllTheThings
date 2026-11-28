@@ -90,7 +90,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 							{ "i", modItemId(183890,04), 1 },	-- LFR Zenith Anima Spherule - 187
 						},
 					}),
-					i(179570, {	-- Harp of the Sanguine Courts
+					i(179570, {	-- Harp of the Sanguine Court
 						cost = {
 							{ "i", modItemId(183888,04), 1 },	-- LFR Apogee Anima Bead - 187
 							{ "i", modItemId(183889,04), 1 },	-- LFR Thaumaturgic Anima Bead - 187
@@ -274,7 +274,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 							{ "i", modItemId(183890,03), 1 },	-- Normal Zenith Anima Spherule - 200
 						},
 					}),
-					i(179570, {	-- Harp of the Sanguine Courts
+					i(179570, {	-- Harp of the Sanguine Court
 						cost = {
 							{ "i", modItemId(183888,03), 1 },	-- Normal Apogee Anima Bead - 200
 							{ "i", modItemId(183889,03), 1 },	-- Normal Thaumaturgic Anima Bead - 200
@@ -458,7 +458,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 							{ "i", modItemId(183890,05), 1 },	-- Heroic Zenith Anima Spherule - 213
 						},
 					}),
-					i(179570, {	-- Harp of the Sanguine Courts
+					i(179570, {	-- Harp of the Sanguine Court
 						cost = {
 							{ "i", modItemId(183888,05), 1 },	-- Heroic Apogee Anima Bead - 213
 							{ "i", modItemId(183889,05), 1 },	-- Heroic Thaumaturgic Anima Bead - 213
@@ -1137,7 +1137,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 							{ "i", modItemId(183890,06), 1 },	-- Mythic Zenith Anima Spherule - 226
 						},
 					}),
-					i(179570, {	-- Harp of the Sanguine Courts
+					i(179570, {	-- Harp of the Sanguine Court
 						cost = {
 							{ "i", modItemId(183888,06), 1 },	-- Mythic Apogee Anima Bead - 226
 							{ "i", modItemId(183889,06), 1 },	-- Mythic Thaumaturgic Anima Bead - 226

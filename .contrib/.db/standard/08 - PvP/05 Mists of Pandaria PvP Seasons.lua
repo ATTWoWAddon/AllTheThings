@@ -279,8 +279,8 @@ root(ROOTS.PVP, {
 					moh(1, i(84362)),	-- Dreadful Gladiator's Drape of Prowess
 				}),
 				n(WRIST, {
-					moh(1, i(84471)),	-- Dreadful  Gladiator's Armbands of Meditation
-					moh(1, i(84470)),	-- Dreadful  Gladiator's Armbands of Prowess
+					moh(1, i(84471)),	-- Dreadful Gladiator's Armbands of Meditation
+					moh(1, i(84470)),	-- Dreadful Gladiator's Armbands of Prowess
 					moh(1, i(84439)),	-- Dreadful Gladiator's Armplates of Alacrity
 					moh(1, i(84438)),	-- Dreadful Gladiator's Armplates of Proficiency
 					moh(1, i(84461)),	-- Dreadful Gladiator's Armwraps of Accuracy

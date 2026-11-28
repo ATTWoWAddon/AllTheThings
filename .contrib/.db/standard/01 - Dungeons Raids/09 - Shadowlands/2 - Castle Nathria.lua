@@ -189,7 +189,7 @@ local EncounterToLoot = {
 		i(182994),	-- Epaulets of Overwhelming Force
 		i(184023),	-- Gluttonous Spike
 		i(183001),	-- Helm of Insatiable Appetite
-		i(183009),	-- Miasma-lacquered Jerkin
+		i(183009),	-- Miasma-Lacquered Jerkin
 		i(183024),	-- Volatile Shadestitch Legguards
 	},
 	[LADY] = {
@@ -523,7 +523,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				}),
 				BossOnly(HUNTSMAN, {
 					i(183258),	-- Memory of Eagletalon's True Focus
-					i(183235),	-- Memory of The Natural Order
+					i(183235),	-- Memory of the Natural Order
 					i(183361),	-- Memory of Spiritwalker's Tidal Totem
 					i(180933),	-- Ashen Juggernaut
 					i(183470),	-- Born of the Wilds
@@ -566,7 +566,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 				}),
 				BossOnly(HUNGERING, {
 					i(182630),	-- Memory of Gorefiend's Domination
-					i(183391),	-- Memory of The Wall
+					i(183391),	-- Memory of the Wall
 					i(182755),	-- Ashen Remains
 					i(181435),	-- Calculated Strikes
 					i(181786),	-- Eternal Hunger
@@ -686,7 +686,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, {
 					i(183279),	-- Memory of the Freezing Winds
 					i(183310),	-- Memory of the Vanguard's Momentum
 					i(184587),	-- Ambuscade
-					i(182105),	-- Astral Projection
+					i(182105),	-- Astral Protection
 					i(181770),	-- Bone Marrow Hops
 					i(182706),	-- Brooding Pool
 					i(182292),	-- Brutal Grasp

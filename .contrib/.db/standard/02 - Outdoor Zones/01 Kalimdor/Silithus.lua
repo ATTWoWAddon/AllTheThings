@@ -843,7 +843,7 @@ maproot(KALIMDOR, SILITHUS, {
 					-- #endif
 				},
 				maxReputation = { FACTION_CENARION_CIRCLE, EXALTED },
-				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
+				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
 				repeatable = true,
 				lvl = lvlsquish(57, 57, 15),
 			})),
@@ -1357,7 +1357,7 @@ maproot(KALIMDOR, SILITHUS, {
 					{ 48.6, 37.8, SILITHUS },
 					-- #endif
 				},
-				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Texts
+				cost = { { "i", 20404, 10 } },	-- Encrypted Twilight Text
 				lvl = lvlsquish(57, 57, 15),
 			})),
 			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8280, {	-- Securing the Supply Lines

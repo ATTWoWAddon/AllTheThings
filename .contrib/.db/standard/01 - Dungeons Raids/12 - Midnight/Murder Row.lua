@@ -96,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MID, {
 					i(251140),	-- Vilefiend's Guise
 				}),
 				filter(MISC, {
-					currency(3250, {	-- Faceted Crystaline Fel
+					currency(3250, {	-- Faceted Crystalline Fel
 						description = "Can be found scattered throughout the Murder Row Dungeon.\nUsed for buying buffs from highlighted vendors.\nOnly 1 per player, per run can be obtained.",
 					}),
 				}),

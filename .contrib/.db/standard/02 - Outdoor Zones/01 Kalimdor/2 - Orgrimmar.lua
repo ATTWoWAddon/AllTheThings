@@ -2488,8 +2488,8 @@ maproot(KALIMDOR, ORGRIMMAR, {
 				groups = {
 					i(3422),	-- Beautiful Wildflowers
 					i(3420),	-- Black Rose
-					i(3424),	-- Bouquet Of Black Roses
-					i(3423),	-- Bouquet Of White Roses
+					i(3424),	-- Bouquet of Black Roses
+					i(3423),	-- Bouquet of White Roses
 					i(3419),	-- Red Rose
 					i(3421),	-- Simple Wildflowers
 				},

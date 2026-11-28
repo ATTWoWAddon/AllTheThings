@@ -5162,7 +5162,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(56071),	-- De-Synced Vibro Blade
 			q(56072),	-- De-Synced Vibro Blade
 			q(55669, {	-- Encrypted Radio Receiver TBD
-				i(168221),	-- Encrypted Raido Receiver
+				i(168221),	-- Encrypted Radio Receiver
 			}),
 			q(56097),	-- Grime-Coated Disc
 			q(55605),	-- NOT USED

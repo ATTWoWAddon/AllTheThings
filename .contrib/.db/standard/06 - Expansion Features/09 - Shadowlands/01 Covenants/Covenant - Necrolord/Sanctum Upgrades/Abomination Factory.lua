@@ -1474,7 +1474,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ customCollect
 									crs = { 167756 },	-- Mama Tomalin (Ghost)
 									groups = {
 										i(183597),	-- Fleshstitched Cookie
-										i(181809),	-- Tomalins Seasoning Crystal
+										i(181809),	-- Tomalin's Seasoning Crystal
 									},
 								}),
 								n(158298, {	-- Naxx

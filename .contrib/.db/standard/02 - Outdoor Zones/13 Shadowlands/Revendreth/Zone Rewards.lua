@@ -27,7 +27,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 				i(182726),	-- Nadja's Letter
 				i(173717),	-- Perfected Hand Mirror
 				i(173710),	-- Petrified Stonefiend
-				i(173711),	-- Portrait of the Sire
+				i(173711),	-- Portrait of The Sire
 				i(180834),	-- Renathal's Journal Pages
 				i(180453),	-- She Had a Stone Heart
 				i(173707),	-- Soul Hunter's Blade
@@ -47,7 +47,7 @@ maproot(SHADOWLANDS, REVENDRETH, {
 				i(180378),	-- Forgemaster's Crate
 				i(180380),	-- Lace Draperies
 				i(180355, {	-- Ornate Pyx
-					i(180349),	-- Nethrezim Acolyte's Band
+					i(180349),	-- Nathrezim Acolyte's Band
 					i(180352),	-- Cracked Inquisitor's Band [Discord - 2024117]
 					i(180354),	-- Ripped Stuffing [Discord - 20260211]
 					i(180350),	-- Simple Stone Loop [Runaway - 2024-12-30]

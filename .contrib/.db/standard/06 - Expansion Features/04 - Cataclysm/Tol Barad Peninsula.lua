@@ -690,7 +690,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						{	-- Honored
 							tolbaradcommendation(50, i(63355)),	-- Rustberg Gull (PET!)
 							tolbaradcommendation(40, i(63141)),	-- Tol Barad Searchlight (TOY!)
-							tolbaradcommendation(40, i(63379)),	-- Baradin's Warden's Tabard
+							tolbaradcommendation(40, i(63379)),	-- Baradin's Wardens Tabard
 							tolbaradcommendation(40, i(65175)),	-- Baradin Footman's Tags
 						},
 						{	-- Revered
