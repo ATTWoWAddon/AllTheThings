@@ -48,44 +48,81 @@ local unitConsumerSource = assert(read("src/Modules/Tooltip.lua"):match("(local 
 
 local Frame = {}
 Frame.__index = Frame
+local function newFrame(kind, name, parent)
+	local frame = setmetatable({kind=kind, name=name, parent=parent, children={}, points={}, shown=true}, Frame)
+	if parent then parent.children[#parent.children + 1] = frame end
+	return frame
+end
 function Frame:SetPoint(...) self.points[#self.points + 1] = {...} end
 function Frame:ClearAllPoints() self.points = {} end
-function Frame:SetScale(value) self.scale = value end
+function Frame:SetSize(width, height) self.width, self.height = width, height end
+function Frame:SetWidth(width) self.width = width end
+function Frame:SetHeight(height) self.height = height end
 function Frame:SetChecked(value) self.checked = not not value end
 function Frame:GetChecked() return self.checked end
-function Frame:Show() self.shown = true end
-function Frame:Hide() self.shown = false end
-function Frame:IsShown() return self.shown end
-function Frame:SetText(value) self.text = value end
-function Frame:GetName() return self.name end
-function Frame:AlignBelow(previous) self:SetPoint("TOPLEFT", previous, "BOTTOMLEFT", 0, -4) end
-function Frame:Click(value)
-	if value ~= nil then self.checked = value end
-	self.OnClick(self)
+function Frame:GetCheckedTexture()
+	if not self.checkedTexture then self.checkedTexture = self:CreateTexture() end
+	return self.checkedTexture
 end
-local function newFrame(name)
-	return setmetatable({name=name, points={}, shown=true, Text=setmetatable({}, Frame)}, Frame)
+function Frame:SetDesaturated(value) self.desaturated = value end
+function Frame:SetTexture(value) self.texture = value end
+function Frame:Show()
+	local wasShown = self.shown
+	self.shown = true
+	if not wasShown and self.OnShow then self:OnShow() end
+end
+function Frame:Hide() self.shown = false end
+function Frame:SetShown(value) if value then self:Show() else self:Hide() end end
+function Frame:IsShown() return self.shown end
+function Frame:IsVisible() return self.shown and (not self.parent or self.parent:IsVisible()) end
+function Frame:SetText(value)
+	self.text = value
+	if self.OnTextChanged then self:OnTextChanged(false) end
+end
+function Frame:GetText() return self.text end
+function Frame:GetName() return self.name end
+function Frame:SetScript(event, handler) self[event] = handler end
+function Frame:HookScript(event, handler)
+	local original = self[event]
+	self[event] = function(frame, ...)
+		if original then original(frame, ...) end
+		handler(frame, ...)
+	end
+end
+function Frame:SetScrollChild(content) self.scrollChild = content end
+function Frame:CreateFontString() return newFrame("FontString", nil, self) end
+function Frame:CreateTexture() return newFrame("Texture", nil, self) end
+function Frame:SetTextInsets() end
+function Frame:SetHitRectInsets() end
+function Frame:SetATTTooltip() end
+function Frame:SetJustifyH() end
+function Frame:SetWordWrap() end
+function Frame:SetColorTexture() end
+function Frame:Click(value)
+	if self.kind == "CheckButton" then
+		if value == nil then value = not self.checked end
+		self:SetChecked(value)
+	end
+	self.OnClick(self)
 end
 local function makeFixture(build, debugging)
 	local fixture = {build=build, debug=debugging, handlers={}, callbacks={}, profiles={}, cacheWipes=0, writes={}}
-	local page = newFrame("Information")
-	page.separator, page.boxes, page.buttons = {}, {}, {}
-	function page:CreateCheckBox(text, refresh, click)
-		local box = newFrame(text)
-		box.text, box.OnRefresh, box.OnClick = text, refresh, click
-		self.boxes[#self.boxes + 1] = box
-		return box
+	local page = newFrame("Frame", "Information")
+	page.separator, page.buttons = newFrame("Frame", nil, page), {}
+	function page:CreateTextbox(options)
+		return newFrame("EditBox", options.name, self)
 	end
 	function page:CreateButton(options, functions)
-		local button = newFrame(options.text)
-		button.OnClick = functions.OnClick
+		local button = newFrame("Button", options.text, self)
+		button:SetScript("OnClick", functions.OnClick)
 		self.buttons[options.text] = button
 		return button
 	end
 	local L = setmetatable({COMPLETED_BY="Completed by %s", KNOWN_BY="Known by %s", USEFUL_FOR="Useful for %s"}, {
 		__index=function(t, key) local value=tostring(key); rawset(t, key, value); return value end,
 	})
-	local settings = {}
+	local settings = newFrame("Frame", "ATTSettings")
+	settings.UITemplates = {Checkbox="UICheckButtonTemplate"}
 	local app = {
 		L=L, Settings=settings, GameBuildVersion=build, Debugging=debugging,
 		IsForever=build >= 16001 and build < 20000,
@@ -144,7 +181,7 @@ local function makeFixture(build, debugging)
 	function settings:CreateOptionsPage() return page end
 	function settings:Refresh()
 		if not fixture.ready then return end
-		for _,box in ipairs(page.boxes) do if box.OnRefresh then box:OnRefresh() end end
+		page:OnRefresh()
 		app.HandleEvent("OnSettingsRefreshed")
 	end
 	local env = setmetatable({
@@ -159,6 +196,17 @@ local function makeFixture(build, debugging)
 		if key:upper() == key then return key end
 	end})
 	env._G = env
+	local scroller
+	function env.CreateFrame(kind, name, parent, template)
+		local frame = newFrame(kind, name, parent)
+		if kind == "ScrollFrame" then
+			scroller = frame
+			local scrollbar = newFrame("Slider", name .. "ScrollBar", frame)
+			if template == "UIPanelScrollFrameTemplate" then env[scrollbar.name] = scrollbar
+			else frame.ScrollBar = scrollbar end
+		end
+		return frame
+	end
 	local configure = compile("local settings, app = ...; local RawSettings; local TooltipSettingsBase=" .. defaultsSource .. "\n" .. getterSource .. "\n" .. setterSource .. [[
 
 return function(profile)
@@ -170,6 +218,7 @@ end, TooltipSettingsBase.__index
 	fixture.switchRaw, fixture.defaults = configure(settings, app)
 	compile(pageSource, "actual-information-page", env)("AllTheThings", app)
 	fixture.app, fixture.settings, fixture.page, fixture.env = app, settings, page, env
+	fixture.content = scroller.scrollChild
 	function fixture:Flush()
 		local queued = self.callbacks
 		self.callbacks = {}
@@ -190,12 +239,27 @@ end, TooltipSettingsBase.__index
 		for _,informationType in ipairs(settings.InformationTypes) do types[informationType.informationTypeID] = informationType end
 		return types
 	end
+	function fixture:Headers()
+		local headers = {}
+		for _,widget in ipairs(self.content.children) do
+			if widget.kind == "Button" and widget.group then headers[widget.group.key] = widget end
+		end
+		return headers
+	end
+	function fixture:Checkboxes()
+		local boxes = {}
+		for _,widget in ipairs(self.content.children) do
+			if widget.kind == "CheckButton" and widget.informationType then boxes[#boxes + 1] = widget end
+		end
+		return boxes
+	end
 	function fixture:Controls()
 		local controls, count = {}, 0
-		for _,box in ipairs(page.boxes) do
-			if box:IsShown() then
-				check(not controls[box.informationTypeID], "Duplicate checkbox: " .. box.informationTypeID)
-				controls[box.informationTypeID] = box
+		for _,box in ipairs(self:Checkboxes()) do
+			if box:IsVisible() then
+				local key = box.informationType.informationTypeID
+				check(not controls[key], "Duplicate checkbox: " .. key)
+				controls[key] = box
 				count = count + 1
 			end
 		end
@@ -232,23 +296,33 @@ local function addLateTypes(fixture, omitPetStats)
 	return expected
 end
 local function verifyLayout(fixture)
-	local types, controls, sorted = fixture:Types(), fixture:Controls(), {}
-	for key,box in pairs(controls) do sorted[#sorted + 1] = {type=types[key], box=box} end
-	table.sort(sorted, function(a,b) return a.type.textLower < b.type.textLower end)
-	local perColumn = #sorted > 72 and 26 or 24
-	local scale = #sorted > 72 and 0.75 or 0.8
-	for index,entry in ipairs(sorted) do
-		local box = entry.box
-		equal(box.scale, scale, "Checkbox scale")
-		equal(#box.points, 1, "Checkbox must have a single layout anchor")
-		if (index - 1) % perColumn == 0 then
-			local point = box.points[1]
-			equal(point[2], fixture.page.separator, "Column starts at page separator")
-			equal(point[4], math.floor((index - 1) / perColumn) * 250, "Column offset")
-		else
-			equal(box.points[1][2], sorted[index - 1].box, "Rows align below previous control")
+	local controls, count = fixture:Controls()
+	local positioned = 0
+	for key,header in pairs(fixture:Headers()) do
+		local types = header.CheckBox.types
+		local collapsed = header.group.collapsed
+		local rows = math.ceil(#types / 3)
+		equal(#header.points, 1, "Single header anchor for " .. key)
+		local anchor = header.points[1]
+		equal(anchor[2], fixture.content, "Header is anchored to the scroll content")
+		for index,informationType in ipairs(types) do
+			local id = informationType.informationTypeID
+			local box = controls[id]
+			equal(box ~= nil, not collapsed, "Checkbox visibility for " .. id)
+			if box then
+				positioned = positioned + 1
+				if index > 1 then
+					check(types[index - 1].textLower <= informationType.textLower, "Options are sorted within " .. key)
+				end
+				equal(#box.points, 1, "Single checkbox anchor for " .. id)
+				local point = box.points[1]
+				equal(point[2], fixture.content, "Checkbox is anchored to the scroll content")
+				equal(point[4], 20 + math.floor((index - 1) / rows) * 190, "Column offset for " .. id)
+				equal(point[5], anchor[5] - 24 - ((index - 1) % rows) * 20, "Row offset for " .. id)
+			end
 		end
 	end
+	equal(positioned, count, "Every visible checkbox belongs to a group")
 end
 local function installProcessorProbes(fixture)
 	local counts = {}
@@ -350,17 +424,32 @@ local AttachTypicalSearchResults = function() end;
 ]]
 	local process = compile(preamble .. unitConsumerSource .. "\nreturn TryShowUnitTooltipInfo", "actual-unit-tooltip-modifier-consumer", env)(fixture.app)
 	local tooltip = {AddDoubleLine=function(_,left,right) captured[left]=right end}
-	for _,key in ipairs({"Alive","Spawned","Layer","SocialProgress"}) do controls[key]:Click(false) end
-	for _,key in ipairs({"Alive","Spawned","Layer","SocialProgress"}) do
+	local npcGUID = "Creature-0-123-4-55-66-000001"
+	local npcModifiers = {"Alive","Spawned","Layer"}
+	local modifiers = {"SocialProgress"}
+	if fixture.app.IsForever then
+		-- Older profiles can retain overrides for the NPC settings hidden on Forever.
+		local types = fixture:Types()
+		for _,key in ipairs(npcModifiers) do
+			equal(types[key], nil, "Forever omits the " .. key .. " information type")
+			equal(controls[key], nil, "Forever hides the " .. key .. " checkbox")
+			settings:SetTooltipSetting(key, true)
+		end
+		process(tooltip, npcGUID)
+		for _,key in ipairs(npcModifiers) do
+			equal(captured[fixture.app.L[key:upper()]], nil, "Forever suppresses the " .. key .. " row")
+		end
+	else
+		for _,key in ipairs(npcModifiers) do modifiers[#modifiers + 1] = key end
+	end
+	for _,key in ipairs(modifiers) do controls[key]:Click(false) end
+	for _,key in ipairs(modifiers) do
 		for _,value in ipairs({false,true}) do
 			controls[key]:Click(value)
 			wipe(captured)
-			process(tooltip, key == "SocialProgress" and "Player-fixture" or "Creature-0-123-4-55-66-000001")
+			process(tooltip, key == "SocialProgress" and "Player-fixture" or npcGUID)
 			local label = key == "SocialProgress" and "Fixture Player" or fixture.app.L[key:upper()]
-			local expected = value
-			-- Forever suppresses spawn-time rows even when their settings are enabled.
-			if fixture.app.IsForever and (key == "Alive" or key == "Spawned") then expected = false end
-			equal(captured[label] ~= nil, expected, "Actual unit-tooltip consumer: " .. key
+			equal(captured[label] ~= nil, value, "Actual unit-tooltip consumer: " .. key
 				.. " (build " .. fixture.app.GameBuildVersion .. ")")
 		end
 		controls[key]:Click(false)
@@ -372,7 +461,7 @@ do
 	local fixture = makeFixture(16001, false)
 	fixture.settings.CreateInformationType("EarlyFixture", {text="Early Fixture"})
 	fixture:Flush()
-	equal(#fixture.page.boxes, 0, "Early callbacks must not initialize UI")
+	equal(#fixture:Checkboxes(), 0, "Early callbacks must not initialize UI")
 	fixture:Initialize()
 	local controls = fixture:Controls()
 	check(controls.EarlyFixture ~= nil, "Early registration must appear during initial UI build")
@@ -386,17 +475,19 @@ for _,profile in ipairs(profiles) do
 	for _,debugging in ipairs({false,true}) do
 		local fixture = makeFixture(profile[2], debugging)
 		fixture:Initialize()
-		local initialCreated = #fixture.page.boxes
+		local initialCreated = #fixture:Checkboxes()
 		fixture:Flush()
-		equal(#fixture.page.boxes, initialCreated, "Repeated startup callbacks must reuse controls")
+		equal(#fixture:Checkboxes(), initialCreated, "Repeated startup callbacks must reuse controls")
+		equal(fixture:Controls().itemID, nil, "IDs start collapsed")
+		fixture:Headers().IDs:Click()
 		local late = addLateTypes(fixture)
 		fixture:Flush()
 		local controls = fixture:Controls()
 		for key in pairs(late) do check(controls[key] ~= nil, "Late registration has no checkbox: " .. key) end
-		local created = #fixture.page.boxes
+		local created = #fixture:Checkboxes()
 		fixture:Flush()
 		fixture.settings:Refresh()
-		equal(#fixture.page.boxes, created, "Repeated refresh must not allocate duplicate frames")
+		equal(#fixture:Checkboxes(), created, "Repeated refresh must not allocate duplicate frames")
 		verifyLayout(fixture)
 		verifyModifiers(fixture)
 		local label = profile[1] .. (debugging and " debug" or " normal")
@@ -415,21 +506,27 @@ do
 	check(not fixture:Controls()["Owned Pets"], "Missing optional API must not add Owned Pets")
 end
 
--- Reflow the original 24-row/26-row layout when late registrations cross 72 options.
+-- A late option that needs another row reflows its group and reuses existing controls.
 do
 	local fixture = makeFixture(11509, false)
 	fixture:Initialize()
+	fixture.settings.CreateInformationType("LayoutFixture", {text="Layout Fixture", SettingsGroup="Other"})
 	fixture:Flush()
-	local _,count = fixture:Controls()
-	for index=count + 1,72 do fixture.settings.CreateInformationType("LayoutFixture" .. index, {text="Layout Fixture " .. index}) end
+	local otherHeader = fixture:Headers().Other
+	local count = #otherHeader.CheckBox.types
+	local padding = (3 - count % 3) % 3
+	for index=1,padding do
+		fixture.settings.CreateInformationType("LayoutFixture" .. index, {text="Layout Fixture " .. index, SettingsGroup="Other"})
+	end
 	fixture:Flush()
-	local _,atBoundary = fixture:Controls()
-	equal(atBoundary, 72, "Layout boundary fixture")
+	equal(#otherHeader.CheckBox.types, count + padding, "Fill every column in the group")
 	verifyLayout(fixture)
-	local created = #fixture.page.boxes
-	fixture.settings.CreateInformationType("LayoutFixture73", {text="Layout Fixture 73"})
+	local created = #fixture:Checkboxes()
+	local height = fixture.content.height
+	fixture.settings.CreateInformationType("LayoutFixtureNext", {text="Layout Fixture Next", SettingsGroup="Other"})
 	fixture:Flush()
-	equal(#fixture.page.boxes, created + 1, "Crossing layout threshold adds only one frame")
+	equal(#fixture:Checkboxes(), created + 1, "Reflow adds only the new checkbox")
+	equal(fixture.content.height, height + 20, "One additional row extends the scroll content")
 	verifyLayout(fixture)
 end
 
