@@ -13,13 +13,9 @@ foreach (var file in Directory.GetFiles("../.raw/AssetDB"))
 		Console.WriteLine(file);
 		Dictionary<long, bool> AssetDB = new();
 		var dbFileName = Path.GetFileNameWithoutExtension(file);
-		var o = ToolJson.Data.Deserialize(File.ReadAllText(file));
-		if (o is Dictionary<string, object> db)
+		foreach (var key in ToolJson.Data.ReadObjectKeys(File.ReadAllText(file)))
 		{
-			foreach (var keyValuePair in db)
-			{
-				AssetDB[long.Parse(keyValuePair.Key)] = true;
-			}
+			AssetDB[long.Parse(key)] = true;
 		}
 
 		var builder = new StringBuilder();

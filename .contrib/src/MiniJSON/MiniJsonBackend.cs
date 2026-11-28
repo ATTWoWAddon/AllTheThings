@@ -4,12 +4,20 @@
 
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace ATT
 {
 	public sealed class MiniJsonBackend : IJsonBackend
 	{
 		public object Deserialize(string json) => MiniJSON.Json.Deserialize(json);
+
+		public IEnumerable<string> ReadObjectKeys(string json)
+		{
+			if (Deserialize(json) is Dictionary<string, object> dictionary)
+				return dictionary.Keys;
+			return Array.Empty<string>();
+		}
 
 		public string Serialize(object value, JsonWriteOptions options)
 		{
