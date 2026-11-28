@@ -97,13 +97,8 @@ FUNCTION_TEMPLATES = {
 		ExportDB.OnTooltipDB[OnTooltipName] = [[~function(t,tooltipInfo)
 			local s = ]]..spellID..[[
 			if not (_.CurrentCharacter.Spells[s] or _.IsSpellKnownHelper(s)) then return end
-			local start, duration
-			if C_Spell and C_Spell.GetSpellCooldown then
-				local info = C_Spell.GetSpellCooldown(s)
-				if info then start, duration = info.startTime, info.duration end
-			else
-				start, duration = GetSpellCooldown(s)
-			end
+			local start, duration = _.WOWAPI.GetSpellCooldown(s)
+			if _.WOWAPI.issecretvalue(start) or _.WOWAPI.issecretvalue(duration) then return end
 			local n = _.WOWAPI.GetSpellName(s) or RETRIEVING_DATA
 			local remaining = (start and start > 0 and duration) and (start + duration - GetTime()) or 0
 			if remaining > 0 then

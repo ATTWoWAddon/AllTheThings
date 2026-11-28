@@ -217,9 +217,13 @@ AssignAPIWrapper("GetSpellIcon",
 	GetSpellTexture);
 
 AssignAPIWrapper("GetSpellCooldown",
-C_Spell and C_Spell.GetSpellCooldown and
-	function(spellIdentifier) local t = C_Spell.GetSpellCooldown(spellIdentifier)
-	return t and t.startTime or 0 end,
+	C_Spell and C_Spell.GetSpellCooldown and function(spellIdentifier)
+		local info = C_Spell.GetSpellCooldown(spellIdentifier);
+		if not info then return 0; end
+		local startTime = info.startTime;
+		if not lib.issecretvalue(startTime) then startTime = startTime or 0; end
+		return startTime, info.duration;
+	end,
 	GetSpellCooldown);
 
 AssignAPIWrapper("GetSpellName",

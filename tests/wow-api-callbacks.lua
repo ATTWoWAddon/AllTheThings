@@ -49,6 +49,59 @@ end
 
 do
 	local template = read(".contrib/.db/shared/lib/Functions/Function Templates.lua")
+	local generatorText = assert(template:match("GenerateOnTooltipSpellCooldownRemaining = (.-),%s*%-%- Generates an OnUpdate"))
+	local templateEnv = { ExportDB = { OnTooltipDB = {} } }
+	local generator = compile(generatorText, templateEnv)
+	generator(18560)
+	local callbackText = assert(templateEnv.ExportDB.OnTooltipDB.SpellCooldownRemaining_18560):sub(2)
+	local secret, start, duration = {}, 90, 80
+	local cooldownQueries = 0
+	local function rejectDirectCooldown() error("Tooltip bypassed the spell cooldown wrapper") end
+	local callbackEnv = {
+		_ = {
+			CurrentCharacter = { Spells = { [18560] = true } },
+			IsSpellKnownHelper = function() return false end,
+			WOWAPI = {
+				GetSpellCooldown = function(id)
+					check(id == 18560, "cooldown lookup retains the spell ID")
+					cooldownQueries = cooldownQueries + 1
+					return start, duration
+				end,
+				GetSpellName = function() return "Mooncloth" end,
+				issecretvalue = function(value) return value == secret end,
+				SecondsToTime = function(seconds)
+					check(seconds == 65, "formatter receives the remaining time")
+					return "1 min 5 sec"
+				end,
+			},
+		},
+		C_Spell = { GetSpellCooldown = rejectDirectCooldown },
+		GetSpellCooldown = rejectDirectCooldown,
+		GetTime = function() return 105 end,
+		SecondsToTime = function() error("Tooltip bypassed the time formatter wrapper") end,
+	}
+	local callback = compile(callbackText, callbackEnv)
+	local function tooltipRows()
+		local rows = {}
+		callback({}, rows)
+		return rows
+	end
+	local rows = tooltipRows()
+	check(#rows == 1 and rows[1].left == "Mooncloth" and rows[1].right == "1 min 5 sec", "active cooldown shows the remaining time")
+	start, duration = 90, 15
+	check(tooltipRows()[1].right == "Ready", "expired cooldown shows Ready")
+	start, duration = 0, nil
+	check(tooltipRows()[1].right == "Ready", "missing cooldown info shows Ready")
+	start, duration = secret, 80
+	check(#tooltipRows() == 0, "secret start time skips the cooldown line")
+	start, duration = 90, secret
+	check(#tooltipRows() == 0, "secret duration skips the cooldown line")
+	callbackEnv._.CurrentCharacter.Spells[18560] = nil
+	check(#tooltipRows() == 0 and cooldownQueries == 5, "unknown spells skip cooldown queries")
+end
+
+do
+	local template = read(".contrib/.db/shared/lib/Functions/Function Templates.lua")
 	local generatorText = assert(template:match("GenerateShouldExcludeFromTooltipForBuffs = (.-),%s*ClassORRaceRequirements"))
 	local templateEnv = { ExportDB = { OnInitDB = {} } }
 	local generator = compile(generatorText, templateEnv)

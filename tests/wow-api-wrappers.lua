@@ -170,6 +170,36 @@ do
 end
 
 do
+	local secret = {}
+	local modern = initialize({
+		C_Spell = {GetSpellCooldown = function(id)
+			if id == 123 then return {startTime = 100, duration = 80} end
+			if id == 456 then return {duration = 80} end
+			if id == 789 then return {startTime = secret, duration = secret} end
+		end},
+		GetSpellCooldown = rejectLegacy,
+		issecretvalue = function(value) return value == secret end,
+	})
+	local start, duration = modern.GetSpellCooldown(123)
+	equal(start, 100, "modern cooldown starts with the existing first return")
+	equal(duration, 80, "modern cooldown exposes its duration")
+	start, duration = modern.GetSpellCooldown(999)
+	equal(start, 0, "unknown modern spell keeps the zero start time")
+	equal(duration, nil, "unknown modern spell has no duration")
+	equal(modern.GetSpellCooldown(456), 0, "missing start field keeps the zero start time")
+	start, duration = modern.GetSpellCooldown(789)
+	equal(start, secret, "restricted start time is passed through")
+	equal(duration, secret, "restricted duration is passed through")
+	local legacy = initialize({GetSpellCooldown = function(id)
+		equal(id, 123)
+		return 100, 80, 1, 0.5
+	end}, 11509)
+	local enabled, rate
+	start, duration, enabled, rate = legacy.GetSpellCooldown(123)
+	equal(start, 100); equal(duration, 80); equal(enabled, 1); equal(rate, 0.5)
+end
+
+do
 	-- Player spell knowledge selects the explicit Player bank.
 	local knownBank
 	local spells = initialize({
