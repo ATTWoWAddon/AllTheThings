@@ -28,7 +28,7 @@ root(ROOTS.Holidays, {	-- General Holiday Content
 				i(44177),	-- Violet Proto-Drake (MOUNT!)
 			},
 		})),
-		applyclassicphase(WRATH_PHASE_ONE, ach(2145, {	-- What a Long, Strange Trip It's Been (H)
+		applyclassicphase(WRATH_PHASE_ONE, ach(2145, {	-- What A Long, Strange Trip It's Been (H)
 			-- TODO: During Cataclysm Classic, check to see if this is still in the game.
 			-- Meta Achievement
 			sym = {{"meta_achievement",

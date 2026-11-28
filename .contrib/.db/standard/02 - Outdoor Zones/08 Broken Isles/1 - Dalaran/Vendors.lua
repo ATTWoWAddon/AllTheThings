@@ -24,8 +24,8 @@ maproot(BROKEN_ISLES, LEGION_DALARAN, {
 			sym = {{"select","itemID",
 				3422,	-- Beautiful Wildflowers
 				3420,	-- Black Rose
-				3424,	-- Bouquet Of Black Roses
-				3423,	-- Bouquet Of White Roses
+				3424,	-- Bouquet of Black Roses
+				3423,	-- Bouquet of White Roses
 				3419,	-- Red Rose
 				3421,	-- Simple Wildflowers
 			}},

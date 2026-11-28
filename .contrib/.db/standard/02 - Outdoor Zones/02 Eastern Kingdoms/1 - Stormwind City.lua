@@ -4398,8 +4398,8 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				groups = {
 					i(3422),	-- Beautiful Wildflowers
 					i(3420),	-- Black Rose
-					i(3424),	-- Bouquet Of Black Roses
-					i(3423),	-- Bouquet Of White Roses
+					i(3424),	-- Bouquet of Black Roses
+					i(3423),	-- Bouquet of White Roses
 					i(3419),	-- Red Rose
 					i(3421),	-- Simple Wildflowers
 				},
@@ -5090,8 +5090,8 @@ maproot(EASTERN_KINGDOMS, STORMWIND_CITY, {
 				sym = {{"select","itemID",
 					3422,	-- Beautiful Wildflowers
 					3420,	-- Black Rose
-					3424,	-- Bouquet Of Black Roses
-					3423,	-- Bouquet Of White Roses
+					3424,	-- Bouquet of Black Roses
+					3423,	-- Bouquet of White Roses
 					3419,	-- Red Rose
 					3421,	-- Simple Wildflowers
 				}},

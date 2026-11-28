@@ -1845,7 +1845,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						ach(4080, {	-- A Tribute to Dedicated Insanity
 							title(136),	-- the Argent Defender
 						}),
-						ach(3810, {	-- A Tribute to Insanity (10 Player)
+						ach(3810, {	-- A Tribute to Insanity (10 player)
 							a(i(49044)),	-- Swift Alliance Steed (MOUNT!)
 							h(i(49046)),	-- Swift Horde Wolf (MOUNT!)
 							h(ig(48668)),	-- Cloak of Serrated Blades
@@ -1859,8 +1859,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							a(ig(48672)),	-- Shawl of Fervent Crusader
 							h(ig(48667)),	-- Shawl of the Devout Crusader
 						}),
-						ach(3809),	-- A Tribute to Mad Skill (10 Player)
-						ach(3808, {	-- A Tribute to Skill (10 Player)
+						ach(3809),	-- A Tribute to Mad Skill (10 player)
+						ach(3808, {	-- A Tribute to Skill (10 player)
 							h(ig(48705)),	-- Attrition
 							h(ig(48699)),	-- Blood and Glory
 							h(ig(48697)),	-- Frenzystrike Longbow
@@ -2421,7 +2421,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						h(ach(4079, {	-- A Tribute to Immortality
 							h(i(49098)),	-- Crusader's Black Warhorse (MOUNT!)
 						})),
-						ach(3819, {	-- A Tribute to Insanity (25 Player)
+						ach(3819, {	-- A Tribute to Insanity (25 player)
 							h(ig(47551)),	-- Aethas' Intensity
 							a(ig(47553)),	-- Bolvar's Devotion
 							h(ig(47550)),	-- Cairne's Endurance
@@ -2433,8 +2433,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							a(ig(47547)),	-- Varian's Furor
 							a(ig(47545)),	-- Vereesa's Dexterity
 						}),
-						ach(3818),	-- A Tribute to Mad Skill (25 Player)
-						ach(3817, {	-- A Tribute to Skill (25 Player)
+						ach(3818),	-- A Tribute to Mad Skill (25 player)
+						ach(3817, {	-- A Tribute to Skill (25 player)
 							a(ig(47517)),	-- Blade of the Unbroken Covenant
 							a(ig(47521)),	-- BRK-1000
 							a(ig(47519)),	-- Catastrophe

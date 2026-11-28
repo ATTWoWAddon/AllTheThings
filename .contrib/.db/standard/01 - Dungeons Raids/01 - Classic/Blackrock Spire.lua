@@ -1219,7 +1219,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				n(9218, {	-- Spirestone Battle Lord (Rare)
 					coord = { 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
 					groups = {
-						i(13285),	-- The Blackrock Slicers
+						i(13285),	-- The Blackrock Slicer
 						i(13284),	-- Swiftdart Battleboots
 					},
 				}),

@@ -144,7 +144,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 
 					-- Removed
 					i(81568, { timeline = { REMOVED_7_1_5 } }),	-- Armsmaster's Sealed Locket
-					i(81698, { timeline = { REMOVED_7_1_5 } }),	-- Harlan's Shoulder
+					i(81698, { timeline = { REMOVED_7_1_5 } }),	-- Harlan's Shoulders
 					i(81700, { timeline = { REMOVED_7_1_5 } }),	-- Lightblade Bracer
 					i(81699, { timeline = { REMOVED_7_1_5 } }),	-- Scarlet Sandals
 					i(81697, { timeline = { REMOVED_7_1_5 } }),	-- The Gleaming Ravager

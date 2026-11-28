@@ -383,13 +383,13 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 			symselector = SymSelector.VENDOR_GRUNTS_CHAIN,
 			timeline = { ADDED_4_0_1 },
 			groups = {
-				i(62266),	-- Grunts Chain Circlet
-				i(62265),	-- Grunts Chain Vest
-				i(62262),	-- Grunts Chain Bracers
-				i(62263),	-- Grunts Chain Gloves
-				i(62260),	-- Grunts Chain Belt
-				i(62264),	-- Grunts Chain Leggings
-				i(62261),	-- Grunts Chain Boots
+				i(62266),	-- Grunt's Chain Circlet
+				i(62265),	-- Grunt's Chain Vest
+				i(62262),	-- Grunt's Chain Bracers
+				i(62263),	-- Grunt's Chain Gloves
+				i(62260),	-- Grunt's Chain Belt
+				i(62264),	-- Grunt's Chain Leggings
+				i(62261),	-- Grunt's Chain Boots
 			},
 		}),
 		header(HEADERS.Item, 2398, {	-- Light Chain Armor
@@ -464,13 +464,13 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 			symselector = SymSelector.VENDOR_GRUNTS_PLATE,
 			timeline = { ADDED_4_0_1 },
 			groups = {
-				i(62259),	-- Grunts Plate Helm
-				i(62253),	-- Grunts Plate Armor
-				i(62256),	-- Grunts Plate Bracers
-				i(62257),	-- Grunts Plate Gloves
-				i(62254),	-- Grunts Plate Belt
-				i(62258),	-- Grunts Plate Leggings
-				i(62255),	-- Grunts Plate Boots
+				i(62259),	-- Grunt's Plate Helm
+				i(62253),	-- Grunt's Plate Armor
+				i(62256),	-- Grunt's Plate Bracers
+				i(62257),	-- Grunt's Plate Gloves
+				i(62254),	-- Grunt's Plate Belt
+				i(62258),	-- Grunt's Plate Leggings
+				i(62255),	-- Grunt's Plate Boots
 			},
 		}),
 		header(HEADERS.Item, 30765, {	-- Heavy Draenic Breastplate
@@ -560,7 +560,7 @@ root(ROOTS.Zones, n(COMMON_VENDOR_ITEMS, {
 		}),
 		i(2321),	-- Fine Thread
 		i(2605),	-- Green Dye
-		i(4340),	-- Grey Dye
+		i(4340),	-- Gray Dye
 		i(39684, {	-- Hair Trigger
 			timeline = { ADDED_3_0_2 },
 		}),

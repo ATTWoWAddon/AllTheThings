@@ -66,7 +66,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					i(55856),	-- Greaves of Wu the Elder
 					i(55857),	-- Ionic Gloves
 					i(55858),	-- Kaleki Cloak
-					i(55860),	-- Siliza's Spear
+					i(55860),	-- Seliza's Spear
 					i(55859),	-- Spirit Creeper Ring
 				}),
 				BossOnly(LOCKMAW, {
