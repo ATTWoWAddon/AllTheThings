@@ -6,6 +6,7 @@
     <TargetFramework>net481</TargetFramework>
     <RootNamespace>ATT</RootNamespace>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AttJsonLegacyApiOnly>true</AttJsonLegacyApiOnly>
     <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
@@ -22,5 +23,5 @@
     <PackageReference Include="KeraLua" Version="[1.4.11]" />
     <PackageReference Include="NLua" Version="[1.7.9]" />
   </ItemGroup>
-  <Import Project="..\..\src\MiniJSON\MiniJSON.props" />
+  <Import Project="..\..\src\Shared\ToolJson.props" />
 </Project>

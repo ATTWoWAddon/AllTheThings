@@ -16,7 +16,7 @@ namespace ATT
 		/// Convert the Lua Table to JSON.
 		/// </summary>
 		/// <param name="table">The table.</param>
-		/// <returns>The MiniJSON compliant data table.</returns>
+		/// <returns>The converted data table.</returns>
 		private static Dictionary<object, object> GlobalLuaTableToJSON(LuaTable table)
 		{
 			var dict = new Dictionary<object, object>();
@@ -53,7 +53,7 @@ namespace ATT
 		/// Convert the Lua Table to JSON.
 		/// </summary>
 		/// <param name="table">The table.</param>
-		/// <returns>The MiniJSON compliant data table.</returns>
+		/// <returns>The converted data table.</returns>
 		private static Dictionary<object, object> LuaTableToJSON(LuaTable table)
 		{
 			var dict = new Dictionary<object, object>();

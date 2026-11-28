@@ -1,8 +1,23 @@
 <Project>
-  <Import Project="$(MSBuildThisFileDirectory)..\MiniJSON\MiniJSON.props" />
-  <ItemGroup>
+  <PropertyGroup>
+    <AttJsonBackend Condition="'$(AttJsonBackend)' == ''">SystemTextJson</AttJsonBackend>
+  </PropertyGroup>
+  <Import Project="..\MiniJSON\MiniJSON.props" Condition="'$(AttJsonBackend)' == 'MiniJson'" />
+  <ItemGroup Condition="'$(AttJsonLegacyApiOnly)' != 'true'">
     <Compile Include="$(MSBuildThisFileDirectory)..\Json\JsonData.cs" Link="Shared\JsonData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)..\MiniJSON\MiniJsonBackend.cs" Link="Shared\MiniJsonBackend.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ToolJson.cs" Link="Shared\ToolJson.cs" />
   </ItemGroup>
+  <PropertyGroup Condition="'$(AttJsonLegacyApiOnly)' != 'true' And '$(AttJsonBackend)' == 'MiniJson'">
+    <DefineConstants>$(DefineConstants);ATT_USE_MINIJSON</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(AttJsonLegacyApiOnly)' != 'true' And '$(AttJsonBackend)' == 'MiniJson'">
+    <Compile Include="$(MSBuildThisFileDirectory)..\MiniJSON\MiniJsonBackend.cs" Link="Shared\MiniJsonBackend.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(AttJsonLegacyApiOnly)' != 'true' And '$(AttJsonBackend)' == 'SystemTextJson'">
+    <Compile Include="$(MSBuildThisFileDirectory)..\Json\SystemTextJsonBackend.cs" Link="Shared\SystemTextJsonBackend.cs" />
+    <PackageReference Include="System.Text.Json" Version="[10.0.15]" Condition="$([MSBuild]::GetTargetFrameworkIdentifier('$(TargetFramework)')) == '.NETFramework'" />
+  </ItemGroup>
+  <Target Name="ValidateAttJsonBackend" BeforeTargets="PrepareForBuild;CollectPackageReferences" Condition="'$(AttJsonBackend)' != 'SystemTextJson' And '$(AttJsonBackend)' != 'MiniJson'">
+    <Error Text="Unsupported AttJsonBackend '$(AttJsonBackend)'. Choose SystemTextJson or MiniJson." />
+  </Target>
 </Project>
