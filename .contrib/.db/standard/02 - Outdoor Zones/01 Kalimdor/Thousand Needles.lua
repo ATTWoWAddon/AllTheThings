@@ -857,21 +857,21 @@ maproot(KALIMDOR, THOUSAND_NEEDLES, {
 			}),
 			q(1120, {	-- Get the Gnomes Drunk
 				sourceQuest = 1119,	-- Zanzil's Mixture and a Fool's Stout
-				altQuests = { 1121 },	-- Get the Goblins Drunk
 				qg = 4452,	-- Kravel Koalbeard
 				qi = 5806,	-- Fool's Stout
 				coord = { 78.8, 77.3, THOUSAND_NEEDLES },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 35,
+				lockCriteria = { 1, "questID", 1121 },	-- Get the Goblins Drunk
 			}),
 			q(1121, {	-- Get the Goblins Drunk
 				sourceQuest = 1119,	-- Zanzil's Mixture and a Fool's Stout
-				altQuests = { 1120 },	-- Get the Gnomes Drunk
 				qg = 4452,	-- Kravel Koalbeard
 				qi = 5806,	-- Fool's Stout
 				coord = { 78.8, 77.3, THOUSAND_NEEDLES },
 				timeline = { REMOVED_4_0_3 },
 				lvl = 35,
+				lockCriteria = { 1, "questID", 1120 },	-- Get the Gnomes Drunk
 			}),
 			q(1950, {	-- Get the Scoop
 				sourceQuest = 1949,	-- Hidden Secrets
