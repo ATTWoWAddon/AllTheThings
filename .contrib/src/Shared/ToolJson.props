@@ -1,5 +1,6 @@
 <Project>
   <PropertyGroup>
+    <AttJsonBackend Condition="'$(AttJsonBackend)' == '' And $([MSBuild]::GetTargetFrameworkIdentifier('$(TargetFramework)')) == '.NETFramework'">MiniJson</AttJsonBackend>
     <AttJsonBackend Condition="'$(AttJsonBackend)' == ''">SystemTextJson</AttJsonBackend>
   </PropertyGroup>
   <Import Project="..\MiniJSON\MiniJSON.props" Condition="'$(AttJsonBackend)' == 'MiniJson'" />
