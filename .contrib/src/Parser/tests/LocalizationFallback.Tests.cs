@@ -133,7 +133,7 @@ internal static class LocalizationFallbackTests
 		});
 		Run("Parser JSON reads trailing commas and numeric values", () =>
 		{
-			const string json = "{\"values\":[9223372036854775807,2.5,1e3,],}";
+			const string json = "{\"values\":[9223372036854775807,2.5,1e3,9223372036854777344,],\"timestamp\":\"2026-11-28T12:34:56Z\",}";
 			var result = (Dictionary<string, object>)framework.GetMethod("ToObject").Invoke(null, new object[] { json });
 			var values = (List<object>)result["values"];
 			Check((long)values[0] == long.MaxValue, "integer did not keep its full precision");
@@ -141,7 +141,11 @@ internal static class LocalizationFallbackTests
 			if (framework.Assembly.GetType("ATT.MiniJsonBackend") != null)
 				Check(values[2] is long && (long)values[2] == 0, "legacy MiniJSON exponent handling changed");
 			else
+			{
 				Check(values[2] is double && (double)values[2] == 1000, "exponent was read incorrectly");
+				Check(values[3] is double && (double)values[3] == 9223372036854777856d, "overflowing integer was not rounded to a Double");
+			}
+			Check(result["timestamp"] is string && (string)result["timestamp"] == "2026-11-28T12:34:56Z", "date-like string was converted");
 		});
 		Run("debug es=mx does not remove distinct tw", () =>
 		{

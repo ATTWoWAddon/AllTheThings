@@ -30,13 +30,13 @@ permissions:
 
 jobs:
   build:
-    name: ${{ matrix.backend == 'SystemTextJson' && 'build' || 'build (MiniJson)' }}
+    name: ${{ matrix.backend == 'SystemTextJson' && 'build' || format('build ({0})', matrix.backend) }}
     runs-on: windows-latest
     timeout-minutes: 15
     strategy:
       fail-fast: false
       matrix:
-        backend: [SystemTextJson, MiniJson]
+        backend: [SystemTextJson, MiniJson, NewtonsoftJson]
     env:
       ATT_JSON_BACKEND: ${{ matrix.backend }}
     defaults:
@@ -139,13 +139,13 @@ jobs:
           }
 
   build-csharp-tools:
-    name: ${{ matrix.backend == 'SystemTextJson' && 'Build remaining C# tools' || 'Build remaining C# tools (MiniJson)' }}
+    name: ${{ matrix.backend == 'SystemTextJson' && 'Build remaining C# tools' || format('Build remaining C# tools ({0})', matrix.backend) }}
     runs-on: windows-latest
     timeout-minutes: 45
     strategy:
       fail-fast: false
       matrix:
-        backend: [SystemTextJson, MiniJson]
+        backend: [SystemTextJson, MiniJson, NewtonsoftJson]
     defaults:
       run:
         shell: pwsh
@@ -282,6 +282,33 @@ jobs:
           $failures = @($results.Values | Where-Object { $_ -ne 0 })
           if ($failures.Count -gt 0) {
             throw "$($failures.Count) of $($projects.Count) C# project builds failed."
+          }
+
+      - name: Run AssetDB Builder with Newtonsoft.Json
+        if: matrix.backend == 'NewtonsoftJson'
+        run: |
+          $tool = Join-Path $env:RUNNER_TEMP "csharp-projects/$env:ATT_JSON_BACKEND/AssetDB_Builder/AssetDB Builder.exe"
+          $fixture = Join-Path $env:RUNNER_TEMP ('assetdb-newtonsoft-' + [Guid]::NewGuid().ToString('N'))
+          $workDir = Join-Path $fixture '.tools'
+          $inputDir = Join-Path $fixture '.raw/AssetDB'
+          try {
+            [void](New-Item -ItemType Directory -Path $workDir, $inputDir -Force)
+            [IO.File]::WriteAllText((Join-Path $inputDir 'sample.json'), '{"20":1,"3":2,"20":3,}')
+            Push-Location -LiteralPath $workDir
+            try {
+              & $tool
+              if ($LASTEXITCODE -ne 0) { throw "AssetDB Builder exited with code $LASTEXITCODE." }
+            }
+            finally {
+              Pop-Location
+            }
+            $luaPath = Join-Path $fixture '.db/standard/00 - DB/AssetDB/sample.lua'
+            $actual = [IO.File]::ReadAllText($luaPath).Replace("`r`n", "`n")
+            $expected = @('-- #if sample', '_.AssetDB = {', '[3]=1,', '[20]=1,', '};', '-- #endif', '') -join "`n"
+            if ($actual -cne $expected) { throw "AssetDB Builder produced unexpected Lua: $actual" }
+          }
+          finally {
+            Remove-Item -LiteralPath $fixture -Recurse -Force
           }
 
       - name: Show MiniJSON notices for the other tools

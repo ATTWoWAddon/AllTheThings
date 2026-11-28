@@ -17,7 +17,16 @@
     <Compile Include="$(MSBuildThisFileDirectory)..\Json\SystemTextJsonBackend.cs" Link="Shared\SystemTextJsonBackend.cs" />
     <PackageReference Include="System.Text.Json" Version="[10.0.15]" Condition="$([MSBuild]::GetTargetFrameworkIdentifier('$(TargetFramework)')) == '.NETFramework'" />
   </ItemGroup>
-  <Target Name="ValidateAttJsonBackend" BeforeTargets="PrepareForBuild;CollectPackageReferences" Condition="'$(AttJsonBackend)' != 'SystemTextJson' And '$(AttJsonBackend)' != 'MiniJson'">
-    <Error Text="Unsupported AttJsonBackend '$(AttJsonBackend)'. Choose SystemTextJson or MiniJson." />
+  <PropertyGroup Condition="'$(AttJsonLegacyApiOnly)' != 'true' And '$(AttJsonBackend)' == 'NewtonsoftJson'">
+    <DefineConstants>$(DefineConstants);ATT_USE_NEWTONSOFTJSON</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(AttJsonLegacyApiOnly)' != 'true' And '$(AttJsonBackend)' == 'NewtonsoftJson'">
+    <Compile Include="$(MSBuildThisFileDirectory)..\Json\NewtonsoftJsonBackend.cs" Link="Shared\NewtonsoftJsonBackend.cs" />
+    <!-- Parser and AssetDB Builder share .tools, so deploy the same assembly for both target frameworks. -->
+    <PackageReference Include="Newtonsoft.Json" Version="[13.0.4]" ExcludeAssets="compile;runtime" GeneratePathProperty="true" />
+    <Reference Include="Newtonsoft.Json" HintPath="$(PkgNewtonsoft_Json)/lib/netstandard2.0/Newtonsoft.Json.dll" Private="true" />
+  </ItemGroup>
+  <Target Name="ValidateAttJsonBackend" BeforeTargets="PrepareForBuild;CollectPackageReferences" Condition="'$(AttJsonBackend)' != 'SystemTextJson' And '$(AttJsonBackend)' != 'MiniJson' And '$(AttJsonBackend)' != 'NewtonsoftJson'">
+    <Error Text="Unsupported AttJsonBackend '$(AttJsonBackend)'. Choose SystemTextJson, MiniJson, or NewtonsoftJson." />
   </Target>
 </Project>

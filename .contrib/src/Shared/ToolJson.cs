@@ -7,6 +7,8 @@ namespace ATT
 	{
 #if ATT_USE_MINIJSON
 		internal static readonly JsonData Data = new JsonData(new MiniJsonBackend());
+#elif ATT_USE_NEWTONSOFTJSON
+		internal static readonly JsonData Data = new JsonData(new NewtonsoftJsonBackend());
 #else
 		internal static readonly JsonData Data = new JsonData(new SystemTextJsonBackend());
 #endif
