@@ -581,7 +581,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(97281, {	-- A Simmering Storm
 				qs = 277661,	-- Dull Storm Orb (QS!)
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
 				lvl = 7,
 			}),
 			q(818, {	-- A Solvent Spirit
@@ -1298,7 +1297,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				sourceQuest = 834,	-- Winds in the Desert
 				qg = 3293,	-- Rezlak
 				coord = { 46.4, 23.0, MAP.DUROTAR },
-				--races = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/12 Dustwind Savage
@@ -1354,7 +1352,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 				qg = 3293,	-- Rezlak
 				coord = { 46.4, 23.0, MAP.DUROTAR },
 				timeline = { TIMELINE.ADDED_1_60_1 },
-				races = HORDE_ONLY,
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/5 Charged Thunder Lizard Organ
@@ -1681,7 +1678,6 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 			q(834, {	-- Winds in the Desert
 				qg = 3293,	-- Rezlak
 				coord = { 46.4, 23.0, MAP.DUROTAR },
-				--races = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 				lvl = 7,
 				groups = {
 					objective(1, {	-- 0/5 Sack of Supplies
