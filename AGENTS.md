@@ -12,6 +12,7 @@ These guidelines apply to contributions to AllTheThings (ATT), including code, d
 
 - PRs and issues must disclose AI assistance whenever AI was used to implement the related work or to prepare their content.
 - The disclosure must identify the actual model name(s) and describe what AI helped with, such as implementation, data analysis, documentation, or drafting the report.
+- In Markdown PR and issue disclosures, wrap each model name in backticks.
 - Every PR must contain an `AI Assistance` section. If no AI was used, state: `No AI assistance was used for this contribution.`
 - For AI-assisted issues, add an `AI Assistance` section to the issue description. When using an existing issue form, place it in `Additional Context` or the equivalent free-text field.
 - Describe assistance and verification accurately. Do not claim human review, testing, or source verification that did not occur.
@@ -82,7 +83,7 @@ PRs changing ATT data must also include a `Data Sources` section as described be
 [Omit this section when the PR changes no ATT data.]
 
 ## AI Assistance
-AI assistance was used with [actual model name(s)] for [specific tasks].
+AI assistance was used with `[actual model name(s)]` for [specific tasks].
 [If no AI was used, replace the line above with: No AI assistance was used for this contribution.]
 ```
 
@@ -90,7 +91,7 @@ AI assistance was used with [actual model name(s)] for [specific tasks].
 
 ```markdown
 ## AI Assistance
-AI assistance was used with [actual model name(s)] for [implementation, analysis, or drafting this issue].
+AI assistance was used with `[actual model name(s)]` for [implementation, analysis, or drafting this issue].
 ```
 
 For data-related issues, attach or link the screenshot or Contributor Report, or include a direct link to the relevant Wowhead page. Provide the affected IDs and relevant version/context.
