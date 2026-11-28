@@ -255,7 +255,7 @@ root(ROOTS.WorldDrops, {
 					13063,	-- Starfaller
 				}},
 			}),
-			i(5758),	-- Mithril Lockbox,
+			i(5758),	-- Mithril Lockbox
 			i(4632),	-- Ornate Bronze Lockbox
 			i(4638, {	-- Reinforced Steel Lockbox
 				sym = {{ "select", "itemID",
@@ -374,7 +374,7 @@ root(ROOTS.WorldDrops, {
 		i(9847),	-- Conjurer's Cloak
 		i(10098),	-- Councillor's Cloak
 		i(3939),	-- Crochet Cloak
-		i(1782),	-- Cross-Stitched Cloak
+		i(1782),	-- Cross-stitched Cloak
 		i(10194),	-- Crusader's Cloak
 		i(15135),	-- Cutthroat's Cape
 		i(13122),	-- Dark Phantom Cape
@@ -718,13 +718,13 @@ root(ROOTS.WorldDrops, {
 		i(3941),	-- Crochet Pants
 		i(3942),	-- Crochet Shoulderpads
 		i(3943),	-- Crochet Vest
-		i(3380),	-- Cross-Stitched Belt
-		i(3381),	-- Cross-Stitched Bracers
-		i(1783),	-- Cross-Stitched Gloves
-		i(1784),	-- Cross-Stitched Pants
-		i(1780),	-- Cross-Stitched Sandals
-		i(1785),	-- Cross-Stitched Shoulderpads
-		i(1786),	-- Cross-Stitched Vest
+		i(3380),	-- Cross-stitched Belt
+		i(3381),	-- Cross-stitched Bracers
+		i(1783),	-- Cross-stitched Gloves
+		i(1784),	-- Cross-stitched Pants
+		i(1780),	-- Cross-stitched Sandals
+		i(1785),	-- Cross-stitched Shoulderpads
+		i(1786),	-- Cross-stitched Vest
 		i(13008),	-- Dalewind Trousers
 		i(14237),	-- Darkmist Armor
 		i(14240),	-- Darkmist Bands
@@ -2722,7 +2722,7 @@ root(ROOTS.WorldDrops, {
 			i(15272),	-- Razor Axe
 			i(4562),	-- Severing Axe
 			i(1824),	-- Shiny War Axe
-			i(1812),	-- Short-Handled Battle Axe
+			i(1812),	-- Short-handled Battle Axe
 			i(4020),	-- Splintering Battle Axe
 			i(1828),	-- Stone War Axe
 			i(15268),	-- Twin-Bladed Axe [CATA+] / Twin-bladed Axe
@@ -2999,14 +2999,14 @@ root(ROOTS.WorldDrops, {
 			i(8181),	-- Hunting Rifle
 			i(13137),	-- Ironweaver
 			i(13136),	-- Lil Timmy's Peashooter
-			i(3780),	-- Long-Barreled Musket
+			i(3780),	-- Long-barreled Musket
 			i(2786),	-- Oiled Blunderbuss
 			i(8182),	-- Pellet Rifle
 			i(15323),	-- Percussion Shotgun
 			i(2100),	-- Precisely Calibrated Boomstick (does not currently load)
 			i(13825),	-- Primed Musket
 			i(4089),	-- Ricochet Blunderbuss
-			i(2774),	-- Rust-Covered Blunderbuss
+			i(2774),	-- Rust-covered Blunderbuss
 			i(4026),	-- Sentinel Musket
 			i(15325),	-- Sharpshooter Harquebus
 			i(13146),	-- Shell Launcher Shotgun
@@ -3469,7 +3469,7 @@ root(ROOTS.WorldDrops, {
 		i(5572),	-- Small Green Pouch
 		i(805),	-- Small Red Pouch
 		i(4500),	-- Traveler's Backpack
-		i(1685),	-- Troll-Hide Bag
+		i(1685),	-- Troll-hide Bag
 		i(5574),	-- White Leather Bag
 	}),
 	filter(RELICS_F, {
@@ -4711,7 +4711,7 @@ root(ROOTS.WorldDrops, {
 				i(5498),	-- Small Lustrous Pearl
 			},
 		}),
-		i(5524, {	-- Thick-Shelled Clam
+		i(5524, {	-- Thick-shelled Clam
 			maps = {
 				MAP.BLACKFATHOM_DEEPS,
 				MAP.HILLSBRAD_FOOTHILLS,

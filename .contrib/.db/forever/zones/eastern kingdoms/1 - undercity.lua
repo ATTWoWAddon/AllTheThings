@@ -1219,7 +1219,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2321,	-- Fine Thread
 					6256,	-- Fishing Pole
 					2605,	-- Green Dye
-					4340,	-- Grey Dye
+					4340,	-- Gray Dye
 					8343,	-- Heavy Silken Thread
 					4400,	-- Heavy Stock
 					2692,	-- Hot Spices
@@ -1382,7 +1382,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.UNDERCITY, {
 					2131,	-- Shortsword
 					2494,	-- Stiletto
 					2490,	-- Tomahawk
-					2489,	-- Two-Handed Sword
+					2489,	-- Two-handed Sword
 					2495,	-- Walking Stick
 					2493,	-- Wooden Mallet
 				}},

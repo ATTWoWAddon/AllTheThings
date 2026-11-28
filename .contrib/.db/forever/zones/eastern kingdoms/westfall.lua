@@ -134,11 +134,11 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.WESTFALL, {
 							i(270001),	-- Rusty Cutlass
 							i(276694),	-- Captain Sander's Lucky Shooter
 							i(270002),	-- Midshipman's Worn Boots
-							i(3343),	-- Captain Sanders' Booty Bag
+							i(3343),	-- Captain Sander's Booty Bag
 						},
 					}),
-					i(3344),	-- Captain Sanders' Sash
-					i(3342),	-- Captain Sanders' Shirt
+					i(3344),	-- Captain Sander's Sash
+					i(3342),	-- Captain Sander's Shirt
 					i(2842),	-- Silver Bar
 				},
 			}),

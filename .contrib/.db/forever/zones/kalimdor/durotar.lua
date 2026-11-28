@@ -1922,7 +1922,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					2491,	-- Large Axe
 					2494,	-- Stiletto
 					2490,	-- Tomahawk
-					2489,	-- Two-Handed Sword
+					2489,	-- Two-handed Sword
 					2495,	-- Walking Stick
 					2493,	-- Wooden Mallet
 				}},
@@ -1936,7 +1936,7 @@ maproot(MAP.KALIMDOR, MAP.DUROTAR, {
 					2491,	-- Large Axe
 					2494,	-- Stiletto
 					2490,	-- Tomahawk
-					2489,	-- Two-Handed Sword
+					2489,	-- Two-handed Sword
 					2495,	-- Walking Stick
 					2493,	-- Wooden Mallet
 				}},

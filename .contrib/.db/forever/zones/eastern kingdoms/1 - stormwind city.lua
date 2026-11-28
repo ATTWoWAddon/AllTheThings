@@ -2294,8 +2294,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				groups = {
 					i(3422),	-- Beautiful Wildflowers
 					i(3420),	-- Black Rose
-					i(3424),	-- Bouquet Of Black Roses
-					i(3423),	-- Bouquet Of White Roses
+					i(3424),	-- Bouquet of Black Roses
+					i(3423),	-- Bouquet of White Roses
 					i(3419),	-- Red Rose
 					i(3421),	-- Simple Wildflowers
 				},
@@ -2351,7 +2351,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				},
 				groups = {
 					i(16059),	-- Common Brown Shirt
-					i(3428),	-- Common Grey Shirt
+					i(3428),	-- Common Gray Shirt
 					i(16060),	-- Common White Shirt
 				},
 			}),
@@ -2455,8 +2455,8 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				sym = {{ "select", "itemID",
 					3422,	-- Beautiful Wildflowers
 					3420,	-- Black Rose
-					3424,	-- Bouquet Of Black Roses
-					3423,	-- Bouquet Of White Roses
+					3424,	-- Bouquet of Black Roses
+					3423,	-- Bouquet of White Roses
 					3419,	-- Red Rose
 					3421,	-- Simple Wildflowers
 				}},
@@ -2688,7 +2688,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.STORMWIND_CITY, {
 				races = ALLIANCE_ONLY,
 				groups = {
 					i(3426),	-- Bold Yellow Shirt
-					i(3428),	-- Common Grey Shirt
+					i(3428),	-- Common Gray Shirt
 					i(3427),	-- Stylish Black Shirt
 					i(13896),	-- Dark Green Wedding Hanbok
 					i(13898),	-- Royal Dangui

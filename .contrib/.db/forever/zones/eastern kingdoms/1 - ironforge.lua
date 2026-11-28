@@ -931,7 +931,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.IRONFORGE, {
 				races = ALLIANCE_ONLY,
 				lvl = 20,
 				groups = {
-					i(6974),	-- Fire hardened Gauntlets
+					i(6974),	-- Fire Hardened Gauntlets
 				},
 			}),
 			q(1880, {	-- Mage-tastic Gizmonitor

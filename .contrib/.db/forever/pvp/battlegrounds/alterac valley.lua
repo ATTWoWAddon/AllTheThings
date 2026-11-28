@@ -468,7 +468,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 			q(8375, {	-- Remember Alterac Valley!
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
-				cost = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
+				cost = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 				races = ALLIANCE_ONLY,
 			}),
 			q(8383, {	-- Remember Alterac Valley!
@@ -476,7 +476,7 @@ battleground(MAP.ALTERAC_VALLEY, {
 				qg = 15351,	-- Alliance Brigadier General
 				coord = ALLIANCE_BRIGADIER_COORDS,
 				maxReputation = { FACTION_STORMPIKE_GUARD, EXALTED },
-				cost = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
+				cost = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 				races = ALLIANCE_ONLY,
 				repeatable = true,
 			}),

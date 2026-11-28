@@ -1102,7 +1102,7 @@ maproot(MAP.EASTERN_KINGDOMS, MAP.DUN_MOROGH, {
 				groups = {
 					objective(1, {	-- 0/8 Flintfire's Shipments
 						providers = {
-							{ "i", 280413 },	-- Flintfire's Shipments
+							{ "i", 280413 },	-- Flintfire's Shipment
 							{ "o", 672508 },	-- Flintfire's Shipments
 						},
 					}),
