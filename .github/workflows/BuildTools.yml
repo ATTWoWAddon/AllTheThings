@@ -7,8 +7,8 @@ on:
     tags-ignore:
       - '**'
     paths:
-      - '.contrib/src/Parser/**'
       - '.contrib/src/MiniJSON/**'
+      - '.contrib/src/Parser/**'
       - '.contrib/src/Shared/ToolJson.props'
       - '**/*.cs'
       - '**/*.csproj'
@@ -16,8 +16,8 @@ on:
       - '.github/workflows/BuildTools.yml'
   pull_request:
     paths:
-      - '.contrib/src/Parser/**'
       - '.contrib/src/MiniJSON/**'
+      - '.contrib/src/Parser/**'
       - '.contrib/src/Shared/ToolJson.props'
       - '**/*.cs'
       - '**/*.csproj'
@@ -30,8 +30,15 @@ permissions:
 
 jobs:
   build:
+    name: ${{ matrix.backend == 'SystemTextJson' && 'build' || format('build ({0})', matrix.backend) }}
     runs-on: windows-latest
     timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        backend: [SystemTextJson, MiniJson, NewtonsoftJson]
+    env:
+      ATT_JSON_BACKEND: ${{ matrix.backend }}
     defaults:
       run:
         shell: pwsh
@@ -73,7 +80,8 @@ jobs:
               throw "Expected a stable .NET SDK 10.x; got '$dotnetVersion'."
             }
             Write-Host "Using .NET SDK $dotnetVersion"
-            dotnet build .contrib/src/Parser/Parser.csproj --configuration Release -p:Platform=x64 --output (Join-Path $env:RUNNER_TEMP 'parser') --nologo
+            $outputPath = Join-Path $env:RUNNER_TEMP "parser/$env:ATT_JSON_BACKEND"
+            dotnet build .contrib/src/Parser/Parser.csproj --configuration Release -p:Platform=x64 "-p:AttJsonBackend=$env:ATT_JSON_BACKEND" --output $outputPath --nologo
             $buildExitCode = $LASTEXITCODE
           }
           finally {
@@ -94,14 +102,15 @@ jobs:
           if ($buildExitCode -ne 0) { exit $buildExitCode }
 
       - name: Show Parser MiniJSON notice
+        if: matrix.backend == 'MiniJson'
         run: |
-          $parser = Join-Path $env:RUNNER_TEMP 'parser/Parser.exe'
+          $parser = Join-Path $env:RUNNER_TEMP "parser/$env:ATT_JSON_BACKEND/Parser.exe"
           & .github/scripts/Check-MiniJsonNotice.ps1 -Tool Parser -ToolPath $parser
 
       - name: Run Parser tests
         run: |
           $PSNativeCommandUseErrorActionPreference = $false
-          $parserPath = Join-Path $env:RUNNER_TEMP 'parser/Parser.exe'
+          $parserPath = Join-Path $env:RUNNER_TEMP "parser/$env:ATT_JSON_BACKEND/Parser.exe"
           if (-not (Test-Path -LiteralPath $parserPath -PathType Leaf)) {
             throw "The newly built Parser was not found: $parserPath"
           }
@@ -130,13 +139,18 @@ jobs:
           }
 
   build-csharp-tools:
-    name: Build remaining C# tools
+    name: ${{ matrix.backend == 'SystemTextJson' && 'Build remaining C# tools' || format('Build remaining C# tools ({0})', matrix.backend) }}
     runs-on: windows-latest
     timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        backend: [SystemTextJson, MiniJson, NewtonsoftJson]
     defaults:
       run:
         shell: pwsh
     env:
+      ATT_JSON_BACKEND: ${{ matrix.backend }}
       GIT_CONFIG_COUNT: 2
       GIT_CONFIG_KEY_0: core.autocrlf
       GIT_CONFIG_VALUE_0: 'false'
@@ -156,6 +170,7 @@ jobs:
           dotnet-quality: 'ga'
 
       - name: Set up Visual Studio MSBuild
+        if: matrix.backend == 'SystemTextJson'
         uses: microsoft/setup-msbuild@30375c66a4eea26614e0d39710365f22f8b0af57
         with:
           msbuild-architecture: x64
@@ -163,17 +178,22 @@ jobs:
       - name: Build remaining C# projects
         run: |
           $PSNativeCommandUseErrorActionPreference = $false
+          $legacyResourceProject = '.contrib/.source/ATT Sync Tool/ATT Sync Tool.csproj'
           $projects = @(
-            '.contrib/.source/ATT Sync Tool/ATT Sync Tool.csproj',
             '.contrib/.source/AssetDB Builder/AssetDB Builder.csproj',
             '.contrib/.source/Database/Database.csproj',
-            '.contrib/.source/IconID Converter/IconID Converter.csproj',
-            '.contrib/.source/Item Database Consolidator/Item Database Consolidator.csproj',
             '.contrib/src/Blizzard API Harvester/Blizzard API Harvester.csproj',
-            '.contrib/src/CSVCleaner/CSVCleaner.csproj',
             '.contrib/src/Classic Item Detector/Classic Item Detector.csproj',
             '.contrib/src/Item DB Compare Tool/Item DB Compare Tool.csproj'
           )
+          if ($env:ATT_JSON_BACKEND -eq 'SystemTextJson') {
+            $projects += @(
+              $legacyResourceProject,
+              '.contrib/.source/IconID Converter/IconID Converter.csproj',
+              '.contrib/.source/Item Database Consolidator/Item Database Consolidator.csproj',
+              '.contrib/src/CSVCleaner/CSVCleaner.csproj'
+            )
+          }
           $workspaceRoot = (Get-Location).Path
           $globalJsonPath = Join-Path $workspaceRoot 'global.json'
           $originalGlobalJsonExisted = Test-Path -LiteralPath $globalJsonPath -PathType Leaf
@@ -197,18 +217,19 @@ jobs:
             if ($LASTEXITCODE -ne 0 -or $dotnetVersion -notmatch '^10\.\d+\.\d+$') {
               throw "Expected a stable .NET SDK 10.x; got '$dotnetVersion'."
             }
-            $msbuild = Get-Command 'msbuild' -CommandType Application -ErrorAction Stop |
-              Select-Object -First 1
-            $msbuildVersion = (& $msbuild.Source -version -nologo 2>&1 | Out-String).Trim()
-            if ($LASTEXITCODE -ne 0) {
-              throw "Could not read the Visual Studio MSBuild version: '$msbuildVersion'."
+            Write-Host "Using .NET SDK $dotnetVersion"
+            if ($projects -contains $legacyResourceProject) {
+              $msbuild = Get-Command 'msbuild' -CommandType Application -ErrorAction Stop |
+                Select-Object -First 1
+              $msbuildVersion = (& $msbuild.Source -version -nologo 2>&1 | Out-String).Trim()
+              if ($LASTEXITCODE -ne 0) {
+                throw "Could not read the Visual Studio MSBuild version: '$msbuildVersion'."
+              }
             }
-            Write-Host "Using Visual Studio MSBuild $msbuildVersion and .NET SDK $dotnetVersion"
-            $legacyResourceProject = '.contrib/.source/ATT Sync Tool/ATT Sync Tool.csproj'
             foreach ($project in $projects) {
               $name = [System.IO.Path]::GetFileNameWithoutExtension($project)
               $safeName = [regex]::Replace($name, '[^A-Za-z0-9_-]', '_')
-              $outputPath = Join-Path $env:RUNNER_TEMP (Join-Path 'csharp-projects' $safeName)
+              $outputPath = Join-Path $env:RUNNER_TEMP "csharp-projects/$env:ATT_JSON_BACKEND/$safeName"
               [void](New-Item -ItemType Directory -Path $outputPath -Force)
               $projectPath = Join-Path $workspaceRoot $project
               Write-Host "Building $project"
@@ -234,7 +255,7 @@ jobs:
                 $results[$project] = $LASTEXITCODE
               }
               else {
-                & dotnet build $projectPath --configuration Release -p:Platform=x64 --output $outputPath --nologo
+                & dotnet build $projectPath --configuration Release -p:Platform=x64 "-p:AttJsonBackend=$env:ATT_JSON_BACKEND" --output $outputPath --nologo
                 $results[$project] = $LASTEXITCODE
               }
             }
@@ -263,10 +284,37 @@ jobs:
             throw "$($failures.Count) of $($projects.Count) C# project builds failed."
           }
 
-      - name: Show MiniJSON notices for the other tools
-        if: ${{ !cancelled() }}
+      - name: Run AssetDB Builder with Newtonsoft.Json
+        if: matrix.backend == 'NewtonsoftJson'
         run: |
-          $buildOutput = Join-Path $env:RUNNER_TEMP 'csharp-projects'
+          $tool = Join-Path $env:RUNNER_TEMP "csharp-projects/$env:ATT_JSON_BACKEND/AssetDB_Builder/AssetDB Builder.exe"
+          $fixture = Join-Path $env:RUNNER_TEMP ('assetdb-newtonsoft-' + [Guid]::NewGuid().ToString('N'))
+          $workDir = Join-Path $fixture '.tools'
+          $inputDir = Join-Path $fixture '.raw/AssetDB'
+          try {
+            [void](New-Item -ItemType Directory -Path $workDir, $inputDir -Force)
+            [IO.File]::WriteAllText((Join-Path $inputDir 'sample.json'), '{"20":1,"3":2,"20":3,}')
+            Push-Location -LiteralPath $workDir
+            try {
+              & $tool
+              if ($LASTEXITCODE -ne 0) { throw "AssetDB Builder exited with code $LASTEXITCODE." }
+            }
+            finally {
+              Pop-Location
+            }
+            $luaPath = Join-Path $fixture '.db/standard/00 - DB/AssetDB/sample.lua'
+            $actual = [IO.File]::ReadAllText($luaPath).Replace("`r`n", "`n")
+            $expected = @('-- #if sample', '_.AssetDB = {', '[3]=1,', '[20]=1,', '};', '-- #endif', '') -join "`n"
+            if ($actual -cne $expected) { throw "AssetDB Builder produced unexpected Lua: $actual" }
+          }
+          finally {
+            Remove-Item -LiteralPath $fixture -Recurse -Force
+          }
+
+      - name: Show MiniJSON notices for the other tools
+        if: ${{ !cancelled() && matrix.backend == 'MiniJson' }}
+        run: |
+          $buildOutput = Join-Path $env:RUNNER_TEMP "csharp-projects/$env:ATT_JSON_BACKEND"
           $targets = [ordered]@{
             'Blizzard API Harvester' = 'Blizzard_API_Harvester/Blizzard API Harvester.exe'
             'Classic Item Detector' = 'Classic_Item_Detector/Classic Item Detector.exe'

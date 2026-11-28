@@ -14,6 +14,12 @@ namespace ATT
 		/// </summary>
 		object Deserialize(string json);
 
+		/// <summary>
+		/// Read top-level object property names. A valid non-object yields no names.
+		/// Duplicate names and malformed input are handled by the selected backend.
+		/// </summary>
+		IEnumerable<string> ReadObjectKeys(string json);
+
 		string Serialize(object value, JsonWriteOptions options);
 	}
 
@@ -53,6 +59,8 @@ namespace ATT
 		}
 
 		public object Deserialize(string json) => backend.Deserialize(json);
+
+		public IEnumerable<string> ReadObjectKeys(string json) => backend.ReadObjectKeys(json);
 
 		public string Serialize(object value) => backend.Serialize(value, default);
 

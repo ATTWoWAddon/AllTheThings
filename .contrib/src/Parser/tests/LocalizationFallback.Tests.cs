@@ -116,6 +116,37 @@ internal static class LocalizationFallbackTests
 
 	private static void DebugCases()
 	{
+		Run("debug JSON skips cyclic child and parent links", () =>
+		{
+			var parent = new Dictionary<object, object>();
+			var child = new Dictionary<object, object> { { "__parent", parent } };
+			parent.Add("g", new[] { child });
+			parent.Add(42L, new[] { child });
+
+			var toJson = framework.GetMethod("ToJSON");
+			var toObject = framework.GetMethod("ToObject");
+			var json = (string)toJson.Invoke(null, new object[] { parent });
+			var result = (Dictionary<string, object>)toObject.Invoke(null, new object[] { json });
+			var children = (List<object>)result["42"];
+			Check((string)result["g"] == "<ignored>", "child link was not masked");
+			Check((string)((Dictionary<string, object>)children[0])["__parent"] == "<ignored>", "nested parent link was not masked");
+		});
+		Run("Parser JSON reads trailing commas and numeric values", () =>
+		{
+			const string json = "{\"values\":[9223372036854775807,2.5,1e3,9223372036854777344,],\"timestamp\":\"2026-11-28T12:34:56Z\",}";
+			var result = (Dictionary<string, object>)framework.GetMethod("ToObject").Invoke(null, new object[] { json });
+			var values = (List<object>)result["values"];
+			Check((long)values[0] == long.MaxValue, "integer did not keep its full precision");
+			Check(values[1] is double && (double)values[1] == 2.5, "decimal was read incorrectly");
+			if (framework.Assembly.GetType("ATT.MiniJsonBackend") != null)
+				Check(values[2] is long && (long)values[2] == 0, "legacy MiniJSON exponent handling changed");
+			else
+			{
+				Check(values[2] is double && (double)values[2] == 1000, "exponent was read incorrectly");
+				Check(values[3] is double && (double)values[3] == 9223372036854777856d, "overflowing integer was not rounded to a Double");
+			}
+			Check(result["timestamp"] is string && (string)result["timestamp"] == "2026-11-28T12:34:56Z", "date-like string was converted");
+		});
 		Run("debug es=mx does not remove distinct tw", () =>
 		{
 			string text = ExportDebug(Locales("en", "English", "tw", "English", "cn", "Chinese", "es", "Spanish", "mx", "Spanish"), "tw");
